@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #f2ecdc;
+  --color-paper: #faf6ea;
+  --color-ink: #17130f;
+  --color-mustard: #f0b60d;
+  --color-mustard-dark: #d99e00;
+  --color-pink: #f3a6c9;
+  --color-pink-dark: #ec5fa0;
+  --color-blue: #2c46e8;
+  --color-red: #e2381f;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-mustard: var(--color-mustard);
+  --color-mustard-dark: var(--color-mustard-dark);
+  --color-pink: var(--color-pink);
+  --color-pink-dark: var(--color-pink-dark);
+  --color-blue: var(--color-blue);
+  --color-red: var(--color-red);
+  --font-display: var(--font-big-shoulders);
+  --font-body: var(--font-space-grotesk);
+  --font-label: var(--font-space-mono);
+}
+
+html {
+  background: var(--color-ink);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* --- retro checkerboard pattern, used as thin decorative strips --- */
+.checker-strip {
+  background-image: repeating-conic-gradient(
+    var(--color-ink) 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 16px 16px;
+}
+
+.checker-strip--mustard {
+  background-image: repeating-conic-gradient(
+    var(--color-ink) 0% 25%,
+    var(--color-mustard) 0% 50%
+  );
+  background-size: 16px 16px;
+}
+
+.checker-strip--red {
+  background-image: repeating-conic-gradient(
+    var(--color-ink) 0% 25%,
+    var(--color-red) 0% 50%
+  );
+  background-size: 16px 16px;
+}
+
+/* --- marquee ticker --- */
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* --- retro hard drop-shadow used on cards / buttons --- */
+.shadow-hard {
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+.shadow-hard-sm {
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+}
