@@ -6,6 +6,16 @@ export type SourceType =
   | "classic"
   | null;
 
+export type DistinctionType =
+  | "michelin_star"
+  | "michelin_bib_gourmand"
+  | "repsol_sol";
+
+export interface Distinction {
+  type: DistinctionType;
+  count: number | null;
+}
+
 export interface Place {
   name: string;
   place_id: string | null;
@@ -19,6 +29,7 @@ export interface Place {
   is_top5: boolean;
   top5_rank: number | null;
   google_maps_url: string | null;
+  distinction?: Distinction | null;
 }
 
 export interface CityData {

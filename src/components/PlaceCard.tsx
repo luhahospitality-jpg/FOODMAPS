@@ -1,5 +1,6 @@
 import type { Place } from "@/types/city";
 import { Pill } from "./Pill";
+import { DistinctionBadge } from "./DistinctionBadge";
 import { categoryText, sourceTypeLabel } from "@/lib/labels";
 
 const rankColors = ["bg-mustard", "bg-pink", "bg-blue", "bg-red", "bg-ink"] as const;
@@ -32,6 +33,9 @@ export function PlaceCard({ place }: { place: Place }) {
         <div className="mt-2 flex flex-wrap gap-1.5">
           <Pill variant="mustard">{categoryText(place.category)}</Pill>
           {place.cuisine && <Pill variant="pink">{place.cuisine}</Pill>}
+          {place.distinction && (
+            <DistinctionBadge distinction={place.distinction} />
+          )}
         </div>
       </div>
 

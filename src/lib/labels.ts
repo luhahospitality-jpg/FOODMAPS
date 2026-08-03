@@ -1,4 +1,4 @@
-import type { SourceType } from "@/types/city";
+import type { SourceType, DistinctionType } from "@/types/city";
 
 export const sourceTypeLabel: Record<NonNullable<SourceType>, string> = {
   timeout: "Time Out",
@@ -6,6 +6,12 @@ export const sourceTypeLabel: Record<NonNullable<SourceType>, string> = {
   tv_show: "TV / Cine",
   viral_social: "Viral",
   classic: "Clásico",
+};
+
+export const distinctionLabel: Record<DistinctionType, string> = {
+  michelin_star: "Estrella Michelin",
+  michelin_bib_gourmand: "Bib Gourmand",
+  repsol_sol: "Sol Repsol",
 };
 
 export const categoryLabel: Record<string, string> = {

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>NYC · Restaurantes Top &amp; Trendy (30 sitios)</name>
+  <description>Mezcla de clásicos neoyorquinos, gastronomías variadas y sitios virales, con referencias a Time Out, TikTok e influencers donde existen.</description>
+
+  <Placemark><name>Katz's Delicatessen</name><description>El clásico absoluto desde 1888. El pastrami sandwich es obligatorio.</description><Point><coordinates>-73.987429,40.722233,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Peter Luger Steak House</name><description>Steakhouse legendario en Williamsburg, Brooklyn. Reserva con antelación.</description><Point><coordinates>-73.9625052,40.7098774,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Carbone New York</name><description>Italoamericano de lujo, súper hype. El rigatoni picante es el plato estrella. Habitual en los rankings de mejores restaurantes de NY. Más info: https://www.timeout.com/newyork/restaurants/100-best-new-york-restaurants</description><Point><coordinates>-74.0002414,40.7279891,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Au Cheval</name><description>Considerada de las mejores hamburguesas del mundo. La versión con huevo y bacon es icónica.</description><Point><coordinates>-74.0017942,40.7181205,0</coordinates></Point></Placemark>
+
+  <Placemark><name>7th Street Burger Soho</name><description>Smashburger viral, sencilla y muy querida por locales.</description><Point><coordinates>-73.9956905,40.7231985,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Fat Ronnie's Burger Bar</name><description>Otra hamburguesa muy trendy últimamente, crujiente y jugosa.</description><Point><coordinates>-74.0019756,40.7307189,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Little Maven</name><description>Uno de los favoritos de influencers en Flatiron, muy fotogénico.</description><Point><coordinates>-73.9934938,40.7390428,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Piccolo MORINI</name><description>Italiano nuevo en SoHo, muy de moda ahora mismo.</description><Point><coordinates>-73.9952615,40.7206118,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Bungalow</name><description>Indio moderno del chef Vikas Khanna, ambiente elegante y muy Instagrameable.</description><Point><coordinates>-73.9879743,40.7236675,0</coordinates></Point></Placemark>
+
+  <Placemark><name>COTE 550</name><description>Steakhouse coreano, uno de los sitios de moda para carne.</description><Point><coordinates>-73.9731034,40.7616006,0</coordinates></Point></Placemark>
+
+  <Placemark><name>L'Adresse NoMad</name><description>Brunch europeo muy popular, ambiente cálido.</description><Point><coordinates>-73.9884895,40.7455087,0</coordinates></Point></Placemark>
+
+  <Placemark><name>VALERIE</name><description>Cóctel bar con vibra vintage cerca de Times Square.</description><Point><coordinates>-73.9811274,40.7563426,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Monkey Bar</name><description>Clásico neoyorquino renovado, famoso por el French dip y la hamburguesa Wagyu.</description><Point><coordinates>-73.9732046,40.7598982,0</coordinates></Point></Placemark>
+
+  <Placemark><name>1803 NYC</name><description>Cajún/Creole con música en vivo, mucha energía.</description><Point><coordinates>-74.0073301,40.7154539,0</coordinates></Point></Placemark>
+
+  <Placemark><name>AMALFI Rooftop by Birreria</name><description>Rooftop con vibra Costa Amalfitana, ideal para fotos.</description><Point><coordinates>-73.9899056,40.7420178,0</coordinates></Point></Placemark>
+
+  <Placemark><name>The Halal Guys (53rd &amp; 6th)</name><description>El carrito halal más icónico de NY, nacido en 1990. La comida callejera halal de Nueva York aparece en el episodio de Mark Wiens para National Geographic "Epic Food Journeys": https://www.youtube.com/watch?v=CE6Y8tqhO4A</description><Point><coordinates>-73.9793516,40.7617724,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Russ &amp; Daughters</name><description>El templo del bagel con lox judío desde 1914, en el Lower East Side. Reseña: https://www.theinfatuation.com/new-york/reviews/russ-daughters</description><Point><coordinates>-73.9883134,40.7225803,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Prince Street Pizza</name><description>La pizza siciliana "Spicy Spring" que se hizo viral en TikTok. Video viral: https://www.tiktok.com/@devourpower/video/7173710094029589806</description><Point><coordinates>-73.9945444,40.7230777,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Xi'an Famous Foods</name><description>Fideos jalados picantes estilo Shaanxi (China), favoritos de foodies en Chinatown.</description><Point><coordinates>-73.9941404,40.7138356,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Los Tacos No. 1</name><description>Tacos mexicanos estilo callejero, tortillas hechas a mano. El puesto más popular de Chelsea Market.</description><Point><coordinates>-74.0059635,40.7422521,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Joe's Pizza</name><description>La cuna de la porción de pizza clásica neoyorquina, desde 1975.</description><Point><coordinates>-74.0032039,40.7319718,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Nom Wah Tea Parlor</name><description>El restaurante de dim sum más antiguo de Chinatown, abierto desde 1920.</description><Point><coordinates>-73.998188,40.7145089,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Sushi Nakazawa</name><description>Omakase japonés de alto nivel con una estrella Michelin, del chef Daisuke Nakazawa.</description><Point><coordinates>-74.0045493,40.7318046,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Taïm Mediterranean Kitchen</name><description>Uno de los mejores falafel de Nueva York, cocina mediterránea/Medio Oriente.</description><Point><coordinates>-74.0019593,40.735997,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Dominique Ansel Bakery</name><description>Panadería francesa creadora del famoso Cronut original.</description><Point><coordinates>-74.0028734,40.7252509,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Junior's Restaurant &amp; Bakery</name><description>El cheesecake neoyorquino más icónico, en Brooklyn desde 1950.</description><Point><coordinates>-73.9818736,40.6901493,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Hometown Bar-B-Que</name><description>BBQ estilo Texas/Carolina en Red Hook, Brooklyn. Brisket muy premiado.</description><Point><coordinates>-74.0161583,40.6749167,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Ivan Ramen</name><description>Ramen de autor del chef Ivan Orkin en el Lower East Side.</description><Point><coordinates>-73.9845212,40.7205819,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Bunna Cafe</name><description>Cocina etíope 100% vegana en Bushwick, Brooklyn.</description><Point><coordinates>-73.9279056,40.7049167,0</coordinates></Point></Placemark>
+
+  <Placemark><name>Teranga Cafe</name><description>Cocina de África Occidental (senegalesa) frente a Central Park, en Harlem.</description><Point><coordinates>-73.9493556,40.7963946,0</coordinates></Point></Placemark>
+
+</Document>
+</kml>
