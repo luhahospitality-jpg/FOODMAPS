@@ -1,0 +1,70 @@
+{
+  "slug": "valencia",
+  "name": "Valencia",
+  "country": "España",
+  "tagline": "Arroz de leña en L'Albufera, dos estrellas Michelin en el centro, y el mercado más fotogénico de España.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Ricard Camarena Restaurant",
+      "place_id": null,
+      "lat": 39.4687518,
+      "lng": -0.3685627,
+      "category": "fine_dining",
+      "cuisine": "valenciano",
+      "description": "Cocina de producto valenciano de altísimo nivel técnico, del chef Ricard Camarena. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4687518,-0.3685627",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "El Poblet",
+      "place_id": null,
+      "lat": 39.4697359,
+      "lng": -0.3745085,
+      "category": "fine_dining",
+      "cuisine": "valenciano / arroces",
+      "description": "Arroces y cocina mediterránea de vanguardia en pleno centro de Valencia. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4697359,-0.3745085",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Arrocería Maribel",
+      "place_id": null,
+      "lat": 39.3106392,
+      "lng": -0.3181623,
+      "category": "seafood",
+      "cuisine": "valenciano / arroces",
+      "description": "Arrocería en El Palmar, corazón de L'Albufera, cuna histórica de la paella valenciana. Bib Gourmand.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.3106392,-0.3181623",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    },
+    {
+      "name": "Mercado Central",
+      "place_id": null,
+      "lat": 39.4734917,
+      "lng": -0.3789053,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Uno de los mercados cubiertos más grandes de Europa, con puestos de horchata, jamón y marisco fresco.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053",
+      "distinction": null
+    }
+  ]
+}

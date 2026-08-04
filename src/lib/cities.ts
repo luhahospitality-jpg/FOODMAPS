@@ -15,6 +15,9 @@ import rioDeJaneiro from "@/data/cities/rio-de-janeiro.json";
 import lima from "@/data/cities/lima.json";
 import bogota from "@/data/cities/bogota.json";
 import oaxaca from "@/data/cities/oaxaca.json";
+import valencia from "@/data/cities/valencia.json";
+import espana from "@/data/cities/espana.json";
+import paris from "@/data/cities/paris.json";
 
 const cityData: Record<string, CityData> = {
   "nueva-york": newYork as CityData,
@@ -33,6 +36,9 @@ const cityData: Record<string, CityData> = {
   lima: lima as CityData,
   bogota: bogota as CityData,
   oaxaca: oaxaca as CityData,
+  valencia: valencia as CityData,
+  espana: espana as CityData,
+  paris: paris as CityData,
 };
 
 export function getCityData(slug: string): CityData | null {

@@ -1,0 +1,55 @@
+{
+  "slug": "espana",
+  "name": "España (selección nacional)",
+  "country": "España",
+  "tagline": "Tres joyas fuera del circuito habitual: Girona, un caserío vasco y una posada asturiana de 1898 — todas con el máximo galardón.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "El Celler de Can Roca",
+      "place_id": null,
+      "lat": 41.9934013,
+      "lng": 2.8077671,
+      "category": "fine_dining",
+      "cuisine": "catalán",
+      "description": "El templo de los hermanos Roca en Girona, nombrado mejor restaurante del mundo en 2013 y 2015. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9934013,2.8077671",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Asador Etxebarri",
+      "place_id": null,
+      "lat": 43.1159106,
+      "lng": -2.5984392,
+      "category": "steakhouse",
+      "cuisine": "vasco",
+      "description": "La parrilla de Bittor Arginzoniz en un caserío de Bizkaia, #2 del mundo en The World's 50 Best 2024. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.1159106,-2.5984392",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Casa Marcial",
+      "place_id": null,
+      "lat": 43.3875183,
+      "lng": -5.1882653,
+      "category": "fine_dining",
+      "cuisine": "asturiano",
+      "description": "La cocina de paisaje asturiano de Nacho Manzano, en una antigua posada familiar de 1898. Tres estrellas Michelin, tres Soles Repsol.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3875183,-5.1882653",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    }
+  ]
+}

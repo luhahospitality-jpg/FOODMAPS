@@ -1,0 +1,70 @@
+{
+  "slug": "paris",
+  "name": "París",
+  "country": "Francia",
+  "tagline": "El café donde se afiló la Revolución, y el falafel con fila en Le Marais desde 1979.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Le Cinq",
+      "place_id": null,
+      "lat": 48.8686738,
+      "lng": 2.3007762,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Decoración inspirada en el Grand Trianon dentro del Four Seasons George V. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8686738,2.3007762",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Le Procope",
+      "place_id": null,
+      "lat": 48.8530584,
+      "lng": 2.3387505,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "El café más antiguo de París, abierto desde 1686. Por sus mesas pasaron Voltaire, Diderot y Rousseau.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8530584,2.3387505",
+      "distinction": null
+    },
+    {
+      "name": "L'As du Fallafel",
+      "place_id": null,
+      "lat": 48.8574095,
+      "lng": 2.3590493,
+      "category": "street_food",
+      "cuisine": "judío / medio oriente",
+      "description": "El falafel más famoso de Le Marais, con fila en la calle desde 1979.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8574095,2.3590493",
+      "distinction": null
+    },
+    {
+      "name": "Virtus",
+      "place_id": null,
+      "lat": 48.8502518,
+      "lng": 2.3781248,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Cocina franco-brasileña de autor en el distrito 12. Dos estrellas Michelin, novedad 2026.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8502518,2.3781248",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    }
+  ]
+}
