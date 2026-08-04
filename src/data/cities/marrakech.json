@@ -1,0 +1,55 @@
+{
+  "slug": "marrakech",
+  "name": "Marrakech",
+  "country": "Marruecos",
+  "tagline": "El palacio del siglo XVII donde Hitchcock filmó una escena, y la plaza que de noche se llena de 40 puestos de comida.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Dar Essalam",
+      "place_id": null,
+      "lat": 31.6223645,
+      "lng": -7.9864363,
+      "category": "fine_dining",
+      "cuisine": "marroquí",
+      "description": "Palacio del siglo XVII convertido en el primer restaurante marroquí de la ciudad, desde 1952. Alfred Hitchcock filmó aquí \"El hombre que sabía demasiado\" en 1956.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6223645,-7.9864363",
+      "distinction": null
+    },
+    {
+      "name": "La Mamounia",
+      "place_id": null,
+      "lat": 31.6213829,
+      "lng": -7.9974419,
+      "category": "fine_dining",
+      "cuisine": "marroquí",
+      "description": "Cocina marroquí de gala en uno de los hoteles más legendarios del mundo, con pastela de hoja de oro.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6213829,-7.9974419",
+      "distinction": null
+    },
+    {
+      "name": "Jemaa el-Fnaa",
+      "place_id": null,
+      "lat": 31.6257808,
+      "lng": -7.9889041,
+      "category": "street_food",
+      "cuisine": "marroquí",
+      "description": "La plaza declarada Patrimonio de la Humanidad que de noche se convierte en el mercado de comida callejera más grande de Marruecos, con casi 40 puestos.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6257808,-7.9889041",
+      "distinction": null
+    }
+  ]
+}

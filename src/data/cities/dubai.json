@@ -1,0 +1,55 @@
+{
+  "slug": "dubai",
+  "name": "Dubái",
+  "country": "Emiratos Árabes Unidos",
+  "tagline": "El primer tres estrellas Michelin de Dubái, y el kebab persa donde comen los chefs en sus días libres.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Trèsind Studio",
+      "place_id": null,
+      "lat": 25.2128259,
+      "lng": 55.2776348,
+      "category": "fine_dining",
+      "cuisine": "indio",
+      "description": "Cocina india moderna en DIFC, el primer restaurante de Dubái en lograr tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2128259,55.2776348",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Al Ustad Special Kabab",
+      "place_id": null,
+      "lat": 25.2598015,
+      "lng": 55.2988329,
+      "category": "fast_food",
+      "cuisine": "persa",
+      "description": "Kebabs persas en Bur Dubai desde 1978, favorito de los chefs de la ciudad en sus días libres.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2598015,55.2988329",
+      "distinction": null
+    },
+    {
+      "name": "Al Mallah",
+      "place_id": null,
+      "lat": 25.236703,
+      "lng": 55.2769389,
+      "category": "fast_food",
+      "cuisine": "libanés / shawarma",
+      "description": "Shawarma libanesa clásica desde hace casi 40 años.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.236703,55.2769389",
+      "distinction": null
+    }
+  ]
+}

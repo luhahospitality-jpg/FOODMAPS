@@ -1,0 +1,40 @@
+{
+  "slug": "seul",
+  "name": "Seúl",
+  "country": "Corea del Sur",
+  "tagline": "El mercado de 1905 donde nació la comida callejera coreana, y el tartar de res con Bib Gourmand de al lado.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Gwangjang Market",
+      "place_id": null,
+      "lat": 37.5697826,
+      "lng": 127.0006548,
+      "category": "street_food",
+      "cuisine": "coreano",
+      "description": "El mercado tradicional más antiguo de Corea, desde 1905, con puestos de bindaetteok, sundae y yukhoe.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5697826,127.0006548",
+      "distinction": null
+    },
+    {
+      "name": "Buchon Yukhoe",
+      "place_id": null,
+      "lat": 37.57036,
+      "lng": 126.99771,
+      "category": "street_food",
+      "cuisine": "coreano / yukhoe",
+      "description": "Especialista en yukhoe (tartar de res coreano) junto al mercado Gwangjang. Bib Gourmand desde 2018.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.57036,126.99771",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    }
+  ]
+}
