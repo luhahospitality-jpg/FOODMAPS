@@ -4,7 +4,7 @@ import type { CityIndexEntry } from "@/types/city";
 // `available: true` cuentan con dataset real cargado en src/data/cities/.
 export const citiesIndex: CityIndexEntry[] = [
   { slug: "nueva-york", name: "Nueva York", country: "Estados Unidos", plannedPlaces: 30, available: true },
-  { slug: "los-angeles", name: "Los Ángeles", country: "Estados Unidos", plannedPlaces: 50, available: false },
+  { slug: "los-angeles", name: "Los Ángeles", country: "Estados Unidos", plannedPlaces: 10, available: true },
   { slug: "miami", name: "Miami", country: "Estados Unidos", plannedPlaces: 30, available: false },
   { slug: "chicago", name: "Chicago", country: "Estados Unidos", plannedPlaces: 40, available: false },
   { slug: "san-francisco", name: "San Francisco", country: "Estados Unidos", plannedPlaces: 30, available: false },

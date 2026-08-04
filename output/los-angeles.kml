@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Los Ángeles · Restaurantes Top &amp; Trendy (10 sitios)</name>
+  <description>De los martinis de la meca de Hollywood en 1919 al trompo viral en Sunset Boulevard.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Musso &amp; Frank Grill</name><description>El comedor de la edad dorada de Hollywood desde 1919.</description><Point><coordinates>-118.3352976,34.1017556,0</coordinates></Point></Placemark>
+    <Placemark><name>Somni</name><description>20 pasos de cocina catalana de vanguardia. 3 estrellas Michelin. Fuente: https://andershusa.com/somni-most-expensive-tasting-menu-la/</description><Point><coordinates>-118.3885146,34.0823639,0</coordinates></Point></Placemark>
+    <Placemark><name>Kato</name><description>Cocina taiwanesa-japonesa del chef Jon Yao. 2 estrellas Michelin.</description><Point><coordinates>-118.2411057,34.0340707,0</coordinates></Point></Placemark>
+    <Placemark><name>Hayato</name><description>Kaiseki japonés en el Arts District. 2 estrellas Michelin.</description><Point><coordinates>-118.2419242,34.0337682,0</coordinates></Point></Placemark>
+    <Placemark><name>n/naka</name><description>Kaiseki moderno de la chef Niki Nakayama. 1 estrella Michelin.</description><Point><coordinates>-118.412212,34.0251269,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Seafood</name>
+    <Placemark><name>Holbox</name><description>Mariscos yucatecos de barra en el Mercado La Paloma. 1 estrella Michelin.</description><Point><coordinates>-118.278365,34.0173172,0</coordinates></Point></Placemark>
+    <Placemark><name>Providence</name><description>Templo del pescado y el marisco en Hollywood. 3 estrellas Michelin.</description><Point><coordinates>-118.330187,34.0836255,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>Leo's Tacos Truck</name><description>El trompo de al pastor más viral de LA. Fuente: https://www.tiktok.com/@thetacofiend/video/7557426819129953550</description><Point><coordinates>-118.3097957,34.0985882,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Fast food</name>
+    <Placemark><name>Philippe the Original</name><description>Aquí nació el French Dip en 1908.</description><Point><coordinates>-118.236941,34.0596738,0</coordinates></Point></Placemark>
+    <Placemark><name>Pink's Hot Dogs</name><description>El carrito de hot dogs de 1939, ícono de La Brea Avenue.</description><Point><coordinates>-118.3442833,34.0839083,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>
