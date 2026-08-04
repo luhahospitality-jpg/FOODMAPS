@@ -1,0 +1,70 @@
+{
+  "slug": "roma",
+  "name": "Roma",
+  "country": "Italia",
+  "tagline": "Cuatro maneras de comer la carbonara perfecta, de una trattoria diminuta de Trastevere a una azotea con tres estrellas Michelin.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "La Pergola",
+      "place_id": null,
+      "lat": 41.9189201,
+      "lng": 12.5213489,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "La cocina de Heinz Beck en la azotea del Waldorf Astoria Cavalieri, con vistas a toda Roma. Tres estrellas Michelin desde hace dos décadas.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9189201,12.5213489",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Armando al Pantheon",
+      "place_id": null,
+      "lat": 41.8990605,
+      "lng": 12.476199,
+      "category": "fine_dining",
+      "cuisine": "romano",
+      "description": "Referencia histórica de la cocina romana junto al Panteón, con una de las mejores carbonaras de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8990605,12.476199",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Pennestri",
+      "place_id": null,
+      "lat": 41.8733548,
+      "lng": 12.4798767,
+      "category": "fine_dining",
+      "cuisine": "romano",
+      "description": "Trattoria de barrio en Ostiense con carbonara, cacio e pepe, amatriciana y gricia. Bib Gourmand.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8733548,12.4798767",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    },
+    {
+      "name": "Da Enzo al 29",
+      "place_id": null,
+      "lat": 41.8880864,
+      "lng": 12.477807,
+      "category": "fine_dining",
+      "cuisine": "romano",
+      "description": "Diminuta trattoria en Trastevere, siempre con fila, famosa por su carbonara de equilibrio perfecto.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8880864,12.477807",
+      "distinction": null
+    }
+  ]
+}

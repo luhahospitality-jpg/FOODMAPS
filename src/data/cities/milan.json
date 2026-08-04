@@ -1,0 +1,55 @@
+{
+  "slug": "milan",
+  "name": "Milán",
+  "country": "Italia",
+  "tagline": "Panzerotto de 1949 junto al Duomo, y dos estrellas Michelin que llevan medio siglo definiendo la alta cocina milanesa.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Cracco in Galleria",
+      "place_id": null,
+      "lat": 45.4653435,
+      "lng": 9.1898744,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "La mesa de Carlo Cracco dentro de la Galleria Vittorio Emanuele II, en el corazón de Milán. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4653435,9.1898744",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Aimo e Nadia",
+      "place_id": null,
+      "lat": 45.4673709,
+      "lng": 9.190242,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Institución de la alta cocina milanesa desde hace más de medio siglo. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4673709,9.190242",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Luini",
+      "place_id": null,
+      "lat": 45.465785,
+      "lng": 9.1915481,
+      "category": "fast_food",
+      "cuisine": "italiano / panzerotti",
+      "description": "La panadería que introdujo el panzerotto pugliese en Milán, desde 1949, a pasos del Duomo.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481",
+      "distinction": null
+    }
+  ]
+}

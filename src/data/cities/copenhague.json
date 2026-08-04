@@ -1,0 +1,40 @@
+{
+  "slug": "copenhague",
+  "name": "Copenhague",
+  "country": "Dinamarca",
+  "tagline": "Tres estrellas Michelin de cocina nórdica, y el smørrebrød que se sirve igual desde 1877.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Geranium",
+      "place_id": null,
+      "lat": 55.7037103,
+      "lng": 12.5720401,
+      "category": "fine_dining",
+      "cuisine": "nórdico",
+      "description": "Cocina nórdica de vanguardia nombrada mejor restaurante del mundo en 2022 y 2023. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.7037103,12.5720401",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Restaurant Schønnemann",
+      "place_id": null,
+      "lat": 55.682815,
+      "lng": 12.576023,
+      "category": "fine_dining",
+      "cuisine": "danés / smørrebrød",
+      "description": "Institución del smørrebrød desde 1877, con más de 100 variantes escritas a mano en la carta.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.682815,12.576023",
+      "distinction": null
+    }
+  ]
+}
