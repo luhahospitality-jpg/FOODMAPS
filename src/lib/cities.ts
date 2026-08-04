@@ -42,6 +42,9 @@ import singapur from "@/data/cities/singapur.json";
 import dubai from "@/data/cities/dubai.json";
 import seul from "@/data/cities/seul.json";
 import marrakech from "@/data/cities/marrakech.json";
+import hongKong from "@/data/cities/hong-kong.json";
+import sidney from "@/data/cities/sidney.json";
+import toronto from "@/data/cities/toronto.json";
 
 const cityData: Record<string, CityData> = {
   "nueva-york": newYork as CityData,
@@ -87,6 +90,9 @@ const cityData: Record<string, CityData> = {
   dubai: dubai as CityData,
   seul: seul as CityData,
   marrakech: marrakech as CityData,
+  "hong-kong": hongKong as CityData,
+  sidney: sidney as CityData,
+  toronto: toronto as CityData,
 };
 
 export function getCityData(slug: string): CityData | null {

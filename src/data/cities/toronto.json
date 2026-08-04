@@ -1,0 +1,55 @@
+{
+  "slug": "toronto",
+  "name": "Toronto",
+  "country": "Canadá",
+  "tagline": "El sándwich que Bourdain repitió en el mejor mercado del mundo, y el híbrido de croissant y bagel que TikTok volvió viral.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Sushi Masaki Saito",
+      "place_id": null,
+      "lat": 43.6722379,
+      "lng": -79.395917,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "description": "Omakase de once asientos del chef Masaki Saito, antes con dos estrellas Michelin. Hoy conserva una.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6722379,-79.395917",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Carousel Bakery",
+      "place_id": null,
+      "lat": 43.6501827,
+      "lng": -79.3721888,
+      "category": "fast_food",
+      "cuisine": "canadiense",
+      "description": "El sándwich de peameal bacon más famoso de Canadá, en el St. Lawrence Market — elegido mejor mercado del mundo por National Geographic. Bourdain y Bobby Flay repitieron.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6501827,-79.3721888",
+      "distinction": null
+    },
+    {
+      "name": "St. Urbain Bagel",
+      "place_id": null,
+      "lat": 43.700524,
+      "lng": -79.4269562,
+      "category": "bakery",
+      "cuisine": "canadiense",
+      "description": "Creadores del \"Craigle\", mitad croissant mitad bagel, viral en TikTok.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.700524,-79.4269562",
+      "distinction": null
+    }
+  ]
+}

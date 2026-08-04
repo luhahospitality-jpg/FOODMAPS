@@ -50,7 +50,7 @@ export const citiesIndex: CityIndexEntry[] = [
   { slug: "dubai", name: "Dubái", country: "Emiratos Árabes Unidos", plannedPlaces: 3, available: true },
   { slug: "seul", name: "Seúl", country: "Corea del Sur", plannedPlaces: 2, available: true },
   { slug: "marrakech", name: "Marrakech", country: "Marruecos", plannedPlaces: 3, available: true },
-  { slug: "hong-kong", name: "Hong Kong", country: "China / Hong Kong", plannedPlaces: 30, available: false },
-  { slug: "sidney", name: "Sídney", country: "Australia", plannedPlaces: 30, available: false },
-  { slug: "toronto", name: "Toronto", country: "Canadá", plannedPlaces: 30, available: false },
+  { slug: "hong-kong", name: "Hong Kong", country: "China / Hong Kong", plannedPlaces: 3, available: true },
+  { slug: "sidney", name: "Sídney", country: "Australia", plannedPlaces: 3, available: true },
+  { slug: "toronto", name: "Toronto", country: "Canadá", plannedPlaces: 3, available: true },
 ];

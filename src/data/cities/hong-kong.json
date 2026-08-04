@@ -1,0 +1,55 @@
+{
+  "slug": "hong-kong",
+  "name": "Hong Kong",
+  "country": "China / Hong Kong",
+  "tagline": "El bollo de cerdo con estrella Michelin más barato del mundo, y el primer restaurante chino en llegar a tres.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Lung King Heen",
+      "place_id": null,
+      "lat": 22.2864747,
+      "lng": 114.1569096,
+      "category": "fine_dining",
+      "cuisine": "cantonés",
+      "description": "El primer restaurante chino del mundo en lograr tres estrellas Michelin, especialista en dim sum de lujo.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2864747,114.1569096",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Tim Ho Wan",
+      "place_id": null,
+      "lat": 22.3171352,
+      "lng": 114.1628553,
+      "category": "fast_food",
+      "cuisine": "cantonés / dim sum",
+      "description": "El restaurante con estrella Michelin más barato del mundo. Su bollo de cerdo asado horneado es leyenda.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.3171352,114.1628553",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Luk Yu Tea House",
+      "place_id": null,
+      "lat": 22.2822543,
+      "lng": 114.1555778,
+      "category": "dessert",
+      "cuisine": "cantonés",
+      "description": "Casa de té clásica desde los años 30, con decoración art déco original.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2822543,114.1555778",
+      "distinction": null
+    }
+  ]
+}

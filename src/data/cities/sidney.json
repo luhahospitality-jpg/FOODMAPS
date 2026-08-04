@@ -1,0 +1,55 @@
+{
+  "slug": "sidney",
+  "name": "Sídney",
+  "country": "Australia",
+  "tagline": "Cocina de autor dentro de las velas de la Ópera, y empanadas de carne firmadas por famosos desde 1948.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Bennelong",
+      "place_id": null,
+      "lat": -33.857198,
+      "lng": 151.2151234,
+      "category": "fine_dining",
+      "cuisine": "australiano",
+      "description": "Cocina australiana moderna del chef Peter Gilmore, dentro de las velas del Teatro de la Ópera de Sídney.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.857198,151.2151234",
+      "distinction": null
+    },
+    {
+      "name": "Quay",
+      "place_id": null,
+      "lat": -33.8613482,
+      "lng": 151.2114901,
+      "category": "fine_dining",
+      "cuisine": "australiano",
+      "description": "Vistas al puerto de Sídney y nueve apariciones en la lista The World's 50 Best Restaurants.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.8613482,151.2114901",
+      "distinction": null
+    },
+    {
+      "name": "Upper Crust Pies",
+      "place_id": null,
+      "lat": -33.7382194,
+      "lng": 151.2996618,
+      "category": "fast_food",
+      "cuisine": "australiano",
+      "description": "Empanadas de carne desde 1948, con una pared de autógrafos de surfistas y famosos.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.7382194,151.2996618",
+      "distinction": null
+    }
+  ]
+}
