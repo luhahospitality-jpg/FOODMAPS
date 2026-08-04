@@ -56,14 +56,14 @@ export default async function CityPage({
         </section>
 
         <Marquee
-          text={`Top 5 de ${city.name} · ${city.totalPlaces} lugares en el mapa completo · `}
+          text={`Top ${top5.length} de ${city.name} · ${city.totalPlaces} lugares investigados · `}
           tone="mustard"
         />
 
         <section className="px-5 py-14 sm:px-8 sm:py-20">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-display text-3xl font-black uppercase sm:text-4xl">
-              Top 5
+              Top {top5.length}
             </h2>
             <p className="mt-2 max-w-lg font-body text-sm text-ink/70">
               Elegidos a mano por fama, respaldo mediático y cool factor —
@@ -78,18 +78,18 @@ export default async function CityPage({
           </div>
         </section>
 
-        <section className="border-t-2 border-ink bg-ink px-5 py-16 sm:px-8">
-          <div className="mx-auto flex max-w-6xl flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <h3 className="font-display text-3xl font-black text-paper uppercase sm:text-4xl">
-                ¿Los {city.totalPlaces} lugares completos?
-              </h3>
-              <p className="mt-2 max-w-md font-body text-sm text-paper/70">
-                Viven en un mapa curado de Google My Maps — pines, categorías
-                y descripciones, listo para guardar.
-              </p>
-            </div>
-            {city.mymaps_url && (
+        {city.mymaps_url && (
+          <section className="border-t-2 border-ink bg-ink px-5 py-16 sm:px-8">
+            <div className="mx-auto flex max-w-6xl flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 className="font-display text-3xl font-black text-paper uppercase sm:text-4xl">
+                  ¿Los {city.totalPlaces} lugares completos?
+                </h3>
+                <p className="mt-2 max-w-md font-body text-sm text-paper/70">
+                  Viven en un mapa curado de Google My Maps — pines,
+                  categorías y descripciones, listo para guardar.
+                </p>
+              </div>
               <a
                 href={city.mymaps_url}
                 target="_blank"
@@ -99,9 +99,9 @@ export default async function CityPage({
                 Ver mapa completo
                 <span aria-hidden="true">↗</span>
               </a>
-            )}
-          </div>
-        </section>
+            </div>
+          </section>
+        )}
       </main>
 
       <Footer />

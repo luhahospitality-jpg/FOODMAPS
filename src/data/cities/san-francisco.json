@@ -1,0 +1,55 @@
+{
+  "slug": "san-francisco",
+  "name": "San Francisco",
+  "country": "Estados Unidos",
+  "tagline": "La barra de ostras que Anthony Bourdain llamó un punto de referencia, y tres estrellas Michelin de poesía culinaria.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Swan Oyster Depot",
+      "place_id": null,
+      "lat": 37.7909693,
+      "lng": -122.4209185,
+      "category": "seafood",
+      "cuisine": "americano",
+      "description": "Barra de ostras de 18 taburetes desde 1912, descrita por Anthony Bourdain como un punto de referencia en sus viajes por el mundo.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7909693,-122.4209185",
+      "distinction": null
+    },
+    {
+      "name": "Atelier Crenn",
+      "place_id": null,
+      "lat": 37.8029843,
+      "lng": -122.4374715,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Poesía culinaria de la chef Dominique Crenn en la Marina. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.8029843,-122.4374715",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Tadich Grill",
+      "place_id": null,
+      "lat": 37.7934198,
+      "lng": -122.399472,
+      "category": "seafood",
+      "cuisine": "americano",
+      "description": "Cioppino y sand dabs con pan de masa madre, uno de los restaurantes continuos más antiguos de California.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7934198,-122.399472",
+      "distinction": null
+    }
+  ]
+}

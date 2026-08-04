@@ -1,0 +1,55 @@
+{
+  "slug": "miami",
+  "name": "Miami",
+  "country": "Estados Unidos",
+  "tagline": "Cangrejo frío desde 1913, y el café con leche que nunca deja de servir Versailles.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Joe's Stone Crab",
+      "place_id": null,
+      "lat": 25.7684081,
+      "lng": -80.1352398,
+      "category": "seafood",
+      "cuisine": "americano",
+      "description": "Las pinzas de cangrejo frías con salsa de mostaza que definen Miami desde 1913. Abierto solo de noviembre a mayo.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7684081,-80.1352398",
+      "distinction": null
+    },
+    {
+      "name": "Versailles",
+      "place_id": null,
+      "lat": 25.7649886,
+      "lng": -80.2527677,
+      "category": "bar",
+      "cuisine": "cubano",
+      "description": "El corazón de la cocina cubana en Miami, con salón de baile y café con leche a toda hora.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7649886,-80.2527677",
+      "distinction": null
+    },
+    {
+      "name": "Le Jardinier",
+      "place_id": null,
+      "lat": 25.8147141,
+      "lng": -80.1920264,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Cocina francesa vegetal en el Design District, con una estrella Michelin en la guía debut de Florida.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8147141,-80.1920264",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    }
+  ]
+}

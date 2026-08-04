@@ -1,0 +1,55 @@
+{
+  "slug": "chicago",
+  "name": "Chicago",
+  "country": "Estados Unidos",
+  "tagline": "El edificio donde nació la pizza deep dish en 1943, y la gastronomía teatral que redefinió la alta cocina americana.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Alinea",
+      "place_id": null,
+      "lat": 41.9134372,
+      "lng": -87.648199,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "description": "Gastronomía experimental y teatral del chef Grant Achatz, referencia mundial durante más de una década. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9134372,-87.648199",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Pizzeria Uno",
+      "place_id": null,
+      "lat": 41.8922917,
+      "lng": -87.6269072,
+      "category": "pizza",
+      "cuisine": "americano",
+      "description": "El edificio original de Ohio Street donde nació la pizza deep dish en 1943.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8922917,-87.6269072",
+      "distinction": null
+    },
+    {
+      "name": "Lou Malnati's",
+      "place_id": null,
+      "lat": 41.9607177,
+      "lng": -87.6835958,
+      "category": "pizza",
+      "cuisine": "americano",
+      "description": "La pizza deep dish que los chicagüenses defienden como la mejor, pedida hasta para cumpleaños.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9607177,-87.6835958",
+      "distinction": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "nueva-orleans",
+  "name": "Nueva Orleans",
+  "country": "Estados Unidos",
+  "tagline": "Martinis de 25 centavos en un clásico del siglo XIX, y los beignets que hay que comer aunque haya fila.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Commander's Palace",
+      "place_id": null,
+      "lat": 29.928834,
+      "lng": -90.0842132,
+      "category": "fine_dining",
+      "cuisine": "criollo / cajún",
+      "description": "Cocina criolla y cajún desde el siglo XIX, ganadora de siete premios James Beard. El almuerzo con martinis de 25 centavos es un ritual local.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.928834,-90.0842132",
+      "distinction": null
+    },
+    {
+      "name": "Café du Monde",
+      "place_id": null,
+      "lat": 29.957561,
+      "lng": -90.0618544,
+      "category": "dessert",
+      "cuisine": "francés / criollo",
+      "description": "Beignets y café con achicoria en el French Market desde el siglo XIX, con fila constante y sin pretensiones.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.957561,-90.0618544",
+      "distinction": null
+    }
+  ]
+}
