@@ -1,0 +1,40 @@
+{
+  "slug": "londres",
+  "name": "Londres",
+  "country": "Reino Unido",
+  "tagline": "El restaurante más antiguo de Londres desde 1798, y el fish and chips que no cambió desde 1914.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Rules",
+      "place_id": null,
+      "lat": 51.5108285,
+      "lng": -0.1231906,
+      "category": "fine_dining",
+      "cuisine": "británico",
+      "description": "El restaurante más antiguo de Londres, desde 1798. Dickens y Charlie Chaplin cenaron entre sus paredes.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5108285,-0.1231906",
+      "distinction": null
+    },
+    {
+      "name": "The Golden Hind",
+      "place_id": null,
+      "lat": 51.5179888,
+      "lng": -0.1509597,
+      "category": "fast_food",
+      "cuisine": "británico / fish and chips",
+      "description": "Fish and chips tradicionales en Marylebone desde 1914.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5179888,-0.1509597",
+      "distinction": null
+    }
+  ]
+}

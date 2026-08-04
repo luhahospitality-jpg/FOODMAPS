@@ -1,0 +1,40 @@
+{
+  "slug": "lisboa",
+  "name": "Lisboa",
+  "country": "Portugal",
+  "tagline": "La receta secreta del pastel de nata desde 1837, y 26 cocinas bajo el techo de un mercado de 1892.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Pastéis de Belém",
+      "place_id": null,
+      "lat": 38.6974795,
+      "lng": -9.2033202,
+      "category": "dessert",
+      "cuisine": "portugués",
+      "description": "La fábrica original del pastel de nata, con receta secreta desde 1837.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.6974795,-9.2033202",
+      "distinction": null
+    },
+    {
+      "name": "Time Out Market Lisboa",
+      "place_id": null,
+      "lat": 38.7070934,
+      "lng": -9.1458973,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "El mercado de abastos de 1892 reconvertido en food hall con 26 chefs y restaurantes bajo un mismo techo.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7070934,-9.1458973",
+      "distinction": null
+    }
+  ]
+}
