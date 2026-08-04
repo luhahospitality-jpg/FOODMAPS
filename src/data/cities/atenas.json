@@ -1,0 +1,40 @@
+{
+  "slug": "atenas",
+  "name": "Atenas",
+  "country": "Grecia",
+  "tagline": "Souvlaki de siempre en Monastiraki, y las dos estrellas Michelin más altas de Grecia.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Spondi",
+      "place_id": null,
+      "lat": 37.9650285,
+      "lng": 23.7430396,
+      "category": "fine_dining",
+      "cuisine": "griego / francés",
+      "description": "Fusión franco-griega refinada en un patio sereno. Dos estrellas Michelin, las más altas de Grecia.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9650285,23.7430396",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "O Thanasis",
+      "place_id": null,
+      "lat": 37.9761723,
+      "lng": 23.7270354,
+      "category": "street_food",
+      "cuisine": "griego / souvlaki",
+      "description": "Institución del souvlaki en la Plaza Monastiraki, con mesas afuera y precios de toda la vida.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9761723,23.7270354",
+      "distinction": null
+    }
+  ]
+}

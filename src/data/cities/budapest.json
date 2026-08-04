@@ -1,0 +1,55 @@
+{
+  "slug": "budapest",
+  "name": "Budapest",
+  "country": "Hungría",
+  "tagline": "El café más bello del mundo, y el ruin bar que inventó un género entero de vida nocturna.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Costes",
+      "place_id": null,
+      "lat": 47.4888045,
+      "lng": 19.0622851,
+      "category": "fine_dining",
+      "cuisine": "húngaro / francés",
+      "description": "El primer restaurante de Hungría en ganar una estrella Michelin, cocina francesa contemporánea en el distrito IX.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4888045,19.0622851",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Szimpla Kert",
+      "place_id": null,
+      "lat": 47.4969297,
+      "lng": 19.0633135,
+      "category": "bar",
+      "cuisine": "húngaro",
+      "description": "El ruin bar más antiguo de Budapest, un bar-jardín dentro de un edificio en ruinas en el barrio judío.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4969297,19.0633135",
+      "distinction": null
+    },
+    {
+      "name": "New York Café",
+      "place_id": null,
+      "lat": 47.4986782,
+      "lng": 19.0704636,
+      "category": "dessert",
+      "cuisine": "húngaro",
+      "description": "Considerado el café más bello del mundo, con techos dorados y arañas de cristal desde 1894.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4986782,19.0704636",
+      "distinction": null
+    }
+  ]
+}

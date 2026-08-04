@@ -1,0 +1,55 @@
+{
+  "slug": "berlin",
+  "name": "Berlín",
+  "country": "Alemania",
+  "tagline": "Dos horas de fila por un döner, y tres estrellas Michelin en la carta de vinos más premiada de Alemania.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Rutz",
+      "place_id": null,
+      "lat": 52.5282228,
+      "lng": 13.3862164,
+      "category": "fine_dining",
+      "cuisine": "alemán",
+      "description": "Cocina alemana de vanguardia con la carta de vinos más premiada del país. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5282228,13.3862164",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Mustafa's Gemüse Kebap",
+      "place_id": null,
+      "lat": 52.4934492,
+      "lng": 13.3885243,
+      "category": "street_food",
+      "cuisine": "turco / alemán",
+      "description": "El kebab de verduras con fila de dos horas en Kreuzberg, el döner más famoso de Berlín.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4934492,13.3885243",
+      "distinction": null
+    },
+    {
+      "name": "Curry 36",
+      "place_id": null,
+      "lat": 52.4934924,
+      "lng": 13.3876866,
+      "category": "fast_food",
+      "cuisine": "alemán / currywurst",
+      "description": "La currywurst de referencia en Berlín, con merchandising propio y ketchup de marca.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4934924,13.3876866",
+      "distinction": null
+    }
+  ]
+}
