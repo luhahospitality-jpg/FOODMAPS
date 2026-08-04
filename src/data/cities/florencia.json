@@ -1,0 +1,55 @@
+{
+  "slug": "florencia",
+  "name": "Florencia",
+  "country": "Italia",
+  "tagline": "La bistecca alla fiorentina de 150 años, y las mesas compartidas donde se almuerza por 15 euros desde los años 50.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Trattoria Sostanza",
+      "place_id": null,
+      "lat": 43.7726743,
+      "lng": 11.2471498,
+      "category": "steakhouse",
+      "cuisine": "toscano",
+      "description": "El templo de la bistecca alla fiorentina desde hace más de 150 años, en San Frediano.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7726743,11.2471498",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Mario",
+      "place_id": null,
+      "lat": 43.7765666,
+      "lng": 11.2545454,
+      "category": "fast_food",
+      "cuisine": "toscano",
+      "description": "Mesas compartidas y menú fijo desde los años 50, la trattoria de almuerzo más famosa de Florencia.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7765666,11.2545454",
+      "distinction": null
+    },
+    {
+      "name": "Buca Lapi",
+      "place_id": null,
+      "lat": 43.7728638,
+      "lng": 11.251282,
+      "category": "fine_dining",
+      "cuisine": "toscano",
+      "description": "Bodega centenaria bajo el Palazzo Antinori, cuna de la bistecca toscana. Bib Gourmand.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7728638,11.251282",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    }
+  ]
+}

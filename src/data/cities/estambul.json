@@ -1,0 +1,55 @@
+{
+  "slug": "estambul",
+  "name": "Estambul",
+  "country": "Turquía",
+  "tagline": "Cocina otomana con estrella Michelin dentro del Bazar de las Especias, desde 1901.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Pandeli",
+      "place_id": null,
+      "lat": 41.0171446,
+      "lng": 28.9711789,
+      "category": "fine_dining",
+      "cuisine": "turco / otomano",
+      "description": "Cocina otomana dentro del Gran Bazar de las Especias desde 1901. Estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0171446,28.9711789",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Tatbak",
+      "place_id": null,
+      "lat": 40.9463997,
+      "lng": 29.1100738,
+      "category": "fast_food",
+      "cuisine": "turco / kebab",
+      "description": "El kebab de referencia en Estambul desde 1960, con lahmacun picante de Gaziantep.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9463997,29.1100738",
+      "distinction": null
+    },
+    {
+      "name": "Tarihi Karaköy Balıkçısı",
+      "place_id": null,
+      "lat": 41.0228645,
+      "lng": 28.9740393,
+      "category": "seafood",
+      "cuisine": "turco / mariscos",
+      "description": "Pescadería histórica en Karaköy, sirviendo desde 1923 a la entrada del Griffin Han.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393",
+      "distinction": null
+    }
+  ]
+}
