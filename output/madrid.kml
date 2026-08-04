@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Madrid · Restaurantes Top &amp; Trendy (20 sitios)</name>
+  <description>Clásicos centenarios, estrellas Michelin y picos virales de TikTok, verificados uno por uno.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Casa Botín</name><description>El restaurante más antiguo del mundo según el Guinness, abierto desde 1725. El cochinillo asado en horno de leña es de otro planeta.</description><Point><coordinates>-3.707981,40.4141745,0</coordinates></Point></Placemark>
+    <Placemark><name>DiverXO</name><description>La cocina más disruptiva de España, del chef Dabiz Muñoz. Cuarto mejor restaurante del mundo según The World's 50 Best 2025. 3 estrellas Michelin. Fuente: https://www.timeout.es/madrid/es/noticias/estos-son-los-10-mejores-restaurantes-del-mundo-este-2025-y-diverxo-esta-en-el-top-5-062025</description><Point><coordinates>-3.6859491,40.4577954,0</coordinates></Point></Placemark>
+    <Placemark><name>Kuoco 360</name><description>Fusión creativa en Chueca que arrasa en redes — recomendado por la gastroinfluencer Nieves Felipo. Fuente: https://www.tiktok.com/@nievesfelipo/video/7469498147677457686</description><Point><coordinates>-3.695529,40.4227829,0</coordinates></Point></Placemark>
+    <Placemark><name>Lhardy</name><description>Salón decimonónico desde 1839, cuna del cocido madrileño a la carta.</description><Point><coordinates>-3.7013775,40.4166082,0</coordinates></Point></Placemark>
+    <Placemark><name>Coque</name><description>Experiencia gastronómica en tres actos de los hermanos Sandoval. 2 estrellas Michelin, 3 Soles Repsol.</description><Point><coordinates>-3.6905135,40.4306865,0</coordinates></Point></Placemark>
+    <Placemark><name>DSTAgE</name><description>Cocina de autor de Diego Guerrero. 2 estrellas Michelin.</description><Point><coordinates>-3.6963316,40.4245942,0</coordinates></Point></Placemark>
+    <Placemark><name>Desde 1911</name><description>Homenaje a la tortilla de patatas y a la cocina de mercado madrileña. 1 estrella Michelin.</description><Point><coordinates>-3.7099045,40.4484519,0</coordinates></Point></Placemark>
+    <Placemark><name>Paco Roncero</name><description>Alta tecnología culinaria en la azotea del Casino de Madrid. 2 estrellas Michelin, 3 Soles Repsol.</description><Point><coordinates>-3.7004159,40.4180586,0</coordinates></Point></Placemark>
+    <Placemark><name>Smoked Room</name><description>Todo pasa por brasa y humo, del chef Dabiz Muñoz. 2 estrellas Michelin.</description><Point><coordinates>-3.6917467,40.4388252,0</coordinates></Point></Placemark>
+    <Placemark><name>La Tasquería</name><description>El casquerío elevado a alta cocina por Javi Estévez. 1 estrella Michelin, 2 Soles Repsol.</description><Point><coordinates>-3.6735107,40.4222271,0</coordinates></Point></Placemark>
+    <Placemark><name>Ramón Freixa Atelier</name><description>Menú para apenas diez comensales en el barrio de Salamanca. 2 estrellas Michelin, 3 Soles Repsol.</description><Point><coordinates>-3.6659267,40.4227891,0</coordinates></Point></Placemark>
+    <Placemark><name>Gofio</name><description>Cocina canaria de altura, del chef Safe Cruz. 1 estrella Michelin.</description><Point><coordinates>-3.6774025,40.4228654,0</coordinates></Point></Placemark>
+    <Placemark><name>Lakasa</name><description>Cocina de mercado honesta y de producto. 2 Soles Repsol.</description><Point><coordinates>-3.7006642,40.4409234,0</coordinates></Point></Placemark>
+    <Placemark><name>La Bola</name><description>Cocido madrileño en puchero de barro sobre carbón desde 1870.</description><Point><coordinates>-3.7105112,40.4199972,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Steakhouse</name>
+    <Placemark><name>Swiss Butter</name><description>El entrecot con salsa secreta que se volvió viral en TikTok. Fuente: https://www.tiktok.com/@agusscondoleo/video/7493124148609207558</description><Point><coordinates>-3.6933659,40.4324281,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Bar</name>
+    <Placemark><name>La Casa del Abuelo</name><description>Las gambas al ajillo y la caña corta más icónicas de Madrid, desde 1906.</description><Point><coordinates>-3.7017617,40.4157405,0</coordinates></Point></Placemark>
+    <Placemark><name>Angelita</name><description>Bar de vinos de culto en Chueca. Fuente: https://www.timeout.es/madrid/es/restaurantes/los-100-mejores-restaurantes-de-madrid-top-100</description><Point><coordinates>-3.7003729,40.4203519,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>Mercado de San Miguel</name><description>El mercado gourmet más fotografiado de Madrid.</description><Point><coordinates>-3.7090151,40.4153741,0</coordinates></Point></Placemark>
+    <Placemark><name>Mercado de San Antón</name><description>Mercado de Chueca con terraza en la azotea.</description><Point><coordinates>-3.6975827,40.4219408,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Dessert</name>
+    <Placemark><name>Chocolatería San Ginés</name><description>Churros con chocolate desde 1894, abierta 24 horas.</description><Point><coordinates>-3.706803,40.4167707,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>

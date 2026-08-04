@@ -17,7 +17,7 @@ export const citiesIndex: CityIndexEntry[] = [
   { slug: "bogota", name: "Bogotá", country: "Colombia", plannedPlaces: 30, available: false },
   { slug: "ciudad-de-mexico", name: "Ciudad de México", country: "México", plannedPlaces: 50, available: false },
   { slug: "oaxaca", name: "Oaxaca", country: "México", plannedPlaces: 30, available: false },
-  { slug: "madrid", name: "Madrid", country: "España", plannedPlaces: 50, available: false },
+  { slug: "madrid", name: "Madrid", country: "España", plannedPlaces: 20, available: true },
   { slug: "barcelona", name: "Barcelona", country: "España", plannedPlaces: 50, available: false },
   { slug: "san-sebastian", name: "San Sebastián", country: "España", plannedPlaces: 40, available: false },
   { slug: "bilbao", name: "Bilbao", country: "España", plannedPlaces: 30, available: false },
