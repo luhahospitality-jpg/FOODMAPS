@@ -1,0 +1,40 @@
+{
+  "slug": "ciudad-del-cabo",
+  "name": "Ciudad del Cabo",
+  "country": "Sudáfrica",
+  "tagline": "El mejor restaurante de África en un treehouse sobre viñedos, y el gatsby que alimenta a cuatro personas.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "La Colombe",
+      "place_id": null,
+      "lat": -34.0151161,
+      "lng": 18.4032911,
+      "category": "fine_dining",
+      "cuisine": "francés / asiático",
+      "description": "Fusión franco-asiática en un treehouse sobre la finca Silvermist. Mejor restaurante de África, entre los 50 mejores del mundo.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.0151161,18.4032911",
+      "distinction": null
+    },
+    {
+      "name": "Mariam's Kitchen",
+      "place_id": null,
+      "lat": -33.9185578,
+      "lng": 18.4261271,
+      "category": "fast_food",
+      "cuisine": "sudafricano / gatsby",
+      "description": "El gatsby de bistec con masala más famoso de Ciudad del Cabo, un clásico urbano desde 1985.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9185578,18.4261271",
+      "distinction": null
+    }
+  ]
+}

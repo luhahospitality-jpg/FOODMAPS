@@ -1,0 +1,40 @@
+{
+  "slug": "shanghai",
+  "name": "Shanghái",
+  "country": "China",
+  "tagline": "Los xiaolongbao del Jardín Yu contra el local sin cartel que compite con cangrejo.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Nanxiang Steamed Bun Restaurant",
+      "place_id": null,
+      "lat": 31.2289274,
+      "lng": 121.4879752,
+      "category": "street_food",
+      "cuisine": "chino / xiaolongbao",
+      "description": "El local histórico de xiaolongbao dentro del Jardín Yu, el más famoso de Shanghái aunque hoy conviva con el turismo.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2289274,121.4879752",
+      "distinction": null
+    },
+    {
+      "name": "Jia Jia Tang Bao",
+      "place_id": null,
+      "lat": 31.2370072,
+      "lng": 121.4660479,
+      "category": "street_food",
+      "cuisine": "chino / xiaolongbao",
+      "description": "Local diminuto con fila permanente; su xiaolongbao de cangrejo es considerado superior al de Nanxiang por muchos locales.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2370072,121.4660479",
+      "distinction": null
+    }
+  ]
+}

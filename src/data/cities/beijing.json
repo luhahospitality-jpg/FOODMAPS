@@ -1,0 +1,40 @@
+{
+  "slug": "beijing",
+  "name": "Beijing",
+  "country": "China",
+  "tagline": "El pato pekinés de 1864, reinventado con estrella Michelin en la mesa de al lado.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Quanjude",
+      "place_id": null,
+      "lat": 39.9926544,
+      "lng": 116.3243782,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés",
+      "description": "El pato laqueado más famoso de China, asado en horno de leña de jujubo desde 1864.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9926544,116.3243782",
+      "distinction": null
+    },
+    {
+      "name": "Dadong",
+      "place_id": null,
+      "lat": 39.9362307,
+      "lng": 116.4408423,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés",
+      "description": "Reinvención moderna del pato pekinés, con piel crujiente y presentación de alta cocina. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9362307,116.4408423",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    }
+  ]
+}
