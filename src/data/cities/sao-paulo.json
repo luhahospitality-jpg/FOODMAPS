@@ -1,0 +1,70 @@
+{
+  "slug": "sao-paulo",
+  "name": "São Paulo",
+  "country": "Brasil",
+  "tagline": "Da cozinha amazônica com duas estrelas Michelin ao sanduíche de mortadela que virou notícia no New York Times.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "D.O.M",
+      "place_id": null,
+      "lat": -23.5662205,
+      "lng": -46.6674763,
+      "category": "fine_dining",
+      "cuisine": "brasileiro contemporâneo",
+      "description": "Cozinha brasileira contemporânea do chef Alex Atala, com ingredientes amazônicos. Duas estrelas Michelin, 9º melhor restaurante do mundo pelo World's 50 Best.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5662205,-46.6674763",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Fasano",
+      "place_id": null,
+      "lat": -23.56466,
+      "lng": -46.6696073,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Referência de tradição italiana em São Paulo, considerado por muitos o restaurante número 1 da cidade.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.56466,-46.6696073",
+      "distinction": null
+    },
+    {
+      "name": "Maní",
+      "place_id": null,
+      "lat": -23.5663802,
+      "lng": -46.6797289,
+      "category": "fine_dining",
+      "cuisine": "brasileiro",
+      "description": "Cozinha autoral da chef Helena Rizzo, uma das mais premiadas do Brasil. Uma estrela Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5663802,-46.6797289",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Hocca Bar",
+      "place_id": null,
+      "lat": -23.5417332,
+      "lng": -46.6295244,
+      "category": "street_food",
+      "cuisine": "brasileiro",
+      "description": "O lendário sanduíche de mortadela do Mercadão, criado em 1952 e retratado até pelo New York Times.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244",
+      "distinction": null
+    }
+  ]
+}

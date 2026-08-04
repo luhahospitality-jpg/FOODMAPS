@@ -1,0 +1,55 @@
+{
+  "slug": "bogota",
+  "name": "Bogotá",
+  "country": "Colombia",
+  "tagline": "Ajiaco de 1816 y una rumba con parrilla que se volvió el restaurante más famoso de Colombia.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "La Puerta Falsa",
+      "place_id": null,
+      "lat": 4.6350475,
+      "lng": -74.1219049,
+      "category": "brunch",
+      "cuisine": "colombiano",
+      "description": "El restaurante más antiguo de Colombia, sirviendo ajiaco y tamales desde 1816 junto a la Plaza de Bolívar.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6350475,-74.1219049",
+      "distinction": null
+    },
+    {
+      "name": "Andrés Carne de Res",
+      "place_id": null,
+      "lat": 4.8527663,
+      "lng": -74.0655205,
+      "category": "steakhouse",
+      "cuisine": "colombiano",
+      "description": "Una experiencia entre restaurante y rumba en Chía, el lugar más famoso de Colombia según viajeros de todo el mundo.",
+      "source_url": "https://www.tiktok.com/@christopherbasteris/video/7328488188417248518",
+      "source_type": "viral_social",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.8527663,-74.0655205",
+      "distinction": null
+    },
+    {
+      "name": "Leo Cocina y Cava",
+      "place_id": null,
+      "lat": 4.6149139,
+      "lng": -74.0690678,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "description": "Alta cocina basada en la biodiversidad colombiana, de la chef Leonor Espinosa.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6149139,-74.0690678",
+      "distinction": null
+    }
+  ]
+}

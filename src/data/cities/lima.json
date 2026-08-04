@@ -1,0 +1,70 @@
+{
+  "slug": "lima",
+  "name": "Lima",
+  "country": "Perú",
+  "tagline": "Los dos mejores restaurantes del mundo están acá, y el ceviche que empezó todo sigue sin aceptar reservas.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Maido",
+      "place_id": null,
+      "lat": -12.1253878,
+      "lng": -77.0306079,
+      "category": "fine_dining",
+      "cuisine": "nikkei / peruano-japonés",
+      "description": "Fusión nikkei del chef Mitsuharu \"Micha\" Tsumura, nombrado mejor restaurante del mundo en 2025 por The World's 50 Best.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Peru/Lima/Maido.html",
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079",
+      "distinction": null
+    },
+    {
+      "name": "Central",
+      "place_id": null,
+      "lat": -12.1525709,
+      "lng": -77.0225397,
+      "category": "fine_dining",
+      "cuisine": "peruano",
+      "description": "Un menú por altitudes que recorre la costa, los Andes y la Amazonía, del chef Virgilio Martínez. Segundo mejor restaurante del mundo.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1525709,-77.0225397",
+      "distinction": null
+    },
+    {
+      "name": "La Mar Cebichería",
+      "place_id": null,
+      "lat": -12.1096643,
+      "lng": -77.0492225,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "description": "La cevichería que Gastón Acurio abrió en 2005 y que llevó el ceviche peruano al mundo. No acepta reservas y siempre hay fila.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1096643,-77.0492225",
+      "distinction": null
+    },
+    {
+      "name": "Astrid & Gastón",
+      "place_id": null,
+      "lat": -12.0964374,
+      "lng": -77.0350797,
+      "category": "fine_dining",
+      "cuisine": "peruano",
+      "description": "El restaurante que marcó el inicio del boom gastronómico peruano, de Gastón Acurio y Astrid Gutsche.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0964374,-77.0350797",
+      "distinction": null
+    }
+  ]
+}

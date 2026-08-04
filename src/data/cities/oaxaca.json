@@ -1,0 +1,70 @@
+{
+  "slug": "oaxaca",
+  "name": "Oaxaca",
+  "country": "México",
+  "tagline": "Tlayudas de puesto callejero, mezcal artesanal y una terraza con vista a Santo Domingo.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Casa Oaxaca",
+      "place_id": null,
+      "lat": 17.0653023,
+      "lng": -96.7223764,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño",
+      "description": "Terraza icónica con vista al templo de Santo Domingo, referencia de la cocina oaxaqueña contemporánea.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0653023,-96.7223764",
+      "distinction": null
+    },
+    {
+      "name": "Mezcaloteca",
+      "place_id": null,
+      "lat": 17.0661634,
+      "lng": -96.7216111,
+      "category": "bar",
+      "cuisine": "mezcal",
+      "description": "Sala de cata de mezcal artesanal, una introducción seria a los mezcales de la región.",
+      "source_url": "https://www.timeout.com/mexico-city/restaurants/best-restaurants-and-bars-in-oaxaca",
+      "source_type": "timeout",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0661634,-96.7216111",
+      "distinction": null
+    },
+    {
+      "name": "La Popular",
+      "place_id": null,
+      "lat": 17.066735,
+      "lng": -96.7246715,
+      "category": "fast_food",
+      "cuisine": "oaxaqueño / tlayudas",
+      "description": "El templo de la tlayuda en Oaxaca, tan popular que ya tiene dos locales.",
+      "source_url": "https://www.timeout.com/mexico-city/restaurants/best-restaurants-and-bars-in-oaxaca",
+      "source_type": "timeout",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.066735,-96.7246715",
+      "distinction": null
+    },
+    {
+      "name": "Lechoncito de Oro",
+      "place_id": null,
+      "lat": 17.0579866,
+      "lng": -96.7269998,
+      "category": "street_food",
+      "cuisine": "oaxaqueño / cerdo",
+      "description": "Puesto callejero de tacos y tortas de cerdo, junto al Mercado 20 de Noviembre.",
+      "source_url": "https://www.timeout.com/mexico-city/restaurants/best-restaurants-and-bars-in-oaxaca",
+      "source_type": "timeout",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0579866,-96.7269998",
+      "distinction": null
+    }
+  ]
+}

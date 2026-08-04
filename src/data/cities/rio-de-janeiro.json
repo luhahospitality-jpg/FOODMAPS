@@ -1,0 +1,70 @@
+{
+  "slug": "rio-de-janeiro",
+  "name": "Río de Janeiro",
+  "country": "Brasil",
+  "tagline": "Quindim centenário na Confeitaria Colombo, e duas estrelas Michelin a poucos passos de Copacabana.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Confeitaria Colombo",
+      "place_id": null,
+      "lat": -22.9051703,
+      "lng": -43.1787441,
+      "category": "dessert",
+      "cuisine": "brasileiro / português",
+      "description": "Confeitaria histórica de 1894, ícone do Rio. Seu quindim foi eleito uma das sobremesas mais icônicas do mundo pelo TasteAtlas.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9051703,-43.1787441",
+      "distinction": null
+    },
+    {
+      "name": "Oro",
+      "place_id": null,
+      "lat": -22.9860511,
+      "lng": -43.2247595,
+      "category": "fine_dining",
+      "cuisine": "brasileiro",
+      "description": "Cozinha de assinatura do chef Felipe Bronze em Leblon, um dos poucos restaurantes brasileiros com duas estrelas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9860511,-43.2247595",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Lasai",
+      "place_id": null,
+      "lat": -22.9531425,
+      "lng": -43.196313,
+      "category": "fine_dining",
+      "cuisine": "brasileiro",
+      "description": "Ingredientes de horta própria em Humaitá, do chef Rafa Costa e Silva. Duas estrelas Michelin y 28º no World's 50 Best 2025.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9531425,-43.196313",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Mee",
+      "place_id": null,
+      "lat": -22.9670132,
+      "lng": -43.1791849,
+      "category": "fine_dining",
+      "cuisine": "asiático",
+      "description": "Cozinha asiática refinada dentro do lendário Copacabana Palace. Uma estrela Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9670132,-43.1791849",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    }
+  ]
+}

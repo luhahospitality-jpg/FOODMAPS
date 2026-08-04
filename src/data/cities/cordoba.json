@@ -1,0 +1,70 @@
+{
+  "slug": "cordoba",
+  "name": "Córdoba",
+  "country": "Argentina",
+  "tagline": "Bodegones de 50 años, locro humeante y el bife de chorizo que manda en Nueva Córdoba.",
+  "totalPlaces": 4,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "La Ruleta de Pancho",
+      "place_id": null,
+      "lat": -31.4052874,
+      "lng": -64.2111077,
+      "category": "bar",
+      "cuisine": "argentino",
+      "description": "Bodegón clásico con 50 años de historia, uno de los preferidos de los cordobeses.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4052874,-64.2111077",
+      "distinction": null
+    },
+    {
+      "name": "Viejo Lobo",
+      "place_id": null,
+      "lat": -31.4139626,
+      "lng": -64.1671243,
+      "category": "fine_dining",
+      "cuisine": "argentino",
+      "description": "Elegido \"mejor restaurante tradicional de Córdoba\", cocina argentina de toda la vida desde 1997.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4139626,-64.1671243",
+      "distinction": null
+    },
+    {
+      "name": "Alcorta Carnes y Vinos",
+      "place_id": null,
+      "lat": -31.4225499,
+      "lng": -64.1875836,
+      "category": "steakhouse",
+      "cuisine": "argentino",
+      "description": "Parrilla cosmopolita en Nueva Córdoba, famosa por su bife de chorizo y su carta de vinos.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836",
+      "distinction": null
+    },
+    {
+      "name": "La Vieja Esquina",
+      "place_id": null,
+      "lat": -31.4170086,
+      "lng": -64.1889493,
+      "category": "bar",
+      "cuisine": "argentino / criollo",
+      "description": "Esquina de comidas criollas de más de 40 años: locro, humita y empanadas aclamadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493",
+      "distinction": null
+    }
+  ]
+}
