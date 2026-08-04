@@ -1,0 +1,55 @@
+{
+  "slug": "viena",
+  "name": "Viena",
+  "country": "Austria",
+  "tagline": "El schnitzel que desborda el plato, y la sachertorte original con 150 años de historia.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Steirereck",
+      "place_id": null,
+      "lat": 48.2044602,
+      "lng": 16.3812793,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "description": "Considerado el mejor restaurante de Austria, dentro del Stadtpark. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2044602,16.3812793",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Hotel Sacher",
+      "place_id": null,
+      "lat": 48.2040427,
+      "lng": 16.3697708,
+      "category": "dessert",
+      "cuisine": "austriaco",
+      "description": "Cuna de la sachertorte original, celebrando 150 años de historia.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2040427,16.3697708",
+      "distinction": null
+    },
+    {
+      "name": "Figlmüller",
+      "place_id": null,
+      "lat": 48.2094207,
+      "lng": 16.3748431,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "description": "El schnitzel más famoso de Viena, tan grande que desborda el plato.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431",
+      "distinction": null
+    }
+  ]
+}

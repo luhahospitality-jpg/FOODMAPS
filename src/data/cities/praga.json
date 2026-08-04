@@ -1,0 +1,55 @@
+{
+  "slug": "praga",
+  "name": "Praga",
+  "country": "República Checa",
+  "tagline": "Cerveza propia desde el siglo XV, y la cocina checa contemporánea que se ganó la estrella Michelin.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "U Fleků",
+      "place_id": null,
+      "lat": 50.0787442,
+      "lng": 14.4170184,
+      "category": "bar",
+      "cuisine": "checo",
+      "description": "Cervecería-restaurante desde el siglo XV, con ocho salones y cerveza propia. Uno de los locales históricos más famosos de Praga.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0787442,14.4170184",
+      "distinction": null
+    },
+    {
+      "name": "La Degustation Bohême Bourgeoise",
+      "place_id": null,
+      "lat": 50.0910323,
+      "lng": 14.4251059,
+      "category": "fine_dining",
+      "cuisine": "checo",
+      "description": "Cocina checa contemporánea de temporada, uno de los dos únicos restaurantes con estrella Michelin en Praga.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0910323,14.4251059",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Field",
+      "place_id": null,
+      "lat": 50.091755,
+      "lng": 14.4219942,
+      "category": "fine_dining",
+      "cuisine": "checo",
+      "description": "Decoración minimalista inspirada en la naturaleza e ingredientes de altísima calidad. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.091755,14.4219942",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    }
+  ]
+}
