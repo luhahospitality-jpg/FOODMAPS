@@ -1,0 +1,55 @@
+{
+  "slug": "osaka",
+  "name": "Osaka",
+  "country": "Japón",
+  "tagline": "Takoyaki desde 1972 en Dotonbori, y el okonomiyaki con Bib Gourmand que siempre tiene fila.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Honke Ootako",
+      "place_id": null,
+      "lat": 34.6690306,
+      "lng": 135.5015715,
+      "category": "street_food",
+      "cuisine": "japonés / takoyaki",
+      "description": "Bolitas de pulpo generosas desde 1972, con mención en la Guía Michelin, en pleno Dotonbori.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6690306,135.5015715",
+      "distinction": null
+    },
+    {
+      "name": "Kiji",
+      "place_id": null,
+      "lat": 34.7035124,
+      "lng": 135.4979148,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "description": "Okonomiyaki con fila constante en Umeda, reconocido con Bib Gourmand.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.7035124,135.4979148",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    },
+    {
+      "name": "Okonomiyaki Mizuno",
+      "place_id": null,
+      "lat": 34.6684527,
+      "lng": 135.5030691,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "description": "Uno de los okonomiyaki más reconocidos de Osaka, estilo tradicional a la plancha.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6684527,135.5030691",
+      "distinction": null
+    }
+  ]
+}

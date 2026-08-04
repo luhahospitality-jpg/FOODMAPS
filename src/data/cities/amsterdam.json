@@ -1,0 +1,55 @@
+{
+  "slug": "amsterdam",
+  "name": "Ámsterdam",
+  "country": "Países Bajos",
+  "tagline": "Arenque crudo junto a la estación desde 1903, y alta cocina con vista panorámica desde el piso 23.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Ciel Bleu",
+      "place_id": null,
+      "lat": 52.3487287,
+      "lng": 4.894117,
+      "category": "fine_dining",
+      "cuisine": "francés / neerlandés",
+      "description": "Alta cocina francesa con vistas panorámicas desde lo alto del Hotel Okura. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3487287,4.894117",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Stubbe's Haring",
+      "place_id": null,
+      "lat": 52.3790639,
+      "lng": 4.8942367,
+      "category": "street_food",
+      "cuisine": "neerlandés / arenque",
+      "description": "El puesto de arenque más famoso de Ámsterdam, junto a la Estación Central desde 1903.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3790639,4.8942367",
+      "distinction": null
+    },
+    {
+      "name": "De Kas",
+      "place_id": null,
+      "lat": 52.3522924,
+      "lng": 4.9305718,
+      "category": "fine_dining",
+      "cuisine": "neerlandés",
+      "description": "Restaurante dentro de un invernadero de los años 20 que cultiva sus propias verduras.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3522924,4.9305718",
+      "distinction": null
+    }
+  ]
+}

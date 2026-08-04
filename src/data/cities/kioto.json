@@ -1,0 +1,55 @@
+{
+  "slug": "kioto",
+  "name": "Kioto",
+  "country": "Japón",
+  "tagline": "Kaiseki de tres estrellas desde 1912, y el mercado de 400 metros que Kioto llama \"su cocina\".",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Kikunoi Honten",
+      "place_id": null,
+      "lat": 35.0013747,
+      "lng": 135.7822631,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "description": "Kaiseki tradicional desde 1912, uno de los templos de la alta cocina japonesa. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0013747,135.7822631",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Nishiki Market",
+      "place_id": null,
+      "lat": 35.0050244,
+      "lng": 135.76557,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "El mercado de 400 metros conocido como \"la cocina de Kioto\", con más de cien puestos de comida callejera.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0050244,135.76557",
+      "distinction": null
+    },
+    {
+      "name": "Shoraian",
+      "place_id": null,
+      "lat": 35.0144404,
+      "lng": 135.6701313,
+      "category": "fine_dining",
+      "cuisine": "japonés / tofu",
+      "description": "Kaiseki de tofu con vista al río Katsura, en Arashiyama.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0144404,135.6701313",
+      "distinction": null
+    }
+  ]
+}
