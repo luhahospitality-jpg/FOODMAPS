@@ -1,0 +1,40 @@
+{
+  "slug": "singapur",
+  "name": "Singapur",
+  "country": "Singapur",
+  "tagline": "Dos puestos callejeros, dos estrellas Michelin, y platos completos por menos de 3 dólares.",
+  "totalPlaces": 2,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Hawker Chan",
+      "place_id": null,
+      "lat": 1.2831091,
+      "lng": 103.8429241,
+      "category": "street_food",
+      "cuisine": "chino / singapurense",
+      "description": "El arroz con pollo en salsa de soja más barato del mundo con estrella Michelin, desde 2016. El primer puesto callejero asiático en lograrlo.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2831091,103.8429241",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Tian Tian Hainanese Chicken Rice",
+      "place_id": null,
+      "lat": 1.2761446,
+      "lng": 103.8478445,
+      "category": "street_food",
+      "cuisine": "singapurense",
+      "description": "El puesto de arroz con pollo hainanés más popular de Singapur, dentro del Maxwell Food Centre. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2761446,103.8478445",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    }
+  ]
+}

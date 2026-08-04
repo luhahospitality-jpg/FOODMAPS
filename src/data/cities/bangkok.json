@@ -1,0 +1,55 @@
+{
+  "slug": "bangkok",
+  "name": "Bangkok",
+  "country": "Tailandia",
+  "tagline": "La tortilla de cangrejo con gafas de esquí que Netflix hizo famosa, y tres estrellas Michelin para dos gemelos alemanes.",
+  "totalPlaces": 3,
+  "mymaps_url": null,
+  "places": [
+    {
+      "name": "Jay Fai",
+      "place_id": null,
+      "lat": 13.7525335,
+      "lng": 100.5047365,
+      "category": "street_food",
+      "cuisine": "tailandés",
+      "description": "La tortilla de cangrejo más famosa de Tailandia, cocinada con gafas de esquí sobre un wok de carbón. Primera comida callejera del mundo con estrella Michelin, protagonista de Chef's Table de Netflix.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "is_top5": true,
+      "top5_rank": 1,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7525335,100.5047365",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Sühring",
+      "place_id": null,
+      "lat": 13.7104718,
+      "lng": 100.5453481,
+      "category": "fine_dining",
+      "cuisine": "alemán",
+      "description": "Gemelos alemanes reinventando su cocina natal en Bangkok. Tres estrellas Michelin, primer restaurante alemán de Asia en lograrlo.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 2,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7104718,100.5453481",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Thip Samai",
+      "place_id": null,
+      "lat": 13.7527631,
+      "lng": 100.5048237,
+      "category": "street_food",
+      "cuisine": "tailandés / pad thai",
+      "description": "El pad thai envuelto en huevo más famoso de la ciudad, sobre la calle Maha Chai desde 1966.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237",
+      "distinction": null
+    }
+  ]
+}
