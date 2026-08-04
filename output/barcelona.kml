@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Barcelona · Restaurantes Top &amp; Trendy (17 sitios)</name>
+  <description>Del Barrio Gótico de 1786 a la burger viral de Ibai Llanos, con la mayor densidad de estrellas Michelin de España.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Can Culleretes</name><description>El restaurante más antiguo de Barcelona, abierto desde 1786 en pleno Barrio Gótico.</description><Point><coordinates>2.1744185,41.381215,0</coordinates></Point></Placemark>
+    <Placemark><name>Disfrutar</name><description>Nombrado el mejor restaurante del mundo en 2024 por The World's 50 Best. 3 estrellas Michelin. Fuente: https://www.theworlds50best.com/stories/News/disfrutar-is-the-worlds-best-restaurant-2024.html</description><Point><coordinates>2.1531722,41.387762,0</coordinates></Point></Placemark>
+    <Placemark><name>Enigma</name><description>El proyecto más hermético de Albert Adrià. 2 estrellas Michelin.</description><Point><coordinates>2.154109,41.3766923,0</coordinates></Point></Placemark>
+    <Placemark><name>Els 4 Gats</name><description>El café-cabaret de 1897 donde un joven Picasso diseñó el menú.</description><Point><coordinates>2.1739318,41.3857927,0</coordinates></Point></Placemark>
+    <Placemark><name>ABaC</name><description>Alta cocina de Jordi Cruz en Sant Gervasi. 3 estrellas Michelin.</description><Point><coordinates>2.1365386,41.4104436,0</coordinates></Point></Placemark>
+    <Placemark><name>Cocina Hermanos Torres</name><description>El taller-restaurante de los gemelos Torres. 3 estrellas Michelin.</description><Point><coordinates>2.1401156,41.386502,0</coordinates></Point></Placemark>
+    <Placemark><name>Lasarte</name><description>La apuesta barcelonesa de Martín Berasategui. 3 estrellas Michelin.</description><Point><coordinates>2.162126,41.3936394,0</coordinates></Point></Placemark>
+    <Placemark><name>Cinc Sentits</name><description>Menú sensorial y de kilómetro cero. 2 estrellas Michelin.</description><Point><coordinates>2.1593618,41.3884807,0</coordinates></Point></Placemark>
+    <Placemark><name>Alkimia</name><description>Cocina catalana destilada a su esencia por Jordi Vilà. 1 estrella Michelin.</description><Point><coordinates>2.1633778,41.3826569,0</coordinates></Point></Placemark>
+    <Placemark><name>Dos Palillos</name><description>Tapas asiáticas de Albert Raurich, ex elBulli. 1 estrella Michelin.</description><Point><coordinates>2.1686848,41.3833615,0</coordinates></Point></Placemark>
+    <Placemark><name>Koy Shunka</name><description>Cocina japonesa con acento catalán. 1 estrella Michelin.</description><Point><coordinates>2.1752967,41.3858105,0</coordinates></Point></Placemark>
+    <Placemark><name>Via Veneto</name><description>Clásico de la alta cocina catalana desde 1967. 1 estrella Michelin.</description><Point><coordinates>2.1390672,41.3924558,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Bar</name>
+    <Placemark><name>La Cova Fumada</name><description>Taberna de pescadores de 1944, cuna de la "bomba". Fuente: https://www.timeout.es/barcelona/es/restaurantes/la-cova-fumada</description><Point><coordinates>2.1891943,41.3792983,0</coordinates></Point></Placemark>
+    <Placemark><name>Mont Bar</name><description>Barra de tapas de autor con alma de bar de barrio. 2 estrellas Michelin.</description><Point><coordinates>2.1618234,41.3862444,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Fast food</name>
+    <Placemark><name>Vicio</name><description>Las smash burgers más virales de España, de Aleix Puig. Fuente: https://www.timeout.es/barcelona/es/restaurantes/vicio</description><Point><coordinates>2.1544322,41.396978,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Seafood</name>
+    <Placemark><name>Enoteca Paco Pérez</name><description>Cocina de mar con vistas al Mediterráneo desde el Hotel Arts. 2 estrellas Michelin.</description><Point><coordinates>2.1962221,41.3868915,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>Mercat de la Boqueria</name><description>El mercado más visitado de Barcelona, sobre las Ramblas.</description><Point><coordinates>2.1715515,41.381736,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>
