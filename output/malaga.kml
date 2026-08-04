@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Málaga · Restaurantes Top &amp; Trendy (6 sitios)</name>
+  <description>Espetos que se subastan a gritos en la playa, vino del tonel desde 1840, y una estrella Michelin con vistas a la Alcazaba.</description>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>El Tintero</name><description>El chiringuito donde los platos se subastan a grito limpio en la playa de El Palo.</description><Point><coordinates>-4.3596335,36.7214915,0</coordinates></Point></Placemark>
+    <Placemark><name>Bar Mercado Atarazanas</name><description>Barra de tapas viral en TikTok dentro del mercado de abastos. Fuente: https://www.tiktok.com/@boqueronaenvinagre/video/7312533107264064800</description><Point><coordinates>-4.4240607,36.718408,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Bar</name>
+    <Placemark><name>Antigua Casa de Guardia</name><description>La taberna más antigua de Málaga, desde 1840.</description><Point><coordinates>-4.4234526,36.7177103,0</coordinates></Point></Placemark>
+    <Placemark><name>El Pimpi</name><description>Bodega-restaurante de 1971 en una casa del siglo XVIII.</description><Point><coordinates>-4.4180421,36.7217974,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Blossom</name><description>Ocho mesas en el Museo de Málaga, con vistas a la Alcazaba. 1 estrella Michelin.</description><Point><coordinates>-4.4171575,36.7199721,0</coordinates></Point></Placemark>
+    <Placemark><name>Palodú</name><description>Cocina dual junto al Mercado de Atarazanas. 1 estrella Michelin.</description><Point><coordinates>-4.4247527,36.7189931,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>

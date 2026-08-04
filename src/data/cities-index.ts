@@ -22,7 +22,7 @@ export const citiesIndex: CityIndexEntry[] = [
   { slug: "san-sebastian", name: "San Sebastián", country: "España", plannedPlaces: 10, available: true },
   { slug: "bilbao", name: "Bilbao", country: "España", plannedPlaces: 11, available: true },
   { slug: "valencia", name: "Valencia", country: "España", plannedPlaces: 30, available: false },
-  { slug: "malaga", name: "Málaga / Costa del Sol", country: "España", plannedPlaces: 30, available: false },
+  { slug: "malaga", name: "Málaga / Costa del Sol", country: "España", plannedPlaces: 6, available: true },
   { slug: "espana", name: "España (selección nacional)", country: "España", plannedPlaces: 30, available: false },
   { slug: "paris", name: "París", country: "Francia", plannedPlaces: 50, available: false },
   { slug: "copenhague", name: "Copenhague", country: "Dinamarca", plannedPlaces: 30, available: false },
