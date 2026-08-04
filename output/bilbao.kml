@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Bilbao · Restaurantes Top &amp; Trendy (11 sitios)</name>
+  <description>Pintxos de posguerra, txangurro de siempre y una estrella Michelin dentro del Guggenheim.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>A Mina</name><description>Cocina de producto del chef Álvaro Garrido junto a la ría. 1 estrella Michelin.</description><Point><coordinates>-2.9244829,43.2548771,0</coordinates></Point></Placemark>
+    <Placemark><name>La Olla</name><description>Arroces, chuletón y un rincón viral en Plaza Nueva. Fuente: https://www.tiktok.com/@melitaplanes/video/7192539467708714246</description><Point><coordinates>-2.9226887,43.2590139,0</coordinates></Point></Placemark>
+    <Placemark><name>Nerua Guggenheim Bilbao</name><description>Alta cocina vasca dentro del Museo Guggenheim. 1 estrella Michelin.</description><Point><coordinates>-2.934061,43.2684285,0</coordinates></Point></Placemark>
+    <Placemark><name>Ola Martín Berasategui</name><description>La firma de Martín Berasategui en el Casco Viejo. 1 estrella Michelin.</description><Point><coordinates>-2.9263764,43.2579235,0</coordinates></Point></Placemark>
+    <Placemark><name>Islares</name><description>Novedad de la Guía Michelin 2026 en Bilbao. 1 estrella Michelin.</description><Point><coordinates>-2.9352826,43.2671635,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Seafood</name>
+    <Placemark><name>Zarate</name><description>Templo del pescado a la parrilla. 1 estrella Michelin.</description><Point><coordinates>-2.9435525,43.2625632,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Bar</name>
+    <Placemark><name>Víctor Montes</name><description>Ultramarinos desde 1849, hoy emblema de los pintxos en Plaza Nueva.</description><Point><coordinates>-2.9223246,43.2589032,0</coordinates></Point></Placemark>
+    <Placemark><name>El Globo</name><description>Su pintxo de txangurro gratinado es un clásico absoluto.</description><Point><coordinates>-2.9326563,43.2619441,0</coordinates></Point></Placemark>
+    <Placemark><name>Charly</name><description>Bar de pintxos abierto desde 1973.</description><Point><coordinates>-2.9223358,43.258827,0</coordinates></Point></Placemark>
+    <Placemark><name>Gure Toki</name><description>Pintxos de vanguardia sobre base vasca.</description><Point><coordinates>-2.9223102,43.2593874,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>Mercado de la Ribera</name><description>Uno de los mercados cubiertos más grandes de Europa.</description><Point><coordinates>-2.9243431,43.255551,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>

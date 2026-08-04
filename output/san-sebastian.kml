@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>San Sebastián · Restaurantes Top &amp; Trendy (10 sitios)</name>
+  <description>Más estrellas Michelin por metro cuadrado que ninguna otra ciudad del mundo, y una Parte Vieja llena de barras de pintxos históricas.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Arzak</name><description>Icono mundial de la cocina vasca, dirigido por Elena Arzak. 3 estrellas Michelin.</description><Point><coordinates>-2.0068903,43.3117152,0</coordinates></Point></Placemark>
+    <Placemark><name>Akelarre</name><description>Vistas al Cantábrico y la cocina de Pedro Subijana. 3 estrellas Michelin.</description><Point><coordinates>-2.0431538,43.3077826,0</coordinates></Point></Placemark>
+    <Placemark><name>Mugaritz</name><description>Menú degustación de 20 pasos, del chef Andoni Luis Aduriz, en Errenteria. 2 estrellas Michelin.</description><Point><coordinates>-1.9172259,43.2723615,0</coordinates></Point></Placemark>
+    <Placemark><name>Amelia by Paulo Airaudo</name><description>Cocina de temporada del chef Paulo Airaudo. 2 estrellas Michelin.</description><Point><coordinates>-1.9862468,43.3169134,0</coordinates></Point></Placemark>
+    <Placemark><name>Kokotxa</name><description>Cocina vasca tradicional puesta al día. 1 estrella Michelin.</description><Point><coordinates>-1.9870739,43.3235301,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Bar</name>
+    <Placemark><name>Ganbara</name><description>El pintxo de rape y langostino en la calle San Jerónimo.</description><Point><coordinates>-1.9853644,43.3231435,0</coordinates></Point></Placemark>
+    <Placemark><name>La Cuchara de San Telmo</name><description>La pionera de los pintxos modernos vascos.</description><Point><coordinates>-1.9852992,43.3245012,0</coordinates></Point></Placemark>
+    <Placemark><name>Gandarias</name><description>Clásico renovado: oreja de cerdo y risotto de Idiazábal.</description><Point><coordinates>-1.9857674,43.3239943,0</coordinates></Point></Placemark>
+    <Placemark><name>El Tamboril</name><description>La gamba rebozada más pedida de la calle Pescadería.</description><Point><coordinates>-1.9838069,43.3237984,0</coordinates></Point></Placemark>
+    <Placemark><name>La Cepa</name><description>Bar clásico de la Parte Vieja, pintxo de champiñones icónico.</description><Point><coordinates>-1.9849176,43.3243247,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>
