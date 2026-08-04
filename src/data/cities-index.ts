@@ -35,7 +35,7 @@ export const citiesIndex: CityIndexEntry[] = [
   { slug: "budapest", name: "Budapest", country: "Hungría", plannedPlaces: 30, available: false },
   { slug: "berlin", name: "Berlín", country: "Alemania", plannedPlaces: 40, available: false },
   { slug: "amsterdam", name: "Ámsterdam", country: "Países Bajos", plannedPlaces: 30, available: false },
-  { slug: "tokio", name: "Tokio", country: "Japón", plannedPlaces: 50, available: false },
+  { slug: "tokio", name: "Tokio", country: "Japón", plannedPlaces: 6, available: true },
   { slug: "osaka", name: "Osaka", country: "Japón", plannedPlaces: 40, available: false },
   { slug: "kioto", name: "Kioto", country: "Japón", plannedPlaces: 30, available: false },
   { slug: "beijing", name: "Beijing", country: "China", plannedPlaces: 30, available: false },

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Tokio · Restaurantes Top &amp; Trendy (6 sitios)</name>
+  <description>Del santuario de diez asientos donde Obama probó el mejor sushi de su vida a la cabina individual de ramen que se volvió viral.</description>
+
+  <Folder>
+    <name>Fine dining</name>
+    <Placemark><name>Sukiyabashi Jiro</name><description>El santuario del sushi de Jiro Ono. 3 estrellas Michelin. Fuente: https://tokyo.com/guide/taste/sukiyabashi-jiro</description><Point><coordinates>139.7640108,35.6727104,0</coordinates></Point></Placemark>
+    <Placemark><name>Myojaku</name><description>Cocina minimalista del chef Hidetoshi Nakamura. 3 estrellas Michelin.</description><Point><coordinates>139.7314949,35.6629251,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Fast food</name>
+    <Placemark><name>Ichiran Shibuya</name><description>Cabinas individuales de ramen, viral desde hace más de 60 años.</description><Point><coordinates>139.6986995,35.6609597,0</coordinates></Point></Placemark>
+    <Placemark><name>Gogyo</name><description>Cuna del ramen negro (kogashi) en Nishi-Azabu.</description><Point><coordinates>139.7243829,35.6620184,0</coordinates></Point></Placemark>
+    <Placemark><name>Kanamachi Seimen</name><description>Ramen ortodoxo de barrio en Katsushika.</description><Point><coordinates>139.8706926,35.7695843,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>Street food</name>
+    <Placemark><name>Tsukiji Outer Market</name><description>El mercado callejero de mariscos más famoso de Tokio.</description><Point><coordinates>139.7704732,35.6653884,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>
