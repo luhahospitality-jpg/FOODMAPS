@@ -3,7 +3,7 @@
   "name": "Singapur",
   "country": "Singapur",
   "tagline": "Dos puestos callejeros, dos estrellas Michelin, y platos completos por menos de 3 dólares.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -35,6 +35,51 @@
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2761446,103.8478445",
       "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Odette",
+      "place_id": null,
+      "lat": 1.2902557,
+      "lng": 103.8514709,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Cocina francesa moderna del chef Julien Royer dentro de la National Gallery. Tres estrellas Michelin desde 2019.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2902557,103.8514709",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Newton Food Centre",
+      "place_id": null,
+      "lat": 1.3121232,
+      "lng": 103.8397234,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Uno de los primeros hawker centres de Singapur, desde 1971, con más de 80 puestos chinos, malayos e indios al aire libre.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3121232,103.8397234",
+      "distinction": null
+    },
+    {
+      "name": "Lau Pa Sat",
+      "place_id": null,
+      "lat": 1.2806167,
+      "lng": 103.8504802,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Monumento nacional victoriano reconvertido en mercado de comida, famoso por su \"Satay Street\" al anochecer.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2806167,103.8504802",
+      "distinction": null
     }
   ]
 }

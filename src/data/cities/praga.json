@@ -3,7 +3,7 @@
   "name": "Praga",
   "country": "República Checa",
   "tagline": "Cerveza propia desde el siglo XV, y la cocina checa contemporánea que se ganó la estrella Michelin.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.091755,14.4219942",
       "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "U Zlatého Tygra",
+      "place_id": null,
+      "lat": 50.0857896,
+      "lng": 14.4179075,
+      "category": "bar",
+      "cuisine": "checo",
+      "description": "Taberna legendaria de la Ciudad Vieja, célebre por su Pilsner Urquell sin pasteurizar y por ser el bar favorito del escritor Bohumil Hrabal.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0857896,14.4179075",
+      "distinction": null
+    },
+    {
+      "name": "Café Savoy",
+      "place_id": null,
+      "lat": 50.0809258,
+      "lng": 14.4072158,
+      "category": "dessert",
+      "cuisine": "checo",
+      "description": "Café Art Nouveau desde 1893 junto al Vltava, con techo neorrenacentista de siete metros de altura.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0809258,14.4072158",
+      "distinction": null
     }
   ]
 }

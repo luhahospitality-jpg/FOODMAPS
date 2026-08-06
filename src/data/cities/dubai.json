@@ -3,7 +3,7 @@
   "name": "Dubái",
   "country": "Emiratos Árabes Unidos",
   "tagline": "El primer tres estrellas Michelin de Dubái, y el kebab persa donde comen los chefs en sus días libres.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.236703,55.2769389",
       "distinction": null
+    },
+    {
+      "name": "Ravi Restaurant",
+      "place_id": null,
+      "lat": 25.2336615,
+      "lng": 55.2790297,
+      "category": "fast_food",
+      "cuisine": "pakistaní",
+      "description": "Referencia de cocina pakistaní en Al Satwa desde 1978, certificada en su día por Anthony Bourdain.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2336615,55.2790297",
+      "distinction": null
+    },
+    {
+      "name": "STAY by Yannick Alléno",
+      "place_id": null,
+      "lat": 25.0992694,
+      "lng": 55.1334430,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Cocina francesa contemporánea dentro del One&Only The Palm, con salón de candelabros de cristal negro. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.0992694,55.1334430",
+      "distinction": { "type": "michelin_star", "count": 2 }
     }
   ]
 }

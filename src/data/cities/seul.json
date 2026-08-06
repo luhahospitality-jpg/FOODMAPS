@@ -3,7 +3,7 @@
   "name": "Seúl",
   "country": "Corea del Sur",
   "tagline": "El mercado de 1905 donde nació la comida callejera coreana, y el tartar de res con Bib Gourmand de al lado.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -35,6 +35,51 @@
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.57036,126.99771",
       "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    },
+    {
+      "name": "Tosokchon Samgyetang",
+      "place_id": null,
+      "lat": 37.5776803,
+      "lng": 126.9715276,
+      "category": "fine_dining",
+      "cuisine": "coreano",
+      "description": "El samgyetang (sopa de pollo con ginseng) más popular de Seúl, cerca del Palacio Gyeongbokgung, frecuentado por presidentes.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5776803,126.9715276",
+      "distinction": null
+    },
+    {
+      "name": "Myeongdong Kyoja",
+      "place_id": null,
+      "lat": 37.5625608,
+      "lng": 126.9856037,
+      "category": "fast_food",
+      "cuisine": "coreano / kalguksu",
+      "description": "Fideos kalguksu cortados a cuchillo y mandu, receta familiar desde 1966 en pleno Myeongdong. Guía Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5625608,126.9856037",
+      "distinction": null
+    },
+    {
+      "name": "Mingles",
+      "place_id": null,
+      "lat": 37.5226819,
+      "lng": 127.0391790,
+      "category": "fine_dining",
+      "cuisine": "coreano contemporáneo",
+      "description": "Alta cocina coreana contemporánea del chef Kang Mingoo en Gangnam. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5226819,127.0391790",
+      "distinction": { "type": "michelin_star", "count": 3 }
     }
   ]
 }

@@ -3,7 +3,7 @@
   "name": "Viena",
   "country": "Austria",
   "tagline": "El schnitzel que desborda el plato, y la sachertorte original con 150 años de historia.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431",
+      "distinction": null
+    },
+    {
+      "name": "Naschmarkt",
+      "place_id": null,
+      "lat": 48.1981802,
+      "lng": 16.3626217,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "El mercado más famoso de Viena, con más de 130 puestos entre Karlsplatz y Kettenbrückengasse desde el siglo XVI.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1981802,16.3626217",
+      "distinction": null
+    },
+    {
+      "name": "Café Central",
+      "place_id": null,
+      "lat": 48.2103671,
+      "lng": 16.3653873,
+      "category": "dessert",
+      "cuisine": "austriaco",
+      "description": "Café histórico desde 1876 en el corazón de Viena, antiguo punto de encuentro de Freud y Trotsky. Patrimonio Inmaterial de la UNESCO.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2103671,16.3653873",
       "distinction": null
     }
   ]

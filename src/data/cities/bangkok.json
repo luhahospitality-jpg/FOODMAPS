@@ -3,7 +3,7 @@
   "name": "Bangkok",
   "country": "Tailandia",
   "tagline": "La tortilla de cangrejo con gafas de esquí que Netflix hizo famosa, y tres estrellas Michelin para dos gemelos alemanes.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237",
       "distinction": null
+    },
+    {
+      "name": "Gaggan Anand",
+      "place_id": null,
+      "lat": 13.7407594,
+      "lng": 100.5675678,
+      "category": "fine_dining",
+      "cuisine": "indio / progresivo",
+      "description": "Cocina progresiva india con técnica francesa, thai y japonesa, en una barra de 14 asientos con 25 tiempos teatrales. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7407594,100.5675678",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Krua Apsorn (Dusit)",
+      "place_id": null,
+      "lat": 13.7740652,
+      "lng": 100.5062486,
+      "category": "fine_dining",
+      "cuisine": "tailandés / real",
+      "description": "Recetas de cocina real tailandesa desde 1996, heredadas de la cocinera de la Princesa Madre. Bib Gourmand.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7740652,100.5062486",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
     }
   ]
 }
