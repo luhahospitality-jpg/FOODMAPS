@@ -3,7 +3,7 @@
   "name": "Hong Kong",
   "country": "China / Hong Kong",
   "tagline": "El bollo de cerdo con estrella Michelin más barato del mundo, y el primer restaurante chino en llegar a tres.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2822543,114.1555778",
+      "distinction": null
+    },
+    {
+      "name": "Yat Lok",
+      "place_id": null,
+      "lat": 22.2825280,
+      "lng": 114.1553210,
+      "category": "fast_food",
+      "cuisine": "cantonés / ganso asado",
+      "description": "Ganso asado con estrella Michelin en un local sencillo tipo cha chaan teng de Central, con más de 20 pasos de preparación secretos.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2825280,114.1553210",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Australia Dairy Company",
+      "place_id": null,
+      "lat": 22.3046126,
+      "lng": 114.1705943,
+      "category": "fast_food",
+      "cuisine": "cantonés / cha chaan teng",
+      "description": "Cha chaan teng icónico de Kowloon, famoso por sus huevos revueltos y su servicio veloz sin contemplaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.3046126,114.1705943",
       "distinction": null
     }
   ]

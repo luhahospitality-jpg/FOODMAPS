@@ -3,7 +3,7 @@
   "name": "Marrakech",
   "country": "Marruecos",
   "tagline": "El palacio del siglo XVII donde Hitchcock filmó una escena, y la plaza que de noche se llena de 40 puestos de comida.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6257808,-7.9889041",
+      "distinction": null
+    },
+    {
+      "name": "Al Fassia Guéliz",
+      "place_id": null,
+      "lat": 31.6359916,
+      "lng": -8.0133642,
+      "category": "fine_dining",
+      "cuisine": "marroquí",
+      "description": "Restaurante gestionado íntegramente por mujeres desde 1985, cocina tradicional de Fez y referencia entre The World's 50 Best Discovery.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6359916,-8.0133642",
+      "distinction": null
+    },
+    {
+      "name": "Nomad",
+      "place_id": null,
+      "lat": 31.6288161,
+      "lng": -7.9870485,
+      "category": "fine_dining",
+      "cuisine": "marroquí moderno",
+      "description": "Cocina marroquí moderna en una azotea de cuatro pisos sobre la plaza de las especias Rahba Kedima, con vista al Atlas.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6288161,-7.9870485",
       "distinction": null
     }
   ]

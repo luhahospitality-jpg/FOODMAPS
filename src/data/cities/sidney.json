@@ -3,7 +3,7 @@
   "name": "Sídney",
   "country": "Australia",
   "tagline": "Cocina de autor dentro de las velas de la Ópera, y empanadas de carne firmadas por famosos desde 1948.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.7382194,151.2996618",
+      "distinction": null
+    },
+    {
+      "name": "Golden Century",
+      "place_id": null,
+      "lat": -33.8620280,
+      "lng": 151.2010487,
+      "category": "seafood",
+      "cuisine": "cantonés",
+      "description": "Institución cantonesa de Sídney desde los años 90, reabierta en Crown Sydney con tanques de marisco vivo y más de 200 platos.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.8620280,151.2010487",
+      "distinction": null
+    },
+    {
+      "name": "Icebergs Dining Room and Bar",
+      "place_id": null,
+      "lat": -33.8952732,
+      "lng": 151.2744078,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Sala de vidrio sobre la icónica piscina Bondi Icebergs, con vista al océano Pacífico, desde 2002.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.8952732,151.2744078",
       "distinction": null
     }
   ]

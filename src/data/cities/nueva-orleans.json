@@ -3,7 +3,7 @@
   "name": "Nueva Orleans",
   "country": "Estados Unidos",
   "tagline": "Martinis de 25 centavos en un clásico del siglo XIX, y los beignets que hay que comer aunque haya fila.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.957561,-90.0618544",
+      "distinction": null
+    },
+    {
+      "name": "Galatoire's",
+      "place_id": null,
+      "lat": 29.9549720,
+      "lng": -90.0690178,
+      "category": "fine_dining",
+      "cuisine": "criollo / francés",
+      "description": "Cocina criolla francesa en Bourbon Street desde 1905, hoy dirigida por la cuarta generación de la familia Galatoire.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.9549720,-90.0690178",
+      "distinction": null
+    },
+    {
+      "name": "Dooky Chase's Restaurant",
+      "place_id": null,
+      "lat": 29.9682068,
+      "lng": -90.0784867,
+      "category": "fine_dining",
+      "cuisine": "criollo",
+      "description": "Cocina criolla desde 1941 y punto de encuentro histórico del Movimiento por los Derechos Civiles, con Martin Luther King Jr. entre sus visitantes.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.9682068,-90.0784867",
+      "distinction": null
+    },
+    {
+      "name": "Casamento's",
+      "place_id": null,
+      "lat": 29.9207257,
+      "lng": -90.1010749,
+      "category": "seafood",
+      "cuisine": "americano / marisco",
+      "description": "El oyster loaf más famoso de Nueva Orleans desde 1919, en un local revestido de azulejo italiano centenario.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.9207257,-90.1010749",
       "distinction": null
     }
   ]

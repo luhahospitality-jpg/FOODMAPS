@@ -3,7 +3,7 @@
   "name": "Miami",
   "country": "Estados Unidos",
   "tagline": "Cangrejo frío desde 1913, y el café con leche que nunca deja de servir Versailles.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8147141,-80.1920264",
       "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Ariete",
+      "place_id": null,
+      "lat": 25.7251390,
+      "lng": -80.2454316,
+      "category": "fine_dining",
+      "cuisine": "americano / cubano",
+      "description": "Técnica contemporánea americana con raíces cubanas del chef Michael Beltran en Coconut Grove. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7251390,-80.2454316",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Los Pinareños Fruteria",
+      "place_id": null,
+      "lat": 25.7658200,
+      "lng": -80.2167142,
+      "category": "street_food",
+      "cuisine": "cubano",
+      "description": "Frutería familiar de Little Havana desde 1963, célebre por su guarapo (jugo de caña) exprimido al momento.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7658200,-80.2167142",
+      "distinction": null
     }
   ]
 }

@@ -3,7 +3,7 @@
   "name": "Toronto",
   "country": "Canadá",
   "tagline": "El sándwich que Bourdain repitió en el mejor mercado del mundo, y el híbrido de croissant y bagel que TikTok volvió viral.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.700524,-79.4269562",
+      "distinction": null
+    },
+    {
+      "name": "Alo",
+      "place_id": null,
+      "lat": 43.6485014,
+      "lng": -79.3959394,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Cocina francesa contemporánea del chef Patrick Kriss sobre un edificio patrimonial del centro. Estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6485014,-79.3959394",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Seven Lives Tacos y Mariscos",
+      "place_id": null,
+      "lat": 43.6545479,
+      "lng": -79.4007722,
+      "category": "street_food",
+      "cuisine": "mexicano / baja",
+      "description": "Tacos estilo Baja California en el corazón de Kensington Market, uno de los locales más queridos del barrio.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6545479,-79.4007722",
       "distinction": null
     }
   ]

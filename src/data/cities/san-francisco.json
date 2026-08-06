@@ -3,7 +3,7 @@
   "name": "San Francisco",
   "country": "Estados Unidos",
   "tagline": "La barra de ostras que Anthony Bourdain llamó un punto de referencia, y tres estrellas Michelin de poesía culinaria.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7934198,-122.399472",
+      "distinction": null
+    },
+    {
+      "name": "Benu",
+      "place_id": null,
+      "lat": 37.7854624,
+      "lng": -122.3990798,
+      "category": "fine_dining",
+      "cuisine": "franco-chino",
+      "description": "Fusión franco-china de alta precisión, el primer restaurante de San Francisco en lograr tres estrellas Michelin, desde 2014.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7854624,-122.3990798",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "House of Prime Rib",
+      "place_id": null,
+      "lat": 37.7933913,
+      "lng": -122.4225436,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "description": "Institución de San Francisco desde 1950, con el rosbif cortado en un carrito y ensalada de la casa desde su apertura.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7933913,-122.4225436",
       "distinction": null
     }
   ]
