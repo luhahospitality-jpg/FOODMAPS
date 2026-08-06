@@ -30,7 +30,9 @@ export function PlaceCard({
           {String(place.top5_rank ?? 0).padStart(2, "0")}
         </span>
         {place.source_type && (
-          <Pill variant="ink">{sourceTypeLabel(lang, place.source_type)}</Pill>
+          <Pill variant={place.source_type === "bourdain" ? "red" : "ink"}>
+            {sourceTypeLabel(lang, place.source_type)}
+          </Pill>
         )}
       </div>
 

@@ -7,6 +7,8 @@ const sourceTypeLabels: Record<Lang, Record<NonNullable<SourceType>, string>> = 
     tv_show: "TV / Cine",
     viral_social: "Viral",
     classic: "Clásico",
+    bourdain: "Anthony Bourdain",
+    critic: "Crítico",
   },
   en: {
     timeout: "Time Out",
@@ -14,6 +16,8 @@ const sourceTypeLabels: Record<Lang, Record<NonNullable<SourceType>, string>> = 
     tv_show: "TV / Film",
     viral_social: "Viral",
     classic: "Classic",
+    bourdain: "Anthony Bourdain",
+    critic: "Critic",
   },
 };
 

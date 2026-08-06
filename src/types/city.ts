@@ -4,6 +4,8 @@ export type SourceType =
   | "tv_show"
   | "viral_social"
   | "classic"
+  | "bourdain"
+  | "critic"
   | null;
 
 export type DistinctionType =
