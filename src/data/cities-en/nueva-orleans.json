@@ -1,0 +1,27 @@
+{
+  "name": "New Orleans",
+  "country": "United States",
+  "tagline": "25-cent martinis at a 19th-century classic, and beignets worth the line every time.",
+  "places": {
+    "Commander's Palace": {
+      "cuisine": "Creole / Cajun",
+      "description": "Creole and Cajun cuisine since the 19th century, winner of seven James Beard awards. The 25-cent martini lunch is a local ritual."
+    },
+    "Café du Monde": {
+      "cuisine": "French / Creole",
+      "description": "Beignets and chicory coffee at the French Market since the 19th century, with a constant line and zero pretension."
+    },
+    "Galatoire's": {
+      "cuisine": "Creole / French",
+      "description": "French Creole cuisine on Bourbon Street since 1905, now run by the fourth generation of the Galatoire family."
+    },
+    "Dooky Chase's Restaurant": {
+      "cuisine": "Creole",
+      "description": "Creole cooking since 1941 and a historic meeting point of the Civil Rights Movement, with Martin Luther King Jr. among its visitors."
+    },
+    "Casamento's": {
+      "cuisine": "American / seafood",
+      "description": "New Orleans' most famous oyster loaf since 1919, in a spot tiled floor to ceiling in century-old Italian tile."
+    }
+  }
+}

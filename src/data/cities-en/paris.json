@@ -1,0 +1,27 @@
+{
+  "name": "Paris",
+  "country": "France",
+  "tagline": "The café where the Revolution was sharpened, and the falafel with a line in Le Marais since 1979.",
+  "places": {
+    "Le Cinq": {
+      "cuisine": "French",
+      "description": "Decor inspired by the Grand Trianon, inside the Four Seasons George V. Three Michelin stars."
+    },
+    "Le Procope": {
+      "cuisine": "French",
+      "description": "Paris' oldest café, open since 1686. Voltaire, Diderot, and Rousseau all sat at its tables."
+    },
+    "L'As du Fallafel": {
+      "cuisine": "Jewish / Middle Eastern",
+      "description": "Le Marais' most famous falafel, with a street line since 1979."
+    },
+    "Virtus": {
+      "cuisine": "French",
+      "description": "Signature Franco-Brazilian cuisine in the 12th arrondissement. Two Michelin stars, new for 2026."
+    },
+    "Guy Savoy": {
+      "cuisine": "French",
+      "description": "Classic French haute cuisine inside the Monnaie de Paris, on the banks of the Seine. Three Michelin stars."
+    }
+  }
+}

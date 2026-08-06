@@ -1,0 +1,27 @@
+{
+  "name": "Bilbao",
+  "country": "Spain",
+  "tagline": "Postwar pintxos, txangurro like always, and a Michelin star inside the Guggenheim.",
+  "places": {
+    "Víctor Montes": {
+      "cuisine": "pintxos / Basque",
+      "description": "Started as a grocery store in 1849 and is today the emblem of pintxos in Plaza Nueva, in the Old Town."
+    },
+    "A Mina": {
+      "cuisine": "Basque",
+      "description": "Product-driven cuisine from chef Álvaro Garrido by the estuary, on Paseo de Marzana. One Michelin star."
+    },
+    "La Olla": {
+      "cuisine": "Basque / Spanish",
+      "description": "Rice dishes, grilled chuletón, and a secret corner with an Art Deco bathtub that went viral on TikTok, right on Plaza Nueva."
+    },
+    "Nerua Guggenheim Bilbao": {
+      "cuisine": "Basque",
+      "description": "Contemporary Basque haute cuisine inside the Guggenheim Museum itself. One Michelin star."
+    },
+    "El Globo": {
+      "cuisine": "pintxos / Basque",
+      "description": "Its gratinated txangurro pintxo is an absolute classic, next to the Provincial Council Palace."
+    }
+  }
+}

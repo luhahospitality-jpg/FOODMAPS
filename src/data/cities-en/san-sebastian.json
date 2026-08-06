@@ -1,0 +1,27 @@
+{
+  "name": "San Sebastián",
+  "country": "Spain",
+  "tagline": "More Michelin stars per square meter than any other city on Earth — and the pintxo bar still rules.",
+  "places": {
+    "Arzak": {
+      "cuisine": "Basque",
+      "description": "A world icon of Basque cuisine, now run by Elena Arzak. Three Michelin stars since 1989."
+    },
+    "Akelarre": {
+      "cuisine": "Basque",
+      "description": "Views of the Cantabrian Sea and chef Pedro Subijana's cuisine, reinventing itself for half a century. Three Michelin stars."
+    },
+    "Ganbara": {
+      "cuisine": "pintxos / Basque",
+      "description": "The monkfish-and-prawn pintxo, and a bar packed with seasonal mushrooms, on Calle San Jerónimo."
+    },
+    "La Cuchara de San Telmo": {
+      "cuisine": "pintxos / Basque",
+      "description": "The pioneer of modern Basque pintxos, no sign on the door but a line at the bar."
+    },
+    "Mugaritz": {
+      "cuisine": "Basque",
+      "description": "A 20-course tasting menu that challenges what a restaurant even is, from chef Andoni Luis Aduriz, in Errenteria."
+    }
+  }
+}

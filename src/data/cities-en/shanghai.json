@@ -1,0 +1,27 @@
+{
+  "name": "Shanghai",
+  "country": "China",
+  "tagline": "The xiaolongbao of Yu Garden against the no-sign spot that competes with crab.",
+  "places": {
+    "Nanxiang Steamed Bun Restaurant": {
+      "cuisine": "Chinese / xiaolongbao",
+      "description": "The historic xiaolongbao spot inside Yu Garden, Shanghai's most famous even as it now shares space with tourism."
+    },
+    "Jia Jia Tang Bao": {
+      "cuisine": "Chinese / xiaolongbao",
+      "description": "A tiny spot with a permanent line; its crab xiaolongbao is considered superior to Nanxiang's by many locals."
+    },
+    "Yang's Fry Dumplings": {
+      "cuisine": "Chinese / shengjianbao",
+      "description": "Shanghai's best-known shengjianbao (pan-fried soup dumpling) chain, born as a street stall."
+    },
+    "Fu He Hui": {
+      "cuisine": "Chinese / vegetarian",
+      "description": "Chinese vegetarian haute cuisine in Changning, among Asia's 50 best restaurants. Two Michelin stars."
+    },
+    "M on the Bund": {
+      "cuisine": "Western",
+      "description": "A pioneer of Western fine dining in Shanghai since 1999, with a terrace over the Bund and views of the Huangpu."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "San Francisco",
+  "country": "United States",
+  "tagline": "The oyster bar Anthony Bourdain called a landmark, and three Michelin stars of culinary poetry.",
+  "places": {
+    "Swan Oyster Depot": {
+      "cuisine": "American",
+      "description": "An 18-stool oyster bar since 1912, described by Anthony Bourdain as a landmark on his travels around the world."
+    },
+    "Atelier Crenn": {
+      "cuisine": "French",
+      "description": "Culinary poetry from chef Dominique Crenn in the Marina. Three Michelin stars."
+    },
+    "Tadich Grill": {
+      "cuisine": "American",
+      "description": "Cioppino and sand dabs with sourdough bread, one of California's oldest continuously operating restaurants."
+    },
+    "Benu": {
+      "cuisine": "Franco-Chinese",
+      "description": "High-precision Franco-Chinese fusion, the first San Francisco restaurant to earn three Michelin stars, since 2014."
+    },
+    "House of Prime Rib": {
+      "cuisine": "American",
+      "description": "A San Francisco institution since 1950, with prime rib carved tableside from a cart and the house salad, just like on day one."
+    }
+  }
+}

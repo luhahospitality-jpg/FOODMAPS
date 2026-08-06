@@ -1,0 +1,27 @@
+{
+  "name": "Madrid",
+  "country": "Spain",
+  "tagline": "From the 1725 suckling pig to Chueca's viral fusion — two Michelin stars for every TikTok line.",
+  "places": {
+    "Casa Botín": {
+      "cuisine": "Spanish / Castilian roast house",
+      "description": "The world's oldest restaurant according to Guinness, open since 1725. The wood-oven roast suckling pig is out of this world."
+    },
+    "DiverXO": {
+      "cuisine": "creative / Asian fusion",
+      "description": "Spain's most disruptive cuisine, from chef Dabiz Muñoz. Fourth-best restaurant in the world according to The World's 50 Best 2025."
+    },
+    "Swiss Butter": {
+      "cuisine": "Swiss / steak",
+      "description": "The entrecôte with secret sauce that went viral on TikTok. No reservations, guaranteed line, in Chamberí."
+    },
+    "Kuoco 360": {
+      "cuisine": "creative / fusion",
+      "description": "Creative fusion in Chueca that's crushing it on social media — recommended by gastro-influencer Nieves Felipo."
+    },
+    "La Casa del Abuelo": {
+      "cuisine": "tapas / shrimp",
+      "description": "Madrid's most iconic garlic shrimp and short beer, served since 1906."
+    }
+  }
+}

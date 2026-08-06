@@ -1,0 +1,27 @@
+{
+  "name": "Málaga / Costa del Sol",
+  "country": "Spain",
+  "tagline": "Espetos auctioned off at a shout on the beach, wine from the barrel since 1840, and a Michelin star with a view of the Alcazaba.",
+  "places": {
+    "El Tintero": {
+      "cuisine": "espetos / fried fish",
+      "description": "The beach shack on El Palo beach where dishes are auctioned off at the top of the servers' lungs. Nobody orders from a menu — everything's grabbed on the fly."
+    },
+    "Antigua Casa de Guardia": {
+      "cuisine": "wine / tapas",
+      "description": "Málaga's oldest tavern, pouring sweet wine straight from the barrel since 1840."
+    },
+    "Bar Mercado Atarazanas": {
+      "cuisine": "tapas / fried fish",
+      "description": "A tapas bar inside the produce market, viral on TikTok for its lines and its fried fish."
+    },
+    "Blossom": {
+      "cuisine": "creative",
+      "description": "Eight tables on the fourth floor of the Museo de Málaga, with views of the Alcazaba. One Michelin star since 2025."
+    },
+    "El Pimpi": {
+      "cuisine": "Andalusian",
+      "description": "A wine cellar-restaurant from 1971 in an 18th-century house, with barrels signed by Picasso and Antonio Banderas."
+    }
+  }
+}

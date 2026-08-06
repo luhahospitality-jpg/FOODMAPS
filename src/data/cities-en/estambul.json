@@ -1,0 +1,27 @@
+{
+  "name": "Istanbul",
+  "country": "Turkey",
+  "tagline": "Ottoman cuisine with a Michelin star inside the Spice Bazaar, since 1901.",
+  "places": {
+    "Pandeli": {
+      "cuisine": "Turkish / Ottoman",
+      "description": "Ottoman cuisine inside the Grand Spice Bazaar since 1901. Michelin star."
+    },
+    "Tatbak": {
+      "cuisine": "Turkish / kebab",
+      "description": "Istanbul's benchmark kebab since 1960, with spicy Gaziantep-style lahmacun."
+    },
+    "Tarihi Karaköy Balıkçısı": {
+      "cuisine": "Turkish / seafood",
+      "description": "A historic fish restaurant in Karaköy, serving since 1923 at the entrance to Griffin Han."
+    },
+    "Beyti": {
+      "cuisine": "Turkish / kebab",
+      "description": "A kebab temple since 1945, winner of the 2022 Golden Spoon Gastronomy Award and Michelin-recommended since 2024."
+    },
+    "Sofyalı 9": {
+      "cuisine": "Turkish / meyhane",
+      "description": "One of Beyoğlu's most established traditional meyhanes, with mezze and raki near Tünel."
+    }
+  }
+}

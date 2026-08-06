@@ -1,0 +1,27 @@
+{
+  "name": "Córdoba",
+  "country": "Argentina",
+  "tagline": "50-year-old neighborhood joints, steaming locro, and the bife de chorizo that rules Nueva Córdoba.",
+  "places": {
+    "La Ruleta de Pancho": {
+      "cuisine": "Argentine",
+      "description": "A classic neighborhood joint with 50 years of history, a longtime favorite among locals."
+    },
+    "Viejo Lobo": {
+      "cuisine": "Argentine",
+      "description": "Voted \"Córdoba's best traditional restaurant,\" classic Argentine cooking since 1997."
+    },
+    "Alcorta Carnes y Vinos": {
+      "cuisine": "Argentine",
+      "description": "A cosmopolitan steakhouse in Nueva Córdoba, famous for its bife de chorizo and wine list."
+    },
+    "La Vieja Esquina": {
+      "cuisine": "Argentine / criollo",
+      "description": "A criollo-food corner spot with more than 40 years of history: locro, humita, and acclaimed empanadas."
+    },
+    "La Emilia": {
+      "cuisine": "Argentine",
+      "description": "An upscale, relaxed steakhouse in the Ecodistrito de las Artes, with the city's best cuts."
+    }
+  }
+}

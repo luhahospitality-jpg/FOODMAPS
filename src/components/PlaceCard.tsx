@@ -1,11 +1,19 @@
-import type { Place } from "@/types/city";
+import type { Place, Lang } from "@/types/city";
 import { Pill } from "./Pill";
 import { DistinctionBadge } from "./DistinctionBadge";
 import { categoryText, sourceTypeLabel } from "@/lib/labels";
+import { t } from "@/lib/dictionary";
 
 const rankColors = ["bg-mustard", "bg-pink", "bg-blue", "bg-red", "bg-ink"] as const;
 
-export function PlaceCard({ place }: { place: Place }) {
+export function PlaceCard({
+  place,
+  lang = "es",
+}: {
+  place: Place;
+  lang?: Lang;
+}) {
+  const dict = t(lang);
   const rankIndex = (place.top5_rank ?? 1) - 1;
   const rankColor = rankColors[rankIndex % rankColors.length];
   const rankTextColor =
@@ -22,7 +30,7 @@ export function PlaceCard({ place }: { place: Place }) {
           {String(place.top5_rank ?? 0).padStart(2, "0")}
         </span>
         {place.source_type && (
-          <Pill variant="ink">{sourceTypeLabel[place.source_type]}</Pill>
+          <Pill variant="ink">{sourceTypeLabel(lang, place.source_type)}</Pill>
         )}
       </div>
 
@@ -31,10 +39,10 @@ export function PlaceCard({ place }: { place: Place }) {
           {place.name}
         </h3>
         <div className="mt-2 flex flex-wrap gap-1.5">
-          <Pill variant="mustard">{categoryText(place.category)}</Pill>
+          <Pill variant="mustard">{categoryText(lang, place.category)}</Pill>
           {place.cuisine && <Pill variant="pink">{place.cuisine}</Pill>}
           {place.distinction && (
-            <DistinctionBadge distinction={place.distinction} />
+            <DistinctionBadge distinction={place.distinction} lang={lang} />
           )}
         </div>
       </div>
@@ -51,7 +59,7 @@ export function PlaceCard({ place }: { place: Place }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border-2 border-ink bg-ink px-4 py-2 font-label text-xs font-bold tracking-wide text-paper uppercase transition-colors hover:bg-blue"
           >
-            Ver en Google Maps
+            {dict.place.viewOnMaps}
             <span aria-hidden="true">↗</span>
           </a>
         )}
@@ -62,7 +70,7 @@ export function PlaceCard({ place }: { place: Place }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
           >
-            Fuente
+            {dict.place.source}
             <span aria-hidden="true">↗</span>
           </a>
         )}

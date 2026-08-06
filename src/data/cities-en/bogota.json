@@ -1,0 +1,27 @@
+{
+  "name": "Bogotá",
+  "country": "Colombia",
+  "tagline": "1816 ajiaco, and a rumba with a grill that became Colombia's most famous restaurant.",
+  "places": {
+    "La Puerta Falsa": {
+      "cuisine": "Colombian",
+      "description": "Colombia's oldest restaurant, serving ajiaco and tamales since 1816 next to Plaza de Bolívar."
+    },
+    "Andrés Carne de Res": {
+      "cuisine": "Colombian",
+      "description": "An experience somewhere between restaurant and rumba in Chía, the most famous spot in Colombia according to travelers worldwide."
+    },
+    "Leo Cocina y Cava": {
+      "cuisine": "Colombian",
+      "description": "Haute cuisine built on Colombian biodiversity, from chef Leonor Espinosa."
+    },
+    "El Chato": {
+      "cuisine": "Colombian",
+      "description": "Contemporary cuisine with local produce from chef Álvaro Clavijo, in Zona G. Named best restaurant in Latin America in 2025."
+    },
+    "Pajares Salinas": {
+      "cuisine": "Spanish",
+      "description": "An icon of Spanish cuisine in Bogotá for more than 60 years, with an elegant, traditional atmosphere."
+    }
+  }
+}

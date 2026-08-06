@@ -1,0 +1,27 @@
+{
+  "name": "Barcelona",
+  "country": "Spain",
+  "tagline": "From the 1786 Gothic Quarter to the burger that stopped Ibai Llanos in his tracks — the Spanish city with the most Michelin stars.",
+  "places": {
+    "Can Culleretes": {
+      "cuisine": "Catalan",
+      "description": "Barcelona's oldest restaurant, open since 1786 in the heart of the Gothic Quarter. Its walls are covered with photos of a century of famous diners."
+    },
+    "Disfrutar": {
+      "cuisine": "creative",
+      "description": "Named the world's best restaurant in 2024 by The World's 50 Best. Avant-garde cuisine from three elBulli alumni."
+    },
+    "Vicio": {
+      "cuisine": "burgers / smash burger",
+      "description": "Spain's most viral smash burgers, from MasterChef winner Aleix Puig — even Ibai Llanos has stopped by to try them."
+    },
+    "La Cova Fumada": {
+      "cuisine": "tapas",
+      "description": "A 1944 fishermen's tavern in Barceloneta, birthplace of the legendary \"bomba\" with potato and meat."
+    },
+    "Enigma": {
+      "cuisine": "creative",
+      "description": "Albert Adrià's most secretive project, with a reservation that's nearly impossible to get. Two Michelin stars."
+    }
+  }
+}

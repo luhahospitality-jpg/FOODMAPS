@@ -1,0 +1,27 @@
+{
+  "name": "Oaxaca",
+  "country": "Mexico",
+  "tagline": "Street-cart tlayudas, artisanal mezcal, and a terrace with a view of Santo Domingo.",
+  "places": {
+    "Casa Oaxaca": {
+      "cuisine": "Oaxacan",
+      "description": "An iconic terrace with a view of the Santo Domingo temple, a reference for contemporary Oaxacan cuisine."
+    },
+    "Mezcaloteca": {
+      "cuisine": "mezcal",
+      "description": "An artisanal mezcal tasting room, a serious introduction to the region's mezcals."
+    },
+    "La Popular": {
+      "cuisine": "Oaxacan / tlayudas",
+      "description": "Oaxaca's tlayuda temple, so popular it now has two locations."
+    },
+    "Lechoncito de Oro": {
+      "cuisine": "Oaxacan / pork",
+      "description": "A street stand for pork tacos and tortas, next to the Mercado 20 de Noviembre."
+    },
+    "Levadura de Olla": {
+      "cuisine": "Oaxacan",
+      "description": "Chef Thalia Barrios García honors the recipes of San Mateo Yucutindoo in a colonial courtyard. Mentioned in the Michelin Guide."
+    }
+  }
+}

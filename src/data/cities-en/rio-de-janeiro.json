@@ -1,0 +1,27 @@
+{
+  "name": "Rio de Janeiro",
+  "country": "Brazil",
+  "tagline": "A century-old quindim at Confeitaria Colombo, and two Michelin stars steps from Copacabana.",
+  "places": {
+    "Confeitaria Colombo": {
+      "cuisine": "Brazilian / Portuguese",
+      "description": "A historic 1894 pastry shop, a Rio icon. Its quindim was named one of the world's most iconic desserts by TasteAtlas."
+    },
+    "Oro": {
+      "cuisine": "Brazilian",
+      "description": "Signature cuisine from chef Felipe Bronze in Leblon, one of the few Brazilian restaurants with two Michelin stars."
+    },
+    "Lasai": {
+      "cuisine": "Brazilian",
+      "description": "Ingredients from its own garden in Humaitá, from chef Rafa Costa e Silva. Two Michelin stars and 28th on The World's 50 Best 2025."
+    },
+    "Mee": {
+      "cuisine": "Asian",
+      "description": "Refined Asian cuisine inside the legendary Copacabana Palace. One Michelin star."
+    },
+    "Garota de Ipanema": {
+      "cuisine": "Brazilian / boteco",
+      "description": "The boteco where Vinícius de Moraes and Tom Jobim wrote \"Garota de Ipanema\" in 1962. The street next door bears the poet's name."
+    }
+  }
+}

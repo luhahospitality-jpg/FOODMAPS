@@ -1,0 +1,27 @@
+{
+  "name": "Rome",
+  "country": "Italy",
+  "tagline": "Four ways to eat the perfect carbonara, from a tiny Trastevere trattoria to a rooftop with three Michelin stars.",
+  "places": {
+    "La Pergola": {
+      "cuisine": "Italian",
+      "description": "Heinz Beck's cuisine on the rooftop of the Waldorf Astoria Cavalieri, overlooking all of Rome. Three Michelin stars for two decades now."
+    },
+    "Armando al Pantheon": {
+      "cuisine": "Roman",
+      "description": "A historic reference for Roman cuisine next to the Pantheon, with one of the city's best carbonaras."
+    },
+    "Trattoria Pennestri": {
+      "cuisine": "Roman",
+      "description": "A neighborhood trattoria in Ostiense with carbonara, cacio e pepe, amatriciana, and gricia. Bib Gourmand."
+    },
+    "Da Enzo al 29": {
+      "cuisine": "Roman",
+      "description": "A tiny Trastevere trattoria, always with a line, famous for its perfectly balanced carbonara."
+    },
+    "Salumeria Roscioli": {
+      "cuisine": "Roman",
+      "description": "A delicatessen and wine cellar with more than 2,800 wines, next to Campo de' Fiori. Its carbonara is recognized by 50 Top Italy."
+    }
+  }
+}

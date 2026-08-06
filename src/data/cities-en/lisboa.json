@@ -1,0 +1,27 @@
+{
+  "name": "Lisbon",
+  "country": "Portugal",
+  "tagline": "The secret pastel de nata recipe from 1837, and 26 kitchens under the roof of an 1892 market.",
+  "places": {
+    "Pastéis de Belém": {
+      "cuisine": "Portuguese",
+      "description": "The original pastel de nata factory, with a secret recipe since 1837."
+    },
+    "Time Out Market Lisboa": {
+      "cuisine": "mixed",
+      "description": "The 1892 produce market turned food hall, with 26 chefs and restaurants under one roof."
+    },
+    "Belcanto": {
+      "cuisine": "Portuguese",
+      "description": "Chef José Avillez's flagship table in Chiado, Lisbon's most awarded restaurant. Two Michelin stars."
+    },
+    "Cervejaria Ramiro": {
+      "cuisine": "Portuguese / seafood",
+      "description": "Lisbon's benchmark seafood house since the 1950s, with shrimp, barnacles, and cold beer, just like always."
+    },
+    "A Ginjinha Sem Rival": {
+      "cuisine": "Portuguese / liqueur",
+      "description": "A historic ginjinha (sour cherry liqueur) bar with more than a century of history, next to Praça dos Restauradores."
+    }
+  }
+}

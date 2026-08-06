@@ -1,0 +1,27 @@
+{
+  "name": "Spain (national picks)",
+  "country": "Spain",
+  "tagline": "Five gems off the usual circuit: Girona, a Basque farmhouse, an 1898 Asturian inn, the Galician estuary, and Seville.",
+  "places": {
+    "El Celler de Can Roca": {
+      "cuisine": "Catalan",
+      "description": "The Roca brothers' temple in Girona, named the world's best restaurant in 2013 and 2015. Three Michelin stars."
+    },
+    "Asador Etxebarri": {
+      "cuisine": "Basque",
+      "description": "Bittor Arginzoniz's grill in a Bizkaia farmhouse, #2 in the world on The World's 50 Best 2024. One Michelin star."
+    },
+    "Casa Marcial": {
+      "cuisine": "Asturian",
+      "description": "Nacho Manzano's Asturian landscape cuisine, in a former family inn from 1898. Three Michelin stars, three Repsol Suns."
+    },
+    "Casa Solla": {
+      "cuisine": "Galician",
+      "description": "Galician-rooted cuisine built on estuary produce, from chef Pepe Solla, heir to the family tradition. One Michelin star."
+    },
+    "Abantal": {
+      "cuisine": "Andalusian",
+      "description": "Contemporary Andalusian cuisine from chef Julio Fernández, a fine-dining reference in Seville. One Michelin star."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Tokyo",
+  "country": "Japan",
+  "tagline": "From the ten-seat shrine where Obama tasted the best sushi of his life to the solo ramen booth that went viral.",
+  "places": {
+    "Sukiyabashi Jiro": {
+      "cuisine": "sushi",
+      "description": "Jiro Ono's sushi shrine, the \"god of sushi\" who inspired the documentary Jiro Dreams of Sushi. Barack Obama said it was the best sushi of his life."
+    },
+    "Myojaku": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Rose from two to three Michelin stars in 2026, with minimalist cuisine from chef Hidetoshi Nakamura in Nishi-Azabu."
+    },
+    "Ichiran Shibuya": {
+      "cuisine": "Japanese / ramen",
+      "description": "The ramen chain with individual booths that went viral for its \"solo dining\" concept. More than 60 years of history."
+    },
+    "Tsukiji Outer Market": {
+      "cuisine": "mixed / seafood",
+      "description": "Tokyo's most famous street seafood market, with stalls for tuna, sea urchin, and sweet omelette since dawn."
+    },
+    "Gogyo": {
+      "cuisine": "Japanese / ramen",
+      "description": "Birthplace of black ramen (kogashi), with signature burnt garlic, in Nishi-Azabu."
+    }
+  }
+}

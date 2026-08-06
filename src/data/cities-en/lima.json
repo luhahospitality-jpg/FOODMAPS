@@ -1,0 +1,27 @@
+{
+  "name": "Lima",
+  "country": "Peru",
+  "tagline": "The world's two best restaurants are here, and the ceviche that started it all still doesn't take reservations.",
+  "places": {
+    "Maido": {
+      "cuisine": "Nikkei / Peruvian-Japanese",
+      "description": "Nikkei fusion from chef Mitsuharu \"Micha\" Tsumura, named the world's best restaurant in 2025 by The World's 50 Best."
+    },
+    "Central": {
+      "cuisine": "Peruvian",
+      "description": "A menu organized by altitude that travels the coast, the Andes, and the Amazon, from chef Virgilio Martínez. The world's second-best restaurant."
+    },
+    "La Mar Cebichería": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "The cevichería Gastón Acurio opened in 2005, taking Peruvian ceviche to the world. No reservations, and there's always a line."
+    },
+    "Astrid & Gastón": {
+      "cuisine": "Peruvian",
+      "description": "The restaurant that marked the start of Peru's gastronomic boom, from Gastón Acurio and Astrid Gutsche."
+    },
+    "Isolina Taberna Peruana": {
+      "cuisine": "Peruvian / criollo",
+      "description": "A criollo tavern in Barranco from chef José del Castillo, with recipes inherited from his mother. Recognized by Latin America's 50 Best."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Budapest",
+  "country": "Hungary",
+  "tagline": "The world's most beautiful café, and the ruin bar that invented an entire nightlife genre.",
+  "places": {
+    "Costes": {
+      "cuisine": "Hungarian / French",
+      "description": "Hungary's first restaurant to win a Michelin star, contemporary French cuisine in District IX."
+    },
+    "Szimpla Kert": {
+      "cuisine": "Hungarian",
+      "description": "Budapest's oldest ruin bar, a garden-bar inside a derelict building in the Jewish Quarter."
+    },
+    "New York Café": {
+      "cuisine": "Hungarian",
+      "description": "Considered the world's most beautiful café, with gilded ceilings and crystal chandeliers since 1894."
+    },
+    "Stand": {
+      "cuisine": "Hungarian",
+      "description": "The pinnacle of contemporary Hungarian haute cuisine, Budapest's only two-Michelin-star restaurant."
+    },
+    "Nagyvásárcsarnok (Gran Mercado Central)": {
+      "cuisine": "Hungarian",
+      "description": "Budapest's largest and oldest covered market, since 1897, with lángos and Hungarian cold cuts on the upper floor."
+    }
+  }
+}

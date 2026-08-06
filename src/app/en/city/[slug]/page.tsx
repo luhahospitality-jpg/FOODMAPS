@@ -5,11 +5,11 @@ export function generateStaticParams() {
   return getAvailableCitySlugs().map((slug) => ({ slug }));
 }
 
-export default async function CityPage({
+export default async function CityPageEn({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  return <CityView slug={slug} lang="es" />;
+  return <CityView slug={slug} lang="en" />;
 }

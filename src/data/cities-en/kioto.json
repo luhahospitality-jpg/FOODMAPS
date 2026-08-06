@@ -1,0 +1,27 @@
+{
+  "name": "Kyoto",
+  "country": "Japan",
+  "tagline": "Three-Michelin-star kaiseki since 1912, and the 400-meter market Kyoto calls \"its kitchen.\"",
+  "places": {
+    "Kikunoi Honten": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Traditional kaiseki since 1912, one of the temples of Japanese haute cuisine. Three Michelin stars."
+    },
+    "Nishiki Market": {
+      "cuisine": "mixed",
+      "description": "The 400-meter market known as \"Kyoto's kitchen,\" with more than a hundred street food stalls."
+    },
+    "Shoraian": {
+      "cuisine": "Japanese / tofu",
+      "description": "Tofu kaiseki with views of the Katsura River, in Arashiyama."
+    },
+    "Honke Owariya": {
+      "cuisine": "Japanese / soba",
+      "description": "Kyoto's oldest restaurant, serving soba on the same grounds since 1465. It was once an official supplier to the Imperial Palace."
+    },
+    "Gion Karyo": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Contemporary kaiseki in a historic Gion building, with more than thirty years of history and a daily-changing menu."
+    }
+  }
+}

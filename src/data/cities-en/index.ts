@@ -1,0 +1,104 @@
+import type { CityTranslation } from "@/types/city";
+import nuevaYork from "./nueva-york.json";
+import madrid from "./madrid.json";
+import barcelona from "./barcelona.json";
+import bilbao from "./bilbao.json";
+import sanSebastian from "./san-sebastian.json";
+import malaga from "./malaga.json";
+import losAngeles from "./los-angeles.json";
+import tokio from "./tokio.json";
+import buenosAires from "./buenos-aires.json";
+import ciudadDeMexico from "./ciudad-de-mexico.json";
+import cordoba from "./cordoba.json";
+import saoPaulo from "./sao-paulo.json";
+import rioDeJaneiro from "./rio-de-janeiro.json";
+import lima from "./lima.json";
+import bogota from "./bogota.json";
+import oaxaca from "./oaxaca.json";
+import valencia from "./valencia.json";
+import espana from "./espana.json";
+import paris from "./paris.json";
+import copenhague from "./copenhague.json";
+import roma from "./roma.json";
+import milan from "./milan.json";
+import florencia from "./florencia.json";
+import napoles from "./napoles.json";
+import estambul from "./estambul.json";
+import atenas from "./atenas.json";
+import budapest from "./budapest.json";
+import berlin from "./berlin.json";
+import amsterdam from "./amsterdam.json";
+import osaka from "./osaka.json";
+import kioto from "./kioto.json";
+import beijing from "./beijing.json";
+import shanghai from "./shanghai.json";
+import ciudadDelCabo from "./ciudad-del-cabo.json";
+import londres from "./londres.json";
+import lisboa from "./lisboa.json";
+import viena from "./viena.json";
+import praga from "./praga.json";
+import bangkok from "./bangkok.json";
+import singapur from "./singapur.json";
+import dubai from "./dubai.json";
+import seul from "./seul.json";
+import marrakech from "./marrakech.json";
+import hongKong from "./hong-kong.json";
+import sidney from "./sidney.json";
+import toronto from "./toronto.json";
+import miami from "./miami.json";
+import chicago from "./chicago.json";
+import sanFrancisco from "./san-francisco.json";
+import nuevaOrleans from "./nueva-orleans.json";
+
+export const cityTranslations: Record<string, CityTranslation> = {
+  "nueva-york": nuevaYork as CityTranslation,
+  madrid: madrid as CityTranslation,
+  barcelona: barcelona as CityTranslation,
+  bilbao: bilbao as CityTranslation,
+  "san-sebastian": sanSebastian as CityTranslation,
+  malaga: malaga as CityTranslation,
+  "los-angeles": losAngeles as CityTranslation,
+  tokio: tokio as CityTranslation,
+  "buenos-aires": buenosAires as CityTranslation,
+  "ciudad-de-mexico": ciudadDeMexico as CityTranslation,
+  cordoba: cordoba as CityTranslation,
+  "sao-paulo": saoPaulo as CityTranslation,
+  "rio-de-janeiro": rioDeJaneiro as CityTranslation,
+  lima: lima as CityTranslation,
+  bogota: bogota as CityTranslation,
+  oaxaca: oaxaca as CityTranslation,
+  valencia: valencia as CityTranslation,
+  espana: espana as CityTranslation,
+  paris: paris as CityTranslation,
+  copenhague: copenhague as CityTranslation,
+  roma: roma as CityTranslation,
+  milan: milan as CityTranslation,
+  florencia: florencia as CityTranslation,
+  napoles: napoles as CityTranslation,
+  estambul: estambul as CityTranslation,
+  atenas: atenas as CityTranslation,
+  budapest: budapest as CityTranslation,
+  berlin: berlin as CityTranslation,
+  amsterdam: amsterdam as CityTranslation,
+  osaka: osaka as CityTranslation,
+  kioto: kioto as CityTranslation,
+  beijing: beijing as CityTranslation,
+  shanghai: shanghai as CityTranslation,
+  "ciudad-del-cabo": ciudadDelCabo as CityTranslation,
+  londres: londres as CityTranslation,
+  lisboa: lisboa as CityTranslation,
+  viena: viena as CityTranslation,
+  praga: praga as CityTranslation,
+  bangkok: bangkok as CityTranslation,
+  singapur: singapur as CityTranslation,
+  dubai: dubai as CityTranslation,
+  seul: seul as CityTranslation,
+  marrakech: marrakech as CityTranslation,
+  "hong-kong": hongKong as CityTranslation,
+  sidney: sidney as CityTranslation,
+  toronto: toronto as CityTranslation,
+  miami: miami as CityTranslation,
+  chicago: chicago as CityTranslation,
+  "san-francisco": sanFrancisco as CityTranslation,
+  "nueva-orleans": nuevaOrleans as CityTranslation,
+};

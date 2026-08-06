@@ -1,4 +1,5 @@
-import type { CityData } from "@/types/city";
+import type { CityData, Lang } from "@/types/city";
+import { cityTranslations } from "@/data/cities-en";
 import newYork from "@/data/cities/new-york.json";
 import madrid from "@/data/cities/madrid.json";
 import barcelona from "@/data/cities/barcelona.json";
@@ -109,4 +110,35 @@ export function getCityData(slug: string): CityData | null {
 
 export function getAvailableCitySlugs(): string[] {
   return Object.keys(cityData);
+}
+
+export function getLocalizedCityData(
+  slug: string,
+  lang: Lang,
+): CityData | null {
+  const base = getCityData(slug);
+  if (!base) return null;
+  if (lang === "es") return base;
+
+  const translation = cityTranslations[slug];
+  if (!translation) return base;
+
+  return {
+    ...base,
+    name: translation.name ?? base.name,
+    country: translation.country ?? base.country,
+    tagline: translation.tagline ?? base.tagline,
+    places: base.places.map((place) => {
+      const placeTranslation = translation.places?.[place.name];
+      if (!placeTranslation) return place;
+      return {
+        ...place,
+        description: placeTranslation.description ?? place.description,
+        cuisine:
+          placeTranslation.cuisine !== undefined
+            ? placeTranslation.cuisine
+            : place.cuisine,
+      };
+    }),
+  };
 }

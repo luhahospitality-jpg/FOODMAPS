@@ -1,0 +1,27 @@
+{
+  "name": "Dubai",
+  "country": "United Arab Emirates",
+  "tagline": "Dubai's first three-Michelin-star restaurant, and the Persian kebab where chefs eat on their days off.",
+  "places": {
+    "Trèsind Studio": {
+      "cuisine": "Indian",
+      "description": "Modern Indian cuisine in DIFC, Dubai's first restaurant to earn three Michelin stars."
+    },
+    "Al Ustad Special Kabab": {
+      "cuisine": "Persian",
+      "description": "Persian kebabs in Bur Dubai since 1978, a favorite of the city's chefs on their days off."
+    },
+    "Al Mallah": {
+      "cuisine": "Lebanese / shawarma",
+      "description": "Classic Lebanese shawarma for almost 40 years."
+    },
+    "Ravi Restaurant": {
+      "cuisine": "Pakistani",
+      "description": "A Pakistani food landmark in Al Satwa since 1978, once certified by Anthony Bourdain."
+    },
+    "STAY by Yannick Alléno": {
+      "cuisine": "French",
+      "description": "Contemporary French cuisine inside the One&Only The Palm, with a dining room of black crystal chandeliers. Two Michelin stars."
+    }
+  }
+}

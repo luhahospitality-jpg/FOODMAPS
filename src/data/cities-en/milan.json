@@ -1,0 +1,27 @@
+{
+  "name": "Milan",
+  "country": "Italy",
+  "tagline": "A 1949 panzerotto by the Duomo, and two Michelin stars that have defined Milanese haute cuisine for half a century.",
+  "places": {
+    "Cracco in Galleria": {
+      "cuisine": "Italian",
+      "description": "Carlo Cracco's table inside the Galleria Vittorio Emanuele II, in the heart of Milan. One Michelin star."
+    },
+    "Aimo e Nadia": {
+      "cuisine": "Italian",
+      "description": "A Milanese haute cuisine institution for more than half a century. Two Michelin stars."
+    },
+    "Luini": {
+      "cuisine": "Italian / panzerotti",
+      "description": "The bakery that introduced the Puglian panzerotto to Milan, since 1949, steps from the Duomo."
+    },
+    "Seta by Antonio Guida": {
+      "cuisine": "Italian / French",
+      "description": "Antonio Guida's cuisine at the Mandarin Oriental Milano, Mediterranean technique of the highest precision. Two Michelin stars."
+    },
+    "Enrico Bartolini al MUDEC": {
+      "cuisine": "Italian",
+      "description": "Inside the Museum of Cultures, Milan's only three-Michelin-star table."
+    }
+  }
+}

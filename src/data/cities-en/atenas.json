@@ -1,0 +1,27 @@
+{
+  "name": "Athens",
+  "country": "Greece",
+  "tagline": "Souvlaki like always in Monastiraki, and Greece's two highest Michelin stars.",
+  "places": {
+    "Spondi": {
+      "cuisine": "Greek / French",
+      "description": "Refined Franco-Greek fusion in a serene courtyard. Two Michelin stars, the highest in Greece."
+    },
+    "O Thanasis": {
+      "cuisine": "Greek / souvlaki",
+      "description": "A souvlaki institution on Monastiraki Square, with tables outside and old-school prices."
+    },
+    "Platanos": {
+      "cuisine": "Greek",
+      "description": "A taverna in Plaka open since 1932, with a history of famous visitors like Henry Miller. Classic Greek cooking."
+    },
+    "Psarras": {
+      "cuisine": "Greek",
+      "description": "A Plaka institution since 1898, with terraces stepped between floors and grilled fish."
+    },
+    "Krinos": {
+      "cuisine": "Greek / bougatsa",
+      "description": "A historic pastry shop on Aiolou Street, near Monastiraki, famous for its cream bougatsa."
+    }
+  }
+}

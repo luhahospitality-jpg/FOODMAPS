@@ -1,0 +1,27 @@
+{
+  "name": "Sydney",
+  "country": "Australia",
+  "tagline": "Signature cuisine inside the Opera House's sails, and meat pies signed by celebrities since 1948.",
+  "places": {
+    "Bennelong": {
+      "cuisine": "Australian",
+      "description": "Modern Australian cuisine from chef Peter Gilmore, inside the sails of the Sydney Opera House."
+    },
+    "Quay": {
+      "cuisine": "Australian",
+      "description": "Views of Sydney Harbour and nine appearances on The World's 50 Best Restaurants list."
+    },
+    "Upper Crust Pies": {
+      "cuisine": "Australian",
+      "description": "Meat pies since 1948, with a wall of autographs from surfers and celebrities."
+    },
+    "Golden Century": {
+      "cuisine": "Cantonese",
+      "description": "A Sydney Cantonese institution since the '90s, now reopened at Crown Sydney with live seafood tanks and more than 200 dishes."
+    },
+    "Icebergs Dining Room and Bar": {
+      "cuisine": "Italian",
+      "description": "A glass dining room over the iconic Bondi Icebergs pool, with Pacific Ocean views, since 2002."
+    }
+  }
+}

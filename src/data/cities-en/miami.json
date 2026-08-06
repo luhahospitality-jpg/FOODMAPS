@@ -1,0 +1,27 @@
+{
+  "name": "Miami",
+  "country": "United States",
+  "tagline": "Cold crab since 1913, and the café con leche that Versailles never stops pouring.",
+  "places": {
+    "Joe's Stone Crab": {
+      "cuisine": "American",
+      "description": "The cold stone crab claws with mustard sauce that have defined Miami since 1913. Open only November through May."
+    },
+    "Versailles": {
+      "cuisine": "Cuban",
+      "description": "The heart of Cuban cuisine in Miami, with a ballroom and café con leche flowing around the clock."
+    },
+    "Le Jardinier": {
+      "cuisine": "French",
+      "description": "Vegetable-forward French cuisine in the Design District, with a Michelin star in Florida's debut guide."
+    },
+    "Ariete": {
+      "cuisine": "American / Cuban",
+      "description": "Contemporary American technique with Cuban roots from chef Michael Beltran in Coconut Grove. Michelin star."
+    },
+    "Los Pinareños Fruteria": {
+      "cuisine": "Cuban",
+      "description": "A family-run fruit stand in Little Havana since 1963, famous for its freshly pressed guarapo (sugarcane juice)."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Seoul",
+  "country": "South Korea",
+  "tagline": "The 1905 market where Korean street food was born, and the Bib Gourmand beef tartare right next door.",
+  "places": {
+    "Gwangjang Market": {
+      "cuisine": "Korean",
+      "description": "Korea's oldest traditional market, since 1905, with stalls for bindaetteok, sundae, and yukhoe."
+    },
+    "Buchon Yukhoe": {
+      "cuisine": "Korean / yukhoe",
+      "description": "A yukhoe (Korean beef tartare) specialist next to Gwangjang Market. Bib Gourmand since 2018."
+    },
+    "Tosokchon Samgyetang": {
+      "cuisine": "Korean",
+      "description": "Seoul's most popular samgyetang (ginseng chicken soup), near Gyeongbokgung Palace, a favorite of presidents."
+    },
+    "Myeongdong Kyoja": {
+      "cuisine": "Korean / kalguksu",
+      "description": "Hand-cut kalguksu noodles and mandu, a family recipe since 1966 right in Myeongdong. Michelin Guide."
+    },
+    "Mingles": {
+      "cuisine": "contemporary Korean",
+      "description": "Contemporary Korean haute cuisine from chef Kang Mingoo in Gangnam. Three Michelin stars."
+    }
+  }
+}

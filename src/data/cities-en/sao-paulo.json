@@ -1,0 +1,27 @@
+{
+  "name": "São Paulo",
+  "country": "Brazil",
+  "tagline": "From two-Michelin-star Amazonian cuisine to the mortadella sandwich that made The New York Times.",
+  "places": {
+    "D.O.M": {
+      "cuisine": "contemporary Brazilian",
+      "description": "Contemporary Brazilian cuisine from chef Alex Atala, with Amazonian ingredients. Two Michelin stars, 9th-best restaurant in the world on The World's 50 Best."
+    },
+    "Fasano": {
+      "cuisine": "Italian",
+      "description": "A reference for Italian tradition in São Paulo, considered by many the city's number-one restaurant."
+    },
+    "Maní": {
+      "cuisine": "Brazilian",
+      "description": "Signature cuisine from chef Helena Rizzo, one of Brazil's most awarded chefs. One Michelin star."
+    },
+    "Hocca Bar": {
+      "cuisine": "Brazilian",
+      "description": "The legendary mortadella sandwich from the Mercadão, created in 1952 and even featured by The New York Times."
+    },
+    "Picchi": {
+      "cuisine": "Italian",
+      "description": "100% Italian, family-style cuisine from chef Pier Paolo Picchi, in Jardins. One Michelin star."
+    }
+  }
+}

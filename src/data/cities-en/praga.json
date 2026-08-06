@@ -1,0 +1,27 @@
+{
+  "name": "Prague",
+  "country": "Czech Republic",
+  "tagline": "Its own beer since the 15th century, and contemporary Czech cuisine that earned a Michelin star.",
+  "places": {
+    "U Fleků": {
+      "cuisine": "Czech",
+      "description": "A brewery-restaurant since the 15th century, with eight halls and its own beer. One of Prague's most famous historic spots."
+    },
+    "La Degustation Bohême Bourgeoise": {
+      "cuisine": "Czech",
+      "description": "Contemporary, seasonal Czech cuisine, one of only two Michelin-starred restaurants in Prague."
+    },
+    "Field": {
+      "cuisine": "Czech",
+      "description": "Minimalist, nature-inspired decor and top-quality ingredients. Michelin star."
+    },
+    "U Zlatého Tygra": {
+      "cuisine": "Czech",
+      "description": "A legendary Old Town tavern, famous for its unpasteurized Pilsner Urquell and for being writer Bohumil Hrabal's favorite bar."
+    },
+    "Café Savoy": {
+      "cuisine": "Czech",
+      "description": "An Art Nouveau café since 1893 by the Vltava, with a seven-meter neo-Renaissance ceiling."
+    }
+  }
+}

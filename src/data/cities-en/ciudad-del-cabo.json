@@ -1,0 +1,27 @@
+{
+  "name": "Cape Town",
+  "country": "South Africa",
+  "tagline": "Africa's best restaurant in a treehouse over the vineyards, and the gatsby that feeds four people.",
+  "places": {
+    "La Colombe": {
+      "cuisine": "French / Asian",
+      "description": "Franco-Asian fusion in a treehouse over the Silvermist estate. Africa's best restaurant, among the world's top 50."
+    },
+    "Mariam's Kitchen": {
+      "cuisine": "South African / gatsby",
+      "description": "Cape Town's most famous steak-and-masala gatsby, an urban classic since 1985."
+    },
+    "FYN Restaurant": {
+      "cuisine": "South African / Japanese",
+      "description": "South African cuisine with Japanese technique from chef Peter Tempelhoff, a regular on The World's 50 Best Restaurants list."
+    },
+    "Biesmiellah": {
+      "cuisine": "South African / Cape Malay",
+      "description": "Halal Cape Malay cuisine in the colorful heart of Bo-Kaap, run by the Osman family for more than four decades."
+    },
+    "Kalky's": {
+      "cuisine": "South African / fish and chips",
+      "description": "A fish-and-chips shack by the Kalk Bay fishing harbor, with the freshest fish on the peninsula."
+    }
+  }
+}

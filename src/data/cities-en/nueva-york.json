@@ -1,0 +1,27 @@
+{
+  "name": "New York",
+  "country": "United States",
+  "tagline": "Lifelong classics, viral hype, and a bit of the whole world on every corner.",
+  "places": {
+    "Katz's Delicatessen": {
+      "cuisine": "Jewish / deli",
+      "description": "The absolute classic since 1888. The pastrami sandwich is mandatory."
+    },
+    "Carbone New York": {
+      "cuisine": "Italian-American",
+      "description": "Upscale, super-hyped Italian-American. The spicy rigatoni is the star dish. A regular on NYC's best-restaurant rankings."
+    },
+    "The Halal Guys (53rd & 6th)": {
+      "cuisine": "halal",
+      "description": "NYC's most iconic halal cart, born in 1990. It appears in Mark Wiens' episode for National Geographic's \"Epic Food Journeys.\""
+    },
+    "Russ & Daughters": {
+      "cuisine": "Jewish",
+      "description": "The temple of the Jewish bagel and lox since 1914, on the Lower East Side."
+    },
+    "Prince Street Pizza": {
+      "cuisine": "Italian",
+      "description": "The \"Spicy Spring\" Sicilian slice that went viral on TikTok."
+    }
+  }
+}

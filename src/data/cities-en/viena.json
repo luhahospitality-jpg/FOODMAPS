@@ -1,0 +1,27 @@
+{
+  "name": "Vienna",
+  "country": "Austria",
+  "tagline": "The schnitzel that overflows the plate, and the original sachertorte with 150 years of history.",
+  "places": {
+    "Steirereck": {
+      "cuisine": "Austrian",
+      "description": "Considered Austria's best restaurant, inside the Stadtpark. Three Michelin stars."
+    },
+    "Hotel Sacher": {
+      "cuisine": "Austrian",
+      "description": "Birthplace of the original sachertorte, celebrating 150 years of history."
+    },
+    "Figlmüller": {
+      "cuisine": "Austrian",
+      "description": "Vienna's most famous schnitzel, so big it overflows the plate."
+    },
+    "Naschmarkt": {
+      "cuisine": "mixed",
+      "description": "Vienna's most famous market, with more than 130 stalls between Karlsplatz and Kettenbrückengasse since the 16th century."
+    },
+    "Café Central": {
+      "cuisine": "Austrian",
+      "description": "A historic café since 1876 in the heart of Vienna, once a meeting point for Freud and Trotsky. UNESCO Intangible Cultural Heritage."
+    }
+  }
+}

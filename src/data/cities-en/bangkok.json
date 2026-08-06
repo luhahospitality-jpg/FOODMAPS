@@ -1,0 +1,27 @@
+{
+  "name": "Bangkok",
+  "country": "Thailand",
+  "tagline": "The crab omelette in ski goggles that Netflix made famous, and three Michelin stars for a pair of German twins.",
+  "places": {
+    "Jay Fai": {
+      "cuisine": "Thai",
+      "description": "Thailand's most famous crab omelette, cooked in ski goggles over a charcoal wok. The world's first street food stall to win a Michelin star, star of Netflix's Chef's Table."
+    },
+    "Sühring": {
+      "cuisine": "German",
+      "description": "German twins reinventing their home cuisine in Bangkok. Three Michelin stars, the first German restaurant in Asia to achieve it."
+    },
+    "Thip Samai": {
+      "cuisine": "Thai / pad thai",
+      "description": "The city's most famous egg-wrapped pad thai, on Maha Chai Street since 1966."
+    },
+    "Gaggan Anand": {
+      "cuisine": "Indian / progressive",
+      "description": "Progressive Indian cuisine with French, Thai, and Japanese technique, at a 14-seat counter with a 25-course theatrical menu. Michelin star."
+    },
+    "Krua Apsorn (Dusit)": {
+      "cuisine": "Thai / royal",
+      "description": "Royal Thai recipes since 1996, inherited from the Princess Mother's cook. Bib Gourmand."
+    }
+  }
+}

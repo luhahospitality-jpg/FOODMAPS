@@ -1,6 +1,10 @@
 import { CheckerIcon } from "./CheckerIcon";
+import type { Lang } from "@/types/city";
+import { t } from "@/lib/dictionary";
 
-export function Footer() {
+export function Footer({ lang = "es" }: { lang?: Lang }) {
+  const dict = t(lang);
+
   return (
     <footer className="border-t-2 border-ink bg-ink text-paper">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-8">
@@ -11,9 +15,7 @@ export function Footer() {
           </span>
         </div>
         <p className="max-w-md font-label text-xs leading-relaxed text-paper/70">
-          Cada lugar fue verificado antes de sumarse a la lista. Cuando existe
-          una fuente real — Time Out, un influencer, TV o un viral — va
-          linkeada. Si no, se incluye igual pero sin inventar nada.
+          {dict.footer.text}
         </p>
       </div>
     </footer>

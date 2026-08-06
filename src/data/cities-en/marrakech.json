@@ -1,0 +1,27 @@
+{
+  "name": "Marrakech",
+  "country": "Morocco",
+  "tagline": "The 17th-century palace where Hitchcock filmed a scene, and the square that fills with 40 food stalls each night.",
+  "places": {
+    "Dar Essalam": {
+      "cuisine": "Moroccan",
+      "description": "A 17th-century palace turned into the city's first Moroccan restaurant, since 1952. Alfred Hitchcock filmed \"The Man Who Knew Too Much\" here in 1956."
+    },
+    "La Mamounia": {
+      "cuisine": "Moroccan",
+      "description": "Formal Moroccan cuisine at one of the world's most legendary hotels, with gold-leaf pastilla."
+    },
+    "Jemaa el-Fnaa": {
+      "cuisine": "Moroccan",
+      "description": "The UNESCO World Heritage square that turns into Morocco's biggest street food market by night, with nearly 40 stalls."
+    },
+    "Al Fassia Guéliz": {
+      "cuisine": "Moroccan",
+      "description": "A restaurant run entirely by women since 1985, traditional Fez cuisine and a regular on The World's 50 Best Discovery."
+    },
+    "Nomad": {
+      "cuisine": "modern Moroccan",
+      "description": "Modern Moroccan cuisine on a four-story rooftop over the Rahba Kedima spice square, with views of the Atlas."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Amsterdam",
+  "country": "Netherlands",
+  "tagline": "Raw herring by the station since 1903, and fine dining with a panoramic view from the 23rd floor.",
+  "places": {
+    "Ciel Bleu": {
+      "cuisine": "French / Dutch",
+      "description": "French haute cuisine with panoramic views from atop the Hotel Okura. Two Michelin stars."
+    },
+    "Stubbe's Haring": {
+      "cuisine": "Dutch / herring",
+      "description": "Amsterdam's most famous herring stand, next to Central Station since 1903."
+    },
+    "De Kas": {
+      "cuisine": "Dutch",
+      "description": "A restaurant inside a 1920s greenhouse that grows its own vegetables."
+    },
+    "Flore": {
+      "cuisine": "Dutch / French",
+      "description": "Inside the Hotel de l'Europe, minimalist, sustainable, dairy-free cuisine from chef Bas van Kranen. Two Michelin stars and a Green Star."
+    },
+    "Foodhallen": {
+      "cuisine": "mixed",
+      "description": "A food market inside a former Oud-West tram depot, with more than 20 international food stalls."
+    }
+  }
+}

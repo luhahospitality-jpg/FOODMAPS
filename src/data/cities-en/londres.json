@@ -1,0 +1,27 @@
+{
+  "name": "London",
+  "country": "United Kingdom",
+  "tagline": "London's oldest restaurant, since 1798, and the fish and chips that hasn't changed since 1914.",
+  "places": {
+    "Rules": {
+      "cuisine": "British",
+      "description": "London's oldest restaurant, since 1798. Dickens and Charlie Chaplin both dined within its walls."
+    },
+    "The Golden Hind": {
+      "cuisine": "British / fish and chips",
+      "description": "Traditional fish and chips in Marylebone since 1914."
+    },
+    "Core by Clare Smyth": {
+      "cuisine": "British",
+      "description": "Clare Smyth, the first and only British female chef with three Michelin stars, in Notting Hill."
+    },
+    "Borough Market": {
+      "cuisine": "mixed",
+      "description": "One of London's oldest food markets, with more than a thousand years of history next to London Bridge."
+    },
+    "St. John": {
+      "cuisine": "British",
+      "description": "The restaurant that popularized nose-to-tail cooking, in Smithfield. One Michelin star."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Singapore",
+  "country": "Singapore",
+  "tagline": "Two street stalls, two Michelin stars, and full meals for under 3 dollars.",
+  "places": {
+    "Hawker Chan": {
+      "cuisine": "Chinese / Singaporean",
+      "description": "The world's cheapest Michelin-starred soy sauce chicken rice, since 2016. The first Asian street stall to achieve it."
+    },
+    "Tian Tian Hainanese Chicken Rice": {
+      "cuisine": "Singaporean",
+      "description": "Singapore's most popular Hainanese chicken rice stall, inside the Maxwell Food Centre. Michelin star."
+    },
+    "Odette": {
+      "cuisine": "French",
+      "description": "Modern French cuisine from chef Julien Royer inside the National Gallery. Three Michelin stars since 2019."
+    },
+    "Newton Food Centre": {
+      "cuisine": "mixed",
+      "description": "One of Singapore's first hawker centres, since 1971, with more than 80 open-air Chinese, Malay, and Indian stalls."
+    },
+    "Lau Pa Sat": {
+      "cuisine": "mixed",
+      "description": "A Victorian national monument turned food market, famous for its \"Satay Street\" at nightfall."
+    }
+  }
+}

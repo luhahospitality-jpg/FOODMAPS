@@ -1,0 +1,27 @@
+{
+  "name": "Mexico City",
+  "country": "Mexico",
+  "tagline": "The mole that's been fermenting for over a decade, and the street taco that won — then lost — a Michelin star.",
+  "places": {
+    "Pujol": {
+      "cuisine": "Mexican",
+      "description": "Avant-garde Mexican cuisine from Jorge Vallejo and Alejandra Flores. The mole madre, fermenting for over a decade now, is the house signature."
+    },
+    "El Califa de León": {
+      "cuisine": "Mexican / tacos",
+      "description": "The world's first taquería to hold a Michelin star (2024) — and also the first to lose it (2026). The gaonera taco that broke the internet."
+    },
+    "Siembra Comedor": {
+      "cuisine": "Mexican / heirloom corn",
+      "description": "A tortillería and dining room devoted to heirloom corn in Polanco. It's the only tortillería recognized by the Michelin Guide, with a Bib Gourmand."
+    },
+    "El Cardenal": {
+      "cuisine": "traditional Mexican",
+      "description": "Breakfasts of conchas with cream and hot chocolate since 1969, in the heart of the Historic Center."
+    },
+    "Nicos": {
+      "cuisine": "traditional Mexican",
+      "description": "Traditional neighborhood Mexican cooking in Clavería, a favorite of the local food scene."
+    }
+  }
+}

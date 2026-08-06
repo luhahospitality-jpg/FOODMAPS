@@ -46,6 +46,22 @@ export interface CityIndexEntry {
   slug: string;
   name: string;
   country: string;
+  name_en?: string;
+  country_en?: string;
   plannedPlaces: number;
   available: boolean;
+}
+
+export type Lang = "es" | "en";
+
+export interface PlaceTranslation {
+  description?: string;
+  cuisine?: string | null;
+}
+
+export interface CityTranslation {
+  name?: string;
+  country?: string;
+  tagline?: string;
+  places?: Record<string, PlaceTranslation>;
 }

@@ -1,5 +1,5 @@
-import type { Distinction } from "@/types/city";
-import { distinctionLabel } from "@/lib/labels";
+import type { Distinction, Lang } from "@/types/city";
+import { distinctionLabel, distinctionBadgeTitle } from "@/lib/labels";
 
 const style: Record<
   Distinction["type"],
@@ -44,15 +44,21 @@ const style: Record<
   },
 };
 
-export function DistinctionBadge({ distinction }: { distinction: Distinction }) {
+export function DistinctionBadge({
+  distinction,
+  lang = "es",
+}: {
+  distinction: Distinction;
+  lang?: Lang;
+}) {
   const s = style[distinction.type];
-  const label = distinctionLabel[distinction.type];
+  const label = distinctionLabel(lang, distinction.type);
   const suffix =
     distinction.count && distinction.count > 1 ? ` ×${distinction.count}` : "";
 
   return (
     <span
-      title={`${label}${suffix} — insignia propia de FoodMaps, no el logo oficial`}
+      title={`${label}${suffix} — ${distinctionBadgeTitle(lang)}`}
       className={`inline-flex items-center gap-1 rounded-full border-2 border-ink px-2.5 py-1 font-label text-[10px] font-bold tracking-wide uppercase ${s.bg} ${s.text}`}
     >
       {s.icon}

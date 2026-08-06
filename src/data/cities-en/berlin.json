@@ -1,0 +1,27 @@
+{
+  "name": "Berlin",
+  "country": "Germany",
+  "tagline": "A two-hour line for a döner, and three Michelin stars on Germany's most awarded wine list.",
+  "places": {
+    "Rutz": {
+      "cuisine": "German",
+      "description": "Avant-garde German cuisine with the country's most awarded wine list. Three Michelin stars."
+    },
+    "Mustafa's Gemüse Kebap": {
+      "cuisine": "Turkish / German",
+      "description": "The vegetable kebab with a two-hour line in Kreuzberg, Berlin's most famous döner."
+    },
+    "Curry 36": {
+      "cuisine": "German / currywurst",
+      "description": "Berlin's benchmark currywurst, with its own merchandise and branded ketchup."
+    },
+    "Tim Raue": {
+      "cuisine": "Asian / European",
+      "description": "European cuisine with Asian inspiration from chef Tim Raue, among the world's best since opening in 2010. Two Michelin stars."
+    },
+    "Markthalle Neun": {
+      "cuisine": "mixed",
+      "description": "A historic Kreuzberg market turned street food benchmark, famous for its Street Food Thursday."
+    }
+  }
+}

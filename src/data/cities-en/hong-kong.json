@@ -1,0 +1,27 @@
+{
+  "name": "Hong Kong",
+  "country": "China / Hong Kong",
+  "tagline": "The world's cheapest Michelin-starred pork bun, and the first Chinese restaurant to reach three stars.",
+  "places": {
+    "Lung King Heen": {
+      "cuisine": "Cantonese",
+      "description": "The world's first Chinese restaurant to earn three Michelin stars, a specialist in luxury dim sum."
+    },
+    "Tim Ho Wan": {
+      "cuisine": "Cantonese / dim sum",
+      "description": "The world's cheapest Michelin-starred restaurant. Its baked barbecue pork bun is legendary."
+    },
+    "Luk Yu Tea House": {
+      "cuisine": "Cantonese",
+      "description": "A classic tea house since the 1930s, with original Art Deco decor."
+    },
+    "Yat Lok": {
+      "cuisine": "Cantonese / roast goose",
+      "description": "Michelin-starred roast goose in a simple cha chaan teng-style spot in Central, with more than 20 secret preparation steps."
+    },
+    "Australia Dairy Company": {
+      "cuisine": "Cantonese / cha chaan teng",
+      "description": "An iconic Kowloon cha chaan teng, famous for its scrambled eggs and no-nonsense fast service."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Osaka",
+  "country": "Japan",
+  "tagline": "Takoyaki since 1972 in Dotonbori, and the Bib Gourmand okonomiyaki that always has a line.",
+  "places": {
+    "Honke Ootako": {
+      "cuisine": "Japanese / takoyaki",
+      "description": "Generous octopus balls since 1972, mentioned in the Michelin Guide, right in Dotonbori."
+    },
+    "Kiji": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Okonomiyaki with a constant line in Umeda, recognized with a Bib Gourmand."
+    },
+    "Okonomiyaki Mizuno": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "One of Osaka's most acclaimed okonomiyaki spots, traditional griddle style."
+    },
+    "Kani Doraku Dotonbori Honten": {
+      "cuisine": "Japanese / crab",
+      "description": "Osaka's most iconic crab restaurant, recognizable by the giant 6-meter mechanical crab on its Dotonbori facade."
+    },
+    "Genrokuzushi": {
+      "cuisine": "Japanese / sushi",
+      "description": "The spot that invented conveyor-belt sushi (kaiten-zushi) in 1958, an invention born in Osaka."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Toronto",
+  "country": "Canada",
+  "tagline": "The sandwich Bourdain went back for at the world's best market, and the croissant-bagel hybrid TikTok made viral.",
+  "places": {
+    "Sushi Masaki Saito": {
+      "cuisine": "Japanese",
+      "description": "Eleven-seat omakase from chef Masaki Saito, once holding two Michelin stars. Today it holds one."
+    },
+    "Carousel Bakery": {
+      "cuisine": "Canadian",
+      "description": "Canada's most famous peameal bacon sandwich, at the St. Lawrence Market — named the world's best market by National Geographic. Bourdain and Bobby Flay both went back for seconds."
+    },
+    "St. Urbain Bagel": {
+      "cuisine": "Canadian",
+      "description": "Creators of the \"Craigle,\" half croissant, half bagel, viral on TikTok."
+    },
+    "Alo": {
+      "cuisine": "French",
+      "description": "Contemporary French cuisine from chef Patrick Kriss, atop a heritage downtown building. Michelin star."
+    },
+    "Seven Lives Tacos y Mariscos": {
+      "cuisine": "Mexican / Baja",
+      "description": "Baja California-style tacos in the heart of Kensington Market, one of the neighborhood's most beloved spots."
+    }
+  }
+}

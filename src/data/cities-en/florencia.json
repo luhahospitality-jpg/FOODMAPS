@@ -1,0 +1,27 @@
+{
+  "name": "Florence",
+  "country": "Italy",
+  "tagline": "150-year-old bistecca alla fiorentina, and the shared tables where lunch has cost 15 euros since the 1950s.",
+  "places": {
+    "Trattoria Sostanza": {
+      "cuisine": "Tuscan",
+      "description": "The temple of bistecca alla fiorentina for more than 150 years, in San Frediano."
+    },
+    "Trattoria Mario": {
+      "cuisine": "Tuscan",
+      "description": "Shared tables and a fixed menu since the 1950s, Florence's most famous lunch trattoria."
+    },
+    "Buca Lapi": {
+      "cuisine": "Tuscan",
+      "description": "A century-old cellar under the Palazzo Antinori, birthplace of the Tuscan bistecca. Bib Gourmand."
+    },
+    "Borgo San Jacopo": {
+      "cuisine": "Italian",
+      "description": "On the Arno, with a direct view of the Ponte Vecchio. High-precision Italian cuisine from chef Claudio Mengoni. One Michelin star."
+    },
+    "La Leggenda dei Frati": {
+      "cuisine": "Italian",
+      "description": "Inside the Villa Bardini complex, with panoramic views of Florence. Tuscan-rooted cuisine from chef Filippo Saporito. One Michelin star."
+    }
+  }
+}

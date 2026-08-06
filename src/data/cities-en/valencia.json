@@ -1,0 +1,27 @@
+{
+  "name": "Valencia",
+  "country": "Spain",
+  "tagline": "Wood-fired rice in L'Albufera, two Michelin stars downtown, and Spain's most photogenic market.",
+  "places": {
+    "Ricard Camarena Restaurant": {
+      "cuisine": "Valencian",
+      "description": "Valencian produce cuisine of the highest technical level, from chef Ricard Camarena. Two Michelin stars."
+    },
+    "El Poblet": {
+      "cuisine": "Valencian / rice",
+      "description": "Rice dishes and avant-garde Mediterranean cuisine right in downtown Valencia. Two Michelin stars."
+    },
+    "Arrocería Maribel": {
+      "cuisine": "Valencian / rice",
+      "description": "A rice restaurant in El Palmar, the heart of L'Albufera, the historic birthplace of Valencian paella. Bib Gourmand."
+    },
+    "Mercado Central": {
+      "cuisine": "mixed",
+      "description": "One of Europe's largest covered markets, with stalls for horchata, ham, and fresh seafood."
+    },
+    "RiFF": {
+      "cuisine": "Mediterranean",
+      "description": "Creative, slightly anarchic Mediterranean cuisine from chef Bernd Knöller. Valencia's oldest Michelin star, since 2009."
+    }
+  }
+}

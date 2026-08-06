@@ -1,0 +1,27 @@
+{
+  "name": "Copenhagen",
+  "country": "Denmark",
+  "tagline": "Three Michelin stars of Nordic cuisine, and the smørrebrød that's been served the same way since 1877.",
+  "places": {
+    "Geranium": {
+      "cuisine": "Nordic",
+      "description": "Avant-garde Nordic cuisine named the world's best restaurant in 2022 and 2023. Three Michelin stars."
+    },
+    "Restaurant Schønnemann": {
+      "cuisine": "Danish / smørrebrød",
+      "description": "A smørrebrød institution since 1877, with more than 100 hand-written variations on the menu."
+    },
+    "Kadeau": {
+      "cuisine": "Nordic",
+      "description": "A piece of Bornholm island in Christianshavn, with seasonal Danish ingredients. Three Michelin stars."
+    },
+    "Jordnær": {
+      "cuisine": "Nordic",
+      "description": "Just 25 seats on the first floor of the Gentofte Hotel, run by the Vildgaard couple. Three Michelin stars."
+    },
+    "Torvehallerne": {
+      "cuisine": "mixed",
+      "description": "A gourmet market of two glass pavilions, with stalls for smørrebrød, cheeses, and seasonal Danish products."
+    }
+  }
+}

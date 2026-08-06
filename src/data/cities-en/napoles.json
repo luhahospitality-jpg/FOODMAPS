@@ -1,0 +1,27 @@
+{
+  "name": "Naples",
+  "country": "Italy",
+  "tagline": "The pizzeria from \"Eat, Pray, Love,\" and the café where a stranger already paid for your coffee.",
+  "places": {
+    "L'Antica Pizzeria da Michele": {
+      "cuisine": "Neapolitan",
+      "description": "The pizzeria from \"Eat, Pray, Love,\" with more than 150 years of history and only two pizzas on the menu: marinara and margherita."
+    },
+    "Gino Sorbillo": {
+      "cuisine": "Neapolitan",
+      "description": "Gino Sorbillo, a Masterchef winner and star of Discovery and National Geographic documentaries, has run the family pizzeria since 1935."
+    },
+    "Scaturchio": {
+      "cuisine": "Neapolitan",
+      "description": "A historic pastry shop in the city center, birthplace of the \"caffè sospeso\": you pay for an extra coffee for whoever can't afford one."
+    },
+    "Palazzo Petrucci": {
+      "cuisine": "Neapolitan",
+      "description": "Inside a historic palace on Piazza San Domenico Maggiore, signature Neapolitan cuisine from chef Lino Scarallo. One Michelin star."
+    },
+    "George Restaurant": {
+      "cuisine": "Neapolitan",
+      "description": "At the Grand Hotel Parker's, the only Michelin-starred dining room inside a hotel in Naples. Chef Domenico Candela's cuisine, with two stars since 2026."
+    }
+  }
+}

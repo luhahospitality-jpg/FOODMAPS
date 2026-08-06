@@ -1,0 +1,27 @@
+{
+  "name": "Chicago",
+  "country": "United States",
+  "tagline": "The building where deep dish pizza was born in 1943, and the theatrical cuisine that redefined American fine dining.",
+  "places": {
+    "Alinea": {
+      "cuisine": "American",
+      "description": "Experimental, theatrical gastronomy from chef Grant Achatz, a world reference for over a decade. Two Michelin stars."
+    },
+    "Pizzeria Uno": {
+      "cuisine": "American",
+      "description": "The original Ohio Street building where deep dish pizza was born in 1943."
+    },
+    "Lou Malnati's": {
+      "cuisine": "American",
+      "description": "The deep dish pizza Chicagoans swear is the best, ordered even for birthdays."
+    },
+    "Smyth": {
+      "cuisine": "American",
+      "description": "Seasonal farm-to-table cuisine in the West Loop, the second Chicago restaurant to earn three Michelin stars."
+    },
+    "Portillo's": {
+      "cuisine": "American",
+      "description": "The chain that defined Italian beef and the Chicago-style hot dog, as much a food destination as a fast chain."
+    }
+  }
+}

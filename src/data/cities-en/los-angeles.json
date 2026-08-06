@@ -1,0 +1,27 @@
+{
+  "name": "Los Angeles",
+  "country": "United States",
+  "tagline": "From Hollywood's golden-age martinis in 1919 to the viral taco truck on Sunset Boulevard — with the city's priciest menu in between.",
+  "places": {
+    "Musso & Frank Grill": {
+      "cuisine": "classic American",
+      "description": "Hollywood's golden-age dining room since 1919. Chaplin, Marilyn Monroe, and Fitzgerald all sat at these same tables."
+    },
+    "Somni": {
+      "cuisine": "Spanish / creative",
+      "description": "Los Angeles' most expensive tasting menu: 20 courses of avant-garde Catalan cuisine from chef Aitor Zabala. Three Michelin stars."
+    },
+    "Leo's Tacos Truck": {
+      "cuisine": "Mexican",
+      "description": "Los Angeles' most viral al pastor trompo, on Sunset Boulevard."
+    },
+    "Philippe the Original": {
+      "cuisine": "American",
+      "description": "The French Dip was born here by accident in 1908, when a roll fell into the roast juice."
+    },
+    "Holbox": {
+      "cuisine": "Mexican / Yucatecan",
+      "description": "Yucatecan seafood at a counter inside Mercado La Paloma. One Michelin star, an unusual feat for such a casual stall."
+    }
+  }
+}

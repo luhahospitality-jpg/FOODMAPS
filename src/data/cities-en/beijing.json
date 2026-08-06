@@ -1,0 +1,27 @@
+{
+  "name": "Beijing",
+  "country": "China",
+  "tagline": "1864 Peking duck, reinvented with a Michelin star at the table next door.",
+  "places": {
+    "Quanjude": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "China's most famous lacquered duck, roasted in a jujube-wood oven since 1864."
+    },
+    "Dadong": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "A modern reinvention of Peking duck, with crispy skin and fine-dining presentation. Michelin star."
+    },
+    "Bianyifang": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "Beijing's oldest Peking duck restaurant, dating to 1416, using the closed-oven \"menlu\" method."
+    },
+    "Najia Xiaoguan": {
+      "cuisine": "Chinese / Manchu",
+      "description": "Imperial Manchu cuisine from the Na family, descendants of Qing nobility, with recipes dating to 1748."
+    },
+    "Wangfujing Snack Street": {
+      "cuisine": "mixed",
+      "description": "A covered street with more than 500 kinds of Chinese street food, under a traditional 10-meter arch."
+    }
+  }
+}
