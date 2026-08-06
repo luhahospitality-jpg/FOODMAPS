@@ -13,9 +13,10 @@
       "lng": -90.0842132,
       "category": "fine_dining",
       "cuisine": "criollo / cajún",
-      "description": "Cocina criolla y cajún desde el siglo XIX, ganadora de siete premios James Beard. El almuerzo con martinis de 25 centavos es un ritual local.",
-      "source_url": null,
+      "description": "Cocina criolla y cajún desde el siglo XIX, ganadora de siete premios James Beard. El almuerzo con martinis de 25 centavos es un ritual local. El crítico Ian McNulty (Times-Picayune / NOLA.com) escribió: \"Nadie hace que la alta cocina sea más divertida que Commander's\".",
+      "source_url": "https://www.nola.com/entertainment_life/eat-drink/list-of-best-2025-restaurants-in-new-orleans-louisiana/article_64a8e3c3-f897-4f1b-81fc-c9567477034d.html",
       "source_type": "classic",
+      "source_type_secondary": "critic",
       "is_top5": true,
       "top5_rank": 1,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.928834,-90.0842132",
@@ -67,19 +68,19 @@
       "distinction": null
     },
     {
-      "name": "Casamento's",
+      "name": "Domilise's Po-Boy & Bar",
       "place_id": null,
-      "lat": 29.9207257,
-      "lng": -90.1010749,
-      "category": "seafood",
-      "cuisine": "americano / marisco",
-      "description": "El oyster loaf más famoso de Nueva Orleans desde 1919, en un local revestido de azulejo italiano centenario.",
-      "source_url": null,
-      "source_type": "classic",
+      "lat": 29.9174602,
+      "lng": -90.1123715,
+      "category": "fast_food",
+      "cuisine": "cajún / criollo",
+      "description": "Po-boy shop familiar sin pretensiones desde 1918. Anthony Bourdain pidió el especial fuera de carta (camarón, queso suizo y salsa de asado) en \"No Reservations\" (2008) y dijo que le hubiera dado un problema serio si viviera cerca. Bib Gourmand de la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/louisiana/new-orleans/restaurant/domilise-s-po-boy-bar",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.9207257,-90.1010749",
-      "distinction": null
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=29.9174602,-90.1123715",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
     }
   ]
 }

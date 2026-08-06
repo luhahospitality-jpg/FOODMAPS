@@ -245,18 +245,18 @@
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7225803,-73.9883134"
     },
     {
-      "name": "Prince Street Pizza",
+      "name": "Keens Steakhouse",
       "place_id": null,
-      "lat": 40.7230777,
-      "lng": -73.9945444,
-      "category": "pizza",
-      "cuisine": "italiano",
-      "description": "La pizza siciliana \"Spicy Spring\" que se hizo viral en TikTok.",
-      "source_url": "https://www.tiktok.com/@devourpower/video/7173710094029589806",
-      "source_type": "viral_social",
+      "lat": 40.750773,
+      "lng": -73.9864091,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "description": "Steakhouse legendario desde 1885 en Midtown, con la colección de pipas de arcilla más grande del mundo colgando del techo. Anthony Bourdain lo visitó en el episodio de Manhattan de \"No Reservations\" (2009).",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-manhattan-restaurants-no-reservations/",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7230777,-73.9945444"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.750773,-73.9864091"
     },
     {
       "name": "Xi'an Famous Foods",

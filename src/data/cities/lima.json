@@ -14,8 +14,8 @@
       "category": "fine_dining",
       "cuisine": "nikkei / peruano-japonés",
       "description": "Fusión nikkei del chef Mitsuharu \"Micha\" Tsumura, nombrado mejor restaurante del mundo en 2025 por The World's 50 Best.",
-      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Peru/Lima/Maido.html",
-      "source_type": null,
+      "source_url": "https://www.theinfatuation.com/lima/reviews/maido",
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 1,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079",
@@ -67,18 +67,18 @@
       "distinction": null
     },
     {
-      "name": "Isolina Taberna Peruana",
+      "name": "Chez Wong",
       "place_id": null,
-      "lat": -12.1476401,
-      "lng": -77.0223811,
-      "category": "fine_dining",
-      "cuisine": "peruano / criollo",
-      "description": "Taberna criolla en Barranco del chef José del Castillo, con recetas heredadas de su madre. Reconocida por Latin America's 50 Best.",
-      "source_url": null,
-      "source_type": null,
+      "lat": -12.0819701,
+      "lng": -77.0224712,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "description": "El chef Javier Wong prepara ceviche y tiradito sin carta, para apenas diez comensales en su propia sala en La Victoria. Anthony Bourdain lo visitó dos veces, la última junto a Eric Ripert en 'Parts Unknown'.",
+      "source_url": "https://www.continentscondiments.com/peru-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1476401,-77.0223811",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0819701,-77.0224712",
       "distinction": null
     }
   ]

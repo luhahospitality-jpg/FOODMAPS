@@ -1,7 +1,7 @@
 {
   "name": "Los Angeles",
   "country": "United States",
-  "tagline": "From Hollywood's golden-age martinis in 1919 to the viral taco truck on Sunset Boulevard — with the city's priciest menu in between.",
+  "tagline": "From Hollywood's golden-age martinis in 1919 to the Olvera Street taquito stand where Anthony Bourdain once ate — with the city's priciest menu in between.",
   "places": {
     "Musso & Frank Grill": {
       "cuisine": "classic American",
@@ -11,9 +11,9 @@
       "cuisine": "Spanish / creative",
       "description": "Los Angeles' most expensive tasting menu: 20 courses of avant-garde Catalan cuisine from chef Aitor Zabala. Three Michelin stars."
     },
-    "Leo's Tacos Truck": {
+    "Cielito Lindo": {
       "cuisine": "Mexican",
-      "description": "Los Angeles' most viral al pastor trompo, on Sunset Boulevard."
+      "description": "The Olvera Street taquito stand since 1934, with its original avocado salsa. Anthony Bourdain stopped here on \"Parts Unknown,\" saying it tasted like the real Los Angeles."
     },
     "Philippe the Original": {
       "cuisine": "American",
@@ -21,7 +21,7 @@
     },
     "Holbox": {
       "cuisine": "Mexican / Yucatecan",
-      "description": "Yucatecan seafood at a counter inside Mercado La Paloma. One Michelin star, an unusual feat for such a casual stall."
+      "description": "Yucatecan seafood at a counter inside Mercado La Paloma. One Michelin star, and named 2023 Restaurant of the Year by Los Angeles Times critics Bill Addison and Jenn Harris."
     }
   }
 }

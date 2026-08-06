@@ -5,7 +5,7 @@
   "places": {
     "Pandeli": {
       "cuisine": "Turkish / Ottoman",
-      "description": "Ottoman cuisine inside the Grand Spice Bazaar since 1901. Michelin star."
+      "description": "Ottoman cuisine inside the Grand Spice Bazaar since 1901. Michelin star, reviewed by critic Manos Angelakis (LuxuryWeb Magazine)."
     },
     "Tatbak": {
       "cuisine": "Turkish / kebab",
@@ -15,9 +15,9 @@
       "cuisine": "Turkish / seafood",
       "description": "A historic fish restaurant in Karaköy, serving since 1923 at the entrance to Griffin Han."
     },
-    "Beyti": {
-      "cuisine": "Turkish / kebab",
-      "description": "A kebab temple since 1945, winner of the 2022 Golden Spoon Gastronomy Award and Michelin-recommended since 2024."
+    "Kızılkayalar": {
+      "cuisine": "Turkish / burgers",
+      "description": "The Beyoğlu spot behind the islak hamburger (wet burger) that Anthony Bourdain tried on \"No Reservations\": \"Why on earth do Turks go to McDonald's when they have this?\""
     },
     "Sofyalı 9": {
       "cuisine": "Turkish / meyhane",

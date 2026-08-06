@@ -37,18 +37,19 @@
       "distinction": null
     },
     {
-      "name": "L'As du Fallafel",
+      "name": "Le Baratin",
       "place_id": null,
-      "lat": 48.8574095,
-      "lng": 2.3590493,
-      "category": "street_food",
-      "cuisine": "judío / medio oriente",
-      "description": "El falafel más famoso de Le Marais, con fila en la calle desde 1979.",
+      "lat": 48.8730762,
+      "lng": 2.3828589,
+      "category": "fine_dining",
+      "cuisine": "francés / bistronomía",
+      "description": "Bistró de Belleville con la cocina de Raquel Carena desde 1987. Anthony Bourdain cenó aquí en el especial final de \"No Reservations\" en París, y es referencia habitual de la guía Le Fooding.",
       "source_url": null,
-      "source_type": "classic",
+      "source_type": "bourdain",
+      "source_type_secondary": "critic",
       "is_top5": true,
       "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8574095,2.3590493",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8730762,2.3828589",
       "distinction": null
     },
     {

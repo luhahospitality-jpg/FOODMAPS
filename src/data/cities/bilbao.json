@@ -46,9 +46,9 @@
       "description": "Arroces, chuletón a la parrilla y un rincón secreto con bañera art decó que se volvió viral en TikTok, en plena Plaza Nueva.",
       "source_url": "https://www.tiktok.com/@melitaplanes/video/7192539467708714246",
       "source_type": "viral_social",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2590139,-2.9226887",
+      "is_top5": false,
+      "top5_rank": null,
+      "google_maps_url": null,
       "distinction": null
     },
     {
@@ -106,9 +106,9 @@
       "description": "Templo del pescado a la parrilla y el marisco de temporada. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2625632,-2.9435525",
       "distinction": { "type": "michelin_star", "count": 1 }
     },
     {

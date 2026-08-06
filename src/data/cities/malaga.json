@@ -46,9 +46,9 @@
       "description": "Barra de tapas dentro del mercado de abastos, viral en TikTok por sus colas y su pescaíto frito.",
       "source_url": "https://www.tiktok.com/@boqueronaenvinagre/video/7312533107264064800",
       "source_type": "viral_social",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.718408,-4.4240607",
+      "is_top5": false,
+      "top5_rank": null,
+      "google_maps_url": null,
       "distinction": null
     },
     {
@@ -89,11 +89,11 @@
       "category": "fine_dining",
       "cuisine": "malagueña",
       "description": "Cocina dual de Cristina Cánovas y Diego Aguilar junto al Mercado de Atarazanas. Una estrella Michelin, novedad 2026.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
+      "source_url": "https://www.theinfatuation.com/malaga/reviews/palodu",
+      "source_type": "critic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7189931,-4.4247527",
       "distinction": { "type": "michelin_star", "count": 1 }
     }
   ]

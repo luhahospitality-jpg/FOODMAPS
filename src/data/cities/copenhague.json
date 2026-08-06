@@ -13,9 +13,9 @@
       "lng": 12.5720401,
       "category": "fine_dining",
       "cuisine": "nórdico",
-      "description": "Cocina nórdica de vanguardia nombrada mejor restaurante del mundo en 2022 y 2023. Tres estrellas Michelin.",
+      "description": "Cocina nórdica de vanguardia nombrada mejor restaurante del mundo en 2022 y 2023. Tres estrellas Michelin, reseñado por el crítico Andy Hayler.",
       "source_url": null,
-      "source_type": null,
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 1,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.7037103,12.5720401",
@@ -67,18 +67,18 @@
       "distinction": { "type": "michelin_star", "count": 3 }
     },
     {
-      "name": "Torvehallerne",
+      "name": "Noma",
       "place_id": null,
-      "lat": 55.6838669,
-      "lng": 12.5695512,
-      "category": "street_food",
-      "cuisine": "variado",
-      "description": "Mercado gourmet de dos pabellones de cristal, con puestos de smørrebrød, quesos y productos daneses de temporada.",
+      "lat": 55.6831530,
+      "lng": 12.6104260,
+      "category": "fine_dining",
+      "cuisine": "nórdico",
+      "description": "El laboratorio de René Redzepi en Refshalevej, cuna de la cocina nórdica moderna. Protagonista absoluto del episodio de Copenhague de \"Parts Unknown\".",
       "source_url": null,
-      "source_type": "classic",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6838669,12.5695512",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6831530,12.6104260",
       "distinction": null
     }
   ]

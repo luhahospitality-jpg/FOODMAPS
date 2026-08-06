@@ -22,18 +22,18 @@
       "distinction": null
     },
     {
-      "name": "Trattoria Mario",
+      "name": "Trattoria Sabatino",
       "place_id": null,
-      "lat": 43.7765666,
-      "lng": 11.2545454,
+      "lat": 43.7707491,
+      "lng": 11.2400329,
       "category": "fast_food",
       "cuisine": "toscano",
-      "description": "Mesas compartidas y menú fijo desde los años 50, la trattoria de almuerzo más famosa de Florencia.",
+      "description": "Trattoria de barrio en San Frediano desde 1956, menú diario a precios populares. Anthony Bourdain filmó aquí para el especial de Toscana de \"No Reservations\".",
       "source_url": null,
-      "source_type": "classic",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7765666,11.2545454",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7707491,11.2400329",
       "distinction": null
     },
     {

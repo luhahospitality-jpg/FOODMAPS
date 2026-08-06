@@ -5,7 +5,7 @@
   "places": {
     "Alinea": {
       "cuisine": "American",
-      "description": "Experimental, theatrical gastronomy from chef Grant Achatz, a world reference for over a decade. Two Michelin stars."
+      "description": "Experimental, theatrical gastronomy from chef Grant Achatz, a world reference for over a decade. Two Michelin stars, and a rare four-star (top) rating from Chicago Tribune critic Phil Vettel."
     },
     "Pizzeria Uno": {
       "cuisine": "American",
@@ -19,9 +19,9 @@
       "cuisine": "American",
       "description": "Seasonal farm-to-table cuisine in the West Loop, the second Chicago restaurant to earn three Michelin stars."
     },
-    "Portillo's": {
+    "Longman & Eagle": {
       "cuisine": "American",
-      "description": "The chain that defined Italian beef and the Chicago-style hot dog, as much a food destination as a fast chain."
+      "description": "A gastropub-inn in Logan Square with a deep whiskey list and bar food that Anthony Bourdain praised on \"Parts Unknown\" (2016). Holds a Michelin Bib Gourmand distinction."
     }
   }
 }

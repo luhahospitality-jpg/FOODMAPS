@@ -5,7 +5,7 @@
   "places": {
     "Commander's Palace": {
       "cuisine": "Creole / Cajun",
-      "description": "Creole and Cajun cuisine since the 19th century, winner of seven James Beard awards. The 25-cent martini lunch is a local ritual."
+      "description": "Creole and Cajun cuisine since the 19th century, winner of seven James Beard awards. The 25-cent martini lunch is a local ritual. Critic Ian McNulty (Times-Picayune / NOLA.com) wrote: \"Nobody makes fine dining more fun than Commander's.\""
     },
     "Café du Monde": {
       "cuisine": "French / Creole",
@@ -19,9 +19,9 @@
       "cuisine": "Creole",
       "description": "Creole cooking since 1941 and a historic meeting point of the Civil Rights Movement, with Martin Luther King Jr. among its visitors."
     },
-    "Casamento's": {
-      "cuisine": "American / seafood",
-      "description": "New Orleans' most famous oyster loaf since 1919, in a spot tiled floor to ceiling in century-old Italian tile."
+    "Domilise's Po-Boy & Bar": {
+      "cuisine": "Cajun / Creole",
+      "description": "A no-frills family-run po-boy shop since 1918. Anthony Bourdain ordered the off-menu special (fried shrimp, Swiss cheese, and roast beef gravy) on \"No Reservations\" (2008) and said he'd have a serious problem if he lived nearby. Holds a Michelin Bib Gourmand distinction."
     }
   }
 }

@@ -13,9 +13,9 @@
       "lng": -87.648199,
       "category": "fine_dining",
       "cuisine": "americano",
-      "description": "Gastronomía experimental y teatral del chef Grant Achatz, referencia mundial durante más de una década. Dos estrellas Michelin.",
-      "source_url": null,
-      "source_type": null,
+      "description": "Gastronomía experimental y teatral del chef Grant Achatz, referencia mundial durante más de una década. Dos estrellas Michelin y cuatro estrellas (la calificación máxima) del crítico Phil Vettel en el Chicago Tribune.",
+      "source_url": "https://www.chicagotribune.com/",
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 1,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9134372,-87.648199",
@@ -67,19 +67,19 @@
       "distinction": { "type": "michelin_star", "count": 3 }
     },
     {
-      "name": "Portillo's",
+      "name": "Longman & Eagle",
       "place_id": null,
-      "lat": 41.8703244,
-      "lng": -87.6401647,
-      "category": "fast_food",
+      "lat": 41.9300633,
+      "lng": -87.7072413,
+      "category": "bar",
       "cuisine": "americano",
-      "description": "La cadena que definió el Italian beef y el hot dog estilo Chicago, un destino gastronómico tanto como una cadena rápida.",
-      "source_url": null,
-      "source_type": "classic",
+      "description": "Gastropub-posada en Logan Square con carta de whiskey y comida de barra que Anthony Bourdain elogió en \"Parts Unknown\" (2016). Reconocido con el Bib Gourmand de la Guía Michelin.",
+      "source_url": "https://www.continentscondiments.com/chicago-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8703244,-87.6401647",
-      "distinction": null
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9300633,-87.7072413",
+      "distinction": { "type": "michelin_bib_gourmand", "count": null }
     }
   ]
 }

@@ -1,19 +1,19 @@
 {
   "name": "Buenos Aires",
   "country": "Argentina",
-  "tagline": "Bife de chorizo with a Michelin star, a café haunted by Borges, and a neighborhood joint's milanesa that's already in the guide.",
+  "tagline": "Bife de chorizo with a Michelin star, a café haunted by Borges, and the La Boca joint where Francis Mallmann took Anthony Bourdain to eat.",
   "places": {
     "Don Julio": {
       "cuisine": "Argentine",
-      "description": "The world's most acclaimed steakhouse: a Michelin star, a green star for sustainability, and #1 on Latin America's 50 Best."
+      "description": "The world's most acclaimed steakhouse: a Michelin star, a green star for sustainability, and #1 on Latin America's 50 Best. Critic Pietro Sorba (Clarín) gave it a perfect 5-star rating in 2021."
     },
     "Café Tortoni": {
       "cuisine": "café / Argentine",
       "description": "Buenos Aires' oldest café, since 1858. Borges, Gardel, and Cortázar all sat at its marble tables."
     },
-    "El Preferido de Palermo": {
+    "Don Carlos": {
       "cuisine": "Argentine / neighborhood joint",
-      "description": "A corner joint since 1952, now recognized by the Michelin Guide. The thin-cut steak milanesa is on another level."
+      "description": "A family-run joint in La Boca since 1970, with no menu — Carlitos himself decides what you eat. Francis Mallmann brought Anthony Bourdain here as the first stop of his Buenos Aires tour on \"Parts Unknown\" (2016)."
     },
     "Aramburu": {
       "cuisine": "creative",

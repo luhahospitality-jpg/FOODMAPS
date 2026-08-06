@@ -1,7 +1,7 @@
 {
   "name": "Barcelona",
   "country": "Spain",
-  "tagline": "From the 1786 Gothic Quarter to the burger that stopped Ibai Llanos in his tracks — the Spanish city with the most Michelin stars.",
+  "tagline": "From the 1786 Gothic Quarter to the vermouth bar that won over Anthony Bourdain — the Spanish city with the most Michelin stars.",
   "places": {
     "Can Culleretes": {
       "cuisine": "Catalan",
@@ -11,9 +11,9 @@
       "cuisine": "creative",
       "description": "Named the world's best restaurant in 2024 by The World's 50 Best. Avant-garde cuisine from three elBulli alumni."
     },
-    "Vicio": {
-      "cuisine": "burgers / smash burger",
-      "description": "Spain's most viral smash burgers, from MasterChef winner Aleix Puig — even Ibai Llanos has stopped by to try them."
+    "Quimet & Quimet": {
+      "cuisine": "tapas / vermouth",
+      "description": "A family-run 1914 bodega in Poble Sec — five generations serving montaditos standing at the bar. Anthony Bourdain visited on 'No Reservations' during his Spain episode."
     },
     "La Cova Fumada": {
       "cuisine": "tapas",

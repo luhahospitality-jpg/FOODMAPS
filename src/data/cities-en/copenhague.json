@@ -5,7 +5,7 @@
   "places": {
     "Geranium": {
       "cuisine": "Nordic",
-      "description": "Avant-garde Nordic cuisine named the world's best restaurant in 2022 and 2023. Three Michelin stars."
+      "description": "Avant-garde Nordic cuisine named the world's best restaurant in 2022 and 2023. Three Michelin stars, reviewed by critic Andy Hayler."
     },
     "Restaurant Schønnemann": {
       "cuisine": "Danish / smørrebrød",
@@ -19,9 +19,9 @@
       "cuisine": "Nordic",
       "description": "Just 25 seats on the first floor of the Gentofte Hotel, run by the Vildgaard couple. Three Michelin stars."
     },
-    "Torvehallerne": {
-      "cuisine": "mixed",
-      "description": "A gourmet market of two glass pavilions, with stalls for smørrebrød, cheeses, and seasonal Danish products."
+    "Noma": {
+      "cuisine": "Nordic",
+      "description": "René Redzepi's lab on Refshalevej, the birthplace of modern Nordic cuisine. The sole focus of the Copenhagen episode of \"Parts Unknown.\""
     }
   }
 }
