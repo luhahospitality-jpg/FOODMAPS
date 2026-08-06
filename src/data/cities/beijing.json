@@ -3,7 +3,7 @@
   "name": "Beijing",
   "country": "China",
   "tagline": "El pato pekinés de 1864, reinventado con estrella Michelin en la mesa de al lado.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -35,6 +35,51 @@
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9362307,116.4408423",
       "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Bianyifang",
+      "place_id": null,
+      "lat": 40.0290835,
+      "lng": 116.3260452,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés",
+      "description": "El restaurante de pato pekinés más antiguo de Beijing, con origen en 1416 y el método de horno cerrado \"menlu\".",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.0290835,116.3260452",
+      "distinction": null
+    },
+    {
+      "name": "Najia Xiaoguan",
+      "place_id": null,
+      "lat": 39.9074503,
+      "lng": 116.4475880,
+      "category": "fine_dining",
+      "cuisine": "chino / manchú",
+      "description": "Cocina imperial manchú de la familia Na, descendientes de la nobleza Qing, con recetas que datan de 1748.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9074503,116.4475880",
+      "distinction": null
+    },
+    {
+      "name": "Wangfujing Snack Street",
+      "place_id": null,
+      "lat": 39.9098345,
+      "lng": 116.4047354,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Calle cubierta con más de 500 tipos de comida callejera china, bajo un arco tradicional de 10 metros.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9098345,116.4047354",
+      "distinction": null
     }
   ]
 }

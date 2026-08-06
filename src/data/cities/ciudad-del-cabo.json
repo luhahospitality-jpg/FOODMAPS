@@ -3,7 +3,7 @@
   "name": "Ciudad del Cabo",
   "country": "Sudáfrica",
   "tagline": "El mejor restaurante de África en un treehouse sobre viñedos, y el gatsby que alimenta a cuatro personas.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9185578,18.4261271",
+      "distinction": null
+    },
+    {
+      "name": "FYN Restaurant",
+      "place_id": null,
+      "lat": -33.9246502,
+      "lng": 18.4217473,
+      "category": "fine_dining",
+      "cuisine": "sudafricano / japonés",
+      "description": "Cocina sudafricana con técnica japonesa del chef Peter Tempelhoff, habitual en la lista The World's 50 Best Restaurants.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9246502,18.4217473",
+      "distinction": null
+    },
+    {
+      "name": "Biesmiellah",
+      "place_id": null,
+      "lat": -33.9201455,
+      "lng": 18.4140455,
+      "category": "fine_dining",
+      "cuisine": "sudafricano / cape malay",
+      "description": "Cocina Cape Malay halal en el corazón colorido de Bo-Kaap, con más de cuatro décadas dirigida por la familia Osman.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9201455,18.4140455",
+      "distinction": null
+    },
+    {
+      "name": "Kalky's",
+      "place_id": null,
+      "lat": -34.1282337,
+      "lng": 18.4496879,
+      "category": "seafood",
+      "cuisine": "sudafricano / fish and chips",
+      "description": "Cabaña de pescado y papas junto al muelle de pescadores de Kalk Bay, con el pescado más fresco de la península.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.1282337,18.4496879",
       "distinction": null
     }
   ]

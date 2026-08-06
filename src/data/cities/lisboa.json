@@ -3,7 +3,7 @@
   "name": "Lisboa",
   "country": "Portugal",
   "tagline": "La receta secreta del pastel de nata desde 1837, y 26 cocinas bajo el techo de un mercado de 1892.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7070934,-9.1458973",
+      "distinction": null
+    },
+    {
+      "name": "Belcanto",
+      "place_id": null,
+      "lat": 38.7100607,
+      "lng": -9.1414882,
+      "category": "fine_dining",
+      "cuisine": "portugués",
+      "description": "La mesa insignia del chef José Avillez en Chiado, la más premiada de Lisboa. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7100607,-9.1414882",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Cervejaria Ramiro",
+      "place_id": null,
+      "lat": 38.7201981,
+      "lng": -9.1357063,
+      "category": "seafood",
+      "cuisine": "portugués / marisco",
+      "description": "Marisquería de referencia en Lisboa desde los años 50, con gambas, percebes y cerveza fría de toda la vida.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7201981,-9.1357063",
+      "distinction": null
+    },
+    {
+      "name": "A Ginjinha Sem Rival",
+      "place_id": null,
+      "lat": 38.7151089,
+      "lng": -9.1396039,
+      "category": "bar",
+      "cuisine": "portugués / licor",
+      "description": "Bar histórico de ginjinha (licor de guindas) con más de un siglo, junto a la Praça dos Restauradores.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7151089,-9.1396039",
       "distinction": null
     }
   ]

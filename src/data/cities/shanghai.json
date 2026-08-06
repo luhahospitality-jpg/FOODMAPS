@@ -3,7 +3,7 @@
   "name": "Shanghái",
   "country": "China",
   "tagline": "Los xiaolongbao del Jardín Yu contra el local sin cartel que compite con cangrejo.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2370072,121.4660479",
+      "distinction": null
+    },
+    {
+      "name": "Yang's Fry Dumplings",
+      "place_id": null,
+      "lat": 31.2212579,
+      "lng": 121.4510326,
+      "category": "street_food",
+      "cuisine": "chino / shengjianbao",
+      "description": "La cadena más conocida de shengjianbao (dumplings fritos con caldo) de Shanghái, nacida como puesto callejero.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2212579,121.4510326",
+      "distinction": null
+    },
+    {
+      "name": "Fu He Hui",
+      "place_id": null,
+      "lat": 31.2205856,
+      "lng": 121.4235901,
+      "category": "fine_dining",
+      "cuisine": "chino / vegetariano",
+      "description": "Alta cocina vegetariana china en Changning, entre los mejores 50 restaurantes de Asia. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2205856,121.4235901",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "M on the Bund",
+      "place_id": null,
+      "lat": 31.2350367,
+      "lng": 121.4909009,
+      "category": "fine_dining",
+      "cuisine": "occidental",
+      "description": "Pionero de la alta cocina occidental en Shanghái desde 1999, con terraza sobre el Bund y vista al Huangpu.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2350367,121.4909009",
       "distinction": null
     }
   ]

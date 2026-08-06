@@ -3,7 +3,7 @@
   "name": "Osaka",
   "country": "Japón",
   "tagline": "Takoyaki desde 1972 en Dotonbori, y el okonomiyaki con Bib Gourmand que siempre tiene fila.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6684527,135.5030691",
+      "distinction": null
+    },
+    {
+      "name": "Kani Doraku Dotonbori Honten",
+      "place_id": null,
+      "lat": 34.6687933,
+      "lng": 135.5014975,
+      "category": "seafood",
+      "cuisine": "japonés / cangrejo",
+      "description": "El restaurante de cangrejo más icónico de Osaka, reconocible por su gigantesco cangrejo mecánico de 6 metros sobre la fachada en Dotonbori.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6687933,135.5014975",
+      "distinction": null
+    },
+    {
+      "name": "Genrokuzushi",
+      "place_id": null,
+      "lat": 34.6766040,
+      "lng": 135.5013180,
+      "category": "fast_food",
+      "cuisine": "japonés / sushi",
+      "description": "El local que inventó el sushi de cinta transportadora (kaiten-zushi) en 1958, un invento nacido en Osaka.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6766040,135.5013180",
       "distinction": null
     }
   ]

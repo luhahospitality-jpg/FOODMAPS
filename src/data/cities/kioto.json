@@ -3,7 +3,7 @@
   "name": "Kioto",
   "country": "Japón",
   "tagline": "Kaiseki de tres estrellas desde 1912, y el mercado de 400 metros que Kioto llama \"su cocina\".",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0144404,135.6701313",
+      "distinction": null
+    },
+    {
+      "name": "Honke Owariya",
+      "place_id": null,
+      "lat": 35.0127481,
+      "lng": 135.7601451,
+      "category": "fast_food",
+      "cuisine": "japonés / soba",
+      "description": "El restaurante más antiguo de Kioto, sirviendo soba en el mismo terreno desde 1465. Fue proveedor oficial del Palacio Imperial.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0127481,135.7601451",
+      "distinction": null
+    },
+    {
+      "name": "Gion Karyo",
+      "place_id": null,
+      "lat": 35.0017668,
+      "lng": 135.7745780,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "description": "Kaiseki contemporáneo en un edificio histórico de Gion, con más de treinta años de trayectoria y menú que cambia a diario.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0017668,135.7745780",
       "distinction": null
     }
   ]
