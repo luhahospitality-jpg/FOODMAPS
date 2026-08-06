@@ -7,9 +7,9 @@
       "cuisine": "Australian",
       "description": "Modern Australian cuisine from chef Peter Gilmore, inside the sails of the Sydney Opera House."
     },
-    "Quay": {
+    "Harry's Café de Wheels": {
       "cuisine": "Australian",
-      "description": "Views of Sydney Harbour and nine appearances on The World's 50 Best Restaurants list."
+      "description": "A pie cart by Woolloomooloo wharf since 1945, with a wall of celebrity autographs. Anthony Bourdain ordered the \"Curry Tiger Pie\" on 'No Reservations'."
     },
     "Upper Crust Pies": {
       "cuisine": "Australian",
@@ -21,7 +21,7 @@
     },
     "Icebergs Dining Room and Bar": {
       "cuisine": "Italian",
-      "description": "A glass dining room over the iconic Bondi Icebergs pool, with Pacific Ocean views, since 2002."
+      "description": "A glass dining room over the iconic Bondi Icebergs pool, with Pacific Ocean views, since 2002. Reviewed by critic Pat Nourse for Gourmet Traveller."
     }
   }
 }
