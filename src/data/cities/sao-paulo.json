@@ -3,7 +3,7 @@
   "name": "São Paulo",
   "country": "Brasil",
   "tagline": "Da cozinha amazônica com duas estrelas Michelin ao sanduíche de mortadela que virou notícia no New York Times.",
-  "totalPlaces": 4,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -65,6 +65,21 @@
       "top5_rank": 4,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244",
       "distinction": null
+    },
+    {
+      "name": "Picchi",
+      "place_id": null,
+      "lat": -23.5653678,
+      "lng": -46.6665435,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Cozinha 100% italiana e familiar do chef Pier Paolo Picchi, nos Jardins. Uma estrela Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5653678,-46.6665435",
+      "distinction": { "type": "michelin_star", "count": 1 }
     }
   ]
 }

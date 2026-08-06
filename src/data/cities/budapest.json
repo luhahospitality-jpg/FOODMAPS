@@ -3,7 +3,7 @@
   "name": "Budapest",
   "country": "Hungría",
   "tagline": "El café más bello del mundo, y el ruin bar que inventó un género entero de vida nocturna.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4986782,19.0704636",
+      "distinction": null
+    },
+    {
+      "name": "Stand",
+      "place_id": null,
+      "lat": 47.5002647,
+      "lng": 19.0594968,
+      "category": "fine_dining",
+      "cuisine": "húngaro",
+      "description": "La cima de la alta cocina húngara contemporánea, único dos estrellas Michelin de Budapest.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5002647,19.0594968",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Nagyvásárcsarnok (Gran Mercado Central)",
+      "place_id": null,
+      "lat": 47.4865753,
+      "lng": 19.0589936,
+      "category": "street_food",
+      "cuisine": "húngaro",
+      "description": "El mercado cubierto más grande y antiguo de Budapest, desde 1897, con lángos y embutidos húngaros en la planta alta.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4865753,19.0589936",
       "distinction": null
     }
   ]

@@ -3,7 +3,7 @@
   "name": "Estambul",
   "country": "Turquía",
   "tagline": "Cocina otomana con estrella Michelin dentro del Bazar de las Especias, desde 1901.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393",
+      "distinction": null
+    },
+    {
+      "name": "Beyti",
+      "place_id": null,
+      "lat": 40.9733212,
+      "lng": 28.7939581,
+      "category": "steakhouse",
+      "cuisine": "turco / kebab",
+      "description": "Templo del kebab desde 1945, ganador del Golden Spoon Gastronomy Award en 2022 y recomendado por la guía Michelin desde 2024.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9733212,28.7939581",
+      "distinction": null
+    },
+    {
+      "name": "Sofyalı 9",
+      "place_id": null,
+      "lat": 41.0291163,
+      "lng": 28.9743233,
+      "category": "bar",
+      "cuisine": "turco / meyhane",
+      "description": "Una de las meyhanes tradicionales más consolidadas de Beyoğlu, con mezze y raki cerca de Tünel.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0291163,28.9743233",
       "distinction": null
     }
   ]

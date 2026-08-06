@@ -3,7 +3,7 @@
   "name": "París",
   "country": "Francia",
   "tagline": "El café donde se afiló la Revolución, y el falafel con fila en Le Marais desde 1979.",
-  "totalPlaces": 4,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -65,6 +65,21 @@
       "top5_rank": 4,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8502518,2.3781248",
       "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Guy Savoy",
+      "place_id": null,
+      "lat": 48.8564015,
+      "lng": 2.3384956,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "description": "Alta cocina clásica francesa dentro de la Monnaie de Paris, a orillas del Sena. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8564015,2.3384956",
+      "distinction": { "type": "michelin_star", "count": 3 }
     }
   ]
 }

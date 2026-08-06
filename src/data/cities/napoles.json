@@ -3,7 +3,7 @@
   "name": "Nápoles",
   "country": "Italia",
   "tagline": "La pizzería de \"Come, reza, ama\", y el café que alguien ya pagó por vos sin conocerte.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8438325,14.2407515",
       "distinction": null
+    },
+    {
+      "name": "Palazzo Petrucci",
+      "place_id": null,
+      "lat": 40.8483264,
+      "lng": 14.2543424,
+      "category": "fine_dining",
+      "cuisine": "napolitano",
+      "description": "En un palacio histórico de piazza San Domenico Maggiore, cocina napolitana de autor del chef Lino Scarallo. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8483264,14.2543424",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "George Restaurant",
+      "place_id": null,
+      "lat": 40.8372183,
+      "lng": 14.2300136,
+      "category": "fine_dining",
+      "cuisine": "napolitano",
+      "description": "En el Grand Hotel Parker's, la única sala con estrellas Michelin dentro de un hotel en Nápoles. Cocina del chef Domenico Candela con dos estrellas desde 2026.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8372183,14.2300136",
+      "distinction": { "type": "michelin_star", "count": 2 }
     }
   ]
 }

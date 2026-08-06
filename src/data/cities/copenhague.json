@@ -3,7 +3,7 @@
   "name": "Copenhague",
   "country": "Dinamarca",
   "tagline": "Tres estrellas Michelin de cocina nórdica, y el smørrebrød que se sirve igual desde 1877.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.682815,12.576023",
+      "distinction": null
+    },
+    {
+      "name": "Kadeau",
+      "place_id": null,
+      "lat": 55.6722547,
+      "lng": 12.5888555,
+      "category": "fine_dining",
+      "cuisine": "nórdico",
+      "description": "Un pedazo de la isla de Bornholm en Christianshavn, con ingredientes daneses de temporada. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6722547,12.5888555",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Jordnær",
+      "place_id": null,
+      "lat": 55.7482424,
+      "lng": 12.5418393,
+      "category": "fine_dining",
+      "cuisine": "nórdico",
+      "description": "Apenas 25 cubiertos en el primer piso del Gentofte Hotel, a cargo del matrimonio Vildgaard. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.7482424,12.5418393",
+      "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Torvehallerne",
+      "place_id": null,
+      "lat": 55.6838669,
+      "lng": 12.5695512,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Mercado gourmet de dos pabellones de cristal, con puestos de smørrebrød, quesos y productos daneses de temporada.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6838669,12.5695512",
       "distinction": null
     }
   ]

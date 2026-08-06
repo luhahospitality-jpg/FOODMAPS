@@ -3,7 +3,7 @@
   "name": "Atenas",
   "country": "Grecia",
   "tagline": "Souvlaki de siempre en Monastiraki, y las dos estrellas Michelin más altas de Grecia.",
-  "totalPlaces": 2,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -34,6 +34,51 @@
       "is_top5": true,
       "top5_rank": 2,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9761723,23.7270354",
+      "distinction": null
+    },
+    {
+      "name": "Platanos",
+      "place_id": null,
+      "lat": 37.9742823,
+      "lng": 23.7278834,
+      "category": "fine_dining",
+      "cuisine": "griego",
+      "description": "Taberna en Plaka abierta desde 1932, con historia de visitantes ilustres como Henry Miller. Cocina griega clásica.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 3,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9742823,23.7278834",
+      "distinction": null
+    },
+    {
+      "name": "Psarras",
+      "place_id": null,
+      "lat": 37.9731870,
+      "lng": 23.7285907,
+      "category": "seafood",
+      "cuisine": "griego",
+      "description": "Institución de Plaka desde 1898, con terrazas escalonadas entre plantas y pescado a la parrilla.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9731870,23.7285907",
+      "distinction": null
+    },
+    {
+      "name": "Krinos",
+      "place_id": null,
+      "lat": 37.9804082,
+      "lng": 23.7284114,
+      "category": "dessert",
+      "cuisine": "griego / bougatsa",
+      "description": "Pastelería histórica en la calle Aiolou, cerca de Monastiraki, célebre por su bougatsa de crema.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9804082,23.7284114",
       "distinction": null
     }
   ]

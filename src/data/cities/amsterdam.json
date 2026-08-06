@@ -3,7 +3,7 @@
   "name": "Ámsterdam",
   "country": "Países Bajos",
   "tagline": "Arenque crudo junto a la estación desde 1903, y alta cocina con vista panorámica desde el piso 23.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3522924,4.9305718",
+      "distinction": null
+    },
+    {
+      "name": "Flore",
+      "place_id": null,
+      "lat": 52.3676444,
+      "lng": 4.8944657,
+      "category": "fine_dining",
+      "cuisine": "neerlandés / francés",
+      "description": "Dentro del Hotel de l'Europe, cocina minimalista y sostenible del chef Bas van Kranen, sin lácteos. Dos estrellas Michelin y estrella verde.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3676444,4.8944657",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Foodhallen",
+      "place_id": null,
+      "lat": 52.3669479,
+      "lng": 4.8682000,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Mercado gastronómico en un antiguo depósito de tranvías de Oud-West, con más de 20 puestos de cocina internacional.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3669479,4.8682000",
       "distinction": null
     }
   ]

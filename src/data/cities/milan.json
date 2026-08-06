@@ -3,7 +3,7 @@
   "name": "Milán",
   "country": "Italia",
   "tagline": "Panzerotto de 1949 junto al Duomo, y dos estrellas Michelin que llevan medio siglo definiendo la alta cocina milanesa.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481",
       "distinction": null
+    },
+    {
+      "name": "Seta by Antonio Guida",
+      "place_id": null,
+      "lat": 45.4694631,
+      "lng": 9.1909801,
+      "category": "fine_dining",
+      "cuisine": "italiano / francés",
+      "description": "La cocina de Antonio Guida en el Mandarin Oriental Milano, técnica mediterránea de altísima precisión. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4694631,9.1909801",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Enrico Bartolini al MUDEC",
+      "place_id": null,
+      "lat": 45.4520455,
+      "lng": 9.1613185,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Dentro del Museo delle Culture, la única mesa con tres estrellas Michelin de Milán.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4520455,9.1613185",
+      "distinction": { "type": "michelin_star", "count": 3 }
     }
   ]
 }

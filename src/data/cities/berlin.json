@@ -3,7 +3,7 @@
   "name": "Berlín",
   "country": "Alemania",
   "tagline": "Dos horas de fila por un döner, y tres estrellas Michelin en la carta de vinos más premiada de Alemania.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4934924,13.3876866",
+      "distinction": null
+    },
+    {
+      "name": "Tim Raue",
+      "place_id": null,
+      "lat": 52.5069790,
+      "lng": 13.3915317,
+      "category": "fine_dining",
+      "cuisine": "asiático / europeo",
+      "description": "Cocina europea con inspiración asiática del chef Tim Raue, entre los mejores del mundo desde su apertura en 2010. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5069790,13.3915317",
+      "distinction": { "type": "michelin_star", "count": 2 }
+    },
+    {
+      "name": "Markthalle Neun",
+      "place_id": null,
+      "lat": 52.5021661,
+      "lng": 13.4314886,
+      "category": "street_food",
+      "cuisine": "variado",
+      "description": "Mercado histórico de Kreuzberg reconvertido en referencia de street food, famoso por su Street Food Thursday.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5021661,13.4314886",
       "distinction": null
     }
   ]

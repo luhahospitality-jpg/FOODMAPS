@@ -3,7 +3,7 @@
   "name": "Florencia",
   "country": "Italia",
   "tagline": "La bistecca alla fiorentina de 150 años, y las mesas compartidas donde se almuerza por 15 euros desde los años 50.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7728638,11.251282",
       "distinction": { "type": "michelin_bib_gourmand", "count": null }
+    },
+    {
+      "name": "Borgo San Jacopo",
+      "place_id": null,
+      "lat": 43.7678968,
+      "lng": 11.2512605,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Sobre el Arno, con vista directa al Ponte Vecchio. Cocina italiana de alta precisión del chef Claudio Mengoni. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7678968,11.2512605",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "La Leggenda dei Frati",
+      "place_id": null,
+      "lat": 43.7642641,
+      "lng": 11.2561926,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "description": "Dentro del complejo de Villa Bardini, con vistas panorámicas de Florencia. Cocina de raíz toscana del chef Filippo Saporito. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7642641,11.2561926",
+      "distinction": { "type": "michelin_star", "count": 1 }
     }
   ]
 }

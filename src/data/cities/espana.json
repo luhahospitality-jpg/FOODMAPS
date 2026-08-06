@@ -2,8 +2,8 @@
   "slug": "espana",
   "name": "España (selección nacional)",
   "country": "España",
-  "tagline": "Tres joyas fuera del circuito habitual: Girona, un caserío vasco y una posada asturiana de 1898 — todas con el máximo galardón.",
-  "totalPlaces": 3,
+  "tagline": "Cinco joyas fuera del circuito habitual: Girona, un caserío vasco, una posada asturiana de 1898, la ría gallega y Sevilla.",
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -50,6 +50,36 @@
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3875183,-5.1882653",
       "distinction": { "type": "michelin_star", "count": 3 }
+    },
+    {
+      "name": "Casa Solla",
+      "place_id": null,
+      "lat": 42.4334483,
+      "lng": -8.6690654,
+      "category": "seafood",
+      "cuisine": "gallego",
+      "description": "Cocina de raíz gallega y producto de la ría, del chef Pepe Solla, heredero de la tradición familiar. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.4334483,-8.6690654",
+      "distinction": { "type": "michelin_star", "count": 1 }
+    },
+    {
+      "name": "Abantal",
+      "place_id": null,
+      "lat": 37.3879291,
+      "lng": -5.9837138,
+      "category": "fine_dining",
+      "cuisine": "andaluz",
+      "description": "Cocina andaluza contemporánea del chef Julio Fernández, referencia de la alta cocina en Sevilla. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.3879291,-5.9837138",
+      "distinction": { "type": "michelin_star", "count": 1 }
     }
   ]
 }

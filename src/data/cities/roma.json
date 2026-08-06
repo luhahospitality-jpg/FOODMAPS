@@ -3,7 +3,7 @@
   "name": "Roma",
   "country": "Italia",
   "tagline": "Cuatro maneras de comer la carbonara perfecta, de una trattoria diminuta de Trastevere a una azotea con tres estrellas Michelin.",
-  "totalPlaces": 4,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -64,6 +64,21 @@
       "is_top5": true,
       "top5_rank": 4,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8880864,12.477807",
+      "distinction": null
+    },
+    {
+      "name": "Salumeria Roscioli",
+      "place_id": null,
+      "lat": 41.89422,
+      "lng": 12.4742602,
+      "category": "fine_dining",
+      "cuisine": "romano",
+      "description": "Charcutería y bodega con más de 2800 vinos, junto a Campo de' Fiori. Su carbonara está reconocida por 50 Top Italy.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.89422,12.4742602",
       "distinction": null
     }
   ]

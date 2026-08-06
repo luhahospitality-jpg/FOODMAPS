@@ -3,7 +3,7 @@
   "name": "Córdoba",
   "country": "Argentina",
   "tagline": "Bodegones de 50 años, locro humeante y el bife de chorizo que manda en Nueva Córdoba.",
-  "totalPlaces": 4,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -64,6 +64,21 @@
       "is_top5": true,
       "top5_rank": 4,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493",
+      "distinction": null
+    },
+    {
+      "name": "La Emilia",
+      "place_id": null,
+      "lat": -31.4383232,
+      "lng": -64.1758016,
+      "category": "steakhouse",
+      "cuisine": "argentino",
+      "description": "Parrilla de alta gama y ambiente relajado en el Ecodistrito de las Artes, con los mejores cortes de la ciudad.",
+      "source_url": null,
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4383232,-64.1758016",
       "distinction": null
     }
   ]

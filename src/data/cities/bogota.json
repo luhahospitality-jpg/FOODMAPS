@@ -3,7 +3,7 @@
   "name": "Bogotá",
   "country": "Colombia",
   "tagline": "Ajiaco de 1816 y una rumba con parrilla que se volvió el restaurante más famoso de Colombia.",
-  "totalPlaces": 3,
+  "totalPlaces": 5,
   "mymaps_url": null,
   "places": [
     {
@@ -49,6 +49,36 @@
       "is_top5": true,
       "top5_rank": 3,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6149139,-74.0690678",
+      "distinction": null
+    },
+    {
+      "name": "El Chato",
+      "place_id": null,
+      "lat": 4.6479292,
+      "lng": -74.0570554,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "description": "Cocina contemporánea de producto local del chef Álvaro Clavijo, en la Zona G. Nombrado mejor restaurante de Latinoamérica en 2025.",
+      "source_url": "https://www.theworlds50best.com/latinamerica/en/the-list/El-Chato.html",
+      "source_type": null,
+      "is_top5": true,
+      "top5_rank": 4,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6479292,-74.0570554",
+      "distinction": null
+    },
+    {
+      "name": "Pajares Salinas",
+      "place_id": null,
+      "lat": 4.6743121,
+      "lng": -74.04655,
+      "category": "fine_dining",
+      "cuisine": "español",
+      "description": "Icono de la cocina española en Bogotá desde hace más de 60 años, con ambiente elegante y tradicional.",
+      "source_url": null,
+      "source_type": "classic",
+      "is_top5": true,
+      "top5_rank": 5,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6743121,-74.04655",
       "distinction": null
     }
   ]
