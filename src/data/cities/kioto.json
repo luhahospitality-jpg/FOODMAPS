@@ -14,8 +14,8 @@
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
       "description": "Kaiseki tradicional desde 1912, uno de los templos de la alta cocina japonesa. Tres estrellas Michelin.",
-      "source_url": null,
-      "source_type": "classic",
+      "source_url": "https://www.andyhayler.com/restaurant/kikunoi",
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 1,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0013747,135.7822631",
@@ -67,18 +67,18 @@
       "distinction": null
     },
     {
-      "name": "Gion Karyo",
+      "name": "Hiiragiya",
       "place_id": null,
-      "lat": 35.0017668,
-      "lng": 135.7745780,
+      "lat": 35.0103285,
+      "lng": 135.7655029,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
-      "description": "Kaiseki contemporáneo en un edificio histórico de Gion, con más de treinta años de trayectoria y menú que cambia a diario.",
-      "source_url": null,
-      "source_type": null,
+      "description": "Ryokan de 1818 con seis generaciones en la misma familia, donde Anthony Bourdain cenó kaiseki con geishas junto al chef Morimoto.",
+      "source_url": "https://www.kyoto2.org/what-did-anthony-bourdain-eat-in-japan/",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0017668,135.7745780",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0103285,135.7655029",
       "distinction": null
     }
   ]

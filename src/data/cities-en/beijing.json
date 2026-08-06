@@ -11,17 +11,17 @@
       "cuisine": "Chinese / Peking duck",
       "description": "A modern reinvention of Peking duck, with crispy skin and fine-dining presentation. Michelin star."
     },
-    "Bianyifang": {
-      "cuisine": "Chinese / Peking duck",
-      "description": "Beijing's oldest Peking duck restaurant, dating to 1416, using the closed-oven \"menlu\" method."
+    "Haiwanju": {
+      "cuisine": "Chinese / noodles",
+      "description": "Hand-pulled zhajiangmian noodles and traditional Beijing snacks. One of food writer Fuchsia Dunlop's personal favorites."
     },
     "Najia Xiaoguan": {
       "cuisine": "Chinese / Manchu",
       "description": "Imperial Manchu cuisine from the Na family, descendants of Qing nobility, with recipes dating to 1748."
     },
-    "Wangfujing Snack Street": {
-      "cuisine": "mixed",
-      "description": "A covered street with more than 500 kinds of Chinese street food, under a traditional 10-meter arch."
+    "Li Qun Roast Duck": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "Peking duck in a hidden hutong courtyard, run by the same family for more than two decades. Anthony Bourdain's secret favorite on \"No Reservations.\""
     }
   }
 }

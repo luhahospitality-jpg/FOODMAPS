@@ -37,18 +37,18 @@
       "distinction": { "type": "michelin_star", "count": 1 }
     },
     {
-      "name": "Bianyifang",
+      "name": "Haiwanju",
       "place_id": null,
-      "lat": 40.0290835,
-      "lng": 116.3260452,
-      "category": "fine_dining",
-      "cuisine": "chino / pato pekinés",
-      "description": "El restaurante de pato pekinés más antiguo de Beijing, con origen en 1416 y el método de horno cerrado \"menlu\".",
-      "source_url": null,
-      "source_type": "classic",
+      "lat": 39.9266250,
+      "lng": 116.3246816,
+      "category": "fast_food",
+      "cuisine": "chino / fideos",
+      "description": "Fideos tirados a mano (zhajiangmian) y bocados tradicionales pekineses. Uno de los favoritos personales de la escritora gastronómica Fuchsia Dunlop.",
+      "source_url": "https://www.cathaypacific.com/cx/en_US/inspiration/dining/fuchsia-dunlop-favourite-restaurants-china.html",
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.0290835,116.3260452",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9266250,116.3246816",
       "distinction": null
     },
     {
@@ -67,18 +67,18 @@
       "distinction": null
     },
     {
-      "name": "Wangfujing Snack Street",
+      "name": "Li Qun Roast Duck",
       "place_id": null,
-      "lat": 39.9098345,
-      "lng": 116.4047354,
-      "category": "street_food",
-      "cuisine": "variado",
-      "description": "Calle cubierta con más de 500 tipos de comida callejera china, bajo un arco tradicional de 10 metros.",
-      "source_url": null,
-      "source_type": "classic",
+      "lat": 39.8969136,
+      "lng": 116.4001745,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés",
+      "description": "Pato pekinés en un hutong escondido, dirigido por la misma familia desde hace más de dos décadas. El favorito secreto de Anthony Bourdain en \"No Reservations\".",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-beijing-restaurants-no-reservations/",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9098345,116.4047354",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.8969136,116.4001745",
       "distinction": null
     }
   ]

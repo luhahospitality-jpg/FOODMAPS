@@ -11,17 +11,17 @@
       "cuisine": "Chinese / xiaolongbao",
       "description": "A tiny spot with a permanent line; its crab xiaolongbao is considered superior to Nanxiang's by many locals."
     },
-    "Yang's Fry Dumplings": {
-      "cuisine": "Chinese / shengjianbao",
-      "description": "Shanghai's best-known shengjianbao (pan-fried soup dumpling) chain, born as a street stall."
+    "Di Shui Dong": {
+      "cuisine": "Chinese / Hunanese",
+      "description": "Loud, no-frills Hunanese cooking, famous for its cumin ribs. Anthony Bourdain visited on \"Parts Unknown.\""
     },
     "Fu He Hui": {
       "cuisine": "Chinese / vegetarian",
       "description": "Chinese vegetarian haute cuisine in Changning, among Asia's 50 best restaurants. Two Michelin stars."
     },
-    "M on the Bund": {
-      "cuisine": "Western",
-      "description": "A pioneer of Western fine dining in Shanghai since 1999, with a terrace over the Bund and views of the Huangpu."
+    "Fu 1039": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Home-style Shanghainese cooking in a 1920s European-style mansion, from chef Tony Lu. One of food writer Fuchsia Dunlop's personal favorites."
     }
   }
 }

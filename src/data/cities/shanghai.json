@@ -37,18 +37,18 @@
       "distinction": null
     },
     {
-      "name": "Yang's Fry Dumplings",
+      "name": "Di Shui Dong",
       "place_id": null,
-      "lat": 31.2212579,
-      "lng": 121.4510326,
-      "category": "street_food",
-      "cuisine": "chino / shengjianbao",
-      "description": "La cadena más conocida de shengjianbao (dumplings fritos con caldo) de Shanghái, nacida como puesto callejero.",
-      "source_url": null,
-      "source_type": "classic",
+      "lat": 31.2230891,
+      "lng": 121.4555291,
+      "category": "fine_dining",
+      "cuisine": "chino / hunanés",
+      "description": "Cocina de Hunan ruidosa y sin pretensiones, famosa por sus costillas al comino. Anthony Bourdain la visitó en \"Parts Unknown\".",
+      "source_url": "https://www.cnn.com/2014/09/22/living/gallery/parts-unknown-shanghai-food/index.html",
+      "source_type": "bourdain",
       "is_top5": true,
       "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2212579,121.4510326",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2230891,121.4555291",
       "distinction": null
     },
     {
@@ -67,18 +67,18 @@
       "distinction": { "type": "michelin_star", "count": 2 }
     },
     {
-      "name": "M on the Bund",
+      "name": "Fu 1039",
       "place_id": null,
-      "lat": 31.2350367,
-      "lng": 121.4909009,
+      "lat": 31.2206997,
+      "lng": 121.4162480,
       "category": "fine_dining",
-      "cuisine": "occidental",
-      "description": "Pionero de la alta cocina occidental en Shanghái desde 1999, con terraza sobre el Bund y vista al Huangpu.",
-      "source_url": null,
-      "source_type": "classic",
+      "cuisine": "chino / shanghainés",
+      "description": "Cocina shanghainesa de casa en una mansión de estilo europeo de los años 20, del chef Tony Lu. Uno de los favoritos personales de la escritora gastronómica Fuchsia Dunlop.",
+      "source_url": "https://www.cathaypacific.com/cx/en_US/inspiration/dining/fuchsia-dunlop-favourite-restaurants-china.html",
+      "source_type": "critic",
       "is_top5": true,
       "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2350367,121.4909009",
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2206997,121.4162480",
       "distinction": null
     }
   ]
