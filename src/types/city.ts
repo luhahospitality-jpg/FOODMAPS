@@ -28,6 +28,7 @@ export interface Place {
   description: string;
   source_url: string | null;
   source_type: SourceType;
+  source_type_secondary?: SourceType;
   is_top5: boolean;
   top5_rank: number | null;
   google_maps_url: string | null;

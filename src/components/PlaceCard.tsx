@@ -29,11 +29,20 @@ export function PlaceCard({
         >
           {String(place.top5_rank ?? 0).padStart(2, "0")}
         </span>
-        {place.source_type && (
-          <Pill variant={place.source_type === "bourdain" ? "red" : "ink"}>
-            {sourceTypeLabel(lang, place.source_type)}
-          </Pill>
-        )}
+        <div className="flex flex-wrap items-center justify-end gap-1.5">
+          {place.source_type && (
+            <Pill variant={place.source_type === "bourdain" ? "red" : "ink"}>
+              {sourceTypeLabel(lang, place.source_type)}
+            </Pill>
+          )}
+          {place.source_type_secondary && (
+            <Pill
+              variant={place.source_type_secondary === "bourdain" ? "red" : "ink"}
+            >
+              {sourceTypeLabel(lang, place.source_type_secondary)}
+            </Pill>
+          )}
+        </div>
       </div>
 
       <div>
