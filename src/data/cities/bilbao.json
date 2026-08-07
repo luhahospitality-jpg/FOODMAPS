@@ -13,13 +13,15 @@
       "lng": -2.9223246,
       "category": "bar",
       "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
       "description": "Empezó como tienda de ultramarinos en 1849 y hoy es el emblema de los pintxos en la Plaza Nueva del Casco Viejo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2589032,-2.9223246",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2589032,-2.9223246"
     },
     {
       "name": "A Mina",
@@ -28,73 +30,19 @@
       "lng": -2.9244829,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina de producto del chef Álvaro Garrido junto a la ría, en el paseo de Marzana. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2548771,-2.9244829",
-      "distinction": { "type": "michelin_star", "count": 1 }
-    },
-    {
-      "name": "La Olla",
-      "place_id": null,
-      "lat": 43.2590139,
-      "lng": -2.9226887,
-      "category": "fine_dining",
-      "cuisine": "vasco / español",
-      "description": "Arroces, chuletón a la parrilla y un rincón secreto con bañera art decó que se volvió viral en TikTok, en plena Plaza Nueva.",
-      "source_url": "https://www.tiktok.com/@melitaplanes/video/7192539467708714246",
-      "source_type": "viral_social",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
-    },
-    {
-      "name": "Nerua Guggenheim Bilbao",
-      "place_id": null,
-      "lat": 43.2684285,
-      "lng": -2.934061,
-      "category": "fine_dining",
-      "cuisine": "vasco",
-      "description": "Alta cocina vasca contemporánea dentro del propio Museo Guggenheim. Una estrella Michelin.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2684285,-2.934061",
-      "distinction": { "type": "michelin_star", "count": 1 }
-    },
-    {
-      "name": "El Globo",
-      "place_id": null,
-      "lat": 43.2619441,
-      "lng": -2.9326563,
-      "category": "bar",
-      "cuisine": "pintxos / vasco",
-      "description": "Su pintxo de txangurro gratinado es un clásico absoluto, junto al Palacio de la Diputación.",
-      "source_url": null,
-      "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2619441,-2.9326563",
-      "distinction": null
-    },
-    {
-      "name": "Ola Martín Berasategui",
-      "place_id": null,
-      "lat": 43.2579235,
-      "lng": -2.9263764,
-      "category": "fine_dining",
-      "cuisine": "vasco",
-      "description": "La firma de Martín Berasategui en pleno Casco Viejo, con Raúl Cabrera al frente de los fogones. Una estrella Michelin.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Zarate",
@@ -103,13 +51,95 @@
       "lng": -2.9435525,
       "category": "seafood",
       "cuisine": "vasco / pescados",
+      "tags": [
+        "michelin"
+      ],
       "description": "Templo del pescado a la parrilla y el marisco de temporada. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2625632,-2.9435525",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nerua Guggenheim Bilbao",
+      "place_id": null,
+      "lat": 43.2684285,
+      "lng": -2.934061,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina vasca contemporánea dentro del propio Museo Guggenheim. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2684285,-2.934061",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "El Globo",
+      "place_id": null,
+      "lat": 43.2619441,
+      "lng": -2.9326563,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Su pintxo de txangurro gratinado es un clásico absoluto, junto al Palacio de la Diputación.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2619441,-2.9326563"
+    },
+    {
+      "name": "La Olla",
+      "place_id": null,
+      "lat": 43.2590139,
+      "lng": -2.9226887,
+      "category": "fine_dining",
+      "cuisine": "vasco / español",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Arroces, chuletón a la parrilla y un rincón secreto con bañera art decó que se volvió viral en TikTok, en plena Plaza Nueva.",
+      "source_url": "https://www.tiktok.com/@melitaplanes/video/7192539467708714246",
+      "source_type": "viral_social",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2590139,-2.9226887"
+    },
+    {
+      "name": "Ola Martín Berasategui",
+      "place_id": null,
+      "lat": 43.2579235,
+      "lng": -2.9263764,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La firma de Martín Berasategui en pleno Casco Viejo, con Raúl Cabrera al frente de los fogones. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2579235,-2.9263764",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Islares",
@@ -118,13 +148,19 @@
       "lng": -2.9352826,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "La novedad de la Guía Michelin 2026 en Bilbao, del chef Julen Bergantiños. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2671635,-2.9352826",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Charly",
@@ -133,13 +169,15 @@
       "lng": -2.9223358,
       "category": "bar",
       "cuisine": "pintxos",
+      "tags": [
+        "clasico"
+      ],
       "description": "Bar de pintxos abierto desde 1973, de los más respetados del Casco Viejo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.258827,-2.9223358"
     },
     {
       "name": "Gure Toki",
@@ -148,13 +186,13 @@
       "lng": -2.9223102,
       "category": "bar",
       "cuisine": "pintxos",
+      "tags": [],
       "description": "Pintxos de vanguardia sobre base vasca, en la Plaza Nueva.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2593874,-2.9223102"
     },
     {
       "name": "Mercado de la Ribera",
@@ -163,13 +201,17 @@
       "lng": -2.9243431,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Uno de los mercados cubiertos más grandes de Europa, a orillas de la ría, con puestos de pintxos y producto fresco.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.255551,-2.9243431"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

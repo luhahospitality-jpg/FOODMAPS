@@ -13,13 +13,19 @@
       "lng": 103.8429241,
       "category": "street_food",
       "cuisine": "chino / singapurense",
+      "tags": [
+        "michelin"
+      ],
       "description": "El arroz con pollo en salsa de soja más barato del mundo con estrella Michelin, desde 2016. El primer puesto callejero asiático en lograrlo.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2831091,103.8429241",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Tian Tian Hainanese Chicken Rice",
@@ -28,13 +34,20 @@
       "lng": 103.8478445,
       "category": "street_food",
       "cuisine": "singapurense",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
       "description": "El puesto de arroz con pollo hainanés más popular de Singapur, dentro del Maxwell Food Centre. Estrella Michelin y parada obligada de Anthony Bourdain en 'No Reservations'.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-singapore-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2761446,103.8478445",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Odette",
@@ -43,13 +56,19 @@
       "lng": 103.8514709,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina francesa moderna del chef Julien Royer dentro de la National Gallery. Tres estrellas Michelin desde 2019.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2902557,103.8514709",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Newton Food Centre",
@@ -58,13 +77,15 @@
       "lng": 103.8397234,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Uno de los primeros hawker centres de Singapur, desde 1971, con más de 80 puestos chinos, malayos e indios al aire libre.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3121232,103.8397234",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3121232,103.8397234"
     },
     {
       "name": "Lau Pa Sat",
@@ -73,13 +94,17 @@
       "lng": 103.8504802,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Monumento nacional victoriano reconvertido en mercado de comida, famoso por su \"Satay Street\" al anochecer.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2806167,103.8504802",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2806167,103.8504802"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

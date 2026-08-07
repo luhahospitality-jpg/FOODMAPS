@@ -13,13 +13,15 @@
       "lng": -99.1946572,
       "category": "fine_dining",
       "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
       "description": "Cocina mexicana de vanguardia de Jorge Vallejo y Alejandra Flores. El mole madre, que ya lleva más de una década fermentando, es la firma de la casa.",
       "source_url": "https://www.theinfatuation.com/mexico-city/reviews/pujol",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4322947,-99.1946572",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4322947,-99.1946572"
     },
     {
       "name": "El Califa de León",
@@ -28,13 +30,15 @@
       "lng": -99.1624218,
       "category": "street_food",
       "cuisine": "mexicano / tacos",
+      "tags": [
+        "clasico"
+      ],
       "description": "La primera taquería del mundo en tener una estrella Michelin (2024) — y también la primera en perderla (2026). El taco de gaonera que rompió internet.",
       "source_url": "https://www.cnn.com/travel/taqueria-el-califa-de-leon-mexico-city",
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4379452,-99.1624218",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4379452,-99.1624218"
     },
     {
       "name": "Siembra Comedor",
@@ -43,13 +47,20 @@
       "lng": -99.2035794,
       "category": "fast_food",
       "cuisine": "mexicano / maíz criollo",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
       "description": "Tortillería y comedor dedicado al maíz criollo en Polanco. Es la única tortillería reconocida por la Guía Michelin, con Bib Gourmand.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4383629,-99.2035794",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     },
     {
       "name": "El Cardenal",
@@ -58,13 +69,15 @@
       "lng": -99.1319238,
       "category": "brunch",
       "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
       "description": "Desayunos de conchas con nata y chocolate caliente desde 1969, en pleno Centro Histórico.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4329945,-99.1319238",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4329945,-99.1319238"
     },
     {
       "name": "El Huequito",
@@ -73,13 +86,17 @@
       "lng": -99.1387451,
       "category": "street_food",
       "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Taquería del Centro Histórico especializada en tacos al pastor. Anthony Bourdain los probó en 'No Reservations' y los describió como \"shockingly good\".",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-puebla-and-mexico-city-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4300772,-99.1387451",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4300772,-99.1387451"
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

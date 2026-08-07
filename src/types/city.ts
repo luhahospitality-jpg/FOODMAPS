@@ -25,15 +25,18 @@ export interface Place {
   lng: number;
   category: string;
   cuisine: string | null;
+  tags: string[];
   description: string;
   source_url: string | null;
   source_type: SourceType;
   source_type_secondary?: SourceType;
-  is_top5: boolean;
-  top5_rank: number | null;
+  rank: number;
+  reservable: boolean | null;
   google_maps_url: string | null;
   distinction?: Distinction | null;
 }
+
+export type Tier = "S" | "M" | "N";
 
 export interface CityData {
   slug: string;
@@ -41,6 +44,8 @@ export interface CityData {
   country: string;
   tagline: string;
   totalPlaces: number;
+  targetPlaces: number;
+  tier: Tier;
   mymaps_url: string | null;
   places: Place[];
 }
@@ -61,6 +66,7 @@ export interface CityIndexEntry {
   name_en?: string;
   country_en?: string;
   continent: Continent;
+  tier: Tier;
   plannedPlaces: number;
   available: boolean;
 }
@@ -77,4 +83,12 @@ export interface CityTranslation {
   country?: string;
   tagline?: string;
   places?: Record<string, PlaceTranslation>;
+}
+
+export interface NewsItem {
+  titulo: string;
+  resumen: string;
+  fuente_url: string | null;
+  fecha: string;
+  ciudad_slug: string;
 }

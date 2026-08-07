@@ -13,14 +13,17 @@
       "lng": -0.1231906,
       "category": "fine_dining",
       "cuisine": "británico",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
       "description": "El restaurante más antiguo de Londres, desde 1798. Dickens y Charlie Chaplin cenaron entre sus paredes.",
       "source_url": "https://www.andyhayler.com/restaurant/rules",
       "source_type": "classic",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5108285,-0.1231906",
-      "distinction": null
+      "source_type_secondary": "critic"
     },
     {
       "name": "The Golden Hind",
@@ -29,13 +32,15 @@
       "lng": -0.1509597,
       "category": "fast_food",
       "cuisine": "británico / fish and chips",
+      "tags": [
+        "clasico"
+      ],
       "description": "Fish and chips tradicionales en Marylebone desde 1914.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5179888,-0.1509597",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5179888,-0.1509597"
     },
     {
       "name": "Core by Clare Smyth",
@@ -44,13 +49,19 @@
       "lng": -0.2031072,
       "category": "fine_dining",
       "cuisine": "británico",
+      "tags": [
+        "michelin"
+      ],
       "description": "Clare Smyth, primera y única chef británica con tres estrellas Michelin, en Notting Hill.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5127194,-0.2031072",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Borough Market",
@@ -59,13 +70,15 @@
       "lng": -0.0901984,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Uno de los mercados de alimentos más antiguos de Londres, con más de mil años de historia junto al Puente de Londres.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5055815,-0.0901984",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5055815,-0.0901984"
     },
     {
       "name": "St. John",
@@ -74,13 +87,22 @@
       "lng": -0.1012748,
       "category": "fine_dining",
       "cuisine": "británico",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
       "description": "El restaurante que popularizó la cocina \"de la nariz a la cola\" (nose to tail) en Smithfield. Anthony Bourdain lo llamó su restaurante soñado. Una estrella Michelin.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-london-and-edinburgh-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5204809,-0.1012748",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

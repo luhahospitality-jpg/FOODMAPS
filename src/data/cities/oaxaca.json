@@ -13,13 +13,15 @@
       "lng": -96.7223764,
       "category": "fine_dining",
       "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
       "description": "Terraza icónica con vista al templo de Santo Domingo, referencia de la cocina oaxaqueña contemporánea.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0653023,-96.7223764",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0653023,-96.7223764"
     },
     {
       "name": "Mezcaloteca",
@@ -28,13 +30,15 @@
       "lng": -96.7216111,
       "category": "bar",
       "cuisine": "mezcal",
+      "tags": [
+        "timeout"
+      ],
       "description": "Sala de cata de mezcal artesanal, una introducción seria a los mezcales de la región.",
       "source_url": "https://www.timeout.com/mexico-city/restaurants/best-restaurants-and-bars-in-oaxaca",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0661634,-96.7216111",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0661634,-96.7216111"
     },
     {
       "name": "Tlamanalli",
@@ -43,13 +47,15 @@
       "lng": -96.5188871,
       "category": "fine_dining",
       "cuisine": "oaxaqueño / zapoteco",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Cocina zapoteca tradicional de la familia Mendoza en Teotitlán del Valle, con maíz molido a mano por la chef Abigail Mendoza. Anthony Bourdain lo visitó en 'Parts Unknown'.",
       "source_url": "https://www.cnn.com/2014/05/01/living/gallery/bourdain-mexico-food/index.html",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0344101,-96.5188871",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0344101,-96.5188871"
     },
     {
       "name": "Lechoncito de Oro",
@@ -58,13 +64,15 @@
       "lng": -96.7269998,
       "category": "street_food",
       "cuisine": "oaxaqueño / cerdo",
+      "tags": [
+        "timeout"
+      ],
       "description": "Puesto callejero de tacos y tortas de cerdo, junto al Mercado 20 de Noviembre.",
       "source_url": "https://www.timeout.com/mexico-city/restaurants/best-restaurants-and-bars-in-oaxaca",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0579866,-96.7269998",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0579866,-96.7269998"
     },
     {
       "name": "Levadura de Olla",
@@ -73,13 +81,17 @@
       "lng": -96.7251397,
       "category": "fine_dining",
       "cuisine": "oaxaqueño",
+      "tags": [
+        "critic"
+      ],
       "description": "La chef Thalia Barrios García rinde homenaje a las recetas de San Mateo Yucutindoo en un patio colonial. Mención en la Guía Michelin.",
       "source_url": "https://www.theinfatuation.com/oaxaca/reviews/levadura-de-olla",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0642869,-96.7251397",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0642869,-96.7251397"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

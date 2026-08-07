@@ -13,14 +13,22 @@
       "lng": 100.5047365,
       "category": "street_food",
       "cuisine": "tailandés",
+      "tags": [
+        "michelin",
+        "critic",
+        "tv_show"
+      ],
       "description": "La tortilla de cangrejo más famosa de Tailandia, cocinada con gafas de esquí sobre un wok de carbón por una leyenda de 81 años. Primera comida callejera del mundo con estrella Michelin, protagonista de Chef's Table de Netflix y reseñada por el crítico Carlo Mantuano en The Infatuation.",
       "source_url": "https://www.theinfatuation.com/bangkok/reviews/raan-jay-fai",
       "source_type": "critic",
-      "source_type_secondary": "tv_show",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7525335,100.5047365",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "source_type_secondary": "tv_show",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Sühring",
@@ -29,13 +37,19 @@
       "lng": 100.5453481,
       "category": "fine_dining",
       "cuisine": "alemán",
+      "tags": [
+        "michelin"
+      ],
       "description": "Gemelos alemanes reinventando su cocina natal en Bangkok. Tres estrellas Michelin, primer restaurante alemán de Asia en lograrlo.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7104718,100.5453481",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Thip Samai",
@@ -44,13 +58,15 @@
       "lng": 100.5048237,
       "category": "street_food",
       "cuisine": "tailandés / pad thai",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El pad thai envuelto en huevo más famoso de la ciudad, sobre la calle Maha Chai desde 1966. Anthony Bourdain lo visitó en 'No Reservations'.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-thailand-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237"
     },
     {
       "name": "Gaggan Anand",
@@ -59,13 +75,19 @@
       "lng": 100.5675678,
       "category": "fine_dining",
       "cuisine": "indio / progresivo",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina progresiva india con técnica francesa, thai y japonesa, en una barra de 14 asientos con 25 tiempos teatrales. Estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7407594,100.5675678",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Krua Apsorn (Dusit)",
@@ -74,13 +96,23 @@
       "lng": 100.5062486,
       "category": "fine_dining",
       "cuisine": "tailandés / real",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
       "description": "Recetas de cocina real tailandesa desde 1996, heredadas de la cocinera de la Princesa Madre. Bib Gourmand.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7740652,100.5062486",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

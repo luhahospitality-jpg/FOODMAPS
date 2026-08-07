@@ -13,14 +13,17 @@
       "lng": -74.1219049,
       "category": "brunch",
       "cuisine": "colombiano",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
       "description": "El restaurante más antiguo de Colombia, sirviendo ajiaco y tamales desde 1816 junto a la Plaza de Bolívar.",
       "source_url": "https://www.continentscondiments.com/colombia-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
       "source_type": "classic",
-      "source_type_secondary": "bourdain",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6350475,-74.1219049",
-      "distinction": null
+      "source_type_secondary": "bourdain"
     },
     {
       "name": "Andrés Carne de Res",
@@ -29,13 +32,15 @@
       "lng": -74.0655205,
       "category": "steakhouse",
       "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
       "description": "Una experiencia entre restaurante y rumba en Chía, la institución colombiana de parrilla y fiesta que lleva abierta desde 1982.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.8527663,-74.0655205",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.8527663,-74.0655205"
     },
     {
       "name": "Leo Cocina y Cava",
@@ -44,13 +49,15 @@
       "lng": -74.0690678,
       "category": "fine_dining",
       "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
       "description": "Alta cocina basada en la biodiversidad colombiana, de la chef Leonor Espinosa.",
       "source_url": "https://www.thebogotapost.com/restaurant-review-leo-cocina-y-cava/28256/",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6149139,-74.0690678",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6149139,-74.0690678"
     },
     {
       "name": "El Chato",
@@ -59,13 +66,13 @@
       "lng": -74.0570554,
       "category": "fine_dining",
       "cuisine": "colombiano",
+      "tags": [],
       "description": "Cocina contemporánea de producto local del chef Álvaro Clavijo, en la Zona G. Nombrado mejor restaurante de Latinoamérica en 2025.",
       "source_url": "https://www.theworlds50best.com/latinamerica/en/the-list/El-Chato.html",
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6479292,-74.0570554",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6479292,-74.0570554"
     },
     {
       "name": "Pajares Salinas",
@@ -74,13 +81,17 @@
       "lng": -74.04655,
       "category": "fine_dining",
       "cuisine": "español",
+      "tags": [
+        "clasico"
+      ],
       "description": "Icono de la cocina española en Bogotá desde hace más de 60 años, con ambiente elegante y tradicional.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6743121,-74.04655",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6743121,-74.04655"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,14 +13,22 @@
       "lng": -2.0068903,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "clasico",
+        "bourdain"
+      ],
       "description": "Icono mundial de la cocina vasca, dirigido hoy por Elena Arzak. Tres estrellas Michelin desde 1989.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-spain-restaurants-no-reservations/",
       "source_type": "classic",
-      "source_type_secondary": "bourdain",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3117152,-2.0068903",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "source_type_secondary": "bourdain",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Akelarre",
@@ -29,13 +37,19 @@
       "lng": -2.0431538,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "Vistas al Cantábrico y la cocina de Pedro Subijana, reinventándose desde hace medio siglo. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3077826,-2.0431538",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Ganbara",
@@ -44,13 +58,15 @@
       "lng": -1.9853644,
       "category": "bar",
       "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
       "description": "El pintxo de rape y langostino, y una barra repleta de setas de temporada, en la calle San Jerónimo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3231435,-1.9853644",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3231435,-1.9853644"
     },
     {
       "name": "La Cuchara de San Telmo",
@@ -59,14 +75,17 @@
       "lng": -1.9852992,
       "category": "bar",
       "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
       "description": "La pionera de los pintxos modernos vascos, sin cartel en la puerta pero con cola en la barra.",
       "source_url": "https://www.theinfatuation.com/san-sebastian/reviews/la-cuchara-de-san-telmo",
       "source_type": "classic",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3245012,-1.9852992",
-      "distinction": null
+      "source_type_secondary": "critic"
     },
     {
       "name": "Mugaritz",
@@ -75,13 +94,19 @@
       "lng": -1.9172259,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "Menú degustación de 20 pasos que desafía qué es un restaurante, del chef Andoni Luis Aduriz, en Errenteria.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2723615,-1.9172259",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Amelia by Paulo Airaudo",
@@ -90,13 +115,19 @@
       "lng": -1.9862468,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina de temporada y pequeños productores del chef ítalo-argentino Paulo Airaudo. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3169134,-1.9862468",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Kokotxa",
@@ -105,13 +136,19 @@
       "lng": -1.9870739,
       "category": "fine_dining",
       "cuisine": "vasco",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina vasca tradicional puesta al día, en pleno Parte Vieja. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3235301,-1.9870739",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Gandarias",
@@ -120,13 +157,15 @@
       "lng": -1.9857674,
       "category": "bar",
       "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
       "description": "Clásico renovado: oreja de cerdo y risotto de Idiazábal conviven con los pintxos de toda la vida.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3239943,-1.9857674"
     },
     {
       "name": "El Tamboril",
@@ -135,13 +174,15 @@
       "lng": -1.9838069,
       "category": "bar",
       "cuisine": "pintxos",
+      "tags": [
+        "clasico"
+      ],
       "description": "La gamba rebozada más pedida de la calle Pescadería.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3237984,-1.9838069"
     },
     {
       "name": "La Cepa",
@@ -150,13 +191,17 @@
       "lng": -1.9849176,
       "category": "bar",
       "cuisine": "pintxos",
+      "tags": [
+        "clasico"
+      ],
       "description": "Bar clásico de la Parte Vieja, con un pintxo de champiñones tan simple como irresistible.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3243247,-1.9849176"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

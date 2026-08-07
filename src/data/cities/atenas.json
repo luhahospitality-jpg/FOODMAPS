@@ -13,13 +13,20 @@
       "lng": 23.7430396,
       "category": "fine_dining",
       "cuisine": "griego / francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Fusión franco-griega refinada en un patio sereno. Dos estrellas Michelin, las más altas de Grecia, reseñado por el crítico Andy Hayler.",
       "source_url": null,
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9650285,23.7430396",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "O Thanasis",
@@ -28,13 +35,15 @@
       "lng": 23.7270354,
       "category": "street_food",
       "cuisine": "griego / souvlaki",
+      "tags": [
+        "clasico"
+      ],
       "description": "Institución del souvlaki en la Plaza Monastiraki, con mesas afuera y precios de toda la vida.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9761723,23.7270354",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9761723,23.7270354"
     },
     {
       "name": "Platanos",
@@ -43,28 +52,32 @@
       "lng": 23.7278834,
       "category": "fine_dining",
       "cuisine": "griego",
+      "tags": [
+        "clasico"
+      ],
       "description": "Taberna en Plaka abierta desde 1932, con historia de visitantes ilustres como Henry Miller. Cocina griega clásica.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9742823,23.7278834",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9742823,23.7278834"
     },
     {
       "name": "Psarras",
       "place_id": null,
-      "lat": 37.9731870,
+      "lat": 37.973187,
       "lng": 23.7285907,
       "category": "seafood",
       "cuisine": "griego",
+      "tags": [
+        "clasico"
+      ],
       "description": "Institución de Plaka desde 1898, con terrazas escalonadas entre plantas y pescado a la parrilla.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9731870,23.7285907",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9731870,23.7285907"
     },
     {
       "name": "Krinos",
@@ -73,13 +86,17 @@
       "lng": 23.7284114,
       "category": "dessert",
       "cuisine": "griego / bougatsa",
+      "tags": [
+        "clasico"
+      ],
       "description": "Pastelería histórica en la calle Aiolou, cerca de Monastiraki, célebre por su bougatsa de crema.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9804082,23.7284114",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9804082,23.7284114"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

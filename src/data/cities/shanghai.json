@@ -13,13 +13,15 @@
       "lng": 121.4879752,
       "category": "street_food",
       "cuisine": "chino / xiaolongbao",
+      "tags": [
+        "clasico"
+      ],
       "description": "El local histórico de xiaolongbao dentro del Jardín Yu, el más famoso de Shanghái aunque hoy conviva con el turismo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2289274,121.4879752",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2289274,121.4879752"
     },
     {
       "name": "Jia Jia Tang Bao",
@@ -28,13 +30,15 @@
       "lng": 121.4660479,
       "category": "street_food",
       "cuisine": "chino / xiaolongbao",
+      "tags": [
+        "clasico"
+      ],
       "description": "Local diminuto con fila permanente; su xiaolongbao de cangrejo es considerado superior al de Nanxiang por muchos locales.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2370072,121.4660479",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2370072,121.4660479"
     },
     {
       "name": "Di Shui Dong",
@@ -43,13 +47,15 @@
       "lng": 121.4555291,
       "category": "fine_dining",
       "cuisine": "chino / hunanés",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Cocina de Hunan ruidosa y sin pretensiones, famosa por sus costillas al comino. Anthony Bourdain la visitó en \"Parts Unknown\".",
       "source_url": "https://www.cnn.com/2014/09/22/living/gallery/parts-unknown-shanghai-food/index.html",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2230891,121.4555291",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2230891,121.4555291"
     },
     {
       "name": "Fu He Hui",
@@ -58,28 +64,38 @@
       "lng": 121.4235901,
       "category": "fine_dining",
       "cuisine": "chino / vegetariano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Alta cocina vegetariana china en Changning, entre los mejores 50 restaurantes de Asia. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2205856,121.4235901",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Fu 1039",
       "place_id": null,
       "lat": 31.2206997,
-      "lng": 121.4162480,
+      "lng": 121.416248,
       "category": "fine_dining",
       "cuisine": "chino / shanghainés",
+      "tags": [
+        "critic"
+      ],
       "description": "Cocina shanghainesa de casa en una mansión de estilo europeo de los años 20, del chef Tony Lu. Uno de los favoritos personales de la escritora gastronómica Fuchsia Dunlop.",
       "source_url": "https://www.cathaypacific.com/cx/en_US/inspiration/dining/fuchsia-dunlop-favourite-restaurants-china.html",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2206997,121.4162480",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.2206997,121.4162480"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

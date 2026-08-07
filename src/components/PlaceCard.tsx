@@ -14,7 +14,7 @@ export function PlaceCard({
   lang?: Lang;
 }) {
   const dict = t(lang);
-  const rankIndex = (place.top5_rank ?? 1) - 1;
+  const rankIndex = (place.rank ?? 1) - 1;
   const rankColor = rankColors[rankIndex % rankColors.length];
   const rankTextColor =
     rankColor === "bg-blue" || rankColor === "bg-red" || rankColor === "bg-ink"
@@ -27,7 +27,7 @@ export function PlaceCard({
         <span
           className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-ink font-display text-xl font-black ${rankColor} ${rankTextColor}`}
         >
-          {String(place.top5_rank ?? 0).padStart(2, "0")}
+          {String(place.rank ?? 0).padStart(2, "0")}
         </span>
         <div className="flex flex-wrap items-center justify-end gap-1.5">
           {place.source_type && (

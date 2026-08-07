@@ -13,13 +13,19 @@
       "lng": 55.2776348,
       "category": "fine_dining",
       "cuisine": "indio",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina india moderna en DIFC, el primer restaurante de Dubái en lograr tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2128259,55.2776348",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Al Ustad Special Kabab",
@@ -28,13 +34,15 @@
       "lng": 55.2988329,
       "category": "fast_food",
       "cuisine": "persa",
+      "tags": [
+        "clasico"
+      ],
       "description": "Kebabs persas en Bur Dubai desde 1978, favorito de los chefs de la ciudad en sus días libres.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2598015,55.2988329",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2598015,55.2988329"
     },
     {
       "name": "Al Mallah",
@@ -43,13 +51,15 @@
       "lng": 55.2769389,
       "category": "fast_food",
       "cuisine": "libanés / shawarma",
+      "tags": [
+        "clasico"
+      ],
       "description": "Shawarma libanesa clásica desde hace casi 40 años.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.236703,55.2769389",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.236703,55.2769389"
     },
     {
       "name": "Ravi Restaurant",
@@ -58,28 +68,39 @@
       "lng": 55.2790297,
       "category": "fast_food",
       "cuisine": "pakistaní",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Referencia de cocina pakistaní en Al Satwa desde 1978, certificada en su día por Anthony Bourdain.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-dubai-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2336615,55.2790297",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2336615,55.2790297"
     },
     {
       "name": "STAY by Yannick Alléno",
       "place_id": null,
       "lat": 25.0992694,
-      "lng": 55.1334430,
+      "lng": 55.133443,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina francesa contemporánea dentro del One&Only The Palm, con salón de candelabros de cristal negro. Dos estrellas Michelin, reseñado por el crítico Saeed Saeed en The National.",
       "source_url": "https://www.thenationalnews.com/lifestyle/food/2023/11/09/yannick-alleno-review-dubai-michelin-star/",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.0992694,55.1334430",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,13 +13,15 @@
       "lng": -43.1787441,
       "category": "dessert",
       "cuisine": "brasileiro / português",
+      "tags": [
+        "clasico"
+      ],
       "description": "Confeitaria histórica de 1894, ícone do Rio. Seu quindim foi eleito uma das sobremesas mais icônicas do mundo pelo TasteAtlas.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9051703,-43.1787441",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9051703,-43.1787441"
     },
     {
       "name": "Oro",
@@ -28,13 +30,19 @@
       "lng": -43.2247595,
       "category": "fine_dining",
       "cuisine": "brasileiro",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cozinha de assinatura do chef Felipe Bronze em Leblon, um dos poucos restaurantes brasileiros com duas estrelas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9860511,-43.2247595",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Lasai",
@@ -43,13 +51,19 @@
       "lng": -43.196313,
       "category": "fine_dining",
       "cuisine": "brasileiro",
+      "tags": [
+        "michelin"
+      ],
       "description": "Ingredientes de horta própria em Humaitá, do chef Rafa Costa e Silva. Duas estrelas Michelin y 28º no World's 50 Best 2025.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9531425,-43.196313",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Mee",
@@ -58,13 +72,19 @@
       "lng": -43.1791849,
       "category": "fine_dining",
       "cuisine": "asiático",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cozinha asiática refinada dentro do lendário Copacabana Palace. Uma estrela Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9670132,-43.1791849",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Garota de Ipanema",
@@ -73,13 +93,17 @@
       "lng": -43.202981,
       "category": "bar",
       "cuisine": "brasileiro / boteco",
+      "tags": [
+        "clasico"
+      ],
       "description": "El boteco donde Vinícius de Moraes y Tom Jobim escribieron \"Garota de Ipanema\" en 1962. La calle de al lado lleva el nombre del poeta.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9852383,-43.202981",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9852383,-43.202981"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

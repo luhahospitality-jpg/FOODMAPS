@@ -13,13 +13,15 @@
       "lng": 2.1744185,
       "category": "fine_dining",
       "cuisine": "catalán",
+      "tags": [
+        "clasico"
+      ],
       "description": "El restaurante más antiguo de Barcelona, abierto desde 1786 en pleno Barrio Gótico. Sus paredes están cubiertas de fotos de un siglo de comensales ilustres.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381215,2.1744185",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381215,2.1744185"
     },
     {
       "name": "Disfrutar",
@@ -28,13 +30,20 @@
       "lng": 2.1531722,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Nombrado el mejor restaurante del mundo en 2024 por The World's 50 Best. Cocina de vanguardia de tres ex-elBulli.",
       "source_url": "https://www.theinfatuation.com/barcelona/reviews/disfrutar",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.387762,2.1531722",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Quimet & Quimet",
@@ -43,13 +52,15 @@
       "lng": 2.1655692,
       "category": "bar",
       "cuisine": "tapas / vermut",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Bodega familiar de 1914 en Poble Sec — cinco generaciones sirviendo montaditos de pie en la barra. Anthony Bourdain la visitó en 'No Reservations' durante su episodio de España.",
       "source_url": "https://www.noreservationslocations.com/spain-episode.html",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3739942,2.1655692",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3739942,2.1655692"
     },
     {
       "name": "La Cova Fumada",
@@ -58,13 +69,15 @@
       "lng": 2.1891943,
       "category": "bar",
       "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
       "description": "Taberna de pescadores de 1944 en la Barceloneta, cuna de la mítica \"bomba\" con patata y carne.",
       "source_url": "https://www.timeout.es/barcelona/es/restaurantes/la-cova-fumada",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792983,2.1891943",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792983,2.1891943"
     },
     {
       "name": "Enigma",
@@ -73,13 +86,19 @@
       "lng": 2.154109,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "El proyecto más hermético de Albert Adrià, con reserva casi imposible. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3766923,2.154109",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Els 4 Gats",
@@ -88,13 +107,15 @@
       "lng": 2.1739318,
       "category": "fine_dining",
       "cuisine": "catalán",
+      "tags": [
+        "clasico"
+      ],
       "description": "El café-cabaret de 1897 donde un joven Picasso diseñó el menú. Punto de encuentro histórico del modernismo catalán.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3857927,2.1739318"
     },
     {
       "name": "ABaC",
@@ -103,13 +124,19 @@
       "lng": 2.1365386,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Alta cocina de Jordi Cruz dentro de un hotel boutique en Sant Gervasi. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4104436,2.1365386",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Cocina Hermanos Torres",
@@ -118,13 +145,19 @@
       "lng": 2.1401156,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "El taller-restaurante de los gemelos Torres, con la cocina como escenario central. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.386502,2.1401156",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Lasarte",
@@ -133,13 +166,19 @@
       "lng": 2.162126,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "La apuesta barcelonesa de Martín Berasategui, con Paolo Casagrande al frente de los fogones. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3936394,2.162126",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Mont Bar",
@@ -148,13 +187,19 @@
       "lng": 2.1618234,
       "category": "bar",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Barra de tapas de autor con alma de bar de barrio — y dos estrellas Michelin, algo inusual en el formato.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3862444,2.1618234",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Cinc Sentits",
@@ -163,13 +208,19 @@
       "lng": 2.1593618,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Menú sensorial y de kilómetro cero en pleno Eixample. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3884807,2.1593618",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Alkimia",
@@ -178,13 +229,19 @@
       "lng": 2.1633778,
       "category": "fine_dining",
       "cuisine": "catalana",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina catalana destilada a su esencia por Jordi Vilà. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3826569,2.1633778",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Dos Palillos",
@@ -193,13 +250,19 @@
       "lng": 2.1686848,
       "category": "fine_dining",
       "cuisine": "asiática / tapas",
+      "tags": [
+        "michelin"
+      ],
       "description": "Tapas asiáticas de Albert Raurich, ex jefe de cocina de elBulli. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3833615,2.1686848",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Koy Shunka",
@@ -208,13 +271,19 @@
       "lng": 2.1752967,
       "category": "fine_dining",
       "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina japonesa con acento catalán, muy cerca de la Catedral. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3858105,2.1752967",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Via Veneto",
@@ -223,13 +292,20 @@
       "lng": 2.1390672,
       "category": "fine_dining",
       "cuisine": "clásico catalán",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "Clásico de la alta cocina catalana desde 1967, con carro de postres flambeados incluido. Una estrella Michelin.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3924558,2.1390672",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Enoteca Paco Pérez",
@@ -238,13 +314,19 @@
       "lng": 2.1962221,
       "category": "seafood",
       "cuisine": "mariscos",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina de mar de Paco Pérez con vistas al Mediterráneo desde el Hotel Arts. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3868915,2.1962221",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Mercat de la Boqueria",
@@ -253,13 +335,17 @@
       "lng": 2.1715515,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "El mercado más visitado de Barcelona, sobre las Ramblas, con puestos de jamón, fruta cortada y marisco fresco.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381736,2.1715515"
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

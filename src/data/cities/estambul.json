@@ -13,14 +13,22 @@
       "lng": 28.9711789,
       "category": "fine_dining",
       "cuisine": "turco / otomano",
+      "tags": [
+        "michelin",
+        "clasico",
+        "critic"
+      ],
       "description": "Cocina otomana dentro del Gran Bazar de las Especias desde 1901. Estrella Michelin, reseñado por el crítico Manos Angelakis (LuxuryWeb Magazine).",
       "source_url": null,
       "source_type": "classic",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0171446,28.9711789",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Tatbak",
@@ -29,13 +37,15 @@
       "lng": 29.1100738,
       "category": "fast_food",
       "cuisine": "turco / kebab",
+      "tags": [
+        "clasico"
+      ],
       "description": "El kebab de referencia en Estambul desde 1960, con lahmacun picante de Gaziantep.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9463997,29.1100738",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9463997,29.1100738"
     },
     {
       "name": "Tarihi Karaköy Balıkçısı",
@@ -44,13 +54,15 @@
       "lng": 28.9740393,
       "category": "seafood",
       "cuisine": "turco / mariscos",
+      "tags": [
+        "clasico"
+      ],
       "description": "Pescadería histórica en Karaköy, sirviendo desde 1923 a la entrada del Griffin Han.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393"
     },
     {
       "name": "Kızılkayalar",
@@ -59,13 +71,15 @@
       "lng": 28.9846783,
       "category": "fast_food",
       "cuisine": "turco / hamburguesa",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El local del islak hamburger (hamburguesa húmeda) en Beyoğlu que Anthony Bourdain probó en \"No Reservations\": \"¿por qué los turcos van a McDonald's teniendo esto?\"",
       "source_url": null,
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0361768,28.9846783",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0361768,28.9846783"
     },
     {
       "name": "Sofyalı 9",
@@ -74,13 +88,17 @@
       "lng": 28.9743233,
       "category": "bar",
       "cuisine": "turco / meyhane",
+      "tags": [
+        "clasico"
+      ],
       "description": "Una de las meyhanes tradicionales más consolidadas de Beyoğlu, con mezze y raki cerca de Tünel.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0291163,28.9743233",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0291163,28.9743233"
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

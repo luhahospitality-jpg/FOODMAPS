@@ -13,13 +13,19 @@
       "lng": 13.3862164,
       "category": "fine_dining",
       "cuisine": "alemán",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina alemana de vanguardia con la carta de vinos más premiada del país. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5282228,13.3862164",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Zum Schusterjungen",
@@ -28,13 +34,15 @@
       "lng": 13.4140424,
       "category": "bar",
       "cuisine": "alemán",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Kneipe de esquina en Prenzlauer Berg desde hace casi un siglo. Anthony Bourdain comió aquí un Eisbein en el especial de Berlín de \"Parts Unknown\".",
       "source_url": null,
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5408915,13.4140424",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5408915,13.4140424"
     },
     {
       "name": "Curry 36",
@@ -43,28 +51,37 @@
       "lng": 13.3876866,
       "category": "fast_food",
       "cuisine": "alemán / currywurst",
+      "tags": [
+        "clasico"
+      ],
       "description": "La currywurst de referencia en Berlín, con merchandising propio y ketchup de marca.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4934924,13.3876866",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4934924,13.3876866"
     },
     {
       "name": "Tim Raue",
       "place_id": null,
-      "lat": 52.5069790,
+      "lat": 52.506979,
       "lng": 13.3915317,
       "category": "fine_dining",
       "cuisine": "asiático / europeo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina europea con inspiración asiática del chef Tim Raue, entre los mejores del mundo desde su apertura en 2010. Dos estrellas Michelin, 4/5 según la crítica de Time Out Berlín (Anna Geary-Meyer).",
       "source_url": null,
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5069790,13.3915317",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Markthalle Neun",
@@ -73,13 +90,17 @@
       "lng": 13.4314886,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Mercado histórico de Kreuzberg reconvertido en referencia de street food, famoso por su Street Food Thursday.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5021661,13.4314886",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5021661,13.4314886"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

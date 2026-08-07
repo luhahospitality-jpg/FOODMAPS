@@ -13,13 +13,20 @@
       "lng": 12.5720401,
       "category": "fine_dining",
       "cuisine": "nórdico",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina nórdica de vanguardia nombrada mejor restaurante del mundo en 2022 y 2023. Tres estrellas Michelin, reseñado por el crítico Andy Hayler.",
       "source_url": null,
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.7037103,12.5720401",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Restaurant Schønnemann",
@@ -28,13 +35,15 @@
       "lng": 12.576023,
       "category": "fine_dining",
       "cuisine": "danés / smørrebrød",
+      "tags": [
+        "clasico"
+      ],
       "description": "Institución del smørrebrød desde 1877, con más de 100 variantes escritas a mano en la carta.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.682815,12.576023",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.682815,12.576023"
     },
     {
       "name": "Kadeau",
@@ -43,13 +52,19 @@
       "lng": 12.5888555,
       "category": "fine_dining",
       "cuisine": "nórdico",
+      "tags": [
+        "michelin"
+      ],
       "description": "Un pedazo de la isla de Bornholm en Christianshavn, con ingredientes daneses de temporada. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6722547,12.5888555",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Jordnær",
@@ -58,28 +73,38 @@
       "lng": 12.5418393,
       "category": "fine_dining",
       "cuisine": "nórdico",
+      "tags": [
+        "michelin"
+      ],
       "description": "Apenas 25 cubiertos en el primer piso del Gentofte Hotel, a cargo del matrimonio Vildgaard. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.7482424,12.5418393",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Noma",
       "place_id": null,
-      "lat": 55.6831530,
-      "lng": 12.6104260,
+      "lat": 55.683153,
+      "lng": 12.610426,
       "category": "fine_dining",
       "cuisine": "nórdico",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El laboratorio de René Redzepi en Refshalevej, cuna de la cocina nórdica moderna. Protagonista absoluto del episodio de Copenhague de \"Parts Unknown\".",
       "source_url": null,
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6831530,12.6104260",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=55.6831530,12.6104260"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

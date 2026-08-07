@@ -13,13 +13,20 @@
       "lng": 2.8077671,
       "category": "fine_dining",
       "cuisine": "catalán",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "El templo de los hermanos Roca en Girona, nombrado mejor restaurante del mundo en 2013 y 2015. Tres estrellas Michelin.",
       "source_url": "https://www.gastroactitud.com/restaurante/celler-de-can-roca/",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9934013,2.8077671",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Asador Etxebarri",
@@ -28,13 +35,20 @@
       "lng": -2.5984392,
       "category": "steakhouse",
       "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
       "description": "La parrilla de Bittor Arginzoniz en un caserío de Bizkaia, #2 del mundo en The World's 50 Best 2024. Una estrella Michelin. Anthony Bourdain lo visitó dos veces y lo llamó la mejor comida de su vida.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-spain-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.1159106,-2.5984392",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Casa Marcial",
@@ -43,13 +57,20 @@
       "lng": -5.1882653,
       "category": "fine_dining",
       "cuisine": "asturiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "La cocina de paisaje asturiano de Nacho Manzano, en una antigua posada familiar de 1898. Tres estrellas Michelin, tres Soles Repsol.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3875183,-5.1882653",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Casa Solla",
@@ -58,13 +79,20 @@
       "lng": -8.6690654,
       "category": "seafood",
       "cuisine": "gallego",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "Cocina de raíz gallega y producto de la ría, del chef Pepe Solla, heredero de la tradición familiar. Una estrella Michelin.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.4334483,-8.6690654",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Abantal",
@@ -73,13 +101,21 @@
       "lng": -5.9837138,
       "category": "fine_dining",
       "cuisine": "andaluz",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina andaluza contemporánea del chef Julio Fernández, referencia de la alta cocina en Sevilla. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.3879291,-5.9837138",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

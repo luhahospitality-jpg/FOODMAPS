@@ -13,13 +13,15 @@
       "lng": -3.707981,
       "category": "fine_dining",
       "cuisine": "español / asador castellano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El restaurante más antiguo del mundo según el Guinness, abierto desde 1725. El cochinillo asado en horno de leña es de otro planeta.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4141745,-3.707981",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4141745,-3.707981"
     },
     {
       "name": "DiverXO",
@@ -28,13 +30,20 @@
       "lng": -3.6859491,
       "category": "fine_dining",
       "cuisine": "creativa / asiática-fusión",
+      "tags": [
+        "michelin",
+        "timeout"
+      ],
       "description": "La cocina más disruptiva de España, del chef Dabiz Muñoz. Cuarto mejor restaurante del mundo según The World's 50 Best 2025.",
       "source_url": "https://www.timeout.es/madrid/es/noticias/estos-son-los-10-mejores-restaurantes-del-mundo-este-2025-y-diverxo-esta-en-el-top-5-062025",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4577954,-3.6859491",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Swiss Butter",
@@ -43,13 +52,15 @@
       "lng": -3.6933659,
       "category": "steakhouse",
       "cuisine": "suizo / carne",
+      "tags": [
+        "viral_tiktok"
+      ],
       "description": "El entrecot con salsa secreta que se volvió viral en TikTok. Sin reservas, con cola garantizada en Chamberí.",
       "source_url": "https://www.tiktok.com/@agusscondoleo/video/7493124148609207558",
       "source_type": "viral_social",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4324281,-3.6933659",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4324281,-3.6933659"
     },
     {
       "name": "Kuoco 360",
@@ -58,13 +69,15 @@
       "lng": -3.695529,
       "category": "fine_dining",
       "cuisine": "creativa / fusión",
+      "tags": [
+        "influencer"
+      ],
       "description": "Fusión creativa en Chueca que arrasa en redes — recomendado por la gastroinfluencer Nieves Felipo.",
       "source_url": "https://www.tiktok.com/@nievesfelipo/video/7469498147677457686",
       "source_type": "influencer",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4227829,-3.695529",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4227829,-3.695529"
     },
     {
       "name": "La Casa del Abuelo",
@@ -73,13 +86,15 @@
       "lng": -3.7017617,
       "category": "bar",
       "cuisine": "tapas / gambas",
+      "tags": [
+        "clasico"
+      ],
       "description": "Las gambas al ajillo y la caña corta más icónicas de Madrid, sirviendo desde 1906.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4157405,-3.7017617",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4157405,-3.7017617"
     },
     {
       "name": "Lhardy",
@@ -88,13 +103,15 @@
       "lng": -3.7013775,
       "category": "fine_dining",
       "cuisine": "español clásico",
+      "tags": [
+        "clasico"
+      ],
       "description": "Salón decimonónico desde 1839, cuna del cocido madrileño a la carta. Terciopelo rojo y caldo caliente en vaso de plata en la entrada.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4166082,-3.7013775"
     },
     {
       "name": "Coque",
@@ -103,13 +120,19 @@
       "lng": -3.6905135,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Experiencia gastronómica en tres actos de los hermanos Sandoval, con dos estrellas Michelin y tres Soles Repsol.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4306865,-3.6905135",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "DSTAgE",
@@ -118,13 +141,19 @@
       "lng": -3.6963316,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina de autor de Diego Guerrero, sin ataduras a una sola tradición. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4245942,-3.6963316",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Desde 1911",
@@ -133,13 +162,20 @@
       "lng": -3.7099045,
       "category": "fine_dining",
       "cuisine": "español",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "Homenaje a la tortilla de patatas y a la cocina de mercado madrileña, con una estrella Michelin.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4484519,-3.7099045",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Paco Roncero",
@@ -148,13 +184,19 @@
       "lng": -3.7004159,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Alta tecnología culinaria en la azotea del Casino de Madrid. Dos estrellas Michelin, tres Soles Repsol.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4180586,-3.7004159",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Smoked Room",
@@ -163,13 +205,19 @@
       "lng": -3.6917467,
       "category": "fine_dining",
       "cuisine": "a la brasa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Todo pasa por brasa y humo en este templo del fuego de Dabiz Muñoz. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4388252,-3.6917467",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "La Tasquería",
@@ -178,13 +226,19 @@
       "lng": -3.6735107,
       "category": "fine_dining",
       "cuisine": "casquería / español",
+      "tags": [
+        "michelin"
+      ],
       "description": "El casquerío elevado a alta cocina por Javi Estévez. Una estrella Michelin, dos Soles Repsol.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4222271,-3.6735107",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Ramón Freixa Atelier",
@@ -193,13 +247,19 @@
       "lng": -3.6659267,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "El regreso de Ramón Freixa al barrio de Salamanca, con menú para apenas diez comensales. Dos estrellas Michelin, tres Soles Repsol.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4227891,-3.6659267",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Gofio",
@@ -208,13 +268,19 @@
       "lng": -3.6774025,
       "category": "fine_dining",
       "cuisine": "canaria",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina canaria de altura en pleno Madrid, del chef Safe Cruz. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4228654,-3.6774025",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Lakasa",
@@ -223,13 +289,19 @@
       "lng": -3.7006642,
       "category": "fine_dining",
       "cuisine": "español de mercado",
+      "tags": [
+        "repsol"
+      ],
       "description": "Cocina de mercado sin estridencias, honesta y de producto. Dos Soles Repsol.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "repsol_sol", "count": 2 }
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4409234,-3.7006642",
+      "distinction": {
+        "type": "repsol_sol",
+        "count": 2
+      }
     },
     {
       "name": "Angelita",
@@ -238,13 +310,15 @@
       "lng": -3.7003729,
       "category": "bar",
       "cuisine": null,
+      "tags": [
+        "timeout"
+      ],
       "description": "Bar de vinos de culto en Chueca, de los favoritos de la guía Time Out Madrid.",
       "source_url": "https://www.timeout.es/madrid/es/restaurantes/los-100-mejores-restaurantes-de-madrid-top-100",
       "source_type": "timeout",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4203519,-3.7003729"
     },
     {
       "name": "Mercado de San Miguel",
@@ -253,13 +327,15 @@
       "lng": -3.7090151,
       "category": "street_food",
       "cuisine": "variado / tapas",
+      "tags": [
+        "clasico"
+      ],
       "description": "El mercado gourmet más fotografiado de Madrid, con decenas de puestos de tapas y vermú.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4153741,-3.7090151"
     },
     {
       "name": "Mercado de San Antón",
@@ -268,13 +344,13 @@
       "lng": -3.6975827,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [],
       "description": "Mercado de Chueca con terraza en la azotea y puestos para picar de todo un poco.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4219408,-3.6975827"
     },
     {
       "name": "Chocolatería San Ginés",
@@ -283,13 +359,15 @@
       "lng": -3.706803,
       "category": "dessert",
       "cuisine": "español / churros",
+      "tags": [
+        "clasico"
+      ],
       "description": "Churros con chocolate desde 1894, abierta las 24 horas. Parada obligatoria de madrugada.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4167707,-3.706803"
     },
     {
       "name": "La Bola",
@@ -298,13 +376,17 @@
       "lng": -3.7105112,
       "category": "fine_dining",
       "cuisine": "cocido madrileño",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cocido madrileño en puchero de barro sobre carbón desde 1870, cocinado igual que hace 150 años.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.4199972,-3.7105112"
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

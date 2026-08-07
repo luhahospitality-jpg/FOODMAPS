@@ -13,13 +13,15 @@
       "lng": -118.3352976,
       "category": "fine_dining",
       "cuisine": "americano clásico",
+      "tags": [
+        "clasico"
+      ],
       "description": "El comedor de la edad dorada de Hollywood desde 1919. Chaplin, Marilyn Monroe y Fitzgerald se sentaron en sus mismas mesas.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017556,-118.3352976",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017556,-118.3352976"
     },
     {
       "name": "Somni",
@@ -28,13 +30,19 @@
       "lng": -118.3885146,
       "category": "fine_dining",
       "cuisine": "español / creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "El menú degustación más caro de Los Ángeles: 20 pasos de cocina catalana de vanguardia del chef Aitor Zabala. Tres estrellas Michelin.",
       "source_url": "https://andershusa.com/somni-most-expensive-tasting-menu-la/",
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0823639,-118.3885146",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Cielito Lindo",
@@ -43,13 +51,15 @@
       "lng": -118.237396,
       "category": "street_food",
       "cuisine": "mexicano",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El puesto de taquitos de Olvera Street desde 1934, con su salsa de aguacate original. Anthony Bourdain se detuvo aquí en \"Parts Unknown\" para probar lo que dijo que sabía a la verdadera Los Ángeles.",
       "source_url": "https://www.cielitolindo.org/the-legacy",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0579573,-118.237396",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0579573,-118.237396"
     },
     {
       "name": "Philippe the Original",
@@ -58,13 +68,15 @@
       "lng": -118.236941,
       "category": "fast_food",
       "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
       "description": "Aquí nació el French Dip en 1908, por accidente, cuando un pan cayó dentro del jugo del asado.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0596738,-118.236941",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0596738,-118.236941"
     },
     {
       "name": "Holbox",
@@ -73,13 +85,20 @@
       "lng": -118.278365,
       "category": "seafood",
       "cuisine": "mexicano / yucateco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Mariscos yucatecos de barra dentro del Mercado La Paloma. Una estrella Michelin y elegido Restaurante del Año 2023 por los críticos Bill Addison y Jenn Harris de Los Angeles Times.",
       "source_url": "https://www.aol.com/news/gilberto-cetinas-holbox-times-2023-130000599.html",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0173172,-118.278365",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Providence",
@@ -88,13 +107,19 @@
       "lng": -118.330187,
       "category": "seafood",
       "cuisine": "americano / mariscos",
+      "tags": [
+        "michelin"
+      ],
       "description": "Templo del pescado y el marisco en Hollywood, uno de los primeros tres estrellas Michelin del condado de Los Ángeles.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0836255,-118.330187",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Kato",
@@ -103,13 +128,19 @@
       "lng": -118.2411057,
       "category": "fine_dining",
       "cuisine": "taiwanés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina taiwanesa-japonesa de autor del chef Jon Yao, en el Arts District. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0340707,-118.2411057",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Hayato",
@@ -118,13 +149,19 @@
       "lng": -118.2419242,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
       "description": "Kaiseki japonés impecable en el Arts District. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0337682,-118.2419242",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "n/naka",
@@ -133,13 +170,19 @@
       "lng": -118.412212,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
       "description": "Kaiseki moderno de la chef Niki Nakayama, uno de los primeros templos japoneses estrellados de la ciudad. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0251269,-118.412212",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Pink's Hot Dogs",
@@ -148,13 +191,17 @@
       "lng": -118.3442833,
       "category": "fast_food",
       "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El carrito de hot dogs de 1939 que se volvió un ícono con fila propia sobre La Brea Avenue.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0839083,-118.3442833"
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

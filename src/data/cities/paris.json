@@ -13,13 +13,19 @@
       "lng": 2.3007762,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Decoración inspirada en el Grand Trianon dentro del Four Seasons George V. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8686738,2.3007762",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Le Procope",
@@ -28,13 +34,15 @@
       "lng": 2.3387505,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
       "description": "El café más antiguo de París, abierto desde 1686. Por sus mesas pasaron Voltaire, Diderot y Rousseau.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8530584,2.3387505",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8530584,2.3387505"
     },
     {
       "name": "Le Baratin",
@@ -43,14 +51,17 @@
       "lng": 2.3828589,
       "category": "fine_dining",
       "cuisine": "francés / bistronomía",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
       "description": "Bistró de Belleville con la cocina de Raquel Carena desde 1987. Anthony Bourdain cenó aquí en el especial final de \"No Reservations\" en París, y es referencia habitual de la guía Le Fooding.",
       "source_url": null,
       "source_type": "bourdain",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8730762,2.3828589",
-      "distinction": null
+      "source_type_secondary": "critic"
     },
     {
       "name": "Virtus",
@@ -59,13 +70,19 @@
       "lng": 2.3781248,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina franco-brasileña de autor en el distrito 12. Dos estrellas Michelin, novedad 2026.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8502518,2.3781248",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Guy Savoy",
@@ -74,13 +91,21 @@
       "lng": 2.3384956,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Alta cocina clásica francesa dentro de la Monnaie de Paris, a orillas del Sena. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8564015,2.3384956",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

@@ -13,13 +13,15 @@
       "lng": -4.3596335,
       "category": "street_food",
       "cuisine": "espetos / pescaíto",
+      "tags": [
+        "clasico"
+      ],
       "description": "El chiringuito donde los platos se subastan a grito limpio en la playa de El Palo. Nadie pide por carta, todo se compra al vuelo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7214915,-4.3596335",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7214915,-4.3596335"
     },
     {
       "name": "Antigua Casa de Guardia",
@@ -28,58 +30,15 @@
       "lng": -4.4234526,
       "category": "bar",
       "cuisine": "vinos / tapas",
+      "tags": [
+        "clasico"
+      ],
       "description": "La taberna más antigua de Málaga, sirviendo vinos dulces directo del tonel desde 1840.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7177103,-4.4234526",
-      "distinction": null
-    },
-    {
-      "name": "Bar Mercado Atarazanas",
-      "place_id": null,
-      "lat": 36.718408,
-      "lng": -4.4240607,
-      "category": "street_food",
-      "cuisine": "tapas / pescaíto",
-      "description": "Barra de tapas dentro del mercado de abastos, viral en TikTok por sus colas y su pescaíto frito.",
-      "source_url": "https://www.tiktok.com/@boqueronaenvinagre/video/7312533107264064800",
-      "source_type": "viral_social",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
-    },
-    {
-      "name": "Blossom",
-      "place_id": null,
-      "lat": 36.7199721,
-      "lng": -4.4171575,
-      "category": "fine_dining",
-      "cuisine": "creativa",
-      "description": "Ocho mesas en la cuarta planta del Museo de Málaga, con vistas a la Alcazaba. Una estrella Michelin desde 2025.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7199721,-4.4171575",
-      "distinction": { "type": "michelin_star", "count": 1 }
-    },
-    {
-      "name": "El Pimpi",
-      "place_id": null,
-      "lat": 36.7217974,
-      "lng": -4.4180421,
-      "category": "bar",
-      "cuisine": "andaluz",
-      "description": "Bodega-restaurante de 1971 en una casa del siglo XVIII, con barriles firmados por Picasso y Antonio Banderas.",
-      "source_url": null,
-      "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7217974,-4.4180421",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7177103,-4.4234526"
     },
     {
       "name": "Palodú",
@@ -88,13 +47,77 @@
       "lng": -4.4247527,
       "category": "fine_dining",
       "cuisine": "malagueña",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina dual de Cristina Cánovas y Diego Aguilar junto al Mercado de Atarazanas. Una estrella Michelin, novedad 2026.",
       "source_url": "https://www.theinfatuation.com/malaga/reviews/palodu",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7189931,-4.4247527",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Blossom",
+      "place_id": null,
+      "lat": 36.7199721,
+      "lng": -4.4171575,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Ocho mesas en la cuarta planta del Museo de Málaga, con vistas a la Alcazaba. Una estrella Michelin desde 2025.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7199721,-4.4171575",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "El Pimpi",
+      "place_id": null,
+      "lat": 36.7217974,
+      "lng": -4.4180421,
+      "category": "bar",
+      "cuisine": "andaluz",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodega-restaurante de 1971 en una casa del siglo XVIII, con barriles firmados por Picasso y Antonio Banderas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7217974,-4.4180421"
+    },
+    {
+      "name": "Bar Mercado Atarazanas",
+      "place_id": null,
+      "lat": 36.718408,
+      "lng": -4.4240607,
+      "category": "street_food",
+      "cuisine": "tapas / pescaíto",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Barra de tapas dentro del mercado de abastos, viral en TikTok por sus colas y su pescaíto frito.",
+      "source_url": "https://www.tiktok.com/@boqueronaenvinagre/video/7312533107264064800",
+      "source_type": "viral_social",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.718408,-4.4240607"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

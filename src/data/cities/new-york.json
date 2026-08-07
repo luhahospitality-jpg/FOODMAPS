@@ -13,26 +13,15 @@
       "lng": -73.987429,
       "category": "fast_food",
       "cuisine": "judío / delicatessen",
+      "tags": [
+        "clasico"
+      ],
       "description": "El clásico absoluto desde 1888. El pastrami sandwich es obligatorio.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.722233,-73.987429"
-    },
-    {
-      "name": "Peter Luger Steak House",
-      "place_id": null,
-      "lat": 40.7098774,
-      "lng": -73.9625052,
-      "category": "steakhouse",
-      "cuisine": "americano",
-      "description": "Steakhouse legendario en Williamsburg, Brooklyn. Reserva con antelación.",
-      "source_url": null,
-      "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
     },
     {
       "name": "Carbone New York",
@@ -41,180 +30,15 @@
       "lng": -74.0002414,
       "category": "fine_dining",
       "cuisine": "italoamericano",
+      "tags": [
+        "timeout"
+      ],
       "description": "Italoamericano de lujo, súper hype. El rigatoni picante es el plato estrella. Habitual en los rankings de mejores restaurantes de NY.",
       "source_url": "https://www.timeout.com/newyork/restaurants/100-best-new-york-restaurants",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7279891,-74.0002414"
-    },
-    {
-      "name": "Au Cheval",
-      "place_id": null,
-      "lat": 40.7181205,
-      "lng": -74.0017942,
-      "category": "fast_food",
-      "cuisine": "americano",
-      "description": "Considerada de las mejores hamburguesas del mundo. La versión con huevo y bacon es icónica.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "7th Street Burger Soho",
-      "place_id": null,
-      "lat": 40.7231985,
-      "lng": -73.9956905,
-      "category": "fast_food",
-      "cuisine": "americano",
-      "description": "Smashburger viral, sencilla y muy querida por locales.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Fat Ronnie's Burger Bar",
-      "place_id": null,
-      "lat": 40.7307189,
-      "lng": -74.0019756,
-      "category": "fast_food",
-      "cuisine": "americano",
-      "description": "Otra hamburguesa muy trendy últimamente, crujiente y jugosa.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Little Maven",
-      "place_id": null,
-      "lat": 40.7390428,
-      "lng": -73.9934938,
-      "category": "brunch",
-      "cuisine": null,
-      "description": "Uno de los favoritos de influencers en Flatiron, muy fotogénico.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Piccolo Morini",
-      "place_id": null,
-      "lat": 40.7206118,
-      "lng": -73.9952615,
-      "category": "fine_dining",
-      "cuisine": "italiano",
-      "description": "Italiano nuevo en SoHo, muy de moda ahora mismo.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Bungalow",
-      "place_id": null,
-      "lat": 40.7236675,
-      "lng": -73.9879743,
-      "category": "fine_dining",
-      "cuisine": "indio",
-      "description": "Indio moderno del chef Vikas Khanna, ambiente elegante y muy instagrameable.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "COTE 550",
-      "place_id": null,
-      "lat": 40.7616006,
-      "lng": -73.9731034,
-      "category": "steakhouse",
-      "cuisine": "coreano",
-      "description": "Steakhouse coreano, uno de los sitios de moda para carne.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "L'Adresse NoMad",
-      "place_id": null,
-      "lat": 40.7455087,
-      "lng": -73.9884895,
-      "category": "brunch",
-      "cuisine": "europeo",
-      "description": "Brunch europeo muy popular, ambiente cálido.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Valerie",
-      "place_id": null,
-      "lat": 40.7563426,
-      "lng": -73.9811274,
-      "category": "bar",
-      "cuisine": null,
-      "description": "Cóctel bar con vibra vintage cerca de Times Square.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Monkey Bar",
-      "place_id": null,
-      "lat": 40.7598982,
-      "lng": -73.9732046,
-      "category": "bar",
-      "cuisine": "americano",
-      "description": "Clásico neoyorquino renovado, famoso por el French dip y la hamburguesa wagyu.",
-      "source_url": null,
-      "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "1803 NYC",
-      "place_id": null,
-      "lat": 40.7154539,
-      "lng": -74.0073301,
-      "category": "bar",
-      "cuisine": "cajún / creole",
-      "description": "Cajún/Creole con música en vivo, mucha energía.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
-    },
-    {
-      "name": "Amalfi Rooftop by Birreria",
-      "place_id": null,
-      "lat": 40.7420178,
-      "lng": -73.9899056,
-      "category": "bar",
-      "cuisine": "italiano",
-      "description": "Rooftop con vibra Costa Amalfitana, ideal para fotos.",
-      "source_url": null,
-      "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
     },
     {
       "name": "The Halal Guys (53rd & 6th)",
@@ -223,11 +47,14 @@
       "lng": -73.9793516,
       "category": "street_food",
       "cuisine": "halal",
+      "tags": [
+        "influencer"
+      ],
       "description": "El carrito halal más icónico de NY, nacido en 1990. Aparece en el episodio de Mark Wiens para National Geographic \"Epic Food Journeys\".",
       "source_url": "https://www.youtube.com/watch?v=CE6Y8tqhO4A",
       "source_type": "influencer",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7617724,-73.9793516"
     },
     {
@@ -237,11 +64,14 @@
       "lng": -73.9883134,
       "category": "bakery",
       "cuisine": "judío",
+      "tags": [
+        "clasico"
+      ],
       "description": "El templo del bagel con lox judío desde 1914, en el Lower East Side.",
       "source_url": "https://www.theinfatuation.com/new-york/reviews/russ-daughters",
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7225803,-73.9883134"
     },
     {
@@ -251,12 +81,214 @@
       "lng": -73.9864091,
       "category": "steakhouse",
       "cuisine": "americano",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Steakhouse legendario desde 1885 en Midtown, con la colección de pipas de arcilla más grande del mundo colgando del techo. Anthony Bourdain lo visitó en el episodio de Manhattan de \"No Reservations\" (2009).",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-manhattan-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.750773,-73.9864091"
+    },
+    {
+      "name": "Peter Luger Steak House",
+      "place_id": null,
+      "lat": 40.7098774,
+      "lng": -73.9625052,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Steakhouse legendario en Williamsburg, Brooklyn. Reserva con antelación.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7098774,-73.9625052"
+    },
+    {
+      "name": "Au Cheval",
+      "place_id": null,
+      "lat": 40.7181205,
+      "lng": -74.0017942,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [],
+      "description": "Considerada de las mejores hamburguesas del mundo. La versión con huevo y bacon es icónica.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7181205,-74.0017942"
+    },
+    {
+      "name": "7th Street Burger Soho",
+      "place_id": null,
+      "lat": 40.7231985,
+      "lng": -73.9956905,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [],
+      "description": "Smashburger viral, sencilla y muy querida por locales.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7231985,-73.9956905"
+    },
+    {
+      "name": "Fat Ronnie's Burger Bar",
+      "place_id": null,
+      "lat": 40.7307189,
+      "lng": -74.0019756,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [],
+      "description": "Otra hamburguesa muy trendy últimamente, crujiente y jugosa.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7307189,-74.0019756"
+    },
+    {
+      "name": "Little Maven",
+      "place_id": null,
+      "lat": 40.7390428,
+      "lng": -73.9934938,
+      "category": "brunch",
+      "cuisine": null,
+      "tags": [],
+      "description": "Uno de los favoritos de influencers en Flatiron, muy fotogénico.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7390428,-73.9934938"
+    },
+    {
+      "name": "Piccolo Morini",
+      "place_id": null,
+      "lat": 40.7206118,
+      "lng": -73.9952615,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [],
+      "description": "Italiano nuevo en SoHo, muy de moda ahora mismo.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7206118,-73.9952615"
+    },
+    {
+      "name": "Bungalow",
+      "place_id": null,
+      "lat": 40.7236675,
+      "lng": -73.9879743,
+      "category": "fine_dining",
+      "cuisine": "indio",
+      "tags": [],
+      "description": "Indio moderno del chef Vikas Khanna, ambiente elegante y muy instagrameable.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7236675,-73.9879743"
+    },
+    {
+      "name": "COTE 550",
+      "place_id": null,
+      "lat": 40.7616006,
+      "lng": -73.9731034,
+      "category": "steakhouse",
+      "cuisine": "coreano",
+      "tags": [],
+      "description": "Steakhouse coreano, uno de los sitios de moda para carne.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7616006,-73.9731034"
+    },
+    {
+      "name": "L'Adresse NoMad",
+      "place_id": null,
+      "lat": 40.7455087,
+      "lng": -73.9884895,
+      "category": "brunch",
+      "cuisine": "europeo",
+      "tags": [],
+      "description": "Brunch europeo muy popular, ambiente cálido.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7455087,-73.9884895"
+    },
+    {
+      "name": "Valerie",
+      "place_id": null,
+      "lat": 40.7563426,
+      "lng": -73.9811274,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [],
+      "description": "Cóctel bar con vibra vintage cerca de Times Square.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7563426,-73.9811274"
+    },
+    {
+      "name": "Monkey Bar",
+      "place_id": null,
+      "lat": 40.7598982,
+      "lng": -73.9732046,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Clásico neoyorquino renovado, famoso por el French dip y la hamburguesa wagyu.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7598982,-73.9732046"
+    },
+    {
+      "name": "1803 NYC",
+      "place_id": null,
+      "lat": 40.7154539,
+      "lng": -74.0073301,
+      "category": "bar",
+      "cuisine": "cajún / creole",
+      "tags": [],
+      "description": "Cajún/Creole con música en vivo, mucha energía.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7154539,-74.0073301"
+    },
+    {
+      "name": "Amalfi Rooftop by Birreria",
+      "place_id": null,
+      "lat": 40.7420178,
+      "lng": -73.9899056,
+      "category": "bar",
+      "cuisine": "italiano",
+      "tags": [],
+      "description": "Rooftop con vibra Costa Amalfitana, ideal para fotos.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7420178,-73.9899056"
     },
     {
       "name": "Xi'an Famous Foods",
@@ -265,12 +297,13 @@
       "lng": -73.9941404,
       "category": "street_food",
       "cuisine": "chino",
+      "tags": [],
       "description": "Fideos jalados picantes estilo Shaanxi, favoritos de foodies en Chinatown.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7138356,-73.9941404"
     },
     {
       "name": "Los Tacos No. 1",
@@ -279,12 +312,13 @@
       "lng": -74.0059635,
       "category": "street_food",
       "cuisine": "mexicano",
+      "tags": [],
       "description": "Tacos mexicanos estilo callejero, tortillas hechas a mano. El puesto más popular de Chelsea Market.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7422521,-74.0059635"
     },
     {
       "name": "Joe's Pizza",
@@ -293,12 +327,15 @@
       "lng": -74.0032039,
       "category": "pizza",
       "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
       "description": "La cuna de la porción de pizza clásica neoyorquina, desde 1975.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7319718,-74.0032039"
     },
     {
       "name": "Nom Wah Tea Parlor",
@@ -307,12 +344,15 @@
       "lng": -73.998188,
       "category": "fast_food",
       "cuisine": "chino",
+      "tags": [
+        "clasico"
+      ],
       "description": "El restaurante de dim sum más antiguo de Chinatown, abierto desde 1920.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7145089,-73.998188"
     },
     {
       "name": "Sushi Nakazawa",
@@ -321,12 +361,13 @@
       "lng": -74.0045493,
       "category": "fine_dining",
       "cuisine": "japonés",
+      "tags": [],
       "description": "Omakase japonés de alto nivel con una estrella Michelin, del chef Daisuke Nakazawa.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7318046,-74.0045493"
     },
     {
       "name": "Taïm Mediterranean Kitchen",
@@ -335,12 +376,13 @@
       "lng": -74.0019593,
       "category": "fast_food",
       "cuisine": "mediterráneo / medio oriente",
+      "tags": [],
       "description": "Uno de los mejores falafel de Nueva York, cocina mediterránea y de Medio Oriente.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.735997,-74.0019593"
     },
     {
       "name": "Dominique Ansel Bakery",
@@ -349,12 +391,13 @@
       "lng": -74.0028734,
       "category": "bakery",
       "cuisine": "francés",
+      "tags": [],
       "description": "Panadería francesa creadora del famoso Cronut original.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7252509,-74.0028734"
     },
     {
       "name": "Junior's Restaurant & Bakery",
@@ -363,12 +406,15 @@
       "lng": -73.9818736,
       "category": "dessert",
       "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El cheesecake neoyorquino más icónico, en Brooklyn desde 1950.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6901493,-73.9818736"
     },
     {
       "name": "Hometown Bar-B-Que",
@@ -377,12 +423,13 @@
       "lng": -74.0161583,
       "category": "steakhouse",
       "cuisine": "bbq texano / carolina",
+      "tags": [],
       "description": "BBQ estilo Texas/Carolina en Red Hook, Brooklyn. Brisket muy premiado.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6749167,-74.0161583"
     },
     {
       "name": "Ivan Ramen",
@@ -391,12 +438,13 @@
       "lng": -73.9845212,
       "category": "fast_food",
       "cuisine": "japonés",
+      "tags": [],
       "description": "Ramen de autor del chef Ivan Orkin en el Lower East Side.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7205819,-73.9845212"
     },
     {
       "name": "Bunna Cafe",
@@ -405,12 +453,13 @@
       "lng": -73.9279056,
       "category": "fast_food",
       "cuisine": "etíope",
+      "tags": [],
       "description": "Cocina etíope 100% vegana en Bushwick, Brooklyn.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7049167,-73.9279056"
     },
     {
       "name": "Teranga Cafe",
@@ -419,12 +468,15 @@
       "lng": -73.9493556,
       "category": "fast_food",
       "cuisine": "áfrica occidental / senegalés",
+      "tags": [],
       "description": "Cocina de África Occidental frente a Central Park, en Harlem.",
       "source_url": null,
       "source_type": null,
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7963946,-73.9493556"
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

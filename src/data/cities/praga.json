@@ -13,13 +13,15 @@
       "lng": 14.4170184,
       "category": "bar",
       "cuisine": "checo",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cervecería-restaurante desde el siglo XV, con ocho salones y cerveza propia. Uno de los locales históricos más famosos de Praga.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0787442,14.4170184",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0787442,14.4170184"
     },
     {
       "name": "La Degustation Bohême Bourgeoise",
@@ -28,14 +30,22 @@
       "lng": 14.4251059,
       "category": "fine_dining",
       "cuisine": "checo",
+      "tags": [
+        "michelin",
+        "bourdain",
+        "critic"
+      ],
       "description": "Cocina checa contemporánea de temporada del chef Oldřich Sahajdák, con menú degustación basado en un recetario checo de la década de 1880. Anthony Bourdain cenó aquí en 'No Reservations'; The Infatuation la describió como una experiencia 'blissful'. Uno de los dos únicos restaurantes con estrella Michelin en Praga.",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-prague-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0910323,14.4251059",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Field",
@@ -44,13 +54,19 @@
       "lng": 14.4219942,
       "category": "fine_dining",
       "cuisine": "checo",
+      "tags": [
+        "michelin"
+      ],
       "description": "Decoración minimalista inspirada en la naturaleza e ingredientes de altísima calidad. Estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.091755,14.4219942",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "U Zlatého Tygra",
@@ -59,13 +75,15 @@
       "lng": 14.4179075,
       "category": "bar",
       "cuisine": "checo",
+      "tags": [
+        "clasico"
+      ],
       "description": "Taberna legendaria de la Ciudad Vieja, célebre por su Pilsner Urquell sin pasteurizar y por ser el bar favorito del escritor Bohumil Hrabal.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0857896,14.4179075",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0857896,14.4179075"
     },
     {
       "name": "Café Savoy",
@@ -74,13 +92,17 @@
       "lng": 14.4072158,
       "category": "dessert",
       "cuisine": "checo",
+      "tags": [
+        "clasico"
+      ],
       "description": "Café Art Nouveau desde 1893 junto al Vltava, con techo neorrenacentista de siete metros de altura.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0809258,14.4072158",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=50.0809258,14.4072158"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

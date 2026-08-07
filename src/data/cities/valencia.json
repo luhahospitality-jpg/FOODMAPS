@@ -13,13 +13,20 @@
       "lng": -0.3685627,
       "category": "fine_dining",
       "cuisine": "valenciano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina de producto valenciano de altísimo nivel técnico, del chef Ricard Camarena. Dos estrellas Michelin.",
       "source_url": "https://www.theinfatuation.com/valencia/reviews/ricard-camarena",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4687518,-0.3685627",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "El Poblet",
@@ -28,13 +35,19 @@
       "lng": -0.3745085,
       "category": "fine_dining",
       "cuisine": "valenciano / arroces",
+      "tags": [
+        "michelin"
+      ],
       "description": "Arroces y cocina mediterránea de vanguardia en pleno centro de Valencia. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4697359,-0.3745085",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Arrocería Maribel",
@@ -43,13 +56,21 @@
       "lng": -0.3181623,
       "category": "seafood",
       "cuisine": "valenciano / arroces",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
       "description": "Arrocería en El Palmar, corazón de L'Albufera, cuna histórica de la paella valenciana. Bib Gourmand.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.3106392,-0.3181623",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     },
     {
       "name": "Mercado Central",
@@ -58,13 +79,15 @@
       "lng": -0.3789053,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "Uno de los mercados cubiertos más grandes de Europa, con puestos de horchata, jamón y marisco fresco.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053"
     },
     {
       "name": "RiFF",
@@ -73,13 +96,22 @@
       "lng": -0.3686797,
       "category": "fine_dining",
       "cuisine": "mediterráneo",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "Cocina mediterránea creativa y algo anárquica del chef Bernd Knöller. La estrella Michelin más antigua de Valencia, desde 2009.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4656515,-0.3686797",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

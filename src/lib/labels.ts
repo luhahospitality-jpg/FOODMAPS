@@ -63,6 +63,37 @@ const categoryLabels: Record<Lang, Record<string, string>> = {
   },
 };
 
+const tagLabels: Record<Lang, Record<string, string>> = {
+  es: {
+    michelin: "Michelin",
+    bib_gourmand: "Bib Gourmand",
+    repsol: "Sol Repsol",
+    bourdain: "Bourdain",
+    critic: "Crítico",
+    clasico: "Clásico",
+    timeout: "Time Out",
+    influencer: "Influencer",
+    tv_show: "TV / Cine",
+    viral_tiktok: "Viral TikTok",
+  },
+  en: {
+    michelin: "Michelin",
+    bib_gourmand: "Bib Gourmand",
+    repsol: "Repsol Sun",
+    bourdain: "Bourdain",
+    critic: "Critic",
+    clasico: "Classic",
+    timeout: "Time Out",
+    influencer: "Influencer",
+    tv_show: "TV / Film",
+    viral_tiktok: "Viral TikTok",
+  },
+};
+
+export function tagLabel(lang: Lang, tag: string): string {
+  return tagLabels[lang][tag] ?? tag;
+}
+
 export function sourceTypeLabel(lang: Lang, type: NonNullable<SourceType>): string {
   return sourceTypeLabels[lang][type];
 }

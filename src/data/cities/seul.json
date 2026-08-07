@@ -13,13 +13,15 @@
       "lng": 127.0006548,
       "category": "street_food",
       "cuisine": "coreano",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El mercado tradicional más antiguo de Corea, desde 1905, con puestos de bindaetteok, sundae y yukhoe. Anthony Bourdain lo visitó en 'Parts Unknown'.",
       "source_url": "https://www.continentscondiments.com/korea-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5697826,127.0006548",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5697826,127.0006548"
     },
     {
       "name": "Buchon Yukhoe",
@@ -28,13 +30,20 @@
       "lng": 126.99771,
       "category": "street_food",
       "cuisine": "coreano / yukhoe",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
       "description": "Especialista en yukhoe (tartar de res coreano) junto al mercado Gwangjang. Bib Gourmand desde 2018.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.57036,126.99771",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     },
     {
       "name": "Tosokchon Samgyetang",
@@ -43,13 +52,15 @@
       "lng": 126.9715276,
       "category": "fine_dining",
       "cuisine": "coreano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El samgyetang (sopa de pollo con ginseng) más popular de Seúl, cerca del Palacio Gyeongbokgung, frecuentado por presidentes.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5776803,126.9715276",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5776803,126.9715276"
     },
     {
       "name": "Myeongdong Kyoja",
@@ -58,28 +69,38 @@
       "lng": 126.9856037,
       "category": "fast_food",
       "cuisine": "coreano / kalguksu",
+      "tags": [
+        "clasico"
+      ],
       "description": "Fideos kalguksu cortados a cuchillo y mandu, receta familiar desde 1966 en pleno Myeongdong. Guía Michelin.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5625608,126.9856037",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5625608,126.9856037"
     },
     {
       "name": "Mingles",
       "place_id": null,
       "lat": 37.5226819,
-      "lng": 127.0391790,
+      "lng": 127.039179,
       "category": "fine_dining",
       "cuisine": "coreano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
       "description": "Alta cocina coreana contemporánea del chef Kang Mingoo en Gangnam. Tres estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5226819,127.0391790",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

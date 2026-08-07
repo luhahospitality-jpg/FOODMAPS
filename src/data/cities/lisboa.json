@@ -13,13 +13,15 @@
       "lng": -9.2033202,
       "category": "dessert",
       "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
       "description": "La fábrica original del pastel de nata, con receta secreta desde 1837.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.6974795,-9.2033202",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.6974795,-9.2033202"
     },
     {
       "name": "Sol e Pesca",
@@ -28,13 +30,15 @@
       "lng": -9.1438049,
       "category": "bar",
       "cuisine": "portugués / conservas",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Antigua tienda de artículos de pesca convertida en bar de conservas de pescado en Cais do Sodré. Anthony Bourdain la visitó en \"No Reservations\".",
       "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-lisbon/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7072887,-9.1438049",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7072887,-9.1438049"
     },
     {
       "name": "Belcanto",
@@ -43,13 +47,19 @@
       "lng": -9.1414882,
       "category": "fine_dining",
       "cuisine": "portugués",
+      "tags": [
+        "michelin"
+      ],
       "description": "La mesa insignia del chef José Avillez en Chiado, la más premiada de Lisboa. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7100607,-9.1414882",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Cervejaria Ramiro",
@@ -58,13 +68,15 @@
       "lng": -9.1357063,
       "category": "seafood",
       "cuisine": "portugués / marisco",
+      "tags": [
+        "critic"
+      ],
       "description": "Marisquería de referencia en Lisboa desde los años 50, con gambas, percebes y cerveza fría de toda la vida.",
       "source_url": "https://www.andyhayler.com/restaurant/ramiro",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7201981,-9.1357063",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7201981,-9.1357063"
     },
     {
       "name": "A Ginjinha Sem Rival",
@@ -73,13 +85,17 @@
       "lng": -9.1396039,
       "category": "bar",
       "cuisine": "portugués / licor",
+      "tags": [
+        "clasico"
+      ],
       "description": "Bar histórico de ginjinha (licor de guindas) con más de un siglo, junto a la Praça dos Restauradores.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7151089,-9.1396039",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7151089,-9.1396039"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

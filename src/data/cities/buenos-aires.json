@@ -13,13 +13,20 @@
       "lng": -58.4242774,
       "category": "steakhouse",
       "cuisine": "argentino",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "La parrilla más aclamada del mundo: estrella Michelin, estrella verde por sostenibilidad y el puesto #1 en Latin America's 50 Best. El crítico Pietro Sorba (Clarín) le dio 5 estrellas, su calificación máxima, en 2021.",
       "source_url": "https://www.infogastronomica.com.ar/los-mejores-restaurantes-de-2021-segun-pietro-sorba/",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5862916,-58.4242774",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Café Tortoni",
@@ -28,13 +35,15 @@
       "lng": -58.3781432,
       "category": "dessert",
       "cuisine": "café / argentino",
+      "tags": [
+        "clasico"
+      ],
       "description": "El café más antiguo de Buenos Aires, desde 1858. Por sus mesas de mármol pasaron Borges, Gardel y Cortázar.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6086934,-58.3781432",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6086934,-58.3781432"
     },
     {
       "name": "Don Carlos",
@@ -43,13 +52,15 @@
       "lng": -58.363594,
       "category": "bar",
       "cuisine": "argentino / bodegón",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Bodegón familiar de La Boca desde 1970, sin carta: el propio Carlitos decide qué comés. Francis Mallmann llevó aquí a Anthony Bourdain como primera parada de su recorrido por Buenos Aires en \"Parts Unknown\" (2016).",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-buenos-aires-restaurants-parts-unknown/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.636112,-58.363594",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.636112,-58.363594"
     },
     {
       "name": "Aramburu",
@@ -58,13 +69,19 @@
       "lng": -58.39157,
       "category": "fine_dining",
       "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
       "description": "Menú degustación de alta precisión técnica del chef Gonzalo Aramburu, en Recoleta. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.587358,-58.39157",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Crizia",
@@ -73,13 +90,21 @@
       "lng": -58.4325562,
       "category": "seafood",
       "cuisine": "mariscos",
+      "tags": [
+        "michelin"
+      ],
       "description": "Especialista en ostras y pescados de estación en Palermo. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5884198,-58.4325562",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

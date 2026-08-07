@@ -13,13 +13,15 @@
       "lng": 135.5015715,
       "category": "street_food",
       "cuisine": "japonés / takoyaki",
+      "tags": [
+        "clasico"
+      ],
       "description": "Bolitas de pulpo generosas desde 1972, con mención en la Guía Michelin, en pleno Dotonbori.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6690306,135.5015715",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6690306,135.5015715"
     },
     {
       "name": "Kiji",
@@ -28,13 +30,20 @@
       "lng": 135.4979148,
       "category": "fast_food",
       "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
       "description": "Okonomiyaki con fila constante en Umeda, reconocido con Bib Gourmand.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.7035124,135.4979148",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     },
     {
       "name": "Kashiwaya",
@@ -43,13 +52,20 @@
       "lng": 135.5011177,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Kaiseki de autor en un barrio residencial de Suita, revisado por el crítico Andy Hayler. Tres estrellas Michelin.",
       "source_url": "https://www.andyhayler.com/restaurant/kashiwaya",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.7702932,135.5011177",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Kani Doraku Dotonbori Honten",
@@ -58,28 +74,34 @@
       "lng": 135.5014975,
       "category": "seafood",
       "cuisine": "japonés / cangrejo",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El restaurante de cangrejo más icónico de Osaka, reconocible por su gigantesco cangrejo mecánico de 6 metros sobre la fachada en Dotonbori. Anthony Bourdain paró aquí en \"No Reservations\".",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-osaka-restaurants-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6687933,135.5014975",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6687933,135.5014975"
     },
     {
       "name": "Genrokuzushi",
       "place_id": null,
-      "lat": 34.6766040,
-      "lng": 135.5013180,
+      "lat": 34.676604,
+      "lng": 135.501318,
       "category": "fast_food",
       "cuisine": "japonés / sushi",
+      "tags": [
+        "clasico"
+      ],
       "description": "El local que inventó el sushi de cinta transportadora (kaiten-zushi) en 1958, un invento nacido en Osaka.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6766040,135.5013180",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6766040,135.5013180"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

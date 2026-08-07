@@ -13,13 +13,15 @@
       "lng": -80.1352398,
       "category": "seafood",
       "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
       "description": "Las pinzas de cangrejo frías con salsa de mostaza que definen Miami desde 1913. Abierto solo de noviembre a mayo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7684081,-80.1352398",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7684081,-80.1352398"
     },
     {
       "name": "Versailles",
@@ -28,13 +30,15 @@
       "lng": -80.2527677,
       "category": "bar",
       "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El corazón de la cocina cubana en Miami, con salón de baile y café con leche a toda hora.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7649886,-80.2527677",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7649886,-80.2527677"
     },
     {
       "name": "Le Jardinier",
@@ -43,43 +47,59 @@
       "lng": -80.1920264,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cocina francesa vegetal en el Design District, con una estrella Michelin en la guía debut de Florida.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8147141,-80.1920264",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Ariete",
       "place_id": null,
-      "lat": 25.7251390,
+      "lat": 25.725139,
       "lng": -80.2454316,
       "category": "fine_dining",
       "cuisine": "americano / cubano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Técnica contemporánea americana con raíces cubanas del chef Michael Beltran en Coconut Grove. Estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7251390,-80.2454316",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Los Pinareños Fruteria",
       "place_id": null,
-      "lat": 25.7658200,
+      "lat": 25.76582,
       "lng": -80.2167142,
       "category": "street_food",
       "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
       "description": "Frutería familiar de Little Havana desde 1963, célebre por su guarapo (jugo de caña) exprimido al momento.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7658200,-80.2167142",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7658200,-80.2167142"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

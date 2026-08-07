@@ -13,13 +13,20 @@
       "lng": 114.1569096,
       "category": "fine_dining",
       "cuisine": "cantonés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "El primer restaurante chino del mundo en lograr tres estrellas Michelin, especialista en dim sum de lujo. Reseñado por la crítica Amanda Sheppard en South China Morning Post.",
       "source_url": "https://www.scmp.com/magazines/100-top-tables/article/3172382/lung-king-heen-restaurant-review",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2864747,114.1569096",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Tim Ho Wan",
@@ -28,13 +35,20 @@
       "lng": 114.1628553,
       "category": "fast_food",
       "cuisine": "cantonés / dim sum",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
       "description": "El restaurante con estrella Michelin más barato del mundo. Su bollo de cerdo asado horneado es leyenda, y Anthony Bourdain comió aquí en 'Parts Unknown'.",
       "source_url": "https://www.continentscondiments.com/hong-kong-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.3171352,114.1628553",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Luk Yu Tea House",
@@ -43,28 +57,36 @@
       "lng": 114.1555778,
       "category": "dessert",
       "cuisine": "cantonés",
+      "tags": [
+        "clasico"
+      ],
       "description": "Casa de té clásica desde los años 30, con decoración art déco original.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2822543,114.1555778",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2822543,114.1555778"
     },
     {
       "name": "Yat Lok",
       "place_id": null,
-      "lat": 22.2825280,
-      "lng": 114.1553210,
+      "lat": 22.282528,
+      "lng": 114.155321,
       "category": "fast_food",
       "cuisine": "cantonés / ganso asado",
+      "tags": [
+        "michelin"
+      ],
       "description": "Ganso asado con estrella Michelin en un local sencillo tipo cha chaan teng de Central, con más de 20 pasos de preparación secretos.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.2825280,114.1553210",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Australia Dairy Company",
@@ -73,13 +95,17 @@
       "lng": 114.1705943,
       "category": "fast_food",
       "cuisine": "cantonés / cha chaan teng",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cha chaan teng icónico de Kowloon, famoso por sus huevos revueltos y su servicio veloz sin contemplaciones.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.3046126,114.1705943",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=22.3046126,114.1705943"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

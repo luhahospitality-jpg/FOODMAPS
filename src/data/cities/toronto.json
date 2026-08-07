@@ -13,13 +13,19 @@
       "lng": -79.395917,
       "category": "fine_dining",
       "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
       "description": "Omakase de once asientos del chef Masaki Saito, antes con dos estrellas Michelin. Hoy conserva una.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6722379,-79.395917",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Carousel Bakery",
@@ -28,13 +34,15 @@
       "lng": -79.3721888,
       "category": "fast_food",
       "cuisine": "canadiense",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El sándwich de peameal bacon más famoso de Canadá, en el St. Lawrence Market — elegido mejor mercado del mundo por National Geographic. Bourdain y Bobby Flay repitieron.",
       "source_url": "https://www.continentscondiments.com/toronto-all-of-the-restaurants-picked-by-anthony-bourdain-on-the-layover/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6501827,-79.3721888",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6501827,-79.3721888"
     },
     {
       "name": "Gryfe's Bagel Bakery",
@@ -43,13 +51,15 @@
       "lng": -79.43122,
       "category": "bakery",
       "cuisine": "judío / canadiense",
+      "tags": [
+        "clasico"
+      ],
       "description": "Panadería judía en Bathurst Street desde los años 30, bagels enrollados a mano y horneados con la misma receta familiar desde hace más de tres generaciones.",
       "source_url": "https://dailyhive.com/toronto/gryfes-bagels-toronto",
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.72718,-79.43122",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.72718,-79.43122"
     },
     {
       "name": "Alo",
@@ -58,13 +68,20 @@
       "lng": -79.3959394,
       "category": "fine_dining",
       "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Cocina francesa contemporánea del chef Patrick Kriss sobre un edificio patrimonial del centro. Estrella Michelin y reseña de cuatro estrellas del crítico Chris Nuttall-Smith en The Globe and Mail.",
       "source_url": "https://www.theglobeandmail.com/life/food-and-wine/restaurant-reviews/toronto-restaurant-alo-goes-all-in-on-high-end-dining-and-wins/article26639509/",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6485014,-79.3959394",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Seven Lives Tacos y Mariscos",
@@ -73,13 +90,17 @@
       "lng": -79.4007722,
       "category": "street_food",
       "cuisine": "mexicano / baja",
+      "tags": [
+        "clasico"
+      ],
       "description": "Tacos estilo Baja California en el corazón de Kensington Market, uno de los locales más queridos del barrio.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6545479,-79.4007722",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6545479,-79.4007722"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,13 +13,15 @@
       "lng": -64.2111077,
       "category": "bar",
       "cuisine": "argentino",
+      "tags": [
+        "clasico"
+      ],
       "description": "Bodegón clásico con 50 años de historia, uno de los preferidos de los cordobeses.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4052874,-64.2111077",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4052874,-64.2111077"
     },
     {
       "name": "Viejo Lobo",
@@ -28,13 +30,15 @@
       "lng": -64.1671243,
       "category": "fine_dining",
       "cuisine": "argentino",
+      "tags": [
+        "clasico"
+      ],
       "description": "Elegido \"mejor restaurante tradicional de Córdoba\", cocina argentina de toda la vida desde 1997.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4139626,-64.1671243",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4139626,-64.1671243"
     },
     {
       "name": "Alcorta Carnes y Vinos",
@@ -43,13 +47,13 @@
       "lng": -64.1875836,
       "category": "steakhouse",
       "cuisine": "argentino",
+      "tags": [],
       "description": "Parrilla cosmopolita en Nueva Córdoba, famosa por su bife de chorizo y su carta de vinos.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836"
     },
     {
       "name": "La Vieja Esquina",
@@ -58,13 +62,15 @@
       "lng": -64.1889493,
       "category": "bar",
       "cuisine": "argentino / criollo",
+      "tags": [
+        "clasico"
+      ],
       "description": "Esquina de comidas criollas de más de 40 años: locro, humita y empanadas aclamadas.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493"
     },
     {
       "name": "La Emilia",
@@ -73,13 +79,15 @@
       "lng": -64.1758016,
       "category": "steakhouse",
       "cuisine": "argentino",
+      "tags": [],
       "description": "Parrilla de alta gama y ambiente relajado en el Ecodistrito de las Artes, con los mejores cortes de la ciudad.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4383232,-64.1758016",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4383232,-64.1758016"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

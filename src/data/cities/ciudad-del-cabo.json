@@ -13,13 +13,15 @@
       "lng": 18.4032911,
       "category": "fine_dining",
       "cuisine": "francés / asiático",
+      "tags": [
+        "critic"
+      ],
       "description": "Fusión franco-asiática en un treehouse sobre la finca Silvermist. Mejor restaurante de África, entre los 50 mejores del mundo.",
       "source_url": "https://www.andyhayler.com/restaurant/la-colombe",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.0151161,18.4032911",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.0151161,18.4032911"
     },
     {
       "name": "Mariam's Kitchen",
@@ -28,13 +30,15 @@
       "lng": 18.4261271,
       "category": "fast_food",
       "cuisine": "sudafricano / gatsby",
+      "tags": [
+        "clasico"
+      ],
       "description": "El gatsby de bistec con masala más famoso de Ciudad del Cabo, un clásico urbano desde 1985.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9185578,18.4261271",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9185578,18.4261271"
     },
     {
       "name": "FYN Restaurant",
@@ -43,13 +47,13 @@
       "lng": 18.4217473,
       "category": "fine_dining",
       "cuisine": "sudafricano / japonés",
+      "tags": [],
       "description": "Cocina sudafricana con técnica japonesa del chef Peter Tempelhoff, habitual en la lista The World's 50 Best Restaurants.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9246502,18.4217473",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9246502,18.4217473"
     },
     {
       "name": "Biesmiellah",
@@ -58,13 +62,15 @@
       "lng": 18.4140455,
       "category": "fine_dining",
       "cuisine": "sudafricano / cape malay",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cocina Cape Malay halal en el corazón colorido de Bo-Kaap, con más de cuatro décadas dirigida por la familia Osman.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9201455,18.4140455",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-33.9201455,18.4140455"
     },
     {
       "name": "Kalky's",
@@ -73,13 +79,17 @@
       "lng": 18.4496879,
       "category": "seafood",
       "cuisine": "sudafricano / fish and chips",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cabaña de pescado y papas junto al muelle de pescadores de Kalk Bay, con el pescado más fresco de la península.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.1282337,18.4496879",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.1282337,18.4496879"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

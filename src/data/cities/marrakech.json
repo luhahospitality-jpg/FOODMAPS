@@ -13,13 +13,15 @@
       "lng": -7.9864363,
       "category": "fine_dining",
       "cuisine": "marroquí",
+      "tags": [
+        "tv_show"
+      ],
       "description": "Palacio del siglo XVII convertido en el primer restaurante marroquí de la ciudad, desde 1952. Alfred Hitchcock filmó aquí \"El hombre que sabía demasiado\" en 1956.",
       "source_url": null,
       "source_type": "tv_show",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6223645,-7.9864363",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6223645,-7.9864363"
     },
     {
       "name": "La Mamounia",
@@ -28,13 +30,15 @@
       "lng": -7.9974419,
       "category": "fine_dining",
       "cuisine": "marroquí",
+      "tags": [
+        "clasico"
+      ],
       "description": "Cocina marroquí de gala en uno de los hoteles más legendarios del mundo, con pastela de hoja de oro.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6213829,-7.9974419",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6213829,-7.9974419"
     },
     {
       "name": "Jemaa el-Fnaa",
@@ -43,13 +47,15 @@
       "lng": -7.9889041,
       "category": "street_food",
       "cuisine": "marroquí",
+      "tags": [
+        "clasico"
+      ],
       "description": "La plaza declarada Patrimonio de la Humanidad que de noche se convierte en el mercado de comida callejera más grande de Marruecos, con casi 40 puestos.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6257808,-7.9889041",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6257808,-7.9889041"
     },
     {
       "name": "Al Fassia Guéliz",
@@ -58,13 +64,13 @@
       "lng": -8.0133642,
       "category": "fine_dining",
       "cuisine": "marroquí",
+      "tags": [],
       "description": "Restaurante gestionado íntegramente por mujeres desde 1985, cocina tradicional de Fez y referencia entre The World's 50 Best Discovery.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6359916,-8.0133642",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6359916,-8.0133642"
     },
     {
       "name": "Nomad",
@@ -73,13 +79,15 @@
       "lng": -7.9870485,
       "category": "fine_dining",
       "cuisine": "marroquí moderno",
+      "tags": [],
       "description": "Cocina marroquí moderna en una azotea de cuatro pisos sobre la plaza de las especias Rahba Kedima, con vista al Atlas.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6288161,-7.9870485",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=31.6288161,-7.9870485"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

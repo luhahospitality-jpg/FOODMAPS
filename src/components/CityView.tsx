@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
-import { PlaceCard } from "@/components/PlaceCard";
 import { CheckerIcon } from "@/components/CheckerIcon";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
+import { CityExplorer } from "@/components/CityExplorer";
 import { getLocalizedCityData } from "@/lib/cities";
+import { getNews } from "@/lib/novedades";
 import type { Lang } from "@/types/city";
 import { t } from "@/lib/dictionary";
 
@@ -21,10 +22,7 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
   const backHref = lang === "es" ? "/" : "/en";
   const otherLangHref =
     lang === "es" ? `/en/city/${slug}` : `/ciudad/${slug}`;
-
-  const top5 = [...city.places]
-    .filter((p) => p.is_top5)
-    .sort((a, b) => (a.top5_rank ?? 0) - (b.top5_rank ?? 0));
+  const news = getNews(slug);
 
   return (
     <div className="flex min-h-screen flex-col bg-cream">
@@ -43,7 +41,8 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
             <div className="mt-4 flex items-center gap-2">
               <CheckerIcon size={16} />
               <span className="font-label text-xs font-bold tracking-widest text-ink/60 uppercase">
-                {city.country} · {dict.city.placesInvestigated(city.totalPlaces)}
+                {city.country} ·{" "}
+                {dict.city.placesProgress(city.totalPlaces, city.targetPlaces)}
               </span>
             </div>
             <h1 className="mt-3 font-display text-6xl leading-[0.9] font-black uppercase sm:text-8xl">
@@ -56,24 +55,22 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
         </section>
 
         <Marquee
-          text={dict.city.marquee(top5.length, city.name, city.totalPlaces)}
+          text={dict.city.marquee(
+            Math.min(20, city.places.length),
+            city.name,
+            city.totalPlaces,
+          )}
           tone="mustard"
         />
 
         <section className="px-5 py-14 sm:px-8 sm:py-20">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-display text-3xl font-black uppercase sm:text-4xl">
-              {dict.city.topHeading(top5.length)}
-            </h2>
-            <p className="mt-2 max-w-lg font-body text-sm text-ink/70">
-              {dict.city.topSubheading}
-            </p>
-
-            <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {top5.map((place) => (
-                <PlaceCard key={place.name} place={place} lang={lang} />
-              ))}
-            </div>
+            <CityExplorer
+              places={city.places}
+              news={news}
+              tier={city.tier}
+              lang={lang}
+            />
           </div>
         </section>
 

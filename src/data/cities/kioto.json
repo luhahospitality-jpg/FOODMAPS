@@ -13,13 +13,20 @@
       "lng": 135.7822631,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Kaiseki tradicional desde 1912, uno de los templos de la alta cocina japonesa. Tres estrellas Michelin.",
       "source_url": "https://www.andyhayler.com/restaurant/kikunoi",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0013747,135.7822631",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Nishiki Market",
@@ -28,13 +35,15 @@
       "lng": 135.76557,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "El mercado de 400 metros conocido como \"la cocina de Kioto\", con más de cien puestos de comida callejera.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0050244,135.76557",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0050244,135.76557"
     },
     {
       "name": "Shoraian",
@@ -43,13 +52,13 @@
       "lng": 135.6701313,
       "category": "fine_dining",
       "cuisine": "japonés / tofu",
+      "tags": [],
       "description": "Kaiseki de tofu con vista al río Katsura, en Arashiyama.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0144404,135.6701313",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0144404,135.6701313"
     },
     {
       "name": "Honke Owariya",
@@ -58,13 +67,15 @@
       "lng": 135.7601451,
       "category": "fast_food",
       "cuisine": "japonés / soba",
+      "tags": [
+        "clasico"
+      ],
       "description": "El restaurante más antiguo de Kioto, sirviendo soba en el mismo terreno desde 1465. Fue proveedor oficial del Palacio Imperial.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0127481,135.7601451",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0127481,135.7601451"
     },
     {
       "name": "Hiiragiya",
@@ -73,13 +84,17 @@
       "lng": 135.7655029,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Ryokan de 1818 con seis generaciones en la misma familia, donde Anthony Bourdain cenó kaiseki con geishas junto al chef Morimoto.",
       "source_url": "https://www.kyoto2.org/what-did-anthony-bourdain-eat-in-japan/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0103285,135.7655029",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.0103285,135.7655029"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,13 +13,20 @@
       "lng": 16.3812793,
       "category": "fine_dining",
       "cuisine": "austriaco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "Considerado el mejor restaurante de Austria, dentro del Stadtpark. Tres estrellas Michelin.",
       "source_url": "https://www.andyhayler.com/restaurant/steirereck",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2044602,16.3812793",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Hotel Sacher",
@@ -28,13 +35,15 @@
       "lng": 16.3697708,
       "category": "dessert",
       "cuisine": "austriaco",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Cuna de la sachertorte original, celebrando 150 años de historia. Anthony Bourdain la visitó en \"No Reservations\".",
       "source_url": "https://www.continentscondiments.com/anthony-bourdain-vienna-all-of-the-restaurants-picked-by-anthony-bourdain-on-no-reservations/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2040427,16.3697708",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2040427,16.3697708"
     },
     {
       "name": "Figlmüller",
@@ -43,13 +52,15 @@
       "lng": 16.3748431,
       "category": "fine_dining",
       "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
       "description": "El schnitzel más famoso de Viena, tan grande que desborda el plato.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431"
     },
     {
       "name": "Naschmarkt",
@@ -58,13 +69,15 @@
       "lng": 16.3626217,
       "category": "street_food",
       "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
       "description": "El mercado más famoso de Viena, con más de 130 puestos entre Karlsplatz y Kettenbrückengasse desde el siglo XVI.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1981802,16.3626217",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1981802,16.3626217"
     },
     {
       "name": "Café Central",
@@ -73,13 +86,17 @@
       "lng": 16.3653873,
       "category": "dessert",
       "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
       "description": "Café histórico desde 1876 en el corazón de Viena, antiguo punto de encuentro de Freud y Trotsky. Patrimonio Inmaterial de la UNESCO.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2103671,16.3653873",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2103671,16.3653873"
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,13 +13,15 @@
       "lng": 11.2471498,
       "category": "steakhouse",
       "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El templo de la bistecca alla fiorentina desde hace más de 150 años, en San Frediano.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7726743,11.2471498",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7726743,11.2471498"
     },
     {
       "name": "Trattoria Sabatino",
@@ -28,13 +30,15 @@
       "lng": 11.2400329,
       "category": "fast_food",
       "cuisine": "toscano",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Trattoria de barrio en San Frediano desde 1956, menú diario a precios populares. Anthony Bourdain filmó aquí para el especial de Toscana de \"No Reservations\".",
       "source_url": null,
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7707491,11.2400329",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7707491,11.2400329"
     },
     {
       "name": "Buca Lapi",
@@ -43,13 +47,21 @@
       "lng": 11.251282,
       "category": "fine_dining",
       "cuisine": "toscano",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
       "description": "Bodega centenaria bajo el Palazzo Antinori, cuna de la bistecca toscana. Bib Gourmand.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7728638,11.251282",
-      "distinction": { "type": "michelin_bib_gourmand", "count": null }
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     },
     {
       "name": "Borgo San Jacopo",
@@ -58,13 +70,19 @@
       "lng": 11.2512605,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Sobre el Arno, con vista directa al Ponte Vecchio. Cocina italiana de alta precisión del chef Claudio Mengoni. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7678968,11.2512605",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "La Leggenda dei Frati",
@@ -73,13 +91,21 @@
       "lng": 11.2561926,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Dentro del complejo de Villa Bardini, con vistas panorámicas de Florencia. Cocina de raíz toscana del chef Filippo Saporito. Una estrella Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7642641,11.2561926",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }

@@ -13,13 +13,15 @@
       "lng": -77.0306079,
       "category": "fine_dining",
       "cuisine": "nikkei / peruano-japonés",
+      "tags": [
+        "critic"
+      ],
       "description": "Fusión nikkei del chef Mitsuharu \"Micha\" Tsumura, nombrado mejor restaurante del mundo en 2025 por The World's 50 Best.",
       "source_url": "https://www.theinfatuation.com/lima/reviews/maido",
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079"
     },
     {
       "name": "Central",
@@ -28,13 +30,13 @@
       "lng": -77.0225397,
       "category": "fine_dining",
       "cuisine": "peruano",
+      "tags": [],
       "description": "Un menú por altitudes que recorre la costa, los Andes y la Amazonía, del chef Virgilio Martínez. Segundo mejor restaurante del mundo.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1525709,-77.0225397",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1525709,-77.0225397"
     },
     {
       "name": "La Mar Cebichería",
@@ -43,13 +45,15 @@
       "lng": -77.0492225,
       "category": "seafood",
       "cuisine": "peruano / ceviche",
+      "tags": [
+        "clasico"
+      ],
       "description": "La cevichería que Gastón Acurio abrió en 2005 y que llevó el ceviche peruano al mundo. No acepta reservas y siempre hay fila.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1096643,-77.0492225",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1096643,-77.0492225"
     },
     {
       "name": "Astrid & Gastón",
@@ -58,13 +62,15 @@
       "lng": -77.0350797,
       "category": "fine_dining",
       "cuisine": "peruano",
+      "tags": [
+        "clasico"
+      ],
       "description": "El restaurante que marcó el inicio del boom gastronómico peruano, de Gastón Acurio y Astrid Gutsche.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0964374,-77.0350797",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0964374,-77.0350797"
     },
     {
       "name": "Chez Wong",
@@ -73,13 +79,17 @@
       "lng": -77.0224712,
       "category": "seafood",
       "cuisine": "peruano / ceviche",
+      "tags": [
+        "bourdain"
+      ],
       "description": "El chef Javier Wong prepara ceviche y tiradito sin carta, para apenas diez comensales en su propia sala en La Victoria. Anthony Bourdain lo visitó dos veces, la última junto a Eric Ripert en 'Parts Unknown'.",
       "source_url": "https://www.continentscondiments.com/peru-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0819701,-77.0224712",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0819701,-77.0224712"
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

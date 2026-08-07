@@ -13,13 +13,20 @@
       "lng": -46.6674763,
       "category": "fine_dining",
       "cuisine": "brasileiro contemporâneo",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
       "description": "Cozinha brasileira contemporânea do chef Alex Atala, com ingredientes amazônicos. Duas estrelas Michelin, 9º melhor restaurante do mundo pelo World's 50 Best. Anthony Bourdain jantou aqui com Atala no episódio de São Paulo de \"The Layover\" (2012).",
       "source_url": "https://www.continentscondiments.com/sao-paulo-all-of-the-restaurants-picked-by-anthony-bourdain-on-the-layover/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5662205,-46.6674763",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Fasano",
@@ -28,14 +35,17 @@
       "lng": -46.6696073,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
       "description": "Referência de tradição italiana em São Paulo, considerado por muitos o restaurante número 1 da cidade. O crítico Josimar Melo (Folha de S.Paulo) o descreve como \"o mais profissional de todos, impecável em todos os aspectos que se espera de um restaurante\".",
       "source_url": "https://gowhere.com.br/vida-e-estilo/o-que-pensa-o-critico-gastronomico-josimar-melo/",
       "source_type": "classic",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.56466,-46.6696073",
-      "distinction": null
+      "source_type_secondary": "critic"
     },
     {
       "name": "Maní",
@@ -44,13 +54,19 @@
       "lng": -46.6797289,
       "category": "fine_dining",
       "cuisine": "brasileiro",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cozinha autoral da chef Helena Rizzo, uma das mais premiadas do Brasil. Uma estrela Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 3,
+      "rank": 3,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5663802,-46.6797289",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Hocca Bar",
@@ -59,13 +75,15 @@
       "lng": -46.6295244,
       "category": "street_food",
       "cuisine": "brasileiro",
+      "tags": [
+        "clasico"
+      ],
       "description": "O lendário sanduíche de mortadela do Mercadão, criado em 1952 e retratado até pelo New York Times.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244"
     },
     {
       "name": "Picchi",
@@ -74,13 +92,21 @@
       "lng": -46.6665435,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Cozinha 100% italiana e familiar do chef Pier Paolo Picchi, nos Jardins. Uma estrela Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5653678,-46.6665435",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

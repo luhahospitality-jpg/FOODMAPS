@@ -13,14 +13,22 @@
       "lng": 139.7640108,
       "category": "fine_dining",
       "cuisine": "sushi",
+      "tags": [
+        "michelin",
+        "tv_show",
+        "critic"
+      ],
       "description": "El santuario del sushi de Jiro Ono, el \"dios del sushi\" que inspiró el documental Jiro Dreams of Sushi. Barack Obama dijo que fue el mejor sushi de su vida.",
       "source_url": "https://tokyo.com/guide/taste/sukiyabashi-jiro",
       "source_type": "tv_show",
-      "source_type_secondary": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6727104,139.7640108",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Myojaku",
@@ -29,13 +37,19 @@
       "lng": 139.7314949,
       "category": "fine_dining",
       "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
       "description": "Ascendió de dos a tres estrellas Michelin en 2026, con la cocina minimalista del chef Hidetoshi Nakamura en Nishi-Azabu.",
       "source_url": "https://guide.michelin.com/gb/en/article/dining-out/michelin-guide-tokyo-2026-inspector-reveal-myojaku",
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6629251,139.7314949",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     },
     {
       "name": "Toriki",
@@ -44,13 +58,15 @@
       "lng": 139.7041245,
       "category": "street_food",
       "cuisine": "japonés / yakitori",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Yakitori de barrio en Hatanodai que Anthony Bourdain calificó como una de las mejores comidas de su vida. Más de 35 años de trayectoria.",
       "source_url": "https://www.explore.com/1663889/restaurant-yakitori-toriki-main-japan-anthony-bourdain-ate-meal-best-thing-ever/",
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6053699,139.7041245",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6053699,139.7041245"
     },
     {
       "name": "Tsukiji Outer Market",
@@ -59,13 +75,15 @@
       "lng": 139.7704732,
       "category": "street_food",
       "cuisine": "variado / mariscos",
+      "tags": [
+        "clasico"
+      ],
       "description": "El mercado callejero de mariscos más famoso de Tokio, con puestos de atún, erizo y tortilla dulce desde el amanecer.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 4,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6653884,139.7704732",
-      "distinction": null
+      "rank": 4,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6653884,139.7704732"
     },
     {
       "name": "Gogyo",
@@ -74,13 +92,15 @@
       "lng": 139.7243829,
       "category": "fast_food",
       "cuisine": "japonés / ramen",
+      "tags": [
+        "timeout"
+      ],
       "description": "Cuna del ramen negro (kogashi), con ajo quemado como firma, en Nishi-Azabu.",
       "source_url": "https://www.timeout.com/tokyo/restaurants/tokyo-ramen-bar-top-10",
       "source_type": "timeout",
-      "is_top5": true,
-      "top5_rank": 5,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6620184,139.7243829",
-      "distinction": null
+      "rank": 5,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6620184,139.7243829"
     },
     {
       "name": "Kanamachi Seimen",
@@ -89,13 +109,17 @@
       "lng": 139.8706926,
       "category": "fast_food",
       "cuisine": "japonés / ramen",
+      "tags": [
+        "timeout"
+      ],
       "description": "Ramen ortodoxo de barrio en Katsushika, ideal para acompañar con shochu o cerveza.",
       "source_url": "https://www.timeout.com/tokyo/restaurants/tokyo-ramen-bar-top-10",
       "source_type": "timeout",
-      "is_top5": false,
-      "top5_rank": null,
-      "google_maps_url": null,
-      "distinction": null
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7695843,139.8706926"
     }
-  ]
+  ],
+  "targetPlaces": 100,
+  "tier": "S"
 }

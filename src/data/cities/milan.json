@@ -13,13 +13,20 @@
       "lng": 9.1898744,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "La mesa de Carlo Cracco dentro de la Galleria Vittorio Emanuele II, en el corazón de Milán. Una estrella Michelin y 93/100 en la guía Gambero Rosso.",
       "source_url": null,
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 1,
+      "rank": 1,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4653435,9.1898744",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "Aimo e Nadia",
@@ -28,13 +35,20 @@
       "lng": 9.190242,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
       "description": "Institución de la alta cocina milanesa desde hace más de medio siglo. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 2,
+      "rank": 2,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4673709,9.190242",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Luini",
@@ -43,13 +57,15 @@
       "lng": 9.1915481,
       "category": "fast_food",
       "cuisine": "italiano / panzerotti",
+      "tags": [
+        "clasico"
+      ],
       "description": "La panadería que introdujo el panzerotto pugliese en Milán, desde 1949, a pasos del Duomo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481"
     },
     {
       "name": "Seta by Antonio Guida",
@@ -58,13 +74,19 @@
       "lng": 9.1909801,
       "category": "fine_dining",
       "cuisine": "italiano / francés",
+      "tags": [
+        "michelin"
+      ],
       "description": "La cocina de Antonio Guida en el Mandarin Oriental Milano, técnica mediterránea de altísima precisión. Dos estrellas Michelin.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4694631,9.1909801",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     },
     {
       "name": "Enrico Bartolini al MUDEC",
@@ -73,13 +95,21 @@
       "lng": 9.1613185,
       "category": "fine_dining",
       "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
       "description": "Dentro del Museo delle Culture, la única mesa con tres estrellas Michelin de Milán.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4520455,9.1613185",
-      "distinction": { "type": "michelin_star", "count": 3 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
     }
-  ]
+  ],
+  "targetPlaces": 60,
+  "tier": "M"
 }

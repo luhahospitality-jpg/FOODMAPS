@@ -13,13 +13,15 @@
       "lng": 14.263352,
       "category": "pizza",
       "cuisine": "napolitano",
+      "tags": [
+        "tv_show"
+      ],
       "description": "La pizzería de \"Come, reza, ama\", con más de 150 años de historia y solo dos variedades en el menú: marinara y margherita.",
       "source_url": null,
       "source_type": "tv_show",
-      "is_top5": true,
-      "top5_rank": 1,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8497493,14.263352",
-      "distinction": null
+      "rank": 1,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8497493,14.263352"
     },
     {
       "name": "Pizzeria Pellone",
@@ -28,13 +30,15 @@
       "lng": 14.2741366,
       "category": "pizza",
       "cuisine": "napolitano",
+      "tags": [
+        "bourdain"
+      ],
       "description": "Pizzería histórica de Via Nazionale, con la margherita que Anthony Bourdain probó en \"No Reservations\" y que lo hizo replantearse todo lo que sabía sobre la pizza.",
       "source_url": null,
       "source_type": "bourdain",
-      "is_top5": true,
-      "top5_rank": 2,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8561712,14.2741366",
-      "distinction": null
+      "rank": 2,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8561712,14.2741366"
     },
     {
       "name": "Scaturchio",
@@ -43,13 +47,15 @@
       "lng": 14.2407515,
       "category": "dessert",
       "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
       "description": "Pastelería histórica del centro, cuna del \"caffè sospeso\": pagás un café de más para quien no pueda pagarlo.",
       "source_url": null,
       "source_type": "classic",
-      "is_top5": true,
-      "top5_rank": 3,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8438325,14.2407515",
-      "distinction": null
+      "rank": 3,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8438325,14.2407515"
     },
     {
       "name": "Palazzo Petrucci",
@@ -58,13 +64,20 @@
       "lng": 14.2543424,
       "category": "fine_dining",
       "cuisine": "napolitano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
       "description": "En un palacio histórico de piazza San Domenico Maggiore, cocina napolitana de autor del chef Lino Scarallo. Una estrella Michelin, reseñado por la guía Gambero Rosso.",
       "source_url": null,
       "source_type": "critic",
-      "is_top5": true,
-      "top5_rank": 4,
+      "rank": 4,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8483264,14.2543424",
-      "distinction": { "type": "michelin_star", "count": 1 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
     },
     {
       "name": "George Restaurant",
@@ -73,13 +86,21 @@
       "lng": 14.2300136,
       "category": "fine_dining",
       "cuisine": "napolitano",
+      "tags": [
+        "michelin"
+      ],
       "description": "En el Grand Hotel Parker's, la única sala con estrellas Michelin dentro de un hotel en Nápoles. Cocina del chef Domenico Candela con dos estrellas desde 2026.",
       "source_url": null,
       "source_type": null,
-      "is_top5": true,
-      "top5_rank": 5,
+      "rank": 5,
+      "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8372183,14.2300136",
-      "distinction": { "type": "michelin_star", "count": 2 }
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     }
-  ]
+  ],
+  "targetPlaces": 40,
+  "tier": "N"
 }
