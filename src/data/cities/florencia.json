@@ -3,7 +3,7 @@
   "name": "Florencia",
   "country": "Italia",
   "tagline": "La bistecca alla fiorentina de 150 años, y las mesas compartidas donde se almuerza por 15 euros desde los años 50.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7726743,11.2471498"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7726743,11.2471498",
+      "distinction": null
     },
     {
       "name": "Trattoria Sabatino",
@@ -38,7 +39,8 @@
       "source_type": "bourdain",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7707491,11.2400329"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7707491,11.2400329",
+      "distinction": null
     },
     {
       "name": "Buca Lapi",
@@ -104,6 +106,656 @@
         "type": "michelin_star",
         "count": 1
       }
+    },
+    {
+      "name": "Enoteca Pinchiorri",
+      "place_id": null,
+      "lat": 43.7696,
+      "lng": 11.2618,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Fundado en 1972 por Giorgio Pinchiorri y Annie Féolde en un palazzo del siglo XVII de Via Ghibellina. Una de las pocas mesas de Italia con tres estrellas Michelin, con una bodega legendaria de más de 4.000 etiquetas.",
+      "source_url": "https://guide.michelin.com/it/it/toscana/firenze/restaurant/enoteca-pinchiorri",
+      "source_type": "classic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7696,11.2618",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Il Palagio",
+      "place_id": null,
+      "lat": 43.7771,
+      "lng": 11.2662,
+      "category": "fine_dining",
+      "cuisine": "toscano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante del Four Seasons Firenze en Borgo Pinti, con jardín propio dentro de las murallas del siglo XVI. Una estrella Michelin bajo el chef Paolo Lavezzini, que reinterpreta la cocina toscana con técnica internacional.",
+      "source_url": "https://guide.michelin.com/en/toscana/firenze/restaurant/il-palagio",
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7771,11.2662",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Winter Garden by Caino",
+      "place_id": null,
+      "lat": 43.7722,
+      "lng": 11.245,
+      "category": "fine_dining",
+      "cuisine": "toscano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "En el St. Regis Florence, bajo una cúpula acristalada de estilo Belle Époque. Una estrella Michelin con el chef Gentian Shehi, discípulo de Valeria Piccini, al frente de una cocina toscana contemporánea.",
+      "source_url": "https://guide.michelin.com/en/toscana/firenze/restaurant/winter-garden-florence",
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7722,11.245",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Gucci Osteria da Massimo Bottura",
+      "place_id": null,
+      "lat": 43.7696,
+      "lng": 11.2559,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Dentro del Gucci Garden en la Piazza della Signoria, ideado por Massimo Bottura junto a la casa de moda. Ganó su primera estrella Michelin en 2020 con la chef mexicana Karime López al frente de los fogones.",
+      "source_url": "https://guide.michelin.com/en/toscana/firenze/restaurant/gucci-osteria-da-massimo-bottura",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7696,11.2559",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ora d'Aria",
+      "place_id": null,
+      "lat": 43.7684,
+      "lng": 11.2557,
+      "category": "fine_dining",
+      "cuisine": "toscano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Detrás de la Galería Uffizi, el chef Marco Stabile ofrece dos menús degustación -uno de carne y otro de pescado- bajo un techo con frescos dorados. Una estrella Michelin desde 2011.",
+      "source_url": "https://guide.michelin.com/us/en/toscana/firenze/restaurant/ora-d-aria",
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7684,11.2557",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Cibrèo",
+      "place_id": null,
+      "lat": 43.7712,
+      "lng": 11.266,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto por Fabio Picchi en 1979 en el barrio de Sant'Ambrogio, sin pasta en la carta y célebre por platos de casquería toscana como el cibreo de higadillos y cresta de gallo. Un pilar de la cocina florentina contemporánea.",
+      "source_url": "https://cibreo.com/sant-ambrogio/ristorante",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7712,11.266",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Mario",
+      "place_id": null,
+      "lat": 43.7762,
+      "lng": 11.2533,
+      "category": "fast_food",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria familiar junto al Mercato Centrale desde 1953, con mesas comunales, menú diario en pizarra y pago solo en efectivo. Referencia del almuerzo obrero florentino durante tres generaciones.",
+      "source_url": "https://trattoriamario.com/",
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7762,11.2533",
+      "distinction": null
+    },
+    {
+      "name": "Da Nerbone",
+      "place_id": null,
+      "lat": 43.7764,
+      "lng": 11.2534,
+      "category": "street_food",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto dentro del Mercato Centrale que sirve el panino di bollito y el lampredotto desde 1872, dos años antes de que se inaugurara el propio mercado. El más antiguo de los puestos de comida callejera de Florencia.",
+      "source_url": "http://www.storicomercatocentrale.it/nerbone",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7764,11.2534",
+      "distinction": null
+    },
+    {
+      "name": "All'Antico Vinaio",
+      "place_id": null,
+      "lat": 43.7686,
+      "lng": 11.257,
+      "category": "street_food",
+      "cuisine": "toscano",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Bocadillería en Via dei Neri abierta en 1991, convertida en fenómeno viral global por sus enormes panini de schiacciata y las colas que dan la vuelta a la manzana. Con más de 30.000 reseñas, es uno de los locales más comentados en redes sociales de toda Italia.",
+      "source_url": "https://www.allanticovinaio.com/",
+      "source_type": "viral_social",
+      "rank": 14,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7686,11.257",
+      "distinction": null
+    },
+    {
+      "name": "Il Latini",
+      "place_id": null,
+      "lat": 43.7717,
+      "lng": 11.2484,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria abierta en 1911 en las bodegas del Palazzo Rucellai, con jamones colgando del techo y mesas compartidas. Durante la inundación de 1966 siguió sirviendo comida caliente a los florentinos entre el barro.",
+      "source_url": "https://latinifirenze.com/en/",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7717,11.2484",
+      "distinction": null
+    },
+    {
+      "name": "Vivoli",
+      "place_id": null,
+      "lat": 43.7699,
+      "lng": 11.261,
+      "category": "dessert",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico",
+        "viral_tiktok"
+      ],
+      "description": "Heladería artesanal en Santa Croce fundada en 1930 por la familia Vivoli, pionera del gelato moderno en Florencia. Su affogato al caffè, en carta desde los años 60, se volvió viral en redes sociales y superó los 20 millones de visualizaciones.",
+      "source_url": "https://vivoli.it/en/history/",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7699,11.261",
+      "source_type_secondary": "viral_social",
+      "distinction": null
+    },
+    {
+      "name": "Caffè Gilli",
+      "place_id": null,
+      "lat": 43.7712,
+      "lng": 11.2543,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El café más antiguo de Florencia, abierto en 1733 cerca del Duomo y trasladado a la Piazza della Repubblica en el siglo XIX. Punto de encuentro histórico de futuristas y artistas florentinos.",
+      "source_url": "https://www.caffegilli.com/en/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7712,11.2543",
+      "distinction": null
+    },
+    {
+      "name": "Caffè Rivoire",
+      "place_id": null,
+      "lat": 43.7692,
+      "lng": 11.2558,
+      "category": "cafeteria",
+      "cuisine": "café / chocolate",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1872 por el turinés Enrico Rivoire, proveedor de chocolate de la casa real. Sus mesas en la Piazza della Signoria miran directamente al Palazzo Vecchio y la Loggia dei Lanzi.",
+      "source_url": "https://shop.rivoire.it/en/content/6-our-history",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7692,11.2558",
+      "distinction": null
+    },
+    {
+      "name": "Perché No!",
+      "place_id": null,
+      "lat": 43.7706,
+      "lng": 11.2553,
+      "category": "dessert",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería abierta en 1939 en Via dei Tavolini, una de las más antiguas de Florencia. La escasez de la Segunda Guerra Mundial llevó a sus creadores a inventar el semifreddo, hoy un clásico imitado en toda Italia.",
+      "source_url": "http://www.reidsitaly.com/destinations/tuscany/florence/dining/perche-no.html",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7706,11.2553",
+      "distinction": null
+    },
+    {
+      "name": "Le Volpi e l'Uva",
+      "place_id": null,
+      "lat": 43.7671,
+      "lng": 11.2503,
+      "category": "bar",
+      "cuisine": "enoteca",
+      "tags": [
+        "critic"
+      ],
+      "description": "Enoteca de referencia en el Oltrarno desde 1992, cerca del Ponte Vecchio, con unas 350 etiquetas en carta y una selecta tabla de quesos y embutidos italianos y franceses. Considerada por la crítica una de las mejores wine bars de Italia.",
+      "source_url": "https://www.levolpieluva.com/",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7671,11.2503",
+      "distinction": null
+    },
+    {
+      "name": "Sergio Pollini Lampredotto",
+      "place_id": null,
+      "lat": 43.7719,
+      "lng": 11.2665,
+      "category": "street_food",
+      "cuisine": "toscano",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Puesto familiar de lampredotto en Via dei Macci, junto al Mercato di Sant'Ambrogio, señalado por Gambero Rosso entre los mejores bocadillos de lampredotto de la ciudad. Prepara variantes con salsas de alcachofa, guanciale o acelga.",
+      "source_url": "https://www.gamberorossointernational.com/news/the-best-lampredotto-sandwiches-to-eat-in-florence/",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7719,11.2665",
+      "distinction": null
+    },
+    {
+      "name": "Trippaio di San Frediano",
+      "place_id": null,
+      "lat": 43.7729,
+      "lng": 11.2367,
+      "category": "street_food",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Carrito de lampredotto y tripa en la Piazza dei Nerli, en pleno San Frediano, uno de los puestos históricos de casquería callejera que dieron fama a este barrio obrero de Florencia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7729,11.2367",
+      "distinction": null
+    },
+    {
+      "name": "Mercato Centrale Firenze",
+      "place_id": null,
+      "lat": 43.7764,
+      "lng": 11.2534,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de hierro y cristal de 1874 diseñado por Giuseppe Mengoni, el mismo arquitecto de la Galleria Vittorio Emanuele II de Milán. Su planta superior alberga un mercado gastronómico con decenas de puestos de cocina toscana.",
+      "source_url": "https://www.mercatocentrale.it/firenze/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7764,11.2534",
+      "distinction": null
+    },
+    {
+      "name": "Mercato di Sant'Ambrogio",
+      "place_id": null,
+      "lat": 43.7712,
+      "lng": 11.265,
+      "category": "mercado",
+      "cuisine": "mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de barrio en la Piazza Lorenzo Ghiberti, más popular y menos turístico que el Mercato Centrale, con puestos de producto fresco y varios locales de lampredotto y trippa alrededor.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7712,11.265",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Za Za",
+      "place_id": null,
+      "lat": 43.7762,
+      "lng": 11.2529,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria junto al Mercato Centrale abierta en 1977 por Stefano Bondi, con mesas de mármol y ribollita, pappa al pomodoro y bistecca alla fiorentina en carta desde hace décadas.",
+      "source_url": "https://www.trattoriazaza.it/en/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7762,11.2529",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Cammillo",
+      "place_id": null,
+      "lat": 43.7677,
+      "lng": 11.2497,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria familiar en Borgo San Jacopo fundada en 1945 por Cammillo Tesi tras la voladura de los puentes del Arno en la Segunda Guerra Mundial. Hoy la dirige su nieta, cuarta generación al frente de los fogones.",
+      "source_url": "https://attivitastoriche.destinationflorence.com/en/attivita_storiche/trattoria-cammillo/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7677,11.2497",
+      "distinction": null
+    },
+    {
+      "name": "Osteria Antica Mescita San Niccolò",
+      "place_id": null,
+      "lat": 43.7638,
+      "lng": 11.2601,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antigua estación de peaje del vino de Chianti reconvertida en tienda-taberna en el siglo XIX. En sus sótanos se descubrió tras la inundación de 1966 la cripta románica de la iglesia de San Niccolò, del año 1000.",
+      "source_url": "https://attivitastoriche.destinationflorence.com/en/attivita_storiche/osteria-antica-mescita-san-niccolo/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7638,11.2601",
+      "distinction": null
+    },
+    {
+      "name": "Fuori Porta",
+      "place_id": null,
+      "lat": 43.7621,
+      "lng": 11.2597,
+      "category": "bar",
+      "cuisine": "enoteca",
+      "tags": [
+        "critic"
+      ],
+      "description": "Enoteca en la colina de San Niccolò, célebre entre los florentinos por sus crostini y su extensa carta de vinos toscanos por copas. Uno de los wine bars más citados por la crítica gastronómica local.",
+      "source_url": "https://www.fuoriporta.it/",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7621,11.2597",
+      "distinction": null
+    },
+    {
+      "name": "Giacosa 1815",
+      "place_id": null,
+      "lat": 43.7724,
+      "lng": 11.2497,
+      "category": "bar",
+      "cuisine": "café / cóctel",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En la esquina de Via de' Tornabuoni con Via della Spada donde en 1919 el barman Fosco Scarselli creó el Negroni a petición del conde Camillo Negroni. El local reabrió en 2023 recuperando el nombre histórico Giacosa.",
+      "source_url": "https://www.giacosafirenze.com/en",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7724,11.2497",
+      "distinction": null
+    },
+    {
+      "name": "Antico Ristoro di Cambi",
+      "place_id": null,
+      "lat": 43.7699,
+      "lng": 11.2367,
+      "category": "steakhouse",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Steakhouse familiar en San Frediano con bistecca alla fiorentina cortada y pesada en el mostrador antes de asarla a la brasa, en un comedor con jamones colgados y mesas de madera desde hace generaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7699,11.2367",
+      "distinction": null
+    },
+    {
+      "name": "Gustapizza",
+      "place_id": null,
+      "lat": 43.7674,
+      "lng": 11.2489,
+      "category": "pizza",
+      "cuisine": "napolitana",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería pequeña del Oltrarno en Via Maggio, con horno de leña a la vista y bordes de masa napolitana bien hinchados. Colas habituales de florentinos y turistas por su precio y calidad.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g187895-d1155597-Reviews-Gustapizza-Florence_Tuscany.html",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7674,11.2489",
+      "distinction": null
+    },
+    {
+      "name": "Berberè Firenze",
+      "place_id": null,
+      "lat": 43.7728,
+      "lng": 11.2367,
+      "category": "pizza",
+      "cuisine": "pizza artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cadena italiana de pizza de masa madre con largas fermentaciones e ingredientes orgánicos, con local en la Piazza dei Nerli de San Frediano. Parte de la ola de pizzerías de autor que renovó la escena de Florencia.",
+      "source_url": "https://www.berberepizza.it/en/berbere-firenze-san-frediano/",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7728,11.2367",
+      "distinction": null
+    },
+    {
+      "name": "Konnubio",
+      "place_id": null,
+      "lat": 43.7742,
+      "lng": 11.2513,
+      "category": "restaurante",
+      "cuisine": "italiano moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de cocina italiana contemporánea con fuerte apuesta vegetariana y vegana cerca de San Lorenzo. Combina platos de fusión asiático-mediterránea con clásicos toscanos revisados.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7742,11.2513",
+      "distinction": null
+    },
+    {
+      "name": "La Giostra",
+      "place_id": null,
+      "lat": 43.7745,
+      "lng": 11.2604,
+      "category": "restaurante",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante abierto hace más de veinte años por el príncipe Dimitri d'Asburgo-Lorena y hoy dirigido por su hijo Soldano, con recetas de la familia real y un comedor iluminado con cientos de luces de hadas.",
+      "source_url": "https://ristorantelagiostra.com/en/ristorante-la-giostra/",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7745,11.2604",
+      "distinction": null
+    },
+    {
+      "name": "Gelateria dei Neri",
+      "place_id": null,
+      "lat": 43.7684,
+      "lng": 11.2578,
+      "category": "dessert",
+      "cuisine": "heladería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Heladería en Via dei Neri, entre el Ponte Vecchio y Santa Croce, señalada repetidamente por reseñas y guías como una de las mejores artesanales de la ciudad por su pistacho y su nocciola.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7684,11.2578",
+      "distinction": null
+    },
+    {
+      "name": "Buca Mario",
+      "place_id": null,
+      "lat": 43.7735,
+      "lng": 11.2467,
+      "category": "steakhouse",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las históricas 'buche' florentinas -bodegas bajo palazzos nobles- fundada en 1886 por Mario Corsini en el Palazzo Niccolini. Especialista en bistecca alla fiorentina y ribollita, ha recibido a estrellas de Hollywood.",
+      "source_url": "https://attivitastoriche.destinationflorence.com/en/attivita_storiche/ristorante-buca-mario/",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7735,11.2467",
+      "distinction": null
+    },
+    {
+      "name": "I Due Fratellini",
+      "place_id": null,
+      "lat": 43.7706,
+      "lng": 11.2571,
+      "category": "street_food",
+      "cuisine": "toscano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bocadillería diminuta en Via dei Cimatori que desde 1875 prepara panini con productos toscanos para comer de pie en la calle, con el vino servido en vasos apoyados en el escalón de piedra.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7706,11.2571",
+      "distinction": null
+    },
+    {
+      "name": "La Ménagère",
+      "place_id": null,
+      "lat": 43.7747,
+      "lng": 11.2537,
+      "category": "restaurante",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Antigua ferretería y tienda de menaje de 1896 reconvertida en un concept store de 1.500 metros cuadrados que combina restaurante, coctelería y floristería en Via de' Ginori.",
+      "source_url": "https://www.lamenagere.it/en/",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7747,11.2537",
+      "distinction": null
+    },
+    {
+      "name": "Coquinarius",
+      "place_id": null,
+      "lat": 43.7728,
+      "lng": 11.2557,
+      "category": "restaurante",
+      "cuisine": "toscano moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró de vinos naturales cerca del Duomo, con carta de temporada que cambia cada par de meses y opciones vegetarianas destacadas, como sus raviolis de pera y queso.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7728,11.2557",
+      "distinction": null
+    },
+    {
+      "name": "Il Santo Bevitore",
+      "place_id": null,
+      "lat": 43.7677,
+      "lng": 11.2465,
+      "category": "restaurante",
+      "cuisine": "toscano moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Osteria contemporánea en Via di Santo Spirito, en el Oltrarno, muy valorada por la crítica internacional por su cocina toscana de temporada y su carta de vinos naturales. No acepta reservas para la comida del mediodía.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7677,11.2465",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

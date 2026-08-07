@@ -22,6 +22,146 @@
     "La Leggenda dei Frati": {
       "cuisine": "Italian",
       "description": "Inside the Villa Bardini complex, with panoramic views of Florence. Tuscan-rooted cuisine from chef Filippo Saporito. One Michelin star."
+    },
+    "Enoteca Pinchiorri": {
+      "cuisine": "Italian",
+      "description": "Founded in 1972 by Giorgio Pinchiorri and Annie Féolde inside a 17th-century palazzo on Via Ghibellina. One of the few tables in Italy with three Michelin stars, with a legendary cellar of more than 4,000 labels."
+    },
+    "Il Palagio": {
+      "cuisine": "Tuscan",
+      "description": "Restaurant of the Four Seasons Firenze on Borgo Pinti, with its own garden inside the 16th-century walls. One Michelin star under chef Paolo Lavezzini, who reinterprets Tuscan cuisine with international technique."
+    },
+    "Winter Garden by Caino": {
+      "cuisine": "Tuscan",
+      "description": "Inside the St. Regis Florence, under a Belle Époque glass dome. One Michelin star with chef Gentian Shehi, a protégé of Valeria Piccini, leading a contemporary Tuscan kitchen."
+    },
+    "Gucci Osteria da Massimo Bottura": {
+      "cuisine": "Contemporary Italian",
+      "description": "Inside the Gucci Garden on Piazza della Signoria, conceived by Massimo Bottura together with the fashion house. It won its first Michelin star in 2020 with Mexican chef Karime López leading the kitchen."
+    },
+    "Ora d'Aria": {
+      "cuisine": "Tuscan",
+      "description": "Behind the Uffizi Gallery, chef Marco Stabile offers two tasting menus -one meat, one fish- under a gold-leaf frescoed ceiling. One Michelin star since 2011."
+    },
+    "Cibrèo": {
+      "cuisine": "Tuscan",
+      "description": "Opened by Fabio Picchi in 1979 in the Sant'Ambrogio neighborhood, with no pasta on the menu and famous for Tuscan offal dishes like cibreo of giblets and cockscomb. A pillar of contemporary Florentine cooking."
+    },
+    "Trattoria Mario": {
+      "cuisine": "Tuscan",
+      "description": "Family-run trattoria next to the Mercato Centrale since 1953, with communal tables, a daily chalkboard menu and cash only. A reference point for Florentine working-class lunches across three generations."
+    },
+    "Da Nerbone": {
+      "cuisine": "Tuscan",
+      "description": "Stall inside the Mercato Centrale serving panino di bollito and lampredotto since 1872, two years before the market itself opened. The oldest street-food stand in Florence."
+    },
+    "All'Antico Vinaio": {
+      "cuisine": "Tuscan",
+      "description": "Sandwich shop on Via dei Neri opened in 1991, turned into a global viral phenomenon for its oversized schiacciata panini and block-long queues. With more than 30,000 reviews, it is one of the most talked-about spots on social media in all of Italy."
+    },
+    "Il Latini": {
+      "cuisine": "Tuscan",
+      "description": "Trattoria opened in 1911 in the cellars of Palazzo Rucellai, with hams hanging from the ceiling and shared tables. During the 1966 flood it kept serving hot food to Florentines amid the mud."
+    },
+    "Vivoli": {
+      "cuisine": "Ice cream shop",
+      "description": "Artisan gelateria in Santa Croce founded in 1930 by the Vivoli family, a pioneer of modern gelato in Florence. Its affogato al caffè, on the menu since the 1960s, went viral on social media and passed 20 million views."
+    },
+    "Caffè Gilli": {
+      "cuisine": "Cafe",
+      "description": "Florence's oldest cafe, opened in 1733 near the Duomo and moved to Piazza della Repubblica in the 19th century. A historic meeting point for Futurist artists and Florentine intellectuals."
+    },
+    "Caffè Rivoire": {
+      "cuisine": "Cafe / chocolate",
+      "description": "Founded in 1872 by Enrico Rivoire of Turin, chocolate supplier to the royal family. Its tables on Piazza della Signoria look straight at the Palazzo Vecchio and the Loggia dei Lanzi."
+    },
+    "Perché No!": {
+      "cuisine": "Ice cream shop",
+      "description": "Gelateria opened in 1939 on Via dei Tavolini, one of the oldest in Florence. World War II shortages led its founders to invent the semifreddo, now a classic copied throughout Italy."
+    },
+    "Le Volpi e l'Uva": {
+      "cuisine": "Wine bar",
+      "description": "Landmark Oltrarno wine bar since 1992, near the Ponte Vecchio, with around 350 labels on the list and a select board of Italian and French cheeses and cured meats. Rated by critics among Italy's best wine bars."
+    },
+    "Sergio Pollini Lampredotto": {
+      "cuisine": "Tuscan street food",
+      "description": "Family lampredotto stand on Via dei Macci, next to the Mercato di Sant'Ambrogio, named by Gambero Rosso among the city's best lampredotto sandwiches. It makes variants with artichoke, guanciale or chard sauces."
+    },
+    "Trippaio di San Frediano": {
+      "cuisine": "Tuscan street food",
+      "description": "Lampredotto and tripe cart on Piazza dei Nerli, in the heart of San Frediano, one of the historic street offal stands that made this working-class Florentine neighborhood famous."
+    },
+    "Mercato Centrale Firenze": {
+      "cuisine": "Food market",
+      "description": "Cast-iron and glass market building from 1874 designed by Giuseppe Mengoni, the same architect behind Milan's Galleria Vittorio Emanuele II. Its upper floor houses a food hall with dozens of Tuscan food stalls."
+    },
+    "Mercato di Sant'Ambrogio": {
+      "cuisine": "Market",
+      "description": "Neighborhood market on Piazza Lorenzo Ghiberti, more local and less touristy than the Mercato Centrale, with fresh-produce stalls and several lampredotto and tripe spots around it."
+    },
+    "Trattoria Za Za": {
+      "cuisine": "Tuscan",
+      "description": "Trattoria next to the Mercato Centrale opened in 1977 by Stefano Bondi, with marble tables and ribollita, pappa al pomodoro and bistecca alla fiorentina on the menu for decades."
+    },
+    "Trattoria Cammillo": {
+      "cuisine": "Tuscan",
+      "description": "Family trattoria on Borgo San Jacopo founded in 1945 by Cammillo Tesi after the Arno bridges were blown up in World War II. Today it is run by his granddaughter, the fourth generation at the stove."
+    },
+    "Osteria Antica Mescita San Niccolò": {
+      "cuisine": "Tuscan",
+      "description": "Former Chianti wine tollhouse converted into a shop-tavern in the 19th century. Its cellars revealed, after the 1966 flood, the Romanesque crypt of the church of San Niccolò, dating to the year 1000."
+    },
+    "Fuori Porta": {
+      "cuisine": "Wine bar",
+      "description": "Wine bar on the San Niccolò hill, popular among Florentines for its crostini and extensive by-the-glass list of Tuscan wines. One of the wine bars most cited by local food critics."
+    },
+    "Giacosa 1815": {
+      "cuisine": "Cafe / cocktail bar",
+      "description": "On the corner of Via de' Tornabuoni and Via della Spada, where in 1919 bartender Fosco Scarselli created the Negroni at the request of Count Camillo Negroni. The venue reopened in 2023 reviving the historic Giacosa name."
+    },
+    "Antico Ristoro di Cambi": {
+      "cuisine": "Tuscan",
+      "description": "Family steakhouse in San Frediano where bistecca alla fiorentina is cut and weighed at the counter before grilling, in a dining room hung with hams and worn wooden tables that has run for generations."
+    },
+    "Gustapizza": {
+      "cuisine": "Neapolitan pizza",
+      "description": "Small Oltrarno pizzeria on Via Maggio, with an open wood-fired oven and puffy Neapolitan-style crusts. Regular queues of both Florentines and tourists for its price and quality."
+    },
+    "Berberè Firenze": {
+      "cuisine": "Craft pizza",
+      "description": "Italian sourdough pizza chain with long fermentations and organic ingredients, with a location on Piazza dei Nerli in San Frediano. Part of the wave of chef-driven pizzerias that reshaped Florence's dining scene."
+    },
+    "Konnubio": {
+      "cuisine": "Modern Italian",
+      "description": "Contemporary Italian restaurant near San Lorenzo with a strong vegetarian and vegan focus. It combines Asian-Mediterranean fusion dishes with revisited Tuscan classics."
+    },
+    "La Giostra": {
+      "cuisine": "Tuscan",
+      "description": "Restaurant opened more than twenty years ago by Prince Dimitri of Habsburg-Lorraine and now run by his son Soldano, with recipes from the royal family and a dining room strung with hundreds of fairy lights."
+    },
+    "Gelateria dei Neri": {
+      "cuisine": "Ice cream shop",
+      "description": "Gelateria on Via dei Neri, between the Ponte Vecchio and Santa Croce, repeatedly singled out by reviews and guides as one of the city's best artisan gelato shops for its pistachio and hazelnut."
+    },
+    "Buca Mario": {
+      "cuisine": "Tuscan",
+      "description": "One of Florence's historic 'buche' -cellar restaurants under noble palazzos- founded in 1886 by Mario Corsini inside the Palazzo Niccolini. A specialist in bistecca alla fiorentina and ribollita that has hosted Hollywood stars."
+    },
+    "I Due Fratellini": {
+      "cuisine": "Tuscan street food",
+      "description": "Tiny sandwich shop on Via dei Cimatori that has been making panini with Tuscan products since 1875, eaten standing in the street with wine served in glasses set on the stone step."
+    },
+    "La Ménagère": {
+      "cuisine": "Mediterranean",
+      "description": "Former 1896 hardware and homeware shop turned into a 1,500-square-meter concept store on Via de' Ginori that combines a restaurant, cocktail bar and florist."
+    },
+    "Coquinarius": {
+      "cuisine": "Modern Tuscan",
+      "description": "Natural wine bistro near the Duomo, with a seasonal menu that changes every couple of months and standout vegetarian options like its pear and cheese ravioli."
+    },
+    "Il Santo Bevitore": {
+      "cuisine": "Modern Tuscan",
+      "description": "Contemporary osteria on Via di Santo Spirito in the Oltrarno, well regarded by international critics for its seasonal Tuscan cooking and natural wine list. It does not take reservations for lunch."
     }
   }
 }
