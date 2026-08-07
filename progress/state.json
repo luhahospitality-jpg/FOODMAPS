@@ -40,7 +40,7 @@
     "milan": { "actual": 5, "objetivo": 60, "tier": "M" },
     "napoles": { "actual": 5, "objetivo": 40, "tier": "N" },
     "nueva-york": { "actual": 30, "objetivo": 100, "tier": "S" },
-    "nueva-orleans": { "actual": 5, "objetivo": 40, "tier": "N" },
+    "nueva-orleans": { "actual": 37, "objetivo": 40, "tier": "N" },
     "oaxaca": { "actual": 5, "objetivo": 40, "tier": "N" },
     "osaka": { "actual": 5, "objetivo": 40, "tier": "N" },
     "paris": { "actual": 5, "objetivo": 100, "tier": "S" },

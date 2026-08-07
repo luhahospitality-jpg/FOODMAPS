@@ -22,6 +22,134 @@
     "Domilise's Po-Boy & Bar": {
       "cuisine": "Cajun / Creole",
       "description": "A no-frills family-run po-boy shop since 1918. Anthony Bourdain ordered the off-menu special (fried shrimp, Swiss cheese, and roast beef gravy) on \"No Reservations\" (2008) and said he'd have a serious problem if he lived nearby. Holds a Michelin Bib Gourmand distinction."
+    },
+    "Antoine's Restaurant": {
+      "cuisine": "Creole French",
+      "description": "America's oldest continuously family-run restaurant, opened in 1840. Birthplace of oysters Rockefeller, now run by the fifth generation of the Alciatore family."
+    },
+    "Arnaud's": {
+      "cuisine": "Creole French",
+      "description": "A French Creole institution in the French Quarter since 1918, with a warren of historic dining rooms and over a century of classic New Orleans cooking."
+    },
+    "Tujague's": {
+      "cuisine": "Creole",
+      "description": "New Orleans' second-oldest restaurant, opened in 1856 next to the French Market. Its bar invented the Grasshopper cocktail in 1918."
+    },
+    "Brennan's": {
+      "cuisine": "Creole",
+      "description": "A French Quarter brunch institution since 1946, birthplace of Bananas Foster, invented here in 1951."
+    },
+    "Jacques-Imo's Cafe": {
+      "cuisine": "Creole / Cajun",
+      "description": "An unpretentious Uptown spot famous for its alligator sausage cheesecake and fried chicken, with a constant line and a loud, convivial vibe."
+    },
+    "Mandina's Restaurant": {
+      "cuisine": "Creole / Italian",
+      "description": "An iconic pink building in Mid-City that went from Italian grocery to family restaurant in 1932, serving gumbo and Creole-Italian cooking largely unchanged for generations."
+    },
+    "Cochon": {
+      "cuisine": "Cajun",
+      "description": "Pork-driven Cajun cooking from chefs Donald Link and Stephen Stryjewski, both James Beard Award winners for Best Chef: South (2007 and 2011)."
+    },
+    "Bayona": {
+      "cuisine": "Eclectic",
+      "description": "Chef Susan Spicer's eclectic cooking in a 200-year-old cottage in the French Quarter; Spicer won the James Beard Award for Best Chef: Southeast in 1993."
+    },
+    "Restaurant August": {
+      "cuisine": "French / Creole",
+      "description": "Chef John Besh's French-Creole fine dining in a 19th-century warehouse, which earned him the James Beard Award for Best Chef in 2006."
+    },
+    "Shaya": {
+      "cuisine": "Israeli",
+      "description": "Chef Alon Shaya's modern Israeli cooking, named America's Best New Restaurant at the 2016 James Beard Awards."
+    },
+    "Willie Mae's Scotch House": {
+      "cuisine": "Southern / Fried Chicken",
+      "description": "A fried chicken house in Tremé since 1957, named an America's Classic by the James Beard Foundation in 2005 and now run by Willie Mae Seaton's great-granddaughter."
+    },
+    "Parkway Bakery & Tavern": {
+      "cuisine": "Po-boys",
+      "description": "A Mid-City po-boy shop since 1911, where the Obama family made an unannounced stop for shrimp po-boys and turkey-and-alligator gumbo in 2010."
+    },
+    "Mother's Restaurant": {
+      "cuisine": "Po-boys",
+      "description": "A po-boy shop in the Central Business District since 1938, famous for the Ferdi Special (roast beef and ham) and its debris gravy."
+    },
+    "Central Grocery": {
+      "cuisine": "Italian / Deli",
+      "description": "A 1906 Italian grocery that invented the muffuletta, the cold-cut, cheese and olive-salad sandwich that came to define a New Orleans lunch."
+    },
+    "Verti Marte": {
+      "cuisine": "Creole / Deli",
+      "description": "A 24-hour deli in the French Quarter, famous for the 'All That Jazz' sandwich (turkey, ham, shrimp and 'wow sauce'), cash only, no seats."
+    },
+    "Turkey and the Wolf": {
+      "cuisine": "Sandwiches",
+      "description": "A casual sandwich shop in the Lower Garden District, named America's Best New Restaurant by Bon Appétit in 2017, from chef Mason Hereford."
+    },
+    "Li'l Dizzy's Cafe": {
+      "cuisine": "Soul Food / Creole",
+      "description": "Creole soul food from the Baquet family in Tremé, with fried chicken and gumbo served the same way for generations."
+    },
+    "Casamento's Restaurant": {
+      "cuisine": "Oysters / Seafood",
+      "description": "Oysters and its famous oyster loaf on special pan bread since 1919, in an Italian-tiled dining room that has barely changed in a century."
+    },
+    "Acme Oyster House": {
+      "cuisine": "Oysters / Seafood",
+      "description": "A French Quarter oyster house since 1910 that shucks more than a million oysters a year; a must-stop even with a line out the door."
+    },
+    "Drago's Seafood Restaurant": {
+      "cuisine": "Seafood",
+      "description": "Birthplace of charbroiled oysters, invented here in 1993 by Tommy Cvitanovich with garlic, butter and Parmesan cheese."
+    },
+    "GW Fins": {
+      "cuisine": "Seafood",
+      "description": "A French Quarter seafood restaurant praised by the Times-Picayune, Food & Wine and Esquire, a pioneer in dry-aging fish the way steakhouses age beef."
+    },
+    "Pêche Seafood Grill": {
+      "cuisine": "Seafood",
+      "description": "A wood-fire seafood grill from chefs Donald Link, Stephen Stryjewski and Ryan Prewitt, named America's Best New Restaurant at the 2014 James Beard Awards."
+    },
+    "Angelo Brocato's": {
+      "cuisine": "Italian Ice Cream / Pastry",
+      "description": "A Sicilian ice cream and pastry shop in the heart of Mid-City since 1905, still serving the lemon granita and cannoli the founder made from day one."
+    },
+    "Hansen's Sno-Bliz": {
+      "cuisine": "Snowballs",
+      "description": "A snowball stand since 1939 using the original ice-shaving machine invented by Ernest Hansen; won the James Beard Foundation's America's Classic award in 2014."
+    },
+    "District Donuts Sliders Brew": {
+      "cuisine": "Donuts",
+      "description": "Rotating-flavor donuts and sliders in the Lower Garden District, including a crackly-topped cinnamon roll that goes toe-to-toe with the country's famous chains."
+    },
+    "Napoleon House": {
+      "cuisine": "Historic Bar",
+      "description": "A historic bar inside an 1797 building, the first place in America to serve a Pimm's Cup and still the world's top seller of the drink."
+    },
+    "Carousel Bar": {
+      "cuisine": "Historic Bar / Cocktails",
+      "description": "New Orleans' only revolving bar, installed in 1949 inside the Hotel Monteleone, a National Literary Landmark once frequented by Faulkner, Tennessee Williams and Truman Capote."
+    },
+    "Pat O'Brien's": {
+      "cuisine": "Historic Bar / Cocktails",
+      "description": "The French Quarter bar where the Hurricane cocktail was born in the 1940s, when wartime liquor shortages forced bartenders to invent something rum-heavy."
+    },
+    "Cure": {
+      "cuisine": "Craft Cocktails",
+      "description": "A craft cocktail bar on Freret Street that kick-started New Orleans' modern cocktail scene and won the James Beard Award for Outstanding Bar Program in 2018."
+    },
+    "Pizza Delicious": {
+      "cuisine": "New York-style Pizza",
+      "description": "A New York-style pizzeria in Bywater, ranked among the country's best pizzerias by the 50 Top Pizza and Pizza Slice USA lists."
+    },
+    "Crescent City Steak House": {
+      "cuisine": "Steak",
+      "description": "New Orleans' oldest family-owned steakhouse, opened in 1934, which invented the local style of cooking steak sizzling in butter."
+    },
+    "PJ's Coffee": {
+      "cuisine": "Coffee",
+      "description": "A coffee chain born in New Orleans in 1978, roasting beans locally and still feeling like a neighborhood spot despite its growth."
     }
   }
 }
