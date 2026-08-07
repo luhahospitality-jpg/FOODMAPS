@@ -3,7 +3,7 @@
   "name": "Córdoba",
   "country": "Argentina",
   "tagline": "Bodegones de 50 años, locro humeante y el bife de chorizo que manda en Nueva Córdoba.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4052874,-64.2111077"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4052874,-64.2111077",
+      "distinction": null
     },
     {
       "name": "Viejo Lobo",
@@ -38,7 +39,8 @@
       "source_type": "classic",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4139626,-64.1671243"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4139626,-64.1671243",
+      "distinction": null
     },
     {
       "name": "Alcorta Carnes y Vinos",
@@ -53,7 +55,8 @@
       "source_type": null,
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836",
+      "distinction": null
     },
     {
       "name": "La Vieja Esquina",
@@ -70,7 +73,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4170086,-64.1889493",
+      "distinction": null
     },
     {
       "name": "La Emilia",
@@ -85,7 +89,616 @@
       "source_type": null,
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4383232,-64.1758016"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4383232,-64.1758016",
+      "distinction": null
+    },
+    {
+      "name": "Confitería La Oriental",
+      "place_id": null,
+      "lat": -31.4147385,
+      "lng": -64.1841408,
+      "category": "cafeteria",
+      "cuisine": "confitería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería fundada en 1863, la más antigua de Córdoba capital, ubicada en el Paseo 9 de Julio del centro histórico.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4147385,-64.1841408",
+      "distinction": null
+    },
+    {
+      "name": "Sorocabana",
+      "place_id": null,
+      "lat": -31.4180831,
+      "lng": -64.1814114,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café emblemático de la calle San Jerónimo frente a la Plaza San Martín, abierto desde 1956 y refugio histórico de escritores y periodistas como Daniel Salzano.",
+      "source_url": "https://turismo.cordoba.gob.ar/sorocabana/",
+      "source_type": "classic",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4180831,-64.1814114",
+      "distinction": null
+    },
+    {
+      "name": "La City Bar",
+      "place_id": null,
+      "lat": -31.4169612,
+      "lng": -64.1765945,
+      "category": "bar",
+      "cuisine": "bar / café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de esquina sobre calle 25 de Mayo, junto a la Iglesia de la Merced, que reúne desde 1970 a periodistas, empleados bancarios y vecinos del centro.",
+      "source_url": "https://turismo.cordoba.gob.ar/la-city-bar/",
+      "source_type": "classic",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4169612,-64.1765945",
+      "distinction": null
+    },
+    {
+      "name": "Café de la Plaza",
+      "place_id": null,
+      "lat": -31.3799147,
+      "lng": -64.18382,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de barrio en Alta Córdoba en funcionamiento desde 1930, declarado Sitio de Interés Cultural por el Concejo Deliberante de la ciudad en 2017.",
+      "source_url": "https://turismo.cordoba.gob.ar/bares-y-cafes-notables/",
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3799147,-64.18382",
+      "distinction": null
+    },
+    {
+      "name": "Marvic",
+      "place_id": null,
+      "lat": -31.4006286,
+      "lng": -64.2301675,
+      "category": "cafeteria",
+      "cuisine": "heladería / confitería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería, confitería y restaurante frente a la plaza Jerónimo del Barco en Alto Alberdi, un clásico barrial con más de tres décadas de historia.",
+      "source_url": "https://circuitogastronomico.com/marvic-desayunos-y-meriendas-para-romper-la-dieta/",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4006286,-64.2301675",
+      "distinction": null
+    },
+    {
+      "name": "Los Cubanitos",
+      "place_id": null,
+      "lat": -31.3847846,
+      "lng": -64.2202415,
+      "category": "cafeteria",
+      "cuisine": "panadería / confitería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería y confitería de barrio abierta desde 1953, conocida por sus cubanitos, el clásico canuto de masa relleno de dulce de leche.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3847846,-64.2202415",
+      "distinction": null
+    },
+    {
+      "name": "Bron Café de Especialidad",
+      "place_id": null,
+      "lat": -31.4240707,
+      "lng": -64.1928001,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [],
+      "description": "Café de especialidad en el barrio Güemes, parte de la nueva generación de cafeterías cordobesas centradas en el origen y el tueste del grano.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4240707,-64.1928001",
+      "distinction": null
+    },
+    {
+      "name": "Mercado Norte",
+      "place_id": null,
+      "lat": -31.4095724,
+      "lng": -64.1805369,
+      "category": "mercado",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado municipal inaugurado en 1928 en pleno centro, declarado Monumento Histórico Provincial en 1972; reúne puestos de carnicerías, verdulerías, dulces regionales y comida al paso.",
+      "source_url": "https://turismo.cordoba.gob.ar/mercado-norte/",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4095724,-64.1805369",
+      "distinction": null
+    },
+    {
+      "name": "El Ruedo",
+      "place_id": null,
+      "lat": -31.417864,
+      "lng": -64.1862867,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Parrilla del centro histórico con más de 50 años de trayectoria, un clásico de la esquina de Obispo Trejo para comer carne a la vieja usanza.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.417864,-64.1862867",
+      "distinction": null
+    },
+    {
+      "name": "Los Cabritos",
+      "place_id": null,
+      "lat": -31.3762922,
+      "lng": -64.2113677,
+      "category": "restaurante",
+      "cuisine": "criollo / cabrito",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar en funcionamiento desde 1976, especializado en cabrito de las sierras cordobesas y pastas caseras.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3762922,-64.2113677",
+      "distinction": null
+    },
+    {
+      "name": "Don Rogelio",
+      "place_id": null,
+      "lat": -31.4367035,
+      "lng": -64.1783582,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Parrilla clásica del barrio Rogelio Martínez que celebra 30 años de trayectoria con cortes tradicionales y atención de barrio.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4367035,-64.1783582",
+      "distinction": null
+    },
+    {
+      "name": "La Casona de Alem",
+      "place_id": null,
+      "lat": -31.3879973,
+      "lng": -64.1616106,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Parrilla clásica del barrio General Bustos con más de dos décadas ofreciendo carnes a la parrilla en una antigua casona reacondicionada.",
+      "source_url": "https://circuitogastronomico.com/las-mejores-parrillas-de-cordoba/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3879973,-64.1616106",
+      "distinction": null
+    },
+    {
+      "name": "Argentum",
+      "place_id": null,
+      "lat": -31.3609583,
+      "lng": -64.2119556,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla",
+      "tags": [
+        "critico"
+      ],
+      "description": "Parrilla del barrio Poeta Lugones elegida mejor parrilla de la ciudad en 2018 y 2019, con cortes a las brasas, empanadas y locro.",
+      "source_url": "https://circuitogastronomico.com/las-mejores-parrillas-de-cordoba/",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3609583,-64.2119556",
+      "distinction": null
+    },
+    {
+      "name": "IDA restaurant-bar",
+      "place_id": null,
+      "lat": -31.3601812,
+      "lng": -64.2523855,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla gourmet",
+      "tags": [],
+      "description": "Restaurante-bar de Villa Belgrano con una propuesta de parrilla gourmet que suma pescados y salmón a la clásica carta de carnes.",
+      "source_url": "https://circuitogastronomico.com/las-mejores-parrillas-de-cordoba/",
+      "source_type": null,
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3601812,-64.2523855",
+      "distinction": null
+    },
+    {
+      "name": "Matorral Parrilla",
+      "place_id": null,
+      "lat": -31.3643691,
+      "lng": -64.2358759,
+      "category": "steakhouse",
+      "cuisine": "argentino / parrilla",
+      "tags": [],
+      "description": "Parrilla de Cerro de las Rosas enfocada en la trazabilidad del producto y en cortes premium de ganado seleccionado.",
+      "source_url": "https://circuitogastronomico.com/las-mejores-parrillas-de-cordoba/",
+      "source_type": null,
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3643691,-64.2358759",
+      "distinction": null
+    },
+    {
+      "name": "Ta Locro",
+      "place_id": null,
+      "lat": -31.4018257,
+      "lng": -64.16783,
+      "category": "restaurante",
+      "cuisine": "argentino / regional",
+      "tags": [],
+      "description": "Restaurante del barrio Pueyrredón especializado en locro y otros platos regionales, además de parrilla.",
+      "source_url": "https://circuitogastronomico.com/las-mejores-parrillas-de-cordoba/",
+      "source_type": null,
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4018257,-64.16783",
+      "distinction": null
+    },
+    {
+      "name": "Lago Di Garda",
+      "place_id": null,
+      "lat": -31.4137223,
+      "lng": -64.1789577,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante italiano del centro en funcionamiento desde 1959, una referencia histórica de la cocina itálica en Córdoba.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4137223,-64.1789577",
+      "distinction": null
+    },
+    {
+      "name": "Estación 27",
+      "place_id": null,
+      "lat": -31.4155488,
+      "lng": -64.189404,
+      "category": "restaurante",
+      "cuisine": "lomitos / minutas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local de lomitos y minutas del centro histórico, abierto desde 1991 sobre la calle 27 de Abril.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4155488,-64.189404",
+      "distinction": null
+    },
+    {
+      "name": "Lomitos 348",
+      "place_id": null,
+      "lat": -31.4075654,
+      "lng": -64.2034614,
+      "category": "restaurante",
+      "cuisine": "lomitos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Lomitería del barrio Alberdi fundada en 1974, considerada una referencia obligada del lomito cordobés.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4075654,-64.2034614",
+      "distinction": null
+    },
+    {
+      "name": "Junior B",
+      "place_id": null,
+      "lat": -31.4306797,
+      "lng": -64.1902261,
+      "category": "restaurante",
+      "cuisine": "lomitos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena cordobesa de lomitos nacida en 1999 en Nueva Córdoba, muy popular entre estudiantes por sus porciones generosas.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4306797,-64.1902261",
+      "distinction": null
+    },
+    {
+      "name": "Pierino",
+      "place_id": null,
+      "lat": -31.436891,
+      "lng": -64.2298946,
+      "category": "restaurante",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de barrio abierta desde 2002, conocida por sus pizzas a la piedra de estilo cordobés.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.436891,-64.2298946",
+      "distinction": null
+    },
+    {
+      "name": "Pizzería Don Luis",
+      "place_id": null,
+      "lat": -31.4113666,
+      "lng": -64.1850118,
+      "category": "restaurante",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Pizzería del centro fundada en 1952 y elegida mejor pizzería de Córdoba en el período 2024-2025.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4113666,-64.1850118",
+      "distinction": null
+    },
+    {
+      "name": "Emir",
+      "place_id": null,
+      "lat": -31.4000566,
+      "lng": -64.1875067,
+      "category": "restaurante",
+      "cuisine": "árabe",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina árabe del barrio Cofico, un clásico de la colectividad siria-libanesa cordobesa.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4000566,-64.1875067",
+      "distinction": null
+    },
+    {
+      "name": "La Zete",
+      "place_id": null,
+      "lat": -31.4249742,
+      "lng": -64.1818663,
+      "category": "restaurante",
+      "cuisine": "árabe",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Restaurante árabe nacido en 1992 sobre la calle Obispo Salguero, distinguido como Leyenda Gastronómica de Córdoba.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4249742,-64.1818663",
+      "distinction": null
+    },
+    {
+      "name": "El Celta",
+      "place_id": null,
+      "lat": -31.3986544,
+      "lng": -64.1806699,
+      "category": "restaurante",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de pescados y mariscos del barrio Alta Córdoba, abierto desde 2001.",
+      "source_url": "https://circuitogastronomico.com/los-mejores-restaurantes-clasicos-de-cordoba/",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3986544,-64.1806699",
+      "distinction": null
+    },
+    {
+      "name": "República Restaurant",
+      "place_id": null,
+      "lat": -31.3528269,
+      "lng": -64.2483143,
+      "category": "fine_dining",
+      "cuisine": "cocina de autor",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante de autor en Villa Belgrano a cargo del chef Federico Ernst, con menús de degustación de 6 a 10 pasos centrados en productos de las sierras cordobesas, como empanadas al horno con chutney de chañar.",
+      "source_url": "https://foodandtravel.com/travel/gourmet-traveller/gourmet-traveller-c%C3%B3rdoba-argentina",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3528269,-64.2483143",
+      "distinction": null
+    },
+    {
+      "name": "El Club del Fernet",
+      "place_id": null,
+      "lat": -31.4270574,
+      "lng": -64.1831134,
+      "category": "bar",
+      "cuisine": "fernet / coctelería",
+      "tags": [],
+      "description": "Bar de Nueva Córdoba dedicado por completo al fernet, la bebida insignia de la ciudad, con etiquetado personalizado de botellas para clientes habitués.",
+      "source_url": "https://www.xtremefoodies.com/latin-america/C%C3%B3rdoba%20(Argentina)/review/El-Club-del-Fernet/Fernet/8417_8658",
+      "source_type": null,
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4270574,-64.1831134",
+      "distinction": null
+    },
+    {
+      "name": "Hugo",
+      "place_id": null,
+      "lat": -31.4251094,
+      "lng": -64.1926334,
+      "category": "bar",
+      "cuisine": "vinos y coctelería",
+      "tags": [],
+      "description": "Bar de vinos y coctelería del barrio Güemes con estética años 70, parte de la nueva movida gastronómica cordobesa de 2025.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4251094,-64.1926334",
+      "distinction": null
+    },
+    {
+      "name": "Archi Classic Bar",
+      "place_id": null,
+      "lat": -31.4243133,
+      "lng": -64.1914411,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [],
+      "description": "Coctelería clásica y moderna de la Galería Barrio en Güemes, sucesora del histórico bar de gin La Gintonería.",
+      "source_url": "https://www.perfil.com/noticias/cordoba/la-gintoneria-se-transforma-en-archi-la-nueva-apuesta-de-sebastian-gullo.phtml",
+      "source_type": null,
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4243133,-64.1914411",
+      "distinction": null
+    },
+    {
+      "name": "Miski Mikuy",
+      "place_id": null,
+      "lat": -31.3960958,
+      "lng": -64.1763268,
+      "category": "restaurante",
+      "cuisine": "peruano",
+      "tags": [],
+      "description": "Restaurante de cocina peruana en el barrio Alta Córdoba, especializado en ceviches y platos de la costa.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3960958,-64.1763268",
+      "distinction": null
+    },
+    {
+      "name": "Chulo",
+      "place_id": null,
+      "lat": -31.3903124,
+      "lng": -64.1851592,
+      "category": "restaurante",
+      "cuisine": "pizza napolitana / street food",
+      "tags": [],
+      "description": "Pizzería napolitana y street food en el barrio Alta Córdoba, parte de la nueva camada de aperturas gastronómicas de la ciudad.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3903124,-64.1851592",
+      "distinction": null
+    },
+    {
+      "name": "Casa Simona",
+      "place_id": null,
+      "lat": -31.3898354,
+      "lng": -64.1828348,
+      "category": "restaurante",
+      "cuisine": "español / tapas",
+      "tags": [],
+      "description": "Restaurante de tapas españolas en el barrio Alta Córdoba, con propuesta de coctelería y platos para compartir.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.3898354,-64.1828348",
+      "distinction": null
+    },
+    {
+      "name": "Achalay!",
+      "place_id": null,
+      "lat": -31.4144896,
+      "lng": -64.1648662,
+      "category": "restaurante",
+      "cuisine": "salteño / norteño",
+      "tags": [],
+      "description": "Restaurante de cocina salteña y folclórica en el barrio General Paz, con noches de peña y comidas típicas del norte argentino.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4144896,-64.1648662",
+      "distinction": null
+    },
+    {
+      "name": "Fanfarrón",
+      "place_id": null,
+      "lat": -31.4254623,
+      "lng": -64.1919974,
+      "category": "bar",
+      "cuisine": "argentino / bodegón",
+      "tags": [],
+      "description": "Bodegón del barrio Güemes con clásicos de la cocina argentina en formato de bar de barrio.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4254623,-64.1919974",
+      "distinction": null
+    },
+    {
+      "name": "Cherry Season",
+      "place_id": null,
+      "lat": -31.4225499,
+      "lng": -64.1875836,
+      "category": "cafeteria",
+      "cuisine": "café / pastelería",
+      "tags": [],
+      "description": "Café de especialidad y pastelería del barrio Nueva Córdoba, con propuesta de brunch y repostería de autor.",
+      "source_url": "https://circuitogastronomico.com/nuevos-bares-restaurantes-cordoba-2025/",
+      "source_type": null,
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-31.4225499,-64.1875836",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

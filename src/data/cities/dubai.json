@@ -3,7 +3,7 @@
   "name": "Dubái",
   "country": "Emiratos Árabes Unidos",
   "tagline": "El primer tres estrellas Michelin de Dubái, y el kebab persa donde comen los chefs en sus días libres.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,687 @@
         "type": "michelin_star",
         "count": 2
       }
+    },
+    {
+      "name": "Hakkasan Dubai",
+      "place_id": null,
+      "lat": 25.130577,
+      "lng": 55.117179,
+      "category": "fine_dining",
+      "cuisine": "cantonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cadena de alta cocina cantonesa nacida en Londres; su sede en Atlantis The Palm tiene una estrella Michelin en la guía de Dubái.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/hakkasan-516107",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.130577,55.117179",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ossiano",
+      "place_id": null,
+      "lat": 25.1301,
+      "lng": 55.1176,
+      "category": "fine_dining",
+      "cuisine": "mariscos",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante submarino de Atlantis The Palm con vistas al acuario Ambassador Lagoon de 65.000 animales marinos; una estrella Michelin por su menú degustación de mariscos.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/ossiano",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1301,55.1176",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Al Muntaha",
+      "place_id": null,
+      "lat": 25.1412,
+      "lng": 55.1852,
+      "category": "fine_dining",
+      "cuisine": "francés / italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "En la planta 27 del Burj Al Arab, cocina franco-italiana de altura con vistas a Palm Jumeirah; una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/ae-az/en/dubai-emirate/dubai/restaurant/al-muntaha",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1412,55.1852",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Torno Subito",
+      "place_id": null,
+      "lat": 25.1122,
+      "lng": 55.1385,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Primer restaurante de Massimo Bottura fuera de Italia, en el W Dubai - The Palm; cocina italiana desenfadada inspirada en la Riviera de su infancia. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1122,55.1385",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "11 Woodfire",
+      "place_id": null,
+      "lat": 25.2082,
+      "lng": 55.2535,
+      "category": "fine_dining",
+      "cuisine": "brasa / internacional",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina a la brasa del chef Akmal Anuar en una villa reconvertida de Jumeirah 1, todo cocinado sobre roble, nogal o heno; una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/11-woodfire",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2082,55.2535",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Smoked Room",
+      "place_id": null,
+      "lat": 25.1143,
+      "lng": 55.1385,
+      "category": "fine_dining",
+      "cuisine": "brasa española",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sala de solo 14 asientos del chef español Dani García en St Regis Gardens, Palm Jumeirah, centrada en cocina al fuego y ahumados; logró su estrella Michelin a los seis meses de abrir.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/smoked-room-1212350",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1143,55.1385",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "La Dame de Pic Dubai",
+      "place_id": null,
+      "lat": 25.2256,
+      "lng": 55.3086,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Primera aventura en Dubái de Anne-Sophie Pic, la chef con más estrellas Michelin del mundo, en la planta 25 de One&Only One Za'abeel. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/ae-du/en/dubai-emirate/dubai/restaurant/la-dame-de-pic-dubai",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2256,55.3086",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Orfali Bros Bistro",
+      "place_id": null,
+      "lat": 25.2033,
+      "lng": 55.256,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo / sirio",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Bistró de los tres hermanos sirios Orfali, cocina mediterránea de autor con guiños globales; una estrella Michelin y número 1 en la lista 50 Best de Oriente Medio y Norte de África 2025.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/orfali-bros",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2033,55.256",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "3Fils",
+      "place_id": null,
+      "lat": 25.2065,
+      "lng": 55.2437,
+      "category": "restaurante",
+      "cuisine": "asiática / mariscos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Rincón junto al puerto pesquero de Jumeirah con barra de sushi y cocina asiática desenfadada frente al agua; distinción Bib Gourmand de la guía Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2065,55.2437",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Bait Maryam",
+      "place_id": null,
+      "lat": 25.0693,
+      "lng": 55.1414,
+      "category": "restaurante",
+      "cuisine": "levantino / palestino",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina levantina casera de la chef Salam Dakkak en Jumeirah Lake Towers, dedicada a su madre Maryam; distinción Bib Gourmand.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.0693,55.1414",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Al Khayma Heritage Restaurant",
+      "place_id": null,
+      "lat": 25.2626,
+      "lng": 55.2972,
+      "category": "restaurante",
+      "cuisine": "emiratí",
+      "tags": [
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Restaurante-museo en el barrio histórico de Al Fahidi que sirve platos emiratíes tradicionales como el machboos en un patio con música en vivo; distinción Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/sg/en/dubai-emirate/dubai/restaurant/al-khayma",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2626,55.2972",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Kinoya",
+      "place_id": null,
+      "lat": 25.0917,
+      "lng": 55.1655,
+      "category": "restaurante",
+      "cuisine": "japonés (ramen)",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Barra de ramen e izakaya japonesa en Sheikh Zayed Road, nombrada mejor restaurante de EAU en la lista 50 Best de Oriente Medio; distinción Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/ae-az/en/dubai-emirate/dubai/restaurant/kinoya",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.0917,55.1655",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Reif Japanese Kushiyaki",
+      "place_id": null,
+      "lat": 25.1063,
+      "lng": 55.241,
+      "category": "restaurante",
+      "cuisine": "japonés (kushiyaki)",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Especialistas en kushiyaki, brochetas japonesas a la parrilla, con su segunda sede en Dubai Hills; distinción Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/ae-az/en/dubai-emirate/dubai/restaurant/reif-japanese-kushiyaki-dubai-hills",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1063,55.241",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Berenjak Dubai",
+      "place_id": null,
+      "lat": 25.1898,
+      "lng": 55.2386,
+      "category": "restaurante",
+      "cuisine": "persa",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Filial del kababi persa londinense en Dar Wasl Mall, con mezze y brochetas a la brasa a precios accesibles; distinción Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/en/dubai-emirate/dubai/restaurant/berenjak-1211855",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1898,55.2386",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Ibn AlBahr",
+      "place_id": null,
+      "lat": 25.2385,
+      "lng": 55.334,
+      "category": "restaurante",
+      "cuisine": "libanés / mariscos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Marisquería libanesa de propiedad de pescadores junto al Dubai Creek Golf & Yacht Club; distinción Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/ae-du/en/dubai-emirate/dubai/restaurant/ibn-albahr",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2385,55.334",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Bu Qtair",
+      "place_id": null,
+      "lat": 25.1477,
+      "lng": 55.1985,
+      "category": "fast_food",
+      "cuisine": "mariscos",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Chiringuito de pescado sin lujos en Umm Suqeim donde se elige el pescado fresco y se fríe al momento; visitado por Anthony Bourdain en su especial de Dubái.",
+      "source_url": "https://lovin.co/dubai/en/feature/anthony-bourdain-dubai/",
+      "source_type": "bourdain",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1477,55.1985",
+      "distinction": null
+    },
+    {
+      "name": "Al Fanar Restaurant & Cafe",
+      "place_id": null,
+      "lat": 25.2637,
+      "lng": 55.3005,
+      "category": "restaurante",
+      "cuisine": "emiratí",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de cocina emiratí patrimonial; su sede en el Al Seef Heritage Village, junto al Dubai Creek, recrea el ambiente del Dubái de los años 50. Incluida en la guía Michelin de Dubái.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/al-fanar",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2637,55.3005",
+      "distinction": null
+    },
+    {
+      "name": "Aroos Damascus",
+      "place_id": null,
+      "lat": 25.2664,
+      "lng": 55.3255,
+      "category": "restaurante",
+      "cuisine": "sirio",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución siria en el corazón de Deira desde hace décadas, con una fachada que ocupa casi una manzana entera de Al Muraqqabat Road.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2664,55.3255",
+      "distinction": null
+    },
+    {
+      "name": "Karachi Darbar",
+      "place_id": null,
+      "lat": 25.2497,
+      "lng": 55.3037,
+      "category": "fast_food",
+      "cuisine": "pakistaní",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena paquistaní familiar en Al Karama desde 1973, famosa por sus tikkas, biryanis y karahis a precios populares.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2497,55.3037",
+      "distinction": null
+    },
+    {
+      "name": "Saravanaa Bhavan",
+      "place_id": null,
+      "lat": 25.2523,
+      "lng": 55.3049,
+      "category": "restaurante",
+      "cuisine": "indio (vegetariano, sur de India)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Filial de la cadena vegetariana del sur de la India fundada en 1981, referencia de dosas e ídlis en el barrio de Al Karama.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2523,55.3049",
+      "distinction": null
+    },
+    {
+      "name": "Arabian Tea House",
+      "place_id": null,
+      "lat": 25.2634,
+      "lng": 55.2969,
+      "category": "cafeteria",
+      "cuisine": "emiratí / cafetería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café instalado en una casa restaurada de comerciantes de perlas en el barrio histórico de Al Fahidi (Bastakiya), con té árabe y desayunos tradicionales bajo un patio con torres de viento.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2634,55.2969",
+      "distinction": null
+    },
+    {
+      "name": "Ashwaq Cafeteria",
+      "place_id": null,
+      "lat": 25.2701,
+      "lng": 55.2968,
+      "category": "fast_food",
+      "cuisine": "libanés / shawarma",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de shawarma sin pretensiones a pocas calles del zoco de oro de Deira, recomendado por Lonely Planet por su pollo shawarma y sus zumos frescos.",
+      "source_url": "https://www.lonelyplanet.com/united-arab-emirates/dubai/deira/restaurants/ashwaq-cafeteria/a/poi-eat/1020785/1336050",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2701,55.2968",
+      "distinction": null
+    },
+    {
+      "name": "Zaroob",
+      "place_id": null,
+      "lat": 25.2225,
+      "lng": 55.2803,
+      "category": "fast_food",
+      "cuisine": "levantino / callejero",
+      "tags": [
+        "timeout",
+        "clasico"
+      ],
+      "description": "Cadena de comida callejera levantina abierta las 24 horas, nacida en Dubái en 2010; conocida por su fateer y su shawarma de madrugada.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/zaroob-2",
+      "source_type": "timeout",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2225,55.2803",
+      "distinction": null
+    },
+    {
+      "name": "XVA Café",
+      "place_id": null,
+      "lat": 25.2632,
+      "lng": 55.2967,
+      "category": "cafeteria",
+      "cuisine": "vegetariano / internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café vegetariano dentro del XVA Art Hotel, una casa de torres de viento tradicional convertida en galería de arte en pleno Bastakiya.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2632,55.2967",
+      "distinction": null
+    },
+    {
+      "name": "Zuma Dubai",
+      "place_id": null,
+      "lat": 25.2138,
+      "lng": 55.2783,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "critico",
+        "timeout"
+      ],
+      "description": "Filial del grupo japonés contemporáneo fundado en Londres, con barra de robata e izakaya en el DIFC; una de las mesas más difíciles de conseguir en la ciudad.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/zuma",
+      "source_type": "timeout",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2138,55.2783",
+      "distinction": null
+    },
+    {
+      "name": "La Petite Maison Dubai",
+      "place_id": null,
+      "lat": 25.2131,
+      "lng": 55.2789,
+      "category": "fine_dining",
+      "cuisine": "francés / mediterráneo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Sede en Gate Village, DIFC, del grupo francomediterráneo LPM, célebre por su tarte fine de tomate y su clientela de alto perfil.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/lpm",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2131,55.2789",
+      "distinction": null
+    },
+    {
+      "name": "Nobu Dubai",
+      "place_id": null,
+      "lat": 25.1304,
+      "lng": 55.1173,
+      "category": "fine_dining",
+      "cuisine": "japonés-peruano",
+      "tags": [
+        "critico"
+      ],
+      "description": "En la planta 22 de Atlantis The Palm; cocina japonesa-peruana de Nobu Matsuhisa con vistas a Palm Jumeirah.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/nobu-1200019",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1304,55.1173",
+      "distinction": null
+    },
+    {
+      "name": "Pierchic",
+      "place_id": null,
+      "lat": 25.133,
+      "lng": 55.1868,
+      "category": "fine_dining",
+      "cuisine": "mariscos / mediterráneo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Al final de un muelle privado en Madinat Jumeirah, con vistas al Burj Al Arab; especializado en mariscos y cocina mediterránea.",
+      "source_url": "https://guide.michelin.com/us/en/dubai-emirate/dubai/restaurant/pierchic",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.133,55.1868",
+      "distinction": null
+    },
+    {
+      "name": "Pai Thai",
+      "place_id": null,
+      "lat": 25.1349,
+      "lng": 55.1848,
+      "category": "restaurante",
+      "cuisine": "tailandés",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante tailandés al que se llega en abra por los canales de Madinat Jumeirah; elegido mejor restaurante del sudeste asiático por Time Out Dubái varios años seguidos.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/pai-thai",
+      "source_type": "timeout",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1349,55.1848",
+      "distinction": null
+    },
+    {
+      "name": "Salt",
+      "place_id": null,
+      "lat": 25.1517,
+      "lng": 55.1949,
+      "category": "fast_food",
+      "cuisine": "hamburguesas",
+      "tags": [
+        "timeout",
+        "clasico"
+      ],
+      "description": "Food truck de hamburguesas gourmet lanzado en 2014 que popularizó el concepto #FindSalt en redes sociales; hoy tiene sede fija en Kite Beach.",
+      "source_url": "https://www.thenationalnews.com/lifestyle/2024/05/20/salt-burger-london-fake/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1517,55.1949",
+      "distinction": null
+    },
+    {
+      "name": "Ninive",
+      "place_id": null,
+      "lat": 25.2178,
+      "lng": 55.2822,
+      "category": "restaurante",
+      "cuisine": "oriente medio",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante de Oriente Medio con ambiente de jaima junto a las Emirates Towers, conocido por su pollo al tamarindo y su tagine de langosta.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/ninive",
+      "source_type": "timeout",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2178,55.2822",
+      "distinction": null
+    },
+    {
+      "name": "COYA Dubai",
+      "place_id": null,
+      "lat": 25.1987,
+      "lng": 55.2472,
+      "category": "fine_dining",
+      "cuisine": "peruano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Filial del grupo peruano nacido en Londres, en el Four Seasons de Jumeirah Beach, con ceviches, pisco sours y ambiente de fiesta.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/coya",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1987,55.2472",
+      "distinction": null
+    },
+    {
+      "name": "Logma",
+      "place_id": null,
+      "lat": 25.1985,
+      "lng": 55.2803,
+      "category": "restaurante",
+      "cuisine": "emiratí",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cadena que reinventa la comida callejera y de la infancia emiratí, como el jareesh o el luqaimat, en formato casual dentro de The Dubai Mall.",
+      "source_url": "https://www.timeoutdubai.com/restaurants/logma-in-downtown-dubai",
+      "source_type": "timeout",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.1985,55.2803",
+      "distinction": null
+    },
+    {
+      "name": "Calicut Paragon",
+      "place_id": null,
+      "lat": 25.2513,
+      "lng": 55.3025,
+      "category": "restaurante",
+      "cuisine": "indio (Kerala)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Filial del grupo fundado en Calicut, Kerala, en 1939; referencia de cocina del sur de la India en el barrio de Al Karama.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2513,55.3025",
+      "distinction": null
+    },
+    {
+      "name": "Fix Dessert Chocolatier",
+      "place_id": null,
+      "lat": 25.2532,
+      "lng": 55.3657,
+      "category": "postres",
+      "cuisine": "postres / chocolatería",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Marca de Dubái que creó en 2021 la barra de chocolate con pistacho y kataifi que se hizo viral mundialmente en 2023 tras un vídeo de TikTok; hoy también disponible en el aeropuerto de Dubái (Terminal 3).",
+      "source_url": "https://www.timeoutdubai.com/food-drink/viral-dubai-chocolate-fix-dessert",
+      "source_type": "viral_social",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.2532,55.3657",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

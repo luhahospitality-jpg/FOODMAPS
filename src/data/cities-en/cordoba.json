@@ -22,6 +22,146 @@
     "La Emilia": {
       "cuisine": "Argentine",
       "description": "An upscale, relaxed steakhouse in the Ecodistrito de las Artes, with the city's best cuts."
+    },
+    "Confitería La Oriental": {
+      "cuisine": "Café / patisserie",
+      "description": "A confectionery founded in 1863, the oldest in Córdoba's capital, located on the 9 de Julio pedestrian walk in the historic center."
+    },
+    "Sorocabana": {
+      "cuisine": "Café",
+      "description": "An emblematic café on San Jerónimo street facing Plaza San Martín, open since 1956 and a historic haunt for writers and journalists such as Daniel Salzano."
+    },
+    "La City Bar": {
+      "cuisine": "Bar / café",
+      "description": "A corner bar on 25 de Mayo street next to the Iglesia de la Merced, a meeting point since 1970 for journalists, bank workers and downtown regulars."
+    },
+    "Café de la Plaza": {
+      "cuisine": "Café",
+      "description": "A neighborhood café in Alta Córdoba operating since 1930, declared a Site of Cultural Interest by the city council in 2017."
+    },
+    "Marvic": {
+      "cuisine": "Ice cream shop / bakery-café",
+      "description": "An ice cream shop, bakery-café and restaurant facing Plaza Jerónimo del Barco in Alto Alberdi, a neighborhood classic with more than three decades of history."
+    },
+    "Los Cubanitos": {
+      "cuisine": "Bakery-café",
+      "description": "A neighborhood bakery-café open since 1953, known for its \"cubanitos\", the classic rolled pastry filled with dulce de leche."
+    },
+    "Bron Café de Especialidad": {
+      "cuisine": "Specialty coffee",
+      "description": "A specialty coffee shop in the Güemes neighborhood, part of the new wave of Córdoba cafés focused on bean origin and roasting."
+    },
+    "Mercado Norte": {
+      "cuisine": null,
+      "description": "A municipal market inaugurated in 1928 in the city center, declared a Provincial Historic Monument in 1972; it houses butcher stalls, produce stands, regional sweets and quick eats."
+    },
+    "El Ruedo": {
+      "cuisine": "Argentine / steakhouse",
+      "description": "A steakhouse in the historic center with more than 50 years of history, an old-school classic on the corner of Obispo Trejo."
+    },
+    "Los Cabritos": {
+      "cuisine": "Creole / roast kid goat",
+      "description": "A family restaurant operating since 1976, specializing in roast kid goat from the Córdoba hills and homemade pastas."
+    },
+    "Don Rogelio": {
+      "cuisine": "Argentine / steakhouse",
+      "description": "A classic steakhouse in the Rogelio Martínez neighborhood marking 30 years in business, serving traditional cuts with neighborhood-style service."
+    },
+    "La Casona de Alem": {
+      "cuisine": "Argentine / steakhouse",
+      "description": "A classic steakhouse in the General Bustos neighborhood with more than two decades of grilled meats, set in a converted old house."
+    },
+    "Argentum": {
+      "cuisine": "Argentine / steakhouse",
+      "description": "A steakhouse in the Poeta Lugones neighborhood voted best parrilla in the city in 2018 and 2019, serving wood-fire grilled cuts, empanadas and locro."
+    },
+    "IDA restaurant-bar": {
+      "cuisine": "Argentine / gourmet grill",
+      "description": "A restaurant-bar in Villa Belgrano offering a gourmet take on the grill, adding fish and salmon to the classic meat menu."
+    },
+    "Matorral Parrilla": {
+      "cuisine": "Argentine / steakhouse",
+      "description": "A steakhouse in Cerro de las Rosas focused on product traceability and premium cuts from selected cattle."
+    },
+    "Ta Locro": {
+      "cuisine": "Argentine / regional",
+      "description": "A restaurant in the Pueyrredón neighborhood specializing in locro and other regional dishes, alongside grilled meats."
+    },
+    "Lago Di Garda": {
+      "cuisine": "Italian",
+      "description": "An Italian restaurant in the city center operating since 1959, a historic reference point for Italian cooking in Córdoba."
+    },
+    "Estación 27": {
+      "cuisine": "Lomitos (steak sandwiches) / diner food",
+      "description": "A lomito (steak sandwich) and diner-food spot in the historic center, open since 1991 on 27 de Abril street."
+    },
+    "Lomitos 348": {
+      "cuisine": "Lomitos (steak sandwiches)",
+      "description": "A lomito shop in the Alberdi neighborhood founded in 1974, considered a must-try reference for the Córdoba-style steak sandwich."
+    },
+    "Junior B": {
+      "cuisine": "Lomitos (steak sandwiches)",
+      "description": "A Córdoba lomito chain born in 1999 in Nueva Córdoba, hugely popular with students for its generous portions."
+    },
+    "Pierino": {
+      "cuisine": "Pizza",
+      "description": "A neighborhood pizzeria open since 2002, known for its stone-baked, Córdoba-style pizzas."
+    },
+    "Pizzería Don Luis": {
+      "cuisine": "Pizza",
+      "description": "A downtown pizzeria founded in 1952, voted Córdoba's best pizzeria for 2024-2025."
+    },
+    "Emir": {
+      "cuisine": "Middle Eastern (Lebanese-Syrian)",
+      "description": "A Middle Eastern restaurant in the Cofico neighborhood, a classic of Córdoba's Syrian-Lebanese community."
+    },
+    "La Zete": {
+      "cuisine": "Middle Eastern (Lebanese-Syrian)",
+      "description": "A Middle Eastern restaurant born in 1992 on Obispo Salguero street, honored as a Gastronomic Legend of Córdoba."
+    },
+    "El Celta": {
+      "cuisine": "Seafood",
+      "description": "A seafood restaurant in the Alta Córdoba neighborhood, open since 2001."
+    },
+    "República Restaurant": {
+      "cuisine": "Contemporary tasting-menu cuisine",
+      "description": "A chef-driven restaurant in Villa Belgrano led by chef Federico Ernst, offering 6- to 10-course tasting menus built around Córdoba hill-country produce, including oven-baked empanadas with chañar chutney."
+    },
+    "El Club del Fernet": {
+      "cuisine": "Fernet bar / cocktails",
+      "description": "A bar in Nueva Córdoba devoted entirely to fernet, the city's signature drink, with personalized bottle labeling for regulars."
+    },
+    "Hugo": {
+      "cuisine": "Wine bar / cocktails",
+      "description": "A wine and cocktail bar in the Güemes neighborhood with 1970s-style decor, part of Córdoba's 2025 wave of new openings."
+    },
+    "Archi Classic Bar": {
+      "cuisine": "Cocktail bar",
+      "description": "A classic-meets-modern cocktail bar in the Galería Barrio complex in Güemes, successor to the long-running gin bar La Gintonería."
+    },
+    "Miski Mikuy": {
+      "cuisine": "Peruvian",
+      "description": "A Peruvian restaurant in the Alta Córdoba neighborhood, specializing in ceviche and coastal dishes."
+    },
+    "Chulo": {
+      "cuisine": "Neapolitan pizza / street food",
+      "description": "A Neapolitan pizza and street-food spot in the Alta Córdoba neighborhood, part of the city's newest wave of openings."
+    },
+    "Casa Simona": {
+      "cuisine": "Spanish / tapas",
+      "description": "A Spanish tapas restaurant in the Alta Córdoba neighborhood, with a cocktail list and dishes made for sharing."
+    },
+    "Achalay!": {
+      "cuisine": "Salteño / northern Argentine",
+      "description": "A restaurant serving Salta-style, folk-inflected cooking in the General Paz neighborhood, with peña nights and dishes typical of northern Argentina."
+    },
+    "Fanfarrón": {
+      "cuisine": "Argentine / neighborhood diner",
+      "description": "A neighborhood bodegón in Güemes serving Argentine comfort-food classics in a casual bar setting."
+    },
+    "Cherry Season": {
+      "cuisine": "Café / pastry",
+      "description": "A specialty coffee and pastry shop in Nueva Córdoba, offering brunch and signature baked goods."
     }
   }
 }

@@ -22,6 +22,146 @@
     "STAY by Yannick Alléno": {
       "cuisine": "French",
       "description": "Contemporary French cuisine inside the One&Only The Palm, with a dining room of black crystal chandeliers. Two Michelin stars, reviewed by critic Saeed Saeed for The National."
+    },
+    "Hakkasan Dubai": {
+      "cuisine": "Cantonese",
+      "description": "London-born Cantonese fine-dining group; its Atlantis The Palm outpost holds one Michelin star in the Dubai guide."
+    },
+    "Ossiano": {
+      "cuisine": "Seafood",
+      "description": "Underwater restaurant at Atlantis The Palm overlooking the 65,000-creature Ambassador Lagoon aquarium; one Michelin star for its seafood tasting menu."
+    },
+    "Al Muntaha": {
+      "cuisine": "French / Italian",
+      "description": "On the 27th floor of the Burj Al Arab, elevated French-Italian cuisine with views over Palm Jumeirah; one Michelin star."
+    },
+    "Torno Subito": {
+      "cuisine": "Italian",
+      "description": "Massimo Bottura's first restaurant outside Italy, at W Dubai - The Palm; playful Italian cooking inspired by his Riviera childhood. One Michelin star."
+    },
+    "11 Woodfire": {
+      "cuisine": "Live-fire / International",
+      "description": "Live-fire cooking by chef Akmal Anuar in a converted Jumeirah 1 villa, everything grilled over oak, hickory or hay; one Michelin star."
+    },
+    "Smoked Room": {
+      "cuisine": "Spanish fire cooking",
+      "description": "A 14-seat room by Spanish chef Dani García at St Regis Gardens, Palm Jumeirah, built around fire cooking and smoke; earned a Michelin star just six months after opening."
+    },
+    "La Dame de Pic Dubai": {
+      "cuisine": "French",
+      "description": "Anne-Sophie Pic's first Dubai venture, the world's most Michelin-starred female chef, on the 25th floor of One&Only One Za'abeel. One Michelin star."
+    },
+    "Orfali Bros Bistro": {
+      "cuisine": "Mediterranean / Syrian",
+      "description": "Bistro run by the three Syrian Orfali brothers, playful Mediterranean cooking with global influences; one Michelin star and No. 1 on the 2025 MENA's 50 Best Restaurants list."
+    },
+    "3Fils": {
+      "cuisine": "Asian / Seafood",
+      "description": "A spot by the Jumeirah Fishing Harbour with a sushi counter and relaxed Asian-inspired cooking over the water; Michelin Bib Gourmand distinction."
+    },
+    "Bait Maryam": {
+      "cuisine": "Levantine / Palestinian",
+      "description": "Home-style Levantine cooking by chef Salam Dakkak in Jumeirah Lake Towers, dedicated to her mother Maryam; Michelin Bib Gourmand distinction."
+    },
+    "Al Khayma Heritage Restaurant": {
+      "cuisine": "Emirati",
+      "description": "A restaurant-museum in the historic Al Fahidi district serving traditional Emirati dishes like machboos in a courtyard with live music; Michelin Bib Gourmand distinction."
+    },
+    "Kinoya": {
+      "cuisine": "Japanese (ramen)",
+      "description": "A Japanese ramen and izakaya counter on Sheikh Zayed Road, named the UAE's best restaurant on the MENA's 50 Best list; Michelin Bib Gourmand distinction."
+    },
+    "Reif Japanese Kushiyaki": {
+      "cuisine": "Japanese (kushiyaki)",
+      "description": "Specialists in kushiyaki, grilled Japanese skewers, with a second branch in Dubai Hills; Michelin Bib Gourmand distinction."
+    },
+    "Berenjak Dubai": {
+      "cuisine": "Persian",
+      "description": "An outpost of the London Persian kababi at Dar Wasl Mall, with charcoal-grilled kebabs and mezze at accessible prices; Michelin Bib Gourmand distinction."
+    },
+    "Ibn AlBahr": {
+      "cuisine": "Lebanese / Seafood",
+      "description": "A fisherman-owned Lebanese seafood restaurant by the Dubai Creek Golf & Yacht Club; Michelin Bib Gourmand distinction."
+    },
+    "Bu Qtair": {
+      "cuisine": "Seafood",
+      "description": "A no-frills fish shack in Umm Suqeim where you pick your fresh catch and it's fried on the spot; visited by Anthony Bourdain in his Dubai special."
+    },
+    "Al Fanar Restaurant & Cafe": {
+      "cuisine": "Emirati",
+      "description": "A heritage Emirati restaurant group; its outpost at Al Seef Heritage Village on Dubai Creek recreates 1950s Dubai. Featured in the Michelin Guide Dubai."
+    },
+    "Aroos Damascus": {
+      "cuisine": "Syrian",
+      "description": "A decades-old Syrian institution in the heart of Deira, its façade taking up almost an entire block of Al Muraqqabat Road."
+    },
+    "Karachi Darbar": {
+      "cuisine": "Pakistani",
+      "description": "A family-run Pakistani chain in Al Karama since 1973, known for its tikkas, biryanis and karahis at wallet-friendly prices."
+    },
+    "Saravanaa Bhavan": {
+      "cuisine": "Indian (South Indian vegetarian)",
+      "description": "An outpost of the South Indian vegetarian chain founded in 1981, a go-to for dosas and idlis in the Karama neighborhood."
+    },
+    "Arabian Tea House": {
+      "cuisine": "Emirati / café",
+      "description": "A café set in a restored pearl trader's house in the historic Al Fahidi (Bastakiya) district, serving Arabic tea and traditional breakfasts in a courtyard beneath wind towers."
+    },
+    "Ashwaq Cafeteria": {
+      "cuisine": "Lebanese / shawarma",
+      "description": "An unpretentious shawarma stall a few blocks from the Deira Gold Souk, recommended by Lonely Planet for its chicken shawarma and fresh juices."
+    },
+    "Zaroob": {
+      "cuisine": "Levantine / street food",
+      "description": "A 24-hour Levantine street-food chain born in Dubai in 2010; known for its fateer and late-night shawarma."
+    },
+    "XVA Café": {
+      "cuisine": "Vegetarian / international",
+      "description": "A vegetarian café inside the XVA Art Hotel, a traditional windtower house turned art gallery in the heart of Bastakiya."
+    },
+    "Zuma Dubai": {
+      "cuisine": "Japanese",
+      "description": "An outpost of the London-born contemporary Japanese group, with a robata grill and izakaya-style dining in DIFC; one of the city's hardest tables to book."
+    },
+    "La Petite Maison Dubai": {
+      "cuisine": "French / Mediterranean",
+      "description": "The DIFC Gate Village outpost of the French-Mediterranean LPM group, famous for its tarte fine and high-profile clientele."
+    },
+    "Nobu Dubai": {
+      "cuisine": "Japanese-Peruvian",
+      "description": "On the 22nd floor of Atlantis The Palm; Nobu Matsuhisa's Japanese-Peruvian cuisine with views over Palm Jumeirah."
+    },
+    "Pierchic": {
+      "cuisine": "Seafood / Mediterranean",
+      "description": "At the end of a private pier at Madinat Jumeirah, with views of the Burj Al Arab; specializing in seafood and Mediterranean cuisine."
+    },
+    "Pai Thai": {
+      "cuisine": "Thai",
+      "description": "A Thai restaurant reached by traditional abra boat through the canals of Madinat Jumeirah; named Time Out Dubai's best Southeast Asian restaurant several years running."
+    },
+    "Salt": {
+      "cuisine": "Burgers",
+      "description": "A gourmet-burger food truck launched in 2014 that popularized the #FindSalt social-media treasure hunt; now permanently parked at Kite Beach."
+    },
+    "Ninive": {
+      "cuisine": "Middle Eastern",
+      "description": "A Middle Eastern restaurant styled like an Arabian tent by the Emirates Towers, known for its tamarind chicken and lobster tagine."
+    },
+    "COYA Dubai": {
+      "cuisine": "Peruvian",
+      "description": "An outpost of the London-born Peruvian group, at the Four Seasons on Jumeirah Beach, with ceviches, pisco sours and a party atmosphere."
+    },
+    "Logma": {
+      "cuisine": "Emirati",
+      "description": "A chain reinventing Emirati street and childhood food, like jareesh or luqaimat, in a casual format inside The Dubai Mall."
+    },
+    "Calicut Paragon": {
+      "cuisine": "Indian (Kerala)",
+      "description": "An outpost of the group founded in Calicut, Kerala, in 1939; a go-to for South Indian cooking in the Karama neighborhood."
+    },
+    "Fix Dessert Chocolatier": {
+      "cuisine": "Desserts / chocolate",
+      "description": "The Dubai brand that created the pistachio-and-kataifi chocolate bar in 2021, which went globally viral in 2023 after a TikTok video; now also sold at Dubai Airport (Terminal 3)."
     }
   }
 }
