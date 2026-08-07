@@ -3,7 +3,7 @@
   "name": "Chicago",
   "country": "Estados Unidos",
   "tagline": "El edificio donde nació la pizza deep dish en 1943, y la gastronomía teatral que redefinió la alta cocina americana.",
-  "totalPlaces": 5,
+  "totalPlaces": 37,
   "mymaps_url": null,
   "places": [
     {
@@ -105,6 +105,578 @@
         "type": "michelin_bib_gourmand",
         "count": null
       }
+    },
+    {
+      "name": "Portillo's",
+      "place_id": null,
+      "lat": 41.8934608,
+      "lng": -87.6315143,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La sede insignia de la cadena que Dick Portillo abrió desde un remolque en 1963: hot dog estilo Chicago, Italian beef y chocolate cake shake en un edificio con aire de los años 30.",
+      "source_url": "https://www.portillos.com/",
+      "source_type": "classic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8934608,-87.6315143"
+    },
+    {
+      "name": "Al's #1 Italian Beef",
+      "place_id": null,
+      "lat": 41.8693169,
+      "lng": -87.6540015,
+      "category": "street_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico",
+        "tv_show"
+      ],
+      "description": "El santuario original del Italian beef en Little Italy desde 1938, con jugo que empapa el pan y protagonista habitual de rankings y programas de TV sobre sándwiches de Chicago.",
+      "source_url": "https://www.alsbeef.com/",
+      "source_type": "classic",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8693169,-87.6540015"
+    },
+    {
+      "name": "The Wieners Circle",
+      "place_id": null,
+      "lat": 41.9301525,
+      "lng": -87.6438688,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico",
+        "tv_show"
+      ],
+      "description": "El puesto de hot dogs de Lincoln Park desde 1983, famoso por el char dog al carbón y por el intercambio de insultos entre clientes y empleados que le valió su propio programa de TruTV en 2012.",
+      "source_url": "https://en.wikipedia.org/wiki/The_Wieners_Circle",
+      "source_type": "tv_show",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9301525,-87.6438688"
+    },
+    {
+      "name": "Superdawg Drive-In",
+      "place_id": null,
+      "lat": 41.9967817,
+      "lng": -87.7870379,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El autoservicio con dos perritos calientes gigantes de plástico en el techo, sirviendo el mismo hot dog estilo Chicago desde 1948 en la esquina de Milwaukee, Devon y Nagle.",
+      "source_url": "https://superdawg.com/history/",
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9967817,-87.7870379"
+    },
+    {
+      "name": "Girl & the Goat",
+      "place_id": null,
+      "lat": 41.8841108,
+      "lng": -87.6479388,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "La cocina audaz y de inspiración global de Stephanie Izard, primera mujer en ganar Top Chef, que le valió el premio James Beard a Mejor Chef de los Grandes Lagos en 2013.",
+      "source_url": "https://www.girlandthegoat.com/",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8841108,-87.6479388"
+    },
+    {
+      "name": "Au Cheval",
+      "place_id": null,
+      "lat": 41.8847068,
+      "lng": -87.6476011,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "La hamburguesa de queso del West Loop que Bon Appétit nombró la mejor de Estados Unidos en 2012, servida en un diner de neón que todavía hace fila hasta hoy.",
+      "source_url": "https://auchevalchicago.com/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8847068,-87.6476011"
+    },
+    {
+      "name": "Kuma's Corner",
+      "place_id": null,
+      "lat": 41.9395602,
+      "lng": -87.7004502,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El templo del heavy metal y las hamburguesas gourmet de Avondale, cuya Kuma Burger fue nombrada por la revista TIME una de las hamburguesas más influyentes de la historia en 2014.",
+      "source_url": "https://en.wikipedia.org/wiki/Kuma%27s_Corner",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9395602,-87.7004502"
+    },
+    {
+      "name": "The Purple Pig",
+      "place_id": null,
+      "lat": 41.8911749,
+      "lng": -87.6247097,
+      "category": "bar",
+      "cuisine": "mediterraneo",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Tapas mediterráneas centradas en el cerdo sobre la Magnificent Mile, con Bib Gourmand de la Guía Michelin desde 2011 y chef ganador del premio James Beard.",
+      "source_url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/the-purple-pig",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8911749,-87.6247097",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Frontera Grill",
+      "place_id": null,
+      "lat": 41.8905369,
+      "lng": -87.6309213,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante mexicano de Rick Bayless que ganó el premio más alto del James Beard Foundation, el de Restaurante Sobresaliente, en 2007.",
+      "source_url": "https://www.rickbayless.com/restaurants/frontera-grill/",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8905369,-87.6309213"
+    },
+    {
+      "name": "Topolobampo",
+      "place_id": null,
+      "lat": 41.8905369,
+      "lng": -87.6309213,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "La alta cocina mexicana de Rick Bayless junto a Frontera Grill, con estrella Michelin sostenida desde que la guía llegó a Chicago y el premio James Beard a Restaurante Sobresaliente en 2017.",
+      "source_url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/topolobampo",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8905369,-87.6309213",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Xoco",
+      "place_id": null,
+      "lat": 41.8906973,
+      "lng": -87.6307643,
+      "category": "street_food",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "La versión rápida y callejera de la cocina de Rick Bayless: tortas crujientes, chocolate caliente y churros en un local certificado LEED junto a Frontera Grill.",
+      "source_url": "https://www.rickbayless.com/restaurants/xoco/",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8906973,-87.6307643"
+    },
+    {
+      "name": "Gibsons Bar & Steakhouse",
+      "place_id": null,
+      "lat": 41.9013564,
+      "lng": -87.6280782,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El asador clásico de Rush Street desde 1989, considerado la vara con la que se miden todos los demás steakhouses de Chicago, incluido en la lista de los 101 mejores asadores del mundo.",
+      "source_url": "https://gibsonssteakhouse.com/about/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9013564,-87.6280782"
+    },
+    {
+      "name": "Bavette's Bar & Boeuf",
+      "place_id": null,
+      "lat": 41.889285,
+      "lng": -87.6348919,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Un steakhouse con aire de club de jazz de los años 20 en River North, una de las reservas más difíciles de conseguir de la ciudad.",
+      "source_url": "https://www.bavettessteakhouse.com/",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.889285,-87.6348919"
+    },
+    {
+      "name": "Pequod's Pizza",
+      "place_id": null,
+      "lat": 41.9219163,
+      "lng": -87.6643863,
+      "category": "pizza",
+      "cuisine": "americano",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "La pizza deep dish con la costra caramelizada de queso quemado que se volvió leyenda desde 1970, votada la pizza número uno de Estados Unidos por Yelp en 2024.",
+      "source_url": "https://pequodspizza.com/about-us/",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9219163,-87.6643863"
+    },
+    {
+      "name": "Giordano's",
+      "place_id": null,
+      "lat": 41.8958988,
+      "lng": -87.6256814,
+      "category": "pizza",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La pizza rellena (stuffed) que la familia Boglio introdujo en 1974 con la receta de su madre italiana, hoy una de las tres grandes de la pizza de Chicago.",
+      "source_url": "https://giordanos.com/our-story/",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8958988,-87.6256814"
+    },
+    {
+      "name": "Manny's Cafeteria & Delicatessen",
+      "place_id": null,
+      "lat": 41.8679154,
+      "lng": -87.6419254,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La delicatessen judía de estilo cafetería más antigua del país, sirviendo sándwiches de pastrami cortados a mano desde 1942 y parada obligada de políticos, incluido Obama el día después de ganar las elecciones de 2008.",
+      "source_url": "https://www.mannysdeli.com/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8679154,-87.6419254"
+    },
+    {
+      "name": "The Publican",
+      "place_id": null,
+      "lat": 41.886557,
+      "lng": -87.649252,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "La cervecería-restaurante de Paul Kahan dedicada al cerdo, el marisco y la cerveza, con Bib Gourmand de la Guía Michelin desde 2015.",
+      "source_url": "https://www.thepublicanrestaurant.com/",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.886557,-87.649252",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Avec",
+      "place_id": null,
+      "lat": 41.884215,
+      "lng": -87.6433917,
+      "category": "bar",
+      "cuisine": "mediterraneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "El local de mesas comunales y vino natural de Paul Kahan que le dio a la chef Koren Grieveson un premio James Beard en 2010.",
+      "source_url": "https://www.avecrestaurant.com/",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.884215,-87.6433917"
+    },
+    {
+      "name": "Ann Sather",
+      "place_id": null,
+      "lat": 41.9437924,
+      "lng": -87.6449641,
+      "category": "brunch",
+      "cuisine": "sueco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El diner sueco fundado en 1945, famoso por sus rollos de canela gigantes, un pilar de la comunidad LGBTQ de Lakeview desde que Tom Tunney lo compró en 1981.",
+      "source_url": "https://www.annsather.com/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9437924,-87.6449641"
+    },
+    {
+      "name": "Lou Mitchell's",
+      "place_id": null,
+      "lat": 41.877824,
+      "lng": -87.6421358,
+      "category": "brunch",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El diner de 1923 que marca el inicio de la Ruta 66, incluido en el Registro Nacional de Lugares Históricos, famoso por ser el primer restaurante de Chicago en servir desayuno todo el día.",
+      "source_url": "https://en.wikipedia.org/wiki/Lou_Mitchell%27s",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.877824,-87.6421358"
+    },
+    {
+      "name": "Honey Butter Fried Chicken",
+      "place_id": null,
+      "lat": 41.9425867,
+      "lng": -87.7027194,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El pollo frito de Avondale que un crítico de RedEye llamó 'posiblemente el mejor de Chicago' a los pocos días de abrir en 2013, hoy con fila constante por su combinación con mantequilla de miel.",
+      "source_url": "https://www.honeybutterfriedchicken.com/",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9425867,-87.7027194"
+    },
+    {
+      "name": "Kasama",
+      "place_id": null,
+      "lat": 41.8996921,
+      "lng": -87.6756548,
+      "category": "bakery",
+      "cuisine": "filipino",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La panadería filipina de día y restaurante de menú degustación por la noche que se convirtió en el primer restaurante filipino con estrella Michelin del mundo en 2022, y sumó una segunda estrella en noviembre de 2025.",
+      "source_url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/kasama",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8996921,-87.6756548",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Oriole",
+      "place_id": null,
+      "lat": 41.8861178,
+      "lng": -87.6451372,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de temporada con toques franceses y japoneses en un antiguo almacén del West Loop, con dos estrellas Michelin y el premio Jean Banchet a Restaurante del Año en 2022.",
+      "source_url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/oriole",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8861178,-87.6451372",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Elske",
+      "place_id": null,
+      "lat": 41.8844585,
+      "lng": -87.6609366,
+      "category": "fine_dining",
+      "cuisine": "escandinavo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La cocina escandinava-americana del matrimonio David y Anna Posey en Fulton Market, con estrella Michelin y un cameo en la serie 'The Bear'.",
+      "source_url": "https://guide.michelin.com/us/en/illinois/chicago/restaurant/elske",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8844585,-87.6609366",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Big Star",
+      "place_id": null,
+      "lat": 41.9091742,
+      "lng": -87.6771281,
+      "category": "bar",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El honky-tonk de tacos de Paul Kahan en Wicker Park, con tortillas hechas en casa y una carta de whiskey tan seria como la de tacos.",
+      "source_url": "https://www.bigstarchicago.com/",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9091742,-87.6771281"
+    },
+    {
+      "name": "Carnitas Uruapan",
+      "place_id": null,
+      "lat": 41.8575313,
+      "lng": -87.6696912,
+      "category": "street_food",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Las carnitas estilo Michoacán que Inocencio Carbajal empezó a cocinar en Pilsen en 1975 y que su familia sigue sirviendo por libra, doradas por fuera y tiernas por dentro.",
+      "source_url": "https://www.chicagomag.com/chicago-magazine/july-2021/iconic-eats/carnitas-at-carnitas-uruapan/",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8575313,-87.6696912"
+    },
+    {
+      "name": "Intelligentsia Coffee",
+      "place_id": null,
+      "lat": 41.8843548,
+      "lng": -87.625863,
+      "category": "coffee",
+      "cuisine": "cafe",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El tostador que Doug Zell y Emily Mange abrieron en 1995 y que se convirtió en uno de los pioneros del café de tercera ola en Estados Unidos.",
+      "source_url": "https://www.intelligentsia.com/pages/our-story",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8843548,-87.625863"
+    },
+    {
+      "name": "Do-Rite Donuts",
+      "place_id": null,
+      "lat": 41.8853503,
+      "lng": -87.6519829,
+      "category": "dessert",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Donas artesanales fritas en pequeños lotes durante toda la mañana en el West Loop, nombradas por Thrillist entre las 32 mejores donuterías de Estados Unidos.",
+      "source_url": "https://www.doritedonuts.com/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8853503,-87.6519829"
+    },
+    {
+      "name": "Margie's Candies",
+      "place_id": null,
+      "lat": 41.9173701,
+      "lng": -87.6876333,
+      "category": "dessert",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La heladería de 1921 con sundaes servidos en conchas de almeja que recibió a los Beatles en 1965 tras su show en Comiskey Park, todavía con la vitrina de recuerdos de la banda.",
+      "source_url": "https://en.wikipedia.org/wiki/Margie%27s_Candies",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9173701,-87.6876333"
+    },
+    {
+      "name": "The Aviary",
+      "place_id": null,
+      "lat": 41.8864563,
+      "lng": -87.6520185,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El bar de cócteles de ciencia y espectáculo de Grant Achatz, con su propio programa de hielo y un puesto entre los World's 50 Best Bars (#29 en 2015).",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/US/Chicago/Aviary.html",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8864563,-87.6520185"
+    },
+    {
+      "name": "Smoque BBQ",
+      "place_id": null,
+      "lat": 41.9502269,
+      "lng": -87.7278222,
+      "category": "street_food",
+      "cuisine": "americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El brisket que hace pensar en Texas sin salir de Chicago, elogiado por el New York Times y mencionado en la Guía Michelin desde que abrió en 2006.",
+      "source_url": "https://smoquebbq.com/",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9502269,-87.7278222"
+    },
+    {
+      "name": "Shaw's Crab House",
+      "place_id": null,
+      "lat": 41.8898798,
+      "lng": -87.6271532,
+      "category": "seafood",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El asador de mariscos de River North desde 1984, con su Oyster Bar informal y comedor principal de mantel blanco, entre los mejores de la revista Chicago en 2024.",
+      "source_url": "https://www.shawscrabhouse.com/chicago-illinois/",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8898798,-87.6271532"
     }
   ],
   "targetPlaces": 40,

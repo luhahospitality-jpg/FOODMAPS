@@ -22,6 +22,134 @@
     "Longman & Eagle": {
       "cuisine": "American",
       "description": "A gastropub-inn in Logan Square with a deep whiskey list and bar food that Anthony Bourdain praised on \"Parts Unknown\" (2016). Holds a Michelin Bib Gourmand distinction."
+    },
+    "Portillo's": {
+      "cuisine": "American",
+      "description": "The flagship of the chain Dick Portillo started from a trailer in 1963: Chicago-style hot dogs, Italian beef, and a chocolate cake shake in a building with a 1930s feel."
+    },
+    "Al's #1 Italian Beef": {
+      "cuisine": "American",
+      "description": "The original shrine of Italian beef in Little Italy since 1938, dripping with jus and a recurring star of Chicago sandwich rankings and TV food shows."
+    },
+    "The Wieners Circle": {
+      "cuisine": "American",
+      "description": "The Lincoln Park hot dog stand open since 1983, famous for its char-grilled dog and for the trash-talking exchanges between staff and customers that earned it its own TruTV show in 2012."
+    },
+    "Superdawg Drive-In": {
+      "cuisine": "American",
+      "description": "The drive-in with two giant plastic hot dogs on the roof, serving the same Chicago-style dog since 1948 at the corner of Milwaukee, Devon, and Nagle."
+    },
+    "Girl & the Goat": {
+      "cuisine": "American",
+      "description": "The bold, globally inspired cooking of Stephanie Izard, the first woman to win Top Chef, which earned her the James Beard Award for Best Chef: Great Lakes in 2013."
+    },
+    "Au Cheval": {
+      "cuisine": "American",
+      "description": "The West Loop cheeseburger Bon Appétit crowned the best in America in 2012, served in a neon-lit diner that still draws a line to this day."
+    },
+    "Kuma's Corner": {
+      "cuisine": "American",
+      "description": "The Avondale temple of heavy metal and gourmet burgers, whose Kuma Burger was named by TIME magazine one of the most influential burgers in history in 2014."
+    },
+    "The Purple Pig": {
+      "cuisine": "Mediterranean",
+      "description": "Pork-centric Mediterranean small plates on the Magnificent Mile, holding a Michelin Bib Gourmand since 2011 with a James Beard Award-winning chef."
+    },
+    "Frontera Grill": {
+      "cuisine": "Mexican",
+      "description": "Rick Bayless's Mexican restaurant, winner of the James Beard Foundation's highest honor, Outstanding Restaurant, in 2007."
+    },
+    "Topolobampo": {
+      "cuisine": "Mexican",
+      "description": "Rick Bayless's fine-dining Mexican concept next door to Frontera Grill, holding a Michelin star since the guide arrived in Chicago and the James Beard Award for Outstanding Restaurant in 2017."
+    },
+    "Xoco": {
+      "cuisine": "Mexican",
+      "description": "The fast, street-food side of Rick Bayless's cooking: crusty tortas, hot chocolate, and churros in a LEED-certified space next to Frontera Grill."
+    },
+    "Gibsons Bar & Steakhouse": {
+      "cuisine": "American",
+      "description": "The classic Rush Street steakhouse since 1989, considered the yardstick against which every other Chicago steakhouse is measured, named to the World's 101 Best Steak Restaurants list."
+    },
+    "Bavette's Bar & Boeuf": {
+      "cuisine": "American",
+      "description": "A 1920s jazz-club-styled steakhouse in River North, one of the hardest reservations to score in the city."
+    },
+    "Pequod's Pizza": {
+      "cuisine": "American",
+      "description": "The deep-dish pizza with the caramelized burnt-cheese crust that's been legendary since 1970, voted the #1 pizza in the United States by Yelp in 2024."
+    },
+    "Giordano's": {
+      "cuisine": "American",
+      "description": "The stuffed pizza the Boglio family introduced in 1974 using their Italian mother's recipe, today one of Chicago's 'big three' pizza institutions."
+    },
+    "Manny's Cafeteria & Delicatessen": {
+      "cuisine": "American",
+      "description": "The oldest cafeteria-style Jewish deli in the country, serving hand-carved pastrami sandwiches since 1942 and a required stop for politicians, including Obama the day after winning the 2008 election."
+    },
+    "The Publican": {
+      "cuisine": "American",
+      "description": "Paul Kahan's beer-hall restaurant devoted to pork, seafood, and beer, holding a Michelin Bib Gourmand since 2015."
+    },
+    "Avec": {
+      "cuisine": "Mediterranean",
+      "description": "Paul Kahan's communal-table wine bar that earned chef Koren Grieveson a James Beard Award in 2010."
+    },
+    "Ann Sather": {
+      "cuisine": "Swedish",
+      "description": "The Swedish diner founded in 1945, famous for its giant cinnamon rolls and a pillar of Lakeview's LGBTQ community since Tom Tunney bought it in 1981."
+    },
+    "Lou Mitchell's": {
+      "cuisine": "American",
+      "description": "The 1923 diner that marks the start of Route 66, listed on the National Register of Historic Places and famous for being the first Chicago restaurant to serve breakfast all day."
+    },
+    "Honey Butter Fried Chicken": {
+      "cuisine": "American",
+      "description": "The Avondale fried chicken a RedEye critic called 'maybe the best in Chicago' days after it opened in 2013, still drawing lines for its honey butter pairing."
+    },
+    "Kasama": {
+      "cuisine": "Filipino",
+      "description": "The daytime Filipino bakery and evening tasting-menu restaurant that became the world's first Michelin-starred Filipino restaurant in 2022, adding a second star in November 2025."
+    },
+    "Oriole": {
+      "cuisine": "American",
+      "description": "Seasonal cooking with French and Japanese touches in a former West Loop warehouse, holding two Michelin stars and the 2022 Jean Banchet Restaurant of the Year award."
+    },
+    "Elske": {
+      "cuisine": "Scandinavian",
+      "description": "Husband-and-wife chefs David and Anna Posey's Scandinavian-American cooking in Fulton Market, holding a Michelin star and featured in the TV series 'The Bear'."
+    },
+    "Big Star": {
+      "cuisine": "Mexican",
+      "description": "Paul Kahan's honky-tonk taco joint in Wicker Park, with house-made tortillas and a whiskey list as serious as its taco menu."
+    },
+    "Carnitas Uruapan": {
+      "cuisine": "Mexican",
+      "description": "The Michoacán-style carnitas Inocencio Carbajal started cooking in Pilsen in 1975, still served by the pound by his family—crisp outside, tender inside."
+    },
+    "Intelligentsia Coffee": {
+      "cuisine": "Coffee",
+      "description": "The roaster Doug Zell and Emily Mange opened in 1995, which became one of the pioneers of third-wave coffee in the United States."
+    },
+    "Do-Rite Donuts": {
+      "cuisine": "American",
+      "description": "Small-batch artisanal donuts fried all morning in the West Loop, named by Thrillist among the 32 best doughnut shops in America."
+    },
+    "Margie's Candies": {
+      "cuisine": "American",
+      "description": "The 1921 ice cream parlor with sundaes served in clamshell bowls, which hosted the Beatles in 1965 after their Comiskey Park show and still displays their memorabilia."
+    },
+    "The Aviary": {
+      "cuisine": "American",
+      "description": "Grant Achatz's science-driven, theatrical cocktail bar, with its own ice program and a spot on the World's 50 Best Bars list (#29 in 2015)."
+    },
+    "Smoque BBQ": {
+      "cuisine": "American",
+      "description": "Brisket that makes you think of Texas without leaving Chicago, praised by the New York Times and mentioned in the Michelin Guide since it opened in 2006."
+    },
+    "Shaw's Crab House": {
+      "cuisine": "American",
+      "description": "The River North seafood house since 1984, with its casual Oyster Bar and white-tablecloth main dining room, ranked among Chicago magazine's best in 2024."
     }
   }
 }
