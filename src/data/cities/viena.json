@@ -3,7 +3,7 @@
   "name": "Viena",
   "country": "Austria",
   "tagline": "El schnitzel que desborda el plato, y la sachertorte original con 150 años de historia.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -43,7 +43,8 @@
       "source_type": "bourdain",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2040427,16.3697708"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2040427,16.3697708",
+      "distinction": null
     },
     {
       "name": "Figlmüller",
@@ -60,7 +61,8 @@
       "source_type": "classic",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2094207,16.3748431",
+      "distinction": null
     },
     {
       "name": "Naschmarkt",
@@ -77,7 +79,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1981802,16.3626217"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1981802,16.3626217",
+      "distinction": null
     },
     {
       "name": "Café Central",
@@ -94,7 +97,654 @@
       "source_type": "classic",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2103671,16.3653873"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2103671,16.3653873",
+      "distinction": null
+    },
+    {
+      "name": "Amador",
+      "place_id": null,
+      "lat": 48.2495,
+      "lng": 16.34,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante insignia del chef Juan Amador, el segundo local vienés con tres estrellas Michelin, ubicado en la bodega Hajszan Neumann en Grinzing.",
+      "source_url": "https://guide.michelin.com/us/en/vienna/wien/restaurant/amador",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2495,16.34",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Mraz und Sohn",
+      "place_id": null,
+      "lat": 48.228,
+      "lng": 16.3705,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina vienesa reinventada por el chef de tercera generación Lukas Mraz en el distrito de Brigittenau, con dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/vienna/wien/restaurant/mraz-sohn",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.228,16.3705",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Konstantin Filippou",
+      "place_id": null,
+      "lat": 48.2107,
+      "lng": 16.3775,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El chef greco-austriaco Konstantin Filippou ofrece una cocina centrada en el producto con dos estrellas Michelin cerca del casco antiguo de Viena.",
+      "source_url": "https://guide.michelin.com/us/en/vienna/wien/restaurant/konstantin-filippou",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2107,16.3775",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "TIAN",
+      "place_id": null,
+      "lat": 48.2044,
+      "lng": 16.3737,
+      "category": "fine_dining",
+      "cuisine": "vegetariano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina vegetariana con una estrella Michelin y estrella verde por sostenibilidad, dirigida por el chef Paul Ivić en el corazón de Viena.",
+      "source_url": "https://www.tian-restaurant.com/wien/en/",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2044,16.3737",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Zum Schwarzen Kameel",
+      "place_id": null,
+      "lat": 48.2107,
+      "lng": 16.3688,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Delicatessen y bar de vinos desde 1618 en Bognergasse, antiguo proveedor de la corte imperial, con clientela histórica como Beethoven.",
+      "source_url": "https://de.wikipedia.org/wiki/Zum_Schwarzen_Kameel",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2107,16.3688",
+      "distinction": null
+    },
+    {
+      "name": "Griechenbeisl",
+      "place_id": null,
+      "lat": 48.2101,
+      "lng": 16.3768,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante más antiguo de Viena, en funcionamiento desde 1447, con huéspedes históricos como Mozart, Beethoven y Mark Twain.",
+      "source_url": "https://www.griechenbeisl.at/",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2101,16.3768",
+      "distinction": null
+    },
+    {
+      "name": "Plachutta Wollzeile",
+      "place_id": null,
+      "lat": 48.2081,
+      "lng": 16.3766,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución vienesa del Tafelspitz (carne hervida), servida con la ceremonia tradicional de cortes específicos de carne.",
+      "source_url": "https://www.plachutta.at/en/restaurant/wollzeile/",
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2081,16.3766",
+      "distinction": null
+    },
+    {
+      "name": "Trzesniewski",
+      "place_id": null,
+      "lat": 48.2064,
+      "lng": 16.3697,
+      "category": "street_food",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sandwiches abiertos diminutos con 18 variedades de untables desde 1902, una parada obligada vienesa fundada por el polaco Franciszek Trzesniewski.",
+      "source_url": "https://en.wikipedia.org/wiki/Franciszek_Trze%C5%9Bniewski",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2064,16.3697",
+      "distinction": null
+    },
+    {
+      "name": "Demel",
+      "place_id": null,
+      "lat": 48.2087,
+      "lng": 16.3684,
+      "category": "dessert",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería imperial fundada en 1786 en Kohlmarkt, antigua proveedora de la corte de Francisco José y Sissi.",
+      "source_url": "https://www.demel.com/en/pages/demels-history",
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2087,16.3684",
+      "distinction": null
+    },
+    {
+      "name": "Café Hawelka",
+      "place_id": null,
+      "lat": 48.2062,
+      "lng": 16.3699,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café bohemio fundado en 1939 por Leopold y Josefine Hawelka, punto de encuentro histórico de escritores y artistas vieneses.",
+      "source_url": "https://hawelka.at/en/cafe/history/",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2062,16.3699",
+      "distinction": null
+    },
+    {
+      "name": "Mayer am Pfarrplatz",
+      "place_id": null,
+      "lat": 48.2418,
+      "lng": 16.3624,
+      "category": "bar",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heuriger (taberna de vino) en Heiligenstadt, en la misma casa donde Beethoven vivió en 1817 y compuso parte de su Novena Sinfonía.",
+      "source_url": "https://www.pfarrplatz.at/en/the-beethovenhouse/",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2418,16.3624",
+      "distinction": null
+    },
+    {
+      "name": "Bitzinger Würstelstand",
+      "place_id": null,
+      "lat": 48.2044,
+      "lng": 16.369,
+      "category": "street_food",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El puesto de salchichas más famoso de Viena, junto a la Ópera y la Albertina; la cultura del Würstelstand es Patrimonio Inmaterial de la UNESCO desde 2024.",
+      "source_url": "https://bitzinger.wien/en/wuerstelstand/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2044,16.369",
+      "distinction": null
+    },
+    {
+      "name": "Skopik & Lohn",
+      "place_id": null,
+      "lat": 48.2154,
+      "lng": 16.3799,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina austriaca contemporánea bajo un llamativo techo garabateado por el artista Otto Zitko, incluido en la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/vienna/wien/restaurant/skopik-lohn",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2154,16.3799",
+      "distinction": null
+    },
+    {
+      "name": "Café Sperl",
+      "place_id": null,
+      "lat": 48.1998,
+      "lng": 16.36,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café vienés de 1880 con billares de carambola y mobiliario Thonet original, antiguo punto de reunión de la Secesión Vienesa.",
+      "source_url": "https://www.cafesperl.at/en_home.html",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1998,16.36",
+      "distinction": null
+    },
+    {
+      "name": "Café Landtmann",
+      "place_id": null,
+      "lat": 48.2126,
+      "lng": 16.3609,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de 1873 en el Ring, frecuentado por Sigmund Freud y Gustav Mahler; uno de los cafés históricos más elegantes de Viena.",
+      "source_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Landtmann",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2126,16.3609",
+      "distinction": null
+    },
+    {
+      "name": "Gasthaus Ubl",
+      "place_id": null,
+      "lat": 48.1968,
+      "lng": 16.3639,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Beisl familiar de más de 50 años en el distrito de Wieden, con schnitzel, asado de cerdo y ambiente de taberna tradicional.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g190454-d1103578-Reviews-Gasthaus_Ubl-Vienna.html",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1968,16.3639",
+      "distinction": null
+    },
+    {
+      "name": "10er Marie",
+      "place_id": null,
+      "lat": 48.2143,
+      "lng": 16.2242,
+      "category": "bar",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El Heuriger más antiguo de Viena, documentado desde 1740, en bóvedas centenarias del barrio de Ottakring.",
+      "source_url": "https://viennawurstelstand.com/location/10er-marie/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2143,16.2242",
+      "distinction": null
+    },
+    {
+      "name": "Neni am Naschmarkt",
+      "place_id": null,
+      "lat": 48.1983,
+      "lng": 16.3644,
+      "category": "restaurante",
+      "cuisine": "mediterraneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina mediterránea-israelí de la familia Molcho que ayudó a transformar el Naschmarkt en un destino gastronómico desde su apertura en 2009.",
+      "source_url": "https://www.offbeatbudapest.com/places/neni-naschmarkt-vienna/",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1983,16.3644",
+      "distinction": null
+    },
+    {
+      "name": "Zanoni & Zanoni",
+      "place_id": null,
+      "lat": 48.2088,
+      "lng": 16.3767,
+      "category": "dessert",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería italiana fundada en 1971 por la familia Zanoni en Lugeck, un clásico vienés para el gelato.",
+      "source_url": "https://www.yelp.com/biz/zanoni-und-zanoni-wien-4",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2088,16.3767",
+      "distinction": null
+    },
+    {
+      "name": "Urbanek",
+      "place_id": null,
+      "lat": 48.1978,
+      "lng": 16.3642,
+      "category": "mercado",
+      "cuisine": "austriaco",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Puesto de quesos y embutidos en el Naschmarkt desde 1975, visitado por Anthony Bourdain en 'No Reservations' y referencia de producto artesanal austriaco.",
+      "source_url": "https://www.tripadvisor.com/ShowUserReviews-g190454-d1022145-r531722225-Urbanek-Vienna.html",
+      "source_type": "bourdain",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1978,16.3642",
+      "distinction": null
+    },
+    {
+      "name": "Kurkonditorei Oberlaa",
+      "place_id": null,
+      "lat": 48.2054,
+      "lng": 16.3707,
+      "category": "dessert",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería vienesa desde 1974 en Neuer Markt, reconocida por sus tortas y strudels de primer nivel.",
+      "source_url": "https://oberlaa-wien.at/en/portrait/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2054,16.3707",
+      "distinction": null
+    },
+    {
+      "name": "Julius Meinl am Graben",
+      "place_id": null,
+      "lat": 48.2091,
+      "lng": 16.3701,
+      "category": "mercado",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Icónica tienda gourmet de la familia Meinl en Graben, con restaurante en el piso superior y productos delicatessen desde el siglo XIX.",
+      "source_url": "https://www.meinlamgraben.eu/en/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2091,16.3701",
+      "distinction": null
+    },
+    {
+      "name": "Motto am Fluss",
+      "place_id": null,
+      "lat": 48.2128,
+      "lng": 16.3775,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante y café junto al canal del Danubio en Schwedenplatz, con diseño de estilo años 50 y cocina austriaca orgánica de temporada.",
+      "source_url": "https://mottoamfluss.at/en/welcome/",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2128,16.3775",
+      "distinction": null
+    },
+    {
+      "name": "DO&CO Restaurant Stephansplatz",
+      "place_id": null,
+      "lat": 48.2081,
+      "lng": 16.3717,
+      "category": "restaurante",
+      "cuisine": "fusion",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante en la azotea de la Haas Haus con vistas directas a la Catedral de San Esteban, cocina de fusión austro-asiática del grupo DO&CO.",
+      "source_url": "https://www.doco.com/restaurants/",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2081,16.3717",
+      "distinction": null
+    },
+    {
+      "name": "Café Prückel",
+      "place_id": null,
+      "lat": 48.2091,
+      "lng": 16.3789,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de 1903 con interiores Art Déco de Oswald Härdtl, incluido en el Patrimonio Cultural Inmaterial de la UNESCO desde 2011.",
+      "source_url": "https://www.prueckel.at/en/cafe-prueckel/",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2091,16.3789",
+      "distinction": null
+    },
+    {
+      "name": "Loos American Bar",
+      "place_id": null,
+      "lat": 48.205,
+      "lng": 16.3699,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "El primer bar de cócteles de Viena, diseñado en 1908 por el arquitecto Adolf Loos con mármol, caoba y espejos.",
+      "source_url": "https://www.loosbar.at/en",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.205,16.3699",
+      "distinction": null
+    },
+    {
+      "name": "Aida",
+      "place_id": null,
+      "lat": 48.2078,
+      "lng": 16.3733,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de cafeterías vienesas de color rosa fundada en 1913, pionera del formato de café en cadena con recetas propias.",
+      "source_url": "https://aida.at/en/history/",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2078,16.3733",
+      "distinction": null
+    },
+    {
+      "name": "Joseph Brot",
+      "place_id": null,
+      "lat": 48.1978,
+      "lng": 16.365,
+      "category": "panaderia",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería artesanal fundada en 2009 que revolucionó la escena del pan en Viena con ingredientes orgánicos y métodos tradicionales.",
+      "source_url": "https://www.wien.info/en/joseph-brot-129108",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1978,16.365",
+      "distinction": null
+    },
+    {
+      "name": "Wiener Rathauskeller",
+      "place_id": null,
+      "lat": 48.2108,
+      "lng": 16.3573,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante histórico en el sótano neobarroco del Ayuntamiento de Viena, abierto desde 1899.",
+      "source_url": "https://www.wiener-rathauskeller.at/en/",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2108,16.3573",
+      "distinction": null
+    },
+    {
+      "name": "Café Museum",
+      "place_id": null,
+      "lat": 48.2019,
+      "lng": 16.3689,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café diseñado en 1899 por Adolf Loos, apodado 'Café Nihilismo' por su estética minimalista, punto de encuentro de Klimt y Schiele.",
+      "source_url": "https://www.cafemuseum.at/en/cafe-museum/the-story.html",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2019,16.3689",
+      "distinction": null
+    },
+    {
+      "name": "Zum Alten Fassl",
+      "place_id": null,
+      "lat": 48.1898,
+      "lng": 16.3585,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Beisl tradicional en el distrito de Margareten con patio interior, conocido por su Wiener Schnitzel y Tafelspitz.",
+      "source_url": "https://www.zum-alten-fassl.at/",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1898,16.3585",
+      "distinction": null
+    },
+    {
+      "name": "Gmoakeller",
+      "place_id": null,
+      "lat": 48.2016,
+      "lng": 16.3833,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taberna vienesa de más de 160 años cerca del Konzerthaus, con techos abovedados y cocina austriaca clásica.",
+      "source_url": "https://www.wien.info/en/gmoakeller-132796",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2016,16.3833",
+      "distinction": null
+    },
+    {
+      "name": "Ottakringer Brauerei",
+      "place_id": null,
+      "lat": 48.2126,
+      "lng": 16.3195,
+      "category": "cerveceria",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La última gran cervecería vienesa, fundada en 1837, con producción propia y visitas guiadas en el distrito de Ottakring.",
+      "source_url": "https://www.ottakringerbrauerei.at/en/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2126,16.3195",
+      "distinction": null
+    },
+    {
+      "name": "Wieninger am Stammersdorf",
+      "place_id": null,
+      "lat": 48.2825,
+      "lng": 16.3969,
+      "category": "bar",
+      "cuisine": "austriaco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heuriger de la familia Wieninger en Stammersdorf, con vinos premiados de las viñas de Bisamberg y Nussberg.",
+      "source_url": "https://heuriger-wieninger.at/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.2825,16.3969",
+      "distinction": null
+    },
+    {
+      "name": "Vollpension",
+      "place_id": null,
+      "lat": 48.1978,
+      "lng": 16.3651,
+      "category": "cafeteria",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Café intergeneracional donde abuelas y abuelos hornean pasteles caseros a diario, un negocio social premiado cerca del Naschmarkt.",
+      "source_url": "https://www.cnn.com/travel/article/vollpension-grandma-cafe-vienna-austria",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.1978,16.3651",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

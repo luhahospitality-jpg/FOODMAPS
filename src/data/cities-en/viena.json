@@ -22,6 +22,146 @@
     "Café Central": {
       "cuisine": "Austrian",
       "description": "A historic café since 1876 in the heart of Vienna, once a meeting point for Freud and Trotsky. UNESCO Intangible Cultural Heritage."
+    },
+    "Amador": {
+      "cuisine": "Austrian",
+      "description": "Flagship restaurant of chef Juan Amador, Vienna's second three-Michelin-star venue, set in winemaker Fritz Wieninger's Hajszan Neumann cellar in Grinzing."
+    },
+    "Mraz und Sohn": {
+      "cuisine": "Austrian",
+      "description": "Viennese classics reinvented by third-generation chef Lukas Mraz in the Brigittenau district, holding two Michelin stars."
+    },
+    "Konstantin Filippou": {
+      "cuisine": "Austrian",
+      "description": "Greek-Austrian chef Konstantin Filippou offers ingredient-focused cuisine with two Michelin stars near Vienna's old town."
+    },
+    "TIAN": {
+      "cuisine": "Vegetarian",
+      "description": "High-end vegetarian cuisine holding a Michelin star and a Green Star for sustainability, led by chef Paul Ivić in the heart of Vienna."
+    },
+    "Zum Schwarzen Kameel": {
+      "cuisine": "Austrian",
+      "description": "A delicatessen and wine bar since 1618 on Bognergasse, former purveyor to the imperial court, once frequented by Beethoven."
+    },
+    "Griechenbeisl": {
+      "cuisine": "Austrian",
+      "description": "Vienna's oldest restaurant, operating since 1447, with historic guests ranging from Mozart and Beethoven to Mark Twain."
+    },
+    "Plachutta Wollzeile": {
+      "cuisine": "Austrian",
+      "description": "A Viennese institution for Tafelspitz (boiled beef), served with the traditional ceremony of specific cuts."
+    },
+    "Trzesniewski": {
+      "cuisine": "Austrian",
+      "description": "Tiny open-faced sandwiches in 18 spread varieties since 1902, a Vienna essential founded by Polish cook Franciszek Trzesniewski."
+    },
+    "Demel": {
+      "cuisine": "Austrian",
+      "description": "Imperial confectionery founded in 1786 on Kohlmarkt, once purveyor to the court of Franz Josef and Sisi."
+    },
+    "Café Hawelka": {
+      "cuisine": "Austrian",
+      "description": "A bohemian café founded in 1939 by Leopold and Josefine Hawelka, a historic meeting point for Viennese writers and artists."
+    },
+    "Mayer am Pfarrplatz": {
+      "cuisine": "Austrian",
+      "description": "A Heuriger (wine tavern) in Heiligenstadt, in the very house where Beethoven lived in 1817 and composed part of his Ninth Symphony."
+    },
+    "Bitzinger Würstelstand": {
+      "cuisine": "Austrian",
+      "description": "Vienna's most famous sausage stand, beside the Opera and the Albertina; Würstelstand culture became UNESCO Intangible Heritage in 2024."
+    },
+    "Skopik & Lohn": {
+      "cuisine": "Austrian",
+      "description": "Contemporary Austrian cooking beneath a striking ceiling scribbled by artist Otto Zitko, featured in the Michelin Guide."
+    },
+    "Café Sperl": {
+      "cuisine": "Austrian",
+      "description": "An 1880 Viennese coffeehouse with carambole billiard tables and original Thonet furniture, once a gathering place for the Vienna Secession."
+    },
+    "Café Landtmann": {
+      "cuisine": "Austrian",
+      "description": "An 1873 café on the Ring, frequented by Sigmund Freud and Gustav Mahler; one of Vienna's most elegant historic coffeehouses."
+    },
+    "Gasthaus Ubl": {
+      "cuisine": "Austrian",
+      "description": "A family-run Beisl of over 50 years in the Wieden district, serving schnitzel, roast pork, and old-school tavern atmosphere."
+    },
+    "10er Marie": {
+      "cuisine": "Austrian",
+      "description": "Vienna's oldest Heuriger, documented since 1740, set in centuries-old vaulted cellars in the Ottakring district."
+    },
+    "Neni am Naschmarkt": {
+      "cuisine": "Mediterranean",
+      "description": "Mediterranean-Israeli cooking from the Molcho family that helped turn the Naschmarkt into a culinary destination since opening in 2009."
+    },
+    "Zanoni & Zanoni": {
+      "cuisine": "Italian",
+      "description": "An Italian gelateria founded in 1971 by the Zanoni family at Lugeck, a Viennese classic for gelato."
+    },
+    "Urbanek": {
+      "cuisine": "Austrian",
+      "description": "A cheese and cured-meat stall at the Naschmarkt since 1975, visited by Anthony Bourdain on 'No Reservations' and a benchmark for Austrian artisan products."
+    },
+    "Kurkonditorei Oberlaa": {
+      "cuisine": "Austrian",
+      "description": "A Viennese patisserie since 1974 on Neuer Markt, celebrated for its top-tier cakes and strudels."
+    },
+    "Julius Meinl am Graben": {
+      "cuisine": "Austrian",
+      "description": "The Meinl family's iconic gourmet store on Graben, with a restaurant upstairs and delicatessen goods dating back to the 19th century."
+    },
+    "Motto am Fluss": {
+      "cuisine": "Austrian",
+      "description": "A restaurant and café on the Danube Canal at Schwedenplatz, with 1950s-style design and seasonal organic Austrian cooking."
+    },
+    "DO&CO Restaurant Stephansplatz": {
+      "cuisine": "Fusion",
+      "description": "A rooftop restaurant atop the Haas Haus with direct views of St. Stephen's Cathedral, serving Austrian-Asian fusion from the DO&CO group."
+    },
+    "Café Prückel": {
+      "cuisine": "Austrian",
+      "description": "A 1903 café with Art Deco interiors by Oswald Härdtl, listed as UNESCO Intangible Cultural Heritage since 2011."
+    },
+    "Loos American Bar": {
+      "cuisine": null,
+      "description": "Vienna's first cocktail bar, designed in 1908 by architect Adolf Loos with marble, mahogany, and mirrors."
+    },
+    "Aida": {
+      "cuisine": "Austrian",
+      "description": "A pink-branded Viennese café chain founded in 1913, a pioneer of the chain-café format with its own recipes."
+    },
+    "Joseph Brot": {
+      "cuisine": "Austrian",
+      "description": "An artisan bakery founded in 2009 that revolutionized Vienna's bread scene with organic ingredients and traditional methods."
+    },
+    "Wiener Rathauskeller": {
+      "cuisine": "Austrian",
+      "description": "A historic restaurant in the neo-baroque cellar of Vienna's City Hall, open since 1899."
+    },
+    "Café Museum": {
+      "cuisine": "Austrian",
+      "description": "A café designed in 1899 by Adolf Loos, nicknamed 'Café Nihilism' for its minimalist look, once a meeting place for Klimt and Schiele."
+    },
+    "Zum Alten Fassl": {
+      "cuisine": "Austrian",
+      "description": "A traditional Beisl in the Margareten district with a courtyard garden, known for its Wiener Schnitzel and Tafelspitz."
+    },
+    "Gmoakeller": {
+      "cuisine": "Austrian",
+      "description": "A Viennese tavern of more than 160 years near the Konzerthaus, with vaulted ceilings and classic Austrian cooking."
+    },
+    "Ottakringer Brauerei": {
+      "cuisine": "Austrian",
+      "description": "Vienna's last major brewery, founded in 1837, with its own production and guided tours in the Ottakring district."
+    },
+    "Wieninger am Stammersdorf": {
+      "cuisine": "Austrian",
+      "description": "The Wieninger family's Heuriger in Stammersdorf, pouring award-winning wines from the Bisamberg and Nussberg vineyards."
+    },
+    "Vollpension": {
+      "cuisine": "Austrian",
+      "description": "An intergenerational café where grandmothers and grandfathers bake homemade cakes daily, an award-winning social business near the Naschmarkt."
     }
   }
 }
