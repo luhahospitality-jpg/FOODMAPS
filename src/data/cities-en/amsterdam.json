@@ -22,6 +22,146 @@
     "Foodhallen": {
       "cuisine": "mixed",
       "description": "A food market inside a former Oud-West tram depot, with more than 20 international food stalls."
+    },
+    "Vinkeles": {
+      "cuisine": "French",
+      "description": "Contemporary French cuisine in an 18th-century former bakery inside The Dylan hotel, on the Keizersgracht. Two Michelin stars under executive chef Jurgen van der Zalm."
+    },
+    "Spectrum": {
+      "cuisine": "International / chef-driven",
+      "description": "Chef-driven fine dining with local ingredients at the Waldorf Astoria, led by chef Sidney Schutte. Two Michelin stars since 2015."
+    },
+    "RIJKS": {
+      "cuisine": "Dutch",
+      "description": "Restaurant inside the Rijksmuseum led by chef Joris Bijdendijk, known for its vegetable-forward 'cuisine of the Low Countries.' One Michelin star since 2016."
+    },
+    "De Kas": {
+      "cuisine": "Dutch / organic",
+      "description": "Restaurant set inside a 1927 greenhouse in Frankendael Park, growing hundreds of vegetable and herb varieties that are harvested the same day. One Michelin star and a Green Star for sustainability."
+    },
+    "Bird Thai Restaurant": {
+      "cuisine": "Thai",
+      "description": "Chinatown Amsterdam's first Thai restaurant, open on the Zeedijk since 1998. Fresh red and green curries that remain a local favorite."
+    },
+    "Toscanini": {
+      "cuisine": "Italian",
+      "description": "Italian trattoria in the Jordaan founded in 1985, baking its own bread and making fresh pasta daily. Recognized for consistently authentic, seasonal Italian cooking."
+    },
+    "Tempo Doeloe": {
+      "cuisine": "Indonesian",
+      "description": "One of Amsterdam's best Indonesian rijsttafel (rice table) restaurants, on Utrechtsestraat. Michelin Bib Gourmand since 2017."
+    },
+    "Wilde Zwijnen": {
+      "cuisine": "Modern Dutch",
+      "description": "Modern Dutch cooking with locally sourced ingredients on lively Javaplein in Amsterdam-Oost. Opened in 2010, it was among the first upscale restaurants in the city's east."
+    },
+    "Greetje": {
+      "cuisine": "Modern Dutch",
+      "description": "Creative Dutch cuisine reviving traditional recipes, like veal braised with brandy-soaked apricots. Set in a monumental building on Peperstraat facing the Montelbaanstoren, open since 2005."
+    },
+    "Moeders": {
+      "cuisine": "Dutch",
+      "description": "Traditional Dutch home-cooking restaurant open since 1990, decorated with mismatched plates and mothers' photographs donated by guests. Known for stamppot and pea soup."
+    },
+    "D'Vijff Vlieghen": {
+      "cuisine": "Dutch",
+      "description": "Dutch restaurant spread across five 17th-century canal houses on Spuistraat, founded in 1939 by Nicolaas Kroese. Decorated with antiques, including original Rembrandt etchings."
+    },
+    "Café Chris": {
+      "cuisine": "Dutch / bar",
+      "description": "The oldest brown café in the Jordaan, opened as a beer house in 1624. Legend holds that the masons who built the Westerkerk's bell tower collected their wages here."
+    },
+    "Winkel 43": {
+      "cuisine": "Dutch / bakery",
+      "description": "Corner café on the Noordermarkt famous for its apple pie (appeltaart), considered among the city's best. Serves hundreds of slices with whipped cream daily."
+    },
+    "Café Papeneiland": {
+      "cuisine": "Dutch / bakery",
+      "description": "Brown café on the corner of Prinsengracht and Brouwersgracht, open since 1642 and renowned for its apple pie. Bill Clinton once stopped by to try it."
+    },
+    "Café 't Smalle": {
+      "cuisine": "Dutch / bar",
+      "description": "A former 1786 liqueur distillery turned brown café on the Egelantiersgracht, with one of Amsterdam's most photographed canalside terraces. Serves bitterballen and classic jenevers."
+    },
+    "In de Wildeman": {
+      "cuisine": "Beer",
+      "description": "Beer-tasting café in a 17th-century former distillery building, opened as a beer bar in 1986 by Henk Eggens, co-founder of bar Gollem. One of the city's oldest beer taverns."
+    },
+    "Brouwerij 't IJ": {
+      "cuisine": "Craft beer",
+      "description": "Craft brewery beside the De Gooyer windmill, brewing since 1985. Pours house beers like Natte, Zatte, and Columbus on its lively terrace."
+    },
+    "Wynand Fockink": {
+      "cuisine": "Gin / spirits",
+      "description": "Jenever tasting house on an alley off Dam Square, in the same building since 1679. Offers around 70 varieties of Dutch gin and traditional liqueurs, served in the classic hands-free sipping style."
+    },
+    "Van Dobben": {
+      "cuisine": "Dutch / croquette",
+      "description": "Eetsalon founded in 1945 by Aat van Dobben, iconic for its broodje kroket (croquette sandwich) made with its own recipe. A Dutch fast-food classic in central Amsterdam."
+    },
+    "Van Stapele Koekmakerij": {
+      "cuisine": "Bakery",
+      "description": "A bakery selling just one product: a dark chocolate cookie with a white chocolate center, created in 2013 by Vera van Stapele. It has gone viral on TikTok, drawing long lines."
+    },
+    "Puccini Bomboni": {
+      "cuisine": "Chocolate",
+      "description": "Artisan chocolate shop making bonbons with fresh ingredients and unconventional flavors like ginger or whisky. Flagship store on Staalstraat."
+    },
+    "Bakers & Roasters": {
+      "cuisine": "International / brunch",
+      "description": "New Zealand- and Brazilian-inspired brunch café in De Pijp, known for eggs benedict and homemade cakes. One of the city's most popular brunch spots."
+    },
+    "Scandinavian Embassy": {
+      "cuisine": "Coffee / Scandinavian",
+      "description": "Specialty coffee café facing Sarphatipark, ranked among Amsterdam's best specialty coffee spots."
+    },
+    "De Silveren Spiegel": {
+      "cuisine": "Dutch",
+      "description": "Dutch restaurant housed in two step-gabled houses from 1614, built for soap merchant Laurens Janz during the Golden Age. Original interiors with Delft tile work."
+    },
+    "Café Int Aepjen": {
+      "cuisine": "Bar / Dutch",
+      "description": "Possibly Amsterdam's oldest bar, set in a 16th-century timber house that once served as a sailors' inn. Anthony Bourdain visited on 'The Layover,' calling it a watering hole with centuries of history."
+    },
+    "De Kaaskamer": {
+      "cuisine": "Cheese",
+      "description": "Traditional cheese shop on Runstraat in the Nine Streets, stocking over 400 cheese varieties floor to ceiling. Favored by locals more than tourists."
+    },
+    "Restaurant Blauw": {
+      "cuisine": "Indonesian",
+      "description": "Indonesian restaurant known for its extensive rijsttafel of up to 17 dishes, including beef rendang. Named the best Indonesian restaurant in the Netherlands by The New York Times."
+    },
+    "Gartine": {
+      "cuisine": "Dutch / organic",
+      "description": "Small breakfast-and-lunch restaurant near Spui, with its own garden supplying many of its organic ingredients. Also serves a well-regarded high tea."
+    },
+    "Loetje": {
+      "cuisine": "Dutch / steak",
+      "description": "A former billiard café turned iconic steakhouse after founder Ludwig 'Loetje' Klinkhamer added a tenderloin steak with his signature gravy in the 1970s. The Loetje steak sandwich is one of Amsterdam's most famous."
+    },
+    "Rob Wigboldus Vishandel": {
+      "cuisine": "Dutch / herring",
+      "description": "Fish stall on the Zoutsteeg alley near Dam Square, known for raw herring and fried fish sandwiches. A classic among Amsterdammers."
+    },
+    "The Pancake Bakery": {
+      "cuisine": "Dutch / pancakes",
+      "description": "Amsterdam's oldest pancake restaurant, open since 1973 inside a 17th-century VOC warehouse on the Prinsengracht. Serves over a hundred varieties of Dutch pancakes."
+    },
+    "Wildschut": {
+      "cuisine": "Dutch / café",
+      "description": "One of Amsterdam's first grand cafés, in an Amsterdam School building on Roelof Hartplein since 1984. 1920s atmosphere and one of the city's sunniest terraces."
+    },
+    "Albert Cuyp Market": {
+      "cuisine": "Mixed",
+      "description": "Europe's largest daily outdoor market, with more than 260 stalls along Albert Cuypstraat since 1905. Famous for freshly made stroopwafels."
+    },
+    "Daalder": {
+      "cuisine": "Dutch / French",
+      "description": "Seasonal restaurant in the Jordaan serving a six-course tasting menu under chef Dennis Huwaë. One Michelin star since 2021."
+    },
+    "Sea Palace": {
+      "cuisine": "Cantonese Chinese",
+      "description": "Europe's first fully floating Chinese restaurant, moored beside Central Station and family-run for more than 40 years. Cantonese cuisine with Peking duck and dim sum; Michelin Bib Gourmand."
     }
   }
 }

@@ -3,7 +3,7 @@
   "name": "Ámsterdam",
   "country": "Países Bajos",
   "tagline": "Arenque crudo junto a la estación desde 1903, y alta cocina con vista panorámica desde el piso 23.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,641 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3669479,4.8682000"
+    },
+    {
+      "name": "Vinkeles",
+      "place_id": null,
+      "lat": 52.3665,
+      "lng": 4.8853,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina francesa contemporánea en una antigua panadería del siglo XVIII dentro del hotel The Dylan, junto al Keizersgracht. Dos estrellas Michelin bajo el chef ejecutivo Jurgen van der Zalm.",
+      "source_url": "https://www.vinkeles.com/",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3665,4.8853",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Spectrum",
+      "place_id": null,
+      "lat": 52.3653,
+      "lng": 4.8916,
+      "category": "fine_dining",
+      "cuisine": "internacional / cocina de autor",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina de autor con ingredientes locales en el Waldorf Astoria, a cargo del chef Sidney Schutte. Dos estrellas Michelin desde 2015.",
+      "source_url": "https://www.restaurantspectrum.com/",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3653,4.8916",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "RIJKS",
+      "place_id": null,
+      "lat": 52.3599,
+      "lng": 4.8853,
+      "category": "fine_dining",
+      "cuisine": "neerlandés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante dentro del Rijksmuseum dirigido por el chef Joris Bijdendijk, célebre por su 'cocina de los Países Bajos' centrada en las verduras. Una estrella Michelin desde 2016.",
+      "source_url": "https://www.rijksrestaurant.nl/en/about-rijks/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3599,4.8853",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "De Kas",
+      "place_id": null,
+      "lat": 52.3496,
+      "lng": 4.9349,
+      "category": "fine_dining",
+      "cuisine": "neerlandés / orgánico",
+      "tags": [
+        "michelin",
+        "critic",
+        "michelin_green_star"
+      ],
+      "description": "Restaurante instalado en un invernadero de 1927 en el parque Frankendael, donde se cultivan cientos de variedades de verduras y hierbas que se cosechan el mismo día. Una estrella Michelin y estrella verde por su sostenibilidad.",
+      "source_url": "https://www.iamsterdam.com/en/whats-on/calendar/eating-and-drinking/restaurants/restaurant-de-kas",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3496,4.9349",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Bird Thai Restaurant",
+      "place_id": null,
+      "lat": 52.3743,
+      "lng": 4.9007,
+      "category": "restaurante",
+      "cuisine": "tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El primer restaurante tailandés del barrio chino de Ámsterdam, abierto en el Zeedijk desde 1998. Currys rojos y verdes preparados con ingredientes frescos, muy popular entre locales.",
+      "source_url": "https://thai-bird.nl/",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3743,4.9007"
+    },
+    {
+      "name": "Toscanini",
+      "place_id": null,
+      "lat": 52.3809,
+      "lng": 4.8867,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Trattoria italiana en el Jordaan fundada en 1985, con pasta y pan horneados a diario en su propio obrador. Cocina italiana estacional y auténtica reconocida por su consistencia.",
+      "source_url": "https://restauranttoscanini.nl/en/",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3809,4.8867"
+    },
+    {
+      "name": "Tempo Doeloe",
+      "place_id": null,
+      "lat": 52.3628,
+      "lng": 4.8955,
+      "category": "restaurante",
+      "cuisine": "indonesio",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Uno de los mejores rijsttafel (mesa de arroz) indonesios de Ámsterdam, en Utrechtsestraat. Bib Gourmand Michelin desde 2017.",
+      "source_url": "https://www.opentable.com/r/tempo-doeloe-amsterdam",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3628,4.8955",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Wilde Zwijnen",
+      "place_id": null,
+      "lat": 52.3625,
+      "lng": 4.9351,
+      "category": "restaurante",
+      "cuisine": "neerlandés moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina neerlandesa moderna con ingredientes de proximidad en el animado Javaplein, en Amsterdam-Oost. Abierto en 2010, fue de los primeros restaurantes de gama alta del este de la ciudad.",
+      "source_url": "https://www.gault-millau.nl/en/restaurants/wilde-zwijnen-amsterdam",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3625,4.9351"
+    },
+    {
+      "name": "Greetje",
+      "place_id": null,
+      "lat": 52.3721,
+      "lng": 4.9036,
+      "category": "restaurante",
+      "cuisine": "neerlandés moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina neerlandesa creativa que rescata recetas tradicionales, como la ternera estofada con albaricoques al brandy. Ubicado en un edificio monumental de Peperstraat frente a la Montelbaanstoren, abierto desde 2005.",
+      "source_url": "https://www.amsterdam.info/restaurants/greetje/",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3721,4.9036"
+    },
+    {
+      "name": "Moeders",
+      "place_id": null,
+      "lat": 52.373,
+      "lng": 4.8815,
+      "category": "restaurante",
+      "cuisine": "neerlandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina casera neerlandesa abierto en 1990, decorado con platos y fotografías de madres donadas por los clientes. Especialidad en stamppot y sopa de guisantes.",
+      "source_url": "https://moeders.com/en/home",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.373,4.8815"
+    },
+    {
+      "name": "D'Vijff Vlieghen",
+      "place_id": null,
+      "lat": 52.3729,
+      "lng": 4.8918,
+      "category": "restaurante",
+      "cuisine": "neerlandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina neerlandesa repartido en cinco casas del canal del siglo XVII en Spuistraat, fundado en 1939 por Nicolaas Kroese. Decorado con antigüedades, incluidos grabados originales de Rembrandt.",
+      "source_url": "https://www.vijffvlieghen.nl/en/about-us",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3729,4.8918"
+    },
+    {
+      "name": "Café Chris",
+      "place_id": null,
+      "lat": 52.3746,
+      "lng": 4.8816,
+      "category": "bar",
+      "cuisine": "neerlandés / bar",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El café marrón más antiguo del Jordaan, abierto como cervecería en 1624. Según la leyenda, los albañiles que construyeron la torre de la Westerkerk cobraban aquí su salario.",
+      "source_url": "https://www.iamsterdam.com/en/whats-on/calendar/eating-and-drinking/cafes-and-bars/cafe-chris",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3746,4.8816"
+    },
+    {
+      "name": "Winkel 43",
+      "place_id": null,
+      "lat": 52.3838,
+      "lng": 4.8865,
+      "category": "cafeteria",
+      "cuisine": "neerlandés / repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café en la esquina del Noordermarkt famoso por su tarta de manzana (appeltaart), considerada una de las mejores de la ciudad. Sirve cientos de porciones al día con nata montada.",
+      "source_url": "https://www.winkel43.nl/en/",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3838,4.8865"
+    },
+    {
+      "name": "Café Papeneiland",
+      "place_id": null,
+      "lat": 52.3838,
+      "lng": 4.8888,
+      "category": "cafeteria",
+      "cuisine": "neerlandés / repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café marrón en la esquina de Prinsengracht y Brouwersgracht, abierto desde 1642 y célebre por su tarta de manzana. Bill Clinton lo visitó para probarla.",
+      "source_url": "https://www.papeneiland.nl/History.html",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3838,4.8888"
+    },
+    {
+      "name": "Café 't Smalle",
+      "place_id": null,
+      "lat": 52.3778,
+      "lng": 4.8817,
+      "category": "bar",
+      "cuisine": "neerlandés / bar",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antigua destilería de licores de 1786 convertida en café marrón junto al Egelantiersgracht, con una de las terrazas más fotografiadas de Ámsterdam. Sirve bitterballen y jenevers clásicos.",
+      "source_url": "https://t-smalle.nl/en/",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3778,4.8817"
+    },
+    {
+      "name": "In de Wildeman",
+      "place_id": null,
+      "lat": 52.3775,
+      "lng": 4.8937,
+      "category": "bar",
+      "cuisine": "cerveza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cervecería de cata instalada en un edificio del siglo XVII que fue destilería, abierta como bar de cervezas en 1986 por Henk Eggens, cofundador también del bar Gollem. Una de las tabernas de cerveza más antiguas de la ciudad.",
+      "source_url": "https://www.indewildeman.nl/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3775,4.8937"
+    },
+    {
+      "name": "Brouwerij 't IJ",
+      "place_id": null,
+      "lat": 52.3665,
+      "lng": 4.9235,
+      "category": "bar",
+      "cuisine": "cerveza artesanal",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cervecería artesanal junto al molino De Gooyer, en funcionamiento desde 1985. Elabora cervezas propias como la Natte, Zatte y Columbus, servidas en su animada terraza.",
+      "source_url": "https://en.wikipedia.org/wiki/Brouwerij_%27t_IJ",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3665,4.9235"
+    },
+    {
+      "name": "Wynand Fockink",
+      "place_id": null,
+      "lat": 52.373,
+      "lng": 4.8951,
+      "category": "bar",
+      "cuisine": "ginebra / licores",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de cata de jenever en un callejón junto a Dam, en el mismo local desde 1679. Ofrece unas 70 variedades de ginebra holandesa y licores tradicionales, servidos según el método clásico de sorber sin usar las manos.",
+      "source_url": "https://wynand-fockink.nl/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.373,4.8951"
+    },
+    {
+      "name": "Van Dobben",
+      "place_id": null,
+      "lat": 52.3653,
+      "lng": 4.8929,
+      "category": "cafeteria",
+      "cuisine": "neerlandés / kroket",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Eetsalon fundado en 1945 por Aat van Dobben, icónico por su broodje kroket (bocadillo de croqueta) con receta propia. Un clásico de la comida rápida neerlandesa en el centro de Ámsterdam.",
+      "source_url": "https://www.frituurwereld.nl/van-dobben-croquet-tachtig-jaar-nederlands-icoon-van-vakmanschap-en-smaak/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3653,4.8929"
+    },
+    {
+      "name": "Van Stapele Koekmakerij",
+      "place_id": null,
+      "lat": 52.3699,
+      "lng": 4.8926,
+      "category": "panaderia",
+      "cuisine": "repostería",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Pastelería que solo vende un producto: una galleta de chocolate negro con centro de chocolate blanco, creada en 2013 por Vera van Stapele. Se ha vuelto viral en TikTok, generando largas colas.",
+      "source_url": "https://vanstapele.com/en/home/",
+      "source_type": "viral_social",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3699,4.8926"
+    },
+    {
+      "name": "Puccini Bomboni",
+      "place_id": null,
+      "lat": 52.369,
+      "lng": 4.8977,
+      "category": "chocolateria",
+      "cuisine": "chocolate",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Chocolatería artesanal de Ámsterdam con bombones elaborados con ingredientes frescos y combinaciones poco convencionales, como jengibre o whisky. Tienda emblemática en Staalstraat.",
+      "source_url": "https://puccinibomboni.com/en",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.369,4.8977"
+    },
+    {
+      "name": "Bakers & Roasters",
+      "place_id": null,
+      "lat": 52.3559,
+      "lng": 4.8935,
+      "category": "cafeteria",
+      "cuisine": "internacional / brunch",
+      "tags": [
+        "critic"
+      ],
+      "description": "Café de brunch de inspiración neozelandesa y brasileña en De Pijp, famoso por sus huevos benedictinos y pasteles caseros. Uno de los brunch más populares de la ciudad.",
+      "source_url": "https://bakersandroasters.com/",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3559,4.8935"
+    },
+    {
+      "name": "Scandinavian Embassy",
+      "place_id": null,
+      "lat": 52.3552,
+      "lng": 4.8948,
+      "category": "cafeteria",
+      "cuisine": "café / escandinavo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafetería especializada en café escandinavo frente al Sarphatipark, reconocida entre los mejores lugares de café de especialidad de Ámsterdam.",
+      "source_url": "http://scandinavianembassy.nl/coffee",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3552,4.8948"
+    },
+    {
+      "name": "De Silveren Spiegel",
+      "place_id": null,
+      "lat": 52.3805,
+      "lng": 4.8925,
+      "category": "restaurante",
+      "cuisine": "neerlandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina neerlandesa alojado en dos casas con fachada de escalón de 1614, construidas para el jabonero Laurens Janz durante el Siglo de Oro. Interiores originales con azulejos de Delft.",
+      "source_url": "https://www.desilverenspiegel.com/history/",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3805,4.8925"
+    },
+    {
+      "name": "Café Int Aepjen",
+      "place_id": null,
+      "lat": 52.3762,
+      "lng": 4.8998,
+      "category": "bar",
+      "cuisine": "bar / neerlandés",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Posiblemente el bar más antiguo de Ámsterdam, alojado en una casa de madera del siglo XVI que fue posada de marineros. Anthony Bourdain lo visitó en 'The Layover', describiéndolo como una taberna con siglos de historia.",
+      "source_url": "https://www.continentscondiments.com/amsterdam-all-of-the-restaurants-picked-by-anthony-bourdain-on-the-layover/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3762,4.8998"
+    },
+    {
+      "name": "De Kaaskamer",
+      "place_id": null,
+      "lat": 52.366,
+      "lng": 4.885,
+      "category": "queseria",
+      "cuisine": "quesos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Quesería tradicional en Runstraat, en el corazón de los Nueve Callejuelas, con más de 400 variedades de queso apiladas del suelo al techo. Frecuentada por locales más que por turistas.",
+      "source_url": "https://www.kaaskamer.nl/?lang=en",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.366,4.885"
+    },
+    {
+      "name": "Restaurant Blauw",
+      "place_id": null,
+      "lat": 52.3453,
+      "lng": 4.8583,
+      "category": "restaurante",
+      "cuisine": "indonesio",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante indonesio conocido por su extenso rijsttafel de hasta 17 platos, incluido el rendang de ternera. The New York Times lo eligió como el mejor restaurante indonesio de los Países Bajos.",
+      "source_url": "https://restaurantblauw.nl/en/home/",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3453,4.8583"
+    },
+    {
+      "name": "Gartine",
+      "place_id": null,
+      "lat": 52.3696,
+      "lng": 4.8919,
+      "category": "cafeteria",
+      "cuisine": "neerlandés / orgánico",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pequeño restaurante de desayuno y almuerzo cerca de Spui, con un huerto propio del que provienen muchos de sus ingredientes orgánicos. Sirve también un high tea muy valorado.",
+      "source_url": "https://www.iamsterdam.com/en/whats-on/calendar/eating-and-drinking/restaurants/gartine",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3696,4.8919"
+    },
+    {
+      "name": "Loetje",
+      "place_id": null,
+      "lat": 52.3564,
+      "lng": 4.8785,
+      "category": "restaurante",
+      "cuisine": "neerlandés / bistec",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Un café que se convirtió en icónico asador desde que en los años 70 su fundador Ludwig 'Loetje' Klinkhamer añadió al menú un solomillo con su salsa característica. El bocadillo de bistec Loetje es uno de los más famosos de Ámsterdam.",
+      "source_url": "https://www.loetje.nl/en/locations/amsterdam-cafe/",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3564,4.8785"
+    },
+    {
+      "name": "Rob Wigboldus Vishandel",
+      "place_id": null,
+      "lat": 52.3737,
+      "lng": 4.8938,
+      "category": "street_food",
+      "cuisine": "neerlandés / arenque",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de pescado en el callejón Zoutsteeg, cerca de Dam, célebre por su arenque crudo y sus bocadillos de pescado frito. Un clásico entre los amsterdameses.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g188590-d1955652-Reviews-Rob_Wigboldus_Vishandel-Amsterdam_North_Holland_Province.html",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3737,4.8938"
+    },
+    {
+      "name": "The Pancake Bakery",
+      "place_id": null,
+      "lat": 52.3742,
+      "lng": 4.8834,
+      "category": "restaurante",
+      "cuisine": "neerlandés / panqueques",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante de panqueques más antiguo de Ámsterdam, abierto desde 1973 en un almacén de la VOC del siglo XVII junto al Prinsengracht. Ofrece más de un centenar de variedades de panqueques neerlandeses.",
+      "source_url": "https://www.inyourpocket.com/netherlands/amsterdam/venues/the-pancake-bakery",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3742,4.8834"
+    },
+    {
+      "name": "Wildschut",
+      "place_id": null,
+      "lat": 52.3546,
+      "lng": 4.8879,
+      "category": "cafeteria",
+      "cuisine": "neerlandés / café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los primeros grand cafés de Ámsterdam, en un edificio de la Escuela de Ámsterdam en Roelof Hartplein desde 1984. Ambiente de los años veinte y una de las terrazas más soleadas de la ciudad.",
+      "source_url": "https://www.cafewildschut.nl/cafe-wildschut-english/",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3546,4.8879"
+    },
+    {
+      "name": "Albert Cuyp Market",
+      "place_id": null,
+      "lat": 52.3567,
+      "lng": 4.8917,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El mercado callejero diario más grande de Europa, con más de 260 puestos a lo largo de Albert Cuypstraat desde 1905. Famoso por sus stroopwafels recién hechos.",
+      "source_url": "https://stroopwafelworkshop.com/albert-cuyp-market-amsterdam/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3567,4.8917"
+    },
+    {
+      "name": "Daalder",
+      "place_id": null,
+      "lat": 52.381,
+      "lng": 4.8869,
+      "category": "fine_dining",
+      "cuisine": "neerlandés / francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante de temporada en el Jordaan con un menú degustación de seis platos a cargo del chef Dennis Huwaë. Una estrella Michelin desde 2021.",
+      "source_url": "https://www.daalderamsterdam.nl/en",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.381,4.8869",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Sea Palace",
+      "place_id": null,
+      "lat": 52.3752,
+      "lng": 4.9057,
+      "category": "restaurante",
+      "cuisine": "chino cantonés",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "El primer restaurante chino totalmente flotante de Europa, amarrado junto a la Estación Central desde hace más de 40 años bajo la misma familia. Cocina cantonesa con pato pekinés y dim sum; Bib Gourmand Michelin.",
+      "source_url": "https://seapalace.nl/en/",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.3752,4.9057",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
     }
   ],
   "targetPlaces": 40,
