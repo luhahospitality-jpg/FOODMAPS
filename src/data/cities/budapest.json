@@ -3,7 +3,7 @@
   "name": "Budapest",
   "country": "Hungría",
   "tagline": "El café más bello del mundo, y el ruin bar que inventó un género entero de vida nocturna.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -100,6 +100,666 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4865753,19.0589936"
+    },
+    {
+      "name": "Babel",
+      "place_id": null,
+      "lat": 47.4939,
+      "lng": 19.0554,
+      "category": "fine_dining",
+      "cuisine": "húngaro contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante con una estrella Michelin en el centro de Budapest, con menús degustación que reinterpretan la cocina austrohúngara con técnicas modernas.",
+      "source_url": "https://guide.michelin.com/en/central-hungary/budapest/restaurant/babel",
+      "source_type": null,
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4939,19.0554",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Borkonyha Winekitchen",
+      "place_id": null,
+      "lat": 47.5023,
+      "lng": 19.053,
+      "category": "fine_dining",
+      "cuisine": "húngaro / cocina de vinos",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Con una estrella Michelin desde 2014, combina cocina húngara contemporánea con una carta de más de 200 vinos húngaros.",
+      "source_url": "https://guide.michelin.com/en/central-hungary/budapest/restaurant/borkonyha-winekitchen",
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5023,19.053",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "essência",
+      "place_id": null,
+      "lat": 47.501,
+      "lng": 19.0528,
+      "category": "fine_dining",
+      "cuisine": "portugués / húngaro",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante con estrella Michelin del chef portugués Tiago Sabarigo y su esposa húngara Éva, que fusiona ambas tradiciones culinarias en un menú degustación centrado en el pescado.",
+      "source_url": "https://guide.michelin.com/us/en/central-hungary/budapest/restaurant/essencia",
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.501,19.0528",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Rumour by Jenő Rácz",
+      "place_id": null,
+      "lat": 47.4955,
+      "lng": 19.0525,
+      "category": "fine_dining",
+      "cuisine": "creativa / fusión",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Con una estrella Michelin, ofrece 'counter dining' alrededor de una cocina abierta de 21 plazas, con platos que mezclan técnica francesa, precisión japonesa y especias asiáticas.",
+      "source_url": "https://guide.michelin.com/us/en/central-hungary/budapest/restaurant/rumour",
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4955,19.0525",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Salt",
+      "place_id": null,
+      "lat": 47.4913,
+      "lng": 19.0585,
+      "category": "fine_dining",
+      "cuisine": "húngaro moderno",
+      "tags": [
+        "michelin",
+        "michelin_green_star"
+      ],
+      "description": "Estrella Michelin desde 2021 y Estrella Verde Michelin desde 2022, el chef Szilárd Tóth reinventa la cocina húngara a partir de fermentación, encurtidos e ingredientes orgánicos locales.",
+      "source_url": "https://saltbudapest.com/",
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4913,19.0585",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "94' Konyha & Bár",
+      "place_id": null,
+      "lat": 47.5013,
+      "lng": 19.0625,
+      "category": "restaurante",
+      "cuisine": "vietnamita",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Reconocido con un Bib Gourmand en la Guía Michelin 2025, sirve cocina vietnamita de raíz con pho y su propio 'Gohan' de ternera con arroz frito y salsa XO.",
+      "source_url": "https://guide.michelin.com/en/central-hungary/budapest/restaurant/94-konyha-bar",
+      "source_type": null,
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5013,19.0625",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Cabrio",
+      "place_id": null,
+      "lat": 47.4958,
+      "lng": 19.0555,
+      "category": "bar",
+      "cuisine": "europea moderna / vinos naturales",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Bar de vinos naturales con Bib Gourmand desde 2025, con una selección 100% natural de Hungría y Europa y una cocina de temporada de platos para compartir.",
+      "source_url": "https://guide.michelin.com/en/central-hungary/budapest/restaurant/cabrio",
+      "source_type": null,
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4958,19.0555",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "N28 Wine and Kitchen",
+      "place_id": null,
+      "lat": 47.5043,
+      "lng": 19.0605,
+      "category": "restaurante",
+      "cuisine": "húngaro contemporáneo",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Bistró con Bib Gourmand en la calle Nagymező, con una carta que actualiza la despensa húngara tradicional y una bodega donde el 95% de los vinos son húngaros.",
+      "source_url": "https://guide.michelin.com/us/en/central-hungary/budapest/restaurant/n28-wine-and-kitchen",
+      "source_type": null,
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5043,19.0605",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Goli",
+      "place_id": null,
+      "lat": 47.507,
+      "lng": 19.0535,
+      "category": "restaurante",
+      "cuisine": "mediooriental",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Instalado en la antigua fábrica textil Goldberger, este Bib Gourmand cocina a fuego abierto pita, ensaladas vibrantes y entrecot con tahini a partir de producto de pequeños agricultores.",
+      "source_url": "https://guide.michelin.com/us/en/central-hungary/budapest/restaurant/goli",
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.507,19.0535",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Belvárosi Disznótoros",
+      "place_id": null,
+      "lat": 47.4917,
+      "lng": 19.0578,
+      "category": "fast_food",
+      "cuisine": "húngaro",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Charcutería de autoservicio en el centro con morcilla, chuletas a la parrilla y estofado de jabalí. Anthony Bourdain la visitó en el especial de Budapest de 'Parts Unknown' (2015) y la describió como 'un campo de sueños'.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-budapest/",
+      "source_type": "bourdain",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4917,19.0578",
+      "distinction": null
+    },
+    {
+      "name": "Pléh Csárda (Bádog Gundel)",
+      "place_id": null,
+      "lat": 47.557,
+      "lng": 19.119,
+      "category": "restaurante",
+      "cuisine": "húngaro",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Fonda de barrio en Újpalota, en el extremo norte de Pest, famosa por sus enormes escalopes. Anthony Bourdain la visitó en 'Parts Unknown' (2015) por recomendación del crítico húngaro András Jókuti.",
+      "source_url": "https://welovebudapest.com/en/article/2015/06/09/cnn-s-anthony-bourdain-visits-pleh-csarda-in-budapest",
+      "source_type": "bourdain",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.557,19.119",
+      "distinction": null
+    },
+    {
+      "name": "Gerbeaud",
+      "place_id": null,
+      "lat": 47.4972,
+      "lng": 19.0509,
+      "category": "cafeteria",
+      "cuisine": "húngaro / pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Emblemática confitería en Vörösmarty tér, fundada en 1858 y famosa desde 1884 bajo la dirección de Emil Gerbeaud, célebre por su tarta Gerbeaud de nuez y mermelada.",
+      "source_url": "https://gerbeaud.hu/en/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4972,19.0509",
+      "distinction": null
+    },
+    {
+      "name": "Central Kávéház",
+      "place_id": null,
+      "lat": 47.4915,
+      "lng": 19.0578,
+      "category": "cafeteria",
+      "cuisine": "húngaro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café histórico abierto en 1887, punto de encuentro de escritores y poetas de las revistas 'Nyugat' y 'A Hét' hasta su cierre en 1944; hoy reabierto con su decoración original restaurada.",
+      "source_url": "https://centralgrandcafe.hu/en/central-history/",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4915,19.0578",
+      "distinction": null
+    },
+    {
+      "name": "Gundel",
+      "place_id": null,
+      "lat": 47.5157,
+      "lng": 19.08,
+      "category": "restaurante",
+      "cuisine": "húngaro clásico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante húngaro más famoso, junto al Városliget desde 1894 y bajo el mando de Károly Gundel desde 1910, creador de platos icónicos como los crepes Gundel.",
+      "source_url": "https://gundel.hu/en/our-history/",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5157,19.08",
+      "distinction": null
+    },
+    {
+      "name": "Fülemüle Étterem",
+      "place_id": null,
+      "lat": 47.4934,
+      "lng": 19.0705,
+      "category": "restaurante",
+      "cuisine": "judío-húngaro",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante familiar en el Barrio del Palacio, abierto en 2000, especializado en cocina judío-húngara; The New York Times elogió su sopa de bolas de matzá como 'la mejor del mundo'.",
+      "source_url": "https://forward.com/food/198112/jewish-cuisine-makes-stunning-comeback-in-hungary/",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4934,19.0705",
+      "distinction": null
+    },
+    {
+      "name": "Rosenstein Vendéglő",
+      "place_id": null,
+      "lat": 47.4995,
+      "lng": 19.083,
+      "category": "restaurante",
+      "cuisine": "judío-húngaro",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Fundado por el chef Tibor Rosenstein cerca de la estación de Keleti, es una referencia de la cocina judío-húngara con ambiente familiar desde finales de los años 80.",
+      "source_url": "https://welovebudapest.com/en/venue/rosenstein-vendeglo-1/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4995,19.083",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Mazel Tov",
+      "place_id": null,
+      "lat": 47.4988,
+      "lng": 19.0672,
+      "category": "restaurante",
+      "cuisine": "mediterránea / israelí",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante-jardín en un edificio en ruinas del Barrio Judío que fusiona el estilo 'ruin bar' con cocina mediterránea e israelí cuidada, uno de los locales más fotografiados de Budapest.",
+      "source_url": "https://www.offbeatbudapest.com/places/mazel-tov-budapest/",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4988,19.0672",
+      "distinction": null
+    },
+    {
+      "name": "Kőleves",
+      "place_id": null,
+      "lat": 47.4977,
+      "lng": 19.0651,
+      "category": "restaurante",
+      "cuisine": "húngaro",
+      "tags": [
+        "critic"
+      ],
+      "description": "Vendéglő en el corazón del Barrio Judío que combina platos de la cocina de la abuela húngara con toques contemporáneos, con un patio-jardín muy popular en verano.",
+      "source_url": "https://kolevesvendeglo.hu/en/",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4977,19.0651",
+      "distinction": null
+    },
+    {
+      "name": "Gettó Gulyás",
+      "place_id": null,
+      "lat": 47.4972,
+      "lng": 19.063,
+      "category": "restaurante",
+      "cuisine": "húngaro (gulash)",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pequeño restaurante en el Barrio Judío centrado por completo en variaciones de gulash y pörkölt, con reserva casi obligatoria dada su popularidad.",
+      "source_url": "https://welovebudapest.com/en/venue/getto-gulyas-1",
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4972,19.063",
+      "distinction": null
+    },
+    {
+      "name": "Kádár Étkezde",
+      "place_id": null,
+      "lat": 47.4986,
+      "lng": 19.0655,
+      "category": "restaurante",
+      "cuisine": "judío-húngaro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kifőzde legendaria en Klauzál tér, templo del sólet (cholent) y de las mesas compartidas con mantel de cuadros; cerró en 2020 y reabrió en septiembre de 2025 con su menú original.",
+      "source_url": "https://welovebudapest.com/cikk/2025/09/25/kadar-etkezde-ujranyitott-klauzal-ter-gerendai-karoly/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4986,19.0655",
+      "distinction": null
+    },
+    {
+      "name": "Menza",
+      "place_id": null,
+      "lat": 47.5044,
+      "lng": 19.0637,
+      "category": "restaurante",
+      "cuisine": "húngaro retro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró en Liszt Ferenc tér con estética retro de comedor socialista de los años 70, sirviendo versiones actualizadas de clásicos húngaros desde 2004.",
+      "source_url": "https://www.menzaetterem.hu/en/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5044,19.0637",
+      "distinction": null
+    },
+    {
+      "name": "Zeller Bisztró",
+      "place_id": null,
+      "lat": 47.5024,
+      "lng": 19.0511,
+      "category": "restaurante",
+      "cuisine": "húngaro",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró familiar cerca de Szabadság tér, apreciado por su cocina húngara de temporada sin artificios y su ambiente cercano, alejado de las zonas más turísticas.",
+      "source_url": "https://welovebudapest.com/cikk/2013/11/07/megtalaltuk-az-egyik-legcsaladiasabb-ettermet-zeller-bistro/",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5024,19.0511",
+      "distinction": null
+    },
+    {
+      "name": "Fricska Gastropub",
+      "place_id": null,
+      "lat": 47.5009,
+      "lng": 19.0656,
+      "category": "restaurante",
+      "cuisine": "húngaro / francesa",
+      "tags": [
+        "critic"
+      ],
+      "description": "Gastropub del Barrio Judío que mezcla influencias francesas e italianas con la nueva cocina húngara; reabrió como 'Fricska 2.0' tras la pandemia.",
+      "source_url": "https://www.falstaff.com/en/restaurants/fricska-budapest",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5009,19.0656",
+      "distinction": null
+    },
+    {
+      "name": "Fakanál Étterem",
+      "place_id": null,
+      "lat": 47.4866,
+      "lng": 19.0591,
+      "category": "restaurante",
+      "cuisine": "húngaro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante en la planta alta del Gran Mercado Central desde 1998, con gulash, platos de la abuela y música en vivo diaria; el único local con aire acondicionado del mercado.",
+      "source_url": "https://welovebudapest.com/en/article/2025/05/28/fakanal-restaurant-hungarian-food-great-market-hall/",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4866,19.0591",
+      "distinction": null
+    },
+    {
+      "name": "Karavan Street Food",
+      "place_id": null,
+      "lat": 47.497,
+      "lng": 19.0637,
+      "category": "street_food",
+      "cuisine": "variada",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Primer y más exitoso patio de comida callejera de Hungría, abierto en 2014 junto al ruin bar Szimpla Kert, con foodtrucks de lángos, gulash, hamburguesas y opciones veganas.",
+      "source_url": "https://welovebudapest.com/en/venue/karavan-1/",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.497,19.0637",
+      "distinction": null
+    },
+    {
+      "name": "Instant-Fogas",
+      "place_id": null,
+      "lat": 47.4989,
+      "lng": 19.067,
+      "category": "bar",
+      "cuisine": "húngaro / bar",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fusión de dos ruin bars icónicos, Instant y Fogasház, en un laberinto de 15 barras y ocho pistas de baile: el mayor complejo de fiesta de Europa Central.",
+      "source_url": "https://instant-fogas.com/",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4989,19.067",
+      "distinction": null
+    },
+    {
+      "name": "Élesztő",
+      "place_id": null,
+      "lat": 47.4838,
+      "lng": 19.0692,
+      "category": "biergarten",
+      "cuisine": "húngaro / bar",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cervecería artesanal en una antigua fábrica de vidrio del distrito IX, epicentro de la revolución cervecera de Budapest con hasta 20 cervezas locales de barril.",
+      "source_url": "https://welovebudapest.com/en/venue/elesztohaz-1/",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4838,19.0692",
+      "distinction": null
+    },
+    {
+      "name": "Espresso Embassy",
+      "place_id": null,
+      "lat": 47.5049,
+      "lng": 19.053,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pionero del café de especialidad en Hungría desde 2012, habitualmente incluido entre las mejores cafeterías de Europa.",
+      "source_url": "https://espressoembassy.hu/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5049,19.053",
+      "distinction": null
+    },
+    {
+      "name": "My Little Melbourne",
+      "place_id": null,
+      "lat": 47.4979,
+      "lng": 19.0611,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Abierta en 2012, fue la primera cafetería de especialidad de Hungría, con recetas de café inspiradas en la escena de Melbourne, Australia.",
+      "source_url": "https://specialty.hu/en/venue/budapest/my-little-melbourne",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4979,19.0611",
+      "distinction": null
+    },
+    {
+      "name": "Gelarto Rosa",
+      "place_id": null,
+      "lat": 47.5017,
+      "lng": 19.0514,
+      "category": "dessert",
+      "cuisine": "helados",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Heladería cerca de la Basílica de San Esteban famosa por sus helados con forma de rosa, cuyas fotos se volvieron virales en redes sociales por todo el mundo.",
+      "source_url": "https://welovebudapest.com/en/venue/gelarto-rosa-1/",
+      "source_type": "viral_social",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5017,19.0514",
+      "distinction": null
+    },
+    {
+      "name": "Auguszt Cukrászda",
+      "place_id": null,
+      "lat": 47.4939,
+      "lng": 19.0596,
+      "category": "panaderia",
+      "cuisine": "húngaro / pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La segunda pastelería más antigua de Budapest tras Gerbeaud, fundada en 1870 y todavía dirigida por la familia Auguszt en su cuarta generación.",
+      "source_url": "https://welovebudapest.com/en/venue/auguszt-cukraszda-feny-utca-1/",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4939,19.0596",
+      "distinction": null
+    },
+    {
+      "name": "Bors GasztroBár",
+      "place_id": null,
+      "lat": 47.4973,
+      "lng": 19.0625,
+      "category": "fast_food",
+      "cuisine": "húngaro / sopas",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de sopas de culto abierta en 2012 en el Barrio Judío, con baguettes rellenas y sopas creativas que se agotan cada día.",
+      "source_url": "https://welovebudapest.com/en/venue/bors-gasztrobar-1/",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4973,19.0625",
+      "distinction": null
+    },
+    {
+      "name": "Stand25 Bisztró",
+      "place_id": null,
+      "lat": 47.5008,
+      "lng": 19.0347,
+      "category": "restaurante",
+      "cuisine": "húngaro",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró en el lado de Buda de los chefs Szabina Szulló y Tamás Széll, del dos estrellas Michelin Stand, con una carta húngara más informal y asequible.",
+      "source_url": "https://stand25.hu/?lang=en",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.5008,19.0347",
+      "distinction": null
+    },
+    {
+      "name": "Hummus Bar",
+      "place_id": null,
+      "lat": 47.4979,
+      "lng": 19.0625,
+      "category": "fast_food",
+      "cuisine": "mediooriental / vegetariano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cadena local nacida en 2005 que popularizó el hummus y el falafel en Budapest, con varios locales por la ciudad y opciones vegetarianas en toda la carta.",
+      "source_url": "https://welovebudapest.com/en/venue/hummus-bar-wesselenyi-utca-1/",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.4979,19.0625",
+      "distinction": null
+    },
+    {
+      "name": "Molnár's Kürtőskalács",
+      "place_id": null,
+      "lat": 47.493,
+      "lng": 19.0551,
+      "category": "street_food",
+      "cuisine": "dulce húngaro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los puestos más populares de kürtőskalács (pastel de chimenea) del centro, en la calle Váci, con ocho sabores asados al momento.",
+      "source_url": "http://kurtoskalacs.com/",
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=47.493,19.0551",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

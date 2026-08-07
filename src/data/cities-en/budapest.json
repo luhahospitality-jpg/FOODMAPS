@@ -22,6 +22,146 @@
     "Nagyvásárcsarnok (Gran Mercado Central)": {
       "cuisine": "Hungarian",
       "description": "Budapest's largest and oldest covered market, since 1897, with lángos and Hungarian cold cuts on the upper floor."
+    },
+    "Babel": {
+      "cuisine": "Contemporary Hungarian",
+      "description": "A one-Michelin-star restaurant in downtown Budapest, with tasting menus that reinterpret Austro-Hungarian cuisine through modern technique."
+    },
+    "Borkonyha Winekitchen": {
+      "cuisine": "Hungarian / wine kitchen",
+      "description": "Holder of a Michelin star since 2014, pairing contemporary Hungarian cooking with a list of over 200 Hungarian wines."
+    },
+    "essência": {
+      "cuisine": "Portuguese / Hungarian",
+      "description": "Michelin-starred restaurant from Portuguese chef Tiago and his Hungarian wife Éva, fusing both culinary traditions in a fish-forward tasting menu."
+    },
+    "Rumour by Jenő Rácz": {
+      "cuisine": "Creative / fusion",
+      "description": "A one-Michelin-star counter-dining restaurant built around a 21-seat open kitchen, blending French technique, Japanese precision and Asian spice."
+    },
+    "Salt": {
+      "cuisine": "Modern Hungarian",
+      "description": "A Michelin star since 2021 and Michelin Green Star since 2022, chef Szilárd Tóth reinvents Hungarian cooking through fermentation, pickling and local organic ingredients."
+    },
+    "94' Konyha & Bár": {
+      "cuisine": "Vietnamese",
+      "description": "Awarded a Bib Gourmand in the 2025 Michelin Guide, it serves rooted Vietnamese cooking with pho and its own beef 'Gohan' with fried rice and XO sauce."
+    },
+    "Cabrio": {
+      "cuisine": "Modern European / natural wine",
+      "description": "A natural wine bar awarded a Bib Gourmand in 2025, pouring a 100% natural selection from Hungary and Europe alongside a seasonal small-plates menu."
+    },
+    "N28 Wine and Kitchen": {
+      "cuisine": "Contemporary Hungarian",
+      "description": "A Bib Gourmand bistro on Nagymező utca, updating the traditional Hungarian larder on the plate with a wine list that is 95% Hungarian."
+    },
+    "Goli": {
+      "cuisine": "Middle Eastern",
+      "description": "Set inside the former Goldberger textile factory, this Bib Gourmand cooks over open flame — warm pita, vibrant salads and tahini-rubbed entrecôte — using produce from small farmers."
+    },
+    "Belvárosi Disznótoros": {
+      "cuisine": "Hungarian",
+      "description": "A self-service downtown butcher-canteen with blood sausage, grilled pork chops and wild boar stew. Anthony Bourdain visited it in the 2015 Budapest episode of 'Parts Unknown', calling it 'a field of dreams'."
+    },
+    "Pléh Csárda (Bádog Gundel)": {
+      "cuisine": "Hungarian",
+      "description": "A working-class neighborhood diner in Újpalota, on the northern edge of Pest, known for its enormous schnitzels. Anthony Bourdain visited it in 'Parts Unknown' (2015) on the recommendation of Hungarian food writer András Jókuti."
+    },
+    "Gerbeaud": {
+      "cuisine": "Hungarian / pastry",
+      "description": "Landmark confectionery on Vörösmarty tér, founded in 1858 and made famous from 1884 under Emil Gerbeaud, renowned for its walnut-and-jam Gerbeaud slice."
+    },
+    "Central Kávéház": {
+      "cuisine": "Hungarian",
+      "description": "A historic café opened in 1887, once the meeting point of writers and poets from the journals 'Nyugat' and 'A Hét' until it closed in 1944; today reopened with its original decor restored."
+    },
+    "Gundel": {
+      "cuisine": "Classic Hungarian",
+      "description": "Hungary's most famous restaurant, beside Városliget City Park since 1894 and shaped by Károly Gundel from 1910 onward, creator of icons like Gundel pancakes."
+    },
+    "Fülemüle Étterem": {
+      "cuisine": "Jewish-Hungarian",
+      "description": "A family-run restaurant in the Palace Quarter, open since 2000, specializing in Jewish-Hungarian cooking; The New York Times praised its matzo ball soup as 'the best on earth'."
+    },
+    "Rosenstein Vendéglő": {
+      "cuisine": "Jewish-Hungarian",
+      "description": "Founded by chef Tibor Rosenstein near Keleti station, it has been a benchmark of Jewish-Hungarian home cooking in a family atmosphere since the late 1980s."
+    },
+    "Mazel Tov": {
+      "cuisine": "Mediterranean / Israeli",
+      "description": "A garden restaurant inside a derelict Jewish Quarter building that fuses the ruin-bar aesthetic with polished Mediterranean and Israeli cooking, one of Budapest's most photographed venues."
+    },
+    "Kőleves": {
+      "cuisine": "Hungarian",
+      "description": "A vendéglő in the heart of the Jewish Quarter combining Hungarian grandmother-style dishes with contemporary touches, with a garden courtyard that's hugely popular in summer."
+    },
+    "Gettó Gulyás": {
+      "cuisine": "Hungarian (goulash)",
+      "description": "A small Jewish Quarter restaurant built entirely around goulash and pörkölt variations, with reservations all but essential given its popularity."
+    },
+    "Kádár Étkezde": {
+      "cuisine": "Jewish-Hungarian",
+      "description": "A legendary kifőzde canteen on Klauzál tér, the temple of sólet (cholent) and shared checkered-tablecloth tables; it closed in 2020 and reopened in September 2025 with its original menu."
+    },
+    "Menza": {
+      "cuisine": "Retro Hungarian",
+      "description": "A bistro on Liszt Ferenc tér with a retro 1970s socialist-canteen aesthetic, serving updated versions of Hungarian classics since 2004."
+    },
+    "Zeller Bisztró": {
+      "cuisine": "Hungarian",
+      "description": "A family-run bistro near Szabadság tér, praised for its unfussy seasonal Hungarian cooking and warm atmosphere, away from the more touristy districts."
+    },
+    "Fricska Gastropub": {
+      "cuisine": "Hungarian / French",
+      "description": "A Jewish Quarter gastropub blending French and Italian influences with new Hungarian cooking; it reopened as 'Fricska 2.0' after the pandemic."
+    },
+    "Fakanál Étterem": {
+      "cuisine": "Hungarian",
+      "description": "A restaurant on the upper floor of the Great Market Hall since 1998, serving goulash and grandmother-style dishes with daily live music; the market's only air-conditioned venue."
+    },
+    "Karavan Street Food": {
+      "cuisine": "Varied",
+      "description": "Hungary's first and most successful street-food court, opened in 2014 next to the Szimpla Kert ruin bar, with food trucks serving lángos, goulash, burgers and vegan options."
+    },
+    "Instant-Fogas": {
+      "cuisine": "Hungarian / bar food",
+      "description": "The fusion of two iconic ruin bars, Instant and Fogasház, into a maze of 15 bars and eight dance floors: the largest party complex in Central Europe."
+    },
+    "Élesztő": {
+      "cuisine": "Hungarian / bar food",
+      "description": "A craft beer bar inside a former glass factory in District IX, the epicenter of Budapest's craft beer revolution with up to 20 local beers on tap."
+    },
+    "Espresso Embassy": {
+      "cuisine": "Specialty coffee",
+      "description": "A pioneer of specialty coffee in Hungary since 2012, regularly ranked among Europe's best coffee shops."
+    },
+    "My Little Melbourne": {
+      "cuisine": "Specialty coffee",
+      "description": "Opened in 2012, it was Hungary's first specialty coffee shop, bringing Melbourne, Australia's coffee culture to Budapest."
+    },
+    "Gelarto Rosa": {
+      "cuisine": "Ice cream",
+      "description": "An ice cream shop near St. Stephen's Basilica famous for its rose-shaped gelato, photos of which went viral on social media worldwide."
+    },
+    "Auguszt Cukrászda": {
+      "cuisine": "Hungarian / pastry",
+      "description": "Budapest's second-oldest confectionery after Gerbeaud, founded in 1870 and still run by the Auguszt family in its fourth generation."
+    },
+    "Bors GasztroBár": {
+      "cuisine": "Hungarian / soups",
+      "description": "A cult soup bar opened in 2012 in the Jewish Quarter, known for stuffed baguettes and creative soups that sell out daily."
+    },
+    "Stand25 Bisztró": {
+      "cuisine": "Hungarian",
+      "description": "A Buda-side bistro from chefs Szabina Szulló and Tamás Széll of two-Michelin-star Stand, offering a more casual, affordable take on Hungarian cooking."
+    },
+    "Hummus Bar": {
+      "cuisine": "Middle Eastern / vegetarian",
+      "description": "A local chain born in 2005 that popularized hummus and falafel in Budapest, with several locations around the city and vegetarian options throughout the menu."
+    },
+    "Molnár's Kürtőskalács": {
+      "cuisine": "Hungarian sweet",
+      "description": "One of the most popular kürtőskalács (chimney cake) stalls in the city center, on Váci utca, with eight flavors roasted to order."
     }
   }
 }
