@@ -22,6 +22,146 @@
     "Kalky's": {
       "cuisine": "South African / fish and chips",
       "description": "A fish-and-chips shack by the Kalk Bay fishing harbor, with the freshest fish on the peninsula."
+    },
+    "Wolfgat": {
+      "cuisine": "South African / west coast",
+      "description": "A tiny 20-seat restaurant beside a coastal cave in Paternoster; named Best Restaurant in Africa at The World's 50 Best Restaurants 2021, with hyperlocal west-coast cooking from chef Kobus van der Merwe."
+    },
+    "Foxcroft": {
+      "cuisine": "Contemporary South African",
+      "description": "Relaxed fine dining in Constantia from chef Scot Kirton of the La Colombe group; winner of the Eat Out New Restaurant award and a repeat Restaurant of the Year nominee."
+    },
+    "Chef's Warehouse at Beau Constantia": {
+      "cuisine": "Contemporary international",
+      "description": "A tasting menu with views over the Constantia wine valley, led by chef Ivor Jones (formerly of The Test Kitchen and La Colombe) at the Beau Constantia estate."
+    },
+    "The Pot Luck Club": {
+      "cuisine": "Contemporary tapas",
+      "description": "A tapas restaurant inside a converted grain silo at Woodstock's Old Biscuit Mill, created by acclaimed chef Luke Dale-Roberts (The Test Kitchen)."
+    },
+    "The Shortmarket Club": {
+      "cuisine": "Contemporary European",
+      "description": "A European-style bistro in the heart of the CBD, another Luke Dale-Roberts project, serving reinvented classics with an acclaimed wine list."
+    },
+    "Belly of the Beast": {
+      "cuisine": "Seasonal South African",
+      "description": "A seasonal restaurant in the East City led by chef Odette Olivier, focused on local ingredients and fermentation; featured on the World's 50 Best discovery list."
+    },
+    "Chef's Warehouse & Canteen": {
+      "cuisine": "International tapas",
+      "description": "Globally inspired small-plates cooking on Bree Street from chef Liam Tomlin, with an ever-changing shared menu and one of the city centre's most talked-about wine cellars."
+    },
+    "95 Keerom": {
+      "cuisine": "Italian",
+      "description": "Northern Italian cooking from Milanese chef Giorgio Nava, in a heritage building that once housed the Company's Garden stables; regarded as one of the best Italian restaurants outside Italy."
+    },
+    "Societi Bistro": {
+      "cuisine": "French / bistro",
+      "description": "A classic bistro in a Georgian house in Gardens, serving comforting French bistro staples with an extensive by-the-glass wine list."
+    },
+    "Grub & Vine": {
+      "cuisine": "International bistro",
+      "description": "Honest bistro cooking and a carefully chosen wine list in a heritage building on Bree Street, from chef Matt Manning."
+    },
+    "Kloof Street House": {
+      "cuisine": "South African / gatsby",
+      "description": "A Victorian house set in a tree-lined garden on Kloof Street, famous for its gatsby sandwich and Gatsby-era atmosphere; part restaurant, part bar, part beer garden."
+    },
+    "La Tête": {
+      "cuisine": "French / nose-to-tail",
+      "description": "Nose-to-tail cooking from brothers Giles and James Edwards on Bree Street, built on using the whole animal and direct relationships with producers."
+    },
+    "Willoughby & Co": {
+      "cuisine": "Sushi / seafood",
+      "description": "A sushi and seafood counter at the V&A Waterfront since 1996, famous for its long queues and the complimentary glass of wine while you wait."
+    },
+    "Harbour House": {
+      "cuisine": "Seafood",
+      "description": "A seafood restaurant overlooking the Victoria Basin at the V&A Waterfront, a Cape Town classic for a harbourside lunch."
+    },
+    "Baia Seafood Restaurant": {
+      "cuisine": "Seafood / Portuguese",
+      "description": "Seafood with panoramic harbour views since 2001, known for its Portuguese-inspired cataplana at the V&A Waterfront."
+    },
+    "The Codfather": {
+      "cuisine": "Seafood / sushi",
+      "description": "Fresh fish and sushi displayed on ice for guests to choose before it's cooked, a casual Camps Bay classic."
+    },
+    "The Foodbarn": {
+      "cuisine": "French / tapas",
+      "description": "Bistronomy and tapas cooking from chef Franck Dangereux, a pioneer of Cape Town fine dining (founder of the original La Colombe), in laid-back Noordhoek Farm Village."
+    },
+    "Africa Café": {
+      "cuisine": "Pan-African",
+      "description": "One of South Africa's first pan-African restaurants, opened in 1992 by chef Portia Mbau; a tasting menu of dishes from across the continent."
+    },
+    "Mama Africa": {
+      "cuisine": "Pan-African",
+      "description": "A pan-African restaurant on Long Street since 1995, with live marimba bands every night and a mixed grill of crocodile, ostrich and kudu."
+    },
+    "Gold Restaurant": {
+      "cuisine": "Pan-African",
+      "description": "A pan-African dining experience in a converted De Waterkant warehouse, with djembe drumming, dance and a fourteen-course menu from across the continent."
+    },
+    "Bo-Kaap Kombuis": {
+      "cuisine": "Cape Malay",
+      "description": "Traditional Cape Malay cooking in a family home on the slopes of Signal Hill with views of Table Mountain; Michelin-starred chefs have come to learn from owner Nazli Larney."
+    },
+    "Atlas Trading Company": {
+      "cuisine": "Spices / Cape Malay",
+      "description": "Bo-Kaap's oldest spice shop, founded in 1946 by the Ahmed family; the go-to source for Cape Malay and curry spice blends."
+    },
+    "Hussar Grill Rondebosch": {
+      "cuisine": "South African / steakhouse",
+      "description": "A South African grill founded in 1964 in Rondebosch by Allen Ambor, a pioneer of the local steakhouse and now a citywide chain."
+    },
+    "Beefcakes": {
+      "cuisine": "Burgers",
+      "description": "A kitsch burger joint with live drag shows in Green Point, a gay-friendly icon of Cape Town nightlife."
+    },
+    "Royale Eatery": {
+      "cuisine": "Burgers",
+      "description": "A pioneering gourmet burger joint on Long Street, with more than 50 burger varieties and hand-spun milkshakes."
+    },
+    "Truth Coffee Roasting": {
+      "cuisine": "Coffee",
+      "description": "A steampunk-styled coffee roastery in a Victorian warehouse; named 'World's Best Coffee Shop' by the UK's Daily Telegraph two years running."
+    },
+    "Origin Coffee Roasting": {
+      "cuisine": "Coffee",
+      "description": "One of the pioneers of Cape Town's specialty coffee scene, housed in an industrial warehouse in De Waterkant."
+    },
+    "Jason Bakery": {
+      "cuisine": "Bakery",
+      "description": "A go-to Green Point bakery famous for its croissants; founder Jason Lillie is known as Cape Town's croissant king."
+    },
+    "Charly's Bakery": {
+      "cuisine": "Bakery / patisserie",
+      "description": "A colorful family-run bakery in Zonnebloem known for its whimsical cakes, star of the South African docu-series 'Charly's Cake Angels', broadcast in over 100 countries."
+    },
+    "Neighbourgoods Market": {
+      "cuisine": "Food market",
+      "description": "The Saturday market that launched Cape Town's 'hipster' food scene in 2006, inside Woodstock's historic Old Biscuit Mill, with dozens of street-food stalls."
+    },
+    "Oranjezicht City Farm Market": {
+      "cuisine": "Farmers market",
+      "description": "A producers' market that grew out of a community urban farm founded in 2012, now held by the V&A Waterfront, with over 40 farmers and 80 artisanal food traders."
+    },
+    "Bay Harbour Market": {
+      "cuisine": "Food market",
+      "description": "An indoor market at the Hout Bay fishing harbour, with food stalls, crafts and live music on weekends."
+    },
+    "Buitenverwachting": {
+      "cuisine": "South African / wine estate",
+      "description": "The restaurant of the historic Buitenverwachting wine estate, whose origins date to the late 17th century, in the Constantia valley."
+    },
+    "Jonkershuis at Groot Constantia": {
+      "cuisine": "Cape Malay / wine estate",
+      "description": "A Cape Malay-influenced bistro beside the manor house at Groot Constantia, South Africa's oldest wine estate, beneath centuries-old oaks."
+    },
+    "La Petite Colombe": {
+      "cuisine": "Franco-South African",
+      "description": "La Colombe's sister restaurant in Franschhoek, on the Leeu Estates farm; French-South African fine dining among the vines, featured on the World's 50 Best discovery list."
     }
   }
 }
