@@ -22,6 +22,146 @@
     "Café Savoy": {
       "cuisine": "Czech",
       "description": "An Art Nouveau café since 1893 by the Vltava, with a seven-meter neo-Renaissance ceiling."
+    },
+    "Levitate": {
+      "cuisine": "Nordic-Asian",
+      "description": "A fine-dining restaurant that opened in 2023 on Vinohradská, with 12- or 18-course tasting menus blending Czech ingredients with Nordic technique and Asian flavors. It earned its first Michelin star in the 2025 Michelin Guide Czechia."
+    },
+    "Casa De Carli": {
+      "cuisine": "Italian",
+      "description": "A family-run Italian restaurant led by Matteo De Carli and Lenka Hermanová since 2012, with handmade pasta and bread and a list of more than 300 Italian wines. It earned its first Michelin star in 2025."
+    },
+    "Štangl": {
+      "cuisine": "Czech",
+      "description": "A seasonal restaurant in Karlín, set above the Eska bakery, built around locally sourced ingredients and direct relationships with Czech producers. Holds a Michelin star and a Green Star for its sustainability practices."
+    },
+    "Leaf": {
+      "cuisine": "Modern Czech",
+      "description": "A restaurant by chef Barbora Šimůnková in the Strašnice neighborhood, focused on local, seasonal, sustainable cooking. Recognized with a Michelin Green Star in 2025."
+    },
+    "Alma": {
+      "cuisine": "Modern Czech",
+      "description": "A relaxed, modern restaurant with an open kitchen near the National Theatre, recognized by the Michelin Guide as a Bib Gourmand for great value cooking."
+    },
+    "Dejvická 34 by Tomáš Černý": {
+      "cuisine": "Czech-Italian",
+      "description": "A neighborhood bistro in Dejvice led by chef Tomáš Černý, who spent more than twenty years working alongside Michelin-starred Italian chefs. Awarded a Bib Gourmand."
+    },
+    "Na Kopci": {
+      "cuisine": "Czech-French",
+      "description": "A neighborhood restaurant in Radlice inspired by French and traditional Czech cooking, awarded the Michelin Bib Gourmand ten years running since 2015."
+    },
+    "The Eatery": {
+      "cuisine": "Modern European",
+      "description": "An industrial-style restaurant in an out-of-the-way Prague neighborhood, with a menu that changes daily with the season and a standout wine list. Michelin Bib Gourmand."
+    },
+    "U Kalendů": {
+      "cuisine": "Czech",
+      "description": "A riverside restaurant and bakery from the Ambiente group, specializing in Czech classics like braised hare, pork cheeks and sweet yeast dumplings. Michelin Bib Gourmand."
+    },
+    "U Matěje": {
+      "cuisine": "Czech",
+      "description": "A neighborhood restaurant in Dejvice, near the Prague Zoo, serving seasonal contemporary Czech cooking. Michelin Bib Gourmand."
+    },
+    "Výčep": {
+      "cuisine": "Czech",
+      "description": "A modern beer hall in Vinohrady led by chef Jiří Hrachový, serving Czech cooking with Wallachian roots. Michelin Bib Gourmand."
+    },
+    "Pivovar U Medvídků": {
+      "cuisine": "Czech",
+      "description": "A historic Old Town brewery-restaurant with its own beer, famous for pork knuckle braised in dark beer. Anthony Bourdain visited this spot on 'No Reservations'."
+    },
+    "Pivovarský klub": {
+      "cuisine": "Czech",
+      "description": "A Czech beer bar in Karlín with a well-curated range of craft and mainstream brews, where Anthony Bourdain tried pork knuckle with red cabbage and horseradish on 'No Reservations'."
+    },
+    "Sapa": {
+      "cuisine": "Vietnamese",
+      "description": "A huge Vietnamese marketplace and community complex in southern Prague, known as 'Little Hanoi'. Anthony Bourdain visited this market on 'No Reservations' to eat bún ốc, rice vermicelli with snails and pork meatballs."
+    },
+    "Lokál Dlouhááá": {
+      "cuisine": "Czech",
+      "description": "The first and longest outpost of the Ambiente group's Lokál chain, pouring unpasteurized Pilsner Urquell straight from twelve tanks alongside Czech classics like goulash and fried cheese."
+    },
+    "U Pinkasů": {
+      "cuisine": "Czech",
+      "description": "Founded by Jakub Pinkas in 1843, it was the first Prague pub to serve Pilsner Urquell on tap. The original pipe that carried that first beer is still on display in the cellar."
+    },
+    "Café Louvre": {
+      "cuisine": "Czech",
+      "description": "A Parisian-style café and billiard hall dating to 1902, historically frequented by Albert Einstein and Franz Kafka, who rented a private room here with his circle of friends."
+    },
+    "Café Slavia": {
+      "cuisine": "Czech",
+      "description": "An emblematic literary café since 1884, facing the National Theatre, a historic meeting point for Kafka, Havel and generations of Czech writers and dissidents."
+    },
+    "U Modré Kachničky": {
+      "cuisine": "Czech",
+      "description": "A restaurant in a 16th-century Baroque building in Malá Strana, specializing in duck prepared many ways. It has hosted guests including Václav Havel, Sean Connery and Gérard Depardieu."
+    },
+    "Naše Maso": {
+      "cuisine": "Czech",
+      "description": "A butcher shop and bistro that revived traditional Czech butchery, famous for its steak tartare and Prague ham. A landmark of the Ambiente group's culinary revival on Dlouhá street."
+    },
+    "Kantýna": {
+      "cuisine": "Czech",
+      "description": "A hybrid of high-end butcher shop and casual canteen set in a former 19th-century bank, specializing in grilled top-quality Czech beef and pork."
+    },
+    "Manifesto Market": {
+      "cuisine": "International",
+      "description": "An open-air food market set in converted shipping containers, with more than two dozen international street-food stalls plus culture and live music in the Smíchov district."
+    },
+    "Eska": {
+      "cuisine": "Czech",
+      "description": "An Ambiente group bakery and restaurant in Karlín, a pioneer of sourdough bread and local-produce brunch, set in a former industrial building by the river."
+    },
+    "SansHo": {
+      "cuisine": "Asian fusion",
+      "description": "An Asian-fusion restaurant opened in 2011 by Englishman Paul Day, a pioneer in bringing flavors from across Asia into Prague's dining scene."
+    },
+    "Divinis": {
+      "cuisine": "Italian",
+      "description": "A wine bar and restaurant serving seasonal Italian cooking from Czech chef Zdeněk Pohlreich, with a mostly Italian wine list, near Old Town Square."
+    },
+    "Náplavka": {
+      "cuisine": "Czech",
+      "description": "A farmers' market along the Vltava riverbank, held on Saturday mornings from April through November, with local produce and handmade goods."
+    },
+    "Zlý Časy": {
+      "cuisine": "Czech",
+      "description": "One of Prague's first craft beer bars, opened in 2006 in the Nusle district, with 48 taps spread over three floors dedicated to small Czech and international breweries."
+    },
+    "Grand Cru": {
+      "cuisine": "French",
+      "description": "A modern French restaurant led by chef Tomáš Teichman, making its own pâtés, sausages and smoked cheeses, with a notable wine cellar."
+    },
+    "V Zátiší": {
+      "cuisine": "Czech-International",
+      "description": "One of the first upscale restaurants to open in Prague after 1989, founded in 1991 and named best restaurant in Central and Eastern Europe by the Egon Ronay guide in 1996."
+    },
+    "Mincovna": {
+      "cuisine": "Czech",
+      "description": "A restaurant set in an 18th-century former mint on Old Town Square, serving traditional Czech dishes like goulash and svíčková beneath vaulted ceilings."
+    },
+    "Hergetova Cihelna": {
+      "cuisine": "International",
+      "description": "A restaurant set in a former 18th-century brickworks on the bank of the Vltava, with one of the best views of Charles Bridge from its terrace."
+    },
+    "Vinohradský Pivovar": {
+      "cuisine": "Czech",
+      "description": "A microbrewery and restaurant set in the vaulted cellars of the historic Vinohrady burghers' brewery, dating to 1893."
+    },
+    "Café Imperial": {
+      "cuisine": "Czech",
+      "description": "A grand 1914 Art Deco café inside the Hotel Imperial, with original ceramic tile walls designed by Jan Beneš. Historically frequented by Franz Kafka and composer Leoš Janáček."
+    },
+    "Kolkovna V Kolkovně": {
+      "cuisine": "Czech",
+      "description": "The first restaurant under the Pilsner Urquell Original Restaurant brand, opened in 2001 in a former 1920s stamp-printing works between Old Town and the Jewish Quarter."
+    },
+    "Mlýnec": {
+      "cuisine": "International",
+      "description": "A riverside restaurant with Charles Bridge views from its terrace, serving cooking that blends traditional Czech flavors with international influences. Recognized by the Michelin Guide."
     }
   }
 }
