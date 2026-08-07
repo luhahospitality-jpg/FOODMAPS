@@ -3,7 +3,7 @@
   "name": "Berlín",
   "country": "Alemania",
   "tagline": "Dos horas de fila por un döner, y tres estrellas Michelin en la carta de vinos más premiada de Alemania.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,656 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5021661,13.4314886"
+    },
+    {
+      "name": "Nobelhart & Schmutzig",
+      "place_id": null,
+      "lat": 52.5065,
+      "lng": 13.391,
+      "category": "fine_dining",
+      "cuisine": "alemán",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina hiperlocal en Kreuzberg: solo ingredientes de Berlín y Brandeburgo, servidos en una barra sin manteles ni menú escrito. Una estrella Michelin de la mano de Billy Wagner y el chef Micha Schäfer.",
+      "source_url": "https://guide.michelin.com/us/en/berlin-region/berlin/restaurant/nobelhart-schmutzig",
+      "source_type": null,
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5065,13.391",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Facil",
+      "place_id": null,
+      "lat": 52.5096,
+      "lng": 13.3733,
+      "category": "fine_dining",
+      "cuisine": "europeo de vanguardia",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de vanguardia en un jardín de bambú escondido en la quinta planta del hotel Mandala, junto a Potsdamer Platz. Dos estrellas Michelin desde 2013 bajo el mando del chef Michael Kempf.",
+      "source_url": "https://guide.michelin.com/us/en/berlin-region/berlin/restaurant/facil",
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5096,13.3733",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Horváth",
+      "place_id": null,
+      "lat": 52.4939,
+      "lng": 13.4257,
+      "category": "fine_dining",
+      "cuisine": "austriaco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina austriaca reinventada por el chef Sebastian Frank a orillas del canal Landwehr, en Kreuzberg. Dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/horvath",
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4939,13.4257",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Coda Dessert Dining",
+      "place_id": null,
+      "lat": 52.4867,
+      "lng": 13.4372,
+      "category": "fine_dining",
+      "cuisine": "alta repostería / vanguardia",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El único restaurante de Alemania centrado por completo en el postre, sin azúcar refinado, creado por el pastelero René Frank. Dos estrellas Michelin en Neukölln.",
+      "source_url": "https://guide.michelin.com/us/en/berlin-region/berlin/restaurant/coda-dessert-dining",
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4867,13.4372",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Restaurant Richard",
+      "place_id": null,
+      "lat": 52.5027,
+      "lng": 13.423,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa contemporánea en un antiguo salón de baile de 1900 junto al Spree, dirigido por el pintor convertido en chef Hans Richard. Una estrella Michelin desde 2015.",
+      "source_url": "https://guide.michelin.com/se/en/berlin-region/berlin/restaurant/richard",
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5027,13.423",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Julius",
+      "place_id": null,
+      "lat": 52.5488,
+      "lng": 13.3612,
+      "category": "restaurante",
+      "cuisine": "alemán / europeo",
+      "tags": [
+        "critic"
+      ],
+      "description": "El hermano casual de Ernst, el restaurante con estrella Michelin que cerró a finales de 2024, abierto justo enfrente en Wedding con el mismo chef, Dylan Watson-Brawn.",
+      "source_url": "https://www.the-berliner.com/food/dylan-watson-brawn-on-ernst-julius-and-being-crowned-germanys-best-chef/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5488,13.3612",
+      "distinction": null
+    },
+    {
+      "name": "eins44",
+      "place_id": null,
+      "lat": 52.4791,
+      "lng": 13.4378,
+      "category": "restaurante",
+      "cuisine": "alemán / europeo de mercado",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de mercado en el tercer patio de una antigua destilería de esencias en Neukölln, recomendada por la Guía Michelin desde 2017.",
+      "source_url": "https://www.eins44.com/",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4791,13.4378",
+      "distinction": null
+    },
+    {
+      "name": "Bandol sur Mer",
+      "place_id": null,
+      "lat": 52.5297,
+      "lng": 13.3968,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Bistró francés diminuto y sin cartel visible en Torstraße, con una estrella Michelin desde 2016 y una carta corta que cambia constantemente.",
+      "source_url": "https://guide.michelin.com/en/berlin-region/berlin/restaurant/bandol-sur-mer",
+      "source_type": null,
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5297,13.3968",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Katz Orange",
+      "place_id": null,
+      "lat": 52.5335,
+      "lng": 13.3921,
+      "category": "restaurante",
+      "cuisine": "alemán / internacional",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de mercado y carnes de cocción lenta en el patio de una antigua cervecería de ladrillo en Mitte, con ingredientes de su propia huerta en Brandeburgo.",
+      "source_url": "https://www.visitberlin.de/en/katz-orange",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5335,13.3921",
+      "distinction": null
+    },
+    {
+      "name": "Zur Letzten Instanz",
+      "place_id": null,
+      "lat": 52.5157,
+      "lng": 13.4133,
+      "category": "restaurante",
+      "cuisine": "alemán",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante más antiguo de Berlín, en funcionamiento desde 1621 junto al Graues Kloster. La tradición local cuenta que hasta Napoleón cenó aquí.",
+      "source_url": "https://zurletzteninstanz.com/en/start-en/",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5157,13.4133",
+      "distinction": null
+    },
+    {
+      "name": "Dicke Wirtin",
+      "place_id": null,
+      "lat": 52.5079,
+      "lng": 13.3229,
+      "category": "bar",
+      "cuisine": "alemán",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kneipe tradicional de Charlottenburg junto a Savignyplatz, con décadas sirviendo platos berlineses contundentes y una amplia selección de cervezas de barril.",
+      "source_url": "https://dicke-wirtin.de/en/",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5079,13.3229",
+      "distinction": null
+    },
+    {
+      "name": "Konnopke's Imbiss",
+      "place_id": null,
+      "lat": 52.541,
+      "lng": 13.4127,
+      "category": "street_food",
+      "cuisine": "alemán / currywurst",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El puesto de currywurst más famoso de Berlín, bajo las vías del U2 en Prenzlauer Berg desde 1930. Sirvió la primera currywurst del Berlín Este a partir de 1960.",
+      "source_url": "https://www.konnopke-imbiss.de/en",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.541,13.4127",
+      "distinction": null
+    },
+    {
+      "name": "Mustafa's Gemüse Kebap",
+      "place_id": null,
+      "lat": 52.4923,
+      "lng": 13.3897,
+      "category": "street_food",
+      "cuisine": "turco / döner",
+      "tags": [
+        "viral_tiktok",
+        "critic"
+      ],
+      "description": "El kebab de verduras con las colas más largas de Berlín, servido en un pequeño quiosco de Mehringdamm que se ha vuelto viral en redes sociales de todo el mundo.",
+      "source_url": "https://mustafas.de/",
+      "source_type": "viral_social",
+      "source_type_secondary": "critic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4923,13.3897",
+      "distinction": null
+    },
+    {
+      "name": "Hasir",
+      "place_id": null,
+      "lat": 52.5,
+      "lng": 13.4185,
+      "category": "restaurante",
+      "cuisine": "turco / döner",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El local original de la cadena Hasir en Adalbertstraße, donde en 1971 Mehmet Aygün tuvo la idea de meter el döner kebap dentro de pan de pita, dando forma al döner tal y como se conoce hoy.",
+      "source_url": "https://www.visitberlin.de/en/hasir",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5,13.4185",
+      "distinction": null
+    },
+    {
+      "name": "Rüyam Gemüse Kebap",
+      "place_id": null,
+      "lat": 52.4832,
+      "lng": 13.3559,
+      "category": "street_food",
+      "cuisine": "turco / döner",
+      "tags": [
+        "critic"
+      ],
+      "description": "El gran rival de Mustafa's en la eterna disputa berlinesa por el mejor döner de verduras, con colas propias en Schöneberg.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4832,13.3559",
+      "distinction": null
+    },
+    {
+      "name": "Bonanza Coffee Heroes",
+      "place_id": null,
+      "lat": 52.539,
+      "lng": 13.407,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pionero de la tercera ola del café en Berlín desde 2006, con tueste propio en su local original de Prenzlauer Berg.",
+      "source_url": "https://www.top10berlin.de/en/cat/eating-257/coffee-roasters-3054/bonanza-coffee-heroes-3872",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.539,13.407",
+      "distinction": null
+    },
+    {
+      "name": "The Barn Roastery",
+      "place_id": null,
+      "lat": 52.528,
+      "lng": 13.402,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los tostadores de café de especialidad más influyentes de Alemania, con tueste propio a la vista en su café de Schönhauser Allee.",
+      "source_url": "https://thebarn.de/pages/locations/schonhauser-allee",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.528,13.402",
+      "distinction": null
+    },
+    {
+      "name": "Zeit für Brot",
+      "place_id": null,
+      "lat": 52.5259,
+      "lng": 13.4079,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería de Mitte célebre por sus rollos de canela (Zimtschnecken), horneados a la vista tras un escaparate de cristal.",
+      "source_url": "https://zeitfuerbrot.com/en/bakeries",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5259,13.4079",
+      "distinction": null
+    },
+    {
+      "name": "Prater Garten",
+      "place_id": null,
+      "lat": 52.5384,
+      "lng": 13.4082,
+      "category": "biergarten",
+      "cuisine": "alemán / biergarten",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El biergarten más antiguo de Berlín, en un patio de Prenzlauer Berg desde 1837, bajo castaños centenarios y con 600 plazas.",
+      "source_url": "https://www.berlin.de/en/tourism/insider-tips/beer-gardens/9241029-9086094-prater-garten.en.html",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5384,13.4082",
+      "distinction": null
+    },
+    {
+      "name": "Golgatha",
+      "place_id": null,
+      "lat": 52.4874,
+      "lng": 13.3808,
+      "category": "biergarten",
+      "cuisine": "alemán / biergarten",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Biergarten en lo alto del Viktoriapark de Kreuzberg, junto a la cascada artificial y con vistas sobre la ciudad.",
+      "source_url": "https://golgatha-berlin.de/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4874,13.3808",
+      "distinction": null
+    },
+    {
+      "name": "Café am Neuen See",
+      "place_id": null,
+      "lat": 52.5088,
+      "lng": 13.3435,
+      "category": "biergarten",
+      "cuisine": "alemán / biergarten",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Biergarten a orillas de un lago en pleno Tiergarten, con capacidad para varios cientos de personas bajo los castaños.",
+      "source_url": "https://www.visitberlin.de/en/cafe-am-neuen-see",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5088,13.3435",
+      "distinction": null
+    },
+    {
+      "name": "Borchardt",
+      "place_id": null,
+      "lat": 52.5157,
+      "lng": 13.3927,
+      "category": "restaurante",
+      "cuisine": "alemán / francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución berlinesa desde 1853 en Gendarmenmarkt, célebre por su Wiener Schnitzel y su clientela habitual de políticos y actores.",
+      "source_url": "https://www.visitberlin.de/en/borchardt",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5157,13.3927",
+      "distinction": null
+    },
+    {
+      "name": "Grill Royal",
+      "place_id": null,
+      "lat": 52.5254,
+      "lng": 13.3868,
+      "category": "restaurante",
+      "cuisine": "steakhouse",
+      "tags": [
+        "critic"
+      ],
+      "description": "Steakhouse a orillas del Spree en Mitte, el restaurante de moda entre celebridades internacionales desde su apertura en 2007.",
+      "source_url": "https://www.grillroyal.com/en",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5254,13.3868",
+      "distinction": null
+    },
+    {
+      "name": "Renger-Patzsch",
+      "place_id": null,
+      "lat": 52.4854,
+      "lng": 13.354,
+      "category": "restaurante",
+      "cuisine": "alemán regional",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró de cocina regional y de temporada en Schöneberg, con ambiente de galería de arte y una carta que cambia a diario.",
+      "source_url": "https://renger-patzsch.com/en/restaurant-renger-patzsch/",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4854,13.354",
+      "distinction": null
+    },
+    {
+      "name": "Max und Moritz",
+      "place_id": null,
+      "lat": 52.5013,
+      "lng": 13.4173,
+      "category": "restaurante",
+      "cuisine": "alemán",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antigua cervecería de Kreuzberg abierta en 1902, con nombre tomado de los personajes de Wilhelm Busch y cocina berlinesa tradicional.",
+      "source_url": "https://maxundmoritzberlin.de/en/",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5013,13.4173",
+      "distinction": null
+    },
+    {
+      "name": "Cocolo Ramen",
+      "place_id": null,
+      "lat": 52.5273,
+      "lng": 13.4013,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los primeros ramen-ya serios de Berlín, en una pequeña sala de Mitte con caldo cocido durante horas.",
+      "source_url": "https://www.eatthisdot.com/en/restaurant/cocolo-ramen-mitte",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5273,13.4013",
+      "distinction": null
+    },
+    {
+      "name": "Zwölf Apostel",
+      "place_id": null,
+      "lat": 52.5203,
+      "lng": 13.3878,
+      "category": "restaurante",
+      "cuisine": "italiano / pizza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería bajo los arcos del S-Bahn cerca de Friedrichstraße, famosa por sus pizzas de casi un metro de largo.",
+      "source_url": "https://prinz.de/berlin/locations/110655-zwoelf-apostel/",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5203,13.3878",
+      "distinction": null
+    },
+    {
+      "name": "Fine Bagels",
+      "place_id": null,
+      "lat": 52.5077,
+      "lng": 13.4491,
+      "category": "cafeteria",
+      "cuisine": "bagels / estadounidense",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bagels al estilo neoyorquino nacidos en 2013 como anexo de la librería Shakespeare and Sons, hoy un destino propio en Friedrichshain-Kreuzberg.",
+      "source_url": "http://www.finebagels.com/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5077,13.4491",
+      "distinction": null
+    },
+    {
+      "name": "Princess Cheesecake",
+      "place_id": null,
+      "lat": 52.5285,
+      "lng": 13.3925,
+      "category": "cafeteria",
+      "cuisine": "pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Salón de té y pastelería de Mitte especializado en tartas de queso, abierto desde 2011 junto al Monbijoupark.",
+      "source_url": "https://www.princess-cheesecake.de/",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5285,13.3925",
+      "distinction": null
+    },
+    {
+      "name": "Defne",
+      "place_id": null,
+      "lat": 52.493,
+      "lng": 13.4193,
+      "category": "restaurante",
+      "cuisine": "turco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante turco con terraza sobre el canal Landwehr en Kreuzberg, con mezze y pescado a la brasa más allá del döner.",
+      "source_url": "https://www.discoeat.de/en/berlin/kreuzberg/restaurant-defne/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.493,13.4193",
+      "distinction": null
+    },
+    {
+      "name": "Austria",
+      "place_id": null,
+      "lat": 52.4894,
+      "lng": 13.3912,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante austriaco junto al Marheineke Markthalle de Kreuzberg, célebre por un Wiener Schnitzel que desborda el plato.",
+      "source_url": "https://austria-berlin.de/",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.4894,13.3912",
+      "distinction": null
+    },
+    {
+      "name": "Ottenthal",
+      "place_id": null,
+      "lat": 52.5051,
+      "lng": 13.3196,
+      "category": "restaurante",
+      "cuisine": "austriaco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante y vinoteca austriaca en Charlottenburg, con un Wiener Schnitzel considerado de los mejores de la ciudad.",
+      "source_url": "https://www.ottenthal.com/",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5051,13.3196",
+      "distinction": null
+    },
+    {
+      "name": "Witty's",
+      "place_id": null,
+      "lat": 52.5016,
+      "lng": 13.3428,
+      "category": "fast_food",
+      "cuisine": "alemán / currywurst",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El primer quiosco de currywurst ecológica de Alemania, frente al KaDeWe desde 1984 y certificado Bioland desde 2003.",
+      "source_url": "https://wittys.de/en/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5016,13.3428",
+      "distinction": null
+    },
+    {
+      "name": "Türkenmarkt am Maybachufer",
+      "place_id": null,
+      "lat": 52.493,
+      "lng": 13.427,
+      "category": "mercado",
+      "cuisine": "turco / variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado turco a orillas del canal Landwehr, cada martes y viernes, con verdura barata, pan recién horneado y puestos de comida para llevar.",
+      "source_url": "https://www.tuerkenmarkt.de/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.493,13.427",
+      "distinction": null
+    },
+    {
+      "name": "Schneeweiss",
+      "place_id": null,
+      "lat": 52.5112,
+      "lng": 13.4568,
+      "category": "restaurante",
+      "cuisine": "alpino (austriaco / bávaro / norte de Italia)",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina alpina que mezcla Austria, Baviera y el norte de Italia, servida en un interior completamente blanco en Friedrichshain.",
+      "source_url": "https://www.schneeweiss-berlin.de/",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=52.5112,13.4568",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

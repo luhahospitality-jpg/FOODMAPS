@@ -22,6 +22,146 @@
     "Markthalle Neun": {
       "cuisine": "mixed",
       "description": "A historic Kreuzberg market turned street food benchmark, famous for its Street Food Thursday."
+    },
+    "Nobelhart & Schmutzig": {
+      "cuisine": "German",
+      "description": "Hyper-local fine dining in Kreuzberg: only ingredients from Berlin and Brandenburg, served at a counter with no tablecloths and no written menu. One Michelin star from owner Billy Wagner and chef Micha Schäfer."
+    },
+    "Facil": {
+      "cuisine": "modern European",
+      "description": "Avant-garde cuisine around a bamboo garden hidden on the fifth floor of the Mandala Hotel near Potsdamer Platz. Two Michelin stars held continuously since 2013 under chef Michael Kempf."
+    },
+    "Horváth": {
+      "cuisine": "Austrian",
+      "description": "Austrian haute cuisine reinvented by chef Sebastian Frank on the banks of the Landwehr canal in Kreuzberg. Two Michelin stars."
+    },
+    "Coda Dessert Dining": {
+      "cuisine": "dessert-driven fine dining",
+      "description": "Germany's only restaurant built entirely around dessert, with no refined sugar, created by pastry chef René Frank. Two Michelin stars in Neukölln."
+    },
+    "Restaurant Richard": {
+      "cuisine": "French",
+      "description": "Contemporary French cuisine in a former 1900 ballroom by the Spree, run by painter-turned-chef Hans Richard. One Michelin star since 2015."
+    },
+    "Julius": {
+      "cuisine": "German / European",
+      "description": "The casual sibling of Ernst, the Michelin-starred restaurant that closed at the end of 2024, located right across the street in Wedding with the same chef, Dylan Watson-Brawn."
+    },
+    "eins44": {
+      "cuisine": "German / market-driven European",
+      "description": "Market-driven cooking in the third courtyard of a former essence distillery in Neukölln, recommended by the Michelin Guide since 2017."
+    },
+    "Bandol sur Mer": {
+      "cuisine": "French",
+      "description": "A tiny, unmarked French bistro on Torstraße, holding one Michelin star since 2016 and a short menu that changes constantly."
+    },
+    "Katz Orange": {
+      "cuisine": "German / international",
+      "description": "Market-driven cooking and slow-cooked meats in the courtyard of a former brick brewery in Mitte, sourced partly from its own farm in Brandenburg."
+    },
+    "Zur Letzten Instanz": {
+      "cuisine": "German",
+      "description": "Berlin's oldest restaurant, in continuous operation since 1621 next to the Graues Kloster. Local lore holds that even Napoleon once dined here."
+    },
+    "Dicke Wirtin": {
+      "cuisine": "German",
+      "description": "A traditional Kneipe in Charlottenburg near Savignyplatz, serving hearty Berlin dishes for decades alongside a wide selection of draught beers."
+    },
+    "Konnopke's Imbiss": {
+      "cuisine": "German / currywurst",
+      "description": "Berlin's most famous currywurst stand, under the U2 viaduct in Prenzlauer Berg since 1930. It served East Berlin's first currywurst starting in 1960."
+    },
+    "Mustafa's Gemüse Kebap": {
+      "cuisine": "Turkish / döner",
+      "description": "Berlin's longest-queued vegetable kebab, served from a small kiosk on Mehringdamm that has gone viral on social media worldwide."
+    },
+    "Hasir": {
+      "cuisine": "Turkish / döner",
+      "description": "The original Hasir location on Adalbertstraße, where in 1971 Mehmet Aygün had the idea of putting döner kebab inside flatbread, shaping the döner sandwich as it is known today."
+    },
+    "Rüyam Gemüse Kebap": {
+      "cuisine": "Turkish / döner",
+      "description": "Mustafa's great rival in Berlin's endless debate over the best vegetable döner, drawing its own long queues in Schöneberg."
+    },
+    "Bonanza Coffee Heroes": {
+      "cuisine": "specialty coffee",
+      "description": "A pioneer of Berlin's third-wave coffee scene since 2006, roasting on site at its original Prenzlauer Berg location."
+    },
+    "The Barn Roastery": {
+      "cuisine": "specialty coffee",
+      "description": "One of Germany's most influential specialty coffee roasters, with on-site roasting visible at its café on Schönhauser Allee."
+    },
+    "Zeit für Brot": {
+      "cuisine": "bakery",
+      "description": "A Mitte bakery famous for its cinnamon rolls (Zimtschnecken), baked in full view behind a glass window."
+    },
+    "Prater Garten": {
+      "cuisine": "German / beer garden",
+      "description": "Berlin's oldest beer garden, set in a Prenzlauer Berg courtyard since 1837, under century-old chestnut trees with seating for 600."
+    },
+    "Golgatha": {
+      "cuisine": "German / beer garden",
+      "description": "A beer garden atop Kreuzberg's Viktoriapark, next to the artificial waterfall with views over the city."
+    },
+    "Café am Neuen See": {
+      "cuisine": "German / beer garden",
+      "description": "A lakeside beer garden in the heart of Tiergarten, seating several hundred people under chestnut trees."
+    },
+    "Borchardt": {
+      "cuisine": "German / French",
+      "description": "A Berlin institution since 1853 on Gendarmenmarkt, famous for its Wiener Schnitzel and its regular clientele of politicians and actors."
+    },
+    "Grill Royal": {
+      "cuisine": "steakhouse",
+      "description": "A steakhouse on the banks of the Spree in Mitte, the go-to restaurant for international celebrities since it opened in 2007."
+    },
+    "Renger-Patzsch": {
+      "cuisine": "regional German",
+      "description": "A regional, seasonal-cooking bistro in Schöneberg with a gallery-like atmosphere and a menu that changes daily."
+    },
+    "Max und Moritz": {
+      "cuisine": "German",
+      "description": "A historic Kreuzberg brewery-restaurant opened in 1902, named after Wilhelm Busch's comic characters and serving traditional Berlin cuisine."
+    },
+    "Cocolo Ramen": {
+      "cuisine": "Japanese",
+      "description": "One of Berlin's first serious ramen-ya, in a small Mitte dining room with broth simmered for hours."
+    },
+    "Zwölf Apostel": {
+      "cuisine": "Italian / pizza",
+      "description": "A pizzeria under the S-Bahn arches near Friedrichstraße, famous for its meter-long pizzas."
+    },
+    "Fine Bagels": {
+      "cuisine": "bagels / American",
+      "description": "New York-style bagels that started in 2013 as an offshoot of the Shakespeare and Sons bookstore, now a destination in its own right in Friedrichshain-Kreuzberg."
+    },
+    "Princess Cheesecake": {
+      "cuisine": "bakery-café",
+      "description": "A tea room and bakery-café in Mitte specializing in cheesecake, open since 2011 next to Monbijoupark."
+    },
+    "Defne": {
+      "cuisine": "Turkish",
+      "description": "A Turkish restaurant with a terrace over the Landwehr canal in Kreuzberg, serving mezze and grilled fish beyond the usual döner."
+    },
+    "Austria": {
+      "cuisine": "Austrian",
+      "description": "An Austrian restaurant next to Kreuzberg's Marheineke Markthalle, famous for a Wiener Schnitzel that overflows the plate."
+    },
+    "Ottenthal": {
+      "cuisine": "Austrian",
+      "description": "An Austrian restaurant and wine shop in Charlottenburg, with a Wiener Schnitzel considered among the city's best."
+    },
+    "Witty's": {
+      "cuisine": "German / currywurst",
+      "description": "Germany's first organic currywurst kiosk, facing the KaDeWe department store since 1984 and Bioland-certified since 2003."
+    },
+    "Türkenmarkt am Maybachufer": {
+      "cuisine": "Turkish / mixed",
+      "description": "A Turkish market along the Landwehr canal, held every Tuesday and Friday, with cheap produce, freshly baked bread, and takeaway food stalls."
+    },
+    "Schneeweiss": {
+      "cuisine": "Alpine (Austrian / Bavarian / northern Italian)",
+      "description": "Alpine cuisine blending Austria, Bavaria, and northern Italy, served in an all-white interior in Friedrichshain."
     }
   }
 }
