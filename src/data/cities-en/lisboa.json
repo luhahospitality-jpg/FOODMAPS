@@ -22,6 +22,146 @@
     "A Ginjinha Sem Rival": {
       "cuisine": "Portuguese / liqueur",
       "description": "A historic ginjinha (sour cherry liqueur) bar with more than a century of history, next to Praça dos Restauradores."
+    },
+    "A Ginjinha": {
+      "cuisine": "Portuguese / liqueur",
+      "description": "The original ginjinha kiosk by Largo de São Domingos, pouring sour-cherry liqueur since 1840. Anthony Bourdain stopped here on \"No Reservations.\""
+    },
+    "Cantinho do Avillez": {
+      "cuisine": "Portuguese",
+      "description": "Chef José Avillez's casual Chiado tavern, with reinvented classics like tempura green beans and pork cheek. Anthony Bourdain dined here with the chef himself on \"No Reservations.\""
+    },
+    "100 Maneiras": {
+      "cuisine": "Contemporary",
+      "description": "Bosnian chef Ljubomir Stanisic's fine-dining spot in Bairro Alto, built around a surprise tasting menu. Anthony Bourdain visited on \"No Reservations\"; it held a Michelin star until losing it in 2026."
+    },
+    "Alma": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "Chef Henrique Sá Pessoa's two-Michelin-star table in Chiado, set inside a former codfish warehouse. Anthony Bourdain dined here on \"No Reservations.\""
+    },
+    "O Trevo": {
+      "cuisine": "Portuguese / bifana sandwiches",
+      "description": "A small kiosk-bar on Praça Luís de Camões, known for its bifana (marinated pork sandwich). Anthony Bourdain tried one on \"No Reservations.\""
+    },
+    "Cura": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "The Four Seasons Ritz Lisbon's one-Michelin-star restaurant, rooted in Portuguese tradition and currently led by chef Rodolfo Lavrador."
+    },
+    "Loco": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "A 22-seat restaurant in Santos from chef Alexandre Silva, built around a surprise tasting menu rooted in Portuguese tradition. One Michelin star."
+    },
+    "Feitoria": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "The Altis Belém Hotel's riverside restaurant, holding a Michelin star since 2011 under chef André Cruz."
+    },
+    "Epur": {
+      "cuisine": "French / Portuguese",
+      "description": "French chef Vincent Farges' Chiado restaurant, with Tagus views across three dining rooms and a Michelin star since 2019."
+    },
+    "Eleven": {
+      "cuisine": "Mediterranean",
+      "description": "A panoramic restaurant by Eduardo VII Park, led by German chef Joachim Koerper since 2004; a fixture of Lisbon fine dining for two decades."
+    },
+    "A Cevicheria": {
+      "cuisine": "Peruvian-Portuguese",
+      "description": "Chef Kiko Martins' ceviche bar in Príncipe Real, with a giant wooden octopus hanging over the counter and a line out the door most nights."
+    },
+    "Zunzum Gastrobar": {
+      "cuisine": "Portuguese",
+      "description": "Chef Marlene Vieira's gastrobar by Doca Jardim do Tabaco, known for seafood rice and codfish à brás; awarded a Michelin Bib Gourmand since 2024."
+    },
+    "Solar dos Presuntos": {
+      "cuisine": "Portuguese (Minho)",
+      "description": "A 40-plus-year classic near Restauradores specializing in Minho-region cooking: lamprey, fried shad, and seafood rice."
+    },
+    "Taberna da Rua das Flores": {
+      "cuisine": "Author-driven Portuguese",
+      "description": "Chef André Magalhães' tiny no-reservations tavern in Chiado, with a chalkboard menu that changes daily with the market."
+    },
+    "Cervejaria Trindade": {
+      "cuisine": "Portuguese / beer hall",
+      "description": "Lisbon's oldest beer hall, opened in 1836 inside a former convent, famed for its 19th-century tile panels."
+    },
+    "Clube de Fado": {
+      "cuisine": "Portuguese",
+      "description": "A fado house in Alfama next to the Cathedral, serving Portuguese dinner with nightly performances by acclaimed fadistas in a 17th-century building."
+    },
+    "Solar do Vinho do Porto": {
+      "cuisine": "Port wine",
+      "description": "A tasting bar run by the Port and Douro Wine Institute, open since 1946 in Bairro Alto, with hundreds of Port wines on the list."
+    },
+    "Tasca do Chico": {
+      "cuisine": "Portuguese / fado",
+      "description": "A fado vadio tavern in Bairro Alto where professionals and regulars alike take turns singing; Anthony Bourdain sat here with writer António Lobo Antunes."
+    },
+    "Manteigaria": {
+      "cuisine": "Portuguese",
+      "description": "An open-kitchen pastel de nata factory in Chiado, widely considered Belém's best rival thanks to its butter-laden pastry."
+    },
+    "Café Martinho da Arcada": {
+      "cuisine": "Portuguese",
+      "description": "Lisbon's oldest café, open since 1782 under the arcades of Praça do Comércio and a favorite haunt of Fernando Pessoa, who wrote part of his work here."
+    },
+    "A Brasileira": {
+      "cuisine": "Portuguese",
+      "description": "A historic 1905 café in Chiado, with a bronze statue of Fernando Pessoa seated on its terrace; a meeting point for writers and intellectuals."
+    },
+    "Confeitaria Nacional": {
+      "cuisine": "Portuguese",
+      "description": "Lisbon's oldest confectionery, founded in 1829 on Praça da Figueira, famed for its bolo-rei and traditional pastries."
+    },
+    "Pastelaria Versailles": {
+      "cuisine": "Portuguese",
+      "description": "An Art Nouveau tea room from 1922 in Avenidas Novas, with mirrors, chandeliers, and old-fashioned table service."
+    },
+    "Time Out Market Lisboa": {
+      "cuisine": "Varied",
+      "description": "Time Out's food hall inside the historic 1892 Mercado da Ribeira, with 26 restaurants and 8 bars under one roof."
+    },
+    "Mercado de Campo de Ourique": {
+      "cuisine": "Varied",
+      "description": "A 1934 neighborhood market reborn as a local food hall, with stalls for sushi, pizza, burgers, and wine."
+    },
+    "Canalha": {
+      "cuisine": "Portuguese",
+      "description": "Chef João Rodrigues' restaurant on the edge of Belém, with produce on display and a daily lunch special on the chalkboard; awarded a Michelin Bib Gourmand."
+    },
+    "Prado": {
+      "cuisine": "Seasonal Portuguese",
+      "description": "Chef António Galapito's farm-to-table restaurant near the Cathedral, built around organic, seasonal ingredients in an industrial-style space."
+    },
+    "Boi-Cavalo": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "A small restaurant in Alfama set inside a former butcher's shop, serving reinvented Lisbon cooking at a good price."
+    },
+    "Sea Me": {
+      "cuisine": "Fish and seafood / sushi",
+      "description": "A modern fishmonger-restaurant in Chiado that combines a fish counter, sushi bar, and grill for fresh catch picked out on the spot."
+    },
+    "Pastelaria Aloma": {
+      "cuisine": "Portuguese",
+      "description": "A Campo de Ourique pastry shop open since 1943, repeatedly named (most recently in 2024) Lisbon's best pastel de nata in the national contest."
+    },
+    "Casa do Alentejo": {
+      "cuisine": "Portuguese (Alentejo)",
+      "description": "A 17th-century palace turned Alentejo regional clubhouse in 1932, with a Moorish courtyard and a dining room serving Alentejo cooking at down-to-earth prices."
+    },
+    "Pizzaria Luzzo": {
+      "cuisine": "Italian / pizza",
+      "description": "A Neapolitan-style pizzeria with several locations in Lisbon, prized for its long-fermented dough and wood-fired oven."
+    },
+    "Café Nicola": {
+      "cuisine": "Portuguese",
+      "description": "A century-old Art Deco café on Rossio square, historically tied to the poet Bocage, whose statue stands in the square outside."
+    },
+    "Pinóquio": {
+      "cuisine": "Portuguese / seafood",
+      "description": "A classic seafood house on Praça dos Restauradores, with a terrace and platters of shellfish and garlic shrimp served for decades."
+    },
+    "Chapitô à Mesa": {
+      "cuisine": "Contemporary Portuguese",
+      "description": "A restaurant perched above the Chapitô circus school in Alfama, with a panoramic terrace over Lisbon's rooftops and the Tagus."
     }
   }
 }

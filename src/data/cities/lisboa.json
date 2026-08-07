@@ -3,7 +3,7 @@
   "name": "Lisboa",
   "country": "Portugal",
   "tagline": "La receta secreta del pastel de nata desde 1837, y 26 cocinas bajo el techo de un mercado de 1892.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -94,6 +94,641 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7151089,-9.1396039"
+    },
+    {
+      "name": "A Ginjinha",
+      "place_id": null,
+      "lat": 38.7139,
+      "lng": -9.1394,
+      "category": "bar",
+      "cuisine": "portugués / licor",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "El quiosco original de la ginjinha lisboeta, junto al Largo de São Domingos, sirviendo licor de guindas desde 1840. Anthony Bourdain paró aquí en \"No Reservations\".",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-lisbon-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 6,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7139,-9.1394"
+    },
+    {
+      "name": "Cantinho do Avillez",
+      "place_id": null,
+      "lat": 38.7099,
+      "lng": -9.1421,
+      "category": "restaurante",
+      "cuisine": "portugués",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Taberna informal del chef José Avillez en Chiado, con clásicos reinventados como peixinhos da horta y papada de porco. Anthony Bourdain cenó aquí con el propio chef en \"No Reservations\".",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-lisbon-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7099,-9.1421"
+    },
+    {
+      "name": "100 Maneiras",
+      "place_id": null,
+      "lat": 38.7126,
+      "lng": -9.1447,
+      "category": "fine_dining",
+      "cuisine": "de autor",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Restaurante de alta cocina del chef bosnio Ljubomir Stanisic en el Bairro Alto, con menú degustación sorpresa. Anthony Bourdain lo visitó en \"No Reservations\"; mantuvo una estrella Michelin hasta perderla en 2026.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-lisbon-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "source_type_secondary": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7126,-9.1447"
+    },
+    {
+      "name": "Alma",
+      "place_id": null,
+      "lat": 38.7103,
+      "lng": -9.1409,
+      "category": "fine_dining",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "bourdain",
+        "michelin"
+      ],
+      "description": "La mesa de dos estrellas Michelin del chef Henrique Sá Pessoa en Chiado, instalada en un antiguo almacén de bacalao. Anthony Bourdain cenó aquí en \"No Reservations\".",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-lisbon-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "source_type_secondary": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7103,-9.1409",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "O Trevo",
+      "place_id": null,
+      "lat": 38.7112,
+      "lng": -9.1424,
+      "category": "bar",
+      "cuisine": "portugués / bifanas",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Pequeño quiosco-bar en la Praça Luís de Camões, famoso por su bifana (bocadillo de cerdo adobado). Anthony Bourdain probó una en \"No Reservations\".",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-lisbon-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 10,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7112,-9.1424"
+    },
+    {
+      "name": "Cura",
+      "place_id": null,
+      "lat": 38.7256,
+      "lng": -9.1568,
+      "category": "fine_dining",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante del Four Seasons Ritz Lisboa con una estrella Michelin, cocina de autor de raíz portuguesa dirigida actualmente por el chef Rodolfo Lavrador.",
+      "source_url": "https://press.fourseasons.com/pt/lisbon/hotel-news/2026/cura-michelin-star-2/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7256,-9.1568",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Loco",
+      "place_id": null,
+      "lat": 38.7059,
+      "lng": -9.1587,
+      "category": "fine_dining",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de apenas 22 plazas en Santos, del chef Alexandre Silva, con menú degustación sorpresa de raíz portuguesa. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lisboa-region/lisboa/restaurant/loco",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7059,-9.1587",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Feitoria",
+      "place_id": null,
+      "lat": 38.6945,
+      "lng": -9.2114,
+      "category": "fine_dining",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante del Altis Belém Hotel, con vistas al Tajo, que mantiene una estrella Michelin desde 2011 bajo la dirección del chef André Cruz.",
+      "source_url": "https://www.restaurantefeitoria.com/",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.6945,-9.2114",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Epur",
+      "place_id": null,
+      "lat": 38.7089,
+      "lng": -9.144,
+      "category": "fine_dining",
+      "cuisine": "francesa / portuguesa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante del chef francés Vincent Farges en el Chiado, con vistas al Tajo desde sus tres salas y una estrella Michelin desde 2019.",
+      "source_url": "https://www.publico.pt/2020/07/09/fugas/noticia/restaurante-epur-reabre-devolve-chiado-estrela-michelin-1923793",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7089,-9.144",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Eleven",
+      "place_id": null,
+      "lat": 38.7268,
+      "lng": -9.1584,
+      "category": "fine_dining",
+      "cuisine": "mediterránea",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante panorámico junto al Parque Eduardo VII, dirigido por el chef alemán Joachim Koerper desde 2004; referencia de la alta cocina lisboeta durante dos décadas.",
+      "source_url": "https://www.publico.pt/2026/03/11/fugas/noticia/koerper-esperava-perda-estrela-michelin-eleven-vai-continuar-lutar-2167557",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7268,-9.1584"
+    },
+    {
+      "name": "A Cevicheria",
+      "place_id": null,
+      "lat": 38.7157,
+      "lng": -9.1465,
+      "category": "restaurante",
+      "cuisine": "peruano-portugués",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de ceviche del chef Kiko Martins en Príncipe Real, con un enorme pulpo de madera colgando sobre la barra; siempre hay cola en la puerta.",
+      "source_url": "https://acevicheria.pt/",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7157,-9.1465"
+    },
+    {
+      "name": "Zunzum Gastrobar",
+      "place_id": null,
+      "lat": 38.7089,
+      "lng": -9.1225,
+      "category": "restaurante",
+      "cuisine": "portugués",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Gastrobar de la chef Marlene Vieira junto a la Doca Jardim do Tabaco, con arroz de marisco y bacalhau à brás; distinguido con el Bib Gourmand Michelin desde 2024.",
+      "source_url": "https://www.zunzum.pt/en/",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7089,-9.1225",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Solar dos Presuntos",
+      "place_id": null,
+      "lat": 38.7154,
+      "lng": -9.1408,
+      "category": "restaurante",
+      "cuisine": "portugués (Minho)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Clásico de más de 40 años cerca de los Restauradores, especializado en cocina del Minho: lamprea, sável frito y arroz de marisco.",
+      "source_url": "https://www.solardospresuntos.com/",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7154,-9.1408"
+    },
+    {
+      "name": "Taberna da Rua das Flores",
+      "place_id": null,
+      "lat": 38.7092,
+      "lng": -9.1447,
+      "category": "restaurante",
+      "cuisine": "portugués de autor",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pequeña taberna sin reservas del chef André Magalhães en el Chiado, con una pizarra que cambia a diario según lo que trae del mercado.",
+      "source_url": "https://observador.pt/2018/03/22/e-esta-a-fina-taberna-que-esta-sob-os-comandos-do-mestre-andre/",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7092,-9.1447"
+    },
+    {
+      "name": "Cervejaria Trindade",
+      "place_id": null,
+      "lat": 38.7113,
+      "lng": -9.1423,
+      "category": "restaurante",
+      "cuisine": "portugués / cervecería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La cervecería más antigua de Lisboa, abierta en 1836 en un antiguo convento, célebre por sus paneles de azulejos del siglo XIX.",
+      "source_url": "https://pt.wikipedia.org/wiki/Cervejaria_Trindade",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7113,-9.1423"
+    },
+    {
+      "name": "Clube de Fado",
+      "place_id": null,
+      "lat": 38.7099,
+      "lng": -9.133,
+      "category": "restaurante",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de fado en Alfama, junto a la Sé, con cena portuguesa y actuaciones de fadistas reconocidos cada noche en un edificio del siglo XVII.",
+      "source_url": "https://www.clubedefado.pt/en/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7099,-9.133"
+    },
+    {
+      "name": "Solar do Vinho do Porto",
+      "place_id": null,
+      "lat": 38.7139,
+      "lng": -9.1447,
+      "category": "bar",
+      "cuisine": "vino de Oporto",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de cata del Instituto dos Vinhos do Douro e do Porto, abierto en 1946 en el Bairro Alto, con cientos de referencias de vino de Oporto.",
+      "source_url": "https://www.ivdp.pt/en/tourism/solar-do-vinho-do-porto-lisbon/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7139,-9.1447"
+    },
+    {
+      "name": "Tasca do Chico",
+      "place_id": null,
+      "lat": 38.7124,
+      "lng": -9.1447,
+      "category": "bar",
+      "cuisine": "portugués / fado",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Tasca de fado vadio en el Bairro Alto donde cantan tanto profesionales como parroquianos; Anthony Bourdain se sentó aquí con el escritor António Lobo Antunes.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-lisbon/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7124,-9.1447"
+    },
+    {
+      "name": "Manteigaria",
+      "place_id": null,
+      "lat": 38.7106,
+      "lng": -9.1443,
+      "category": "dessert",
+      "cuisine": "portugués",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Fábrica de pasteles de nata a la vista en el Chiado, considerada por muchos la mejor rival de Belém gracias a su masa hecha con mantequilla.",
+      "source_url": "https://manteigaria.com/en/a-inigualavel-manteigaria/",
+      "source_type": "timeout",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7106,-9.1443"
+    },
+    {
+      "name": "Café Martinho da Arcada",
+      "place_id": null,
+      "lat": 38.7075,
+      "lng": -9.1366,
+      "category": "cafeteria",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El café más antiguo de Lisboa, abierto en 1782 bajo los arcos de la Praça do Comércio y frecuentado por Fernando Pessoa, que escribió aquí parte de su obra.",
+      "source_url": "https://martinhodaarcada.pt/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7075,-9.1366"
+    },
+    {
+      "name": "A Brasileira",
+      "place_id": null,
+      "lat": 38.7106,
+      "lng": -9.1418,
+      "category": "cafeteria",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café histórico de 1905 en el Chiado, con la estatua de bronce de Fernando Pessoa sentada en su terraza; punto de encuentro de escritores e intelectuales.",
+      "source_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_A_Brasileira",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7106,-9.1418"
+    },
+    {
+      "name": "Confeitaria Nacional",
+      "place_id": null,
+      "lat": 38.7145,
+      "lng": -9.1381,
+      "category": "dessert",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La confitería más antigua de Lisboa, fundada en 1829 en la Praça da Figueira, célebre por su bolo-rei y su repostería tradicional.",
+      "source_url": "https://confeitarianacional.com/en/about-us/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7145,-9.1381"
+    },
+    {
+      "name": "Pastelaria Versailles",
+      "place_id": null,
+      "lat": 38.7365,
+      "lng": -9.1487,
+      "category": "cafeteria",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Salón de té Art Nouveau de 1922 en Avenidas Novas, con espejos, arañas de luces y servicio de té a la antigua.",
+      "source_url": "https://www.comerciocomhistoria.gov.pt/en/listings/pastelaria-versailles-3294/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7365,-9.1487"
+    },
+    {
+      "name": "Time Out Market Lisboa",
+      "place_id": null,
+      "lat": 38.7069,
+      "lng": -9.1456,
+      "category": "mercado",
+      "cuisine": "variada",
+      "tags": [
+        "timeout"
+      ],
+      "description": "El mercado gastronómico de Time Out, instalado en el histórico Mercado da Ribeira de 1892, con 26 restaurantes y 8 barras bajo un mismo techo.",
+      "source_url": "https://www.timeout.com/time-out-market-lisboa",
+      "source_type": "timeout",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7069,-9.1456"
+    },
+    {
+      "name": "Mercado de Campo de Ourique",
+      "place_id": null,
+      "lat": 38.7175,
+      "lng": -9.1655,
+      "category": "mercado",
+      "cuisine": "variada",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Mercado de barrio de 1934 reconvertido en espacio gastronómico de proximidad, con puestos de sushi, pizza, hamburguesas y vino.",
+      "source_url": "https://www.lisbonportugaltourism.com/guide/mercado-de-campo-de-ourique.html",
+      "source_type": "timeout",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7175,-9.1655"
+    },
+    {
+      "name": "Canalha",
+      "place_id": null,
+      "lat": 38.6975,
+      "lng": -9.1998,
+      "category": "restaurante",
+      "cuisine": "portugués",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Restaurante del chef João Rodrigues al filo de Belém, con producto a la vista y menú del día en pizarra; distinguido con el Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lisboa-region/lisboa/restaurant/canalha",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.6975,-9.1998",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Prado",
+      "place_id": null,
+      "lat": 38.7113,
+      "lng": -9.1348,
+      "category": "restaurante",
+      "cuisine": "portugués de temporada",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de proximidad del chef António Galapito junto a la Sé, con ingredientes ecológicos y de temporada en un espacio de estética industrial.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Portugal/Lisbon/Prado.html",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7113,-9.1348"
+    },
+    {
+      "name": "Boi-Cavalo",
+      "place_id": null,
+      "lat": 38.7128,
+      "lng": -9.1296,
+      "category": "restaurante",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante pequeño en Alfama, instalado en una antigua carnicería, con cocina lisboeta reinventada y buena relación calidad-precio.",
+      "source_url": "https://www.theinfatuation.com/lisbon/reviews/boi-cavalo",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7128,-9.1296"
+    },
+    {
+      "name": "Sea Me",
+      "place_id": null,
+      "lat": 38.7107,
+      "lng": -9.1445,
+      "category": "seafood",
+      "cuisine": "pescado y marisco / sushi",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pescadería moderna en el Chiado que combina lonja, barra de sushi y parrilla de pescado fresco elegido al momento en el propio mostrador.",
+      "source_url": "https://www.timeout.pt/lisboa/pt/restaurantes/sea-me",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7107,-9.1445"
+    },
+    {
+      "name": "Pastelaria Aloma",
+      "place_id": null,
+      "lat": 38.7167,
+      "lng": -9.165,
+      "category": "dessert",
+      "cuisine": "portugués",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Pastelería de Campo de Ourique abierta desde 1943, elegida en varias ocasiones (la última en 2024) el mejor pastel de nata de Lisboa en el concurso nacional.",
+      "source_url": "https://www.timeout.pt/lisboa/pt/noticias/o-melhor-pastel-de-nata-de-lisboa-e-o-da-aloma-outra-vez-100625",
+      "source_type": "critic",
+      "source_type_secondary": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7167,-9.165"
+    },
+    {
+      "name": "Casa do Alentejo",
+      "place_id": null,
+      "lat": 38.7148,
+      "lng": -9.1404,
+      "category": "restaurante",
+      "cuisine": "portugués (Alentejo)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antiguo palacio del siglo XVII reconvertido en 1932 en casa regional alentejana, con patio morisco y comedor donde se sirve cocina del Alentejo a precios populares.",
+      "source_url": "https://casadoalentejo.pt/restaurante/",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7148,-9.1404"
+    },
+    {
+      "name": "Pizzaria Luzzo",
+      "place_id": null,
+      "lat": 38.7226,
+      "lng": -9.1467,
+      "category": "restaurante",
+      "cuisine": "italiana / pizza",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería napolitana con varios locales en Lisboa, apreciada por su masa de larga fermentación y su horno de leña.",
+      "source_url": "https://pizzarialuzzo.pt/restaurantes/",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7226,-9.1467"
+    },
+    {
+      "name": "Café Nicola",
+      "place_id": null,
+      "lat": 38.7145,
+      "lng": -9.1394,
+      "category": "cafeteria",
+      "cuisine": "portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café centenario de fachada art déco en el Rossio, ligado históricamente al poeta Bocage, cuya estatua preside la plaza frente al café.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7145,-9.1394"
+    },
+    {
+      "name": "Pinóquio",
+      "place_id": null,
+      "lat": 38.7154,
+      "lng": -9.1417,
+      "category": "seafood",
+      "cuisine": "portugués / marisco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Marisquería clásica en la Praça dos Restauradores, con terraza y bandejas de marisco y gambas al ajillo servidas desde hace décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7154,-9.1417"
+    },
+    {
+      "name": "Chapitô à Mesa",
+      "place_id": null,
+      "lat": 38.7127,
+      "lng": -9.133,
+      "category": "restaurante",
+      "cuisine": "portugués contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante sobre la escuela de circo Chapitô, en Alfama, con una terraza panorámica sobre los tejados de Lisboa y el río Tajo.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7127,-9.133"
     }
   ],
   "targetPlaces": 40,
