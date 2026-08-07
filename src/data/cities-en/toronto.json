@@ -22,6 +22,146 @@
     "Seven Lives Tacos y Mariscos": {
       "cuisine": "Mexican / Baja",
       "description": "Baja California-style tacos in the heart of Kensington Market, one of the neighborhood's most beloved spots."
+    },
+    "Shoushin": {
+      "cuisine": "Japanese",
+      "description": "Chef Jackie Lin's Edomae omakase at a hinoki counter on Yonge Street, with a menu that shifts with the day's fish. Earned its Michelin star in Toronto's inaugural guide in 2022."
+    },
+    "Restaurant 20 Victoria": {
+      "cuisine": "Contemporary Canadian",
+      "description": "A contemporary tasting menu with Mexican flourishes from chef Rafa Covarrubias, served in an intimate Financial District dining room. Holds one Michelin star."
+    },
+    "DaNico": {
+      "cuisine": "Italian",
+      "description": "Chef Daniele Corona's Italian cooking with global accents, inside a restored early-1900s bank building in Little Italy — the wine cellar sits in the old vault. Earned its Michelin star in 2024."
+    },
+    "Aburi Hana": {
+      "cuisine": "Japanese",
+      "description": "Seasonal Japanese kaiseki in Yorkville, holding a Michelin star since Toronto's first guide in 2022."
+    },
+    "Alma": {
+      "cuisine": "Contemporary Chinese",
+      "description": "Chef Anna Chen's contemporary Chinese cooking in Bloordale Village. Holds a Michelin Bib Gourmand since 2022."
+    },
+    "Sunnys Chinese": {
+      "cuisine": "Chinese",
+      "description": "A high-energy spot for authentic Chinese flavours in Kensington Market, from the team behind Mimi. Holds a Michelin Bib Gourmand."
+    },
+    "Giulietta": {
+      "cuisine": "Italian",
+      "description": "Chefs Rob Rossi and David Minicucci's neighbourhood trattoria on College Street, known for wood-fired pizza and house-made pasta. Holds a Michelin Bib Gourmand."
+    },
+    "Bar Raval": {
+      "cuisine": "Spanish",
+      "description": "Chef Grant van Gameren's Spanish tapas bar, with a hand-carved curved wood facade inspired by Barcelona. Holds a Michelin Bib Gourmand and has repeatedly ranked among Canada's best bars."
+    },
+    "Enoteca Sociale": {
+      "cuisine": "Italian (Roman)",
+      "description": "A Rome-inspired trattoria in Little Portugal known for hand-made pasta. Holds a Michelin Bib Gourmand since 2022."
+    },
+    "Porchetta & Co": {
+      "cuisine": "Canadian / Sandwiches",
+      "description": "Slow-roasted porchetta sandwiches, one of the spots Anthony Bourdain visited and recommended during his Toronto stop on The Layover."
+    },
+    "Sneaky Dee's": {
+      "cuisine": "Tex-Mex",
+      "description": "A Tex-Mex bar and concert venue on College Street since 1987, an Anthony Bourdain stop on The Layover and a pillar of Toronto's indie music scene."
+    },
+    "The Burger's Priest": {
+      "cuisine": "Burgers",
+      "description": "A burger chain born in Toronto in 2010, recommended by Anthony Bourdain during his Toronto episode of The Layover."
+    },
+    "Bar Isabel": {
+      "cuisine": "Spanish",
+      "description": "Chef Grant van Gameren's Spanish tapas and seafood spot on College Street, one of the most critically acclaimed restaurants in Toronto since it opened in 2013."
+    },
+    "United Bakers Dairy Restaurant": {
+      "cuisine": "Jewish / Dairy",
+      "description": "A Jewish dairy restaurant founded in 1912 by a young couple from Kielce, the oldest of its kind in Canada, now on Lawrence Avenue West."
+    },
+    "Rol San": {
+      "cuisine": "Chinese (dim sum)",
+      "description": "Cantonese dim sum served all day since 1994 in the heart of Chinatown, one of the city's first spots to offer it outside traditional morning hours."
+    },
+    "Swatow Restaurant": {
+      "cuisine": "Cantonese Chinese",
+      "description": "A no-frills Cantonese diner on Spadina Avenue, serving fast, authentic Chinese food into the late night for more than 40 years."
+    },
+    "Fran's Restaurant": {
+      "cuisine": "Canadian (diner)",
+      "description": "A Canadian diner open since 1940, one of Toronto's oldest restaurants, known for round-the-clock breakfast."
+    },
+    "The Senator": {
+      "cuisine": "Canadian (diner)",
+      "description": "Opened in 1929 as the Busy Bee Diner and renamed The Senator in 1948, it's Toronto's oldest restaurant still operating at its original address."
+    },
+    "Café Diplomatico": {
+      "cuisine": "Italian",
+      "description": "An Italian cafe-pizzeria opened in 1968 by the Mastrangelo brothers at the heart of College Street, one of the first Italian-owned spots in Little Italy."
+    },
+    "Messini Authentic Gyros": {
+      "cuisine": "Greek",
+      "description": "Greek gyros on Danforth Avenue since 2003, credited as the first spot in the neighbourhood to introduce Greek-style fries."
+    },
+    "Le Sélect Bistro": {
+      "cuisine": "French",
+      "description": "A classic French bistro opened in 1977, with one of Toronto's most extensive wine lists; it marks half a century in the city in 2027."
+    },
+    "Terroni": {
+      "cuisine": "Italian",
+      "description": "An Italian restaurant opened in 1992 on Queen Street West, a pioneer in bringing Neapolitan pizza and imported Italian goods to Toronto."
+    },
+    "Wanda's Pie in the Sky": {
+      "cuisine": "Bakery",
+      "description": "A Kensington Market bakery known for its handmade pies and desserts, a neighbourhood classic since the 1990s."
+    },
+    "Patois": {
+      "cuisine": "Chinese-Jamaican",
+      "description": "Chef Craig Wong's Chinese-Jamaican cooking on Dundas Street West, blending his family heritage with techniques learned at Heston Blumenthal's The Fat Duck."
+    },
+    "Ali's West Indian Roti Shop": {
+      "cuisine": "Caribbean",
+      "description": "A Caribbean roti shop in Parkdale serving Trinidadian-style stuffed roti for more than four decades, a staple of Toronto's Indo-Caribbean community."
+    },
+    "Pai Northern Thai Kitchen": {
+      "cuisine": "Northern Thai",
+      "description": "Chefs Nuit and Jeff Regular's Northern Thai cooking in the Entertainment District, a fixture on Toronto food critics' must-try lists."
+    },
+    "Banh Mi Boys": {
+      "cuisine": "Vietnamese / Korean",
+      "description": "Vietnamese sandwiches with Korean touches on Queen Street West, one of the spots that popularized the banh mi-taco fusion in Toronto."
+    },
+    "Mother's Dumplings": {
+      "cuisine": "Northeastern Chinese",
+      "description": "Hand-made dumplings following a family recipe from Northeast China, in the heart of Chinatown since chef Zhen Feng opened it in 2005."
+    },
+    "Byblos": {
+      "cuisine": "Eastern Mediterranean",
+      "description": "Contemporary Eastern Mediterranean cooking in the Entertainment District, with mezze and grilled dishes praised by Toronto critics."
+    },
+    "Nadège Patisserie": {
+      "cuisine": "French / Pastry",
+      "description": "A French pastry shop founded in 2009 by chef Nadège Nourian, a fourth-generation Lyon-born pastry chef, in the heart of Queen West."
+    },
+    "Kinka Izakaya": {
+      "cuisine": "Japanese (izakaya)",
+      "description": "A boisterous Japanese izakaya on Church Street, where servers shout out orders in traditional style — one of Toronto's most popular izakaya chains."
+    },
+    "Canoe": {
+      "cuisine": "Canadian",
+      "description": "Contemporary Canadian cuisine on the 54th floor of the TD Bank Tower, with panoramic views over Lake Ontario — a Toronto fine-dining institution since 1995."
+    },
+    "Scaramouche": {
+      "cuisine": "French / Canadian",
+      "description": "A special-occasion restaurant in South Hill since 1980, with chef Keith Froggett leading its classic French-Canadian kitchen since 1983."
+    },
+    "Richmond Station": {
+      "cuisine": "Canadian",
+      "description": "Seasonal restaurant from chef Carl Heinrich, winner of Top Chef Canada season two, at the corner of Yonge and Richmond."
+    },
+    "Chubby's Jamaican Kitchen": {
+      "cuisine": "Jamaican",
+      "description": "Home-style Jamaican cooking in an 1890s downtown row house, with its oxtail poutine singled out by the Michelin Guide."
     }
   }
 }

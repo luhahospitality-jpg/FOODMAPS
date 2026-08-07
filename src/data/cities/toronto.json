@@ -3,7 +3,7 @@
   "name": "Toronto",
   "country": "Canadá",
   "tagline": "El sándwich que Bourdain repitió en el mejor mercado del mundo, y la reseña de cuatro estrellas que consagró al chef Patrick Kriss.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,675 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6545479,-79.4007722"
+    },
+    {
+      "name": "Shoushin",
+      "place_id": null,
+      "lat": 43.7314478,
+      "lng": -79.4040987,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Omakase edomae de la chef Jackie Lin en una barra de hinoki en Yonge Street, con un menú que cambia según el pescado del día. Obtuvo su estrella Michelin en la primera guía de Toronto en 2022.",
+      "source_url": "https://guide.michelin.com/en/ontario/toronto/restaurant/shoushin",
+      "source_type": null,
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7314478,-79.4040987",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Restaurant 20 Victoria",
+      "place_id": null,
+      "lat": 43.650047,
+      "lng": -79.3771739,
+      "category": "fine_dining",
+      "cuisine": "canadiense contemporánea",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú de degustación contemporáneo con toques mexicanos del chef Rafa Covarrubias, servido en un comedor íntimo del Distrito Financiero. Cuenta con una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/ca/en/ontario/toronto/restaurant/restaurant-20-victoria",
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.650047,-79.3771739",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "DaNico",
+      "place_id": null,
+      "lat": 43.6567579,
+      "lng": -79.4075464,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina italiana con acentos globales del chef Daniele Corona dentro de un banco restaurado de comienzos del siglo XX en Little Italy; el vino se guarda en la antigua bóveda. Obtuvo su estrella Michelin en 2024.",
+      "source_url": "https://torontolife.com/food/whats-on-the-menu-danico-italian-restaurant-michelin/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6567579,-79.4075464",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Aburi Hana",
+      "place_id": null,
+      "lat": 43.67101,
+      "lng": -79.39251,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki japonés de temporada en Yorkville, con estrella Michelin desde la primera guía de Toronto en 2022.",
+      "source_url": "https://guide.michelin.com/us/en/ontario/toronto/restaurant/aburi-hana",
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.67101,-79.39251",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Alma",
+      "place_id": null,
+      "lat": 43.6594523,
+      "lng": -79.4380073,
+      "category": "restaurante",
+      "cuisine": "chino contemporáneo",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Cocina china contemporánea de la chef Anna Chen en Bloordale Village. Reconocido con un Bib Gourmand Michelin desde 2022.",
+      "source_url": "https://en.wikipedia.org/wiki/Alma_(Toronto_restaurant)",
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6594523,-79.4380073",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Sunnys Chinese",
+      "place_id": null,
+      "lat": 43.6542,
+      "lng": -79.40096,
+      "category": "restaurante",
+      "cuisine": "chino",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Local enérgico de sabores chinos auténticos en Kensington Market, del mismo equipo detrás de Mimi. Reconocido con un Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/article/dining-out/sunnys-chinese-toronto-canada-menu-restaurant-michelin-guide-bib-gourmand",
+      "source_type": null,
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6542,-79.40096",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Giulietta",
+      "place_id": null,
+      "lat": 43.6534676,
+      "lng": -79.427653,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Trattoria de barrio de los chefs Rob Rossi y David Minicucci en College Street, con pizza al horno de leña y pasta casera. Reconocido con un Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/ca/en/ontario/toronto/restaurant/giulietta",
+      "source_type": null,
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6534676,-79.427653",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Bar Raval",
+      "place_id": null,
+      "lat": 43.655877,
+      "lng": -79.4099236,
+      "category": "bar",
+      "cuisine": "español",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Bar de tapas españolas del chef Grant van Gameren, con una fachada curva de madera tallada a mano inspirada en Barcelona. Tiene un Bib Gourmand Michelin y ha figurado varias veces entre los mejores bares de Canadá.",
+      "source_url": "https://en.wikipedia.org/wiki/Bar_Raval",
+      "source_type": null,
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.655877,-79.4099236",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Enoteca Sociale",
+      "place_id": null,
+      "lat": 43.6496011,
+      "lng": -79.4256385,
+      "category": "restaurante",
+      "cuisine": "italiano (romana)",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Trattoria de inspiración romana en Little Portugal, conocida por su pasta hecha a mano. Reconocido con un Bib Gourmand Michelin desde 2022.",
+      "source_url": "https://en.wikipedia.org/wiki/Enoteca_Sociale",
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6496011,-79.4256385",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Porchetta & Co",
+      "place_id": null,
+      "lat": 43.644501,
+      "lng": -79.398804,
+      "category": "fast_food",
+      "cuisine": "canadiense / sándwiches",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Sándwiches de porchetta cocida lentamente, uno de los locales que Anthony Bourdain visitó y recomendó durante su paso por Toronto en The Layover.",
+      "source_url": "https://www.continentscondiments.com/toronto-all-of-the-restaurants-picked-by-anthony-bourdain-on-the-layover/",
+      "source_type": "bourdain",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.644501,-79.398804",
+      "distinction": null
+    },
+    {
+      "name": "Sneaky Dee's",
+      "place_id": null,
+      "lat": 43.6562462,
+      "lng": -79.4074325,
+      "category": "bar",
+      "cuisine": "tex-mex",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Bar tex-mex y sala de conciertos en College Street desde 1987, parada de Anthony Bourdain en The Layover y pilar de la escena musical independiente de Toronto.",
+      "source_url": "https://torontolife.com/culture/anthony-bourdains-the-layover-toronto/",
+      "source_type": "bourdain",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6562462,-79.4074325",
+      "distinction": null
+    },
+    {
+      "name": "The Burger's Priest",
+      "place_id": null,
+      "lat": 43.67795,
+      "lng": -79.3489,
+      "category": "fast_food",
+      "cuisine": "hamburguesas",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Cadena de hamburgueserías nacida en Toronto en 2010, recomendada por Anthony Bourdain durante su episodio de The Layover en la ciudad.",
+      "source_url": "https://www.continentscondiments.com/toronto-all-of-the-restaurants-picked-by-anthony-bourdain-on-the-layover/",
+      "source_type": "bourdain",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.67795,-79.3489",
+      "distinction": null
+    },
+    {
+      "name": "Bar Isabel",
+      "place_id": null,
+      "lat": 43.65463,
+      "lng": -79.42079,
+      "category": "bar",
+      "cuisine": "español",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Tapas españolas y mariscos del chef Grant van Gameren en College Street, uno de los restaurantes más elogiados por la crítica de Toronto desde su apertura en 2013.",
+      "source_url": "https://guide.michelin.com/us/en/ontario/toronto/restaurant/bar-isabel",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.65463,-79.42079",
+      "distinction": null
+    },
+    {
+      "name": "United Bakers Dairy Restaurant",
+      "place_id": null,
+      "lat": 43.7202879,
+      "lng": -79.4311057,
+      "category": "restaurante",
+      "cuisine": "judío / lácteo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante lácteo judío fundado en 1912 por una joven pareja de Kielce, el más antiguo de su tipo en Canadá, hoy instalado en Lawrence Avenue West.",
+      "source_url": "https://unitedbakers.ca/pages/history",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.7202879,-79.4311057",
+      "distinction": null
+    },
+    {
+      "name": "Rol San",
+      "place_id": null,
+      "lat": 43.6554413,
+      "lng": -79.399342,
+      "category": "restaurante",
+      "cuisine": "chino (dim sum)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Dim sum cantonés servido todo el día desde 1994 en el corazón de Chinatown, uno de los primeros locales de la ciudad en ofrecerlo fuera del horario tradicional de la mañana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6554413,-79.399342",
+      "distinction": null
+    },
+    {
+      "name": "Swatow Restaurant",
+      "place_id": null,
+      "lat": 43.6537956,
+      "lng": -79.3979344,
+      "category": "restaurante",
+      "cuisine": "chino cantonés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fonda cantonesa sin lujos en Spadina Avenue, que sirve comida china rápida y auténtica hasta altas horas de la noche desde hace más de 40 años.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6537956,-79.3979344",
+      "distinction": null
+    },
+    {
+      "name": "Fran's Restaurant",
+      "place_id": null,
+      "lat": 43.6614454,
+      "lng": -79.3841493,
+      "category": "restaurante",
+      "cuisine": "canadiense (diner)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diner canadiense abierto desde 1940, uno de los restaurantes más antiguos de Toronto, famoso por sus desayunos servidos a toda hora.",
+      "source_url": "https://en.wikipedia.org/wiki/Fran%27s_Restaurant",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6614454,-79.3841493",
+      "distinction": null
+    },
+    {
+      "name": "The Senator",
+      "place_id": null,
+      "lat": 43.655325,
+      "lng": -79.3789892,
+      "category": "restaurante",
+      "cuisine": "canadiense (diner)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1929 como Busy Bee Diner y rebautizado The Senator en 1948, es el restaurante más antiguo de Toronto que sigue operando en su ubicación original.",
+      "source_url": "https://www.blogto.com/eat_drink/2022/11/senator-toronto/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.655325,-79.3789892",
+      "distinction": null
+    },
+    {
+      "name": "Café Diplomatico",
+      "place_id": null,
+      "lat": 43.655369,
+      "lng": -79.4137306,
+      "category": "cafeteria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café-pizzería italiano abierto en 1968 por los hermanos Mastrangelo en el corazón de College Street, uno de los primeros locales de propietarios italianos en Little Italy.",
+      "source_url": "http://torontoplaques.com/Pages/Cafe_Diplomatico.html",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.655369,-79.4137306",
+      "distinction": null
+    },
+    {
+      "name": "Messini Authentic Gyros",
+      "place_id": null,
+      "lat": 43.6776795,
+      "lng": -79.3505415,
+      "category": "restaurante",
+      "cuisine": "griego",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Gyros griegos en Danforth Avenue desde 2003, acreditado como el primer local del barrio en introducir las papas fritas al estilo griego.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6776795,-79.3505415",
+      "distinction": null
+    },
+    {
+      "name": "Le Sélect Bistro",
+      "place_id": null,
+      "lat": 43.643826,
+      "lng": -79.3968131,
+      "category": "restaurante",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró francés clásico abierto en 1977, con una de las cartas de vinos más extensas de Toronto; en 2027 cumplirá medio siglo de historia en la ciudad.",
+      "source_url": "https://www.blogto.com/restaurants/leselect/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.643826,-79.3968131",
+      "distinction": null
+    },
+    {
+      "name": "Terroni",
+      "place_id": null,
+      "lat": 43.646254,
+      "lng": -79.4091805,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante italiano abierto en 1992 en Queen Street West, pionero en traer la pizza napolitana y productos importados de Italia a Toronto.",
+      "source_url": "https://www.terroni.com/terroni",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.646254,-79.4091805",
+      "distinction": null
+    },
+    {
+      "name": "Wanda's Pie in the Sky",
+      "place_id": null,
+      "lat": 43.6562832,
+      "lng": -79.4024586,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería de Kensington Market conocida por sus pasteles y postres artesanales, un clásico del barrio desde los años 90.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6562832,-79.4024586",
+      "distinction": null
+    },
+    {
+      "name": "Patois",
+      "place_id": null,
+      "lat": 43.6519848,
+      "lng": -79.4081894,
+      "category": "restaurante",
+      "cuisine": "chino-jamaiquino",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina chino-jamaiquina del chef Craig Wong en Dundas Street West, que combina su herencia familiar con técnicas aprendidas en The Fat Duck de Heston Blumenthal.",
+      "source_url": "https://torontolife.com/food/patois-toronto-restaurants/",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6519848,-79.4081894",
+      "distinction": null
+    },
+    {
+      "name": "Ali's West Indian Roti Shop",
+      "place_id": null,
+      "lat": 43.6409481,
+      "lng": -79.436034,
+      "category": "fast_food",
+      "cuisine": "caribeño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Rotisería caribeña en Parkdale con más de cuatro décadas sirviendo roti relleno al estilo trinitense, un clásico de la comunidad indocaribeña de Toronto.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6409481,-79.436034",
+      "distinction": null
+    },
+    {
+      "name": "Pai Northern Thai Kitchen",
+      "place_id": null,
+      "lat": 43.6478355,
+      "lng": -79.388714,
+      "category": "restaurante",
+      "cuisine": "tailandés (norte)",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina del norte de Tailandia de los chefs Nuit y Jeff Regular, en el Distrito del Entretenimiento; referencia obligada de la crítica gastronómica de Toronto.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6478355,-79.388714",
+      "distinction": null
+    },
+    {
+      "name": "Banh Mi Boys",
+      "place_id": null,
+      "lat": 43.6487688,
+      "lng": -79.3969628,
+      "category": "fast_food",
+      "cuisine": "vietnamita / coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sándwiches vietnamitas con toques coreanos en Queen Street West, uno de los locales que popularizó la fusión banh mi-taco en Toronto.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6487688,-79.3969628",
+      "distinction": null
+    },
+    {
+      "name": "Mother's Dumplings",
+      "place_id": null,
+      "lat": 43.6571206,
+      "lng": -79.3994346,
+      "category": "restaurante",
+      "cuisine": "chino (noreste)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Dumplings hechos a mano según la receta familiar del noreste de China, en el corazón de Chinatown desde que la chef Zhen Feng lo abrió en 2005.",
+      "source_url": "https://mothersdumplings.com/about-us/",
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6571206,-79.3994346",
+      "distinction": null
+    },
+    {
+      "name": "Byblos",
+      "place_id": null,
+      "lat": 43.6474564,
+      "lng": -79.3881676,
+      "category": "restaurante",
+      "cuisine": "mediterráneo oriental",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina mediterránea oriental contemporánea en el Distrito del Entretenimiento, con mezze y platos a la parrilla muy elogiados por la crítica de Toronto.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6474564,-79.3881676",
+      "distinction": null
+    },
+    {
+      "name": "Nadège Patisserie",
+      "place_id": null,
+      "lat": 43.6458913,
+      "lng": -79.4114361,
+      "category": "panaderia",
+      "cuisine": "francés / repostería",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Pastelería francesa fundada en 2009 por la chef Nadège Nourian, repostera de cuarta generación originaria de Lyon, en el corazón de Queen West.",
+      "source_url": "https://torontolife.com/food/introducing-nadege-patisserie-queen-wests-prettiest-pastry-shop-joins-the-five-thieves-in-rosedale/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6458913,-79.4114361",
+      "distinction": null
+    },
+    {
+      "name": "Kinka Izakaya",
+      "place_id": null,
+      "lat": 43.6604535,
+      "lng": -79.3791515,
+      "category": "bar",
+      "cuisine": "japonés (izakaya)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Izakaya japonés bullicioso en Church Street, con meseros que gritan los pedidos al estilo tradicional; una de las cadenas de izakaya más populares de Toronto.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6604535,-79.3791515",
+      "distinction": null
+    },
+    {
+      "name": "Canoe",
+      "place_id": null,
+      "lat": 43.6471336,
+      "lng": -79.381433,
+      "category": "fine_dining",
+      "cuisine": "canadiense",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Cocina canadiense contemporánea en el piso 54 de la TD Bank Tower, con vistas panorámicas del lago Ontario; un clásico de la alta cocina de Toronto desde 1995.",
+      "source_url": "https://www.oliverbonacini.com/restaurants/canoe/",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6471336,-79.381433",
+      "distinction": null
+    },
+    {
+      "name": "Scaramouche",
+      "place_id": null,
+      "lat": 43.6814241,
+      "lng": -79.4000604,
+      "category": "fine_dining",
+      "cuisine": "francés / canadiense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de ocasiones especiales en South Hill desde 1980, con el chef Keith Froggett al frente de su cocina clásica francocanadiense desde 1983.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6814241,-79.4000604",
+      "distinction": null
+    },
+    {
+      "name": "Richmond Station",
+      "place_id": null,
+      "lat": 43.6513837,
+      "lng": -79.3789722,
+      "category": "restaurante",
+      "cuisine": "canadiense",
+      "tags": [
+        "tv_show",
+        "critico"
+      ],
+      "description": "Restaurante de temporada del chef Carl Heinrich, ganador de la segunda temporada de Top Chef Canada, en el cruce de Yonge y Richmond.",
+      "source_url": "https://torontolife.com/food/introducing-richmond-station/",
+      "source_type": "tv_show",
+      "source_type_secondary": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.6513837,-79.3789722",
+      "distinction": null
+    },
+    {
+      "name": "Chubby's Jamaican Kitchen",
+      "place_id": null,
+      "lat": 43.64531,
+      "lng": -79.40068,
+      "category": "restaurante",
+      "cuisine": "jamaiquino",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina jamaiquina casera en una casa adosada de 1890 en el centro de la ciudad, con su poutine de rabo de buey destacada por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ontario/toronto/restaurant/chubby-s-jamaican-kitchen",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.64531,-79.40068",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,
