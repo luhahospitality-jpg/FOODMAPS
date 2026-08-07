@@ -3,7 +3,7 @@
   "name": "Bogotá",
   "country": "Colombia",
   "tagline": "Ajiaco de 1816 y una rumba con parrilla que se volvió el restaurante más famoso de Colombia.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -90,6 +90,642 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6743121,-74.04655"
+    },
+    {
+      "name": "Mesa Franca",
+      "place_id": null,
+      "lat": 4.6465,
+      "lng": -74.0625,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante y bar de cocina colombiana creativa en Chapinero Alto, con platos basados en técnicas criollas y sabores autóctonos. Entró a la lista de Latin America's 50 Best Restaurants en 2022.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Colombia/Bogot%C3%A1/Mesa-Franca.html",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6465,-74.0625",
+      "distinction": null
+    },
+    {
+      "name": "Villanos en Bermudas",
+      "place_id": null,
+      "lat": 4.642,
+      "lng": -74.063,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de cocina rápida y espontánea donde los chefs Nicolás López y Sergio Meza preparan los platos a la vista del público. Debutó en el puesto 40 de Latin America's 50 Best Restaurants menos de un año después de abrir.",
+      "source_url": "https://www.eltiempo.com/cultura/gastronomia/villanos-en-bermudas-la-nueva-entrada-de-colombia-en-los-50-best-de-america-latina-145924",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.642,-74.063",
+      "distinction": null
+    },
+    {
+      "name": "Criterión",
+      "place_id": null,
+      "lat": 4.6489,
+      "lng": -74.0578,
+      "category": "fine_dining",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Pionero de la alta cocina de autor en Bogotá desde 2004, dirigido por el chef Jorge Rausch en la Zona G. Fue Mejor Restaurante de Colombia y estuvo en Latin America's 50 Best entre 2013 y 2016.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g294074-d775200-Reviews-Criterion-Bogota.html",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6489,-74.0578",
+      "distinction": null
+    },
+    {
+      "name": "Afluente",
+      "place_id": null,
+      "lat": 4.6427,
+      "lng": -74.0648,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante del chef Jeferson García enfocado en los páramos y el cuidado del agua, abierto hace apenas dos años en Chapinero Alto. Debutó en el puesto 34 de Latin America's 50 Best Restaurants 2025.",
+      "source_url": "https://www.theworlds50best.com/latinamerica/en/the-list/afluente.html",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6427,-74.0648",
+      "distinction": null
+    },
+    {
+      "name": "Harry Sasson",
+      "place_id": null,
+      "lat": 4.652,
+      "lng": -74.052,
+      "category": "fine_dining",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante insignia del chef más reconocido de Colombia, abierto en 1995, que combina técnicas japonesas y europeas con ingredientes y platos latinoamericanos cocinados a la parrilla, horno de leña y robata.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Colombia/Bogot%C3%A1/Harry-Sasson.html",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.652,-74.052",
+      "distinction": null
+    },
+    {
+      "name": "Mini-Mal",
+      "place_id": null,
+      "lat": 4.6426,
+      "lng": -74.0646,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Desde 2001, el chef Eduardo Martínez investiga y difunde los ingredientes y sistemas alimentarios ancestrales del Pacífico y el Chocó colombiano en este referente gastronómico de Chapinero Alto.",
+      "source_url": "https://thecitypaperbogota.com/dining/colombian-food/mini-mal-food-with-purpose/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6426,-74.0646",
+      "distinction": null
+    },
+    {
+      "name": "Central Cevichería",
+      "place_id": null,
+      "lat": 4.6698,
+      "lng": -74.0524,
+      "category": "restaurante",
+      "cuisine": "mariscos",
+      "tags": [
+        "critic"
+      ],
+      "description": "Especializado en ceviches, tiraditos y tartares con más de una docena de variedades, en un local de ambiente caribeño en Chapinero. Uno de los templos del marisco casual en Bogotá.",
+      "source_url": "https://centralcevicheria.com/ubicaciones/",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6698,-74.0524",
+      "distinction": null
+    },
+    {
+      "name": "Casa Vieja",
+      "place_id": null,
+      "lat": 4.5983,
+      "lng": -74.0725,
+      "category": "restaurante",
+      "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución de la cocina colombiana en una casa colonial con antigüedades y pinturas, sirviendo ajiaco, bandeja paisa y otros platos tradicionales desde 1964.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g294074-d1226959-Reviews-Casa_Vieja_Restaurante-Bogota.html",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.5983,-74.0725",
+      "distinction": null
+    },
+    {
+      "name": "Tabula",
+      "place_id": null,
+      "lat": 4.6122,
+      "lng": -74.0639,
+      "category": "restaurante",
+      "cuisine": "colombiano",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Restaurante de La Macarena donde Anthony Bourdain compartió con el entonces joven chef Tomás Rueda durante el episodio de Colombia de Parts Unknown, probando platos colombianos elaborados con técnicas experimentales.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-colombia/",
+      "source_type": "bourdain",
+      "source_type_secondary": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6122,-74.0639",
+      "distinction": null
+    },
+    {
+      "name": "Wok",
+      "place_id": null,
+      "lat": 4.6672,
+      "lng": -74.0535,
+      "category": "restaurante",
+      "cuisine": "asiática",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena bogotana de más de 20 años especializada en cocina asiática y sushi, con locales en Zona T, Parque 93 y otros puntos de la ciudad. Ícono de la cocina fusión asiática en Colombia.",
+      "source_url": "https://www.degusta.com.co/bogota/restaurante/wok_320.html",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6672,-74.0535",
+      "distinction": null
+    },
+    {
+      "name": "Azahar Coffee",
+      "place_id": null,
+      "lat": 4.6763,
+      "lng": -74.0483,
+      "category": "cafeteria",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafetería de especialidad cerca del Parque 93, reconocida por trabajar café de origen colombiano con trazabilidad directa desde la finca hasta la taza.",
+      "source_url": "https://sprudge.com/5-lugares-para-beber-excelente-cafe-en-bogota-108737.html",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6763,-74.0483",
+      "distinction": null
+    },
+    {
+      "name": "Catación Pública",
+      "place_id": null,
+      "lat": 4.6963,
+      "lng": -74.0301,
+      "category": "cafeteria",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Fundada por Jaime Duque en Usaquén, es considerada un referente para aprender sobre café de especialidad colombiano, con catas y cursos desde el grano hasta la taza.",
+      "source_url": "https://hemmabogota.com/cafeterias-de-especialidad-en-bogota-los-mejores-lugares-para-los-amantes-del-cafe/",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6963,-74.0301",
+      "distinction": null
+    },
+    {
+      "name": "Varietale",
+      "place_id": null,
+      "lat": 4.643,
+      "lng": -74.064,
+      "category": "cafeteria",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostadora y cafetería de especialidad instalada en un antiguo convento de Chapinero, con métodos de preparación como Aeropress, Chemex y sifón.",
+      "source_url": "https://sprudge.com/5-lugares-para-beber-excelente-cafe-en-bogota-108737.html",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.643,-74.064",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de Paloquemao",
+      "place_id": null,
+      "lat": 4.615986,
+      "lng": -74.084494,
+      "category": "mercado",
+      "cuisine": "colombiano",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "El mercado más grande y tradicional de Bogotá, abierto desde los años 40, con secciones de frutas exóticas, flores, pescado y comida típica. Anthony Bourdain desayunó caldo de costilla en un puesto al fondo de la sección de pescados durante Parts Unknown.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-colombia/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.615986,-74.084494",
+      "distinction": null
+    },
+    {
+      "name": "La Sala de Laura",
+      "place_id": null,
+      "lat": 4.6499,
+      "lng": -74.0611,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de coctelería 'líquida' sobre el restaurante Leo, liderado por la sommelier Laura Hernández, con destilados propios inspirados en los ecosistemas colombianos. Ha figurado varios años en el listado de los World's 100 Best Bars.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Colombia/Bogot%C3%A1/La-Sala-de-Laura.html",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6499,-74.0611",
+      "distinction": null
+    },
+    {
+      "name": "Apache Rooftop",
+      "place_id": null,
+      "lat": 4.6774,
+      "lng": -74.0468,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar en la terraza del hotel Click Clack, en el Chicó, con vistas de 360 grados sobre Bogotá, coctelería y una carta que incluye hamburguesas.",
+      "source_url": "https://www.therooftopguide.com/rooftop-bars-in-bogota/apache-at-click-clack-hotel.html",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6774,-74.0468",
+      "distinction": null
+    },
+    {
+      "name": "Puerta de la Catedral",
+      "place_id": null,
+      "lat": 4.5978,
+      "lng": -74.0748,
+      "category": "brunch",
+      "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Frente a la Catedral Primada, este restaurante de La Candelaria sirve el clásico chocolate santafereño completo con queso, almojábana y tamales, una tradición bogotana centenaria.",
+      "source_url": "https://www.lapuertadelacatedral.com/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.5978,-74.0748",
+      "distinction": null
+    },
+    {
+      "name": "El Corral",
+      "place_id": null,
+      "lat": 4.6281,
+      "lng": -74.0648,
+      "category": "comida_rapida",
+      "cuisine": "hamburguesas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La primera hamburguesería colombiana, fundada el 8 de febrero de 1983 por Pablo Emilio Bueno y Guillermo Calderón frente a la Universidad Javeriana. Se convirtió en una cadena nacional y símbolo de la comida rápida colombiana.",
+      "source_url": "https://en.wikipedia.org/wiki/Hamburguesas_El_Corral",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6281,-74.0648",
+      "distinction": null
+    },
+    {
+      "name": "Crepes & Waffles",
+      "place_id": null,
+      "lat": 4.6764,
+      "lng": -74.0479,
+      "category": "brunch",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena bogotana fundada en 1980 por Beatriz Fernández y Eduardo Macía, pionera en emplear mayoritariamente a madres cabeza de familia. Popularizó las crepas y los waffles en Colombia.",
+      "source_url": "https://www.crepesywaffles.com/historia",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6764,-74.0479",
+      "distinction": null
+    },
+    {
+      "name": "Juan Valdez Café",
+      "place_id": null,
+      "lat": 4.6771,
+      "lng": -74.0483,
+      "category": "cafeteria",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "'Juan Valdez 1959', al norte del Parque de la 93, es la primera tienda insignia en el mundo de la marca colombiana de café, inaugurada como un homenaje sensorial al café del país.",
+      "source_url": "https://www.eltiempo.com/cultura/restaurantes/juan-valdez-inauguro-juan-valdez-1959-su-primera-flagship-store-en-el-mundo-3535225",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6771,-74.0483",
+      "distinction": null
+    },
+    {
+      "name": "Bogotá Beer Company",
+      "place_id": null,
+      "lat": 4.6668,
+      "lng": -74.0546,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pionera de la cerveza artesanal en Colombia, fundada en 2002 por Berny Silberwasser; su primer pub abrió frente al Centro Comercial Andino en la Zona T.",
+      "source_url": "https://es.wikipedia.org/wiki/Bogot%C3%A1_Beer_Company",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6668,-74.0546",
+      "distinction": null
+    },
+    {
+      "name": "La Fragata",
+      "place_id": null,
+      "lat": 4.6864,
+      "lng": -74.0522,
+      "category": "restaurante",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de mariscos fundado en 1976 por el coronel Álvaro Calderón, pionero en traer pescado fresco del Pacífico a Bogotá. Su sede giratoria de la Calle 100 ofrece una vista panorámica de 360 grados mientras se come.",
+      "source_url": "https://www.las2orillas.co/la-fragata-el-restaurante-fundado-por-un-militar-que-enseno-a-comer-pescado-fresco-en-bogota/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6864,-74.0522",
+      "distinction": null
+    },
+    {
+      "name": "Osaka",
+      "place_id": null,
+      "lat": 4.6706,
+      "lng": -74.0498,
+      "category": "restaurante",
+      "cuisine": "nikkei",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de cocina nikkei (fusión peruano-japonesa) en el Chicó, con un espacio luminoso rodeado de vegetación. Parte de la cadena peruana Osaka, que llegó a Bogotá de la mano de cuatro empresarios colombianos.",
+      "source_url": "https://forbes.co/2024/10/07/negocios/la-historia-de-cuatro-empresarios-que-trajeron-osaka-a-bogota",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6706,-74.0498",
+      "distinction": null
+    },
+    {
+      "name": "El Cielo",
+      "place_id": null,
+      "lat": 4.6499,
+      "lng": -74.0578,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de vanguardia del chef Juan Manuel Barrientos en la Zona G, con menús de degustación multisensoriales de hasta 20 tiempos. Ocupó el puesto 74 de Latin America's 50 Best Restaurants en 2022.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Colombia/Bogot%C3%A1/El-Cielo.html",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6499,-74.0578",
+      "distinction": null
+    },
+    {
+      "name": "Andrés DC",
+      "place_id": null,
+      "lat": 4.6673,
+      "lng": -74.0521,
+      "category": "restaurante",
+      "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sede bogotana del grupo Andrés Carne de Res en plena Zona Rosa, con pisos temáticos inspirados en obras literarias, música en vivo y el ambiente festivo característico de la marca.",
+      "source_url": "https://www.andrescarnederes.com/andres-dc",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6673,-74.0521",
+      "distinction": null
+    },
+    {
+      "name": "Masa",
+      "place_id": null,
+      "lat": 4.6456,
+      "lng": -74.0554,
+      "category": "panaderia",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería fundada por las hermanas Mariana y Silvana Villegas en 2011, heredera de un negocio familiar de repostería con más de 25 años de trayectoria. Transformó la manera de comer pan en Bogotá.",
+      "source_url": "https://www.kienyke.com/kien-opina/la-historia-de-masa-una-de-las-panaderias-mas-exitosas-de-bogota",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6456,-74.0554",
+      "distinction": null
+    },
+    {
+      "name": "Rica Lechona",
+      "place_id": null,
+      "lat": 4.5651,
+      "lng": -74.1132,
+      "category": "restaurante",
+      "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Lechonería tolimense fundada en 1977 por Ezequiel Pachón Celis en el sur de Bogotá, que mantiene la receta original de la lechona rellena de arroz, arveja y carne de cerdo.",
+      "source_url": "https://www.ricalechona.com/",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.5651,-74.1132",
+      "distinction": null
+    },
+    {
+      "name": "Pergamino Café",
+      "place_id": null,
+      "lat": 4.6447,
+      "lng": -74.0625,
+      "category": "cafeteria",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostadora y cafetería de especialidad con sede en Chapinero, enfocada en la trazabilidad del café colombiano y el pago justo a los productores.",
+      "source_url": "https://co.pergamino.co/pages/locaciones",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6447,-74.0625",
+      "distinction": null
+    },
+    {
+      "name": "Salto del Ángel",
+      "place_id": null,
+      "lat": 4.6768,
+      "lng": -74.05,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar y restaurante cerca del Parque 93 que combina comida tex-mex y colombiana durante el día, y se transforma en punto de rumba y música en vivo por las noches.",
+      "source_url": "https://www.elespectador.com/opinion/columnistas/d-buenavida/salto-del-angel-column-249112/",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6768,-74.05",
+      "distinction": null
+    },
+    {
+      "name": "Watakushi",
+      "place_id": null,
+      "lat": 4.668,
+      "lng": -74.0517,
+      "category": "restaurante",
+      "cuisine": "japonesa",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de cocina japonesa y tailandesa contemporánea en la Zona T, referente de la gastronomía asiática de autor en Bogotá.",
+      "source_url": "https://zonak.com.co/restaurantes/watakushi/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.668,-74.0517",
+      "distinction": null
+    },
+    {
+      "name": "Pastelería Florida",
+      "place_id": null,
+      "lat": 4.6082,
+      "lng": -74.071,
+      "category": "panaderia",
+      "cuisine": "española",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La pastelería más antigua de Bogotá, inaugurada en 1936 por el español José Granés como un salón de té de estilo republicano en la carrera séptima. Famosa por su chocolate caliente y sus macarrones.",
+      "source_url": "https://www.pulzo.com/nacion/bogota/hace-cuanto-nacio-cafeteria-florida-centro-bogota-es-espanola-PP3192663",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6082,-74.071",
+      "distinction": null
+    },
+    {
+      "name": "Pan Pa' Ya",
+      "place_id": null,
+      "lat": 4.7559,
+      "lng": -74.0433,
+      "category": "panaderia",
+      "cuisine": "colombiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena colombiana de panadería nacida en 1989 de una pequeña panadería de 45 metros cuadrados en el norte de Bogotá, célebre por sus buñuelos y su pan caliente. Hoy exporta sus productos a varios países.",
+      "source_url": "https://forbes.co/negocios/cadena-de-panaderias-pan-pa-ya-se-prepara-para-abrir-su-cuarto-local-en-ee-uu-esta-es-su-historia-de-exito",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.7559,-74.0433",
+      "distinction": null
+    },
+    {
+      "name": "Gordo Brooklyn Bar",
+      "place_id": null,
+      "lat": 4.6531,
+      "lng": -74.0577,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar y restaurante de ambiente relajado en Chapinero Alto, inspirado en la estética de Brooklyn, conocido por sus hamburguesas en pan brioche y su carta de cervezas y cocteles.",
+      "source_url": "https://wanderlog.com/place/details/1441245/gordo-brooklyn-restaurant-bar",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6531,-74.0577",
+      "distinction": null
+    },
+    {
+      "name": "Osso",
+      "place_id": null,
+      "lat": 4.6577,
+      "lng": -74.0533,
+      "category": "fine_dining",
+      "cuisine": "peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de carnes y brasas del chef peruano Renzo Garibaldi, reconocido en Latin America's 50 Best; Bogotá fue la primera ciudad fuera de Perú en recibir una sede de la marca.",
+      "source_url": "https://buengusto.co/osso-a-bogota-el-50-best-peruano-de-carnes-y-brasas-apuesta-por-la-capital-colombiana/",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.6577,-74.0533",
+      "distinction": null
+    },
+    {
+      "name": "Prudencia",
+      "place_id": null,
+      "lat": 4.5966,
+      "lng": -74.0722,
+      "category": "fine_dining",
+      "cuisine": "colombiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de almuerzos en una casa republicana de La Candelaria, con menú fijo que cambia a diario según el producto local disponible. Dirigido por los chefs Meghan Flanigan y Mario Rosero, es uno de los favoritos de la crítica en Bogotá.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Colombia/Bogot%C3%A1/Prudencia.html",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=4.5966,-74.0722",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

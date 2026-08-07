@@ -22,6 +22,146 @@
     "Pajares Salinas": {
       "cuisine": "Spanish",
       "description": "An icon of Spanish cuisine in Bogotá for more than 60 years, with an elegant, traditional atmosphere."
+    },
+    "Mesa Franca": {
+      "cuisine": "Colombian",
+      "description": "Creative Colombian restaurant and bar in Chapinero Alto, built on Creole techniques and native flavors. It entered the Latin America's 50 Best Restaurants list in 2022."
+    },
+    "Villanos en Bermudas": {
+      "cuisine": "Colombian",
+      "description": "A fast, spontaneous cooking bar where chefs Nicolás López and Sergio Meza prepare dishes in front of guests. It debuted at No. 40 on Latin America's 50 Best Restaurants less than a year after opening."
+    },
+    "Criterión": {
+      "cuisine": "International",
+      "description": "Pioneer of tasting-menu fine dining in Bogotá since 2004, led by chef Jorge Rausch in Zona G. Named Best Restaurant in Colombia and featured on Latin America's 50 Best from 2013 to 2016."
+    },
+    "Afluente": {
+      "cuisine": "Colombian",
+      "description": "Restaurant by chef Jeferson García focused on Colombia's páramos and water conservation, open for barely two years in Chapinero Alto. It debuted at No. 34 on the 2025 Latin America's 50 Best Restaurants list."
+    },
+    "Harry Sasson": {
+      "cuisine": "International",
+      "description": "Flagship restaurant of Colombia's best-known chef, open since 1995, blending Japanese and European technique with Latin American ingredients cooked over wood grill, oven and robata."
+    },
+    "Mini-Mal": {
+      "cuisine": "Colombian",
+      "description": "Since 2001, chef Eduardo Martínez has researched and showcased the ancestral ingredients and food systems of Colombia's Pacific and Chocó region at this Chapinero Alto landmark."
+    },
+    "Central Cevichería": {
+      "cuisine": "Seafood",
+      "description": "Specializing in ceviche, tiradito and tartare with more than a dozen varieties, in a Caribbean-styled space in Chapinero — one of Bogotá's casual seafood temples."
+    },
+    "Casa Vieja": {
+      "cuisine": "Colombian",
+      "description": "An institution of Colombian cuisine inside a colonial house filled with antiques, serving ajiaco, bandeja paisa and other traditional dishes since 1964."
+    },
+    "Tabula": {
+      "cuisine": "Colombian",
+      "description": "La Macarena restaurant where Anthony Bourdain spent time with then-young chef Tomás Rueda during the Colombia episode of Parts Unknown, sampling Colombian dishes made with experimental technique."
+    },
+    "Wok": {
+      "cuisine": "Asian",
+      "description": "A Bogotá chain with more than 20 years in business specializing in Asian cuisine and sushi, with locations across Zona T, Parque 93 and beyond — an icon of Asian fusion food in Colombia."
+    },
+    "Azahar Coffee": {
+      "cuisine": null,
+      "description": "A specialty coffee shop near Parque 93, known for sourcing single-origin Colombian coffee with full farm-to-cup traceability."
+    },
+    "Catación Pública": {
+      "cuisine": null,
+      "description": "Founded by Jaime Duque in Usaquén, it's considered a reference point for learning about Colombian specialty coffee, with cuppings and courses from seed to cup."
+    },
+    "Varietale": {
+      "cuisine": null,
+      "description": "A specialty coffee roastery and café set inside a former convent in Chapinero, brewing with AeroPress, Chemex and syphon."
+    },
+    "Mercado de Paloquemao": {
+      "cuisine": "Colombian",
+      "description": "Bogotá's largest and most traditional market, open since the 1940s, with sections for exotic fruit, flowers, fish and local food. Anthony Bourdain had breakfast caldo de costilla at a stall tucked in the back of the fish section during Parts Unknown."
+    },
+    "La Sala de Laura": {
+      "cuisine": null,
+      "description": "A 'liquid gastronomy' cocktail bar above the restaurant Leo, led by sommelier Laura Hernández, pouring house distillates inspired by Colombian ecosystems. It has ranked on the World's 100 Best Bars list for several years running."
+    },
+    "Apache Rooftop": {
+      "cuisine": null,
+      "description": "A rooftop bar atop the Click Clack Hotel in Chicó, with 360-degree views of Bogotá, cocktails and a menu that includes burgers."
+    },
+    "Puerta de la Catedral": {
+      "cuisine": "Colombian",
+      "description": "Facing the Catedral Primada in La Candelaria, this restaurant serves the classic chocolate santafereño completo with cheese, almojábana and tamales — a centuries-old Bogotá tradition."
+    },
+    "El Corral": {
+      "cuisine": "Burgers",
+      "description": "Colombia's first burger chain, founded on February 8, 1983 by Pablo Emilio Bueno and Guillermo Calderón across from the Universidad Javeriana. It grew into a national chain and a symbol of Colombian fast food."
+    },
+    "Crepes & Waffles": {
+      "cuisine": "International",
+      "description": "Bogotá chain founded in 1980 by Beatriz Fernández and Eduardo Macía, a pioneer in employing mostly single mothers. It popularized crepes and waffles across Colombia."
+    },
+    "Juan Valdez Café": {
+      "cuisine": null,
+      "description": "'Juan Valdez 1959,' on the north side of Parque de la 93, is the Colombian coffee brand's first flagship store in the world, built as a sensory tribute to Colombian coffee."
+    },
+    "Bogotá Beer Company": {
+      "cuisine": null,
+      "description": "Colombia's pioneering craft brewery, founded in 2002 by Berny Silberwasser; its first pub opened across from the Andino mall in Zona T."
+    },
+    "La Fragata": {
+      "cuisine": "Seafood",
+      "description": "Seafood restaurant founded in 1976 by Colonel Álvaro Calderón, a pioneer in bringing fresh Pacific fish to Bogotá. Its rotating dining room on Calle 100 offers 360-degree views while you eat."
+    },
+    "Osaka": {
+      "cuisine": "Nikkei",
+      "description": "A nikkei (Peruvian-Japanese fusion) restaurant in Chicó, set in a bright, plant-filled space. Part of the Peruvian Osaka chain, brought to Bogotá by four Colombian entrepreneurs."
+    },
+    "El Cielo": {
+      "cuisine": "Colombian",
+      "description": "Avant-garde restaurant by chef Juan Manuel Barrientos in Zona G, offering multi-sensory tasting menus of up to 20 courses. Ranked No. 74 on Latin America's 50 Best Restaurants in 2022."
+    },
+    "Andrés DC": {
+      "cuisine": "Colombian",
+      "description": "The Bogotá outpost of the Andrés Carne de Res group in Zona Rosa, with floors themed around literary works, live music and the brand's signature festive atmosphere."
+    },
+    "Masa": {
+      "cuisine": null,
+      "description": "A bakery founded by sisters Mariana and Silvana Villegas in 2011, growing out of a family baking business with more than 25 years behind it. It transformed how Bogotá eats bread."
+    },
+    "Rica Lechona": {
+      "cuisine": "Colombian",
+      "description": "A Tolima-style lechona restaurant founded in 1977 by Ezequiel Pachón Celis in southern Bogotá, still using the original recipe for pork stuffed with rice, peas and meat."
+    },
+    "Pergamino Café": {
+      "cuisine": null,
+      "description": "A specialty coffee roastery and café with a Chapinero location, focused on traceability and fair payment to Colombian growers."
+    },
+    "Salto del Ángel": {
+      "cuisine": "International",
+      "description": "A bar and restaurant near Parque 93 serving Tex-Mex and Colombian food by day, turning into a live-music party spot by night."
+    },
+    "Watakushi": {
+      "cuisine": "Japanese",
+      "description": "A contemporary Japanese and Thai restaurant in Zona T, a reference point for chef-driven Asian cuisine in Bogotá."
+    },
+    "Pastelería Florida": {
+      "cuisine": "Spanish",
+      "description": "Bogotá's oldest patisserie, opened in 1936 by Spanish immigrant José Granés as a Republican-style tea room on Carrera Séptima. Famous for its hot chocolate and macaroons."
+    },
+    "Pan Pa' Ya": {
+      "cuisine": "Colombian",
+      "description": "A Colombian bakery chain born in 1989 out of a tiny 45-square-meter bakery in north Bogotá, famous for its buñuelos and hot bread. It now exports its products to several countries."
+    },
+    "Gordo Brooklyn Bar": {
+      "cuisine": "International",
+      "description": "A laid-back bar and restaurant in Chapinero Alto inspired by Brooklyn style, known for brioche-bun burgers and its beer and cocktail list."
+    },
+    "Osso": {
+      "cuisine": "Peruvian",
+      "description": "A fire-and-meat restaurant from Peruvian chef Renzo Garibaldi, recognized on Latin America's 50 Best; Bogotá was the first city outside Peru to get a location."
+    },
+    "Prudencia": {
+      "cuisine": "Colombian",
+      "description": "A lunch-only restaurant in a Republican-era house in La Candelaria, with a fixed menu that changes daily based on available local produce. Led by chefs Meghan Flanigan and Mario Rosero, it's a critics' favorite in Bogotá."
     }
   }
 }
