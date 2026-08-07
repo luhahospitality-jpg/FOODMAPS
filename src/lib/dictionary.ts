@@ -20,6 +20,15 @@ export const dictionary = {
         `${available} / ${total} listas`,
       comingSoon: "Próximamente",
       top5Check: "Top 5 ✓",
+      continents: {
+        north_america: "Norteamérica",
+        latin_america: "Latinoamérica",
+        europe: "Europa",
+        middle_east: "Medio Oriente",
+        africa: "África",
+        asia: "Asia",
+        oceania: "Oceanía",
+      },
     },
     city: {
       backLink: "← Todas las ciudades",
@@ -67,6 +76,15 @@ export const dictionary = {
         `${available} / ${total} lists`,
       comingSoon: "Coming soon",
       top5Check: "Top 5 ✓",
+      continents: {
+        north_america: "North America",
+        latin_america: "Latin America",
+        europe: "Europe",
+        middle_east: "Middle East",
+        africa: "Africa",
+        asia: "Asia",
+        oceania: "Oceania",
+      },
     },
     city: {
       backLink: "← All cities",

@@ -5,12 +5,23 @@ import { CityCard } from "@/components/CityCard";
 import { CheckerIcon } from "@/components/CheckerIcon";
 import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { citiesIndex } from "@/data/cities-index";
-import type { Lang } from "@/types/city";
+import type { Continent, Lang } from "@/types/city";
 import { t } from "@/lib/dictionary";
+
+const continentOrder: Continent[] = [
+  "north_america",
+  "latin_america",
+  "europe",
+  "middle_east",
+  "africa",
+  "asia",
+  "oceania",
+];
 
 export function HomeView({ lang }: { lang: Lang }) {
   const dict = t(lang);
   const availableCount = citiesIndex.filter((c) => c.available).length;
+  let cardIndex = 0;
 
   return (
     <div className="flex min-h-screen flex-col bg-cream">
@@ -49,11 +60,30 @@ export function HomeView({ lang }: { lang: Lang }) {
                 {dict.home.listsCount(availableCount, citiesIndex.length)}
               </span>
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {citiesIndex.map((city, i) => (
-                <CityCard key={city.slug} city={city} index={i} lang={lang} />
-              ))}
-            </div>
+            {continentOrder.map((continent) => {
+              const cities = citiesIndex.filter(
+                (c) => c.continent === continent,
+              );
+              if (cities.length === 0) return null;
+
+              return (
+                <div key={continent} className="mt-10 first:mt-0">
+                  <p className="mb-4 font-label text-[11px] font-bold tracking-[0.25em] text-ink/40 uppercase">
+                    {dict.home.continents[continent]}
+                  </p>
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {cities.map((city) => (
+                      <CityCard
+                        key={city.slug}
+                        city={city}
+                        index={cardIndex++}
+                        lang={lang}
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>

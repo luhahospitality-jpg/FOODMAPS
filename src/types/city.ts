@@ -45,12 +45,22 @@ export interface CityData {
   places: Place[];
 }
 
+export type Continent =
+  | "north_america"
+  | "latin_america"
+  | "europe"
+  | "middle_east"
+  | "africa"
+  | "asia"
+  | "oceania";
+
 export interface CityIndexEntry {
   slug: string;
   name: string;
   country: string;
   name_en?: string;
   country_en?: string;
+  continent: Continent;
   plannedPlaces: number;
   available: boolean;
 }
