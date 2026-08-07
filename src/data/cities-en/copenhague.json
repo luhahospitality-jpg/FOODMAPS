@@ -22,6 +22,146 @@
     "Noma": {
       "cuisine": "Nordic",
       "description": "René Redzepi's lab on Refshalevej, the birthplace of modern Nordic cuisine. The sole focus of the Copenhagen episode of \"Parts Unknown.\""
+    },
+    "Alchemist": {
+      "cuisine": "Nordic",
+      "description": "A roughly seven-hour tasting journey of about 50 'impressions' blending avant-garde cooking, art and theatre in a former industrial space on Refshaleøen. Two Michelin stars and a regular in the top 10 of The World's 50 Best Restaurants."
+    },
+    "AOC": {
+      "cuisine": "Nordic",
+      "description": "Nordic cuisine with French roots served in the vaulted cellars of the historic Moltkes Palæ, near Kongens Nytorv. Two Michelin stars."
+    },
+    "Marchal": {
+      "cuisine": "Nordic / French",
+      "description": "Hotel d'Angleterre's restaurant, blending French technique with Nordic ingredients, overlooking Kongens Nytorv. One Michelin star since 2014."
+    },
+    "Barr": {
+      "cuisine": "Nordic / North Sea",
+      "description": "Set in Noma's original Strandgade address, Thorsten Schmidt serves rustic North Sea dishes rooted in classic Nordic tradition. Listed in the Michelin Guide."
+    },
+    "Alouette": {
+      "cuisine": "Nordic / French",
+      "description": "A tiny restaurant tucked into a former workshop in Islands Brygge, run by American chef Nick Curtin. One Michelin star since 2019."
+    },
+    "Höst": {
+      "cuisine": "Nordic",
+      "description": "A candlelit, cozy Nordic bistro from the Cofoco restaurant group. Holds a Bib Gourmand for exceptional value."
+    },
+    "Silberbauers Bistro": {
+      "cuisine": "French / seafood",
+      "description": "A Niçoise-leaning bistro with seasonal seafood, opened in 2021 in Jægersborggade's former Manfreds space by an ex-Relæ chef. Bib Gourmand."
+    },
+    "Bæst": {
+      "cuisine": "Italian",
+      "description": "A pizzeria from Christian Puglisi's group (ex-Noma) with house-made mozzarella and charcuterie, in the heart of Nørrebro."
+    },
+    "Mirabelle": {
+      "cuisine": "Italian",
+      "description": "Puglisi's former bakery turned Sicilian-style trattoria and natural wine bar, in the same building as Bæst."
+    },
+    "Sanchez": {
+      "cuisine": "Mexican",
+      "description": "Contemporary Mexican cooking from Rosio Sanchez, Noma's former head pastry chef, in Vesterbro."
+    },
+    "Hija de Sanchez": {
+      "cuisine": "Mexican",
+      "description": "Rosio Sanchez's taco stand inside Torvehallerne, making tortillas by hand from corn imported from Mexico. Named best street food in Europe by EasyJet Traveller magazine in 2018."
+    },
+    "Aamanns 1921": {
+      "cuisine": "Danish / smørrebrød",
+      "description": "A modern take on traditional smørrebrød by Adam Aamann, using house-baked bread and house-cured ingredients."
+    },
+    "Restaurant Kronborg": {
+      "cuisine": "Danish / smørrebrød",
+      "description": "Smørrebrød served in a 17th-century building on the corner of Brolæggerstræde and Knabrostræde, cannonball still lodged in the facade. Berlingske food critic Søren Frank has praised its no-frills execution of the classics."
+    },
+    "Slotskælderen hos Gitte Kik": {
+      "cuisine": "Danish / smørrebrød",
+      "description": "A smørrebrød restaurant since 1910 near Christiansborg, with the whole menu laid out on a long table. Traditionally a haunt of Danish politicians."
+    },
+    "Torvehallerne": {
+      "cuisine": "Varied",
+      "description": "A covered market of two glass-and-steel pavilions on Israels Plads, opened in 2011 on the site of the old Grønttorv wholesale market. Home to dozens of producer stalls and market kitchens."
+    },
+    "La Banchina": {
+      "cuisine": "Nordic / natural wine",
+      "description": "A waterfront natural wine bar and cafe on Refshaleøen, with a sauna and an official harbour swimming spot."
+    },
+    "Absalon": {
+      "cuisine": "International",
+      "description": "A former church turned community house in Vesterbro, where over 100 strangers share a three-course vegetarian dinner every night."
+    },
+    "Coffee Collective": {
+      "cuisine": "Coffee",
+      "description": "A pioneering specialty coffee roaster and cafe in Scandinavia, founded in 2007 by world-championship-winning baristas, with its original shop on Jægersborggade."
+    },
+    "Democratic Coffee": {
+      "cuisine": "Coffee",
+      "description": "A specialty coffee bar next to the Copenhagen Main Library, known for its almond croissants baked fresh on site and light-roast single-origin coffee."
+    },
+    "Meyers Bageri": {
+      "cuisine": "Danish bakery",
+      "description": "An organic bakery from the group of Claus Meyer, co-founder of New Nordic Cuisine, with a shop on Jægersborggade."
+    },
+    "Lagkagehuset": {
+      "cuisine": "Danish bakery",
+      "description": "A Danish bakery chain born in 1991 on Torvegade, famous for its spandauer pastries and fresh-baked bread."
+    },
+    "John's Hotdog Deli": {
+      "cuisine": "Danish / hot dogs",
+      "description": "A hot dog cart near Central Station run by John Michael Jensen, using Bornholm sausages and homemade remoulade. Anthony Bourdain tried his wild-garlic-and-bacon 'deluxe' dog on 'Parts Unknown.'"
+    },
+    "DØP": {
+      "cuisine": "Danish / hot dogs",
+      "description": "A 100% organic hot dog stand by the Round Tower, serving organic sausages on wholegrain buns. Named Copenhagen's best fast-food spot in 2010, ahead of Michelin-starred restaurants."
+    },
+    "Grøften": {
+      "cuisine": "Danish",
+      "description": "Tivoli Gardens' oldest restaurant, open since 1874, known for its frikadeller and checkered-tablecloth charm."
+    },
+    "Nimb Brasserie": {
+      "cuisine": "French / Danish",
+      "description": "A French-style brasserie inside the Moorish palace of Hotel Nimb, in Tivoli Gardens."
+    },
+    "Kødbyens Fiskebar": {
+      "cuisine": "Seafood",
+      "description": "A seafood restaurant set in a former butcher's shop in the Meatpacking District, serving oysters and sustainably sourced Nordic fish."
+    },
+    "Cofoco": {
+      "cuisine": "Nordic",
+      "description": "The founding restaurant of the Copenhagen Food Consulting group, opened in 2004, serving affordably priced, internationally inspired Nordic food in Vesterbro."
+    },
+    "Llama": {
+      "cuisine": "South American / Peruvian",
+      "description": "A South American restaurant from the Cofoco group specializing in ceviche, anticuchos and Uruguayan-style grilled meats, in central Copenhagen."
+    },
+    "La Glace": {
+      "cuisine": "Danish pastry",
+      "description": "Copenhagen's oldest patisserie, open since 1870, famous for its 'Sportskage' of meringue, cream and hazelnut."
+    },
+    "Sankt Peders Bageri": {
+      "cuisine": "Danish bakery",
+      "description": "Copenhagen's oldest bakery, operating since 1652, known for its giant Wednesday-only cinnamon buns, 'onsdagssnegle.'"
+    },
+    "Reffen": {
+      "cuisine": "Street food, varied",
+      "description": "Northern Europe's largest street food market, with around 35 stalls and its own brewery, on the Refshaleøen peninsula."
+    },
+    "Mikkeller Bar": {
+      "cuisine": "Craft beer",
+      "description": "The original bar of Danish craft brewery Mikkeller, opened in 2012 in Vesterbro, with around twenty rotating taps."
+    },
+    "Ved Stranden 10": {
+      "cuisine": "Natural wine",
+      "description": "A natural and biodynamic wine bar by the canal, long regarded as one of Copenhagen's best wine bars."
+    },
+    "Lidkoeb": {
+      "cuisine": "Cocktails",
+      "description": "A cocktail bar in the courtyard of a former 1886 pharmacy on Vesterbrogade, sister bar to Ruby. A regular on The World's 50 Best Bars list."
+    },
+    "Ruby": {
+      "cuisine": "Cocktails",
+      "description": "A cocktail bar in a 1740 townhouse by the Nybrogade canals, ranked among the world's 50 best bars by The World's 50 Best Bars."
     }
   }
 }
