@@ -22,6 +22,146 @@
     "Krinos": {
       "cuisine": "Greek / bougatsa",
       "description": "A historic pastry shop on Aiolou Street, near Monastiraki, famous for its cream bougatsa."
+    },
+    "CTC Urban Gastronomy": {
+      "cuisine": "Modern Greek / Mediterranean",
+      "description": "Chef Alexandros Tsiotinis's inventive fine dining in a leafy Kerameikos courtyard. One Michelin star every year since 2022."
+    },
+    "Hytra": {
+      "cuisine": "Modern Greek",
+      "description": "Chef-driven modern Greek cuisine atop the Onassis Cultural Centre, with Acropolis views. Michelin-starred."
+    },
+    "Botrini's": {
+      "cuisine": "Greek / Italian",
+      "description": "Greek-Italian chef Ettore Botrini blends both traditions in Chalandri, with tasting menus of up to 14 courses. One Michelin star."
+    },
+    "The Zillers": {
+      "cuisine": "Modern Greek",
+      "description": "Rooftop fine dining above the Zillers Boutique Hotel, with views of the cathedral and the Acropolis. Michelin-starred since 2022, led by chef Vasilis Roussos."
+    },
+    "Delta": {
+      "cuisine": "Contemporary Greek",
+      "description": "Inside the Stavros Niarchos Foundation Cultural Centre, a 12-course omnivore menu by chefs Giorgos Papazacharias and Thanos Feskos. Two Michelin stars and a Green Star."
+    },
+    "Varoulko Seaside": {
+      "cuisine": "Greek / seafood",
+      "description": "Founded in 1987 by Lefteris Lazarou, the first Greek chef ever awarded a Michelin star (2002). Now set by the Mikrolimano marina, with inventive seafood cooking."
+    },
+    "Soil": {
+      "cuisine": "Seasonal Greek / farm-to-table",
+      "description": "Chef Tasos Mantis cooks with produce from his family's garden in Alepochori, in the Pangrati neighborhood. Michelin star and Green Star for its sustainable philosophy."
+    },
+    "Nolan": {
+      "cuisine": "Greek / Japanese (fusion)",
+      "description": "Chef Sotiris Kontizas blends his Greek and Japanese roots in dishes like beef-cheek gyoza. Michelin Bib Gourmand in the heart of Syntagma."
+    },
+    "Mavro Provato": {
+      "cuisine": "Greek / meze",
+      "description": "A Pangrati mezedopoleio open since 2010, with a daily list of 15 to 20 small plates written on butcher paper. Michelin Bib Gourmand since 2019, and the hardest reservation to land in the city."
+    },
+    "Karamanlidika tou Fani": {
+      "cuisine": "Greek / Asia Minor (cured meats)",
+      "description": "A deli and mezedopoleio on Evripidou Street, founded by the Theodoropoulos family, descendants of Greeks from Asia Minor. Known for Karamanlidika cured meats like sujuk and pastourma."
+    },
+    "Diporto Agoras": {
+      "cuisine": "Greek",
+      "description": "A basement taverna with no sign or menu next to the Varvakios market, open since 1887. The owner just keeps sending out fried sardines, stewed chickpeas and retsina until you say stop."
+    },
+    "Varvakios Agora": {
+      "cuisine": null,
+      "description": "Athens's central market since 1886, with fish and meat halls under one roof on Athinas Street. The anchor of the late-night taverna scene that surrounds it."
+    },
+    "Ama Lachei": {
+      "cuisine": "Greek / meze",
+      "description": "A mezedopoleio set in a former neoclassical schoolhouse in Exarchia, with a garden courtyard of lemon trees and bougainvillea. A staple of the Athens meze scene."
+    },
+    "Klimataria": {
+      "cuisine": "Greek",
+      "description": "A Psiri taverna open since 1927, with live rebetiko music several nights a week under a vine-covered courtyard."
+    },
+    "Seychelles": {
+      "cuisine": "Modern Greek / meze",
+      "description": "Set in a 19th-century building in Metaxourgeio, contemporary meze built on ingredients from small Greek producers, like Aegean cheeses and smoked Cretan meats."
+    },
+    "Tzitzikas kai Mermigas": {
+      "cuisine": "Greek",
+      "description": "A grocery-store-meets-taverna near Syntagma that credits the producer behind every ingredient on the menu, from Naxos gruyère to smoked Mani pork."
+    },
+    "Kanella": {
+      "cuisine": "Regional Greek",
+      "description": "A neo-taverna in Gazi with mismatched vintage crockery and paper tablecloths, specializing in homestyle regional Greek cooking."
+    },
+    "Melilotos": {
+      "cuisine": "Modern Greek",
+      "description": "Near Agias Irinis square, a modern take on classic Greek dishes, with vegetarian and macrobiotic options alongside meat and fish."
+    },
+    "Filistron": {
+      "cuisine": "Greek",
+      "description": "A taverna on the pedestrian Apostolou Pavlou street in Thissio, with a rooftop that looks straight at the Acropolis and Mount Lycabettus."
+    },
+    "Bairaktaris": {
+      "cuisine": "Greek / souvlaki",
+      "description": "The Bairaktari family has served souvlaki and grilled meats on Monastiraki Square since 1879, its walls lined with photos of actors and politicians who've eaten there."
+    },
+    "Kostas": {
+      "cuisine": "Greek / souvlaki",
+      "description": "A tiny stand on Agias Irinis square since 1946, known for juicy souvlaki and homemade tomato sauce. It usually sells out by 3pm."
+    },
+    "Savvas": {
+      "cuisine": "Greek / souvlaki, kebab",
+      "description": "One of Monastiraki's reference souvlaki spots, tracing its roots back to 1922. Rooftop terrace with Acropolis views."
+    },
+    "Ariston": {
+      "cuisine": "Greek / bougatsa and pies",
+      "description": "One of the oldest bakeries in Athens, in the same spot on Voulis Street since 1910 and still run by the same family. Famous for its savory pies."
+    },
+    "To Kioupi": {
+      "cuisine": "Greek",
+      "description": "A basement taverna on Kolonaki Square, known locally as \"the hole in the ground.\" Traditional, inexpensive Greek cooking in the middle of the city's poshest neighborhood."
+    },
+    "Heteroclito": {
+      "cuisine": "Greek / wine bar",
+      "description": "A natural wine bar showcasing small Greek producers, with cheese and charcuterie boards, near Syntagma."
+    },
+    "Taf Coffee": {
+      "cuisine": null,
+      "description": "Athens's pioneering third-wave coffee roastery and café, running since 2009 in the Exarchia neighborhood."
+    },
+    "GB Roof Garden": {
+      "cuisine": "Greek / Mediterranean",
+      "description": "On the rooftop of the historic Hotel Grande Bretagne, opened in 1874, overlooking Syntagma Square with a direct view of the Acropolis."
+    },
+    "Little Kook": {
+      "cuisine": "Café / desserts",
+      "description": "A Psiri café famous for its fairytale-style decorations that change with the season. One of Instagram's most photographed spots in Athens since it opened in 2015."
+    },
+    "Klepsidra": {
+      "cuisine": null,
+      "description": "A small café in the Anafiotika quarter, right beneath the Acropolis, on a quiet corner of Plaka."
+    },
+    "A for Athens": {
+      "cuisine": null,
+      "description": "The rooftop bar of the hotel of the same name, over Monastiraki Square, one of the most popular spots to watch the Acropolis and Ancient Agora at sunset."
+    },
+    "360 Cocktail Bar": {
+      "cuisine": null,
+      "description": "A rooftop terrace in Monastiraki with 360-degree views over the Acropolis, Mount Lycabettus and the rooftops of the historic center."
+    },
+    "Rozalia": {
+      "cuisine": "Greek",
+      "description": "A family-run taverna on Valtetsiou Street in Exarchia, with both Greek and vegan options in a longstanding neighborhood setting."
+    },
+    "Yiantes": {
+      "cuisine": "Greek / Mediterranean",
+      "description": "A taverna with a hidden garden courtyard in Exarchia, using organic ingredients bought directly from producers."
+    },
+    "Filippou": {
+      "cuisine": "Greek",
+      "description": "A Kolonaki taverna open since 1923, serving classic Greek recipes and home-style stews in an unpretentious space in the middle of the upscale neighborhood."
+    },
+    "Miran": {
+      "cuisine": "Greek / Asia Minor (cured meats and bougatsa)",
+      "description": "Founded by Armenian immigrant Miran Kourounlian on Evripidou Street, specializing in pastourma, sujuk and bougatsa, with over a century of family tradition."
     }
   }
 }
