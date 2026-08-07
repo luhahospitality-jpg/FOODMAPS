@@ -22,6 +22,106 @@
     "Los Pinareños Fruteria": {
       "cuisine": "Cuban",
       "description": "A family-run fruit stand in Little Havana since 1963, famous for its freshly pressed guarapo (sugarcane juice)."
+    },
+    "Mac's Club Deuce": {
+      "cuisine": null,
+      "description": "Miami Beach's oldest bar, an unfiltered dive since 1926. Anthony Bourdain visited it on three different shows and called it one of his favorite places on Earth."
+    },
+    "Michael's Genuine Food & Drink": {
+      "cuisine": "American",
+      "description": "Market-driven American cooking from James Beard-winning chef Michael Schwartz in the Design District. Bourdain called it \"probably the best restaurant in Miami right now\" on The Layover."
+    },
+    "Yardbird Southern Table & Bar": {
+      "cuisine": "Southern American",
+      "description": "Southern fried chicken brined for 27 hours that Anthony Bourdain sampled on his Miami visit. James Beard-nominated for Best New Restaurant."
+    },
+    "Islas Canarias": {
+      "cuisine": "Cuban",
+      "description": "Cuban bakery and restaurant famous for croquetas widely voted among Miami's best. Anthony Bourdain visited with chef Michelle Bernstein on Parts Unknown."
+    },
+    "Mandolin Aegean Bistro": {
+      "cuisine": "Greek / Turkish",
+      "description": "Flavors of Greece and Turkey in a restored bungalow in the Design District, holding a Michelin Bib Gourmand since 2022."
+    },
+    "Boia De": {
+      "cuisine": "Italian",
+      "description": "Neighborhood Italian cooking with American touches in a tiny Little Haiti storefront. One Michelin star for chefs Luciana Giangrandi and Alex Meyer."
+    },
+    "Fiola Miami": {
+      "cuisine": "Italian",
+      "description": "Refined Italian cuisine from James Beard Award-winning, Michelin-starred chef Fabio Trabocchi, now in Coral Gables."
+    },
+    "Prime 112": {
+      "cuisine": "American",
+      "description": "The South Beach steakhouse where celebrities have gathered since 2004, consistently ranked among the highest-grossing restaurants in the U.S."
+    },
+    "Garcia's Seafood Grille & Fish Market": {
+      "cuisine": "Seafood",
+      "description": "Family-run seafood spot on the Miami River, founded in 1966 by exiled Cuban brothers who started out as fishmongers."
+    },
+    "Puerto Sagua": {
+      "cuisine": "Cuban",
+      "description": "South Beach Cuban diner since 1962, with ties to the original Puerto Sagua in Havana. The Cuban sandwich and ropa vieja never disappoint."
+    },
+    "La Sandwicherie": {
+      "cuisine": "French",
+      "description": "Open-air French sandwich counter in South Beach since 1988, open until 5 a.m."
+    },
+    "El Palacio de los Jugos": {
+      "cuisine": "Cuban",
+      "description": "Cuban market-cafeteria hybrid open for more than 40 years, famous for its fresh-pressed tropical juices and roast pork."
+    },
+    "Havana Harry's": {
+      "cuisine": "Cuban",
+      "description": "Family-style Cuban cooking in Coral Gables since 1995, with a Michelin Guide mention and a cult-favorite Cuban sandwich."
+    },
+    "Azucar Ice Cream Company": {
+      "cuisine": "Cuban",
+      "description": "Artisanal Little Havana ice cream shop since 2011, known for flavors like flan and Abuela Maria (vanilla with guava and Maria cookies)."
+    },
+    "Panther Coffee": {
+      "cuisine": null,
+      "description": "Pioneering specialty coffee roaster in Wynwood since 2010, one of the first to bring third-wave coffee culture to Miami."
+    },
+    "Zak the Baker": {
+      "cuisine": "Jewish",
+      "description": "Kosher Wynwood bakery famous for its sourdough and challah, voted Miami's best bakery."
+    },
+    "Andiamo Brick Oven Pizza": {
+      "cuisine": "Italian",
+      "description": "Wood-fired pizzeria in the historic MiMo District since 2001, with outdoor picnic tables and dough made fresh daily."
+    },
+    "Broken Shaker": {
+      "cuisine": null,
+      "description": "The cocktail bar at Miami Beach's Freehand hotel, twice James Beard-nominated and named among the World's 50 Best Bars."
+    },
+    "Stubborn Seed": {
+      "cuisine": "Contemporary American",
+      "description": "A bold tasting menu from Top Chef winner Jeremy Ford, Michelin-starred since Florida's inaugural guide."
+    },
+    "Coyo Taco": {
+      "cuisine": "Mexican",
+      "description": "Wynwood taqueria making up to 1,000 handmade tortillas a day, open until 3 a.m."
+    },
+    "News Cafe": {
+      "cuisine": "Mediterranean / American",
+      "description": "24-hour Ocean Drive café since 1988, where Gianni Versace had breakfast before he was murdered outside his mansion in 1997."
+    },
+    "Sanguich de Miami": {
+      "cuisine": "Cuban",
+      "description": "The Cuban sandwich spot that started as a shipping container in 2017 and now holds a Michelin Bib Gourmand five years running."
+    },
+    "La Camaronera": {
+      "cuisine": "Cuban / Seafood",
+      "description": "Cuban seafood counter in Little Havana since 1973, founded by the García brothers. Famous for its pan con minuta."
+    },
+    "Bachour": {
+      "cuisine": "Pastry",
+      "description": "Pastry chef Antonio Bachour's workshop in Coral Gables, one of only three bakeries in the U.S. with a Michelin Bib Gourmand."
+    },
+    "Pincho": {
+      "cuisine": "Cuban / American",
+      "description": "Burger and pincho chain born in Miami in 2010, with Latin American flavors like vaca frita."
     }
   }
 }

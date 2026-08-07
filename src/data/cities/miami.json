@@ -3,7 +3,7 @@
   "name": "Miami",
   "country": "Estados Unidos",
   "tagline": "Cangrejo frío desde 1913, y el café con leche que nunca deja de servir Versailles.",
-  "totalPlaces": 5,
+  "totalPlaces": 30,
   "mymaps_url": null,
   "places": [
     {
@@ -98,6 +98,458 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7658200,-80.2167142"
+    },
+    {
+      "name": "Mac's Club Deuce",
+      "place_id": null,
+      "lat": 25.7852912,
+      "lng": -80.1314738,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "El bar más antiguo de Miami Beach, un dive bar sin filtros desde 1926. Anthony Bourdain lo visitó tres veces en televisión y lo llamó uno de sus lugares favoritos del mundo.",
+      "source_url": "https://www.miaminewtimes.com/music/macs-club-deuce-an-oral-history-7882740/",
+      "source_type": "bourdain",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7852912,-80.1314738"
+    },
+    {
+      "name": "Michael's Genuine Food & Drink",
+      "place_id": null,
+      "lat": 25.8132532,
+      "lng": -80.1926943,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "bourdain",
+        "bib_gourmand"
+      ],
+      "description": "Cocina americana de mercado del chef James Beard Michael Schwartz en el Design District. Bourdain la calificó como \"probablemente el mejor restaurante de Miami\" en The Layover.",
+      "source_url": "https://www.mashed.com/2085574/anthony-bourdain-favorite-miami-restaurant-michaels-genuine/",
+      "source_type": "bourdain",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8132532,-80.1926943",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Yardbird Southern Table & Bar",
+      "place_id": null,
+      "lat": 25.78907,
+      "lng": -80.1400886,
+      "category": "brunch",
+      "cuisine": "sureño estadounidense",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Pollo frito sureño marinado 27 horas que Anthony Bourdain probó en su visita a Miami. Nominado al James Beard como mejor restaurante nuevo.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-miami/",
+      "source_type": "bourdain",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.78907,-80.1400886"
+    },
+    {
+      "name": "Islas Canarias",
+      "place_id": null,
+      "lat": 25.7440723,
+      "lng": -80.4159483,
+      "category": "bakery",
+      "cuisine": "cubano",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Panadería y restaurante cubano famoso por sus croquetas, votadas entre las mejores de Miami. Anthony Bourdain la visitó con la chef Michelle Bernstein en Parts Unknown.",
+      "source_url": "https://burgerbeast.com/islas-canarias-restaurant/",
+      "source_type": "bourdain",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7440723,-80.4159483"
+    },
+    {
+      "name": "Mandolin Aegean Bistro",
+      "place_id": null,
+      "lat": 25.8157769,
+      "lng": -80.1915658,
+      "category": "fine_dining",
+      "cuisine": "griego / turco",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Sabores de Grecia y Turquía en un bungaló restaurado del Design District, con Bib Gourmand Michelin desde 2022.",
+      "source_url": "https://guide.michelin.com/us/en/florida/miami/restaurant/mandolin-aegean-bistro",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8157769,-80.1915658",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Boia De",
+      "place_id": null,
+      "lat": 25.8238322,
+      "lng": -80.1917058,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina italiana de barrio con toques americanos en un pequeño local de Little Haiti. Estrella Michelin para los chefs Luciana Giangrandi y Alex Meyer.",
+      "source_url": "https://guide.michelin.com/ca/en/article/features/boia-de-miami-michelin-guide-restaurant",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8238322,-80.1917058",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Fiola Miami",
+      "place_id": null,
+      "lat": 25.705112,
+      "lng": -80.2825975,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Alta cocina italiana del chef Fabio Trabocchi, ganador del premio James Beard y chef Michelin en otros locales, ahora en Coral Gables.",
+      "source_url": "https://www.gablesguide.com/2021/03/fiola-miami-by-fabio-trabocchi/",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.705112,-80.2825975"
+    },
+    {
+      "name": "Prime 112",
+      "place_id": null,
+      "lat": 25.7698902,
+      "lng": -80.1331104,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El steakhouse de South Beach donde se sientan las celebridades desde 2004, consistentemente entre los restaurantes de mayor facturación de EE. UU.",
+      "source_url": "https://www.timeout.com/miami/restaurants/prime-112",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7698902,-80.1331104"
+    },
+    {
+      "name": "Garcia's Seafood Grille & Fish Market",
+      "place_id": null,
+      "lat": 25.7774006,
+      "lng": -80.203692,
+      "category": "seafood",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Marisquería familiar sobre el Río Miami fundada en 1966 por hermanos cubanos exiliados que empezaron como pescaderos.",
+      "source_url": "https://www.garciasmiami.com/",
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7774006,-80.203692"
+    },
+    {
+      "name": "Puerto Sagua",
+      "place_id": null,
+      "lat": 25.7770988,
+      "lng": -80.1326487,
+      "category": "brunch",
+      "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diner cubano de South Beach desde 1962, con vínculos con el Puerto Sagua original de La Habana. El sándwich cubano y la ropa vieja nunca fallan.",
+      "source_url": "https://gardenandgun.com/articles/ace-atkinss-go-to-cuban-restaurant-in-south-beach/",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7770988,-80.1326487"
+    },
+    {
+      "name": "La Sandwicherie",
+      "place_id": null,
+      "lat": 25.7855219,
+      "lng": -80.131401,
+      "category": "fast_food",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mostrador de sándwiches franceses al aire libre en South Beach desde 1988, abierto hasta las 5 de la madrugada.",
+      "source_url": "https://www.onlyinyourstate.com/food/florida/original-la-sandwicherie-fl",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7855219,-80.131401"
+    },
+    {
+      "name": "El Palacio de los Jugos",
+      "place_id": null,
+      "lat": 25.7482843,
+      "lng": -80.3094156,
+      "category": "street_food",
+      "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado y cafetería cubana con más de 40 años, célebre por sus jugos tropicales recién exprimidos y su cerdo asado.",
+      "source_url": "https://elpalaciodelosjugos.com/",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7482843,-80.3094156"
+    },
+    {
+      "name": "Havana Harry's",
+      "place_id": null,
+      "lat": 25.7291484,
+      "lng": -80.2620282,
+      "category": "brunch",
+      "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina cubana familiar en Coral Gables desde 1995, con mención en la guía Michelin y un sándwich cubano de culto.",
+      "source_url": "https://www.cbsnews.com/miami/news/havana-harrys-serving-authentic-cuban-food-for-nearly-3-decades/",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7291484,-80.2620282"
+    },
+    {
+      "name": "Azucar Ice Cream Company",
+      "place_id": null,
+      "lat": 25.7658359,
+      "lng": -80.2196546,
+      "category": "dessert",
+      "cuisine": "cubano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería artesanal de Little Havana desde 2011, con sabores como flan y Abuela Maria (vainilla con guayaba y galletas Maria).",
+      "source_url": "https://www.azucaricecream.com/about/",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7658359,-80.2196546"
+    },
+    {
+      "name": "Panther Coffee",
+      "place_id": null,
+      "lat": 25.799897,
+      "lng": -80.1992545,
+      "category": "coffee",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tostador de café de especialidad pionero en Wynwood desde 2010, uno de los primeros en traer la ola del café de tercera ola a Miami.",
+      "source_url": "https://panthercoffee.com/",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.799897,-80.1992545"
+    },
+    {
+      "name": "Zak the Baker",
+      "place_id": null,
+      "lat": 25.8014809,
+      "lng": -80.2020516,
+      "category": "bakery",
+      "cuisine": "judío",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería kosher de Wynwood famosa por su pan de masa madre y su challah, elegida mejor panadería de Miami.",
+      "source_url": "https://zakthebaker.com/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8014809,-80.2020516"
+    },
+    {
+      "name": "Andiamo Brick Oven Pizza",
+      "place_id": null,
+      "lat": 25.8276939,
+      "lng": -80.1868307,
+      "category": "pizza",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de horno de leña en el histórico MiMo District desde 2001, con mesas de picnic al aire libre y masa hecha a diario.",
+      "source_url": "https://discover.localsecrets.travel/andiamo-pizza-a-quiet-corner-to-discover-the-heart-of-miami/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8276939,-80.1868307"
+    },
+    {
+      "name": "Broken Shaker",
+      "place_id": null,
+      "lat": 25.8046237,
+      "lng": -80.1264145,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "El bar de coctelería del hotel Freehand en Miami Beach, nominado dos veces al James Beard y nombrado entre los 50 mejores bares del mundo.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/US/Miami/The-Broken-Shaker.html",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.8046237,-80.1264145"
+    },
+    {
+      "name": "Stubborn Seed",
+      "place_id": null,
+      "lat": 25.7701325,
+      "lng": -80.1348918,
+      "category": "fine_dining",
+      "cuisine": "americano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú degustación audaz del chef Jeremy Ford, ganador de Top Chef, con estrella Michelin desde la primera guía de Florida.",
+      "source_url": "https://guide.michelin.com/us/en/florida/miami-beach/restaurant/stubborn-seed",
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7701325,-80.1348918",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Coyo Taco",
+      "place_id": null,
+      "lat": 25.7997602,
+      "lng": -80.1992518,
+      "category": "street_food",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taquería de Wynwood con tortillas hechas a mano hasta 1.000 veces al día y horario abierto hasta las 3 de la madrugada.",
+      "source_url": "https://www.miaminewtimes.com/food-drink/wynwood-mainstay-coyo-taco-toasts-to-10-years-22753806/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7997602,-80.1992518"
+    },
+    {
+      "name": "News Cafe",
+      "place_id": null,
+      "lat": 25.7781331,
+      "lng": -80.131445,
+      "category": "brunch",
+      "cuisine": "mediterráneo / americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café 24 horas de Ocean Drive desde 1988, donde Gianni Versace desayunaba antes de ser asesinado frente a su mansión en 1997.",
+      "source_url": "https://www.axios.com/local/miami/2023/03/06/after-2-year-closure-news-cafe-reopens-in-south-beach",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7781331,-80.131445"
+    },
+    {
+      "name": "Sanguich de Miami",
+      "place_id": null,
+      "lat": 25.7653854,
+      "lng": -80.2286061,
+      "category": "fast_food",
+      "cuisine": "cubano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "El cubano que arrancó como contenedor en 2017 y hoy tiene Bib Gourmand Michelin cinco años seguidos.",
+      "source_url": "https://guide.michelin.com/us/en/florida/miami/restaurant/sanguich-de-miami",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7653854,-80.2286061",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "La Camaronera",
+      "place_id": null,
+      "lat": 25.7725937,
+      "lng": -80.2275102,
+      "category": "seafood",
+      "cuisine": "cubano / mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mostrador de mariscos cubanos en Little Havana desde 1973, fundado por los hermanos García. Famoso por su pan con minuta.",
+      "source_url": "https://lacamaronera.com/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7725937,-80.2275102"
+    },
+    {
+      "name": "Bachour",
+      "place_id": null,
+      "lat": 25.7541352,
+      "lng": -80.2609398,
+      "category": "dessert",
+      "cuisine": "repostería",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Obrador del pastelero Antonio Bachour en Coral Gables, una de solo tres panaderías en EE. UU. con Bib Gourmand Michelin.",
+      "source_url": "https://www.tastingtable.com/2148444/us-michelin-bib-gourmand-recognized-bakeries/",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7541352,-80.2609398",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Pincho",
+      "place_id": null,
+      "lat": 25.7514048,
+      "lng": -80.2557096,
+      "category": "fast_food",
+      "cuisine": "cubano / americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de hamburguesas y pinchos nacida en Miami en 2010, con sabores latinoamericanos como la vaca frita.",
+      "source_url": "https://pincho.com/2023/03/27/pinchos-dropping-the-factory-why-did-we-change-our-name/",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=25.7514048,-80.2557096"
     }
   ],
   "targetPlaces": 40,
