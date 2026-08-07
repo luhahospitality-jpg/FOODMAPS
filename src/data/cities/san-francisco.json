@@ -3,7 +3,7 @@
   "name": "San Francisco",
   "country": "Estados Unidos",
   "tagline": "La barra de ostras que Anthony Bourdain llamó un punto de referencia, y tres estrellas Michelin de poesía culinaria.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,651 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7933913,-122.4225436"
+    },
+    {
+      "name": "Quince",
+      "place_id": null,
+      "lat": 37.7968,
+      "lng": -122.4033,
+      "category": "fine_dining",
+      "cuisine": "franco-californiano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina franco-californiana del chef Michael Tusk en el histórico Jackson Square; alcanzó su tercera estrella Michelin en 2017 y fue premiado con el James Beard a Mejor Chef del Pacífico en 2011.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7968,-122.4033",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Saison",
+      "place_id": null,
+      "lat": 37.7788,
+      "lng": -122.3927,
+      "category": "fine_dining",
+      "cuisine": "americano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina hiperestacional a fuego de leña del chef Joshua Skenes en SoMa, una de las experiencias gastronómicas más caras de Estados Unidos; llegó a tener tres estrellas Michelin y mantiene dos en la guía 2025.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7788,-122.3927",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Lazy Bear",
+      "place_id": null,
+      "lat": 37.7602,
+      "lng": -122.4211,
+      "category": "fine_dining",
+      "cuisine": "americano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cena comunitaria de varios tiempos en la Misión, nacida en 2009 como un restaurante clandestino en el apartamento del chef David Barzelay; hoy cuenta con dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/article/dining-out/lazy-bear-restaurant-michelin-san-francisco-david-barzelay",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7602,-122.4211",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Acquerello",
+      "place_id": null,
+      "lat": 37.7916,
+      "lng": -122.4226,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Elegancia italiana clásica desde 1989 en Nob Hill, de la chef Suzette Gresham, con una de las cartas de vinos de Piamonte más celebradas de la ciudad; dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7916,-122.4226",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Californios",
+      "place_id": null,
+      "lat": 37.7554,
+      "lng": -122.4133,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina mexicana de autor del chef Val Cantú en SoMa, el primer y único restaurante mexicano del mundo en obtener dos estrellas Michelin.",
+      "source_url": "https://en.wikipedia.org/wiki/Californios_(restaurant)",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7554,-122.4133",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Birdsong",
+      "place_id": null,
+      "lat": 37.7776,
+      "lng": -122.4108,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina a fuego de leña inspirada en el Pacífico Noroeste del chef Christopher Bleidorn, con dos estrellas Michelin en el Distrito de Teatros de San Francisco.",
+      "source_url": "https://en.wikipedia.org/wiki/Birdsong_(restaurant)",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7776,-122.4108",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Angler SF",
+      "place_id": null,
+      "lat": 37.7937,
+      "lng": -122.3922,
+      "category": "seafood",
+      "cuisine": "americano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Mariscos y carnes a la parrilla de fuego abierto del chef Josh Skenes (de Saison) junto al Embarcadero, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7937,-122.3922",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "State Bird Provisions",
+      "place_id": null,
+      "lat": 37.7838,
+      "lng": -122.4326,
+      "category": "restaurante",
+      "cuisine": "americano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Pequeños platos californianos servidos estilo dim sum sobre carritos; ganó el premio James Beard a Mejor Restaurante Nuevo de Estados Unidos en 2013 y mantiene una estrella Michelin desde 2014.",
+      "source_url": "https://en.wikipedia.org/wiki/State_Bird_Provisions",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7838,-122.4326",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Rich Table",
+      "place_id": null,
+      "lat": 37.7749,
+      "lng": -122.4239,
+      "category": "restaurante",
+      "cuisine": "americano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina californiana de temporada en Hayes Valley, famosa por su 'porcini donut'; tuvo una estrella Michelin entre 2014 y 2021 y hoy figura en la lista Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/rich-table",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7749,-122.4239",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Nopalito",
+      "place_id": null,
+      "lat": 37.7724,
+      "lng": -122.4389,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina mexicana rústica y sostenible en NoPa, hermana del clásico Nopa, sin reservaciones; distinguida con el Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nopalito",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7724,-122.4389",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Cotogna",
+      "place_id": null,
+      "lat": 37.7967,
+      "lng": -122.4032,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Trattoria informal del chef Michael Tusk junto a su Quince en Jackson Square, con pastas y platos a la leña reconocidos con el Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/cotogna",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7967,-122.4032",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Burma Superstar",
+      "place_id": null,
+      "lat": 37.7826,
+      "lng": -122.4634,
+      "category": "restaurante",
+      "cuisine": "birmano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Referencia de la cocina birmana en el Richmond, célebre por su ensalada de hojas de té fermentadas; siempre hay fila de espera y no acepta reservaciones para grupos pequeños.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7826,-122.4634"
+    },
+    {
+      "name": "Mandalay",
+      "place_id": null,
+      "lat": 37.7852,
+      "lng": -122.4643,
+      "category": "restaurante",
+      "cuisine": "birmano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante birmano en funcionamiento continuo más antiguo de San Francisco, abierto desde 1984; nombrado 'America's Classic' por la James Beard Foundation en 2024.",
+      "source_url": "https://www.jamesbeard.org/stories/announcing-the-2024-restaurant-and-chef-americas-classics-winners",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7852,-122.4643"
+    },
+    {
+      "name": "Tommy's Joynt",
+      "place_id": null,
+      "lat": 37.7846,
+      "lng": -122.4213,
+      "category": "restaurante",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Hofbrau y 'saloon' de San Francisco desde 1947, conocido por su pierna de pavo y su carne de res a la cerveza servidas al estilo cafetería.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7846,-122.4213"
+    },
+    {
+      "name": "Zuni Cafe",
+      "place_id": null,
+      "lat": 37.7726,
+      "lng": -122.423,
+      "category": "restaurante",
+      "cuisine": "californiano-mediterráneo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Abierto en 1979, célebre por su pollo asado en horno de leña para dos; su chef Judy Rodgers ganó el premio James Beard a Mejor Chef del país en 2004.",
+      "source_url": "https://zunicafe.com/history/",
+      "source_type": "critic",
+      "source_type_secondary": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7726,-122.4230"
+    },
+    {
+      "name": "Foreign Cinema",
+      "place_id": null,
+      "lat": 37.7564,
+      "lng": -122.4191,
+      "category": "restaurante",
+      "cuisine": "californiano-mediterráneo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de la Misión desde 1999 con un gran patio donde se proyectan películas clásicas al anochecer, obra de los chefs Gayle Pirie y John Clark.",
+      "source_url": "https://www.forbes.com/sites/chelseadavis/2019/08/29/san-franciscos-unique-dining-destination-foreign-cinema-celebrates-20-years-in-the-mission/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7564,-122.4191"
+    },
+    {
+      "name": "Vesuvio Cafe",
+      "place_id": null,
+      "lat": 37.7975,
+      "lng": -122.4066,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar bohemio de North Beach fundado en 1948 por Henri Lenoir, frente a City Lights Bookstore; punto de encuentro de Jack Kerouac, Allen Ginsberg y otros escritores de la Generación Beat.",
+      "source_url": "https://vesuvio.com/history-of-vesuvio/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7975,-122.4066"
+    },
+    {
+      "name": "Tosca Cafe",
+      "place_id": null,
+      "lat": 37.7973,
+      "lng": -122.4065,
+      "category": "bar",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar histórico de North Beach abierto en 1919 por veteranos italianos de la Primera Guerra Mundial, famoso por su 'house cappuccino' con brandy; restaurado en 2013 por April Bloomfield y Ken Friedman.",
+      "source_url": "https://www.huffpost.com/entry/tosca-cafe_n_2537521",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7973,-122.4065"
+    },
+    {
+      "name": "Molinari Delicatessen",
+      "place_id": null,
+      "lat": 37.7987,
+      "lng": -122.4079,
+      "category": "mercado",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La charcutería italiana más antigua de San Francisco, fundada en 1896 por P.G. Molinari; produce sus propios salamis y prepara sándwiches sobre pan 'Dutch crunch'.",
+      "source_url": "https://en.wikipedia.org/wiki/Molinari%27s",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7987,-122.4079"
+    },
+    {
+      "name": "Liguria Bakery",
+      "place_id": null,
+      "lat": 37.8006,
+      "lng": -122.4104,
+      "category": "panaderia",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería familiar de North Beach que hornea focaccia ligur desde 1911, en el mismo horno de ladrillo de generaciones anteriores; cierra en cuanto se agota la producción del día.",
+      "source_url": "https://en.wikipedia.org/wiki/Liguria_Bakery",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.8006,-122.4104"
+    },
+    {
+      "name": "Boudin Bakery",
+      "place_id": null,
+      "lat": 37.8083,
+      "lng": -122.4156,
+      "category": "panaderia",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundada en 1849 por Isidore Boudin, es el negocio en funcionamiento continuo más antiguo de San Francisco; su pan de masa madre se elabora todavía con la 'masa madre original' de la época de la fiebre del oro.",
+      "source_url": "https://boudinbakery.com/our-story/our-history/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.8083,-122.4156"
+    },
+    {
+      "name": "Caffe Trieste",
+      "place_id": null,
+      "lat": 37.7983,
+      "lng": -122.4076,
+      "category": "cafeteria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1956, es considerado el primer café con máquina de espresso de la costa oeste de Estados Unidos; punto de reunión histórico de la Generación Beat en North Beach.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7983,-122.4076"
+    },
+    {
+      "name": "R&G Lounge",
+      "place_id": null,
+      "lat": 37.7939,
+      "lng": -122.4056,
+      "category": "restaurante",
+      "cuisine": "cantonés",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Restaurante cantonés de Chinatown famoso por su cangrejo Dungeness frito con sal y pimienta, plato que Anthony Bourdain probó en su programa de viajes gastronómicos por San Francisco.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-san-francisco-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7939,-122.4056"
+    },
+    {
+      "name": "Great Eastern Restaurant",
+      "place_id": null,
+      "lat": 37.7955,
+      "lng": -122.4059,
+      "category": "restaurante",
+      "cuisine": "cantonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante cantonés de Chinatown especializado en dim sum y mariscos vivos, que saltó a la fama tras la visita sorpresa del presidente Barack Obama en 2012 para pedir comida para llevar.",
+      "source_url": "https://www.huffpost.com/entry/obama-dim-sum-order_b_1285475",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7955,-122.4059"
+    },
+    {
+      "name": "La Taqueria",
+      "place_id": null,
+      "lat": 37.7502,
+      "lng": -122.4184,
+      "category": "taqueria",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Taquería de la Misión famosa por sus burritos sin arroz, envueltos en tortilla dorada a la plancha; ganadora del premio America's Classics de la James Beard Foundation en 2017.",
+      "source_url": "https://www.jamesbeard.org/stories/meet-the-2017-americas-classics-award-winners",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7502,-122.4184"
+    },
+    {
+      "name": "El Farolito",
+      "place_id": null,
+      "lat": 37.7523,
+      "lng": -122.4187,
+      "category": "taqueria",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taquería nocturna de la Misión, abierta hasta la madrugada, y perenne contendiente al título de mejor burrito de San Francisco frente a su vecina La Taqueria.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7523,-122.4187"
+    },
+    {
+      "name": "Taqueria Cancun",
+      "place_id": null,
+      "lat": 37.7605,
+      "lng": -122.4192,
+      "category": "taqueria",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taquería de la Misión abierta las 24 horas los fines de semana, muy popular por su burrito 'especial' con carne asada y su salsa verde.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7605,-122.4192"
+    },
+    {
+      "name": "Yank Sing",
+      "place_id": null,
+      "lat": 37.7917,
+      "lng": -122.3922,
+      "category": "restaurante",
+      "cuisine": "dim sum cantonés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de dim sum familiar desde 1958, hoy en el Rincon Center del Distrito Financiero, con carritos de dumplings hechos a mano y bollos char siu.",
+      "source_url": "https://en.wikipedia.org/wiki/Yank_Sing",
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7917,-122.3922"
+    },
+    {
+      "name": "Tartine Bakery",
+      "place_id": null,
+      "lat": 37.7614,
+      "lng": -122.4241,
+      "category": "panaderia",
+      "cuisine": "francés-americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería de la Misión abierta en 2002 por Chad Robertson y Elisabeth Prueitt, cuyo pan de masa madre y morning buns le valieron el premio James Beard a Mejor Chef Repostero del país en 2008.",
+      "source_url": "https://en.wikipedia.org/wiki/Tartine",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7614,-122.4241"
+    },
+    {
+      "name": "B. Patisserie",
+      "place_id": null,
+      "lat": 37.7877,
+      "lng": -122.4409,
+      "category": "panaderia",
+      "cuisine": "francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pastelería francesa de Pacific Heights de la chef Belinda Leong, célebre por popularizar el kouign-amann en San Francisco.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7877,-122.4409"
+    },
+    {
+      "name": "Ferry Building Marketplace",
+      "place_id": null,
+      "lat": 37.7956,
+      "lng": -122.3933,
+      "category": "mercado",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado gastronómico dentro de la terminal de ferris de 1898, restaurada en 2003, con decenas de comerciantes de alimentos artesanales y el mercado de agricultores de Ferry Plaza.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7956,-122.3933"
+    },
+    {
+      "name": "Bi-Rite Market",
+      "place_id": null,
+      "lat": 37.7614,
+      "lng": -122.4257,
+      "category": "mercado",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tienda de alimentos de la Misión con raíces familiares desde 1940, conocida por su selección curada de productos locales y su heladería contigua.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7614,-122.4257"
+    },
+    {
+      "name": "Tony's Pizza Napoletana",
+      "place_id": null,
+      "lat": 37.8003,
+      "lng": -122.4103,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería de North Beach del chef Tony Gemignani, 13 veces campeón mundial de pizza y cuatro veces poseedor de récords Guinness; nombrada una de las mejores pizzerías del mundo por 50 Top Pizza.",
+      "source_url": "https://en.wikipedia.org/wiki/Tony_Gemignani",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.8003,-122.4103"
+    },
+    {
+      "name": "Trick Dog",
+      "place_id": null,
+      "lat": 37.7592,
+      "lng": -122.4113,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería de la Misión desde 2013, célebre por sus cartas temáticas cambiantes; estuvo entre los World's 50 Best Bars y fue finalista tres veces al premio James Beard de Mejor Programa de Bar.",
+      "source_url": "https://vinepair.com/articles/trick-dog-san-francisco-influence/",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7592,-122.4113"
+    },
+    {
+      "name": "Comstock Saloon",
+      "place_id": null,
+      "lat": 37.7967,
+      "lng": -122.4057,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Saloon restaurado que ocupa un espacio de 1907 en el límite entre North Beach y Jackson Square, con cócteles de la era anterior a la Prohibición y música en vivo.",
+      "source_url": "https://en.wikipedia.org/wiki/Comstock_Saloon",
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.7967,-122.4057"
     }
   ],
   "targetPlaces": 40,

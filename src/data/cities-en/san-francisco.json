@@ -22,6 +22,146 @@
     "House of Prime Rib": {
       "cuisine": "American",
       "description": "A San Francisco institution since 1950, with prime rib carved tableside from a cart and the house salad, just like on day one."
+    },
+    "Quince": {
+      "cuisine": "French-Californian",
+      "description": "Chef Michael Tusk's French-Californian fine dining in historic Jackson Square; earned its third Michelin star in 2017 and won the James Beard Award for Best Chef Pacific in 2011."
+    },
+    "Saison": {
+      "cuisine": "Contemporary American",
+      "description": "Chef Joshua Skenes's hyper-seasonal, wood-fire cooking in SoMa, one of the most expensive dining experiences in the US; once held three Michelin stars and retains two in the 2025 guide."
+    },
+    "Lazy Bear": {
+      "cuisine": "Contemporary American",
+      "description": "A multi-course communal dinner-party experience in the Mission, born in 2009 as an underground supper club in chef David Barzelay's apartment; now holds two Michelin stars."
+    },
+    "Acquerello": {
+      "cuisine": "Italian",
+      "description": "Classic Italian elegance in Nob Hill since 1989 from chef Suzette Gresham, with one of the city's most celebrated Piedmont wine lists; two Michelin stars."
+    },
+    "Californios": {
+      "cuisine": "Mexican",
+      "description": "Chef Val Cantú's fine-dining Mexican tasting menu in SoMa, the first and only Mexican restaurant in the world to earn two Michelin stars."
+    },
+    "Birdsong": {
+      "cuisine": "American",
+      "description": "Chef Christopher Bleidorn's wood-fire cooking inspired by the Pacific Northwest, holding two Michelin stars in San Francisco's Theater District."
+    },
+    "Angler SF": {
+      "cuisine": "American",
+      "description": "Open-fire grilled seafood and meats from chef Josh Skenes (of Saison), overlooking the Embarcadero; one Michelin star."
+    },
+    "State Bird Provisions": {
+      "cuisine": "American",
+      "description": "California small plates served dim-sum style off rolling carts; won the James Beard Award for Best New Restaurant in America in 2013 and has held a Michelin star since 2014."
+    },
+    "Rich Table": {
+      "cuisine": "American",
+      "description": "Seasonal Californian cooking in Hayes Valley, famous for its porcini doughnut; held a Michelin star from 2014 to 2021 and now appears on the Bib Gourmand list."
+    },
+    "Nopalito": {
+      "cuisine": "Mexican",
+      "description": "Rustic, sustainable Mexican cooking in NoPa, sister restaurant to the Cal-cuisine classic Nopa; no reservations, and a Michelin Bib Gourmand pick."
+    },
+    "Cotogna": {
+      "cuisine": "Italian",
+      "description": "Chef Michael Tusk's casual trattoria next to his Quince in Jackson Square, with pastas and wood-fired dishes recognized with a Michelin Bib Gourmand."
+    },
+    "Burma Superstar": {
+      "cuisine": "Burmese",
+      "description": "A Richmond District Burmese food landmark famous for its fermented tea leaf salad; expect a wait, since small parties can't reserve."
+    },
+    "Mandalay": {
+      "cuisine": "Burmese",
+      "description": "San Francisco's oldest continuously operating Burmese restaurant, open since 1984; named a James Beard Foundation America's Classic in 2024."
+    },
+    "Tommy's Joynt": {
+      "cuisine": "American",
+      "description": "A San Francisco hofbrau and saloon since 1947, known for its turkey leg and beer-braised buffalo stew served cafeteria-style."
+    },
+    "Zuni Cafe": {
+      "cuisine": "Californian-Mediterranean",
+      "description": "Open since 1979 and famous for its wood-oven roast chicken for two; chef Judy Rodgers won the James Beard Award for Outstanding Chef in the country in 2004."
+    },
+    "Foreign Cinema": {
+      "cuisine": "Californian-Mediterranean",
+      "description": "A Mission District restaurant since 1999 with a large courtyard that screens classic films at dusk, from chefs Gayle Pirie and John Clark."
+    },
+    "Vesuvio Cafe": {
+      "cuisine": "American",
+      "description": "A bohemian North Beach bar founded in 1948 by Henri Lenoir across from City Lights Bookstore; a gathering spot for Jack Kerouac, Allen Ginsberg, and other Beat Generation writers."
+    },
+    "Tosca Cafe": {
+      "cuisine": "Italian",
+      "description": "A historic North Beach bar opened in 1919 by Italian WWI veterans, famous for its brandy-spiked house cappuccino; restored in 2013 by April Bloomfield and Ken Friedman."
+    },
+    "Molinari Delicatessen": {
+      "cuisine": "Italian",
+      "description": "San Francisco's oldest Italian delicatessen, founded in 1896 by P.G. Molinari; makes its own salami and builds sandwiches on Dutch crunch bread."
+    },
+    "Liguria Bakery": {
+      "cuisine": "Italian",
+      "description": "A family-run North Beach bakery baking Ligurian focaccia since 1911 in the same brick oven used by earlier generations; closes as soon as the day's batch sells out."
+    },
+    "Boudin Bakery": {
+      "cuisine": "American",
+      "description": "Founded in 1849 by Isidore Boudin, it's San Francisco's oldest continuously operating business; its sourdough is still made with mother dough dating back to the Gold Rush."
+    },
+    "Caffe Trieste": {
+      "cuisine": "Italian",
+      "description": "Open since 1956 and considered the first espresso coffeehouse on the West Coast; a historic Beat Generation gathering spot in North Beach."
+    },
+    "R&G Lounge": {
+      "cuisine": "Cantonese",
+      "description": "A Chinatown Cantonese restaurant famous for its salt-and-pepper Dungeness crab, a dish Anthony Bourdain sampled on his San Francisco food travels."
+    },
+    "Great Eastern Restaurant": {
+      "cuisine": "Cantonese",
+      "description": "A Chinatown Cantonese restaurant known for dim sum and live seafood, which gained fame after President Barack Obama made a surprise takeout stop there in 2012."
+    },
+    "La Taqueria": {
+      "cuisine": "Mexican",
+      "description": "A Mission taqueria famous for its rice-free burritos wrapped in a griddle-toasted tortilla; won the James Beard Foundation's America's Classics award in 2017."
+    },
+    "El Farolito": {
+      "cuisine": "Mexican",
+      "description": "A late-night Mission taqueria, open into the early morning, and a perennial rival to its neighbor La Taqueria for the title of San Francisco's best burrito."
+    },
+    "Taqueria Cancun": {
+      "cuisine": "Mexican",
+      "description": "A Mission taqueria open 24 hours on weekends, beloved for its carne asada 'super' burrito and green salsa."
+    },
+    "Yank Sing": {
+      "cuisine": "Cantonese Dim Sum",
+      "description": "A family-run dim sum house since 1958, now in the Financial District's Rincon Center, with hand-made dumpling carts and char siu bao."
+    },
+    "Tartine Bakery": {
+      "cuisine": "French-American",
+      "description": "A Mission bakery opened in 2002 by Chad Robertson and Elisabeth Prueitt, whose sourdough and morning buns earned the James Beard Award for Outstanding Pastry Chef in 2008."
+    },
+    "B. Patisserie": {
+      "cuisine": "French",
+      "description": "A Pacific Heights French pastry shop from chef Belinda Leong, credited with popularizing the kouign-amann in San Francisco."
+    },
+    "Ferry Building Marketplace": {
+      "cuisine": null,
+      "description": "A food hall inside the 1898 ferry terminal, restored in 2003, home to dozens of artisan food vendors and the Ferry Plaza farmers market."
+    },
+    "Bi-Rite Market": {
+      "cuisine": null,
+      "description": "A Mission grocery store with family roots dating to 1940, known for its curated selection of local goods and its adjoining ice creamery."
+    },
+    "Tony's Pizza Napoletana": {
+      "cuisine": "Italian",
+      "description": "A North Beach pizzeria from chef Tony Gemignani, a 13-time world pizza champion and four-time Guinness World Record holder; named one of the world's best pizzerias by 50 Top Pizza."
+    },
+    "Trick Dog": {
+      "cuisine": null,
+      "description": "A Mission cocktail bar since 2013, known for its rotating themed menus; named to the World's 50 Best Bars list and a three-time James Beard Award finalist for Outstanding Bar Program."
+    },
+    "Comstock Saloon": {
+      "cuisine": "American",
+      "description": "A restored 1907 saloon space on the edge of North Beach and Jackson Square, serving pre-Prohibition-era cocktails with live music."
     }
   }
 }
