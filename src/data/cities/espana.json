@@ -2,8 +2,8 @@
   "slug": "espana",
   "name": "España (selección nacional)",
   "country": "España",
-  "tagline": "Cinco joyas fuera del circuito habitual: Girona, un caserío vasco, una posada asturiana de 1898, la ría gallega y Sevilla.",
-  "totalPlaces": 5,
+  "tagline": "40 restaurantes que representan lo mejor de la mesa española, fuera de Madrid, Barcelona, Bilbao, San Sebastián, Málaga y Valencia: desde templos con estrellas Michelin hasta sidrerías y asadores centenarios.",
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -113,6 +113,752 @@
       "distinction": {
         "type": "michelin_star",
         "count": 1
+      }
+    },
+    {
+      "name": "Azurmendi",
+      "place_id": null,
+      "lat": 43.2843,
+      "lng": -2.7935,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina vasca de vanguardia con fuerte compromiso sostenible, en un edificio bioclimático de Larrabetzu (Bizkaia). Tres estrellas Michelin del chef Eneko Atxa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2843,-2.7935",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Elkano",
+      "place_id": null,
+      "lat": 43.3048,
+      "lng": -2.2058,
+      "category": "seafood",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
+      "description": "Templo del rodaballo a la parrilla en el puerto de Getaria (Gipuzkoa), fundado por Pedro Arregi. Anthony Bourdain lo visitó en 'Parts Unknown' y probó su rodaballo asado sobre brasas.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-san-sebastian/",
+      "source_type": "bourdain",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3048,-2.2058",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Casa Julián de Tolosa",
+      "place_id": null,
+      "lat": 43.1367,
+      "lng": -2.0747,
+      "category": "steakhouse",
+      "cuisine": "vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Asador clásico de Tolosa (Gipuzkoa) famoso por su chuletón de buey madurado a la brasa, referencia de la tradición carnicera vasca desde los años 80.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.1367,-2.0747",
+      "distinction": null
+    },
+    {
+      "name": "La Salgar",
+      "place_id": null,
+      "lat": 43.5453,
+      "lng": -5.6294,
+      "category": "fine_dining",
+      "cuisine": "asturiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de producto asturiano con técnica actual, de la chef Esther Manzano, en Gijón. Una estrella Michelin desde 2016.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.5453,-5.6294",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tierra Astur",
+      "place_id": null,
+      "lat": 43.5407,
+      "lng": -5.6614,
+      "category": "restaurante",
+      "cuisine": "asturiano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Sidrería y tienda de referencia de la cultura asturiana, con escanciado tradicional, embutidos y quesos de la tierra, en Gijón. Un clásico para vivir la sidra natural.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.5407,-5.6614",
+      "distinction": null
+    },
+    {
+      "name": "El Cenador de Amós",
+      "place_id": null,
+      "lat": 43.3805,
+      "lng": -3.6771,
+      "category": "fine_dining",
+      "cuisine": "cántabro",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina cántabra de raíz con técnica contemporánea del chef Jesús Sánchez, en un antiguo palacete de Villaverde de Pontones. Tres estrellas Michelin, la primera de Cantabria en lograrlo.",
+      "source_url": "https://turismodecantabria.com/noticias/cantabria-entra-en-la-champions-league-de-la-gastronomia-con-la-tercera-estrella-michelin-del-cenador-de-amos/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3805,-3.6771",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Annua",
+      "place_id": null,
+      "lat": 43.3822,
+      "lng": -4.3984,
+      "category": "fine_dining",
+      "cuisine": "cántabro",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina cántabra de mar y monte del chef Óscar Calleja, en San Vicente de la Barquera. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3822,-4.3984",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Culler de Pau",
+      "place_id": null,
+      "lat": 42.47,
+      "lng": -8.926,
+      "category": "fine_dining",
+      "cuisine": "gallego",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de producto de la ría de Arousa con huerta propia, del chef Javier Olleros, en O Grove (Pontevedra). Una estrella Michelin desde 2014.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.47,-8.926",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Casa Marcelo",
+      "place_id": null,
+      "lat": 42.879,
+      "lng": -8.5451,
+      "category": "fine_dining",
+      "cuisine": "gallego",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina abierta que mezcla producto gallego y técnica asiática, del chef Marcelo Tejedor, cerca de la catedral de Santiago de Compostela. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.879,-8.5451",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "A Estación",
+      "place_id": null,
+      "lat": 43.2864,
+      "lng": -8.3178,
+      "category": "fine_dining",
+      "cuisine": "gallego",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina gallega de temporada de la chef Beatriz Sotelo, en un antiguo edificio junto a la estación de tren de Cambre (A Coruña). Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2864,-8.3178",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "El Capricho",
+      "place_id": null,
+      "lat": 42.2394,
+      "lng": -5.9634,
+      "category": "steakhouse",
+      "cuisine": "castellano",
+      "tags": [
+        "viral_tiktok",
+        "critic"
+      ],
+      "description": "Asador leonés en Jiménez de Jamuz famoso por sus chuletones de vacas viejas de raza propia maduradas hasta 20 años, viral en redes por el tamaño de sus piezas y muy elogiado por la prensa internacional.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.2394,-5.9634",
+      "distinction": null,
+      "source_type_secondary": "viral_social"
+    },
+    {
+      "name": "Refectorio",
+      "place_id": null,
+      "lat": 41.539,
+      "lng": -4.385,
+      "category": "fine_dining",
+      "cuisine": "castellano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de temporada con huerta propia en un monasterio del siglo XII, en Abadía Retuerta LeDomaine, Sardón de Duero (Valladolid). Una estrella Michelin y una Estrella Verde por sostenibilidad.",
+      "source_url": "https://guide.michelin.com/us/en/castilla-y-leon/sardon-de-duero/restaurant/refectorio",
+      "source_type": null,
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.539,-4.385",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Víctor Gutiérrez",
+      "place_id": null,
+      "lat": 40.966,
+      "lng": -5.664,
+      "category": "fine_dining",
+      "cuisine": "peruano-castellano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Fusión entre la cocina peruana y el recetario castellano del chef limeño Víctor Gutiérrez, en el centro de Salamanca. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.966,-5.664",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Mesón de Cándido",
+      "place_id": null,
+      "lat": 40.9481,
+      "lng": -4.1183,
+      "category": "restaurante",
+      "cuisine": "castellano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución del cochinillo asado en Segovia, junto al acueducto romano, fundada por Cándido López, declarado 'Cónsul del Cochinillo'. Un clásico de la cocina castellana desde los años 30.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9481,-4.1183",
+      "distinction": null
+    },
+    {
+      "name": "Lillas Pastia",
+      "place_id": null,
+      "lat": 42.1401,
+      "lng": -0.4082,
+      "category": "fine_dining",
+      "cuisine": "aragonés",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Referencia de la trufa negra de Aragón, del chef Carmelo Bosque, en la Plaza de Navarra de Huesca. Una estrella Michelin ininterrumpida desde 1993.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.1401,-0.4082",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "La Prensa",
+      "place_id": null,
+      "lat": 41.6539,
+      "lng": -0.8807,
+      "category": "fine_dining",
+      "cuisine": "aragonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina aragonesa contemporánea de la chef Marisa Barberán, en Zaragoza. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.6539,-0.8807",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Zaranda",
+      "place_id": null,
+      "lat": 39.5713,
+      "lng": 2.6494,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina mediterránea del chef Fernando P. Arellano, con dos estrellas Michelin, hoy instalada en Palma de Mallorca tras su paso por Ibiza y el Castell Son Claret.",
+      "source_url": "https://guide.michelin.com/us/en/islas-baleares/palma/restaurant/zaranda-1191909",
+      "source_type": null,
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.5713,2.6494",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "La Gaia",
+      "place_id": null,
+      "lat": 38.916,
+      "lng": 1.4515,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El primer restaurante con estrella Michelin de Ibiza, del chef Óscar Molina, dentro del Ibiza Gran Hotel. Cocina mediterránea con toques nikkei y japoneses.",
+      "source_url": "https://lagaiaibiza.com/en/",
+      "source_type": null,
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.916,1.4515",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Abama Kabuki",
+      "place_id": null,
+      "lat": 28.1601,
+      "lng": -16.755,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La versión canaria del grupo Kabuki, cocina japonesa con acento mediterráneo del chef Ricardo Sanz, en el Ritz-Carlton Abama de Guía de Isora (Tenerife). Una estrella Michelin.",
+      "source_url": "https://guia.michelin.es/2zfk19c/abama-kabuki-abama",
+      "source_type": null,
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=28.1601,-16.755",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "El Rincón de Juan Carlos",
+      "place_id": null,
+      "lat": 28.087,
+      "lng": -16.748,
+      "category": "fine_dining",
+      "cuisine": "canario",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de vanguardia de los hermanos Padrón, trasladada en 2021 al Royal Hideaway Corales Resort de Costa Adeje (Tenerife). Dos estrellas Michelin.",
+      "source_url": "https://elrincondejuancarlos.com/en/homepage-english/",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=28.087,-16.748",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Poemas by Hermanos Padrón",
+      "place_id": null,
+      "lat": 28.129,
+      "lng": -15.432,
+      "category": "fine_dining",
+      "cuisine": "canario",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Segundo proyecto de los hermanos Padrón, con el chef Adrián García al frente de los fogones, en el hotel Santa Catalina de Las Palmas de Gran Canaria. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/en/canarias/las-palmas-de-gran-canaria/restaurant/poemas-by-hermanos-padron",
+      "source_type": null,
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=28.129,-15.432",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Atrio",
+      "place_id": null,
+      "lat": 39.4754,
+      "lng": -6.3724,
+      "category": "fine_dining",
+      "cuisine": "extremeño",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de altísimo nivel técnico del chef Toño Pérez y una de las bodegas más reconocidas del mundo, en un palacio del casco histórico de Cáceres. Tres estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/extremadura/cceres/restaurant/atrio",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4754,-6.3724",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Aponiente",
+      "place_id": null,
+      "lat": 36.606,
+      "lng": -6.2145,
+      "category": "seafood",
+      "cuisine": "andaluz",
+      "tags": [
+        "michelin",
+        "tv_show",
+        "critic"
+      ],
+      "description": "El 'chef del mar' Ángel León investiga y cocina especies marinas poco conocidas y plancton en un antiguo molino de mareas de El Puerto de Santa María (Cádiz). Tres estrellas Michelin y protagonista de un episodio de 'Chef's Table' en Netflix (2024).",
+      "source_url": "https://www.tapasmagazine.es/en/from-angel-leon-to-jordi-roca-these-are-all-the-spanish-chefs-who-have-been-on-netflix-chefs-table/",
+      "source_type": "tv_show",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.606,-6.2145",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "LÚ Cocina y Alma",
+      "place_id": null,
+      "lat": 36.6864,
+      "lng": -6.1373,
+      "category": "fine_dining",
+      "cuisine": "andaluz",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina gaditana humilde reinterpretada por el chef Juanlu Fernández, antiguo mano derecha de Ángel León, en Jerez de la Frontera. Dos estrellas Michelin.",
+      "source_url": "https://lucocinayalma.com/",
+      "source_type": null,
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.6864,-6.1373",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Bardal",
+      "place_id": null,
+      "lat": 36.7423,
+      "lng": -5.1665,
+      "category": "fine_dining",
+      "cuisine": "andaluz",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de producto y técnica depurada del chef catalán Benito Gómez, instalado en el corazón de Ronda (Málaga). Dos estrellas Michelin.",
+      "source_url": "https://www.restaurantebardal.com/",
+      "source_type": null,
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7423,-5.1665",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Noor",
+      "place_id": null,
+      "lat": 37.8845,
+      "lng": -4.7995,
+      "category": "fine_dining",
+      "cuisine": "andalusí",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El chef Paco Morales investiga y recupera la cocina andalusí de Al-Ándalus en Córdoba. Tres estrellas Michelin desde 2023.",
+      "source_url": "https://guide.michelin.com/mx/es/andalucia/cordoba/restaurante/noor",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.8845,-4.7995",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "El Bohío",
+      "place_id": null,
+      "lat": 40.1225,
+      "lng": -3.8478,
+      "category": "fine_dining",
+      "cuisine": "manchego",
+      "tags": [
+        "michelin",
+        "tv_show"
+      ],
+      "description": "Restaurante familiar desde 1934 en Illescas (Toledo), hoy con el chef Pepe Rodríguez, jurado de 'MasterChef España', al frente. Una estrella Michelin desde 1999.",
+      "source_url": "https://www.elbohio.net/",
+      "source_type": "tv_show",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.1225,-3.8478",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Venta Moncalvillo",
+      "place_id": null,
+      "lat": 42.3766,
+      "lng": -2.52,
+      "category": "fine_dining",
+      "cuisine": "riojano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Cocina riojana de temporada de los hermanos Echapresto, con una de las mejores bodegas de vino de España, en Daroca de Rioja. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.3766,-2.52",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Europa",
+      "place_id": null,
+      "lat": 42.8183,
+      "lng": -1.6431,
+      "category": "fine_dining",
+      "cuisine": "navarro",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Restaurante familiar en pleno centro de Pamplona, con la chef Pilar Idoate al frente de una cocina navarra de producto desde hace décadas. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.8183,-1.6431",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Cabaña Buenavista",
+      "place_id": null,
+      "lat": 37.9346,
+      "lng": -1.15,
+      "category": "fine_dining",
+      "cuisine": "murciano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina murciana de huerta y mar del chef Pablo González Conejero, en una finca a las afueras de Murcia. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.9346,-1.15",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Les Cols",
+      "place_id": null,
+      "lat": 42.187,
+      "lng": 2.4863,
+      "category": "fine_dining",
+      "cuisine": "catalán",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de paisaje de la Garrotxa de la chef Fina Puigdevall, en una antigua masía familiar de Olot (Girona). Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.187,2.4863",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Miramar",
+      "place_id": null,
+      "lat": 42.3645,
+      "lng": 3.154,
+      "category": "seafood",
+      "cuisine": "catalán",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La casa madre del chef Paco Pérez frente al mar de Llançà (Costa Brava, Girona), cocina marinera de vanguardia desde 1996. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=42.3645,3.154",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "La Xerta",
+      "place_id": null,
+      "lat": 40.8138,
+      "lng": 0.488,
+      "category": "fine_dining",
+      "cuisine": "catalán",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina del arroz y el Delta del Ebro del chef Fran López, en el pueblo de Xerta (Tarragona). Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8138,0.488",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Quique Dacosta Restaurante",
+      "place_id": null,
+      "lat": 38.862,
+      "lng": 0.0995,
+      "category": "fine_dining",
+      "cuisine": "valenciano",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina de vanguardia mediterránea del chef Quique Dacosta en Dénia (Alicante), habitual de las listas de mejores restaurantes del mundo. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.862,0.0995",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "L'Escaleta",
+      "place_id": null,
+      "lat": 38.7404,
+      "lng": -0.434,
+      "category": "fine_dining",
+      "cuisine": "valenciano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de producto de montaña e interior de Alicante, de los chefs Kiko Moya y Alberto Redrado, en Cocentaina. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=38.7404,-0.434",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
       }
     }
   ],

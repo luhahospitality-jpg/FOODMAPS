@@ -1,7 +1,7 @@
 {
   "name": "Spain (national picks)",
   "country": "Spain",
-  "tagline": "Five gems off the usual circuit: Girona, a Basque farmhouse, an 1898 Asturian inn, the Galician estuary, and Seville.",
+  "tagline": "40 restaurants representing the best of the Spanish table outside Madrid, Barcelona, Bilbao, San Sebastián, Málaga and Valencia: from Michelin-starred temples to century-old cider houses and grill houses.",
   "places": {
     "El Celler de Can Roca": {
       "cuisine": "Catalan",
@@ -22,6 +22,146 @@
     "Abantal": {
       "cuisine": "Andalusian",
       "description": "Contemporary Andalusian cuisine from chef Julio Fernández, a fine-dining reference in Seville. One Michelin star."
+    },
+    "Azurmendi": {
+      "cuisine": "Basque",
+      "description": "Avant-garde Basque cuisine with a strong sustainability ethos, in a bioclimatic building in Larrabetzu (Bizkaia). Three Michelin stars from chef Eneko Atxa."
+    },
+    "Elkano": {
+      "cuisine": "Basque (seafood)",
+      "description": "The temple of grilled turbot in the fishing port of Getaria (Gipuzkoa), founded by Pedro Arregi. Anthony Bourdain visited on 'Parts Unknown' and tasted its charcoal-grilled turbot."
+    },
+    "Casa Julián de Tolosa": {
+      "cuisine": "Basque (grill)",
+      "description": "Classic grill house in Tolosa (Gipuzkoa) famous for its charcoal-grilled aged ox chop, a benchmark of Basque beef tradition since the 1980s."
+    },
+    "La Salgar": {
+      "cuisine": "Asturian",
+      "description": "Asturian produce-driven cooking with modern technique from chef Esther Manzano, in Gijón. One Michelin star since 2016."
+    },
+    "Tierra Astur": {
+      "cuisine": "Asturian (cider house)",
+      "description": "A landmark cider house and deli of Asturian food culture, with traditional cider pouring, cured meats and local cheeses, in Gijón. A classic way to experience natural cider."
+    },
+    "El Cenador de Amós": {
+      "cuisine": "Cantabrian",
+      "description": "Root-driven Cantabrian cuisine with contemporary technique from chef Jesús Sánchez, in a former manor house in Villaverde de Pontones. Three Michelin stars, the first ever awarded in Cantabria."
+    },
+    "Annua": {
+      "cuisine": "Cantabrian",
+      "description": "Cantabrian sea-and-mountain cuisine from chef Óscar Calleja, in San Vicente de la Barquera. Two Michelin stars."
+    },
+    "Culler de Pau": {
+      "cuisine": "Galician",
+      "description": "Ría de Arousa produce-driven cooking with its own vegetable garden, from chef Javier Olleros, in O Grove (Pontevedra). One Michelin star since 2014."
+    },
+    "Casa Marcelo": {
+      "cuisine": "Galician-Asian fusion",
+      "description": "An open kitchen blending Galician produce with Asian technique, from chef Marcelo Tejedor, near the cathedral in Santiago de Compostela. One Michelin star."
+    },
+    "A Estación": {
+      "cuisine": "Galician",
+      "description": "Seasonal Galician cooking from chef Beatriz Sotelo, in a former building beside the train station in Cambre (A Coruña). One Michelin star."
+    },
+    "El Capricho": {
+      "cuisine": "Castilian (grill)",
+      "description": "A steakhouse in Jiménez de Jamuz (León) famous for chops from its own aged cows, some over 20 years old, gone viral online for the sheer size of its steaks and widely praised by international food press."
+    },
+    "Refectorio": {
+      "cuisine": "Castilian",
+      "description": "Seasonal cooking with its own vegetable garden in a 12th-century monastery, at Abadía Retuerta LeDomaine, Sardón de Duero (Valladolid). One Michelin star and a Green Star for sustainability."
+    },
+    "Víctor Gutiérrez": {
+      "cuisine": "Peruvian-Castilian fusion",
+      "description": "A fusion of Peruvian cuisine and Castilian tradition from Lima-born chef Víctor Gutiérrez, in the center of Salamanca. One Michelin star."
+    },
+    "Mesón de Cándido": {
+      "cuisine": "Castilian",
+      "description": "An institution of roast suckling pig in Segovia, beside the Roman aqueduct, founded by Cándido López, declared honorary 'Consul of the Suckling Pig'. A classic of Castilian cooking since the 1930s."
+    },
+    "Lillas Pastia": {
+      "cuisine": "Aragonese",
+      "description": "A benchmark for Aragón's black truffle, from chef Carmelo Bosque, on Huesca's Plaza de Navarra. One Michelin star held continuously since 1993."
+    },
+    "La Prensa": {
+      "cuisine": "Aragonese",
+      "description": "Contemporary Aragonese cooking from chef Marisa Barberán, in Zaragoza. One Michelin star."
+    },
+    "Zaranda": {
+      "cuisine": "Mediterranean (Balearic)",
+      "description": "Fine Mediterranean cuisine from chef Fernando P. Arellano, holder of two Michelin stars, now based in Palma de Mallorca after stints in Ibiza and at Castell Son Claret."
+    },
+    "La Gaia": {
+      "cuisine": "Mediterranean-Nikkei",
+      "description": "Ibiza's first Michelin-starred restaurant, from chef Óscar Molina, inside the Ibiza Gran Hotel. Mediterranean cuisine with Nikkei and Japanese touches."
+    },
+    "Abama Kabuki": {
+      "cuisine": "Japanese-Mediterranean",
+      "description": "The Canary Islands outpost of the Kabuki group, Japanese cuisine with a Mediterranean accent from chef Ricardo Sanz, at the Ritz-Carlton Abama in Guía de Isora (Tenerife). One Michelin star."
+    },
+    "El Rincón de Juan Carlos": {
+      "cuisine": "Canarian",
+      "description": "Avant-garde cooking from the Padrón brothers, relocated in 2021 to the Royal Hideaway Corales Resort in Costa Adeje (Tenerife). Two Michelin stars."
+    },
+    "Poemas by Hermanos Padrón": {
+      "cuisine": "Canarian",
+      "description": "The Padrón brothers' second project, with chef Adrián García at the stoves, at the Hotel Santa Catalina in Las Palmas de Gran Canaria. One Michelin star."
+    },
+    "Atrio": {
+      "cuisine": "Extremaduran",
+      "description": "Technically superb cooking from chef Toño Pérez, paired with one of the world's most acclaimed wine cellars, in a palace in Cáceres' historic old town. Three Michelin stars."
+    },
+    "Aponiente": {
+      "cuisine": "Andalusian (marine)",
+      "description": "'The chef of the sea' Ángel León researches and cooks little-known marine species and plankton in a former tide mill in El Puerto de Santa María (Cádiz). Three Michelin stars, and the subject of a 2024 Netflix 'Chef's Table' episode."
+    },
+    "LÚ Cocina y Alma": {
+      "cuisine": "Andalusian",
+      "description": "Humble Cádiz-style cooking reinterpreted by chef Juanlu Fernández, formerly Ángel León's right hand, in Jerez de la Frontera. Two Michelin stars."
+    },
+    "Bardal": {
+      "cuisine": "Andalusian",
+      "description": "Produce-focused, technically refined cooking from Catalan chef Benito Gómez, based in the heart of Ronda (Málaga province). Two Michelin stars."
+    },
+    "Noor": {
+      "cuisine": "Andalusi (historic Andalusian)",
+      "description": "Chef Paco Morales researches and revives the historic Andalusi cuisine of Al-Andalus in Córdoba. Three Michelin stars since 2023."
+    },
+    "El Bohío": {
+      "cuisine": "Castilian-La Mancha",
+      "description": "A family restaurant in Illescas (Toledo) since 1934, now run by chef Pepe Rodríguez, a judge on 'MasterChef España'. One Michelin star since 1999."
+    },
+    "Venta Moncalvillo": {
+      "cuisine": "Riojan",
+      "description": "Seasonal Rioja cooking from the Echapresto brothers, with one of Spain's finest wine cellars, in Daroca de Rioja. One Michelin star."
+    },
+    "Europa": {
+      "cuisine": "Navarran",
+      "description": "A family restaurant in the heart of Pamplona, with chef Pilar Idoate leading produce-driven Navarran cooking for decades. One Michelin star."
+    },
+    "Cabaña Buenavista": {
+      "cuisine": "Murcian",
+      "description": "Murcian garden-and-sea cooking from chef Pablo González Conejero, on an estate on the outskirts of Murcia. One Michelin star."
+    },
+    "Les Cols": {
+      "cuisine": "Catalan",
+      "description": "Landscape cuisine from the Garrotxa region by chef Fina Puigdevall, in a former family farmhouse in Olot (Girona). Two Michelin stars."
+    },
+    "Miramar": {
+      "cuisine": "Catalan (seafood)",
+      "description": "Chef Paco Pérez's original flagship overlooking the sea in Llançà (Costa Brava, Girona), avant-garde seafood cooking since 1996. Two Michelin stars."
+    },
+    "La Xerta": {
+      "cuisine": "Catalan (rice)",
+      "description": "Rice- and Ebro Delta-driven cooking from chef Fran López, in the village of Xerta (Tarragona). One Michelin star."
+    },
+    "Quique Dacosta Restaurante": {
+      "cuisine": "Valencian (Mediterranean avant-garde)",
+      "description": "Avant-garde Mediterranean fine dining from chef Quique Dacosta in Dénia (Alicante), a regular on world's-best-restaurant lists. Three Michelin stars."
+    },
+    "L'Escaleta": {
+      "cuisine": "Valencian (mountain/interior)",
+      "description": "Mountain and inland Alicante produce-driven cooking from chefs Kiko Moya and Alberto Redrado, in Cocentaina. Two Michelin stars."
     }
   }
 }
