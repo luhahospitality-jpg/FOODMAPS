@@ -22,6 +22,146 @@
     "Hiiragiya": {
       "cuisine": "Japanese / kaiseki",
       "description": "An 1818 ryokan run by the same family for six generations, where Anthony Bourdain had a kaiseki dinner with geisha alongside chef Morimoto."
+    },
+    "Kitcho Arashiyama": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "A temple of kaiseki in Arashiyama, holding uninterrupted three Michelin stars and a philosophy that fuses tea-ceremony aesthetics with haute cuisine. One of the most exclusive tables in Japan."
+    },
+    "Hyotei": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "A teahouse within the grounds of Nanzen-ji temple since the 17th century, run by the same family for 15 generations. Three Michelin stars, famous for its breakfast rice porridge (asagayu)."
+    },
+    "Nakamura": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Isshi Souden Nakamura has held three consecutive Michelin stars since 2011 and has been run by the same family for over 180 years, now in its sixth generation. Kaiseki served in tatami rooms near Gion."
+    },
+    "Mizai": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Three-Michelin-star kaiseki east of Maruyama Park, with a seasonal menu said to draw on more than 300 ingredients a day. A single seating per night, booked nearly a year in advance."
+    },
+    "Roan Kikunoi": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "The more casual sibling of Kikunoi Honten, holding two Michelin stars and a kaiseki menu that folds in Western touches like olive oil or truffle. Opened about a century ago in the Shimogyo district."
+    },
+    "Gion Sasaki": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Chef Hiroshi Sasaki's inventive kaiseki has held three Michelin stars since 2019, served at an open kitchen where diners watch every cut and sear. Reopened in a new location in 2023."
+    },
+    "Okutan Nanzenji": {
+      "cuisine": "Japanese / tofu",
+      "description": "Kyoto's oldest yudofu (simmered tofu) restaurant, founded in 1635 within the grounds of Nanzen-ji temple as a resting place for pilgrims. Said to be the first to have served the dish."
+    },
+    "Omen": {
+      "cuisine": "Japanese / udon",
+      "description": "Cold dipping udon (tsukemen) served with a plate of vegetable garnishes since 1967, right in front of the Silver Pavilion (Ginkaku-ji). The recipe grew out of the founders' home cooking, brought from their native Gunma."
+    },
+    "Honke Daiichi Asahi": {
+      "cuisine": "Japanese / ramen",
+      "description": "Founded in 1947 near Kyoto Station, one of the shops that defined the city's postwar ramen: a broth seasoned with Fushimi soy sauce and Kujo green onions. Open from 6 a.m. to 1 a.m."
+    },
+    "Kagizen Yoshifusa": {
+      "cuisine": "Japanese / wagashi",
+      "description": "A Gion confectionery documented since 1726, famous for kuzukiri: cold kudzu-starch noodles dipped in dark sugar syrup (kuromitsu). A classic of Kyoto's traditional sweets (kyogashi)."
+    },
+    "Izuju": {
+      "cuisine": "Japanese / sushi",
+      "description": "Facing the gate of Yasaka Shrine, it has served sabazushi -- pressed mackerel sushi -- since 1892, in the Kyoto-style sushi tradition that predates Tokyo-style nigiri."
+    },
+    "Nakamura Tokichi Honten": {
+      "cuisine": "matcha tea",
+      "description": "A Uji tea house founded in 1854, now run by the seventh generation of the Nakamura family. Its ceremonial-grade matcha parfaits and ice cream draw long lines by the Uji River."
+    },
+    "Gion Tsujiri": {
+      "cuisine": "matcha tea",
+      "description": "A Uji tea house founded in 1860, with its Gion shop open since 1948. Its stone-ground matcha parfaits are a classic among Kyoto's green-tea desserts."
+    },
+    "% Arabica Kyoto Higashiyama": {
+      "cuisine": "coffee",
+      "description": "Founded by Kenneth Shoji, this Higashiyama flagship opened in 2014 and became one of the most photographed, Instagram-viral cafes in the world, with views of the Yasaka Pagoda."
+    },
+    "Tempura Kyoboshi": {
+      "cuisine": "Japanese / tempura",
+      "description": "A tempura counter open since 1947, holding a Michelin star since 2010, fried in sesame oil in the traditional Kyoto style."
+    },
+    "Toraya Kyoto Ichijo": {
+      "cuisine": "Japanese / wagashi",
+      "description": "Japan's oldest wagashi maker, founded in Kyoto in the 16th century and a purveyor to the Imperial Court since the reign of Emperor Go-Yozei. Its Ichijo shop, beside the Imperial Palace, has served sweets since 1628."
+    },
+    "Smart Coffee": {
+      "cuisine": "coffee",
+      "description": "An old-school kissaten coffee shop open since 1932 in the Teramachi arcade, known for its hand-roasted coffee and its pancakes and French toast."
+    },
+    "Arashiyama Yoshimura": {
+      "cuisine": "Japanese / soba",
+      "description": "Handmade soba beside the Katsura River and Togetsukyo Bridge, set in the former residence of Meiji-era painter Kawamura Manshu. The buckwheat is stone-ground the same day it's served."
+    },
+    "Kyogoku Kaneyo": {
+      "cuisine": "Japanese / eel (unagi)",
+      "description": "A Meiji-era eel (unagi) house with over a century of history on the Shinkyogoku shopping street. Its kinshi-don, eel over rice topped with shredded egg, uses a sauce kept alive since the restaurant's founding."
+    },
+    "Bee's Knees": {
+      "cuisine": "bar / cocktails",
+      "description": "A Prohibition-inspired speakeasy hidden behind a yellow door, named among Asia's 50 Best Bars in 2022. No reservations -- walk-ins only after 6 p.m."
+    },
+    "Tousuiro": {
+      "cuisine": "Japanese / tofu",
+      "description": "A tofu-kaiseki restaurant founded in 1992, its Gion branch set in a 130-year-old merchant house next to a converted old storehouse. Offers seasonal vegetarian and vegan tofu menus."
+    },
+    "Gion Koishi": {
+      "cuisine": "sweets / tea",
+      "description": "A tea salon facing Yasaka Shrine, known for its matcha parfait with ice cream, sweet red beans and chestnut cream, plus its warabimochi. One of the most social-media-shared desserts in Gion."
+    },
+    "Weekenders Coffee": {
+      "cuisine": "coffee",
+      "description": "A specialty coffee roastery and cafe set in a traditional machiya townhouse near Nishiki Market. Masahiro Kaneko opened it in 2005, and it is considered a pioneer of Kyoto's specialty-coffee movement."
+    },
+    "Mankamerou": {
+      "cuisine": "Japanese / yusoku ryori",
+      "description": "Founded in 1722 as a sake business, it later became a ryotei and is now run by the family's tenth generation. It preserves the tradition of yusoku ryori, imperial-court ceremonial cuisine, and the ritual knife art of shikibocho."
+    },
+    "Menbaka Fire Ramen": {
+      "cuisine": "Japanese / ramen",
+      "description": "Shoyu ramen with a real fire show: \"fire masters\" flambe Kyoto leeks with flaming oil over the bowl. Open since 1984, it has gone viral on TikTok and Instagram among international visitors."
+    },
+    "Ippodo Kaboku Tearoom": {
+      "cuisine": "tea",
+      "description": "A tea house founded in 1717 near the Imperial Palace, with the adjoining Kaboku tearoom where guests can drink freshly prepared matcha or sencha alongside wagashi sweets."
+    },
+    "Gyoza no Ohsho Shijo Omiya": {
+      "cuisine": "Chinese-Japanese / gyoza",
+      "description": "The original location of the Gyoza no Ohsho chain, opened on December 25, 1967 in Shijo Omiya. A plaque on the building marks it as \"the birthplace of Gyoza no Ohsho,\" now a chain of more than 700 restaurants across Japan."
+    },
+    "Gontaro Honten": {
+      "cuisine": "Japanese / udon-soba",
+      "description": "An udon and soba house with roots dating to 1910, known for its udon-suki hotpot served in a clay pot. Traditional sukiya-style setting in the heart of downtown Kyoto."
+    },
+    "Nishiki Warai": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Okonomiyaki with a cult following just off Nishiki Market, where the cabbage pancakes are griddled in full view of diners."
+    },
+    "Mishima-tei": {
+      "cuisine": "Japanese / sukiyaki",
+      "description": "Founded in 1873 as a butcher shop and beef restaurant, one of Japan's pioneering sukiyaki houses. Its recipe, passed down to the fifth generation, melts sugar in the pot before searing the beef."
+    },
+    "Shinshindo": {
+      "cuisine": "French-style bakery",
+      "description": "A bakery founded in 1913 by Hitoshi Tsuzuki, the first Japanese baker to travel to France, who introduced French-style bread to Kyoto after importing a German oven."
+    },
+    "Musashi Sushi": {
+      "cuisine": "Japanese / sushi",
+      "description": "A conveyor-belt sushi (kaiten-zushi) chain founded in 1977 at the Kawaramachi-Sanjo crossing, one of Kyoto's most popular and long-running."
+    },
+    "Katsukura Sanjo Honten": {
+      "cuisine": "Japanese / tonkatsu",
+      "description": "A Kyoto-born tonkatsu specialist known for its light, crisp breaded pork cutlets and its tableside mortar of sesame seeds that diners grind themselves before dipping the meat in sauce."
+    },
+    "Yoshikawa Inn Tempura": {
+      "cuisine": "Japanese / tempura",
+      "description": "A tempura counter inside a Taisho-era sukiya-style ryokan, with a garden attributed to Kobori Enshu. The counter occupies a tea room renovated for the 1964 Tokyo Olympics."
+    },
+    "Yojiya Cafe Gion": {
+      "cuisine": "coffee",
+      "description": "A cafe run by the Yojiya cosmetics brand (founded 1904), famous for drawing its logo's face in the foam of its matcha cappuccino. One of the most photographed stops in Gion."
     }
   }
 }
