@@ -22,6 +22,146 @@
     "Icebergs Dining Room and Bar": {
       "cuisine": "Italian",
       "description": "A glass dining room over the iconic Bondi Icebergs pool, with Pacific Ocean views, since 2002. Reviewed by critic Pat Nourse for Gourmet Traveller."
+    },
+    "Automata": {
+      "cuisine": "Modern Australian",
+      "description": "Chef Clayton Wells's signature cooking on Kensington Street, Chippendale, with a tasting menu that shifts with season and market. Repeatedly hatted in the Sydney Good Food Guide."
+    },
+    "Est.": {
+      "cuisine": "French / Australian",
+      "description": "Chef Peter Doyle's French-Australian fine dining on the second floor of the Establishment Hotel, in the heart of the CBD, since 2003."
+    },
+    "Sixpenny": {
+      "cuisine": "Modern Australian",
+      "description": "An intimate Stanmore restaurant from chefs Daniel Puskas and Anthony Schifilliti, with a seasonal tasting menu built around local producers. A regular on Asia-Pacific's extended 50 Best list."
+    },
+    "Firedoor": {
+      "cuisine": "Australian wood-fire",
+      "description": "Chef Lennox Hastie's kitchen in Surry Hills cooks with fire alone, no gas or electricity. Included on the extended Asia's 50 Best Restaurants list."
+    },
+    "Yellow Sydney": {
+      "cuisine": "Vegan",
+      "description": "Australia's first vegan restaurant to win two hats in the Good Food Guide, serving high-end plant-based cuisine in a heritage Potts Point house."
+    },
+    "Saint Peter": {
+      "cuisine": "Seafood",
+      "description": "Chef Josh Niland's nose-to-tail fish restaurant, pioneer of curing and butchery techniques that made him internationally famous. Reopened in 2024 inside the historic Grand National Hotel in Paddington."
+    },
+    "Mr. Wong": {
+      "cuisine": "Cantonese",
+      "description": "A two-storey Cantonese homage from the Merivale group in the CBD, with more than 200 dishes and an extensive dim sum menu. One of Sydney's most reviewed Chinese restaurants."
+    },
+    "Ester": {
+      "cuisine": "Modern Australian",
+      "description": "A Chippendale restaurant built around a wood-fired oven, a benchmark of contemporary Australian cooking since 2012. Featured on the Asia-Pacific's 50 Best list."
+    },
+    "Restaurant Hubert": {
+      "cuisine": "French",
+      "description": "A candlelit basement French bistro in the CBD with live jazz and a classic Parisian bistro menu. Part of the Swillhouse group, a Sydney nightlife institution since 2013."
+    },
+    "LuMi Dining": {
+      "cuisine": "Italian-Japanese",
+      "description": "Cooking that pairs Italian technique with Japanese ingredients, right on the water in Pyrmont. Chef Federico Zanellato was named Good Food Guide Chef of the Year in 2017 and the restaurant holds two hats."
+    },
+    "Nomad": {
+      "cuisine": "Mediterranean",
+      "description": "Mediterranean and Middle Eastern-inspired cooking in a former Surry Hills warehouse, with wood-fired bread and share plates. Repeatedly hatted in the Good Food Guide."
+    },
+    "Chat Thai": {
+      "cuisine": "Thai",
+      "description": "A Thaitown institution since 1997, serving home-style Thai recipes with an attached grocery store. A favourite of Sydney's Thai community since before Thai food went mainstream in the city."
+    },
+    "Mamak": {
+      "cuisine": "Malaysian",
+      "description": "A Haymarket Malaysian stall famous for hand-made roti canai and long queues; no bookings taken. Often called the best roti in Sydney."
+    },
+    "Emperor's Garden BBQ & Noodles": {
+      "cuisine": "Cantonese",
+      "description": "A Chinatown Cantonese barbecue house with duck and char siu pork hanging in the window, part of a family-run complex that has included its own bakery and butcher since the '90s."
+    },
+    "Spice I Am": {
+      "cuisine": "Thai",
+      "description": "A Thai restaurant founded in 2005 by cooks who had come from Thailand, credited with helping define Sydney's 'authentic' Thai food scene beyond westernised Thai."
+    },
+    "Din Tai Fung (World Square)": {
+      "cuisine": "Taiwanese",
+      "description": "An outpost of the Taiwanese xiao long bao chain inside the World Square shopping centre, famous for dumplings folded in full view of diners."
+    },
+    "Sokyo": {
+      "cuisine": "Modern Japanese",
+      "description": "Chef Chase Kojima's contemporary Japanese restaurant inside The Star casino complex in Pyrmont, known for creative sushi and its sashimi bar. Hatted in the Sydney Good Food Guide."
+    },
+    "Mother Chu's Vegetarian Kitchen": {
+      "cuisine": "Chinese vegetarian",
+      "description": "A Chinese vegetarian restaurant in the CBD, serving gluten- and soy-based meat substitutes, a classic among Sydney's Buddhist community since the '90s."
+    },
+    "Marrickville Pork Roll": {
+      "cuisine": "Vietnamese",
+      "description": "A no-frills Marrickville shop famous for its pork banh mi, drawing queues around the block despite selling its rolls at neighbourhood prices."
+    },
+    "Faheem Fast Food": {
+      "cuisine": "Pakistani",
+      "description": "A Pakistani spot in Enmore linked to the creation of the 'halal snack pack' (HSP), the kebab-meat, chips and sauce dish that became an Australian fast-food icon."
+    },
+    "Continental Deli Bar Bistro": {
+      "cuisine": "European bistro",
+      "description": "A Newtown natural wine bar and bistro, grown out of the neighbourhood's old delicatessen, with a short menu of European bistro dishes."
+    },
+    "Doyles on the Beach": {
+      "cuisine": "Seafood",
+      "description": "A seafood restaurant on the sand at Watsons Bay, run by the same family since 1885 and considered Australia's oldest fish and chips restaurant."
+    },
+    "Sydney Fish Market": {
+      "cuisine": "Seafood",
+      "description": "The largest fish market in the Southern Hemisphere, with Dutch-style auctions, dozens of seafood stalls and an atmosphere that sums up Sydney's maritime culture."
+    },
+    "The Boathouse Palm Beach": {
+      "cuisine": "Cafe / seafood",
+      "description": "A waterfront cafe on Pittwater, on the Palm Beach peninsula, known for its breakfasts and views of wooden ferries; a regular filming location for the TV series 'Home and Away'."
+    },
+    "Da Orazio Pizza + Porchetta": {
+      "cuisine": "Italian",
+      "description": "A Bondi Beach Neapolitan pizzeria famous for its porchetta sandwich and puffy wood-fired pizzas, a neighbourhood classic since 2013."
+    },
+    "Fratelli Paradiso": {
+      "cuisine": "Italian",
+      "description": "An unsigned Potts Point trattoria and neighbourhood classic since 2004, popular for its casual Roman-cafe atmosphere and market-driven menu."
+    },
+    "Single O": {
+      "cuisine": "Coffee",
+      "description": "A Surry Hills coffee roastery and cafe, one of the pioneers of Sydney's specialty coffee movement since 2003."
+    },
+    "Reuben Hills": {
+      "cuisine": "Coffee",
+      "description": "A Surry Hills coffee roastery and cafe with Latin American touches on its breakfast menu, a landmark of Sydney's second-wave specialty coffee scene since 2011."
+    },
+    "Bourke Street Bakery": {
+      "cuisine": "Bakery",
+      "description": "A Surry Hills bakery famous for its ginger brulee tart and sausage rolls, a classic since 2004 with locations across the city."
+    },
+    "Black Star Pastry": {
+      "cuisine": "Pastry",
+      "description": "A Newtown patisserie famous for its watermelon, strawberry and rose cake, one of the most photographed and copied cakes on social media in Australia."
+    },
+    "Baxter Inn": {
+      "cuisine": "Cocktails / whisky",
+      "description": "A whisky bar hidden down an unmarked CBD laneway, with hundreds of labels. It featured on the World's 50 Best Bars list every year from 2012 to 2017, peaking at No. 6 in 2015."
+    },
+    "Shady Pines Saloon": {
+      "cuisine": "Cocktails",
+      "description": "An Old West-style saloon bar hidden behind an unmarked door in Darlinghurst, with saddle barstools and a huge whisky selection."
+    },
+    "Chiswick Woollahra": {
+      "cuisine": "Australian",
+      "description": "Chef Matt Moran's seasonal restaurant in the Chiswick House gardens in Woollahra, with its own kitchen garden and a menu that changes with the seasons."
+    },
+    "Cirrus Dining": {
+      "cuisine": "Seafood",
+      "description": "A harbourfront seafood restaurant in Barangaroo from the Brent Savage and Nick Hildebrandt group, with a menu centred on Australian fish and shellfish."
+    },
+    "Fred's": {
+      "cuisine": "Farm-to-table",
+      "description": "A farm-to-table restaurant from the Merivale group in Paddington, with grill and wood-oven cooking built around seasonal produce from the group's own farm."
     }
   }
 }
