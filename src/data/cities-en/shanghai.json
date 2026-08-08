@@ -22,6 +22,146 @@
     "Fu 1039": {
       "cuisine": "Chinese / Shanghainese",
       "description": "Home-style Shanghainese cooking in a 1920s European-style mansion, from chef Tony Lu. One of food writer Fuchsia Dunlop's personal favorites."
+    },
+    "Yang's Fry-Dumpling": {
+      "cuisine": "Chinese / sheng jian bao (pan-fried dumplings)",
+      "description": "Historic pan-fried dumpling chain dating to 1930; its Wujiang Road shop was visited by Anthony Bourdain on \"No Reservations,\" who praised its crisp-bottomed, juicy dumplings."
+    },
+    "Fu Chun Xiao Long": {
+      "cuisine": "Chinese / xiaolongbao, Shanghainese",
+      "description": "No-frills Jing'an spot specializing in xiaolongbao and home-style Shanghainese dishes; Anthony Bourdain visited on \"Parts Unknown\" (2014), calling its dumplings \"pillows of happiness.\""
+    },
+    "House of Roosevelt": {
+      "cuisine": "International / seafood",
+      "description": "Multi-floor restaurant and bar in a historic Bund building, known for oysters and champagne; Anthony Bourdain dined there on \"Parts Unknown,\" noting its prime view over the Huangpu River."
+    },
+    "Er Guang Wonton": {
+      "cuisine": "Chinese / wontons",
+      "description": "Street stall serving pork wontons doused in a soy, vinegar, chili and peanut sauce; Anthony Bourdain visited it on \"Parts Unknown\" as an example of authentic Shanghainese street food."
+    },
+    "Taian Table": {
+      "cuisine": "International / chef-driven",
+      "description": "Chef Stefan Stiller's fine-dining restaurant in Changning; it has held three Michelin stars consecutively since 2022, currently Shanghai's only three-star restaurant since Ultraviolet's closure."
+    },
+    "T'ang Court": {
+      "cuisine": "Chinese / Cantonese",
+      "description": "Cantonese restaurant at The Langham in Xintiandi; it was the only three-star restaurant in Shanghai's inaugural 2017 Michelin Guide and today holds one star."
+    },
+    "8 1/2 Otto e Mezzo Bombana": {
+      "cuisine": "Italian",
+      "description": "Shanghai outpost of Umberto Bombana's Italian restaurant, located in the historic Rockbund district; it holds two Michelin stars for its ingredient-driven Italian cooking, with white truffle a specialty."
+    },
+    "Da Vittorio Shanghai": {
+      "cuisine": "Italian",
+      "description": "Shanghai extension of Italy's storied Cerea family restaurant (Da Vittorio), inside the Bund Finance Centre; it holds two Michelin stars with views across to Lujiazui."
+    },
+    "Canton 8": {
+      "cuisine": "Chinese / Cantonese",
+      "description": "Cantonese restaurant led by Hong Kong chef Mak, with over 40 years of experience; its two Michelin stars have made it famous as one of the most affordable two-star restaurants in the world."
+    },
+    "Imperial Treasure Fine Chinese Cuisine": {
+      "cuisine": "Chinese / Cantonese",
+      "description": "Outpost of the Singaporean Imperial Treasure chain near the Bund, celebrated for its dim sum, char siu and seafood; it holds two Michelin stars."
+    },
+    "Ye Shanghai": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "1930s-styled restaurant in Xintiandi reinterpreting Shanghainese, Zhejiang and Jiangsu classics; it has held a Michelin star since 2015."
+    },
+    "Yong Fu": {
+      "cuisine": "Chinese / seafood",
+      "description": "Seafood restaurant on the 12th floor of the Jinjiang Hotel, famous for its drunken crab—a dish that requires a special permit to serve in Shanghai—and its tangyuan dumplings; holds one Michelin star."
+    },
+    "Wu You Xian": {
+      "cuisine": "Chinese / xiaolongbao",
+      "description": "Small shop specializing in crab xiaolongbao, offering more than 20 filling varieties; in 2025 it became the first dim sum restaurant in Shanghai to receive a Michelin star."
+    },
+    "Lao Zhengxing": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Founded in 1862, it is considered the city's oldest Shanghainese restaurant; specializing in Lake Tai seafood, it now also holds a Michelin star."
+    },
+    "Lvbolang": {
+      "cuisine": "Chinese / Shanghainese, dim sum",
+      "description": "A 1924 teahouse turned restaurant beside the zigzag bridge in Yu Garden; it has hosted heads of state including Bill Clinton and Queen Elizabeth II, and is listed as a Bib Gourmand in the Michelin Guide."
+    },
+    "Yongfoo Elite": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Restaurant housed in a colonial-era mansion in the former French Concession, once a British consular residence; it pairs refined Shanghainese cooking with a notable antiques collection. Holds one Michelin star."
+    },
+    "Fu 1088": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Chef Tony Lu's second Shanghainese townhouse restaurant, sister to Fu 1039, set in a restored colonial-style house; refined Shanghainese cooking with one Michelin star."
+    },
+    "Da Hu Chun": {
+      "cuisine": "Chinese / sheng jian bao (pan-fried dumplings)",
+      "description": "Pan-fried dumpling institution dating to 1932 on the Yunnan South Road food street; recognized as a Bib Gourmand by the Michelin Guide."
+    },
+    "Wang Baohe": {
+      "cuisine": "Chinese / Shanghainese, crab",
+      "description": "Founded in 1744, it is one of Shanghai's oldest eateries, famous for hairy crab served with its own house-made Shaoxing yellow wine."
+    },
+    "Huxinting Teahouse": {
+      "cuisine": "Chinese / teahouse",
+      "description": "Teahouse in the middle of the lake at Yu Garden, Shanghai's first commercial teahouse (1855) and a national heritage site since 1982; Queen Elizabeth II drank Longjing tea there in 1986."
+    },
+    "Long Bar (Waldorf Astoria)": {
+      "cuisine": "Cocktail bar",
+      "description": "China's oldest bar, opened in 1911 inside the historic Shanghai Club building; its original 34-meter counter was the longest in the Far East and birthplace of the Shanghai Buck cocktail."
+    },
+    "Speak Low": {
+      "cuisine": "Cocktail bar",
+      "description": "Speakeasy hidden behind a bookshelf inside a bartending-supplies shop; it has ranked on the World's 50 Best Bars list every year since 2016, reaching No. 10 in 2017."
+    },
+    "Lost Heaven on the Bund": {
+      "cuisine": "Chinese / Yunnanese",
+      "description": "Flagship Yunnan-cuisine restaurant on the Bund, inspired by the ancient Tea Horse Road; one of the classic spots for taking visitors to dinner by the river."
+    },
+    "El Willy": {
+      "cuisine": "Spanish",
+      "description": "Spanish restaurant by Catalan chef Willy Trullas Moreno, opened in 2008 in the former French Concession and later moved to a 1906 building on the Bund; known for its paella and lively atmosphere."
+    },
+    "Commune Social": {
+      "cuisine": "Tapas / fusion",
+      "description": "Tapas and cocktail bar opened in 2013 by British chef Jason Atherton in the Design Republic complex; a pioneer of the small-plates concept in Shanghai."
+    },
+    "Franck Bistrot": {
+      "cuisine": "French",
+      "description": "Classic French bistro in Ferguson Lane on the historic Wukang Road; known for its steak frites and extensive wine list."
+    },
+    "Xibo": {
+      "cuisine": "Chinese / Xinjiang",
+      "description": "Uyghur and Xinjiang cuisine restaurant near Julu Road, serving grilled lamb skewers and hand-pulled noodles; a longtime favorite of Shanghai's expat community."
+    },
+    "Mr & Mrs Bund": {
+      "cuisine": "French",
+      "description": "Chef Paul Pairet's contemporary bistro on the sixth floor of Bund 18, opened in 2009; it reinterprets French classics with wit and a prime view of the Huangpu River."
+    },
+    "Jean Georges Shanghai": {
+      "cuisine": "Contemporary French",
+      "description": "Chef Jean-Georges Vongerichten's flagship restaurant in the historic Three on the Bund building, serving contemporary French cuisine with Huangpu River views since 2004."
+    },
+    "Peace Hotel Jazz Bar": {
+      "cuisine": "Jazz bar",
+      "description": "Bar inside the historic Fairmont Peace Hotel (1929), home to the Old Jazz Band, recognized by Guinness World Records as the oldest active jazz band in the world, with an average age over 80."
+    },
+    "Baker & Spice": {
+      "cuisine": "Bakery / international",
+      "description": "European-style bakery and cafe chain popular with expats in the former French Concession, known for its sourdough bread and weekend brunches."
+    },
+    "Yuxin Chuancai": {
+      "cuisine": "Chinese / Sichuanese",
+      "description": "Popular Sichuanese restaurant chain among locals, serving fiery dishes like boiled fish and Kung Pao chicken; a go-to spot for Sichuan flavors in Shanghai."
+    },
+    "Xiao Nan Guo": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Shanghainese chain founded in the 1990s that popularized home-style Shanghai cooking in a family-restaurant format, with locations across the city."
+    },
+    "Jesse Restaurant": {
+      "cuisine": "Chinese / Shanghainese",
+      "description": "Tiny home-style restaurant in an old lane house on Tianping Road, frequented by film stars like Tony Leung and Ang Lee; widely considered one of the best purveyors of authentic Shanghainese cooking."
+    },
+    "Din Tai Fung (IAPM)": {
+      "cuisine": "Chinese / Taiwanese, xiaolongbao",
+      "description": "Shanghai branch of the celebrated Taiwanese xiaolongbao chain, internationally known for dumplings with exactly 18 folds; a must-visit reference point for comparison with local xiaolongbao houses."
     }
   }
 }
