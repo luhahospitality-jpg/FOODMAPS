@@ -22,6 +22,146 @@
     "El Globo": {
       "cuisine": "pintxos / Basque",
       "description": "Its gratinated txangurro pintxo is an absolute classic, next to the Provincial Council Palace."
+    },
+    "La Olla": {
+      "cuisine": "Basque / Spanish",
+      "description": "Rice dishes, grilled chuletón steak, and a secret art deco bathtub nook that went viral on TikTok, right on Plaza Nueva."
+    },
+    "Ola Martín Berasategui": {
+      "cuisine": "Basque",
+      "description": "Martín Berasategui's signature restaurant in the heart of the Old Town, with Raúl Cabrera leading the kitchen. One Michelin star."
+    },
+    "Islares": {
+      "cuisine": "Basque",
+      "description": "Bilbao's newest addition to the 2026 Michelin Guide, from chef Julen Bergantiños. One Michelin star."
+    },
+    "Charly": {
+      "cuisine": "pintxos",
+      "description": "A pintxos bar open since 1973, one of the most respected in the Old Town."
+    },
+    "Gure Toki": {
+      "cuisine": "pintxos",
+      "description": "Avant-garde pintxos rooted in Basque tradition, on Plaza Nueva."
+    },
+    "Mercado de la Ribera": {
+      "cuisine": "market / varied",
+      "description": "One of the largest covered markets in Europe, on the banks of the estuary, with pintxos stalls and fresh produce."
+    },
+    "Bar Berton": {
+      "cuisine": "pintxos / Basque",
+      "description": "A go-to pintxos bar on Calle Jardines in the Old Town, prized for the quality of its ingredients and its hot, chef-driven pintxos."
+    },
+    "Café Iruña": {
+      "cuisine": "café / Basque",
+      "description": "Historic café opened in 1903 facing the Jardines de Albia, with a Mudéjar-style hall decorated by architect Joaquín Rucoba; a meeting point for Unamuno and other Basque intellectuals."
+    },
+    "La Viña del Ensanche": {
+      "cuisine": "ham / wine",
+      "description": "A Bilbao institution since 1927 specializing in Joselito acorn-fed Ibérico ham and vermouth, on the Ensanche's Calle Diputación."
+    },
+    "Restaurante Guria": {
+      "cuisine": "Basque / cod",
+      "description": "A cathedral of salt cod founded by the Pildain family in 1948, now on Gran Vía after the 1983 flood; Jenaro Pildain was considered the king of Basque cod."
+    },
+    "Zortziko": {
+      "cuisine": "Basque / haute cuisine",
+      "description": "Chef Daniel García's haute-cuisine restaurant near the Guggenheim, which held a Michelin star for more than thirty consecutive years until the chef's retirement."
+    },
+    "Atelier Etxanobe": {
+      "cuisine": "Basque",
+      "description": "Chef Fernando Canales moved his gastronomic kitchen to central Bilbao after nineteen years at the Euskalduna Palace. One Michelin star."
+    },
+    "La Despensa del Etxanobe": {
+      "cuisine": "Basque",
+      "description": "The more casual side of Fernando Canales and Mikel Población, in the same building as the Atelier, serving reimagined traditional Basque cuisine."
+    },
+    "Bar Gatz": {
+      "cuisine": "pintxos / Basque",
+      "description": "Open since 1994 on Calle Santa María, it was one of the first bars -not restaurants- to appear in the Michelin Guide; its bacalao al pil-pil is the most-ordered pintxo."
+    },
+    "Xukela": {
+      "cuisine": "pintxos / Basque",
+      "description": "A landmark of the Old Town since 1982 on Calle del Perro, known for its prepared vermouth and lively atmosphere."
+    },
+    "Rio-Oja": {
+      "cuisine": "Basque / stews",
+      "description": "Open since 1959 on Calle del Perro, it serves homemade stews ladled straight from big pots at the bar instead of pintxos."
+    },
+    "Casa Rufo": {
+      "cuisine": "Basque / grill",
+      "description": "A grocery store founded in 1955 that gave rise in 1995 to this restaurant of chargrilled chuletón and a full wine cellar."
+    },
+    "Bascook": {
+      "cuisine": "contemporary Basque",
+      "description": "Chef-driven market cuisine in a former bank building in the Ensanche, with a creative, seasonal menu."
+    },
+    "Marisquería Serantes": {
+      "cuisine": "shellfish / seafood",
+      "description": "A go-to seafood restaurant in Bilbao since the 1980s, with several locations across the city serving the freshest shellfish and fish."
+    },
+    "Txintxirri Taberna": {
+      "cuisine": "pintxos / Basque",
+      "description": "A small tavern steps from the Guggenheim and the Isozaki Towers, known for its potato omelette and classic pintxos."
+    },
+    "El Puertito": {
+      "cuisine": "oysters / seafood",
+      "description": "Bilbao's first oyster bar, opened in 2013 on Calle García Rivero, with oysters from France, Galicia and Holland paired with txakoli."
+    },
+    "Sorginzulo": {
+      "cuisine": "pintxos / Basque",
+      "description": "Avant-garde pintxos made to order by chef Iñaki Lazkano on Plaza Nueva, with more than 25 years in the trade."
+    },
+    "Santa María Taberna": {
+      "cuisine": "pintxos / Basque",
+      "description": "A tavern with 1960s décor on Calle Santa María, famous for its foie pintxo with caramelized apple."
+    },
+    "Pastelería Arrese": {
+      "cuisine": "pastry / confectionery",
+      "description": "A pastry shop founded in 1852, famous for its carolinas, Basque sponge cake, and chocolate truffles, with a workshop on Calle Rodríguez Arias."
+    },
+    "Aitor Rauleaga": {
+      "cuisine": "traditional Basque",
+      "description": "Traditional Basque cooking and daily spoon-stews next to the old Hotel Abando, awarded a Repsol Sun."
+    },
+    "Yandiola": {
+      "cuisine": "contemporary Basque",
+      "description": "Basque-rooted cuisine with a modern outlook from chef Ricardo Pérez Palacios, inside the Azkuna Zentroa building (the former Alhóndiga), with a panoramic terrace over Bilbao."
+    },
+    "Bar Baster": {
+      "cuisine": "pintxos / Basque",
+      "description": "A young, modern bar next to Santiago Cathedral, known for its gildas and freshly made omelettes."
+    },
+    "Kerren Asador": {
+      "cuisine": "grill / Basque",
+      "description": "Bilbao's oldest grill house, founded in 1978 by Inocencio Urigoitia in Indautxu, specializing in chargrilled chuletón."
+    },
+    "Iturriza Taberna": {
+      "cuisine": "pintxos / Basque",
+      "description": "A former religious-goods shop founded in 1885 on Plaza Nueva, now a pintxos tavern run by the third generation of the Iturriza family."
+    },
+    "Basquery": {
+      "cuisine": "delicatessen / bakery / brewery",
+      "description": "A food space in the Ensanche combining a bakery, general store, its own craft brewery, and an aging chamber for Basque cheeses."
+    },
+    "Bar Irrintzi": {
+      "cuisine": "international pintxos",
+      "description": "Elaborate, internationally inflected pintxos on Calle Santa María, with self-service in the heart of the Old Town's bar-hopping zone."
+    },
+    "Café Bar Bilbao": {
+      "cuisine": "pintxos / Basque",
+      "description": "Open since 1911 on Plaza Nueva, it keeps its original tiled décor and is one of the classic stops on the pintxos route."
+    },
+    "Casa Vasca": {
+      "cuisine": "traditional Basque",
+      "description": "A traditional Basque restaurant in the Deusto neighborhood, with more than four decades in business."
+    },
+    "Bilbao Urban Sagardotegi": {
+      "cuisine": "cider house / Basque",
+      "description": "An urban cider house in the Ensanche recreating the txotx ritual with chuletón, salt cod, and cod omelette washed down with poured cider."
+    },
+    "Los Fueros": {
+      "cuisine": "pintxos / Basque",
+      "description": "A classic bar on Calle Fueros, in the heart of the Old Town, known above all for its popular txistorra pintxo."
     }
   }
 }
