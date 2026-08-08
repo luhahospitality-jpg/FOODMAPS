@@ -51,7 +51,7 @@
     "san-sebastian": { "actual": 10, "objetivo": 40, "tier": "N" },
     "sao-paulo": { "actual": 5, "objetivo": 60, "tier": "M" },
     "seul": { "actual": 5, "objetivo": 60, "tier": "M" },
-    "shanghai": { "actual": 5, "objetivo": 40, "tier": "N" },
+    "shanghai": { "actual": 40, "objetivo": 40, "tier": "N" },
     "sidney": { "actual": 5, "objetivo": 40, "tier": "N" },
     "singapur": { "actual": 40, "objetivo": 40, "tier": "N" },
     "tokio": { "actual": 6, "objetivo": 100, "tier": "S" },
