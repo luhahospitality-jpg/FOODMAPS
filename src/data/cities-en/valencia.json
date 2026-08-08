@@ -22,6 +22,146 @@
     "RiFF": {
       "cuisine": "Mediterranean",
       "description": "Creative, slightly anarchic Mediterranean cuisine from chef Bernd Knöller. Valencia's oldest Michelin star, since 2009."
+    },
+    "Fierro": {
+      "cuisine": "Contemporary Mediterranean / Argentine",
+      "description": "Restaurant from chefs Germán Carrizo and Carito Lourenço, with touches of the chef's native Argentine cuisine. One Michelin star and a Repsol Sun, in an intimate space seating just 18 near Ruzafa market."
+    },
+    "Lienzo": {
+      "cuisine": "Mediterranean / Valencian",
+      "description": "Seasonal Mediterranean cuisine from Murcia-born chef María José Martínez, with nods to the Valencian market gardens and honey from her own beehive. One Michelin star since 2021."
+    },
+    "La Salita": {
+      "cuisine": "Mediterranean / plant-forward",
+      "description": "Restaurant from Begoña Rodrigo, winner of Top Chef Spain, set in an 1866 building in Ruzafa. Cooking centered on vegetables and seafood. One Michelin star and two Repsol Suns."
+    },
+    "Kaido Sushi Bar": {
+      "cuisine": "Japanese / omakase",
+      "description": "A ten-seat edomae omakase counter run by chef Yoshikazu Yanome. The only Michelin-starred Japanese restaurant in the Valencian Community."
+    },
+    "Fraula": {
+      "cuisine": "Mediterranean",
+      "description": "Project from chef Roseta Félix and her team steps from the Mercado de Colón, with seasonal menus built around garden and seafood produce. One Michelin star."
+    },
+    "Habitual": {
+      "cuisine": "Mediterranean",
+      "description": "Ricard Camarena's second project, set in the courtyard of the IVAM museum. Market cooking in a more casual format than his flagship restaurant, holding a Repsol Sun."
+    },
+    "Apicius": {
+      "cuisine": "Mediterranean",
+      "description": "A fine-dining restaurant in Valencia's Eixample district serving product-driven Mediterranean cuisine, awarded a Repsol Sun."
+    },
+    "Entrevins": {
+      "cuisine": "Mediterranean / wine bar",
+      "description": "Wine shop and restaurant in the historic center, with one of the city's most complete wine lists and market-driven cooking. Repsol Sun."
+    },
+    "2 Estaciones": {
+      "cuisine": "Mediterranean",
+      "description": "Market-cuisine restaurant near the Estación del Norte train station, holding a Repsol Sun and a neighborhood feel."
+    },
+    "Canalla Bistro": {
+      "cuisine": "Fusion / Mediterranean",
+      "description": "Ricard Camarena's casual bistro in the Eixample district, with Asian- and Latin American-influenced sharing plates. One Repsol Sun."
+    },
+    "Central Bar": {
+      "cuisine": "Valencian / tapas",
+      "description": "Ricard Camarena's almuerzo counter inside the Mercado Central, famous for its pork loin sandwich and market stews. Open mornings only."
+    },
+    "Saiti": {
+      "cuisine": "Mediterranean",
+      "description": "Restaurant from chef Vicente Patiño in Ruzafa, holding a Michelin Bib Gourmand and two Repsol Suns."
+    },
+    "Tandem": {
+      "cuisine": "Mediterranean / rice",
+      "description": "A casual dining spot near the Ayuntamiento specializing in rice dishes and traditional Valencian home cooking."
+    },
+    "Askua": {
+      "cuisine": "Grill / meats",
+      "description": "A benchmark grill house in Valencia since 1994, specializing in charcoal-grilled meats and seasonal produce. One Repsol Sun."
+    },
+    "Vuelve Carolina": {
+      "cuisine": "Mediterranean / rice",
+      "description": "Chef Quique Dacosta's casual project inside the Mercado de Colón, holding a Michelin Bib Gourmand and a Repsol Sun."
+    },
+    "Casa Montaña": {
+      "cuisine": "Valencian / wine bar",
+      "description": "A century-and-a-half-old bodega (1836) in the seafaring Cabanyal district, with a modernist façade, an extensive wine list, and Valencian tapas."
+    },
+    "La Pepica": {
+      "cuisine": "Valencian / rice",
+      "description": "A rice restaurant facing Malvarrosa beach since 1898, once frequented by Ernest Hemingway. Traditional paellas with sea views."
+    },
+    "Casa Carmela": {
+      "cuisine": "Valencian / rice",
+      "description": "A family-run rice restaurant since 1922 by Malvarrosa beach, famous for cooking paella over orange-wood fire."
+    },
+    "Nou Racó": {
+      "cuisine": "Valencian / rice",
+      "description": "A rice restaurant on the shore of the Albufera lake in El Palmar, open since 1960, specializing in all i pebre and traditional rice dishes."
+    },
+    "La Pilareta": {
+      "cuisine": "Tapas / Valencian",
+      "description": "A tavern serving clóchinas (Valencian mussels) since 1917 in the Barrio del Carmen, known locally as 'the house of the cloxines.'"
+    },
+    "Horchatería Santa Catalina": {
+      "cuisine": "Horchata / sweets",
+      "description": "A century-old horchatería and chocolate house on Plaza de Santa Catalina, decorated with Manises tiles and now run by the fourth generation of the Gargallo family."
+    },
+    "Horchatería El Siglo": {
+      "cuisine": "Horchata / sweets",
+      "description": "A historic horchatería serving horchata since 1836 across from Santa Catalina, one of the oldest in Valencia."
+    },
+    "Horchatería Daniel": {
+      "cuisine": "Horchata / sweets",
+      "description": "A landmark horchatería in Alboraya since the mid-20th century, visited by Salvador Dalí and Rafael Alberti. Artisanal horchata and fartons."
+    },
+    "Alejandro del Toro": {
+      "cuisine": "Valencian",
+      "description": "Chef Alejandro del Toro's namesake restaurant, opened in 2001 and awarded a Michelin star in 2003. Updated, product-driven Valencian cuisine."
+    },
+    "Bodega Anyora": {
+      "cuisine": "Valencian",
+      "description": "A charming bodega in the Cabanyal district serving Valencian cuisine built on fresh produce and seafaring history."
+    },
+    "Nori Izakaya": {
+      "cuisine": "Japanese / izakaya",
+      "description": "An izakaya in the Abastos area where fresh market fish takes center stage."
+    },
+    "El Observatorio": {
+      "cuisine": "Nikkei / Peruvian-Japanese",
+      "description": "A nikkei restaurant in the Patraix neighborhood, with ceviche and causa limeña among its specialties."
+    },
+    "Bodega La Aldeana 1927": {
+      "cuisine": "Valencian",
+      "description": "A restored century-old bodega in the Cabanyal district, serving 100% Valencian cuisine and local wines."
+    },
+    "La Cooperativa del Mar": {
+      "cuisine": "Portuguese / tinned seafood",
+      "description": "A former Ruzafa fishmonger turned bar specializing in Portuguese-inspired tinned seafood."
+    },
+    "Rausell": {
+      "cuisine": "Tapas",
+      "description": "One of Valencia's most characterful bars, running since the 1940s and famous for its patatas bravas."
+    },
+    "Hikari Yakitori Bar": {
+      "cuisine": "Japanese / yakitori",
+      "description": "A yakitori counter in Ruzafa, grilling skewers built on the day's market produce."
+    },
+    "Àtic. Palau Alameda": {
+      "cuisine": "Mediterranean",
+      "description": "A Mediterranean restaurant focused on sustainable, zero-kilometer cooking, set inside the renovated Palau Alameda."
+    },
+    "Trattoria Napoletana Da Carlo": {
+      "cuisine": "Italian / Neapolitan",
+      "description": "A Neapolitan trattoria with more than 25 years of history in Valencia, known for traditional pizza made the old-fashioned way."
+    },
+    "Tavella": {
+      "cuisine": "Valencian / rice",
+      "description": "A restaurant set in a 200-year-old farmhouse in Valencia's market-garden belt, serving wood-fired rice dishes and grilled meats."
+    },
+    "Mercado de Colón": {
+      "cuisine": "Mixed",
+      "description": "A 1914 modernist market building designed by architect Francisco Mora, now a gastronomic hub of cafés, horchaterías, and restaurants."
     }
   }
 }

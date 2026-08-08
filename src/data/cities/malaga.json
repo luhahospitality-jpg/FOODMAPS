@@ -3,7 +3,7 @@
   "name": "Málaga / Costa del Sol",
   "country": "España",
   "tagline": "Espetos que se subastan a gritos en la playa, vino del tonel desde 1840, y una estrella Michelin con vistas a la Alcazaba.",
-  "totalPlaces": 6,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -116,6 +116,643 @@
       "rank": 6,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.718408,-4.4240607"
+    },
+    {
+      "name": "Skina",
+      "place_id": null,
+      "lat": 36.5120,
+      "lng": -4.8800,
+      "category": "fine_dining",
+      "cuisine": "andaluza contemporánea",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Dos estrellas Michelin en la Milla de Oro de Marbella. El sumiller Marcos Granda y el chef Mario Cachinero firman una cocina andaluza de autor con técnica contemporánea y producto de mercado.",
+      "source_url": "https://www.restauranteskina.com/",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5120,-4.8800",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Bardal",
+      "place_id": null,
+      "lat": 36.7415,
+      "lng": -5.1645,
+      "category": "fine_dining",
+      "cuisine": "andaluza de autor",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Dos estrellas Michelin en el centro de Ronda. Benito Gómez construye menús degustación centrados en el producto de temporada y una técnica depurada; uno de los restaurantes andaluces más premiados fuera de una capital de provincia.",
+      "source_url": "https://www.restaurantebardal.com/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7415,-5.1645",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "José Carlos García",
+      "place_id": null,
+      "lat": 36.7145,
+      "lng": -4.4180,
+      "category": "fine_dining",
+      "cuisine": "malagueña contemporánea",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El único restaurante con estrella Michelin del centro de Málaga capital. En el Muelle Uno, frente a los yates del puerto, José Carlos García actualiza recetas malagueñas con técnica actual y producto local.",
+      "source_url": "https://www.restaurantejcg.com/",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7145,-4.4180",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Kaleja",
+      "place_id": null,
+      "lat": 36.7222,
+      "lng": -4.4212,
+      "category": "fine_dining",
+      "cuisine": "andaluza de fuego",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Una estrella Michelin y dos Soles Repsol para Dani Carnero, que cocina a la brasa y con técnicas de cocción lenta en un callejón del centro histórico. 'Kaleja' significa 'callejuela' en sefardí.",
+      "source_url": "https://guide.michelin.com/us/en/andalucia/malaga/restaurant/kaleja",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7222,-4.4212",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Sollo",
+      "place_id": null,
+      "lat": 36.5895,
+      "lng": -4.6270,
+      "category": "fine_dining",
+      "cuisine": "cocina de río / esturión",
+      "tags": [
+        "michelin",
+        "michelin_green_star",
+        "critic"
+      ],
+      "description": "Una estrella Michelin y una Estrella Verde para Diego Gallegos, 'el chef del caviar', especializado en esturión y pescado de río de crianza propia. Su menú Caminho mezcla la Axarquía con sus raíces brasileñas y peruanas.",
+      "source_url": "https://www.sollo.es/en/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5895,-4.6270",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Messina",
+      "place_id": null,
+      "lat": 36.5095,
+      "lng": -4.8815,
+      "category": "fine_dining",
+      "cuisine": "mediterránea de autor",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Estrella Michelin desde 2016. El chef argentino Mauricio Giovanini firma una cocina que cruza Europa y Latinoamérica, con la sumiller Pía Ninci al frente de la sala.",
+      "source_url": "https://restaurantemessina.com/en/home-eng/",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5095,-4.8815",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nintai",
+      "place_id": null,
+      "lat": 36.5125,
+      "lng": -4.8805,
+      "category": "fine_dining",
+      "cuisine": "japonesa / omakase",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Barra omakase de solo doce comensales, proyecto del sumiller Marcos Granda tras un viaje que le llevó a estudiar la cultura culinaria japonesa. Logró su estrella Michelin en 2021, antes de cumplir un año abierto.",
+      "source_url": "https://grupomarcosgranda.com/restaurante/nintai/",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5125,-4.8805",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Back",
+      "place_id": null,
+      "lat": 36.5148,
+      "lng": -4.8775,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Estrella Michelin desde 2023 para el chef David Olivas y el sumiller Fabián Villar, en un espacio urbano y desenfadado del centro de Marbella.",
+      "source_url": "https://www.backrestaurante.com/",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5148,-4.8775",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tragatá",
+      "place_id": null,
+      "lat": 36.7422,
+      "lng": -5.1645,
+      "category": "bar",
+      "cuisine": "tapas andaluzas",
+      "tags": [
+        "critic"
+      ],
+      "description": "La versión informal en formato tapa de Benito Gómez (Bardal), a un paso del Puente Nuevo de Ronda. Cocina tradicional con toques modernos, como el mollete de panceta confitada.",
+      "source_url": "https://www.tragata.com/ronda",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7422,-5.1645"
+    },
+    {
+      "name": "La Cosmo",
+      "place_id": null,
+      "lat": 36.7213,
+      "lng": -4.4196,
+      "category": "restaurante",
+      "cuisine": "malagueña",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Bib Gourmand de la Guía Michelin junto a la Catedral. Dani Carnero, el chef de Kaleja, propone aquí una cocina más directa centrada en el pescado y la tradición malagueña.",
+      "source_url": "https://guide.michelin.com/en/andalucia/malaga/restaurant/la-cosmo",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7213,-4.4196",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Uvedoble Taberna",
+      "place_id": null,
+      "lat": 36.7215,
+      "lng": -4.4155,
+      "category": "bar",
+      "cuisine": "andaluza contemporánea",
+      "tags": [
+        "critic"
+      ],
+      "description": "Taberna de estética minimalista junto al Teatro Romano y la Alcazaba. Willy Orellana revisa el recetario andaluz y malagueño con técnica actual y presentación cuidada.",
+      "source_url": "https://www.uvedobletaberna.com/",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7215,-4.4155"
+    },
+    {
+      "name": "El Tapeo de Cervantes",
+      "place_id": null,
+      "lat": 36.7230,
+      "lng": -4.4175,
+      "category": "bar",
+      "cuisine": "tapas de mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tapas de pescado y cocina española clásica en una calle estrecha del centro, junto al Teatro Cervantes. Un referente del tapeo malagueño en pleno casco histórico.",
+      "source_url": "https://eltapeodecervantes.com/en",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7230,-4.4175"
+    },
+    {
+      "name": "Café Central",
+      "place_id": null,
+      "lat": 36.7208,
+      "lng": -4.4200,
+      "category": "cafeteria",
+      "cuisine": "café / desayunos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería centenaria en la Plaza de la Constitución, con raíces desde 1910. Aquí nació el código malagueño para pedir café —'nube', 'sombra', 'entreverao'— reconocido por la Asociación Europea de Cafés Históricos.",
+      "source_url": "https://cafecentral.es/en/pages/malaga-centro",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7208,-4.4200"
+    },
+    {
+      "name": "Casa Aranda",
+      "place_id": null,
+      "lat": 36.7188,
+      "lng": -4.4222,
+      "category": "cafeteria",
+      "cuisine": "churros y chocolate",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La churrería malagueña por excelencia desde 1932, repartida en cuatro locales de la calle Herrería del Rey, junto al Mercado de Atarazanas.",
+      "source_url": "http://www.casa-aranda.net/index-en.php",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7188,-4.4222"
+    },
+    {
+      "name": "Bodega Quitapenas",
+      "place_id": null,
+      "lat": 36.7198,
+      "lng": -4.4211,
+      "category": "bar",
+      "cuisine": "vinos de Málaga / tapas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taberna del centro de la bodega malagueña de más solera, con raíces que se remontan a 1670 en la Axarquía. Vino dulce, moscatel y Málaga Lágrima servidos desde el tonel.",
+      "source_url": "https://quitapenas.es/en/",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7198,-4.4211"
+    },
+    {
+      "name": "La Tranca",
+      "place_id": null,
+      "lat": 36.7223,
+      "lng": -4.4262,
+      "category": "bar",
+      "cuisine": "tapas / vermú",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Tasca abierta en 2012 en pleno Carretería, con las paredes forradas de portadas de discos y una clientela que se desborda a la calle. Croquetas, vermú y vino dulce servidos entre gritos y música a todo volumen.",
+      "source_url": "https://www.thevivalavita.com/taberna-la-tranca-malaga/",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7223,-4.4262"
+    },
+    {
+      "name": "Chiringuito Ayo",
+      "place_id": null,
+      "lat": 36.7514,
+      "lng": -3.8687,
+      "category": "street_food",
+      "cuisine": "paella / arroz",
+      "tags": [
+        "clasico",
+        "tv_show"
+      ],
+      "description": "Francisco 'Ayo' encendió su primera paella en la arena de la playa de Burriana en 1969. Más de cincuenta años después sigue cocinando arroces a fuego de leña en calderos gigantes, con barra libre de paella incluida en el precio. Apareció en varios episodios de la serie 'Verano Azul'.",
+      "source_url": "https://chiringuitoayonerja.es/en/",
+      "source_type": "classic",
+      "source_type_secondary": "tv_show",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7514,-3.8687"
+    },
+    {
+      "name": "Los Marinos José",
+      "place_id": null,
+      "lat": 36.5945,
+      "lng": -4.6000,
+      "category": "seafood",
+      "cuisine": "pescado y marisco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Marisquería familiar de más de treinta años en la playa de Carvajal, con pescado que llega de las barcas propias de la familia. Ha figurado durante años entre las recomendaciones de la Guía Michelin en la Costa del Sol.",
+      "source_url": "https://www.marinosjose.com/",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5945,-4.6000"
+    },
+    {
+      "name": "Leña",
+      "place_id": null,
+      "lat": 36.4988,
+      "lng": -4.9273,
+      "category": "restaurante",
+      "cuisine": "parrilla / asador",
+      "tags": [
+        "influencer",
+        "critic"
+      ],
+      "description": "Asador de Dani García dentro del resort Puente Romano, centrado en carnes, pescados y verduras a la brasa. Elegido por la crítica internacional como uno de los restaurantes más espectaculares del mundo por su diseño.",
+      "source_url": "https://www.puenteromano.com/dining-drinks/lena/",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.4988,-4.9273"
+    },
+    {
+      "name": "BiBo",
+      "place_id": null,
+      "lat": 36.4980,
+      "lng": -4.9280,
+      "category": "restaurante",
+      "cuisine": "andaluza creativa",
+      "tags": [
+        "influencer",
+        "critic"
+      ],
+      "description": "La versión desenfadada de Dani García en Marbella, con tapas y platos andaluces reinterpretados frente al resort Puente Romano.",
+      "source_url": "https://grupodanigarcia.com/bibo/marbella",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.4980,-4.9280"
+    },
+    {
+      "name": "Cortijo de Pepe",
+      "place_id": null,
+      "lat": 36.7233,
+      "lng": -4.4183,
+      "category": "bar",
+      "cuisine": "tapas andaluzas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución de la Plaza de la Merced desde 1971, con barra de tapas en la planta baja y comedor más tranquilo arriba. Célebre por su pulpo a la plancha y sus precios populares.",
+      "source_url": "https://cortijodepepe.es/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7233,-4.4183"
+    },
+    {
+      "name": "Bar Altamirano",
+      "place_id": null,
+      "lat": 36.5115,
+      "lng": -4.8865,
+      "category": "bar",
+      "cuisine": "pescado frito / mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de pescado fresco del puerto de la Bajadilla en una plaza del casco antiguo de Marbella, con recetas de 'la abuela María' desde 1985. Paredes cubiertas de bufandas y banderines de fútbol.",
+      "source_url": "https://baraltamirano.es/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5115,-4.8865"
+    },
+    {
+      "name": "El Estrecho",
+      "place_id": null,
+      "lat": 36.5110,
+      "lng": -4.8845,
+      "category": "bar",
+      "cuisine": "tapas andaluzas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El bar más tradicional de Marbella, en un callejón estrecho del casco antiguo desde 1954. Tercera generación sirviendo ensaladilla, croquetas y boquerones en vinagre.",
+      "source_url": "https://en.barelestrecho.com/",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5110,-4.8845"
+    },
+    {
+      "name": "Restaurante Santiago",
+      "place_id": null,
+      "lat": 36.5138,
+      "lng": -4.8825,
+      "category": "seafood",
+      "cuisine": "pescado y marisco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Emporio del marisco fundado en 1957 como el primer chiringuito de Marbella, hoy instalado frente al mar en el Paseo Marítimo. Por sus mesas han pasado desde Jackie Kennedy hasta Julio Iglesias y Antonio Banderas.",
+      "source_url": "https://www.directoalpaladar.com/viajes/restaurante-santiago-un-clasico-en-marbella-mirando-al-mar",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5138,-4.8825"
+    },
+    {
+      "name": "Casa Juan Los Mellizos",
+      "place_id": null,
+      "lat": 36.6108,
+      "lng": -4.5008,
+      "category": "seafood",
+      "cuisine": "pescaíto frito",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Emblema de La Carihuela desde 1963, uno de los primeros restaurantes de pescado del barrio marinero de Torremolinos. Frituras sin rastro de aceite, siguiendo la tradición pesquera de la zona.",
+      "source_url": "https://losmellizos.net/casa-juan-torremolinos/",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.6108,-4.5008"
+    },
+    {
+      "name": "El Caleño",
+      "place_id": null,
+      "lat": 36.7205,
+      "lng": -4.3760,
+      "category": "street_food",
+      "cuisine": "espetos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Más de treinta años asando espetos de sardinas en el Paseo Marítimo de Pedregalejo, uno de los chiringuitos de referencia del barrio junto a El Tintero y El Kiosko.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7205,-4.3760"
+    },
+    {
+      "name": "Mesón Astorga",
+      "place_id": null,
+      "lat": 36.7215,
+      "lng": -4.4235,
+      "category": "restaurante",
+      "cuisine": "malagueña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar desde 1990 que marcó un punto de inflexión en la cocina malagueña de interior: cabrito asado, porra antequerana y guisos de cuchara.",
+      "source_url": "https://mesonastorga.com/",
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7215,-4.4235"
+    },
+    {
+      "name": "Vino Mío",
+      "place_id": null,
+      "lat": 36.7225,
+      "lng": -4.4165,
+      "category": "restaurante",
+      "cuisine": "mediterránea con flamenco en vivo",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Cocina mediterránea con toques internacionales y espectáculo de flamenco en directo cada noche, junto al Teatro Cervantes. Premio Viajeros de Tripadvisor 2024.",
+      "source_url": "https://restaurantevinomio.es/",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7225,-4.4165"
+    },
+    {
+      "name": "La Milla",
+      "place_id": null,
+      "lat": 36.5010,
+      "lng": -4.9100,
+      "category": "seafood",
+      "cuisine": "mediterránea / pescado",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Antiguo chiringuito de la playa de Nagüeles reconvertido en restaurante gastronómico con un Sol Repsol, sin perder el pescado fresco y el ambiente playero de la Milla de Oro.",
+      "source_url": "https://lamillamarbella.com/en/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.5010,-4.9100",
+      "distinction": {
+        "type": "repsol_sol",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nobu Marbella",
+      "place_id": null,
+      "lat": 36.4970,
+      "lng": -4.9130,
+      "category": "restaurante",
+      "cuisine": "japonesa / nikkei",
+      "tags": [
+        "influencer"
+      ],
+      "description": "La firma global de Nobu Matsuhisa en la Milla de Oro de Marbella, con su carta de cocina japonesa-peruana y clásicos como el black cod con miso, dentro del Nobu Hotel Marbella.",
+      "source_url": "https://www.nobuhotels.com/marbella",
+      "source_type": "influencer",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.4970,-4.9130"
+    },
+    {
+      "name": "COYA Marbella",
+      "place_id": null,
+      "lat": 36.4988,
+      "lng": -4.9273,
+      "category": "restaurante",
+      "cuisine": "peruana",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Sucursal marbellí del grupo londinense COYA, con cocina peruana contemporánea, pisco bar y ambiente de fiesta dentro del resort Puente Romano.",
+      "source_url": "https://www.coyarestaurant.com/marbella/",
+      "source_type": "influencer",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.4988,-4.9273"
+    },
+    {
+      "name": "El Merendero de Antonio Martín",
+      "place_id": null,
+      "lat": 36.7185,
+      "lng": -4.4085,
+      "category": "seafood",
+      "cuisine": "pescado y marisco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El negocio arrancó en 1886 como un puesto de coquinas en la playa de la Malagueta, junto a la plaza de toros. Reconvertido hoy en El Merendero de Antonio Martín, sigue sirviendo pescaíto frito y cocina malagueña con terraza frente al mar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7185,-4.4085"
+    },
+    {
+      "name": "Bar Orellana",
+      "place_id": null,
+      "lat": 36.7205,
+      "lng": -4.4198,
+      "category": "bar",
+      "cuisine": "tapas andaluzas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Inaugurado en 1938, reivindica ser la tasca más antigua de Málaga capital. En pleno centro histórico, es uno de los bares que dio forma a la tradicional ruta de tapeo malagueña.",
+      "source_url": "https://www.minube.com/rincon/bar-orellana-a2203956",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7205,-4.4198"
+    },
+    {
+      "name": "Casa Santa Pola",
+      "place_id": null,
+      "lat": 36.7395,
+      "lng": -5.1670,
+      "category": "restaurante",
+      "cuisine": "rondeña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Instalado en una antigua casa-palacio árabe del casco antiguo de Ronda, con terrazas que cuelgan sobre el Tajo y el Puente Nuevo. Cocina tradicional serrana: jamón ibérico, guisos y quesos de la sierra.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=36.7395,-5.1670"
     }
   ],
   "targetPlaces": 40,

@@ -22,6 +22,146 @@
     "El Pimpi": {
       "cuisine": "Andalusian",
       "description": "A wine cellar-restaurant from 1971 in an 18th-century house, with barrels signed by Picasso and Antonio Banderas."
+    },
+    "Bar Mercado Atarazanas": {
+      "cuisine": "tapas / fried fish",
+      "description": "A tapas counter inside the covered food market, gone viral on TikTok for its lines and its fried fish."
+    },
+    "Skina": {
+      "cuisine": "Contemporary Andalusian",
+      "description": "Two Michelin stars on Marbella's Golden Mile. Sommelier Marcos Granda and chef Mario Cachinero pair modern technique with market produce in refined Andalusian cooking."
+    },
+    "Bardal": {
+      "cuisine": "Andalusian tasting menus",
+      "description": "Two Michelin stars in the center of Ronda. Chef Benito Gómez builds tasting menus around seasonal produce and precise technique — one of Andalusia's most decorated restaurants outside a provincial capital."
+    },
+    "José Carlos García": {
+      "cuisine": "Modern Malagueño",
+      "description": "The only Michelin-starred restaurant in downtown Málaga. Overlooking the yachts of Muelle Uno, José Carlos García updates traditional Malagueño recipes with contemporary technique and local produce."
+    },
+    "Kaleja": {
+      "cuisine": "Fire-cooked Andalusian",
+      "description": "One Michelin star and two Repsol Suns for chef Dani Carnero, who cooks over coals and with slow-cooking techniques in an alley of the historic center. 'Kaleja' means 'little alley' in Sephardic."
+    },
+    "Sollo": {
+      "cuisine": "River cuisine / sturgeon",
+      "description": "One Michelin star and a Michelin Green Star for Diego Gallegos, the 'caviar chef,' who specializes in home-raised sturgeon and river fish. His Caminho tasting menu blends the Axarquía with his Brazilian and Peruvian roots."
+    },
+    "Messina": {
+      "cuisine": "Mediterranean-Latin American",
+      "description": "Michelin-starred since 2016. Argentine chef Mauricio Giovanini cooks across Europe and Latin America, with sommelier Pía Ninci running the dining room."
+    },
+    "Nintai": {
+      "cuisine": "Japanese / omakase",
+      "description": "A twelve-seat omakase counter, sommelier Marcos Granda's project after a trip that immersed him in Japanese culinary culture. It earned a Michelin star in 2021, before its first anniversary."
+    },
+    "Back": {
+      "cuisine": "Creative",
+      "description": "Michelin-starred since 2023, chef David Olivas and sommelier Fabián Villar run an urban, relaxed space in central Marbella."
+    },
+    "Tragatá": {
+      "cuisine": "Andalusian tapas",
+      "description": "Benito Gómez's (Bardal) informal tapas spin-off, steps from Ronda's Puente Nuevo. Traditional dishes with modern touches, like the confit pork belly mollete roll."
+    },
+    "La Cosmo": {
+      "cuisine": "Malagueño",
+      "description": "A Michelin Guide Bib Gourmand next to the Cathedral. Chef Dani Carnero of Kaleja takes a more direct approach here, centered on fish and Malagueño tradition."
+    },
+    "Uvedoble Taberna": {
+      "cuisine": "Contemporary Andalusian",
+      "description": "A minimalist tavern beside the Roman Theatre and the Alcazaba. Willy Orellana reworks Andalusian and Malagueño classics with modern technique and careful plating."
+    },
+    "El Tapeo de Cervantes": {
+      "cuisine": "Market tapas",
+      "description": "Fish tapas and classic Spanish cooking on a narrow street of the old town, beside Teatro Cervantes. A go-to stop on any Málaga tapas crawl."
+    },
+    "Café Central": {
+      "cuisine": "Coffee / breakfast",
+      "description": "A century-old café on Plaza de la Constitución, dating back to 1910. It's where Málaga's famous coffee-ordering code — 'nube,' 'sombra,' 'entreverao' — was born, recognized by the European Association of Historic Cafés."
+    },
+    "Casa Aranda": {
+      "cuisine": "Churros and hot chocolate",
+      "description": "Málaga's quintessential churrería since 1932, spread across four storefronts on Calle Herrería del Rey, next to the Atarazanas Market."
+    },
+    "Bodega Quitapenas": {
+      "cuisine": "Málaga wine / tapas",
+      "description": "The city-center tavern of Málaga's most established winery, with roots tracing back to 1670 in the Axarquía. Sweet wine, moscatel and Málaga Lágrima poured straight from the barrel."
+    },
+    "La Tranca": {
+      "cuisine": "Tapas / vermouth",
+      "description": "A tasca opened in 2012 on Calle Carretería, its walls plastered with album covers and its crowd spilling onto the street. Croquettes, vermouth and sweet wine served amid shouted orders and music turned up loud."
+    },
+    "Chiringuito Ayo": {
+      "cuisine": "Paella / rice dishes",
+      "description": "Francisco 'Ayo' lit his first wood fire on Burriana beach in 1969. More than fifty years later he's still cooking rice in giant paella pans, with all-you-can-eat paella included in the price. The chiringuito made several appearances in the 1980s TV series 'Verano Azul.'"
+    },
+    "Los Marinos José": {
+      "cuisine": "Fish and seafood",
+      "description": "A family-run seafood restaurant of more than thirty years on Carvajal beach, with fish landed by the family's own boats. It has featured for years among the Michelin Guide's recommendations on the Costa del Sol."
+    },
+    "Leña": {
+      "cuisine": "Grill / steakhouse",
+      "description": "Dani García's grill restaurant inside the Puente Romano resort, built around wood-fired meats, fish and vegetables. International critics have singled out its design as among the most spectacular restaurant spaces in the world."
+    },
+    "BiBo": {
+      "cuisine": "Creative Andalusian",
+      "description": "Dani García's more casual Marbella outpost, serving reinterpreted Andalusian tapas and dishes across from the Puente Romano resort."
+    },
+    "Cortijo de Pepe": {
+      "cuisine": "Andalusian tapas",
+      "description": "A Plaza de la Merced institution since 1971, with a lively tapas bar downstairs and a calmer dining room above. Known for its grilled octopus and down-to-earth prices."
+    },
+    "Bar Altamirano": {
+      "cuisine": "Fried fish / seafood",
+      "description": "A fresh-fish bar in a square of Marbella's old town, sourcing from the Bajadilla fishing port and cooking to grandmother María's recipes since 1985. Its walls are covered in football scarves and pennants."
+    },
+    "El Estrecho": {
+      "cuisine": "Andalusian tapas",
+      "description": "Marbella's most traditional bar, tucked into a narrow old-town alley since 1954. Now on its third generation, serving Russian salad, croquettes and vinegar-cured anchovies."
+    },
+    "Restaurante Santiago": {
+      "cuisine": "Fish and seafood",
+      "description": "A seafood institution founded in 1957 as Marbella's first beach chiringuito, now standing right on the seafront promenade. Diners over the decades have included Jackie Kennedy, Julio Iglesias and Antonio Banderas."
+    },
+    "Casa Juan Los Mellizos": {
+      "cuisine": "Fried fish",
+      "description": "An emblem of La Carihuela since 1963, one of the first fish restaurants in Torremolinos's old fishing quarter. Frying done grease-free, in keeping with the neighborhood's fishing tradition."
+    },
+    "El Caleño": {
+      "cuisine": "Espetos (grilled sardine skewers)",
+      "description": "More than thirty years grilling sardine espetos over open fires on the Pedregalejo seafront, one of the neighborhood's benchmark chiringuitos alongside El Tintero and El Kiosko."
+    },
+    "Mesón Astorga": {
+      "cuisine": "Malagueño",
+      "description": "A family restaurant since 1990 that marked a turning point for inland Málaga cooking: roast kid goat, porra antequerana and slow-cooked stews."
+    },
+    "Vino Mío": {
+      "cuisine": "Mediterranean with live flamenco",
+      "description": "Mediterranean cooking with international touches, paired with a nightly live flamenco show next to Teatro Cervantes. Winner of a 2024 Tripadvisor Travelers' Choice award."
+    },
+    "La Milla": {
+      "cuisine": "Mediterranean / seafood",
+      "description": "A former Nagüeles beach chiringuito turned gastronomic restaurant with a Repsol Sun, without losing its fresh fish and Golden Mile beach-club feel."
+    },
+    "Nobu Marbella": {
+      "cuisine": "Japanese / Nikkei",
+      "description": "Nobu Matsuhisa's global brand on Marbella's Golden Mile, serving its signature Japanese-Peruvian menu and classics like miso black cod, inside the Nobu Hotel Marbella."
+    },
+    "COYA Marbella": {
+      "cuisine": "Peruvian",
+      "description": "The Marbella outpost of London-born group COYA, serving contemporary Peruvian cuisine with a pisco bar and party atmosphere inside the Puente Romano resort."
+    },
+    "El Merendero de Antonio Martín": {
+      "cuisine": "Fish and seafood",
+      "description": "The business began in 1886 as a clam stand on La Malagueta beach, next to the bullring. Now reopened as El Merendero de Antonio Martín, it still serves fried fish and Malagueño cooking on a seafront terrace."
+    },
+    "Bar Orellana": {
+      "cuisine": "Andalusian tapas",
+      "description": "Opened in 1938, it claims to be the oldest tasca in Málaga city. Right in the historic center, it's one of the bars that shaped the traditional Málaga tapas route."
+    },
+    "Casa Santa Pola": {
+      "cuisine": "Rondeño / mountain cuisine",
+      "description": "Set in an old Moorish palace-house in Ronda's historic quarter, with terraces hanging over the Tajo gorge and the Puente Nuevo. Traditional mountain cooking — Iberian ham, stews and local cheeses."
     }
   }
 }

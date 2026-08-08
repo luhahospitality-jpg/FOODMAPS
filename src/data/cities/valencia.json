@@ -3,7 +3,7 @@
   "name": "Valencia",
   "country": "España",
   "tagline": "Arroz de leña en L'Albufera, dos estrellas Michelin en el centro, y el mercado más fotogénico de España.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -87,7 +87,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053",
+      "distinction": null
     },
     {
       "name": "RiFF",
@@ -110,6 +111,670 @@
         "type": "michelin_star",
         "count": 1
       }
+    },
+    {
+      "name": "Fierro",
+      "place_id": null,
+      "lat": 39.4636,
+      "lng": -0.3746,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo contemporáneo / argentino",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "Restaurante de los chefs Germán Carrizo y Carito Lourenço, con guiños a la cocina argentina de la chef. Una estrella Michelin y Sol Repsol, en un local íntimo de apenas 18 comensales cerca del mercado de Ruzafa.",
+      "source_url": "https://guide.michelin.com/us/en/comunidad-valenciana/valencia/restaurant/fierro",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4636,-0.3746",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Lienzo",
+      "place_id": null,
+      "lat": 39.477,
+      "lng": -0.373,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo / valenciano",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "Cocina mediterránea de temporada de la chef murciana María José Martínez, con guiños a la huerta valenciana y miel de su propia colmena. Una estrella Michelin desde 2021.",
+      "source_url": "https://guide.michelin.com/us/en/comunidad-valenciana/valencia/restaurant/lienzo",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4770,-0.3730",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "La Salita",
+      "place_id": null,
+      "lat": 39.4615,
+      "lng": -0.376,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo / vegetal",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "Restaurante de Begoña Rodrigo, ganadora de Top Chef España, instalado en un edificio de 1866 en Ruzafa. Cocina centrada en el mundo vegetal y el pescado. Una estrella Michelin y dos Soles Repsol.",
+      "source_url": "https://www.guiarepsol.com/es/comer/nuestros-favoritos/nuevos-platos-la-salita-valencia/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4615,-0.3760",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Kaido Sushi Bar",
+      "place_id": null,
+      "lat": 39.474,
+      "lng": -0.368,
+      "category": "fine_dining",
+      "cuisine": "japonesa / omakase",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "Barra de omakase edomae para solo diez comensales, del chef Yoshikazu Yanome. Único restaurante japonés con estrella Michelin de la Comunitat Valenciana.",
+      "source_url": "https://guide.michelin.com/us/en/comunidad-valenciana/valencia/restaurant/kaido-sushi-bar",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4740,-0.3680",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Fraula",
+      "place_id": null,
+      "lat": 39.4655,
+      "lng": -0.3725,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "Proyecto de Roseta Félix y su equipo a pocos metros del Mercado de Colón, con menús de temporada centrados en producto de la huerta y el mar. Una estrella Michelin.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/best-restaurants-valencia",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4655,-0.3725",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Habitual",
+      "place_id": null,
+      "lat": 39.4762,
+      "lng": -0.3838,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Segundo proyecto de Ricard Camarena, en el patio del IVAM. Cocina de mercado en un formato más informal que su restaurante insignia, con Sol Repsol.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/best-restaurants-valencia",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4762,-0.3838",
+      "distinction": null
+    },
+    {
+      "name": "Apicius",
+      "place_id": null,
+      "lat": 39.468,
+      "lng": -0.369,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Restaurante gastronómico en el ensanche de Valencia, de cocina mediterránea de producto, distinguido con Sol Repsol.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/best-restaurants-valencia",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4680,-0.3690",
+      "distinction": null
+    },
+    {
+      "name": "Entrevins",
+      "place_id": null,
+      "lat": 39.4735,
+      "lng": -0.3748,
+      "category": "bar",
+      "cuisine": "mediterráneo / vinoteca",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Vinoteca y restaurante en el centro histórico, con una de las cartas de vino más completas de la ciudad y cocina de mercado. Sol Repsol.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/best-restaurants-valencia",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4735,-0.3748",
+      "distinction": null
+    },
+    {
+      "name": "2 Estaciones",
+      "place_id": null,
+      "lat": 39.4655,
+      "lng": -0.3783,
+      "category": "restaurante",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Restaurante de cocina de mercado cerca de la Estación del Norte, con Sol Repsol y ambiente de barrio.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/best-restaurants-valencia",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4655,-0.3783",
+      "distinction": null
+    },
+    {
+      "name": "Canalla Bistro",
+      "place_id": null,
+      "lat": 39.468,
+      "lng": -0.3705,
+      "category": "bistro",
+      "cuisine": "fusión / mediterráneo",
+      "tags": [
+        "repsol"
+      ],
+      "description": "Bistró desenfadado de Ricard Camarena en el Ensanche, con platos de influencia asiática y latinoamericana pensados para compartir. Un Sol Repsol.",
+      "source_url": "https://www.visitvalencia.com/que-hacer-valencia/gastronomia/restaurantes-valencia/canalla-bistro-ricard-camarena-1-sol-repsol",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4680,-0.3705",
+      "distinction": null
+    },
+    {
+      "name": "Central Bar",
+      "place_id": null,
+      "lat": 39.4734917,
+      "lng": -0.3789053,
+      "category": "bar",
+      "cuisine": "valenciano / tapas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Barra de almuerzos de Ricard Camarena dentro del Mercado Central, famosa por su bocadillo de lomo y sus guisos de mercado. Abre solo por las mañanas.",
+      "source_url": "https://www.theinfatuation.com/valencia/reviews/central-bar",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4734917,-0.3789053",
+      "distinction": null
+    },
+    {
+      "name": "Saiti",
+      "place_id": null,
+      "lat": 39.463,
+      "lng": -0.376,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "repsol"
+      ],
+      "description": "Restaurante del chef Vicente Patiño en Ruzafa, con Bib Gourmand de la Guía Michelin y dos Soles Repsol.",
+      "source_url": "https://guide.michelin.com/us/en/comunidad-valenciana/valencia/restaurant/saiti",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4630,-0.3760",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Tandem",
+      "place_id": null,
+      "lat": 39.4715,
+      "lng": -0.3775,
+      "category": "restaurante",
+      "cuisine": "mediterráneo / arroces",
+      "tags": [],
+      "description": "Casa de comidas cerca del Ayuntamiento especializada en arroces y platos de cuchara al estilo tradicional valenciano.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4715,-0.3775",
+      "distinction": null
+    },
+    {
+      "name": "Askua",
+      "place_id": null,
+      "lat": 39.487,
+      "lng": -0.369,
+      "category": "steakhouse",
+      "cuisine": "parrilla / carnes",
+      "tags": [
+        "repsol",
+        "clasico"
+      ],
+      "description": "Parrilla de referencia en Valencia desde 1994, especializada en carnes a la brasa y producto de temporada. Un Sol Repsol.",
+      "source_url": "https://www.guiarepsol.com/es/fichas/restaurante/askua-9371/",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4870,-0.3690",
+      "distinction": null
+    },
+    {
+      "name": "Vuelve Carolina",
+      "place_id": null,
+      "lat": 39.4657,
+      "lng": -0.3729,
+      "category": "restaurante",
+      "cuisine": "mediterráneo / arroces",
+      "tags": [
+        "bib_gourmand",
+        "repsol"
+      ],
+      "description": "Proyecto informal del chef Quique Dacosta dentro del Mercado de Colón, con Bib Gourmand y Sol Repsol.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4657,-0.3729",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Casa Montaña",
+      "place_id": null,
+      "lat": 39.4649,
+      "lng": -0.3273,
+      "category": "bar",
+      "cuisine": "valenciano / vinoteca",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Bodega centenaria (1836) en el barrio marinero del Cabanyal, con fachada modernista, una gran carta de vinos y tapas valencianas.",
+      "source_url": "https://www.visitvalencia.com/en/what-to-do-valencia/gastronomy/where-to-eat-restaurant-valencia/bodega-casa-montana",
+      "source_type": "classic",
+      "source_type_secondary": "timeout",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4649,-0.3273",
+      "distinction": null
+    },
+    {
+      "name": "La Pepica",
+      "place_id": null,
+      "lat": 39.4715,
+      "lng": -0.327,
+      "category": "arroceria",
+      "cuisine": "valenciano / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Arrocería frente a la playa de la Malvarrosa desde 1898, frecuentada por Ernest Hemingway. Paellas tradicionales con vistas al mar.",
+      "source_url": "https://lapepica.com/en/la-pepica-restaurant/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4715,-0.3270",
+      "distinction": null
+    },
+    {
+      "name": "Casa Carmela",
+      "place_id": null,
+      "lat": 39.4735,
+      "lng": -0.3262,
+      "category": "arroceria",
+      "cuisine": "valenciano / arroces",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Arrocería familiar desde 1922 junto a la playa de la Malvarrosa, célebre por cocinar la paella a leña de naranjo.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes/casa-carmela",
+      "source_type": "classic",
+      "source_type_secondary": "timeout",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4735,-0.3262",
+      "distinction": null
+    },
+    {
+      "name": "Nou Racó",
+      "place_id": null,
+      "lat": 39.313,
+      "lng": -0.321,
+      "category": "arroceria",
+      "cuisine": "valenciano / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Arrocería junto al lago de la Albufera en El Palmar, abierta desde 1960, especializada en all i pebre y arroces tradicionales.",
+      "source_url": "https://nouraco.com/restaurante/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.3130,-0.3210",
+      "distinction": null
+    },
+    {
+      "name": "La Pilareta",
+      "place_id": null,
+      "lat": 39.4775,
+      "lng": -0.3775,
+      "category": "bar",
+      "cuisine": "tapas / valenciano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taberna de clóchinas (mejillón valenciano) desde 1917 en el Barrio del Carmen, conocida como 'la casa de les cloxines'.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4775,-0.3775",
+      "distinction": null
+    },
+    {
+      "name": "Horchatería Santa Catalina",
+      "place_id": null,
+      "lat": 39.474,
+      "lng": -0.3765,
+      "category": "cafeteria",
+      "cuisine": "horchata / dulces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Horchatería y chocolatería centenaria en la plaza de Santa Catalina, decorada con azulejos de Manises y regentada hoy por la cuarta generación de la familia Gargallo.",
+      "source_url": "https://www.horchateriasantacatalina.com/en/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4740,-0.3765",
+      "distinction": null
+    },
+    {
+      "name": "Horchatería El Siglo",
+      "place_id": null,
+      "lat": 39.4739,
+      "lng": -0.3764,
+      "category": "cafeteria",
+      "cuisine": "horchata / dulces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Horchatería histórica desde 1836 frente a Santa Catalina, una de las más antiguas de Valencia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4739,-0.3764",
+      "distinction": null
+    },
+    {
+      "name": "Horchatería Daniel",
+      "place_id": null,
+      "lat": 39.497,
+      "lng": -0.35,
+      "category": "cafeteria",
+      "cuisine": "horchata / dulces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Horchatería de referencia en Alboraya desde mediados del siglo XX, visitada por Salvador Dalí y Rafael Alberti. Horchata y fartons artesanales.",
+      "source_url": "https://horchateria-daniel.es/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4970,-0.3500",
+      "distinction": null
+    },
+    {
+      "name": "Alejandro del Toro",
+      "place_id": null,
+      "lat": 39.482,
+      "lng": -0.368,
+      "category": "fine_dining",
+      "cuisine": "valenciano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante del chef Alejandro del Toro, abierto en 2001 y galardonado con una estrella Michelin en 2003. Cocina valenciana actualizada de producto.",
+      "source_url": "https://www.lovevalencia.com/en/lugares/restaurante-alejandro-del-toro",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4820,-0.3680",
+      "distinction": null
+    },
+    {
+      "name": "Bodega Anyora",
+      "place_id": null,
+      "lat": 39.466,
+      "lng": -0.3295,
+      "category": "bar",
+      "cuisine": "valenciano",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bodega con encanto en el Cabanyal, de cocina valenciana con producto fresco y mucha historia marinera.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4660,-0.3295",
+      "distinction": null
+    },
+    {
+      "name": "Nori Izakaya",
+      "place_id": null,
+      "lat": 39.468,
+      "lng": -0.396,
+      "category": "japonesa",
+      "cuisine": "japonesa / izakaya",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Izakaya en la zona de Abastos donde la materia prima -pescado fresco de mercado- es la protagonista.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4680,-0.3960",
+      "distinction": null
+    },
+    {
+      "name": "El Observatorio",
+      "place_id": null,
+      "lat": 39.4575,
+      "lng": -0.401,
+      "category": "nikkei",
+      "cuisine": "nikkei / peruano-japonés",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante de cocina nikkei en el barrio de Patraix, con ceviches y causa limeña entre sus especialidades.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4575,-0.4010",
+      "distinction": null
+    },
+    {
+      "name": "Bodega La Aldeana 1927",
+      "place_id": null,
+      "lat": 39.4645,
+      "lng": -0.3285,
+      "category": "bar",
+      "cuisine": "valenciano",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Antigua bodega restaurada en el Cabanyal, con cocina cien por cien valenciana y vinos locales.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4645,-0.3285",
+      "distinction": null
+    },
+    {
+      "name": "La Cooperativa del Mar",
+      "place_id": null,
+      "lat": 39.4622,
+      "lng": -0.3735,
+      "category": "bar",
+      "cuisine": "portuguesa / conservas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Antigua pescadería de Ruzafa reconvertida en bar de conservas de inspiración portuguesa.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4622,-0.3735",
+      "distinction": null
+    },
+    {
+      "name": "Rausell",
+      "place_id": null,
+      "lat": 39.4675,
+      "lng": -0.3715,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Uno de los bares con más carácter de Valencia, en activo desde los años 40, famoso por sus bravas.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "classic",
+      "source_type_secondary": "timeout",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4675,-0.3715",
+      "distinction": null
+    },
+    {
+      "name": "Hikari Yakitori Bar",
+      "place_id": null,
+      "lat": 39.4605,
+      "lng": -0.373,
+      "category": "japonesa",
+      "cuisine": "japonesa / yakitori",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barra de yakitori en Ruzafa, con brochetas a la brasa elaboradas con producto de mercado del día.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4605,-0.3730",
+      "distinction": null
+    },
+    {
+      "name": "Àtic. Palau Alameda",
+      "place_id": null,
+      "lat": 39.4745,
+      "lng": -0.362,
+      "category": "restaurante",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante mediterráneo de cocina sostenible y kilómetro cero, instalado en el reformado Palau Alameda.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4745,-0.3620",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Napoletana Da Carlo",
+      "place_id": null,
+      "lat": 39.469,
+      "lng": -0.371,
+      "category": "italiana",
+      "cuisine": "italiana / napolitana",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Trattoria napolitana con más de 25 años de historia en Valencia, célebre por su pizza tradicional al estilo de la vieja cocina de la mamma.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4690,-0.3710",
+      "distinction": null
+    },
+    {
+      "name": "Tavella",
+      "place_id": null,
+      "lat": 39.445,
+      "lng": -0.355,
+      "category": "restaurante",
+      "cuisine": "valenciano / arroces",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante instalado en una alquería de más de 200 años en la huerta valenciana, con arroces a leña y carnes a la brasa.",
+      "source_url": "https://www.timeout.com/es/valencia/restaurantes",
+      "source_type": "timeout",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4450,-0.3550",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de Colón",
+      "place_id": null,
+      "lat": 39.4657,
+      "lng": -0.3729,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado modernista de 1914, obra del arquitecto Francisco Mora, hoy reconvertido en un espacio gastronómico con cafés, horchaterías y restaurantes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.4657,-0.3729",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,
