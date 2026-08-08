@@ -22,6 +22,146 @@
     "Nomad": {
       "cuisine": "modern Moroccan",
       "description": "Modern Moroccan cuisine on a four-story rooftop over the Rahba Kedima spice square, with views of the Atlas."
+    },
+    "Dar Moha": {
+      "cuisine": "modern Moroccan",
+      "description": "An 18th-century riad once home to designer Pierre Balmain, now the restaurant of chef Moha Fedal, pioneer of \"new Moroccan cuisine.\" Dinners are served beside a pool decorated with Berber-inspired mosaics."
+    },
+    "Le Tobsil": {
+      "cuisine": "Moroccan",
+      "description": "A restaurant set in a medina riad, known for candlelit dinners with rose petals scattered on the tables and live Gnawa music."
+    },
+    "Dar Yacout": {
+      "cuisine": "Moroccan",
+      "description": "A medina palace turned dining landmark for more than three decades, with a rooftop terrace overlooking the Koutoubia and the Atlas Mountains."
+    },
+    "La Maison Arabe": {
+      "cuisine": "Moroccan",
+      "description": "Founded in 1946 by Hélène and Suzy Sébillon-Larochette, it was the medina's first restaurant open to foreigners and hosted guests like Churchill and Hemingway. It is now home to Morocco's first cooking school, opened in 2001."
+    },
+    "Le Foundouk": {
+      "cuisine": "Moroccan and international",
+      "description": "A rooftop restaurant in a historic medina building, serving Moroccan and international cuisine; closed on Wednesdays."
+    },
+    "Café de France": {
+      "cuisine": "Moroccan",
+      "description": "A terrace café founded in 1912 facing Jemaa el-Fnaa square, a historic meeting spot for Europeans since the French Protectorate, with views of the Koutoubia."
+    },
+    "Chez Chegrouni": {
+      "cuisine": "Moroccan",
+      "description": "A no-frills spot beside Jemaa el-Fnaa where orders are scribbled on paper napkins; famous for its rooftop terrace overlooking the square at sunset."
+    },
+    "Grand Café de la Poste": {
+      "cuisine": "French/Moroccan",
+      "description": "A former 1925 post office, the first building in the Guéliz district, converted into a colonial-style brasserie that was once a meeting spot for painter Jacques Majorelle."
+    },
+    "Kosybar": {
+      "cuisine": "Moroccan/international",
+      "description": "A multi-level bar on Place des Ferblantiers in the Kasbah, with a rooftop terrace looking out over sunset views above the Bahia Palace."
+    },
+    "Le Barométre": {
+      "cuisine": null,
+      "description": "A speakeasy cocktail bar opened in 2016 by the Hadni brothers, Morocco's first bar built entirely around mixology, hidden behind an unmarked door in Guéliz."
+    },
+    "Sky Bar": {
+      "cuisine": null,
+      "description": "A rooftop bar atop Hotel La Renaissance at Guéliz's central junction, with a 360-degree panorama taking in the Atlas Mountains, the Koutoubia and the new city."
+    },
+    "Café des Épices": {
+      "cuisine": "Moroccan",
+      "description": "A café on the Rahba Kedima spice square since 2000, with a multi-level terrace overlooking the bustle of the souk below."
+    },
+    "Terrasse des Épices": {
+      "cuisine": "Moroccan",
+      "description": "A restaurant on the rooftop of Souk Cherifia since 2007, with tables set among plants overlooking the medina's rooftops."
+    },
+    "Dar Cherifa": {
+      "cuisine": "Moroccan",
+      "description": "A late-16th-century Saadian house, one of the oldest and best-preserved in the medina; restored in 2000, it now operates as a literary café and art gallery."
+    },
+    "Nid'Cigogne": {
+      "cuisine": "Moroccan",
+      "description": "A restaurant facing the Saadian Tombs whose name means \"stork's nest,\" after the storks nesting on the neighboring rooftop; a three-level terrace recommended by Frommer's."
+    },
+    "Maison de la Photographie": {
+      "cuisine": null,
+      "description": "A museum founded in 2009 by Patrick Menac'h and Hamid Mergani, holding a collection of over 4,500 photographs of Morocco taken between 1870 and 1950; its rooftop houses one of the medina's best-view cafés."
+    },
+    "Pâtisserie Al Jawda": {
+      "cuisine": "Moroccan/French",
+      "description": "A Guéliz pastry shop beloved by locals for its Moroccan and French sweets, especially its macarons and gazelle horn cookies."
+    },
+    "Bacha Coffee": {
+      "cuisine": null,
+      "description": "A coffee house founded in 1910 in the Dar el Bacha Palace, once frequented by Franklin D. Roosevelt, Winston Churchill and Josephine Baker; revived in 2017 inside the palace-turned-museum."
+    },
+    "Café Arabe": {
+      "cuisine": "Italian/Moroccan",
+      "description": "A restaurant on Rue Mouassine blending Italian and Moroccan cuisine, with a panoramic rooftop over the medina's rooftops."
+    },
+    "Naranj": {
+      "cuisine": "Lebanese",
+      "description": "A family-run Lebanese restaurant on Riad Zitoun el Jdid, with vegetarian options and traditional mezze."
+    },
+    "Plus61": {
+      "cuisine": "Mediterranean/Australian",
+      "description": "An Australian-owned bistro in Guéliz that makes its own bread, pasta, cheese and yogurt daily, with a kitchen blending Mediterranean and Australian influences."
+    },
+    "Amal Center": {
+      "cuisine": "Moroccan",
+      "description": "A nonprofit social-gastronomy restaurant founded in 2012 by Nora Belahcen Fitzgerald, where disadvantaged women train in Moroccan cooking over several months; lunch only, with a menu that changes daily, in Guéliz."
+    },
+    "Chez Lamine Hadj Mustapha": {
+      "cuisine": "Moroccan",
+      "description": "An institution since 1965 in Mechoui Alley, just off Jemaa el-Fnaa; up to 40 whole lambs are slow-roasted each morning in underground wood-fired ovens."
+    },
+    "Marché Central Guéliz": {
+      "cuisine": null,
+      "description": "The new town's covered food market, relocated to Rue Ibn Toumert after the Carré Eden mall took over its original 1920s site; stalls sell fresh seafood, cheese and organic produce."
+    },
+    "La Cantine des Gazelles": {
+      "cuisine": "Moroccan",
+      "description": "A family-style restaurant near Jemaa el-Fnaa specializing in home-style Moroccan cooking: couscous, kefta, tagines and pastillas."
+    },
+    "Café Clock Marrakech": {
+      "cuisine": "Moroccan/international",
+      "description": "A cultural café in the Kasbah, sister to the original in Fez, famous for its camel burger and traditional storytelling nights."
+    },
+    "Comptoir Darna": {
+      "cuisine": "Moroccan/Mediterranean",
+      "description": "The dinner-cabaret that pioneered the format in Marrakech in 1999, set in a 1930s Art Deco villa in Hivernage, with live belly dancing and a Gnaoua orchestra."
+    },
+    "Earth Café": {
+      "cuisine": "Vegetarian/vegan",
+      "description": "A pioneer of vegan and vegetarian cooking in the medina since 2007, serving dishes made with organic ingredients."
+    },
+    "La Trattoria Marrakech": {
+      "cuisine": "Italian",
+      "description": "Marrakech's longest-running Italian restaurant, open since 1974 in a Guéliz Art Deco villa designed by decorator Bill Willis."
+    },
+    "Le Jardin": {
+      "cuisine": "modern Moroccan",
+      "description": "A restaurant set in a 16th-century medina building, with a lush garden courtyard and modern Moroccan cooking using local ingredients."
+    },
+    "Mizaan": {
+      "cuisine": "modern Moroccan",
+      "description": "A restaurant opened in 2024 on Avenue Mohammed V in Guéliz, with rope sculpture around the bar and reinvented Moroccan cooking; featured in Time Out Marrakech's restaurant picks."
+    },
+    "El Fenn": {
+      "cuisine": "Moroccan/international",
+      "description": "A riad-hotel opened in 2004 by Vanessa Branson, sister of Richard Branson, with a restaurant and rooftop bar; it has appeared on Condé Nast Traveler's Gold List in 2017, 2021, 2022 and 2024."
+    },
+    "Kechmara": {
+      "cuisine": "international",
+      "description": "A Guéliz fixture since 2004: a café, bar and bistro with a seventies design sensibility, a leafy rooftop terrace and live music on Thursdays and Fridays."
+    },
+    "Patisserie des Princes": {
+      "cuisine": "Moroccan",
+      "description": "A historic pastry shop steps from Jemaa el-Fnaa, a medina institution for traditional Moroccan sweets."
+    },
+    "Le Tanjia": {
+      "cuisine": "Moroccan",
+      "description": "A three-floor restaurant in the Mellah, near the Badii and Bahia palaces, with a central courtyard, panoramic rooftop and live music and belly-dancing shows."
     }
   }
 }
