@@ -3,7 +3,7 @@
   "name": "Nápoles",
   "country": "Italia",
   "tagline": "La pizzería de \"Come, reza, ama\", y el café que alguien ya pagó por vos sin conocerte.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -99,6 +99,625 @@
         "type": "michelin_star",
         "count": 2
       }
+    },
+    {
+      "name": "Gino Sorbillo",
+      "place_id": null,
+      "lat": 40.8503,
+      "lng": 14.26,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic",
+        "michelin"
+      ],
+      "description": "Fundada en 1935 por los abuelos de Gino Sorbillo en pleno Spaccanapoli, es una de las pizzerías más fotografiadas del mundo, con filas que dan la vuelta a la manzana. Está incluida en la Guía Michelin.",
+      "source_url": "https://www.sorbillo.it/",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8503,14.26"
+    },
+    {
+      "name": "Pizzeria Di Matteo",
+      "place_id": null,
+      "lat": 40.8508,
+      "lng": 14.2582,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En Via dei Tribunali desde mediados del siglo XX, se hizo famosa quando Bill Clinton mandó a buscar sus pizzas durante una cumbre del G7 en Nápoles en 1994. Clásica pizza a portafoglio y pizza frita.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8508,14.2582"
+    },
+    {
+      "name": "Antica Pizzeria Port'Alba",
+      "place_id": null,
+      "lat": 40.8497,
+      "lng": 14.254,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierta en 1738 junto a la antigua puerta de la ciudad que le da nombre, está considerada la pizzería más antigua del mundo. Por sus mesas pasaron Gabriele D'Annunzio y Benedetto Croce.",
+      "source_url": "https://www.anticapizzeriaportalba.com/",
+      "source_type": "classic",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8497,14.254"
+    },
+    {
+      "name": "Pizzeria Trianon da Ciro",
+      "place_id": null,
+      "lat": 40.8493,
+      "lng": 14.2634,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Desde 1923, casi enfrente de L'Antica Pizzeria da Michele, con un gran salón de mármol y mosaicos. Uno de los templos históricos de la pizza napolitana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8493,14.2634"
+    },
+    {
+      "name": "Pizzeria Starita a Materdei",
+      "place_id": null,
+      "lat": 40.8578,
+      "lng": 14.2497,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería del barrio de Materdei que abrió en 1901 y es célebre por su montanara (pizza frita y luego horneada). El barrio fue escenario de \"L'oro di Napoli\", la película de Vittorio De Sica con Sofia Loren.",
+      "source_url": "https://pizzeriestarita.it/en/our-story/",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8578,14.2497"
+    },
+    {
+      "name": "50 Kalò di Ciro Salvo",
+      "place_id": null,
+      "lat": 40.827,
+      "lng": 14.227,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería de Ciro Salvo en Piazza Sannazaro, cerca de Mergellina, reconocida año tras año entre las mejores pizzerías del mundo por la guía 50 Top Pizza. No se aceptan reservas.",
+      "source_url": "https://www.50toppizza.it/en/referenza/50-kalo-2022/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.827,14.227"
+    },
+    {
+      "name": "Pizzeria La Notizia",
+      "place_id": null,
+      "lat": 40.8365,
+      "lng": 14.2245,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "critic",
+        "michelin"
+      ],
+      "description": "El maestro pizzero Enzo Coccia abrió esta pizzería en el Vomero en 1994 y fue la primera pizzería incluida en la Guía Michelin de Italia.",
+      "source_url": "https://www.pizzarialanotizia.com/",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8365,14.2245"
+    },
+    {
+      "name": "Concettina ai Tre Santi",
+      "place_id": null,
+      "lat": 40.8595,
+      "lng": 14.2525,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería familiar del Rione Sanità desde 1951, hoy dirigida por Ciro Oliva, que la convirtió en un proyecto de integración social que da trabajo a jóvenes del barrio. Cubierta por The New York Times y CNN.",
+      "source_url": "https://www.concettinaaitresanti.com/en/",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8595,14.2525"
+    },
+    {
+      "name": "10 Diego Vitagliano",
+      "place_id": null,
+      "lat": 40.8225,
+      "lng": 14.177,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería del napolitano Diego Vitagliano en el barrio de Bagnoli, elegida mejor pizzería del mundo por la guía 50 Top Pizza en 2023 y 2024.",
+      "source_url": "https://www.50toppizza.it/referenza/diego-vitagliano-pizzeria/",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8225,14.177"
+    },
+    {
+      "name": "Antica Friggitoria La Masardona",
+      "place_id": null,
+      "lat": 40.8493,
+      "lng": 14.272,
+      "category": "street_food",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Desde 1945 cerca de Porta Nolana, un templo de la pizza frita napolitana que arrancó con Anna Manfredi friendo en la calle con un simple hornillo de gas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8493,14.272"
+    },
+    {
+      "name": "Gran Caffè Gambrinus",
+      "place_id": null,
+      "lat": 40.8386,
+      "lng": 14.2478,
+      "category": "cafeteria",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café histórico de 1860 en Piazza Trieste e Trento, salón literario que recibió a Oscar Wilde, Hemingway, Gabriele D'Annunzio y hasta a la emperatriz Sissi.",
+      "source_url": "https://grancaffegambrinus.com/en/",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8386,14.2478"
+    },
+    {
+      "name": "Bar Mexico",
+      "place_id": null,
+      "lat": 40.8503,
+      "lng": 14.2513,
+      "category": "cafeteria",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Bar histórico de Piazza Dante, uno de los espressos más elogiados de Nápoles, cuna de la llamada \"crema di caffè\" que se sirve por encima del café corto.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8503,14.2513"
+    },
+    {
+      "name": "Antica Pasticceria Pintauro",
+      "place_id": null,
+      "lat": 40.8438,
+      "lng": 14.2489,
+      "category": "panaderia",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería de Via Toledo abierta en 1785, a la que se le atribuye la invención de la sfogliatella tal como se conoce hoy.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8438,14.2489"
+    },
+    {
+      "name": "Sfogliatelle Attanasio",
+      "place_id": null,
+      "lat": 40.8524,
+      "lng": 14.2718,
+      "category": "panaderia",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Horno familiar de 1930 a metros de la estación de Napoli Centrale, famoso por sacar las sfogliatelle riccia del horno de leña justo para el cliente.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8524,14.2718"
+    },
+    {
+      "name": "Poppella",
+      "place_id": null,
+      "lat": 40.8598,
+      "lng": 14.2521,
+      "category": "panaderia",
+      "cuisine": "napolitano",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Pastelería del Rione Sanità creadora del \"fiocco di neve\", un bollo relleno de crema que se volvió viral en redes y símbolo del renacimiento del barrio.",
+      "source_url": "https://www.pasticceriapoppella.com/",
+      "source_type": "viral_social",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8598,14.2521"
+    },
+    {
+      "name": "Trattoria da Nennella",
+      "place_id": null,
+      "lat": 40.8434,
+      "lng": 14.2496,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Fundada en 1949 en los Quartieri Spagnoli por \"Nennella\", los mozos cantan, bailan y bromean entre las mesas mientras sirven pasta e patate. Un fenómeno viral en TikTok e Instagram.",
+      "source_url": "https://www.trattorianennella.it/",
+      "source_type": "viral_social",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8434,14.2496"
+    },
+    {
+      "name": "Ristorante Umberto",
+      "place_id": null,
+      "lat": 40.836,
+      "lng": 14.2447,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar de Chiaia desde 1916, hoy en su cuarta generación de la familia Di Porzio. Cocina napolitana clásica: ragù, braciole y baccalà.",
+      "source_url": "https://www.umberto.it/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.836,14.2447"
+    },
+    {
+      "name": "Zi Teresa",
+      "place_id": null,
+      "lat": 40.8283,
+      "lng": 14.2478,
+      "category": "seafood",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de pescados y mariscos al pie del Castel dell'Ovo, en el Borgo Marinari, fundado por Teresa Fusco a fines del siglo XIX.",
+      "source_url": "https://www.ziteresa.it/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8283,14.2478"
+    },
+    {
+      "name": "La Cantina di Triunfo",
+      "place_id": null,
+      "lat": 40.8297,
+      "lng": 14.231,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Antigua bodega de la familia Triunfo en la Riviera di Chiaia, con vino a granel de los Campi Flegrei y cocina casera napolitana. Favorita del movimiento Slow Food.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8297,14.231"
+    },
+    {
+      "name": "Bar Nilo",
+      "place_id": null,
+      "lat": 40.8489,
+      "lng": 14.2586,
+      "category": "bar",
+      "cuisine": "napolitano",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Bar de Spaccanapoli famoso por su \"altarino\" a Diego Maradona, con un mechón de pelo del futbolista guardado como reliquia desde 1990. Documentado por Atlas Obscura.",
+      "source_url": "https://www.atlasobscura.com/places/maradona-altar-naples",
+      "source_type": "viral_social",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8489,14.2586"
+    },
+    {
+      "name": "Tandem Ragù",
+      "place_id": null,
+      "lat": 40.848,
+      "lng": 14.2571,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante del centro histórico dedicado por completo al ragù napolitano, con distintos cortes de carne cocidos horas a fuego lento. Favorito de la crítica gastronómica local.",
+      "source_url": "https://www.tandemnapoli.it/tandem-via-paladino/",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.848,14.2571"
+    },
+    {
+      "name": "Pizzeria Gorizia 1916",
+      "place_id": null,
+      "lat": 40.8358,
+      "lng": 14.231,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierta en 1916 en el Vomero, fue la primera pizzería en instalarse fuera del centro histórico de Nápoles. Hoy la lleva la cuarta generación de la familia Grasso.",
+      "source_url": "https://www.gorizia1916.com/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8358,14.231"
+    },
+    {
+      "name": "Aria Restaurant",
+      "place_id": null,
+      "lat": 40.8437,
+      "lng": 14.2653,
+      "category": "fine_dining",
+      "cuisine": "napolitano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina del chef Paolo Barrale, que combina las tradiciones de su Sicilia natal con la campana. Ganó su estrella Michelin apenas cinco meses después de abrir en 2021.",
+      "source_url": "https://guide.michelin.com/us/en/campania/napoli/restaurant/aria-1197785",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8437,14.2653",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Veritas",
+      "place_id": null,
+      "lat": 40.833,
+      "lng": 14.228,
+      "category": "fine_dining",
+      "cuisine": "napolitano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante con una estrella Michelin sobre el Corso Vittorio Emanuele, camino al Vomero, con relecturas elegantes de los clásicos napolitanos.",
+      "source_url": "https://guide.michelin.com/it/it/campania/napoli/ristorante/veritas",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.833,14.228",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Il Ristorante Alain Ducasse Napoli",
+      "place_id": null,
+      "lat": 40.8425,
+      "lng": 14.265,
+      "category": "fine_dining",
+      "cuisine": "francesa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El primer restaurante de Alain Ducasse en Italia, en el noveno piso del hotel Romeo con vista a la bahía y al Vesubio. Obtuvo su estrella Michelin en 2025.",
+      "source_url": "https://guide.michelin.com/us/en/campania/napoli/restaurant/il-ristorante-alain-ducasse-napoli",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8425,14.265",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "President",
+      "place_id": null,
+      "lat": 40.7488,
+      "lng": 14.493,
+      "category": "fine_dining",
+      "cuisine": "napolitano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "En Pompeya, a pasos de las excavaciones arqueológicas, el chef Paolo Gramaglia reinterpreta con guiños casi lúdicos los clásicos napolitanos. Único restaurante con estrella Michelin de la ciudad.",
+      "source_url": "https://www.ristorantepresident.it/",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7488,14.493",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Gay-Odin",
+      "place_id": null,
+      "lat": 40.8375,
+      "lng": 14.2432,
+      "category": "dessert",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fábrica de chocolate artesanal fundada en 1894 por el piamontés Isidoro Odin en el barrio de Chiaia. Su barra \"foresta\", con forma de tronco, es un clásico de la ciudad.",
+      "source_url": "https://gay-odin.it/",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8375,14.2432"
+    },
+    {
+      "name": "Hosteria Toledo",
+      "place_id": null,
+      "lat": 40.8409,
+      "lng": 14.2464,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Osteria de los Quartieri Spagnoli abierta en 1951 por \"mamma Sosora\", hoy llevada por tres generaciones de mujeres de la familia. Recomendada por Slow Food.",
+      "source_url": "https://www.hosteriatoledo.it/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8409,14.2464"
+    },
+    {
+      "name": "Ristorante Dora",
+      "place_id": null,
+      "lat": 40.8317,
+      "lng": 14.2247,
+      "category": "seafood",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Desde 1973 en un callejón de Chiaia, restaurante de pescado a la parrilla de la familia Ramaglia que supo tener entre sus comensales a Marcello Mastroianni.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8317,14.2247"
+    },
+    {
+      "name": "Mercato di Porta Nolana",
+      "place_id": null,
+      "lat": 40.8489,
+      "lng": 14.2726,
+      "category": "mercado",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de pescado de origen medieval junto a la antigua puerta de la ciudad, conocido como \"ncopp'e mura\". La noche del 23 de diciembre se vuelve el epicentro de las compras para la Nochebuena napolitana.",
+      "source_url": "https://en.wikipedia.org/wiki/Mercato_di_Porta_Nolana,_Naples",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8489,14.2726"
+    },
+    {
+      "name": "Friggitoria Fiorenzano",
+      "place_id": null,
+      "lat": 40.8448,
+      "lng": 14.2477,
+      "category": "street_food",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de fritos en la esquina del mercado de la Pignasecca, con la familia Fiorenzano friendo pizzas, arancini y verduras desde 1897.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8448,14.2477"
+    },
+    {
+      "name": "Pizzeria da Attilio",
+      "place_id": null,
+      "lat": 40.8446,
+      "lng": 14.2481,
+      "category": "pizza",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "En el mercado de la Pignasecca desde 1938, hoy en su tercera generación de la familia Bachetti. Entró al top 20 del ranking 50 Top Pizza sin nunca hacer publicidad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8446,14.2481"
+    },
+    {
+      "name": "Osteria da Carmela",
+      "place_id": null,
+      "lat": 40.8478,
+      "lng": 14.2523,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Osteria familiar desde 1967, instalada en un antiguo refugio antiaéreo de la Segunda Guerra Mundial cerca del Museo Arqueológico. Cocina casera napolitana sin vueltas.",
+      "source_url": "https://www.osteriadacarmela.it/en/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8478,14.2523"
+    },
+    {
+      "name": "Pasticceria Moccia",
+      "place_id": null,
+      "lat": 40.8347,
+      "lng": 14.2372,
+      "category": "panaderia",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería y pastelería de Chiaia desde 1936, célebre por sus babà con crema y fresitas. Entre sus clientes históricos estuvo el filósofo Benedetto Croce.",
+      "source_url": "https://www.mocciapanificio.com/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8347,14.2372"
+    },
+    {
+      "name": "Trattoria San Ferdinando",
+      "place_id": null,
+      "lat": 40.8381,
+      "lng": 14.2481,
+      "category": "restaurante",
+      "cuisine": "napolitano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "A pasos del Teatro San Carlo y el Palacio Real, trattoria clásica frecuentada después de las funciones por artistas y músicos de la ópera.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8381,14.2481"
     }
   ],
   "targetPlaces": 40,

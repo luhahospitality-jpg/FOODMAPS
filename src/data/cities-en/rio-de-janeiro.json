@@ -22,6 +22,146 @@
     "Garota de Ipanema": {
       "cuisine": "Brazilian / boteco",
       "description": "The boteco where Vinícius de Moraes and Tom Jobim wrote \"Garota de Ipanema\" in 1962. The street next door bears the poet's name."
+    },
+    "Aprazível": {
+      "cuisine": "Brazilian",
+      "description": "Hilltop restaurant in Santa Teresa with a treetop terrace and panoramic city views. Brazilian cuisine using ingredients from across the country, recommended by the Michelin Guide since it relaunched in Rio in 2024."
+    },
+    "Fasano al Mare": {
+      "cuisine": "Italian / seafood",
+      "description": "Italian seafood restaurant facing Ipanema beach inside the Fasano hotel. Run by the Fasano family, with fresh fish and pasta from chef Paolo Lavezzini."
+    },
+    "CT Boucherie": {
+      "cuisine": "French / steakhouse",
+      "description": "Steakhouse from French-Brazilian chef Claude Troisgros in Leblon, inspired by French boucheries, with cured meats hanging in the dining room and cuts served with classic sauces."
+    },
+    "Miam Miam": {
+      "cuisine": "Brazilian comfort food",
+      "description": "Brazilian comfort-food restaurant by chef Roberta Ciasca in a Botafogo townhouse that belonged to her grandmother. Recommended by the Michelin Guide, it mixes vintage decor with reinvented home cooking."
+    },
+    "Irajá Gastrô": {
+      "cuisine": "Contemporary Brazilian",
+      "description": "Tasting-menu restaurant by chef Pedro de Artagão in Botafogo, known for turning traditional Brazilian ingredients into signature dishes and desserts."
+    },
+    "Bar Urca": {
+      "cuisine": "Brazilian / boteco",
+      "description": "A 1939 boteco on the shore of Guanabara Bay in Urca, famous for the low wall (\"mureta\") where people sit to eat pastéis and bolinhos with a view of Sugarloaf Mountain. Visited by Anthony Bourdain on \"No Reservations.\""
+    },
+    "Bar do Mineiro": {
+      "cuisine": "Minas Gerais / boteco",
+      "description": "A Santa Teresa boteco specializing in food from Minas Gerais, with feijoada, dried beef and pork crackling. Anthony Bourdain visited on \"A Cook's Tour\" (2003) to try the house cachaça and carne seca."
+    },
+    "Bracarense": {
+      "cuisine": "Brazilian / boteco",
+      "description": "A Leblon boteco famous for its petiscos, especially the codfish bolinho and breaded shrimp. Anthony Bourdain ate here on \"A Cook's Tour,\" and it remains a mandatory stop for Rio's happy hour crowd."
+    },
+    "Jobi": {
+      "cuisine": "Luso-Brazilian / boteco",
+      "description": "A Leblon boteco open since 1956, a symbol of Rio nightlife for its well-poured draft beer and codfish fritters. It keeps its original character despite several renovations."
+    },
+    "Adega Pérola": {
+      "cuisine": "Portuguese / boteco",
+      "description": "A Copacabana botequim founded in 1957 by immigrants from Madeira, famous for a counter loaded with preserves, hams and bar snacks. It is one of 14 bars declared cultural heritage of Rio."
+    },
+    "Belmonte": {
+      "cuisine": "Brazilian / boteco",
+      "description": "A boteco chain born in 1952 on Praia do Flamengo, today a happy-hour landmark with several branches across the Zona Sul. The original location was declared cultural heritage of Rio in 2023."
+    },
+    "Cervantes": {
+      "cuisine": "Brazilian / sandwiches",
+      "description": "A Copacabana bar open since 1955, creator of the famous steak, pineapple and cheese sandwich served on sweet bread. It is recognized as Cultural Heritage of Rio."
+    },
+    "Bar Brasil": {
+      "cuisine": "German / boteco",
+      "description": "A German-tradition boteco in Lapa, opened in 1907 as Bar Zeppelin. It serves pork knuckle, kassler and Brahma draft beer from an antique bronze tap with 66 meters of cooling coil."
+    },
+    "Amarelinho": {
+      "cuisine": "Brazilian / boteco",
+      "description": "A century-old bar in Cinelândia, founded in 1921 as Café Rivera. It was a gathering spot during the 1922 Modern Art Week and the Diretas Já movement, with regulars including Vinicius de Moraes and Oscar Niemeyer."
+    },
+    "Churrascaria Palace": {
+      "cuisine": "Brazilian steakhouse",
+      "description": "A Copacabana churrascaria open since 1951, one of the oldest in Rio. Recognized as Cultural Heritage of the city, it serves all-you-can-eat grilled meats from its current address on Rua Rodolfo Dantas."
+    },
+    "Casa da Feijoada": {
+      "cuisine": "Brazilian",
+      "description": "An Ipanema restaurant devoted entirely to feijoada, served every day of the year just steps from the beach. It has been open for more than three decades."
+    },
+    "Barraca do Uruguai": {
+      "cuisine": "Brazilian / beach kiosk",
+      "description": "A beach kiosk in Ipanema near Arpoador, known for its pork sandwich with chimichurri and caipirinhas. Anthony Bourdain visited it on both \"A Cook's Tour\" and \"No Reservations.\""
+    },
+    "Satyricon": {
+      "cuisine": "Mediterranean / seafood",
+      "description": "A Mediterranean seafood restaurant in Ipanema, founded in Búzios in 1982 and moved to its current address in 1986. Guests have included Madonna, Mikhail Baryshnikov and Taylor Swift, and it holds 15 Comer & Beber awards."
+    },
+    "Casa Cavé": {
+      "cuisine": "Brazilian / Portuguese",
+      "description": "Rio's oldest pastry shop, opened in 1860 in the city center by Frenchman Charles Auguste Cavé. It keeps its original furnishings and is known for its pastries and chocolates."
+    },
+    "Bibi Sucos": {
+      "cuisine": "Juices / Brazilian",
+      "description": "A Rio juice bar chain founded in 1993, with more than 40 flavors of Brazilian fruit. It has locations throughout the Zona Sul and Barra da Tijuca."
+    },
+    "Sushi Leblon": {
+      "cuisine": "Japanese",
+      "description": "Opened in 1986 on Rua Dias Ferreira, it was the first Japanese restaurant in Rio's Zona Sul. A favorite of celebrities like Madonna and Tom Cruise, it helped turn the street into Leblon's dining hub."
+    },
+    "Marius": {
+      "cuisine": "Meat and seafood",
+      "description": "A tasting restaurant in Copacabana with meat, fish and seafood served tableside since 1985, plus a buffet of salads and hot dishes."
+    },
+    "Cipriani": {
+      "cuisine": "Italian",
+      "description": "An Italian restaurant inside the historic Copacabana Palace hotel. Named best Italian restaurant in the world outside Italy by the 50 Top Italy 2026 ranking, for the second year running."
+    },
+    "Bar Lagoa": {
+      "cuisine": "German / boteco",
+      "description": "An Art Deco bar from 1934 on the shore of the Rodrigo de Freitas Lagoon, originally opened for Rio's German community. It keeps its marble, elliptical mirrors and period lamps."
+    },
+    "Capricciosa": {
+      "cuisine": "Italian",
+      "description": "An Ipanema pizzeria opened in 1999, a pioneer of D.O.C. Neapolitan-style pizza cooked in a wood-fired oven. It has won the Rio Show Gastronomia award for best pizzeria eight times."
+    },
+    "Confeitaria Kurt": {
+      "cuisine": "German",
+      "description": "A German pastry shop in Leblon founded in 1942 by Kurt Deichmann, a World War II refugee. It is known for its stollen and other European treats, with more than 75 years of tradition."
+    },
+    "Zazá Bistrô Tropical": {
+      "cuisine": "Brazilian / international",
+      "description": "An Ipanema bistro opened in 1999 by Zazá Piereck, mixing Brazilian and international flavors in a bohemian setting. It turned 25 in 2024 and its tables are still always full."
+    },
+    "Brota": {
+      "cuisine": "Vegetarian / vegan",
+      "description": "A vegetarian restaurant by chef Roberta Ciasca in a century-old Botafogo mansion, with shareable dishes like bolinhos and Thai curry. It holds a Michelin Guide Bib Gourmand distinction."
+    },
+    "Galeto Sat's": {
+      "cuisine": "Brazilian / grilled chicken",
+      "description": "A grilled-chicken (galeto) house in Copacabana where Anthony Bourdain ate spring chicken with broccoli rice and farofa; a signed photo of him still hangs on the wall."
+    },
+    "CADEG": {
+      "cuisine": "Brazilian / market",
+      "description": "Rio's municipal market in the Benfica neighborhood, with dozens of food stalls, bars and samba and choro jam sessions, especially on Saturdays."
+    },
+    "Feira de São Cristóvão": {
+      "cuisine": "Northeastern Brazilian",
+      "description": "The Centro Luiz Gonzaga de Tradições Nordestinas, Rio's biggest hub of northeastern Brazilian culture, gathers hundreds of stalls serving carne de sol, baião de dois, tapioca and live forró."
+    },
+    "Armazém São Thiago": {
+      "cuisine": "Brazilian / boteco",
+      "description": "A former 1919 general store in Santa Teresa, today a boteco known as Bar do Gomez. It keeps its original wood-and-marble counter and has been Cultural Heritage of Rio since 2011."
+    },
+    "Aconchego Carioca": {
+      "cuisine": "Brazilian",
+      "description": "A bar by chef Kátia Barbosa in Praça da Bandeira, creator of the celebrated feijoada bolinho (fried dumpling). It was the first Rio boteco recommended by the Michelin Guide."
+    },
+    "Palaphita Kitch": {
+      "cuisine": "Amazonian",
+      "description": "A lakeside kiosk on the Rodrigo de Freitas Lagoon with Amazon-inspired decor, torches and cocktails made with jungle ingredients like cupuaçu and jambu."
+    },
+    "Azumi": {
+      "cuisine": "Japanese",
+      "description": "Rio's first Japanese restaurant, opened in 1989 by Isao Ohara. It closed its historic Copacabana address in 2023 and reopened in Leblon, keeping its loyal clientele, which once included Pelé."
     }
   }
 }

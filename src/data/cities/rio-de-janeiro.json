@@ -3,7 +3,7 @@
   "name": "Río de Janeiro",
   "country": "Brasil",
   "tagline": "Quindim centenário na Confeitaria Colombo, e duas estrelas Michelin a poucos passos de Copacabana.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -102,6 +102,614 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9852383,-43.202981"
+    },
+    {
+      "name": "Aprazível",
+      "place_id": null,
+      "lat": -22.9331,
+      "lng": -43.1899,
+      "category": "fine_dining",
+      "cuisine": "brasileño",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Restaurante en la cima de una colina de Santa Teresa, con terraza entre árboles y vista panorámica de la ciudad. Cocina brasileña con ingredientes de todo el país, recomendado por la Guía Michelin desde su relanzamiento en Río en 2024.",
+      "source_url": "https://guide.michelin.com/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/aprazivel",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9331,-43.1899"
+    },
+    {
+      "name": "Fasano al Mare",
+      "place_id": null,
+      "lat": -22.9875,
+      "lng": -43.1978,
+      "category": "fine_dining",
+      "cuisine": "italiano / mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante italiano de mariscos frente al mar de Ipanema, dentro del hotel Fasano. Comandado por la familia Fasano, con pescados y pastas frescas preparadas por el chef Paolo Lavezzini.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9875,-43.1978"
+    },
+    {
+      "name": "CT Boucherie",
+      "place_id": null,
+      "lat": -22.984,
+      "lng": -43.2283,
+      "category": "restaurante",
+      "cuisine": "francés / carnes",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de carnes del chef franco-carioca Claude Troisgros en el Leblon, inspirada en las boucheries de Francia, con embutidos colgados en el salón y cortes servidos con salsas clásicas.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.984,-43.2283"
+    },
+    {
+      "name": "Miam Miam",
+      "place_id": null,
+      "lat": -22.952,
+      "lng": -43.1815,
+      "category": "restaurante",
+      "cuisine": "brasileño (comfort food)",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Casa de 'comfort food' brasileño de la chef Roberta Ciasca en un casarón de Botafogo que perteneció a su abuela. Recomendado por la Guía Michelin, mezcla decoración vintage con platos caseros reinterpretados.",
+      "source_url": "https://guide.michelin.com/us/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/miam-miam",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.952,-43.1815"
+    },
+    {
+      "name": "Irajá Gastrô",
+      "place_id": null,
+      "lat": -22.9527,
+      "lng": -43.1822,
+      "category": "fine_dining",
+      "cuisine": "brasileño contemporáneo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante de menú degustación del chef Pedro de Artagão en Botafogo, conocido por transformar ingredientes brasileños tradicionales en platos de autor y postres firmados.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9527,-43.1822"
+    },
+    {
+      "name": "Bar Urca",
+      "place_id": null,
+      "lat": -22.9497,
+      "lng": -43.1652,
+      "category": "bar",
+      "cuisine": "brasileño / boteco",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Boteco de 1939 a la orilla de la bahía de Guanabara en Urca, famoso por su 'mureta' donde la gente se sienta a comer pastéis y bolinhos con vista al Pan de Azúcar. Visitado por Anthony Bourdain en 'No Reservations'.",
+      "source_url": "https://www.noreservationslocations.com/rio-de-janeiro-episode.html",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9497,-43.1652"
+    },
+    {
+      "name": "Bar do Mineiro",
+      "place_id": null,
+      "lat": -22.9319,
+      "lng": -43.1889,
+      "category": "bar",
+      "cuisine": "mineiro / boteco",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Boteco de Santa Teresa especializado en comida de Minas Gerais, con feijoada, carne seca y torresmo. Anthony Bourdain lo visitó en 'A Cook's Tour' (2003) para probar la cachaça y la carne seca de la casa.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-rio-de-janeiro-restaurants-a-cooks-tour/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9319,-43.1889"
+    },
+    {
+      "name": "Bracarense",
+      "place_id": null,
+      "lat": -22.9835,
+      "lng": -43.2237,
+      "category": "bar",
+      "cuisine": "brasileño / boteco",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Boteco del Leblon célebre por sus petiscos, sobre todo el bolinho de bacalhau y el camarão empanado. Anthony Bourdain comió ahí en 'A Cook's Tour', y sigue siendo parada obligatoria del happy hour carioca.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-rio-de-janeiro-restaurants-a-cooks-tour/",
+      "source_type": "bourdain",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9835,-43.2237"
+    },
+    {
+      "name": "Jobi",
+      "place_id": null,
+      "lat": -22.9847,
+      "lng": -43.2255,
+      "category": "bar",
+      "cuisine": "luso-brasileño / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco del Leblon abierto en 1956, símbolo de las noches cariocas por su chope bien tirado y sus bolinhos de bacalhau. Mantiene la decoración original pese a varias reformas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9847,-43.2255"
+    },
+    {
+      "name": "Adega Pérola",
+      "place_id": null,
+      "lat": -22.9715,
+      "lng": -43.1885,
+      "category": "bar",
+      "cuisine": "portugués / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Botequim de Copacabana fundado en 1957 por inmigrantes de Madeira, famoso por su balcón repleto de conservas, jamones y petiscos. Es uno de los 14 bares declarados patrimonio cultural carioca.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9715,-43.1885"
+    },
+    {
+      "name": "Belmonte",
+      "place_id": null,
+      "lat": -22.931,
+      "lng": -43.175,
+      "category": "bar",
+      "cuisine": "brasileño / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de botecos nacida en 1952 en la Praia do Flamengo, hoy referencia del happy hour carioca con varias sucursales por la Zona Sur. La casa original fue reconocida como patrimonio cultural de Río en 2023.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.931,-43.175"
+    },
+    {
+      "name": "Cervantes",
+      "place_id": null,
+      "lat": -22.9701,
+      "lng": -43.1857,
+      "category": "bar",
+      "cuisine": "brasileño / sandwiches",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de Copacabana abierto en 1955, creador del famoso sándwich de filé con piña y queso servido en pan dulce. Está reconocido como Patrimonio Cultural Carioca.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9701,-43.1857"
+    },
+    {
+      "name": "Bar Brasil",
+      "place_id": null,
+      "lat": -22.9135,
+      "lng": -43.1795,
+      "category": "bar",
+      "cuisine": "alemán / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco de tradición germánica en la Lapa, abierto en 1907 como Bar Zeppelin. Sirve joelho de porco, kassler y chope Brahma bajo una antigua canilla de bronce con 66 metros de serpentina.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9135,-43.1795"
+    },
+    {
+      "name": "Amarelinho",
+      "place_id": null,
+      "lat": -22.9096,
+      "lng": -43.1765,
+      "category": "bar",
+      "cuisine": "brasileño / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar centenario de la Cinelândia, fundado en 1921 como Café Rivera. Fue escenario de la Semana de Arte Moderna de 1922 y de las Diretas Já, y recibió a Vinicius de Moraes y Oscar Niemeyer entre sus clientes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9096,-43.1765"
+    },
+    {
+      "name": "Churrascaria Palace",
+      "place_id": null,
+      "lat": -22.9703,
+      "lng": -43.1855,
+      "category": "churrascaria",
+      "cuisine": "brasileño / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Churrascaria de Copacabana abierta en 1951, una de las más antiguas de Río. Reconocida como Patrimonio Cultural de la ciudad, sirve rodízio de carnes desde su actual dirección en la Rua Rodolfo Dantas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9703,-43.1855"
+    },
+    {
+      "name": "Casa da Feijoada",
+      "place_id": null,
+      "lat": -22.9838,
+      "lng": -43.199,
+      "category": "restaurante",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de Ipanema dedicado enteramente a la feijoada, servida todos los días del año a pocos metros de la playa. Funciona desde hace más de tres décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9838,-43.199"
+    },
+    {
+      "name": "Barraca do Uruguai",
+      "place_id": null,
+      "lat": -22.9884,
+      "lng": -43.1962,
+      "category": "quiosco",
+      "cuisine": "brasileño / playa",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Quiosco de playa en Ipanema, cerca de Arpoador, célebre por su sándwich de carne de cerdo con chimichurri y caipirinhas. Anthony Bourdain lo visitó tanto en 'A Cook's Tour' como en 'No Reservations'.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-rio-de-janeiro-restaurants-a-cooks-tour/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9884,-43.1962"
+    },
+    {
+      "name": "Satyricon",
+      "place_id": null,
+      "lat": -22.984,
+      "lng": -43.2025,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo / mariscos",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Restaurante mediterráneo de mariscos en Ipanema, fundado en Búzios en 1982 y trasladado a su dirección actual en 1986. Recibió a Madonna, Mikhail Baryshnikov y Taylor Swift, y suma 15 premios Comer & Beber.",
+      "source_url": null,
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.984,-43.2025"
+    },
+    {
+      "name": "Casa Cavé",
+      "place_id": null,
+      "lat": -22.9046,
+      "lng": -43.1806,
+      "category": "dessert",
+      "cuisine": "brasileño / portugués",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La confitería más antigua de Río, abierta en 1860 en el Centro por el francés Charles Auguste Cavé. Conserva mobiliario original y es famosa por sus pasteles y bombones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9046,-43.1806"
+    },
+    {
+      "name": "Bibi Sucos",
+      "place_id": null,
+      "lat": -23.0045,
+      "lng": -43.365,
+      "category": "jugueria",
+      "cuisine": "jugos / brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena carioca de jugos fundada en 1993, con más de 40 sabores de frutas brasileñas. Tiene locales por toda la Zona Sur y Barra da Tijuca.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.0045,-43.365"
+    },
+    {
+      "name": "Sushi Leblon",
+      "place_id": null,
+      "lat": -22.9833,
+      "lng": -43.2258,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1986 en la Rua Dias Ferreira, fue el primer restaurante japonés de la Zona Sur de Río. Frecuentado por celebridades como Madonna y Tom Cruise, ayudó a convertir la calle en el polo gastronómico del Leblon.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9833,-43.2258"
+    },
+    {
+      "name": "Marius",
+      "place_id": null,
+      "lat": -22.9615,
+      "lng": -43.171,
+      "category": "churrascaria",
+      "cuisine": "carnes y mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de degustación en Copacabana con carnes, pescados y mariscos servidos a la mesa desde 1985, además de buffet de ensaladas y platos calientes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9615,-43.171"
+    },
+    {
+      "name": "Cipriani",
+      "place_id": null,
+      "lat": -22.9666,
+      "lng": -43.1793,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante italiano dentro del histórico Copacabana Palace. Elegido mejor restaurante italiano del mundo fuera de Italia por el ranking 50 Top Italy 2026, por segundo año consecutivo.",
+      "source_url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/brasil-tem-melhor-restaurante-italiano-do-mundo-fora-da-italia/",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9666,-43.1793"
+    },
+    {
+      "name": "Bar Lagoa",
+      "place_id": null,
+      "lat": -22.9758,
+      "lng": -43.2039,
+      "category": "bar",
+      "cuisine": "alemán / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar art déco de 1934 a orillas de la Laguna Rodrigo de Freitas, abierto originalmente para la comunidad alemana de Río. Conserva mármoles, espejos elípticos y lámparas de época.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9758,-43.2039"
+    },
+    {
+      "name": "Capricciosa",
+      "place_id": null,
+      "lat": -22.9843,
+      "lng": -43.2008,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Pizzería de Ipanema abierta en 1999, pionera de las pizzas D.O.C. al estilo napolitano con horno a leña. Ganó ocho veces el premio a mejor pizzería de Río Show Gastronomia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9843,-43.2008"
+    },
+    {
+      "name": "Confeitaria Kurt",
+      "place_id": null,
+      "lat": -22.982,
+      "lng": -43.2223,
+      "category": "dessert",
+      "cuisine": "alemán",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería alemana del Leblon fundada en 1942 por Kurt Deichmann, refugiado de la Segunda Guerra Mundial. Es conocida por su stollen y otras delicias europeas con más de 75 años de tradición.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.982,-43.2223"
+    },
+    {
+      "name": "Zazá Bistrô Tropical",
+      "place_id": null,
+      "lat": -22.9825,
+      "lng": -43.199,
+      "category": "restaurante",
+      "cuisine": "brasileño / internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de Ipanema abierto en 1999 por Zazá Piereck, con cocina que mezcla sabores brasileños e internacionales en un ambiente bohemio. Cumplió 25 años en 2024 con las mesas siempre llenas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9825,-43.199"
+    },
+    {
+      "name": "Brota",
+      "place_id": null,
+      "lat": -22.9527,
+      "lng": -43.182,
+      "category": "restaurante",
+      "cuisine": "vegetariano / vegano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante vegetariano de la chef Roberta Ciasca en un casarón centenario de Botafogo, con platos para compartir como bolinhos y curry tailandés. Cuenta con distinción Bib Gourmand de la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/brota",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9527,-43.182",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Galeto Sat's",
+      "place_id": null,
+      "lat": -22.9701,
+      "lng": -43.1857,
+      "category": "restaurante",
+      "cuisine": "brasileño / parrilla",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Casa de galeto (pollo a la parrilla) en Copacabana donde Anthony Bourdain comió pollo con arroz de brócoli y farofa; una foto suya firmada todavía cuelga en la pared.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-rio-de-janeiro/",
+      "source_type": "bourdain",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9701,-43.1857"
+    },
+    {
+      "name": "CADEG",
+      "place_id": null,
+      "lat": -22.8886,
+      "lng": -43.2377,
+      "category": "mercado",
+      "cuisine": "brasileño / mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado municipal de Río en el barrio de Benfica, con decenas de puestos de comida, bares y ruedas de samba y choro, especialmente los sábados.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.8886,-43.2377"
+    },
+    {
+      "name": "Feira de São Cristóvão",
+      "place_id": null,
+      "lat": -22.8971,
+      "lng": -43.2211,
+      "category": "mercado",
+      "cuisine": "nordestino",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El Centro Luiz Gonzaga de Tradições Nordestinas, mayor polo de cultura nordestina de Río, reúne cientos de puestos con carne de sol, baião de dois, tapioca y forró en vivo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.8971,-43.2211"
+    },
+    {
+      "name": "Armazém São Thiago",
+      "place_id": null,
+      "lat": -22.928,
+      "lng": -43.1875,
+      "category": "bar",
+      "cuisine": "brasileño / boteco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antiguo almacén de 1919 en Santa Teresa, hoy boteco conocido como Bar do Gomez. Conserva el mostrador de madera y mármol original y es Patrimonio Cultural de Río desde 2011.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.928,-43.1875"
+    },
+    {
+      "name": "Aconchego Carioca",
+      "place_id": null,
+      "lat": -22.9095,
+      "lng": -43.217,
+      "category": "bar",
+      "cuisine": "brasileño",
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar de la chef Kátia Barbosa en la Praça da Bandeira, creadora del célebre bolinho de feijoada. Fue el primer boteco carioca recomendado por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/en/rio-de-janeiro-region/rio-de-janeiro/restaurant/aconchego-carioca-praca-da-bandeira",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9095,-43.217"
+    },
+    {
+      "name": "Palaphita Kitch",
+      "place_id": null,
+      "lat": -22.974,
+      "lng": -43.2075,
+      "category": "quiosco",
+      "cuisine": "amazónico",
+      "tags": [],
+      "description": "Quiosco a orillas de la Laguna Rodrigo de Freitas con decoración de inspiración amazónica, antorchas y cócteles con ingredientes de la selva como cupuaçu y jambú.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.974,-43.2075"
+    },
+    {
+      "name": "Azumi",
+      "place_id": null,
+      "lat": -22.9836,
+      "lng": -43.2265,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El primer restaurante japonés de Río, abierto en 1989 por Isao Ohara. Cerró su histórica dirección de Copacabana en 2023 y reabrió en el Leblon, manteniendo su clientela fiel, que incluyó a Pelé.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-22.9836,-43.2265"
     }
   ],
   "targetPlaces": 40,

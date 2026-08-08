@@ -3,7 +3,7 @@
   "name": "Oaxaca",
   "country": "México",
   "tagline": "Tlayudas de puesto callejero, mezcal artesanal y una terraza con vista a Santo Domingo.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0653023,-96.7223764"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0653023,-96.7223764",
+      "distinction": null
     },
     {
       "name": "Mezcaloteca",
@@ -38,7 +39,8 @@
       "source_type": "timeout",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0661634,-96.7216111"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0661634,-96.7216111",
+      "distinction": null
     },
     {
       "name": "Tlamanalli",
@@ -55,7 +57,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0344101,-96.5188871"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0344101,-96.5188871",
+      "distinction": null
     },
     {
       "name": "Lechoncito de Oro",
@@ -72,7 +75,8 @@
       "source_type": "timeout",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0579866,-96.7269998"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0579866,-96.7269998",
+      "distinction": null
     },
     {
       "name": "Levadura de Olla",
@@ -89,7 +93,647 @@
       "source_type": "critic",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0642869,-96.7251397"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0642869,-96.7251397",
+      "distinction": null
+    },
+    {
+      "name": "Criollo",
+      "place_id": null,
+      "lat": 17.0648,
+      "lng": -96.7295,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño contemporáneo",
+      "tags": [
+        "50best",
+        "critic"
+      ],
+      "description": "Casa colonial declarada patrimonio de la UNESCO donde el chef Enrique Olvera (Pujol) y Luis Arellano ofrecen un menú de degustación diario centrado en ingredientes locales y de temporada, con tortillas hechas al momento en hornos de leña. Incluido en la plataforma World's 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Oaxaca-City/Criollo.html",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0648,-96.7295",
+      "distinction": null
+    },
+    {
+      "name": "Origen",
+      "place_id": null,
+      "lat": 17.0622,
+      "lng": -96.7203,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "El chef oaxaqueño Rodolfo Castellanos, ganador de Top Chef México, reinterpreta la cocina tradicional del estado con técnicas contemporáneas desde 2011, con platos como la paella de jaiba y el confit de pato enmolado.",
+      "source_url": "https://www.theinfatuation.com/oaxaca/reviews/origen",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0622,-96.7203",
+      "distinction": null
+    },
+    {
+      "name": "Pitiona",
+      "place_id": null,
+      "lat": 17.0628,
+      "lng": -96.723,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño / cocina de autor",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de autor del chef José Manuel Baños, formado en El Bulli y Arzak, servida en una casa restaurada con una terraza desde la que se ven las siete iglesias principales del centro histórico.",
+      "source_url": "https://www.saborearte.com.mx/pitiona-una-vision-moderna-de-la-cocina-oaxaquena-del-chef-jose-manuel-banos/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0628,-96.723",
+      "distinction": null
+    },
+    {
+      "name": "Los Danzantes",
+      "place_id": null,
+      "lat": 17.0649,
+      "lng": -96.7227,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante con más de dos décadas de historia en un patio colonial junto a Santo Domingo, que produce su propio mezcal para acompañar moles y platos oaxaqueños contemporáneos.",
+      "source_url": "https://losdanzantesoaxaca.com.mx/",
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0649,-96.7227",
+      "distinction": null
+    },
+    {
+      "name": "In Situ Mezcalería",
+      "place_id": null,
+      "lat": 17.0594213,
+      "lng": -96.7214473,
+      "category": "bar",
+      "cuisine": "mezcal",
+      "tags": [
+        "50best"
+      ],
+      "description": "Mezcalería de referencia cerca del zócalo con una de las cartas de mezcal más extensas y curadas de la ciudad, reconocida en la plataforma World's 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Oaxaca/In-Situ-Mezcaler%C3%ADa.html",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0594213,-96.7214473",
+      "distinction": null
+    },
+    {
+      "name": "Sabina Sabe",
+      "place_id": null,
+      "lat": 17.0636,
+      "lng": -96.7217,
+      "category": "bar",
+      "cuisine": "mezcal / coctelería",
+      "tags": [
+        "50best"
+      ],
+      "description": "Bar de mezcal y coctelería que toma su nombre de la curandera mazateca María Sabina, con cócteles que resaltan ingredientes locales; aparece en World's 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Oaxaca/Sabina-Sabe.html",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0636,-96.7217",
+      "distinction": null
+    },
+    {
+      "name": "Itanoni",
+      "place_id": null,
+      "lat": 17.0745,
+      "lng": -96.712,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño / maíz",
+      "tags": [
+        "critic"
+      ],
+      "description": "Tortillería y antojería fundada en 2001 por Amado Ramírez Leyva dedicada a preservar variedades nativas de maíz oaxaqueño, molido a mano para memelas, tlayudas y tetelas. Incluido en la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/oaxaca/oaxaca-de-juarez_2056768/restaurant/itanoni",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0745,-96.712",
+      "distinction": null
+    },
+    {
+      "name": "Boulenc",
+      "place_id": null,
+      "lat": 17.068,
+      "lng": -96.7195,
+      "category": "panaderia",
+      "cuisine": "panadería artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería y café de panes de fermentación natural, croissants y platillos internacionales en un patio cubierto; una de las paradas favoritas de la crítica gastronómica en Oaxaca.",
+      "source_url": "https://www.theinfatuation.com/oaxaca/reviews/boulenc",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.068,-96.7195",
+      "distinction": null
+    },
+    {
+      "name": "Las Quince Letras",
+      "place_id": null,
+      "lat": 17.0640614,
+      "lng": -96.7208145,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "michelin_bib_gourmand",
+        "critic"
+      ],
+      "description": "Restaurante de la chef Celia Florián abierto en 1992, célebre por su degustación de moles, especialmente un mole negro ahumado. Recibió el reconocimiento Bib Gourmand de la Guía Michelin en 2024, 2025 y 2026.",
+      "source_url": "https://guide.michelin.com/us/en/oaxaca/oaxaca-de-juarez_2056768/restaurant/las-quince-letras",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0640614,-96.7208145",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Catedral",
+      "place_id": null,
+      "lat": 17.0617,
+      "lng": -96.7235,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución oaxaqueña desde 1976 a una cuadra del zócalo, en una casona colonial, con moles, chiles rellenos y sopa de guías en un ambiente clásico.",
+      "source_url": "https://www.afar.com/places/restaurante-catedral-oaxaca",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0617,-96.7235",
+      "distinction": null
+    },
+    {
+      "name": "La Biznaga",
+      "place_id": null,
+      "lat": 17.0663,
+      "lng": -96.7233,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de ambiente relajado con patio al aire libre en García Vigil, con una carta de cocina oaxaqueña contemporánea y buena selección de mezcal.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0663,-96.7233",
+      "distinction": null
+    },
+    {
+      "name": "Zandunga",
+      "place_id": null,
+      "lat": 17.0663,
+      "lng": -96.7234,
+      "category": "restaurante",
+      "cuisine": "istmeño",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sabor istmeño en el centro de Oaxaca: nació de las comidas de fin de semana que preparaba Aurora Toledo y abrió formalmente como restaurante en 2002, con garnachas y cócteles de mezcal.",
+      "source_url": "https://guide.michelin.com/us/en/oaxaca/oaxaca-de-juarez_2056768/restaurant/zandunga",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0663,-96.7234",
+      "distinction": null
+    },
+    {
+      "name": "La Teca",
+      "place_id": null,
+      "lat": 17.0755,
+      "lng": -96.7105,
+      "category": "restaurante",
+      "cuisine": "istmeño",
+      "tags": [
+        "critic"
+      ],
+      "description": "Más de 30 años sirviendo la contundente cocina del Istmo de Tehuantepec, con estofados, mariscos y garnachas preparados por cocineras istmeñas.",
+      "source_url": "https://www.theinfatuation.com/oaxaca/reviews/la-teca",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0755,-96.7105",
+      "distinction": null
+    },
+    {
+      "name": "El Destilado",
+      "place_id": null,
+      "lat": 17.0645,
+      "lng": -96.7217,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño de autor",
+      "tags": [
+        "critic"
+      ],
+      "description": "Proyecto de los chefs Julio Aguilera, Jason Cox y Joseph Gilbert, exalumnos del restaurante Saison de San Francisco, con menús de degustación de cocina mexicana de autor y una extensa carta de mezcal.",
+      "source_url": "https://www.wbpstars.com/restaurant/el-destilado/",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0645,-96.7217",
+      "distinction": null
+    },
+    {
+      "name": "Almú",
+      "place_id": null,
+      "lat": 16.955,
+      "lng": -96.636,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño / cocina de humo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de humo en San Martín Tilcajete, a las afueras de la ciudad, con memelas, enmoladas y tlayudas cocinadas a fuego de leña; reconocido en la Guía Michelin.",
+      "source_url": "https://www.theinfatuation.com/oaxaca/reviews/almu",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=16.955,-96.636",
+      "distinction": null
+    },
+    {
+      "name": "Alfonsina",
+      "place_id": null,
+      "lat": 17.143,
+      "lng": -96.771,
+      "category": "fine_dining",
+      "cuisine": "oaxaqueño de autor",
+      "tags": [
+        "50best"
+      ],
+      "description": "El chef Jorge León, formado en Casa Oaxaca y Pujol, cocina en honor a su abuela Alfonsina en San Juan Bautista La Raya; aparece en World's 50 Best Discovery y en la Guía Michelin.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Oaxaca/Restaurante-Alfonsina.html",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.143,-96.771",
+      "distinction": null
+    },
+    {
+      "name": "Casa Crespo",
+      "place_id": null,
+      "lat": 17.0668,
+      "lng": -96.7183,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño / mole",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante, escuela de cocina y chocolatería del chef Óscar Carrizosa, con una degustación de siete moles servida sobre tortillas de maíz criollo maridada con mezcal.",
+      "source_url": "https://www.afar.com/places/casa-crespo-restaurant-oaxaca",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0668,-96.7183",
+      "distinction": null
+    },
+    {
+      "name": "Mayordomo",
+      "place_id": null,
+      "lat": 17.0577,
+      "lng": -96.7255,
+      "category": "chocolateria",
+      "cuisine": "chocolate",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Chocolatería fundada en 1956 por Salvador Flores en Tlacolula, con una fórmula de solo cuatro ingredientes (cacao tostado, azúcar, almendra y canela); una de las marcas de chocolate y mole más reconocidas de Oaxaca.",
+      "source_url": "https://chocolatemayordomo.com.mx/nuestra-historia/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0577,-96.7255",
+      "distinction": null
+    },
+    {
+      "name": "Mercado 20 de Noviembre",
+      "place_id": null,
+      "lat": 17.0589,
+      "lng": -96.7263,
+      "category": "mercado",
+      "cuisine": "carnes asadas / oaxaqueño",
+      "tags": [
+        "clasico",
+        "mercado"
+      ],
+      "description": "Mercado construido en 1882 cuyo 'pasillo de humo' concentra decenas de puestos de carnes asadas —tasajo, cecina, chorizo— que se comen con tortillas recién hechas entre el humo de los comales.",
+      "source_url": "https://foodandpleasure.com/pasillo-de-humo-oaxaca/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0589,-96.7263",
+      "distinction": null
+    },
+    {
+      "name": "Mercado Benito Juárez",
+      "place_id": null,
+      "lat": 17.0607,
+      "lng": -96.7252,
+      "category": "mercado",
+      "cuisine": "antojitos / chapulines",
+      "tags": [
+        "clasico",
+        "mercado"
+      ],
+      "description": "Mercado tradicional a una cuadra del zócalo donde se venden chapulines, tejate, tlayudas y dulces regionales; un rito gastronómico local desde hace más de un siglo.",
+      "source_url": "https://www.quepasaoaxaca.com/es/the-benito-juarez-market/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0607,-96.7252",
+      "distinction": null
+    },
+    {
+      "name": "Tlayudas Libres",
+      "place_id": null,
+      "lat": 17.0618,
+      "lng": -96.7202,
+      "category": "street_food",
+      "cuisine": "tlayudas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto nocturno con más de 50 años de historia en la calle de los Libres, considerado el original de las 'tlayudas de Libres', abierto de las 9 de la noche hasta la madrugada.",
+      "source_url": "https://www.afar.com/places/tlayudas-libres-oaxaca",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0618,-96.7202",
+      "distinction": null
+    },
+    {
+      "name": "Café Brújula",
+      "place_id": null,
+      "lat": 17.0612,
+      "lng": -96.7233,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena local de café de especialidad fundada en 2006, con comercio directo con cooperativas cafetaleras de la Sierra Sur de Oaxaca, incluida la mezcla 'Mujeres Voladoras' producida enteramente por mujeres.",
+      "source_url": "https://cafebrujula.com/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0612,-96.7233",
+      "distinction": null
+    },
+    {
+      "name": "La Casa de la Abuela",
+      "place_id": null,
+      "lat": 17.061,
+      "lng": -96.7238,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Con más de 25 años frente al zócalo y vista a la Catedral, sirve la cocina oaxaqueña más clásica, incluidos los cuatro moles (negro, amarillo, coloradito y almendrado).",
+      "source_url": "http://www.protocolo.com.mx/gourmet/la-casa-de-la-abuela-una-ventana-a-los-sabores-tradicionales-de-oaxaca/",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.061,-96.7238",
+      "distinction": null
+    },
+    {
+      "name": "El Mesón Oaxaqueño",
+      "place_id": null,
+      "lat": 17.0609,
+      "lng": -96.724,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño / tlayudas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante clásico en una esquina del zócalo especializado en tlayudas, moles y mezcal, popular tanto entre locales como visitantes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0609,-96.724",
+      "distinction": null
+    },
+    {
+      "name": "Memelas Doña Vale",
+      "place_id": null,
+      "lat": 17.0505,
+      "lng": -96.7345,
+      "category": "street_food",
+      "cuisine": "memelas",
+      "tags": [
+        "tv_show",
+        "critic"
+      ],
+      "description": "Puesto de memelas de Valentina 'Doña Vale' Hernández en la Central de Abastos, con más de 30 años de historia; sus memelas con asiento, frijol y quesillo aparecieron en la serie 'Street Food: Latin America' de Netflix.",
+      "source_url": "https://www.theinfatuation.com/oaxaca/reviews/memelas-dona-vale",
+      "source_type": "tv_show",
+      "source_type_secondary": "critic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0505,-96.7345",
+      "distinction": null
+    },
+    {
+      "name": "Marco Polo",
+      "place_id": null,
+      "lat": 17.0685,
+      "lng": -96.7185,
+      "category": "restaurante",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de mariscos con jardín-patio desde hace décadas, con camarones y pescado al horno de ladrillo, un clásico oaxaqueño para el desayuno o la comida.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0685,-96.7185",
+      "distinction": null
+    },
+    {
+      "name": "La Cocina de Humo",
+      "place_id": null,
+      "lat": 17.0645,
+      "lng": -96.7245,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño de la sierra",
+      "tags": [
+        "50best"
+      ],
+      "description": "Segundo proyecto de la chef Thalía Barrios García, que recrea una cocina serrana tradicional con comal, metate y técnicas ancestrales de cocción; incluida en World's 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Oaxaca/La-Cocina-de-Humo.html",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0645,-96.7245",
+      "distinction": null
+    },
+    {
+      "name": "La Olla",
+      "place_id": null,
+      "lat": 17.0655,
+      "lng": -96.7215,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "A dos cuadras de Santo Domingo, la chef Pilar Cabrera dirige desde hace más de 20 años este restaurante de cocina oaxaqueña, continental y opciones vegetarianas.",
+      "source_url": "https://laolla.com.mx/",
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0655,-96.7215",
+      "distinction": null
+    },
+    {
+      "name": "Txalaparta",
+      "place_id": null,
+      "lat": 17.0598,
+      "lng": -96.7228,
+      "category": "bar",
+      "cuisine": "mezcal / bar",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Bar de mezcal y cerveza artesanal con terraza en la azotea, ambiente relajado al atardecer y pista de baile por la noche; una parada habitual en las rutas de mezcal de la ciudad.",
+      "source_url": "https://everythingmezcal.com/oaxaca/txalaparta-bar-restaurant/",
+      "source_type": "influencer",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0598,-96.7228",
+      "distinction": null
+    },
+    {
+      "name": "Los Pacos",
+      "place_id": null,
+      "lat": 17.07,
+      "lng": -96.715,
+      "category": "restaurante",
+      "cuisine": "mole",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante emblemático fundado en 1985 por Francisco Canseco y 'Doña Soco', famoso por su degustador de los siete moles oaxaqueños tradicionales, hoy dirigido por Laura Canseco Florián.",
+      "source_url": "https://lospacosoaxaca.com/nosotros",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.07,-96.715",
+      "distinction": null
+    },
+    {
+      "name": "La Popular",
+      "place_id": null,
+      "lat": 17.0613,
+      "lng": -96.7237,
+      "category": "cafeteria",
+      "cuisine": "café / desayunos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería local sencilla en García Vigil, favorita de los oaxaqueños por su comida casera de buen precio y servicio amable.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0613,-96.7237",
+      "distinction": null
+    },
+    {
+      "name": "Terranova",
+      "place_id": null,
+      "lat": 17.06,
+      "lng": -96.7235,
+      "category": "restaurante",
+      "cuisine": "oaxaqueño",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Restaurante con más de dos décadas bajo los portales del zócalo, con música de mariachi en vivo; Anthony Bourdain se detuvo aquí durante su visita a Oaxaca en 'Parts Unknown'.",
+      "source_url": "https://eatlikebourdain.com/anthony-bourdain-in-oaxaca/",
+      "source_type": "bourdain",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.06,-96.7235",
+      "distinction": null
+    },
+    {
+      "name": "Nieves de la Soledad",
+      "place_id": null,
+      "lat": 17.0624,
+      "lng": -96.7267,
+      "category": "heladeria",
+      "cuisine": "nieves / helados",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Frente a la Basílica de la Soledad, en el Jardín Sócrates, varias neverías artesanales preparan nieves desde 1930 con más de 50 sabores, incluidos leche quemada y hoja santa.",
+      "source_url": "https://oaxaca.eluniversal.com.mx/mas-de-oaxaca/nieves-de-la-soledad-mas-de-50-sabores-que-tienes-que-probar-en-esta-imperdible-parada-de-oaxaca/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0624,-96.7267",
+      "distinction": null
+    },
+    {
+      "name": "Cafeto & Baristas",
+      "place_id": null,
+      "lat": 17.0655,
+      "lng": -96.7195,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafetería pequeña de tres mesas a dos cuadras de Santo Domingo, enfocada en café de la Costa de Oaxaca y métodos de extracción manual desde 2014.",
+      "source_url": "https://en.cafetoybaristas.com/",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0655,-96.7195",
+      "distinction": null
+    },
+    {
+      "name": "Los Tacos de Esme",
+      "place_id": null,
+      "lat": 17.0655,
+      "lng": -96.73,
+      "category": "street_food",
+      "cuisine": "tacos",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Taquería familiar tipo 'hole in the wall' en el barrio de Santa María del Marquesado, con tortillas, guisos y salsas hechos al momento; muy recomendada por guías locales de tacos en Oaxaca.",
+      "source_url": "https://oaxacatraveltips.com/best-tacos-oaxaca/",
+      "source_type": "influencer",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=17.0655,-96.73",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

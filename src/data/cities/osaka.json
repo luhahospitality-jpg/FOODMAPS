@@ -3,7 +3,7 @@
   "name": "Osaka",
   "country": "Japón",
   "tagline": "Takoyaki desde 1972 en Dotonbori, y el okonomiyaki con Bib Gourmand que siempre tiene fila.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6690306,135.5015715"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6690306,135.5015715",
+      "distinction": null
     },
     {
       "name": "Kiji",
@@ -82,7 +83,8 @@
       "source_type": "bourdain",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6687933,135.5014975"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6687933,135.5014975",
+      "distinction": null
     },
     {
       "name": "Genrokuzushi",
@@ -99,7 +101,689 @@
       "source_type": "classic",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6766040,135.5013180"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6766040,135.5013180",
+      "distinction": null
+    },
+    {
+      "name": "Hajime",
+      "place_id": null,
+      "lat": 34.6825,
+      "lng": 135.485,
+      "category": "fine_dining",
+      "cuisine": "francés / innovador",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina francesa de vanguardia del chef Hajime Yoneda en Edobori; alcanzó las tres estrellas Michelin en 2009, en tiempo récord desde su apertura.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6825,135.485",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Taian",
+      "place_id": null,
+      "lat": 34.6871,
+      "lng": 135.4995,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki de precisión del chef Hitoshi Takahata en un local discreto de Osaka; mantiene tres estrellas Michelin desde 2011.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6871,135.4995",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Fujiya 1935",
+      "place_id": null,
+      "lat": 34.6818,
+      "lng": 135.5215,
+      "category": "fine_dining",
+      "cuisine": "japonés / mediterráneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de autor que funde técnica japonesa e influencias mediterráneas; el chef Tetsuya Fujiwara es cuarta generación de una familia de restauradores que abrió su primer local en 1935.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6818,135.5215",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Koryu",
+      "place_id": null,
+      "lat": 34.6957,
+      "lng": 135.4952,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki íntimo en la zona de Kitashinchi con capacidad para apenas diez comensales; ha sostenido distinción Michelin durante más de una década.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6957,135.4952",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Sushi Sanshin",
+      "place_id": null,
+      "lat": 34.6735,
+      "lng": 135.5183,
+      "category": "fine_dining",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Barra de sushi de solo ocho asientos que aprovecha la luz natural diurna; una estrella Michelin y varios años consecutivos de premio Gault et Millau.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6735,135.5183",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Naniwa Kappo Kigawa",
+      "place_id": null,
+      "lat": 34.6688,
+      "lng": 135.5033,
+      "category": "fine_dining",
+      "cuisine": "japonés / kappo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina kappo tradicional en pleno Dotonbori, reconocida por la Guía Michelin, donde el chef prepara cada plato de temporada ante los comensales en la barra.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6688,135.5033",
+      "distinction": null
+    },
+    {
+      "name": "Endo Sushi",
+      "place_id": null,
+      "lat": 34.6875,
+      "lng": 135.4636,
+      "category": "seafood",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sushi-ya centenario dentro del antiguo mercado central de pescado de Osaka, célebre por su atún fresquísimo y su sopa de almejas con miso rojo.",
+      "source_url": "https://en.japantravel.com/osaka/endo-sushi/8428",
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6875,135.4636",
+      "distinction": null
+    },
+    {
+      "name": "Yoshino Zushi",
+      "place_id": null,
+      "lat": 34.6825,
+      "lng": 135.501,
+      "category": "seafood",
+      "cuisine": "japonés / hako-zushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1841 en el barrio de Senba, es la casa que perfeccionó el hako-zushi (sushi prensado en caja), un estilo característico de Osaka distinto al nigiri de Tokio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6825,135.501",
+      "distinction": null
+    },
+    {
+      "name": "Kushikatsu Daruma Shinsekai Sohonten",
+      "place_id": null,
+      "lat": 34.6524,
+      "lng": 135.5063,
+      "category": "street_food",
+      "cuisine": "japonés / kushikatsu",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local original de 1929 en Shinsekai, cuna del kushikatsu; su mascota con el cartel de 'prohibido mojar dos veces' es un ícono del barrio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6524,135.5063",
+      "distinction": null
+    },
+    {
+      "name": "Kuromon Ichiba Market",
+      "place_id": null,
+      "lat": 34.6656,
+      "lng": 135.5069,
+      "category": "mercado",
+      "cuisine": "japonés / mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Conocido como 'la cocina de Osaka', este mercado cubierto de 580 metros nació en 1822 junto al templo Enmyoji y hoy reúne marisco fresco, fugu y puestos de takoyaki y okonomiyaki.",
+      "source_url": "https://www.kanpai-japan.com/osaka/kuromon",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6656,135.5069",
+      "distinction": null
+    },
+    {
+      "name": "Wanaka",
+      "place_id": null,
+      "lat": 34.6656,
+      "lng": 135.5023,
+      "category": "street_food",
+      "cuisine": "japonés / takoyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las cadenas de takoyaki más longevas de Osaka, fundada en 1952 cerca de Namba; su masa cargada de dashi le dio fama en todo Japón.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6656,135.5023",
+      "distinction": null
+    },
+    {
+      "name": "Aizuya",
+      "place_id": null,
+      "lat": 34.6363,
+      "lng": 135.487,
+      "category": "street_food",
+      "cuisine": "japonés / takoyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En el barrio de Tamade, esta casa fundada en 1933 se considera el lugar de nacimiento del takoyaki, creado por Tomekichi Endo; lo sirven sin salsa para resaltar el sabor del pulpo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6363,135.487",
+      "distinction": null
+    },
+    {
+      "name": "Kukuru",
+      "place_id": null,
+      "lat": 34.6686,
+      "lng": 135.5019,
+      "category": "street_food",
+      "cuisine": "japonés / takoyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de takoyaki en Dotonbori reconocible por su enorme escultura de pulpo sobre la fachada, uno de los símbolos fotografiados del barrio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6686,135.5019",
+      "distinction": null
+    },
+    {
+      "name": "Mizuno",
+      "place_id": null,
+      "lat": 34.6682,
+      "lng": 135.5012,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Okonomiyaki desde 1945 en el mismo local de tres plantas en Dotonbori, reconstruido tras los bombardeos; Bib Gourmand ininterrumpido desde 2016.",
+      "source_url": "https://dishes-japan.com/food-and-drinks/okonomiyaki-mizuno/",
+      "source_type": null,
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6682,135.5012",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Chibo",
+      "place_id": null,
+      "lat": 34.6691,
+      "lng": 135.502,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Okonomiyaki fundado en 1973 que ocupa un edificio entero sobre el canal de Dotonbori, con más de 70 sucursales por Japón surgidas desde este local original.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6691,135.502",
+      "distinction": null
+    },
+    {
+      "name": "Kinryu Ramen",
+      "place_id": null,
+      "lat": 34.6688,
+      "lng": 135.5025,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1982 en Dotonbori, popularizó el caldo tonkotsu en Osaka; su fachada con un gran dragón dorado tridimensional es uno de los puntos más fotografiados de la zona y abre las 24 horas.",
+      "source_url": null,
+      "source_type": "classic",
+      "source_type_secondary": "viral_social",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6688,135.5025",
+      "distinction": null
+    },
+    {
+      "name": "Kamukura",
+      "place_id": null,
+      "lat": 34.669,
+      "lng": 135.5027,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de ramen nacida en Osaka con un caldo más ligero a base de vegetales, controlado por un 'sumiller de sopa' que mantiene el sabor uniforme en todas sus tiendas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.669,135.5027",
+      "distinction": null
+    },
+    {
+      "name": "Dotonbori Imai Honten",
+      "place_id": null,
+      "lat": 34.6689,
+      "lng": 135.5008,
+      "category": "fast_food",
+      "cuisine": "japonés / udon",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Udonería fundada en 1946 en un edificio tradicional de tejas oscuras; su kitsune udon con un dashi dorado de algas de Hokkaido y caballa de Kyushu es su plato insignia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6689,135.5008",
+      "distinction": null
+    },
+    {
+      "name": "Tsuruichi",
+      "place_id": null,
+      "lat": 34.6663,
+      "lng": 135.5323,
+      "category": "restaurante",
+      "cuisine": "coreano-japonés / yakiniku",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Yakiniku histórico en Tsuruhashi, el barrio coreano de Osaka, con una salsa de la casa que se mantiene sin cambios desde los años 40.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6663,135.5323",
+      "distinction": null
+    },
+    {
+      "name": "Izakaya Tokitame",
+      "place_id": null,
+      "lat": 34.6958,
+      "lng": 135.488,
+      "category": "bar",
+      "cuisine": "japonés / izakaya",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Izakaya de barrio cerca de la estación de Fukushima con sashimi y pollo tataki de granja local, reconocida con el Bib Gourmand de la Guía Michelin.",
+      "source_url": "https://lastminutejapan.com/areas/japan/osaka/fukushima/articles/izakaya_tokitame",
+      "source_type": null,
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6958,135.488",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Ajinoya",
+      "place_id": null,
+      "lat": 34.6669,
+      "lng": 135.5014,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Okonomiyaki cerca de Dotonbori que sirve desde 1965, con Bib Gourmand desde la primera guía de Kioto/Osaka en 2016; cocinan cada plancha frente al cliente.",
+      "source_url": "https://ajinoya-okonomiyaki.com/en/",
+      "source_type": null,
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6669,135.5014",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Yaekatsu",
+      "place_id": null,
+      "lat": 34.6519,
+      "lng": 135.506,
+      "category": "street_food",
+      "cuisine": "japonés / kushikatsu",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kushikatsu de 1949 en Shinsekai, el favorito de los vecinos frente a las colas de Daruma; su rebozado esponjoso lleva ñame de la zona.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6519,135.506",
+      "distinction": null
+    },
+    {
+      "name": "Jiyuken",
+      "place_id": null,
+      "lat": 34.6665,
+      "lng": 135.5027,
+      "category": "restaurante",
+      "cuisine": "yoshoku / curry",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1910 en Namba, es considerado el primer restaurante de estilo occidental (yoshoku) de Osaka; su curry mixto con huevo crudo lleva cuatro generaciones sin cambiar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6665,135.5027",
+      "distinction": null
+    },
+    {
+      "name": "Arabiya Coffee",
+      "place_id": null,
+      "lat": 34.6684,
+      "lng": 135.5025,
+      "category": "cafeteria",
+      "cuisine": "café / kissaten",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kissaten (cafetería tradicional japonesa) de 1951 cerca del templo Hozenji, famosa por su café de filtro de tela y su sándwich de tamagoyaki; conserva la tostadora manual original en el piso superior.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6684,135.5025",
+      "distinction": null
+    },
+    {
+      "name": "Bar Nayuta",
+      "place_id": null,
+      "lat": 34.6725,
+      "lng": 135.4998,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "critico"
+      ],
+      "description": "Speakeasy sin carta de cócteles en Nishishinsaibashi: el bartender crea un trago a medida según el espíritu que pidas. Entró en la lista extendida de Asia's 50 Best Bars 2025.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Japan/Osaka/Bar-Nayuta.html",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6725,135.4998",
+      "distinction": null
+    },
+    {
+      "name": "Genpin Hozenji Sohonten",
+      "place_id": null,
+      "lat": 34.6685,
+      "lng": 135.5022,
+      "category": "seafood",
+      "cuisine": "japonés / fugu",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Especialista en fugu (pez globo) nacido en Osaka hace más de cuatro décadas, con más de 130 chefs licenciados en toda su red; esta sucursal está junto al templo Hozenji.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6685,135.5022",
+      "distinction": null
+    },
+    {
+      "name": "Ayamuya",
+      "place_id": null,
+      "lat": 34.6952,
+      "lng": 135.4885,
+      "category": "fine_dining",
+      "cuisine": "japonés / yakitori",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El único yakitori de Osaka con estrella Michelin, en una calle tranquila de Fukushima; el chef ajusta brasa, sal y corte según cada pieza de pollo Tamba Jidori.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6952,135.4885",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Soba Takama",
+      "place_id": null,
+      "lat": 34.7089,
+      "lng": 135.5148,
+      "category": "fine_dining",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Soba con una estrella Michelin a precios sorprendentemente bajos, a pocos minutos de la estación Tenjinbashisuji Rokuchome; solo abre unas horas al mediodía.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.7089,135.5148",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ayamedo",
+      "place_id": null,
+      "lat": 34.6712,
+      "lng": 135.5178,
+      "category": "restaurante",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Especialista en soba instalado en una antigua casa de comerciantes de la era Showa, con Bib Gourmand de la Guía Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6712,135.5178",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Tonkatsu Fujii",
+      "place_id": null,
+      "lat": 34.7278,
+      "lng": 135.5488,
+      "category": "restaurante",
+      "cuisine": "japonés / tonkatsu",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Barra de solo siete asientos en Asahi-ku donde preparan el tonkatsu a la vista del cliente; solo acepta reservas online, sin llamadas ni walk-ins. Bib Gourmand de la Guía Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.7278,135.5488",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Kura Sushi Nakamozu",
+      "place_id": null,
+      "lat": 34.5474,
+      "lng": 135.5297,
+      "category": "fast_food",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En este local de Nakamozu, Sakai, abrió en 1984 el primer sushi de cinta transportadora de la cadena Kura Sushi, fundada en Osaka en 1977 y hoy expandida por medio mundo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.5474,135.5297",
+      "distinction": null
+    },
+    {
+      "name": "Chukasoba Mugen",
+      "place_id": null,
+      "lat": 34.6933,
+      "lng": 135.4788,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Ramen de caldo casero en Fukushima-ku, con siete Bib Gourmand consecutivos y presencia recurrente en el ranking Top 100 Ramen de Japón.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6933,135.4788",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Rikuro Ojisan no Mise",
+      "place_id": null,
+      "lat": 34.6656,
+      "lng": 135.5008,
+      "category": "dessert",
+      "cuisine": "repostería / cheesecake",
+      "tags": [
+        "clasico",
+        "viral_tiktok"
+      ],
+      "description": "Tienda de Namba abierta en 1957 que reinventó el cheesecake japonés en 1984: esponjoso, tembloroso y con el rostro del 'tío Rikuro' en la caja; se volvió viral en redes por sus filas y su textura.",
+      "source_url": "https://en.hoshinoresorts.com/guide/area/kinki/rikuro/",
+      "source_type": "classic",
+      "source_type_secondary": "viral_social",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6656,135.5008",
+      "distinction": null
+    },
+    {
+      "name": "Temmabashi Fujikawa",
+      "place_id": null,
+      "lat": 34.6975,
+      "lng": 135.5182,
+      "category": "fine_dining",
+      "cuisine": "japonés / tempura",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Tempura con una estrella Michelin durante seis años consecutivos junto al río Okawa; usa aceite de semilla de algodón y una masa sin huevo, característica del estilo de Osaka.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6975,135.5182",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tsuruhashi Fugetsu Honten",
+      "place_id": null,
+      "lat": 34.6647,
+      "lng": 135.524,
+      "category": "fast_food",
+      "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Nacido en la posguerra en Tsuruhashi, popularizó el modanyaki (okonomiyaki con fideos) y fue pionero en añadir kimchi a la mezcla; hoy tiene más de sesenta locales en la región de Kansai.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.6647,135.524",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

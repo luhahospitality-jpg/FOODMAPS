@@ -22,6 +22,146 @@
     "Levadura de Olla": {
       "cuisine": "Oaxacan",
       "description": "Chef Thalia Barrios García honors the recipes of San Mateo Yucutindoo in a colonial courtyard. Mentioned in the Michelin Guide."
+    },
+    "Criollo": {
+      "cuisine": "Contemporary Oaxacan",
+      "description": "A UNESCO-heritage colonial house where chef Enrique Olvera (of Pujol) and Luis Arellano serve a daily tasting menu built around local, seasonal ingredients, with tortillas made to order over wood-burning ovens. Featured on the World's 50 Best Discovery platform."
+    },
+    "Origen": {
+      "cuisine": "Contemporary Oaxacan",
+      "description": "Oaxacan chef Rodolfo Castellanos, winner of Top Chef Mexico, has reinterpreted the state's traditional cuisine with contemporary technique since 2011, with dishes like crab paella and mole-glazed duck confit."
+    },
+    "Pitiona": {
+      "cuisine": "Oaxacan / chef-driven",
+      "description": "Chef-driven tasting cuisine from José Manuel Baños, trained at El Bulli and Arzak, served in a restored house with a rooftop terrace overlooking the seven main churches of the historic center."
+    },
+    "Los Danzantes": {
+      "cuisine": "Oaxacan",
+      "description": "A restaurant with more than two decades of history in a colonial courtyard next to Santo Domingo, producing its own mezcal to pair with mole and contemporary Oaxacan dishes."
+    },
+    "In Situ Mezcalería": {
+      "cuisine": "mezcal",
+      "description": "A reference mezcalería near the zócalo with one of the city's most extensive and carefully curated mezcal lists, recognized on the World's 50 Best Discovery platform."
+    },
+    "Sabina Sabe": {
+      "cuisine": "mezcal / cocktails",
+      "description": "A mezcal and cocktail bar named after Mazatec healer María Sabina, with drinks built around local ingredients; featured on World's 50 Best Discovery."
+    },
+    "Itanoni": {
+      "cuisine": "Oaxacan / corn",
+      "description": "A tortillería and antojería founded in 2001 by Amado Ramírez Leyva devoted to preserving native varieties of Oaxacan corn, hand-ground for memelas, tlayudas and tetelas. Listed in the Michelin Guide."
+    },
+    "Boulenc": {
+      "cuisine": "artisanal bakery",
+      "description": "A bakery and café known for naturally leavened breads, croissants and international dishes served in a covered courtyard; a favorite stop for food critics visiting Oaxaca."
+    },
+    "Las Quince Letras": {
+      "cuisine": "Oaxacan",
+      "description": "Chef Celia Florián's restaurant, open since 1992, celebrated for its mole tasting flight, especially a smoky mole negro. Awarded the Michelin Guide's Bib Gourmand distinction in 2024, 2025 and 2026."
+    },
+    "Catedral": {
+      "cuisine": "Oaxacan",
+      "description": "An Oaxacan institution since 1976 a block from the zócalo, set in a colonial mansion, serving mole, chiles rellenos and squash-vine soup in a classic setting."
+    },
+    "La Biznaga": {
+      "cuisine": "Oaxacan",
+      "description": "A relaxed restaurant with an open-air patio on García Vigil, serving contemporary Oaxacan cooking alongside a solid mezcal selection."
+    },
+    "Zandunga": {
+      "cuisine": "Isthmus (Tehuantepec)",
+      "description": "Isthmus flavor in central Oaxaca: it grew out of the weekend meals Aurora Toledo used to cook and formally opened as a restaurant in 2002, serving garnachas and mezcal cocktails."
+    },
+    "La Teca": {
+      "cuisine": "Isthmus (Tehuantepec)",
+      "description": "More than 30 years serving the hearty cuisine of the Isthmus of Tehuantepec, with stews, seafood and garnachas prepared by Isthmus-born cooks."
+    },
+    "El Destilado": {
+      "cuisine": "chef-driven Oaxacan",
+      "description": "A project by chefs Julio Aguilera, Jason Cox and Joseph Gilbert, alumni of San Francisco's Saison, offering tasting menus of chef-driven Mexican cuisine alongside an extensive mezcal list."
+    },
+    "Almú": {
+      "cuisine": "Oaxacan / wood-fire cooking",
+      "description": "Wood-fire 'cocina de humo' in San Martín Tilcajete, just outside the city, serving memelas, enmoladas and tlayudas cooked over an open flame; recognized in the Michelin Guide."
+    },
+    "Alfonsina": {
+      "cuisine": "chef-driven Oaxacan",
+      "description": "Chef Jorge León, trained at Casa Oaxaca and Pujol, cooks in honor of his grandmother Alfonsina in San Juan Bautista La Raya; featured on World's 50 Best Discovery and in the Michelin Guide."
+    },
+    "Casa Crespo": {
+      "cuisine": "Oaxacan / mole",
+      "description": "A restaurant, cooking school and chocolate shop run by chef Óscar Carrizosa, offering a seven-mole tasting flight served over heirloom-corn tortillas and paired with mezcal."
+    },
+    "Mayordomo": {
+      "cuisine": "chocolate",
+      "description": "A chocolate shop founded in 1956 by Salvador Flores in Tlacolula, using a formula of just four ingredients (roasted cacao, sugar, almonds and cinnamon); one of Oaxaca's best-known chocolate and mole brands."
+    },
+    "Mercado 20 de Noviembre": {
+      "cuisine": "grilled meats / Oaxacan",
+      "description": "A market built in 1882 whose 'smoke corridor' concentrates dozens of grilled-meat stalls — tasajo, cecina, chorizo — eaten with fresh tortillas amid the smoke of the grills."
+    },
+    "Mercado Benito Juárez": {
+      "cuisine": "antojitos / chapulines",
+      "description": "A traditional market a block from the zócalo selling chapulines, tejate, tlayudas and regional sweets; a local culinary ritual for more than a century."
+    },
+    "Tlayudas Libres": {
+      "cuisine": "tlayudas",
+      "description": "A night stand with more than 50 years of history on Calle de los Libres, considered the original 'tlayudas de Libres', open from 9pm into the early morning."
+    },
+    "Café Brújula": {
+      "cuisine": "coffee",
+      "description": "A local specialty-coffee chain founded in 2006 with direct trade ties to growers' cooperatives in Oaxaca's Sierra Sur, including the 'Mujeres Voladoras' blend produced entirely by women."
+    },
+    "La Casa de la Abuela": {
+      "cuisine": "Oaxacan",
+      "description": "With more than 25 years overlooking the zócalo and the Cathedral, it serves the most classic Oaxacan cooking, including four kinds of mole (negro, amarillo, coloradito and almendrado)."
+    },
+    "El Mesón Oaxaqueño": {
+      "cuisine": "Oaxacan / tlayudas",
+      "description": "A classic restaurant on a corner of the zócalo specializing in tlayudas, mole and mezcal, popular with both locals and visitors."
+    },
+    "Memelas Doña Vale": {
+      "cuisine": "memelas",
+      "description": "Valentina 'Doña Vale' Hernández's memela stand in the Central de Abastos market, with more than 30 years of history; her memelas with asiento, beans and quesillo were featured in Netflix's 'Street Food: Latin America'."
+    },
+    "Marco Polo": {
+      "cuisine": "seafood",
+      "description": "A seafood restaurant with a decades-old garden patio, serving shrimp and brick-oven fish, a Oaxacan classic for breakfast or lunch."
+    },
+    "La Cocina de Humo": {
+      "cuisine": "Sierra Oaxacan",
+      "description": "Chef Thalía Barrios García's second restaurant, recreating a traditional Sierra kitchen with comal, metate and ancestral cooking techniques; featured on World's 50 Best Discovery."
+    },
+    "La Olla": {
+      "cuisine": "Oaxacan",
+      "description": "Two blocks from Santo Domingo, chef Pilar Cabrera has run this restaurant for more than 20 years, serving Oaxacan and continental cooking along with vegetarian options."
+    },
+    "Txalaparta": {
+      "cuisine": "mezcal / bar",
+      "description": "A mezcal and craft-beer bar with a rooftop terrace, relaxed at sunset and a dance floor by night; a regular stop on the city's mezcal-bar circuits."
+    },
+    "Los Pacos": {
+      "cuisine": "mole",
+      "description": "An emblematic restaurant founded in 1985 by Francisco Canseco and 'Doña Soco', known for its tasting flight of the seven traditional Oaxacan moles, now run by Laura Canseco Florián."
+    },
+    "La Popular": {
+      "cuisine": "coffee / breakfast",
+      "description": "A simple local café on García Vigil, a favorite among Oaxacans for its good-value home cooking and friendly service."
+    },
+    "Terranova": {
+      "cuisine": "Oaxacan",
+      "description": "A restaurant with more than two decades under the zócalo's arcades, featuring live mariachi music; Anthony Bourdain stopped here during his Oaxaca visit on 'Parts Unknown'."
+    },
+    "Nieves de la Soledad": {
+      "cuisine": "ice cream",
+      "description": "Facing the Basílica de la Soledad in the Jardín Sócrates, several artisanal ice-cream stands have been making nieves since 1930, with more than 50 flavors including leche quemada and hoja santa."
+    },
+    "Cafeto & Baristas": {
+      "cuisine": "specialty coffee",
+      "description": "A tiny three-table café two blocks from Santo Domingo, focused on coffee from the Oaxaca Coast and manual brewing methods since 2014."
+    },
+    "Los Tacos de Esme": {
+      "cuisine": "tacos",
+      "description": "A family-run hole-in-the-wall taquería in the Santa María del Marquesado neighborhood, with tortillas, fillings and salsas made to order; highly recommended by local Oaxaca taco guides."
     }
   }
 }

@@ -22,6 +22,146 @@
     "George Restaurant": {
       "cuisine": "Neapolitan",
       "description": "At the Grand Hotel Parker's, the only Michelin-starred dining room inside a hotel in Naples. Chef Domenico Candela's cuisine, with two stars since 2026."
+    },
+    "Gino Sorbillo": {
+      "cuisine": "Neapolitan",
+      "description": "Founded in 1935 by Gino Sorbillo's grandparents in the heart of Spaccanapoli, it's one of the most photographed pizzerias in the world, with lines that wrap around the block. Listed in the Michelin Guide."
+    },
+    "Pizzeria Di Matteo": {
+      "cuisine": "Neapolitan",
+      "description": "On Via dei Tribunali since the mid-20th century, it became famous when Bill Clinton sent someone out for its pizza during a G7 summit in Naples in 1994. Classic folded pizza and fried pizza."
+    },
+    "Antica Pizzeria Port'Alba": {
+      "cuisine": "Neapolitan",
+      "description": "Opened in 1738 next to the old city gate that gives it its name, it's considered the oldest pizzeria in the world. Past guests included Gabriele D'Annunzio and Benedetto Croce."
+    },
+    "Pizzeria Trianon da Ciro": {
+      "cuisine": "Neapolitan",
+      "description": "Open since 1923, almost directly across from L'Antica Pizzeria da Michele, with a grand marble-and-mosaic dining room. One of the historic temples of Neapolitan pizza."
+    },
+    "Pizzeria Starita a Materdei": {
+      "cuisine": "Neapolitan",
+      "description": "A Materdei pizzeria that opened in 1901 and is famous for its montanara (fried, then baked pizza). The neighborhood was the setting for \"L'oro di Napoli,\" Vittorio De Sica's film with Sofia Loren."
+    },
+    "50 Kalò di Ciro Salvo": {
+      "cuisine": "Neapolitan",
+      "description": "Ciro Salvo's pizzeria on Piazza Sannazaro near Mergellina, ranked year after year among the world's best pizzerias by the 50 Top Pizza guide. No reservations accepted."
+    },
+    "Pizzeria La Notizia": {
+      "cuisine": "Neapolitan",
+      "description": "Master pizzaiolo Enzo Coccia opened this pizzeria in the Vomero district in 1994, and it became the first pizzeria ever included in Italy's Michelin Guide."
+    },
+    "Concettina ai Tre Santi": {
+      "cuisine": "Neapolitan",
+      "description": "A family pizzeria in the Rione Sanità since 1951, now run by Ciro Oliva, who turned it into a social-inclusion project that employs young people from the neighborhood. Covered by The New York Times and CNN."
+    },
+    "10 Diego Vitagliano": {
+      "cuisine": "Neapolitan",
+      "description": "Neapolitan pizzaiolo Diego Vitagliano's pizzeria in the Bagnoli district, named best pizzeria in the world by the 50 Top Pizza guide in both 2023 and 2024."
+    },
+    "Antica Friggitoria La Masardona": {
+      "cuisine": "Neapolitan",
+      "description": "A temple of Neapolitan fried pizza near Porta Nolana since 1945, started by Anna Manfredi frying on the street with nothing more than a gas burner."
+    },
+    "Gran Caffè Gambrinus": {
+      "cuisine": "Neapolitan",
+      "description": "A historic 1860 café on Piazza Trieste e Trento, a literary salon that hosted Oscar Wilde, Hemingway, Gabriele D'Annunzio, and even Empress Sissi."
+    },
+    "Bar Mexico": {
+      "cuisine": "Neapolitan",
+      "description": "A historic bar on Piazza Dante, home to one of the most acclaimed espressos in Naples and birthplace of the \"crema di caffè\" topping served over short coffee."
+    },
+    "Antica Pasticceria Pintauro": {
+      "cuisine": "Neapolitan",
+      "description": "A pastry shop on Via Toledo open since 1785, credited with inventing the sfogliatella as it's known today."
+    },
+    "Sfogliatelle Attanasio": {
+      "cuisine": "Neapolitan",
+      "description": "A family bakery from 1930 steps from Napoli Centrale station, famous for pulling sfogliatelle riccia straight out of the wood-fired oven for each customer."
+    },
+    "Poppella": {
+      "cuisine": "Neapolitan",
+      "description": "A pastry shop in the Rione Sanità that invented the \"fiocco di neve,\" a cream-filled bun that went viral on social media and became a symbol of the neighborhood's revival."
+    },
+    "Trattoria da Nennella": {
+      "cuisine": "Neapolitan",
+      "description": "Founded in 1949 in the Quartieri Spagnoli by \"Nennella,\" the waiters sing, dance, and joke around between tables while serving pasta e patate. A viral phenomenon on TikTok and Instagram."
+    },
+    "Ristorante Umberto": {
+      "cuisine": "Neapolitan",
+      "description": "A family restaurant in Chiaia since 1916, now run by the fourth generation of the Di Porzio family. Classic Neapolitan cooking: ragù, braciole, and baccalà."
+    },
+    "Zi Teresa": {
+      "cuisine": "Neapolitan",
+      "description": "A seafood restaurant at the foot of Castel dell'Ovo, in the Borgo Marinari, founded by Teresa Fusco in the late 19th century."
+    },
+    "La Cantina di Triunfo": {
+      "cuisine": "Neapolitan",
+      "description": "The Triunfo family's old wine cellar on Riviera di Chiaia, pouring bulk wine from the Campi Flegrei alongside home-style Neapolitan cooking. A Slow Food favorite."
+    },
+    "Bar Nilo": {
+      "cuisine": "Neapolitan",
+      "description": "A bar in Spaccanapoli famous for its Maradona shrine, where a lock of the footballer's hair has been kept as a relic since 1990. Documented by Atlas Obscura."
+    },
+    "Tandem Ragù": {
+      "cuisine": "Neapolitan",
+      "description": "A restaurant in the historic center devoted entirely to Neapolitan ragù, with different cuts of meat slow-cooked for hours. A favorite among local food critics."
+    },
+    "Pizzeria Gorizia 1916": {
+      "cuisine": "Neapolitan",
+      "description": "Opened in 1916 in the Vomero district, it was the first pizzeria to open outside Naples' historic center. Now run by the fourth generation of the Grasso family."
+    },
+    "Aria Restaurant": {
+      "cuisine": "Neapolitan",
+      "description": "Chef Paolo Barrale's kitchen blends the traditions of his native Sicily with Campania. It earned a Michelin star just five months after opening in 2021."
+    },
+    "Veritas": {
+      "cuisine": "Neapolitan",
+      "description": "A one-Michelin-star restaurant on Corso Vittorio Emanuele, on the way up to the Vomero, with elegant reinterpretations of Neapolitan classics."
+    },
+    "Il Ristorante Alain Ducasse Napoli": {
+      "cuisine": "French",
+      "description": "Alain Ducasse's first restaurant in Italy, on the ninth floor of the Romeo hotel with views over the bay and Vesuvius. It earned a Michelin star in 2025."
+    },
+    "President": {
+      "cuisine": "Neapolitan",
+      "description": "In Pompeii, steps from the archaeological excavations, chef Paolo Gramaglia gives playful twists to Neapolitan classics. The city's only Michelin-starred restaurant."
+    },
+    "Gay-Odin": {
+      "cuisine": "Neapolitan",
+      "description": "An artisanal chocolate factory founded in 1894 by Piedmontese chocolatier Isidoro Odin in the Chiaia district. Its log-shaped \"foresta\" bar is a city classic."
+    },
+    "Hosteria Toledo": {
+      "cuisine": "Neapolitan",
+      "description": "An osteria in the Quartieri Spagnoli opened in 1951 by \"mamma Sosora,\" now run by three generations of women in the family. Recommended by Slow Food."
+    },
+    "Ristorante Dora": {
+      "cuisine": "Neapolitan",
+      "description": "In a Chiaia alleyway since 1973, the Ramaglia family's grilled-fish restaurant has counted Marcello Mastroianni among its regulars."
+    },
+    "Mercato di Porta Nolana": {
+      "cuisine": "Neapolitan",
+      "description": "A fish market of medieval origin next to the old city gate, known as \"ncopp'e mura.\" On the night of December 23rd it becomes the epicenter of Naples' Christmas Eve shopping."
+    },
+    "Friggitoria Fiorenzano": {
+      "cuisine": "Neapolitan",
+      "description": "A fried-food stall on the corner of the Pignasecca market, with the Fiorenzano family frying pizzas, arancini, and vegetables since 1897."
+    },
+    "Pizzeria da Attilio": {
+      "cuisine": "Neapolitan",
+      "description": "In the Pignasecca market since 1938, now run by the third generation of the Bachetti family. It cracked the top 20 of the 50 Top Pizza rankings without ever advertising."
+    },
+    "Osteria da Carmela": {
+      "cuisine": "Neapolitan",
+      "description": "A family osteria since 1967, set inside a former WWII air-raid shelter near the Archaeological Museum. No-frills, home-style Neapolitan cooking."
+    },
+    "Pasticceria Moccia": {
+      "cuisine": "Neapolitan",
+      "description": "A Chiaia bakery and pastry shop since 1936, celebrated for its babà with cream and wild strawberries. Its historic regulars included philosopher Benedetto Croce."
+    },
+    "Trattoria San Ferdinando": {
+      "cuisine": "Neapolitan",
+      "description": "Steps from the Teatro San Carlo and the Royal Palace, a classic trattoria favored after performances by opera singers and musicians."
     }
   }
 }

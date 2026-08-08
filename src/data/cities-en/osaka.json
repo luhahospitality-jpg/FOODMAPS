@@ -22,6 +22,146 @@
     "Genrokuzushi": {
       "cuisine": "Japanese / sushi",
       "description": "The spot that invented conveyor-belt sushi (kaiten-zushi) in 1958, an invention born in Osaka."
+    },
+    "Hajime": {
+      "cuisine": "French / innovative",
+      "description": "Avant-garde French fine dining by chef Hajime Yoneda in Edobori; reached three Michelin stars in 2009, in record time after opening."
+    },
+    "Taian": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Precise kaiseki by chef Hitoshi Takahata in a discreet Osaka space; has held three Michelin stars since 2011."
+    },
+    "Fujiya 1935": {
+      "cuisine": "Japanese / Mediterranean",
+      "description": "Signature cuisine blending Japanese technique with Mediterranean influences; chef Tetsuya Fujiwara is the fourth generation of a restaurant family whose first shop opened in 1935."
+    },
+    "Koryu": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Intimate kaiseki in the Kitashinchi district seating only about ten guests; has held Michelin recognition for more than a decade."
+    },
+    "Sushi Sanshin": {
+      "cuisine": "Japanese / sushi",
+      "description": "An eight-seat sushi counter that makes use of daytime natural light; one Michelin star and several consecutive years of the Gault et Millau prize."
+    },
+    "Naniwa Kappo Kigawa": {
+      "cuisine": "Japanese / kappo",
+      "description": "Traditional kappo cuisine right in Dotonbori, recognized by the Michelin Guide, where the chef prepares each seasonal dish in front of diners at the counter."
+    },
+    "Endo Sushi": {
+      "cuisine": "Japanese / sushi",
+      "description": "A century-old sushi shop inside Osaka's former central fish market, famed for its ultra-fresh tuna and red miso clam soup."
+    },
+    "Yoshino Zushi": {
+      "cuisine": "Japanese / hako-zushi",
+      "description": "Founded in 1841 in the Senba district, this is the house that perfected hako-zushi (box-pressed sushi), a distinctly Osaka style unlike Tokyo-style nigiri."
+    },
+    "Kushikatsu Daruma Shinsekai Sohonten": {
+      "cuisine": "Japanese / kushikatsu",
+      "description": "The original 1929 shop in Shinsekai, birthplace of kushikatsu; its mascot with the 'no double-dipping' sign is a neighborhood icon."
+    },
+    "Kuromon Ichiba Market": {
+      "cuisine": "Japanese / market",
+      "description": "Known as 'Osaka's kitchen', this 580-meter covered market traces back to 1822 near Enmyoji temple and today gathers fresh seafood, fugu, and takoyaki and okonomiyaki stalls."
+    },
+    "Wanaka": {
+      "cuisine": "Japanese / takoyaki",
+      "description": "One of Osaka's longest-running takoyaki chains, founded in 1952 near Namba; its dashi-heavy batter made it famous across Japan."
+    },
+    "Aizuya": {
+      "cuisine": "Japanese / takoyaki",
+      "description": "In the Tamade neighborhood, this shop founded in 1933 is considered the birthplace of takoyaki, created by Tomekichi Endo; it's served without sauce to highlight the octopus flavor."
+    },
+    "Kukuru": {
+      "cuisine": "Japanese / takoyaki",
+      "description": "A takoyaki stand in Dotonbori recognizable by its giant octopus sculpture on the facade, one of the neighborhood's most photographed symbols."
+    },
+    "Mizuno": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Okonomiyaki served since 1945 from the same three-story Dotonbori building, rebuilt after the wartime bombings; an unbroken Bib Gourmand since 2016."
+    },
+    "Chibo": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Okonomiyaki spot founded in 1973 occupying an entire building on the Dotonbori canal, the original location behind more than 70 branches across Japan."
+    },
+    "Kinryu Ramen": {
+      "cuisine": "Japanese / ramen",
+      "description": "Opened in 1982 in Dotonbori, it popularized tonkotsu broth in Osaka; its facade with a giant three-dimensional golden dragon is one of the most photographed spots in the area, and it's open 24 hours."
+    },
+    "Kamukura": {
+      "cuisine": "Japanese / ramen",
+      "description": "Osaka-born ramen chain with a lighter vegetable-based broth, overseen by a 'soup sommelier' who keeps the flavor consistent across every location."
+    },
+    "Dotonbori Imai Honten": {
+      "cuisine": "Japanese / udon",
+      "description": "Udon shop founded in 1946 in a traditional dark-tiled building; its kitsune udon with a golden dashi of Hokkaido kelp and Kyushu mackerel is its signature dish."
+    },
+    "Tsuruichi": {
+      "cuisine": "Korean-Japanese / yakiniku",
+      "description": "Historic yakiniku in Tsuruhashi, Osaka's Koreatown, with a house sauce that has remained unchanged since the 1940s."
+    },
+    "Izakaya Tokitame": {
+      "cuisine": "Japanese / izakaya",
+      "description": "Neighborhood izakaya near Fukushima Station serving sashimi and locally raised chicken tataki, recognized with the Michelin Guide's Bib Gourmand."
+    },
+    "Ajinoya": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Okonomiyaki spot near Dotonbori serving since 1965, with a Bib Gourmand since the first Kyoto/Osaka guide in 2016; each dish is cooked on the griddle in front of the customer."
+    },
+    "Yaekatsu": {
+      "cuisine": "Japanese / kushikatsu",
+      "description": "1949 kushikatsu spot in Shinsekai, the locals' favorite as an alternative to Daruma's lines; its fluffy batter is made with local yam."
+    },
+    "Jiyuken": {
+      "cuisine": "Yoshoku / curry",
+      "description": "Opened in 1910 in Namba, it's considered Osaka's first Western-style (yoshoku) restaurant; its mixed curry topped with a raw egg has stayed the same across four generations."
+    },
+    "Arabiya Coffee": {
+      "cuisine": "Coffee / kissaten",
+      "description": "A traditional Japanese kissaten from 1951 near Hozenji temple, famous for its nel-drip filter coffee and its tamagoyaki omelet sandwich; the original hand-crank roaster is still displayed upstairs."
+    },
+    "Bar Nayuta": {
+      "cuisine": "Cocktail bar",
+      "description": "A menu-less speakeasy cocktail bar in Nishishinsaibashi: the bartender crafts a bespoke drink based on the spirit you request. It entered the extended Asia's 50 Best Bars 2025 list."
+    },
+    "Genpin Hozenji Sohonten": {
+      "cuisine": "Japanese / fugu",
+      "description": "A fugu (pufferfish) specialist born in Osaka more than four decades ago, with over 130 licensed chefs across its network; this branch sits beside Hozenji temple."
+    },
+    "Ayamuya": {
+      "cuisine": "Japanese / yakitori",
+      "description": "Osaka's only Michelin-starred yakitori restaurant, on a quiet Fukushima street; the chef adjusts charcoal, salt, and cut for each piece of Tamba Jidori chicken."
+    },
+    "Soba Takama": {
+      "cuisine": "Japanese / soba",
+      "description": "Michelin one-star soba at surprisingly affordable prices, a short walk from Tenjinbashisuji Rokuchome Station; open for only a few hours at lunchtime."
+    },
+    "Ayamedo": {
+      "cuisine": "Japanese / soba",
+      "description": "A soba specialist housed in a former Showa-era merchant house, holding a Michelin Guide Bib Gourmand."
+    },
+    "Tonkatsu Fujii": {
+      "cuisine": "Japanese / tonkatsu",
+      "description": "A seven-seat counter in Asahi-ku where the tonkatsu is prepared in full view of the guest; online reservations only, no calls or walk-ins accepted. A Michelin Guide Bib Gourmand."
+    },
+    "Kura Sushi Nakamozu": {
+      "cuisine": "Japanese / sushi",
+      "description": "This Nakamozu, Sakai location opened in 1984 as the first conveyor-belt sushi restaurant of the Kura Sushi chain, founded in Osaka in 1977 and now spread across half the world."
+    },
+    "Chukasoba Mugen": {
+      "cuisine": "Japanese / ramen",
+      "description": "House-broth ramen in Fukushima-ku, with seven consecutive Bib Gourmand awards and recurring placement in Japan's Top 100 Ramen ranking."
+    },
+    "Rikuro Ojisan no Mise": {
+      "cuisine": "Bakery / cheesecake",
+      "description": "A Namba shop opened in 1957 that reinvented Japanese cheesecake in 1984: fluffy, jiggly, and stamped with 'Uncle Rikuro's' face on the box; it went viral on social media for its lines and texture."
+    },
+    "Temmabashi Fujikawa": {
+      "cuisine": "Japanese / tempura",
+      "description": "Tempura with one Michelin star for six consecutive years beside the Okawa river; it uses cottonseed oil and an egg-free batter, characteristic of the Osaka style."
+    },
+    "Tsuruhashi Fugetsu Honten": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "Born in postwar Tsuruhashi, it popularized modanyaki (okonomiyaki topped with noodles) and pioneered adding kimchi to the mix; it now has more than sixty locations across the Kansai region."
     }
   }
 }
