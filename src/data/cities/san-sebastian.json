@@ -3,7 +3,7 @@
   "name": "San Sebastián",
   "country": "España",
   "tagline": "Más estrellas Michelin por metro cuadrado que ninguna otra ciudad del mundo — y aun así, la barra de pintxos manda.",
-  "totalPlaces": 10,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -200,6 +200,572 @@
       "rank": 10,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3243247,-1.9849176"
+    },
+    {
+      "name": "Martín Berasategui",
+      "place_id": null,
+      "lat": 43.2668,
+      "lng": -2.0155,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "La casa madre de Martín Berasategui, el chef con más estrellas Michelin del mundo, a las puertas de Donostia en Lasarte-Oria. Tres estrellas Michelin desde 2001.",
+      "source_url": "https://guide.michelin.com/us/en/pais-vasco/lasarte-oria/restaurant/martin-berasategui",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.2668,-2.0155",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Elkano",
+      "place_id": null,
+      "lat": 43.303043,
+      "lng": -2.204937,
+      "category": "seafood",
+      "cuisine": "pescado a la brasa / vasco",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
+      "description": "El rodaballo a la brasa de Aitor Arregi en el puerto de Getaria, técnica que inventó su padre Pedro en 1964. Anthony Bourdain lo visitó en 'Parts Unknown' (2017) junto a Juan Mari Arzak; una estrella Michelin.",
+      "source_url": "https://www.continentscondiments.com/san-sebastian-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.303043,-2.204937",
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Eme Be Garrote",
+      "place_id": null,
+      "lat": 43.305,
+      "lng": -2.005,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "repsol"
+      ],
+      "description": "La sidrería reinventada de Martín Berasategui en el barrio de Ibaeta: parrilla, tartar y homenaje a la tradición sidrera vasca. Una estrella Michelin.",
+      "source_url": "https://www.sansebastian.travel/en/eme-garrote-restaurant/",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.305,-2.005",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Mirador de Ulía",
+      "place_id": null,
+      "lat": 43.327,
+      "lng": -1.967,
+      "category": "fine_dining",
+      "cuisine": "vasco / marisco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de mar con vistas panorámicas a toda la bahía desde las laderas del monte Ulía. Una estrella Michelin.",
+      "source_url": "https://www.miradordeulia.es/",
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.327,-1.967",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Alameda",
+      "place_id": null,
+      "lat": 43.3633,
+      "lng": -1.7962,
+      "category": "fine_dining",
+      "cuisine": "vasco",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Tercera generación al frente de una casa familiar en Hondarribia, con cocina contemporánea de la despensa del Bidasoa. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/pais-vasco/hondarribia/restaurant/alameda",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3633,-1.7962",
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Narru",
+      "place_id": null,
+      "lat": 43.3211,
+      "lng": -1.9812,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [
+        "repsol",
+        "critic"
+      ],
+      "description": "Cocina vasca contemporánea de mercado frente a la Catedral del Buen Pastor; el nombre rinde homenaje al bisabuelo pelotari del chef.",
+      "source_url": "https://www.guiarepsol.com/es/comer/nuestros-favoritos/restaurante-narru-donosti/",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3211,-1.9812",
+      "distinction": null
+    },
+    {
+      "name": "Rekondo",
+      "place_id": null,
+      "lat": 43.313147,
+      "lng": -2.011133,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Parrilla vasca clásica desde 1964 en la subida al monte Igeldo, con una de las bodegas más admiradas del mundo.",
+      "source_url": "https://winejournal.robertparker.com/rekondo",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.313147,-2.011133",
+      "distinction": null
+    },
+    {
+      "name": "Bodegón Alejandro",
+      "place_id": null,
+      "lat": 43.3224,
+      "lng": -1.9866,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Cocina vasca de temporada, caza y pescado, en un comedor sobrio del corazón de la Parte Vieja, con pequeños productores locales.",
+      "source_url": "https://www.novacircle.com/spots/europe/spain/euskadi/donostia-municipality/donostia-san-sebastian/bodegon-alejandro-26f4b7",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3224,-1.9866",
+      "distinction": null
+    },
+    {
+      "name": "Astelena 1997",
+      "place_id": null,
+      "lat": 43.3226,
+      "lng": -1.9844,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El pastel de hojaldre de merluza de la receta familiar, en un antiguo almacén de plátanos reconvertido en comedor de techos altos.",
+      "source_url": "https://www.thefork.com/restaurant/astelena-1997-r18858",
+      "source_type": null,
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3226,-1.9844",
+      "distinction": null
+    },
+    {
+      "name": "Zazpi Taberna",
+      "place_id": null,
+      "lat": 43.3199,
+      "lng": -1.9826,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [],
+      "description": "Gastrobar del chef Paul Arrillaga, con cocina vasca de producto y técnica actual cerca del Boulevard.",
+      "source_url": "https://www.zazpistm.com/en/restaurante",
+      "source_type": null,
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3199,-1.9826",
+      "distinction": null
+    },
+    {
+      "name": "Topa Sukalderia",
+      "place_id": null,
+      "lat": 43.322,
+      "lng": -1.9775,
+      "category": "restaurante",
+      "cuisine": "fusión vasco-latinoamericana",
+      "tags": [],
+      "description": "Fusión vasco-latinoamericana ideada por Andoni Luis Aduriz (Mugaritz), a pocos metros de la playa de Zurriola.",
+      "source_url": "https://www.topasukalderia.com/",
+      "source_type": null,
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.322,-1.9775",
+      "distinction": null
+    },
+    {
+      "name": "Branka",
+      "place_id": null,
+      "lat": 43.3107,
+      "lng": -2.0055,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [],
+      "description": "Terraza junto al Peine del Viento de Chillida, en la playa de Ondarreta, con cocina tradicional y de mercado.",
+      "source_url": "https://www.branka-tenis.com/",
+      "source_type": null,
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3107,-2.0055",
+      "distinction": null
+    },
+    {
+      "name": "La Perla",
+      "place_id": null,
+      "lat": 43.3161,
+      "lng": -1.9845,
+      "category": "restaurante",
+      "cuisine": "vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante y balneario centenario sobre la playa de La Concha, con vistas a toda la bahía desde sus terrazas.",
+      "source_url": "https://la-perla.net/en/la-perla-restaurant/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3161,-1.9845",
+      "distinction": null
+    },
+    {
+      "name": "Kaia-Kaipe",
+      "place_id": null,
+      "lat": 43.3038,
+      "lng": -2.2047,
+      "category": "seafood",
+      "cuisine": "pescado a la brasa",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Frente al puerto de Getaria desde 1962: parrilla de pescado, rodaballo y vivero propio de marisco.",
+      "source_url": "https://www.guiarepsol.com/es/comer/nuestros-favoritos/restaurante-kaia-kaipe-getaria/",
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3038,-2.2047",
+      "distinction": null
+    },
+    {
+      "name": "Casa Urola",
+      "place_id": null,
+      "lat": 43.3225,
+      "lng": -1.986,
+      "category": "restaurante",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Barra de pintxos clásicos y modernos y comedor de menú de mercado en la calle Fermín Calbetón. Bib Gourmand.",
+      "source_url": "https://www.theinfatuation.com/san-sebastian/reviews/casa-urola",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3225,-1.986",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Borda Berri",
+      "place_id": null,
+      "lat": 43.3226,
+      "lng": -1.9861,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Carrillera de ternera al vino y oreja de cerdo asada, cocinadas al momento en una de las barras más elogiadas de la Parte Vieja. No se reserva.",
+      "source_url": "https://www.theinfatuation.com/san-sebastian/reviews/borda-berri",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3226,-1.9861",
+      "distinction": null
+    },
+    {
+      "name": "Bar Nestor",
+      "place_id": null,
+      "lat": 43.3239,
+      "lng": -1.984,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Solo dos tortillas de patata al día y una ensalada de tomate que se agota en minutos, desde 1980. Sin reservas, hay que llegar temprano.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3239,-1.984",
+      "distinction": null
+    },
+    {
+      "name": "Txepetxa",
+      "place_id": null,
+      "lat": 43.324,
+      "lng": -1.9841,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Especialistas en boquerones en vinagre desde 1972, con una docena de coberturas posibles sobre cada pintxo.",
+      "source_url": "https://www.theinfatuation.com/san-sebastian/reviews/txepetxa",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.324,-1.9841",
+      "distinction": null
+    },
+    {
+      "name": "Bar Zeruko",
+      "place_id": null,
+      "lat": 43.3239,
+      "lng": -1.9839,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "critic"
+      ],
+      "description": "El bar más vanguardista de la Parte Vieja: humos, espumas y el bacalao ahumado en la propia barra.",
+      "source_url": "https://www.fionadunlop.com/blog/2013/10/bar-zeruko-san-sebastians-most-creative-pintxos/",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3239,-1.9839",
+      "distinction": null
+    },
+    {
+      "name": "Sirimiri",
+      "place_id": null,
+      "lat": 43.3229,
+      "lng": -1.9848,
+      "category": "bar",
+      "cuisine": "pintxos / fusión",
+      "tags": [],
+      "description": "Pintxo fusión y una carta de cócteles con mucho vermut, junto a la iglesia de Santa María.",
+      "source_url": "https://www.sansebastian.travel/bar-sirimiri/",
+      "source_type": null,
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3229,-1.9848",
+      "distinction": null
+    },
+    {
+      "name": "Casa Alcalde",
+      "place_id": null,
+      "lat": 43.3229,
+      "lng": -1.9847,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Jamón ibérico de bellota y chuletillas a la parrilla, entre carteles taurinos, frente a la iglesia de Santa María.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3229,-1.9847",
+      "distinction": null
+    },
+    {
+      "name": "Casa Vergara 1948",
+      "place_id": null,
+      "lat": 43.323,
+      "lng": -1.9846,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "El bacalao en todas sus formas —tortilla, rebozado, brocheta— desde 1948, frente a la Basílica de Santa María.",
+      "source_url": "https://www.theinfatuation.com/san-sebastian/reviews/casa-vergara",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.323,-1.9846",
+      "distinction": null
+    },
+    {
+      "name": "Aloña Berri",
+      "place_id": null,
+      "lat": 43.323,
+      "lng": -1.976,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Referencia del pintxo de autor en Gros desde los años 90, con el txipirón en equilibrio como bandera. Campeón del Concurso de Pintxos de San Sebastián.",
+      "source_url": "https://www.campeonatodepintxos.com/palmares/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.323,-1.976",
+      "distinction": null
+    },
+    {
+      "name": "Bergara",
+      "place_id": null,
+      "lat": 43.3235,
+      "lng": -1.9758,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cuna de pintxos premiados como el Txalupa y el Udaberri, en el barrio de Gros. Selección de la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/pais-vasco/es-donostia-san-sebastian/restaurant/bergara",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3235,-1.9758",
+      "distinction": null
+    },
+    {
+      "name": "Bodega Donostiarra",
+      "place_id": null,
+      "lat": 43.3222,
+      "lng": -1.9857,
+      "category": "bar",
+      "cuisine": "pintxos / vasco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de toda la vida en Fermín Calbetón, con conservas, pulpo y carne a la parrilla.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3222,-1.9857",
+      "distinction": null
+    },
+    {
+      "name": "La Viña",
+      "place_id": null,
+      "lat": 43.3242,
+      "lng": -1.9851,
+      "category": "cafeteria",
+      "cuisine": "pintxos / repostería vasca",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Aquí nació en 1990 la tarta de queso vasca que ha dado la vuelta al mundo, quemada por fuera y cremosa por dentro.",
+      "source_url": "https://en.wikipedia.org/wiki/Basque_cheesecake",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3242,-1.9851",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Churrería Santa Lucía",
+      "place_id": null,
+      "lat": 43.3236,
+      "lng": -1.9843,
+      "category": "cafeteria",
+      "cuisine": "churrería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Churros y chocolate desde 1957, junto a la Plaza de la Constitución, con bancos de madera y aire de otra época.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3236,-1.9843",
+      "distinction": null
+    },
+    {
+      "name": "Petritegi Sagardotegia",
+      "place_id": null,
+      "lat": 43.29068,
+      "lng": -1.94097,
+      "category": "restaurante",
+      "cuisine": "sidrería vasca",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Caserío sidrero desde 1526 en Astigarraga: chuletón, tortilla y sidra directa del kupela en temporada de txotx.",
+      "source_url": "https://www.petritegi.com/en/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.29068,-1.94097",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de la Bretxa",
+      "place_id": null,
+      "lat": 43.3221,
+      "lng": -1.9871,
+      "category": "mercado",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado cubierto desde 1870 en plena Parte Vieja, con pescaderías, carnicerías y puestos de toda la vida.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3221,-1.9871",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de San Martín",
+      "place_id": null,
+      "lat": 43.3183,
+      "lng": -1.982,
+      "category": "mercado",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "El mercado con más vida de Donostia: fruta, verdura, pescado fresco de lonja y pan, en pleno centro.",
+      "source_url": "https://www.sanmartinmerkatua.com",
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=43.3183,-1.982",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,

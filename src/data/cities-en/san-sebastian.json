@@ -22,6 +22,146 @@
     "Mugaritz": {
       "cuisine": "Basque",
       "description": "A 20-course tasting menu that challenges what a restaurant even is, from chef Andoni Luis Aduriz, in Errenteria."
+    },
+    "Amelia by Paulo Airaudo": {
+      "cuisine": "Basque",
+      "description": "Seasonal cooking built on small local producers, from Italian-Argentine chef Paulo Airaudo. Two Michelin stars."
+    },
+    "Kokotxa": {
+      "cuisine": "Basque",
+      "description": "Traditional Basque cooking brought up to date, right in the heart of the Old Town. One Michelin star."
+    },
+    "Gandarias": {
+      "cuisine": "pintxos / Basque",
+      "description": "A renovated classic: pig's ear and Idiazábal cheese risotto sit alongside the everyday pintxos."
+    },
+    "El Tamboril": {
+      "cuisine": "pintxos",
+      "description": "The most-ordered battered prawn pintxo on Calle Pescadería."
+    },
+    "La Cepa": {
+      "cuisine": "pintxos",
+      "description": "A classic Old Town bar, with a mushroom pintxo as simple as it is irresistible."
+    },
+    "Martín Berasategui": {
+      "cuisine": "Basque",
+      "description": "The home restaurant of Martín Berasategui, the chef with more Michelin stars than anyone alive, just outside Donostia in Lasarte-Oria. Three Michelin stars since 2001."
+    },
+    "Elkano": {
+      "cuisine": "grilled fish / Basque",
+      "description": "Aitor Arregi's grilled turbot in the fishing port of Getaria, a technique his father Pedro invented in 1964. Anthony Bourdain visited on 'Parts Unknown' (2017) alongside Juan Mari Arzak; one Michelin star."
+    },
+    "Eme Be Garrote": {
+      "cuisine": "Basque",
+      "description": "Martín Berasategui's reinvented cider house in the Ibaeta area: grill, tartare, and a nod to Basque cider-house tradition. One Michelin star."
+    },
+    "Mirador de Ulía": {
+      "cuisine": "Basque / seafood",
+      "description": "Sea-driven cooking with panoramic bay views from the slopes of Mount Ulía. One Michelin star."
+    },
+    "Alameda": {
+      "cuisine": "Basque",
+      "description": "Third generation at the helm of a family restaurant in Hondarribia, with contemporary cooking drawn from the Bidasoa valley's pantry. One Michelin star."
+    },
+    "Narru": {
+      "cuisine": "Basque",
+      "description": "Contemporary market-driven Basque cooking across from the Buen Pastor Cathedral; the name honors the chef's great-grandfather, a professional pelota player."
+    },
+    "Rekondo": {
+      "cuisine": "Basque",
+      "description": "A classic Basque grill house since 1964 on the road up Mount Igeldo, with one of the most admired wine cellars in the world."
+    },
+    "Bodegón Alejandro": {
+      "cuisine": "Basque",
+      "description": "Seasonal Basque cooking, game, and fish, in an understated dining room in the heart of the Old Town, sourced from small local producers."
+    },
+    "Astelena 1997": {
+      "cuisine": "Basque",
+      "description": "A hake puff-pastry pie made from a family recipe, served in a former banana warehouse turned high-ceilinged dining room."
+    },
+    "Zazpi Taberna": {
+      "cuisine": "Basque",
+      "description": "Chef Paul Arrillaga's gastro-bar, serving product-driven Basque cooking with contemporary technique near the Boulevard."
+    },
+    "Topa Sukalderia": {
+      "cuisine": "Basque-Latin American fusion",
+      "description": "Basque-Latin American fusion devised by Andoni Luis Aduriz of Mugaritz, steps from Zurriola beach."
+    },
+    "Branka": {
+      "cuisine": "Basque",
+      "description": "A terrace beside Chillida's Peine del Viento sculpture on Ondarreta beach, serving traditional, market-driven cooking."
+    },
+    "La Perla": {
+      "cuisine": "Basque",
+      "description": "A century-old restaurant and bathhouse overlooking La Concha beach, with views across the whole bay from its terraces."
+    },
+    "Kaia-Kaipe": {
+      "cuisine": "grilled fish",
+      "description": "Facing Getaria's fishing port since 1962: fish grilled over coals, turbot, and its own live shellfish tank."
+    },
+    "Casa Urola": {
+      "cuisine": "pintxos / Basque",
+      "description": "A bar of classic and modern pintxos plus an upstairs dining room with a market menu, on Fermín Calbetón street. Bib Gourmand."
+    },
+    "Borda Berri": {
+      "cuisine": "pintxos / Basque",
+      "description": "Wine-braised veal cheek and roasted pig's ear, cooked to order at one of the most acclaimed bars in the Old Town. No reservations."
+    },
+    "Bar Nestor": {
+      "cuisine": "pintxos / Basque",
+      "description": "Just two potato tortillas made per day and a tomato salad that sells out in minutes, running since 1980. No reservations — arrive early."
+    },
+    "Txepetxa": {
+      "cuisine": "pintxos / Basque",
+      "description": "Specialists in vinegar-cured anchovies since 1972, with a dozen possible toppings for each pintxo."
+    },
+    "Bar Zeruko": {
+      "cuisine": "pintxos / Basque",
+      "description": "The most avant-garde bar in the Old Town: smoke, foams, and cod smoked right at the counter."
+    },
+    "Sirimiri": {
+      "cuisine": "pintxos / fusion",
+      "description": "Fusion pintxos and a cocktail list built heavily around vermouth, right by the Santa María church."
+    },
+    "Casa Alcalde": {
+      "cuisine": "pintxos / Basque",
+      "description": "Acorn-fed Iberian ham and grilled lamb chops, amid bullfighting posters, across from the Santa María church."
+    },
+    "Casa Vergara 1948": {
+      "cuisine": "pintxos / Basque",
+      "description": "Cod in every form — omelette, battered, skewered — since 1948, facing the Basílica de Santa María."
+    },
+    "Aloña Berri": {
+      "cuisine": "pintxos / Basque",
+      "description": "A benchmark for chef-driven pintxos in Gros since the 1990s, famous for its 'squid in balance.' Winner of San Sebastián's pintxo championship."
+    },
+    "Bergara": {
+      "cuisine": "pintxos / Basque",
+      "description": "Home of award-winning pintxos like the Txalupa and the Udaberri, in the Gros district. A Michelin Guide selection."
+    },
+    "Bodega Donostiarra": {
+      "cuisine": "pintxos / Basque",
+      "description": "A neighborhood institution on Fermín Calbetón, known for tinned seafood, octopus, and grilled meat."
+    },
+    "La Viña": {
+      "cuisine": "pintxos / Basque pastry",
+      "description": "Birthplace, in 1990, of the burnt Basque cheesecake that has since conquered the world — caramelized outside, molten within."
+    },
+    "Churrería Santa Lucía": {
+      "cuisine": "churros",
+      "description": "Churros and hot chocolate since 1957, next to Plaza de la Constitución, with wooden benches and an old-world feel."
+    },
+    "Petritegi Sagardotegia": {
+      "cuisine": "Basque cider house",
+      "description": "A cider-making farmhouse dating to 1526 in Astigarraga: rib steak, omelette, and cider straight from the barrel during txotx season."
+    },
+    "Mercado de la Bretxa": {
+      "cuisine": null,
+      "description": "A covered market dating to 1870 in the heart of the Old Town, with fishmongers, butchers, and long-standing stalls."
+    },
+    "Mercado de San Martín": {
+      "cuisine": null,
+      "description": "Donostia's liveliest market: fruit, vegetables, fresh fish straight from the auction, and bread, right in the city center."
     }
   }
 }
