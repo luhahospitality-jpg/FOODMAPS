@@ -22,6 +22,146 @@
     "Lau Pa Sat": {
       "cuisine": "mixed",
       "description": "A Victorian national monument turned food market, famous for its \"Satay Street\" at nightfall."
+    },
+    "Hill Street Tai Hwa Pork Noodle": {
+      "cuisine": "Chinese / Singaporean",
+      "description": "A bak chor mee (minced pork noodle) stall with a Michelin star since 2016; chef Tang Chay Seng closes as soon as the day's ingredients run out, creating multi-hour queues."
+    },
+    "Jumbo Seafood": {
+      "cuisine": "Singaporean",
+      "description": "The flagship chain of Singapore's chili crab since 1987, with its original outlet at the seaside East Coast Seafood Centre; one of the addresses most cited by international critics for the national dish."
+    },
+    "Long Beach Seafood Restaurant": {
+      "cuisine": "Singaporean",
+      "description": "Founded in 1946 and credited with inventing black pepper crab; its Dempsey Hill location remains a classic address for Singaporean-style seafood."
+    },
+    "Ya Kun Kaya Toast": {
+      "cuisine": "Singaporean",
+      "description": "A kaya toast chain founded in 1944 by Loi Ah Koon; its original China Street outlet still serves the classic breakfast of kaya toast, butter, and soft-boiled eggs."
+    },
+    "Toast Box": {
+      "cuisine": "Singaporean",
+      "description": "A modern-'kopitiam'-style kaya toast chain founded in 2005 that recreates the look of Singapore's traditional Chinese coffee shops with toast, kopi, and eggs."
+    },
+    "328 Katong Laksa": {
+      "cuisine": "Peranakan / Singaporean",
+      "description": "One of Katong's most famous laksa stalls, traditionally served with only a spoon (the noodles are cut into short lengths) in a heavily spiced coconut broth."
+    },
+    "Sungei Road Laksa": {
+      "cuisine": "Singaporean",
+      "description": "A laksa stall running since the 1950s, known for selling only a limited number of portions each day and keeping the same spicy coconut broth recipe for more than seven decades."
+    },
+    "Zam Zam Restaurant": {
+      "cuisine": "Indian-Muslim / Singaporean",
+      "description": "Founded in 1908 on North Bridge Road across from the Sultan Mosque; specializing in murtabak and biryani, it is one of Singapore's oldest Indian-Muslim restaurants."
+    },
+    "Tekka Centre": {
+      "cuisine": "Mixed (Indian, Malay, Chinese)",
+      "description": "A market and hawker centre in the heart of Little India, with Indian, Malay, and Chinese food stalls alongside a traditional wet market."
+    },
+    "Chinatown Complex Food Centre": {
+      "cuisine": "Mixed",
+      "description": "Singapore's largest hawker centre, with close to 200 stalls; home to several vendors recognized with the Michelin Guide's Bib Gourmand."
+    },
+    "Amoy Street Food Centre": {
+      "cuisine": "Mixed",
+      "description": "A hawker centre in the Tanjong Pagar financial district, packed at lunchtime with office workers drawn to its traditional Chinese food stalls."
+    },
+    "Burnt Ends": {
+      "cuisine": "Modern barbecue / Australian",
+      "description": "A contemporary wood-fire grill restaurant by Australian chef Dave Pynt; one Michelin star and a regular on the Asia's 50 Best Restaurants list."
+    },
+    "Candlenut": {
+      "cuisine": "Peranakan",
+      "description": "The world's first Peranakan restaurant to earn a Michelin star, led by chef Malcolm Lee at Dempsey Hill."
+    },
+    "Labyrinth": {
+      "cuisine": "Modern Singaporean",
+      "description": "A contemporary reinterpretation of hawker and traditional Singaporean dishes by chef LG Han; one Michelin star, located in Esplanade Mall."
+    },
+    "Les Amis": {
+      "cuisine": "French",
+      "description": "Singapore's longest-running French restaurant still in operation, holding three Michelin stars and one of Asia's most awarded wine lists."
+    },
+    "Waku Ghin": {
+      "cuisine": "Japanese",
+      "description": "A fine-dining Japanese restaurant by chef Tetsuya Wakuda at Marina Bay Sands, serving a limited-seat tasting menu built on daily flown-in ingredients."
+    },
+    "Meta": {
+      "cuisine": "Contemporary Asian",
+      "description": "Contemporary Asian cuisine from chef Sun Kim on Keong Saik Road; one Michelin star."
+    },
+    "Violet Oon Singapore": {
+      "cuisine": "Peranakan",
+      "description": "A restaurant by renowned chef Violet Oon inside the National Gallery, devoted to classic Peranakan dishes such as ayam buah keluak and kueh pie tee."
+    },
+    "True Blue Cuisine": {
+      "cuisine": "Peranakan",
+      "description": "A family-run Peranakan restaurant across from the Peranakan Museum, serving recipes passed down through generations of the Nyonya community."
+    },
+    "Din Tai Fung": {
+      "cuisine": "Taiwanese",
+      "description": "A Taiwanese chain famous for its xiao long bao; its 2002 opening at Paragon was Din Tai Fung's first location outside Taiwan and Japan."
+    },
+    "Crystal Jade La Mian Xiao Long Bao": {
+      "cuisine": "Chinese (Shanghainese)",
+      "description": "A local chain founded in 1991 specializing in hand-made xiao long bao and la mian noodles; one of Singapore's most established Chinese restaurant brands."
+    },
+    "CE LA VI": {
+      "cuisine": "International",
+      "description": "A rooftop bar and restaurant atop the Marina Bay Sands SkyPark, with panoramic bay views and signature cocktails."
+    },
+    "Long Bar": {
+      "cuisine": "International",
+      "description": "The historic bar at Raffles Hotel where bartender Ngiam Tong Boon invented the Singapore Sling cocktail in 1915; famous for its floor of discarded peanut shells."
+    },
+    "Atlas Bar": {
+      "cuisine": "International",
+      "description": "An Art Deco bar in Parkview Square holding one of the world's largest gin collections (over a thousand labels) and a three-story champagne tower."
+    },
+    "Manhattan Bar": {
+      "cuisine": "International",
+      "description": "A classic American cocktail bar at The Regent Singapore hotel, named Asia's best bar multiple times on the Asia's 50 Best Bars list."
+    },
+    "Jigger & Pony": {
+      "cuisine": "International",
+      "description": "A cocktail bar at the Amara Hotel led by Bannie Kang, named Asia's best bar in 2018 on the Asia's 50 Best Bars list."
+    },
+    "Tiong Bahru Bakery": {
+      "cuisine": "French / bakery",
+      "description": "A bakery founded by French chef Gontran Cherrier in the Tiong Bahru neighborhood, celebrated for its kouign-amann."
+    },
+    "Song Fa Bak Kut Teh": {
+      "cuisine": "Singaporean (Teochew)",
+      "description": "A bak kut teh (pork rib pepper soup) specialist since 1969, recognized with the Michelin Guide's Bib Gourmand at its original New Bridge Road outlet."
+    },
+    "Founder Bak Kut Teh": {
+      "cuisine": "Singaporean (Teochew)",
+      "description": "One of the oldest bak kut teh restaurants on Balestier Road, running since 1978, serving a clearer, more peppery broth than the Hokkien style."
+    },
+    "No Signboard Seafood": {
+      "cuisine": "Singaporean",
+      "description": "Born as a nameless stall (hence 'No Signboard') in Geylang in the 1970s; now a chain known for its white pepper crab."
+    },
+    "Killiney Kopitiam": {
+      "cuisine": "Singaporean",
+      "description": "A family-run kopitiam on Killiney Road operating since 1919, serving kaya toast, kopi, and laksa in a shop that has barely changed its look."
+    },
+    "Maxwell Food Centre": {
+      "cuisine": "Mixed",
+      "description": "A hawker centre in the heart of Chinatown that Anthony Bourdain toured on 'No Reservations'; home to dozens of stalls, including Tian Tian Hainanese Chicken Rice."
+    },
+    "Old Airport Road Food Centre": {
+      "cuisine": "Mixed",
+      "description": "A hawker centre highly rated by locals for the quality of its stalls, including hokkien mee and satay bee hoon specialists with decades of history."
+    },
+    "Sin Huat Eating House": {
+      "cuisine": "Singaporean",
+      "description": "An unassuming Geylang eatery famous for its crab bee hoon (crab noodles); Anthony Bourdain visited it in the Singapore episode of 'No Reservations'."
+    },
+    "Chin Chin Eating House": {
+      "cuisine": "Singaporean (Hainanese)",
+      "description": "A kopitiam-restaurant on Purvis Street since 1934, specializing in Hainanese chicken rice and chicken curry; one of Singapore's oldest eateries."
     }
   }
 }

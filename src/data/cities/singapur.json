@@ -3,7 +3,7 @@
   "name": "Singapur",
   "country": "Singapur",
   "tagline": "Dos puestos callejeros, dos estrellas Michelin, y platos completos por menos de 3 dólares.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -103,6 +103,674 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2806167,103.8504802"
+    },
+    {
+      "name": "Hill Street Tai Hwa Pork Noodle",
+      "place_id": null,
+      "lat": 1.3116,
+      "lng": 103.8632,
+      "category": "street_food",
+      "cuisine": "chino / singapurense",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Puesto de bak chor mee (fideos con carne de cerdo picada y salsa de vinagre) con una estrella Michelin desde 2016; el chef Tang Chay Seng cierra en cuanto se agotan los ingredientes del día, lo que genera colas de varias horas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3116,103.8632",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      },
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Jumbo Seafood",
+      "place_id": null,
+      "lat": 1.301,
+      "lng": 103.913,
+      "category": "seafood",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Cadena insignia del chili crab desde 1987, con su local original en el East Coast Seafood Centre frente al mar; una de las direcciones más citadas por la crítica internacional para probar el plato nacional de Singapur.",
+      "source_url": "https://www.jumboseafood.com.sg",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.301,103.913",
+      "distinction": null
+    },
+    {
+      "name": "Long Beach Seafood Restaurant",
+      "place_id": null,
+      "lat": 1.3055,
+      "lng": 103.8114,
+      "category": "seafood",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1946, se atribuye la creación del black pepper crab; su sede de Dempsey Hill sigue siendo una de las direcciones clásicas para marisco al estilo singapurense.",
+      "source_url": "https://longbeachseafood.com.sg",
+      "source_type": "classic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3055,103.8114",
+      "distinction": null
+    },
+    {
+      "name": "Ya Kun Kaya Toast",
+      "place_id": null,
+      "lat": 1.2827,
+      "lng": 103.8479,
+      "category": "cafeteria",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de kaya toast fundada en 1944 por Loi Ah Koon; su local original en China Street sigue sirviendo el desayuno clásico de tostadas con kaya, mantequilla y huevos a media cocción.",
+      "source_url": "https://www.yakun.com",
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2827,103.8479",
+      "distinction": null
+    },
+    {
+      "name": "Toast Box",
+      "place_id": null,
+      "lat": 1.2937,
+      "lng": 103.852,
+      "category": "cafeteria",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de kaya toast al estilo 'kopitiam' moderno, fundada en 2005, que recrea la estética de los cafés tradicionales chinos de Singapur con tostadas, kopi y huevos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2937,103.852",
+      "distinction": null
+    },
+    {
+      "name": "328 Katong Laksa",
+      "place_id": null,
+      "lat": 1.3057,
+      "lng": 103.9036,
+      "category": "street_food",
+      "cuisine": "peranakan / singapurense",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Uno de los puestos de laksa más famosos de Katong, servido tradicionalmente solo con cuchara (los fideos se cortan en trozos cortos) en un caldo de coco muy especiado.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3057,103.9036",
+      "distinction": null
+    },
+    {
+      "name": "Sungei Road Laksa",
+      "place_id": null,
+      "lat": 1.308,
+      "lng": 103.856,
+      "category": "street_food",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de laksa en activo desde los años 50, reconocido por servir raciones limitadas cada día y por mantener el mismo estilo de caldo de coco picante durante más de siete décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.308,103.856",
+      "distinction": null
+    },
+    {
+      "name": "Zam Zam Restaurant",
+      "place_id": null,
+      "lat": 1.3025,
+      "lng": 103.8593,
+      "category": "restaurante",
+      "cuisine": "indio-musulmán / singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1908 en North Bridge Road, frente a la Mezquita del Sultán; especializado en murtabak y biryani, es uno de los restaurantes de comida india-musulmana más antiguos de Singapur.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3025,103.8593",
+      "distinction": null
+    },
+    {
+      "name": "Tekka Centre",
+      "place_id": null,
+      "lat": 1.3066,
+      "lng": 103.8496,
+      "category": "mercado",
+      "cuisine": "variado (indio, malayo, chino)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado y centro de hawkers en el corazón de Little India, con puestos de comida india, malaya y china junto a un mercado húmedo tradicional.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3066,103.8496",
+      "distinction": null
+    },
+    {
+      "name": "Chinatown Complex Food Centre",
+      "place_id": null,
+      "lat": 1.2825,
+      "lng": 103.8437,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "clasico",
+        "critic",
+        "bib_gourmand"
+      ],
+      "description": "El hawker centre más grande de Singapur, con cerca de 200 puestos; alberga varios locales reconocidos con el Bib Gourmand de la Guía Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2825,103.8437",
+      "distinction": null,
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Amoy Street Food Centre",
+      "place_id": null,
+      "lat": 1.2799,
+      "lng": 103.8465,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Centro de hawkers en el distrito financiero de Tanjong Pagar, muy popular en horas de almuerzo entre oficinistas por sus puestos de comida china tradicional.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2799,103.8465",
+      "distinction": null
+    },
+    {
+      "name": "Burnt Ends",
+      "place_id": null,
+      "lat": 1.2807,
+      "lng": 103.8412,
+      "category": "fine_dining",
+      "cuisine": "barbacoa moderna / australiana",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Parrilla contemporánea del chef australiano Dave Pynt centrada en cocina de fuego y leña; una estrella Michelin y habitual en las listas de Asia's 50 Best Restaurants.",
+      "source_url": "https://www.burntends.com.sg",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2807,103.8412",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Candlenut",
+      "place_id": null,
+      "lat": 1.3057,
+      "lng": 103.8115,
+      "category": "fine_dining",
+      "cuisine": "peranakan",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Primer restaurante de cocina peranakan del mundo en obtener una estrella Michelin, liderado por el chef Malcolm Lee en Dempsey Hill.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3057,103.8115",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Labyrinth",
+      "place_id": null,
+      "lat": 1.2905,
+      "lng": 103.8558,
+      "category": "fine_dining",
+      "cuisine": "singapurense moderna",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Reinterpretación contemporánea de platos hawker y singapurenses tradicionales a cargo del chef LG Han; una estrella Michelin en el Esplanade Mall.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2905,103.8558",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Les Amis",
+      "place_id": null,
+      "lat": 1.3049,
+      "lng": 103.8318,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El restaurante francés en activo más longevo de Singapur, con tres estrellas Michelin y una de las cartas de vinos más premiadas de Asia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3049,103.8318",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Waku Ghin",
+      "place_id": null,
+      "lat": 1.2836,
+      "lng": 103.86,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de alta cocina japonesa del chef Tetsuya Wakuda en Marina Bay Sands, con menú degustación de plazas limitadas y producto de importación diaria.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2836,103.86",
+      "distinction": null
+    },
+    {
+      "name": "Meta",
+      "place_id": null,
+      "lat": 1.2807,
+      "lng": 103.8398,
+      "category": "fine_dining",
+      "cuisine": "asiática contemporánea",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina asiática contemporánea del chef Sun Kim en Keong Saik Road; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2807,103.8398",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Violet Oon Singapore",
+      "place_id": null,
+      "lat": 1.2902,
+      "lng": 103.8515,
+      "category": "restaurante",
+      "cuisine": "peranakan",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante de la reconocida chef Violet Oon dentro de la National Gallery, dedicado a la cocina peranakan clásica como el ayam buah keluak y el kueh pie tee.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2902,103.8515",
+      "distinction": null
+    },
+    {
+      "name": "True Blue Cuisine",
+      "place_id": null,
+      "lat": 1.2932,
+      "lng": 103.8494,
+      "category": "restaurante",
+      "cuisine": "peranakan",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar de cocina peranakan frente al Peranakan Museum, con recetas transmitidas por generaciones de la comunidad nyonya.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2932,103.8494",
+      "distinction": null
+    },
+    {
+      "name": "Din Tai Fung",
+      "place_id": null,
+      "lat": 1.301,
+      "lng": 103.8355,
+      "category": "restaurante",
+      "cuisine": "taiwanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena taiwanesa célebre por sus xiao long bao; su apertura en Paragon en 2002 fue la primera de Din Tai Fung fuera de Taiwán y Japón.",
+      "source_url": "https://www.dintaifung.com.sg",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.301,103.8355",
+      "distinction": null
+    },
+    {
+      "name": "Crystal Jade La Mian Xiao Long Bao",
+      "place_id": null,
+      "lat": 1.2854,
+      "lng": 103.8452,
+      "category": "restaurante",
+      "cuisine": "chino (shanghainés)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena local fundada en 1991, especializada en xiao long bao y la mian hechos a mano; una de las marcas de restauración china más establecidas de Singapur.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2854,103.8452",
+      "distinction": null
+    },
+    {
+      "name": "CE LA VI",
+      "place_id": null,
+      "lat": 1.2836,
+      "lng": 103.8607,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar y restaurante en la azotea del Marina Bay Sands SkyPark, con vistas panorámicas de la bahía y coctelería de autor.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2836,103.8607",
+      "distinction": null
+    },
+    {
+      "name": "Long Bar",
+      "place_id": null,
+      "lat": 1.2949,
+      "lng": 103.8547,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar histórico del Raffles Hotel donde el bartender Ngiam Tong Boon creó el cóctel Singapore Sling en 1915; tradición de tirar al suelo las cáscaras de cacahuete.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2949,103.8547",
+      "distinction": null
+    },
+    {
+      "name": "Atlas Bar",
+      "place_id": null,
+      "lat": 1.301,
+      "lng": 103.8583,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "critic",
+        "worlds50best"
+      ],
+      "description": "Bar art déco en el Parkview Square con una de las mayores colecciones de gin del mundo (más de mil etiquetas) y una torre de champán de tres pisos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.301,103.8583",
+      "distinction": null
+    },
+    {
+      "name": "Manhattan Bar",
+      "place_id": null,
+      "lat": 1.3057,
+      "lng": 103.8262,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Bar de coctelería clásica americana en el hotel Regent Singapore, elegido varias veces mejor bar de Asia en la lista Asia's 50 Best Bars.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3057,103.8262",
+      "distinction": null
+    },
+    {
+      "name": "Jigger & Pony",
+      "place_id": null,
+      "lat": 1.2764,
+      "lng": 103.8447,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Coctelería del Amara Hotel liderada por Bannie Kang, nombrada mejor bar de Asia en 2018 dentro de la lista Asia's 50 Best Bars.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2764,103.8447",
+      "distinction": null
+    },
+    {
+      "name": "Tiong Bahru Bakery",
+      "place_id": null,
+      "lat": 1.2864,
+      "lng": 103.8318,
+      "category": "panaderia",
+      "cuisine": "francesa / panadería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería fundada por el chef francés Gontran Cherrier en el barrio de Tiong Bahru, célebre por su kouign-amann.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2864,103.8318",
+      "distinction": null
+    },
+    {
+      "name": "Song Fa Bak Kut Teh",
+      "place_id": null,
+      "lat": 1.2872,
+      "lng": 103.846,
+      "category": "restaurante",
+      "cuisine": "singapurense (teochew)",
+      "tags": [
+        "clasico",
+        "bib_gourmand"
+      ],
+      "description": "Especialista en bak kut teh (costillas de cerdo en caldo de pimienta) desde 1969, reconocido con el Bib Gourmand de la Guía Michelin en su local original de New Bridge Road.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2872,103.846",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      },
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Founder Bak Kut Teh",
+      "place_id": null,
+      "lat": 1.3252,
+      "lng": 103.8447,
+      "category": "restaurante",
+      "cuisine": "singapurense (teochew)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los restaurantes de bak kut teh más antiguos de Balestier Road, en activo desde 1978, con un caldo más claro y peposo que la versión hokkien.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3252,103.8447",
+      "distinction": null
+    },
+    {
+      "name": "No Signboard Seafood",
+      "place_id": null,
+      "lat": 1.3138,
+      "lng": 103.8825,
+      "category": "seafood",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Nacido como un puesto sin nombre (de ahí 'No Signboard') en Geylang en los años 70; hoy una cadena conocida por su white pepper crab.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3138,103.8825",
+      "distinction": null
+    },
+    {
+      "name": "Killiney Kopitiam",
+      "place_id": null,
+      "lat": 1.2988,
+      "lng": 103.8358,
+      "category": "cafeteria",
+      "cuisine": "singapurense",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kopitiam familiar en Killiney Road en activo desde 1919, con kaya toast, kopi y laksa servidos en un local que apenas ha cambiado de estilo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2988,103.8358",
+      "distinction": null
+    },
+    {
+      "name": "Maxwell Food Centre",
+      "place_id": null,
+      "lat": 1.2802,
+      "lng": 103.8447,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Hawker centre en el corazón de Chinatown que Anthony Bourdain recorrió en 'No Reservations'; alberga decenas de puestos, entre ellos Tian Tian Hainanese Chicken Rice.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-singapore-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2802,103.8447",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Old Airport Road Food Centre",
+      "place_id": null,
+      "lat": 1.3086,
+      "lng": 103.8874,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Hawker centre muy valorado entre los propios singapurenses por la calidad de sus puestos, entre ellos especialistas en hokkien mee y satay bee hoon con décadas de trayectoria.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3086,103.8874",
+      "distinction": null
+    },
+    {
+      "name": "Sin Huat Eating House",
+      "place_id": null,
+      "lat": 1.3151,
+      "lng": 103.8886,
+      "category": "seafood",
+      "cuisine": "singapurense",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Local sin pretensiones en Geylang, famoso por su crab bee hoon (fideos con cangrejo); Anthony Bourdain lo visitó en el episodio de Singapur de 'No Reservations'.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-singapore-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.3151,103.8886",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Chin Chin Eating House",
+      "place_id": null,
+      "lat": 1.2963,
+      "lng": 103.8534,
+      "category": "restaurante",
+      "cuisine": "singapurense (hainanés)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Kopitiam-restaurante en Purvis Street desde 1934, especializado en arroz con pollo hainanés y curry de pollo; uno de los más antiguos de Singapur.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=1.2963,103.8534",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,
