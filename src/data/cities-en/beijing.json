@@ -22,6 +22,146 @@
     "Li Qun Roast Duck": {
       "cuisine": "Chinese / Peking duck",
       "description": "Peking duck in a hidden hutong courtyard, run by the same family for more than two decades. Anthony Bourdain's secret favorite on \"No Reservations.\""
+    },
+    "TRB Hutong": {
+      "cuisine": "Contemporary French",
+      "description": "Contemporary French fine dining served in the courtyard of a former Buddhist temple near the Forbidden City. One Michelin star since the guide's Beijing debut."
+    },
+    "King's Joy": {
+      "cuisine": "Chinese / Buddhist vegetarian",
+      "description": "Buddhist vegetarian fine dining in a courtyard house next to the Yonghegong Lama Temple. The world's first vegetarian restaurant to earn three Michelin stars."
+    },
+    "Xin Rong Ji (Xinyuan South Road)": {
+      "cuisine": "Chinese / Zhejiang (Taizhou), seafood",
+      "description": "Taizhou-style cooking built around fresh East China Sea seafood and a pre-order 28-day baby Peking duck. It was the first restaurant in Beijing to earn three Michelin stars."
+    },
+    "Jing Yaa Tang": {
+      "cuisine": "Chinese / Cantonese, Peking duck",
+      "description": "Wood-fired Peking duck and refined Cantonese cooking inside The Opposite House hotel in Sanlitun. One Michelin star."
+    },
+    "Made in China": {
+      "cuisine": "Chinese / Peking duck, northern Chinese",
+      "description": "Jujube-wood-fired Peking duck and home-style northern Chinese classics inside the Grand Hyatt Beijing, recognized in the Beijing Michelin Guide."
+    },
+    "1949 Duck de Chine": {
+      "cuisine": "Chinese / Peking duck, Franco-Chinese fusion",
+      "description": "Peking duck roasted with Franco-Chinese technique inside a former factory complex reborn in 1949, tucked behind Sanlitun. Selected by the Beijing Michelin Guide."
+    },
+    "Fangshan Restaurant": {
+      "cuisine": "Chinese / Qing imperial cuisine",
+      "description": "Qing-dynasty imperial cuisine served in historic pavilions on Qiongdao Island inside Beihai Park. Founded in 1925 by former court chefs."
+    },
+    "Tan Family Cuisine": {
+      "cuisine": "Chinese / Tan family imperial cuisine",
+      "description": "Tanjiacai cuisine, created by Qing-dynasty official Tan Zongjun to entertain senior officials and preserved since 1958 inside the historic Beijing Hotel at Premier Zhou Enlai's suggestion."
+    },
+    "Donglaishun": {
+      "cuisine": "Chinese / Mongolian lamb hot pot",
+      "description": "Beijing's hot pot institution, founded in 1903 by Ding Deshan next to the old Dong'an Market. The benchmark for hand-cut lamb and the copper hot pot."
+    },
+    "Jubaoyuan": {
+      "cuisine": "Chinese / Halal lamb hot pot",
+      "description": "Halal lamb hot pot in Niujie, Beijing's Muslim quarter, with roots in a halal butcher shop founded in 1937."
+    },
+    "Bianyifang": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "The oldest surviving Peking duck restaurant, tracing back to 1416. It uses the 'menlu' method, roasting the duck inside a closed oven with no open flame."
+    },
+    "Siji Minfu (Forbidden City)": {
+      "cuisine": "Chinese / Peking duck",
+      "description": "Hugely popular Peking duck spot next to the Forbidden City's Donghua Gate, with queues that can top a thousand tables during peak holidays."
+    },
+    "Baodu Feng": {
+      "cuisine": "Chinese / quick-scalded tripe",
+      "description": "Instantly scalded lamb and beef tripe, a recipe created in 1888 by Feng Lishan near the Houmen bridge. Now run by the seventh generation of the family."
+    },
+    "Yaoji Chaogan": {
+      "cuisine": "Chinese / stewed offal",
+      "description": "Chaogan (liver and tripe stewed in garlicky broth) at an eatery near the Drum Tower since 1989. US Vice President Joe Biden's 2011 visit brought it international fame."
+    },
+    "Jiumen Xiaochi": {
+      "cuisine": "Chinese / traditional Beijing snacks",
+      "description": "A snack-food court under one roof gathering eleven historic vendors displaced from Qianmen by the urban renewal ahead of the 2008 Olympics."
+    },
+    "Wangfujing Snack Street": {
+      "cuisine": "Chinese / street food",
+      "description": "A night market famous for its extreme skewers -scorpion, starfish, centipede- alongside traditional sweets like candied hawthorn tanghulu."
+    },
+    "Hu Da Restaurant": {
+      "cuisine": "Chinese / spicy Sichuan crayfish",
+      "description": "The temple of spicy crayfish on Ghost Street (Guijie), open nearly around the clock with constant queues for more than two decades."
+    },
+    "Liubiju Pickle and Sauce Shop": {
+      "cuisine": "Chinese / pickles and sauces",
+      "description": "A pickle and sauce shop founded in 1530, the oldest in Beijing. Anthony Bourdain sampled its imperial pickled vegetables on 'No Reservations'."
+    },
+    "Sculpting in Time": {
+      "cuisine": "Coffee / cafe",
+      "description": "The literary cafe that opened in 1997 next to Peking University's east gate, two years before Beijing's first Starbucks arrived."
+    },
+    "Metal Hands Coffee": {
+      "cuisine": "Specialty coffee",
+      "description": "A pioneer of specialty coffee in a Dongcheng hutong, famous for its 'Dirty Coffee'. The only mainland China cafe to make Big 7 Travel's world ranking."
+    },
+    "Jing-A Brewing Co": {
+      "cuisine": "Craft brewery",
+      "description": "A brewery founded in 2012 by two expats who had lived in Beijing for a decade, a pioneer in using Chinese ingredients like red rice koji and Sichuan peppercorn."
+    },
+    "Capital Spirits Baijiu Bar & Distillery": {
+      "cuisine": "Baijiu / cocktails",
+      "description": "The world's first bar dedicated entirely to baijiu, set inside a restored hutong shophouse. Featured by The New York Times in its 36 Hours in Beijing guide."
+    },
+    "Apothecary": {
+      "cuisine": "Cocktails",
+      "description": "A speakeasy-style cocktail bar opened in 2009 by bartender Leon Lee, a benchmark of Beijing's craft cocktail scene with house syrups, bitters and hand-carved ice."
+    },
+    "Great Leap Brewing": {
+      "cuisine": "Craft brewery",
+      "description": "Beijing's first microbrewery, opened in 2010 inside a former siheyuan courtyard house near Nanluoguxiang. A pioneer of Chinese craft beer."
+    },
+    "Xiao Wang Fu": {
+      "cuisine": "Chinese / Beijing home-style",
+      "description": "Home-style Beijing cooking -duck, kung pao chicken, braised pork- a favorite of diplomats and expats for decades."
+    },
+    "Bei": {
+      "cuisine": "Northern Asian",
+      "description": "Northern Asian cuisine with touches of sushi and Peking duck, in a modernist interior designed by studio Neri&Hu inside The Opposite House hotel."
+    },
+    "Migas Mercado": {
+      "cuisine": "Spanish / Mediterranean",
+      "description": "A rooftop gastro-market of Spanish tapas with views over the Sanlitun skyline, hand-carved Iberian ham and live music."
+    },
+    "Crescent Moon Muslim Restaurant": {
+      "cuisine": "Chinese / Uyghur (Xinjiang)",
+      "description": "Uyghur cuisine from Xinjiang -grilled lamb skewers, hand-pulled noodles, nang bread- in a Dongcheng hutong. Voted Beijing's best Xinjiang restaurant by The Beijinger's readers."
+    },
+    "Middle 8th": {
+      "cuisine": "Chinese / Yunnan",
+      "description": "One of the earliest Yunnan-cuisine restaurants near Sanlitun, known for its banana-leaf-wrapped fish and wild mushroom dishes."
+    },
+    "Cafe Sambal": {
+      "cuisine": "Malaysian / Peranakan",
+      "description": "Malaysian Peranakan cooking in a hutong courtyard house since 2001, with spices flown in from Malaysia and Malaysian chefs in the kitchen."
+    },
+    "Dali Courtyard": {
+      "cuisine": "Chinese / Yunnan",
+      "description": "A seasonally changing multi-course set menu of Yunnan cuisine, served in a hutong courtyard tucked well away from the tourist routes."
+    },
+    "Din Tai Fung": {
+      "cuisine": "Chinese / Taiwanese, soup dumplings",
+      "description": "Beijing branch of the celebrated Taiwanese chain, famous for its eighteen-fold xiaolongbao and recommended by numerous international food critics."
+    },
+    "Xibei Youmian Village": {
+      "cuisine": "Chinese / Northwestern (Shanxi, Inner Mongolia)",
+      "description": "A chain born in Beijing in 1999, specializing in oat noodles and lamb from northwestern China, founded by entrepreneur Jia Guolong."
+    },
+    "Home Plate BBQ": {
+      "cuisine": "American barbecue",
+      "description": "Slow-smoked Southern-style barbecue -brisket, ribs, pastrami- that began as a home delivery service before opening its first restaurant in Sanlitun."
+    },
+    "Kong Yiji": {
+      "cuisine": "Chinese / Shaoxing (Jiangnan)",
+      "description": "A restaurant named after Lu Xun's short story, devoted to Shaoxing cuisine: drunken shrimp, Dongpo pork and yellow rice wine."
     }
   }
 }

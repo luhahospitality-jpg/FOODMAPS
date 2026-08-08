@@ -22,6 +22,146 @@
     "Australia Dairy Company": {
       "cuisine": "Cantonese / cha chaan teng",
       "description": "An iconic Kowloon cha chaan teng, famous for its scrambled eggs and no-nonsense fast service."
+    },
+    "Bo Innovation": {
+      "cuisine": "Modern Chinese (X-treme cuisine)",
+      "description": "Chef Alvin Leung's two-Michelin-starred 'X-treme' Chinese cuisine. Anthony Bourdain visited the restaurant on the Hong Kong episode of 'No Reservations'."
+    },
+    "Amber": {
+      "cuisine": "French",
+      "description": "Three-Michelin-starred French fine dining at the Landmark Mandarin Oriental, led by chef Richard Ekkebus."
+    },
+    "The Chairman": {
+      "cuisine": "Cantonese",
+      "description": "One-Michelin-star Cantonese restaurant that topped Asia's 50 Best Restaurants in 2021, sourcing ingredients from local farms and fishermen."
+    },
+    "Duddell's": {
+      "cuisine": "Cantonese",
+      "description": "Michelin-starred Cantonese restaurant set inside a 1920s-style art collector's mansion on historic Duddell Street."
+    },
+    "T'ang Court": {
+      "cuisine": "Cantonese",
+      "description": "Luxury Cantonese restaurant at the Langham Hotel in Tsim Sha Tsui, holding three Michelin stars for over a decade."
+    },
+    "Forum Restaurant": {
+      "cuisine": "Cantonese / abalone",
+      "description": "Three-Michelin-star temple of abalone founded in 1977 by Yeung Koon-yat, the 'Abalone King,' who once served his signature dish to Deng Xiaoping."
+    },
+    "Ming Court": {
+      "cuisine": "Cantonese",
+      "description": "Two-Michelin-star Cantonese restaurant at the Cordis (formerly Langham Place) in Mong Kok, led by chef Mango Tsang."
+    },
+    "Fook Lam Moon": {
+      "cuisine": "Cantonese",
+      "description": "Known as the 'tycoons' canteen,' this classic Wan Chai Cantonese institution since 1948 is a favorite of Hong Kong's business and political elite."
+    },
+    "Yung Kee": {
+      "cuisine": "Cantonese / roast goose",
+      "description": "Wellington Street institution since 1942, famed for its charcoal roast goose, with over 80 years of family history."
+    },
+    "Ho Lee Fook": {
+      "cuisine": "Contemporary Cantonese",
+      "description": "Contemporary Cantonese restaurant in Soho Central, with a casual atmosphere and cooking by chef ArChan Chan."
+    },
+    "Spring Deer": {
+      "cuisine": "Peking / roast duck",
+      "description": "Peking restaurant open since 1969 in Tsim Sha Tsui, celebrated for its honey-glazed roast duck."
+    },
+    "Lin Heung Tea House": {
+      "cuisine": "Cantonese / dim sum",
+      "description": "Century-old tea house in Central serving dim sum the traditional way, with trolleys wheeled around the dining room, since 1926."
+    },
+    "One Dim Sum": {
+      "cuisine": "Cantonese / dim sum",
+      "description": "Unassuming Prince Edward spot serving Michelin-quality dim sum at bargain prices; earned a Michelin star in 2011-2012."
+    },
+    "Joy Hing Roasted Meat": {
+      "cuisine": "Cantonese / char siu",
+      "description": "Char siu and roast meat shop dating to the late Qing dynasty in Wan Chai, recognized with a Michelin Bib Gourmand."
+    },
+    "Sister Wah": {
+      "cuisine": "Cantonese / beef brisket",
+      "description": "Clear-broth beef brisket specialist in Tin Hau, holding a Michelin Bib Gourmand since 2014."
+    },
+    "Under Bridge Spicy Crab": {
+      "cuisine": "Cantonese / seafood",
+      "description": "Causeway Bay restaurant famous for its 'typhoon shelter'-style spicy crab, a Hong Kong late-night classic."
+    },
+    "Mak's Noodle": {
+      "cuisine": "Cantonese / wonton noodles",
+      "description": "Shrimp wonton noodles with a recipe dating to pre-war Guangzhou; its fame has drawn diners including Anthony Bourdain."
+    },
+    "Tsim Chai Kee": {
+      "cuisine": "Cantonese / wonton noodles",
+      "description": "Wonton noodle shop with a Michelin Bib Gourmand every year since 2009, facing rival Mak's Noodle on Wellington Street; nicknamed the 'ping pong wonton' shop for its oversized dumplings."
+    },
+    "Ho Hung Kee": {
+      "cuisine": "Cantonese / wonton noodles and congee",
+      "description": "The first wonton noodle shop to earn a Michelin star, serving congee and wonton mee since the 1940s."
+    },
+    "Kau Kee": {
+      "cuisine": "Cantonese / curry beef noodles",
+      "description": "Beef brisket noodles on Gough Street for over 90 years; TV host Andrew Zimmern said it would be his only meal in Hong Kong. Holds a Michelin Bib Gourmand."
+    },
+    "Sang Kee Congee Shop": {
+      "cuisine": "Cantonese / congee",
+      "description": "Fish-belly congee specialist in Sheung Wan since the late 1960s, named by CNN among Hong Kong's must-eat dishes."
+    },
+    "Tung Po Kitchen": {
+      "cuisine": "Cantonese / dai pai dong",
+      "description": "Raucous North Point dai pai dong that hosted Anthony Bourdain's final filmed dinner in the last episode of 'Parts Unknown' (2018), shot alongside cinematographer Christopher Doyle."
+    },
+    "Mido Cafe": {
+      "cuisine": "Cantonese / cha chaan teng",
+      "description": "A 1950 cha chaan teng in Yau Ma Tei with original stained glass and tiles; one of Hong Kong's oldest surviving traditional cafes."
+    },
+    "Kam Wah Cafe": {
+      "cuisine": "Cantonese / bing sutt",
+      "description": "Prince Edward bakery-cafe famed for its pineapple bun (bolo bao) with butter, a Hong Kong breakfast classic."
+    },
+    "Sing Heung Yuen": {
+      "cuisine": "Cantonese / dai pai dong",
+      "description": "Central dai pai dong famous for its tomato noodle soup and crispy toast with honey and lemon."
+    },
+    "Lee Keung Kee North Point Egg Waffle": {
+      "cuisine": "Dessert / egg waffle",
+      "description": "North Point egg waffle (gai daan zai) stall, mentioned in the 2017 Michelin Guide Hong Kong & Macau."
+    },
+    "Hui Lau Shan": {
+      "cuisine": "Dessert / mango",
+      "description": "Dessert chain founded in the 1960s in Yuen Long, pioneer of the mango sago dessert it popularized in 1992."
+    },
+    "Yee Shun Milk Company": {
+      "cuisine": "Dessert / milk pudding",
+      "description": "Causeway Bay specialist in 'double-skin' steamed milk pudding, with a recipe imported from Macau."
+    },
+    "Tai Cheong Bakery": {
+      "cuisine": "Bakery / egg tarts",
+      "description": "A 1954 bakery on Lyndhurst Terrace famous for its cookie-crust egg tarts, the favorite of former governor Chris Patten."
+    },
+    "Kee Wah Bakery": {
+      "cuisine": "Traditional Chinese bakery",
+      "description": "Traditional Chinese bakery founded in 1938 in Kowloon, celebrated for its mooncakes and bridal pastries."
+    },
+    "Quinary": {
+      "cuisine": "Cocktail bar",
+      "description": "Hollywood Road cocktail bar that pioneered 'multisensory mixology,' a regular on Asia's 50 Best Bars list."
+    },
+    "The Old Man": {
+      "cuisine": "Cocktail bar",
+      "description": "Ernest Hemingway-inspired Central bar, ranked among the World's 50 Best Bars."
+    },
+    "Graham Street Market": {
+      "cuisine": "Traditional wet market",
+      "description": "Hong Kong's oldest street market, with over 160 years of history in the heart of Central."
+    },
+    "Cheung Hing Kee Shanghai Pan-Fried Buns": {
+      "cuisine": "Shanghainese / sheng jian bao",
+      "description": "Sheng jian bao (soup-filled pan-fried buns) specialist with a Michelin Bib Gourmand since 2016."
+    },
+    "Tsui Wah Restaurant": {
+      "cuisine": "Cantonese / cha chaan teng",
+      "description": "Cha chaan teng chain founded in 1962, the first of its kind to list on the Hong Kong Stock Exchange; its Lan Kwai Fong branch is a post-clubbing classic."
     }
   }
 }

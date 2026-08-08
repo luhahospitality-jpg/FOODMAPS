@@ -3,7 +3,7 @@
   "name": "Beijing",
   "country": "China",
   "tagline": "El pato pekinés de 1864, reinventado con estrella Michelin en la mesa de al lado.",
-  "totalPlaces": 5,
+  "totalPlaces": 40,
   "mymaps_url": null,
   "places": [
     {
@@ -94,6 +94,651 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.8969136,116.4001745"
+    },
+    {
+      "name": "TRB Hutong",
+      "place_id": null,
+      "lat": 39.927,
+      "lng": 116.402,
+      "category": "fine_dining",
+      "cuisine": "francés contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina francesa contemporánea servida en el patio de un antiguo templo budista cerca de la Ciudad Prohibida. Una estrella Michelin desde la apertura de la guía en Pekín.",
+      "source_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/trb-hutong",
+      "source_type": null,
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.927,116.402",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "King's Joy",
+      "place_id": null,
+      "lat": 39.944,
+      "lng": 116.4125,
+      "category": "fine_dining",
+      "cuisine": "chino / vegetariano budista",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina vegetariana budista en una casa de patio junto al templo de Yonghegong. El primer restaurante vegetariano del mundo en alcanzar las tres estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/king-s-joy",
+      "source_type": null,
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.944,116.4125",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Xin Rong Ji (Xinyuan South Road)",
+      "place_id": null,
+      "lat": 39.95,
+      "lng": 116.456,
+      "category": "fine_dining",
+      "cuisine": "chino / Zhejiang (Taizhou), mariscos",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de Taizhou centrada en pescado fresco del Mar de China Oriental y pato pekinés de 28 días bajo pedido. Fue el primer restaurante de Pekín en lograr tres estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/xin-rong-ji-xinyuan-south-road",
+      "source_type": null,
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.95,116.456",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Jing Yaa Tang",
+      "place_id": null,
+      "lat": 39.9367,
+      "lng": 116.454,
+      "category": "fine_dining",
+      "cuisine": "chino / cantonés, pato pekinés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Pato pekinés asado en horno de leña y cocina cantonesa refinada dentro del hotel The Opposite House, en Sanlitun. Una estrella Michelin.",
+      "source_url": "https://www.diningcity.cn/en/beijing/jing_yaa_tang_beijing",
+      "source_type": null,
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9367,116.454",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Made in China",
+      "place_id": null,
+      "lat": 39.9089,
+      "lng": 116.4133,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés, cocina del norte",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pato pekinés asado en horno de leña de jujubo y clásicos caseros del norte de China en el hotel Grand Hyatt Beijing, reconocido en la Guía Michelin de Pekín.",
+      "source_url": "https://www.hyatt.com/en-US/hotel/china/grand-hyatt-beijing/beigh/dining",
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9089,116.4133",
+      "distinction": null
+    },
+    {
+      "name": "1949 Duck de Chine",
+      "place_id": null,
+      "lat": 39.932,
+      "lng": 116.457,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés, fusión franco-china",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pato pekinés con técnicas de asado franco-chinas en un antiguo complejo fabril reconvertido en 1949, escondido detrás de Sanlitun. Seleccionado por la Guía Michelin de Pekín.",
+      "source_url": "https://guide.michelin.com/sg/en/beijing-municipality/beijing/restaurant/1949-duck-de-chine",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.932,116.457",
+      "distinction": null
+    },
+    {
+      "name": "Fangshan Restaurant",
+      "place_id": null,
+      "lat": 39.9247,
+      "lng": 116.389,
+      "category": "fine_dining",
+      "cuisine": "chino / cocina imperial Qing",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina imperial de la dinastía Qing servida en pabellones históricos de la isla Qiongdao, dentro del parque Beihai. Fundado en 1925 por antiguos cocineros de la corte.",
+      "source_url": "https://english.visitbeijing.com.cn/article/47OO8UFVXfo",
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9247,116.389",
+      "distinction": null
+    },
+    {
+      "name": "Tan Family Cuisine",
+      "place_id": null,
+      "lat": 39.9089,
+      "lng": 116.4103,
+      "category": "fine_dining",
+      "cuisine": "chino / cocina imperial Tan",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina Tanjiacai, creada por el mandarín de la dinastía Qing Tan Zongjun para agasajar a altos funcionarios y preservada desde 1958 en el histórico Beijing Hotel por sugerencia del premier Zhou Enlai.",
+      "source_url": "https://english.visitbeijing.com.cn/article/47ONv8b1on0",
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9089,116.4103",
+      "distinction": null
+    },
+    {
+      "name": "Donglaishun",
+      "place_id": null,
+      "lat": 39.9145,
+      "lng": 116.4105,
+      "category": "restaurante",
+      "cuisine": "chino / hot pot mongol de cordero",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La institución del hot pot pekinés, fundada en 1903 por Ding Deshan junto al mercado Dong'an. Referencia del cordero cortado a mano y la olla de cobre.",
+      "source_url": "https://en.wikipedia.org/wiki/Donglaishun",
+      "source_type": "classic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9145,116.4105",
+      "distinction": null
+    },
+    {
+      "name": "Jubaoyuan",
+      "place_id": null,
+      "lat": 39.8845,
+      "lng": 116.3555,
+      "category": "restaurante",
+      "cuisine": "chino / hot pot halal de cordero",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Hot pot halal de cordero en Niujie, el barrio musulmán de Pekín, con raíces en una carnicería halal fundada en 1937.",
+      "source_url": "https://english.visitbeijing.com.cn/article/4Lx6emflWcv",
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.8845,116.3555",
+      "distinction": null
+    },
+    {
+      "name": "Bianyifang",
+      "place_id": null,
+      "lat": 39.8985,
+      "lng": 116.4005,
+      "category": "fine_dining",
+      "cuisine": "chino / pato pekinés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante de pato pekinés más antiguo que sigue en pie, con origen en 1416. Usa el método 'menlu': el pato se hornea en un horno cerrado, sin llama a la vista.",
+      "source_url": "https://en.wikipedia.org/wiki/Bianyifang",
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.8985,116.4005",
+      "distinction": null
+    },
+    {
+      "name": "Siji Minfu (Forbidden City)",
+      "place_id": null,
+      "lat": 39.913,
+      "lng": 116.4,
+      "category": "restaurante",
+      "cuisine": "chino / pato pekinés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pato pekinés muy popular junto a la Puerta Donghua de la Ciudad Prohibida, con colas que llegan a superar las mil mesas en fechas punta.",
+      "source_url": "https://www.gastroroam.com/blog/siji-minfu-beijing-peking-duck-for-the-discerning-masses",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.913,116.4",
+      "distinction": null
+    },
+    {
+      "name": "Baodu Feng",
+      "place_id": null,
+      "lat": 39.9395,
+      "lng": 116.3895,
+      "category": "street_food",
+      "cuisine": "chino / tripa escaldada",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tripa de cordero y ternera escaldada al instante, receta creada en 1888 por Feng Lishan junto al puente de Houmen. Hoy lo dirige la séptima generación de la familia.",
+      "source_url": "https://english.visitbeijing.com.cn/article/47ONJx6R1mH",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9395,116.3895",
+      "distinction": null
+    },
+    {
+      "name": "Yaoji Chaogan",
+      "place_id": null,
+      "lat": 39.94,
+      "lng": 116.391,
+      "category": "street_food",
+      "cuisine": "chino / vísceras estofadas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Chaogan (hígado y tripa estofados en salsa de ajo) en una casa de comidas cerca del Tambor desde 1989. El vicepresidente estadounidense Joe Biden lo visitó en 2011, dándole fama internacional.",
+      "source_url": "https://edition.cnn.com/travel/article/biden-beijing-noodles-yaoji-chaogan/index.html",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.94,116.391",
+      "distinction": null
+    },
+    {
+      "name": "Jiumen Xiaochi",
+      "place_id": null,
+      "lat": 39.94,
+      "lng": 116.387,
+      "category": "mercado",
+      "cuisine": "chino / snacks tradicionales pekineses",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de bocados bajo un mismo techo que reúne a once vendedores históricos desalojados de Qianmen por la renovación urbana previa a los Juegos Olímpicos de 2008.",
+      "source_url": "https://www.thebeijinger.com/directory/jiumen-xiaochi",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.94,116.387",
+      "distinction": null
+    },
+    {
+      "name": "Wangfujing Snack Street",
+      "place_id": null,
+      "lat": 39.9151,
+      "lng": 116.411,
+      "category": "street_food",
+      "cuisine": "chino / comida callejera",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Mercado nocturno célebre por sus brochetas extremas -escorpión, estrella de mar, ciempiés- junto a dulces tradicionales como el tanghulu de espino.",
+      "source_url": "https://www.travelchinaguide.com/cityguides/beijing/wangfujing-snack-street.htm",
+      "source_type": "timeout",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9151,116.411",
+      "distinction": null
+    },
+    {
+      "name": "Hu Da Restaurant",
+      "place_id": null,
+      "lat": 39.942,
+      "lng": 116.423,
+      "category": "restaurante",
+      "cuisine": "chino / cangrejo de río picante (Sichuan)",
+      "tags": [
+        "critic"
+      ],
+      "description": "El templo del cangrejo de río picante en la Calle de los Fantasmas (Guijie), abierto casi las 24 horas y con colas constantes desde hace más de dos décadas.",
+      "source_url": "https://theculturetrip.com/asia/china/articles/a-foodies-guide-to-beijings-ghost-street",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.942,116.423",
+      "distinction": null
+    },
+    {
+      "name": "Liubiju Pickle and Sauce Shop",
+      "place_id": null,
+      "lat": 39.8975,
+      "lng": 116.395,
+      "category": "mercado",
+      "cuisine": "chino / encurtidos y salsas",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Tienda de encurtidos y salsas fundada en 1530, la más antigua de Pekín. Anthony Bourdain probó sus verduras encurtidas imperiales en 'No Reservations'.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-beijing-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "source_type_secondary": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.8975,116.395",
+      "distinction": null
+    },
+    {
+      "name": "Sculpting in Time",
+      "place_id": null,
+      "lat": 39.993,
+      "lng": 116.311,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El café literario que abrió en 1997 junto a la puerta este de la Universidad de Pekín, dos años antes de que llegara el primer Starbucks a la ciudad.",
+      "source_url": "https://www.globaltimes.cn/content/612269.shtml",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.993,116.311",
+      "distinction": null
+    },
+    {
+      "name": "Metal Hands Coffee",
+      "place_id": null,
+      "lat": 39.9445,
+      "lng": 116.4115,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pionero del café de especialidad en un hutong de Dongcheng, célebre por su 'Dirty Coffee'. Único café de China continental incluido en el ranking mundial de Big 7 Travel.",
+      "source_url": "https://www.thebeijinger.com/blog/2018/08/26/humble-hutong-joint-serves-beijings-best-cheesecake",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9445,116.4115",
+      "distinction": null
+    },
+    {
+      "name": "Jing-A Brewing Co",
+      "place_id": null,
+      "lat": 39.933,
+      "lng": 116.453,
+      "category": "bar",
+      "cuisine": "cervecería artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cervecería fundada en 2012 por dos expatriados afincados en Pekín desde hacía una década, pionera en usar ingredientes chinos como el koji de arroz rojo y la pimienta de Sichuan.",
+      "source_url": "https://en.wikipedia.org/wiki/Jing-A_Brewing_Co.",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.933,116.453",
+      "distinction": null
+    },
+    {
+      "name": "Capital Spirits Baijiu Bar & Distillery",
+      "place_id": null,
+      "lat": 39.927,
+      "lng": 116.416,
+      "category": "bar",
+      "cuisine": "baijiu / coctelería",
+      "tags": [
+        "critic"
+      ],
+      "description": "El primer bar del mundo dedicado por completo al baijiu, instalado en un hutong restaurado. Mencionado por The New York Times en su guía de 36 horas en Pekín.",
+      "source_url": "https://www.capitalspiritsbj.com/",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.927,116.416",
+      "distinction": null
+    },
+    {
+      "name": "Apothecary",
+      "place_id": null,
+      "lat": 39.9375,
+      "lng": 116.454,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería de estilo speakeasy abierta en 2009 por el barman Leon Lee, referencia de la coctelería de autor en Pekín con jarabes, amargos y hielo tallados a mano.",
+      "source_url": "https://www.thatsmags.com/beijing/directory/11054/apothecary_1",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9375,116.454",
+      "distinction": null
+    },
+    {
+      "name": "Great Leap Brewing",
+      "place_id": null,
+      "lat": 39.938,
+      "lng": 116.401,
+      "category": "bar",
+      "cuisine": "cervecería artesanal",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La primera microcervecería de Pekín, abierta en 2010 en un antiguo siheyuan de un hutong cerca de Nanluoguxiang. Pionera de la cerveza artesanal china.",
+      "source_url": "https://en.wikipedia.org/wiki/Great_Leap_Brewing",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.938,116.401",
+      "distinction": null
+    },
+    {
+      "name": "Xiao Wang Fu",
+      "place_id": null,
+      "lat": 39.9085,
+      "lng": 116.445,
+      "category": "restaurante",
+      "cuisine": "chino / casero pekinés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina casera pekinesa -pato, pollo kung pao, cerdo estofado- muy popular entre diplomáticos y expatriados desde hace décadas.",
+      "source_url": "https://www.thebeijinger.com/directory/xiao-wang-fu",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9085,116.445",
+      "distinction": null
+    },
+    {
+      "name": "Bei",
+      "place_id": null,
+      "lat": 39.9367,
+      "lng": 116.4538,
+      "category": "fine_dining",
+      "cuisine": "chino del norte / asiático",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina del norte de Asia con toques de sushi y pato pekinés, en un interior modernista diseñado por el estudio Neri&Hu dentro del hotel The Opposite House.",
+      "source_url": "https://neriandhu.com/en/works/bei-restaurant-at-the-opposite-house",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9367,116.4538",
+      "distinction": null
+    },
+    {
+      "name": "Migas Mercado",
+      "place_id": null,
+      "lat": 39.9375,
+      "lng": 116.4545,
+      "category": "bar",
+      "cuisine": "español / mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Azotea gastronómica de tapas españolas con vistas al perfil de Sanlitun, jamón ibérico cortado al momento y música en vivo.",
+      "source_url": "https://www.therooftopguide.com/rooftop-bars-in-beijing/migas.html",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9375,116.4545",
+      "distinction": null
+    },
+    {
+      "name": "Crescent Moon Muslim Restaurant",
+      "place_id": null,
+      "lat": 39.933,
+      "lng": 116.416,
+      "category": "restaurante",
+      "cuisine": "chino / uigur (Xinjiang)",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina uigur de Xinjiang -cordero a la brasa, fideos tirados a mano, pan nang- en un hutong de Dongcheng. Elegido mejor restaurante de Xinjiang por los lectores de The Beijinger.",
+      "source_url": "https://www.thebeijinger.com/directory/crescent-moon-muslim-restaurant",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.933,116.416",
+      "distinction": null
+    },
+    {
+      "name": "Middle 8th",
+      "place_id": null,
+      "lat": 39.9365,
+      "lng": 116.4548,
+      "category": "restaurante",
+      "cuisine": "chino / Yunnan",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los primeros restaurantes de cocina de Yunnan junto a Sanlitun, célebre por su pescado envuelto en hoja de plátano y sus setas silvestres.",
+      "source_url": "https://www.thebeijinger.com/directory/middle-8th-restaurant",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.9365,116.4548",
+      "distinction": null
+    },
+    {
+      "name": "Cafe Sambal",
+      "place_id": null,
+      "lat": 39.941,
+      "lng": 116.387,
+      "category": "restaurante",
+      "cuisine": "malasio / peranakan",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina peranakan malasia en una casa de patio de un hutong desde 2001, con especias traídas de Malasia y chefs malasios en la cocina.",
+      "source_url": "https://www.thebeijinger.com/blog/2016/07/27/cafe-sambal-journey-malaysia-without-departing-gulou",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.941,116.387",
+      "distinction": null
+    },
+    {
+      "name": "Dali Courtyard",
+      "place_id": null,
+      "lat": 39.935,
+      "lng": 116.401,
+      "category": "restaurante",
+      "cuisine": "chino / Yunnan",
+      "tags": [
+        "critic"
+      ],
+      "description": "Menú fijo de varios platos de cocina de Yunnan que cambia según la temporada, servido en un patio de hutong escondido lejos de las rutas turísticas.",
+      "source_url": "https://www.thebeijinger.com/blog/2015/03/05/dali-courtyard",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.935,116.401",
+      "distinction": null
+    },
+    {
+      "name": "Din Tai Fung",
+      "place_id": null,
+      "lat": 39.953,
+      "lng": 116.457,
+      "category": "restaurante",
+      "cuisine": "chino / taiwanés, xiaolongbao",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sucursal pekinesa de la célebre cadena taiwanesa, famosa por sus xiaolongbao de dieciocho pliegues y recomendada por numerosos críticos gastronómicos internacionales.",
+      "source_url": "https://www.tasteatlas.com/din-tai-fung-beijing",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.953,116.457",
+      "distinction": null
+    },
+    {
+      "name": "Xibei Youmian Village",
+      "place_id": null,
+      "lat": 39.908,
+      "lng": 116.305,
+      "category": "restaurante",
+      "cuisine": "chino / noroeste (Shanxi, Mongolia Interior)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena nacida en Pekín en 1999, especializada en fideos de avena y cordero del noroeste de China, fundada por el empresario Jia Guolong.",
+      "source_url": "https://pandayoo.com/post/from-oat-noodles-to-billions-the-xibei-restaurant-story/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.908,116.305",
+      "distinction": null
+    },
+    {
+      "name": "Home Plate BBQ",
+      "place_id": null,
+      "lat": 39.934,
+      "lng": 116.456,
+      "category": "restaurante",
+      "cuisine": "barbacoa americana",
+      "tags": [
+        "critic"
+      ],
+      "description": "Ahumados lentos al estilo del sur de Estados Unidos -brisket, costillas, pastrami- que empezaron como un reparto casero antes de abrir su primer local en Sanlitun.",
+      "source_url": "https://www.chinadaily.com.cn/a/201912/13/WS5df2e909a310cf3e3557de07.html",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.934,116.456",
+      "distinction": null
+    },
+    {
+      "name": "Kong Yiji",
+      "place_id": null,
+      "lat": 39.941,
+      "lng": 116.388,
+      "category": "restaurante",
+      "cuisine": "chino / Shaoxing (Jiangnan)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante inspirado en el cuento homónimo de Lu Xun, dedicado a la cocina de Shaoxing: gambas borrachas, cerdo Dongpo y vino de arroz amarillo.",
+      "source_url": "https://english.visitbeijing.com.cn/article/47OODfVsoiA",
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=39.941,116.388",
+      "distinction": null
     }
   ],
   "targetPlaces": 40,
