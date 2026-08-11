@@ -22,6 +22,226 @@
     "Chez Wong": {
       "cuisine": "Peruvian / ceviche",
       "description": "Chef Javier Wong makes ceviche and tiradito with no menu, for barely ten diners in his own dining room in La Victoria. Anthony Bourdain visited twice, the second time with Eric Ripert on 'Parts Unknown.'"
+    },
+    "Kjolle": {
+      "cuisine": "Andean-Amazonian Peruvian",
+      "description": "Chef Pía León's restaurant (formerly of Central) built around Peru's ecosystems and ingredients. Located next to Central in Barranco, ranked No. 9 on The World's 50 Best Restaurants 2025."
+    },
+    "Osso": {
+      "cuisine": "Meat-focused Peruvian",
+      "description": "Chef Renzo Garibaldi's meat-focused restaurant in San Isidro, specializing in Peruvian cuts from responsibly raised animals. Featured on the Latin America's 50 Best Restaurants list."
+    },
+    "Mayta": {
+      "cuisine": "Contemporary Peruvian",
+      "description": "Chef Jaime Pesaque's contemporary Peruvian kitchen in Miraflores, built on ingredients sourced from across the country. Ranked on The World's 50 Best Restaurants 2025."
+    },
+    "Malabar": {
+      "cuisine": "Amazonian Peruvian",
+      "description": "Chef Pedro Miguel Schiaffino's flagship restaurant in San Isidro, a pioneer in bringing Peruvian Amazonian ingredients to fine dining."
+    },
+    "Amaz": {
+      "cuisine": "Amazonian",
+      "description": "Amazonian restaurant by Pedro Miguel Schiaffino in Miraflores. Anthony Bourdain and Eric Ripert ate breadfruit and tuna in cashew sauce here during the Peru episode of 'Parts Unknown'."
+    },
+    "Rafael": {
+      "cuisine": "Peruvian-Italian-Nikkei",
+      "description": "Rafael Osterling's eponymous restaurant, opened in 2000 in an Art Deco townhouse in Miraflores. It blends Peruvian, Italian, and Japanese technique, and appears on the Latin America's 50 Best list."
+    },
+    "El Mercado": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Rafael Osterling's cevichería in Miraflores, conceived as a 'sublimation' of the traditional cevichería, with eight ceviche preparations that map Peru's coastal geography."
+    },
+    "Panchita": {
+      "cuisine": "Creole / anticuchos",
+      "description": "Gastón Acurio's Creole grill and anticuchería in San Isidro, dedicated to elevating popular Peruvian cuts: anticuchos, chicken gizzards, and grilled beef intestine."
+    },
+    "Fiesta": {
+      "cuisine": "Northern Peruvian",
+      "description": "Chiclayo-born chef Héctor Solís's Miraflores restaurant, a benchmark for northern Peruvian cuisine since 1996, known for arroz con pato and seco de cabrito."
+    },
+    "Isolina": {
+      "cuisine": "Creole",
+      "description": "Chef José del Castillo's Creole tavern in Barranco, serving generous portions of causa, ají de gallina, and lomo saltado in tribute to his mother, Doña Isolina. No weekend reservations."
+    },
+    "La Picantería": {
+      "cuisine": "Peruvian / seafood tavern",
+      "description": "Héctor Solís's picantería in Surquillo, focused on grilled fish and anticuchos served over big chicha jars, in a menu-less format that recreates the picanterías of northern Peru."
+    },
+    "Al Toke Pez": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Tomás Matsufuji's ceviche huarique in Surquillo, with a stand-up counter next to Market 2. The official 'Parts Unknown' guide recommends it as a must-stop on a perfect day in Lima."
+    },
+    "El Chinito": {
+      "cuisine": "Creole sandwich shop",
+      "description": "Classic sandwich shop in downtown Lima, famous for its pan con chicharrón (fried pork sandwich) and pan con pavo (turkey sandwich) topped with Creole sauce and ají."
+    },
+    "Mercado No. 1 de Surquillo": {
+      "cuisine": "produce and food market",
+      "description": "The traditional market most visited by chefs and tourists in Lima, with stalls selling fruit, fresh fish, and prepared food. A standard starting point on the city's culinary tours."
+    },
+    "Sonia": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Chorrillos cevichería founded by a fishing family, celebrated for its grilled fish. Anthony Bourdain visited it in the Peru episode of 'No Reservations' (2006)."
+    },
+    "Grimanesa Vargas Anticuchos": {
+      "cuisine": "anticuchos (grilled beef heart skewers)",
+      "description": "Doña Grimanesa Vargas has been selling anticuchos (grilled beef heart skewers) in Miraflores for more than 35 years, starting from a street cart and now from her own storefront. A living icon of Lima street food."
+    },
+    "Canta Rana": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Classic Barranco cevichería with walls covered in football jerseys, a spot generations of Limeños have frequented for its ceviche and mixed chicharrón."
+    },
+    "Punto Azul": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Miraflores cevichería very popular with office workers and Lima families, known for its tiradito and leche de tigre."
+    },
+    "Pescados Capitales": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Modern cevichería co-founded by chef Javier Wong and partners in San Borja, with an extensive menu of fish and seafood served in a casual setting."
+    },
+    "Wa Lok": {
+      "cuisine": "chifa (Peruvian-Chinese)",
+      "description": "One of Lima's oldest and most respected chifas, right on Calle Capón in the city's Chinatown. A benchmark for fried wantán, chaufa, and Peking duck for decades."
+    },
+    "Salón Capón": {
+      "cuisine": "chifa (Peruvian-Chinese)",
+      "description": "Historic Cantonese chifa in Lima's Chinatown, known for its dim sum and crispy roast duck."
+    },
+    "Chifa Titi": {
+      "cuisine": "chifa (Peruvian-Chinese)",
+      "description": "Classic San Isidro chifa, much loved by Limeños for its chaufa, Chinese-style lomo saltado, and decades of family-run service."
+    },
+    "Cordano": {
+      "cuisine": "Creole / historic bar",
+      "description": "Bar-restaurant founded in 1905 next to the Government Palace, in Lima's historic center. Its butifarra sandwiches and draft beer are a ritual of downtown Lima."
+    },
+    "Gran Hotel Bolívar (Bar Inglés)": {
+      "cuisine": "cocktail bar / historic",
+      "description": "The English Bar of the Gran Hotel Bolívar, on Plaza San Martín, has operated since 1924 and is claimed as the birthplace of the outsized pisco sour catedral, served in its iconic goblet."
+    },
+    "Museo del Pisco": {
+      "cuisine": "cocktail bar",
+      "description": "Barranco cocktail bar entirely dedicated to pisco, with guided tastings and an extensive list of chilcanos and pisco sour variations recommended by international travel guides."
+    },
+    "Ayahuasca": {
+      "cuisine": "cocktail bar",
+      "description": "Cocktail bar set inside a restored republican-era mansion in Barranco, one of Lima's most photographed cocktail spaces."
+    },
+    "La Rosa Náutica": {
+      "cuisine": "Peruvian / international",
+      "description": "Restaurant built on a Victorian-style pier on the Miraflores boardwalk, one of Lima's most photographed dining spots since it opened in 1985."
+    },
+    "Restaurante Huaca Pucllana": {
+      "cuisine": "Peruvian",
+      "description": "Contemporary Peruvian restaurant overlooking the pre-Inca Huaca Pucllana pyramid in Miraflores, lit up at night."
+    },
+    "El Pan de la Chola": {
+      "cuisine": "bakery / café",
+      "description": "Miraflores bakery that popularized sourdough bread made with Andean grain flours in Lima, with locations packed from breakfast through the afternoon."
+    },
+    "Tostaduría Bisetti": {
+      "cuisine": "coffee shop",
+      "description": "Barranco coffee roastery and café founded in 1958, a pioneer of specialty coffee in Lima, with its own roasting and tastings."
+    },
+    "T'anta": {
+      "cuisine": "Peruvian",
+      "description": "Gastón Acurio's casual Peruvian bistro, conceived as an everyday, accessible version of Creole cooking, with several locations across Lima."
+    },
+    "Brujas de Cachiche": {
+      "cuisine": "Creole",
+      "description": "Classic Creole restaurant in Miraflores, serving causas, ají dishes, and traditional Peruvian desserts in an elegant setting for more than three decades."
+    },
+    "Mérito": {
+      "cuisine": "Central American-Peruvian",
+      "description": "Venezuelan chef Marsia Taha's Barranco restaurant, crossing Central American and Peruvian ingredients. It entered the top 30 of The World's 50 Best Restaurants 2025."
+    },
+    "La Lucha Sanguchería": {
+      "cuisine": "Creole sandwiches",
+      "description": "Stand-up sandwich bar on the edge of Miraflores's Parque Kennedy, serving chicharrón, roast pork leg, and country ham sandwiches made to order."
+    },
+    "Pardos Chicken": {
+      "cuisine": "rotisserie chicken",
+      "description": "Lima rotisserie-chicken chain founded in the 1980s, one of the most popular names behind Peru's national dish."
+    },
+    "Segundo Muelle": {
+      "cuisine": "Peruvian / ceviche",
+      "description": "Cevichería chain that grew from a small spot named after the second pier of San Bartolo beach, today one of Peru's best-known ceviche brands."
+    },
+    "Osaka": {
+      "cuisine": "Nikkei",
+      "description": "San Isidro nikkei restaurant, with a sushi bar and hot dishes inspired by Peruvian-Japanese fusion, set in a sophisticated cocktail-bar atmosphere."
+    },
+    "Manolo": {
+      "cuisine": "churros / café",
+      "description": "Churro shop and café on Avenida Larco in Miraflores, open since 1968, famous for its churros filled with manjar blanco (dulce de leche)."
+    },
+    "San Antonio": {
+      "cuisine": "bakery / pastry shop",
+      "description": "Lima bakery, pastry, and grab-and-go chain since the 1990s, a breakfast and quick-sandwich classic across several districts."
+    },
+    "Carnaval Cocktail Club": {
+      "cuisine": "cocktail bar",
+      "description": "San Isidro craft-cocktail bar, part of the new generation of Lima bars recognized on international cocktail-bar lists."
+    },
+    "Cala Restaurante": {
+      "cuisine": "Contemporary Peruvian",
+      "description": "Oceanfront restaurant on Barranco's Circuito de Playas, serving contemporary Peruvian cuisine on one of Lima's best-view terraces."
+    },
+    "El Bolivariano": {
+      "cuisine": "Creole",
+      "description": "Pueblo Libre Creole restaurant with live criolla music, a traditional Lima spot for causas, anticuchos, and spicy stews."
+    },
+    "El Rincón Que No Conoces": {
+      "cuisine": "Creole",
+      "description": "Founded in 1978 by Teresa Izquierdo, regarded as the 'mother of Peruvian cuisine,' this Lince restaurant is a temple of Creole food and anticuchos."
+    },
+    "Costanera 700": {
+      "cuisine": "Peruvian / seafood",
+      "description": "Chef Humberto Sato's fish and seafood restaurant in San Isidro, a benchmark of upscale Lima seafood cooking since the 1990s."
+    },
+    "La Tiendecita Blanca": {
+      "cuisine": "café / pastry",
+      "description": "Swiss-Peruvian café facing Miraflores's Parque Kennedy, open since 1937, a historic meeting point in the city."
+    },
+    "La Red": {
+      "cuisine": "Peruvian / seafood",
+      "description": "Miraflores cevichería and seafood house running since 1958, a Limeño classic for its fresh fish and seafood rice dishes."
+    },
+    "Queirolo": {
+      "cuisine": "Creole / historic bar",
+      "description": "Historic bar-bodega in Pueblo Libre, more than a century old, celebrated for its butifarra sandwiches and pitcher-served chilcano."
+    },
+    "Amoramar": {
+      "cuisine": "Peruvian / seafood",
+      "description": "Chef Rafael Piqueras's fish and seafood restaurant in a Barranco mansion, with one of the most celebrated wine lists on Lima's seafood circuit."
+    },
+    "Toshiro": {
+      "cuisine": "Nikkei",
+      "description": "San Isidro nikkei restaurant carrying on the legacy of chef Toshiro Konishi, the founding master of Peru's modern nikkei school."
+    },
+    "Roky's": {
+      "cuisine": "rotisserie chicken",
+      "description": "Rotisserie-chicken chain founded in 1975, one of the historic names in Lima's pollo a la brasa scene, with locations across the city."
+    },
+    "Mercado Central de Lima": {
+      "cuisine": "produce and food market",
+      "description": "The great historic market of downtown Lima, next to Chinatown, with grocery, produce, fish, and prepared-food stalls dating back to the 19th century."
+    },
+    "Antica Trattoria": {
+      "cuisine": "Italian",
+      "description": "Italian trattoria set in a Barranco mansion since the 1990s, a Lima classic for homemade pastas and wood-fired pizza."
+    },
+    "El Otro Sitio": {
+      "cuisine": "Creole",
+      "description": "Barranco Creole restaurant with more than half a century of history, known for its lomo saltado and republican-mansion setting."
+    },
+    "D'Onofrio": {
+      "cuisine": "ice cream",
+      "description": "Peruvian ice cream brand founded in 1897, present in iconic carts and kiosks like the one at Miraflores's Parque Kennedy, part of Lima's urban landscape."
+    },
+    "Café del Museo Larco": {
+      "cuisine": "Peruvian",
+      "description": "Restaurant set in the gardens of the Museo Larco in Pueblo Libre, serving Peruvian cuisine inside a colonial-era mansion surrounded by bougainvillea."
     }
   }
 }

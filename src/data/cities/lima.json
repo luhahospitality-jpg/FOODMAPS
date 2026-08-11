@@ -3,7 +3,7 @@
   "name": "Lima",
   "country": "Perú",
   "tagline": "Los dos mejores restaurantes del mundo están acá, y el ceviche que empezó todo sigue sin aceptar reservas.",
-  "totalPlaces": 5,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "critic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1253878,-77.0306079",
+      "distinction": null
     },
     {
       "name": "Central",
@@ -36,7 +37,8 @@
       "source_type": null,
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1525709,-77.0225397"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1525709,-77.0225397",
+      "distinction": null
     },
     {
       "name": "La Mar Cebichería",
@@ -53,7 +55,8 @@
       "source_type": "classic",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1096643,-77.0492225"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1096643,-77.0492225",
+      "distinction": null
     },
     {
       "name": "Astrid & Gastón",
@@ -70,7 +73,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0964374,-77.0350797"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0964374,-77.0350797",
+      "distinction": null
     },
     {
       "name": "Chez Wong",
@@ -87,7 +91,1000 @@
       "source_type": "bourdain",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0819701,-77.0224712"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0819701,-77.0224712",
+      "distinction": null
+    },
+    {
+      "name": "Kjolle",
+      "place_id": null,
+      "lat": -12.1526,
+      "lng": -77.0223,
+      "category": "fine_dining",
+      "cuisine": "peruano andino-amazónico",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante de la chef Pía León (ex Central), centrado en los ecosistemas e ingredientes del Perú. Ubicado junto a Central en Barranco, ocupa el puesto 9 en The World's 50 Best Restaurants 2025.",
+      "source_url": "https://www.theworlds50best.com/the-list/kjolle.html",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1526,-77.0223",
+      "distinction": null
+    },
+    {
+      "name": "Osso",
+      "place_id": null,
+      "lat": -12.0975,
+      "lng": -77.0368,
+      "category": "fine_dining",
+      "cuisine": "carnes / peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante carnívoro del chef Renzo Garibaldi en San Isidro, especializado en cortes y despiece de carnes peruanas de crianza responsable. Figura en el ranking de Latin America's 50 Best Restaurants.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0975,-77.0368",
+      "distinction": null
+    },
+    {
+      "name": "Mayta",
+      "place_id": null,
+      "lat": -12.1015,
+      "lng": -77.042,
+      "category": "fine_dining",
+      "cuisine": "peruano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina peruana contemporánea del chef Jaime Pesaque en Miraflores, con fuerte trabajo de producto e insumos de todo el país. Ranqueado en The World's 50 Best Restaurants 2025.",
+      "source_url": "https://elcomercio.pe/somos/latin-americas-50-best-restaurants-2025-todos-los-restaurantes-peruanos-en-el-ranking-kjolle-mayta-merito-noticia/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1015,-77.042",
+      "distinction": null
+    },
+    {
+      "name": "Malabar",
+      "place_id": null,
+      "lat": -12.0958,
+      "lng": -77.0349,
+      "category": "fine_dining",
+      "cuisine": "amazónico / peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante insignia del chef Pedro Miguel Schiaffino en San Isidro, pionero en llevar ingredientes de la Amazonía peruana a la alta cocina.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0958,-77.0349",
+      "distinction": null
+    },
+    {
+      "name": "Amaz",
+      "place_id": null,
+      "lat": -12.1225,
+      "lng": -77.0295,
+      "category": "fine_dining",
+      "cuisine": "amazónico",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Restaurante amazónico de Pedro Miguel Schiaffino en Miraflores. Anthony Bourdain y Eric Ripert comieron ahí pan de fruta del árbol del pan y atún en salsa de castañas en el episodio de Perú de 'Parts Unknown'.",
+      "source_url": "https://www.continentscondiments.com/peru-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1225,-77.0295",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Rafael",
+      "place_id": null,
+      "lat": -12.124,
+      "lng": -77.033,
+      "category": "fine_dining",
+      "cuisine": "peruano-italiano-nikkei",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante epónimo de Rafael Osterling, abierto en 2000 en una casona art déco de Miraflores. Mezcla técnica peruana, italiana y japonesa, y aparece en el ranking de Latin America's 50 Best.",
+      "source_url": "https://www.theworlds50best.com/latinamerica/en/the-list/rafael.html",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.124,-77.033",
+      "distinction": null
+    },
+    {
+      "name": "El Mercado",
+      "place_id": null,
+      "lat": -12.115,
+      "lng": -77.029,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "critic"
+      ],
+      "description": "La cevichería de Rafael Osterling en Miraflores, concebida como una 'sublimación' de la cevichería tradicional, con ocho preparaciones de ceviche que recorren la geografía costera del Perú.",
+      "source_url": "https://www.afar.com/places/el-mercado-miraflores",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.115,-77.029",
+      "distinction": null
+    },
+    {
+      "name": "Panchita",
+      "place_id": null,
+      "lat": -12.0975,
+      "lng": -77.0345,
+      "category": "restaurante",
+      "cuisine": "criollo / anticuchos",
+      "tags": [
+        "classic"
+      ],
+      "description": "Anticuchería y parrilla criolla de Gastón Acurio en San Isidro, dedicada a revalorizar las carnes populares peruanas: anticuchos, mollejitas y choncholí.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0975,-77.0345",
+      "distinction": null
+    },
+    {
+      "name": "Fiesta",
+      "place_id": null,
+      "lat": -12.115,
+      "lng": -77.033,
+      "category": "fine_dining",
+      "cuisine": "peruano norteño",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante del chef chiclayano Héctor Solís en Miraflores, referente de la cocina norteña peruana desde 1996, con arroz con pato y seco de cabrito entre sus clásicos.",
+      "source_url": "https://elcomercio.pe/somos/historias/restaurante-fiesta-40-anos-de-sazon-y-orgullo-hector-solis-cuenta-como-nacio-un-joya-de-la-gastronomia-peruana-miraflores-libro-cocinero-de-chiclayo-noticia/",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.115,-77.033",
+      "distinction": null
+    },
+    {
+      "name": "Isolina",
+      "place_id": null,
+      "lat": -12.1478,
+      "lng": -77.0215,
+      "category": "restaurante",
+      "cuisine": "criollo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Taberna criolla del chef José del Castillo en Barranco, con porciones generosas de causa, ají de gallina y lomo saltado en homenaje a su madre, Doña Isolina. No acepta reservas los fines de semana.",
+      "source_url": "https://www.theinfatuation.com/lima/reviews/isolina",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1478,-77.0215",
+      "distinction": null
+    },
+    {
+      "name": "La Picantería",
+      "place_id": null,
+      "lat": -12.112,
+      "lng": -77.015,
+      "category": "picanteria",
+      "cuisine": "peruano / marisquería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Picantería de Héctor Solís en Surquillo, dedicada a los pescados y anticuchos a la parrilla servidos sobre grandes tinajas de chicha, en un formato sin carta que replica las picanterías del norte del Perú.",
+      "source_url": "https://www.theinfatuation.com/lima/reviews/la-picanteria",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.112,-77.015",
+      "distinction": null
+    },
+    {
+      "name": "Al Toke Pez",
+      "place_id": null,
+      "lat": -12.1095,
+      "lng": -77.0125,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "tv_show"
+      ],
+      "description": "Huarique de ceviche de Tomás Matsufuji en Surquillo, con barra al paso junto al Mercado 2. La guía oficial de 'Parts Unknown' lo recomienda como parada obligatoria en un día perfecto en Lima.",
+      "source_url": "https://explorepartsunknown.com/peru/the-perfect-day-in-lima/",
+      "source_type": "tv_show",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1095,-77.0125",
+      "distinction": null
+    },
+    {
+      "name": "El Chinito",
+      "place_id": null,
+      "lat": -12.0555,
+      "lng": -77.043,
+      "category": "sangucheria",
+      "cuisine": "sánguche criollo",
+      "tags": [
+        "classic"
+      ],
+      "description": "Sanguchería clásica del centro de Lima, famosa por su pan con chicharrón y su pan con pavo bañados en salsa criolla y ají.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0555,-77.043",
+      "distinction": null
+    },
+    {
+      "name": "Mercado No. 1 de Surquillo",
+      "place_id": null,
+      "lat": -12.1115,
+      "lng": -77.013,
+      "category": "mercado",
+      "cuisine": "mercado de productos",
+      "tags": [
+        "classic"
+      ],
+      "description": "El mercado tradicional más visitado por chefs y turistas en Lima, con puestos de frutas, pescado fresco y comida preparada. Punto de partida habitual en los recorridos gastronómicos de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1115,-77.013",
+      "distinction": null
+    },
+    {
+      "name": "Sonia",
+      "place_id": null,
+      "lat": -12.1735,
+      "lng": -77.018,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Cevichería de Chorrillos fundada por una familia de pescadores, célebre por su pescado a la parrilla. Anthony Bourdain la visitó en el episodio de Perú de 'No Reservations' (2006).",
+      "source_url": "https://www.continentscondiments.com/peru-all-of-the-restaurants-picked-by-anthony-bourdain-on-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1735,-77.018",
+      "distinction": null
+    },
+    {
+      "name": "Grimanesa Vargas Anticuchos",
+      "place_id": null,
+      "lat": -12.105,
+      "lng": -77.045,
+      "category": "anticuchos",
+      "cuisine": "anticuchos",
+      "tags": [
+        "classic"
+      ],
+      "description": "Doña Grimanesa Vargas vende anticuchos en Miraflores desde hace más de 35 años, primero desde un carrito callejero y hoy en su propio local. Un ícono viviente de la calle limeña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.105,-77.045",
+      "distinction": null
+    },
+    {
+      "name": "Canta Rana",
+      "place_id": null,
+      "lat": -12.1492,
+      "lng": -77.0198,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cevichería clásica de Barranco con paredes cubiertas de camisetas de fútbol, frecuentada por generaciones de limeños por su ceviche y su chicharrón mixto.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1492,-77.0198",
+      "distinction": null
+    },
+    {
+      "name": "Punto Azul",
+      "place_id": null,
+      "lat": -12.1225,
+      "lng": -77.03,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cevichería de Miraflores muy popular entre oficinistas y familias limeñas, conocida por su tiradito y su leche de tigre.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1225,-77.03",
+      "distinction": null
+    },
+    {
+      "name": "Pescados Capitales",
+      "place_id": null,
+      "lat": -12.1055,
+      "lng": -76.9955,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cevichería moderna fundada por el chef Javier Wong y socios en San Borja, con un menú extenso de pescados y mariscos servidos en un ambiente informal.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1055,-76.9955",
+      "distinction": null
+    },
+    {
+      "name": "Wa Lok",
+      "place_id": null,
+      "lat": -12.0578,
+      "lng": -77.0293,
+      "category": "chifa",
+      "cuisine": "chifa (peruano-chino)",
+      "tags": [
+        "classic"
+      ],
+      "description": "Uno de los chifas más antiguos y respetados de Lima, en plena Calle Capón del Barrio Chino. Referente de wantán frito, chaufa y pato pekinés desde hace décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0578,-77.0293",
+      "distinction": null
+    },
+    {
+      "name": "Salón Capón",
+      "place_id": null,
+      "lat": -12.0576,
+      "lng": -77.0294,
+      "category": "chifa",
+      "cuisine": "chifa (peruano-chino)",
+      "tags": [
+        "classic"
+      ],
+      "description": "Chifa cantonés histórico del Barrio Chino de Lima, conocido por su dim sum y su pato asado crocante.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0576,-77.0294",
+      "distinction": null
+    },
+    {
+      "name": "Chifa Titi",
+      "place_id": null,
+      "lat": -12.0925,
+      "lng": -77.0165,
+      "category": "chifa",
+      "cuisine": "chifa (peruano-chino)",
+      "tags": [
+        "classic"
+      ],
+      "description": "Chifa clásico de San Isidro, muy querido por los limeños por su chaufa, su lomo saltado chino y su servicio familiar de décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0925,-77.0165",
+      "distinction": null
+    },
+    {
+      "name": "Cordano",
+      "place_id": null,
+      "lat": -12.0455,
+      "lng": -77.0295,
+      "category": "bar",
+      "cuisine": "criollo / bar histórico",
+      "tags": [
+        "classic"
+      ],
+      "description": "Bar-restaurante fundado en 1905 junto al Palacio de Gobierno, en pleno centro histórico de Lima. Sus butifarras y su cerveza en jarra son un ritual del Centro de Lima.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0455,-77.0295",
+      "distinction": null
+    },
+    {
+      "name": "Gran Hotel Bolívar (Bar Inglés)",
+      "place_id": null,
+      "lat": -12.0505,
+      "lng": -77.035,
+      "category": "bar",
+      "cuisine": "coctelería / bar histórico",
+      "tags": [
+        "classic"
+      ],
+      "description": "El bar inglés del Gran Hotel Bolívar, en la Plaza San Martín, funciona desde 1924 y es reclamado como cuna del pisco sour catedral, servido en su icónica copa balón.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0505,-77.035",
+      "distinction": null
+    },
+    {
+      "name": "Museo del Pisco",
+      "place_id": null,
+      "lat": -12.1465,
+      "lng": -77.021,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de coctelería en Barranco dedicado enteramente al pisco, con catas guiadas y una carta extensa de chilcanos y variaciones de pisco sour recomendada por guías de viaje internacionales.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1465,-77.021",
+      "distinction": null
+    },
+    {
+      "name": "Ayahuasca",
+      "place_id": null,
+      "lat": -12.1477,
+      "lng": -77.0213,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de coctelería instalado en una mansión republicana restaurada de Barranco, uno de los espacios de coctelería más fotografiados de Lima.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1477,-77.0213",
+      "distinction": null
+    },
+    {
+      "name": "La Rosa Náutica",
+      "place_id": null,
+      "lat": -12.129,
+      "lng": -77.04,
+      "category": "restaurante",
+      "cuisine": "peruano / internacional",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante construido sobre un muelle victoriano en el malecón de Miraflores, uno de los locales más fotografiados de Lima desde su apertura en 1985.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.129,-77.04",
+      "distinction": null
+    },
+    {
+      "name": "Restaurante Huaca Pucllana",
+      "place_id": null,
+      "lat": -12.1086,
+      "lng": -77.0336,
+      "category": "restaurante",
+      "cuisine": "peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de cocina peruana contemporánea con vista a la pirámide preincaica Huaca Pucllana, en Miraflores, iluminada de noche.",
+      "source_url": "https://www.frommers.com/destinations/lima/restaurants/restaurant-huaca-pucllana/",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1086,-77.0336",
+      "distinction": null
+    },
+    {
+      "name": "El Pan de la Chola",
+      "place_id": null,
+      "lat": -12.122,
+      "lng": -77.028,
+      "category": "panaderia",
+      "cuisine": "panadería / café",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería de Miraflores que popularizó el pan de masa madre con harinas de granos andinos en Lima, con locales siempre llenos desde el desayuno hasta la tarde.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.122,-77.028",
+      "distinction": null
+    },
+    {
+      "name": "Tostaduría Bisetti",
+      "place_id": null,
+      "lat": -12.146,
+      "lng": -77.0218,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "classic"
+      ],
+      "description": "Tostadora y cafetería de Barranco fundada en 1958, pionera del café de especialidad en Lima, con catas y tueste propio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.146,-77.0218",
+      "distinction": null
+    },
+    {
+      "name": "T'anta",
+      "place_id": null,
+      "lat": -12.0975,
+      "lng": -77.0362,
+      "category": "restaurante",
+      "cuisine": "peruano",
+      "tags": [
+        "classic"
+      ],
+      "description": "Bistró peruano casual de Gastón Acurio, pensado como una versión accesible del día a día de la cocina criolla, con varios locales en Lima.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0975,-77.0362",
+      "distinction": null
+    },
+    {
+      "name": "Brujas de Cachiche",
+      "place_id": null,
+      "lat": -12.1215,
+      "lng": -77.0325,
+      "category": "restaurante",
+      "cuisine": "criollo",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante de cocina criolla clásica en Miraflores, con más de tres décadas sirviendo causas, ajíes y postres tradicionales peruanos en un ambiente elegante.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1215,-77.0325",
+      "distinction": null
+    },
+    {
+      "name": "Mérito",
+      "place_id": null,
+      "lat": -12.1478,
+      "lng": -77.0206,
+      "category": "fine_dining",
+      "cuisine": "centroamericano-peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de la chef venezolana Marsia Taha en Barranco, que cruza ingredientes centroamericanos y peruanos. Entró al top 30 de The World's 50 Best Restaurants 2025.",
+      "source_url": "https://www.theinfatuation.com/lima/reviews/merito",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1478,-77.0206",
+      "distinction": null
+    },
+    {
+      "name": "La Lucha Sanguchería",
+      "place_id": null,
+      "lat": -12.1213,
+      "lng": -77.0296,
+      "category": "sangucheria",
+      "cuisine": "sánguches criollos",
+      "tags": [
+        "classic"
+      ],
+      "description": "Sanguchería al paso en el borde del Parque Kennedy de Miraflores, con chicharrón, pierna y jamón del país preparados al momento.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1213,-77.0296",
+      "distinction": null
+    },
+    {
+      "name": "Pardos Chicken",
+      "place_id": null,
+      "lat": -12.1195,
+      "lng": -77.027,
+      "category": "pollo_a_la_brasa",
+      "cuisine": "pollo a la brasa",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cadena limeña de pollo a la brasa fundada en los años 80, uno de los nombres más populares del plato nacional de Perú.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1195,-77.027",
+      "distinction": null
+    },
+    {
+      "name": "Segundo Muelle",
+      "place_id": null,
+      "lat": -12.0985,
+      "lng": -77.035,
+      "category": "seafood",
+      "cuisine": "peruano / ceviche",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cadena de cevicherías nacida de un pequeño local llamado en homenaje al segundo muelle de la playa San Bartolo, hoy una de las marcas de ceviche más conocidas del Perú.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0985,-77.035",
+      "distinction": null
+    },
+    {
+      "name": "Osaka",
+      "place_id": null,
+      "lat": -12.094,
+      "lng": -77.0325,
+      "category": "fine_dining",
+      "cuisine": "nikkei",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante nikkei de San Isidro, con barra de sushi y platos calientes de inspiración peruano-japonesa en un ambiente de coctelería sofisticada.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.094,-77.0325",
+      "distinction": null
+    },
+    {
+      "name": "Manolo",
+      "place_id": null,
+      "lat": -12.1265,
+      "lng": -77.0305,
+      "category": "cafeteria",
+      "cuisine": "churros / café",
+      "tags": [
+        "classic"
+      ],
+      "description": "Churrería y café de la avenida Larco en Miraflores, abierta desde 1968, célebre por sus churros rellenos de manjar blanco.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1265,-77.0305",
+      "distinction": null
+    },
+    {
+      "name": "San Antonio",
+      "place_id": null,
+      "lat": -12.1155,
+      "lng": -77.028,
+      "category": "panaderia",
+      "cuisine": "panadería / pastelería",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cadena limeña de panadería, pastelería y comida al paso desde los años 90, un clásico del desayuno y el sánguche rápido en varios distritos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1155,-77.028",
+      "distinction": null
+    },
+    {
+      "name": "Carnaval Cocktail Club",
+      "place_id": null,
+      "lat": -12.094,
+      "lng": -77.0325,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de coctelería de autor en San Isidro, parte de la nueva generación de bares limeños reconocidos en listas internacionales de coctelería.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.094,-77.0325",
+      "distinction": null
+    },
+    {
+      "name": "Cala Restaurante",
+      "place_id": null,
+      "lat": -12.142,
+      "lng": -77.029,
+      "category": "restaurante",
+      "cuisine": "peruano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante frente al mar en el Circuito de Playas de Barranco, con cocina peruana contemporánea y una de las terrazas con mejor vista de Lima.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.142,-77.029",
+      "distinction": null
+    },
+    {
+      "name": "El Bolivariano",
+      "place_id": null,
+      "lat": -12.0735,
+      "lng": -77.0625,
+      "category": "restaurante",
+      "cuisine": "criollo",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante criollo de Pueblo Libre con música criolla en vivo, uno de los locales tradicionales de Lima para causas, anticuchos y picantes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0735,-77.0625",
+      "distinction": null
+    },
+    {
+      "name": "El Rincón Que No Conoces",
+      "place_id": null,
+      "lat": -12.0865,
+      "lng": -77.0345,
+      "category": "picanteria",
+      "cuisine": "criollo",
+      "tags": [
+        "classic"
+      ],
+      "description": "Fundado en 1978 por Teresa Izquierdo, considerada la 'madre de la cocina peruana', este restaurante de Lince es un templo de la comida criolla y los anticuchos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0865,-77.0345",
+      "distinction": null
+    },
+    {
+      "name": "Costanera 700",
+      "place_id": null,
+      "lat": -12.108,
+      "lng": -77.048,
+      "category": "seafood",
+      "cuisine": "peruano / mariscos",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante de pescados y mariscos del chef Humberto Sato en San Isidro, un referente de la alta cocina marina limeña desde los años 90.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.108,-77.048",
+      "distinction": null
+    },
+    {
+      "name": "La Tiendecita Blanca",
+      "place_id": null,
+      "lat": -12.1215,
+      "lng": -77.0298,
+      "category": "cafeteria",
+      "cuisine": "café / repostería",
+      "tags": [
+        "classic"
+      ],
+      "description": "Café suizo-peruano frente al Parque Kennedy de Miraflores, abierto desde 1937, punto de encuentro histórico de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1215,-77.0298",
+      "distinction": null
+    },
+    {
+      "name": "La Red",
+      "place_id": null,
+      "lat": -12.105,
+      "lng": -77.042,
+      "category": "seafood",
+      "cuisine": "peruano / mariscos",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cevichería y marisquería de Miraflores en funcionamiento desde 1958, clásica entre los limeños por su pescado fresco y sus arroces con mariscos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.105,-77.042",
+      "distinction": null
+    },
+    {
+      "name": "Queirolo",
+      "place_id": null,
+      "lat": -12.074,
+      "lng": -77.063,
+      "category": "bar",
+      "cuisine": "criollo / bar histórico",
+      "tags": [
+        "classic"
+      ],
+      "description": "Bar-bodega histórico de Pueblo Libre, con más de un siglo de historia, célebre por sus butifarras y su chilcano servido en jarra.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.074,-77.063",
+      "distinction": null
+    },
+    {
+      "name": "Amoramar",
+      "place_id": null,
+      "lat": -12.147,
+      "lng": -77.0225,
+      "category": "seafood",
+      "cuisine": "peruano / mariscos",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de pescados y mariscos del chef Rafael Piqueras en una casona de Barranco, con una de las cartas de vinos más celebradas del circuito marino limeño.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.147,-77.0225",
+      "distinction": null
+    },
+    {
+      "name": "Toshiro",
+      "place_id": null,
+      "lat": -12.0965,
+      "lng": -77.035,
+      "category": "fine_dining",
+      "cuisine": "nikkei",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante nikkei de San Isidro que continúa el legado del chef Toshiro Konishi, maestro fundador de la escuela nikkei moderna del Perú.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0965,-77.035",
+      "distinction": null
+    },
+    {
+      "name": "Roky's",
+      "place_id": null,
+      "lat": -12.1195,
+      "lng": -77.026,
+      "category": "pollo_a_la_brasa",
+      "cuisine": "pollo a la brasa",
+      "tags": [
+        "classic"
+      ],
+      "description": "Cadena de pollerías fundada en 1975, uno de los nombres históricos del pollo a la brasa en Lima, con locales en toda la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1195,-77.026",
+      "distinction": null
+    },
+    {
+      "name": "Mercado Central de Lima",
+      "place_id": null,
+      "lat": -12.0565,
+      "lng": -77.029,
+      "category": "mercado",
+      "cuisine": "mercado de productos",
+      "tags": [
+        "classic"
+      ],
+      "description": "El gran mercado histórico del centro de Lima, junto al Barrio Chino, con puestos de abarrotes, frutas, pescado y comida preparada desde el siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0565,-77.029",
+      "distinction": null
+    },
+    {
+      "name": "Antica Trattoria",
+      "place_id": null,
+      "lat": -12.147,
+      "lng": -77.021,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "classic"
+      ],
+      "description": "Trattoria italiana instalada en una casona de Barranco desde los años 90, un clásico limeño para pastas caseras y pizzas de horno de leña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.147,-77.021",
+      "distinction": null
+    },
+    {
+      "name": "El Otro Sitio",
+      "place_id": null,
+      "lat": -12.144,
+      "lng": -77.0225,
+      "category": "restaurante",
+      "cuisine": "criollo",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante criollo de Barranco con más de medio siglo de historia, conocido por su lomo saltado y su ambiente de casona republicana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.144,-77.0225",
+      "distinction": null
+    },
+    {
+      "name": "D'Onofrio",
+      "place_id": null,
+      "lat": -12.1211,
+      "lng": -77.0294,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "classic"
+      ],
+      "description": "Marca de helados peruana fundada en 1897, presente en carritos y kioscos icónicos como el del Parque Kennedy de Miraflores, parte del paisaje urbano limeño.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.1211,-77.0294",
+      "distinction": null
+    },
+    {
+      "name": "Café del Museo Larco",
+      "place_id": null,
+      "lat": -12.0715,
+      "lng": -77.0665,
+      "category": "restaurante",
+      "cuisine": "peruano",
+      "tags": [
+        "classic"
+      ],
+      "description": "Restaurante dentro de los jardines del Museo Larco, en Pueblo Libre, con cocina peruana en un entorno de casona virreinal rodeada de bugambilias.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-12.0715,-77.0665",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,
