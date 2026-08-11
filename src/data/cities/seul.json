@@ -3,7 +3,7 @@
   "name": "Seúl",
   "country": "Corea del Sur",
   "tagline": "El mercado de 1905 donde nació la comida callejera coreana, y el tartar de res con Bib Gourmand de al lado.",
-  "totalPlaces": 5,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "bourdain",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5697826,127.0006548"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5697826,127.0006548",
+      "distinction": null
     },
     {
       "name": "Buchon Yukhoe",
@@ -60,7 +61,8 @@
       "source_type": "classic",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5776803,126.9715276"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5776803,126.9715276",
+      "distinction": null
     },
     {
       "name": "Myeongdong Kyoja",
@@ -77,7 +79,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5625608,126.9856037"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5625608,126.9856037",
+      "distinction": null
     },
     {
       "name": "Mingles",
@@ -99,6 +102,1046 @@
         "type": "michelin_star",
         "count": 3
       }
+    },
+    {
+      "name": "Jungsik",
+      "place_id": null,
+      "lat": 37.5251,
+      "lng": 127.0392,
+      "category": "fine_dining",
+      "cuisine": "coreano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina coreana de vanguardia del chef Yim Jung-sik que reinterpreta platos tradicionales con técnicas modernas, en Apgujeong. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5251,127.0392",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "La Yeon",
+      "place_id": null,
+      "lat": 37.5577,
+      "lng": 127.0057,
+      "category": "fine_dining",
+      "cuisine": "coreano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Cocina de la corte real coreana en lo alto del hotel The Shilla, con vistas al palacio Namsan. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5577,127.0057",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Kwonsooksoo",
+      "place_id": null,
+      "lat": 37.5262,
+      "lng": 127.0367,
+      "category": "fine_dining",
+      "cuisine": "coreano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina coreana centrada en el mandu (empanadillas) elevado a menú degustación, en Gangnam. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5262,127.0367",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Soigné",
+      "place_id": null,
+      "lat": 37.5236,
+      "lng": 127.0468,
+      "category": "fine_dining",
+      "cuisine": "coreano-francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Fusión de técnica francesa con ingredientes coreanos de temporada en Cheongdam. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5236,127.0468",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Evett",
+      "place_id": null,
+      "lat": 37.5637,
+      "lng": 126.9254,
+      "category": "fine_dining",
+      "cuisine": "coreano-nórdico",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú degustación que combina despensa coreana con sensibilidad nórdica, en el barrio de Yeonnam-dong. Ascendió a dos estrellas Michelin en 2025.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5637,126.9254",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Kojima",
+      "place_id": null,
+      "lat": 37.5236,
+      "lng": 127.0432,
+      "category": "fine_dining",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Barra de sushi de estilo edomae en Cheongdam, referencia de la alta cocina japonesa en Seúl. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5236,127.0432",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Balwoo Gongyang",
+      "place_id": null,
+      "lat": 37.5733,
+      "lng": 126.9836,
+      "category": "fine_dining",
+      "cuisine": "coreano / comida de templo",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Único restaurante gestionado por la orden budista Jogye, sirve cocina de templo (sachal eumsik) vegetariana junto al templo Jogyesa. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5733,126.9836",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Byeokje Galbi",
+      "place_id": null,
+      "lat": 37.5104,
+      "lng": 127.1189,
+      "category": "restaurante",
+      "cuisine": "coreano / BBQ",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución de galbi (costilla) hanwoo desde 1986, con reses criadas en granja propia en Pocheon y parrillas de carbón en cada mesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5104,127.1189",
+      "distinction": null
+    },
+    {
+      "name": "Congdu",
+      "place_id": null,
+      "lat": 37.5762,
+      "lng": 126.9718,
+      "category": "restaurante",
+      "cuisine": "coreano / hanjeongsik moderno",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Hanjeongsik contemporáneo con muchos banchan cerca del Palacio Gyeongbokgung. Bib Gourmand de la Guía Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5762,126.9718",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Hadongkwan",
+      "place_id": null,
+      "lat": 37.5637,
+      "lng": 126.9827,
+      "category": "restaurante",
+      "cuisine": "coreano / gomtang",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Sopa de hueso de ternera hanwoo (gomtang) desde 1939 en pleno Myeongdong, con la receta y el mobiliario original conservados. Bib Gourmand.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5637,126.9827",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Yongsusan",
+      "place_id": null,
+      "lat": 37.5757,
+      "lng": 126.9822,
+      "category": "restaurante",
+      "cuisine": "coreano / cocina real de Gaeseong",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Hanjeongsik de estilo Gaeseong con decenas de banchan servidos en juego completo, nombrado 'Mejor Restaurante Coreano' por el gobierno de Seúl.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5757,126.9822",
+      "distinction": null
+    },
+    {
+      "name": "Sanchon",
+      "place_id": null,
+      "lat": 37.5745,
+      "lng": 126.986,
+      "category": "restaurante",
+      "cuisine": "coreano / comida de templo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante vegetariano de comida de templo budista en Insadong, fundado por un antiguo monje, con actuaciones tradicionales durante la cena.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5745,126.986",
+      "distinction": null
+    },
+    {
+      "name": "Osegyehyang",
+      "place_id": null,
+      "lat": 37.5798,
+      "lng": 126.9838,
+      "category": "restaurante",
+      "cuisine": "coreano-chino vegano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pionero del jjajangmyeon y otros platos coreano-chinos veganos en Anguk, referencia histórica de la escena vegetariana de Seúl.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5798,126.9838",
+      "distinction": null
+    },
+    {
+      "name": "Woo Lae Oak",
+      "place_id": null,
+      "lat": 37.5598,
+      "lng": 127.0048,
+      "category": "restaurante",
+      "cuisine": "coreano / naengmyeon de Pyongyang",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "El restaurante de naengmyeon (fideos fríos) al estilo Pyongyang más antiguo de Seúl en activo, abierto en 1946. Bib Gourmand.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5598,127.0048",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Pildong Myeonok",
+      "place_id": null,
+      "lat": 37.5601,
+      "lng": 126.9925,
+      "category": "restaurante",
+      "cuisine": "coreano / naengmyeon de Pyongyang",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Naengmyeon bibim servido con agua de cocción del propio fideo en vez de caldo de carne, una de las cinco casas de naengmyeon de Pyongyang con más de 60 años reconocidas por la Guía Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5601,126.9925",
+      "distinction": null
+    },
+    {
+      "name": "Ojang-dong Heungnamjip",
+      "place_id": null,
+      "lat": 37.5652,
+      "lng": 126.9963,
+      "category": "restaurante",
+      "cuisine": "coreano / naengmyeon de Hamheung",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fideos naengmyeon picantes de batata al estilo Hamheung desde 1953, abierto por refugiados del norte durante la Guerra de Corea.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5652,126.9963",
+      "distinction": null
+    },
+    {
+      "name": "Sunhee's Bindaetteok",
+      "place_id": null,
+      "lat": 37.5701,
+      "lng": 127.0002,
+      "category": "street_food",
+      "cuisine": "coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto emblemático del mercado Gwangjang famoso por su bindaetteok (torta de judía mungo), yukhoe y mayak gimbap.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5701,127.0002",
+      "distinction": null
+    },
+    {
+      "name": "Sindang-dong Tteokbokki Town",
+      "place_id": null,
+      "lat": 37.5657,
+      "lng": 127.0176,
+      "category": "street_food",
+      "cuisine": "coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Callejón de tteokbokki nacido en 1953 cuando Ma Bok-rim empezó a vender pastelitos de arroz picantes; su fama nacional despegó tras un anuncio de gochujang en 1996.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5657,127.0176",
+      "distinction": null
+    },
+    {
+      "name": "Jangchungdong Jokbal Golmok",
+      "place_id": null,
+      "lat": 37.5595,
+      "lng": 127.0067,
+      "category": "street_food",
+      "cuisine": "coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Callejón histórico de jokbal (manitas de cerdo estofadas) en Jangchung-dong, con locales que llevan décadas compitiendo por la misma receta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5595,127.0067",
+      "distinction": null
+    },
+    {
+      "name": "Wonjo Yeongyang Center",
+      "place_id": null,
+      "lat": 37.5636,
+      "lng": 126.9834,
+      "category": "restaurante",
+      "cuisine": "coreano / pollo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abrió en Myeongdong en 1960 con un horno eléctrico giratorio para pollo entero, pionero del pollo asado coreano y del reparto a domicilio desde 1968.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5636,126.9834",
+      "distinction": null
+    },
+    {
+      "name": "Kyochon Chicken",
+      "place_id": null,
+      "lat": 37.5172,
+      "lng": 127.0286,
+      "category": "fast_food",
+      "cuisine": "coreano / pollo frito",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena fundada en 1991 que popularizó el pollo frito coreano con salsa de soja, hoy una de las mayores del país.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5172,127.0286",
+      "distinction": null
+    },
+    {
+      "name": "Noryangjin Fisheries Wholesale Market",
+      "place_id": null,
+      "lat": 37.5157,
+      "lng": 126.9403,
+      "category": "mercado",
+      "cuisine": "mariscos",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "El mayor mercado mayorista de pescado de Seúl, donde Anthony Bourdain desayunó pulpo recién sacrificado en 'No Reservations'.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-seoul-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5157,126.9403",
+      "distinction": null
+    },
+    {
+      "name": "Garak Market",
+      "place_id": null,
+      "lat": 37.4926,
+      "lng": 127.1186,
+      "category": "mercado",
+      "cuisine": "coreano",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Gran mercado mayorista de Songpa-gu donde Bourdain probó banchan, marisco vivo y maeuntang en 'Parts Unknown'.",
+      "source_url": "https://www.continentscondiments.com/korea-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.4926,127.1186",
+      "distinction": null
+    },
+    {
+      "name": "Mapo Jeong Daepo",
+      "place_id": null,
+      "lat": 37.5434,
+      "lng": 126.9515,
+      "category": "restaurante",
+      "cuisine": "coreano / BBQ",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Asador de galmaegisal (falda de cerdo) al estilo Mapo que Anthony Bourdain visitó en un episodio de 'Parts Unknown' dedicado al 'hoesik' de oficina.",
+      "source_url": "https://www.continentscondiments.com/korea-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5434,126.9515",
+      "distinction": null
+    },
+    {
+      "name": "Fritz Coffee Company",
+      "place_id": null,
+      "lat": 37.5406,
+      "lng": 126.949,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostador insignia de la especialidad coreana, instalado en un hanok restaurado de los años 60 en Mapo-gu; referencia del renacer cafetero de Seúl.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5406,126.949",
+      "distinction": null
+    },
+    {
+      "name": "Anthracite Coffee Roasters",
+      "place_id": null,
+      "lat": 37.5495,
+      "lng": 126.9145,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostador de especialidad instalado en una antigua fábrica de zapatos en Hapjeong, con la sala de tueste visible tras cristaleras industriales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5495,126.9145",
+      "distinction": null
+    },
+    {
+      "name": "Center Coffee",
+      "place_id": null,
+      "lat": 37.5445,
+      "lng": 127.0557,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pionero de la cafetería de especialidad en Seúl, con menú rotativo de pour-over de un solo origen y buque insignia en Seongsu-dong.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5445,127.0557",
+      "distinction": null
+    },
+    {
+      "name": "Onion Seongsu",
+      "place_id": null,
+      "lat": 37.5443,
+      "lng": 127.0557,
+      "category": "cafeteria",
+      "cuisine": "café y repostería",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Cafetería instalada en una antigua fábrica de metal de los años 70 en Seongsu-dong, célebre por su pan recién horneado y su estética industrial fotografiada hasta el agotamiento.",
+      "source_url": null,
+      "source_type": "influencer",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5443,127.0557",
+      "distinction": null
+    },
+    {
+      "name": "Daelim Changgo",
+      "place_id": null,
+      "lat": 37.5459,
+      "lng": 127.0563,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Antiguo almacén de Seongsu-dong reconvertido en café-galería con techos altos e instalaciones de arte; una de las primeras cafeterías en volverse viral y que dio fama al barrio.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5459,127.0563",
+      "distinction": null
+    },
+    {
+      "name": "Suyeon Sanbang",
+      "place_id": null,
+      "lat": 37.5975,
+      "lng": 127.0072,
+      "category": "cafeteria",
+      "cuisine": "té tradicional coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Primera casa de té tradicional en un hanok de Seúl, antigua vivienda del escritor Lee Tae-jun en Seongbuk-dong, declarada bien cultural folclórico.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5975,127.0072",
+      "distinction": null
+    },
+    {
+      "name": "Le Chamber",
+      "place_id": null,
+      "lat": 37.5252,
+      "lng": 127.0396,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "worlds50best"
+      ],
+      "description": "Speakeasy de Cheongdam-dong al que se accede tirando del libro correcto en una estantería; en la lista de Asia's 50 Best Bars todos los años desde 2016.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5252,127.0396",
+      "distinction": null
+    },
+    {
+      "name": "Alice Cheongdam",
+      "place_id": null,
+      "lat": 37.5245,
+      "lng": 127.0409,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "worlds50best"
+      ],
+      "description": "Speakeasy inspirado en 'Alicia en el país de las maravillas' al que se llega tras una puerta secreta en una floristería; puesto 13 en Asia's 50 Best Bars 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5245,127.0409",
+      "distinction": null
+    },
+    {
+      "name": "Vatos Urban Tacos",
+      "place_id": null,
+      "lat": 37.5347,
+      "lng": 126.9947,
+      "category": "restaurante",
+      "cuisine": "coreano-mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Fundado en 2011 en un callejón de Itaewon por tres coreano-americanos, pionero de la fusión coreano-mexicana en Seúl (kimchi carnitas fries, bulgogi tacos).",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5347,126.9947",
+      "distinction": null
+    },
+    {
+      "name": "Isaac Toast",
+      "place_id": null,
+      "lat": 37.5636,
+      "lng": 126.9834,
+      "category": "fast_food",
+      "cuisine": "coreano / sándwich",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de sándwiches tostados nacida en Myeongdong en 1989, un clásico del desayuno callejero coreano.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5636,126.9834",
+      "distinction": null
+    },
+    {
+      "name": "Gogung",
+      "place_id": null,
+      "lat": 37.5745,
+      "lng": 126.9857,
+      "category": "restaurante",
+      "cuisine": "coreano / bibimbap de Jeonju",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bibimbap al estilo de Jeonju servido en cuenco de piedra caliente, con sucursal muy visitada en Insadong.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5745,126.9857",
+      "distinction": null
+    },
+    {
+      "name": "Jaha Sonmandu",
+      "place_id": null,
+      "lat": 37.594,
+      "lng": 126.9646,
+      "category": "restaurante",
+      "cuisine": "coreano / mandu",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Mandu (empanadillas) hechas a mano en Buam-dong, en una casa con jardín a los pies de la montaña Bugaksan; recomendado por la Guía Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.594,126.9646",
+      "distinction": null
+    },
+    {
+      "name": "Tongin Market",
+      "place_id": null,
+      "lat": 37.5794,
+      "lng": 126.9695,
+      "category": "mercado",
+      "cuisine": "coreano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado tradicional junto al Palacio Gyeongbokgung famoso por su 'Dosirak Cafe', donde se compran monedas de latón para armar una fiambrera con los puestos del mercado.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5794,126.9695",
+      "distinction": null
+    },
+    {
+      "name": "Eulji Myeonok",
+      "place_id": null,
+      "lat": 37.5665,
+      "lng": 126.9915,
+      "category": "restaurante",
+      "cuisine": "coreano / naengmyeon de Pyongyang",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Otra de las cinco casas centenarias de naengmyeon de Pyongyang de Seúl, con Bib Gourmand de la Guía Michelin, en Euljiro.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5665,126.9915",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Nokdu Jip",
+      "place_id": null,
+      "lat": 37.5583,
+      "lng": 126.9368,
+      "category": "restaurante",
+      "cuisine": "coreano / bindaetteok y makgeolli",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local histórico cerca de la Universidad de Yonsei, punto de encuentro de generaciones de estudiantes para tortitas de judía mungo y makgeolli.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5583,126.9368",
+      "distinction": null
+    },
+    {
+      "name": "Coffee Libre",
+      "place_id": null,
+      "lat": 37.5628,
+      "lng": 126.9255,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostador de especialidad pionero en Seúl desde 2009, con local base en Yeonnam-dong, referencia temprana del movimiento de café de tercera ola coreano.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 45,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5628,126.9255",
+      "distinction": null
+    },
+    {
+      "name": "Ryunique",
+      "place_id": null,
+      "lat": 37.5241,
+      "lng": 127.0416,
+      "category": "fine_dining",
+      "cuisine": "coreano-francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú degustación franco-coreano del chef Lee Won-il en Cheongdam-dong. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5241,127.0416",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Passion 5",
+      "place_id": null,
+      "lat": 37.5346,
+      "lng": 127.0007,
+      "category": "panaderia",
+      "cuisine": "repostería y panadería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Complejo de panadería, pastelería y bar de postres del grupo SPC en Hannam-dong, abierto en 2010 como escaparate de la repostería coreana moderna.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5346,127.0007",
+      "distinction": null
+    },
+    {
+      "name": "Maple Tree House",
+      "place_id": null,
+      "lat": 37.5346,
+      "lng": 126.9947,
+      "category": "restaurante",
+      "cuisine": "coreano / BBQ",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cadena de BBQ coreano de gama alta muy recomendada a visitantes extranjeros, con sucursal veterana en Itaewon.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5346,126.9947",
+      "distinction": null
+    },
+    {
+      "name": "Charles H",
+      "place_id": null,
+      "lat": 37.5707,
+      "lng": 127.0095,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "worlds50best"
+      ],
+      "description": "Bar de coctelería clásica dentro del JW Marriott Dongdaemun Square, habitual de las listas Asia's 50 Best Bars.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5707,127.0095",
+      "distinction": null
+    },
+    {
+      "name": "Sanwonga",
+      "place_id": null,
+      "lat": 37.5013,
+      "lng": 127.0369,
+      "category": "restaurante",
+      "cuisine": "coreano / hanwoo BBQ",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Asador especializado en ternera hanwoo de alta gama en Gangnam, habitual de las comidas de negocios de Seúl.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5013,127.0369",
+      "distinction": null
+    },
+    {
+      "name": "Gwanghwamun Jip",
+      "place_id": null,
+      "lat": 37.5716,
+      "lng": 126.9779,
+      "category": "restaurante",
+      "cuisine": "coreano / kongnamul gukbap",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local de más de 60 años cerca de Gwanghwamun célebre por su kongnamul gukbap (sopa de brotes de soja) y su bulgogi, clásico entre oficinistas de Seúl.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5716,126.9779",
+      "distinction": null
+    },
+    {
+      "name": "Sulbing",
+      "place_id": null,
+      "lat": 37.5563,
+      "lng": 126.9237,
+      "category": "dessert",
+      "cuisine": "coreano / postre",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena nacida en 2013 que popularizó el bingsu (hielo raspado) moderno con leche e injeolmi en toda Corea, con local emblemático en Hongdae.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5563,126.9237",
+      "distinction": null
+    },
+    {
+      "name": "Jihwaja",
+      "place_id": null,
+      "lat": 37.5658,
+      "lng": 126.9757,
+      "category": "fine_dining",
+      "cuisine": "coreano / cocina de la corte real",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina de la corte real Joseon cerca del Palacio Deoksugung, con menús degustación de banchan elaborados.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5658,126.9757",
+      "distinction": null
+    },
+    {
+      "name": "Goryeo Samgyetang",
+      "place_id": null,
+      "lat": 37.5721,
+      "lng": 126.9829,
+      "category": "restaurante",
+      "cuisine": "coreano / samgyetang",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Alternativa popular a Tosokchon para el samgyetang (sopa de pollo con ginseng), cerca de Insadong y Gwanghwamun.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5721,126.9829",
+      "distinction": null
+    },
+    {
+      "name": "Layered",
+      "place_id": null,
+      "lat": 37.5645,
+      "lng": 126.9236,
+      "category": "panaderia",
+      "cuisine": "repostería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería de Yeonnam-dong célebre por sus scones, parte de la nueva ola de horneados de autor que ha transformado la escena de cafés de Seúl.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 55,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5645,126.9236",
+      "distinction": null
+    },
+    {
+      "name": "Anam",
+      "place_id": null,
+      "lat": 37.5894,
+      "lng": 127.0325,
+      "category": "restaurante",
+      "cuisine": "coreano / dwaeji gukbap",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Sopa de cerdo y arroz (dwaeji gukbap) cerca de la Universidad de Korea, incorporado a la Guía Michelin Seúl como nuevo Bib Gourmand en 2024.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 56,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5894,127.0325",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Linus' BBQ",
+      "place_id": null,
+      "lat": 37.533,
+      "lng": 126.992,
+      "category": "restaurante",
+      "cuisine": "estadounidense / BBQ ahumado",
+      "tags": [
+        "critic"
+      ],
+      "description": "Ahumadero al estilo tejano en la zona de Itaewon, referencia de la escena de barbacoa estadounidense que ha crecido en Seúl.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.533,126.992",
+      "distinction": null
+    },
+    {
+      "name": "Eulmildae",
+      "place_id": null,
+      "lat": 37.5605,
+      "lng": 126.9946,
+      "category": "restaurante",
+      "cuisine": "coreano / naengmyeon de Pyongyang",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de naengmyeon de Pyongyang abierta como pequeño local en 1971, una de las cinco históricas de Seúl con más de medio siglo de actividad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5605,126.9946",
+      "distinction": null
+    },
+    {
+      "name": "Osulloc Tea House",
+      "place_id": null,
+      "lat": 37.574,
+      "lng": 126.985,
+      "category": "cafeteria",
+      "cuisine": "té",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de té insignia de la marca de té verde de Jeju Osulloc en Insadong, con postres y bebidas a base de té verde matcha.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.574,126.985",
+      "distinction": null
+    },
+    {
+      "name": "BBQ Chicken",
+      "place_id": null,
+      "lat": 37.5013,
+      "lng": 127.027,
+      "category": "fast_food",
+      "cuisine": "coreano / pollo frito",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena fundada en 1995 en Seúl que popularizó el pollo frito en aceite de oliva, hoy una de las mayores franquicias de pollo coreano en el mundo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=37.5013,127.027",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,

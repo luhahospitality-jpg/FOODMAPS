@@ -22,6 +22,226 @@
     "Mingles": {
       "cuisine": "contemporary Korean",
       "description": "Contemporary Korean haute cuisine from chef Kang Mingoo in Gangnam. Three Michelin stars."
+    },
+    "Jungsik": {
+      "cuisine": "contemporary Korean",
+      "description": "Chef Yim Jung-sik's avant-garde Korean cuisine reinterprets traditional dishes with modern technique, in Apgujeong. Two Michelin stars."
+    },
+    "La Yeon": {
+      "cuisine": "Korean",
+      "description": "Korean royal court cuisine served atop the Shilla Hotel, with views over Namsan. Two Michelin stars."
+    },
+    "Kwonsooksoo": {
+      "cuisine": "Korean",
+      "description": "Korean haute cuisine built around mandu (dumplings) elevated into a tasting menu, in Gangnam. Two Michelin stars."
+    },
+    "Soigné": {
+      "cuisine": "Korean-French",
+      "description": "French technique fused with seasonal Korean ingredients in Cheongdam. Two Michelin stars."
+    },
+    "Evett": {
+      "cuisine": "Korean-Nordic",
+      "description": "A tasting menu blending Korean pantry with Nordic sensibility, in the Yeonnam-dong neighborhood. Promoted to two Michelin stars in 2025."
+    },
+    "Kojima": {
+      "cuisine": "Japanese / sushi",
+      "description": "An edomae-style sushi counter in Cheongdam, a benchmark for high-end Japanese dining in Seoul. Two Michelin stars."
+    },
+    "Balwoo Gongyang": {
+      "cuisine": "Korean / temple food",
+      "description": "The only restaurant run directly by Korea's Jogye Buddhist order, serving vegetarian temple cuisine (sachal eumsik) next to Jogyesa Temple. One Michelin star."
+    },
+    "Byeokje Galbi": {
+      "cuisine": "Korean / BBQ",
+      "description": "A hanwoo beef-rib galbi institution since 1986, using cattle raised on its own Pocheon farm and charcoal grills built into every table."
+    },
+    "Congdu": {
+      "cuisine": "Korean / modern hanjeongsik",
+      "description": "Contemporary banchan-heavy hanjeongsik near Gyeongbokgung Palace. Michelin Guide Bib Gourmand."
+    },
+    "Hadongkwan": {
+      "cuisine": "Korean / gomtang",
+      "description": "Hanwoo beef-bone gomtang soup served since 1939 in the heart of Myeongdong, with the original recipe and furniture preserved. Bib Gourmand."
+    },
+    "Yongsusan": {
+      "cuisine": "Korean / Gaeseong royal cuisine",
+      "description": "Gaeseong-style hanjeongsik served as a full course of dozens of banchan, named 'Best Korean Restaurant' by the Seoul city government."
+    },
+    "Sanchon": {
+      "cuisine": "Korean / temple food",
+      "description": "A vegetarian Buddhist temple-food restaurant in Insadong, founded by a former monk, with traditional performances during dinner."
+    },
+    "Osegyehyang": {
+      "cuisine": "vegan Korean-Chinese",
+      "description": "A pioneer of vegan jjajangmyeon and other Korean-Chinese dishes in Anguk, a long-running fixture of Seoul's vegetarian scene."
+    },
+    "Woo Lae Oak": {
+      "cuisine": "Korean / Pyongyang naengmyeon",
+      "description": "Seoul's oldest still-operating Pyongyang-style naengmyeon (cold noodle) restaurant, opened in 1946. Bib Gourmand."
+    },
+    "Pildong Myeonok": {
+      "cuisine": "Korean / Pyongyang naengmyeon",
+      "description": "Bibim naengmyeon served with the noodles' own starchy cooking water instead of beef broth, one of the five 60-plus-year Pyongyang naengmyeon houses recognized by the Michelin Guide."
+    },
+    "Ojang-dong Heungnamjip": {
+      "cuisine": "Korean / Hamheung naengmyeon",
+      "description": "Spicy sweet-potato-noodle Hamheung-style naengmyeon since 1953, opened by refugees from the North during the Korean War."
+    },
+    "Sunhee's Bindaetteok": {
+      "cuisine": "Korean",
+      "description": "A landmark stall inside Gwangjang Market famous for its bindaetteok (mung bean pancake), yukhoe, and mayak gimbap."
+    },
+    "Sindang-dong Tteokbokki Town": {
+      "cuisine": "Korean",
+      "description": "The tteokbokki alley born in 1953 when Ma Bok-rim began selling spicy rice cakes; it shot to national fame after a 1996 gochujang TV ad."
+    },
+    "Jangchungdong Jokbal Golmok": {
+      "cuisine": "Korean",
+      "description": "A historic alley of jokbal (braised pig's trotters) shops in Jangchung-dong, where competing storefronts have guarded the same recipe for decades."
+    },
+    "Wonjo Yeongyang Center": {
+      "cuisine": "Korean / chicken",
+      "description": "Opened in Myeongdong in 1960 with an electric rotisserie for whole birds, a pioneer of Korean roast chicken and of chicken delivery from 1968 onward."
+    },
+    "Kyochon Chicken": {
+      "cuisine": "Korean / fried chicken",
+      "description": "Chain founded in 1991 that popularized soy-garlic Korean fried chicken, today one of the country's largest."
+    },
+    "Noryangjin Fisheries Wholesale Market": {
+      "cuisine": "seafood",
+      "description": "Seoul's largest wholesale fish market, where Anthony Bourdain had fresh octopus for breakfast on 'No Reservations'."
+    },
+    "Garak Market": {
+      "cuisine": "Korean",
+      "description": "A large wholesale market in Songpa-gu where Bourdain sampled banchan, live seafood, and maeuntang stew on 'Parts Unknown'."
+    },
+    "Mapo Jeong Daepo": {
+      "cuisine": "Korean / BBQ",
+      "description": "A Mapo-style galmaegisal (pork skirt meat) grill house Anthony Bourdain visited for a 'Parts Unknown' segment on Korean office 'hoesik' culture."
+    },
+    "Fritz Coffee Company": {
+      "cuisine": "coffee",
+      "description": "The flagship roaster of Korean specialty coffee, set in a restored 1960s hanok in Mapo-gu; a touchstone of Seoul's coffee revival."
+    },
+    "Anthracite Coffee Roasters": {
+      "cuisine": "coffee",
+      "description": "A specialty roaster housed in a former shoe factory in Hapjeong, its roasting room visible through industrial glass walls."
+    },
+    "Center Coffee": {
+      "cuisine": "coffee",
+      "description": "A pioneer of Seoul's specialty-coffee scene, with a rotating single-origin pour-over menu and a flagship in Seongsu-dong."
+    },
+    "Onion Seongsu": {
+      "cuisine": "coffee and pastry",
+      "description": "A cafe set inside a 1970s former metal factory in Seongsu-dong, famous for its fresh-baked bread and its endlessly photographed industrial look."
+    },
+    "Daelim Changgo": {
+      "cuisine": "coffee",
+      "description": "A former Seongsu-dong warehouse turned cafe-gallery with soaring ceilings and art installations; one of the first cafes to go viral and put the neighborhood on the map."
+    },
+    "Suyeon Sanbang": {
+      "cuisine": "traditional Korean tea",
+      "description": "Seoul's first traditional hanok tea house, the former home of writer Lee Tae-jun in Seongbuk-dong, designated a folk cultural property."
+    },
+    "Le Chamber": {
+      "cuisine": "cocktail bar",
+      "description": "A Cheongdam-dong speakeasy entered by pulling the right book off a bookshelf; on Asia's 50 Best Bars list every year since 2016."
+    },
+    "Alice Cheongdam": {
+      "cuisine": "cocktail bar",
+      "description": "An Alice in Wonderland-inspired speakeasy reached through a secret door in a flower shop; ranked No. 13 on Asia's 50 Best Bars 2025."
+    },
+    "Vatos Urban Tacos": {
+      "cuisine": "Korean-Mexican",
+      "description": "Founded in 2011 in an Itaewon back alley by three Korean-Americans, the pioneer of Korean-Mexican fusion in Seoul (kimchi carnitas fries, bulgogi tacos)."
+    },
+    "Isaac Toast": {
+      "cuisine": "Korean / toast sandwich",
+      "description": "A grilled-toast sandwich chain born in Myeongdong in 1989, a classic of Korean street breakfast."
+    },
+    "Gogung": {
+      "cuisine": "Korean / Jeonju bibimbap",
+      "description": "Jeonju-style bibimbap served in a sizzling stone bowl, with a heavily visited branch in Insadong."
+    },
+    "Jaha Sonmandu": {
+      "cuisine": "Korean / mandu dumplings",
+      "description": "Handmade mandu dumplings in Buam-dong, in a garden house at the foot of Mount Bugaksan; recommended by the Michelin Guide."
+    },
+    "Tongin Market": {
+      "cuisine": "Korean",
+      "description": "A traditional market beside Gyeongbokgung Palace famous for its 'Dosirak Cafe' concept, where visitors buy brass coins to assemble a lunchbox from the market's stalls."
+    },
+    "Eulji Myeonok": {
+      "cuisine": "Korean / Pyongyang naengmyeon",
+      "description": "One of Seoul's five long-running Pyongyang naengmyeon houses, holding a Michelin Bib Gourmand, in Euljiro."
+    },
+    "Nokdu Jip": {
+      "cuisine": "Korean / bindaetteok and makgeolli",
+      "description": "A historic haunt near Yonsei University, a meeting point for generations of students over mung-bean pancakes and makgeolli rice wine."
+    },
+    "Coffee Libre": {
+      "cuisine": "coffee",
+      "description": "A pioneering specialty roaster in Seoul since 2009, based in Yeonnam-dong, an early landmark of Korea's third-wave coffee movement."
+    },
+    "Ryunique": {
+      "cuisine": "Korean-French",
+      "description": "A French-Korean tasting menu from chef Lee Won-il in Cheongdam-dong. One Michelin star."
+    },
+    "Passion 5": {
+      "cuisine": "pastry and bakery",
+      "description": "A bakery, patisserie, and dessert-bar complex from the SPC group in Hannam-dong, opened in 2010 as a showcase for modern Korean pastry."
+    },
+    "Maple Tree House": {
+      "cuisine": "Korean / BBQ",
+      "description": "An upscale Korean BBQ chain heavily recommended to foreign visitors, with a longtime branch in Itaewon."
+    },
+    "Charles H": {
+      "cuisine": "cocktail bar",
+      "description": "A classic cocktail bar inside the JW Marriott Dongdaemun Square, a regular on the Asia's 50 Best Bars lists."
+    },
+    "Sanwonga": {
+      "cuisine": "Korean / hanwoo BBQ",
+      "description": "A grill house specializing in high-grade hanwoo beef in Gangnam, a fixture of Seoul business dining."
+    },
+    "Gwanghwamun Jip": {
+      "cuisine": "Korean / bean-sprout soup",
+      "description": "A 60-plus-year spot near Gwanghwamun famed for kongnamul gukbap (bean-sprout soup) and bulgogi, a classic among Seoul office workers."
+    },
+    "Sulbing": {
+      "cuisine": "Korean / dessert",
+      "description": "A chain born in 2013 that popularized modern milk-and-injeolmi bingsu (shaved ice) across Korea, with a landmark Hongdae location."
+    },
+    "Jihwaja": {
+      "cuisine": "Korean / royal court cuisine",
+      "description": "A Joseon royal court cuisine restaurant near Deoksugung Palace, serving elaborate banchan tasting menus."
+    },
+    "Goryeo Samgyetang": {
+      "cuisine": "Korean / ginseng chicken soup",
+      "description": "A popular alternative to Tosokchon for samgyetang (ginseng chicken soup), near Insadong and Gwanghwamun."
+    },
+    "Layered": {
+      "cuisine": "pastry",
+      "description": "A Yeonnam-dong bakery celebrated for its scones, part of the new wave of artisan baking that has reshaped Seoul's cafe scene."
+    },
+    "Anam": {
+      "cuisine": "Korean / pork and rice soup",
+      "description": "Pork and rice soup (dwaeji gukbap) near Korea University, added to the Michelin Guide Seoul as a new Bib Gourmand in 2024."
+    },
+    "Linus' BBQ": {
+      "cuisine": "American / smoked BBQ",
+      "description": "A Texas-style smokehouse in the Itaewon area, a landmark of the American barbecue scene that has grown in Seoul."
+    },
+    "Eulmildae": {
+      "cuisine": "Korean / Pyongyang naengmyeon",
+      "description": "A Pyongyang naengmyeon house that opened as a small shop in 1971, one of Seoul's five historic houses with over half a century in business."
+    },
+    "Osulloc Tea House": {
+      "cuisine": "tea",
+      "description": "The flagship tea house of Jeju green-tea brand Osulloc in Insadong, serving matcha-based desserts and drinks."
+    },
+    "BBQ Chicken": {
+      "cuisine": "Korean / fried chicken",
+      "description": "A chain founded in Seoul in 1995 that popularized olive-oil fried chicken, today one of the world's largest Korean chicken franchises."
     }
   }
 }
