@@ -22,6 +22,226 @@
     "Enrico Bartolini al MUDEC": {
       "cuisine": "Italian",
       "description": "Inside the Museum of Cultures, Milan's only three-Michelin-star table."
+    },
+    "Sadler": {
+      "cuisine": "Contemporary Italian",
+      "description": "Claudio Sadler's signature cuisine in the Brera district, French classical technique applied to Italian ingredients. One Michelin star."
+    },
+    "Ristorante Berton": {
+      "cuisine": "Contemporary Italian",
+      "description": "Andrea Berton's refined, ingredient-driven Italian cooking in the Porta Nuova district. One Michelin star."
+    },
+    "Contraste": {
+      "cuisine": "Creative Italian",
+      "description": "Uruguayan chef Matias Perdomo runs one of Milan's most creative tables, inside a period building near Porta Romana. One Michelin star."
+    },
+    "Iyo": {
+      "cuisine": "Japanese",
+      "description": "Italy's only Michelin-starred Japanese restaurant, founded by Claudio Liu near the CityLife district."
+    },
+    "Joia": {
+      "cuisine": "Vegetarian",
+      "description": "Pietro Leemann opened the first vegetarian restaurant in Europe to win a Michelin star, in 1996. It remains the benchmark for plant-based fine dining."
+    },
+    "Trippa": {
+      "cuisine": "Italian / Milanese",
+      "description": "Diego Rossi's trattoria in Porta Romana reinvented offal cooking and popular Milanese recipes since opening in 2015."
+    },
+    "Erba Brusca": {
+      "cuisine": "Seasonal Italian",
+      "description": "Market and kitchen-garden cooking on the banks of the Naviglio Pavese, with a terrace among aromatic herbs."
+    },
+    "Al Pont de Ferr": {
+      "cuisine": "Italian",
+      "description": "An osteria by the iron bridge on the Naviglio Grande, honest Italian cooking recognized with the Michelin Bib Gourmand."
+    },
+    "Ratanà": {
+      "cuisine": "Milanese / Lombard",
+      "description": "Cesare Battisti reinterprets Milanese and Lombard tradition inside a former tram depot facing the Bosco Verticale, since 2009."
+    },
+    "Torre - Fondazione Prada": {
+      "cuisine": "Italian",
+      "description": "On the sixth floor of the Fondazione Prada tower designed by Rem Koolhaas, with panoramic views and Italian-rooted cooking."
+    },
+    "Ceresio 7": {
+      "cuisine": "Italian",
+      "description": "Rooftop restaurant and pools atop the former Enel headquarters, owned by the Dsquared2 designers, with 360-degree views over Milan."
+    },
+    "Bar Basso": {
+      "cuisine": "Cocktail bar",
+      "description": "Open since 1947, this is the birthplace of the Negroni Sbagliato, served in its iconic oversized glasses."
+    },
+    "Camparino in Galleria": {
+      "cuisine": "Cocktail bar",
+      "description": "On the corner of the Galleria Vittorio Emanuele II where Gaspare Campari opened his first bar in 1867. A historic reference point for Milanese aperitivo."
+    },
+    "Marchesi 1824": {
+      "cuisine": "Pastry",
+      "description": "Milan's historic pastry shop, founded in 1824 and now part of the Prada group, celebrated for its panettone and handcrafted sweets."
+    },
+    "Cova": {
+      "cuisine": "Pastry",
+      "description": "Café and pastry shop opened in 1817 near La Scala, now owned by LVMH, located on Via Montenapoleone since 1950."
+    },
+    "Sant Ambroeus": {
+      "cuisine": "Pastry / Italian",
+      "description": "Milanese pastry shop and tearoom since 1936, in its historic home on Corso Matteotti, birthplace of panettone gelato."
+    },
+    "Pasticceria Cucchi": {
+      "cuisine": "Pastry",
+      "description": "Historic pastry shop since 1936 on the corner of Corso Genova, recognized as one of Milan's official historic shops."
+    },
+    "Antico Ristorante Boeucc": {
+      "cuisine": "Milanese",
+      "description": "Milan's oldest restaurant, founded in 1696, now on Corso Monforte; it once served Verdi, Donizetti and Toscanini."
+    },
+    "Trattoria Masuelli San Marco": {
+      "cuisine": "Milanese / Piedmontese",
+      "description": "Family-run trattoria since 1921 on Viale Umbria, celebrated for its cotoletta alla milanese and deep wine list."
+    },
+    "Antica Trattoria della Pesa": {
+      "cuisine": "Milanese",
+      "description": "A 19th-century trattoria near Porta Volta, named after the old customs weighing station once located there; classic Milanese cooking."
+    },
+    "Dongiò": {
+      "cuisine": "Calabrian",
+      "description": "Calabrian trattoria in Porta Romana since 1987, recognized with the Michelin Bib Gourmand for its value and quality."
+    },
+    "Langosteria": {
+      "cuisine": "Seafood",
+      "description": "The flagship of the Langosteria group in the Tortona district, Milan's benchmark for raw fish and seafood since 2007."
+    },
+    "Da Giacomo": {
+      "cuisine": "Seafood",
+      "description": "A Milanese seafood classic since 1958, in its historic Via Sottocorno home since 1989."
+    },
+    "Giacomo Arengario": {
+      "cuisine": "Italian",
+      "description": "Inside the Museo del Novecento, with direct views of the Duomo; classic Italian cooking in an art deco setting."
+    },
+    "Armani/Ristorante": {
+      "cuisine": "Italian",
+      "description": "On the seventh floor of the Armani Hotel Milano on Via Manzoni, Italian fine dining with Giorgio Armani's minimalist aesthetic."
+    },
+    "VIVA Viviana Varese": {
+      "cuisine": "Italian / Seafood",
+      "description": "Chef Viviana Varese cooks seasonal seafood and vegetables on the second floor of Eataly Smeraldo. One Michelin star."
+    },
+    "Tokuyoshi": {
+      "cuisine": "Italian-Japanese",
+      "description": "Chef Yoji Tokuyoshi, formerly Massimo Bottura's right hand, crosses Italian ingredients with Japanese technique. One Michelin star since 2016."
+    },
+    "Pisacco": {
+      "cuisine": "Italian",
+      "description": "A bistro on Via Solferino founded by Andrea Berton, essential Italian cooking recognized with the Michelin Bib Gourmand."
+    },
+    "Un Posto a Milano": {
+      "cuisine": "Seasonal Italian",
+      "description": "Kitchen, bar and garden inside Cascina Cuccagna, an 18th-century farmhouse restored in the heart of Porta Romana."
+    },
+    "Spontini": {
+      "cuisine": "Pizza by the slice",
+      "description": "A historic pizzeria since 1953, famous for its single tall, spongy margherita slice, near the Duomo."
+    },
+    "Princi": {
+      "cuisine": "Bakery",
+      "description": "A bakery and forno open since 1986, the reference point for bread, focaccia and pizza al taglio in central Milan."
+    },
+    "Panificio Davide Longoni": {
+      "cuisine": "Bakery",
+      "description": "Davide Longoni's sourdough bakery, a pioneer of ancient-grain bread in Milan."
+    },
+    "Nottingham Forest": {
+      "cuisine": "Cocktail bar",
+      "description": "Dario Comino's cocktail bar, the Italian pioneer of clarification and fermentation techniques in mixology."
+    },
+    "Rita": {
+      "cuisine": "Cocktail bar",
+      "description": "One of the pioneering cocktail bars of the Navigli, open since 2002, classic cocktails in a small, always-packed space."
+    },
+    "Mag Cafè": {
+      "cuisine": "Cocktail bar",
+      "description": "A cocktail bar with vintage decor on the banks of the Naviglio Grande, a popular aperitivo stop in the Navigli district."
+    },
+    "La Ravioleria Sarpi": {
+      "cuisine": "Chinese",
+      "description": "A stall making hand-folded dumplings to order in the heart of Milan's Chinatown, on Via Paolo Sarpi."
+    },
+    "Gelateria Umberto 1934": {
+      "cuisine": "Gelato",
+      "description": "A historic gelateria since 1934 on Piazza Cinque Giornate, artisanal gelato made with traditional recipes."
+    },
+    "Al Matarel": {
+      "cuisine": "Milanese",
+      "description": "A traditional trattoria in Brera since 1962, faithful to cassoeula and ossobuco without reinterpretation."
+    },
+    "Osteria del Binari": {
+      "cuisine": "Milanese",
+      "description": "A former railway workers' club turned into an osteria with a garden, traditional Milanese cooking near Porta Genova."
+    },
+    "Latteria di San Marco": {
+      "cuisine": "Home-style Milanese",
+      "description": "A tiny nine-table trattoria in Brera, no reservations, run by the same family for more than forty years."
+    },
+    "El Brellin": {
+      "cuisine": "Lombard",
+      "description": "A restaurant on the Vicolo dei Lavandai, the Naviglio Grande's old public washhouse, regional Lombard cooking in an 18th-century house."
+    },
+    "Pizzium": {
+      "cuisine": "Neapolitan pizza",
+      "description": "The original Pizzium, opened in 2017 on Via Procaccini, contemporary Neapolitan pizza with selected Italian ingredients."
+    },
+    "Berberè": {
+      "cuisine": "Contemporary pizza",
+      "description": "A pizzeria chain born in Emilia-Romagna that brought contemporary sourdough pizza and seasonal toppings to Milan, with a branch in Isola."
+    },
+    "Ciacco": {
+      "cuisine": "Gelato",
+      "description": "An artisanal gelateria on Via Spadari near the Duomo, awarded the Tre Coni by the Gambero Rosso guide."
+    },
+    "Trattoria Madonnina": {
+      "cuisine": "Lombard",
+      "description": "A trattoria in a building documented since 1722, near Porta Ticinese, uncompromising traditional Lombard cooking."
+    },
+    "Gino Sorbillo - Pizza Gourmand": {
+      "cuisine": "Neapolitan pizza",
+      "description": "The Milan outpost of Neapolitan pizzaiolo Gino Sorbillo, near the Duomo, using the same long-fermentation dough as his historic Naples shop."
+    },
+    "Eataly Milano Smeraldo": {
+      "cuisine": "Food market",
+      "description": "A large Italian food market with restaurants, bakery and shop, housed in the former Cinema Smeraldo near Porta Garibaldi."
+    },
+    "Mercato Centrale Milano": {
+      "cuisine": "Food market",
+      "description": "A food market inside the Stazione Centrale, with more than twenty stalls from Italian artisan producers open all day."
+    },
+    "10 Corso Como Café": {
+      "cuisine": "Italian",
+      "description": "The café of the 10 Corso Como concept store, a meeting point for Milanese fashion and design since 1990."
+    },
+    "Radetzky Café": {
+      "cuisine": "Aperitivo bar",
+      "description": "A historic Milanese aperitivo bar on Corso Garibaldi, open all day from early morning until the small hours."
+    },
+    "Trattoria Aurora": {
+      "cuisine": "Milanese / Piedmontese",
+      "description": "A Liberty-style trattoria in the Tortona district, celebrated for its ossobuco, cotoletta and saffron risotto."
+    },
+    "Giannino dal 1899": {
+      "cuisine": "Italian / Milanese",
+      "description": "A historic restaurant near Stazione Centrale, serving traditional Italian and Milanese cooking for more than a century."
+    },
+    "La Brisa": {
+      "cuisine": "Lombard",
+      "description": "A restaurant with an inner garden next to the remains of a Roman palace, between Piazza Cordusio and Castello Sforzesco."
+    },
+    "Bulk Mixology Food & Bar": {
+      "cuisine": "Cocktail bar",
+      "description": "A mixology bar inside the ViU Hotel near Porta Garibaldi, signature cocktails with house-made spirits and ferments."
+    },
+    "Il Massimo del Gelato": {
+      "cuisine": "Gelato",
+      "description": "An artisanal gelateria since 2001 in the Sempione district, specializing in chocolate variations."
     }
   }
 }

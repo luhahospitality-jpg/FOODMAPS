@@ -3,7 +3,7 @@
   "name": "Milán",
   "country": "Italia",
   "tagline": "Panzerotto de 1949 junto al Duomo, y dos estrellas Michelin que llevan medio siglo definiendo la alta cocina milanesa.",
-  "totalPlaces": 5,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -65,7 +65,8 @@
       "source_type": "classic",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465785,9.1915481",
+      "distinction": null
     },
     {
       "name": "Seta by Antonio Guida",
@@ -108,6 +109,1044 @@
         "type": "michelin_star",
         "count": 3
       }
+    },
+    {
+      "name": "Sadler",
+      "place_id": null,
+      "lat": 45.4772,
+      "lng": 9.1852,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "La cocina de autor de Claudio Sadler en el barrio de Brera, con técnica clásica francesa aplicada a producto italiano. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/sadler",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4772,9.1852",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ristorante Berton",
+      "place_id": null,
+      "lat": 45.4847,
+      "lng": 9.1913,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Andrea Berton propone una cocina italiana depurada y de producto en el distrito de Porta Nuova. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/berton",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4847,9.1913",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Contraste",
+      "place_id": null,
+      "lat": 45.4515,
+      "lng": 9.1935,
+      "category": "fine_dining",
+      "cuisine": "italiano creativo",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "El chef uruguayo Matias Perdomo firma una de las mesas más creativas de Milán, en un edificio de época en zona Porta Romana. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/contraste",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4515,9.1935",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Iyo",
+      "place_id": null,
+      "lat": 45.4789,
+      "lng": 9.1517,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "El único restaurante japonés de Italia con estrella Michelin, fundado por Claudio Liu cerca del barrio de CityLife.",
+      "source_url": "https://guide.michelin.com/it/it/lombardia/milano/ristorante/iyo",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4789,9.1517",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Joia",
+      "place_id": null,
+      "lat": 45.4785,
+      "lng": 9.205,
+      "category": "fine_dining",
+      "cuisine": "vegetariano",
+      "tags": [
+        "michelin",
+        "critico",
+        "clasico"
+      ],
+      "description": "Pietro Leemann abrió en 1989 el primer restaurante vegetariano de Europa en obtener una estrella Michelin, en 1996. Sigue siendo referencia de alta cocina vegetal.",
+      "source_url": "https://joia.it/en/about",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4785,9.205",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Trippa",
+      "place_id": null,
+      "lat": 45.4523,
+      "lng": 9.1978,
+      "category": "trattoria",
+      "cuisine": "italiano / milanés",
+      "tags": [
+        "critico"
+      ],
+      "description": "La trattoria de Diego Rossi en Porta Romana revolucionó la cocina de casquería y las recetas populares milanesas desde 2015.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/trippa",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4523,9.1978",
+      "distinction": null
+    },
+    {
+      "name": "Erba Brusca",
+      "place_id": null,
+      "lat": 45.4308,
+      "lng": 9.165,
+      "category": "restaurante",
+      "cuisine": "italiano de temporada",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina de mercado y huerto propio a orillas del Naviglio Pavese, con terraza entre plantas aromáticas.",
+      "source_url": "https://erbabrusca.it/pages/contatti",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4308,9.165",
+      "distinction": null
+    },
+    {
+      "name": "Al Pont de Ferr",
+      "place_id": null,
+      "lat": 45.4508,
+      "lng": 9.1745,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "critico"
+      ],
+      "description": "Osteria junto al puente de hierro del Naviglio Grande, con cocina italiana honesta reconocida con el Bib Gourmand de la guía Michelin.",
+      "source_url": "http://pontdeferr.it/",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4508,9.1745",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Ratanà",
+      "place_id": null,
+      "lat": 45.4847,
+      "lng": 9.19,
+      "category": "restaurante",
+      "cuisine": "milanés / lombardo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cesare Battisti reinterpreta la tradición milanesa y lombarda en un antiguo depósito de tranvías frente al Bosco Verticale, desde 2009.",
+      "source_url": "https://www.ratana.it/?lang=en",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4847,9.19",
+      "distinction": null
+    },
+    {
+      "name": "Torre - Fondazione Prada",
+      "place_id": null,
+      "lat": 45.438,
+      "lng": 9.201,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "En el sexto piso de la torre de la Fondazione Prada, diseñada por Rem Koolhaas, con vistas panorámicas y cocina de raíz italiana.",
+      "source_url": "https://www.fondazioneprada.org/torre/?lang=en",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.438,9.201",
+      "distinction": null
+    },
+    {
+      "name": "Ceresio 7",
+      "place_id": null,
+      "lat": 45.483,
+      "lng": 9.174,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "influencer",
+        "critico"
+      ],
+      "description": "Restaurante y piscinas en la azotea del antiguo edificio de Enel, propiedad de los diseñadores de Dsquared2, con vistas de 360 grados sobre Milán.",
+      "source_url": "https://www.ceresio7.com/en/milano/restaurant/",
+      "source_type": "influencer",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.483,9.174",
+      "distinction": null
+    },
+    {
+      "name": "Bar Basso",
+      "place_id": null,
+      "lat": 45.478,
+      "lng": 9.216,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1947, es la cuna del Negroni Sbagliato, servido en sus icónicas copas de gran tamaño.",
+      "source_url": "http://barbasso.com/main",
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.478,9.216",
+      "distinction": null
+    },
+    {
+      "name": "Camparino in Galleria",
+      "place_id": null,
+      "lat": 45.4648,
+      "lng": 9.19,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En la esquina de la Galleria Vittorio Emanuele II donde Gaspare Campari abrió su primer local en 1867. Bar histórico y de referencia para el aperitivo milanés.",
+      "source_url": "https://www.camparino.com/history/",
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4648,9.19",
+      "distinction": null
+    },
+    {
+      "name": "Marchesi 1824",
+      "place_id": null,
+      "lat": 45.4638,
+      "lng": 9.183,
+      "category": "pasteleria",
+      "cuisine": "pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería histórica de Milán fundada en 1824, hoy parte del grupo Prada, célebre por su panettone y sus dulces artesanales.",
+      "source_url": "https://www.marchesi1824.com/eu/en/history.html",
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4638,9.183",
+      "distinction": null
+    },
+    {
+      "name": "Cova",
+      "place_id": null,
+      "lat": 45.4685,
+      "lng": 9.1945,
+      "category": "cafeteria",
+      "cuisine": "pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café y pastelería abierto en 1817 cerca de La Scala, hoy propiedad de LVMH, trasladado desde 1950 a Via Montenapoleone.",
+      "source_url": "https://en.wikipedia.org/wiki/Caff%C3%A8-Pasticceria_Cova",
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4685,9.1945",
+      "distinction": null
+    },
+    {
+      "name": "Sant Ambroeus",
+      "place_id": null,
+      "lat": 45.466,
+      "lng": 9.1975,
+      "category": "cafeteria",
+      "cuisine": "pastelería / italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería y salón de té milanés desde 1936, con su histórica sede en Corso Matteotti, cuna del helado de panettone.",
+      "source_url": "https://www.santambroeus.com/pages/location-milano",
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.466,9.1975",
+      "distinction": null
+    },
+    {
+      "name": "Pasticceria Cucchi",
+      "place_id": null,
+      "lat": 45.455,
+      "lng": 9.178,
+      "category": "pasteleria",
+      "cuisine": "pastelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería histórica desde 1936 en la esquina de Corso Genova, reconocida como Negozio Storico de Milán.",
+      "source_url": "https://pasticceriacucchi.it/en",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.455,9.178",
+      "distinction": null
+    },
+    {
+      "name": "Antico Ristorante Boeucc",
+      "place_id": null,
+      "lat": 45.4696,
+      "lng": 9.1998,
+      "category": "restaurante",
+      "cuisine": "milanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante más antiguo de Milán, fundado en 1696, hoy en Corso Monforte; sirvió a Verdi, Donizetti y Toscanini.",
+      "source_url": "https://www.boeucc.it/lanostrastoria.html",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4696,9.1998",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Masuelli San Marco",
+      "place_id": null,
+      "lat": 45.447,
+      "lng": 9.2085,
+      "category": "trattoria",
+      "cuisine": "milanés / piamontés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria familiar desde 1921 en Viale Umbria, célebre por su cotoletta a la milanesa y su carta de vinos.",
+      "source_url": "https://visitmilano.org/mangiare-dormire/dove-mangiare/locali-storici/ristoranti-e-trattorie/trattoria-masuelli-san-marco/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.447,9.2085",
+      "distinction": null
+    },
+    {
+      "name": "Antica Trattoria della Pesa",
+      "place_id": null,
+      "lat": 45.4825,
+      "lng": 9.1815,
+      "category": "trattoria",
+      "cuisine": "milanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria del siglo XIX cerca de Porta Volta, nombrada por la antigua báscula de aduanas de la zona; cocina milanesa clásica.",
+      "source_url": "https://myartguides.com/leisure/restaurants/milan/antica-trattoria-della-pesa/",
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4825,9.1815",
+      "distinction": null
+    },
+    {
+      "name": "Dongiò",
+      "place_id": null,
+      "lat": 45.452,
+      "lng": 9.199,
+      "category": "trattoria",
+      "cuisine": "calabrés",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "critico"
+      ],
+      "description": "Trattoria calabresa de Porta Romana desde 1987, reconocida con el Bib Gourmand de la guía Michelin por su relación calidad-precio.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/dongio",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.452,9.199",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Langosteria",
+      "place_id": null,
+      "lat": 45.452,
+      "lng": 9.1615,
+      "category": "restaurante",
+      "cuisine": "pescados y mariscos",
+      "tags": [
+        "critico",
+        "influencer"
+      ],
+      "description": "El buque insignia del grupo Langosteria en el barrio de Tortona, referencia de pescado y marisco crudo en Milán desde 2007.",
+      "source_url": "https://www.langosteria.com/en/langosteria",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.452,9.1615",
+      "distinction": null
+    },
+    {
+      "name": "Da Giacomo",
+      "place_id": null,
+      "lat": 45.4735,
+      "lng": 9.205,
+      "category": "restaurante",
+      "cuisine": "pescados y mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Clásico milanés de pescado desde 1958, con su sede histórica en Via Sottocorno desde 1989.",
+      "source_url": "https://giacomomilano.com/en/locations/restaurants/da-giacomo-milano",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4735,9.205",
+      "distinction": null
+    },
+    {
+      "name": "Giacomo Arengario",
+      "place_id": null,
+      "lat": 45.463,
+      "lng": 9.1895,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Dentro del Museo del Novecento, con vistas directas al Duomo; cocina italiana clásica en un entorno art déco.",
+      "source_url": "https://giacomomilano.com/en/locations/restaurants/da-giacomo-arengario",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.463,9.1895",
+      "distinction": null
+    },
+    {
+      "name": "Armani/Ristorante",
+      "place_id": null,
+      "lat": 45.47,
+      "lng": 9.193,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "En la séptima planta del Armani Hotel Milano, en Via Manzoni, alta cocina italiana con la estética minimalista de Giorgio Armani.",
+      "source_url": "https://guide.michelin.com/us/en/lombardia/milano/restaurant/armani",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.47,9.193",
+      "distinction": null
+    },
+    {
+      "name": "VIVA Viviana Varese",
+      "place_id": null,
+      "lat": 45.4805,
+      "lng": 9.187,
+      "category": "fine_dining",
+      "cuisine": "italiano / pescado",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "La chef Viviana Varese cocina pescado y vegetales de temporada en la segunda planta de Eataly Smeraldo. Una estrella Michelin.",
+      "source_url": "https://www.vivianavaresechef.it/",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4805,9.187",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tokuyoshi",
+      "place_id": null,
+      "lat": 45.4535,
+      "lng": 9.1685,
+      "category": "fine_dining",
+      "cuisine": "italo-japonés",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "El chef Yoji Tokuyoshi, ex mano derecha de Massimo Bottura, cruza producto italiano con técnica japonesa. Una estrella Michelin desde 2016.",
+      "source_url": "https://www.identitagolose.com/sito/it/6/21293/chef-e-protagonisti/yoji.html",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4535,9.1685",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Pisacco",
+      "place_id": null,
+      "lat": 45.4765,
+      "lng": 9.183,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "critico"
+      ],
+      "description": "Bistrot en Via Solferino fundado por Andrea Berton, cocina italiana esencial reconocida con el Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/it/it/lombardia/milano/ristorante/berton",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4765,9.183",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Un Posto a Milano",
+      "place_id": null,
+      "lat": 45.4548,
+      "lng": 9.201,
+      "category": "restaurante",
+      "cuisine": "italiano de temporada",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina, bar y huerto dentro de la Cascina Cuccagna, una granja del siglo XVIII recuperada en el corazón de Porta Romana.",
+      "source_url": "https://www.unpostoamilano.it/en/",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4548,9.201",
+      "distinction": null
+    },
+    {
+      "name": "Spontini",
+      "place_id": null,
+      "lat": 45.465,
+      "lng": 9.193,
+      "category": "fast_food",
+      "cuisine": "pizza al taglio",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería histórica desde 1953, célebre por su porción única de margherita alta y esponjosa, cerca del Duomo.",
+      "source_url": "https://spontinimilano.com/",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.465,9.193",
+      "distinction": null
+    },
+    {
+      "name": "Princi",
+      "place_id": null,
+      "lat": 45.463,
+      "lng": 9.1885,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Panadería y forno abierto desde 1986, referencia de pan, focaccia y pizza al taglio en el centro de Milán.",
+      "source_url": "https://princi.it/en/",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.463,9.1885",
+      "distinction": null
+    },
+    {
+      "name": "Panificio Davide Longoni",
+      "place_id": null,
+      "lat": 45.4478,
+      "lng": 9.2075,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "critico"
+      ],
+      "description": "Panadería de masa madre de Davide Longoni, pionero del pan de grano antiguo en Milán.",
+      "source_url": "https://www.davidelongonipane.com/",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4478,9.2075",
+      "distinction": null
+    },
+    {
+      "name": "Nottingham Forest",
+      "place_id": null,
+      "lat": 45.4735,
+      "lng": 9.204,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "critico"
+      ],
+      "description": "El bar de coctelería de Dario Comino, pionero italiano de las técnicas de clarificación y fermentación en la mixología.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Italy/Milan/Nottingham-Forest.html",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4735,9.204",
+      "distinction": null
+    },
+    {
+      "name": "Rita",
+      "place_id": null,
+      "lat": 45.4515,
+      "lng": 9.1735,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los cocktail bar pioneros del Navigli, abierto en 2002, coctelería clásica en un espacio pequeño y siempre lleno.",
+      "source_url": "https://www.ritacocktails.com/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4515,9.1735",
+      "distinction": null
+    },
+    {
+      "name": "Mag Cafè",
+      "place_id": null,
+      "lat": 45.451,
+      "lng": 9.1745,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "influencer"
+      ],
+      "description": "Bar de coctelería con decoración vintage a orillas del Naviglio Grande, popular parada de aperitivo en el Navigli.",
+      "source_url": "https://www.novacircle.com/spots/europe/italy/lombardy-region/metropolitan-city-of-milan/milan/mag-cafe-8fe9db",
+      "source_type": "influencer",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.451,9.1745",
+      "distinction": null
+    },
+    {
+      "name": "La Ravioleria Sarpi",
+      "place_id": null,
+      "lat": 45.4825,
+      "lng": 9.1755,
+      "category": "fast_food",
+      "cuisine": "chino",
+      "tags": [
+        "critico"
+      ],
+      "description": "Puesto de dumplings hechos a mano al momento en el corazón del Chinatown de Milán, en Via Paolo Sarpi.",
+      "source_url": "https://goop.com/place/italy/milan/chinatown-restaurants/la-ravioleria-sarpi/",
+      "source_type": "critic",
+      "rank": 41,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4825,9.1755",
+      "distinction": null
+    },
+    {
+      "name": "Gelateria Umberto 1934",
+      "place_id": null,
+      "lat": 45.46,
+      "lng": 9.2035,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería histórica desde 1934 en Piazza Cinque Giornate, gelato artesanal con recetas tradicionales.",
+      "source_url": "https://www.umberto1934.com/en/",
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.46,9.2035",
+      "distinction": null
+    },
+    {
+      "name": "Al Matarel",
+      "place_id": null,
+      "lat": 45.4762,
+      "lng": 9.1795,
+      "category": "trattoria",
+      "cuisine": "milanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria tradicional en Brera desde 1962, fiel a la cassoeula y el ossobuco sin reinterpretaciones.",
+      "source_url": "https://www.almatarel.it/storia/",
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4762,9.1795",
+      "distinction": null
+    },
+    {
+      "name": "Osteria del Binari",
+      "place_id": null,
+      "lat": 45.4535,
+      "lng": 9.166,
+      "category": "restaurante",
+      "cuisine": "milanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antiguo círculo ferroviario reconvertido en osteria con jardín, cocina milanesa tradicional cerca de Porta Genova.",
+      "source_url": "https://zero.eu/en/luoghi/4331-osteria-del-binari,milano/",
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4535,9.166",
+      "distinction": null
+    },
+    {
+      "name": "Latteria di San Marco",
+      "place_id": null,
+      "lat": 45.477,
+      "lng": 9.1845,
+      "category": "trattoria",
+      "cuisine": "milanés casero",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diminuta trattoria de nueve mesas en Brera, sin reservas, llevada por la misma familia desde hace más de cuarenta años.",
+      "source_url": "https://indagare.com/restaurant/latteria-san-marco",
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.477,9.1845",
+      "distinction": null
+    },
+    {
+      "name": "El Brellin",
+      "place_id": null,
+      "lat": 45.4508,
+      "lng": 9.1735,
+      "category": "restaurante",
+      "cuisine": "lombardo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante en el Vicolo dei Lavandai, antiguo lavadero público del Naviglio Grande, cocina regional lombarda en una casa del siglo XVIII.",
+      "source_url": "https://brellin.com/en/",
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4508,9.1735",
+      "distinction": null
+    },
+    {
+      "name": "Pizzium",
+      "place_id": null,
+      "lat": 45.4815,
+      "lng": 9.1685,
+      "category": "pizzeria",
+      "cuisine": "pizza napolitana",
+      "tags": [
+        "critico"
+      ],
+      "description": "La primera pizzería del grupo Pizzium, abierta en 2017 en Via Procaccini, pizza napolitana contemporánea con producto italiano seleccionado.",
+      "source_url": "https://pizzium.com/eng/locali/milano-via-giulio-cesare-procaccini-30/",
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4815,9.1685",
+      "distinction": null
+    },
+    {
+      "name": "Berberè",
+      "place_id": null,
+      "lat": 45.488,
+      "lng": 9.1965,
+      "category": "pizzeria",
+      "cuisine": "pizza contemporánea",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cadena de pizzerías nacida en Emilia-Romaña que trajo la pizza contemporánea de masa madre y producto de temporada a Milán, con local en Isola.",
+      "source_url": "https://www.berberepizza.it/en/",
+      "source_type": "critic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.488,9.1965",
+      "distinction": null
+    },
+    {
+      "name": "Ciacco",
+      "place_id": null,
+      "lat": 45.4635,
+      "lng": 9.1865,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "critico"
+      ],
+      "description": "Heladería artesanal en Via Spadari, cerca del Duomo, premiada con los Tre Coni de la guía Gambero Rosso.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g187849-d6872535-Reviews-Ciacco_Gelato_Senz_altro-Milan_Lombardy.html",
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4635,9.1865",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Madonnina",
+      "place_id": null,
+      "lat": 45.447,
+      "lng": 9.181,
+      "category": "trattoria",
+      "cuisine": "lombardo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria en un local documentado desde 1722, cerca de Porta Ticinese, cocina lombarda tradicional sin concesiones.",
+      "source_url": "https://airmail.news/arts-intel/venues/trattoria-madonnina",
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.447,9.181",
+      "distinction": null
+    },
+    {
+      "name": "Gino Sorbillo - Pizza Gourmand",
+      "place_id": null,
+      "lat": 45.4655,
+      "lng": 9.1875,
+      "category": "pizzeria",
+      "cuisine": "pizza napolitana",
+      "tags": [
+        "critico"
+      ],
+      "description": "La sede milanesa del napolitano Gino Sorbillo, cerca del Duomo, con la misma masa de larga fermentación de su local histórico en Nápoles.",
+      "source_url": "https://www.sorbillo.it/gino-sorbillo-milano/",
+      "source_type": "critic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4655,9.1875",
+      "distinction": null
+    },
+    {
+      "name": "Eataly Milano Smeraldo",
+      "place_id": null,
+      "lat": 45.4805,
+      "lng": 9.187,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "critico"
+      ],
+      "description": "Gran mercado gastronómico italiano con restaurantes, panadería y tienda, instalado en el antiguo cine Smeraldo de Porta Garibaldi.",
+      "source_url": "https://www.eataly.net/eu_en/stores/milan-smeraldo",
+      "source_type": "critic",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4805,9.187",
+      "distinction": null
+    },
+    {
+      "name": "Mercato Centrale Milano",
+      "place_id": null,
+      "lat": 45.4855,
+      "lng": 9.2035,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "critico"
+      ],
+      "description": "Mercado gastronómico dentro de la Stazione Centrale, con más de veinte puestos de artesanos italianos abiertos todo el día.",
+      "source_url": "https://www.mercatocentrale.it/milano/info/",
+      "source_type": "critic",
+      "rank": 53,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4855,9.2035",
+      "distinction": null
+    },
+    {
+      "name": "10 Corso Como Café",
+      "place_id": null,
+      "lat": 45.4825,
+      "lng": 9.1875,
+      "category": "cafeteria",
+      "cuisine": "italiano",
+      "tags": [
+        "influencer"
+      ],
+      "description": "El café del concept store 10 Corso Como, punto de encuentro de la moda y el diseño milanés desde 1990.",
+      "source_url": "https://10corsocomo.com/en-us/blogs/stores/milano",
+      "source_type": "influencer",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4825,9.1875",
+      "distinction": null
+    },
+    {
+      "name": "Radetzky Café",
+      "place_id": null,
+      "lat": 45.479,
+      "lng": 9.1795,
+      "category": "bar",
+      "cuisine": "aperitivo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar histórico del aperitivo milanés sobre Corso Garibaldi, abierto todo el día desde primera hora hasta la madrugada.",
+      "source_url": "https://www.radetzky.it/en/",
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.479,9.1795",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Aurora",
+      "place_id": null,
+      "lat": 45.4515,
+      "lng": 9.1625,
+      "category": "trattoria",
+      "cuisine": "milanés / piamontés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria de estilo liberty en el barrio de Tortona, célebre por su ossobuco, cotoletta y risotto al azafrán.",
+      "source_url": "https://www.amioparere.com/352d/locali/milano/aurora",
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4515,9.1625",
+      "distinction": null
+    },
+    {
+      "name": "Giannino dal 1899",
+      "place_id": null,
+      "lat": 45.4795,
+      "lng": 9.2005,
+      "category": "restaurante",
+      "cuisine": "italiano / milanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante histórico cerca de la Stazione Centrale, con más de un siglo sirviendo cocina italiana y milanesa de tradición.",
+      "source_url": "https://gianninoristorante.it/en/main-home-english/",
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4795,9.2005",
+      "distinction": null
+    },
+    {
+      "name": "La Brisa",
+      "place_id": null,
+      "lat": 45.4635,
+      "lng": 9.1795,
+      "category": "restaurante",
+      "cuisine": "lombardo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante con jardín interior junto a los restos de un palacio romano, entre Piazza Cordusio y el Castello Sforzesco.",
+      "source_url": "https://www.ristorantelabrisa.it/en/",
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4635,9.1795",
+      "distinction": null
+    },
+    {
+      "name": "Bulk Mixology Food & Bar",
+      "place_id": null,
+      "lat": 45.4845,
+      "lng": 9.1795,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar de mixología dentro del hotel ViU, cerca de Porta Garibaldi, coctelería de autor y producción propia de destilados y fermentados.",
+      "source_url": "https://www.morellimilano.it/en/location-bulk/",
+      "source_type": "critic",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4845,9.1795",
+      "distinction": null
+    },
+    {
+      "name": "Il Massimo del Gelato",
+      "place_id": null,
+      "lat": 45.4785,
+      "lng": 9.1645,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Heladería artesanal desde 2001 en el barrio de Sempione, especializada en variaciones de chocolate.",
+      "source_url": "https://ilmassimodelgelato.it/",
+      "source_type": "critic",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=45.4785,9.1645",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,
