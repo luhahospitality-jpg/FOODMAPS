@@ -22,6 +22,226 @@
     "Sofyalı 9": {
       "cuisine": "Turkish / meyhane",
       "description": "One of Beyoğlu's most established traditional meyhanes, with mezze and raki near Tünel."
+    },
+    "Türk Fatih Tutak": {
+      "cuisine": "Turkish contemporary",
+      "description": "Contemporary Turkish tasting-menu cuisine holding two Michelin stars in the Bomonti district; chef Fatih Tutak reinterprets Anatolian techniques with fine-dining precision."
+    },
+    "Mikla": {
+      "cuisine": "Turkish / modern Mediterranean",
+      "description": "Atop the Marmara Pera hotel, chef Mehmet Gürs blends Anatolian and Scandinavian cooking with views over the Golden Horn. One Michelin star."
+    },
+    "Neolokal": {
+      "cuisine": "Turkish / modern Anatolian",
+      "description": "Inside the Salt Galata cultural center, chef Maksut Aşkar reinvents Anatolian recipes using produce from small Turkish producers. One Michelin star."
+    },
+    "Araka": {
+      "cuisine": "Modern Turkish / vegetable-forward",
+      "description": "A small restaurant in Yeniköy serving vegetable-forward modern Turkish cuisine, led by chef Zeynep Pınar Taşdemir. One Michelin star."
+    },
+    "Arkestra": {
+      "cuisine": "Modern European",
+      "description": "Set in a restored 1960s villa in Etiler, chef Cenk Debensason blends classic French technique with global influences. One Michelin star."
+    },
+    "Nicole": {
+      "cuisine": "Contemporary Anatolian Turkish",
+      "description": "On the terrace of Tomtom Suites with views over the historic peninsula, chef Serkan Aksoy signs a contemporary Anatolian menu. One Michelin star."
+    },
+    "Sankai by Nagaya": {
+      "cuisine": "Japanese",
+      "description": "A 24-seat Japanese restaurant in the historic Bebek Hotel, a partnership between chef Yoshizumi Nagaya and a Turkish entrepreneur. One Michelin star."
+    },
+    "Casa Lavanda": {
+      "cuisine": "Seasonal Turkish / farm-to-table",
+      "description": "In the coastal district of Şile on Istanbul's outskirts, this restaurant grows most of its own produce in its garden. Michelin star since 2025."
+    },
+    "Karaköy Lokantası": {
+      "cuisine": "Turkish / modern meyhane",
+      "description": "Opened in 2007 by Oral Kurt and Aylin Okutan, this Karaköy neighborhood classic gives a modern twist to traditional Turkish cooking. Michelin Bib Gourmand."
+    },
+    "Ali Ocakbaşı": {
+      "cuisine": "Turkish / grill (ocakbaşı)",
+      "description": "A Turkish grill house (ocakbaşı) with views in Karaköy, known for its charcoal-grilled lamb skewers. Michelin Bib Gourmand."
+    },
+    "Araf İstanbul": {
+      "cuisine": "Chef's-table Turkish",
+      "description": "An intimate chef's-table restaurant in Kadıköy founded by Kenan and Pınar Çetinkaya, centered on open-fire cooking. Michelin Bib Gourmand in 2024 and 2025."
+    },
+    "Efendy": {
+      "cuisine": "Anatolian Turkish",
+      "description": "A Levent restaurant specializing in Anatolian regional recipes rarely found elsewhere in the city. Michelin Bib Gourmand."
+    },
+    "Çiya Sofrası": {
+      "cuisine": "Regional Anatolian Turkish",
+      "description": "Chef Musa Dağdeviren revives forgotten recipes from across Anatolia at his Kadıköy restaurant, featured in the Istanbul episode of Netflix's 'Chef's Table'."
+    },
+    "Balıkçı Sabahattin": {
+      "cuisine": "Turkish / seafood",
+      "description": "A benchmark fish house in Sultanahmet, tucked in an alley by the old sea walls, serving fish mezze and the day's catch for decades."
+    },
+    "Hamdi Restaurant": {
+      "cuisine": "Turkish / Urfa-style kebab",
+      "description": "Perched above the Spice Bazaar in Eminönü with views of the Golden Horn; chef Hamdi arrived from Urfa in the 1960s to popularize southeastern Turkish kebab."
+    },
+    "Develi Restaurant": {
+      "cuisine": "Turkish / Gaziantep-style kebab",
+      "description": "Founded in Gaziantep in 1912 and in Samatya since 1966, it's famed for its pistachio kebab and has hosted many Turkish artists and politicians."
+    },
+    "Beyti Restaurant": {
+      "cuisine": "Turkish / grilled meats",
+      "description": "A meat institution in Florya since 1945, with 500 seats and the oak-charcoal-grilled Beyti kebab (wrapped in thin flatbread) that bears its name."
+    },
+    "Zübeyir Ocakbaşı": {
+      "cuisine": "Turkish / grill (ocakbaşı)",
+      "description": "An open grill house near Taksim since 2006, serving lamb skewers and Gaziantep salad cooked in full view of diners over the ocakbaşı coals."
+    },
+    "Sultanahmet Köftecisi Selim Usta": {
+      "cuisine": "Turkish / köfte (meatballs)",
+      "description": "On Divanyolu, in the shadow of Hagia Sophia, it has served its iconic flat grilled köfte with piyaz bean salad since 1920, now run by the fourth generation."
+    },
+    "Şehzade Cağ Kebap": {
+      "cuisine": "Turkish / Erzurum-style cağ kebabı",
+      "description": "A specialist in cağ kebabı, the horizontal spit-roasted lamb kebab from Erzurum served in thin slices with lavaş bread, near Sirkeci station."
+    },
+    "Karaköy Güllüoğlu": {
+      "cuisine": "Turkish / baklava",
+      "description": "Istanbul's most reputed baklava, in Karaköy since 1949; it also makes kadayıf and other syrup pastries following the Güllü family recipe."
+    },
+    "Hafız Mustafa 1864": {
+      "cuisine": "Turkish / sweets and baklava",
+      "description": "An Ottoman patisserie founded in 1864 during the reign of Sultan Abdülaziz, celebrated for its baklava, milk puddings, and Turkish delight."
+    },
+    "Vefa Bozacısı": {
+      "cuisine": "Turkish / boza",
+      "description": "Founded in 1876, this boza (fermented wheat drink) shop still displays the glass Atatürk drank from during his 1937 visit."
+    },
+    "Van Kahvaltı Evi": {
+      "cuisine": "Turkish / Van-style (Kurdish) breakfast",
+      "description": "In Cihangir, it serves the elaborate breakfast spread of Turkey's eastern Van region — cheeses, honeys, and otvot — following that area's traditional breakfast ritual."
+    },
+    "Mandabatmaz": {
+      "cuisine": "Turkish / Turkish coffee",
+      "description": "A tiny spot down a Beyoğlu alley famous for its exceptionally thick-foamed Turkish coffee, brewed the traditional way for generations."
+    },
+    "Fazıl Bey'in Türk Kahvesi": {
+      "cuisine": "Turkish / Turkish coffee",
+      "description": "In Kadıköy's historic market, it roasts its own beans and serves a thick Turkish coffee considered among the city's best."
+    },
+    "Baylan Pastanesi": {
+      "cuisine": "Turkish / French-style patisserie",
+      "description": "A French-style patisserie in Kadıköy famed for its Kup Griye dessert — ice cream, caramel, pistachio, and Chantilly cream — served in its back garden."
+    },
+    "Pierre Loti Café": {
+      "cuisine": "Turkish / tea and coffee with a view",
+      "description": "A historic café on Eyüp hill above the Golden Horn, reached by cable car; frequented by 19th-century French writer Pierre Loti."
+    },
+    "Asitane Restaurant": {
+      "cuisine": "Turkish / Ottoman palace cuisine",
+      "description": "Next to the Chora Church, since 1991 it has rigorously revived recipes from Ottoman palace archives, many long vanished from today's cuisine."
+    },
+    "Dürümzade": {
+      "cuisine": "Turkish / dürüm (wrapped kebab)",
+      "description": "A small takeaway spot in Beyoğlu renowned for its lamb dürüm wrapped in freshly baked lavaş bread; featured by Anthony Bourdain on 'No Reservations'."
+    },
+    "Sur Ocakbaşı": {
+      "cuisine": "Turkish / büryan (pit-roasted lamb)",
+      "description": "In the Zeyrek neighborhood, it serves büryan — lamb slow-cooked in an underground pit oven, a Bitlis specialty — which Anthony Bourdain tried on 'No Reservations'."
+    },
+    "Karpi Pide-Köfte": {
+      "cuisine": "Turkish / Black Sea-style pide",
+      "description": "On the Asian shore in Beylerbeyi, it serves Black Sea-style pide that Anthony Bourdain ate on 'Parts Unknown' with photographer Marat Germen."
+    },
+    "Poyraz Sahil Balık": {
+      "cuisine": "Turkish / Bosphorus seafood",
+      "description": "A seaside restaurant in Poyrazköy, at the northern mouth of the Bosphorus, serving fish caught the same day by local fishermen."
+    },
+    "Hacı Abdullah Restaurant": {
+      "cuisine": "Turkish / Ottoman cuisine",
+      "description": "Founded in 1888 in Karaköy under a license from Sultan Abdülhamid II, now in Beyoğlu; celebrated for its stews, fruit preserves, and pickles."
+    },
+    "Nusr-Et Steakhouse": {
+      "cuisine": "Turkish / steakhouse",
+      "description": "Nusret Gökçe's ('Salt Bae') original Etiler steakhouse, birthplace in 2010 of his viral salt-sprinkling gesture, now a global social-media phenomenon."
+    },
+    "360 Istanbul": {
+      "cuisine": "International / Turkish (rooftop)",
+      "description": "A rooftop restaurant atop the historic Mısır building on İstiklal Street, with panoramic 360-degree views and a menu blending local and global flavors."
+    },
+    "Sunset Grill & Bar": {
+      "cuisine": "Mediterranean / Japanese",
+      "description": "Above Ulus Park with Bosphorus views, it has combined Mediterranean and Japanese cooking since 1994; a member of the Chaîne des Rôtisseurs."
+    },
+    "Kanaat Lokantası": {
+      "cuisine": "Turkish / home-style Ottoman (esnaf) cooking",
+      "description": "In Üsküdar since 1933, this esnaf lokanta serves traditional Ottoman dishes by weight, an unchanged classic on the Asian shore."
+    },
+    "Namlı Gurme": {
+      "cuisine": "Turkish / delicatessen and breakfast",
+      "description": "Turkey's pioneering deli-with-restaurant concept, in Karaköy; cheeses, cured meats, olives, and an extensive Turkish breakfast."
+    },
+    "Divan Pastanesi": {
+      "cuisine": "Turkish / chocolate and patisserie",
+      "description": "The patisserie of the Divan Hotel, opened in 1956 in Elmadağ; it produces tons of handcrafted chocolates and lokum, a benchmark for chocolate in Turkey."
+    },
+    "Feriye Lokantası": {
+      "cuisine": "Ottoman Turkish / Bosphorus cuisine",
+      "description": "In the historic Feriye Palace by the Bosphorus in Ortaköy, it has reinterpreted rich Ottoman culinary tradition since opening in 1995."
+    },
+    "Tuğra Restaurant": {
+      "cuisine": "Ottoman palace Turkish",
+      "description": "In Çırağan Palace (now the Kempinski hotel) overlooking the Bosphorus, it recreates recipes from Ottoman palace archives amid marble columns."
+    },
+    "Krependeki İmroz": {
+      "cuisine": "Turkish / Greek-tradition meyhane",
+      "description": "One of the oldest meyhanes on Nevizade Street, opened in 1941 with Greek-Istanbulite roots, serving fish mezze and rakı."
+    },
+    "Fıccın": {
+      "cuisine": "Circassian / Turkish",
+      "description": "A small meyhane in Asmalı Mescit specializing in Circassian cooking, with its namesake meat pastry and Circassian chicken beloved by locals."
+    },
+    "Şark Kahvesi": {
+      "cuisine": "Turkish / Turkish coffee (Grand Bazaar)",
+      "description": "A traditional coffeehouse inside the Grand Bazaar, an Ottoman-decorated refuge for merchants and visitors since the mid-20th century."
+    },
+    "Konyalı Restaurant": {
+      "cuisine": "Turkish / Ottoman cuisine",
+      "description": "Founded in 1897, it has served inside Topkapı Palace since 1969, with Bosphorus views and traditional Ottoman dishes."
+    },
+    "Havuzlu Restaurant": {
+      "cuisine": "Turkish / Ottoman cuisine",
+      "description": "Opened in 1959, it was the Grand Bazaar's first and largest restaurant; it serves mantı, kebabs, and Ottoman stews under historic vaulted ceilings."
+    },
+    "Erzincanlı Ali Baba": {
+      "cuisine": "Turkish / kuru fasulye (white beans)",
+      "description": "Facing the Süleymaniye Mosque since 1924, it serves a single dish — kuru fasulye white beans cooked in a copper pot over charcoal — with rice and pickles."
+    },
+    "Meze by Lemon Tree": {
+      "cuisine": "Turkish / contemporary meyhane",
+      "description": "Facing the Pera Palace hotel, it reinvents traditional Turkish meze with contemporary technique, among Beyoğlu's most praised meyhanes."
+    },
+    "Çengelköy İskele Restaurant": {
+      "cuisine": "Turkish / Bosphorus seafood",
+      "description": "By the Çengelköy pier on the Asian shore, with views of the Bosphorus Bridge and a menu focused exclusively on fish and seafood."
+    },
+    "Borsa Lokantası": {
+      "cuisine": "Turkish / esnaf Ottoman cooking",
+      "description": "Opened in 1927 in Eminönü, next to the old grain exchange that gave it its name; now with several branches, it still serves home-style Ottoman cooking."
+    },
+    "Ali Muhiddin Hacı Bekir": {
+      "cuisine": "Turkish / lokum (Turkish delight)",
+      "description": "Turkey's oldest confectionery shop, opened in Eminönü in 1777; its founder is credited with creating the modern lokum, or 'Turkish delight'."
+    },
+    "Adem Baba": {
+      "cuisine": "Turkish / seafood",
+      "description": "An unpretentious seafood institution in Arnavutköy by the Bosphorus; it serves no alcohol, but its mezze and fresh fish draw daily lines."
+    },
+    "Yeni Lokanta": {
+      "cuisine": "Modern Turkish",
+      "description": "Since 2013, chef Civan Er has given a light, contemporary twist to traditional Turkish cooking, with an emphasis on vegetables, local produce, and Turkish wine."
+    },
+    "Çiçek Pasajı": {
+      "cuisine": "Turkish / historic meyhane",
+      "description": "A 19th-century arcade on İstiklal Street, now lined with meyhanes offering shared tables, live music, and rakı — a symbol of Beyoğlu nightlife."
     }
   }
 }

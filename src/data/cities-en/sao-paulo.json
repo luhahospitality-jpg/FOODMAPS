@@ -22,6 +22,226 @@
     "Picchi": {
       "cuisine": "Italian",
       "description": "100% Italian, family-style cuisine from chef Pier Paolo Picchi, in Jardins. One Michelin star."
+    },
+    "A Casa do Porco": {
+      "cuisine": "contemporary Brazilian",
+      "description": "São Paulo's temple to pork, from chef Jefferson Rueda. Consistently ranked among Latin America's best restaurants by The World's 50 Best, with a guaranteed line at the door."
+    },
+    "Evvai": {
+      "cuisine": "contemporary Italian",
+      "description": "Chef Luiz Filipe Souza's Italian-rooted tasting-menu cooking, holder of one Michelin star. One of the most celebrated addresses in Jardins."
+    },
+    "Mocotó": {
+      "cuisine": "sertanejo / northeastern Brazilian",
+      "description": "Chef Rodrigo Oliveira's restaurant, which elevated sertanejo and northeastern Brazilian cooking to fine-dining status, on the edge of the city's far north. A regular on The World's 50 Best Latin America lists."
+    },
+    "Bar da Dona Onça": {
+      "cuisine": "Brazilian",
+      "description": "Chef Janaína Rueda's bar and restaurant at the foot of Oscar Niemeyer's Copan building. Popular Brazilian cooking with a contemporary touch, repeatedly voted the city's best bar."
+    },
+    "Consulado Mineiro": {
+      "cuisine": "Minas Gerais",
+      "description": "The definitive reference for Minas Gerais cuisine in São Paulo, with hearty dishes like tutu à mineira and canjiquinha."
+    },
+    "Consulado da Bahia": {
+      "cuisine": "Bahian",
+      "description": "Bahian flavors in Pinheiros since 2010: acarajé, moqueca and shrimp-stuffed pumpkin, from the same group behind Consulado Mineiro."
+    },
+    "Jun Sakamoto": {
+      "cuisine": "Japanese",
+      "description": "One of Brazil's most celebrated sushi counters, led by Japanese chef Jun Sakamoto. Top-tier omakase in Vila Nova Conceição."
+    },
+    "Aizomê": {
+      "cuisine": "Japanese",
+      "description": "Chef Telma Shiraishi's signature Japanese cooking; she also produces an award-winning line of artisanal soy sauces and vinegars."
+    },
+    "Kinoshita": {
+      "cuisine": "Japanese (kappo)",
+      "description": "Japanese kappo cuisine with one Michelin star, founded by Toshio Kinoshita in Vila Nova Conceição."
+    },
+    "Sujinho": {
+      "cuisine": "Brazilian (steak)",
+      "description": "Traditional Bela Vista boteco famous for its generous steaks and no-frills atmosphere, open late into the night."
+    },
+    "Famiglia Mancini": {
+      "cuisine": "Italian",
+      "description": "Iconic Italian-São Paulo institution in Bela Vista, with all-you-can-eat pasta and antipasti on Rua Avanhandava, heart of the city's 'Little Italy.'"
+    },
+    "Speranza": {
+      "cuisine": "Italian",
+      "description": "One of the most traditional trattorias in Bixiga, the neighborhood synonymous with Italian immigration to São Paulo."
+    },
+    "Bar Léo": {
+      "cuisine": "Brazilian",
+      "description": "Historic Bixiga boteco known for beer served in chilled clay mugs and dishes like oxtail stew (rabada)."
+    },
+    "Vinheria Percussi": {
+      "cuisine": "Italian",
+      "description": "A pioneer of food-and-wine pairing in São Paulo, with a list of over 300 labels and chef Silvia Percussi's heartfelt Italian cooking. Recognized by the Michelin Guide."
+    },
+    "Bráz Pizzaria": {
+      "cuisine": "Italian (pizza)",
+      "description": "The pizzeria that helped establish Neapolitan-style pizza in São Paulo, with its iconic filet-and-catupiry pie."
+    },
+    "Pizzaria Castelões": {
+      "cuisine": "Italian (pizza)",
+      "description": "One of São Paulo's oldest pizzerias, founded in 1924 in Bixiga, a symbol of the city's Italian tradition."
+    },
+    "Bar do Mané": {
+      "cuisine": "Brazilian",
+      "description": "Historic rival to Hocca Bar inside the Mercadão, also claiming the title of creator of the mortadella sandwich."
+    },
+    "Coffee Lab": {
+      "cuisine": "specialty coffee",
+      "description": "One of the pioneers of specialty coffee in São Paulo, founded by Brazilian barista champion Isabela Raposeiras."
+    },
+    "Suplicy Cafés Especiais": {
+      "cuisine": "specialty coffee",
+      "description": "São Paulo roastery and café that pioneered Brazil's specialty-coffee movement, with traceable beans from partner farms."
+    },
+    "Padaria Bella Paulista": {
+      "cuisine": "bakery",
+      "description": "24-hour bakery that's a São Paulo icon, its display case packed with breads, pastries and savory snacks that draw locals and tourists at any hour."
+    },
+    "Feira da Liberdade": {
+      "cuisine": "Japanese / street food",
+      "description": "Traditional weekend street fair on Praça da Liberdade, with Japanese and Nikkei food stalls in the neighborhood with the largest concentration of Japanese descendants outside Japan."
+    },
+    "Sushi Yassu": {
+      "cuisine": "Japanese",
+      "description": "One of the oldest Japanese restaurants in Liberdade, serving traditional cuisine since the 1970s."
+    },
+    "Fogo de Chão": {
+      "cuisine": "Brazilian (rodízio)",
+      "description": "The rodízio steakhouse that became one of Brazil's biggest culinary exports, with servers carving prime cuts tableside."
+    },
+    "Guilhotina Bar": {
+      "cuisine": "cocktail bar",
+      "description": "Signature cocktail bar in Pinheiros built around Brazilian botanicals. Has ranked among Latin America's best bars on The World's 50 Best Bars list."
+    },
+    "Bar Balcão": {
+      "cuisine": "Brazilian / international",
+      "description": "Bohemian Jardins bar built around its iconic 25-meter zigzag counter. A gathering spot for artists and intellectuals since 1994."
+    },
+    "Django": {
+      "cuisine": "American (New Orleans)",
+      "description": "New Orleans-inspired restaurant and bar in Vila Madalena, with live music, craft beer and dishes like ribs and gumbo."
+    },
+    "Tordesilhas": {
+      "cuisine": "regional Brazilian",
+      "description": "A menu that travels across Brazil's regions in one sitting, in Jardins, with dishes like paçoca de pilão and baião de dois."
+    },
+    "Rubaiyat": {
+      "cuisine": "Argentine / Brazilian",
+      "description": "Reference steakhouse for prime cuts in Jardins, part of a group that raises its own Black Angus cattle."
+    },
+    "Veloso": {
+      "cuisine": "Brazilian (pastel)",
+      "description": "Vila Mariana favorite famous for its meat pastel served with sugarcane juice or caipirinha, repeatedly named one of São Paulo's best pastéis by local critics."
+    },
+    "Ponto Chic": {
+      "cuisine": "Brazilian (sandwich)",
+      "description": "Historic spot on Largo do Paissandu, birthplace of the Bauru sandwich, created there in the 1930s and named after a regular customer."
+    },
+    "Bar Brahma": {
+      "cuisine": "Brazilian",
+      "description": "Historic bar founded in 1948 on the corner of Avenida São João and Ipiranga, a landmark of downtown São Paulo nightlife, immortalized in a Caetano Veloso song."
+    },
+    "Bar do Juarez": {
+      "cuisine": "Brazilian (burger)",
+      "description": "São Paulo bar chain born in Vila Madalena, known for its burgers and linguiça sausage boards."
+    },
+    "Grazie a Dio!": {
+      "cuisine": "Italian",
+      "description": "Vila Madalena boteco-trattoria with a relaxed vibe and generous Italian dishes meant for sharing, popular with expats."
+    },
+    "Mercado Municipal de São Paulo": {
+      "cuisine": "Brazilian",
+      "description": "The 'Mercadão,' a historic market opened in 1933 with stained glass by Conrado Sorgenicht, famous for its exotic fruit, codfish pastel and mortadella sandwiches."
+    },
+    "Corrutela": {
+      "cuisine": "contemporary Brazilian",
+      "description": "Sustainability-driven tasting-menu restaurant in Pinheiros from chef César Costa, with its own composting and solar power. Listed on both The World's 50 Best Discovery and the Michelin Guide."
+    },
+    "Metzi": {
+      "cuisine": "contemporary Mexican",
+      "description": "Contemporary Mexican cooking in dialogue with Brazilian ingredients, from chefs Luana Sabino and Eduardo Nava Ortiz, both alumni of Cosme in New York. Featured on The World's 50 Best Discovery."
+    },
+    "Carlota": {
+      "cuisine": "contemporary Brazilian",
+      "description": "Restaurant from chef Carla Pernambuco, one of the pioneers of female-led fine dining in São Paulo."
+    },
+    "Namesa": {
+      "cuisine": "contemporary",
+      "description": "Vila Madalena restaurant built around its iconic communal table that winds through the dining room, favoring light, seasonal dishes."
+    },
+    "Barbacoa": {
+      "cuisine": "Brazilian (rodízio)",
+      "description": "Popular rodízio steakhouse chain among São Paulo's business crowd, with a full buffet and prime cuts."
+    },
+    "Habib's": {
+      "cuisine": "Arab (fast food)",
+      "description": "Arab fast-food chain founded in São Paulo in 1988, today one of the largest of its kind in the world and a popular symbol of Arab cuisine in Brazil."
+    },
+    "Mercado de Pinheiros": {
+      "cuisine": "Brazilian",
+      "description": "Traditional neighborhood market, smaller and more informal than the Mercadão, famous for its codfish fritters and Argentine-style empanadas."
+    },
+    "Santo Grão": {
+      "cuisine": "coffee / Brazilian",
+      "description": "Café and restaurant on Rua Oscar Freire with its own coffee roast, a meeting point on Jardins' main shopping strip."
+    },
+    "Empório Alto de Pinheiros": {
+      "cuisine": "Brazilian (boteco)",
+      "description": "Boteco-grocery in Alto de Pinheiros with one of the city's most complete craft beer and cachaça lists."
+    },
+    "Z Deli": {
+      "cuisine": "Jewish (delicatessen)",
+      "description": "Jewish delicatessen founded in 1981, a reference for Ashkenazi Jewish culinary tradition in São Paulo, with dishes like gefilte fish and varenikes."
+    },
+    "Jardim de Napoli": {
+      "cuisine": "Italian",
+      "description": "Traditional Italian trattoria open since 1949, famous for its mozzarella-stuffed polpettone, an absolute classic of Italian-São Paulo cooking."
+    },
+    "La Casserole": {
+      "cuisine": "French",
+      "description": "French bistro founded in 1954 by a French immigrant couple on the picturesque Largo do Arouche, with dishes like cassoulet and steak tartare."
+    },
+    "Arábia": {
+      "cuisine": "Arab / Lebanese",
+      "description": "A reference for Arab and Lebanese cuisine in São Paulo since the 1980s, with dishes like raw kibbeh and strained yogurt."
+    },
+    "Skye Bar": {
+      "cuisine": "international",
+      "description": "Rooftop bar and restaurant atop the Ruy Ohtake-designed Hotel Unique, with a red pool and panoramic views of Ibirapuera Park and the São Paulo skyline."
+    },
+    "Spot": {
+      "cuisine": "international / brunch",
+      "description": "Classic Jardins restaurant that helped establish brunch culture and a relaxed vibe among São Paulo's creative class since the 1990s."
+    },
+    "Camarada Camarão": {
+      "cuisine": "seafood",
+      "description": "Shrimp-focused chain born in Recife, with over 50 shrimp recipes on the menu and a location on Avenida Paulista."
+    },
+    "Bar Original": {
+      "cuisine": "Brazilian",
+      "description": "Laid-back Vila Madalena boteco, a traditional outdoor happy-hour gathering spot in the bohemian neighborhood."
+    },
+    "Cervejaria Nacional": {
+      "cuisine": "craft brewery",
+      "description": "São Paulo craft brewery with a brewpub in Vila Madalena, part of the movement that drove Brazil's craft beer scene."
+    },
+    "Dalva e Dito": {
+      "cuisine": "contemporary Brazilian",
+      "description": "Heartfelt Brazilian cooking from Alex Atala and Alain Poletto in Jardins, recognized by the Michelin Guide."
+    },
+    "Terraço Itália": {
+      "cuisine": "international",
+      "description": "Restaurant atop the Edifício Itália, one of the city's tallest buildings, with 360-degree views over São Paulo."
+    },
+    "Bar Estadão": {
+      "cuisine": "Brazilian (boteco)",
+      "description": "24-hour boteco in downtown São Paulo, a traditional hangout for journalists from the O Estado de S. Paulo newspaper, famous for its draft beer and pastéis."
     }
   }
 }

@@ -3,7 +3,7 @@
   "name": "São Paulo",
   "country": "Brasil",
   "tagline": "Da cozinha amazônica com duas estrelas Michelin ao sanduíche de mortadela que virou notícia no New York Times.",
-  "totalPlaces": 5,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -45,7 +45,8 @@
       "rank": 2,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.56466,-46.6696073",
-      "source_type_secondary": "critic"
+      "source_type_secondary": "critic",
+      "distinction": null
     },
     {
       "name": "Maní",
@@ -83,7 +84,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417332,-46.6295244",
+      "distinction": null
     },
     {
       "name": "Picchi",
@@ -105,6 +107,1014 @@
         "type": "michelin_star",
         "count": 1
       }
+    },
+    {
+      "name": "A Casa do Porco",
+      "place_id": null,
+      "lat": -23.5443,
+      "lng": -46.6421,
+      "category": "fine_dining",
+      "cuisine": "brasileño contemporáneo",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Templo paulistano del cerdo, del chef Jefferson Rueda. Elegido consistentemente uno de los mejores restaurantes de América Latina por el World's 50 Best, con cola garantizada en la puerta.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5443,-46.6421",
+      "distinction": null
+    },
+    {
+      "name": "Evvai",
+      "place_id": null,
+      "lat": -23.5639,
+      "lng": -46.6669,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de autor con raíces italianas del chef Luiz Filipe Souza, con una estrella Michelin. Una de las direcciones más celebradas de Jardins.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5639,-46.6669",
+      "distinction": null
+    },
+    {
+      "name": "Mocotó",
+      "place_id": null,
+      "lat": -23.4841,
+      "lng": -46.5736,
+      "category": "restaurante",
+      "cuisine": "sertanejo / nordestino",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Casa del chef Rodrigo Oliveira, que llevó la cocina sertaneja y nordestina brasileña a otro nivel, en la periferia de la zona norte. Presencia constante en las listas de América Latina del World's 50 Best.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Brazil/S%C3%A3o-Paulo/Mocot%C3%B3.html",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.4841,-46.5736",
+      "distinction": null
+    },
+    {
+      "name": "Bar da Dona Onça",
+      "place_id": null,
+      "lat": -23.5457,
+      "lng": -46.642,
+      "category": "bar",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Bar y restaurante de la chef Janaína Rueda a los pies del Edificio Copan, de Oscar Niemeyer. Cocina brasileña popular con toque contemporáneo, premiado como mejor bar de la ciudad.",
+      "source_url": "https://guide.michelin.com/us/en/sao-paulo-region/sao-paulo/restaurant/bar-da-dona-onca",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5457,-46.642",
+      "distinction": null
+    },
+    {
+      "name": "Consulado Mineiro",
+      "place_id": null,
+      "lat": -23.5636,
+      "lng": -46.6893,
+      "category": "restaurante",
+      "cuisine": "mineiro",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Referencia absoluta de la cocina de Minas Gerais en São Paulo, con platos generosos como el tutu à mineira y la canjiquinha.",
+      "source_url": "https://dcomercio.com.br/publicacao/s/o-restaurante-que-e-sinonimo-de-comida-mineira",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5636,-46.6893",
+      "distinction": null
+    },
+    {
+      "name": "Consulado da Bahia",
+      "place_id": null,
+      "lat": -23.5624,
+      "lng": -46.6879,
+      "category": "restaurante",
+      "cuisine": "bahiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sabores bahianos en Pinheiros desde 2010: acarajé, moqueca y camarones en calabaza, del mismo grupo que el Consulado Mineiro.",
+      "source_url": "https://www.baressp.com.br/restaurantes/brasileiros/consulado-da-bahia",
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5624,-46.6879",
+      "distinction": null
+    },
+    {
+      "name": "Jun Sakamoto",
+      "place_id": null,
+      "lat": -23.59,
+      "lng": -46.6706,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Uno de los sushi bars más celebrados de Brasil, comandado por el chef japonés Jun Sakamoto. Omakase de altísimo nivel en Vila Nova Conceição.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.59,-46.6706",
+      "distinction": null
+    },
+    {
+      "name": "Aizomê",
+      "place_id": null,
+      "lat": -23.5893,
+      "lng": -46.6717,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina japonesa de autor de la chef Telma Shiraishi, que también firma una línea premiada de salsas de soja y vinagres artesanales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5893,-46.6717",
+      "distinction": null
+    },
+    {
+      "name": "Kinoshita",
+      "place_id": null,
+      "lat": -23.5883,
+      "lng": -46.6702,
+      "category": "fine_dining",
+      "cuisine": "japonés (kappo)",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina kappo japonesa con una estrella Michelin, fundada por Toshio Kinoshita en Vila Nova Conceição.",
+      "source_url": "https://guide.michelin.com/us/en/sao-paulo-region/sao-paulo/restaurant/kinoshita",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5883,-46.6702",
+      "distinction": null
+    },
+    {
+      "name": "Sujinho",
+      "place_id": null,
+      "lat": -23.558,
+      "lng": -46.646,
+      "category": "restaurante",
+      "cuisine": "brasileño (bife)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco tradicional de Bela Vista, famoso por sus bifes generosos y su ambiente sin pretensiones, abierto hasta tarde.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.558,-46.646",
+      "distinction": null
+    },
+    {
+      "name": "Famiglia Mancini",
+      "place_id": null,
+      "lat": -23.5494,
+      "lng": -46.6438,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Punto ítalo-paulistano icónico de Bela Vista, con antipasti y pastas libres en plena Rua Avanhandava, corazón de la 'pequeña Italia' de São Paulo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5494,-46.6438",
+      "distinction": null
+    },
+    {
+      "name": "Speranza",
+      "place_id": null,
+      "lat": -23.5597,
+      "lng": -46.6472,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las trattorias más tradicionales del Bixiga, el barrio símbolo de la inmigración italiana en São Paulo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5597,-46.6472",
+      "distinction": null
+    },
+    {
+      "name": "Bar Léo",
+      "place_id": null,
+      "lat": -23.5579,
+      "lng": -46.6452,
+      "category": "bar",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco histórico del Bixiga, conocido por su cerveza servida en jarras de barro bien frías y platos como el rabo de buey (rabada).",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5579,-46.6452",
+      "distinction": null
+    },
+    {
+      "name": "Vinheria Percussi",
+      "place_id": null,
+      "lat": -23.5493,
+      "lng": -46.6805,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Pionera de la enogastronomía en São Paulo, con una carta de más de 300 etiquetas y cocina italiana afectiva de la chef Silvia Percussi. Reconocida por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/sao-paulo-region/sao-paulo/restaurant/vinheria-percussi",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5493,-46.6805",
+      "distinction": null
+    },
+    {
+      "name": "Bráz Pizzaria",
+      "place_id": null,
+      "lat": -23.5556,
+      "lng": -46.6912,
+      "category": "pizzeria",
+      "cuisine": "italiano (pizza)",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Pizzería que ayudó a consagrar el estilo napolitano en São Paulo, con la icónica pizza de filet con catupiry.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5556,-46.6912",
+      "distinction": null
+    },
+    {
+      "name": "Pizzaria Castelões",
+      "place_id": null,
+      "lat": -23.5595,
+      "lng": -46.6465,
+      "category": "pizzeria",
+      "cuisine": "italiano (pizza)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las pizzerías más antiguas de São Paulo, fundada en 1924 en el Bixiga, símbolo de la tradición italiana de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5595,-46.6465",
+      "distinction": null
+    },
+    {
+      "name": "Bar do Mané",
+      "place_id": null,
+      "lat": -23.5417,
+      "lng": -46.6295,
+      "category": "street_food",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Competidor histórico del Hocca Bar dentro del Mercadão, disputando también el título de creador del sándwich de mortadela.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417,-46.6295",
+      "distinction": null
+    },
+    {
+      "name": "Coffee Lab",
+      "place_id": null,
+      "lat": -23.5613,
+      "lng": -46.689,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los pioneros del café de especialidad en São Paulo, fundado por la campeona brasileña de barismo Isabela Raposeiras.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5613,-46.689",
+      "distinction": null
+    },
+    {
+      "name": "Suplicy Cafés Especiais",
+      "place_id": null,
+      "lat": -23.5665,
+      "lng": -46.666,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tostadora y cafetería paulistana pionera del movimiento de cafés especiales en Brasil, con granos trazables de fincas asociadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5665,-46.666",
+      "distinction": null
+    },
+    {
+      "name": "Padaria Bella Paulista",
+      "place_id": null,
+      "lat": -23.5636,
+      "lng": -46.656,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Panadería 24 horas símbolo de São Paulo, con una vitrina repleta de panes, dulces y salgados que atrae a vecinos y turistas a cualquier hora del día.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5636,-46.656",
+      "distinction": null
+    },
+    {
+      "name": "Feira da Liberdade",
+      "place_id": null,
+      "lat": -23.5578,
+      "lng": -46.635,
+      "category": "mercado",
+      "cuisine": "japonés / street food",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Feria callejera tradicional de los fines de semana en la Praça da Liberdade, con puestos de comida japonesa y nikkei en el barrio con mayor concentración de descendientes de japoneses fuera de Japón.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5578,-46.635",
+      "distinction": null
+    },
+    {
+      "name": "Sushi Yassu",
+      "place_id": null,
+      "lat": -23.5585,
+      "lng": -46.6345,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los restaurantes japoneses más antiguos de Liberdade, sirviendo cocina tradicional desde la década de 1970.",
+      "source_url": "https://sushiyassuliberdade.com.br/",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5585,-46.6345",
+      "distinction": null
+    },
+    {
+      "name": "Fogo de Chão",
+      "place_id": null,
+      "lat": -23.5859,
+      "lng": -46.6739,
+      "category": "churrascaria",
+      "cuisine": "brasileño (rodízio)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Churrasquería de rodízio que se convirtió en una de las mayores exportaciones gastronómicas de Brasil, con espadas corridas de cortes nobles.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5859,-46.6739",
+      "distinction": null
+    },
+    {
+      "name": "Guilhotina Bar",
+      "place_id": null,
+      "lat": -23.5715,
+      "lng": -46.69,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Bar de coctelería de autor en Pinheiros con tragos basados en botánicos brasileños. Figuró entre los mejores bares de América Latina según el World's 50 Best Bars.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Brazil/S%C3%A3o-Paulo/Guilhotina-Bar.html",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5715,-46.69",
+      "distinction": null
+    },
+    {
+      "name": "Bar Balcão",
+      "place_id": null,
+      "lat": -23.5605,
+      "lng": -46.664,
+      "category": "bar",
+      "cuisine": "brasileño / internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar bohemio de Jardins, con su icónica barra en zigzag de 25 metros. Punto de encuentro de artistas e intelectuales desde 1994.",
+      "source_url": "https://www.baressp.com.br/restaurantes/cozinha-variada/bar-balcao",
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5605,-46.664",
+      "distinction": null
+    },
+    {
+      "name": "Django",
+      "place_id": null,
+      "lat": -23.559,
+      "lng": -46.6912,
+      "category": "restaurante",
+      "cuisine": "americano (Nueva Orleans)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante y bar inspirado en Nueva Orleans en Vila Madalena, con música en vivo, cerveza artesanal y platos como costillas y gumbo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.559,-46.6912",
+      "distinction": null
+    },
+    {
+      "name": "Tordesilhas",
+      "place_id": null,
+      "lat": -23.5595,
+      "lng": -46.6655,
+      "category": "restaurante",
+      "cuisine": "brasileño regional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina que recorre las regiones de Brasil en un solo menú, en Jardins, con platos como la paçoca de pilão y el baião de dois.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5595,-46.6655",
+      "distinction": null
+    },
+    {
+      "name": "Rubaiyat",
+      "place_id": null,
+      "lat": -23.5697,
+      "lng": -46.6538,
+      "category": "churrascaria",
+      "cuisine": "argentino / brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Steakhouse de referencia en carnes nobles en Jardins, parte de un grupo con ganadería propia de Black Angus.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5697,-46.6538",
+      "distinction": null
+    },
+    {
+      "name": "Veloso",
+      "place_id": null,
+      "lat": -23.5892,
+      "lng": -46.6337,
+      "category": "bar",
+      "cuisine": "brasileño (pastel)",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Punto de Vila Mariana famoso por su pastel de carne acompañado de caldo de caña o caipiriña, elegido repetidamente uno de los mejores pasteles de São Paulo por la crítica local.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5892,-46.6337",
+      "distinction": null
+    },
+    {
+      "name": "Ponto Chic",
+      "place_id": null,
+      "lat": -23.542,
+      "lng": -46.6408,
+      "category": "restaurante",
+      "cuisine": "brasileño (sándwich)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local histórico en el Largo do Paissandu, cuna del sándwich Bauru, creado allí en los años 1930 y bautizado en homenaje a un cliente.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.542,-46.6408",
+      "distinction": null
+    },
+    {
+      "name": "Bar Brahma",
+      "place_id": null,
+      "lat": -23.5433,
+      "lng": -46.6416,
+      "category": "bar",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar histórico fundado en 1948 en la esquina de la Avenida São João con la Ipiranga, hito de la vida bohemia del centro de São Paulo, inmortalizado en una canción de Caetano Veloso.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5433,-46.6416",
+      "distinction": null
+    },
+    {
+      "name": "Bar do Juarez",
+      "place_id": null,
+      "lat": -23.5568,
+      "lng": -46.6918,
+      "category": "bar",
+      "cuisine": "brasileño (hamburguesa)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena paulistana de bares nacida en Vila Madalena, conocida por sus hamburguesas y la linguiça en tabla.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5568,-46.6918",
+      "distinction": null
+    },
+    {
+      "name": "Grazie a Dio!",
+      "place_id": null,
+      "lat": -23.556,
+      "lng": -46.6899,
+      "category": "bar",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco-trattoria de Vila Madalena con ambiente relajado y platos italianos generosos para compartir, muy frecuentado por extranjeros.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.556,-46.6899",
+      "distinction": null
+    },
+    {
+      "name": "Mercado Municipal de São Paulo",
+      "place_id": null,
+      "lat": -23.5417,
+      "lng": -46.6295,
+      "category": "mercado",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "El 'Mercadão', mercado histórico inaugurado en 1933 con vitrales de Conrado Sorgenicht, famoso por sus frutas exóticas, el pastel de bacalao y los sándwiches de mortadela.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5417,-46.6295",
+      "distinction": null
+    },
+    {
+      "name": "Corrutela",
+      "place_id": null,
+      "lat": -23.5665,
+      "lng": -46.687,
+      "category": "fine_dining",
+      "cuisine": "brasileño contemporáneo",
+      "tags": [
+        "worlds50best",
+        "michelin"
+      ],
+      "description": "Restaurante de autor y sustentable en Pinheiros, del chef César Costa, con compostaje propio y energía solar. Presencia en las listas del World's 50 Best Discovery y en la Guía Michelin.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Brazil/S%C3%A3o-Paulo/Corrutela.html",
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5665,-46.687",
+      "distinction": null
+    },
+    {
+      "name": "Metzi",
+      "place_id": null,
+      "lat": -23.5563,
+      "lng": -46.6902,
+      "category": "restaurante",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "worlds50best",
+        "critic"
+      ],
+      "description": "Cocina mexicana contemporánea en diálogo con ingredientes brasileños, de las chefs Luana Sabino y Eduardo Nava Ortiz, ex-Cosme (Nueva York). Listado por el World's 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Brazil/S%C3%A3o-Paulo/Metzi.html",
+      "source_type": "critic",
+      "rank": 41,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5563,-46.6902",
+      "distinction": null
+    },
+    {
+      "name": "Carlota",
+      "place_id": null,
+      "lat": -23.546,
+      "lng": -46.656,
+      "category": "restaurante",
+      "cuisine": "brasileño contemporáneo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de la chef Carla Pernambuco, una de las pioneras de la alta cocina de autor liderada por mujeres en São Paulo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.546,-46.656",
+      "distinction": null
+    },
+    {
+      "name": "Namesa",
+      "place_id": null,
+      "lat": -23.558,
+      "lng": -46.69,
+      "category": "restaurante",
+      "cuisine": "contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de Vila Madalena con su icónica mesa comunal que serpentea por el salón, priorizando platos livianos y de temporada.",
+      "source_url": "https://www.guiadasemana.com.br/sao-paulo/restaurantes/estabelecimento/namesa",
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.558,-46.69",
+      "distinction": null
+    },
+    {
+      "name": "Barbacoa",
+      "place_id": null,
+      "lat": -23.591,
+      "lng": -46.6745,
+      "category": "churrascaria",
+      "cuisine": "brasileño (rodízio)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de churrasquerías de rodízio muy concurrida entre ejecutivos paulistanos, con buffet completo y cortes nobles.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.591,-46.6745",
+      "distinction": null
+    },
+    {
+      "name": "Habib's",
+      "place_id": null,
+      "lat": -23.5613,
+      "lng": -46.656,
+      "category": "street_food",
+      "cuisine": "árabe (comida rápida)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de comida rápida árabe fundada en São Paulo en 1988, hoy una de las más grandes del rubro en el mundo, símbolo popular de la cocina árabe en Brasil.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5613,-46.656",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de Pinheiros",
+      "place_id": null,
+      "lat": -23.567,
+      "lng": -46.6845,
+      "category": "mercado",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de barrio tradicional, más pequeño e informal que el Mercadão, famoso por sus buñuelos de bacalao y las empanadas argentinas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.567,-46.6845",
+      "distinction": null
+    },
+    {
+      "name": "Santo Grão",
+      "place_id": null,
+      "lat": -23.5636,
+      "lng": -46.669,
+      "category": "cafeteria",
+      "cuisine": "café / brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería y restaurante en la Rua Oscar Freire con tueste propio de café, punto de encuentro en pleno eje de compras de Jardins.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5636,-46.669",
+      "distinction": null
+    },
+    {
+      "name": "Empório Alto de Pinheiros",
+      "place_id": null,
+      "lat": -23.549,
+      "lng": -46.709,
+      "category": "bar",
+      "cuisine": "brasileño (boteco)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco-almacén en Alto de Pinheiros con una de las cartas de cervezas artesanales y cachazas más completas de la ciudad.",
+      "source_url": "https://www.botecoecerveja.com.br/2012/08/emporio-alto-dos-pinheiros/",
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.549,-46.709",
+      "distinction": null
+    },
+    {
+      "name": "Z Deli",
+      "place_id": null,
+      "lat": -23.567,
+      "lng": -46.666,
+      "category": "restaurante",
+      "cuisine": "judío (delicatessen)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Delicatessen judía fundada en 1981, referencia de la tradición culinaria judía asquenazí en São Paulo, con platos como el guefilte fish y los varenikes.",
+      "source_url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/z-deli-restaurante-uma-deli-nova-iorquina-reinventada-em-sao-paulo/",
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.567,-46.666",
+      "distinction": null
+    },
+    {
+      "name": "Jardim de Napoli",
+      "place_id": null,
+      "lat": -23.5395,
+      "lng": -46.648,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cantina italiana tradicional abierta en 1949, famosa por su polpettone relleno de mozzarella, un clásico absoluto de la cocina ítalo-paulistana.",
+      "source_url": "https://www.baressp.com.br/restaurantes/italianos/jardim-de-napoli",
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5395,-46.648",
+      "distinction": null
+    },
+    {
+      "name": "La Casserole",
+      "place_id": null,
+      "lat": -23.5375,
+      "lng": -46.644,
+      "category": "restaurante",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró francés fundado en 1954 por un matrimonio de inmigrantes franceses en el pintoresco Largo do Arouche, con platos como el cassoulet y el tartar.",
+      "source_url": "https://www.lacasserole.com.br/",
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5375,-46.644",
+      "distinction": null
+    },
+    {
+      "name": "Arábia",
+      "place_id": null,
+      "lat": -23.561,
+      "lng": -46.666,
+      "category": "restaurante",
+      "cuisine": "árabe / libanés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Referencia de cocina árabe y libanesa en São Paulo desde los años 1980, con platos como el kibe crudo y el yogur colado.",
+      "source_url": "https://arabia.com.br/",
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.561,-46.666",
+      "distinction": null
+    },
+    {
+      "name": "Skye Bar",
+      "place_id": null,
+      "lat": -23.592,
+      "lng": -46.659,
+      "category": "bar",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Bar-restaurante en la azotea del Hotel Unique, diseño de Ruy Ohtake, con piscina roja y vista panorámica del Parque Ibirapuera y el horizonte paulistano.",
+      "source_url": "https://www.hotelunique.com/en/skye-restaurante-bar",
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.592,-46.659",
+      "distinction": null
+    },
+    {
+      "name": "Spot",
+      "place_id": null,
+      "lat": -23.5645,
+      "lng": -46.662,
+      "category": "restaurante",
+      "cuisine": "internacional / brunch",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante clásico de Jardins que ayudó a consagrar el brunch y el ambiente desenfadado entre la clase creativa paulistana desde los años 1990.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5645,-46.662",
+      "distinction": null
+    },
+    {
+      "name": "Camarada Camarão",
+      "place_id": null,
+      "lat": -23.562,
+      "lng": -46.656,
+      "category": "restaurante",
+      "cuisine": "frutos del mar",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena especializada en camarones nacida en Recife, con más de 50 recetas del crustáceo en el menú y sede en la Av. Paulista.",
+      "source_url": "https://www.camaradacamarao.com.br/en/home/",
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.562,-46.656",
+      "distinction": null
+    },
+    {
+      "name": "Bar Original",
+      "place_id": null,
+      "lat": -23.5583,
+      "lng": -46.6907,
+      "category": "bar",
+      "cuisine": "brasileño",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco relajado de Vila Madalena, punto de encuentro tradicional para el happy hour al aire libre en el barrio bohemio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5583,-46.6907",
+      "distinction": null
+    },
+    {
+      "name": "Cervejaria Nacional",
+      "place_id": null,
+      "lat": -23.5559,
+      "lng": -46.6905,
+      "category": "bar",
+      "cuisine": "cervecería artesanal",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cervecería artesanal paulistana con brewpub en Vila Madalena, parte del movimiento que impulsó la cerveza artesanal brasileña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5559,-46.6905",
+      "distinction": null
+    },
+    {
+      "name": "Dalva e Dito",
+      "place_id": null,
+      "lat": -23.5665,
+      "lng": -46.668,
+      "category": "restaurante",
+      "cuisine": "brasileño contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante de comida brasileña afectiva firmado por Alex Atala y Alain Poletto en Jardins, reconocido por la Guía Michelin.",
+      "source_url": "https://dalvaedito.com.br/",
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5665,-46.668",
+      "distinction": null
+    },
+    {
+      "name": "Terraço Itália",
+      "place_id": null,
+      "lat": -23.5455,
+      "lng": -46.6425,
+      "category": "restaurante",
+      "cuisine": "internacional",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Restaurante en lo alto del Edificio Itália, uno de los edificios más altos de la ciudad, con vista de 360 grados sobre São Paulo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5455,-46.6425",
+      "distinction": null
+    },
+    {
+      "name": "Bar Estadão",
+      "place_id": null,
+      "lat": -23.5453,
+      "lng": -46.647,
+      "category": "bar",
+      "cuisine": "brasileño (boteco)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Boteco abierto las 24 horas en el centro de São Paulo, punto de encuentro tradicional de periodistas del diario O Estado de S. Paulo, famoso por su chopp y sus pasteles.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-23.5453,-46.647",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,

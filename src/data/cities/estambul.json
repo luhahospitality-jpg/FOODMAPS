@@ -3,7 +3,7 @@
   "name": "Estambul",
   "country": "Turquía",
   "tagline": "Cocina otomana con estrella Michelin dentro del Bazar de las Especias, desde 1901.",
-  "totalPlaces": 5,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -45,7 +45,8 @@
       "source_type": "classic",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9463997,29.1100738"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9463997,29.1100738",
+      "distinction": null
     },
     {
       "name": "Tarihi Karaköy Balıkçısı",
@@ -62,7 +63,8 @@
       "source_type": "classic",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0228645,28.9740393",
+      "distinction": null
     },
     {
       "name": "Kızılkayalar",
@@ -79,7 +81,8 @@
       "source_type": "bourdain",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0361768,28.9846783"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0361768,28.9846783",
+      "distinction": null
     },
     {
       "name": "Sofyalı 9",
@@ -96,7 +99,1061 @@
       "source_type": "classic",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0291163,28.9743233"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0291163,28.9743233",
+      "distinction": null
+    },
+    {
+      "name": "Türk Fatih Tutak",
+      "place_id": null,
+      "lat": 41.0625,
+      "lng": 28.9847,
+      "category": "fine_dining",
+      "cuisine": "turco contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina turca contemporánea con dos estrellas Michelin en el barrio de Bomonti; el chef Fatih Tutak reinterpreta técnicas anatolias con precisión de alta cocina y menú degustación.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/turk-fatih-tutak",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0625,28.9847",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Mikla",
+      "place_id": null,
+      "lat": 41.03105,
+      "lng": 28.9741,
+      "category": "fine_dining",
+      "cuisine": "turco / mediterráneo moderno",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "En lo alto del hotel Marmara Pera, el chef Mehmet Gürs combina cocina anatolia y escandinava con vistas al Cuerno de Oro. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/mikla",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.03105,28.9741",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Neolokal",
+      "place_id": null,
+      "lat": 41.0256,
+      "lng": 28.9743,
+      "category": "fine_dining",
+      "cuisine": "turco / anatolio moderno",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Dentro del centro cultural Salt Galata, el chef Maksut Aşkar reinventa recetas anatolias con producto de pequeños productores turcos. Una estrella Michelin.",
+      "source_url": "https://www.neolokal.com/en/neolokal_en/",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0256,28.9743",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Araka",
+      "place_id": null,
+      "lat": 41.1249,
+      "lng": 29.0534,
+      "category": "fine_dining",
+      "cuisine": "turco moderno / vegetal",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Pequeño restaurante en Yeniköy con cocina turca moderna de fuerte protagonismo vegetal, dirigido por la chef Zeynep Pınar Taşdemir. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/be/fr/istanbul-province/istanbul/restaurant/araka",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.1249,29.0534",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Arkestra",
+      "place_id": null,
+      "lat": 41.0798,
+      "lng": 29.03,
+      "category": "fine_dining",
+      "cuisine": "europea moderna",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "En una villa restaurada de los años 60 en Etiler, el chef Cenk Debensason mezcla técnica clásica francesa con influencias globales. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/arkestra",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0798,29.03",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nicole",
+      "place_id": null,
+      "lat": 41.0328,
+      "lng": 28.9803,
+      "category": "fine_dining",
+      "cuisine": "turco anatolio contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "En la terraza de Tomtom Suites, con vistas a la península histórica, el chef Serkan Aksoy firma una cocina anatolia contemporánea. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/nicole",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0328,28.9803",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Sankai by Nagaya",
+      "place_id": null,
+      "lat": 41.0776,
+      "lng": 29.0431,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante japonés de solo 24 comensales en el histórico Bebek Hotel, fruto de la sociedad entre el chef Yoshizumi Nagaya y un empresario turco. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0776,29.0431",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Casa Lavanda",
+      "place_id": null,
+      "lat": 41.1753,
+      "lng": 29.6108,
+      "category": "fine_dining",
+      "cuisine": "turco de temporada / de la huerta",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "En el distrito costero de Şile, a las afueras de Estambul, este restaurante cultiva la mayoría de sus propios ingredientes en su huerta. Estrella Michelin desde 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.1753,29.6108",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Karaköy Lokantası",
+      "place_id": null,
+      "lat": 41.0245,
+      "lng": 28.9755,
+      "category": "restaurante",
+      "cuisine": "turco / meyhane moderna",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Abierto en 2007 por Oral Kurt y Aylin Okutan, es un clásico de barrio en Karaköy que da un giro moderno a la cocina turca tradicional. Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/karakoy-lokantas%C4%B1",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0245,28.9755",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Ali Ocakbaşı",
+      "place_id": null,
+      "lat": 41.0261,
+      "lng": 28.974,
+      "category": "restaurante",
+      "cuisine": "turco / parrilla (ocakbaşı)",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Parrilla turca (ocakbaşı) con vistas en Karaköy, reconocida por sus brochetas de cordero a la brasa. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0261,28.974",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Araf İstanbul",
+      "place_id": null,
+      "lat": 40.974,
+      "lng": 29.091,
+      "category": "restaurante",
+      "cuisine": "turco de autor (mesa del chef)",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Restaurante íntimo de mesa del chef en Kadıköy fundado por Kenan y Pınar Çetinkaya, centrado en cocina de fuego abierto. Bib Gourmand Michelin en 2024 y 2025.",
+      "source_url": "https://guide.michelin.com/gb/en/istanbul-province/istanbul/restaurant/araf-istanbul",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.974,29.091",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Efendy",
+      "place_id": null,
+      "lat": 41.0779,
+      "lng": 29.0182,
+      "category": "restaurante",
+      "cuisine": "turco anatolio",
+      "tags": [
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Restaurante en Levent especializado en cocina anatolia de recetas regionales poco habituales en la ciudad. Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/efendy",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0779,29.0182",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Çiya Sofrası",
+      "place_id": null,
+      "lat": 40.9893,
+      "lng": 29.0242,
+      "category": "restaurante",
+      "cuisine": "turco regional / anatolio",
+      "tags": [
+        "critic",
+        "tv_show"
+      ],
+      "description": "El chef Musa Dağdeviren rescata recetas olvidadas de toda Anatolia en su local de Kadıköy; protagonista del episodio de Estambul en 'Chef's Table' de Netflix.",
+      "source_url": null,
+      "source_type": "critic",
+      "source_type_secondary": "tv_show",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9893,29.0242",
+      "distinction": null
+    },
+    {
+      "name": "Balıkçı Sabahattin",
+      "place_id": null,
+      "lat": 41.0047,
+      "lng": 28.9788,
+      "category": "seafood",
+      "cuisine": "turco / mariscos",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Casa de pescado de referencia en Sultanahmet, en un callejón junto a las murallas marítimas, con mezze de pescado y capturas del día desde hace décadas.",
+      "source_url": "https://www.balikcisabahattin.com/?lang=en",
+      "source_type": "classic",
+      "source_type_secondary": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0047,28.9788",
+      "distinction": null
+    },
+    {
+      "name": "Hamdi Restaurant",
+      "place_id": null,
+      "lat": 41.0175,
+      "lng": 28.9705,
+      "category": "restaurante",
+      "cuisine": "turco / kebab de Urfa",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sobre el Bazar de las Especias en Eminönü, con vistas al Cuerno de Oro; el chef Hamdi llegó de Urfa en los años 60 para popularizar el kebab del sureste turco.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0175,28.9705",
+      "distinction": null
+    },
+    {
+      "name": "Develi Restaurant",
+      "place_id": null,
+      "lat": 40.9964,
+      "lng": 28.9146,
+      "category": "restaurante",
+      "cuisine": "turco / kebab de Gaziantep",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en Gaziantep en 1912 y en Samatya desde 1966, es célebre por su kebab de pistacho y ha recibido a numerosos artistas y políticos turcos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9964,28.9146",
+      "distinction": null
+    },
+    {
+      "name": "Beyti Restaurant",
+      "place_id": null,
+      "lat": 40.9757,
+      "lng": 28.7869,
+      "category": "restaurante",
+      "cuisine": "turco / carnes a la brasa",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución cárnica en Florya desde 1945, con 500 plazas y el kebab Beyti (envuelto en pan fino) que le da nombre, servido a la brasa de encina.",
+      "source_url": "https://www.beyti.com/",
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9757,28.7869",
+      "distinction": null
+    },
+    {
+      "name": "Zübeyir Ocakbaşı",
+      "place_id": null,
+      "lat": 41.0365,
+      "lng": 28.9821,
+      "category": "restaurante",
+      "cuisine": "turco / parrilla (ocakbaşı)",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Parrilla abierta desde 2006 cerca de Taksim, con brochetas de cordero y ensalada de Gaziantep a la vista del comensal, ante las brasas del ocakbaşı.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0365,28.9821",
+      "distinction": null
+    },
+    {
+      "name": "Sultanahmet Köftecisi Selim Usta",
+      "place_id": null,
+      "lat": 41.0075,
+      "lng": 28.974,
+      "category": "fast_food",
+      "cuisine": "turco / köfte (albóndigas)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En Divanyolu, a la sombra de Santa Sofía, sirve desde 1920 sus icónicas köfte planas a la parrilla con ensalada piyaz; hoy dirigido por la cuarta generación.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0075,28.974",
+      "distinction": null
+    },
+    {
+      "name": "Şehzade Cağ Kebap",
+      "place_id": null,
+      "lat": 41.0142,
+      "lng": 28.9765,
+      "category": "fast_food",
+      "cuisine": "turco / cağ kebabı de Erzurum",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Especialista en cağ kebabı, el kebab horizontal de cordero de Erzurum servido en finas lonchas con pan lavaş, cerca de la estación de Sirkeci.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0142,28.9765",
+      "distinction": null
+    },
+    {
+      "name": "Karaköy Güllüoğlu",
+      "place_id": null,
+      "lat": 41.0246,
+      "lng": 28.9744,
+      "category": "panaderia",
+      "cuisine": "turco / baklava",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La baklava más reputada de Estambul, en Karaköy desde 1949; también elabora kadayıf y otros dulces de sirope siguiendo la receta familiar Güllü.",
+      "source_url": "https://www.karakoygulluoglu.com/en",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0246,28.9744",
+      "distinction": null
+    },
+    {
+      "name": "Hafız Mustafa 1864",
+      "place_id": null,
+      "lat": 41.008,
+      "lng": 28.972,
+      "category": "panaderia",
+      "cuisine": "turco / dulces y baklava",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería otomana fundada en 1864 durante el reinado de Abdülaziz, célebre por su baklava, sus dulces de leche y su Turkish delight.",
+      "source_url": "https://www.hafizmustafa.com/en",
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.008,28.972",
+      "distinction": null
+    },
+    {
+      "name": "Vefa Bozacısı",
+      "place_id": null,
+      "lat": 41.0146,
+      "lng": 28.9635,
+      "category": "cafeteria",
+      "cuisine": "turco / boza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundada en 1876, esta casa de boza (bebida fermentada de trigo) conserva el vaso del que bebió Atatürk en su visita de 1937, aún expuesto en la tienda.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0146,28.9635",
+      "distinction": null
+    },
+    {
+      "name": "Van Kahvaltı Evi",
+      "place_id": null,
+      "lat": 41.0316,
+      "lng": 28.9825,
+      "category": "cafeteria",
+      "cuisine": "turco / desayuno de Van (kurdo)",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "En Cihangir, sirve el elaborado desayuno de la región oriental de Van —quesos, mieles y otvot— siguiendo el ritual desayuno tradicional de esa zona.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0316,28.9825",
+      "distinction": null
+    },
+    {
+      "name": "Mandabatmaz",
+      "place_id": null,
+      "lat": 41.0327,
+      "lng": 28.9762,
+      "category": "cafeteria",
+      "cuisine": "turco / café turco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diminuto local en un callejón de Beyoğlu famoso por su café turco de espuma densísima, preparado al modo tradicional desde hace generaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0327,28.9762",
+      "distinction": null
+    },
+    {
+      "name": "Fazıl Bey'in Türk Kahvesi",
+      "place_id": null,
+      "lat": 40.991,
+      "lng": 29.0245,
+      "category": "cafeteria",
+      "cuisine": "turco / café turco",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "En el histórico mercado de Kadıköy, tuesta su propio café y sirve un café turco espeso considerado de los mejores de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.991,29.0245",
+      "distinction": null
+    },
+    {
+      "name": "Baylan Pastanesi",
+      "place_id": null,
+      "lat": 40.9897,
+      "lng": 29.0263,
+      "category": "panaderia",
+      "cuisine": "turco / repostería de estilo francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería de estilo francés en Kadıköy famosa por su postre Kup Griye —helado, caramelo, pistacho y crema Chantilly— servido en su jardín trasero.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.9897,29.0263",
+      "distinction": null
+    },
+    {
+      "name": "Pierre Loti Café",
+      "place_id": null,
+      "lat": 41.0553,
+      "lng": 28.9339,
+      "category": "cafeteria",
+      "cuisine": "turco / té y café con vistas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café histórico en la colina de Eyüp, sobre el Cuerno de Oro, al que se llega en teleférico; frecuentado por el escritor francés Pierre Loti en el siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0553,28.9339",
+      "distinction": null
+    },
+    {
+      "name": "Asitane Restaurant",
+      "place_id": null,
+      "lat": 41.0309,
+      "lng": 28.9391,
+      "category": "fine_dining",
+      "cuisine": "turco / cocina de palacio otomano",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Junto a la iglesia de Chora, desde 1991 recupera con rigor recetas de los archivos de los palacios otomanos, muchas desaparecidas de la cocina actual.",
+      "source_url": "https://www.asitanerestaurant.com/English/about-us/",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0309,28.9391",
+      "distinction": null
+    },
+    {
+      "name": "Dürümzade",
+      "place_id": null,
+      "lat": 41.0345,
+      "lng": 28.9779,
+      "category": "fast_food",
+      "cuisine": "turco / dürüm (kebab envuelto)",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Pequeño local para llevar en Beyoğlu, célebre por su dürüm de cordero envuelto en lavaş recién hecho; Anthony Bourdain lo destacó en 'No Reservations'.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0345,28.9779",
+      "distinction": null
+    },
+    {
+      "name": "Sur Ocakbaşı",
+      "place_id": null,
+      "lat": 41.0195,
+      "lng": 28.953,
+      "category": "restaurante",
+      "cuisine": "turco / büryan (cordero al horno de tierra)",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "En el barrio de Zeyrek, sirve büryan —cordero cocinado lentamente en horno subterráneo, especialidad de Bitlis—, plato que Anthony Bourdain probó en 'No Reservations'.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0195,28.953",
+      "distinction": null
+    },
+    {
+      "name": "Karpi Pide-Köfte",
+      "place_id": null,
+      "lat": 41.0435,
+      "lng": 29.0388,
+      "category": "restaurante",
+      "cuisine": "turco / pide del mar Negro",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "En Beylerbeyi, en la orilla asiática, sirve pide del mar Negro que Anthony Bourdain comió en 'Parts Unknown' junto al fotógrafo Marat Germen.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0435,29.0388",
+      "distinction": null
+    },
+    {
+      "name": "Poyraz Sahil Balık",
+      "place_id": null,
+      "lat": 41.1928,
+      "lng": 29.1153,
+      "category": "seafood",
+      "cuisine": "turco / pescado del Bósforo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante junto al mar en Poyrazköy, en la boca norte del Bósforo, con pescado capturado el mismo día por pescadores locales.",
+      "source_url": "https://www.poyrazsahilbalik.com/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.1928,29.1153",
+      "distinction": null
+    },
+    {
+      "name": "Hacı Abdullah Restaurant",
+      "place_id": null,
+      "lat": 41.0348,
+      "lng": 28.9773,
+      "category": "restaurante",
+      "cuisine": "turco / cocina otomana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1888 en Karaköy con licencia del sultán Abdülhamid II, hoy en Beyoğlu; célebre por sus guisos, dulces de fruta en almíbar y encurtidos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0348,28.9773",
+      "distinction": null
+    },
+    {
+      "name": "Nusr-Et Steakhouse",
+      "place_id": null,
+      "lat": 41.0798,
+      "lng": 29.0299,
+      "category": "fine_dining",
+      "cuisine": "turco / steakhouse",
+      "tags": [
+        "viral_tiktok",
+        "influencer"
+      ],
+      "description": "Steakhouse original de Nusret Gökçe (\"Salt Bae\") en Etiler, donde nació en 2010 su viral gesto de esparcir sal, hoy un fenómeno global en redes sociales.",
+      "source_url": "https://www.nusr-et.com.tr/en/restaurants",
+      "source_type": "viral_social",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0798,29.0299",
+      "distinction": null
+    },
+    {
+      "name": "360 Istanbul",
+      "place_id": null,
+      "lat": 41.0328,
+      "lng": 28.9772,
+      "category": "bar",
+      "cuisine": "internacional / turco (azotea)",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante y azotea sobre el histórico edificio Mısır en la calle İstiklal, con vistas panorámicas de 360 grados y cocina que mezcla sabores locales y globales.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0328,28.9772",
+      "distinction": null
+    },
+    {
+      "name": "Sunset Grill & Bar",
+      "place_id": null,
+      "lat": 41.0625,
+      "lng": 29.0289,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo / japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sobre el parque de Ulus, con vistas al Bósforo, combina cocina mediterránea y japonesa desde 1994; miembro de la Chaîne des Rôtisseurs.",
+      "source_url": "https://www.sunsetgrillbar.com/",
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0625,29.0289",
+      "distinction": null
+    },
+    {
+      "name": "Kanaat Lokantası",
+      "place_id": null,
+      "lat": 41.0243,
+      "lng": 29.0146,
+      "category": "restaurante",
+      "cuisine": "turco / cocina otomana casera (esnaf)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En Üsküdar desde 1933, esta lokanta esnaf sirve platos otomanos tradicionales al peso, un clásico intacto en la orilla asiática.",
+      "source_url": "https://www.kanaatlokantasi.com.tr/",
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0243,29.0146",
+      "distinction": null
+    },
+    {
+      "name": "Namlı Gurme",
+      "place_id": null,
+      "lat": 41.0246,
+      "lng": 28.9743,
+      "category": "mercado",
+      "cuisine": "turco / delicatessen y desayuno",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Pionera en Turquía del concepto de delicatessen con restaurante, en Karaköy; quesos, embutidos, aceitunas y un desayuno turco muy completo.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 44,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0246,28.9743",
+      "distinction": null
+    },
+    {
+      "name": "Divan Pastanesi",
+      "place_id": null,
+      "lat": 41.0475,
+      "lng": 28.9878,
+      "category": "panaderia",
+      "cuisine": "turco / chocolate y repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería del Hotel Divan, abierta en 1956 en Elmadağ; produce toneladas de bombones y lokum artesanales, un referente del chocolate en Turquía.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0475,28.9878",
+      "distinction": null
+    },
+    {
+      "name": "Feriye Lokantası",
+      "place_id": null,
+      "lat": 41.0455,
+      "lng": 29.0227,
+      "category": "fine_dining",
+      "cuisine": "turco otomano / cocina del Bósforo",
+      "tags": [
+        "critic"
+      ],
+      "description": "En el histórico Palacio Feriye, junto al Bósforo en Ortaköy, reinterpreta la rica tradición culinaria otomana desde su apertura en 1995.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/lokanta-feriye",
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0455,29.0227",
+      "distinction": null
+    },
+    {
+      "name": "Tuğra Restaurant",
+      "place_id": null,
+      "lat": 41.0424,
+      "lng": 29.0165,
+      "category": "fine_dining",
+      "cuisine": "turco otomano de palacio",
+      "tags": [
+        "critic"
+      ],
+      "description": "En el Palacio Çırağan (hoy hotel Kempinski), con vistas al Bósforo, recrea recetas de archivos palaciegos otomanos en un entorno de mármol y columnas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0424,29.0165",
+      "distinction": null
+    },
+    {
+      "name": "Krependeki İmroz",
+      "place_id": null,
+      "lat": 41.0343,
+      "lng": 28.9765,
+      "category": "bar",
+      "cuisine": "turco / meyhane de tradición griega",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las meyhanes más antiguas de la calle Nevizade, abierta en 1941 de raíz greco-estambulí, con mezze de pescado y raki.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0343,28.9765",
+      "distinction": null
+    },
+    {
+      "name": "Fıccın",
+      "place_id": null,
+      "lat": 41.0316,
+      "lng": 28.976,
+      "category": "restaurante",
+      "cuisine": "circasiano / turco",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Meyhane pequeña en Asmalı Mescit especializada en cocina circasiana, con su pastel de carne homónimo y un pollo circasiano célebre entre los locales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0316,28.976",
+      "distinction": null
+    },
+    {
+      "name": "Şark Kahvesi",
+      "place_id": null,
+      "lat": 41.0106,
+      "lng": 28.9681,
+      "category": "cafeteria",
+      "cuisine": "turco / café turco (Gran Bazar)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería tradicional dentro del Gran Bazar, un refugio con decoración otomana para comerciantes y visitantes desde mediados del siglo XX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0106,28.9681",
+      "distinction": null
+    },
+    {
+      "name": "Konyalı Restaurant",
+      "place_id": null,
+      "lat": 41.0115,
+      "lng": 28.9834,
+      "category": "restaurante",
+      "cuisine": "turco / cocina otomana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1897, sirve dentro del Palacio de Topkapı desde 1969, con vistas al Bósforo y platos otomanos tradicionales.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0115,28.9834",
+      "distinction": null
+    },
+    {
+      "name": "Havuzlu Restaurant",
+      "place_id": null,
+      "lat": 41.0106,
+      "lng": 28.9681,
+      "category": "restaurante",
+      "cuisine": "turco / cocina otomana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1959, fue el primer y mayor restaurante del Gran Bazar; sirve mantı, kebabs y guisos otomanos bajo techos abovedados históricos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0106,28.9681",
+      "distinction": null
+    },
+    {
+      "name": "Erzincanlı Ali Baba",
+      "place_id": null,
+      "lat": 41.0163,
+      "lng": 28.9639,
+      "category": "fast_food",
+      "cuisine": "turco / kuru fasulye (alubias)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Frente a la mezquita de Süleymaniye desde 1924, sirve un único plato, kuru fasulye cocinado en olla de cobre sobre carbón, con arroz y encurtidos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0163,28.9639",
+      "distinction": null
+    },
+    {
+      "name": "Meze by Lemon Tree",
+      "place_id": null,
+      "lat": 41.0312,
+      "lng": 28.9755,
+      "category": "bar",
+      "cuisine": "turco / meyhane contemporánea",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Frente al hotel Pera Palace, reinventa el mezze tradicional turco con técnica contemporánea, en una de las meyhanes más elogiadas de Beyoğlu.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0312,28.9755",
+      "distinction": null
+    },
+    {
+      "name": "Çengelköy İskele Restaurant",
+      "place_id": null,
+      "lat": 41.0498,
+      "lng": 29.057,
+      "category": "seafood",
+      "cuisine": "turco / pescado del Bósforo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Junto al embarcadero de Çengelköy, en la orilla asiática, con vistas al puente del Bósforo y menú centrado exclusivamente en pescado y marisco.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0498,29.057",
+      "distinction": null
+    },
+    {
+      "name": "Borsa Lokantası",
+      "place_id": null,
+      "lat": 41.0136,
+      "lng": 28.9775,
+      "category": "restaurante",
+      "cuisine": "turco / cocina otomana esnaf",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1927 en Eminönü, junto a la antigua bolsa de cereales que le da nombre; hoy con varias sedes, sigue sirviendo cocina otomana casera.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0136,28.9775",
+      "distinction": null
+    },
+    {
+      "name": "Ali Muhiddin Hacı Bekir",
+      "place_id": null,
+      "lat": 41.0155,
+      "lng": 28.9715,
+      "category": "panaderia",
+      "cuisine": "turco / lokum (delicia turca)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La confitería más antigua de Turquía, abierta en Eminönü en 1777; su fundador es considerado el creador del lokum moderno o 'Turkish delight'.",
+      "source_url": "https://www.hacibekir.com/",
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0155,28.9715",
+      "distinction": null
+    },
+    {
+      "name": "Adem Baba",
+      "place_id": null,
+      "lat": 41.0692,
+      "lng": 29.0431,
+      "category": "seafood",
+      "cuisine": "turco / pescado",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución del pescado sin pretensiones en Arnavutköy, a pie del Bósforo; no sirve alcohol, pero sus mezze y pescado fresco atraen colas diarias.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0692,29.0431",
+      "distinction": null
+    },
+    {
+      "name": "Yeni Lokanta",
+      "place_id": null,
+      "lat": 41.0301,
+      "lng": 28.9752,
+      "category": "fine_dining",
+      "cuisine": "turco moderno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Desde 2013, el chef Civan Er da un giro contemporáneo y ligero a la cocina turca tradicional, con énfasis en verdura, producto local y vinos turcos.",
+      "source_url": "https://guide.michelin.com/us/en/istanbul-province/istanbul/restaurant/yeni-lokanta",
+      "source_type": "critic",
+      "rank": 59,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0301,28.9752",
+      "distinction": null
+    },
+    {
+      "name": "Çiçek Pasajı",
+      "place_id": null,
+      "lat": 41.0342,
+      "lng": 28.9754,
+      "category": "bar",
+      "cuisine": "turco / meyhane histórica",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antiguo pasaje del siglo XIX en la calle İstiklal, hoy hilera de meyhanes con mesas compartidas, música en vivo y raki, símbolo de la vida nocturna de Beyoğlu.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.0342,28.9754",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,
