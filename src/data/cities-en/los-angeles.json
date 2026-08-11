@@ -22,6 +22,226 @@
     "Holbox": {
       "cuisine": "Mexican / Yucatecan",
       "description": "Yucatecan seafood at a counter inside Mercado La Paloma. One Michelin star, and named 2023 Restaurant of the Year by Los Angeles Times critics Bill Addison and Jenn Harris."
+    },
+    "Providence": {
+      "cuisine": "American / seafood",
+      "description": "A temple of fish and seafood in Hollywood, one of the first restaurants in Los Angeles County to earn three Michelin stars."
+    },
+    "Kato": {
+      "cuisine": "Taiwanese",
+      "description": "Chef Jon Yao's inventive Taiwanese-Japanese tasting menu in the Arts District. Two Michelin stars."
+    },
+    "Hayato": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Impeccable Japanese kaiseki in the Arts District. Two Michelin stars."
+    },
+    "n/naka": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Chef Niki Nakayama's modern kaiseki, one of the city's first celebrated Japanese tasting-menu destinations. One Michelin star."
+    },
+    "Pink's Hot Dogs": {
+      "cuisine": "American",
+      "description": "The 1939 hot dog cart that grew into an icon with its own line down La Brea Avenue."
+    },
+    "Bestia": {
+      "cuisine": "Italian",
+      "description": "Wood-fired Italian cooking and handmade pasta in the Arts District, from chefs Ori Menashe and Genevieve Gergis. A repeat James Beard Award finalist for Outstanding Restaurant and one of the hardest reservations to get in Los Angeles."
+    },
+    "Bavel": {
+      "cuisine": "Middle Eastern / Mediterranean",
+      "description": "The second restaurant from the chefs behind Bestia, devoted to Middle Eastern cooking: hummus, fresh-baked laffa bread and wood-grilled meats. A 2019 James Beard Award finalist for Best New Restaurant."
+    },
+    "Guelaguetza": {
+      "cuisine": "Mexican / Oaxacan",
+      "description": "A temple of Oaxacan cooking in Koreatown since 1994, known for its seven moles and tlayudas. Critic Jonathan Gold considered it essential to understanding the city's culinary diversity."
+    },
+    "Sqirl": {
+      "cuisine": "Californian / breakfast",
+      "description": "A Silver Lake breakfast cafe famous for its ricotta toast with house-made jam and its sorrel pesto rice bowl. Chef Jessica Koslow turned it into one of the most influential American breakfast spots of the past decade."
+    },
+    "Animal": {
+      "cuisine": "Chef-driven American",
+      "description": "Fearless nose-to-tail cooking from chefs Jon Shook and Vinny Dotolo on Fairfax: bone marrow, fried pig ear and foie gras loco moco. A landmark of new American cooking since it opened in 2008."
+    },
+    "Jitlada": {
+      "cuisine": "Thai (Southern Thai)",
+      "description": "The restaurant that introduced fiery Southern Thai cooking to Los Angeles, run by chef Sarintip 'Jazz' Singsanong in the heart of Thai Town. A long-time favorite of the city's food critics."
+    },
+    "Kogi BBQ Truck": {
+      "cuisine": "Korean-Mexican fusion",
+      "description": "Chef Roy Choi's truck that in 2008 sparked the modern American food-truck movement with its Korean short-rib taco. Anthony Bourdain tracked it down for his Koreatown episode of 'No Reservations'."
+    },
+    "Langer's Delicatessen-Restaurant": {
+      "cuisine": "Jewish-American deli",
+      "description": "A Jewish deli across from MacArthur Park since 1947, famous for a pastrami sandwich many critics have called the best in the United States."
+    },
+    "Canter's Deli": {
+      "cuisine": "Jewish-American deli",
+      "description": "A 24-hour Fairfax deli open since 1948, with its bakery counter and the adjoining Kibitz Room bar, the site of legendary music-world encounters."
+    },
+    "Roscoe's House of Chicken and Waffles": {
+      "cuisine": "Southern / soul food",
+      "description": "A fried chicken and waffles institution founded in 1975, with locations across the city. Anthony Bourdain stopped here on 'No Reservations', and it's widely regarded as a required stop for soul food in Los Angeles."
+    },
+    "The Original Pantry Cafe": {
+      "cuisine": "American diner",
+      "description": "A downtown Los Angeles diner that, according to local legend, never closed its doors for a single day after opening in 1924."
+    },
+    "Eggslut": {
+      "cuisine": "American / egg sandwiches",
+      "description": "A stand that started as a food truck before settling into Grand Central Market and popularizing 'The Slut,' a coddled egg over potato puree served in a jar. Chef Alvin Cailan later expanded the concept to cities worldwide."
+    },
+    "Kismet": {
+      "cuisine": "Mediterranean",
+      "description": "A Los Feliz Mediterranean restaurant from chefs Sara Kramer and Sarah Hymanson, celebrated for spice-forward vegetable dishes and its za'atar roast chicken."
+    },
+    "Park's BBQ": {
+      "cuisine": "Korean BBQ",
+      "description": "One of Koreatown's most acclaimed Korean barbecue houses, known for premium cuts like marinated galbi and wagyu, and widely cited by critics as the neighborhood's benchmark for the genre."
+    },
+    "Sun Nong Dan": {
+      "cuisine": "Korean",
+      "description": "A Koreatown restaurant famous for its towering cheese-topped galbijjim (braised short rib stew), a dish that became a sensation with diners and food critics alike."
+    },
+    "Tsujita LA Artisan Noodle": {
+      "cuisine": "Japanese / ramen",
+      "description": "The Los Angeles outpost of the famed Tokyo noodle house, known for its ultra-concentrated tonkotsu tsukemen dipping noodles and the long lines it draws on Sawtelle."
+    },
+    "Daikokuya": {
+      "cuisine": "Japanese / ramen",
+      "description": "One of the pioneers of tonkotsu ramen in Little Tokyo since 1999, helping popularize the style in Los Angeles well before the city's ramen boom."
+    },
+    "Sushi Zo": {
+      "cuisine": "Japanese / sushi",
+      "description": "A strict, no-frills sushi omakase from chef Keizo Seki, considered by food critics for years to be among the best in the city."
+    },
+    "Urasawa": {
+      "cuisine": "Japanese / sushi kaiseki",
+      "description": "One of the most exclusive and expensive omakase counters in the United States, an intimate ten-seat room in Beverly Hills led by chef Hiroyuki Urasawa."
+    },
+    "Nobu Malibu": {
+      "cuisine": "Japanese-Peruvian",
+      "description": "The oceanfront outpost of Nobu Matsuhisa's global chain, a celebrity magnet in Malibu since it opened, famous for its black cod with miso."
+    },
+    "The Ivy": {
+      "cuisine": "American / Californian",
+      "description": "A patio restaurant in West Hollywood that became a paparazzi magnet starting in the 1990s, synonymous with celebrity-spotting in Los Angeles."
+    },
+    "Craig's": {
+      "cuisine": "American / Californian",
+      "description": "A Melrose Avenue dining room that succeeded The Ivy as the celebrity and paparazzi favorite of the 2010s."
+    },
+    "Guisados": {
+      "cuisine": "Mexican",
+      "description": "A Boyle Heights taqueria founded in 2010 that popularized the fresh-made corn tortilla taco topped with home-style stewed fillings like cochinita pibil."
+    },
+    "Leo's Tacos Truck": {
+      "cuisine": "Mexican",
+      "description": "The most famous al pastor trompo in Los Angeles, its glowing cart on La Brea Avenue drawing steady lines of diners."
+    },
+    "Mariscos Jalisco": {
+      "cuisine": "Mexican / seafood",
+      "description": "A Boyle Heights seafood truck famous for its crispy shrimp taco dorado, a dish critic Jonathan Gold called among the best tacos in the city."
+    },
+    "The Boiling Crab": {
+      "cuisine": "Cajun seafood",
+      "description": "A Koreatown-born chain that popularized the Cajun-style seafood boil, served in bags dumped straight onto butcher paper on the table."
+    },
+    "Gish Bac": {
+      "cuisine": "Mexican / Oaxacan",
+      "description": "A small family-run Oaxacan restaurant serving recipes from Tlacolula de Matamoros, visited by Anthony Bourdain in the 2017 Los Angeles episode of 'Parts Unknown'."
+    },
+    "The Apple Pan": {
+      "cuisine": "American",
+      "description": "A Westside burger counter virtually unchanged since 1947, famous for its hickory burger and apple pie."
+    },
+    "The Original Tommy's World Famous Hamburgers": {
+      "cuisine": "American",
+      "description": "The chili-burger stand Jim Tomasian opened in 1946 at Beverly and Rampart, the origin of a chain that helped define the Los Angeles hamburger."
+    },
+    "Clifton's Republic": {
+      "cuisine": "American",
+      "description": "The forest-themed cafeteria Clifford Clinton opened downtown in 1935, today reimagined as a multi-level bar that preserves much of its original decor."
+    },
+    "Spago Beverly Hills": {
+      "cuisine": "Californian",
+      "description": "Wolfgang Puck's flagship restaurant, opened on Sunset Boulevard in 1982 and relocated to Beverly Hills in 1997, widely credited by critics with pioneering modern California cuisine."
+    },
+    "Mother Wolf": {
+      "cuisine": "Italian (Roman)",
+      "description": "Chef Evan Funke's Roman restaurant in Hollywood, with handmade pasta on display and a regular celebrity clientele."
+    },
+    "Felix Trattoria": {
+      "cuisine": "Italian",
+      "description": "Evan Funke's trattoria on Abbot Kinney in Venice, devoted to handmade Italian pasta crafted in a glass-walled pasta lab visible from the street."
+    },
+    "Gjelina": {
+      "cuisine": "Californian / Mediterranean",
+      "description": "The restaurant that helped turn Abbot Kinney into Venice's dining destination, known for wood-fired pizzas and seasonal vegetable plates."
+    },
+    "Trejo's Cantina": {
+      "cuisine": "Mexican",
+      "description": "Actor Danny Trejo's Mexican cantina in Hollywood, where Anthony Bourdain dined with Trejo himself in the 2017 Los Angeles episode of 'Parts Unknown'."
+    },
+    "Jon & Vinny's": {
+      "cuisine": "Italian-American",
+      "description": "The Fairfax pizzeria and trattoria from the chefs behind Animal, serving thin-crust pizzas and house-made pastas that became neighborhood favorites."
+    },
+    "Osteria Mozza": {
+      "cuisine": "Italian",
+      "description": "Nancy Silverton, Mario Batali and Joe Bastianich's Italian restaurant on Melrose, famous for its mozzarella bar and handmade pastas."
+    },
+    "El Cholo": {
+      "cuisine": "Mexican (Cal-Mex)",
+      "description": "A Cal-Mex style Mexican restaurant open since 1923, one of the oldest in Los Angeles, known for its green-corn tamales and margaritas."
+    },
+    "Yang Chow Restaurant": {
+      "cuisine": "Chinese (Sichuan/Cantonese)",
+      "description": "A Chinatown Chinese restaurant since 1977, famous for inventing 'slippery shrimp,' crispy shrimp tossed in a sweet-and-spicy sauce."
+    },
+    "Din Tai Fung": {
+      "cuisine": "Taiwanese / Chinese",
+      "description": "The Arcadia branch of the Taiwanese chain world-famous for its xiao long bao, soup dumplings that draw constant lines."
+    },
+    "Sea Harbour Seafood Restaurant": {
+      "cuisine": "Cantonese / dim sum",
+      "description": "One of the most celebrated dim sum halls in the San Gabriel Valley, in Rosemead, known for live seafood tanks and classic tea-cart service."
+    },
+    "Howlin' Ray's": {
+      "cuisine": "Nashville-style fried chicken",
+      "description": "A Chinatown stand that introduced spicy Nashville-style fried chicken to Los Angeles in 2015, drawing lines that wrap around the block."
+    },
+    "Bludso's Bar & Que": {
+      "cuisine": "Texas/Southern BBQ",
+      "description": "Chef Kevin Bludso's smokehouse on La Brea Avenue, serving Texas-style hours-long smoked ribs and brisket."
+    },
+    "Erewhon Market": {
+      "cuisine": "Organic / juice bar",
+      "description": "The Los Angeles organic grocery chain whose juice bar went globally viral for celebrity-branded smoothies, most notably Hailey Bieber's widely covered 'Erewhon smoothie.'"
+    },
+    "The Hungry Cat": {
+      "cuisine": "Seafood",
+      "description": "A seafood and oyster bar near Hollywood's Arclight, praised by critics for its Bloody Mary and seasonal fresh-fish plates."
+    },
+    "Petit Trois": {
+      "cuisine": "French",
+      "description": "Chef Ludo Lefebvre's pocket-sized French bistro, with a tiny counter and a classic menu of omelet, steak frites and escargot."
+    },
+    "Meals by Genet": {
+      "cuisine": "Ethiopian",
+      "description": "Chef Genet Agonafer's Ethiopian restaurant on Fairfax, awarded a Michelin Bib Gourmand and recognized by the James Beard Awards."
+    },
+    "Sichuan Impression": {
+      "cuisine": "Sichuan Chinese",
+      "description": "An Alhambra restaurant devoted to fiery Sichuan cooking, part of the San Gabriel Valley Chinese food scene celebrated by food critics."
+    },
+    "Pine & Crane": {
+      "cuisine": "Taiwanese",
+      "description": "A neighborhood Taiwanese restaurant in Silver Lake, with sesame noodles and three-cup chicken that local critics consider among the best of their kind."
+    },
+    "In-N-Out Burger": {
+      "cuisine": "American / burgers",
+      "description": "The burger chain founded in 1948 by Harry and Esther Snyder in Baldwin Park, a pioneer of America's first two-way drive-through speaker box and today synonymous with California fast food."
     }
   }
 }

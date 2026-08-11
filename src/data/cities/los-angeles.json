@@ -3,7 +3,7 @@
   "name": "Los Ángeles",
   "country": "Estados Unidos",
   "tagline": "De los martinis de la meca de Hollywood en 1919 al puesto de taquitos de Olvera Street donde comió Anthony Bourdain — con el menú más caro de la ciudad en el medio.",
-  "totalPlaces": 10,
+  "totalPlaces": 60,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017556,-118.3352976"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017556,-118.3352976",
+      "distinction": null
     },
     {
       "name": "Somni",
@@ -59,7 +60,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0579573,-118.237396"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0579573,-118.237396",
+      "distinction": null
     },
     {
       "name": "Philippe the Original",
@@ -76,7 +78,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0596738,-118.236941"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0596738,-118.236941",
+      "distinction": null
     },
     {
       "name": "Holbox",
@@ -199,7 +202,920 @@
       "source_type": "classic",
       "rank": 10,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0839083,-118.3442833"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0839083,-118.3442833",
+      "distinction": null
+    },
+    {
+      "name": "Bestia",
+      "place_id": null,
+      "lat": 34.0233,
+      "lng": -118.2296,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critic",
+        "james_beard"
+      ],
+      "description": "Cocina italiana de brasa y pasta hecha a mano en el Arts District, obra de los chefs Ori Menashe y Genevieve Gergis. Finalista reiterado al Mejor Restaurante en los James Beard Awards y una de las reservas mas dificiles de conseguir en Los Angeles.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0233,-118.2296",
+      "distinction": null
+    },
+    {
+      "name": "Bavel",
+      "place_id": null,
+      "lat": 34.0224,
+      "lng": -118.2339,
+      "category": "fine_dining",
+      "cuisine": "mediterraneo / medio oriente",
+      "tags": [
+        "critic",
+        "james_beard"
+      ],
+      "description": "El segundo restaurante de los chefs de Bestia, dedicado a la cocina de Medio Oriente: hummus, pan laffa recien horneado y carnes a la brasa. Finalista al Mejor Restaurante Nuevo en los James Beard Awards de 2019.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0224,-118.2339",
+      "distinction": null
+    },
+    {
+      "name": "Guelaguetza",
+      "place_id": null,
+      "lat": 34.0489,
+      "lng": -118.3067,
+      "category": "restaurante",
+      "cuisine": "mexicano / oaxaqueno",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Templo de la cocina oaxaquena en Koreatown desde 1994, con sus siete moles y tlayudas. El critico Jonathan Gold lo consideraba una parada esencial para entender la diversidad culinaria de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0489,-118.3067",
+      "distinction": null
+    },
+    {
+      "name": "Sqirl",
+      "place_id": null,
+      "lat": 34.0847,
+      "lng": -118.2814,
+      "category": "cafeteria",
+      "cuisine": "californiano / desayuno",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafe de desayuno en Silver Lake famoso por su tostada de ricotta con mermelada artesanal y su bol de arroz con pesto de acedera. La chef Jessica Koslow lo convirtio en uno de los desayunos mas influyentes de la ultima decada en Estados Unidos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0847,-118.2814",
+      "distinction": null
+    },
+    {
+      "name": "Animal",
+      "place_id": null,
+      "lat": 34.0784,
+      "lng": -118.3611,
+      "category": "restaurante",
+      "cuisine": "americano de autor",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de nariz a cola sin miedo de los chefs Jon Shook y Vinny Dotolo en Fairfax: tuetano, panceta de cerdo frita y foie gras con waffles. Referente de la nueva cocina americana desde su apertura en 2008.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0784,-118.3611",
+      "distinction": null
+    },
+    {
+      "name": "Jitlada",
+      "place_id": null,
+      "lat": 34.0983,
+      "lng": -118.3084,
+      "category": "restaurante",
+      "cuisine": "tailandes (sur de Tailandia)",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante que introdujo la picante cocina del sur de Tailandia a Los Angeles, dirigido por la chef Sarintip 'Jazz' Singsanong en pleno Thai Town. Favorito de larga data de la critica gastronomica de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0983,-118.3084",
+      "distinction": null
+    },
+    {
+      "name": "Kogi BBQ Truck",
+      "place_id": null,
+      "lat": 34.0009,
+      "lng": -118.4304,
+      "category": "taco_truck",
+      "cuisine": "coreano-mexicano (fusion)",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "El camion del chef Roy Choi que en 2008 desato el movimiento moderno de food trucks en Estados Unidos con su taco de costilla corta al estilo coreano. Anthony Bourdain lo siguio en su episodio sobre Koreatown en 'No Reservations'.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0009,-118.4304",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Langer's Delicatessen-Restaurant",
+      "place_id": null,
+      "lat": 34.0645,
+      "lng": -118.2789,
+      "category": "deli",
+      "cuisine": "judio-americano / delicatessen",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Delicatessen judia frente a MacArthur Park desde 1947, famosa por un pastrami que muchos criticos han llamado el mejor sandwich de Estados Unidos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0645,-118.2789",
+      "distinction": null
+    },
+    {
+      "name": "Canter's Deli",
+      "place_id": null,
+      "lat": 34.0783,
+      "lng": -118.3611,
+      "category": "deli",
+      "cuisine": "judio-americano / delicatessen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Delicatessen de Fairfax abierta las 24 horas desde 1948, con su barra de panaderia y el bar Kibitz Room contiguo, escenario de encuentros musicales legendarios.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0783,-118.3611",
+      "distinction": null
+    },
+    {
+      "name": "Roscoe's House of Chicken and Waffles",
+      "place_id": null,
+      "lat": 34.1008,
+      "lng": -118.3151,
+      "category": "restaurante",
+      "cuisine": "sureno / soul food",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Institucion de pollo frito y waffles fundada en 1975, con locales por toda la ciudad. Anthony Bourdain se detuvo aqui en 'No Reservations' y la revista Los Angeles Times lo describe como parada obligada de la cultura del soul food.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1008,-118.3151",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "The Original Pantry Cafe",
+      "place_id": null,
+      "lat": 34.0459,
+      "lng": -118.2645,
+      "category": "cafeteria",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diner del centro de Los Angeles que, segun cuenta la leyenda, no cerro sus puertas ni un solo dia desde que abrio en 1924.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 21,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0459,-118.2645",
+      "distinction": null
+    },
+    {
+      "name": "Eggslut",
+      "place_id": null,
+      "lat": 34.0505,
+      "lng": -118.2489,
+      "category": "fast_food",
+      "cuisine": "americano / sandwiches de huevo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Puesto nacido como food truck que se instalo en el Grand Central Market y popularizo el 'Slut', un huevo pochado sobre pure de papas servido en frasco. El chef Alvin Cailan lo expandio despues a varias ciudades del mundo.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0505,-118.2489",
+      "distinction": null
+    },
+    {
+      "name": "Kismet",
+      "place_id": null,
+      "lat": 34.1017,
+      "lng": -118.2919,
+      "category": "restaurante",
+      "cuisine": "mediterraneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante mediterraneo de Los Feliz de las chefs Sara Kramer y Sarah Hymanson, celebrado por platos vegetales llenos de especias como su pollo con za'atar.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017,-118.2919",
+      "distinction": null
+    },
+    {
+      "name": "Park's BBQ",
+      "place_id": null,
+      "lat": 34.0567,
+      "lng": -118.2917,
+      "category": "restaurante",
+      "cuisine": "coreano / barbacoa",
+      "tags": [
+        "critic"
+      ],
+      "description": "Una de las parrillas coreanas mas reconocidas de Koreatown, con cortes premium como el galbi marinado y el wagyu, señalada por la critica como referencia del genero en la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0567,-118.2917",
+      "distinction": null
+    },
+    {
+      "name": "Sun Nong Dan",
+      "place_id": null,
+      "lat": 34.0489,
+      "lng": -118.3018,
+      "category": "restaurante",
+      "cuisine": "coreano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de Koreatown famoso por su galbijjim (costillas guisadas) gigante cubierto de queso fundido, un plato que se volvio sensacion entre comensales y criticos gastronomicos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0489,-118.3018",
+      "distinction": null
+    },
+    {
+      "name": "Tsujita LA Artisan Noodle",
+      "place_id": null,
+      "lat": 34.0374,
+      "lng": -118.4416,
+      "category": "restaurante",
+      "cuisine": "japones / ramen",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sucursal angelina de la famosa cadena de Tokio, conocida por su tsukemen de caldo tonkotsu ultra concentrado y las largas filas que provoca en Sawtelle.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0374,-118.4416",
+      "distinction": null
+    },
+    {
+      "name": "Daikokuya",
+      "place_id": null,
+      "lat": 34.0503,
+      "lng": -118.24,
+      "category": "restaurante",
+      "cuisine": "japones / ramen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los pioneros del ramen tonkotsu en Little Tokyo desde 1999, que ayudo a popularizar el estilo en Los Angeles antes del boom del ramen.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0503,-118.24",
+      "distinction": null
+    },
+    {
+      "name": "Sushi Zo",
+      "place_id": null,
+      "lat": 34.0335,
+      "lng": -118.4067,
+      "category": "fine_dining",
+      "cuisine": "japones / sushi",
+      "tags": [
+        "critic"
+      ],
+      "description": "Omakase de sushi estricto y sin adornos del chef Keizo Seki, considerado durante años entre los mejores de la ciudad por criticos gastronomicos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0335,-118.4067",
+      "distinction": null
+    },
+    {
+      "name": "Urasawa",
+      "place_id": null,
+      "lat": 34.0699,
+      "lng": -118.4004,
+      "category": "fine_dining",
+      "cuisine": "japones / sushi kaiseki",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los omakases mas exclusivos y caros de Estados Unidos, en un salon de apenas diez asientos en Beverly Hills a cargo del chef Hiroyuki Urasawa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0699,-118.4004",
+      "distinction": null
+    },
+    {
+      "name": "Nobu Malibu",
+      "place_id": null,
+      "lat": 34.0367,
+      "lng": -118.6786,
+      "category": "fine_dining",
+      "cuisine": "japones-peruano",
+      "tags": [
+        "critic"
+      ],
+      "description": "La sucursal frente al mar de la cadena global de Nobu Matsuhisa, imán de celebridades en Malibu desde su apertura, famosa por su black cod con miso.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0367,-118.6786",
+      "distinction": null
+    },
+    {
+      "name": "The Ivy",
+      "place_id": null,
+      "lat": 34.0806,
+      "lng": -118.383,
+      "category": "restaurante",
+      "cuisine": "americano / californiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de patio en West Hollywood convertido en imán de paparazzi desde los años 90, sinonimo del avistamiento de celebridades en Los Angeles.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0806,-118.383",
+      "distinction": null
+    },
+    {
+      "name": "Craig's",
+      "place_id": null,
+      "lat": 34.0836,
+      "lng": -118.3825,
+      "category": "restaurante",
+      "cuisine": "americano / californiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Comedor de Melrose Avenue que sucedio a The Ivy como el favorito de celebridades y paparazzi en la decada de 2010.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0836,-118.3825",
+      "distinction": null
+    },
+    {
+      "name": "Guisados",
+      "place_id": null,
+      "lat": 34.0439,
+      "lng": -118.2103,
+      "category": "street_food",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Taqueria de Boyle Heights nacida en 2010 que popularizo el taco de tortilla de maiz recien hecha con guisados caseros como el cochinita pibil.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0439,-118.2103",
+      "distinction": null
+    },
+    {
+      "name": "Leo's Tacos Truck",
+      "place_id": null,
+      "lat": 34.0511,
+      "lng": -118.3444,
+      "category": "taco_truck",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El trompo de al pastor mas famoso de Los Angeles, con su carrito iluminado sobre La Brea Avenue y filas constantes de comensales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0511,-118.3444",
+      "distinction": null
+    },
+    {
+      "name": "Mariscos Jalisco",
+      "place_id": null,
+      "lat": 34.0219,
+      "lng": -118.2044,
+      "category": "taco_truck",
+      "cuisine": "mexicano / mariscos",
+      "tags": [
+        "critic"
+      ],
+      "description": "Camion de mariscos de Boyle Heights celebre por su taco dorado de camaron, un plato que el critico Jonathan Gold llamo de los mejores tacos de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0219,-118.2044",
+      "distinction": null
+    },
+    {
+      "name": "The Boiling Crab",
+      "place_id": null,
+      "lat": 34.0616,
+      "lng": -118.3011,
+      "category": "restaurante",
+      "cuisine": "mariscos cajun",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cadena nacida en Koreatown que popularizo en Los Angeles el 'boil' de mariscos al estilo cajun servido en bolsas sobre la mesa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0616,-118.3011",
+      "distinction": null
+    },
+    {
+      "name": "Gish Bac",
+      "place_id": null,
+      "lat": 34.0281,
+      "lng": -118.3486,
+      "category": "restaurante",
+      "cuisine": "mexicano / oaxaqueno",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Pequeno restaurante familiar de comida oaxaquena con recetas de Tlacolula de Matamoros, visitado por Anthony Bourdain en el episodio de Los Angeles de 'Parts Unknown' de 2017.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0281,-118.3486",
+      "distinction": null
+    },
+    {
+      "name": "The Apple Pan",
+      "place_id": null,
+      "lat": 34.0455,
+      "lng": -118.4324,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mostrador de hamburguesas sin cambios desde 1947 en el Westside, famoso por su hickeyburger y su pay de manzana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0455,-118.4324",
+      "distinction": null
+    },
+    {
+      "name": "The Original Tommy's World Famous Hamburgers",
+      "place_id": null,
+      "lat": 34.0637,
+      "lng": -118.2694,
+      "category": "fast_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El puesto de hamburguesas con chili que Jim Tomasian abrio en 1946 en la esquina de Beverly y Rampart, origen de una cadena que definio la hamburguesa angelina.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0637,-118.2694",
+      "distinction": null
+    },
+    {
+      "name": "Clifton's Republic",
+      "place_id": null,
+      "lat": 34.0472,
+      "lng": -118.253,
+      "category": "restaurante",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La cafeteria de estilo bosque abierta por Clifford Clinton en 1935 en el centro de Los Angeles, hoy reconvertida en un bar de varios pisos que conserva parte de su decoracion original.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0472,-118.253",
+      "distinction": null
+    },
+    {
+      "name": "Spago Beverly Hills",
+      "place_id": null,
+      "lat": 34.07,
+      "lng": -118.4023,
+      "category": "fine_dining",
+      "cuisine": "californiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "El restaurante insignia de Wolfgang Puck, abierto en 1982 en Sunset Boulevard y reubicado a Beverly Hills en 1997, señalado por criticos como pionero de la cocina californiana moderna.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.07,-118.4023",
+      "distinction": null
+    },
+    {
+      "name": "Mother Wolf",
+      "place_id": null,
+      "lat": 34.101,
+      "lng": -118.3266,
+      "category": "fine_dining",
+      "cuisine": "italiano (romano)",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante romano del chef Evan Funke en Hollywood, con pasta hecha a mano a la vista y una clientela habitual de celebridades.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.101,-118.3266",
+      "distinction": null
+    },
+    {
+      "name": "Felix Trattoria",
+      "place_id": null,
+      "lat": 33.9928,
+      "lng": -118.4692,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Trattoria de Evan Funke en Abbot Kinney, Venice, dedicada a la pasta artesanal italiana hecha a mano en su laboratorio de vidrio visible desde la calle.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=33.9928,-118.4692",
+      "distinction": null
+    },
+    {
+      "name": "Gjelina",
+      "place_id": null,
+      "lat": 33.9944,
+      "lng": -118.47,
+      "category": "restaurante",
+      "cuisine": "californiano / mediterraneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante que ayudo a convertir Abbot Kinney en destino gastronomico de Venice, conocido por sus pizzas de horno de leña y sus platos de vegetales de temporada.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=33.9944,-118.47",
+      "distinction": null
+    },
+    {
+      "name": "Trejo's Cantina",
+      "place_id": null,
+      "lat": 34.1002,
+      "lng": -118.3266,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Cantina mexicana del actor Danny Trejo en Hollywood, donde Anthony Bourdain ceno con el propio Trejo en el episodio de Los Angeles de 'Parts Unknown' de 2017.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1002,-118.3266",
+      "distinction": null
+    },
+    {
+      "name": "Jon & Vinny's",
+      "place_id": null,
+      "lat": 34.0787,
+      "lng": -118.361,
+      "category": "restaurante",
+      "cuisine": "italoamericano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzeria y trattoria de Fairfax de los chefs de Animal, con pizzas de masa fina y pastas caseras que se volvieron favoritas del barrio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0787,-118.361",
+      "distinction": null
+    },
+    {
+      "name": "Osteria Mozza",
+      "place_id": null,
+      "lat": 34.0836,
+      "lng": -118.3355,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante italiano de Nancy Silverton, Mario Batali y Joe Bastianich en Melrose, famoso por su barra de mozzarella y sus pastas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0836,-118.3355",
+      "distinction": null
+    },
+    {
+      "name": "El Cholo",
+      "place_id": null,
+      "lat": 34.0491,
+      "lng": -118.3092,
+      "category": "restaurante",
+      "cuisine": "mexicano (cal-mex)",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante mexicano de estilo Cal-Mex abierto en 1923, uno de los mas antiguos de Los Angeles, conocido por su margarita verde y sus enchiladas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0491,-118.3092",
+      "distinction": null
+    },
+    {
+      "name": "Yang Chow Restaurant",
+      "place_id": null,
+      "lat": 34.0644,
+      "lng": -118.2385,
+      "category": "restaurante",
+      "cuisine": "chino (sichuanes/cantones)",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante chino de Chinatown desde 1977, famoso por inventar el 'slippery shrimp', un plato de camarones crocantes con salsa dulce y picante.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0644,-118.2385",
+      "distinction": null
+    },
+    {
+      "name": "Din Tai Fung",
+      "place_id": null,
+      "lat": 34.1301,
+      "lng": -118.0334,
+      "category": "restaurante",
+      "cuisine": "taiwanes / chino",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sucursal de Arcadia de la cadena taiwanesa mundialmente famosa por sus xiao long bao, los dumplings rellenos de caldo que provocan filas constantes.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 50,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1301,-118.0334",
+      "distinction": null
+    },
+    {
+      "name": "Sea Harbour Seafood Restaurant",
+      "place_id": null,
+      "lat": 34.0611,
+      "lng": -118.0759,
+      "category": "seafood",
+      "cuisine": "chino cantones / dim sum",
+      "tags": [
+        "critic"
+      ],
+      "description": "Uno de los salones de dim sum mas celebrados del Valle de San Gabriel, en Rosemead, con mariscos vivos y carritos de te clasicos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0611,-118.0759",
+      "distinction": null
+    },
+    {
+      "name": "Howlin' Ray's",
+      "place_id": null,
+      "lat": 34.063,
+      "lng": -118.2384,
+      "category": "fast_food",
+      "cuisine": "pollo frito estilo Nashville",
+      "tags": [
+        "critic"
+      ],
+      "description": "Puesto de Chinatown que introdujo el pollo frito picante estilo Nashville a Los Angeles en 2015, con filas que dan la vuelta a la manzana.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.063,-118.2384",
+      "distinction": null
+    },
+    {
+      "name": "Bludso's Bar & Que",
+      "place_id": null,
+      "lat": 34.0838,
+      "lng": -118.3441,
+      "category": "restaurante",
+      "cuisine": "barbacoa tejana/surena",
+      "tags": [
+        "critic"
+      ],
+      "description": "Ahumadero del chef Kevin Bludso sobre La Brea Avenue, con costillas y brisket ahumados durante horas al estilo tejano.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0838,-118.3441",
+      "distinction": null
+    },
+    {
+      "name": "Erewhon Market",
+      "place_id": null,
+      "lat": 34.0764,
+      "lng": -118.3617,
+      "category": "mercado",
+      "cuisine": "organico / jugos",
+      "tags": [
+        "viral_social"
+      ],
+      "description": "Cadena de mercados organicos de Los Angeles cuya barra de jugos se volvio viral globalmente por sus batidos de celebridades, como el sonado 'Erewhon smoothie' de Hailey Bieber.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0764,-118.3617",
+      "distinction": null
+    },
+    {
+      "name": "The Hungry Cat",
+      "place_id": null,
+      "lat": 34.1017,
+      "lng": -118.3268,
+      "category": "seafood",
+      "cuisine": "mariscos",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de mariscos y ostras cerca del Arclight de Hollywood, elogiada por criticos por su Bloody Mary y sus platos de pescado fresco de temporada.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 55,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.1017,-118.3268",
+      "distinction": null
+    },
+    {
+      "name": "Petit Trois",
+      "place_id": null,
+      "lat": 34.0873,
+      "lng": -118.3391,
+      "category": "restaurante",
+      "cuisine": "frances",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistro frances de bolsillo del chef Ludo Lefebvre, con una barra diminuta y un menu clasico de tortilla, steak frites y escargot.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 56,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0873,-118.3391",
+      "distinction": null
+    },
+    {
+      "name": "Meals by Genet",
+      "place_id": null,
+      "lat": 34.0555,
+      "lng": -118.3617,
+      "category": "restaurante",
+      "cuisine": "etiope",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante etiope de la chef Genet Agonafer en Fairfax, distinguido con un Bib Gourmand de la Guia Michelin y reconocido por los James Beard Awards.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0555,-118.3617",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Sichuan Impression",
+      "place_id": null,
+      "lat": 34.0839,
+      "lng": -118.1385,
+      "category": "restaurante",
+      "cuisine": "chino sichuanes",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de Alhambra dedicado a la cocina picante de Sichuan, parte de la escena de comida china del Valle de San Gabriel celebrada por la critica gastronomica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0839,-118.1385",
+      "distinction": null
+    },
+    {
+      "name": "Pine & Crane",
+      "place_id": null,
+      "lat": 34.0868,
+      "lng": -118.2673,
+      "category": "restaurante",
+      "cuisine": "taiwanes",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante taiwanes de barrio en Silver Lake, con fideos con salsa de sesamo y pollo tres sabores que la critica local considera entre lo mejor de su tipo.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0868,-118.2673",
+      "distinction": null
+    },
+    {
+      "name": "In-N-Out Burger",
+      "place_id": null,
+      "lat": 34.0627,
+      "lng": -118.4459,
+      "category": "fast_food",
+      "cuisine": "americano / hamburguesas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de hamburguesas fundada en 1948 por Harry y Esther Snyder en Baldwin Park, pionera del primer autoservicio de dos vias de Estados Unidos y hoy sinonimo de la comida rapida californiana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=34.0627,-118.4459",
+      "distinction": null
     }
   ],
   "targetPlaces": 60,
