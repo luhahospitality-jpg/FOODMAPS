@@ -3,7 +3,7 @@
   "name": "Tokio",
   "country": "Japón",
   "tagline": "Del santuario de diez asientos donde Obama probó el mejor sushi de su vida a la cabina individual de ramen que se volvió viral.",
-  "totalPlaces": 6,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -66,7 +66,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6053699,139.7041245"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6053699,139.7041245",
+      "distinction": null
     },
     {
       "name": "Tsukiji Outer Market",
@@ -83,7 +84,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6653884,139.7704732"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6653884,139.7704732",
+      "distinction": null
     },
     {
       "name": "Gogyo",
@@ -100,7 +102,8 @@
       "source_type": "timeout",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6620184,139.7243829"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6620184,139.7243829",
+      "distinction": null
     },
     {
       "name": "Kanamachi Seimen",
@@ -117,7 +120,1802 @@
       "source_type": "timeout",
       "rank": 6,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7695843,139.8706926"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7695843,139.8706926",
+      "distinction": null
+    },
+    {
+      "name": "Sushi Saito",
+      "place_id": null,
+      "lat": 35.6642,
+      "lng": 139.7301,
+      "category": "fine_dining",
+      "cuisine": "sushi",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Uno de los templos de sushi más exclusivos de Tokio: el chef Takashi Saito atiende a un puñado de comensales por noche en Roppongi con lista de espera de años. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6642,139.7301",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Sushi Yoshitake",
+      "place_id": null,
+      "lat": 35.6698,
+      "lng": 139.7627,
+      "category": "fine_dining",
+      "cuisine": "sushi",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sushi de temporada en Ginza del chef Masahiro Yoshitake, célebre por su creatividad dentro del estilo edomae tradicional. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6698,139.7627",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Kyubey",
+      "place_id": null,
+      "lat": 35.6705,
+      "lng": 139.7625,
+      "category": "fine_dining",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de sushi fundada en 1935 en Ginza, una de las más antiguas y reconocidas de Tokio, frecuentada por autoridades y celebridades internacionales.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6705,139.7625",
+      "distinction": null
+    },
+    {
+      "name": "Sushi Dai",
+      "place_id": null,
+      "lat": 35.6455,
+      "lng": 139.7828,
+      "category": "restaurante",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Institución del antiguo Tsukiji trasladada al mercado de Toyosu, famosa por sus filas de madrugada y su sushi omakase de altísima calidad a precio de mercado.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6455,139.7828",
+      "distinction": null
+    },
+    {
+      "name": "Daiwa Sushi",
+      "place_id": null,
+      "lat": 35.6456,
+      "lng": 139.783,
+      "category": "restaurante",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Rival histórico de Sushi Dai dentro de Toyosu, con el mismo ritual de colas antes del amanecer para probar cortes recién subastados.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 11,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6456,139.783",
+      "distinction": null
+    },
+    {
+      "name": "Sushi Zanmai Honten",
+      "place_id": null,
+      "lat": 35.6656,
+      "lng": 139.7702,
+      "category": "restaurante",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Sede original de la cadena Kiyomura en Tsukiji, abierta 24 horas y famosa porque su presidente ha pagado sumas récord por el primer atún del año en la subasta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 12,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6656,139.7702",
+      "distinction": null
+    },
+    {
+      "name": "Uogashi Nihon-Ichi",
+      "place_id": null,
+      "lat": 35.6654,
+      "lng": 139.7704,
+      "category": "restaurante",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Barra de sushi de pie en Tsukiji, rápida y económica, pensada para comer un par de piezas de pie entre los puestos del mercado.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 13,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6654,139.7704",
+      "distinction": null
+    },
+    {
+      "name": "Nihonryori RyuGin",
+      "place_id": null,
+      "lat": 35.6664,
+      "lng": 139.7307,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin",
+        "worlds50best"
+      ],
+      "description": "Kaiseki de vanguardia del chef Seiji Yamamoto en Roppongi, habitual de la lista World's 50 Best Restaurants y con tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6664,139.7307",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Narisawa",
+      "place_id": null,
+      "lat": 35.6707,
+      "lng": 139.7208,
+      "category": "fine_dining",
+      "cuisine": "japonés / francés",
+      "tags": [
+        "michelin",
+        "worlds50best"
+      ],
+      "description": "Cocina de 'satoyama' del chef Yoshihiro Narisawa en Minami-Aoyama, pionera en fusionar técnica francesa con ingredientes de bosque japoneses. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6707,139.7208",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Den",
+      "place_id": null,
+      "lat": 35.6614,
+      "lng": 139.6979,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin",
+        "worlds50best"
+      ],
+      "description": "Kaiseki lúdico y desenfadado del chef Zaiyu Hasegawa, con platos firma como el 'Dentucky Fried Chicken'. Dos estrellas Michelin y habitual del World's 50 Best.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6614,139.6979",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Florilège",
+      "place_id": null,
+      "lat": 35.6685,
+      "lng": 139.7132,
+      "category": "fine_dining",
+      "cuisine": "francés / japonés",
+      "tags": [
+        "michelin",
+        "worlds50best"
+      ],
+      "description": "Cocina de autor del chef Hiroyasu Kawate en Omotesando, que combina técnica francesa con productos japoneses en un ambiente de barra abierta. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6685,139.7132",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Quintessence",
+      "place_id": null,
+      "lat": 35.6389,
+      "lng": 139.728,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina francesa del chef Shuzo Kishida en Shirokanedai, con menú degustación centrado en productos de temporada. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6389,139.728",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "L'Effervescence",
+      "place_id": null,
+      "lat": 35.6608,
+      "lng": 139.7223,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa contemporánea del chef Shinobu Namae en Nishi-Azabu, con fuerte influencia de producto japonés de temporada. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6608,139.7223",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Ginza Kojyu",
+      "place_id": null,
+      "lat": 35.6699,
+      "lng": 139.7626,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki refinado del chef Toshiya Kadowaki en Ginza, reconocido por su precisión estacional. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6699,139.7626",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Kanda",
+      "place_id": null,
+      "lat": 35.6558,
+      "lng": 139.7345,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki minimalista del chef Hiroyuki Kanda en Azabu-Juban, uno de los referentes clásicos de la alta cocina japonesa. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6558,139.7345",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Ishikawa",
+      "place_id": null,
+      "lat": 35.7022,
+      "lng": 139.7407,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Kaiseki de temporada en una casa tradicional de Kagurazaka, con el chef Hideki Ishikawa al frente. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7022,139.7407",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Sazenka",
+      "place_id": null,
+      "lat": 35.6605,
+      "lng": 139.7228,
+      "category": "fine_dining",
+      "cuisine": "chino",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina china de autor en Nishi-Azabu, uno de los pocos restaurantes chinos de Tokio con reconocimiento Michelin por su reinterpretación de platos clásicos de Sichuan y Cantón.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6605,139.7228",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tempura Kondo",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.7639,
+      "category": "fine_dining",
+      "cuisine": "japonés / tempura",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Tempura de vegetales y mariscos del chef Fumio Kondo en Ginza, famoso por freír boniato hasta volverlo casi un postre. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.7639",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Tempura Mikawa",
+      "place_id": null,
+      "lat": 35.672,
+      "lng": 139.7935,
+      "category": "fine_dining",
+      "cuisine": "japonés / tempura",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Tempura clásica de estilo edomae en Fukagawa, con el maestro Tetsuya Saotome como referencia histórica del oficio. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.672,139.7935",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nodaiwa",
+      "place_id": null,
+      "lat": 35.657,
+      "lng": 139.744,
+      "category": "restaurante",
+      "cuisine": "japonés / unagi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de anguila (unagi) fundada en 1846 en Higashi-Azabu, con el asado tradicional sobre carbón que ha mantenido su receta por generaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.657,139.744",
+      "distinction": null
+    },
+    {
+      "name": "Obana",
+      "place_id": null,
+      "lat": 35.7168,
+      "lng": 139.7965,
+      "category": "restaurante",
+      "cuisine": "japonés / unagi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante centenario de unagi cerca de Sensoji, en Asakusa, célebre por su unadon servido en un entorno de casa tradicional japonesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7168,139.7965",
+      "distinction": null
+    },
+    {
+      "name": "Sarashina Horii",
+      "place_id": null,
+      "lat": 35.6554,
+      "lng": 139.7343,
+      "category": "restaurante",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de soba fundada en 1789 en Azabu-Juban, una de las tres grandes escuelas históricas de fideos de trigo sarraceno de Tokio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6554,139.7343",
+      "distinction": null
+    },
+    {
+      "name": "Kanda Yabu Soba",
+      "place_id": null,
+      "lat": 35.6949,
+      "lng": 139.7683,
+      "category": "restaurante",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de soba abierta en 1880 en Awajicho, con un jardín interior y salón de tatami que conservan el ambiente de la era Meiji.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6949,139.7683",
+      "distinction": null
+    },
+    {
+      "name": "Namiki Yabu Soba",
+      "place_id": null,
+      "lat": 35.7115,
+      "lng": 139.796,
+      "category": "restaurante",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Soba tradicional desde 1913 junto al templo Sensoji de Asakusa, con caldo de soba oscuro y salado al estilo antiguo de Tokio (Edo).",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7115,139.796",
+      "distinction": null
+    },
+    {
+      "name": "Ichiran",
+      "place_id": null,
+      "lat": 35.6588,
+      "lng": 139.6983,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "viral_tiktok",
+        "clasico"
+      ],
+      "description": "Cadena de ramen tonkotsu famosa mundialmente por sus cabinas individuales de concentración, un formato que se volvió viral en redes sociales y atrae a viajeros de todo el mundo.",
+      "source_url": "https://en.wikipedia.org/wiki/Ichiran_(restaurant)",
+      "source_type": "viral_social",
+      "rank": 31,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6588,139.6983",
+      "distinction": null
+    },
+    {
+      "name": "Afuri",
+      "place_id": null,
+      "lat": 35.6467,
+      "lng": 139.71,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "critico"
+      ],
+      "description": "Ramen ligero con base de yuzu shio nacido en Ebisu, pionero de un estilo más limpio y cítrico frente al ramen tradicional de cerdo.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6467,139.71",
+      "distinction": null
+    },
+    {
+      "name": "Fuunji",
+      "place_id": null,
+      "lat": 35.6902,
+      "lng": 139.7003,
+      "category": "fast_food",
+      "cuisine": "japonés / tsukemen",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "Uno de los referentes de tsukemen (fideos para mojar) de Shinjuku, con un caldo espeso de pescado seco y pollo que genera filas constantes.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6902,139.7003",
+      "distinction": null
+    },
+    {
+      "name": "Nakiryu",
+      "place_id": null,
+      "lat": 35.7314,
+      "lng": 139.7286,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Ramen tantanmen picante en Minami-Otsuka que se convirtió en uno de los primeros locales de ramen del mundo en obtener una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7314,139.7286",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Tsuta",
+      "place_id": null,
+      "lat": 35.7333,
+      "lng": 139.7392,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "En su local original de Sugamo, Tsuta hizo historia en 2016 como el primer restaurante de ramen del mundo en recibir una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7333,139.7392",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ippudo",
+      "place_id": null,
+      "lat": 35.6603,
+      "lng": 139.7237,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Sucursal original en Tokio de la cadena de ramen tonkotsu fundada en Fukuoka en 1985, que ayudó a popularizar el ramen japonés en el resto del mundo.",
+      "source_url": "https://en.wikipedia.org/wiki/Ippudo",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6603,139.7237",
+      "distinction": null
+    },
+    {
+      "name": "Rokurinsha",
+      "place_id": null,
+      "lat": 35.6812,
+      "lng": 139.7671,
+      "category": "fast_food",
+      "cuisine": "japonés / tsukemen",
+      "tags": [
+        "critico"
+      ],
+      "description": "Tsukemen de caldo intenso en la Ramen Street de la estación de Tokio, uno de los locales que impulsó la fiebre mundial por los fideos para mojar.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6812,139.7671",
+      "distinction": null
+    },
+    {
+      "name": "Menya Musashi",
+      "place_id": null,
+      "lat": 35.6909,
+      "lng": 139.7005,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "critico"
+      ],
+      "description": "Ramen de caldo doble (pescado y cerdo) en Shinjuku, con presentación teatral y una de las marcas más influyentes desde los años 90.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6909,139.7005",
+      "distinction": null
+    },
+    {
+      "name": "Ramen Jiro (Mita Honten)",
+      "place_id": null,
+      "lat": 35.647,
+      "lng": 139.746,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "clasico",
+        "viral_tiktok"
+      ],
+      "description": "Local original desde 1968 de una de las cadenas de ramen más de culto de Japón, famosa por sus porciones colosales de cerdo, ajo y verduras que inspiraron un fandom propio ('Jirolians').",
+      "source_url": "https://en.wikipedia.org/wiki/Ramen_Jiro",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.647,139.746",
+      "distinction": null
+    },
+    {
+      "name": "Kikanbo",
+      "place_id": null,
+      "lat": 35.6919,
+      "lng": 139.769,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "critico"
+      ],
+      "description": "Ramen picante con especias de karashi (mostaza japonesa) y pimienta sansho en Kanda, un estilo propio dentro de la escena de ramen de Tokio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6919,139.769",
+      "distinction": null
+    },
+    {
+      "name": "Bird Land",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.7627,
+      "category": "fine_dining",
+      "cuisine": "japonés / yakitori",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Yakitori de alta gama en un sótano de Ginza, con el chef Toshihiro Wada asando cortes selectos de pollo sobre carbón binchotan. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.7627",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Torishiki",
+      "place_id": null,
+      "lat": 35.6461,
+      "lng": 139.71,
+      "category": "restaurante",
+      "cuisine": "japonés / yakitori",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Yakitori de barrio en Ebisu reconocido con el Bib Gourmand de Michelin por su excelente relación calidad-precio.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6461,139.71",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Omoide Yokocho",
+      "place_id": null,
+      "lat": 35.6944,
+      "lng": 139.6997,
+      "category": "street_food",
+      "cuisine": "japonés / yakitori",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Callejón de posguerra en Shinjuku con decenas de diminutos puestos de yakitori e izakaya apretados entre sí, visitado por Anthony Bourdain en sus programas sobre Tokio.",
+      "source_url": "https://en.wikipedia.org/wiki/Omoide_Yokoch%C5%8D",
+      "source_type": "bourdain",
+      "rank": 43,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6944,139.6997",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Nonbei Yokocho",
+      "place_id": null,
+      "lat": 35.6597,
+      "lng": 139.702,
+      "category": "bar",
+      "cuisine": "izakaya",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Callejón de bares diminutos de posguerra junto a la estación de Shibuya, conocido como 'el callejón de los borrachos'.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6597,139.702",
+      "distinction": null
+    },
+    {
+      "name": "Andy's Shin Hinomoto",
+      "place_id": null,
+      "lat": 35.6749,
+      "lng": 139.7638,
+      "category": "bar",
+      "cuisine": "izakaya",
+      "tags": [
+        "critico"
+      ],
+      "description": "Izakaya bajo las vías del tren en Yurakucho, dirigido durante décadas por un pescadero británico afincado en Tokio, muy popular entre extranjeros y locales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 45,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6749,139.7638",
+      "distinction": null
+    },
+    {
+      "name": "Albatross",
+      "place_id": null,
+      "lat": 35.6949,
+      "lng": 139.7043,
+      "category": "bar",
+      "cuisine": "bar",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Diminuto bar de dos pisos en Golden Gai, el laberinto de más de 200 bares de la posguerra en Shinjuku, decorado como un salón victoriano en miniatura.",
+      "source_url": "https://en.wikipedia.org/wiki/Golden_Gai",
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6949,139.7043",
+      "distinction": null
+    },
+    {
+      "name": "Bar High Five",
+      "place_id": null,
+      "lat": 35.671,
+      "lng": 139.762,
+      "category": "bar",
+      "cuisine": "bar de cocteles",
+      "tags": [
+        "critico",
+        "worlds50best"
+      ],
+      "description": "Barra de cócteles en Ginza del veterano Hidetsugu Ueno, considerado uno de los mejores bartenders del mundo por su técnica de hielo tallado a mano.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.671,139.762",
+      "distinction": null
+    },
+    {
+      "name": "Star Bar Ginza",
+      "place_id": null,
+      "lat": 35.672,
+      "lng": 139.764,
+      "category": "bar",
+      "cuisine": "bar de cocteles",
+      "tags": [
+        "critico"
+      ],
+      "description": "Uno de los bares de coctelería clásica más influyentes de Japón, pionero de la escuela de bartending de precisión que caracteriza a Ginza.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 48,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.672,139.764",
+      "distinction": null
+    },
+    {
+      "name": "Zoetrope",
+      "place_id": null,
+      "lat": 35.6928,
+      "lng": 139.699,
+      "category": "bar",
+      "cuisine": "bar de whisky",
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar especializado en whisky japonés en Shinjuku, con cientos de etiquetas raras y de destilerías cerradas seleccionadas por su dueño experto.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6928,139.699",
+      "distinction": null
+    },
+    {
+      "name": "Maisen",
+      "place_id": null,
+      "lat": 35.6685,
+      "lng": 139.7115,
+      "category": "restaurante",
+      "cuisine": "japonés / tonkatsu",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tonkatsu insignia de Tokio desde 1965, instalado en un antiguo baño público de Omotesando, famoso por su chuleta de cerdo empanizada y crujiente.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6685,139.7115",
+      "distinction": null
+    },
+    {
+      "name": "Tonki",
+      "place_id": null,
+      "lat": 35.634,
+      "lng": 139.716,
+      "category": "restaurante",
+      "cuisine": "japonés / tonkatsu",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Tonkatsu de barrio en Meguro desde 1939, con cocina abierta y ambiente inalterado en décadas; Anthony Bourdain lo visitó en No Reservations.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 51,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.634,139.716",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Butagumi",
+      "place_id": null,
+      "lat": 35.6602,
+      "lng": 139.7245,
+      "category": "restaurante",
+      "cuisine": "japonés / tonkatsu",
+      "tags": [
+        "critico"
+      ],
+      "description": "Tonkatsu de Nishi-Azabu que ofrece una carta con más de una docena de razas de cerdo de todo Japón, de gama alta dentro del género.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 52,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6602,139.7245",
+      "distinction": null
+    },
+    {
+      "name": "Jojoen",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.7635,
+      "category": "restaurante",
+      "cuisine": "japonés / yakiniku",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las cadenas de yakiniku más antiguas y reconocidas de Japón, fundada en 1946, con cortes de wagyu a la parrilla en mesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.7635",
+      "distinction": null
+    },
+    {
+      "name": "CoCo Ichibanya",
+      "place_id": null,
+      "lat": 35.69,
+      "lng": 139.7005,
+      "category": "fast_food",
+      "cuisine": "japonés / curry",
+      "tags": [
+        "viral_tiktok",
+        "clasico"
+      ],
+      "description": "La mayor cadena de curry japonés del mundo, nacida en Nagoya en 1978, célebre entre viajeros por permitir personalizar picante y toppings.",
+      "source_url": "https://en.wikipedia.org/wiki/CoCo_Ichibanya",
+      "source_type": "viral_social",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.69,139.7005",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Delhi",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.7635,
+      "category": "restaurante",
+      "cuisine": "japonés / curry",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Curry al estilo japonés en Ginza desde 1956, una de las casas de curry más veteranas de Tokio con clientela fiel de oficinistas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.7635",
+      "distinction": null
+    },
+    {
+      "name": "Isetan Shinjuku Depachika",
+      "place_id": null,
+      "lat": 35.6906,
+      "lng": 139.704,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El sótano de alimentación de los grandes almacenes Isetan en Shinjuju, considerado el depachika más prestigioso de Tokio, con decenas de puestos de alta repostería y bento gourmet.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6906,139.704",
+      "distinction": null
+    },
+    {
+      "name": "Mitsukoshi Ginza Depachika",
+      "place_id": null,
+      "lat": 35.6721,
+      "lng": 139.7671,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Sótano gastronómico de los grandes almacenes más antiguos de Japón, con puestos de wagashi, mariscos y delicatessen en pleno Ginza.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6721,139.7671",
+      "distinction": null
+    },
+    {
+      "name": "Takashimaya Nihonbashi Depachika",
+      "place_id": null,
+      "lat": 35.6813,
+      "lng": 139.7745,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Depachika del histórico edificio Takashimaya de Nihonbashi, declarado bien cultural, con una amplia selección de dulces y comida para llevar de alta gama.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6813,139.7745",
+      "distinction": null
+    },
+    {
+      "name": "Uobei Shibuya Dogenzaka",
+      "place_id": null,
+      "lat": 35.6597,
+      "lng": 139.6979,
+      "category": "fast_food",
+      "cuisine": "sushi",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Sushi de cinta rápida en Shibuya donde los pedidos se hacen por tablet y llegan por una vía tipo tren bala directa a la mesa, un formato que se volvió viral en video.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6597,139.6979",
+      "distinction": null
+    },
+    {
+      "name": "Sushiro",
+      "place_id": null,
+      "lat": 35.6595,
+      "lng": 139.701,
+      "category": "fast_food",
+      "cuisine": "sushi",
+      "tags": [
+        "viral_tiktok",
+        "clasico"
+      ],
+      "description": "La mayor cadena de sushi de cinta giratoria de Japón, con platos a partir de precios muy bajos y pedidos digitales, popular entre turistas y familias.",
+      "source_url": "https://en.wikipedia.org/wiki/Sushiro",
+      "source_type": "viral_social",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6595,139.701",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Umegaoka Sushi no Midori (Shibuya)",
+      "place_id": null,
+      "lat": 35.6598,
+      "lng": 139.7005,
+      "category": "restaurante",
+      "cuisine": "sushi",
+      "tags": [
+        "critico"
+      ],
+      "description": "Sucursal en Shibuya de una cadena de sushi asequible nacida en Umegaoka, famosa por sus filas larguísimas y su relación calidad-precio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 61,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6598,139.7005",
+      "distinction": null
+    },
+    {
+      "name": "Café de l'Ambre",
+      "place_id": null,
+      "lat": 35.671,
+      "lng": 139.7615,
+      "category": "cafeteria",
+      "cuisine": "cafe",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería fundada en 1948 en Ginza por un pionero del café japonés, que aún sirve granos añejados durante años según recetas propias.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 62,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.671,139.7615",
+      "distinction": null
+    },
+    {
+      "name": "Bear Pond Espresso",
+      "place_id": null,
+      "lat": 35.6613,
+      "lng": 139.668,
+      "category": "cafeteria",
+      "cuisine": "cafe",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cafetería de especialidad en Shimokitazawa considerada pionera del espresso de alta calidad en Tokio, fundada por el barista Katsuyuki Tanaka.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 63,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6613,139.668",
+      "distinction": null
+    },
+    {
+      "name": "Streamer Coffee Company",
+      "place_id": null,
+      "lat": 35.6605,
+      "lng": 139.6975,
+      "category": "cafeteria",
+      "cuisine": "cafe",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cafetería en Shibuya fundada por Hiroshi Sawada, campeón mundial de latte art, conocida por sus diseños en espuma y ambiente urbano.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 64,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6605,139.6975",
+      "distinction": null
+    },
+    {
+      "name": "% Arabica Nakameguro",
+      "place_id": null,
+      "lat": 35.6446,
+      "lng": 139.6989,
+      "category": "cafeteria",
+      "cuisine": "cafe",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Sucursal de Nakameguro de la cadena de café minimalista que se volvió viral en Instagram por su estética blanca y su vista al canal de cerezos.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 65,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6446,139.6989",
+      "distinction": null
+    },
+    {
+      "name": "Pelican",
+      "place_id": null,
+      "lat": 35.713,
+      "lng": 139.7965,
+      "category": "panaderia",
+      "cuisine": "pan",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Panadería de Asakusa fundada en 1942, famosa por un pan de molde sencillo y esponjoso; Anthony Bourdain la visitó para comer su icónica tostada.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 66,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.713,139.7965",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Viron",
+      "place_id": null,
+      "lat": 35.6588,
+      "lng": 139.7005,
+      "category": "panaderia",
+      "cuisine": "pan",
+      "tags": [
+        "critico"
+      ],
+      "description": "Panadería francesa en Shibuya que importa harina de Francia para su baguette, considerada de las mejores de Tokio fuera de Francia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 67,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6588,139.7005",
+      "distinction": null
+    },
+    {
+      "name": "Centre The Bakery",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.762,
+      "category": "cafeteria",
+      "cuisine": "pan / cafe",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cafetería de Ginza especializada en tostadas gruesas de pan de molde artesanal, con distintos panes y mermeladas para acompañar.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 68,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.762",
+      "distinction": null
+    },
+    {
+      "name": "Toraya",
+      "place_id": null,
+      "lat": 35.6773,
+      "lng": 139.7378,
+      "category": "dessert",
+      "cuisine": "wagashi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de dulces tradicionales japoneses (wagashi) con más de cinco siglos de historia, proveedora de la familia imperial desde la era Muromachi.",
+      "source_url": "https://en.wikipedia.org/wiki/Toraya_Confectionery",
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6773,139.7378",
+      "distinction": null
+    },
+    {
+      "name": "Higashiya Ginza",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.7628,
+      "category": "dessert",
+      "cuisine": "wagashi",
+      "tags": [
+        "critico"
+      ],
+      "description": "Casa de wagashi contemporánea en Ginza, que reinterpreta la repostería tradicional japonesa con diseño minimalista.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 70,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.7628",
+      "distinction": null
+    },
+    {
+      "name": "Aragawa",
+      "place_id": null,
+      "lat": 35.6665,
+      "lng": 139.758,
+      "category": "steakhouse",
+      "cuisine": "carne / wagyu",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Uno de los asadores más legendarios y caros de Japón, abierto en Shinbashi desde 1967, especializado en wagyu de Tajima asado sobre carbón.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 71,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6665,139.758",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Ginza Steak",
+      "place_id": null,
+      "lat": 35.6716,
+      "lng": 139.763,
+      "category": "steakhouse",
+      "cuisine": "carne / wagyu",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Cadena de bistecs de wagyu en tabla caliente muy popular entre turistas por su relación precio-calidad y su ambiente teatral de cocina abierta.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 72,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6716,139.763",
+      "distinction": null
+    },
+    {
+      "name": "Sasa no Yuki",
+      "place_id": null,
+      "lat": 35.722,
+      "lng": 139.777,
+      "category": "restaurante",
+      "cuisine": "japonés / tofu",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de kaiseki de tofu en Uguisudani que remonta su receta al periodo Edo, uno de los más antiguos especialistas de tofu de Tokio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.722,139.777",
+      "distinction": null
+    },
+    {
+      "name": "Otafuku",
+      "place_id": null,
+      "lat": 35.7128,
+      "lng": 139.794,
+      "category": "restaurante",
+      "cuisine": "japonés / oden",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de oden fundada en 1873 en Asakusa, uno de los locales de este guiso invernal de más solera en Tokio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 74,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7128,139.794",
+      "distinction": null
+    },
+    {
+      "name": "Usukifugu Yamadaya",
+      "place_id": null,
+      "lat": 35.6627,
+      "lng": 139.7318,
+      "category": "restaurante",
+      "cuisine": "japonés / fugu",
+      "tags": [
+        "critico"
+      ],
+      "description": "Especialista en pez globo (fugu) con varias sucursales en Tokio, que trae ejemplares directamente de Usuki, en Oita, cuna de esta tradición culinaria.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 75,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6627,139.7318",
+      "distinction": null
+    },
+    {
+      "name": "Tsukishima Monja Street",
+      "place_id": null,
+      "lat": 35.6635,
+      "lng": 139.7838,
+      "category": "street_food",
+      "cuisine": "japonés / monjayaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Calle de Tsukishima con más de setenta locales de monjayaki, el pariente líquido del okonomiyaki cocinado en plancha y compartido en la mesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6635,139.7838",
+      "distinction": null
+    },
+    {
+      "name": "Nakamise-dori",
+      "place_id": null,
+      "lat": 35.7139,
+      "lng": 139.796,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Calle comercial centenaria que conduce al templo Sensoji en Asakusa, llena de puestos de ningyo-yaki, senbei y otros dulces tradicionales.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7139,139.796",
+      "distinction": null
+    },
+    {
+      "name": "Toyosu Market",
+      "place_id": null,
+      "lat": 35.6454,
+      "lng": 139.7828,
+      "category": "mercado",
+      "cuisine": "variado / mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado mayorista que sucedió a Tsukiji en 2018 como el mayor centro de subastas de pescado de Tokio, con zonas de observación de la subasta de atún y restaurantes de sushi anexos.",
+      "source_url": "https://en.wikipedia.org/wiki/Toyosu_Market",
+      "source_type": "classic",
+      "rank": 78,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6454,139.7828",
+      "distinction": null
+    },
+    {
+      "name": "Gyukatsu Motomura",
+      "place_id": null,
+      "lat": 35.6595,
+      "lng": 139.699,
+      "category": "fast_food",
+      "cuisine": "japonés / gyukatsu",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Especialista en gyukatsu (chuleta de res empanizada, servida poco hecha para cocinarla uno mismo en una piedra caliente), tendencia que se volvió viral entre turistas en Shibuya.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 79,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6595,139.699",
+      "distinction": null
+    },
+    {
+      "name": "Torikizoku",
+      "place_id": null,
+      "lat": 35.6938,
+      "lng": 139.7028,
+      "category": "bar",
+      "cuisine": "izakaya",
+      "tags": [
+        "viral_tiktok",
+        "clasico"
+      ],
+      "description": "Cadena de izakaya de precio único fundada en Osaka, muy popular por su yakitori barato y sus bebidas económicas, con múltiples sucursales en Tokio.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 80,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6938,139.7028",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Kanda Matsuya",
+      "place_id": null,
+      "lat": 35.6928,
+      "lng": 139.7688,
+      "category": "restaurante",
+      "cuisine": "japonés / soba",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de soba de 1884 en Kanda, con edificio de madera tradicional declarado de interés y una clientela fiel desde hace generaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6928,139.7688",
+      "distinction": null
+    },
+    {
+      "name": "Jangara Ramen",
+      "place_id": null,
+      "lat": 35.6702,
+      "lng": 139.7025,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Ramen tonkotsu al estilo Kyushu en Harajuku desde 1987, con caldo cremoso de cerdo y huevo marinado, popular entre jóvenes de la zona.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6702,139.7025",
+      "distinction": null
+    },
+    {
+      "name": "Tapas Molecular Bar",
+      "place_id": null,
+      "lat": 35.6835,
+      "lng": 139.7737,
+      "category": "fine_dining",
+      "cuisine": "cocina molecular",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Barra íntima de ocho asientos en el Mandarin Oriental Tokyo, con menú de gastronomía molecular servido como una secuencia de pequeñas 'tapas' de autor.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 83,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6835,139.7737",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Ginza Sushiko Honten",
+      "place_id": null,
+      "lat": 35.6712,
+      "lng": 139.7635,
+      "category": "fine_dining",
+      "cuisine": "sushi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de sushi edomae fundada en 1885 en Ginza, considerada una de las más antiguas y prestigiosas de Tokio, con clientela histórica de la elite política y empresarial.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 84,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6712,139.7635",
+      "distinction": null
+    },
+    {
+      "name": "Shibuya Yokocho",
+      "place_id": null,
+      "lat": 35.6588,
+      "lng": 139.699,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "viral_tiktok"
+      ],
+      "description": "Callejón gastronómico cubierto inaugurado en 2020 junto a la estación de Shibuya, con más de veinte puestos que recrean el ambiente de los yokocho tradicionales, muy popular en redes.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 85,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6588,139.699",
+      "distinction": null
+    },
+    {
+      "name": "Ameyoko Market",
+      "place_id": null,
+      "lat": 35.71,
+      "lng": 139.7745,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado callejero surgido tras la Segunda Guerra Mundial entre Ueno y Okachimachi, con puestos de mariscos secos, frutas y comida callejera a precios de saldo.",
+      "source_url": "https://en.wikipedia.org/wiki/Ameya-Yokoch%C5%8D",
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.71,139.7745",
+      "distinction": null
+    },
+    {
+      "name": "Kagari",
+      "place_id": null,
+      "lat": 35.6712,
+      "lng": 139.7638,
+      "category": "fast_food",
+      "cuisine": "japonés / ramen",
+      "tags": [
+        "critico"
+      ],
+      "description": "Ramen de caldo paitan de pollo en Ginza, con textura casi cremosa y filas constantes pese a su discreta ubicación en un callejón.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 87,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6712,139.7638",
+      "distinction": null
+    },
+    {
+      "name": "Tsurutontan",
+      "place_id": null,
+      "lat": 35.6627,
+      "lng": 139.7315,
+      "category": "restaurante",
+      "cuisine": "japonés / udon",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cadena de udon conocida por sus enormes tazones que superan la cabeza del comensal, con locales abiertos hasta la madrugada en Roppongi y otras zonas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 88,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6627,139.7315",
+      "distinction": null
+    },
+    {
+      "name": "Sometaro",
+      "place_id": null,
+      "lat": 35.7137,
+      "lng": 139.793,
+      "category": "restaurante",
+      "cuisine": "japonés / okonomiyaki",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de okonomiyaki en una vivienda tradicional de Asakusa, abierta desde 1937, donde los comensales cocinan su propia plancha sentados en el suelo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7137,139.793",
+      "distinction": null
+    },
+    {
+      "name": "T.Y. Harbor",
+      "place_id": null,
+      "lat": 35.6237,
+      "lng": 139.7495,
+      "category": "restaurante",
+      "cuisine": "internacional / cervecería",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante y cervecería artesanal junto al canal de Tennozu Isle, en un almacén reconvertido, muy popular entre la comunidad internacional de Tokio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 90,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6237,139.7495",
+      "distinction": null
+    },
+    {
+      "name": "Sushisho Masa",
+      "place_id": null,
+      "lat": 35.6635,
+      "lng": 139.7305,
+      "category": "fine_dining",
+      "cuisine": "sushi",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sushi de alta gama en Roppongi del chef Masaaki Sasaki, discípulo de la escuela de Sushi Saito, con tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 91,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6635,139.7305",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Yoroniku",
+      "place_id": null,
+      "lat": 35.6465,
+      "lng": 139.7095,
+      "category": "steakhouse",
+      "cuisine": "japonés / yakiniku",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Yakiniku de gama alta en Ebisu, con cortes selectos de wagyu servidos por piezas al estilo de una barra de sushi. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 92,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6465,139.7095",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Rengetei",
+      "place_id": null,
+      "lat": 35.7145,
+      "lng": 139.7735,
+      "category": "restaurante",
+      "cuisine": "yoshoku",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de yoshoku (cocina occidental afrancesada) fundado en 1895 en Ueno, célebre por su omelette de arroz (omuraisu), uno de los pioneros del estilo en Japón.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.7145,139.7735",
+      "distinction": null
+    },
+    {
+      "name": "Taimeiken",
+      "place_id": null,
+      "lat": 35.6835,
+      "lng": 139.7745,
+      "category": "restaurante",
+      "cuisine": "yoshoku",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de yoshoku fundado en 1931 en Nihonbashi, célebre por su omuraisu clásico y por aparecer como referencia gastronómica en la película Tampopo (1985).",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6835,139.7745",
+      "distinction": null
+    },
+    {
+      "name": "Kikunoi Tokyo",
+      "place_id": null,
+      "lat": 35.674,
+      "lng": 139.737,
+      "category": "fine_dining",
+      "cuisine": "japonés / kaiseki",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sucursal en Akasaka del legendario kaiseki de Kioto Kikunoi, dirigida por el chef Yoshihiro Murata, con tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.674,139.737",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Ukai-tei Ginza",
+      "place_id": null,
+      "lat": 35.671,
+      "lng": 139.7615,
+      "category": "fine_dining",
+      "cuisine": "japonés / teppanyaki",
+      "tags": [
+        "critico"
+      ],
+      "description": "Teppanyaki de lujo en Ginza especializado en wagyu y langosta a la plancha, con ambiente elegante muy popular entre visitantes internacionales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.671,139.7615",
+      "distinction": null
+    },
+    {
+      "name": "New York Grill",
+      "place_id": null,
+      "lat": 35.6862,
+      "lng": 139.69,
+      "category": "fine_dining",
+      "cuisine": "internacional",
+      "tags": [
+        "tv_show",
+        "critico"
+      ],
+      "description": "Restaurante en el piso 52 del Park Hyatt Tokyo, inmortalizado en la película Lost in Translation (2003), con vistas panorámicas de la ciudad y un famoso brunch dominical.",
+      "source_url": "https://en.wikipedia.org/wiki/Park_Hyatt_Tokyo",
+      "source_type": "tv_show",
+      "rank": 97,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6862,139.69",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Shirube",
+      "place_id": null,
+      "lat": 35.6612,
+      "lng": 139.6685,
+      "category": "bar",
+      "cuisine": "izakaya",
+      "tags": [
+        "critico"
+      ],
+      "description": "Izakaya de barrio en Shimokitazawa muy querida por locales, con carta extensa de platos caseros japoneses y ambiente ruidoso y acogedor.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 98,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6612,139.6685",
+      "distinction": null
+    },
+    {
+      "name": "Ebisu Yokocho",
+      "place_id": null,
+      "lat": 35.6467,
+      "lng": 139.7095,
+      "category": "street_food",
+      "cuisine": "variado",
+      "tags": [
+        "critico"
+      ],
+      "description": "Antiguo mercado techado reconvertido en un callejón de pequeños puestos de izakaya en Ebisu, popular punto de encuentro nocturno.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 99,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6467,139.7095",
+      "distinction": null
+    },
+    {
+      "name": "Château Restaurant Joël Robuchon",
+      "place_id": null,
+      "lat": 35.6428,
+      "lng": 139.7157,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Réplica de un castillo francés del siglo XVIII en Ebisu Garden Place, sede insignia en Japón del chef Joël Robuchon, histórica ganadora de múltiples estrellas Michelin.",
+      "source_url": "https://en.wikipedia.org/wiki/Jo%C3%ABl_Robuchon",
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=35.6428,139.7157",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
     }
   ],
   "targetPlaces": 100,

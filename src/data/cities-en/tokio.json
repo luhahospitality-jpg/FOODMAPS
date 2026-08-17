@@ -22,6 +22,386 @@
     "Gogyo": {
       "cuisine": "Japanese / ramen",
       "description": "Birthplace of black ramen (kogashi), with signature burnt garlic, in Nishi-Azabu."
+    },
+    "Kanamachi Seimen": {
+      "cuisine": "Japanese / ramen",
+      "description": "An orthodox neighborhood ramen shop in Katsushika, best paired with shochu or beer."
+    },
+    "Sushi Saito": {
+      "cuisine": "sushi",
+      "description": "One of Tokyo's most exclusive sushi temples: chef Takashi Saito serves only a handful of diners a night in Roppongi, with a years-long waitlist. Three Michelin stars."
+    },
+    "Sushi Yoshitake": {
+      "cuisine": "sushi",
+      "description": "Seasonal edomae-style sushi in Ginza from chef Masahiro Yoshitake, known for creative touches within tradition. Three Michelin stars."
+    },
+    "Kyubey": {
+      "cuisine": "sushi",
+      "description": "Sushi house founded in 1935 in Ginza, one of Tokyo's oldest and most respected, long favored by dignitaries and international celebrities."
+    },
+    "Sushi Dai": {
+      "cuisine": "sushi",
+      "description": "A former Tsukiji institution now inside the Toyosu Market, famous for its pre-dawn queues and market-fresh omakase sushi at relatively accessible prices."
+    },
+    "Daiwa Sushi": {
+      "cuisine": "sushi",
+      "description": "Sushi Dai's historic rival inside Toyosu Market, with the same pre-dawn queue ritual for cuts fresh off the auction floor."
+    },
+    "Sushi Zanmai Honten": {
+      "cuisine": "sushi",
+      "description": "The original Tsukiji flagship of the Kiyomura chain, open 24 hours and famous because its president has paid record sums for the year's first tuna at auction."
+    },
+    "Uogashi Nihon-Ichi": {
+      "cuisine": "sushi",
+      "description": "A stand-and-eat sushi counter in Tsukiji, fast and affordable, made for grabbing a couple of pieces on your feet between market stalls."
+    },
+    "Nihonryori RyuGin": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Avant-garde kaiseki from chef Seiji Yamamoto in Roppongi, a regular on the World's 50 Best Restaurants list and holder of three Michelin stars."
+    },
+    "Narisawa": {
+      "cuisine": "Japanese / French",
+      "description": "Chef Yoshihiro Narisawa's 'satoyama' cuisine in Minami-Aoyama, a pioneer in blending French technique with Japanese forest ingredients. Two Michelin stars."
+    },
+    "Den": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Playful, irreverent kaiseki from chef Zaiyu Hasegawa, with signature dishes like the 'Dentucky Fried Chicken.' Two Michelin stars and a World's 50 Best regular."
+    },
+    "Florilège": {
+      "cuisine": "French / Japanese",
+      "description": "Chef Hiroyasu Kawate's chef-driven cuisine in Omotesando, blending French technique with Japanese produce at an open counter. Two Michelin stars."
+    },
+    "Quintessence": {
+      "cuisine": "French",
+      "description": "Chef Shuzo Kishida's haute French cuisine in Shirokanedai, with a tasting menu built around seasonal produce. Three Michelin stars."
+    },
+    "L'Effervescence": {
+      "cuisine": "French",
+      "description": "Chef Shinobu Namae's contemporary French cooking in Nishi-Azabu, strongly shaped by seasonal Japanese produce. Two Michelin stars."
+    },
+    "Ginza Kojyu": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Refined kaiseki from chef Toshiya Kadowaki in Ginza, prized for its seasonal precision. Three Michelin stars."
+    },
+    "Kanda": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Chef Hiroyuki Kanda's minimalist kaiseki in Azabu-Juban, one of the classic reference points of Japanese haute cuisine. Three Michelin stars."
+    },
+    "Ishikawa": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "Seasonal kaiseki in a traditional house in Kagurazaka, led by chef Hideki Ishikawa. Three Michelin stars."
+    },
+    "Sazenka": {
+      "cuisine": "Chinese",
+      "description": "Chef-driven Chinese cuisine in Nishi-Azabu, one of the few Chinese restaurants in Tokyo with Michelin recognition for its reinterpretation of Sichuan and Cantonese classics."
+    },
+    "Tempura Kondo": {
+      "cuisine": "Japanese / tempura",
+      "description": "Chef Fumio Kondo's vegetable and seafood tempura in Ginza, famous for frying sweet potato until it's almost dessert-like. Two Michelin stars."
+    },
+    "Tempura Mikawa": {
+      "cuisine": "Japanese / tempura",
+      "description": "Classic edomae-style tempura in Fukagawa, with master Tetsuya Saotome a historic reference point for the craft. One Michelin star."
+    },
+    "Nodaiwa": {
+      "cuisine": "Japanese / unagi",
+      "description": "An eel (unagi) house founded in 1846 in Higashi-Azabu, grilling over charcoal with a recipe kept through generations."
+    },
+    "Obana": {
+      "cuisine": "Japanese / unagi",
+      "description": "A century-old eel restaurant near Senso-ji in Asakusa, known for its unadon served in a traditional Japanese house setting."
+    },
+    "Sarashina Horii": {
+      "cuisine": "Japanese / soba",
+      "description": "A soba house founded in 1789 in Azabu-Juban, one of Tokyo's three great historic schools of buckwheat noodles."
+    },
+    "Kanda Yabu Soba": {
+      "cuisine": "Japanese / soba",
+      "description": "A soba house open since 1880 in Awajicho, its interior garden and tatami room preserving a Meiji-era atmosphere."
+    },
+    "Namiki Yabu Soba": {
+      "cuisine": "Japanese / soba",
+      "description": "Traditional soba since 1913 beside Asakusa's Senso-ji temple, with the dark, salty broth typical of old Edo-style noodles."
+    },
+    "Ichiran": {
+      "cuisine": "Japanese / ramen",
+      "description": "A tonkotsu ramen chain world-famous for its solo 'flavor concentration' booths, a format that went viral on social media and draws travelers from everywhere."
+    },
+    "Afuri": {
+      "cuisine": "Japanese / ramen",
+      "description": "Light yuzu-shio ramen born in Ebisu, a pioneer of a cleaner, citrus-forward style set against traditional pork-based ramen."
+    },
+    "Fuunji": {
+      "cuisine": "Japanese / tsukemen",
+      "description": "One of Shinjuku's benchmark tsukemen (dipping noodle) spots, with a thick dried-fish-and-chicken broth that draws constant queues."
+    },
+    "Nakiryu": {
+      "cuisine": "Japanese / ramen",
+      "description": "Spicy tantanmen ramen in Minami-Otsuka that became one of the first ramen shops in the world to earn a Michelin star."
+    },
+    "Tsuta": {
+      "cuisine": "Japanese / ramen",
+      "description": "At its original Sugamo location, Tsuta made history in 2016 as the first ramen restaurant in the world to earn a Michelin star."
+    },
+    "Ippudo": {
+      "cuisine": "Japanese / ramen",
+      "description": "The original Tokyo branch of the tonkotsu ramen chain founded in Fukuoka in 1985, which helped popularize Japanese ramen around the world."
+    },
+    "Rokurinsha": {
+      "cuisine": "Japanese / tsukemen",
+      "description": "Intensely flavored tsukemen on Tokyo Station's Ramen Street, one of the shops that drove the worldwide dipping-noodle craze."
+    },
+    "Menya Musashi": {
+      "cuisine": "Japanese / ramen",
+      "description": "Double-broth (fish and pork) ramen in Shinjuku, theatrically served and one of the most influential names in the scene since the 1990s."
+    },
+    "Ramen Jiro (Mita Honten)": {
+      "cuisine": "Japanese / ramen",
+      "description": "The original 1968 shop of one of Japan's most cult-followed ramen chains, famous for colossal portions of pork, garlic and vegetables that spawned its own fandom ('Jirolians')."
+    },
+    "Kikanbo": {
+      "cuisine": "Japanese / ramen",
+      "description": "Spicy ramen laced with karashi (Japanese mustard) and sansho pepper in Kanda, a distinctive style within Tokyo's ramen scene."
+    },
+    "Bird Land": {
+      "cuisine": "Japanese / yakitori",
+      "description": "Upscale yakitori in a Ginza basement, chef Toshihiro Wada grilling select cuts of chicken over binchotan charcoal. One Michelin star."
+    },
+    "Torishiki": {
+      "cuisine": "Japanese / yakitori",
+      "description": "Neighborhood yakitori in Ebisu recognized with Michelin's Bib Gourmand for excellent value."
+    },
+    "Omoide Yokocho": {
+      "cuisine": "Japanese / yakitori",
+      "description": "A postwar Shinjuku alley packed with tiny yakitori and izakaya stalls shoulder to shoulder, visited by Anthony Bourdain in his Tokyo episodes."
+    },
+    "Nonbei Yokocho": {
+      "cuisine": "izakaya",
+      "description": "A postwar alley of tiny bars beside Shibuya station, nicknamed 'Drunkard's Alley'."
+    },
+    "Andy's Shin Hinomoto": {
+      "cuisine": "izakaya",
+      "description": "An izakaya tucked under the train tracks in Yurakucho, run for decades by a British fishmonger settled in Tokyo, hugely popular with both expats and locals."
+    },
+    "Albatross": {
+      "cuisine": "bar",
+      "description": "A tiny two-floor bar in Golden Gai, Shinjuku's postwar maze of 200-plus bars, decorated like a miniature Victorian parlor."
+    },
+    "Bar High Five": {
+      "cuisine": "cocktail bar",
+      "description": "A Ginza cocktail counter run by veteran bartender Hidetsugu Ueno, regarded as one of the world's best for his hand-carved ice technique."
+    },
+    "Star Bar Ginza": {
+      "cuisine": "cocktail bar",
+      "description": "One of Japan's most influential classic cocktail bars, a pioneer of the precision bartending school that defines Ginza."
+    },
+    "Zoetrope": {
+      "cuisine": "whisky bar",
+      "description": "A Japanese whisky specialist bar in Shinjuku, stocking hundreds of rare labels and closed-distillery bottlings curated by its expert owner."
+    },
+    "Maisen": {
+      "cuisine": "Japanese / tonkatsu",
+      "description": "Tokyo's flagship tonkatsu since 1965, housed in a former public bathhouse in Omotesando, famous for its crisp breaded pork cutlet."
+    },
+    "Tonki": {
+      "cuisine": "Japanese / tonkatsu",
+      "description": "A neighborhood tonkatsu spot in Meguro since 1939, with an open kitchen and an atmosphere unchanged for decades; Anthony Bourdain visited it on No Reservations."
+    },
+    "Butagumi": {
+      "cuisine": "Japanese / tonkatsu",
+      "description": "A Nishi-Azabu tonkatsu spot offering a menu of more than a dozen pig breeds from across Japan, upscale within its genre."
+    },
+    "Jojoen": {
+      "cuisine": "Japanese / yakiniku",
+      "description": "One of Japan's oldest and best-known yakiniku chains, founded in 1946, grilling wagyu cuts tableside."
+    },
+    "CoCo Ichibanya": {
+      "cuisine": "Japanese / curry",
+      "description": "The world's largest Japanese curry chain, born in Nagoya in 1978, popular with travelers for letting diners customize spice level and toppings."
+    },
+    "Delhi": {
+      "cuisine": "Japanese / curry",
+      "description": "Japanese-style curry in Ginza since 1956, one of Tokyo's most veteran curry houses with a loyal office-worker following."
+    },
+    "Isetan Shinjuku Depachika": {
+      "cuisine": "mixed",
+      "description": "The basement food hall of Isetan department store in Shinjuku, considered Tokyo's most prestigious depachika, with dozens of stalls for fine pastry and gourmet bento."
+    },
+    "Mitsukoshi Ginza Depachika": {
+      "cuisine": "mixed",
+      "description": "The food basement of Japan's oldest department store, with wagashi, seafood and delicatessen stalls in the heart of Ginza."
+    },
+    "Takashimaya Nihonbashi Depachika": {
+      "cuisine": "mixed",
+      "description": "The food hall inside Nihonbashi's historic Takashimaya building, a designated cultural property, with a wide selection of high-end sweets and takeaway food."
+    },
+    "Uobei Shibuya Dogenzaka": {
+      "cuisine": "sushi",
+      "description": "Fast-belt sushi in Shibuya where orders are placed by tablet and arrive on a bullet-train-style track straight to the table, a format that went viral on video."
+    },
+    "Sushiro": {
+      "cuisine": "sushi",
+      "description": "Japan's largest kaiten (conveyor-belt) sushi chain, with plates starting at very low prices and digital ordering, popular with tourists and families alike."
+    },
+    "Umegaoka Sushi no Midori (Shibuya)": {
+      "cuisine": "sushi",
+      "description": "The Shibuya branch of an affordable sushi chain born in Umegaoka, famous for its enormous queues and value for money."
+    },
+    "Café de l'Ambre": {
+      "cuisine": "cafe",
+      "description": "A coffee shop founded in 1948 in Ginza by a pioneer of Japanese coffee culture, still serving beans aged for years by its own methods."
+    },
+    "Bear Pond Espresso": {
+      "cuisine": "cafe",
+      "description": "A specialty coffee shop in Shimokitazawa regarded as a pioneer of high-quality espresso in Tokyo, founded by barista Katsuyuki Tanaka."
+    },
+    "Streamer Coffee Company": {
+      "cuisine": "cafe",
+      "description": "A Shibuya coffee shop founded by world latte-art champion Hiroshi Sawada, known for its foam designs and urban vibe."
+    },
+    "% Arabica Nakameguro": {
+      "cuisine": "cafe",
+      "description": "The Nakameguro branch of the minimalist coffee chain that went viral on Instagram for its all-white aesthetic and views over the cherry-tree canal."
+    },
+    "Pelican": {
+      "cuisine": "bakery",
+      "description": "An Asakusa bakery founded in 1942, famous for a simple, pillowy white loaf; Anthony Bourdain visited for its iconic toast."
+    },
+    "Viron": {
+      "cuisine": "bakery",
+      "description": "A French bakery in Shibuya that imports flour from France for its baguette, considered among the best in Tokyo outside France itself."
+    },
+    "Centre The Bakery": {
+      "cuisine": "bread / cafe",
+      "description": "A Ginza cafe specializing in thick-cut toast from artisanal white loaves, offering different breads and jams on the side."
+    },
+    "Toraya": {
+      "cuisine": "wagashi",
+      "description": "A traditional Japanese sweets (wagashi) house with more than five centuries of history, a purveyor to the imperial family since the Muromachi era."
+    },
+    "Higashiya Ginza": {
+      "cuisine": "wagashi",
+      "description": "A contemporary wagashi house in Ginza, reinterpreting traditional Japanese confectionery with minimalist design."
+    },
+    "Aragawa": {
+      "cuisine": "wagyu steakhouse",
+      "description": "One of Japan's most legendary and expensive steakhouses, open in Shinbashi since 1967, specializing in charcoal-grilled Tajima wagyu."
+    },
+    "Ginza Steak": {
+      "cuisine": "wagyu steakhouse",
+      "description": "A hot-plate wagyu steak chain very popular with tourists for its value and its theatrical open-kitchen setup."
+    },
+    "Sasa no Yuki": {
+      "cuisine": "Japanese / tofu",
+      "description": "A tofu-kaiseki restaurant in Uguisudani tracing its recipe back to the Edo period, one of Tokyo's oldest tofu specialists."
+    },
+    "Otafuku": {
+      "cuisine": "Japanese / oden",
+      "description": "An oden house founded in 1873 in Asakusa, one of Tokyo's most venerable spots for this winter stew."
+    },
+    "Usukifugu Yamadaya": {
+      "cuisine": "Japanese / fugu",
+      "description": "A pufferfish (fugu) specialist with several Tokyo branches, sourcing directly from Usuki in Oita, the birthplace of this culinary tradition."
+    },
+    "Tsukishima Monja Street": {
+      "cuisine": "Japanese / monjayaki",
+      "description": "A Tsukishima street lined with more than seventy monjayaki spots, okonomiyaki's runnier cousin cooked on a griddle and shared at the table."
+    },
+    "Nakamise-dori": {
+      "cuisine": "mixed",
+      "description": "A centuries-old shopping street leading to Senso-ji temple in Asakusa, lined with stalls selling ningyo-yaki, senbei and other traditional sweets."
+    },
+    "Toyosu Market": {
+      "cuisine": "mixed / seafood",
+      "description": "The wholesale market that succeeded Tsukiji in 2018 as Tokyo's largest fish auction hub, with tuna-auction viewing decks and attached sushi restaurants."
+    },
+    "Gyukatsu Motomura": {
+      "cuisine": "Japanese / gyukatsu",
+      "description": "A specialist in gyukatsu (breaded beef cutlet served rare, to finish cooking yourself on a hot stone), a trend that went viral with tourists in Shibuya."
+    },
+    "Torikizoku": {
+      "cuisine": "izakaya",
+      "description": "A single-price izakaya chain founded in Osaka, hugely popular for cheap yakitori and drinks, with many branches across Tokyo."
+    },
+    "Kanda Matsuya": {
+      "cuisine": "Japanese / soba",
+      "description": "A soba house from 1884 in Kanda, its traditional wooden building a recognized landmark with a loyal following across generations."
+    },
+    "Jangara Ramen": {
+      "cuisine": "Japanese / ramen",
+      "description": "Kyushu-style tonkotsu ramen in Harajuku since 1987, with a creamy pork broth and marinated egg, popular with the neighborhood's young crowd."
+    },
+    "Tapas Molecular Bar": {
+      "cuisine": "molecular cuisine",
+      "description": "An intimate eight-seat counter at the Mandarin Oriental Tokyo, serving a molecular-gastronomy menu as a sequence of small chef-driven 'tapas'."
+    },
+    "Ginza Sushiko Honten": {
+      "cuisine": "sushi",
+      "description": "An edomae sushi house founded in 1885 in Ginza, considered one of Tokyo's oldest and most prestigious, historically favored by political and business elites."
+    },
+    "Shibuya Yokocho": {
+      "cuisine": "mixed",
+      "description": "A covered food alley opened in 2020 beside Shibuya station, with more than twenty stalls recreating the atmosphere of traditional yokocho, hugely popular on social media."
+    },
+    "Ameyoko Market": {
+      "cuisine": "mixed",
+      "description": "A street market that emerged after World War II between Ueno and Okachimachi, with stalls of dried seafood, fruit and street food at bargain prices."
+    },
+    "Kagari": {
+      "cuisine": "Japanese / ramen",
+      "description": "Chicken paitan-broth ramen in Ginza, almost creamy in texture, with constant queues despite its discreet alley location."
+    },
+    "Tsurutontan": {
+      "cuisine": "Japanese / udon",
+      "description": "An udon chain known for bowls so large they dwarf the diner's head, with locations open into the small hours in Roppongi and elsewhere."
+    },
+    "Sometaro": {
+      "cuisine": "Japanese / okonomiyaki",
+      "description": "An okonomiyaki house in a traditional Asakusa home, open since 1937, where diners cook their own griddle seated on the floor."
+    },
+    "T.Y. Harbor": {
+      "cuisine": "international / brewpub",
+      "description": "A restaurant and craft brewery beside the canal on Tennozu Isle, set in a converted warehouse, popular with Tokyo's international community."
+    },
+    "Sushisho Masa": {
+      "cuisine": "sushi",
+      "description": "Upscale sushi in Roppongi from chef Masaaki Sasaki, trained in the Sushi Saito lineage, holding three Michelin stars."
+    },
+    "Yoroniku": {
+      "cuisine": "Japanese / yakiniku",
+      "description": "Upscale yakiniku in Ebisu, serving select wagyu cuts piece by piece in a sushi-counter style. One Michelin star."
+    },
+    "Rengetei": {
+      "cuisine": "yoshoku",
+      "description": "A yoshoku (Western-influenced Japanese) restaurant founded in 1895 in Ueno, famous for its rice omelette (omuraisu), one of the style's pioneers in Japan."
+    },
+    "Taimeiken": {
+      "cuisine": "yoshoku",
+      "description": "A yoshoku restaurant founded in 1931 in Nihonbashi, famous for its classic omuraisu and for its culinary reputation referenced in the film Tampopo (1985)."
+    },
+    "Kikunoi Tokyo": {
+      "cuisine": "Japanese / kaiseki",
+      "description": "The Akasaka branch of Kyoto's legendary Kikunoi kaiseki house, led by chef Yoshihiro Murata, holding three Michelin stars."
+    },
+    "Ukai-tei Ginza": {
+      "cuisine": "Japanese / teppanyaki",
+      "description": "Upscale teppanyaki in Ginza specializing in grilled wagyu and lobster, with an elegant setting popular with international visitors."
+    },
+    "New York Grill": {
+      "cuisine": "international",
+      "description": "A restaurant on the 52nd floor of the Park Hyatt Tokyo, immortalized in the film Lost in Translation (2003), with panoramic city views and a famous Sunday brunch."
+    },
+    "Shirube": {
+      "cuisine": "izakaya",
+      "description": "A beloved neighborhood izakaya in Shimokitazawa, with an extensive menu of homestyle Japanese dishes and a lively, welcoming atmosphere."
+    },
+    "Ebisu Yokocho": {
+      "cuisine": "mixed",
+      "description": "A former covered market converted into an alley of small izakaya stalls in Ebisu, a popular nighttime gathering spot."
+    },
+    "Château Restaurant Joël Robuchon": {
+      "cuisine": "French",
+      "description": "A replica 18th-century French château in Ebisu Garden Place, the flagship Japanese outpost of chef Joël Robuchon, a longtime multi-star Michelin winner."
     }
   }
 }
