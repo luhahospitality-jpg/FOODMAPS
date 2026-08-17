@@ -22,6 +22,386 @@
     "Krua Apsorn (Dusit)": {
       "cuisine": "Thai / royal",
       "description": "Royal Thai recipes since 1996, inherited from the Princess Mother's cook. Bib Gourmand."
+    },
+    "Sorn": {
+      "cuisine": "Southern Thai",
+      "description": "Southern Thai haute cuisine with ingredients sourced directly from Phatthalung province. The first Thai restaurant to earn three Michelin stars, in 2023."
+    },
+    "Nusara": {
+      "cuisine": "Thai",
+      "description": "Contemporary Thai cooking from the team behind Sorn, in a restored riverside house near Wat Pho. One Michelin star."
+    },
+    "Potong": {
+      "cuisine": "Chinese-Thai",
+      "description": "Contemporary Chinese-Thai cuisine in a restored three-story shophouse that once sold bencharong porcelain. Led by chef Pichaya “Pam” Soontornyanakij. One Michelin star."
+    },
+    "80/20": {
+      "cuisine": "Modern Thai / natural wine",
+      "description": "Modern Thai cooking paired with natural wine in the riverside Talad Noi neighborhood. One Michelin star, after years on the Bib Gourmand list."
+    },
+    "Le Normandie": {
+      "cuisine": "French",
+      "description": "Classic French haute cuisine at the historic Mandarin Oriental, overlooking the Chao Phraya River since 1958. Two Michelin stars."
+    },
+    "Chim by Siam Wisdom": {
+      "cuisine": "Thai",
+      "description": "Refined Thai cuisine by chef Chumpol Jangprai, reinterpreting regional recipes. One Michelin star."
+    },
+    "Haoma": {
+      "cuisine": "Thai / farm-to-table",
+      "description": "Farm-to-table restaurant with its own rooftop garden; chef Deepanker Khosla's cooking blends Thai and Indian influences. One Michelin star."
+    },
+    "IGNIV Bangkok": {
+      "cuisine": "Swiss / international sharing",
+      "description": "Fine-dining sharing concept by Swiss chef Andreas Caminada, inside the Waldorf Astoria Bangkok. One Michelin star."
+    },
+    "Maison Dunand": {
+      "cuisine": "French",
+      "description": "Seasonal French cuisine by chef Arnaud Dunand Sauthier on Sukhumvit Soi 31. One Michelin star."
+    },
+    "Saneh Jaan": {
+      "cuisine": "Royal Thai",
+      "description": "Traditional and royal Thai court recipes, elegantly presented on Wireless Road. One Michelin star."
+    },
+    "Signature": {
+      "cuisine": "French",
+      "description": "Contemporary French cuisine atop the Banyan Tree tower, next to the Vertigo rooftop bar. One Michelin star."
+    },
+    "Blue by Alain Ducasse": {
+      "cuisine": "French",
+      "description": "Alain Ducasse's Bangkok outpost, French brasserie cooking at The Athenee Hotel. One Michelin star."
+    },
+    "Samrub Samrub Thai": {
+      "cuisine": "Regional Thai",
+      "description": "Tasting menu of little-known regional Thai dishes, researched from historic recipes by chef Prin Polsuk. One Michelin star."
+    },
+    "Nahm": {
+      "cuisine": "Thai",
+      "description": "The restaurant Australian chef David Thompson made world-famous for its archival Thai cooking; it continues today with a Michelin star at the COMO Metropolitan."
+    },
+    "Bo.lan": {
+      "cuisine": "Thai",
+      "description": "Unapologetically seasonal Thai cooking from chefs Bo Songvisava and Dylan Jones, both former proteges of David Thompson at the original Nahm in London. Chef Bo was profiled in season five of Netflix's 'Chef's Table' (2018). One Michelin star."
+    },
+    "Aksorn": {
+      "cuisine": "Thai",
+      "description": "Chef Chumpol Jangprai's project dedicated to preserving vanishing Thai recipes. One Michelin star."
+    },
+    "Mia": {
+      "cuisine": "Contemporary Thai",
+      "description": "Chef-driven contemporary Thai cuisine on Sukhumvit Soi 31. One Michelin star."
+    },
+    "NAWA": {
+      "cuisine": "Thai",
+      "description": "Thai cuisine on a rooftop overlooking Lumpini Park, atop the Sindhorn Midtown tower. One Michelin star."
+    },
+    "INDDEE": {
+      "cuisine": "Contemporary Thai",
+      "description": "Contemporary Thai tapas-style cooking in Yen Akat, applying modern technique to home-style recipes. One Michelin star."
+    },
+    "Elements": {
+      "cuisine": "Contemporary European",
+      "description": "Contemporary European cuisine inspired by Amsterdam's Ciel Bleu, at the Okura Prestige hotel. One Michelin star."
+    },
+    "Coda": {
+      "cuisine": "International tasting menu",
+      "description": "Contemporary international tasting menu in the Sathorn district. One Michelin star."
+    },
+    "AVANT": {
+      "cuisine": "French",
+      "description": "Recently opened chef-driven French cuisine, awarded one Michelin star in the guide's 2025 edition."
+    },
+    "GOAT": {
+      "cuisine": "International / natural wine",
+      "description": "Natural wine bar and chef-driven cooking in the historic riverside district of Songwat. One Michelin star in the 2025 edition."
+    },
+    "Sri Trat": {
+      "cuisine": "Eastern Thai (Trat)",
+      "description": "Cuisine from the eastern province of Trat, rarely represented in Bangkok, served in a restored Sathorn house. One Michelin star."
+    },
+    "Saawaan": {
+      "cuisine": "Contemporary Thai",
+      "description": "Contemporary Thai cuisine applying refined technique to bold traditional flavors, in Charoenkrung. One Michelin star."
+    },
+    "Le Du": {
+      "cuisine": "Contemporary Thai",
+      "description": "Seasonal Thai ingredients from across the country reinterpreted by chef Thitid “Ton” Tassanakajohn. One Michelin star."
+    },
+    "Jeh O Chula": {
+      "cuisine": "Thai / spicy noodles",
+      "description": "Late-night stall near Chulalongkorn University famous for its fiery tom-yum-style noodles, gone viral on social media and awarded a Michelin Bib Gourmand."
+    },
+    "Go-Ang Kaomunkai Pratunam": {
+      "cuisine": "Thai / chicken rice",
+      "description": "Bangkok's most famous Hainanese-style chicken rice, serving near Pratunam Market for decades. Michelin Bib Gourmand."
+    },
+    "Nai Ek Roll Noodle": {
+      "cuisine": "Thai-Chinese / rolled noodles",
+      "description": "Guay jub, rolled rice noodles in peppery broth, served in Yaowarat for generations. Michelin Bib Gourmand."
+    },
+    "Pa Aew": {
+      "cuisine": "Thai / street curry",
+      "description": "Sidewalk stall of curries and stir-fries facing Wat Suthat, cooked by one woman on the pavement. Michelin Bib Gourmand."
+    },
+    "Rut & Lek Seafood": {
+      "cuisine": "Thai / seafood",
+      "description": "Spicy stir-fried seafood served at folding tables on Suan Plu street since 1980. Michelin Bib Gourmand."
+    },
+    "Raan Khao Kha Moo Charoen Saeng": {
+      "cuisine": "Thai / stewed pork leg",
+      "description": "Pork leg slow-stewed for hours and served over rice, a Thonburi-side classic. Michelin Bib Gourmand."
+    },
+    "Guay Tiew Kua Gai Suan Mali": {
+      "cuisine": "Thai-Chinese / dry fried noodles",
+      "description": "Dry-fried flat noodles with chicken and egg, in the Suan Mali neighborhood since the 1940s. Michelin Bib Gourmand."
+    },
+    "Nai Mong Hoi Thod": {
+      "cuisine": "Thai-Chinese / oyster omelette",
+      "description": "Crispy oyster omelette cooked over a charcoal wok in Yaowarat, a Chinatown reference for three generations. Michelin Bib Gourmand."
+    },
+    "Wattana Panich": {
+      "cuisine": "Thai-Chinese / beef noodle soup",
+      "description": "Beef noodle soup simmered in the same broth pot for more than 50 years, never fully emptied or taken off the heat. It has gone viral online for that perpetual broth."
+    },
+    "Prachak Pet Yang": {
+      "cuisine": "Thai-Chinese / roast duck",
+      "description": "Roast duck hung in the storefront window since 1909, one of Charoenkrung's oldest duck institutions."
+    },
+    "Somtam Nua": {
+      "cuisine": "Northeastern Thai / papaya salad",
+      "description": "Green papaya salad (som tam) and Isaan dishes in Siam Square, with a steady line for more than two decades."
+    },
+    "Soi Polo Fried Chicken": {
+      "cuisine": "Northeastern Thai / fried chicken",
+      "description": "Garlic-fried Isaan-style chicken down an alley near Lumpini Park, visited by Anthony Bourdain during his Bangkok travels."
+    },
+    "Chote Chitr": {
+      "cuisine": "Classic Thai",
+      "description": "Tiny family-run restaurant of classic Thai cooking in the old city, on the same corner since the 1940s. Praised by Anthony Bourdain and Michelin-recognized."
+    },
+    "On Lok Yun": {
+      "cuisine": "Thai-Chinese / breakfast diner",
+      "description": "Thai-Chinese breakfast diner serving toast and soft-scrambled eggs, open since 1933 near the Democracy Monument."
+    },
+    "Mont Nom Sod": {
+      "cuisine": "Thai / toast and milk",
+      "description": "Buttered toast served with fresh milk, a Thai teatime institution since 1964."
+    },
+    "Kor Panich": {
+      "cuisine": "Thai / mango sticky rice",
+      "description": "Mango with coconut sticky rice, sold on the same Tanao Road corner since 1932."
+    },
+    "T&K Seafood": {
+      "cuisine": "Thai / street seafood",
+      "description": "Folding tables of grilled seafood on Soi Phadungdao, one of Chinatown's best-known street seafood spots."
+    },
+    "Hua Seng Hong": {
+      "cuisine": "Chinese-Thai",
+      "description": "Chinese-Thai restaurant known for shark fin and bird's nest soup on Yaowarat's main street, a Chinatown institution since 1980."
+    },
+    "Khao Soi Islam": {
+      "cuisine": "Thai Muslim / khao soi",
+      "description": "Thai Muslim-style khao soi served near Haroon Mosque for more than 70 years, a rarity in Bangkok."
+    },
+    "P'Aor Tom Yum Noodle": {
+      "cuisine": "Thai / tom yum boat noodles",
+      "description": "Boat noodles in an intensely spicy, sour tom-yum-style broth, in the Ari neighborhood. Michelin Bib Gourmand."
+    },
+    "Err Urban Rustic Thai": {
+      "cuisine": "Rustic Thai",
+      "description": "Elevated Thai street food -dried meats, curries, cocktails- from the team behind Le Du, near Wat Pho. Michelin Bib Gourmand."
+    },
+    "Jok Prince": {
+      "cuisine": "Thai-Chinese / rice congee",
+      "description": "Pork rice congee with century egg, served from a small family shop down a Pathumwan alley since the 1940s."
+    },
+    "Krua Apsorn (Din So)": {
+      "cuisine": "Thai / royal",
+      "description": "The original Krua Apsorn location on Din So Road, home to the same royal Thai recipes inherited from the Princess Mother's cook. Michelin Bib Gourmand."
+    },
+    "Or Tor Kor Market": {
+      "cuisine": "Thai / fresh food market",
+      "description": "Fresh food market across from Chatuchak, named by CNN in 2017 as the world's fourth-best fresh market for the quality of its produce and prepared food."
+    },
+    "Talad Rot Fai Ratchada": {
+      "cuisine": "Thai / night market",
+      "description": "Night market beside Esplanade Ratchadapisek, with food stalls, shipping-container bars, and a vintage 'train market' theme."
+    },
+    "Khlong Lat Mayom Floating Market": {
+      "cuisine": "Thai / floating market",
+      "description": "Weekend floating market on a Thonburi canal, with boat vendors and local Thai food, closer to the city and less touristy than Damnoen Saduak."
+    },
+    "Chatuchak Weekend Market": {
+      "cuisine": "Thai / market and street food",
+      "description": "Thailand's largest weekend market, with thousands of stalls and a street food section spanning cuisines from every region of the country."
+    },
+    "Wang Lang Market": {
+      "cuisine": "Thai / local market",
+      "description": "Local market on the Thonburi side, next to Siriraj Hospital, known for traditional Thai sweets and inexpensive food off the tourist circuit."
+    },
+    "Sky Bar": {
+      "cuisine": null,
+      "description": "Rooftop bar on the 63rd floor of the State Tower, made world-famous after appearing in 'The Hangover Part II'."
+    },
+    "Vertigo and Moon Bar": {
+      "cuisine": null,
+      "description": "Open-air bar and restaurant on the 61st floor of the Banyan Tree, one of Bangkok's pioneering rooftop venues."
+    },
+    "Octave Rooftop Lounge": {
+      "cuisine": null,
+      "description": "Three-level bar atop the Marriott Sukhumvit, with 360-degree views of the Bangkok skyline."
+    },
+    "Above Eleven": {
+      "cuisine": "Peruvian-Asian",
+      "description": "Rooftop bar and restaurant atop the Fraser Suites, serving Peruvian-Asian fusion food with views over Sukhumvit."
+    },
+    "Bar Us": {
+      "cuisine": null,
+      "description": "Charoenkrung cocktail bar named Thailand's Best Bar 2025 and ranked No. 4 on Asia's 50 Best Bars."
+    },
+    "Dry Wave Cocktail Studio": {
+      "cuisine": null,
+      "description": "Bangkok cocktail studio that climbed to No. 5 on Asia's 50 Best Bars in 2025."
+    },
+    "BKK Social Club": {
+      "cuisine": null,
+      "description": "Cocktail bar inside the Four Seasons Bangkok, led by bartender Bannawat Bunnak, ranked on Asia's 50 Best Bars."
+    },
+    "Vesper": {
+      "cuisine": null,
+      "description": "Cocktail bar and restaurant on Silom Road, a longtime fixture of the Asia's 50 Best Bars list and winner of the 'Legend of the List Award' in 2025."
+    },
+    "Backstage Cocktail Bar": {
+      "cuisine": null,
+      "description": "Cocktail bar hidden behind an unmarked door in Charoenkrung, part of the neighborhood's craft bar scene."
+    },
+    "Teens of Thailand": {
+      "cuisine": null,
+      "description": "Gin bar set in a former tire-repair shop on Soi Nana, one of the pioneers of Chinatown's bar revival."
+    },
+    "Tropic City": {
+      "cuisine": null,
+      "description": "Tropical, tiki-leaning cocktail bar in Charoenkrung, a regular on Asia's best-bar lists."
+    },
+    "Rabbit Hole": {
+      "cuisine": null,
+      "description": "Thonglor cocktail bar with inventive drinks, repeatedly ranked among Asia's best bars."
+    },
+    "Bamboo Bar": {
+      "cuisine": null,
+      "description": "Classic jazz bar at the Mandarin Oriental, one of Bangkok's oldest and most legendary hotel bars."
+    },
+    "Blue Elephant": {
+      "cuisine": "Royal Thai",
+      "description": "Royal Thai cuisine inside a colonial mansion in Sathorn, part of a brand that began in Brussels in 1980 before returning to Thailand."
+    },
+    "Baan Khanitha": {
+      "cuisine": "Thai",
+      "description": "Long-running classic Thai restaurant in Sathorn, popular with locals and visitors since the 1990s."
+    },
+    "Issaya Siamese Club": {
+      "cuisine": "Thai",
+      "description": "Creative Thai cuisine by chef Ian Kittichai in a 1920s garden villa on Soi Sri Aksorn."
+    },
+    "Eat Me Restaurant": {
+      "cuisine": "Contemporary international",
+      "description": "Contemporary international food and an art gallery down a Silom alley, open since 2003 with late-night service."
+    },
+    "Supanniga Eating Room": {
+      "cuisine": "Thai / home-style recipes",
+      "description": "Family recipes from eastern Thailand and Trat island, revived by restaurateur Chef Tam, now with several branches across the city."
+    },
+    "Cabbages & Condoms": {
+      "cuisine": "Thai",
+      "description": "Thai restaurant founded by the PDA family-planning foundation, decorated with condoms instead of flowers, with proceeds funding health programs."
+    },
+    "Roti Mataba": {
+      "cuisine": "Thai Muslim / roti",
+      "description": "Thai Muslim-style roti and murtabak curry on Phra Athit Road since 1943, near Khao San Road."
+    },
+    "Ba Hao": {
+      "cuisine": "Chinese-Thai",
+      "description": "Three-story café-bar with retro Shanghai styling on Soi Nana, serving Chinese-Thai food and cocktails."
+    },
+    "The Muslim Restaurant": {
+      "cuisine": "Thai Muslim",
+      "description": "Family-run Thai Muslim restaurant on Charoenkrung Road, serving curries and biryani since 1944."
+    },
+    "After You Dessert Cafe": {
+      "cuisine": "Thai desserts",
+      "description": "Dessert café born in Siam Square, famous for its 'Shibuya Honey Toast,' which went viral and spawned a nationwide chain."
+    },
+    "Audrey Cafe Des Fleurs": {
+      "cuisine": "Thai-French fusion",
+      "description": "Flower-draped café-restaurant in Thonglor, heavily photographed on social media, serving Thai-French fusion food."
+    },
+    "Rocket Coffeebar": {
+      "cuisine": "Specialty coffee",
+      "description": "One of Bangkok's pioneering specialty coffee shops, with several branches and its own roastery."
+    },
+    "Roast": {
+      "cuisine": "International / brunch",
+      "description": "Long-running Bangkok brunch café with specialty coffee and international dishes, popular with expats for over a decade."
+    },
+    "Royal India": {
+      "cuisine": "Indian",
+      "description": "Family-run Indian restaurant tucked down an alley in Pahurat, Bangkok's Little India neighborhood, since the 1970s."
+    },
+    "Savoey Seafood": {
+      "cuisine": "Thai / seafood",
+      "description": "Thai seafood chain founded in 1972, known for its crab curry and steamed fish with lime among its signature dishes."
+    },
+    "Somtum Der": {
+      "cuisine": "Northeastern Thai / papaya salad",
+      "description": "Isaan restaurant centered on varieties of green papaya salad (som tam), with branches in Silom and Thonglor."
+    },
+    "Charoen Saeng Silom Roast Duck": {
+      "cuisine": "Thai-Chinese / roast duck",
+      "description": "Roast duck and char siu pork over rice, serving on Silom Road since the 1960s."
+    },
+    "Canvas": {
+      "cuisine": "Thai / international",
+      "description": "Restaurant and art space in the Ari neighborhood, serving a mix of Thai and international dishes in a casual, creative setting."
+    },
+    "100 Mahaseth": {
+      "cuisine": "Modern Thai",
+      "description": "Modern Thai restaurant inside a restored house on Mahaseth Road, in the Charoenkrung district."
+    },
+    "Sugar Ray": {
+      "cuisine": null,
+      "description": "Playfully themed cocktail bar in Charoenkrung, part of the wave of craft bars that revived the neighborhood's nightlife."
+    },
+    "Opium Bar": {
+      "cuisine": null,
+      "description": "Riverside Charoenkrung cocktail bar ranked among Asia's best bars in 2025."
+    },
+    "Baan Somtum": {
+      "cuisine": "Northeastern Thai",
+      "description": "Restaurant specializing in som tam and Isaan dishes, offering a choice of different spice levels."
+    },
+    "Cheevit Cheeva": {
+      "cuisine": "Modern Thai",
+      "description": "Modern, creative Thai cooking in Charoenkrung by chef Napol “Joe” Jantraget, with a market-driven changing menu."
+    },
+    "Le Beaulieu": {
+      "cuisine": "French",
+      "description": "Classic French bistro on Sukhumvit Soi 19, a long-standing favorite of Bangkok's French community since the 1990s."
+    },
+    "Kalpapruek": {
+      "cuisine": "Thai",
+      "description": "Thai restaurant chain founded in 1958, known for its pad thai and stewed pork with egg, with locations across the city."
+    },
+    "Charmgang": {
+      "cuisine": "Thai / curry",
+      "description": "Restaurant specializing in Thai curries made with hand-pounded curry paste, in Thonglor. Michelin Bib Gourmand."
+    },
+    "Sing Sing Theater": {
+      "cuisine": null,
+      "description": "1930s Chinese-themed bar in Charoenkrung with cocktails and live shows, a regular on Asia's best-bar lists."
+    },
+    "Laab Ubon": {
+      "cuisine": "Northeastern Thai / laab",
+      "description": "Isaan restaurant specializing in laab (spiced minced meat salad), with an extensive menu of northeastern Thai dishes."
     }
   }
 }

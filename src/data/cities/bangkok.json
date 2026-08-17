@@ -3,7 +3,7 @@
   "name": "Bangkok",
   "country": "Tailandia",
   "tagline": "La tortilla de cangrejo con gafas de esquí que Netflix hizo famosa, y tres estrellas Michelin para dos gemelos alemanes.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -66,7 +66,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527631,100.5048237",
+      "distinction": null
     },
     {
       "name": "Gaggan Anand",
@@ -111,6 +112,1859 @@
         "type": "michelin_bib_gourmand",
         "count": null
       }
+    },
+    {
+      "name": "Sorn",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.5716,
+      "category": "fine_dining",
+      "cuisine": "tailandés sureño",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina del sur de Tailandia con ingredientes traídos directamente de Phatthalung. Primer restaurante tailandés en alcanzar las tres estrellas Michelin, en 2023.",
+      "source_url": "https://guide.michelin.com/th/en/bangkok-region/bangkok/restaurants/all-starred",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.5716",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Nusara",
+      "place_id": null,
+      "lat": 13.7458,
+      "lng": 100.4924,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa contemporánea de los mismos creadores de Sorn, en una casa restaurada cerca del río frente al Wat Pho. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7458,100.4924",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Potong",
+      "place_id": null,
+      "lat": 13.7367,
+      "lng": 100.5093,
+      "category": "fine_dining",
+      "cuisine": "chino-tailandés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina chino-tailandesa contemporánea en un antiguo edificio de tres pisos que fue una tienda de porcelana bencharong. Dirigido por la chef Pichaya “Pam” Soontornyanakij. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7367,100.5093",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "80/20",
+      "place_id": null,
+      "lat": 13.7386,
+      "lng": 100.5064,
+      "category": "fine_dining",
+      "cuisine": "tailandés moderno / vino natural",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa moderna con maridaje de vinos naturales en el barrio ribereño de Talad Noi. Una estrella Michelin, tras años como Bib Gourmand.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7386,100.5064",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Le Normandie",
+      "place_id": null,
+      "lat": 13.7234,
+      "lng": 100.5141,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Alta cocina francesa clásica en el histórico Mandarin Oriental, con vistas al río Chao Phraya desde 1958. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7234,100.5141",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Chim by Siam Wisdom",
+      "place_id": null,
+      "lat": 13.7285,
+      "lng": 100.5395,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa refinada del chef Chumpol Jangprai, con platos que reinterpretan recetas regionales. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7285,100.5395",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Haoma",
+      "place_id": null,
+      "lat": 13.7325,
+      "lng": 100.5665,
+      "category": "fine_dining",
+      "cuisine": "tailandés / granja a la mesa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de la granja a la mesa con huerto propio en la azotea; la cocina del chef Deepanker Khosla mezcla influencias tailandesas e indias. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7325,100.5665",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "IGNIV Bangkok",
+      "place_id": null,
+      "lat": 13.7458,
+      "lng": 100.5461,
+      "category": "fine_dining",
+      "cuisine": "suizo / internacional para compartir",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Concepto de alta cocina para compartir del chef suizo Andreas Caminada, dentro del Waldorf Astoria Bangkok. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7458,100.5461",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Maison Dunand",
+      "place_id": null,
+      "lat": 13.733,
+      "lng": 100.5672,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa de temporada del chef Arnaud Dunand Sauthier en Sukhumvit Soi 31. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.733,100.5672",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Saneh Jaan",
+      "place_id": null,
+      "lat": 13.7406,
+      "lng": 100.5465,
+      "category": "fine_dining",
+      "cuisine": "tailandés real",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Recetas tailandesas tradicionales y de la corte real, con presentación elegante en Wireless Road. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7406,100.5465",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Signature",
+      "place_id": null,
+      "lat": 13.7205,
+      "lng": 100.5322,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa contemporánea en lo alto de la torre Banyan Tree, junto al bar Vertigo. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7205,100.5322",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Blue by Alain Ducasse",
+      "place_id": null,
+      "lat": 13.7413,
+      "lng": 100.5462,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La firma de Alain Ducasse en Bangkok, cocina francesa de brasserie en el hotel The Athenee. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7413,100.5462",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Samrub Samrub Thai",
+      "place_id": null,
+      "lat": 13.7498,
+      "lng": 100.4928,
+      "category": "fine_dining",
+      "cuisine": "tailandés regional",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú degustación de cocina tailandesa regional poco conocida, con recetas históricas investigadas por el chef Prin Polsuk. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7498,100.4928",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nahm",
+      "place_id": null,
+      "lat": 13.722,
+      "lng": 100.533,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El restaurante que el chef australiano David Thompson hizo célebre mundialmente por su cocina tailandesa de archivo; hoy continúa con una estrella Michelin en el COMO Metropolitan.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.722,100.533",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Bo.lan",
+      "place_id": null,
+      "lat": 13.7295,
+      "lng": 100.581,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin",
+        "tv_show"
+      ],
+      "description": "Cocina tailandesa de temporada sin adaptar al paladar extranjero, de los chefs Bo Songvisava y Dylan Jones, ambos antiguos discípulos de David Thompson en el Nahm de Londres. La chef Bo fue perfilada en la quinta temporada de 'Chef's Table' de Netflix (2018). Una estrella Michelin.",
+      "source_url": "https://bk.asia-city.com/restaurants/news/bolans-chef-bo-to-feature-fifth-season-netflixs-chefs-table",
+      "source_type": "tv_show",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7295,100.581",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Aksorn",
+      "place_id": null,
+      "lat": 13.744,
+      "lng": 100.542,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Proyecto del chef Chumpol Jangprai dedicado a preservar recetas tailandesas en vías de desaparición. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.744,100.542",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Mia",
+      "place_id": null,
+      "lat": 13.7328,
+      "lng": 100.5658,
+      "category": "fine_dining",
+      "cuisine": "tailandés contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa contemporánea de autor en Sukhumvit Soi 31. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7328,100.5658",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "NAWA",
+      "place_id": null,
+      "lat": 13.7443,
+      "lng": 100.5453,
+      "category": "fine_dining",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa en una azotea con vistas al parque Lumpini, en la torre Sindhorn Midtown. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7443,100.5453",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "INDDEE",
+      "place_id": null,
+      "lat": 13.713,
+      "lng": 100.543,
+      "category": "fine_dining",
+      "cuisine": "tailandés contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa contemporánea de estilo tapas en Yen Akat, aplicando técnica moderna a recetas caseras. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.713,100.543",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Elements",
+      "place_id": null,
+      "lat": 13.734,
+      "lng": 100.548,
+      "category": "fine_dining",
+      "cuisine": "europeo contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina europea contemporánea inspirada en el restaurante Ciel Bleu de Ámsterdam, dentro del hotel Okura Prestige. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.734,100.548",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Coda",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.535,
+      "category": "fine_dining",
+      "cuisine": "internacional",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menú degustación de cocina internacional contemporánea en el distrito de Sathorn. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.535",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "AVANT",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.54,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa de autor de apertura reciente, reconocida con una estrella Michelin en la edición 2025 de la guía.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.54",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "GOAT",
+      "place_id": null,
+      "lat": 13.7404,
+      "lng": 100.5062,
+      "category": "fine_dining",
+      "cuisine": "internacional / vino natural",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Bar de vinos naturales y cocina de autor en el histórico barrio ribereño de Songwat. Una estrella Michelin en la edición 2025.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7404,100.5062",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Sri Trat",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.529,
+      "category": "fine_dining",
+      "cuisine": "tailandés del este (Trat)",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de la provincia oriental de Trat, poco representada en Bangkok, servida en una casa restaurada de Sathorn. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.529",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Saawaan",
+      "place_id": null,
+      "lat": 13.728,
+      "lng": 100.514,
+      "category": "fine_dining",
+      "cuisine": "tailandés contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina tailandesa contemporánea que aplica técnicas refinadas a sabores tradicionales intensos, en Charoenkrung. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.728,100.514",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Le Du",
+      "place_id": null,
+      "lat": 13.7237,
+      "lng": 100.5326,
+      "category": "fine_dining",
+      "cuisine": "tailandés contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Ingredientes tailandeses de temporada de todo el país reinterpretados por el chef Thitid “Ton” Tassanakajohn. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7237,100.5326",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Jeh O Chula",
+      "place_id": null,
+      "lat": 13.7328,
+      "lng": 100.5283,
+      "category": "street_food",
+      "cuisine": "tailandés / fideos picantes",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "viral_tiktok"
+      ],
+      "description": "Puesto nocturno de fideos picantes al estilo tom yum cerca de Chulalongkorn, hecho viral en redes sociales y reconocido con un Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7328,100.5283",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Go-Ang Kaomunkai Pratunam",
+      "place_id": null,
+      "lat": 13.7515,
+      "lng": 100.5405,
+      "category": "street_food",
+      "cuisine": "tailandés / arroz con pollo",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "El arroz con pollo estilo hainanés más famoso de Bangkok, sirviendo cerca del mercado de Pratunam desde hace décadas. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7515,100.5405",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Nai Ek Roll Noodle",
+      "place_id": null,
+      "lat": 13.7391,
+      "lng": 100.507,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / fideos enrollados",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Guay jub -fideos enrollados en caldo de pimienta- en Yaowarat desde hace generaciones. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 34,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7391,100.507",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Pa Aew",
+      "place_id": null,
+      "lat": 13.7517,
+      "lng": 100.501,
+      "category": "street_food",
+      "cuisine": "tailandés / curry callejero",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Puesto callejero de curries y salteados frente al Wat Suthat, cocinado por una sola mujer sobre la acera. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7517,100.501",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Rut & Lek Seafood",
+      "place_id": null,
+      "lat": 13.7222,
+      "lng": 100.5292,
+      "category": "street_food",
+      "cuisine": "tailandés / mariscos",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Marisco salteado picante servido en mesas plegables en la calle de Suan Plu desde 1980. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 36,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7222,100.5292",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Raan Khao Kha Moo Charoen Saeng",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.4875,
+      "category": "street_food",
+      "cuisine": "tailandés / pierna de cerdo estofada",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Pierna de cerdo estofada durante horas y servida sobre arroz, un clásico del lado de Thonburi. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.4875",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Guay Tiew Kua Gai Suan Mali",
+      "place_id": null,
+      "lat": 13.7481,
+      "lng": 100.5152,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / fideos salteados secos",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Fideos planos salteados en seco con pollo y huevo, en el barrio de Suan Mali desde los años 40. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7481,100.5152",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Nai Mong Hoi Thod",
+      "place_id": null,
+      "lat": 13.7396,
+      "lng": 100.5074,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / tortilla de ostras",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Tortilla de ostras crujiente cocinada sobre wok de carbón en Yaowarat, referencia de Chinatown desde tres generaciones. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7396,100.5074",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Wattana Panich",
+      "place_id": null,
+      "lat": 13.7246,
+      "lng": 100.5862,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / sopa de fideos con res",
+      "tags": [
+        "clasico",
+        "viral_social"
+      ],
+      "description": "Sopa de fideos con res cocinada en la misma olla de caldo desde hace más de 50 años, que nunca se apaga ni se vacía por completo. Se ha vuelto viral en redes por ese caldo perpetuo.",
+      "source_url": "https://danielfooddiary.com/2022/12/01/wattanapanich/",
+      "source_type": "viral_social",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7246,100.5862",
+      "distinction": null
+    },
+    {
+      "name": "Prachak Pet Yang",
+      "place_id": null,
+      "lat": 13.7255,
+      "lng": 100.5155,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / pato asado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pato asado colgado en la vitrina desde 1909, una de las instituciones de pato más antiguas de Charoenkrung.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7255,100.5155",
+      "distinction": null
+    },
+    {
+      "name": "Somtam Nua",
+      "place_id": null,
+      "lat": 13.746,
+      "lng": 100.5338,
+      "category": "street_food",
+      "cuisine": "tailandés del noreste / som tam",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Ensalada de papaya verde (som tam) y platos isaan en Siam Square, con fila constante desde hace más de dos décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.746,100.5338",
+      "distinction": null
+    },
+    {
+      "name": "Soi Polo Fried Chicken",
+      "place_id": null,
+      "lat": 13.733,
+      "lng": 100.544,
+      "category": "street_food",
+      "cuisine": "tailandés del noreste / pollo frito",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Pollo frito con ajo al estilo isaan en un callejón cerca del parque Lumpini, visitado por Anthony Bourdain durante su paso por Bangkok.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 43,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.733,100.544",
+      "distinction": null
+    },
+    {
+      "name": "Chote Chitr",
+      "place_id": null,
+      "lat": 13.7515,
+      "lng": 100.5,
+      "category": "street_food",
+      "cuisine": "tailandés clásico",
+      "tags": [
+        "bourdain",
+        "clasico",
+        "michelin"
+      ],
+      "description": "Diminuto restaurante familiar de cocina tailandesa clásica en el casco antiguo, en la misma esquina desde los años 40. Elogiado por Anthony Bourdain y con reconocimiento Michelin.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 44,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7515,100.5",
+      "distinction": null
+    },
+    {
+      "name": "On Lok Yun",
+      "place_id": null,
+      "lat": 13.75,
+      "lng": 100.4993,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / desayuno",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería tailandesa-china de desayuno con tostadas y huevos revueltos suaves, abierta desde 1933 cerca del Monumento a la Democracia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.75,100.4993",
+      "distinction": null
+    },
+    {
+      "name": "Mont Nom Sod",
+      "place_id": null,
+      "lat": 13.7715,
+      "lng": 100.5206,
+      "category": "street_food",
+      "cuisine": "tailandés / pan tostado y leche",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pan tostado con mantequilla acompañado de leche fresca, una institución de la merienda tailandesa desde 1964.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7715,100.5206",
+      "distinction": null
+    },
+    {
+      "name": "Kor Panich",
+      "place_id": null,
+      "lat": 13.7527,
+      "lng": 100.499,
+      "category": "street_food",
+      "cuisine": "tailandés / mango con arroz glutinoso",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mango con arroz glutinoso y leche de coco, vendido en la misma esquina de Tanao Road desde 1932.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7527,100.499",
+      "distinction": null
+    },
+    {
+      "name": "T&K Seafood",
+      "place_id": null,
+      "lat": 13.7401,
+      "lng": 100.5077,
+      "category": "street_food",
+      "cuisine": "tailandés / mariscos callejeros",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mesas plegables de mariscos a la parrilla en Soi Phadungdao, uno de los puntos de mariscos callejeros más conocidos de Chinatown.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7401,100.5077",
+      "distinction": null
+    },
+    {
+      "name": "Hua Seng Hong",
+      "place_id": null,
+      "lat": 13.7406,
+      "lng": 100.5086,
+      "category": "restaurant",
+      "cuisine": "chino-tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante chino-tailandés de aletas de tiburón y nido de pájaro en la calle principal de Yaowarat, institución de Chinatown desde 1980.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7406,100.5086",
+      "distinction": null
+    },
+    {
+      "name": "Khao Soi Islam",
+      "place_id": null,
+      "lat": 13.727,
+      "lng": 100.5145,
+      "category": "street_food",
+      "cuisine": "tailandés musulmán / khao soi",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Khao soi al estilo musulmán tailandés, servido cerca de la mezquita Haroon desde hace más de 70 años -algo poco común en Bangkok.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.727,100.5145",
+      "distinction": null
+    },
+    {
+      "name": "P'Aor Tom Yum Noodle",
+      "place_id": null,
+      "lat": 13.78,
+      "lng": 100.544,
+      "category": "street_food",
+      "cuisine": "tailandés / fideos de barco tom yum",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Fideos de barco estilo tom yum con caldo intensamente picante y agrio, en el barrio de Ari. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 51,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.78,100.544",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Err Urban Rustic Thai",
+      "place_id": null,
+      "lat": 13.746,
+      "lng": 100.4952,
+      "category": "restaurant",
+      "cuisine": "tailandés rústico",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Comida callejera tailandesa elevada -carnes secas, curris y cócteles- del equipo detrás de Le Du, cerca del Wat Pho. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 52,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.746,100.4952",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Jok Prince",
+      "place_id": null,
+      "lat": 13.746,
+      "lng": 100.529,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / congee",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Congee de cerdo con huevo de siglo, servido desde un pequeño local familiar en un callejón de Pathumwan desde los años 40.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.746,100.529",
+      "distinction": null
+    },
+    {
+      "name": "Krua Apsorn (Din So)",
+      "place_id": null,
+      "lat": 13.7517,
+      "lng": 100.5008,
+      "category": "restaurant",
+      "cuisine": "tailandés / real",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "La sede original de Krua Apsorn en Din So Road, cuna de las mismas recetas de cocina real heredadas de la cocinera de la Princesa Madre. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7517,100.5008",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Or Tor Kor Market",
+      "place_id": null,
+      "lat": 13.8,
+      "lng": 100.5502,
+      "category": "market",
+      "cuisine": "tailandés / mercado de alimentos frescos",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Mercado de alimentos frescos frente a Chatuchak, elegido por CNN en 2017 como el cuarto mejor mercado fresco del mundo por la calidad de su fruta y comida preparada.",
+      "source_url": "https://www.bangkokpost.com/thailand/general/1234794/cnn-or-tor-kor-among-worlds-best-fresh-markets",
+      "source_type": "critic",
+      "rank": 55,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.8,100.5502",
+      "distinction": null
+    },
+    {
+      "name": "Talad Rot Fai Ratchada",
+      "place_id": null,
+      "lat": 13.7658,
+      "lng": 100.568,
+      "category": "market",
+      "cuisine": "tailandés / mercado nocturno",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Mercado nocturno junto a Esplanade Ratchadapisek, con puestos de comida, bares en contenedores y ambiente de mercado de trenes vintage.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7658,100.568",
+      "distinction": null
+    },
+    {
+      "name": "Khlong Lat Mayom Floating Market",
+      "place_id": null,
+      "lat": 13.7652,
+      "lng": 100.3652,
+      "category": "market",
+      "cuisine": "tailandés / mercado flotante",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado flotante de fin de semana en un canal de Thonburi, con vendedores en botes y comida tailandesa local, más cercano y menos turístico que Damnoen Saduak.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7652,100.3652",
+      "distinction": null
+    },
+    {
+      "name": "Chatuchak Weekend Market",
+      "place_id": null,
+      "lat": 13.7999,
+      "lng": 100.5541,
+      "category": "market",
+      "cuisine": "tailandés / mercado y comida callejera",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "El mercado de fin de semana más grande de Tailandia, con miles de puestos y una sección de comida callejera que reúne cocina de todas las regiones del país.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7999,100.5541",
+      "distinction": null
+    },
+    {
+      "name": "Wang Lang Market",
+      "place_id": null,
+      "lat": 13.7592,
+      "lng": 100.4853,
+      "category": "market",
+      "cuisine": "tailandés / mercado local",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado local del lado de Thonburi, junto al hospital Siriraj, conocido por sus dulces tailandeses tradicionales y comida económica lejos del circuito turístico.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7592,100.4853",
+      "distinction": null
+    },
+    {
+      "name": "Sky Bar",
+      "place_id": null,
+      "lat": 13.7203,
+      "lng": 100.5146,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "tv_show",
+        "viral_social"
+      ],
+      "description": "Bar en la azotea 63 de la State Tower, hecho mundialmente famoso tras aparecer en 'Resacón en Las Vegas 2'.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "rank": 60,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7203,100.5146",
+      "distinction": null
+    },
+    {
+      "name": "Vertigo and Moon Bar",
+      "place_id": null,
+      "lat": 13.7205,
+      "lng": 100.5322,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar y restaurante al aire libre en el piso 61 del Banyan Tree, uno de los rooftops pioneros de Bangkok.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 61,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7205,100.5322",
+      "distinction": null
+    },
+    {
+      "name": "Octave Rooftop Lounge",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.585,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar en tres niveles sobre el Marriott Sukhumvit, con vistas de 360 grados del horizonte de Bangkok.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 62,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.585",
+      "distinction": null
+    },
+    {
+      "name": "Above Eleven",
+      "place_id": null,
+      "lat": 13.7395,
+      "lng": 100.5568,
+      "category": "bar",
+      "cuisine": "peruano-asiático",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar y restaurante en la azotea del Fraser Suites, con cocina de fusión peruano-asiática y vistas de Sukhumvit.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 63,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7395,100.5568",
+      "distinction": null
+    },
+    {
+      "name": "Bar Us",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.5145,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería de Charoenkrung nombrada Mejor Bar de Tailandia 2025 y clasificada #4 en Asia's 50 Best Bars.",
+      "source_url": "https://www.theworlds50best.com/bars/asia/the-list/bar-us.html",
+      "source_type": "critic",
+      "rank": 64,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.5145",
+      "distinction": null
+    },
+    {
+      "name": "Dry Wave Cocktail Studio",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.514,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Estudio de coctelería de Bangkok que subió al puesto #5 de Asia's 50 Best Bars en 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 65,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.514",
+      "distinction": null
+    },
+    {
+      "name": "BKK Social Club",
+      "place_id": null,
+      "lat": 13.7205,
+      "lng": 100.523,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería dentro del Four Seasons Bangkok, dirigida por el bartender Bannawat Bunnak, clasificada en Asia's 50 Best Bars.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 66,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7205,100.523",
+      "distinction": null
+    },
+    {
+      "name": "Vesper",
+      "place_id": null,
+      "lat": 13.728,
+      "lng": 100.527,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería y restaurante en Silom, veterano habitual de la lista Asia's 50 Best Bars y ganador del 'Legend of the List Award' en 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 67,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.728,100.527",
+      "distinction": null
+    },
+    {
+      "name": "Backstage Cocktail Bar",
+      "place_id": null,
+      "lat": 13.7275,
+      "lng": 100.515,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería escondida tras una puerta sin señalizar en Charoenkrung, parte de la escena de bares de autor de la zona.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 68,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7275,100.515",
+      "distinction": null
+    },
+    {
+      "name": "Teens of Thailand",
+      "place_id": null,
+      "lat": 13.7372,
+      "lng": 100.5063,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de gin en un antiguo taller de reparación de neumáticos en Soi Nana, uno de los pioneros de la revitalización de bares en Chinatown.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7372,100.5063",
+      "distinction": null
+    },
+    {
+      "name": "Tropic City",
+      "place_id": null,
+      "lat": 13.729,
+      "lng": 100.515,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de cócteles tropicales de estilo tiki en Charoenkrung, habitual de las listas de mejores bares de Asia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 70,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.729,100.515",
+      "distinction": null
+    },
+    {
+      "name": "Rabbit Hole",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.58,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería de Thonglor con cócteles de autor, clasificada en repetidas ocasiones entre los mejores bares de Asia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.58",
+      "distinction": null
+    },
+    {
+      "name": "Bamboo Bar",
+      "place_id": null,
+      "lat": 13.7233,
+      "lng": 100.514,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de jazz clásico del Mandarin Oriental, uno de los bares de hotel más antiguos y legendarios de Bangkok.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 72,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7233,100.514",
+      "distinction": null
+    },
+    {
+      "name": "Blue Elephant",
+      "place_id": null,
+      "lat": 13.722,
+      "lng": 100.524,
+      "category": "restaurant",
+      "cuisine": "tailandés real",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina tailandesa real en una mansión colonial de Sathorn, parte de una marca que empezó en Bruselas en 1980 antes de volver a Tailandia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.722,100.524",
+      "distinction": null
+    },
+    {
+      "name": "Baan Khanitha",
+      "place_id": null,
+      "lat": 13.722,
+      "lng": 100.53,
+      "category": "restaurant",
+      "cuisine": "tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante tailandés clásico de larga trayectoria en Sathorn, popular entre comensales locales y visitantes desde los años 90.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 74,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.722,100.53",
+      "distinction": null
+    },
+    {
+      "name": "Issaya Siamese Club",
+      "place_id": null,
+      "lat": 13.728,
+      "lng": 100.545,
+      "category": "restaurant",
+      "cuisine": "tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina tailandesa creativa del chef Ian Kittichai en una villa de los años 20 con jardín, en Soi Sri Aksorn.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 75,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.728,100.545",
+      "distinction": null
+    },
+    {
+      "name": "Eat Me Restaurant",
+      "place_id": null,
+      "lat": 13.727,
+      "lng": 100.5335,
+      "category": "restaurant",
+      "cuisine": "internacional contemporáneo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cocina internacional contemporánea y galería de arte en un callejón de Silom, abierto desde 2003 con servicio hasta tarde.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.727,100.5335",
+      "distinction": null
+    },
+    {
+      "name": "Supanniga Eating Room",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.58,
+      "category": "restaurant",
+      "cuisine": "tailandés / recetas familiares",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Recetas familiares del este de Tailandia y de la isla de Trat, recuperadas por la restauradora conocida como Chef Tam, hoy con varias sucursales por la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.58",
+      "distinction": null
+    },
+    {
+      "name": "Cabbages & Condoms",
+      "place_id": null,
+      "lat": 13.7365,
+      "lng": 100.556,
+      "category": "restaurant",
+      "cuisine": "tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante temático fundado por la fundación de planificación familiar PDA, decorado con condones en lugar de flores; sus ganancias financian programas de salud.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 78,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7365,100.556",
+      "distinction": null
+    },
+    {
+      "name": "Roti Mataba",
+      "place_id": null,
+      "lat": 13.7645,
+      "lng": 100.4962,
+      "category": "street_food",
+      "cuisine": "tailandés-musulmán / roti",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Roti y curry murtabak al estilo musulmán tailandés en Phra Athit desde 1943, cerca de Khao San Road.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 79,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7645,100.4962",
+      "distinction": null
+    },
+    {
+      "name": "Ba Hao",
+      "place_id": null,
+      "lat": 13.7405,
+      "lng": 100.5075,
+      "category": "bar",
+      "cuisine": "chino-tailandés",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Café-bar de tres pisos con estética retro de Shanghái en Soi Nana, con cocina y cócteles chino-tailandeses.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 80,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7405,100.5075",
+      "distinction": null
+    },
+    {
+      "name": "The Muslim Restaurant",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.5155,
+      "category": "restaurant",
+      "cuisine": "tailandés musulmán",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante tailandés-musulmán familiar en Charoenkrung, sirviendo curries y biryani desde 1944.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.5155",
+      "distinction": null
+    },
+    {
+      "name": "After You Dessert Cafe",
+      "place_id": null,
+      "lat": 13.746,
+      "lng": 100.5333,
+      "category": "cafe",
+      "cuisine": "postres tailandeses",
+      "tags": [
+        "viral_social",
+        "timeout"
+      ],
+      "description": "Cafetería de postres nacida en Siam Square, famosa por su 'Shibuya Honey Toast', que se volvió viral y dio origen a una cadena por todo el país.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 82,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.746,100.5333",
+      "distinction": null
+    },
+    {
+      "name": "Audrey Cafe Des Fleurs",
+      "place_id": null,
+      "lat": 13.7295,
+      "lng": 100.579,
+      "category": "cafe",
+      "cuisine": "tailandés-francés",
+      "tags": [
+        "viral_social",
+        "timeout"
+      ],
+      "description": "Café-restaurante decorado con flores colgantes en Thonglor, muy fotografiado en redes sociales, con cocina de fusión tailandesa-francesa.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 83,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7295,100.579",
+      "distinction": null
+    },
+    {
+      "name": "Rocket Coffeebar",
+      "place_id": null,
+      "lat": 13.73,
+      "lng": 100.5752,
+      "category": "cafe",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Una de las cafeterías de especialidad pioneras de Bangkok, con varias sucursales y tueste propio.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 84,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.73,100.5752",
+      "distinction": null
+    },
+    {
+      "name": "Roast",
+      "place_id": null,
+      "lat": 13.723,
+      "lng": 100.53,
+      "category": "cafe",
+      "cuisine": "internacional / brunch",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cafetería de brunch de larga trayectoria en Bangkok, con café de especialidad y platos internacionales, popular entre expatriados desde hace más de una década.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 85,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.723,100.53",
+      "distinction": null
+    },
+    {
+      "name": "Royal India",
+      "place_id": null,
+      "lat": 13.744,
+      "lng": 100.4958,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante indio familiar escondido en un callejón de Pahurat, el barrio conocido como la Pequeña India de Bangkok, desde los años 70.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.744,100.4958",
+      "distinction": null
+    },
+    {
+      "name": "Savoey Seafood",
+      "place_id": null,
+      "lat": 13.746,
+      "lng": 100.54,
+      "category": "restaurant",
+      "cuisine": "tailandés / mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de mariscos tailandeses fundada en 1972, con el curry de cangrejo y el pescado al vapor con limón entre sus platos insignia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 87,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.746,100.54",
+      "distinction": null
+    },
+    {
+      "name": "Somtum Der",
+      "place_id": null,
+      "lat": 13.7245,
+      "lng": 100.5325,
+      "category": "restaurant",
+      "cuisine": "tailandés del noreste / som tam",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de cocina isaan centrado en variedades de ensalada de papaya (som tam), con sucursales en Silom y Thonglor.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 88,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7245,100.5325",
+      "distinction": null
+    },
+    {
+      "name": "Charoen Saeng Silom Roast Duck",
+      "place_id": null,
+      "lat": 13.728,
+      "lng": 100.531,
+      "category": "street_food",
+      "cuisine": "tailandés-chino / pato asado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Arroz con pato asado y cerdo char siu, sirviendo en la calle Silom desde los años 60.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.728,100.531",
+      "distinction": null
+    },
+    {
+      "name": "Canvas",
+      "place_id": null,
+      "lat": 13.779,
+      "lng": 100.546,
+      "category": "restaurant",
+      "cuisine": "tailandés / internacional",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante y espacio de arte en el barrio de Ari, con cocina que mezcla platos tailandeses e internacionales en un ambiente informal y creativo.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 90,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.779,100.546",
+      "distinction": null
+    },
+    {
+      "name": "100 Mahaseth",
+      "place_id": null,
+      "lat": 13.729,
+      "lng": 100.513,
+      "category": "restaurant",
+      "cuisine": "tailandés moderno",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante de cocina tailandesa moderna en una casa restaurada de Mahaseth Road, en el barrio de Charoenkrung.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 91,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.729,100.513",
+      "distinction": null
+    },
+    {
+      "name": "Sugar Ray",
+      "place_id": null,
+      "lat": 13.727,
+      "lng": 100.5145,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería de temática lúdica en Charoenkrung, parte de la ola de bares de autor que renovó la escena nocturna de la zona.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 92,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.727,100.5145",
+      "distinction": null
+    },
+    {
+      "name": "Opium Bar",
+      "place_id": null,
+      "lat": 13.7275,
+      "lng": 100.5148,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Coctelería ribereña de Charoenkrung clasificada entre los mejores bares de Asia en 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 93,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7275,100.5148",
+      "distinction": null
+    },
+    {
+      "name": "Baan Somtum",
+      "place_id": null,
+      "lat": 13.7462,
+      "lng": 100.5352,
+      "category": "restaurant",
+      "cuisine": "tailandés del noreste",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante especializado en som tam y platos isaan, con distintos niveles de picante para elegir.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7462,100.5352",
+      "distinction": null
+    },
+    {
+      "name": "Cheevit Cheeva",
+      "place_id": null,
+      "lat": 13.729,
+      "lng": 100.5145,
+      "category": "restaurant",
+      "cuisine": "tailandés moderno",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cocina tailandesa moderna y creativa en Charoenkrung, del chef Napol “Joe” Jantraget, con un menú que cambia según el mercado.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.729,100.5145",
+      "distinction": null
+    },
+    {
+      "name": "Le Beaulieu",
+      "place_id": null,
+      "lat": 13.733,
+      "lng": 100.559,
+      "category": "restaurant",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró francés clásico en Sukhumvit Soi 19, un favorito de larga data de la comunidad francesa de Bangkok desde los años 90.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.733,100.559",
+      "distinction": null
+    },
+    {
+      "name": "Kalpapruek",
+      "place_id": null,
+      "lat": 13.744,
+      "lng": 100.535,
+      "category": "restaurant",
+      "cuisine": "tailandés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de restaurantes tailandeses fundada en 1958, conocida por su pad thai y su cerdo estofado con huevo, con locales por toda la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.744,100.535",
+      "distinction": null
+    },
+    {
+      "name": "Charmgang",
+      "place_id": null,
+      "lat": 13.7285,
+      "lng": 100.5798,
+      "category": "restaurant",
+      "cuisine": "tailandés / curry",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Restaurante especializado en curries tailandeses hechos con pasta de curry molida a mano, en Thonglor. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 98,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7285,100.5798",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Sing Sing Theater",
+      "place_id": null,
+      "lat": 13.7275,
+      "lng": 100.5155,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de temática china de los años 30 en Charoenkrung, con cócteles y espectáculos, habitual en las listas de mejores bares de Asia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 99,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.7275,100.5155",
+      "distinction": null
+    },
+    {
+      "name": "Laab Ubon",
+      "place_id": null,
+      "lat": 13.771,
+      "lng": 100.551,
+      "category": "restaurant",
+      "cuisine": "tailandés del noreste / laab",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante isaan especializado en laab (ensalada de carne picada con especias), con un menú extenso de platos del noreste tailandés.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=13.771,100.551",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,
