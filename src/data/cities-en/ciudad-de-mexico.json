@@ -22,6 +22,386 @@
     "El Huequito": {
       "cuisine": "Mexican / tacos al pastor",
       "description": "A Centro Histórico taquería known for its tacos al pastor. Anthony Bourdain tried them on 'No Reservations' and called them \"shockingly good.\""
+    },
+    "Quintonil": {
+      "cuisine": "Contemporary Mexican",
+      "description": "Seasonal cooking from Jorge Vallejo and Alejandra Flores in Polanco, with its own kitchen garden. Two Michelin stars and No. 3 on The World's 50 Best Restaurants list in 2025."
+    },
+    "Sud 777": {
+      "cuisine": "Contemporary Mexican",
+      "description": "Edgar Núñez's restaurant in Jardines del Pedregal, built around ingredients from local growers and its own garden. Holds one Michelin star."
+    },
+    "Rosetta": {
+      "cuisine": "Mexican-Italian",
+      "description": "Elena Reygadas's restaurant in a Porfirian-era mansion in Roma Norte, crossing Italian technique with Mexican seasonal ingredients. Holds one Michelin star."
+    },
+    "Em": {
+      "cuisine": "Mexican",
+      "description": "Chef Lucho Martínez's project built around seasonal Mexican cooking and house-made ferments. Holds one Michelin star since 2024."
+    },
+    "Esquina Común": {
+      "cuisine": "Mexican",
+      "description": "A dining room built around corn and preservation and fermentation techniques. Holds one Michelin star."
+    },
+    "Expendio de Maíz": {
+      "cuisine": "Mexican / corn-focused",
+      "description": "No fixed menu — the kitchen decides what to serve each night based on the corn and seasonal ingredients on hand. Holds one Michelin star."
+    },
+    "Masala y Maíz": {
+      "cuisine": "Indian-Mexican fusion",
+      "description": "Chefs Norma Listman and Saqib Keval fuse their roots in India, East Africa and Mexico. Holds one Michelin star."
+    },
+    "Máximo Bistrot": {
+      "cuisine": "Mexican-French",
+      "description": "Chef Eduardo García's market-driven bistro in Roma Norte, blending French technique with Mexican ingredients. Anthony Bourdain dined here on 'Parts Unknown' (2014); it now holds a Michelin star."
+    },
+    "La Once Mil": {
+      "cuisine": "Mexican",
+      "description": "A seasonal Mexican restaurant in Miguel Hidalgo, awarded a Michelin star."
+    },
+    "Contramar": {
+      "cuisine": "Seafood",
+      "description": "Roma Norte's most popular seafood dining room since 1998, from chef Gabriela Cámara. The pescado a la talla and tuna tostada are reason enough to line up without a reservation. Michelin Bib Gourmand."
+    },
+    "Taquería Los Cocuyos": {
+      "cuisine": "Mexican / tacos",
+      "description": "A 24-hour sidewalk taquería in the Centro Histórico, famous for its eye-meat and suadero tacos. Michelin Bib Gourmand."
+    },
+    "El Vilsito": {
+      "cuisine": "Mexican / tacos al pastor",
+      "description": "By day it's an auto-parts shop; by night the al pastor spit rolls out to the sidewalk and it becomes one of the city's most beloved taquerías. Michelin Bib Gourmand."
+    },
+    "Taquería El Jarocho": {
+      "cuisine": "Mexican / tacos",
+      "description": "A Cuauhtémoc taquería awarded a Bib Gourmand by the Michelin Guide for the quality of its stewed-meat and carnitas tacos."
+    },
+    "Tacos Charly": {
+      "cuisine": "Mexican / tacos",
+      "description": "A neighborhood taquería in Tlalpan distinguished with a Bib Gourmand by the Michelin Guide."
+    },
+    "Taquería Los Milanesos": {
+      "cuisine": "Mexican / breaded-cutlet tacos",
+      "description": "Milanesa-taco specialists in Álvaro Obregón, awarded a Bib Gourmand by the Michelin Guide."
+    },
+    "Raíz": {
+      "cuisine": "Mexican",
+      "description": "A Mexican dining room in Miguel Hidalgo recognized with a Bib Gourmand for its value for money."
+    },
+    "Comedor Jacinta": {
+      "cuisine": "Mexican",
+      "description": "A home-style Mexican dining room in Polanco, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Comal Oculto": {
+      "cuisine": "Mexican",
+      "description": "Comal-driven Mexican cooking in Miguel Hidalgo, distinguished with a Bib Gourmand by the Michelin Guide."
+    },
+    "Los Consentidos del Barrio": {
+      "cuisine": "Mexican / tacos",
+      "description": "A Benito Juárez taquería recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Galanga Thai House": {
+      "cuisine": "Thai",
+      "description": "Thai cooking in Cuauhtémoc, uncommon for the city, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Vigneron": {
+      "cuisine": "French",
+      "description": "A French-inspired bistro in Cuauhtémoc with an extensive wine list, recognized with a Bib Gourmand."
+    },
+    "Pargot": {
+      "cuisine": "Mexican / seafood",
+      "description": "Mexican seafood cooking in Cuauhtémoc, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Filigrana": {
+      "cuisine": "Mexican",
+      "description": "Chef-driven Mexican cooking in Cuauhtémoc, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Fugaz": {
+      "cuisine": "Mediterranean-Mexican",
+      "description": "Cooking that crosses the Mediterranean with Mexico in Roma, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Caracol de Mar": {
+      "cuisine": "Mexican-Peruvian / seafood",
+      "description": "A seafood bar with Peruvian influences in Roma, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Jowong": {
+      "cuisine": "Korean",
+      "description": "Korean cooking in Cuauhtémoc, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Galea": {
+      "cuisine": "Italian",
+      "description": "An Italian trattoria in Roma, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Ultramarinos Demar": {
+      "cuisine": "Seafood",
+      "description": "A Spanish-style seafood and tinned-fish bar in Cuauhtémoc, recognized with a Bib Gourmand by the Michelin Guide."
+    },
+    "Handshake Speakeasy": {
+      "cuisine": null,
+      "description": "A speakeasy hidden inside a hotel in Colonia Juárez, named Best Bar in North America at North America's 50 Best Bars two years running."
+    },
+    "Licorería Limantour": {
+      "cuisine": null,
+      "description": "The cocktail bar that put Roma Norte on the world map; a regular on The World's 50 Best Bars list for over a decade."
+    },
+    "Baltra Bar": {
+      "cuisine": null,
+      "description": "A neighborhood bar with a café-like setting and finely honed classic cocktails, from the team behind Licorería Limantour. A regular on North America's 50 Best Bars."
+    },
+    "Cantina La Mascota": {
+      "cuisine": "Mexican",
+      "description": "A classic cantina downtown where Anthony Bourdain ate carnitas and a fava-bean-and-cactus soup during his Mexico City visit on 'No Reservations'."
+    },
+    "Nicos": {
+      "cuisine": "Traditional Mexican",
+      "description": "A family institution in Clavería, run by Gerardo Vázquez Lugo, a benchmark for traditional Mexican cooking and an early champion of cooking with local growers' ingredients."
+    },
+    "Dulce Patria": {
+      "cuisine": "Mexican",
+      "description": "Chef Martha Ortiz's restaurant in Polanco, Mexican cooking staged as theater — color, national symbols and historically inspired dishes."
+    },
+    "Merotoro": {
+      "cuisine": "Mexican / Baja California",
+      "description": "Chef Jair Téllez's restaurant, bringing Baja California's seafood-and-vineyard cooking to Condesa."
+    },
+    "Sartoria": {
+      "cuisine": "Italian",
+      "description": "Hand-made pasta cooking in Roma Norte, one of the city's best-regarded Italian restaurants."
+    },
+    "Ticuchi": {
+      "cuisine": "Mexican / Oaxacan",
+      "description": "Enrique Olvera's project in Pujol's original Polanco space: pescatarian Oaxacan cooking alongside an extensive mezcal and agave-spirits list."
+    },
+    "Casa Virginia": {
+      "cuisine": "Mexican-French",
+      "description": "Chef Mónica Patiño's culinary legacy in Roma, Mexican-rooted cooking with French influence in a family-house setting."
+    },
+    "Tetetlán": {
+      "cuisine": "Mexican",
+      "description": "A café and restaurant inside a house designed by Luis Barragán in Jardines del Pedregal, serving Mesoamerican-rooted cooking alongside a local design shop."
+    },
+    "Molino El Pujol": {
+      "cuisine": "Mexican bakery",
+      "description": "Enrique Olvera's mill and bakery next to Pujol in Polanco, specializing in sourdough bread made with nixtamalized corn."
+    },
+    "Lardo": {
+      "cuisine": "Mediterranean",
+      "description": "A Mediterranean-leaning restaurant-bakery in Condesa, popular for breakfast and its house-baked bread."
+    },
+    "Panadería Rosetta": {
+      "cuisine": "Bakery",
+      "description": "Rosetta's sister bakery in Roma Norte, famous for its guava-filled concha, which regularly sells out before noon."
+    },
+    "Café Nin": {
+      "cuisine": "Mexican / café",
+      "description": "Elena Reygadas's café in Roma Norte with its own bakery, built for breakfasts and light lunches."
+    },
+    "Huset": {
+      "cuisine": "Nordic-Mexican",
+      "description": "A Scandinavian-inspired restaurant in Roma Norte, applying Nordic fermentation techniques to Mexican ingredients."
+    },
+    "Meroma": {
+      "cuisine": "Mexican-Mediterranean",
+      "description": "Merotoro's sister restaurant in Roma Norte, open-fire cooking with Mexican and Mediterranean influences."
+    },
+    "Anatol": {
+      "cuisine": "Contemporary Mexican",
+      "description": "A neighborhood restaurant in Condesa serving contemporary Mexican cooking on a short, frequently changing menu."
+    },
+    "El Parnita": {
+      "cuisine": "Mexican",
+      "description": "A contemporary antojería in Roma Norte, always packed, famous for its tuna tostada and shrimp tacos."
+    },
+    "Rokai": {
+      "cuisine": "Japanese / izakaya",
+      "description": "An izakaya in Escandón, part of chef Daniel Ovadía's group of Japanese restaurants, known for its grilled yakitori."
+    },
+    "Le Tachinomi Desu": {
+      "cuisine": "Japanese",
+      "description": "A Japanese standing bar next to Rokai in Escandón, modeled on Japan's tachinomiya, for sake and quick bites."
+    },
+    "Tori Tori": {
+      "cuisine": "Japanese",
+      "description": "A benchmark Japanese restaurant in Polanco, one of the pioneers of high-end Japanese cooking in the city."
+    },
+    "Kaito Del Valle": {
+      "cuisine": "Japanese / omakase",
+      "description": "An omakase sushi counter in Colonia Del Valle, specializing in fish imported directly from Japan."
+    },
+    "Café Tacuba": {
+      "cuisine": "Traditional Mexican",
+      "description": "A Centro Histórico restaurant open since 1912, with original tilework, stone-ground chocolate and a house mariachi band; the rock band Café Tacvba took its name from here."
+    },
+    "El Moro": {
+      "cuisine": "Churros",
+      "description": "A churrería in the Centro open since 1935, serving churros and hot chocolate around the clock."
+    },
+    "San Ángel Inn": {
+      "cuisine": "Traditional Mexican",
+      "description": "A restaurant set inside a 17th-century former Carmelite convent in San Ángel, celebrated for its margaritas and classic Mexican cooking."
+    },
+    "Hostería de Santo Domingo": {
+      "cuisine": "Traditional Mexican",
+      "description": "The city's oldest restaurant, open since 1860 near Plaza Santo Domingo; its signature dish is chiles en nogada."
+    },
+    "La Opera Bar": {
+      "cuisine": "Mexican / cantina",
+      "description": "A Centro Histórico cantina open since 1876, famous for the bullet hole in its ceiling that legend attributes to Pancho Villa during the Revolution."
+    },
+    "Salón Tenampa": {
+      "cuisine": "Mexican / cantina",
+      "description": "A cantina founded in 1925 on Plaza Garibaldi, the cradle of the city's mariachi tradition; it turned one hundred years old in 2025."
+    },
+    "Salón Corona": {
+      "cuisine": "Mexican / cantina",
+      "description": "A chain of Centro Histórico cantinas founded in 1928, a classic stop for draft beer and antojitos."
+    },
+    "Fonda Margarita": {
+      "cuisine": "Traditional Mexican",
+      "description": "A Del Valle breakfast fonda that opens at dawn, no written menu, famous for its lard-cooked beans."
+    },
+    "Dulcería de Celaya": {
+      "cuisine": "Traditional sweets",
+      "description": "A Centro Histórico sweet shop open since 1874, wooden cases full of traditional Mexican candies like milk jamoncillo and candied sweet potato."
+    },
+    "Pastelería Ideal": {
+      "cuisine": "Bakery",
+      "description": "A giant Centro bakery open since 1927, several floors of sweet bread and celebration cakes."
+    },
+    "Los Bisquets Obregón": {
+      "cuisine": "Mexican / café",
+      "description": "A café chain founded in 1958, a classic for café de olla, sweet bread and full Mexican breakfasts."
+    },
+    "Sanborns Casa de los Azulejos": {
+      "cuisine": "Mexican",
+      "description": "A restaurant set inside the 18th-century Palacio de los Azulejos, the flagship Sanborns location since 1919, famous for its patio and Tiffany stained-glass ceiling."
+    },
+    "Coox Hanal": {
+      "cuisine": "Yucatecan",
+      "description": "A third-floor Yucatecan dining room in the Centro Histórico since 1953, cochinita pibil, panuchos and lime soup, with a live trío on weekends."
+    },
+    "El Rey del Pavo": {
+      "cuisine": "Turkey tortas",
+      "description": "A Centro Histórico torta shop founded in 1910, the oldest in the city, specializing in turkey tortas."
+    },
+    "Taquería Orinoco": {
+      "cuisine": "Mexican / tacos al pastor",
+      "description": "A taquería chain born in Condesa, popular for its pineapple-topped al pastor tacos and neighborhood vibe."
+    },
+    "Antojitos La Guadalupana": {
+      "cuisine": "Mexican",
+      "description": "A neighborhood cantina in Coyoacán, always packed, famous for its squash-blossom quesadillas and grilled beef."
+    },
+    "Los Danzantes": {
+      "cuisine": "Contemporary Mexican",
+      "description": "A pioneer of mezcal-driven Mexican cooking in Coyoacán, open since 1994 facing the Jardín Centenario."
+    },
+    "Corazón de Maguey": {
+      "cuisine": "Mezcal bar",
+      "description": "A mezcal bar with a terrace facing Coyoacán's Jardín Centenario, one of the city's most complete mezcal lists."
+    },
+    "El Bajío": {
+      "cuisine": "Traditional Mexican",
+      "description": "A restaurant founded by Carmen 'Titita' Ramírez Degollado, a benchmark for regional Mexican cooking and basket tacos since its original Azcapotzalco location."
+    },
+    "Fonda San Ángel": {
+      "cuisine": "Traditional Mexican",
+      "description": "A restaurant facing Plaza San Jacinto in San Ángel, traditional Mexican cooking in a colonial setting, popular on Saturday Bazaar days."
+    },
+    "La Casa de Toño": {
+      "cuisine": "Mexican",
+      "description": "A chain that started in Roma, famous for its pozole and its endless lines; one of the city's most beloved and most photographed fondas on social media."
+    },
+    "Mercado de San Juan": {
+      "cuisine": "Gourmet market",
+      "description": "A gourmet market in the Centro specializing in exotic and seasonal ingredients, from imported cheeses to edible insects; a supply stop for many of the city's chefs."
+    },
+    "Mercado Roma": {
+      "cuisine": "Gourmet market",
+      "description": "A two-story food hall in Roma Norte, with dozens of food stalls and a craft-beer rooftop terrace."
+    },
+    "Mercado de Coyoacán": {
+      "cuisine": "Traditional market",
+      "description": "A traditional market in Coyoacán, famous for its tostada stalls and antojitos served amid flower and craft stands."
+    },
+    "Mercado de Medellín": {
+      "cuisine": "International market",
+      "description": "A market in Colonia Roma with a strong Latin American immigrant presence, known for its Cuban, Venezuelan and Caribbean food stalls."
+    },
+    "La Merced": {
+      "cuisine": "Traditional market",
+      "description": "The city's largest and oldest traditional market, the historic hub for fruit, vegetables and street food supply."
+    },
+    "El Tizoncito": {
+      "cuisine": "Mexican / tacos al pastor",
+      "description": "A Condesa taquería opened in 1966 by Concepción 'Doña Conchita' Cervantes, credited with inventing the taco al pastor."
+    },
+    "El Farolito": {
+      "cuisine": "Mexican / tacos al pastor",
+      "description": "A very popular al pastor taquería in Condesa, open into the small hours."
+    },
+    "El Fogoncito": {
+      "cuisine": "Mexican / tacos al pastor",
+      "description": "An al pastor taquería chain with several branches around the city, a classic late-night stop."
+    },
+    "El Turix": {
+      "cuisine": "Mexican / cochinita pibil",
+      "description": "A street stand in Polanco specializing solely in cochinita pibil, as a taco, torta, panucho or tamal; founded by Arturo Nabté, of Maya origin."
+    },
+    "El Pescadito": {
+      "cuisine": "Seafood / fish tacos",
+      "description": "A Baja California-style fish-and-shrimp taco chain, with branches across the city."
+    },
+    "Fisher's": {
+      "cuisine": "Seafood",
+      "description": "A classic seafood chain in the city since the 1970s, old-school shrimp cocktail and breaded fish."
+    },
+    "Café El Jarocho": {
+      "cuisine": "Coffee",
+      "description": "A Coyoacán coffee stand since 1953, café de olla and cappuccino served in a paper cup to go, always with a line out the door."
+    },
+    "Cafebrería El Péndulo": {
+      "cuisine": "Coffee",
+      "description": "A bookstore chain with an in-house café, with branches in Roma and Condesa set among plants and bookshelves."
+    },
+    "Buna": {
+      "cuisine": "Specialty coffee",
+      "description": "A specialty-coffee roaster and café with several branches across Roma and Condesa, part of the city's third-wave coffee scene."
+    },
+    "Almanegra Café": {
+      "cuisine": "Specialty coffee",
+      "description": "A specialty coffee shop born in 2014, minimalist and detail-obsessed, a benchmark of the Roma Norte coffee scene."
+    },
+    "Maque": {
+      "cuisine": "Bakery",
+      "description": "A Roma bakery known for its sourdough bread and French pastry, very popular for weekend breakfasts."
+    },
+    "La Docena": {
+      "cuisine": "Oyster bar",
+      "description": "An oyster and seafood bar in Roma Norte, a modern-cantina vibe with chef-driven cocktails."
+    },
+    "Broka Bistrot": {
+      "cuisine": "French-Mexican",
+      "description": "A bistro tucked into the patio of a Roma Norte mansion, French cooking with Mexican accents."
+    },
+    "Cicatriz Café": {
+      "cuisine": "Café / international",
+      "description": "A Condesa café with several branches around the city, popular for working and for international-style breakfasts."
+    },
+    "Blanco Colima": {
+      "cuisine": "Contemporary Mexican",
+      "description": "A restaurant in a Porfirian-era building in Roma Norte since 2015, with one of the city's most extensive mezcal lists."
+    },
+    "Bósforo": {
+      "cuisine": "Mezcal bar",
+      "description": "An unpretentious mezcal bar in the Centro Histórico, rustic atmosphere and one of the city's best mezcal selections."
+    },
+    "Cantina Tío Pepe": {
+      "cuisine": "Mexican / cantina",
+      "description": "The city's oldest cantina, open since 1869 on Motolinía street; it keeps its original interior, including the table bells once used to call the waiter."
+    },
+    "La Casa de las Sirenas": {
+      "cuisine": "Traditional Mexican",
+      "description": "A restaurant inside a 16th-century building steps from the Zócalo, with a 1754 terrace overlooking the Templo Mayor; traditional Mexican cooking and over 200 mezcals."
     }
   }
 }

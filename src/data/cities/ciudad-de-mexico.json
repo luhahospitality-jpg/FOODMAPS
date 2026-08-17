@@ -3,7 +3,7 @@
   "name": "Ciudad de México",
   "country": "México",
   "tagline": "El mole que fermenta hace más de una década, y el taco callejero que ganó —y perdió— una estrella Michelin.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -95,6 +95,1811 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4300772,-99.1387451"
+    },
+    {
+      "name": "Quintonil",
+      "place_id": null,
+      "lat": 19.4335,
+      "lng": -99.1963,
+      "category": "fine_dining",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "michelin",
+        "worlds50best"
+      ],
+      "description": "Cocina de temporada de Jorge Vallejo y Alejandra Flores en Polanco, con huerta propia. Dos estrellas Michelin y puesto número 3 en la lista The World's 50 Best Restaurants 2025.",
+      "source_url": "https://www.theworlds50best.com/the-list/quintonil.html",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4335,-99.1963",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Sud 777",
+      "place_id": null,
+      "lat": 19.3213,
+      "lng": -99.2043,
+      "category": "fine_dining",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de Edgar Núñez en Jardines del Pedregal, centrado en ingredientes de productores locales y un jardín propio. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3213,-99.2043",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Rosetta",
+      "place_id": null,
+      "lat": 19.4208,
+      "lng": -99.1626,
+      "category": "fine_dining",
+      "cuisine": "mexicano-italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La casa de Elena Reygadas en una mansión porfiriana de la Roma Norte, cocina que cruza Italia y México con ingredientes de temporada. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4208,-99.1626",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Em",
+      "place_id": null,
+      "lat": 19.4185,
+      "lng": -99.16,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Proyecto del chef Lucho Martínez centrado en cocina mexicana de temporada y fermentos propios. Una estrella Michelin desde 2024.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4185,-99.16",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Esquina Común",
+      "place_id": null,
+      "lat": 19.4172,
+      "lng": -99.1595,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Comedor de cocina mexicana centrado en el maíz y en técnicas de conservación y fermentación. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4172,-99.1595",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Expendio de Maíz",
+      "place_id": null,
+      "lat": 19.4183,
+      "lng": -99.1618,
+      "category": "restaurante",
+      "cuisine": "mexicano / maíz",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sin menú fijo ni carta: la cocina decide qué servir cada noche según el maíz y los productos de temporada que llegan a la cocina. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4183,-99.1618",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Masala y Maíz",
+      "place_id": null,
+      "lat": 19.4109,
+      "lng": -99.172,
+      "category": "restaurante",
+      "cuisine": "fusión india-mexicana",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Fusión de las raíces de India, África oriental y México de los chefs Norma Listman y Saqib Keval. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4109,-99.172",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Máximo Bistrot",
+      "place_id": null,
+      "lat": 19.4158,
+      "lng": -99.1598,
+      "category": "fine_dining",
+      "cuisine": "mexicano-francés",
+      "tags": [
+        "michelin",
+        "bourdain"
+      ],
+      "description": "Bistrot de mercado del chef Eduardo García en la Roma Norte, mezcla de técnica francesa e ingredientes mexicanos. Anthony Bourdain cenó ahí en 'Parts Unknown' (2014); hoy tiene una estrella Michelin.",
+      "source_url": "https://www.continentscondiments.com/mexico-city-all-of-the-restaurants-picked-by-anthony-bourdain-on-parts-unknown/",
+      "source_type": "bourdain",
+      "source_type_secondary": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4158,-99.1598",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "La Once Mil",
+      "place_id": null,
+      "lat": 19.433,
+      "lng": -99.1955,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de cocina mexicana de temporada en Miguel Hidalgo, reconocido con una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.433,-99.1955",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Contramar",
+      "place_id": null,
+      "lat": 19.4211,
+      "lng": -99.1651,
+      "category": "mariscos",
+      "cuisine": "mariscos",
+      "tags": [
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "El comedor de mariscos más popular de la Roma Norte desde 1998, de la chef Gabriela Cámara. El pescado a la talla y la tostada de atún son razón suficiente para hacer fila sin reservación. Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurant/contramar",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4211,-99.1651",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Taquería Los Cocuyos",
+      "place_id": null,
+      "lat": 19.4326,
+      "lng": -99.137,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos",
+      "tags": [
+        "bib_gourmand",
+        "clasico",
+        "street_food"
+      ],
+      "description": "Taquería de banqueta en el Centro Histórico, abierta las 24 horas, famosa por su taco de ojo y su suadero. Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurant/taqueria-los-cocuyos",
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4326,-99.137",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "El Vilsito",
+      "place_id": null,
+      "lat": 19.3822,
+      "lng": -99.1655,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "De día es una refaccionaria de autopartes; de noche, el trompo al pastor sale a la banqueta y se convierte en una de las taquerías más queridas de la ciudad. Bib Gourmand Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurant/el-vilsito",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3822,-99.1655",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Taquería El Jarocho",
+      "place_id": null,
+      "lat": 19.4195,
+      "lng": -99.158,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Taquería de Cuauhtémoc reconocida con Bib Gourmand por la Guía Michelin por la calidad de sus tacos de guisado y carnitas.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4195,-99.158",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Tacos Charly",
+      "place_id": null,
+      "lat": 19.2895,
+      "lng": -99.1685,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Taquería de barrio en Tlalpan distinguida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.2895,-99.1685",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Taquería Los Milanesos",
+      "place_id": null,
+      "lat": 19.3705,
+      "lng": -99.209,
+      "category": "taqueria",
+      "cuisine": "mexicano / milanesas",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Especialistas en tacos de milanesa en Álvaro Obregón, reconocidos con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3705,-99.209",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Raíz",
+      "place_id": null,
+      "lat": 19.434,
+      "lng": -99.1985,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Comedor de cocina mexicana en Miguel Hidalgo reconocido con Bib Gourmand por su relación calidad-precio.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.434,-99.1985",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Comedor Jacinta",
+      "place_id": null,
+      "lat": 19.4335,
+      "lng": -99.1968,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Comedor de cocina mexicana casera en Polanco, reconocido con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4335,-99.1968",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Comal Oculto",
+      "place_id": null,
+      "lat": 19.4328,
+      "lng": -99.1972,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina mexicana de comal en Miguel Hidalgo distinguida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4328,-99.1972",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Los Consentidos del Barrio",
+      "place_id": null,
+      "lat": 19.386,
+      "lng": -99.161,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Taquería de Benito Juárez reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.386,-99.161",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Galanga Thai House",
+      "place_id": null,
+      "lat": 19.4188,
+      "lng": -99.1608,
+      "category": "restaurante",
+      "cuisine": "tailandés",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina tailandesa en Cuauhtémoc, poco común en la ciudad, reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4188,-99.1608",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Vigneron",
+      "place_id": null,
+      "lat": 19.4272,
+      "lng": -99.1602,
+      "category": "restaurante",
+      "cuisine": "francés",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Bistrot de inspiración francesa en Cuauhtémoc con una extensa carta de vinos, reconocido con Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4272,-99.1602",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Pargot",
+      "place_id": null,
+      "lat": 19.4198,
+      "lng": -99.1622,
+      "category": "mariscos",
+      "cuisine": "mexicano / mariscos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina de mar mexicana en Cuauhtémoc reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4198,-99.1622",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Filigrana",
+      "place_id": null,
+      "lat": 19.4278,
+      "lng": -99.1612,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina mexicana de autor en Cuauhtémoc reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4278,-99.1612",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Fugaz",
+      "place_id": null,
+      "lat": 19.4183,
+      "lng": -99.1633,
+      "category": "restaurante",
+      "cuisine": "mediterráneo-mexicano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina que cruza el Mediterráneo con México en la Roma, reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4183,-99.1633",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Caracol de Mar",
+      "place_id": null,
+      "lat": 19.4163,
+      "lng": -99.1613,
+      "category": "mariscos",
+      "cuisine": "mexicano-peruano / mariscos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Barra de mariscos con influencias peruanas en la Roma, reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4163,-99.1613",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Jowong",
+      "place_id": null,
+      "lat": 19.4262,
+      "lng": -99.1608,
+      "category": "restaurante",
+      "cuisine": "coreano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Cocina coreana en Cuauhtémoc reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4262,-99.1608",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Galea",
+      "place_id": null,
+      "lat": 19.4178,
+      "lng": -99.1638,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Trattoria italiana en la Roma reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4178,-99.1638",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Ultramarinos Demar",
+      "place_id": null,
+      "lat": 19.427,
+      "lng": -99.1615,
+      "category": "mariscos",
+      "cuisine": "mariscos",
+      "tags": [
+        "bib_gourmand"
+      ],
+      "description": "Barra de mariscos y conservas al estilo español en Cuauhtémoc, reconocida con Bib Gourmand por la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-de-mexico/restaurants",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.427,-99.1615",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Handshake Speakeasy",
+      "place_id": null,
+      "lat": 19.4285,
+      "lng": -99.1622,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "worlds50best_bars"
+      ],
+      "description": "Speakeasy escondido dentro de un hotel en la Colonia Juárez, nombrado Mejor Bar de Norteamérica en North America's 50 Best Bars dos años consecutivos.",
+      "source_url": "https://www.prnewswire.com/news-releases/handshake-speakeasy-in-mexico-city-named-as-the-best-bar-in-north-america-as-ranking-of-north-americas-50-best-bars-is-revealed-at-third-annual-awards-ceremony-302125810.html",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4285,-99.1622",
+      "distinction": null
+    },
+    {
+      "name": "Licorería Limantour",
+      "place_id": null,
+      "lat": 19.4165,
+      "lng": -99.1608,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "worlds50best_bars"
+      ],
+      "description": "El bar de coctelería que puso a la Roma Norte en el mapa mundial; habitual en la lista de The World's 50 Best Bars desde hace más de una década.",
+      "source_url": "https://www.theworlds50best.com/bars/",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4165,-99.1608",
+      "distinction": null
+    },
+    {
+      "name": "Baltra Bar",
+      "place_id": null,
+      "lat": 19.409,
+      "lng": -99.1665,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "worlds50best_bars"
+      ],
+      "description": "Bar de barrio con ambiente de cafetería y coctelería clásica muy pulida, de los creadores de Licorería Limantour. Habitual en North America's 50 Best Bars.",
+      "source_url": "https://www.theworlds50best.com/bars/",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.409,-99.1665",
+      "distinction": null
+    },
+    {
+      "name": "Cantina La Mascota",
+      "place_id": null,
+      "lat": 19.4155,
+      "lng": -99.1465,
+      "category": "cantina",
+      "cuisine": "mexicano",
+      "tags": [
+        "bourdain"
+      ],
+      "description": "Cantina clásica del centro de la ciudad donde Anthony Bourdain comió carnitas y una sopa de habas y nopales durante su visita a Ciudad de México en 'No Reservations'.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-puebla-and-mexico-city-restaurants-no-reservations/",
+      "source_type": "bourdain",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4155,-99.1465",
+      "distinction": null
+    },
+    {
+      "name": "Nicos",
+      "place_id": null,
+      "lat": 19.4657,
+      "lng": -99.1706,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución familiar en Clavería, dirigida por Gerardo Vázquez Lugo, referente de cocina mexicana tradicional y pionera en cocinar con ingredientes de productores locales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4657,-99.1706",
+      "distinction": null
+    },
+    {
+      "name": "Dulce Patria",
+      "place_id": null,
+      "lat": 19.4337,
+      "lng": -99.1975,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de la chef Martha Ortiz en Polanco, cocina mexicana pensada como escenografía: color, símbolos patrios y platillos de inspiración histórica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4337,-99.1975",
+      "distinction": null
+    },
+    {
+      "name": "Merotoro",
+      "place_id": null,
+      "lat": 19.4118,
+      "lng": -99.1718,
+      "category": "restaurante",
+      "cuisine": "mexicano / Baja California",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante del chef Jair Téllez que trae la cocina de mar y viñedo de Baja California a la Condesa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4118,-99.1718",
+      "distinction": null
+    },
+    {
+      "name": "Sartoria",
+      "place_id": null,
+      "lat": 19.4207,
+      "lng": -99.162,
+      "category": "restaurante",
+      "cuisine": "italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina italiana de pastas hechas a mano en la Roma Norte, uno de los restaurantes italianos mejor valorados de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4207,-99.162",
+      "distinction": null
+    },
+    {
+      "name": "Ticuchi",
+      "place_id": null,
+      "lat": 19.4325,
+      "lng": -99.1948,
+      "category": "bar",
+      "cuisine": "mexicano / oaxaqueño",
+      "tags": [
+        "critic"
+      ],
+      "description": "Proyecto de Enrique Olvera en el antiguo local de Pujol en Polanco: cocina oaxaqueña pescetariana y una extensa carta de mezcal y destilados de agave.",
+      "source_url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/ticuchi",
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4325,-99.1948",
+      "distinction": null
+    },
+    {
+      "name": "Casa Virginia",
+      "place_id": null,
+      "lat": 19.4185,
+      "lng": -99.166,
+      "category": "restaurante",
+      "cuisine": "mexicano-francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Herencia culinaria de la chef Mónica Patiño en la Roma, cocina de raíz mexicana con influencia francesa en un ambiente de casa familiar.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4185,-99.166",
+      "distinction": null
+    },
+    {
+      "name": "Tetetlán",
+      "place_id": null,
+      "lat": 19.327,
+      "lng": -99.201,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Café y restaurante dentro de una casa diseñada por Luis Barragán en Jardines del Pedregal, con cocina mesoamericana y una tienda de diseño local.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.327,-99.201",
+      "distinction": null
+    },
+    {
+      "name": "Molino El Pujol",
+      "place_id": null,
+      "lat": 19.4323,
+      "lng": -99.1945,
+      "category": "panaderia",
+      "cuisine": "panadería mexicana",
+      "tags": [
+        "critic"
+      ],
+      "description": "Molino y panadería de Enrique Olvera junto a Pujol en Polanco, especializada en pan de masa madre hecho con maíz nixtamalizado.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 45,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4323,-99.1945",
+      "distinction": null
+    },
+    {
+      "name": "Lardo",
+      "place_id": null,
+      "lat": 19.413,
+      "lng": -99.1758,
+      "category": "restaurante",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante-panadería de inspiración mediterránea en la Condesa, popular por sus desayunos y su pan horneado en casa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.413,-99.1758",
+      "distinction": null
+    },
+    {
+      "name": "Panadería Rosetta",
+      "place_id": null,
+      "lat": 19.4209,
+      "lng": -99.1628,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "La panadería hermana de Rosetta en la Roma Norte, famosa por su concha de guayaba, que suele agotarse antes del mediodía.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4209,-99.1628",
+      "distinction": null
+    },
+    {
+      "name": "Café Nin",
+      "place_id": null,
+      "lat": 19.4168,
+      "lng": -99.16,
+      "category": "cafeteria",
+      "cuisine": "mexicano / cafetería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafetería de Elena Reygadas en la Roma Norte con panadería propia, pensada para desayunos y comidas ligeras.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 48,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4168,-99.16",
+      "distinction": null
+    },
+    {
+      "name": "Huset",
+      "place_id": null,
+      "lat": 19.4165,
+      "lng": -99.1598,
+      "category": "restaurante",
+      "cuisine": "nórdico-mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de inspiración escandinava en la Roma Norte, técnicas nórdicas de fermentación aplicadas a ingredientes mexicanos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4165,-99.1598",
+      "distinction": null
+    },
+    {
+      "name": "Meroma",
+      "place_id": null,
+      "lat": 19.4172,
+      "lng": -99.1595,
+      "category": "restaurante",
+      "cuisine": "mexicano-mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante hermano de Merotoro en la Roma Norte, cocina de fuego abierto con influencias mexicanas y mediterráneas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4172,-99.1595",
+      "distinction": null
+    },
+    {
+      "name": "Anatol",
+      "place_id": null,
+      "lat": 19.4118,
+      "lng": -99.1732,
+      "category": "restaurante",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de barrio en la Condesa con cocina mexicana contemporánea y una carta corta que cambia con frecuencia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4118,-99.1732",
+      "distinction": null
+    },
+    {
+      "name": "El Parnita",
+      "place_id": null,
+      "lat": 19.4178,
+      "lng": -99.1585,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Antojería contemporánea en la Roma Norte, siempre llena, famosa por su tostada de atún y sus tacos de camarón.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4178,-99.1585",
+      "distinction": null
+    },
+    {
+      "name": "Rokai",
+      "place_id": null,
+      "lat": 19.4045,
+      "lng": -99.183,
+      "category": "restaurante",
+      "cuisine": "japonés / izakaya",
+      "tags": [
+        "critic"
+      ],
+      "description": "Izakaya en Escandón dentro del grupo de restaurantes japoneses del chef Daniel Ovadía, conocida por sus yakitoris a la parrilla.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4045,-99.183",
+      "distinction": null
+    },
+    {
+      "name": "Le Tachinomi Desu",
+      "place_id": null,
+      "lat": 19.4048,
+      "lng": -99.1828,
+      "category": "bar",
+      "cuisine": "japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra japonesa de pie junto a Rokai en Escandón, inspirada en los tachinomiya de Japón, para tomar sake y comer de paso.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4048,-99.1828",
+      "distinction": null
+    },
+    {
+      "name": "Tori Tori",
+      "place_id": null,
+      "lat": 19.4345,
+      "lng": -99.1975,
+      "category": "restaurante",
+      "cuisine": "japonés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante japonés de referencia en Polanco, uno de los pioneros de la alta cocina japonesa en la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 55,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4345,-99.1975",
+      "distinction": null
+    },
+    {
+      "name": "Kaito Del Valle",
+      "place_id": null,
+      "lat": 19.3805,
+      "lng": -99.1665,
+      "category": "restaurante",
+      "cuisine": "japonés / omakase",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de sushi omakase en la colonia Del Valle, especializada en pescado importado directo de Japón.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 56,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3805,-99.1665",
+      "distinction": null
+    },
+    {
+      "name": "Café Tacuba",
+      "place_id": null,
+      "lat": 19.4355,
+      "lng": -99.14,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante del Centro Histórico abierto desde 1912, con azulejos originales, chocolate de metate y una banda de mariachi de casa; la banda de rock tomó su nombre de aquí.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4355,-99.14",
+      "distinction": null
+    },
+    {
+      "name": "El Moro",
+      "place_id": null,
+      "lat": 19.4345,
+      "lng": -99.1405,
+      "category": "churreria",
+      "cuisine": "churros",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Churrería del Centro abierta desde 1935, servicio de churros y chocolate caliente las 24 horas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4345,-99.1405",
+      "distinction": null
+    },
+    {
+      "name": "San Ángel Inn",
+      "place_id": null,
+      "lat": 19.346,
+      "lng": -99.1908,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante instalado en un antiguo convento carmelita del siglo XVII en San Ángel, célebre por sus margaritas y su cocina mexicana clásica.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.346,-99.1908",
+      "distinction": null
+    },
+    {
+      "name": "Hostería de Santo Domingo",
+      "place_id": null,
+      "lat": 19.439,
+      "lng": -99.136,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante más antiguo de la ciudad, abierto desde 1860 cerca de la Plaza Santo Domingo; su platillo insignia son los chiles en nogada.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.439,-99.136",
+      "distinction": null
+    },
+    {
+      "name": "La Opera Bar",
+      "place_id": null,
+      "lat": 19.4345,
+      "lng": -99.1385,
+      "category": "cantina",
+      "cuisine": "mexicano / cantina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cantina del Centro Histórico abierta desde 1876, célebre por el balazo que, según la leyenda, disparó Pancho Villa en el techo durante la Revolución.",
+      "source_url": "https://www.elfinanciero.com.mx/food-and-drink/2025/08/23/la-historia-de-la-opera-bar-cantina-donde-hay-un-balazo-de-pancho-villa/",
+      "source_type": "classic",
+      "rank": 61,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4345,-99.1385",
+      "distinction": null
+    },
+    {
+      "name": "Salón Tenampa",
+      "place_id": null,
+      "lat": 19.4453,
+      "lng": -99.1403,
+      "category": "cantina",
+      "cuisine": "mexicano / cantina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cantina fundada en 1925 en la Plaza Garibaldi, cuna de la tradición del mariachi en la ciudad; cumplió cien años en 2025.",
+      "source_url": "https://www.mexicodesconocido.com.mx/salon-tenampa.html",
+      "source_type": "classic",
+      "rank": 62,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4453,-99.1403",
+      "distinction": null
+    },
+    {
+      "name": "Salón Corona",
+      "place_id": null,
+      "lat": 19.433,
+      "lng": -99.1375,
+      "category": "cantina",
+      "cuisine": "mexicano / cantina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de cantinas del Centro Histórico fundada en 1928, clásica parada para cerveza de barril y antojitos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.433,-99.1375",
+      "distinction": null
+    },
+    {
+      "name": "Fonda Margarita",
+      "place_id": null,
+      "lat": 19.3785,
+      "lng": -99.165,
+      "category": "brunch",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fonda de desayunos del Valle que abre desde el amanecer, sin carta escrita, célebre por sus frijoles con manteca de cerdo.",
+      "source_url": "https://mexiconewsdaily.com/food/fonda-margarita/",
+      "source_type": "classic",
+      "rank": 64,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3785,-99.165",
+      "distinction": null
+    },
+    {
+      "name": "Dulcería de Celaya",
+      "place_id": null,
+      "lat": 19.434,
+      "lng": -99.1375,
+      "category": "dulceria",
+      "cuisine": "dulces tradicionales",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Dulcería del Centro Histórico abierta desde 1874, vitrinas de madera con dulces típicos mexicanos como jamoncillo y camotes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 65,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.434,-99.1375",
+      "distinction": null
+    },
+    {
+      "name": "Pastelería Ideal",
+      "place_id": null,
+      "lat": 19.4305,
+      "lng": -99.139,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería gigante del Centro abierta desde 1927, varios pisos de pan dulce y pasteles de fiesta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4305,-99.139",
+      "distinction": null
+    },
+    {
+      "name": "Los Bisquets Obregón",
+      "place_id": null,
+      "lat": 19.4185,
+      "lng": -99.1615,
+      "category": "cafeteria",
+      "cuisine": "mexicano / cafetería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de cafeterías fundada en 1958, clásica para café de olla, pan dulce y desayunos mexicanos completos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 67,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4185,-99.1615",
+      "distinction": null
+    },
+    {
+      "name": "Sanborns Casa de los Azulejos",
+      "place_id": null,
+      "lat": 19.434,
+      "lng": -99.14,
+      "category": "restaurante",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante instalado en el Palacio de los Azulejos del siglo XVIII, sede insignia de la cadena Sanborns desde 1919, célebre por su patio con vitral Tiffany.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 68,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.434,-99.14",
+      "distinction": null
+    },
+    {
+      "name": "Coox Hanal",
+      "place_id": null,
+      "lat": 19.4308,
+      "lng": -99.138,
+      "category": "restaurante",
+      "cuisine": "yucateco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Comedor yucateco en un tercer piso del Centro Histórico desde 1953, cochinita pibil, panuchos y sopa de lima con trío en vivo los fines de semana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4308,-99.138",
+      "distinction": null
+    },
+    {
+      "name": "El Rey del Pavo",
+      "place_id": null,
+      "lat": 19.436,
+      "lng": -99.1385,
+      "category": "fast_food",
+      "cuisine": "tortas de pavo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tortería del Centro Histórico fundada en 1910, la más antigua de la ciudad, especializada en tortas de pavo.",
+      "source_url": "https://www.infobae.com/mexico/2024/11/21/este-es-el-local-mas-antiguo-de-la-cdmx-que-sirve-tradicionales-tortas-de-pavo/",
+      "source_type": "classic",
+      "rank": 70,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.436,-99.1385",
+      "distinction": null
+    },
+    {
+      "name": "Taquería Orinoco",
+      "place_id": null,
+      "lat": 19.4105,
+      "lng": -99.173,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de taquerías nacida en la Condesa, popular por sus tacos al pastor con piña y su ambiente de barrio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 71,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4105,-99.173",
+      "distinction": null
+    },
+    {
+      "name": "Antojitos La Guadalupana",
+      "place_id": null,
+      "lat": 19.3495,
+      "lng": -99.162,
+      "category": "cantina",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cantina de barrio en Coyoacán, siempre llena, famosa por sus quesadillas de flor de calabaza y su carne asada.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 72,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3495,-99.162",
+      "distinction": null
+    },
+    {
+      "name": "Los Danzantes",
+      "place_id": null,
+      "lat": 19.3468,
+      "lng": -99.1622,
+      "category": "restaurante",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante pionero de la cocina mexicana con mezcal en Coyoacán, abierto desde 1994 frente al Jardín Centenario.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3468,-99.1622",
+      "distinction": null
+    },
+    {
+      "name": "Corazón de Maguey",
+      "place_id": null,
+      "lat": 19.3467,
+      "lng": -99.162,
+      "category": "bar",
+      "cuisine": "mezcalería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Mezcalería con terraza frente al Jardín Centenario de Coyoacán, una de las cartas de mezcal más completas de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 74,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3467,-99.162",
+      "distinction": null
+    },
+    {
+      "name": "El Bajío",
+      "place_id": null,
+      "lat": 19.4685,
+      "lng": -99.1755,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante fundado por Carmen 'Titita' Ramírez Degollado, referencia de cocina regional mexicana y de los tacos de canasta desde su local original en Azcapotzalco.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 75,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4685,-99.1755",
+      "distinction": null
+    },
+    {
+      "name": "Fonda San Ángel",
+      "place_id": null,
+      "lat": 19.3455,
+      "lng": -99.191,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante frente a la Plaza San Jacinto en San Ángel, cocina mexicana tradicional en un entorno colonial, popular los sábados de Bazar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3455,-99.191",
+      "distinction": null
+    },
+    {
+      "name": "La Casa de Toño",
+      "place_id": null,
+      "lat": 19.411,
+      "lng": -99.159,
+      "category": "fast_food",
+      "cuisine": "mexicano",
+      "tags": [
+        "clasico",
+        "viral_social"
+      ],
+      "description": "Cadena originaria de la Roma famosa por su pozole y sus filas interminables; una de las fondas más queridas y más fotografiadas de la ciudad en redes sociales.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.411,-99.159",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de San Juan",
+      "place_id": null,
+      "lat": 19.4297,
+      "lng": -99.143,
+      "category": "mercado",
+      "cuisine": "mercado gourmet",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado gourmet del Centro especializado en ingredientes exóticos y de temporada, desde quesos importados hasta insectos comestibles; punto de abasto de muchos chefs de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 78,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4297,-99.143",
+      "distinction": null
+    },
+    {
+      "name": "Mercado Roma",
+      "place_id": null,
+      "lat": 19.4165,
+      "lng": -99.1595,
+      "category": "mercado",
+      "cuisine": "mercado gourmet",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Plaza gastronómica de dos pisos en la Roma Norte, con decenas de puestos de comida y una terraza de cervezas artesanales.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 79,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4165,-99.1595",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de Coyoacán",
+      "place_id": null,
+      "lat": 19.3505,
+      "lng": -99.1625,
+      "category": "mercado",
+      "cuisine": "mercado tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado tradicional de Coyoacán, célebre por sus puestos de tostadas y por sus antojitos servidos entre puestos de flores y artesanías.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 80,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.3505,-99.1625",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de Medellín",
+      "place_id": null,
+      "lat": 19.4085,
+      "lng": -99.158,
+      "category": "mercado",
+      "cuisine": "mercado internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de la colonia Roma con fuerte presencia de comunidades latinoamericanas, célebre por sus puestos de comida cubana, venezolana y caribeña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4085,-99.158",
+      "distinction": null
+    },
+    {
+      "name": "La Merced",
+      "place_id": null,
+      "lat": 19.426,
+      "lng": -99.1245,
+      "category": "mercado",
+      "cuisine": "mercado tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El mercado tradicional más grande y antiguo de la ciudad, epicentro histórico del abasto de frutas, verduras y comida callejera.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.426,-99.1245",
+      "distinction": null
+    },
+    {
+      "name": "El Tizoncito",
+      "place_id": null,
+      "lat": 19.4113,
+      "lng": -99.1738,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taquería de la Condesa abierta en 1966 por Concepción 'Doña Conchita' Cervantes, a quien se atribuye la invención del taco al pastor.",
+      "source_url": "https://www.entornoturistico.com/el-tizoncito-la-taqueria-que-invento-los-tacos-al-pastor/",
+      "source_type": "classic",
+      "rank": 83,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4113,-99.1738",
+      "distinction": null
+    },
+    {
+      "name": "El Farolito",
+      "place_id": null,
+      "lat": 19.4105,
+      "lng": -99.1745,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taquería de trompo al pastor muy popular en la Condesa, abierta hasta la madrugada.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 84,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4105,-99.1745",
+      "distinction": null
+    },
+    {
+      "name": "El Fogoncito",
+      "place_id": null,
+      "lat": 19.4118,
+      "lng": -99.1738,
+      "category": "taqueria",
+      "cuisine": "mexicano / tacos al pastor",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de taquerías de trompo al pastor con varias sucursales en la ciudad, clásica parada nocturna.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 85,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4118,-99.1738",
+      "distinction": null
+    },
+    {
+      "name": "El Turix",
+      "place_id": null,
+      "lat": 19.4315,
+      "lng": -99.1935,
+      "category": "street_food",
+      "cuisine": "mexicano / cochinita pibil",
+      "tags": [
+        "critic"
+      ],
+      "description": "Puesto callejero en Polanco especializado solo en cochinita pibil, en taco, torta, panucho o tamal; fundado por Arturo Nabté, de origen maya.",
+      "source_url": "https://www.theinfatuation.com/mexico-city/reviews/el-turix",
+      "source_type": "critic",
+      "rank": 86,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4315,-99.1935",
+      "distinction": null
+    },
+    {
+      "name": "El Pescadito",
+      "place_id": null,
+      "lat": 19.4175,
+      "lng": -99.164,
+      "category": "fast_food",
+      "cuisine": "mariscos / tacos de pescado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de tacos de pescado y camarón estilo Baja California, con sucursales en toda la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 87,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4175,-99.164",
+      "distinction": null
+    },
+    {
+      "name": "Fisher's",
+      "place_id": null,
+      "lat": 19.413,
+      "lng": -99.165,
+      "category": "mariscos",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de mariscos clásica de la ciudad desde los años setenta, coctel de camarones y pescado empanizado de toda la vida.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 88,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.413,-99.165",
+      "distinction": null
+    },
+    {
+      "name": "Café El Jarocho",
+      "place_id": null,
+      "lat": 19.35,
+      "lng": -99.1622,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Puesto de café de Coyoacán desde 1953, café de olla y capuchino servido en vaso para llevar, siempre con fila en la puerta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.35,-99.1622",
+      "distinction": null
+    },
+    {
+      "name": "Cafebrería El Péndulo",
+      "place_id": null,
+      "lat": 19.4178,
+      "lng": -99.1602,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cadena de librerías con cafetería integrada, con sucursales en Roma y Condesa entre plantas y estantes de libros.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 90,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4178,-99.1602",
+      "distinction": null
+    },
+    {
+      "name": "Buna",
+      "place_id": null,
+      "lat": 19.412,
+      "lng": -99.173,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Tostador y cafetería de especialidad con varias sucursales entre Roma y Condesa, parte de la escena de café de tercera ola de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 91,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.412,-99.173",
+      "distinction": null
+    },
+    {
+      "name": "Almanegra Café",
+      "place_id": null,
+      "lat": 19.417,
+      "lng": -99.159,
+      "category": "cafeteria",
+      "cuisine": "café de especialidad",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cafetería de especialidad nacida en 2014, minimalista y detallista, referente de la escena de café de la Roma Norte.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 92,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.417,-99.159",
+      "distinction": null
+    },
+    {
+      "name": "Maque",
+      "place_id": null,
+      "lat": 19.4155,
+      "lng": -99.1592,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería de la Roma reconocida por su pan de masa madre y su repostería francesa, muy popular entre desayunos de fin de semana.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 93,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4155,-99.1592",
+      "distinction": null
+    },
+    {
+      "name": "La Docena",
+      "place_id": null,
+      "lat": 19.4175,
+      "lng": -99.1618,
+      "category": "mariscos",
+      "cuisine": "ostionería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de ostiones y mariscos en la Roma Norte, ambiente de cantina moderna y coctelería de autor.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4175,-99.1618",
+      "distinction": null
+    },
+    {
+      "name": "Broka Bistrot",
+      "place_id": null,
+      "lat": 19.4166,
+      "lng": -99.1599,
+      "category": "restaurante",
+      "cuisine": "francés-mexicano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistrot escondido en un patio de una casona de la Roma Norte, cocina francesa con acentos mexicanos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4166,-99.1599",
+      "distinction": null
+    },
+    {
+      "name": "Cicatriz Café",
+      "place_id": null,
+      "lat": 19.4128,
+      "lng": -99.1745,
+      "category": "cafeteria",
+      "cuisine": "café / internacional",
+      "tags": [
+        "critic"
+      ],
+      "description": "Café de la Condesa con varias sucursales en la ciudad, popular para trabajar y para desayunos internacionales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 96,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4128,-99.1745",
+      "distinction": null
+    },
+    {
+      "name": "Blanco Colima",
+      "place_id": null,
+      "lat": 19.421,
+      "lng": -99.163,
+      "category": "restaurante",
+      "cuisine": "mexicano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante en un edificio porfiriano de la Roma Norte desde 2015, con una de las cartas de mezcal más extensas de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 97,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.421,-99.163",
+      "distinction": null
+    },
+    {
+      "name": "Bósforo",
+      "place_id": null,
+      "lat": 19.4345,
+      "lng": -99.1435,
+      "category": "bar",
+      "cuisine": "mezcalería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Mezcalería sin pretensiones en el Centro Histórico, ambiente rústico y una de las mejores selecciones de mezcal de la ciudad.",
+      "source_url": "https://www.theinfatuation.com/mexico-city/reviews/bosforo-mezcaleria",
+      "source_type": "critic",
+      "rank": 98,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4345,-99.1435",
+      "distinction": null
+    },
+    {
+      "name": "Cantina Tío Pepe",
+      "place_id": null,
+      "lat": 19.434,
+      "lng": -99.1395,
+      "category": "cantina",
+      "cuisine": "mexicano / cantina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La cantina más antigua de la ciudad, abierta desde 1869 en la calle Motolinía; conserva su interior original, incluidos los timbres de mesa para llamar al mesero.",
+      "source_url": "https://www.elfinanciero.com.mx/food-and-drink/2025/11/22/asi-es-tio-pepe-cantina-historica-que-no-permitia-la-entada-a-mujeres/",
+      "source_type": "classic",
+      "rank": 99,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.434,-99.1395",
+      "distinction": null
+    },
+    {
+      "name": "La Casa de las Sirenas",
+      "place_id": null,
+      "lat": 19.4345,
+      "lng": -99.133,
+      "category": "restaurante",
+      "cuisine": "mexicano tradicional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante en una construcción del siglo XVI a pasos del Zócalo, con terraza de 1754 y vista al Templo Mayor; cocina mexicana tradicional y más de 200 mezcales.",
+      "source_url": "https://www.eluniversal.com.mx/menu/conoce-la-casa-de-las-sirenas-un-restaurante-con-500-anos-de-historia/",
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=19.4345,-99.133",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,
