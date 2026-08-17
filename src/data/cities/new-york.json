@@ -3,7 +3,7 @@
   "name": "Nueva York",
   "country": "Estados Unidos",
   "tagline": "Clásicos de toda la vida, hype viral y un poco de todo el mundo en cada esquina.",
-  "totalPlaces": 30,
+  "totalPlaces": 100,
   "mymaps_url": "https://www.google.com/maps/d/edit?mid=1ggzp06tcGq0axHVHlxL0QyDuMmMkTGk&usp=sharing",
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.722233,-73.987429"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.722233,-73.987429",
+      "distinction": null
     },
     {
       "name": "Carbone New York",
@@ -38,7 +39,8 @@
       "source_type": "timeout",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7279891,-74.0002414"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7279891,-74.0002414",
+      "distinction": null
     },
     {
       "name": "The Halal Guys (53rd & 6th)",
@@ -55,7 +57,8 @@
       "source_type": "influencer",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7617724,-73.9793516"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7617724,-73.9793516",
+      "distinction": null
     },
     {
       "name": "Russ & Daughters",
@@ -72,7 +75,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7225803,-73.9883134"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7225803,-73.9883134",
+      "distinction": null
     },
     {
       "name": "Keens Steakhouse",
@@ -89,7 +93,8 @@
       "source_type": "bourdain",
       "rank": 5,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.750773,-73.9864091"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.750773,-73.9864091",
+      "distinction": null
     },
     {
       "name": "Peter Luger Steak House",
@@ -106,7 +111,8 @@
       "source_type": "classic",
       "rank": 6,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7098774,-73.9625052"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7098774,-73.9625052",
+      "distinction": null
     },
     {
       "name": "Au Cheval",
@@ -121,7 +127,8 @@
       "source_type": null,
       "rank": 7,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7181205,-74.0017942"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7181205,-74.0017942",
+      "distinction": null
     },
     {
       "name": "7th Street Burger Soho",
@@ -136,7 +143,8 @@
       "source_type": null,
       "rank": 8,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7231985,-73.9956905"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7231985,-73.9956905",
+      "distinction": null
     },
     {
       "name": "Fat Ronnie's Burger Bar",
@@ -151,7 +159,8 @@
       "source_type": null,
       "rank": 9,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7307189,-74.0019756"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7307189,-74.0019756",
+      "distinction": null
     },
     {
       "name": "Little Maven",
@@ -166,7 +175,8 @@
       "source_type": null,
       "rank": 10,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7390428,-73.9934938"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7390428,-73.9934938",
+      "distinction": null
     },
     {
       "name": "Piccolo Morini",
@@ -181,7 +191,8 @@
       "source_type": null,
       "rank": 11,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7206118,-73.9952615"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7206118,-73.9952615",
+      "distinction": null
     },
     {
       "name": "Bungalow",
@@ -196,7 +207,8 @@
       "source_type": null,
       "rank": 12,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7236675,-73.9879743"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7236675,-73.9879743",
+      "distinction": null
     },
     {
       "name": "COTE 550",
@@ -211,7 +223,8 @@
       "source_type": null,
       "rank": 13,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7616006,-73.9731034"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7616006,-73.9731034",
+      "distinction": null
     },
     {
       "name": "L'Adresse NoMad",
@@ -226,7 +239,8 @@
       "source_type": null,
       "rank": 14,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7455087,-73.9884895"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7455087,-73.9884895",
+      "distinction": null
     },
     {
       "name": "Valerie",
@@ -241,7 +255,8 @@
       "source_type": null,
       "rank": 15,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7563426,-73.9811274"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7563426,-73.9811274",
+      "distinction": null
     },
     {
       "name": "Monkey Bar",
@@ -258,7 +273,8 @@
       "source_type": "classic",
       "rank": 16,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7598982,-73.9732046"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7598982,-73.9732046",
+      "distinction": null
     },
     {
       "name": "1803 NYC",
@@ -273,7 +289,8 @@
       "source_type": null,
       "rank": 17,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7154539,-74.0073301"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7154539,-74.0073301",
+      "distinction": null
     },
     {
       "name": "Amalfi Rooftop by Birreria",
@@ -288,7 +305,8 @@
       "source_type": null,
       "rank": 18,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7420178,-73.9899056"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7420178,-73.9899056",
+      "distinction": null
     },
     {
       "name": "Xi'an Famous Foods",
@@ -303,7 +321,8 @@
       "source_type": null,
       "rank": 19,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7138356,-73.9941404"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7138356,-73.9941404",
+      "distinction": null
     },
     {
       "name": "Los Tacos No. 1",
@@ -318,7 +337,8 @@
       "source_type": null,
       "rank": 20,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7422521,-74.0059635"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7422521,-74.0059635",
+      "distinction": null
     },
     {
       "name": "Joe's Pizza",
@@ -335,7 +355,8 @@
       "source_type": "classic",
       "rank": 21,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7319718,-74.0032039"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7319718,-74.0032039",
+      "distinction": null
     },
     {
       "name": "Nom Wah Tea Parlor",
@@ -352,7 +373,8 @@
       "source_type": "classic",
       "rank": 22,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7145089,-73.998188"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7145089,-73.998188",
+      "distinction": null
     },
     {
       "name": "Sushi Nakazawa",
@@ -367,7 +389,8 @@
       "source_type": null,
       "rank": 23,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7318046,-74.0045493"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7318046,-74.0045493",
+      "distinction": null
     },
     {
       "name": "Taïm Mediterranean Kitchen",
@@ -382,7 +405,8 @@
       "source_type": null,
       "rank": 24,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.735997,-74.0019593"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.735997,-74.0019593",
+      "distinction": null
     },
     {
       "name": "Dominique Ansel Bakery",
@@ -397,7 +421,8 @@
       "source_type": null,
       "rank": 25,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7252509,-74.0028734"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7252509,-74.0028734",
+      "distinction": null
     },
     {
       "name": "Junior's Restaurant & Bakery",
@@ -414,7 +439,8 @@
       "source_type": "classic",
       "rank": 26,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6901493,-73.9818736"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6901493,-73.9818736",
+      "distinction": null
     },
     {
       "name": "Hometown Bar-B-Que",
@@ -429,7 +455,8 @@
       "source_type": null,
       "rank": 27,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6749167,-74.0161583"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6749167,-74.0161583",
+      "distinction": null
     },
     {
       "name": "Ivan Ramen",
@@ -444,7 +471,8 @@
       "source_type": null,
       "rank": 28,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7205819,-73.9845212"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7205819,-73.9845212",
+      "distinction": null
     },
     {
       "name": "Bunna Cafe",
@@ -459,7 +487,8 @@
       "source_type": null,
       "rank": 29,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7049167,-73.9279056"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7049167,-73.9279056",
+      "distinction": null
     },
     {
       "name": "Teranga Cafe",
@@ -474,7 +503,1337 @@
       "source_type": null,
       "rank": 30,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7963946,-73.9493556"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7963946,-73.9493556",
+      "distinction": null
+    },
+    {
+      "name": "Le Bernardin",
+      "place_id": null,
+      "lat": 40.7614,
+      "lng": -73.9821,
+      "category": "fine_dining",
+      "cuisine": "francés / mariscos",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Templo del pescado y marisco de lujo del chef Eric Ripert, con tres estrellas Michelin desde hace más de dos décadas. Uno de los restaurantes más consistentemente aclamados de Nueva York.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7614,-73.9821",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Eleven Madison Park",
+      "place_id": null,
+      "lat": 40.7418,
+      "lng": -73.9873,
+      "category": "fine_dining",
+      "cuisine": "vegetal de autor",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Restaurante de tres estrellas Michelin del chef Daniel Humm en un salón Art Decó junto a Madison Square Park, que reinventó su menú de degustación como completamente vegetal en 2021.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7418,-73.9873",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Per Se",
+      "place_id": null,
+      "lat": 40.7685,
+      "lng": -73.9822,
+      "category": "fine_dining",
+      "cuisine": "francés-americano",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "La versión neoyorquina de Thomas Keller de The French Laundry, con tres estrellas Michelin, vistas a Central Park y un menú de degustación de nueve tiempos.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7685,-73.9822",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Masa",
+      "place_id": null,
+      "lat": 40.7685,
+      "lng": -73.9822,
+      "category": "fine_dining",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Uno de los sushi-ya de omakase más exclusivos y caros de Estados Unidos, del chef Masa Takayama, en el Time Warner Center. Mantuvo tres estrellas Michelin durante años antes de bajar a dos en la guía de noviembre de 2025.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7685,-73.9822",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Jungsik",
+      "place_id": null,
+      "lat": 40.7192,
+      "lng": -74.0092,
+      "category": "fine_dining",
+      "cuisine": "coreano de autor",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Cocina coreana de vanguardia del chef Jungsik Yim en Tribeca. En noviembre de 2025 se convirtió en el primer restaurante coreano en obtener tres estrellas Michelin en Estados Unidos.",
+      "source_url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jungsik-new-york",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7192,-74.0092",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Atomix",
+      "place_id": null,
+      "lat": 40.744,
+      "lng": -73.9825,
+      "category": "fine_dining",
+      "cuisine": "coreano de autor",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Menú de degustación coreano contemporáneo de los chefs Junghyun y Ellia Park en una casa de Murray Hill, con dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/atomix",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.744,-73.9825",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Jean-Georges",
+      "place_id": null,
+      "lat": 40.769,
+      "lng": -73.9819,
+      "category": "fine_dining",
+      "cuisine": "francés contemporáneo",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "La casa insignia del chef Jean-Georges Vongerichten junto a Columbus Circle, con dos estrellas Michelin y cocina francesa contemporánea de precisión.",
+      "source_url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jean-georges",
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.769,-73.9819",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Gramercy Tavern",
+      "place_id": null,
+      "lat": 40.7387,
+      "lng": -73.9885,
+      "category": "fine_dining",
+      "cuisine": "americano de temporada",
+      "tags": [
+        "michelin",
+        "critico",
+        "clasico"
+      ],
+      "description": "Clásico de Danny Meyer desde 1994 en Flatiron, con una estrella Michelin y cocina americana de mercado en un salón cálido y rústico.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7387,-73.9885",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Blue Hill",
+      "place_id": null,
+      "lat": 40.7317,
+      "lng": -73.9998,
+      "category": "fine_dining",
+      "cuisine": "farm-to-table",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Cocina de temporada del chef Dan Barber en Greenwich Village, pionera del movimiento farm-to-table en Nueva York, con una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7317,-73.9998",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Wildair",
+      "place_id": null,
+      "lat": 40.7189,
+      "lng": -73.9895,
+      "category": "bar",
+      "cuisine": "vinos naturales / platos pequeños",
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar de vinos naturales y platos pequeños de autor en el Lower East Side, hermano del ya cerrado Contra. Referencia habitual en las listas de mejores restaurantes de Nueva York.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7189,-73.9895",
+      "distinction": null
+    },
+    {
+      "name": "Estela",
+      "place_id": null,
+      "lat": 40.7235,
+      "lng": -73.9958,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo de autor",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Platos pequeños de inspiración mediterránea del chef Ignacio Mattos en Nolita, con una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/all-the-stars-in-the-michelin-guide-to-new-york-city-2025",
+      "source_type": "critic",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7235,-73.9958",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Casa Enrique",
+      "place_id": null,
+      "lat": 40.7434,
+      "lng": -73.9526,
+      "category": "fine_dining",
+      "cuisine": "mexicano",
+      "tags": [
+        "michelin",
+        "critico"
+      ],
+      "description": "Cocina mexicana de Chiapas en Long Island City, Queens. En 2014 se convirtió en el primer restaurante mexicano de Nueva York en recibir una estrella Michelin, que mantiene desde entonces.",
+      "source_url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/casa-enrique",
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7434,-73.9526",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "King",
+      "place_id": null,
+      "lat": 40.728,
+      "lng": -74.0055,
+      "category": "fine_dining",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina de mercado de inspiración mediterránea de las chefs Clare de Boer y Jess Shadbolt (antes de The River Café), muy elogiado por la crítica gastronómica de Nueva York.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.728,-74.0055",
+      "distinction": null
+    },
+    {
+      "name": "Semma",
+      "place_id": null,
+      "lat": 40.737,
+      "lng": -74.0027,
+      "category": "fine_dining",
+      "cuisine": "indio del sur",
+      "tags": [
+        "critico",
+        "james_beard"
+      ],
+      "description": "Cocina del sur de la India del chef Vijay Kumar en el West Village. Kumar ganó el premio James Beard a Mejor Chef del Estado de Nueva York en 2025.",
+      "source_url": "https://www.jamesbeard.org/awards",
+      "source_type": "critic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.737,-74.0027",
+      "distinction": null
+    },
+    {
+      "name": "Don Angie",
+      "place_id": null,
+      "lat": 40.7379,
+      "lng": -74.0031,
+      "category": "fine_dining",
+      "cuisine": "italoamericano de autor",
+      "tags": [
+        "critico"
+      ],
+      "description": "Italoamericano moderno de la pareja de chefs Angela Rito y Scott Tacinelli en el West Village. Tuvo una estrella Michelin entre 2021 y 2023 y sigue siendo uno de los restaurantes más buscados de la ciudad.",
+      "source_url": "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/don-angie",
+      "source_type": "critic",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7379,-74.0031",
+      "distinction": null
+    },
+    {
+      "name": "Rao's",
+      "place_id": null,
+      "lat": 40.7958,
+      "lng": -73.9367,
+      "category": "fine_dining",
+      "cuisine": "italoamericano",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Trattoria familiar italoamericana en East Harlem desde 1896, famosa por ser prácticamente imposible de reservar: las mesas se heredan entre clientes habituales.",
+      "source_url": "https://en.wikipedia.org/wiki/Rao%27s",
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7958,-73.9367",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Minetta Tavern",
+      "place_id": null,
+      "lat": 40.7307,
+      "lng": -74.0002,
+      "category": "fine_dining",
+      "cuisine": "francés-americano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Taberna histórica de Greenwich Village reabierta por Keith McNally, célebre por su Black Label Burger de carne madurada.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7307,-74.0002",
+      "distinction": null
+    },
+    {
+      "name": "Delmonico's",
+      "place_id": null,
+      "lat": 40.7043,
+      "lng": -74.011,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1837 en el Distrito Financiero, se considera el primer restaurante de servicio a la carta de Estados Unidos y el lugar de nacimiento del Delmonico steak y la ensalada Waldorf.",
+      "source_url": "https://en.wikipedia.org/wiki/Delmonico%27s",
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7043,-74.011",
+      "distinction": null
+    },
+    {
+      "name": "Sparks Steak House",
+      "place_id": null,
+      "lat": 40.7523,
+      "lng": -73.9723,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Steakhouse histórico de Midtown East desde 1966, conocido por su carta de vinos y, tristemente, por el asesinato del jefe mafioso Paul Castellano en su puerta en 1985.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7523,-73.9723",
+      "distinction": null
+    },
+    {
+      "name": "Old Homestead Steakhouse",
+      "place_id": null,
+      "lat": 40.7411,
+      "lng": -74.0055,
+      "category": "steakhouse",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El steakhouse continuo más antiguo de Nueva York, abierto en el Meatpacking District desde 1868.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7411,-74.0055",
+      "distinction": null
+    },
+    {
+      "name": "Balthazar",
+      "place_id": null,
+      "lat": 40.7226,
+      "lng": -73.9976,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Brasserie parisina de Keith McNally en SoHo desde 1997, con torres de mariscos y pan horneado en su propia panadería. Un clásico instantáneo del brunch neoyorquino.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7226,-73.9976",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "The River Café",
+      "place_id": null,
+      "lat": 40.7028,
+      "lng": -73.9967,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Restaurante flotante bajo el puente de Brooklyn desde 1977, con vistas al Downtown de Manhattan y cocina americana de temporada. Cuna de muchos chefs célebres de Nueva York.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7028,-73.9967",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Gage & Tollner",
+      "place_id": null,
+      "lat": 40.6905,
+      "lng": -73.9847,
+      "category": "fine_dining",
+      "cuisine": "americano",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Restaurante histórico de Downtown Brooklyn fundado en 1879, con interiores originales de gaslight, reabierto en 2021 tras una restauración muy celebrada por la crítica.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6905,-73.9847",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Grand Central Oyster Bar",
+      "place_id": null,
+      "lat": 40.7527,
+      "lng": -73.9772,
+      "category": "fine_dining",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Marisquería histórica bajo las bóvedas de azulejos Guastavino de Grand Central Terminal, abierta desde 1913.",
+      "source_url": "https://en.wikipedia.org/wiki/Grand_Central_Oyster_Bar_%26_Restaurant",
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7527,-73.9772",
+      "distinction": null
+    },
+    {
+      "name": "2nd Ave Deli",
+      "place_id": null,
+      "lat": 40.7458,
+      "lng": -73.9788,
+      "category": "deli",
+      "cuisine": "judío / delicatessen",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Delicatessen kosher de Nueva York desde 1954, famoso por su pastrami, su matzo ball soup y sus estrellas conmemorativas en la acera dedicadas al teatro yidis.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7458,-73.9788",
+      "distinction": null
+    },
+    {
+      "name": "Barney Greengrass",
+      "place_id": null,
+      "lat": 40.7885,
+      "lng": -73.9741,
+      "category": "deli",
+      "cuisine": "judío",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Conocido como \"The Sturgeon King\", este apetizing store del Upper West Side sirve salmón ahumado, esturión y huevos revueltos con lox desde 1908.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7885,-73.9741",
+      "distinction": null
+    },
+    {
+      "name": "Sahadi's",
+      "place_id": null,
+      "lat": 40.6885,
+      "lng": -73.9977,
+      "category": "mercado",
+      "cuisine": "mediterráneo / medio oriente",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tienda y charcutería de Oriente Medio en Atlantic Avenue, Brooklyn, desde 1948: frutos secos, especias, quesos y mezze a granel.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6885,-73.9977",
+      "distinction": null
+    },
+    {
+      "name": "Veselka",
+      "place_id": null,
+      "lat": 40.7292,
+      "lng": -73.9866,
+      "category": "fast_food",
+      "cuisine": "ucraniano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diner ucraniano las 24 horas en el East Village desde 1954, célebre por sus pierogi y su borsch.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7292,-73.9866",
+      "distinction": null
+    },
+    {
+      "name": "Yonah Schimmel Knish Bakery",
+      "place_id": null,
+      "lat": 40.7229,
+      "lng": -73.9909,
+      "category": "bakery",
+      "cuisine": "judío",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería del Lower East Side especializada en knishes desde 1910, una de las últimas de su tipo en la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7229,-73.9909",
+      "distinction": null
+    },
+    {
+      "name": "Ess-a-Bagel",
+      "place_id": null,
+      "lat": 40.7338,
+      "lng": -73.9789,
+      "category": "bakery",
+      "cuisine": "judío",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bagelería icónica de Nueva York conocida por sus bagels enormes, densos y horneados a diario.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7338,-73.9789",
+      "distinction": null
+    },
+    {
+      "name": "Absolute Bagels",
+      "place_id": null,
+      "lat": 40.8027,
+      "lng": -73.9679,
+      "category": "bakery",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Bagelería del Upper West Side muy querida por locales y crítica, con bagels suaves y esponjosos de estilo distinto al típico neoyorquino.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 61,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.8027,-73.9679",
+      "distinction": null
+    },
+    {
+      "name": "Tompkins Square Bagels",
+      "place_id": null,
+      "lat": 40.7267,
+      "lng": -73.9819,
+      "category": "bakery",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Bagelería del East Village con largas colas y decenas de combinaciones de cream cheese caseros.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 62,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7267,-73.9819",
+      "distinction": null
+    },
+    {
+      "name": "Lombardi's",
+      "place_id": null,
+      "lat": 40.7217,
+      "lng": -73.9956,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Reconocida como la primera pizzería con licencia de Estados Unidos, abierta en Nolita en 1905.",
+      "source_url": "https://en.wikipedia.org/wiki/Lombardi%27s_Pizza",
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7217,-73.9956",
+      "distinction": null
+    },
+    {
+      "name": "John's of Bleecker Street",
+      "place_id": null,
+      "lat": 40.7311,
+      "lng": -74.0026,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de horno de carbón en Greenwich Village desde 1929, célebre por su masa fina y crujiente. No vende porciones, solo pizzas enteras.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 64,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7311,-74.0026",
+      "distinction": null
+    },
+    {
+      "name": "Grimaldi's",
+      "place_id": null,
+      "lat": 40.7028,
+      "lng": -73.9935,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de horno de carbón bajo el puente de Brooklyn en DUMBO, con colas legendarias desde su apertura en 1990.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 65,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7028,-73.9935",
+      "distinction": null
+    },
+    {
+      "name": "Di Fara Pizza",
+      "place_id": null,
+      "lat": 40.6252,
+      "lng": -73.9614,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Pizzería familiar de Midwood, Brooklyn, desde 1965, donde Domenico DeMarco cortaba tijeras en mano hasta su muerte en 2019. Anthony Bourdain la calificó de \"the best of the best\" en una guía de Nueva York que escribió para The Guardian en 2005.",
+      "source_url": "https://www.theguardian.com/travel/2005/aug/13/foodanddrink.usa",
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6252,-73.9614",
+      "distinction": null,
+      "source_type_secondary": "bourdain"
+    },
+    {
+      "name": "Totonno's",
+      "place_id": null,
+      "lat": 40.5755,
+      "lng": -73.9812,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de horno de carbón en Coney Island, abierta desde 1924 por la familia Pero, una de las más antiguas de Estados Unidos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 67,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.5755,-73.9812",
+      "distinction": null
+    },
+    {
+      "name": "L&B Spumoni Gardens",
+      "place_id": null,
+      "lat": 40.5973,
+      "lng": -73.9822,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería siciliana de Bensonhurst, Brooklyn, desde 1939, famosa por su porción cuadrada con la salsa por encima del queso.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 68,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.5973,-73.9822",
+      "distinction": null
+    },
+    {
+      "name": "Prince Street Pizza",
+      "place_id": null,
+      "lat": 40.7231,
+      "lng": -73.9942,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "viral_tiktok",
+        "critico"
+      ],
+      "description": "Pizzería de Nolita famosa por su porción cuadrada de pepperoni \"spicy spring\", uno de los platos de pizza más virales en redes sociales de Nueva York.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 69,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7231,-73.9942",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Rubirosa",
+      "place_id": null,
+      "lat": 40.7228,
+      "lng": -73.9959,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Pizzería de masa fina en Nolita con raíces en Staten Island, muy elogiada por la crítica gastronómica local.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 70,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7228,-73.9959",
+      "distinction": null
+    },
+    {
+      "name": "Lucali",
+      "place_id": null,
+      "lat": 40.6807,
+      "lng": -73.9992,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Pizzería sin reservas de Carroll Gardens, Brooklyn, favorita de celebridades, con largas colas para su pizza de masa fina cocida en horno de leña.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6807,-73.9992",
+      "distinction": null
+    },
+    {
+      "name": "Roberta's",
+      "place_id": null,
+      "lat": 40.7051,
+      "lng": -73.9335,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "bourdain",
+        "critico"
+      ],
+      "description": "Pizzería de horno de leña en Bushwick, Brooklyn, que ayudó a transformar la escena gastronómica del barrio. Anthony Bourdain grabó allí el episodio final de \"No Reservations\" (\"Brooklyn\", 2012).",
+      "source_url": "https://www.imdb.com/title/tt2501066/",
+      "source_type": "bourdain",
+      "rank": 72,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7051,-73.9335",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Paulie Gee's",
+      "place_id": null,
+      "lat": 40.7304,
+      "lng": -73.9576,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "critico"
+      ],
+      "description": "Pizzería de horno de leña en Greenpoint, Brooklyn, conocida por sus combinaciones creativas y su ambiente relajado.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 73,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7304,-73.9576",
+      "distinction": null
+    },
+    {
+      "name": "Denino's Pizzeria & Tavern",
+      "place_id": null,
+      "lat": 40.635,
+      "lng": -74.1435,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería familiar de Staten Island desde 1937, considerada por muchos locales la mejor pizza de masa fina de la isla.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 74,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.635,-74.1435",
+      "distinction": null
+    },
+    {
+      "name": "Lee's Tavern",
+      "place_id": null,
+      "lat": 40.5883,
+      "lng": -74.0917,
+      "category": "pizzeria",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar-pizzería de barrio en Dongan Hills, Staten Island, con una pizza de masa fina de culto entre los locales de la isla.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 75,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.5883,-74.0917",
+      "distinction": null
+    },
+    {
+      "name": "Joe's Shanghai",
+      "place_id": null,
+      "lat": 40.715,
+      "lng": -73.9974,
+      "category": "fast_food",
+      "cuisine": "chino",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de Chinatown famoso por popularizar los xiao long bao (soup dumplings) en Nueva York desde los años 90.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.715,-73.9974",
+      "distinction": null
+    },
+    {
+      "name": "Golden Unicorn",
+      "place_id": null,
+      "lat": 40.7145,
+      "lng": -73.9955,
+      "category": "fast_food",
+      "cuisine": "chino",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Gran salón de dim sum con carritos en Chinatown, clásico para banquetes familiares de fin de semana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7145,-73.9955",
+      "distinction": null
+    },
+    {
+      "name": "Nan Xiang Xiao Long Bao",
+      "place_id": null,
+      "lat": 40.759,
+      "lng": -73.8306,
+      "category": "fast_food",
+      "cuisine": "chino",
+      "tags": [
+        "critico"
+      ],
+      "description": "Referencia de soup dumplings en el Golden Mall de Flushing, Queens, con largas colas de residentes y foodies por igual.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 78,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.759,-73.8306",
+      "distinction": null
+    },
+    {
+      "name": "Great NY Noodletown",
+      "place_id": null,
+      "lat": 40.7146,
+      "lng": -73.9974,
+      "category": "fast_food",
+      "cuisine": "chino",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Restaurante de Chinatown abierto hasta la madrugada, célebre por su cerdo asado y su pato al horno colgados en el escaparate.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 79,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7146,-73.9974",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Corner 28",
+      "place_id": null,
+      "lat": 40.7596,
+      "lng": -73.8303,
+      "category": "street_food",
+      "cuisine": "chino",
+      "tags": [
+        "critico"
+      ],
+      "description": "Puesto de pollo frito y arroz en Flushing, Queens, ganador del premio America's Classics de la James Beard Foundation.",
+      "source_url": "https://www.jamesbeard.org/awards",
+      "source_type": "critic",
+      "rank": 80,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7596,-73.8303",
+      "distinction": null
+    },
+    {
+      "name": "Jackson Diner",
+      "place_id": null,
+      "lat": 40.75,
+      "lng": -73.889,
+      "category": "fast_food",
+      "cuisine": "indio",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los restaurantes indios más veteranos de Jackson Heights, Queens, barrio con la mayor concentración de cocina del subcontinente indio en la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.75,-73.889",
+      "distinction": null
+    },
+    {
+      "name": "Arepa Lady",
+      "place_id": null,
+      "lat": 40.7466,
+      "lng": -73.8918,
+      "category": "street_food",
+      "cuisine": "colombiano",
+      "tags": [
+        "critico",
+        "clasico"
+      ],
+      "description": "María Piedad Cano empezó a vender arepas colombianas bajo el tren elevado de Jackson Heights en los años 90; hoy su familia dirige un restaurante propio, celebrado durante décadas por la crítica de Nueva York.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 82,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7466,-73.8918",
+      "distinction": null,
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Kabab King",
+      "place_id": null,
+      "lat": 40.7469,
+      "lng": -73.8878,
+      "category": "fast_food",
+      "cuisine": "bangladesí / paquistaní",
+      "tags": [
+        "clasico",
+        "critico"
+      ],
+      "description": "Institución halal de Jackson Heights, Queens, con kebabs a la parrilla y biryani las 24 horas, punto de referencia de la diáspora del sur de Asia.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 83,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7469,-73.8878",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Himalayan Yak",
+      "place_id": null,
+      "lat": 40.7466,
+      "lng": -73.8912,
+      "category": "fast_food",
+      "cuisine": "tibetano / nepalí",
+      "tags": [
+        "critico"
+      ],
+      "description": "Uno de los pocos restaurantes tibetanos y nepalíes de Nueva York, en el corazón de Jackson Heights, Queens, con momos y thukpa caseros.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 84,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7466,-73.8912",
+      "distinction": null
+    },
+    {
+      "name": "Sripraphai",
+      "place_id": null,
+      "lat": 40.7466,
+      "lng": -73.9034,
+      "category": "fast_food",
+      "cuisine": "tailandés",
+      "tags": [
+        "critico"
+      ],
+      "description": "Restaurante tailandés de Woodside, Queens, con décadas de reseñas entusiastas de la crítica gastronómica de Nueva York por su comida picante y auténtica, rara vez adaptada al paladar occidental.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 85,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7466,-73.9034",
+      "distinction": null
+    },
+    {
+      "name": "Tanoreen",
+      "place_id": null,
+      "lat": 40.6259,
+      "lng": -74.0296,
+      "category": "fast_food",
+      "cuisine": "palestino / medio oriente",
+      "tags": [
+        "critico"
+      ],
+      "description": "Cocina palestina casera de la chef Rawia Bishara en Bay Ridge, Brooklyn, muy elogiada por críticos como referencia de la cocina del Levante en la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 86,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.6259,-74.0296",
+      "distinction": null
+    },
+    {
+      "name": "Superiority Burger",
+      "place_id": null,
+      "lat": 40.7274,
+      "lng": -73.9847,
+      "category": "fast_food",
+      "cuisine": "vegetariano",
+      "tags": [
+        "critico",
+        "james_beard"
+      ],
+      "description": "Hamburguesería vegetariana del East Village creada por el pastelero Brooks Headley, nominada al premio James Beard a Mejor Restaurante Nuevo y aclamada como una de las mejores hamburguesas de Nueva York, sin carne.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 87,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7274,-73.9847",
+      "distinction": null
+    },
+    {
+      "name": "Gray's Papaya",
+      "place_id": null,
+      "lat": 40.7789,
+      "lng": -73.981,
+      "category": "street_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Puesto de hot dogs y zumo de papaya del Upper West Side desde 1973. Anthony Bourdain la describió como parada obligada en \"No Reservations\", diciendo: \"When I start missing New York, this is what I miss\".",
+      "source_url": "https://en.wikipedia.org/wiki/Gray%27s_Papaya",
+      "source_type": "classic",
+      "rank": 88,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7789,-73.981",
+      "distinction": null,
+      "source_type_secondary": "bourdain"
+    },
+    {
+      "name": "Nathan's Famous",
+      "place_id": null,
+      "lat": 40.5749,
+      "lng": -73.9814,
+      "category": "street_food",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El puesto de hot dogs original de Coney Island desde 1916, sede del famoso concurso de comer hot dogs cada 4 de julio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.5749,-73.9814",
+      "distinction": null
+    },
+    {
+      "name": "Mike's Deli (Arthur Avenue)",
+      "place_id": null,
+      "lat": 40.854,
+      "lng": -73.8881,
+      "category": "deli",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Charcutería italiana dentro del Arthur Avenue Retail Market, corazón del \"Little Italy\" real de Nueva York, en el Bronx.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 90,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.854,-73.8881",
+      "distinction": null
+    },
+    {
+      "name": "McSorley's Old Ale House",
+      "place_id": null,
+      "lat": 40.7282,
+      "lng": -73.9896,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El bar en funcionamiento continuo más antiguo de Nueva York, abierto en el East Village desde 1854. Solo sirve su propia ale, en vasos por parejas.",
+      "source_url": "https://en.wikipedia.org/wiki/McSorley%27s_Old_Ale_House",
+      "source_type": "classic",
+      "rank": 91,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7282,-73.9896",
+      "distinction": null
+    },
+    {
+      "name": "Corner Bistro",
+      "place_id": null,
+      "lat": 40.7351,
+      "lng": -74.0062,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Dive bar del West Village famoso por su Bistro Burger, servido con papas fritas en bandejas de aluminio a precio de ganga.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 92,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7351,-74.0062",
+      "distinction": null
+    },
+    {
+      "name": "White Horse Tavern",
+      "place_id": null,
+      "lat": 40.7336,
+      "lng": -74.0067,
+      "category": "bar",
+      "cuisine": "americano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Taberna del West Village desde 1880, célebre por ser el bar donde el poeta Dylan Thomas bebió sus últimos tragos en 1953.",
+      "source_url": "https://en.wikipedia.org/wiki/White_Horse_Tavern_(New_York_City)",
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7336,-74.0067",
+      "distinction": null
+    },
+    {
+      "name": "Employees Only",
+      "place_id": null,
+      "lat": 40.7335,
+      "lng": -74.0064,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Speakeasy de cócteles del West Village desde 2004, con entrada disimulada tras una consulta de vidente y coctelería de precisión.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7335,-74.0064",
+      "distinction": null
+    },
+    {
+      "name": "Death & Co",
+      "place_id": null,
+      "lat": 40.7256,
+      "lng": -73.9847,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar de cócteles del East Village abierto en 2006, pionero del renacimiento de la coctelería de autor en Nueva York.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7256,-73.9847",
+      "distinction": null
+    },
+    {
+      "name": "PDT (Please Don't Tell)",
+      "place_id": null,
+      "lat": 40.7266,
+      "lng": -73.9838,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Speakeasy al que se accede a través de una cabina telefónica dentro de la hamburguesería Crif Dogs, en el East Village.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7266,-73.9838",
+      "distinction": null
+    },
+    {
+      "name": "Attaboy",
+      "place_id": null,
+      "lat": 40.7196,
+      "lng": -73.9915,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "critico"
+      ],
+      "description": "Bar de cócteles sin carta ni letrero en el Lower East Side, sucesor del legendario Milk & Honey. El bartender improvisa según el gusto del cliente.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 97,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7196,-73.9915",
+      "distinction": null
+    },
+    {
+      "name": "The Dead Rabbit",
+      "place_id": null,
+      "lat": 40.7031,
+      "lng": -74.0117,
+      "category": "bar",
+      "cuisine": "irlandés",
+      "tags": [
+        "critico"
+      ],
+      "description": "Taberna de inspiración irlandesa del siglo XIX en el Distrito Financiero, elegida repetidamente mejor bar del mundo por publicaciones especializadas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 98,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7031,-74.0117",
+      "distinction": null
+    },
+    {
+      "name": "Bemelmans Bar",
+      "place_id": null,
+      "lat": 40.7739,
+      "lng": -73.9639,
+      "category": "bar",
+      "cuisine": null,
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de piano clásico del hotel The Carlyle, en el Upper East Side, con murales originales de Ludwig Bemelmans, autor de \"Madeline\".",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 99,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7739,-73.9639",
+      "distinction": null
+    },
+    {
+      "name": "Wafels & Dinges",
+      "place_id": null,
+      "lat": 40.7359,
+      "lng": -73.9911,
+      "category": "street_food",
+      "cuisine": "belga",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Flota de food trucks de gofres belgas fundada en Nueva York en 2007, con coberturas (\"dinges\") como speculoos o Nutella. Una institución móvil de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=40.7359,-73.9911",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,

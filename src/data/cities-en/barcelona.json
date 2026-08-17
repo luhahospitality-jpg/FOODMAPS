@@ -22,6 +22,386 @@
     "Enigma": {
       "cuisine": "creative",
       "description": "Albert Adrià's most secretive project, with a reservation that's nearly impossible to get. Two Michelin stars."
+    },
+    "Els 4 Gats": {
+      "cuisine": "Catalan",
+      "description": "The 1897 café-cabaret where a young Picasso designed the menu. A historic gathering place for Catalan Modernisme."
+    },
+    "ABaC": {
+      "cuisine": "creative",
+      "description": "Jordi Cruz's haute cuisine inside a boutique hotel in Sant Gervasi. Three Michelin stars."
+    },
+    "Cocina Hermanos Torres": {
+      "cuisine": "creative",
+      "description": "The Torres twins' workshop-restaurant, with the kitchen itself as the central stage. Three Michelin stars."
+    },
+    "Lasarte": {
+      "cuisine": "creative",
+      "description": "Martín Berasategui's Barcelona venture, with Paolo Casagrande leading the kitchen. Three Michelin stars."
+    },
+    "Mont Bar": {
+      "cuisine": "creative",
+      "description": "A chef-driven tapas counter with the soul of a neighborhood bar — and two Michelin stars, unusual for the format."
+    },
+    "Cinc Sentits": {
+      "cuisine": "creative",
+      "description": "A sensory, farm-to-table tasting menu in the heart of the Eixample. Two Michelin stars."
+    },
+    "Alkimia": {
+      "cuisine": "Catalan",
+      "description": "Catalan cuisine distilled to its essence by Jordi Vilà. One Michelin star."
+    },
+    "Dos Palillos": {
+      "cuisine": "Asian / tapas",
+      "description": "Asian tapas from Albert Raurich, former head chef at elBulli. One Michelin star."
+    },
+    "Koy Shunka": {
+      "cuisine": "Japanese",
+      "description": "Japanese cuisine with a Catalan accent, steps from the Cathedral. One Michelin star."
+    },
+    "Via Veneto": {
+      "cuisine": "classic Catalan",
+      "description": "A classic of Catalan haute cuisine since 1967, complete with a tableside flambéed dessert cart. One Michelin star."
+    },
+    "Enoteca Paco Pérez": {
+      "cuisine": "seafood",
+      "description": "Paco Pérez's sea-driven cuisine with Mediterranean views from the Hotel Arts. Two Michelin stars."
+    },
+    "Mercat de la Boqueria": {
+      "cuisine": "varied",
+      "description": "Barcelona's most-visited market, just off Las Ramblas, with stalls of ham, cut fruit and fresh seafood."
+    },
+    "Moments": {
+      "cuisine": "creative",
+      "description": "The restaurant of the Mandarin Oriental Hotel, led by Raül Balam Ruscalleda, son of Carme Ruscalleda. Avant-garde Catalan cuisine with two Michelin stars."
+    },
+    "Caelis": {
+      "cuisine": "French / creative",
+      "description": "French-rooted haute cuisine inside Hotel El Palace, led by chef Romain Fornell. One Michelin star."
+    },
+    "Angle": {
+      "cuisine": "creative",
+      "description": "Fine dining from Jordi Cruz inside Hotel Cram, in the Eixample district. One Michelin star."
+    },
+    "Hisop": {
+      "cuisine": "creative",
+      "description": "Seasonal, technique-driven cuisine led by Oriol Ivern in Sant Gervasi. One Michelin star."
+    },
+    "Hofmann": {
+      "cuisine": "Mediterranean",
+      "description": "Restaurant tied to the cooking school founded by Mey Hofmann in 1982, now run by her daughter Silvia. One Michelin star."
+    },
+    "Xerta": {
+      "cuisine": "Catalan / Ebro Delta",
+      "description": "Fran López's Ebro Delta cuisine inside Hotel Ohla Eixample, built around exceptional rice dishes. One Michelin star."
+    },
+    "MAE Barcelona": {
+      "cuisine": "creative",
+      "description": "Mediterranean and Latin American-rooted cuisine in Sant Gervasi, with two tasting menus. Earned its first Michelin star in 2025."
+    },
+    "Nectari": {
+      "cuisine": "creative",
+      "description": "Market-driven tasting menus at a relatively accessible price for a starred restaurant, by chef Jordi Esteve. One Michelin star."
+    },
+    "Quirat": {
+      "cuisine": "contemporary Catalan",
+      "description": "Contemporary, seasonal Catalan cuisine from chef Víctor Torres, in Gràcia. One Michelin star."
+    },
+    "Brabo": {
+      "cuisine": "grilled meats",
+      "description": "A contemporary grill house focused on fire-cooked meat and fish, from Rafa Panatieri and Jorge Sastre in Barceloneta. One Michelin star."
+    },
+    "Bardeni-Caldeni": {
+      "cuisine": "meat-focused",
+      "description": "A meat-focused counter from butcher-chef Dani Lechuga near Sagrada Família, specializing in native cattle breeds. Bib Gourmand."
+    },
+    "Berbena": {
+      "cuisine": "creative",
+      "description": "Relaxed, ever-changing market cuisine in Gràcia, recognized with a Bib Gourmand for its value for money."
+    },
+    "Oníric": {
+      "cuisine": "creative",
+      "description": "Affordable chef-driven cuisine in Gràcia, added to the Bib Gourmand list in the 2026 guide."
+    },
+    "Saó": {
+      "cuisine": "seasonal",
+      "description": "Seasonal, product-driven cooking in a small Gràcia dining room, awarded a Bib Gourmand."
+    },
+    "Avenir": {
+      "cuisine": "market cuisine",
+      "description": "A neighborhood restaurant in Sant Gervasi with honest market cooking, awarded a Bib Gourmand."
+    },
+    "Cruix": {
+      "cuisine": "seasonal",
+      "description": "Good-value seasonal cooking in the Eixample, included in the Michelin Guide's Bib Gourmand."
+    },
+    "Glug": {
+      "cuisine": "market cuisine",
+      "description": "A small market-driven restaurant in Eixample Esquerra, awarded a Bib Gourmand."
+    },
+    "Bacaro": {
+      "cuisine": "Venetian Italian",
+      "description": "Tucked beside the Boqueria market, it serves casual Venetian small plates in the cicchetti style. Bib Gourmand."
+    },
+    "Fismuler": {
+      "cuisine": "seasonal Spanish",
+      "description": "The Barcelona outpost of Madrid's acclaimed Fismuler, built on seasonal, product-driven cooking. Bib Gourmand."
+    },
+    "7 Portes": {
+      "cuisine": "Catalan / rice dishes",
+      "description": "Open since 1836 next to Pla de Palau, one of the city's longest-running restaurants. Famous for its arròs Parellada and walls lined with photos of Dalí, Miró and Hemingway."
+    },
+    "Can Solé": {
+      "cuisine": "seafood / rice dishes",
+      "description": "A family-run Barceloneta restaurant with over a century of history, known for its rice dishes and fresh market fish."
+    },
+    "Can Majó": {
+      "cuisine": "seafood / rice dishes",
+      "description": "A Barceloneta restaurant open since 1968, specializing in lobster rice and top-quality shellfish."
+    },
+    "Can Ros": {
+      "cuisine": "Catalan seafood",
+      "description": "Founded in 1908, one of Barceloneta's oldest seafood eateries, run by the same family ever since."
+    },
+    "Botafumeiro": {
+      "cuisine": "Galician seafood",
+      "description": "A temple of Galician shellfish in Gràcia since 1975, with seafood brought directly from Cantabrian and Mediterranean fish markets."
+    },
+    "Cal Boter": {
+      "cuisine": "Catalan",
+      "description": "A family restaurant in Gràcia since 1986, with a set dish for each day of the week, like Friday's cannelloni."
+    },
+    "Cafè de l'Òpera": {
+      "cuisine": "historic café",
+      "description": "A Modernista café right on La Rambla, facing the Liceu opera house, a bohemian meeting point since the 19th century."
+    },
+    "Granja Viader": {
+      "cuisine": "dairy bar / chocolate",
+      "description": "Barcelona's oldest granja, open since 1870 in the Raval, birthplace of the Cacaolat milkshake and a legendary hot chocolate."
+    },
+    "Escribà (Antiga Casa Figueras)": {
+      "cuisine": "Modernista pastry shop",
+      "description": "A pastry shop founded in 1820 on La Rambla, with a 1902 Modernista storefront regarded as one of the city's most beautiful."
+    },
+    "Boadas Cocktails": {
+      "cuisine": "historic cocktail bar",
+      "description": "Barcelona's oldest cocktail bar, opened in 1933 by Miquel Boadas, trained at Havana's El Floridita. Frequented by Dalí and Hemingway."
+    },
+    "Bar Marsella": {
+      "cuisine": "absinthe bar",
+      "description": "A 200-year-old bar in the Raval that still serves absinthe, the 'green fairy' that drew in Hemingway and Picasso."
+    },
+    "Can Paixano (La Xampanyeria)": {
+      "cuisine": "cava / tapas",
+      "description": "A Barceloneta bodega open since 1969, famous for pouring its own rosé cava alongside hot sandwiches, always standing-room-only."
+    },
+    "El Xampanyet": {
+      "cuisine": "cava / tapas",
+      "description": "A family bodega from 1929 next to the Picasso Museum, known for its house-made cava and anchovies. Visited by Anthony Bourdain during his Barcelona filming."
+    },
+    "Pinotxo Bar": {
+      "cuisine": "market tapas",
+      "description": "A fourteen-stool counter inside the Boqueria market, founded in 1952 by Pinotxo. Famous for its chickpeas with blood sausage and baby squid."
+    },
+    "El Quim de la Boqueria": {
+      "cuisine": "market tapas",
+      "description": "A Boqueria stall since 1987, famous for fried eggs with baby squid or prawns and produce-driven Catalan cooking."
+    },
+    "Bar Central": {
+      "cuisine": "market tapas",
+      "description": "A stand-up-only counter inside the Boqueria, ideal for a quick, informal meal built on the market's own fresh produce."
+    },
+    "Kiosko Universal": {
+      "cuisine": "grilled seafood",
+      "description": "A Boqueria stall specializing in seafood grilled to order, hugely popular with locals for lunch."
+    },
+    "Cal Pep": {
+      "cuisine": "seafood tapas",
+      "description": "A menu-less counter on Plaça de les Olles run by Pep's family since 1977. You sit, and let whatever comes out of the kitchen guide the meal."
+    },
+    "Bar del Pla": {
+      "cuisine": "tapas",
+      "description": "A long-standing tapas bar beside the Picasso Museum, mixing Catalan classics with a few chef-driven touches."
+    },
+    "Euskal Etxea": {
+      "cuisine": "Basque pintxos",
+      "description": "A Basque pintxos counter from the Sagardi group next to Santa Maria del Mar, where the bill is tallied by skewers."
+    },
+    "Sagardi": {
+      "cuisine": "Basque grill",
+      "description": "A Basque grill house from the Sagardi group in El Born, known for its wood-grilled chuletón and a long pintxos counter at the entrance."
+    },
+    "Bar Cañete": {
+      "cuisine": "Catalan tapas",
+      "description": "A classic bodega-style tapas counter in the Raval, celebrated for its potato omelette and white-apron service."
+    },
+    "Suculent": {
+      "cuisine": "Catalan",
+      "description": "Honest, product-driven Catalan cooking on the Rambla del Raval, devised by Carles Abellán and Toni Romero."
+    },
+    "Bormuth": {
+      "cuisine": "tapas",
+      "description": "A modern tapas bar in El Born, revisiting classics like fried anchovies and Russian salad."
+    },
+    "Tapas 24": {
+      "cuisine": "chef-driven tapas",
+      "description": "Carles Abellán's tapas counter in the Eixample, serving elevated versions of classics like the ham-and-cheese bikini or truffled egg."
+    },
+    "Bodega 1900": {
+      "cuisine": "vermouth / preserves",
+      "description": "Albert Adrià's vermouth bar in Sant Antoni, styled like a turn-of-the-century bodega, serving top-tier preserves and vermouth."
+    },
+    "La Vinateria del Call": {
+      "cuisine": "wine / tapas",
+      "description": "A small wine bodega in the old Jewish Call of the Gothic Quarter, with Catalan tapas to accompany."
+    },
+    "Paco Meralgo": {
+      "cuisine": "tapas",
+      "description": "A design-forward tapas counter in the Eixample, serving seafood and Catalan classics of reliable quality."
+    },
+    "Cervecería Catalana": {
+      "cuisine": "tapas",
+      "description": "One of the Eixample's most popular tapas counters, always with a line, for its variety and value."
+    },
+    "Vinitus": {
+      "cuisine": "tapas",
+      "description": "An Eixample tapas bar with generous portions of seafood and Catalan classics, popular with locals."
+    },
+    "Gaig": {
+      "cuisine": "Catalan",
+      "description": "The Gaig family lineage traces back to the 1869 Taberna d'en Gaig; Carles Gaig has held a Michelin star since 1993 with roots-driven Catalan cooking."
+    },
+    "Windsor": {
+      "cuisine": "contemporary Catalan",
+      "description": "A benchmark of contemporary Catalan cooking since 1996, set in a Modernista space with an interior garden."
+    },
+    "Els Pescadors": {
+      "cuisine": "seafood / rice dishes",
+      "description": "A seafood restaurant on a charming Poblenou square, with fish arriving daily from the Arenys de Mar fish market."
+    },
+    "Rías de Galicia": {
+      "cuisine": "Galician seafood",
+      "description": "A benchmark Galician seafood restaurant in Poble Sec since 1986, with product brought directly from the Atlantic rías."
+    },
+    "Torre d'Alta Mar": {
+      "cuisine": "seafood / Mediterranean",
+      "description": "A restaurant set atop Barceloneta's cable car tower, with 360-degree views over the port and sea."
+    },
+    "Kaiku": {
+      "cuisine": "rice dishes / seafood",
+      "description": "A restaurant facing Barceloneta beach known for its cuttlefish rice with smoked alioli, a local favorite."
+    },
+    "Baluard Barceloneta": {
+      "cuisine": "artisan bread",
+      "description": "A benchmark artisan bakery in Barceloneta, with sourdough breads and pastries praised by food critics."
+    },
+    "Hofmann Pastisseria": {
+      "cuisine": "pastry shop",
+      "description": "The Hofmann school's pastry shop in El Born, celebrated for its croissants and buttery pastries."
+    },
+    "Casa Gispert": {
+      "cuisine": "roasted nuts / coffee",
+      "description": "A shop for wood-fired roasted nuts and coffee since 1851, in the heart of El Born."
+    },
+    "Vila Viniteca": {
+      "cuisine": "wine / tapas",
+      "description": "A benchmark wine shop in El Born with a huge selection and an adjoining tapas and cheese bar."
+    },
+    "Flax & Kale": {
+      "cuisine": "vegetarian / vegan",
+      "description": "A benchmark for 'flexitarian' cuisine in the Raval, with highly photogenic plant-based dishes and a strong social media following."
+    },
+    "Teresa Carles": {
+      "cuisine": "vegetarian",
+      "description": "One of Barcelona's pioneering vegetarian restaurants, in the Raval, with a large salad bar and hearty stews."
+    },
+    "Federal Café": {
+      "cuisine": "brunch",
+      "description": "An Australian-rooted café in Sant Antoni, a pioneer of brunch culture in Barcelona and a regular on Instagram roundups."
+    },
+    "Rasoterra": {
+      "cuisine": "vegetarian / vegan",
+      "description": "A vegetarian, natural-wine restaurant in the Gothic Quarter, with a local, seasonal menu."
+    },
+    "Blai 9": {
+      "cuisine": "pintxos",
+      "description": "The first pintxos bar on Carrer de Blai in Poble Sec, the street that became the city's 'pintxo route'."
+    },
+    "Mercat de Sant Antoni": {
+      "cuisine": "market",
+      "description": "A restored Modernista market in the Eixample, with fresh-produce stalls and the traditional Sunday book market."
+    },
+    "Nakashita": {
+      "cuisine": "Japanese fusion",
+      "description": "Japanese cooking with Brazilian and Catalan influences near Vía Laietana, known for its chef-driven sushi."
+    },
+    "La Paradeta": {
+      "cuisine": "self-service seafood",
+      "description": "A Barcelona seafood chain with a self-service format: pick fresh shellfish from the display and it's cooked to order."
+    },
+    "Xurreria Trebol": {
+      "cuisine": "churros",
+      "description": "A neighborhood churros shop on the Gràcia/Eixample border with long weekend queues, widely shared on social media for its filled churros."
+    },
+    "Caelum": {
+      "cuisine": "convent sweets",
+      "description": "A shop and tearoom in the Gothic Quarter specializing in artisanal sweets made by nuns and convents across Spain."
+    },
+    "Granja La Pallaresa": {
+      "cuisine": "hot chocolate and churros",
+      "description": "A classic granja on Carrer de Petritxol, famous for its thick hot chocolate with churros and melindros since 1947."
+    },
+    "Fonda España": {
+      "cuisine": "Modernista Catalan",
+      "description": "A Modernista dining room by Lluís Domènech i Montaner inside Hotel España, with Catalan cuisine overseen by Martín Berasategui."
+    },
+    "El Nacional": {
+      "cuisine": "food hall",
+      "description": "A former Modernista garage on Passeig de Gràcia converted into a large space with four restaurants and several themed bars."
+    },
+    "Time Out Market Barcelona": {
+      "cuisine": "food hall",
+      "description": "A food hall in the Maremagnum mall, with stalls curated by Time Out's editors bringing together several of the city's chefs."
+    },
+    "Casa Delfín": {
+      "cuisine": "Catalan / Mediterranean",
+      "description": "A restaurant on Passeig del Born, a sibling of the Rías de Galicia group, serving market-driven Catalan cuisine in a bright space."
+    },
+    "La Bombeta": {
+      "cuisine": "tapas",
+      "description": "A long-standing Barceloneta tapas bar, one of the places said to have invented the potato-and-meat 'bomba'."
+    },
+    "Xiringuito Escribà": {
+      "cuisine": "beachside paella",
+      "description": "The Escribà family's beach shack right on Mar Bella beach, specializing in rice dishes and paellas by the sea."
+    },
+    "Can Cisa / Bar Brutal": {
+      "cuisine": "natural wine",
+      "description": "A natural wine shop and bar in El Born, with over 300 references and a market-driven kitchen to match."
+    },
+    "Morro Fi": {
+      "cuisine": "vermouth / tapas",
+      "description": "A vermouth bar founded by a group of friends who helped revive Barcelona's vermouth culture, with several locations across the city."
+    },
+    "El Vaso de Oro": {
+      "cuisine": "tapas / beer",
+      "description": "A narrow Barceloneta counter open since 1962, with white-jacketed waiters and their own house-brewed beer. Famous for its sirloin with foie gras."
+    },
+    "Ca l'Isidre": {
+      "cuisine": "Catalan",
+      "description": "A Catalan cooking institution in the Raval since 1970, historically frequented by artists and politicians, with an extensive wine list."
+    },
+    "Casa Amàlia": {
+      "cuisine": "Catalan / set menu",
+      "description": "A traditional eatery near the Mercat de la Concepció, with every ingredient on the menu tied to its market stall of origin."
+    },
+    "Paradiso": {
+      "cuisine": "speakeasy cocktails",
+      "description": "A speakeasy hidden behind a freezer door inside a pastrami bar in El Born, named the world's best bar by The World's 50 Best Bars."
+    },
+    "Dry Martini": {
+      "cuisine": "classic cocktails",
+      "description": "A classic Eixample cocktail bar run by Javier de las Muelas, a world reference for the dry martini since 1977."
     }
   }
 }

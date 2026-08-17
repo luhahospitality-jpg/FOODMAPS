@@ -3,7 +3,7 @@
   "name": "Barcelona",
   "country": "España",
   "tagline": "Del Barrio Gótico de 1786 a la bodega de vermut que enamoró a Anthony Bourdain — la ciudad con más estrellas Michelin de España.",
-  "totalPlaces": 17,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -21,7 +21,8 @@
       "source_type": "classic",
       "rank": 1,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381215,2.1744185"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381215,2.1744185",
+      "distinction": null
     },
     {
       "name": "Disfrutar",
@@ -60,7 +61,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3739942,2.1655692"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3739942,2.1655692",
+      "distinction": null
     },
     {
       "name": "La Cova Fumada",
@@ -77,7 +79,8 @@
       "source_type": "timeout",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792983,2.1891943"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792983,2.1891943",
+      "distinction": null
     },
     {
       "name": "Enigma",
@@ -115,7 +118,8 @@
       "source_type": "classic",
       "rank": 6,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3857927,2.1739318"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3857927,2.1739318",
+      "distinction": null
     },
     {
       "name": "ABaC",
@@ -343,7 +347,1618 @@
       "source_type": "classic",
       "rank": 17,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381736,2.1715515"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381736,2.1715515",
+      "distinction": null
+    },
+    {
+      "name": "Moments",
+      "place_id": null,
+      "lat": 41.3917,
+      "lng": 2.1649,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El restaurante del Hotel Mandarin Oriental dirigido por Raül Balam Ruscalleda, hijo de Carme Ruscalleda. Cocina catalana de vanguardia con dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/moments",
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3917,2.1649",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Caelis",
+      "place_id": null,
+      "lat": 41.3906,
+      "lng": 2.1706,
+      "category": "fine_dining",
+      "cuisine": "francesa / creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Alta cocina de raíz francesa dentro del Hotel El Palace, con el chef Romain Fornell al mando. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/caelis",
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3906,2.1706",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Angle",
+      "place_id": null,
+      "lat": 41.3885,
+      "lng": 2.16,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Propuesta de alta cocina de Jordi Cruz dentro del Hotel Cram, en el Eixample. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/angle",
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3885,2.16",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Hisop",
+      "place_id": null,
+      "lat": 41.3948,
+      "lng": 2.1454,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de producto de temporada con técnica depurada, dirigida por Oriol Ivern en Sant Gervasi. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/hisop",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3948,2.1454",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Hofmann",
+      "place_id": null,
+      "lat": 41.3969,
+      "lng": 2.1477,
+      "category": "fine_dining",
+      "cuisine": "mediterránea",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Restaurante ligado a la escuela de cocina fundada por Mey Hofmann en 1982, hoy dirigido por su hija Silvia. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/hofmann",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3969,2.1477",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Xerta",
+      "place_id": null,
+      "lat": 41.3934,
+      "lng": 2.1615,
+      "category": "fine_dining",
+      "cuisine": "catalana / ebrenca",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina del Delta del Ebro de Fran López dentro del Hotel Ohla Eixample, con el arroz como gran protagonista. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/xerta",
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3934,2.1615",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "MAE Barcelona",
+      "place_id": null,
+      "lat": 41.3975,
+      "lng": 2.142,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina de raíces mediterráneas y latinoamericanas en Sant Gervasi, con dos menús degustación. Consiguió su primera estrella Michelin en 2025.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/mae-barcelona",
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3975,2.142",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Nectari",
+      "place_id": null,
+      "lat": 41.3783,
+      "lng": 2.1568,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Menús de mercado a precio contenido para tratarse de un restaurante con estrella, obra del chef Jordi Esteve. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/nectari",
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3783,2.1568",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Quirat",
+      "place_id": null,
+      "lat": 41.4033,
+      "lng": 2.156,
+      "category": "fine_dining",
+      "cuisine": "catalana contemporánea",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina catalana contemporánea de producto de temporada del chef Víctor Torres, en Gràcia. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/quirat",
+      "source_type": "critic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4033,2.156",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Brabo",
+      "place_id": null,
+      "lat": 41.38,
+      "lng": 2.187,
+      "category": "fine_dining",
+      "cuisine": "carnes a la brasa",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Asador contemporáneo centrado en carnes y pescados a la parrilla, obra de Rafa Panatieri y Jorge Sastre en la Barceloneta. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/brabo",
+      "source_type": "critic",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.38,2.187",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Bardeni-Caldeni",
+      "place_id": null,
+      "lat": 41.4032,
+      "lng": 2.171,
+      "category": "restaurante",
+      "cuisine": "carnes",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Barra especializada en carnes de razas autóctonas del chef carnicero Dani Lechuga, cerca de la Sagrada Família. Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/bardeni-caldeni",
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4032,2.171",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Berbena",
+      "place_id": null,
+      "lat": 41.3975,
+      "lng": 2.152,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Cocina de mercado desenfadada y cambiante en Gràcia, reconocida con Bib Gourmand por su buena relación calidad-precio.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/berbena",
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3975,2.152",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Oníric",
+      "place_id": null,
+      "lat": 41.402,
+      "lng": 2.155,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Propuesta de cocina de autor a precio ajustado en Gràcia, incorporada al Bib Gourmand en la guía 2026.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/oniric",
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.402,2.155",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Saó",
+      "place_id": null,
+      "lat": 41.4018,
+      "lng": 2.1515,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Cocina de producto y temporada en un pequeño local de Gràcia, distinguido con Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/sao",
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4018,2.1515",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Avenir",
+      "place_id": null,
+      "lat": 41.3975,
+      "lng": 2.149,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Restaurante de barrio en Sant Gervasi con cocina de mercado honesta, reconocido con Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/avenir",
+      "source_type": "critic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3975,2.149",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Cruix",
+      "place_id": null,
+      "lat": 41.3897,
+      "lng": 2.1587,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Cocina de temporada con buena relación calidad-precio en el Eixample, incluida en el Bib Gourmand de la Guía Michelin.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/cruix",
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3897,2.1587",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Glug",
+      "place_id": null,
+      "lat": 41.3891,
+      "lng": 2.1521,
+      "category": "restaurante",
+      "cuisine": "creativa",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Pequeño restaurante de cocina de mercado en el Eixample Esquerra, reconocido con Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/glug",
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3891,2.1521",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Bacaro",
+      "place_id": null,
+      "lat": 41.3808,
+      "lng": 2.1712,
+      "category": "restaurante",
+      "cuisine": "italiana veneciana",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Escondido junto a la Boqueria, sirve cocina veneciana informal en raciones pequeñas tipo cicchetti. Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/bacaro",
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3808,2.1712",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Fismuler",
+      "place_id": null,
+      "lat": 41.39,
+      "lng": 2.1799,
+      "category": "restaurante",
+      "cuisine": "española de mercado",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Sucursal barcelonesa del célebre Fismuler madrileño, con cocina de producto de temporada. Bib Gourmand.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/fismuler",
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.39,2.1799",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "7 Portes",
+      "place_id": null,
+      "lat": 41.383,
+      "lng": 2.1827,
+      "category": "restaurante",
+      "cuisine": "catalana / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto en 1836 junto al Pla de Palau, es uno de los restaurantes más longevos de la ciudad. Célebre por su arròs Parellada y las paredes cubiertas de fotos de Dalí, Miró y Hemingway.",
+      "source_url": "https://7portes.com/",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.383,2.1827",
+      "distinction": null
+    },
+    {
+      "name": "Can Solé",
+      "place_id": null,
+      "lat": 41.3792,
+      "lng": 2.1897,
+      "category": "seafood",
+      "cuisine": "mariscos / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar de la Barceloneta con más de un siglo de historia, conocido por sus arroces y pescado fresco de lonja.",
+      "source_url": "https://www.cansole.cat/",
+      "source_type": "classic",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792,2.1897",
+      "distinction": null
+    },
+    {
+      "name": "Can Majó",
+      "place_id": null,
+      "lat": 41.3775,
+      "lng": 2.19,
+      "category": "seafood",
+      "cuisine": "mariscos / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de la Barceloneta abierto desde 1968, especializado en arroz de bogavante y marisco de primera calidad.",
+      "source_url": "https://www.canmajo.es/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3775,2.19",
+      "distinction": null
+    },
+    {
+      "name": "Can Ros",
+      "place_id": null,
+      "lat": 41.3777,
+      "lng": 2.1897,
+      "category": "seafood",
+      "cuisine": "mariscos catalanes",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fundado en 1908, es una de las casas de comidas marineras más antiguas de la Barceloneta, regentada por la misma familia desde entonces.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3777,2.1897",
+      "distinction": null
+    },
+    {
+      "name": "Botafumeiro",
+      "place_id": null,
+      "lat": 41.402,
+      "lng": 2.1567,
+      "category": "seafood",
+      "cuisine": "gallega",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Templo del marisco gallego en Gràcia desde 1975, con marisco traído directamente de las lonjas del Cantábrico y el Mediterráneo.",
+      "source_url": "https://www.botafumeiro.com/",
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.402,2.1567",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Cal Boter",
+      "place_id": null,
+      "lat": 41.4038,
+      "lng": 2.158,
+      "category": "restaurante",
+      "cuisine": "catalana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante familiar de Gràcia desde 1986, con un plato fijo cada día de la semana, como los canelones de los viernes.",
+      "source_url": "https://www.restaurantcalboter.com/",
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4038,2.158",
+      "distinction": null
+    },
+    {
+      "name": "Cafè de l'Òpera",
+      "place_id": null,
+      "lat": 41.3805,
+      "lng": 2.1735,
+      "category": "cafeteria",
+      "cuisine": "café histórico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería de decoración modernista en plena Rambla, frente al Liceu, punto de encuentro bohemio desde el siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3805,2.1735",
+      "distinction": null
+    },
+    {
+      "name": "Granja Viader",
+      "place_id": null,
+      "lat": 41.3822,
+      "lng": 2.1701,
+      "category": "cafeteria",
+      "cuisine": "granja / chocolate",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La granja más antigua de Barcelona, abierta en 1870 en el Raval, cuna del batido Cacaolat y de un chocolate a la taza legendario.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/granja-viader",
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3822,2.1701",
+      "source_type_secondary": "timeout",
+      "distinction": null
+    },
+    {
+      "name": "Escribà (Antiga Casa Figueras)",
+      "place_id": null,
+      "lat": 41.381,
+      "lng": 2.1731,
+      "category": "panaderia",
+      "cuisine": "pastelería modernista",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería fundada en 1820 sobre la Rambla, con un escaparate modernista de 1902 declarado uno de los más bellos de la ciudad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.381,2.1731",
+      "distinction": null
+    },
+    {
+      "name": "Boadas Cocktails",
+      "place_id": null,
+      "lat": 41.3813,
+      "lng": 2.1717,
+      "category": "bar",
+      "cuisine": "coctelería histórica",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "La coctelería más antigua de Barcelona, abierta en 1933 por Miquel Boadas, formado en El Floridita de La Habana. Frecuentada por Dalí y Hemingway.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Spain/Barcelona/Boadas.html",
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3813,2.1717",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Bar Marsella",
+      "place_id": null,
+      "lat": 41.3778,
+      "lng": 2.1697,
+      "category": "bar",
+      "cuisine": "absenta",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de más de 200 años en el Raval que aún sirve absenta, la 'hada verde' que atrajo a Hemingway y Picasso.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3778,2.1697",
+      "distinction": null
+    },
+    {
+      "name": "Can Paixano (La Xampanyeria)",
+      "place_id": null,
+      "lat": 41.3812,
+      "lng": 2.1823,
+      "category": "bar",
+      "cuisine": "cava / tapas",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Bodega de la Barceloneta abierta desde 1969, célebre por servir su propio cava rosado a granel junto con bocadillos calientes, siempre de pie y a reventar.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/can-paixano",
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3812,2.1823",
+      "source_type_secondary": "timeout",
+      "distinction": null
+    },
+    {
+      "name": "El Xampanyet",
+      "place_id": null,
+      "lat": 41.3846,
+      "lng": 2.1811,
+      "category": "bar",
+      "cuisine": "cava / tapas",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Bodega familiar de 1929 junto al Museu Picasso, célebre por su cava artesanal y sus anchoas. Visitada por Anthony Bourdain durante sus rodajes en Barcelona.",
+      "source_url": "https://www.noreservationslocations.com/spain-episode.html",
+      "source_type": "bourdain",
+      "rank": 49,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3846,2.1811",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "Pinotxo Bar",
+      "place_id": null,
+      "lat": 41.3818,
+      "lng": 2.1717,
+      "category": "street_food",
+      "cuisine": "tapas de mercado",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Barra de apenas catorce taburetes dentro de la Boqueria, fundada en 1952 por Pinotxo. Célebre por sus garbanzos con morcilla y sus chipirones.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 50,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3818,2.1717",
+      "source_type_secondary": "classic",
+      "distinction": null
+    },
+    {
+      "name": "El Quim de la Boqueria",
+      "place_id": null,
+      "lat": 41.3816,
+      "lng": 2.1712,
+      "category": "street_food",
+      "cuisine": "tapas de mercado",
+      "tags": [
+        "critic"
+      ],
+      "description": "Puesto de la Boqueria desde 1987, famoso por sus huevos fritos con calamares o gambas y su cocina catalana de producto.",
+      "source_url": "https://www.theinfatuation.com/barcelona",
+      "source_type": "critic",
+      "rank": 51,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3816,2.1712",
+      "distinction": null
+    },
+    {
+      "name": "Bar Central",
+      "place_id": null,
+      "lat": 41.382,
+      "lng": 2.1715,
+      "category": "street_food",
+      "cuisine": "tapas de mercado",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barra sin mesas dentro de la Boqueria, ideal para una comida rápida e informal con producto fresco del propio mercado.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 52,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.382,2.1715",
+      "distinction": null
+    },
+    {
+      "name": "Kiosko Universal",
+      "place_id": null,
+      "lat": 41.3818,
+      "lng": 2.1714,
+      "category": "street_food",
+      "cuisine": "marisco a la plancha",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Puesto de la Boqueria especializado en pescado y marisco a la plancha servido al momento, muy popular entre locales para el almuerzo.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 53,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3818,2.1714",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Cal Pep",
+      "place_id": null,
+      "lat": 41.3833,
+      "lng": 2.183,
+      "category": "bar",
+      "cuisine": "tapas de mar",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra sin carta en Plaça de les Olles regentada por la familia de Pep desde 1977. Hay que sentarse y dejarse llevar por lo que vaya saliendo de la cocina.",
+      "source_url": "https://www.theinfatuation.com/barcelona/reviews/cal-pep",
+      "source_type": "critic",
+      "rank": 54,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3833,2.183",
+      "distinction": null
+    },
+    {
+      "name": "Bar del Pla",
+      "place_id": null,
+      "lat": 41.3841,
+      "lng": 2.181,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de tapas de toda la vida junto al Museu Picasso, con clásicos catalanes y algún guiño de autor.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/bar-del-pla",
+      "source_type": "timeout",
+      "rank": 55,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3841,2.181",
+      "distinction": null
+    },
+    {
+      "name": "Euskal Etxea",
+      "place_id": null,
+      "lat": 41.3846,
+      "lng": 2.1812,
+      "category": "bar",
+      "cuisine": "pintxos vascos",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barra de pintxos vascos del grupo Sagardi junto a Santa Maria del Mar, donde se cuenta por el número de palillos acumulados.",
+      "source_url": "https://www.barcelonafoodexperience.com/blog/euskal-etxea",
+      "source_type": "timeout",
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3846,2.1812",
+      "distinction": null
+    },
+    {
+      "name": "Sagardi",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.1795,
+      "category": "restaurante",
+      "cuisine": "vasca / asador",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Asador vasco del grupo Sagardi en El Born, con chuletón a la brasa y una amplia barra de pintxos en la entrada.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 57,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.1795",
+      "distinction": null
+    },
+    {
+      "name": "Bar Cañete",
+      "place_id": null,
+      "lat": 41.3792,
+      "lng": 2.172,
+      "category": "bar",
+      "cuisine": "tapas catalanas",
+      "tags": [
+        "critic"
+      ],
+      "description": "Barra de tapas de estilo bodega clásica en el Raval, célebre por su tortilla de patatas y su servicio en delantal blanco.",
+      "source_url": "https://www.theinfatuation.com/barcelona",
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3792,2.172",
+      "distinction": null
+    },
+    {
+      "name": "Suculent",
+      "place_id": null,
+      "lat": 41.3778,
+      "lng": 2.168,
+      "category": "restaurante",
+      "cuisine": "catalana",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina catalana honesta y de producto en la Rambla del Raval, ideada por Carles Abellán y Toni Romero.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/suculent",
+      "source_type": "critic",
+      "rank": 59,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3778,2.168",
+      "distinction": null
+    },
+    {
+      "name": "Bormuth",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.1825,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de tapas moderno en El Born, con clásicos revisados como los boquerones fritos y la ensaladilla rusa.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/bormuth",
+      "source_type": "timeout",
+      "rank": 60,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.1825",
+      "distinction": null
+    },
+    {
+      "name": "Tapas 24",
+      "place_id": null,
+      "lat": 41.3897,
+      "lng": 2.165,
+      "category": "bar",
+      "cuisine": "tapas de autor",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Barra de tapas de Carles Abellán en el Eixample, con versiones de autor de clásicos como el bikini o el huevo trufado.",
+      "source_url": "https://www.barcelonafoodexperience.com/blog/tapas-24",
+      "source_type": "critic",
+      "rank": 61,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3897,2.165",
+      "source_type_secondary": "timeout",
+      "distinction": null
+    },
+    {
+      "name": "Bodega 1900",
+      "place_id": null,
+      "lat": 41.3757,
+      "lng": 2.1601,
+      "category": "bar",
+      "cuisine": "vermut / conservas",
+      "tags": [
+        "critic"
+      ],
+      "description": "Vermutería de Albert Adrià en Sant Antoni, con estética de bodega de principios de siglo y conservas y vermut de altísima calidad.",
+      "source_url": "https://albertadria.com/en/restaurant/bodega-1900/",
+      "source_type": "critic",
+      "rank": 62,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3757,2.1601",
+      "distinction": null
+    },
+    {
+      "name": "La Vinateria del Call",
+      "place_id": null,
+      "lat": 41.3823,
+      "lng": 2.1758,
+      "category": "bar",
+      "cuisine": "vinos / tapas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pequeña bodega de vinos en el antiguo Call judío del Barrio Gótico, con tapas catalanas para acompañar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3823,2.1758",
+      "distinction": null
+    },
+    {
+      "name": "Paco Meralgo",
+      "place_id": null,
+      "lat": 41.3944,
+      "lng": 2.15,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barra de tapas de diseño en el Eixample, con marisco y clásicos catalanes de calidad constante.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/paco-meralgo",
+      "source_type": "timeout",
+      "rank": 64,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3944,2.15",
+      "distinction": null
+    },
+    {
+      "name": "Cervecería Catalana",
+      "place_id": null,
+      "lat": 41.3925,
+      "lng": 2.16,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Una de las barras de tapas más populares del Eixample, siempre con cola, por su variedad y buena relación calidad-precio.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/cerveceria-catalana",
+      "source_type": "timeout",
+      "rank": 65,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3925,2.16",
+      "distinction": null
+    },
+    {
+      "name": "Vinitus",
+      "place_id": null,
+      "lat": 41.3897,
+      "lng": 2.1595,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de tapas del Eixample con raciones generosas de marisco y clásicos catalanes, muy popular entre locales.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 66,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3897,2.1595",
+      "distinction": null
+    },
+    {
+      "name": "Gaig",
+      "place_id": null,
+      "lat": 41.3908,
+      "lng": 2.1462,
+      "category": "fine_dining",
+      "cuisine": "catalana",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "La saga familiar de los Gaig se remonta a la Taberna d'en Gaig de 1869; Carles Gaig mantiene una estrella Michelin desde 1993 con cocina catalana de raíz.",
+      "source_url": "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/gaig",
+      "source_type": "classic",
+      "rank": 67,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3908,2.1462",
+      "source_type_secondary": "critic",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Windsor",
+      "place_id": null,
+      "lat": 41.3931,
+      "lng": 2.1611,
+      "category": "fine_dining",
+      "cuisine": "catalana contemporánea",
+      "tags": [
+        "critic"
+      ],
+      "description": "Referente de la cocina catalana contemporánea desde 1996, en un espacio modernista con jardín interior.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 68,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3931,2.1611",
+      "distinction": null
+    },
+    {
+      "name": "Els Pescadors",
+      "place_id": null,
+      "lat": 41.4055,
+      "lng": 2.205,
+      "category": "seafood",
+      "cuisine": "mariscos / arroces",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante marinero en una plaza con encanto de Poblenou, con pescado que llega a diario desde la lonja de Arenys de Mar.",
+      "source_url": "https://elspescadors.com/",
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.4055,2.205",
+      "distinction": null
+    },
+    {
+      "name": "Rías de Galicia",
+      "place_id": null,
+      "lat": 41.3745,
+      "lng": 2.1495,
+      "category": "seafood",
+      "cuisine": "gallega",
+      "tags": [
+        "critic"
+      ],
+      "description": "Marisquería gallega de referencia en Poble Sec desde 1986, con producto traído directamente de las rías atlánticas.",
+      "source_url": "https://www.riasdegalicia.com/",
+      "source_type": "critic",
+      "rank": 70,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3745,2.1495",
+      "distinction": null
+    },
+    {
+      "name": "Torre d'Alta Mar",
+      "place_id": null,
+      "lat": 41.3745,
+      "lng": 2.1898,
+      "category": "seafood",
+      "cuisine": "mariscos / mediterránea",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante instalado en lo alto de la torre del teleférico de la Barceloneta, con vistas de 360 grados sobre el puerto y el mar.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3745,2.1898",
+      "distinction": null
+    },
+    {
+      "name": "Kaiku",
+      "place_id": null,
+      "lat": 41.3745,
+      "lng": 2.1897,
+      "category": "seafood",
+      "cuisine": "arroces / mariscos",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Restaurante frente a la playa de la Barceloneta especializado en arroz de sepia con alioli ahumado, muy popular entre locales.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/kaiku",
+      "source_type": "timeout",
+      "rank": 72,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3745,2.1897",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Baluard Barceloneta",
+      "place_id": null,
+      "lat": 41.3805,
+      "lng": 2.1885,
+      "category": "panaderia",
+      "cuisine": "pan artesano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Panadería artesanal de referencia en la Barceloneta, con panes de masa madre y bollería reconocidos por la crítica gastronómica.",
+      "source_url": "https://www.baluardbarceloneta.com/",
+      "source_type": "critic",
+      "rank": 73,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3805,2.1885",
+      "distinction": null
+    },
+    {
+      "name": "Hofmann Pastisseria",
+      "place_id": null,
+      "lat": 41.385,
+      "lng": 2.182,
+      "category": "panaderia",
+      "cuisine": "pastelería",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pastelería de la escuela Hofmann en El Born, célebre por sus croissants y su bollería de mantequilla.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 74,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.385,2.182",
+      "distinction": null
+    },
+    {
+      "name": "Casa Gispert",
+      "place_id": null,
+      "lat": 41.3841,
+      "lng": 2.1817,
+      "category": "mercado",
+      "cuisine": "frutos secos / torrefacción",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tienda de frutos secos y café tostados con horno de leña original desde 1851, en pleno El Born.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 75,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3841,2.1817",
+      "distinction": null
+    },
+    {
+      "name": "Vila Viniteca",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.1822,
+      "category": "bar",
+      "cuisine": "vinos / tapas",
+      "tags": [
+        "critic"
+      ],
+      "description": "Vinoteca de referencia en El Born con una selección enorme de vinos y una barra de tapas y quesos anexa.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 76,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.1822",
+      "distinction": null
+    },
+    {
+      "name": "Flax & Kale",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.167,
+      "category": "restaurante",
+      "cuisine": "vegetariana / vegana",
+      "tags": [
+        "influencer",
+        "timeout"
+      ],
+      "description": "Referente de la cocina 'flexitariana' en el Raval, con platos vegetales muy fotogénicos y gran presencia en redes sociales.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/flax-kale",
+      "source_type": "timeout",
+      "rank": 77,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.167",
+      "source_type_secondary": "influencer",
+      "distinction": null
+    },
+    {
+      "name": "Teresa Carles",
+      "place_id": null,
+      "lat": 41.3831,
+      "lng": 2.168,
+      "category": "restaurante",
+      "cuisine": "vegetariana",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Uno de los restaurantes vegetarianos pioneros de Barcelona, en el Raval, con una gran barra de ensaladas y platos de cuchara.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/teresa-carles",
+      "source_type": "timeout",
+      "rank": 78,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3831,2.168",
+      "distinction": null
+    },
+    {
+      "name": "Federal Café",
+      "place_id": null,
+      "lat": 41.3767,
+      "lng": 2.1615,
+      "category": "cafeteria",
+      "cuisine": "brunch",
+      "tags": [
+        "influencer",
+        "timeout"
+      ],
+      "description": "Cafetería de origen australiano en Sant Antoni, pionera del brunch en Barcelona y habitual en listas de Instagram.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/federal-cafe",
+      "source_type": "timeout",
+      "rank": 79,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3767,2.1615",
+      "source_type_secondary": "influencer",
+      "distinction": null
+    },
+    {
+      "name": "Rasoterra",
+      "place_id": null,
+      "lat": 41.3805,
+      "lng": 2.1765,
+      "category": "restaurante",
+      "cuisine": "vegetariana / vegana",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante vegetariano y de vinos naturales en el Barrio Gótico, con menú de proximidad y de temporada.",
+      "source_url": "https://www.rasoterra.cat/",
+      "source_type": "timeout",
+      "rank": 80,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3805,2.1765",
+      "distinction": null
+    },
+    {
+      "name": "Blai 9",
+      "place_id": null,
+      "lat": 41.3745,
+      "lng": 2.1585,
+      "category": "bar",
+      "cuisine": "pintxos",
+      "tags": [
+        "timeout"
+      ],
+      "description": "El primer bar de pintxos de la Carrer de Blai en Poble Sec, la calle que se convirtió en la 'ruta del pintxo' de la ciudad.",
+      "source_url": "https://www.yelp.com/biz/blai-9-barcelona",
+      "source_type": "timeout",
+      "rank": 81,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3745,2.1585",
+      "distinction": null
+    },
+    {
+      "name": "Mercat de Sant Antoni",
+      "place_id": null,
+      "lat": 41.3775,
+      "lng": 2.1638,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado modernista rehabilitado del Eixample, con puestos de producto fresco y también el tradicional mercado dominical de libros.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3775,2.1638",
+      "distinction": null
+    },
+    {
+      "name": "Nakashita",
+      "place_id": null,
+      "lat": 41.3865,
+      "lng": 2.177,
+      "category": "restaurante",
+      "cuisine": "japonesa fusión",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina japonesa con influencias brasileñas y catalanas cerca de la Vía Laietana, célebre por su sushi de autor.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 83,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3865,2.177",
+      "distinction": null
+    },
+    {
+      "name": "La Paradeta",
+      "place_id": null,
+      "lat": 41.3843,
+      "lng": 2.1822,
+      "category": "seafood",
+      "cuisine": "marisquería autoservicio",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cadena barcelonesa de marisquerías de autoservicio: se elige el marisco fresco del expositor y se cocina al momento.",
+      "source_url": "https://www.laparadeta.com/",
+      "source_type": "timeout",
+      "rank": 84,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3843,2.1822",
+      "distinction": null
+    },
+    {
+      "name": "Xurreria Trebol",
+      "place_id": null,
+      "lat": 41.403,
+      "lng": 2.165,
+      "category": "panaderia",
+      "cuisine": "churros",
+      "tags": [
+        "timeout",
+        "viral_social"
+      ],
+      "description": "Churrería de barrio en Gràcia/Eixample con largas colas los fines de semana, muy compartida en redes sociales por sus churros rellenos.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/xurreria-trebol",
+      "source_type": "timeout",
+      "rank": 85,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.403,2.165",
+      "source_type_secondary": "viral_social",
+      "distinction": null
+    },
+    {
+      "name": "Caelum",
+      "place_id": null,
+      "lat": 41.383,
+      "lng": 2.174,
+      "category": "cafeteria",
+      "cuisine": "dulces conventuales",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tienda y salón de té en el Barrio Gótico especializado en dulces artesanales elaborados por monjas y conventos de toda España.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.383,2.174",
+      "distinction": null
+    },
+    {
+      "name": "Granja La Pallaresa",
+      "place_id": null,
+      "lat": 41.3824,
+      "lng": 2.1737,
+      "category": "cafeteria",
+      "cuisine": "chocolate con churros",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Granja clásica de la Carrer de Petritxol, célebre por su chocolate espeso con churros y melindros desde 1947.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 87,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3824,2.1737",
+      "distinction": null
+    },
+    {
+      "name": "Fonda España",
+      "place_id": null,
+      "lat": 41.3785,
+      "lng": 2.1705,
+      "category": "fine_dining",
+      "cuisine": "catalana modernista",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Comedor modernista de Lluís Domènech i Montaner dentro del Hotel España, con cocina catalana asesorada por Martín Berasategui.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 88,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3785,2.1705",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "El Nacional",
+      "place_id": null,
+      "lat": 41.3889,
+      "lng": 2.1665,
+      "category": "mercado",
+      "cuisine": "espacio gastronómico variado",
+      "tags": [
+        "timeout",
+        "influencer"
+      ],
+      "description": "Antiguo garaje modernista del Passeig de Gràcia reconvertido en un gran espacio con cuatro restaurantes y varias barras temáticas.",
+      "source_url": "https://www.elnacionalbcn.com/",
+      "source_type": "timeout",
+      "rank": 89,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3889,2.1665",
+      "source_type_secondary": "influencer",
+      "distinction": null
+    },
+    {
+      "name": "Time Out Market Barcelona",
+      "place_id": null,
+      "lat": 41.3757,
+      "lng": 2.1901,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Mercado gastronómico en Maremagnum, con puestos curados por la redacción de Time Out que reúnen a varios cocineros de la ciudad.",
+      "source_url": "https://www.timeout.com/time-out-market-barcelona",
+      "source_type": "timeout",
+      "rank": 90,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3757,2.1901",
+      "distinction": null
+    },
+    {
+      "name": "Casa Delfín",
+      "place_id": null,
+      "lat": 41.3847,
+      "lng": 2.1826,
+      "category": "restaurante",
+      "cuisine": "catalana / mediterránea",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante en el Passeig del Born, hermano del grupo Rías de Galicia, con cocina catalana de mercado en un espacio luminoso.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 91,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3847,2.1826",
+      "distinction": null
+    },
+    {
+      "name": "La Bombeta",
+      "place_id": null,
+      "lat": 41.3808,
+      "lng": 2.1885,
+      "category": "bar",
+      "cuisine": "tapas",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de tapas de toda la vida en la Barceloneta, uno de los lugares que se disputa el origen de la bomba de patata y carne.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/la-bombeta",
+      "source_type": "classic",
+      "rank": 92,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3808,2.1885",
+      "distinction": null
+    },
+    {
+      "name": "Xiringuito Escribà",
+      "place_id": null,
+      "lat": 41.3925,
+      "lng": 2.205,
+      "category": "seafood",
+      "cuisine": "paella de playa",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Chiringuito de la familia Escribà en primera línea de la playa de la Mar Bella, especializado en arroces y paellas frente al mar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3925,2.205",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Can Cisa / Bar Brutal",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.1795,
+      "category": "bar",
+      "cuisine": "vinos naturales",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Vinoteca y bar de vinos naturales en El Born, con más de 300 referencias y una cocina de mercado que las acompaña.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 94,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.1795",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Morro Fi",
+      "place_id": null,
+      "lat": 41.3838,
+      "lng": 2.152,
+      "category": "bar",
+      "cuisine": "vermut / tapas",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Vermutería fundada por un grupo de amigos que revitalizó la cultura del vermut en Barcelona, con varios locales por la ciudad.",
+      "source_url": "https://www.morrofi.cat/",
+      "source_type": "timeout",
+      "rank": 95,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3838,2.152",
+      "distinction": null
+    },
+    {
+      "name": "El Vaso de Oro",
+      "place_id": null,
+      "lat": 41.3808,
+      "lng": 2.1885,
+      "category": "bar",
+      "cuisine": "tapas / cerveza",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Barra estrecha de la Barceloneta abierta desde 1962, con camareros de chaqueta blanca y cerveza artesanal de elaboración propia. Famosa por su solomillo con foie.",
+      "source_url": "https://www.timeout.com/barcelona/restaurants/el-vaso-de-oro",
+      "source_type": "classic",
+      "rank": 96,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3808,2.1885",
+      "source_type_secondary": "timeout",
+      "distinction": null
+    },
+    {
+      "name": "Ca l'Isidre",
+      "place_id": null,
+      "lat": 41.3762,
+      "lng": 2.1683,
+      "category": "fine_dining",
+      "cuisine": "catalana",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución de la cocina catalana en el Raval desde 1970, frecuentada históricamente por artistas y políticos, con una completísima carta de vinos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3762,2.1683",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Casa Amàlia",
+      "place_id": null,
+      "lat": 41.39,
+      "lng": 2.156,
+      "category": "restaurante",
+      "cuisine": "catalana / menú del día",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Casa de comidas cerca del Mercat de la Concepció, con cada ingrediente de la carta vinculado a su parada de origen en el mercado.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 98,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.39,2.156",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Paradiso",
+      "place_id": null,
+      "lat": 41.3833,
+      "lng": 2.1832,
+      "category": "bar",
+      "cuisine": "coctelería speakeasy",
+      "tags": [
+        "critic"
+      ],
+      "description": "Speakeasy escondido tras la puerta de una nevera en una pastrami-bar de El Born, elegido mejor bar del mundo por The World's 50 Best Bars.",
+      "source_url": "https://www.theworlds50best.com/bars/best-in-the-world/the-list/paradiso.html",
+      "source_type": "critic",
+      "rank": 99,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3833,2.1832",
+      "distinction": null
+    },
+    {
+      "name": "Dry Martini",
+      "place_id": null,
+      "lat": 41.3945,
+      "lng": 2.1495,
+      "category": "bar",
+      "cuisine": "coctelería clásica",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Coctelería clásica del Eixample regentada por Javier de las Muelas, referencia mundial del dry martini desde 1977.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.3945,2.1495",
+      "source_type_secondary": "critic",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,

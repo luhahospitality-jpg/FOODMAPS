@@ -22,6 +22,386 @@
     "Keens Steakhouse": {
       "cuisine": "American",
       "description": "A legendary steakhouse since 1885 in Midtown, with the world's largest collection of clay churchwarden pipes hanging from the ceiling. Anthony Bourdain visited it in the Manhattan episode of \"No Reservations\" (2009)."
+    },
+    "Peter Luger Steak House": {
+      "cuisine": "American",
+      "description": "A legendary steakhouse in Williamsburg, Brooklyn, serving dry-aged porterhouse since 1887. Reserve well in advance."
+    },
+    "Au Cheval": {
+      "cuisine": "American",
+      "description": "Considered one of the best burgers in the world. The version with egg and bacon is iconic."
+    },
+    "7th Street Burger Soho": {
+      "cuisine": "American",
+      "description": "A viral smashburger spot, simple and much loved by locals."
+    },
+    "Fat Ronnie's Burger Bar": {
+      "cuisine": "American",
+      "description": "Another trendy burger spot lately, crispy and juicy."
+    },
+    "Little Maven": {
+      "cuisine": null,
+      "description": "An influencer favorite in Flatiron, very photogenic."
+    },
+    "Piccolo Morini": {
+      "cuisine": "Italian",
+      "description": "A newer Italian spot in SoHo, very fashionable right now."
+    },
+    "Bungalow": {
+      "cuisine": "Indian",
+      "description": "Modern Indian by chef Vikas Khanna, elegant and highly Instagrammable."
+    },
+    "COTE 550": {
+      "cuisine": "Korean",
+      "description": "A Korean steakhouse, one of the trendiest spots for grilled meat."
+    },
+    "L'Adresse NoMad": {
+      "cuisine": "European",
+      "description": "A very popular European brunch spot with a warm atmosphere."
+    },
+    "Valerie": {
+      "cuisine": null,
+      "description": "A cocktail bar with vintage vibes near Times Square."
+    },
+    "Monkey Bar": {
+      "cuisine": "American",
+      "description": "A renovated New York classic, famous for its French dip and wagyu burger."
+    },
+    "1803 NYC": {
+      "cuisine": "Cajun / Creole",
+      "description": "Cajun/Creole cooking with live music and lots of energy."
+    },
+    "Amalfi Rooftop by Birreria": {
+      "cuisine": "Italian",
+      "description": "A rooftop with Amalfi Coast vibes, perfect for photos."
+    },
+    "Xi'an Famous Foods": {
+      "cuisine": "Chinese",
+      "description": "Spicy hand-pulled Shaanxi-style noodles, a foodie favorite in Chinatown."
+    },
+    "Los Tacos No. 1": {
+      "cuisine": "Mexican",
+      "description": "Street-style Mexican tacos with handmade tortillas. The most popular stall at Chelsea Market."
+    },
+    "Joe's Pizza": {
+      "cuisine": "Italian",
+      "description": "The birthplace of the classic New York slice, since 1975."
+    },
+    "Nom Wah Tea Parlor": {
+      "cuisine": "Chinese",
+      "description": "Chinatown's oldest dim sum restaurant, open since 1920."
+    },
+    "Sushi Nakazawa": {
+      "cuisine": "Japanese",
+      "description": "High-level Japanese omakase with a Michelin star, from chef Daisuke Nakazawa."
+    },
+    "Taïm Mediterranean Kitchen": {
+      "cuisine": "Mediterranean / Middle Eastern",
+      "description": "Some of New York's best falafel, Mediterranean and Middle Eastern cuisine."
+    },
+    "Dominique Ansel Bakery": {
+      "cuisine": "French",
+      "description": "The French bakery that created the original Cronut."
+    },
+    "Junior's Restaurant & Bakery": {
+      "cuisine": "American",
+      "description": "The most iconic New York cheesecake, in Brooklyn since 1950."
+    },
+    "Hometown Bar-B-Que": {
+      "cuisine": "Texas / Carolina BBQ",
+      "description": "Texas/Carolina-style BBQ in Red Hook, Brooklyn. Award-winning brisket."
+    },
+    "Ivan Ramen": {
+      "cuisine": "Japanese",
+      "description": "Chef Ivan Orkin's signature ramen on the Lower East Side."
+    },
+    "Bunna Cafe": {
+      "cuisine": "Ethiopian",
+      "description": "100% vegan Ethiopian cuisine in Bushwick, Brooklyn."
+    },
+    "Teranga Cafe": {
+      "cuisine": "West African / Senegalese",
+      "description": "West African cuisine across from Central Park, in Harlem."
+    },
+    "Le Bernardin": {
+      "cuisine": "French / seafood",
+      "description": "Chef Eric Ripert's temple of luxury seafood, holding three Michelin stars for more than two decades. One of New York's most consistently acclaimed restaurants."
+    },
+    "Eleven Madison Park": {
+      "cuisine": "plant-based fine dining",
+      "description": "Chef Daniel Humm's three-Michelin-star restaurant in an Art Deco room by Madison Square Park, which reinvented its tasting menu as fully plant-based in 2021."
+    },
+    "Per Se": {
+      "cuisine": "French-American",
+      "description": "Thomas Keller's New York counterpart to The French Laundry, holding three Michelin stars, with Central Park views and a nine-course tasting menu."
+    },
+    "Masa": {
+      "cuisine": "Japanese / sushi",
+      "description": "One of the most exclusive and expensive omakase sushi counters in the US, from chef Masa Takayama, inside the Time Warner Center. Held three Michelin stars for years before dropping to two in the November 2025 guide."
+    },
+    "Jungsik": {
+      "cuisine": "modern Korean",
+      "description": "Chef Jungsik Yim's avant-garde Korean cooking in Tribeca. In November 2025 it became the first Korean restaurant to earn three Michelin stars in the United States."
+    },
+    "Atomix": {
+      "cuisine": "contemporary Korean",
+      "description": "Chefs Junghyun and Ellia Park's contemporary Korean tasting menu inside a Murray Hill townhouse, holding two Michelin stars."
+    },
+    "Jean-Georges": {
+      "cuisine": "contemporary French",
+      "description": "Chef Jean-Georges Vongerichten's flagship next to Columbus Circle, holding two Michelin stars and precise contemporary French cooking."
+    },
+    "Gramercy Tavern": {
+      "cuisine": "seasonal American",
+      "description": "A Danny Meyer classic since 1994 in Flatiron, holding a Michelin star and serving market-driven American cooking in a warm, rustic room."
+    },
+    "Blue Hill": {
+      "cuisine": "farm-to-table",
+      "description": "Chef Dan Barber's seasonal cooking in Greenwich Village, a pioneer of New York's farm-to-table movement, holding a Michelin star."
+    },
+    "Wildair": {
+      "cuisine": "natural wine / small plates",
+      "description": "A natural wine bar with inventive small plates on the Lower East Side, sibling to the now-closed Contra. A regular fixture on New York's best-restaurant lists."
+    },
+    "Estela": {
+      "cuisine": "Mediterranean-inspired small plates",
+      "description": "Chef Ignacio Mattos's Mediterranean-inspired small plates in Nolita, holding a Michelin star."
+    },
+    "Casa Enrique": {
+      "cuisine": "Mexican",
+      "description": "Chiapas-style Mexican cooking in Long Island City, Queens. In 2014 it became the first Mexican restaurant in New York to earn a Michelin star, which it has held ever since."
+    },
+    "King": {
+      "cuisine": "Mediterranean",
+      "description": "Market-driven Mediterranean-inspired cooking from chefs Clare de Boer and Jess Shadbolt (formerly of The River Café), widely praised by New York food critics."
+    },
+    "Semma": {
+      "cuisine": "South Indian",
+      "description": "Chef Vijay Kumar's South Indian cooking in the West Village. Kumar won the James Beard Award for Best Chef: New York State in 2025."
+    },
+    "Don Angie": {
+      "cuisine": "modern Italian-American",
+      "description": "Modern Italian-American cooking from chef couple Angela Rito and Scott Tacinelli in the West Village. Held a Michelin star from 2021 to 2023 and remains one of the city's hardest tables to book."
+    },
+    "Rao's": {
+      "cuisine": "Italian-American",
+      "description": "A family-run Italian-American trattoria in East Harlem since 1896, famous for being nearly impossible to book — regular tables are effectively inherited by longtime patrons."
+    },
+    "Minetta Tavern": {
+      "cuisine": "French-American",
+      "description": "A historic Greenwich Village tavern revived by Keith McNally, celebrated for its dry-aged Black Label Burger."
+    },
+    "Delmonico's": {
+      "cuisine": "American",
+      "description": "Opened in 1837 in the Financial District, widely considered the first fine-dining restaurant in the US and the birthplace of the Delmonico steak and Waldorf salad."
+    },
+    "Sparks Steak House": {
+      "cuisine": "American",
+      "description": "A historic Midtown East steakhouse since 1966, known for its wine list and, infamously, as the site of mob boss Paul Castellano's 1985 assassination outside its door."
+    },
+    "Old Homestead Steakhouse": {
+      "cuisine": "American",
+      "description": "New York's oldest continuously operating steakhouse, open in the Meatpacking District since 1868."
+    },
+    "Balthazar": {
+      "cuisine": "French",
+      "description": "Keith McNally's Parisian brasserie in SoHo since 1997, with seafood towers and bread baked in its own bakery. An instant classic of the New York brunch scene."
+    },
+    "The River Café": {
+      "cuisine": "American",
+      "description": "A barge-side restaurant beneath the Brooklyn Bridge since 1977, with skyline views of Lower Manhattan and seasonal American cooking. A training ground for many of New York's celebrated chefs."
+    },
+    "Gage & Tollner": {
+      "cuisine": "American",
+      "description": "A historic Downtown Brooklyn restaurant founded in 1879, with original gaslight-era interiors, reopened in 2021 after a restoration widely praised by critics."
+    },
+    "Grand Central Oyster Bar": {
+      "cuisine": "seafood",
+      "description": "A historic seafood restaurant beneath the Guastavino tile vaults of Grand Central Terminal, open since 1913."
+    },
+    "2nd Ave Deli": {
+      "cuisine": "Jewish / deli",
+      "description": "A kosher New York deli since 1954, famous for its pastrami, matzo ball soup, and sidewalk memorial stars honoring Yiddish theater stars."
+    },
+    "Barney Greengrass": {
+      "cuisine": "Jewish",
+      "description": "Known as \"The Sturgeon King,\" this Upper West Side appetizing store has served smoked salmon, sturgeon, and eggs scrambled with lox since 1908."
+    },
+    "Sahadi's": {
+      "cuisine": "Mediterranean / Middle Eastern",
+      "description": "A Middle Eastern grocery and deli on Atlantic Avenue, Brooklyn, since 1948, selling bulk nuts, spices, cheeses, and mezze."
+    },
+    "Veselka": {
+      "cuisine": "Ukrainian",
+      "description": "A 24-hour Ukrainian diner in the East Village since 1954, celebrated for its pierogi and borscht."
+    },
+    "Yonah Schimmel Knish Bakery": {
+      "cuisine": "Jewish",
+      "description": "A Lower East Side bakery specializing in knishes since 1910, one of the last of its kind in the city."
+    },
+    "Ess-a-Bagel": {
+      "cuisine": "Jewish",
+      "description": "An iconic New York bagel shop known for its huge, dense, daily-baked bagels."
+    },
+    "Absolute Bagels": {
+      "cuisine": null,
+      "description": "An Upper West Side bagel shop beloved by locals and critics alike, known for soft, pillowy bagels distinct from the typical New York style."
+    },
+    "Tompkins Square Bagels": {
+      "cuisine": null,
+      "description": "An East Village bagel shop with long lines and dozens of house-made cream cheese combinations."
+    },
+    "Lombardi's": {
+      "cuisine": "Italian",
+      "description": "Recognized as the first licensed pizzeria in the United States, opened in Nolita in 1905."
+    },
+    "John's of Bleecker Street": {
+      "cuisine": "Italian",
+      "description": "A coal-oven pizzeria in Greenwich Village since 1929, known for its thin, crisp crust. It sells whole pies only, no slices."
+    },
+    "Grimaldi's": {
+      "cuisine": "Italian",
+      "description": "A coal-oven pizzeria beneath the Brooklyn Bridge in DUMBO, with legendary lines since it opened in 1990."
+    },
+    "Di Fara Pizza": {
+      "cuisine": "Italian",
+      "description": "A family-run Midwood, Brooklyn pizzeria since 1965, where Domenico DeMarco worked scissors-in-hand until his death in 2019. Anthony Bourdain called it \"the best of the best\" in a New York City guide he wrote for The Guardian in 2005."
+    },
+    "Totonno's": {
+      "cuisine": "Italian",
+      "description": "A coal-oven pizzeria in Coney Island, run by the Pero family since 1924, one of the oldest in the United States."
+    },
+    "L&B Spumoni Gardens": {
+      "cuisine": "Italian",
+      "description": "A Sicilian-style pizzeria in Bensonhurst, Brooklyn, since 1939, famous for its square slice served with sauce on top of the cheese."
+    },
+    "Prince Street Pizza": {
+      "cuisine": "Italian",
+      "description": "A Nolita pizzeria famous for its square \"spicy spring\" pepperoni slice, one of the most viral pizza dishes on New York social media."
+    },
+    "Rubirosa": {
+      "cuisine": "Italian",
+      "description": "A thin-crust pizzeria in Nolita with Staten Island roots, widely praised by local food critics."
+    },
+    "Lucali": {
+      "cuisine": "Italian",
+      "description": "A no-reservations pizzeria in Carroll Gardens, Brooklyn, a celebrity favorite with long lines for its thin-crust wood-fired pies."
+    },
+    "Roberta's": {
+      "cuisine": "Italian",
+      "description": "A wood-fired pizzeria in Bushwick, Brooklyn, that helped transform the neighborhood's dining scene. Anthony Bourdain filmed the series finale of \"No Reservations\" (\"Brooklyn,\" 2012) here."
+    },
+    "Paulie Gee's": {
+      "cuisine": "Italian",
+      "description": "A wood-fired pizzeria in Greenpoint, Brooklyn, known for creative topping combinations and a relaxed vibe."
+    },
+    "Denino's Pizzeria & Tavern": {
+      "cuisine": "Italian",
+      "description": "A family-run Staten Island pizzeria since 1937, considered by many locals the borough's best thin-crust pizza."
+    },
+    "Lee's Tavern": {
+      "cuisine": "Italian",
+      "description": "A neighborhood bar-pizzeria in Dongan Hills, Staten Island, with a cult-favorite thin-crust pie among islanders."
+    },
+    "Joe's Shanghai": {
+      "cuisine": "Chinese",
+      "description": "A Chinatown restaurant credited with popularizing xiao long bao (soup dumplings) in New York since the 1990s."
+    },
+    "Golden Unicorn": {
+      "cuisine": "Chinese",
+      "description": "A large cart-service dim sum hall in Chinatown, a classic spot for weekend family banquets."
+    },
+    "Nan Xiang Xiao Long Bao": {
+      "cuisine": "Chinese",
+      "description": "A soup dumpling landmark inside Flushing's Golden Mall, Queens, drawing long lines from residents and foodies alike."
+    },
+    "Great NY Noodletown": {
+      "cuisine": "Chinese",
+      "description": "A Chinatown restaurant open into the small hours, famous for the roast pork and duck hanging in its window."
+    },
+    "Corner 28": {
+      "cuisine": "Chinese",
+      "description": "A fried chicken-and-rice counter in Flushing, Queens, winner of the James Beard Foundation's America's Classics award."
+    },
+    "Jackson Diner": {
+      "cuisine": "Indian",
+      "description": "One of the longest-running Indian restaurants in Jackson Heights, Queens, the neighborhood with the city's densest concentration of subcontinental cuisine."
+    },
+    "Arepa Lady": {
+      "cuisine": "Colombian",
+      "description": "Maria Piedad Cano began selling Colombian arepas under the elevated train in Jackson Heights in the 1990s; her family now runs a storefront restaurant, celebrated for decades by New York critics."
+    },
+    "Kabab King": {
+      "cuisine": "Bangladeshi / Pakistani",
+      "description": "A round-the-clock halal institution in Jackson Heights, Queens, serving grilled kebabs and biryani, a landmark for the South Asian diaspora."
+    },
+    "Himalayan Yak": {
+      "cuisine": "Tibetan / Nepali",
+      "description": "One of the few Tibetan and Nepali restaurants in New York, in the heart of Jackson Heights, Queens, serving house-made momos and thukpa."
+    },
+    "Sripraphai": {
+      "cuisine": "Thai",
+      "description": "A Thai restaurant in Woodside, Queens, with decades of glowing reviews from New York food critics for spicy, authentic cooking rarely toned down for Western palates."
+    },
+    "Tanoreen": {
+      "cuisine": "Palestinian / Middle Eastern",
+      "description": "Chef Rawia Bishara's home-style Palestinian cooking in Bay Ridge, Brooklyn, widely praised by critics as the city's benchmark for Levantine cuisine."
+    },
+    "Superiority Burger": {
+      "cuisine": "vegetarian",
+      "description": "An East Village veggie-burger spot created by pastry chef Brooks Headley, a James Beard Award nominee for Best New Restaurant and hailed as one of New York's best burgers — meat-free."
+    },
+    "Gray's Papaya": {
+      "cuisine": "American",
+      "description": "An Upper West Side hot dog and papaya juice stand since 1973. Anthony Bourdain called it a must-stop on \"No Reservations,\" saying, \"When I start missing New York, this is what I miss.\""
+    },
+    "Nathan's Famous": {
+      "cuisine": "American",
+      "description": "The original Coney Island hot dog stand since 1916, home of the famous Fourth of July hot dog eating contest."
+    },
+    "Mike's Deli (Arthur Avenue)": {
+      "cuisine": "Italian",
+      "description": "An Italian deli inside the Arthur Avenue Retail Market, the heart of New York's real \"Little Italy,\" in the Bronx."
+    },
+    "McSorley's Old Ale House": {
+      "cuisine": "American",
+      "description": "New York's oldest continuously operating bar, open in the East Village since 1854. It serves only its own ale, poured in pairs of mugs."
+    },
+    "Corner Bistro": {
+      "cuisine": "American",
+      "description": "A West Village dive bar famous for its Bistro Burger, served with fries on foil trays at a bargain price."
+    },
+    "White Horse Tavern": {
+      "cuisine": "American",
+      "description": "A West Village tavern since 1880, famous as the bar where poet Dylan Thomas drank his last drinks in 1953."
+    },
+    "Employees Only": {
+      "cuisine": null,
+      "description": "A West Village cocktail speakeasy since 2004, entered through a disguised psychic-reading storefront, known for precise craft cocktails."
+    },
+    "Death & Co": {
+      "cuisine": null,
+      "description": "An East Village cocktail bar opened in 2006, a pioneer of New York's craft-cocktail revival."
+    },
+    "PDT (Please Don't Tell)": {
+      "cuisine": null,
+      "description": "A speakeasy accessed through a phone booth inside the Crif Dogs hot dog shop in the East Village."
+    },
+    "Attaboy": {
+      "cuisine": null,
+      "description": "A menu-less, sign-less cocktail bar on the Lower East Side, successor to the legendary Milk & Honey. Bartenders improvise drinks to each guest's taste."
+    },
+    "The Dead Rabbit": {
+      "cuisine": "Irish",
+      "description": "A 19th-century-inspired Irish tavern in the Financial District, repeatedly named the world's best bar by industry publications."
+    },
+    "Bemelmans Bar": {
+      "cuisine": null,
+      "description": "A classic piano bar inside The Carlyle hotel on the Upper East Side, with original murals by Ludwig Bemelmans, author of \"Madeline.\""
+    },
+    "Wafels & Dinges": {
+      "cuisine": "Belgian",
+      "description": "A fleet of Belgian waffle food trucks founded in New York in 2007, serving toppings (\"dinges\") like speculoos or Nutella. A mobile city institution."
     }
   }
 }
