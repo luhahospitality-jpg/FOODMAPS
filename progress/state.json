@@ -7,10 +7,10 @@
   "paso_en_curso": "Todas las ciudades tier N (39 ciudades, 40/40), tier M (6 ciudades, 60/60) y tier S salvo Madrid (9 de 10 ciudades: bangkok, barcelona, buenos-aires, ciudad-de-mexico, londres, nueva-york, paris, roma, tokio, todas 100/100) ya están completas. Solo falta madrid (20/100, congelada a propósito hasta que el usuario mande la lista 'Restaurantes Madrid · Rafael'). Las 50 ciudades nuevas del brief v2 quedaron en standby a pedido del usuario (baja prioridad, no tocar por ahora). Fase actual: poblar Novedades (4-5 noticias reales verificadas por ciudad, en src/data/novedades/<slug>.json, uno por ciudad para permitir investigación en paralelo) para las 50 ciudades disponibles. Madrid incluida está pendiente de decidir si se investiga (el usuario no confirmó si aplica el freeze a novedades también).",
   "novedades_completadas": [
     "los-angeles", "miami", "san-francisco", "toronto", "buenos-aires",
-    "nueva-york", "chicago", "nueva-orleans"
+    "nueva-york", "chicago", "nueva-orleans", "cordoba", "sao-paulo",
+    "rio-de-janeiro", "lima", "bogota"
   ],
   "novedades_pendientes": [
-    "cordoba", "sao-paulo", "rio-de-janeiro", "lima", "bogota",
     "ciudad-de-mexico", "oaxaca", "madrid", "barcelona", "san-sebastian",
     "bilbao", "valencia", "malaga", "espana", "paris", "copenhague",
     "roma", "milan", "florencia", "napoles", "estambul", "atenas",
