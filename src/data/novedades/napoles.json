@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Il Ristorante Alain Ducasse conquista la primera Estrella Michelin en Nápoles",
+    "resumen": "En la Guía Michelin Italia 2026, el restaurante del hotel Romeo Napoli, liderado por el chef ejecutivo Alessandro Lucassino bajo la firma de Alain Ducasse, obtuvo su primera Estrella Michelin. Con esta incorporación, Nápoles se mantiene como la provincia italiana con más restaurantes estrellados del país.",
+    "fuente_url": "https://www.napolitoday.it/social/alain-ducasse-napoli-stella-michelin.html",
+    "imagen_url": "https://www.napolitoday.it/~media/horizontal-hi/36018342439017/chef-alessandro-lucassino-hangar-design-group.jpg",
+    "fecha": "2025-11-19",
+    "ciudad_slug": "napoles"
+  },
+  {
+    "titulo": "Diego Vitagliano Pizzeria, de Nápoles, entre las mejores pizzerías del mundo en 50 Top Pizza World 2025",
+    "resumen": "La pizzería napolitana de Diego Vitagliano se clasificó en el cuarto puesto (ex aequo) del ranking 50 Top Pizza World 2025, ceremonia celebrada en el Teatro Mercadante de Nápoles. El primer lugar fue para Una Pizza Napoletana (Nueva York) e I Masanielli (Caserta).",
+    "fuente_url": "https://www.50toppizza.it/50-top-pizza-world-2025-una-pizza-napoletana-di-anthony-mangieri-a-new-york-e-i-masanielli-di-francesco-martucci-a-caserta-sono-le-migliori-pizzerie-del-mondo/",
+    "imagen_url": "https://www.50toppizza.it/wp-content/uploads/2025/09/PodiumBanner_50TopPizzaWorld25.png",
+    "fecha": "2025-09-03",
+    "ciudad_slug": "napoles"
+  },
+  {
+    "titulo": "Pizzeria da Attilio, de Nápoles, entre las 18 mejores pizzas del mundo según Time Out",
+    "resumen": "Time Out incluyó a Pizzeria da Attilio, histórico local de tres generaciones en el barrio de Pignasecca abierto desde 1938, en su lista de las mejores pizzas del mundo para 2026, destacando su Margherita con tomate San Marzano, fior di latte de Vico Equense y parmesano curado 24 meses.",
+    "fuente_url": "https://www.timeout.com/restaurants/worlds-best-pizzas",
+    "imagen_url": "https://media.timeout.com/images/106370324/image.jpg",
+    "fecha": "2026-02-04",
+    "ciudad_slug": "napoles"
+  },
+  {
+    "titulo": "Palazzo Petrucci Pizzeria y 50 Kalò, en el podio napolitano de 50 Top Pizza Italia 2026",
+    "resumen": "En la edición 2026 de 50 Top Pizza Italia, Palazzo Petrucci Pizzeria (Nápoles) escaló del puesto 22 al tercero, ganando el premio especial 'Performance dell'Anno', mientras que 50 Kalò, de Ciro Salvo, se ubicó quinta. Nápoles lideró además el ranking por número de locales, con 31 pizzerías entre las cien mejores de Italia.",
+    "fuente_url": "https://www.50toppizza.it/50-top-pizza-italia-2026-confine-a-milano-e-la-migliore-pizzeria-in-italia-per-il-2026/",
+    "imagen_url": "https://www.50toppizza.it/wp-content/uploads/2026/07/BannerPodio_Italia26.png",
+    "fecha": "2026-07-20",
+    "ciudad_slug": "napoles"
+  }
+]

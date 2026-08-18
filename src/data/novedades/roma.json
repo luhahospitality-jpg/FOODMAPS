@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Ineo y La Terrazza del Hotel Eden logran su primera Estrella Michelin en la Guía Italia 2026",
+    "resumen": "En la ceremonia de la Guía Michelin Italia 2026, Roma sumó tres nuevas estrellas: los restaurantes Ineo, del chef Heros De Agostinis, y La Terrazza del Hotel Eden, del chef Salvatore Bianco, debutaron en el firmamento estrellado. La Pergola de Heinz Beck reafirmó sus tres estrellas, consolidando a Roma como la ciudad con más restaurantes estrellados de Italia, con 20 en total.",
+    "fuente_url": "https://www.romatoday.it/social/guida-michelin-2026-ristoranti-stellati-roma.html",
+    "imagen_url": "https://www.romatoday.it/~media/horizontal-hi/34639750569510/la-terrazza.jpg",
+    "fecha": "2025-11-20",
+    "ciudad_slug": "roma"
+  },
+  {
+    "titulo": "Gambero Rosso otorga las Tre Forchette a siete restaurantes de Roma en su guía 2026",
+    "resumen": "La 37ª edición de la Guía Ristoranti d'Italia de Gambero Rosso premió a 252 locales de Roma y el Lazio, 42 de ellos nuevas incorporaciones, y reconoció a siete restaurantes con el máximo galardón de Tre Forchette, entre ellos Il Pagliaccio, La Pergola, Imàgo, Enoteca La Torre, Idylio by Apreda y el recién llegado Zia Restaurant.",
+    "fuente_url": "https://www.7colli.it/i-migliori-ristoranti-gambero-rosso-2026-la-classifica-e-i-locali-premiati-a-roma-e-provincia-199884/",
+    "imagen_url": "https://www.7colli.it/wp-content/uploads/2025/10/Ristorante.jpg",
+    "fecha": "2025-10-20",
+    "ciudad_slug": "roma"
+  },
+  {
+    "titulo": "50 Top Pizza 2026 premia a Roma: Francesco Calò, mejor pizzaiolo de Italia, y Seu Pizza Illuminati, pizza del año",
+    "resumen": "En la gala de 50 Top Pizza Italia 2026, celebrada en Milán, Francesco Calò de Avenida Calò fue nombrado Pizzaiolo del Año, y Seu Pizza Illuminati se llevó el premio a la Pizza del Año por su 'Assoluto di Melanzane', además de quedar en segundo puesto del ranking nacional. Ambos locales son de Roma, que colocó 27 pizzerías en la clasificación.",
+    "fuente_url": "https://www.50toppizza.it/50-top-pizza-italia-2026-confine-a-milano-e-la-migliore-pizzeria-in-italia-per-il-2026/",
+    "imagen_url": "https://www.50toppizza.it/wp-content/uploads/2026/07/BannerPodio_Italia26.png",
+    "fecha": "2026-07-20",
+    "ciudad_slug": "roma"
+  },
+  {
+    "titulo": "Time Out nombra a Seu Pizza Illuminati la mejor pizza de Roma",
+    "resumen": "La revista Time Out situó a Seu Pizza Illuminati, en Trastevere, como la mejor pizzería de Roma en la actualidad, destacando su doble fermentación de estilo napolitano que logra una base crocante al modo romano. Pizzeria de Remo y Sant'Isidoro Pizza e Bolle completaron el podio.",
+    "fuente_url": "https://www.timeout.com/news/this-is-officially-the-best-pizza-in-rome-right-now-081825",
+    "imagen_url": "https://media.timeout.com/images/106052479/image.jpg",
+    "fecha": "2025-08-18",
+    "ciudad_slug": "roma"
+  },
+  {
+    "titulo": "180grammi, la única pizzería italiana entre las mejores del mundo según Time Out 2026",
+    "resumen": "En su ranking mundial de las mejores pizzas de 2026, Time Out situó la pizza capricciosa de 180grammi Pizzeria Romana, en Roma, en el segundo puesto, como la máxima representante de Italia, solo por detrás de la ganadora Mama's Too de Nueva York.",
+    "fuente_url": "https://timeout.com/news/this-is-officially-the-best-pizza-on-the-planet-right-now-according-to-time-out-020526",
+    "imagen_url": "https://media.timeout.com/images/105712027/image.jpg",
+    "fecha": "2026-02-05",
+    "ciudad_slug": "roma"
+  }
+]
