@@ -4,9 +4,52 @@ import { useMemo, useState } from "react";
 import type { Place, NewsItem, Lang, Tier } from "@/types/city";
 import { PlaceCard } from "./PlaceCard";
 import { categoryText, tagLabel } from "@/lib/labels";
+import { getSourceThumbnail } from "@/lib/sourceThumbnail";
 import { t } from "@/lib/dictionary";
 
 type Section = "novedades" | "top" | "categorias" | "cocinas" | "especiales";
+
+function NewsTabIcon({ size = 14 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8L12 2z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function NovedadesTab({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`inline-flex items-center gap-1.5 rounded-full border-2 border-ink px-4 py-2 font-label text-xs font-bold tracking-wide uppercase transition-all ${
+        active
+          ? "bg-red text-paper shadow-hard-sm"
+          : "bg-mustard/25 text-ink hover:bg-mustard/50"
+      }`}
+    >
+      <NewsTabIcon />
+      {children}
+    </button>
+  );
+}
 
 function Chip({
   active,
@@ -123,9 +166,9 @@ export function CityExplorer({
   return (
     <div>
       <div className="flex flex-wrap gap-2">
-        <Chip active={section === "novedades"} onClick={() => selectSection("novedades")}>
+        <NovedadesTab active={section === "novedades"} onClick={() => selectSection("novedades")}>
           {dict.city.tabs.novedades}
-        </Chip>
+        </NovedadesTab>
         <Chip active={section === "top"} onClick={() => selectSection("top")}>
           {dict.city.tabs.top} {Math.min(20, places.length)}
         </Chip>
@@ -182,6 +225,44 @@ export function CityExplorer({
   );
 }
 
+function NewsThumbnail({ url }: { url: string | null }) {
+  const [broken, setBroken] = useState(false);
+  const { kind, imageUrl } = getSourceThumbnail(url);
+
+  return (
+    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-ink bg-cream">
+      {imageUrl && !broken ? (
+        <img
+          src={imageUrl}
+          alt=""
+          onError={() => setBroken(true)}
+          className={
+            kind === "video"
+              ? "h-full w-full object-cover"
+              : "h-full w-full object-contain p-3"
+          }
+        />
+      ) : (
+        <div className="flex h-full w-full items-center justify-center text-ink/25">
+          <NewsTabIcon size={20} />
+        </div>
+      )}
+      {kind === "video" && (
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 flex items-center justify-center"
+        >
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink/70">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M1 0.5v9l8-4.5-8-4.5z" fill="var(--color-paper)" />
+            </svg>
+          </span>
+        </span>
+      )}
+    </div>
+  );
+}
+
 function NewsList({ news, lang }: { news: NewsItem[]; lang: Lang }) {
   const dict = t(lang);
 
@@ -189,35 +270,38 @@ function NewsList({ news, lang }: { news: NewsItem[]; lang: Lang }) {
     return <p className="font-body text-sm text-ink/60">{dict.city.noNews}</p>;
   }
 
+  const sorted = [...news].sort((a, b) => b.fecha.localeCompare(a.fecha));
+
   return (
     <div className="flex flex-col gap-4">
-      {news.map((item, i) => (
+      {sorted.map((item, i) => (
         <article
           key={i}
-          className="rounded-2xl border-2 border-ink bg-paper p-5 shadow-hard"
+          className="flex gap-4 rounded-2xl border-2 border-ink bg-paper p-5 shadow-hard"
         >
-          <div className="flex items-center justify-between gap-3">
+          <NewsThumbnail url={item.fuente_url} />
+          <div className="min-w-0 flex-1">
             <span className="font-label text-[11px] font-bold tracking-widest text-ink/50 uppercase">
               {item.fecha}
             </span>
+            <h3 className="mt-1 font-display text-xl font-black uppercase">
+              {item.titulo}
+            </h3>
+            <p className="mt-2 font-body text-sm leading-relaxed text-ink/80">
+              {item.resumen}
+            </p>
+            {item.fuente_url && (
+              <a
+                href={item.fuente_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
+              >
+                {dict.place.source}
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
           </div>
-          <h3 className="mt-1 font-display text-xl font-black uppercase">
-            {item.titulo}
-          </h3>
-          <p className="mt-2 font-body text-sm leading-relaxed text-ink/80">
-            {item.resumen}
-          </p>
-          {item.fuente_url && (
-            <a
-              href={item.fuente_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-1.5 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
-            >
-              {dict.place.source}
-              <span aria-hidden="true">↗</span>
-            </a>
-          )}
         </article>
       ))}
       <p className="font-label text-[11px] text-ink/40 uppercase">
