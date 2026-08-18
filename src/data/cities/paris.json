@@ -3,7 +3,7 @@
   "name": "París",
   "country": "Francia",
   "tagline": "El café donde se afiló la Revolución, y el falafel con fila en Le Marais desde 1979.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -42,7 +42,8 @@
       "source_type": "classic",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8530584,2.3387505"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8530584,2.3387505",
+      "distinction": null
     },
     {
       "name": "Le Baratin",
@@ -61,6 +62,7 @@
       "rank": 3,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8730762,2.3828589",
+      "distinction": null,
       "source_type_secondary": "critic"
     },
     {
@@ -103,6 +105,1846 @@
       "distinction": {
         "type": "michelin_star",
         "count": 3
+      }
+    },
+    {
+      "name": "Arpège",
+      "place_id": null,
+      "lat": 48.8558,
+      "lng": 2.3161,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Templo del legumbre-centrismo de Alain Passard en el distrito 7, con hortalizas de sus propias huertas normandas. Tres estrellas Michelin desde 1996.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8558,2.3161",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "L'Astrance",
+      "place_id": null,
+      "lat": 48.8557,
+      "lng": 2.2853,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Pequeño comedor de Pascal Barbot en el distrito 16, sin carta fija: el chef decide el menú cada día. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8557,2.2853",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Epicure",
+      "place_id": null,
+      "lat": 48.8722,
+      "lng": 2.3162,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El restaurante de Éric Fréchon en el hotel Le Bristol, con su icónico macarrón de langosta y trufa negra. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8722,2.3162",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Pierre Gagnaire",
+      "place_id": null,
+      "lat": 48.8735,
+      "lng": 2.299,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de vanguardia y platos servidos en múltiples pequeñas composiciones, firma de uno de los chefs más influyentes de Francia. Tres estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8735,2.299",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Plénitude",
+      "place_id": null,
+      "lat": 48.8595,
+      "lng": 2.3416,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El restaurante de Arnaud Donckele dentro del hotel Cheval Blanc Paris, con vistas al Sena desde La Samaritaine. Tres estrellas Michelin desde 2021.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8595,2.3416",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Kei",
+      "place_id": null,
+      "lat": 48.8642,
+      "lng": 2.3418,
+      "category": "fine_dining",
+      "cuisine": "franco-japonés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de precisión franco-japonesa de Kei Kobayashi cerca del Louvre. Tres estrellas Michelin desde 2020, primer chef japonés en lograrlo en Francia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8642,2.3418",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Le Meurice Alain Ducasse",
+      "place_id": null,
+      "lat": 48.8651,
+      "lng": 2.3283,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Comedor dorado estilo Versalles dentro del hotel Le Meurice, con la firma de Alain Ducasse. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8651,2.3283",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Sur Mesure par Thierry Marx",
+      "place_id": null,
+      "lat": 48.8672,
+      "lng": 2.3283,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de texturas blancas y técnica de vanguardia de Thierry Marx en el Mandarin Oriental Paris. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8672,2.3283",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Le Clarence",
+      "place_id": null,
+      "lat": 48.8695,
+      "lng": 2.3057,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Antigua mansión privada cerca de los Campos Elíseos, con bodega de la familia Prats (Château Lafite). Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8695,2.3057",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "L'Ambroisie",
+      "place_id": null,
+      "lat": 48.8557,
+      "lng": 2.3655,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic",
+        "clasico"
+      ],
+      "description": "Alta cocina clásica en un antiguo taller de orfebrería en la Place des Vosges. Tres estrellas Michelin desde 1988, una de las más longevas de París.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8557,2.3655",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Alain Ducasse au Plaza Athénée",
+      "place_id": null,
+      "lat": 48.8661,
+      "lng": 2.3037,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de la \"naturalidad\" centrada en pescado, cereales y verduras, en el emblemático hotel de la Avenue Montaigne. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8661,2.3037",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "David Toutain",
+      "place_id": null,
+      "lat": 48.8593,
+      "lng": 2.3079,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Menús de degustación vegetales y de temporada de un antiguo alumno de Bernard Loiseau y Alain Passard. Dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8593,2.3079",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Substance",
+      "place_id": null,
+      "lat": 48.8664,
+      "lng": 2.2966,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Comedor pequeño y minimalista de Matthias Marc en el distrito 16, técnica depurada sobre pocos ingredientes. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8664,2.2966",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Yam'Tcha",
+      "place_id": null,
+      "lat": 48.8617,
+      "lng": 2.3439,
+      "category": "fine_dining",
+      "cuisine": "franco-chino",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Fusión franco-china de Adeline Grattard, con maridaje de té en vez de vino. Una estrella Michelin cerca de Les Halles.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8617,2.3439",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Le Grand Véfour",
+      "place_id": null,
+      "lat": 48.8645,
+      "lng": 2.3376,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "clasico",
+        "critic"
+      ],
+      "description": "Comedor dieciochesco bajo los arcos del Palais Royal, donde comieron Napoleón, Victor Hugo y Colette. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8645,2.3376",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Ze Kitchen Galerie",
+      "place_id": null,
+      "lat": 48.8543,
+      "lng": 2.3411,
+      "category": "fine_dining",
+      "cuisine": "franco-asiático",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina franco-asiática de William Ledeuil en un antiguo taller de artista de Saint-Germain-des-Prés. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8543,2.3411",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Benoit",
+      "place_id": null,
+      "lat": 48.8583,
+      "lng": 2.3505,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Bistró parisino de 1912 retomado por Alain Ducasse, con bœuf bourguignon y cassoulet de manual. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8583,2.3505",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "La Tour d'Argent",
+      "place_id": null,
+      "lat": 48.8503,
+      "lng": 2.3548,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución de 1582 frente a Notre-Dame, célebre por su pato numerado (canard au sang) servido desde el siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8503,2.3548",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Aux Lyonnais",
+      "place_id": null,
+      "lat": 48.8703,
+      "lng": 2.3413,
+      "category": "bistro",
+      "cuisine": "lionesa",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Bistró lionés de 1890 recuperado por Alain Ducasse, especializado en quenelles y saucisson chaud. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8703,2.3413",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Septime",
+      "place_id": null,
+      "lat": 48.8546,
+      "lng": 2.3822,
+      "category": "bistro",
+      "cuisine": "francés / bistronomía",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Bistró de Bertrand Grébaut, epicentro del movimiento de la bistronomía parisina desde 2011, con menú corto de mercado y estética industrial.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8546,2.3822",
+      "distinction": null
+    },
+    {
+      "name": "Frenchie",
+      "place_id": null,
+      "lat": 48.8674,
+      "lng": 2.3466,
+      "category": "bistro",
+      "cuisine": "francés / bistronomía",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Grégory Marchand abrió este bistró de bolsillo en la Rue du Nil en 2009 tras trabajar con Jamie Oliver y Gramercy Tavern; Anthony Bourdain lo señaló como ejemplo del nuevo bistró parisino en \"Parts Unknown\".",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8674,2.3466",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Le Chateaubriand",
+      "place_id": null,
+      "lat": 48.8663,
+      "lng": 2.3745,
+      "category": "bistro",
+      "cuisine": "francés / bistronomía",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Bistró de Iñaki Aizpitarte en Belleville, referencia mundial de la nueva cocina bistronómica y habitual del ranking World's 50 Best. Anthony Bourdain lo visitó en \"No Reservations\".",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8663,2.3745",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Clown Bar",
+      "place_id": null,
+      "lat": 48.8632,
+      "lng": 2.3707,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Antiguo bar del Cirque d'Hiver con azulejos Art Nouveau originales, reconvertido en bistró de vinos naturales y cocina de producto.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8632,2.3707",
+      "distinction": null
+    },
+    {
+      "name": "Bistrot Paul Bert",
+      "place_id": null,
+      "lat": 48.8543,
+      "lng": 2.3833,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Bistró clásico del distrito 11 con entrecôte-frites y tarta Tatin de referencia; Anthony Bourdain lo visitó en \"No Reservations\".",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8543,2.3833",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Chez L'Ami Jean",
+      "place_id": null,
+      "lat": 48.8602,
+      "lng": 2.3049,
+      "category": "bistro",
+      "cuisine": "vasco-francés",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Bistró de inspiración vasca cerca de la Torre Eiffel, ambiente ruidoso y ración generosa de riz au lait. Anthony Bourdain cenó aquí.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8602,2.3049",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Le Comptoir du Relais",
+      "place_id": null,
+      "lat": 48.8514,
+      "lng": 2.3389,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Bistró de Yves Camdeborde, considerado el padre de la bistronomía moderna, en el corazón de Saint-Germain-des-Prés.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8514,2.3389",
+      "distinction": null
+    },
+    {
+      "name": "L'Ami Louis",
+      "place_id": null,
+      "lat": 48.8656,
+      "lng": 2.3562,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Bistró legendario desde 1924 famoso por su pollo asado y patatas fritas en manteca de pato; imán de celebridades desde hace décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8656,2.3562",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Josephine Chez Dumonet",
+      "place_id": null,
+      "lat": 48.845,
+      "lng": 2.3184,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Bistró de época en el distrito 6, con un bœuf bourguignon que Anthony Bourdain elogió en \"Parts Unknown\".",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.845,2.3184",
+      "distinction": null
+    },
+    {
+      "name": "Le Servan",
+      "place_id": null,
+      "lat": 48.8624,
+      "lng": 2.38,
+      "category": "bistro",
+      "cuisine": "francés / asiático",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "critic"
+      ],
+      "description": "Bistró de las hermanas Levha cerca de la Place de la République, con toques asiáticos sobre base francesa. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8624,2.38",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Le Dauphin",
+      "place_id": null,
+      "lat": 48.8664,
+      "lng": 2.3746,
+      "category": "bar_vinos",
+      "cuisine": "francés / picoteo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Sala de mármol diseñada por Rem Koolhaas junto al Chateaubriand, con tapas francesas para picar y buena carta de vinos naturales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8664,2.3746",
+      "distinction": null
+    },
+    {
+      "name": "Vivant Table",
+      "place_id": null,
+      "lat": 48.872,
+      "lng": 2.3524,
+      "category": "bistro",
+      "cuisine": "francés / natural",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Antigua tienda de pájaros del siglo XIX convertida en restaurante de vinos naturales en el distrito 10, con azulejos originales intactos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.872,2.3524",
+      "distinction": null
+    },
+    {
+      "name": "Pierre Sang in Oberkampf",
+      "place_id": null,
+      "lat": 48.8654,
+      "lng": 2.3752,
+      "category": "bistro",
+      "cuisine": "franco-coreano",
+      "tags": [
+        "tv_show",
+        "critic"
+      ],
+      "description": "El chef franco-coreano Pierre Sang Boyer, revelado en \"Top Chef\" Francia (2011), sirve un menú sorpresa sin carta en este local sin reservas de Oberkampf.",
+      "source_url": null,
+      "source_type": "tv_show",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8654,2.3752",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Le Rigmarole",
+      "place_id": null,
+      "lat": 48.8637,
+      "lng": 2.3722,
+      "category": "bistro",
+      "cuisine": "franco-asiático / yakitori",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Parrilla yakitori y cocina franco-asiática de una pareja formada en Noma y Roberta's, en un pequeño local del distrito 11. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8637,2.3722",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Spring",
+      "place_id": null,
+      "lat": 48.8608,
+      "lng": 2.3412,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante del chef estadounidense Daniel Rose cerca del Louvre, pionero de los menús únicos de degustación sin elección en París.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8608,2.3412",
+      "distinction": null
+    },
+    {
+      "name": "Mokonuts",
+      "place_id": null,
+      "lat": 48.8534,
+      "lng": 2.3805,
+      "category": "bistro",
+      "cuisine": "francés / mediterráneo",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Pequeño local de Moko Hirayama y Omar Koreitem, célebre tanto por su almuerzo de mercado como por sus galletas de tahini, muy queridas por la crítica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8534,2.3805",
+      "distinction": null
+    },
+    {
+      "name": "Chez Georges",
+      "place_id": null,
+      "lat": 48.8677,
+      "lng": 2.3419,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de 1964 cerca de la Bolsa, con manteles blancos, tartar de ternera al minuto y un servicio inalterado desde hace décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8677,2.3419",
+      "distinction": null
+    },
+    {
+      "name": "Allard",
+      "place_id": null,
+      "lat": 48.8532,
+      "lng": 2.3403,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de 1931 en Saint-Germain, hoy bajo el grupo Ducasse, célebre por su pato con aceitunas y sus caracoles.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8532,2.3403",
+      "distinction": null
+    },
+    {
+      "name": "Chez Denise (La Tour de Montlhéry)",
+      "place_id": null,
+      "lat": 48.8618,
+      "lng": 2.3452,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de Les Halles abierto toda la noche desde los años 60, con manteles de cuadros y raciones enormes de cocina de tradición.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8618,2.3452",
+      "distinction": null
+    },
+    {
+      "name": "Auberge Pyrénées Cévennes",
+      "place_id": null,
+      "lat": 48.8664,
+      "lng": 2.3766,
+      "category": "bistro",
+      "cuisine": "francés / suroeste",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de tradición gascona cerca de la Place de la République desde 1930, famoso por su cassoulet y su pato.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8664,2.3766",
+      "distinction": null
+    },
+    {
+      "name": "Robert et Louise",
+      "place_id": null,
+      "lat": 48.8607,
+      "lng": 2.361,
+      "category": "bistro",
+      "cuisine": "francés / carnes",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró carnívoro de Le Marais con chimenea de leña donde se asa la carne, sencillo y sin pretensiones desde los años 60.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8607,2.361",
+      "distinction": null
+    },
+    {
+      "name": "Le Timbre",
+      "place_id": null,
+      "lat": 48.8449,
+      "lng": 2.3288,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Minúsculo bistró de Montparnasse llevado por un solo chef en la cocina abierta, con relación calidad-precio muy alabada por la crítica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8449,2.3288",
+      "distinction": null
+    },
+    {
+      "name": "La Régalade Saint-Honoré",
+      "place_id": null,
+      "lat": 48.8615,
+      "lng": 2.3448,
+      "category": "bistro",
+      "cuisine": "francés / suroeste",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Bistró de tradición del suroeste francés cerca del Louvre, con la clásica terrina servida en la mesa antes del plato principal. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8615,2.3448",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Au Pied de Cochon",
+      "place_id": null,
+      "lat": 48.8635,
+      "lng": 2.3444,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie de Les Halles abierta 24 horas desde 1947, superviviente del antiguo mercado de abastos, famosa por su pata de cerdo asada.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8635,2.3444",
+      "distinction": null
+    },
+    {
+      "name": "Bofinger",
+      "place_id": null,
+      "lat": 48.8532,
+      "lng": 2.3688,
+      "category": "brasserie",
+      "cuisine": "alsaciana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie alsaciana de 1864 cerca de la Bastilla, considerada la más antigua de París, con su icónica cúpula de vidrio Art Nouveau.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8532,2.3688",
+      "distinction": null
+    },
+    {
+      "name": "Brasserie Lipp",
+      "place_id": null,
+      "lat": 48.8536,
+      "lng": 2.3335,
+      "category": "brasserie",
+      "cuisine": "alsaciana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie de 1880 en el bulevar Saint-Germain, punto de encuentro histórico de escritores y políticos, célebre por su choucroute.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8536,2.3335",
+      "distinction": null
+    },
+    {
+      "name": "La Coupole",
+      "place_id": null,
+      "lat": 48.8421,
+      "lng": 2.3283,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Gran brasserie Art Déco de Montparnasse abierta en 1927, con columnas pintadas por artistas de la época y clientela de Picasso a Man Ray.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8421,2.3283",
+      "distinction": null
+    },
+    {
+      "name": "Le Dôme",
+      "place_id": null,
+      "lat": 48.8424,
+      "lng": 2.3277,
+      "category": "brasserie",
+      "cuisine": "pescados y mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie de mariscos de Montparnasse abierta en 1898, refugio histórico de la bohemia artística internacional.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8424,2.3277",
+      "distinction": null
+    },
+    {
+      "name": "La Closerie des Lilas",
+      "place_id": null,
+      "lat": 48.8408,
+      "lng": 2.3324,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie de Montparnasse donde Hemingway escribió parte de \"Fiesta\", con placas de latón que marcan los asientos de sus clientes célebres.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8408,2.3324",
+      "distinction": null
+    },
+    {
+      "name": "Le Train Bleu",
+      "place_id": null,
+      "lat": 48.8447,
+      "lng": 2.3739,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante Belle Époque de 1901 dentro de la Gare de Lyon, con techos pintados que le valen la protección de monumento histórico.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8447,2.3739",
+      "distinction": null
+    },
+    {
+      "name": "Bouillon Chartier",
+      "place_id": null,
+      "lat": 48.8722,
+      "lng": 2.3421,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Comedor popular de 1896 con decoración Art Nouveau original, heredero de los antiguos \"bouillons\" parisinos de precio económico.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8722,2.3421",
+      "distinction": null
+    },
+    {
+      "name": "Bouillon Pigalle",
+      "place_id": null,
+      "lat": 48.8827,
+      "lng": 2.3376,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Revival moderno del concepto de \"bouillon\" popular en Pigalle, cocina de tradición francesa a precios muy accesibles y colas constantes.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 56,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8827,2.3376",
+      "distinction": null
+    },
+    {
+      "name": "Bouillon Julien",
+      "place_id": null,
+      "lat": 48.8706,
+      "lng": 2.354,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bouillon de 1906 con uno de los interiores Art Nouveau mejor conservados de París, monumento histórico clasificado.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8706,2.354",
+      "distinction": null
+    },
+    {
+      "name": "Le Grand Colbert",
+      "place_id": null,
+      "lat": 48.8676,
+      "lng": 2.339,
+      "category": "brasserie",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Brasserie de principios del siglo XX en la Galerie Vivienne, hecha célebre internacionalmente por una escena de la película \"Something's Gotta Give\" (2003).",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8676,2.339",
+      "distinction": null
+    },
+    {
+      "name": "Polidor",
+      "place_id": null,
+      "lat": 48.8497,
+      "lng": 2.3392,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Crémerie-restaurante de 1845 en el Barrio Latino, escenario de una escena de \"Midnight in Paris\" (2011) de Woody Allen.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8497,2.3392",
+      "distinction": null
+    },
+    {
+      "name": "Café de Flore",
+      "place_id": null,
+      "lat": 48.8542,
+      "lng": 2.3325,
+      "category": "cafe",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de 1887 en Saint-Germain-des-Prés, cuartel general literario de Sartre y Simone de Beauvoir en los años 40.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8542,2.3325",
+      "distinction": null
+    },
+    {
+      "name": "Les Deux Magots",
+      "place_id": null,
+      "lat": 48.8539,
+      "lng": 2.3332,
+      "category": "cafe",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café rival del Flore desde 1884, frecuentado por Hemingway, Picasso y André Breton, con terraza siempre concurrida.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 61,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8539,2.3332",
+      "distinction": null
+    },
+    {
+      "name": "Angelina",
+      "place_id": null,
+      "lat": 48.8651,
+      "lng": 2.3282,
+      "category": "cafe",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Salón de té de 1903 frente al Jardín de las Tullerías, famoso por su chocolate caliente \"L'Africain\" y su Mont-Blanc de castaña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 62,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8651,2.3282",
+      "distinction": null
+    },
+    {
+      "name": "Ladurée Champs-Élysées",
+      "place_id": null,
+      "lat": 48.8698,
+      "lng": 2.3079,
+      "category": "pasteleria",
+      "cuisine": "repostería francesa",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Casa de repostería de 1862 a la que se atribuye la creación del macaron moderno de doble concha, con salón de té Segundo Imperio en los Campos Elíseos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8698,2.3079",
+      "distinction": null
+    },
+    {
+      "name": "Pierre Hermé",
+      "place_id": null,
+      "lat": 48.8512,
+      "lng": 2.3335,
+      "category": "pasteleria",
+      "cuisine": "repostería francesa",
+      "tags": [
+        "critic"
+      ],
+      "description": "Boutique de macarons e Ispahan del pastelero apodado \"el Picasso de la repostería\" por la crítica gastronómica internacional.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 64,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8512,2.3335",
+      "distinction": null
+    },
+    {
+      "name": "Du Pain et des Idées",
+      "place_id": null,
+      "lat": 48.8699,
+      "lng": 2.3626,
+      "category": "panaderia",
+      "cuisine": "panadería francesa",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Panadería del distrito 10 llevada por Christophe Vasseur en un local de 1875, célebre por su \"pain des amis\" y su escargot de pistacho.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 65,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8699,2.3626",
+      "distinction": null
+    },
+    {
+      "name": "Poilâne",
+      "place_id": null,
+      "lat": 48.8507,
+      "lng": 2.3268,
+      "category": "panaderia",
+      "cuisine": "panadería francesa",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Panadería familiar de 1932 en Saint-Germain, famosa por su gran hogaza de masa madre marcada con una \"P\", horneada en horno de leña.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8507,2.3268",
+      "distinction": null
+    },
+    {
+      "name": "Boulangerie Utopie",
+      "place_id": null,
+      "lat": 48.8664,
+      "lng": 2.3735,
+      "category": "panaderia",
+      "cuisine": "panadería francesa",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Panadería moderna del distrito 11 muy celebrada por la crítica por su cruasán y su pan de tradición de fermentación larga.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 67,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8664,2.3735",
+      "distinction": null
+    },
+    {
+      "name": "Chambelland",
+      "place_id": null,
+      "lat": 48.8646,
+      "lng": 2.3776,
+      "category": "panaderia",
+      "cuisine": "panadería sin gluten",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Pionera panadería sin gluten de París, con harina de arroz y trigo sarraceno molida en su propio molino en Ardèche.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 68,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8646,2.3776",
+      "distinction": null
+    },
+    {
+      "name": "L'As du Fallafel",
+      "place_id": null,
+      "lat": 48.8571,
+      "lng": 2.3593,
+      "category": "restaurante",
+      "cuisine": "israelí / oriente medio",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "Institución del falafel en la Rue des Rosiers desde 1979, con fila constante en Le Marais. Anthony Bourdain lo recomendó en su serie.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 69,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8571,2.3593",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Chez Marianne",
+      "place_id": null,
+      "lat": 48.8573,
+      "lng": 2.3597,
+      "category": "restaurante",
+      "cuisine": "judía / oriente medio",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Delicatessen y restaurante judío de Le Marais desde los años 70, con platillos mixtos de mezze para llevar o comer en el local.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 70,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8573,2.3597",
+      "distinction": null
+    },
+    {
+      "name": "Mi-Va-Mi",
+      "place_id": null,
+      "lat": 48.8572,
+      "lng": 2.3574,
+      "category": "restaurante",
+      "cuisine": "israelí",
+      "tags": [
+        "critic"
+      ],
+      "description": "Puesto de falafel de Le Marais, rival directo de L'As du Fallafel, con seguidores fieles entre los vecinos del barrio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8572,2.3574",
+      "distinction": null
+    },
+    {
+      "name": "Sacha Finkelsztajn",
+      "place_id": null,
+      "lat": 48.8571,
+      "lng": 2.3591,
+      "category": "panaderia",
+      "cuisine": "judía askenazí",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La \"Boutique Jaune\" de Le Marais, panadería y charcutería judía askenazí desde 1946, famosa por su strudel y su pastrami.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 72,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8571,2.3591",
+      "distinction": null
+    },
+    {
+      "name": "Marché des Enfants Rouges",
+      "place_id": null,
+      "lat": 48.8626,
+      "lng": 2.3631,
+      "category": "mercado",
+      "cuisine": "variado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El mercado cubierto más antiguo de París, abierto en 1615 en Le Marais, con puestos de comida de todo el mundo para comer de pie.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8626,2.3631",
+      "distinction": null
+    },
+    {
+      "name": "Le Baron Rouge",
+      "place_id": null,
+      "lat": 48.8494,
+      "lng": 2.3789,
+      "category": "bar_vinos",
+      "cuisine": "francés",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Bar de vinos de barrio junto al mercado de Aligre, con barricas por mesa y ostras los fines de semana en la acera.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 74,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8494,2.3789",
+      "distinction": null,
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Septime La Cave",
+      "place_id": null,
+      "lat": 48.8558,
+      "lng": 2.382,
+      "category": "bar_vinos",
+      "cuisine": "vinos naturales",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de vinos naturales de los propietarios de Septime, con tabla de quesos y embutidos para acompañar copas de pie.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 75,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8558,2.382",
+      "distinction": null
+    },
+    {
+      "name": "Willi's Wine Bar",
+      "place_id": null,
+      "lat": 48.8659,
+      "lng": 2.3378,
+      "category": "bar_vinos",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de vinos anglo-francés abierto en 1980 cerca del Palais Royal, pionero de la ola de wine bars modernos en París.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8659,2.3378",
+      "distinction": null
+    },
+    {
+      "name": "Frenchie Bar à Vin",
+      "place_id": null,
+      "lat": 48.8674,
+      "lng": 2.3466,
+      "category": "bar_vinos",
+      "cuisine": "francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Wine bar sin reservas de Grégory Marchand frente a su restaurante Frenchie, con tabla de embutidos y vinos naturales por copas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 77,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8674,2.3466",
+      "distinction": null
+    },
+    {
+      "name": "Le Verre Volé",
+      "place_id": null,
+      "lat": 48.8706,
+      "lng": 2.3628,
+      "category": "bar_vinos",
+      "cuisine": "francés",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Tienda de vinos y restaurante junto al Canal Saint-Martin, pionero de la escena de vino natural parisina de los años 2000.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 78,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8706,2.3628",
+      "distinction": null
+    },
+    {
+      "name": "L'Avant Comptoir",
+      "place_id": null,
+      "lat": 48.8514,
+      "lng": 2.3389,
+      "category": "bar_vinos",
+      "cuisine": "francés / tapas",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Barra de pie de Yves Camdeborde junto al Comptoir du Relais, con tapas francesas colgadas del techo y jamón cortado a mano.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 79,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8514,2.3389",
+      "distinction": null
+    },
+    {
+      "name": "Racines",
+      "place_id": null,
+      "lat": 48.8707,
+      "lng": 2.3418,
+      "category": "bar_vinos",
+      "cuisine": "francés / italiano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de vinos naturales escondido en el Passage des Panoramas, referencia temprana del movimiento del vino natural en París.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 80,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8707,2.3418",
+      "distinction": null
+    },
+    {
+      "name": "Aux Deux Amis",
+      "place_id": null,
+      "lat": 48.8646,
+      "lng": 2.3746,
+      "category": "bar_vinos",
+      "cuisine": "francés",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Bar de vinos naturales de Oberkampf con cocina de picoteo, punto de encuentro habitual de la escena bistronómica del distrito 11.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 81,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8646,2.3746",
+      "distinction": null
+    },
+    {
+      "name": "Clamato",
+      "place_id": null,
+      "lat": 48.8546,
+      "lng": 2.3822,
+      "category": "bar_vinos",
+      "cuisine": "pescados y mariscos",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Hermano marino de Septime en la misma calle, especializado en marisco crudo y platillos para compartir, sin reservas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 82,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8546,2.3822",
+      "distinction": null
+    },
+    {
+      "name": "Holybelly",
+      "place_id": null,
+      "lat": 48.8706,
+      "lng": 2.3616,
+      "category": "cafe",
+      "cuisine": "cafetería / brunch",
+      "tags": [
+        "timeout",
+        "influencer"
+      ],
+      "description": "Cafetería de especialidad pionera del brunch al estilo australiano en París, cerca del Canal Saint-Martin, con fila habitual los fines de semana.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 83,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8706,2.3616",
+      "distinction": null
+    },
+    {
+      "name": "Ten Belles",
+      "place_id": null,
+      "lat": 48.8722,
+      "lng": 2.3667,
+      "category": "cafe",
+      "cuisine": "cafetería",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Uno de los primeros cafés de tueste propio de la ciudad, junto al Canal Saint-Martin, referencia de la ola del café de especialidad en París.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 84,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8722,2.3667",
+      "distinction": null
+    },
+    {
+      "name": "Café Kitsuné",
+      "place_id": null,
+      "lat": 48.8646,
+      "lng": 2.3376,
+      "category": "cafe",
+      "cuisine": "cafetería",
+      "tags": [
+        "influencer",
+        "viral_social"
+      ],
+      "description": "Cafetería de la marca de moda japonesa-francesa bajo los arcos del Palais Royal, muy fotografiada y viral en redes sociales.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 85,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8646,2.3376",
+      "distinction": null
+    },
+    {
+      "name": "Berthillon",
+      "place_id": null,
+      "lat": 48.8517,
+      "lng": 2.3567,
+      "category": "heladeria",
+      "cuisine": "heladería francesa",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería familiar de la Île Saint-Louis desde 1954, con sabores artesanales y colas que dan la vuelta a la manzana en verano.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8517,2.3567",
+      "distinction": null
+    },
+    {
+      "name": "Fromagerie Laurent Dubois",
+      "place_id": null,
+      "lat": 48.8497,
+      "lng": 2.3505,
+      "category": "queseria",
+      "cuisine": "quesos franceses",
+      "tags": [
+        "critic"
+      ],
+      "description": "Quesería del distrito 5 llevada por un Meilleur Ouvrier de France, con afinado propio en cueva y selección de más de 200 quesos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 87,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8497,2.3505",
+      "distinction": null
+    },
+    {
+      "name": "Barthélémy",
+      "place_id": null,
+      "lat": 48.8534,
+      "lng": 2.3272,
+      "category": "queseria",
+      "cuisine": "quesos franceses",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Quesería histórica de la Rue de Grenelle, proveedora tradicional del Palacio del Elíseo desde hace generaciones.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 88,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8534,2.3272",
+      "distinction": null
+    },
+    {
+      "name": "La Fromagerie Marie-Anne Cantin",
+      "place_id": null,
+      "lat": 48.8558,
+      "lng": 2.3053,
+      "category": "queseria",
+      "cuisine": "quesos franceses",
+      "tags": [
+        "critic"
+      ],
+      "description": "Quesería artesanal cerca de la Torre Eiffel, con quesos de leche cruda de pequeños productores y afinado en cueva propia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8558,2.3053",
+      "distinction": null
+    },
+    {
+      "name": "Breizh Café",
+      "place_id": null,
+      "lat": 48.8637,
+      "lng": 2.3627,
+      "category": "creperia",
+      "cuisine": "bretona",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Crepería que reinventó la galette bretona con productos de temporada y sidra artesanal, en Le Marais.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 90,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8637,2.3627",
+      "distinction": null
+    },
+    {
+      "name": "La Crêperie de Josselin",
+      "place_id": null,
+      "lat": 48.8398,
+      "lng": 2.3255,
+      "category": "creperia",
+      "cuisine": "bretona",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Crepería bretona clásica de Montparnasse, barrio históricamente ligado a la comunidad bretona de París.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 91,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8398,2.3255",
+      "distinction": null
+    },
+    {
+      "name": "Chez Omar",
+      "place_id": null,
+      "lat": 48.8631,
+      "lng": 2.3625,
+      "category": "restaurante",
+      "cuisine": "marroquí",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante marroquí sin cartel en Le Marais, célebre desde los años 80 por su cuscús, con clientela fiel del mundo de la moda.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 92,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8631,2.3625",
+      "distinction": null
+    },
+    {
+      "name": "404",
+      "place_id": null,
+      "lat": 48.8637,
+      "lng": 2.3547,
+      "category": "restaurante",
+      "cuisine": "marroquí",
+      "tags": [
+        "critic",
+        "influencer"
+      ],
+      "description": "Restaurante marroquí de Mourad \"Momo\" Mazouz en un antiguo almacén de Le Marais, favorito de la clientela de moda y celebridades.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 93,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8637,2.3547",
+      "distinction": null
+    },
+    {
+      "name": "Le Petit Cambodge",
+      "place_id": null,
+      "lat": 48.8715,
+      "lng": 2.3654,
+      "category": "restaurante",
+      "cuisine": "camboyano",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante camboyano informal del distrito 10 muy popular por sus bo bun y sopas, con mesas compartidas y ambiente animado.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 94,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8715,2.3654",
+      "distinction": null
+    },
+    {
+      "name": "Miznon",
+      "place_id": null,
+      "lat": 48.8567,
+      "lng": 2.3585,
+      "category": "restaurante",
+      "cuisine": "israelí",
+      "tags": [
+        "viral_social",
+        "influencer"
+      ],
+      "description": "Bocadillos de pita del chef israelí Eyal Shani en Le Marais, con la coliflor entera asada hecha viral en redes sociales.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 95,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8567,2.3585",
+      "distinction": null
+    },
+    {
+      "name": "Terroir Parisien",
+      "place_id": null,
+      "lat": 48.8494,
+      "lng": 2.3496,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró de Yannick Alléno dedicado a recuperar recetas y productos de la región parisina, cerca de la Place Maubert.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8494,2.3496",
+      "distinction": null
+    },
+    {
+      "name": "Au Petit Fer à Cheval",
+      "place_id": null,
+      "lat": 48.8577,
+      "lng": 2.3603,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bistró de Le Marais desde 1903, con su icónica barra en forma de herradura de caballo.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8577,2.3603",
+      "distinction": null
+    },
+    {
+      "name": "Semilla",
+      "place_id": null,
+      "lat": 48.8541,
+      "lng": 2.3364,
+      "category": "bistro",
+      "cuisine": "franco-americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bistró de Saint-Germain con cocina de mercado y cocina abierta, formado en la escuela de la bistronomía de Camdeborde.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 98,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8541,2.3364",
+      "distinction": null
+    },
+    {
+      "name": "Verjus",
+      "place_id": null,
+      "lat": 48.8645,
+      "lng": 2.3373,
+      "category": "bistro",
+      "cuisine": "francés / americano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante y wine bar dirigido por un equipo estadounidense cerca del Palais Royal, con menú de degustación y buena carta de vinos naturales.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 99,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8645,2.3373",
+      "distinction": null
+    },
+    {
+      "name": "Le Pantruche",
+      "place_id": null,
+      "lat": 48.8813,
+      "lng": 2.3373,
+      "category": "bistro",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "bib_gourmand"
+      ],
+      "description": "Bistró de barrio en Pigalle con soufflé al Grand Marnier de referencia. Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 100,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=48.8813,2.3373",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
       }
     }
   ],

@@ -22,6 +22,386 @@
     "Guy Savoy": {
       "cuisine": "French",
       "description": "Classic French haute cuisine inside the Monnaie de Paris, on the banks of the Seine. Three Michelin stars."
+    },
+    "Arpège": {
+      "cuisine": "French",
+      "description": "Alain Passard's vegetable-centric temple in the 7th arrondissement, sourced from his own Normandy gardens. Three Michelin stars since 1996."
+    },
+    "L'Astrance": {
+      "cuisine": "French",
+      "description": "Pascal Barbot's tiny dining room in the 16th, with no fixed menu — the chef decides each day. Three Michelin stars."
+    },
+    "Epicure": {
+      "cuisine": "French",
+      "description": "Éric Fréchon's restaurant inside the Le Bristol hotel, famous for its truffled lobster macaroni. Three Michelin stars."
+    },
+    "Pierre Gagnaire": {
+      "cuisine": "French",
+      "description": "Avant-garde cooking served as multiple small compositions, from one of France's most influential chefs. Three Michelin stars."
+    },
+    "Plénitude": {
+      "cuisine": "French",
+      "description": "Arnaud Donckele's restaurant inside the Cheval Blanc Paris hotel, overlooking the Seine from La Samaritaine. Three Michelin stars since 2021."
+    },
+    "Kei": {
+      "cuisine": "French-Japanese",
+      "description": "Kei Kobayashi's precise French-Japanese cooking near the Louvre. Three Michelin stars since 2020, the first Japanese chef to earn them in France."
+    },
+    "Le Meurice Alain Ducasse": {
+      "cuisine": "French",
+      "description": "A gilded, Versailles-style dining room inside the Le Meurice hotel, under Alain Ducasse. Two Michelin stars."
+    },
+    "Sur Mesure par Thierry Marx": {
+      "cuisine": "French",
+      "description": "Thierry Marx's all-white, technique-driven cooking inside the Mandarin Oriental Paris. Two Michelin stars."
+    },
+    "Le Clarence": {
+      "cuisine": "French",
+      "description": "A former private mansion near the Champs-Élysées, backed by the Prats family's wine cellar (Château Lafite). Two Michelin stars."
+    },
+    "L'Ambroisie": {
+      "cuisine": "French",
+      "description": "Classic haute cuisine in a former goldsmith's workshop on the Place des Vosges. Three Michelin stars since 1988, among the longest-held in Paris."
+    },
+    "Alain Ducasse au Plaza Athénée": {
+      "cuisine": "French",
+      "description": "\"Naturalness\" cuisine built around fish, grains and vegetables, inside the landmark Avenue Montaigne hotel. Two Michelin stars."
+    },
+    "David Toutain": {
+      "cuisine": "French",
+      "description": "Seasonal, vegetable-forward tasting menus from a former protégé of Bernard Loiseau and Alain Passard. Two Michelin stars."
+    },
+    "Substance": {
+      "cuisine": "French",
+      "description": "Matthias Marc's small, minimalist dining room in the 16th, refined technique built on few ingredients. One Michelin star."
+    },
+    "Yam'Tcha": {
+      "cuisine": "French-Chinese",
+      "description": "Adeline Grattard's French-Chinese fusion, paired with tea instead of wine. One Michelin star near Les Halles."
+    },
+    "Le Grand Véfour": {
+      "cuisine": "French",
+      "description": "An 18th-century dining room under the arcades of the Palais Royal, once frequented by Napoleon, Victor Hugo and Colette. One Michelin star."
+    },
+    "Ze Kitchen Galerie": {
+      "cuisine": "French-Asian",
+      "description": "William Ledeuil's French-Asian cooking inside a former artist's studio in Saint-Germain-des-Prés. One Michelin star."
+    },
+    "Benoit": {
+      "cuisine": "French",
+      "description": "A 1912 Paris bistro revived by Alain Ducasse, serving textbook bœuf bourguignon and cassoulet. One Michelin star."
+    },
+    "La Tour d'Argent": {
+      "cuisine": "French",
+      "description": "An institution dating to 1582 across from Notre-Dame, famous for its numbered pressed duck (canard au sang), served since the 19th century."
+    },
+    "Aux Lyonnais": {
+      "cuisine": "Lyonnaise",
+      "description": "An 1890 Lyonnaise bistro revived by Alain Ducasse, known for quenelles and saucisson chaud. Michelin Bib Gourmand."
+    },
+    "Septime": {
+      "cuisine": "French / bistronomy",
+      "description": "Bertrand Grébaut's bistro, ground zero for Paris's bistronomy movement since 2011, with a short market-driven menu and industrial-chic dining room."
+    },
+    "Frenchie": {
+      "cuisine": "French / bistronomy",
+      "description": "Grégory Marchand opened this pocket-sized bistro on Rue du Nil in 2009 after stints with Jamie Oliver and Gramercy Tavern; Anthony Bourdain cited it as a marker of the new Paris bistro on \"Parts Unknown\"."
+    },
+    "Le Chateaubriand": {
+      "cuisine": "French / bistronomy",
+      "description": "Iñaki Aizpitarte's Belleville bistro, a global reference for the new bistronomy and a regular on the World's 50 Best list. Anthony Bourdain visited it on \"No Reservations\"."
+    },
+    "Clown Bar": {
+      "cuisine": "French",
+      "description": "A former bar of the Cirque d'Hiver, with its original Art Nouveau tilework, reborn as a natural-wine bistro built on quality produce."
+    },
+    "Bistrot Paul Bert": {
+      "cuisine": "French",
+      "description": "A classic 11th-arrondissement bistro known for its benchmark entrecôte-frites and tarte Tatin; Anthony Bourdain visited it on \"No Reservations\"."
+    },
+    "Chez L'Ami Jean": {
+      "cuisine": "Basque-French",
+      "description": "A Basque-inflected bistro near the Eiffel Tower, loud and generous, famous for its riz au lait. Anthony Bourdain dined here."
+    },
+    "Le Comptoir du Relais": {
+      "cuisine": "French",
+      "description": "Yves Camdeborde's bistro, credited as the birthplace of modern bistronomy, in the heart of Saint-Germain-des-Prés."
+    },
+    "L'Ami Louis": {
+      "cuisine": "French",
+      "description": "A legendary bistro since 1924, famous for its roast chicken and duck-fat potatoes; a celebrity magnet for decades."
+    },
+    "Josephine Chez Dumonet": {
+      "cuisine": "French",
+      "description": "A period-piece bistro in the 6th arrondissement, whose bœuf bourguignon Anthony Bourdain praised on \"Parts Unknown\"."
+    },
+    "Le Servan": {
+      "cuisine": "French / Asian",
+      "description": "The Levha sisters' bistro near the Place de la République, French cooking with Asian accents. Michelin Bib Gourmand."
+    },
+    "Le Dauphin": {
+      "cuisine": "French / small plates",
+      "description": "A marble room designed by Rem Koolhaas next door to Le Chateaubriand, serving French small plates alongside a strong natural-wine list."
+    },
+    "Vivant Table": {
+      "cuisine": "French / natural wine",
+      "description": "A 19th-century former bird shop turned natural-wine restaurant in the 10th arrondissement, its original tilework still intact."
+    },
+    "Pierre Sang in Oberkampf": {
+      "cuisine": "French-Korean",
+      "description": "French-Korean chef Pierre Sang Boyer, discovered on France's \"Top Chef\" (2011), serves a no-menu surprise tasting at this walk-in-only Oberkampf spot."
+    },
+    "Le Rigmarole": {
+      "cuisine": "French-Asian / yakitori",
+      "description": "Yakitori grill and French-Asian cooking from a couple trained at Noma and Roberta's, in a tiny 11th-arrondissement room. One Michelin star."
+    },
+    "Spring": {
+      "cuisine": "French",
+      "description": "American chef Daniel Rose's restaurant near the Louvre, a pioneer of no-choice single tasting menus in Paris."
+    },
+    "Mokonuts": {
+      "cuisine": "French / Mediterranean",
+      "description": "Moko Hirayama and Omar Koreitem's tiny spot, loved equally for its market lunch and its critically adored tahini cookies."
+    },
+    "Chez Georges": {
+      "cuisine": "French",
+      "description": "A 1964 bistro near the old stock exchange, white tablecloths, steak tartare prepared tableside, and service unchanged for decades."
+    },
+    "Allard": {
+      "cuisine": "French",
+      "description": "A 1931 Saint-Germain bistro, now under the Ducasse group, famous for its olive-braised duck and escargots."
+    },
+    "Chez Denise (La Tour de Montlhéry)": {
+      "cuisine": "French",
+      "description": "A Les Halles bistro open all night since the 1960s, checkered tablecloths and enormous portions of traditional cooking."
+    },
+    "Auberge Pyrénées Cévennes": {
+      "cuisine": "French / southwest",
+      "description": "A Gascon-tradition bistro near the Place de la République since 1930, known for its cassoulet and duck dishes."
+    },
+    "Robert et Louise": {
+      "cuisine": "French / meat",
+      "description": "A meat-focused Marais bistro with a wood fire where the meat is grilled, unpretentious and unchanged since the 1960s."
+    },
+    "Le Timbre": {
+      "cuisine": "French",
+      "description": "A tiny Montparnasse bistro run by a single chef at the open kitchen, praised by critics for its value."
+    },
+    "La Régalade Saint-Honoré": {
+      "cuisine": "French / southwest",
+      "description": "A southwest-French tradition bistro near the Louvre, with the house terrine served table-side before the main course. Michelin Bib Gourmand."
+    },
+    "Au Pied de Cochon": {
+      "cuisine": "French",
+      "description": "A Les Halles brasserie open 24 hours since 1947, a survivor of the old central market, famous for its roasted pig's trotter."
+    },
+    "Bofinger": {
+      "cuisine": "Alsatian",
+      "description": "An 1864 Alsatian brasserie near the Bastille, often called the oldest in Paris, famous for its Art Nouveau glass dome."
+    },
+    "Brasserie Lipp": {
+      "cuisine": "Alsatian",
+      "description": "An 1880 brasserie on Boulevard Saint-Germain, a historic meeting point for writers and politicians, known for its choucroute."
+    },
+    "La Coupole": {
+      "cuisine": "French",
+      "description": "A grand Art Déco Montparnasse brasserie opened in 1927, its columns painted by era artists, once frequented by Picasso and Man Ray."
+    },
+    "Le Dôme": {
+      "cuisine": "seafood",
+      "description": "A Montparnasse seafood brasserie opened in 1898, a historic haunt of the international artistic bohemia."
+    },
+    "La Closerie des Lilas": {
+      "cuisine": "French",
+      "description": "A Montparnasse brasserie where Hemingway wrote part of \"The Sun Also Rises\", brass plaques marking the seats of famous regulars."
+    },
+    "Le Train Bleu": {
+      "cuisine": "French",
+      "description": "A Belle Époque restaurant from 1901 inside the Gare de Lyon, its painted ceilings protected as a historic monument."
+    },
+    "Bouillon Chartier": {
+      "cuisine": "French",
+      "description": "A popular 1896 dining hall with original Art Nouveau decor, heir to Paris's old low-priced \"bouillon\" canteens."
+    },
+    "Bouillon Pigalle": {
+      "cuisine": "French",
+      "description": "A modern revival of the popular \"bouillon\" canteen concept in Pigalle, traditional French cooking at very low prices, with a constant queue."
+    },
+    "Bouillon Julien": {
+      "cuisine": "French",
+      "description": "A 1906 bouillon with one of the best-preserved Art Nouveau interiors in Paris, a listed historic monument."
+    },
+    "Le Grand Colbert": {
+      "cuisine": "French",
+      "description": "An early-20th-century brasserie in the Galerie Vivienne, made internationally famous by a scene in the film \"Something's Gotta Give\" (2003)."
+    },
+    "Polidor": {
+      "cuisine": "French",
+      "description": "An 1845 crémerie-restaurant in the Latin Quarter, the setting for a scene in Woody Allen's \"Midnight in Paris\" (2011)."
+    },
+    "Café de Flore": {
+      "cuisine": "French",
+      "description": "An 1887 café in Saint-Germain-des-Prés, the literary headquarters of Sartre and Simone de Beauvoir in the 1940s."
+    },
+    "Les Deux Magots": {
+      "cuisine": "French",
+      "description": "The Flore's rival café since 1884, once frequented by Hemingway, Picasso and André Breton, its terrace always full."
+    },
+    "Angelina": {
+      "cuisine": "French",
+      "description": "A 1903 tea salon facing the Tuileries Garden, famous for its \"L'Africain\" hot chocolate and its chestnut Mont-Blanc pastry."
+    },
+    "Ladurée Champs-Élysées": {
+      "cuisine": "French pastry",
+      "description": "An 1862 pastry house credited with creating the modern double-shelled macaron, its Second Empire tearoom on the Champs-Élysées."
+    },
+    "Pierre Hermé": {
+      "cuisine": "French pastry",
+      "description": "The macaron and Ispahan boutique of the pastry chef the food press has dubbed \"the Picasso of pastry\"."
+    },
+    "Du Pain et des Idées": {
+      "cuisine": "French bakery",
+      "description": "A 10th-arrondissement bakery run by Christophe Vasseur out of an 1875 shop, famous for its \"pain des amis\" and pistachio escargot pastry."
+    },
+    "Poilâne": {
+      "cuisine": "French bakery",
+      "description": "A family bakery since 1932 in Saint-Germain, famous for its large sourdough miche stamped with a \"P\", baked in a wood-fired oven."
+    },
+    "Boulangerie Utopie": {
+      "cuisine": "French bakery",
+      "description": "A modern 11th-arrondissement bakery widely praised by critics for its croissant and long-fermented traditional bread."
+    },
+    "Chambelland": {
+      "cuisine": "gluten-free bakery",
+      "description": "Paris's pioneering gluten-free bakery, using rice and buckwheat flour milled at its own mill in the Ardèche."
+    },
+    "L'As du Fallafel": {
+      "cuisine": "Israeli / Middle Eastern",
+      "description": "A falafel institution on the Rue des Rosiers since 1979, with a constant line in Le Marais. Anthony Bourdain recommended it on his show."
+    },
+    "Chez Marianne": {
+      "cuisine": "Jewish / Middle Eastern",
+      "description": "A Jewish deli and restaurant in Le Marais since the 1970s, serving mixed mezze plates to go or to eat in."
+    },
+    "Mi-Va-Mi": {
+      "cuisine": "Israeli",
+      "description": "A Marais falafel stand, the direct rival to L'As du Fallafel, with loyal neighborhood followers."
+    },
+    "Sacha Finkelsztajn": {
+      "cuisine": "Ashkenazi Jewish",
+      "description": "The \"Yellow Shop\" of Le Marais, an Ashkenazi Jewish bakery and deli since 1946, famous for its strudel and pastrami."
+    },
+    "Marché des Enfants Rouges": {
+      "cuisine": "varied",
+      "description": "Paris's oldest covered market, opened in 1615 in Le Marais, lined with food stalls from around the world for eating on the spot."
+    },
+    "Le Baron Rouge": {
+      "cuisine": "French",
+      "description": "A neighborhood wine bar next to the Marché d'Aligre, barrels for tables and oysters shucked curbside on weekends."
+    },
+    "Septime La Cave": {
+      "cuisine": "natural wine",
+      "description": "The natural-wine bar from Septime's owners, cheese and charcuterie boards to pair with glasses poured standing up."
+    },
+    "Willi's Wine Bar": {
+      "cuisine": "French",
+      "description": "An Anglo-French wine bar opened in 1980 near the Palais Royal, a pioneer of the modern Paris wine-bar wave."
+    },
+    "Frenchie Bar à Vin": {
+      "cuisine": "French",
+      "description": "Grégory Marchand's walk-in wine bar across from his restaurant Frenchie, charcuterie boards and natural wines by the glass."
+    },
+    "Le Verre Volé": {
+      "cuisine": "French",
+      "description": "A wine shop and restaurant beside the Canal Saint-Martin, a pioneer of Paris's 2000s natural-wine scene."
+    },
+    "L'Avant Comptoir": {
+      "cuisine": "French / tapas",
+      "description": "Yves Camdeborde's standing-only counter next to Le Comptoir du Relais, French tapas hanging from the ceiling and hand-carved ham."
+    },
+    "Racines": {
+      "cuisine": "French / Italian",
+      "description": "A natural-wine bar tucked into the Passage des Panoramas, an early reference point for Paris's natural-wine movement."
+    },
+    "Aux Deux Amis": {
+      "cuisine": "French",
+      "description": "An Oberkampf natural-wine bar with small-plate cooking, a regular meeting point for the 11th arrondissement's bistronomy scene."
+    },
+    "Clamato": {
+      "cuisine": "seafood",
+      "description": "Septime's seafood-focused sibling on the same street, specializing in raw shellfish and shared plates, walk-in only."
+    },
+    "Holybelly": {
+      "cuisine": "coffee shop / brunch",
+      "description": "A specialty-coffee shop that pioneered Australian-style brunch in Paris, near the Canal Saint-Martin, with a regular weekend line."
+    },
+    "Ten Belles": {
+      "cuisine": "coffee shop",
+      "description": "One of the city's first single-origin roasters, beside the Canal Saint-Martin, a reference point for Paris's specialty-coffee wave."
+    },
+    "Café Kitsuné": {
+      "cuisine": "coffee shop",
+      "description": "The coffee shop from the Japanese-French fashion brand, under the arcades of the Palais Royal, heavily photographed and viral on social media."
+    },
+    "Berthillon": {
+      "cuisine": "French ice cream",
+      "description": "A family ice cream maker on the Île Saint-Louis since 1954, artisanal flavors and lines that wrap the block in summer."
+    },
+    "Fromagerie Laurent Dubois": {
+      "cuisine": "French cheese",
+      "description": "A 5th-arrondissement cheese shop run by a Meilleur Ouvrier de France, with in-house cave-aging and a selection of over 200 cheeses."
+    },
+    "Barthélémy": {
+      "cuisine": "French cheese",
+      "description": "A historic cheese shop on the Rue de Grenelle, a traditional supplier to the Élysée Palace for generations."
+    },
+    "La Fromagerie Marie-Anne Cantin": {
+      "cuisine": "French cheese",
+      "description": "An artisan cheese shop near the Eiffel Tower, raw-milk cheeses from small producers, aged in its own cave."
+    },
+    "Breizh Café": {
+      "cuisine": "Breton",
+      "description": "A creperie that reinvented the Breton galette with seasonal ingredients and artisan cider, in Le Marais."
+    },
+    "La Crêperie de Josselin": {
+      "cuisine": "Breton",
+      "description": "A classic Breton creperie in Montparnasse, a neighborhood long tied to Paris's Breton community."
+    },
+    "Chez Omar": {
+      "cuisine": "Moroccan",
+      "description": "An unmarked Moroccan restaurant in Le Marais, famous since the 1980s for its couscous, with a loyal fashion-world following."
+    },
+    "404": {
+      "cuisine": "Moroccan",
+      "description": "Mourad \"Momo\" Mazouz's Moroccan restaurant in a former Marais warehouse, a favorite of the fashion and celebrity crowd."
+    },
+    "Le Petit Cambodge": {
+      "cuisine": "Cambodian",
+      "description": "A casual Cambodian restaurant in the 10th arrondissement, popular for its bo bun and soups, shared tables and a lively room."
+    },
+    "Miznon": {
+      "cuisine": "Israeli",
+      "description": "Israeli chef Eyal Shani's pita sandwiches in Le Marais, its whole roasted cauliflower gone viral on social media."
+    },
+    "Terroir Parisien": {
+      "cuisine": "French",
+      "description": "Yannick Alléno's bistro dedicated to reviving recipes and produce from the Paris region, near the Place Maubert."
+    },
+    "Au Petit Fer à Cheval": {
+      "cuisine": "French",
+      "description": "A Le Marais bistro since 1903, famous for its horseshoe-shaped bar."
+    },
+    "Semilla": {
+      "cuisine": "French-American",
+      "description": "A Saint-Germain bistro with market-driven cooking and an open kitchen, rooted in Camdeborde's bistronomy school."
+    },
+    "Verjus": {
+      "cuisine": "French / American",
+      "description": "A restaurant and wine bar run by an American-led team near the Palais Royal, tasting menu and a strong natural-wine list."
+    },
+    "Le Pantruche": {
+      "cuisine": "French",
+      "description": "A neighborhood bistro in Pigalle known for its benchmark Grand Marnier soufflé. Michelin Bib Gourmand."
     }
   }
 }
