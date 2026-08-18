@@ -10,7 +10,7 @@
   "progreso_por_ciudad": {
     "amsterdam": { "actual": 40, "objetivo": 40, "tier": "N" },
     "atenas": { "actual": 40, "objetivo": 40, "tier": "N" },
-    "bangkok": { "actual": 5, "objetivo": 100, "tier": "S" },
+    "bangkok": { "actual": 100, "objetivo": 100, "tier": "S" },
     "barcelona": { "actual": 100, "objetivo": 100, "tier": "S" },
     "beijing": { "actual": 40, "objetivo": 40, "tier": "N" },
     "berlin": { "actual": 40, "objetivo": 40, "tier": "N" },
@@ -19,7 +19,7 @@
     "budapest": { "actual": 40, "objetivo": 40, "tier": "N" },
     "buenos-aires": { "actual": 5, "objetivo": 100, "tier": "S" },
     "chicago": { "actual": 37, "objetivo": 40, "tier": "N" },
-    "ciudad-de-mexico": { "actual": 5, "objetivo": 100, "tier": "S" },
+    "ciudad-de-mexico": { "actual": 100, "objetivo": 100, "tier": "S" },
     "ciudad-del-cabo": { "actual": 40, "objetivo": 40, "tier": "N" },
     "copenhague": { "actual": 40, "objetivo": 40, "tier": "N" },
     "cordoba": { "actual": 40, "objetivo": 40, "tier": "N" },
