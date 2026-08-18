@@ -225,26 +225,29 @@ export function CityExplorer({
   );
 }
 
-function NewsThumbnail({ url }: { url: string | null }) {
+function NewsCover({ item }: { item: NewsItem }) {
   const [broken, setBroken] = useState(false);
-  const { kind, imageUrl } = getSourceThumbnail(url);
+  const { kind, imageUrl: fallbackImage } = getSourceThumbnail(item.fuente_url);
+  const cover = item.imagen_url || null;
+  const src = broken ? null : (cover ?? fallbackImage);
+  const isFallback = !cover;
 
   return (
-    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 border-ink bg-cream">
-      {imageUrl && !broken ? (
+    <div className="relative aspect-[16/10] w-full shrink-0 overflow-hidden border-b-2 border-ink bg-cream">
+      {src ? (
         <img
-          src={imageUrl}
+          src={src}
           alt=""
           onError={() => setBroken(true)}
           className={
-            kind === "video"
-              ? "h-full w-full object-cover"
-              : "h-full w-full object-contain p-3"
+            isFallback
+              ? "h-full w-full object-contain p-8 opacity-80"
+              : "h-full w-full object-cover"
           }
         />
       ) : (
-        <div className="flex h-full w-full items-center justify-center text-ink/25">
-          <NewsTabIcon size={20} />
+        <div className="flex h-full w-full items-center justify-center text-ink/20">
+          <NewsTabIcon size={32} />
         </div>
       )}
       {kind === "video" && (
@@ -252,9 +255,9 @@ function NewsThumbnail({ url }: { url: string | null }) {
           aria-hidden="true"
           className="absolute inset-0 flex items-center justify-center"
         >
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink/70">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M1 0.5v9l8-4.5-8-4.5z" fill="var(--color-paper)" />
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-ink bg-paper/90 shadow-hard-sm">
+            <svg width="16" height="16" viewBox="0 0 10 10" fill="none">
+              <path d="M1 0.5v9l8-4.5-8-4.5z" fill="var(--color-ink)" />
             </svg>
           </span>
         </span>
@@ -273,38 +276,40 @@ function NewsList({ news, lang }: { news: NewsItem[]; lang: Lang }) {
   const sorted = [...news].sort((a, b) => b.fecha.localeCompare(a.fecha));
 
   return (
-    <div className="flex flex-col gap-4">
-      {sorted.map((item, i) => (
-        <article
-          key={i}
-          className="flex gap-4 rounded-2xl border-2 border-ink bg-paper p-5 shadow-hard"
-        >
-          <NewsThumbnail url={item.fuente_url} />
-          <div className="min-w-0 flex-1">
-            <span className="font-label text-[11px] font-bold tracking-widest text-ink/50 uppercase">
-              {item.fecha}
-            </span>
-            <h3 className="mt-1 font-display text-xl font-black uppercase">
-              {item.titulo}
-            </h3>
-            <p className="mt-2 font-body text-sm leading-relaxed text-ink/80">
-              {item.resumen}
-            </p>
-            {item.fuente_url && (
-              <a
-                href={item.fuente_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
-              >
-                {dict.place.source}
-                <span aria-hidden="true">↗</span>
-              </a>
-            )}
-          </div>
-        </article>
-      ))}
-      <p className="font-label text-[11px] text-ink/40 uppercase">
+    <div>
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        {sorted.map((item, i) => (
+          <article
+            key={i}
+            className="flex flex-col overflow-hidden rounded-2xl border-2 border-ink bg-paper shadow-hard"
+          >
+            <NewsCover item={item} />
+            <div className="flex flex-1 flex-col p-5">
+              <span className="font-label text-[11px] font-bold tracking-widest text-ink/50 uppercase">
+                {item.fecha}
+              </span>
+              <h3 className="mt-1 font-display text-xl font-black uppercase">
+                {item.titulo}
+              </h3>
+              <p className="mt-2 font-body text-sm leading-relaxed text-ink/80">
+                {item.resumen}
+              </p>
+              {item.fuente_url && (
+                <a
+                  href={item.fuente_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-flex w-fit items-center gap-1.5 pt-3 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
+                >
+                  {dict.place.source}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+      <p className="mt-5 font-label text-[11px] text-ink/40 uppercase">
         {dict.city.newsFooterNote}
       </p>
     </div>

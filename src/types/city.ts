@@ -89,6 +89,7 @@ export interface NewsItem {
   titulo: string;
   resumen: string;
   fuente_url: string | null;
+  imagen_url?: string | null;
   fecha: string;
   ciudad_slug: string;
 }
