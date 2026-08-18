@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "L'Ambroisie pierde su tercera estrella Michelin en la Guía Francia 2026",
+    "resumen": "El histórico L'Ambroisie, en la Place des Vosges y considerado el restaurante triestrellado más antiguo de París, fue rebajado a dos estrellas Michelin en la edición 2026 de la guía, en plena transición tras la llegada del chef Shintaro Awa en sustitución de Bernard Pacaud.",
+    "fuente_url": "https://www.sortiraparis.com/en/where-to-eat-in-paris/food-events/articles/342417-l-ambroisie-one-of-the-oldest-three-michelin-starred-restaurants-in-paris-has-lost-its-third-star",
+    "imagen_url": "https://cdn.sortiraparis.com/images/80/66131/1180381-le-saviez-vous-ce-graffiti-de-1764-sur-la-place-des-vosges-est-le-plus-vieux-de-paris.jpg",
+    "fecha": "2026-03-16",
+    "ciudad_slug": "paris"
+  },
+  {
+    "titulo": "Virtus logra su segunda estrella Michelin y Camille Gouyer gana el Premio Michelin al Servicio 2026",
+    "resumen": "El restaurante Virtus, del chef Frédéric Lorimier y su pareja Camille Gouyer en el 12º distrito parisino, recuperó su segunda estrella en la Guía Michelin Francia 2026, mientras Gouyer recibió además el Premio Michelin al Servicio por su trabajo en sala.",
+    "fuente_url": "https://www.lhotellerie-restauration.fr/actualite/michelin-2026-frederic-lorimier-et-camille-gouyer-2-etoiles-ile-de-france",
+    "imagen_url": "https://www.lhotellerie-restauration.fr/PublishedFiles/Image/9e20c06b/L/9e20c06b-08783eef-ee78-4ddc-9228-9ea9458e5a4c.jpg?v=639120204394966052",
+    "fecha": "2026-03-16",
+    "ciudad_slug": "paris"
+  },
+  {
+    "titulo": "Table by Bruno Verjus, en el puesto 8 de The World's 50 Best Restaurants 2025",
+    "resumen": "El restaurante parisino Table by Bruno Verjus se posicionó en el número 8 del ranking The World's 50 Best Restaurants 2025, presentado el 19 de junio en Turín, consolidándose como una de las mesas mejor valoradas de Francia y del mundo.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/the-worlds-50-best-restaurants-2025-1-50-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/W50BR25-LIP-fb.jpg",
+    "fecha": "2025-06-19",
+    "ciudad_slug": "paris"
+  },
+  {
+    "titulo": "Time Out revela los 50 mejores restaurantes de París en 2025",
+    "resumen": "Time Out publicó su ranking de los 50 mejores restaurantes de París en 2025, encabezado por Vaisseau del chef Adrien Cachot, seguido por Hakuba (Cheval Blanc) y el bistró Le Baratin de la chef Raquel Carena en Belleville.",
+    "fuente_url": "https://www.timeout.fr/paris/actualites/les-50-meilleurs-restaurants-de-paris-en-2025-selon-time-out-111725",
+    "imagen_url": "https://media.timeout.com/images/106343544/image.jpg",
+    "fecha": "2025-11-17",
+    "ciudad_slug": "paris"
+  },
+  {
+    "titulo": "La Guía Michelin suma 12 nuevas direcciones Bib Gourmand en París e Île-de-France para 2026",
+    "resumen": "En su presentación en el mercado de Rungis el 9 de febrero de 2026, la Guía Michelin incorporó 12 nuevos restaurantes Bib Gourmand en París e Île-de-France, distinguiendo direcciones que ofrecen una comida completa de calidad por unos 45 euros.",
+    "fuente_url": "https://www.sortiraparis.com/en/news/in-paris/articles/340612-bib-gourmand-2026-in-ile-de-france-12-restaurants-awarded-by-the-michelin-guide-for-their-excellent-value-for-money",
+    "imagen_url": "https://cdn.sortiraparis.com/images/80/1467/1244348-guide-michelin-2026-les-nouveaux-restaurants-bib-gourmand-a-paris-et-en-ile-de-france.jpg",
+    "fecha": "2026-02-09",
+    "ciudad_slug": "paris"
+  }
+]
