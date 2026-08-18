@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Abba y Procaccini logran su primera Estrella Michelin en la Guía Italia 2026",
+    "resumen": "En la gala de la Guía Michelin Italia 2026, los restaurantes milaneses Abba, del chef Fabio Abbattista, y Procaccini, del chef Emin Haziri, obtuvieron su primera estrella. En total, la edición 2026 sumó 22 nuevas estrellas en Italia, incluidas estas dos incorporaciones de Milán.",
+    "fuente_url": "https://www.mentelocale.it/milano/100271-guida-michelin-2026-i-ristoranti-stellati-a-milano-e-lombardia-l-elenco-completo-tra-novit-e-conferme.htm",
+    "imagen_url": "https://www.mentelocale.it/repository/contenuti/horizontal/100271.jpg?rand=125094907",
+    "fecha": "2025-11-20",
+    "ciudad_slug": "milan"
+  },
+  {
+    "titulo": "Il Luogo di Aimo e Nadia consigue las Tre Forchette del Gambero Rosso 2026",
+    "resumen": "La Guía Ristoranti d'Italia 2026 del Gambero Rosso otorgó por primera vez las Tre Forchette (máxima puntuación) al histórico restaurante milanés Il Luogo di Aimo e Nadia. En la misma edición, Bu:r, del chef Eugenio Boer, recibió el premio especial a la mejor hospitalidad ('Casolaro Hotellerie').",
+    "fuente_url": "https://www.ilgiorno.it/cronaca/guida-gambero-rosso-2026-lombardia-mywaj89l",
+    "imagen_url": "https://www.ilgiorno.it/image-service/view/acePublic/alias/contentid/YjQzYTRmOGEtNTQxNy00/0/lo-staff-della-trattoria-la-madia-migliore-ristorante-d-italia-nella-guida-gambero-rosso-2026-foto-facebook.jpg?f=16:9&w=1200&h=675",
+    "fecha": "2025-10-20",
+    "ciudad_slug": "milan"
+  },
+  {
+    "titulo": "Moebius, de Milán, entra entre los 10 mejores bares del mundo en The World's 50 Best Bars 2025",
+    "resumen": "El bar milanés Moebius, que combina coctelería, cultura y gastronomía, se situó en el puesto número 7 de la lista The World's 50 Best Bars 2025, anunciada en Hong Kong. Además, ganó el Nikka Highest Climber Award tras subir 31 posiciones respecto al año anterior.",
+    "fuente_url": "https://www.theworlds50best.com/bars/the-list/moebius-milano.html",
+    "imagen_url": "https://www.theworlds50best.com/bars/best-in-the-world/filestore/jpg/Moebius%20Milano-hero_W50BB25-website-fb.jpg",
+    "fecha": "2025-10-08",
+    "ciudad_slug": "milan"
+  },
+  {
+    "titulo": "Confine, de Milán, elegida mejor pizzería de Italia en 50 Top Pizza Italia 2026",
+    "resumen": "La pizzería milanesa Confine, dirigida por Francesco Capece y Mario Ventura, fue nombrada mejor pizzería de Italia en la edición 2026 de 50 Top Pizza, ceremonia celebrada en el Teatro Manzoni de Milán. Los organizadores destacaron a Milán como la ciudad con mayor progreso en su oferta de pizzerías en los últimos años.",
+    "fuente_url": "https://www.50toppizza.it/50-top-pizza-italia-2026-confine-a-milano-e-la-migliore-pizzeria-in-italia-per-il-2026/",
+    "imagen_url": "https://www.50toppizza.it/wp-content/uploads/2026/07/BannerPodio_Italia26.png",
+    "fecha": "2026-07-20",
+    "ciudad_slug": "milan"
+  }
+]
