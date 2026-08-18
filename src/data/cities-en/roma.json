@@ -22,6 +22,386 @@
     "Salumeria Roscioli": {
       "cuisine": "Roman",
       "description": "A delicatessen and wine cellar with more than 2,800 wines, next to Campo de' Fiori. Anthony Bourdain ate here in the Rome special of \"Parts Unknown\"; its carbonara is recognized by 50 Top Italy."
+    },
+    "Il Pagliaccio": {
+      "cuisine": "Contemporary Italian",
+      "description": "Chef Anthony Genovese's creative kitchen on Via dei Banchi Vecchi, holding two Michelin stars in the 2026 guide."
+    },
+    "Enoteca La Torre": {
+      "cuisine": "Italian",
+      "description": "Domenico Stile's restaurant inside Villa Laetitia on the Tiber, promoted to two Michelin stars in the 2026 guide."
+    },
+    "Acquolina": {
+      "cuisine": "Seafood",
+      "description": "Chef Daniele Lippi's seafood-focused fine dining at The First Roma Arte hotel, near Piazza del Popolo. Two Michelin stars."
+    },
+    "Pulejo": {
+      "cuisine": "Italian",
+      "description": "Intimate fine dining in Prati from chef Davide Pulejo, who trained at Il Convivio Troiani and Noma; one Michelin star."
+    },
+    "Orma Roma": {
+      "cuisine": "Fusion",
+      "description": "Colombian-Italian chef Roy Caceres blends Latin American, Asian and Mediterranean ingredients near Via Veneto. One Michelin star."
+    },
+    "INEO": {
+      "cuisine": "Contemporary Italian",
+      "description": "Modern Roman cuisine from chef Heros De Agostinis at the Anantara Palazzo Naiadi hotel, on Piazza della Repubblica. One Michelin star."
+    },
+    "Pipero Roma": {
+      "cuisine": "Italian",
+      "description": "Chef Alessandro Pipero brings his refined Roman cuisine to Corso Vittorio Emanuele II; one Michelin star since 2012."
+    },
+    "Il Convivio Troiani": {
+      "cuisine": "Italian",
+      "description": "The Troiani brothers have served refined Italian cuisine on a quiet street near Piazza Navona since 1990. One Michelin star."
+    },
+    "Per Me by Giulio Terrinoni": {
+      "cuisine": "Seafood",
+      "description": "Chef Giulio Terrinoni signs a creative seafood-driven menu near Campo de' Fiori. One Michelin star."
+    },
+    "Achilli al Parlamento": {
+      "cuisine": "Italian",
+      "description": "A long-running institution near the Italian Parliament that earned its first Michelin star in 2025 under chef Pierluigi Gallo."
+    },
+    "Imàgo": {
+      "cuisine": "Italian",
+      "description": "Set atop the Hotel Hassler with views over the Spanish Steps; one Michelin star."
+    },
+    "Moma Restaurant": {
+      "cuisine": "Contemporary Italian",
+      "description": "Modern restaurant near Piazza Barberini born from a project by young Italian chefs; one Michelin star."
+    },
+    "La Terrazza": {
+      "cuisine": "Italian",
+      "description": "The Hotel Eden's rooftop dining room overlooks Rome from Via Ludovisi; it earned its Michelin star in the 2026 guide."
+    },
+    "Marco Martini Restaurant": {
+      "cuisine": "Contemporary Italian",
+      "description": "Chef Marco Martini reinterprets Roman cuisine through a contemporary lens on Viale Aventino; one Michelin star."
+    },
+    "Aroma": {
+      "cuisine": "Italian",
+      "description": "On the rooftop of Palazzo Manfredi, with the Colosseum almost within reach; one Michelin star under chef Giuseppe Di Iorio."
+    },
+    "All'Oro": {
+      "cuisine": "Italian",
+      "description": "Chef Riccardo Di Giacinto reinvents Roman classics like carbonara at The H'All Tailor Suite hotel near Piazza del Popolo. One Michelin star."
+    },
+    "Glass Hostaria": {
+      "cuisine": "Contemporary Italian",
+      "description": "Chef Cristina Bowerman offers creative Italian cuisine in a design-forward space in the heart of Trastevere; one Michelin star."
+    },
+    "Zia": {
+      "cuisine": "Contemporary Italian",
+      "description": "A small Trastevere restaurant where chef Antonio Ziantoni signs a personal take on Italian cuisine; one Michelin star."
+    },
+    "Idylio by Apreda": {
+      "cuisine": "Italian",
+      "description": "Chef Francesco Apreda, trained across Asia, leads the kitchen at the Ambasciatori Palace hotel on Via Veneto; one Michelin star."
+    },
+    "Checchino dal 1887": {
+      "cuisine": "Roman",
+      "description": "Open beside Testaccio's old slaughterhouse since 1887, specializing in Roman offal cuisine: oxtail stew, tripe, and rigatoni alla pajata."
+    },
+    "Flavio al Velavevodetto": {
+      "cuisine": "Roman",
+      "description": "A Testaccio trattoria built into the ancient Monte dei Cocci pottery mound, serving textbook cacio e pepe, amatriciana and carbonara."
+    },
+    "Perilli": {
+      "cuisine": "Roman",
+      "description": "A family-run Testaccio trattoria open since 1911, with checkered tablecloths and one of Rome's most traditional carbonaras."
+    },
+    "Felice a Testaccio": {
+      "cuisine": "Roman",
+      "description": "A long-running Testaccio family trattoria famous for tossing cacio e pepe tableside inside a wheel of pecorino cheese."
+    },
+    "Da Oio a Casa Mia": {
+      "cuisine": "Roman",
+      "description": "A no-frills Testaccio trattoria loyal to old-school Roman cooking: amatriciana, tripe, and roast lamb."
+    },
+    "Cesare al Casaletto": {
+      "cuisine": "Roman",
+      "description": "A neighborhood trattoria in Monteverde, off the tourist trail, praised by food critics for its carbonara and fried starters."
+    },
+    "Trattoria Der Pallaro": {
+      "cuisine": "Roman",
+      "description": "Near Campo de' Fiori, offering a fixed no-menu meal for decades that walks diners through classic Roman dishes."
+    },
+    "Hostaria Antica Roma": {
+      "cuisine": "Ancient Roman",
+      "description": "On the Via Appia Antica among Roman catacombs, serving a menu inspired by recipes from classical antiquity."
+    },
+    "Trattoria Monti": {
+      "cuisine": "Marche region",
+      "description": "A family-run trattoria in the Monti district bringing cuisine from the Marche region to Rome, with vincisgrassi lasagna as its signature dish."
+    },
+    "Dar Poeta": {
+      "cuisine": "Pizza",
+      "description": "A benchmark Trastevere pizzeria known for its long-fermented dough and near-permanent line out front."
+    },
+    "Ai Marmi": {
+      "cuisine": "Pizza",
+      "description": "A classic Roman pizzeria on Viale di Trastevere nicknamed 'the morgue' for its marble-slab tables; thin, crackly-crust pizza."
+    },
+    "Ivo a Trastevere": {
+      "cuisine": "Pizza",
+      "description": "One of Trastevere's historic pizzerias, open since the 1960s, with a wood-fired oven and tables that stay full."
+    },
+    "Pizzeria Da Remo": {
+      "cuisine": "Pizza",
+      "description": "A Testaccio icon for paper-thin Roman-style pizza; loud, communal tables and lines that spill onto the street."
+    },
+    "Antico Forno Roscioli": {
+      "cuisine": "Bakery / pizza by the slice",
+      "description": "The Roscioli family's bakery and pizza-by-the-slice counter on Via dei Chiavari, with critically acclaimed sourdough bread and pizza bianca."
+    },
+    "Forno Campo de' Fiori": {
+      "cuisine": "Bakery",
+      "description": "A historic bakery right on Campo de' Fiori, famous for its freshly baked pizza bianca."
+    },
+    "Trapizzino": {
+      "cuisine": "Roman street food",
+      "description": "Chef Stefano Callegari invented the trapizzino here in 2008: a triangle of pizza bianca stuffed with Roman braises like oxtail stew or hunter's chicken."
+    },
+    "Supplizio": {
+      "cuisine": "Roman street food",
+      "description": "A tiny shop near Campo de' Fiori devoted entirely to supplì, Rome's deep-fried rice croquette stuffed with mozzarella."
+    },
+    "Pizzarium Bonci": {
+      "cuisine": "Pizza by the slice",
+      "description": "Baker Gabriele Bonci sells airy, seasonally topped pizza by the slice in Prati. Anthony Bourdain sampled it, including his Hawaiian-style pie, in the Rome episode of 'Parts Unknown'."
+    },
+    "Domenico dal 1968": {
+      "cuisine": "Roman",
+      "description": "A family-run Testaccio trattoria open since 1968, awarded the Michelin Bib Gourmand for its no-frills, product-driven Roman cooking."
+    },
+    "Hosteria Grappolo d'Oro": {
+      "cuisine": "Roman",
+      "description": "A hostaria near Campo de' Fiori holding the Michelin Bib Gourmand for seasonal Roman cooking at fair prices."
+    },
+    "Piperno": {
+      "cuisine": "Roman Jewish",
+      "description": "A historic restaurant in the Jewish Ghetto, open since the 19th century, famous for its crisp carciofi alla giudia (fried artichokes)."
+    },
+    "Nonna Betta": {
+      "cuisine": "Roman Jewish",
+      "description": "A Ghetto trattoria specializing in Roman-Jewish cuisine, with fried artichokes and battered salt-cod fillets among its staples."
+    },
+    "Ba'Ghetto": {
+      "cuisine": "Kosher Roman Jewish",
+      "description": "A kosher restaurant on Via del Portico d'Ottavia blending Roman-Jewish and North African cooking."
+    },
+    "Sora Margherita": {
+      "cuisine": "Roman Jewish",
+      "description": "A tiny, informal Ghetto trattoria that for years had no visible sign, a reference point for home-style Roman-Jewish cooking."
+    },
+    "Da Giggetto al Portico d'Ottavia": {
+      "cuisine": "Roman Jewish",
+      "description": "Set beside the ruins of the Portico d'Ottavia, a Ghetto institution since 1923 for Jewish-style artichokes and Roman cooking."
+    },
+    "Pasticceria Boccione": {
+      "cuisine": "Roman Jewish pastry",
+      "description": "An old, barely-marked Ghetto bakery famous for its torta di ricotta e visciole, a ricotta and sour-cherry tart."
+    },
+    "Trattoria Sora Lella": {
+      "cuisine": "Roman",
+      "description": "On Tiber Island, founded by actress Elena Fabrizi ('Sora Lella'); Anthony Bourdain ate suppli, meatballs and offal here in the Rome episode of 'Parts Unknown'."
+    },
+    "Il Goccetto": {
+      "cuisine": "Wine bar",
+      "description": "A historic wine bar on Via dei Banchi Vecchi, with hundreds of labels and cheese-and-charcuterie boards to match."
+    },
+    "Cul de Sac": {
+      "cuisine": "Wine bar",
+      "description": "One of Rome's earliest modern wine bars, just off Piazza Navona, with a wine list that has run for pages since the 1970s."
+    },
+    "Litro": {
+      "cuisine": "Natural wine bar",
+      "description": "A natural-wine bar in Monteverde with market-driven small plates and one of Rome's most carefully curated natural wine lists."
+    },
+    "Antica Pesa": {
+      "cuisine": "Roman",
+      "description": "A historic Trastevere restaurant, open since 1922 in a former public weighing station, serving classic Roman food with a notable wine cellar."
+    },
+    "La Rosetta": {
+      "cuisine": "Seafood",
+      "description": "A long-standing reference for seafood cooking in Rome, near the Pantheon, running since the 1960s."
+    },
+    "Pierluigi": {
+      "cuisine": "Seafood",
+      "description": "A seafood restaurant with a terrace on a hidden square between the Ghetto and Campo de' Fiori, open since 1938."
+    },
+    "Il Sanlorenzo": {
+      "cuisine": "Seafood",
+      "description": "Elegant seafood cooking inside a 15th-century palazzo near Campo de' Fiori, with raw fish preparations as a specialty."
+    },
+    "Antico Arco": {
+      "cuisine": "Contemporary Italian",
+      "description": "Perched atop the Gianicolo hill, a pioneer of contemporary Italian cooking in Rome since the late 1990s."
+    },
+    "Roma Sparita": {
+      "cuisine": "Roman",
+      "description": "A Trastevere trattoria famous for serving cacio e pepe inside an edible basket of baked parmesan, an image widely shared on social media."
+    },
+    "Spirito DiVino": {
+      "cuisine": "Ancient Roman",
+      "description": "Housed in a former Trastevere synagogue, serving dishes inspired by recipes from Imperial and Republican Rome."
+    },
+    "Colline Emiliane": {
+      "cuisine": "Emilian",
+      "description": "A family-run restaurant near Piazza Barberini specializing in fresh pasta and Emilia-Romagna cooking since 1931."
+    },
+    "Al Moro": {
+      "cuisine": "Roman",
+      "description": "An old-guard trattoria near the Trevi Fountain, open since 1929, a favorite of classic Roman society."
+    },
+    "Osteria Fernanda": {
+      "cuisine": "Contemporary Italian",
+      "description": "A contemporary Italian osteria in the less touristy end of Trastevere, well regarded by Roman food critics."
+    },
+    "Casa Coppelle": {
+      "cuisine": "Italian-French",
+      "description": "A romantic-feeling restaurant on Piazza delle Coppelle blending Italian and French cooking."
+    },
+    "Ditirambo": {
+      "cuisine": "Market-driven Roman",
+      "description": "Near Campo de' Fiori, Roman and Italian cooking built on organic, market-driven ingredients since 1996."
+    },
+    "Necci dal 1924": {
+      "cuisine": "Roman",
+      "description": "A Pigneto bar-trattoria opened in 1924, once frequented by Pier Paolo Pasolini and today a neighborhood gathering spot."
+    },
+    "Seu Pizza Illuminati": {
+      "cuisine": "Gourmet pizza",
+      "description": "A designer pizzeria near Trastevere using specialty flours and seasonal toppings, a benchmark of Rome's new-wave pizza scene."
+    },
+    "La Gatta Mangiona": {
+      "cuisine": "Pizza",
+      "description": "A Monteverde pizzeria highly rated for its light doughs and creative topping combinations."
+    },
+    "Sforno": {
+      "cuisine": "Pizza",
+      "description": "A pizzeria in the San Giovanni district that pioneered long-fermentation dough in Rome."
+    },
+    "180g Pizzeria Romana": {
+      "cuisine": "Pizza",
+      "description": "A Prati pizzeria focused on thin, crisp Roman-style round pizza made with locally sourced ingredients."
+    },
+    "Pinsere": {
+      "cuisine": "Roman pinsa",
+      "description": "A small shop near Termini station specializing in Roman pinsa, the oval, airy cousin of pizza."
+    },
+    "Gelateria Giolitti": {
+      "cuisine": "Gelato",
+      "description": "A historic gelateria near the Pantheon, open since 1900 and one of Rome's oldest and most visited."
+    },
+    "Fatamorgana": {
+      "cuisine": "Artisanal gelato",
+      "description": "An artisanal gelato chain with several Rome locations (this one in Monti), known for inventive dairy-free and gluten-free flavors."
+    },
+    "Gelateria dei Gracchi": {
+      "cuisine": "Artisanal gelato",
+      "description": "A Prati gelateria using quality ingredients and intensely fruity flavors, a modern classic of the city."
+    },
+    "Otaleg": {
+      "cuisine": "Artisanal gelato",
+      "description": "A Trastevere gelateria from gelato master Marco Radicioni; its name is 'gelato' spelled backwards."
+    },
+    "San Crispino": {
+      "cuisine": "Artisanal gelato",
+      "description": "A historic gelateria near the Trevi Fountain, a pioneer of preservative-free artisanal gelato in Rome."
+    },
+    "Fassi - Palazzo del Freddo": {
+      "cuisine": "Gelato",
+      "description": "Rome's oldest gelateria, founded in 1880 in the Esquilino district, set in a vintage-style hall."
+    },
+    "Frigidarium": {
+      "cuisine": "Gelato",
+      "description": "A popular gelateria near Piazza Navona, known for gelato coated in tempered chocolate right at the counter."
+    },
+    "Sant'Eustachio Il Caffè": {
+      "cuisine": "Coffee",
+      "description": "A historic coffee bar near the Pantheon, open since 1938, famous for its foamy espresso made with a secret recipe."
+    },
+    "Tazza d'Oro": {
+      "cuisine": "Coffee",
+      "description": "A coffee roastery and bar next to the Pantheon since 1946, famous for its coffee granita topped with cream."
+    },
+    "Antico Caffè Greco": {
+      "cuisine": "Coffee",
+      "description": "Rome's oldest café, opened in 1760 on Via Condotti, historically frequented by Goethe, Byron and Casanova."
+    },
+    "Barnum Cafe": {
+      "cuisine": "Coffee / brunch",
+      "description": "A vintage-styled café near Campo de' Fiori, popular for breakfast, brunch, and laptop work."
+    },
+    "Mercato di Testaccio": {
+      "cuisine": "Food market",
+      "description": "Testaccio's covered market hall, with fresh-produce stalls and some of Rome's best street-food bites."
+    },
+    "Mercato Trionfale": {
+      "cuisine": "Market",
+      "description": "Rome's largest food market, in Prati, with hundreds of stalls selling produce, fish and cheese."
+    },
+    "Mordi e Vai": {
+      "cuisine": "Roman street food",
+      "description": "A stall inside the Mercato di Testaccio famous for sandwiches built on Roman offal, like tongue or garofolato beef stew."
+    },
+    "Er Buchetto": {
+      "cuisine": "Roman street food",
+      "description": "A tiny shop near Termini station specializing in porchetta sandwiches, eaten standing up, no frills."
+    },
+    "Pastificio Guerra": {
+      "cuisine": "Quick pasta",
+      "description": "A former pasta shop near the Spanish Steps, now famous for serving a bargain-priced daily pasta dish that has gone viral on social media."
+    },
+    "Regoli": {
+      "cuisine": "Pastry",
+      "description": "A historic Esquilino pastry shop since 1916, famous for its cream-filled maritozzo bun."
+    },
+    "Mercato Centrale Roma": {
+      "cuisine": "Food hall",
+      "description": "A food hall inside Termini train station, with stalls run by respected Roman artisans and chefs."
+    },
+    "Eataly Roma Ostiense": {
+      "cuisine": "Food hall",
+      "description": "A large Eataly outpost in Ostiense's former train station, with shops, restaurants and regional Italian products."
+    },
+    "Hostaria Da Cesare": {
+      "cuisine": "Roman",
+      "description": "A classic Prati trattoria serving traditional Roman cooking alongside seafood dishes, running for decades."
+    },
+    "Tonnarello": {
+      "cuisine": "Roman",
+      "description": "A very popular Trastevere trattoria with tables spilling onto the street and generous portions of Roman pasta."
+    },
+    "Le Mani in Pasta": {
+      "cuisine": "Roman",
+      "description": "A Trastevere trattoria appreciated for its handmade fresh pasta and daily fish specials."
+    },
+    "Da Teo": {
+      "cuisine": "Roman",
+      "description": "A Trastevere trattoria on Piazza dei Ponziani, with outdoor seating and straightforward Roman cooking."
+    },
+    "Osteria dell'Ingegno": {
+      "cuisine": "Contemporary Italian",
+      "description": "A casual osteria near the Pantheon with market-driven Italian food and a solid by-the-glass wine list."
+    },
+    "Enoteca Ferrara": {
+      "cuisine": "Wine bar",
+      "description": "A Trastevere wine bar and restaurant with more than thirty years of history and an extensive Italian wine list."
+    },
+    "Bir & Fud": {
+      "cuisine": "Craft beer / pizza",
+      "description": "A Trastevere gastropub that pioneered Italian craft beer in Rome, pairing it with Neapolitan-style pizza and fried starters."
+    },
+    "L'Arcangelo": {
+      "cuisine": "Contemporary Roman",
+      "description": "A Prati restaurant from chef Arcangelo Dandini, reinterpreting classic Roman offal cooking with modern touches."
+    },
+    "Volpetti": {
+      "cuisine": "Delicatessen",
+      "description": "A benchmark delicatessen and cheese shop in Testaccio since 1973, with a carefully curated selection of Italian cured meats and cheeses."
     }
   }
 }

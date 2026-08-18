@@ -3,7 +3,7 @@
   "name": "Roma",
   "country": "Italia",
   "tagline": "Cuatro maneras de comer la carbonara perfecta, de una trattoria diminuta de Trastevere a una azotea con tres estrellas Michelin.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -42,7 +42,8 @@
       "source_type": "classic",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8990605,12.476199"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8990605,12.476199",
+      "distinction": null
     },
     {
       "name": "Trattoria Pennestri",
@@ -81,7 +82,8 @@
       "source_type": "classic",
       "rank": 4,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8880864,12.477807"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8880864,12.477807",
+      "distinction": null
     },
     {
       "name": "Salumeria Roscioli",
@@ -100,7 +102,1812 @@
       "rank": 5,
       "reservable": null,
       "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.89422,12.4742602",
-      "source_type_secondary": "critic"
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Il Pagliaccio",
+      "place_id": null,
+      "lat": 41.8977,
+      "lng": 12.4692,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina creativa del chef Anthony Genovese en Via dei Banchi Vecchi, con dos estrellas Michelin en la guía 2026.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8977,12.4692",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Enoteca La Torre",
+      "place_id": null,
+      "lat": 41.9145,
+      "lng": 12.4692,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El restaurante de Domenico Stile en la Villa Laetitia, junto al Tíber, ascendido a dos estrellas Michelin en la guía 2026.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9145,12.4692",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Acquolina",
+      "place_id": null,
+      "lat": 41.9107,
+      "lng": 12.4762,
+      "category": "fine_dining",
+      "cuisine": "marisco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina de mar del chef Daniele Lippi en el hotel The First Roma Arte, cerca de Piazza del Popolo. Dos estrellas Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lazio/roma/restaurant/acquolina",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9107,12.4762",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Pulejo",
+      "place_id": null,
+      "lat": 41.908,
+      "lng": 12.468,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Fine dining de ambiente íntimo en Prati del chef Davide Pulejo, formado en Il Convivio Troiani y en el Noma; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.908,12.468",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Orma Roma",
+      "place_id": null,
+      "lat": 41.9068,
+      "lng": 12.4914,
+      "category": "fine_dining",
+      "cuisine": "fusión",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef colombo-italiano Roy Caceres mezcla ingredientes latinoamericanos, asiáticos y mediterráneos cerca de Via Veneto. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lazio/roma/restaurant/orma-roma",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9068,12.4914",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "INEO",
+      "place_id": null,
+      "lat": 41.9027,
+      "lng": 12.4964,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina romana moderna del chef Heros De Agostinis en el hotel Anantara Palazzo Naiadi, en Piazza della Repubblica. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/it/it/lazio/roma/ristorante/ineo",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9027,12.4964",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Pipero Roma",
+      "place_id": null,
+      "lat": 41.8969,
+      "lng": 12.4735,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef Alessandro Pipero lleva su alta cocina romana a Corso Vittorio Emanuele II; una estrella Michelin desde 2012.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8969,12.4735",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Il Convivio Troiani",
+      "place_id": null,
+      "lat": 41.9006,
+      "lng": 12.4712,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Los hermanos Troiani ofrecen alta cocina italiana en una calle discreta cerca de Piazza Navona desde 1990. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9006,12.4712",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Per Me by Giulio Terrinoni",
+      "place_id": null,
+      "lat": 41.8955,
+      "lng": 12.4711,
+      "category": "fine_dining",
+      "cuisine": "marisco",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef Giulio Terrinoni firma una cocina de mar creativa cerca de Campo de' Fiori. Una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8955,12.4711",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Achilli al Parlamento",
+      "place_id": null,
+      "lat": 41.9034,
+      "lng": 12.4772,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Institución cerca del Parlamento italiano que bajo el chef Pierluigi Gallo obtuvo su primera estrella Michelin en 2025.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9034,12.4772",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Imàgo",
+      "place_id": null,
+      "lat": 41.9061,
+      "lng": 12.4828,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "En lo alto del Hotel Hassler, con vistas a la escalinata de la Plaza de España; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9061,12.4828",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Moma Restaurant",
+      "place_id": null,
+      "lat": 41.904,
+      "lng": 12.489,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante moderno cerca de Piazza Barberini nacido de un proyecto de jóvenes chefs italianos; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.904,12.489",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "La Terrazza",
+      "place_id": null,
+      "lat": 41.9057,
+      "lng": 12.4896,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La azotea del Hotel Eden domina Roma desde Via Ludovisi; obtuvo su estrella Michelin en la guía 2026.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9057,12.4896",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Marco Martini Restaurant",
+      "place_id": null,
+      "lat": 41.8797,
+      "lng": 12.4841,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef Marco Martini reinterpreta la cocina romana en clave contemporánea en Viale Aventino; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8797,12.4841",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Aroma",
+      "place_id": null,
+      "lat": 41.8902,
+      "lng": 12.4933,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "En la azotea del Palazzo Manfredi, con el Coliseo prácticamente al alcance de la mano; una estrella Michelin con el chef Giuseppe Di Iorio.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8902,12.4933",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "All'Oro",
+      "place_id": null,
+      "lat": 41.9108,
+      "lng": 12.4759,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef Riccardo Di Giacinto reinventa clásicos romanos, como la carbonara, en el hotel The H'All Tailor Suite cerca de Piazza del Popolo. Una estrella Michelin.",
+      "source_url": "https://guide.michelin.com/us/en/lazio/roma/restaurant/all-oro",
+      "source_type": "critic",
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9108,12.4759",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Glass Hostaria",
+      "place_id": null,
+      "lat": 41.8886,
+      "lng": 12.4692,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La chef Cristina Bowerman propone cocina italiana creativa en un local de diseño en pleno Trastevere; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8886,12.4692",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Zia",
+      "place_id": null,
+      "lat": 41.8862,
+      "lng": 12.4696,
+      "category": "fine_dining",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Pequeño restaurante de Trastevere donde el chef Antonio Ziantoni firma una cocina italiana de autor; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8862,12.4696",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Idylio by Apreda",
+      "place_id": null,
+      "lat": 41.9058,
+      "lng": 12.4885,
+      "category": "fine_dining",
+      "cuisine": "italiano",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El chef Francesco Apreda, formado en Asia, firma la cocina del hotel Ambasciatori Palace en Via Veneto; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9058,12.4885",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Checchino dal 1887",
+      "place_id": null,
+      "lat": 41.8759,
+      "lng": 12.4744,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Abierto junto al antiguo matadero de Testaccio desde 1887, especializado en el 'quinto cuarto' romano: coda alla vaccinara, trippa y rigatoni con pajata.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8759,12.4744",
+      "distinction": null
+    },
+    {
+      "name": "Flavio al Velavevodetto",
+      "place_id": null,
+      "lat": 41.8766,
+      "lng": 12.4738,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria de Testaccio construida sobre el Monte dei Cocci, con cacio e pepe, amatriciana y carbonara de manual.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8766,12.4738",
+      "distinction": null
+    },
+    {
+      "name": "Perilli",
+      "place_id": null,
+      "lat": 41.877,
+      "lng": 12.4762,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria familiar de Testaccio abierta desde 1911, con manteles a cuadros y una de las carbonaras más tradicionales de Roma.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.877,12.4762",
+      "distinction": null
+    },
+    {
+      "name": "Felice a Testaccio",
+      "place_id": null,
+      "lat": 41.8765,
+      "lng": 12.4756,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Antigua trattoria familiar de Testaccio célebre por preparar la cacio e pepe en la mesa, dentro de una rueda de queso pecorino.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8765,12.4756",
+      "distinction": null
+    },
+    {
+      "name": "Da Oio a Casa Mia",
+      "place_id": null,
+      "lat": 41.8759,
+      "lng": 12.4763,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria sencilla de Testaccio, sin cartas de diseño, fiel a la cocina romana de siempre: amatriciana, trippa y abbacchio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8759,12.4763",
+      "distinction": null
+    },
+    {
+      "name": "Cesare al Casaletto",
+      "place_id": null,
+      "lat": 41.8659,
+      "lng": 12.4358,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Trattoria de barrio en Monteverde, lejos del circuito turístico, muy valorada por críticos gastronómicos por su carbonara y sus fritti.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8659,12.4358",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Der Pallaro",
+      "place_id": null,
+      "lat": 41.8961,
+      "lng": 12.472,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cerca de Campo de' Fiori, con menú fijo sin carta desde hace décadas, sirviendo un recorrido completo por la cocina romana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8961,12.472",
+      "distinction": null
+    },
+    {
+      "name": "Hostaria Antica Roma",
+      "place_id": null,
+      "lat": 41.856,
+      "lng": 12.5147,
+      "category": "restaurante",
+      "cuisine": "romano antiguo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En la Via Appia Antica, entre catacumbas romanas, con un menú inspirado en recetas de la Roma clásica.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.856,12.5147",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Monti",
+      "place_id": null,
+      "lat": 41.8977,
+      "lng": 12.5001,
+      "category": "trattoria",
+      "cuisine": "marchigiano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Trattoria familiar en el barrio de Monti que lleva la cocina de las Marcas a Roma, con la vincisgrassi como plato insignia.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8977,12.5001",
+      "distinction": null
+    },
+    {
+      "name": "Dar Poeta",
+      "place_id": null,
+      "lat": 41.8887,
+      "lng": 12.4685,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Pizzería de referencia en Trastevere, con masa de larga fermentación y colas habituales en la puerta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8887,12.4685",
+      "distinction": null
+    },
+    {
+      "name": "Ai Marmi",
+      "place_id": null,
+      "lat": 41.8862,
+      "lng": 12.4718,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería romana clásica en Viale di Trastevere, apodada 'l'obitorio' por sus mesas de mármol; pizza fina y crujiente.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8862,12.4718",
+      "distinction": null
+    },
+    {
+      "name": "Ivo a Trastevere",
+      "place_id": null,
+      "lat": 41.8862,
+      "lng": 12.47,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las pizzerías históricas de Trastevere, abierta desde los años 60, con horno de leña y mesas siempre llenas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8862,12.47",
+      "distinction": null
+    },
+    {
+      "name": "Pizzeria Da Remo",
+      "place_id": null,
+      "lat": 41.8762,
+      "lng": 12.4772,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Icono de Testaccio para la pizza romana finísima al plato; ambiente ruidoso, mesas compartidas y filas hasta la calle.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8762,12.4772",
+      "distinction": null
+    },
+    {
+      "name": "Antico Forno Roscioli",
+      "place_id": null,
+      "lat": 41.8955,
+      "lng": 12.4726,
+      "category": "panaderia",
+      "cuisine": "panadería / pizza al taglio",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Panadería y pizza al taglio de la familia Roscioli en Via dei Chiavari, con pan de masa madre y pizza bianca reconocidos por la crítica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8955,12.4726",
+      "distinction": null
+    },
+    {
+      "name": "Forno Campo de' Fiori",
+      "place_id": null,
+      "lat": 41.8955,
+      "lng": 12.4724,
+      "category": "panaderia",
+      "cuisine": "panadería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Horno histórico en la propia Campo de' Fiori, célebre por su pizza bianca recién horneada.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8955,12.4724",
+      "distinction": null
+    },
+    {
+      "name": "Trapizzino",
+      "place_id": null,
+      "lat": 41.8757,
+      "lng": 12.4756,
+      "category": "street_food",
+      "cuisine": "street food romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "El chef Stefano Callegari inventó aquí en 2008 el trapizzino, un triángulo de pizza bianca relleno de guisos romanos como la coda alla vaccinara o el pollo a la cazadora.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 40,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8757,12.4756",
+      "distinction": null
+    },
+    {
+      "name": "Supplizio",
+      "place_id": null,
+      "lat": 41.8975,
+      "lng": 12.4685,
+      "category": "street_food",
+      "cuisine": "street food romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local diminuto cerca de Campo de' Fiori dedicado por completo al supplì, la croqueta de arroz frita rellena de mozzarella.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8975,12.4685",
+      "distinction": null
+    },
+    {
+      "name": "Pizzarium Bonci",
+      "place_id": null,
+      "lat": 41.9089,
+      "lng": 12.4483,
+      "category": "pizzeria",
+      "cuisine": "pizza al taglio",
+      "tags": [
+        "bourdain",
+        "critic"
+      ],
+      "description": "El 'pizzarrolo' Gabriele Bonci vende pizza al taglio de masa alveolada e ingredientes de temporada en Prati. Anthony Bourdain la probó, incluida su versión hawaiana, en el episodio de Roma de 'Parts Unknown'.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 42,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9089,12.4483",
+      "source_type_secondary": "critic",
+      "distinction": null
+    },
+    {
+      "name": "Domenico dal 1968",
+      "place_id": null,
+      "lat": 41.8756,
+      "lng": 12.477,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Trattoria familiar de Testaccio abierta desde 1968, reconocida con el Bib Gourmand por su cocina romana de producto sin artificios.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8756,12.477",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Hosteria Grappolo d'Oro",
+      "place_id": null,
+      "lat": 41.8963,
+      "lng": 12.4718,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "michelin",
+        "bib_gourmand",
+        "clasico"
+      ],
+      "description": "Hostaria cerca de Campo de' Fiori con distinción Bib Gourmand por su cocina romana de temporada a precios razonables.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8963,12.4718",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "Piperno",
+      "place_id": null,
+      "lat": 41.8925,
+      "lng": 12.477,
+      "category": "restaurante",
+      "cuisine": "judeo-romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante histórico del Ghetto, abierto desde el siglo XIX, célebre por sus carciofi alla giudia crujientes.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8925,12.477",
+      "distinction": null
+    },
+    {
+      "name": "Nonna Betta",
+      "place_id": null,
+      "lat": 41.8927,
+      "lng": 12.4776,
+      "category": "trattoria",
+      "cuisine": "judeo-romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Trattoria del Ghetto especializada en cocina judeo-romana, con carciofi alla giudia y filetti di baccalà entre sus clásicos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8927,12.4776",
+      "distinction": null
+    },
+    {
+      "name": "Ba'Ghetto",
+      "place_id": null,
+      "lat": 41.8923,
+      "lng": 12.4774,
+      "category": "restaurante",
+      "cuisine": "judeo-romano kosher",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante kosher en Via del Portico d'Ottavia que combina cocina judeo-romana y del norte de África.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8923,12.4774",
+      "distinction": null
+    },
+    {
+      "name": "Sora Margherita",
+      "place_id": null,
+      "lat": 41.8922,
+      "lng": 12.4767,
+      "category": "trattoria",
+      "cuisine": "judeo-romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria informal y minúscula del Ghetto, sin cartel visible durante años, referencia de la cocina judeo-romana casera.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8922,12.4767",
+      "distinction": null
+    },
+    {
+      "name": "Da Giggetto al Portico d'Ottavia",
+      "place_id": null,
+      "lat": 41.8929,
+      "lng": 12.4778,
+      "category": "restaurante",
+      "cuisine": "judeo-romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Junto a las ruinas del Portico d'Ottavia, institución del Ghetto desde 1923 para carciofi alla giudia y cocina romana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8929,12.4778",
+      "distinction": null
+    },
+    {
+      "name": "Pasticceria Boccione",
+      "place_id": null,
+      "lat": 41.8926,
+      "lng": 12.4783,
+      "category": "panaderia",
+      "cuisine": "repostería judeo-romana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antiguo forno del Ghetto, sin apenas rótulo, famoso por su torta di ricotta e visciole (tarta de ricotta y guindas).",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8926,12.4783",
+      "distinction": null
+    },
+    {
+      "name": "Trattoria Sora Lella",
+      "place_id": null,
+      "lat": 41.8896,
+      "lng": 12.4778,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "En la Isla Tiberina, fundada por la actriz Elena Fabrizi ('Sora Lella'); Anthony Bourdain comió aquí supplì, polpette y coratella en el episodio de Roma de 'Parts Unknown'.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 51,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8896,12.4778",
+      "distinction": null
+    },
+    {
+      "name": "Il Goccetto",
+      "place_id": null,
+      "lat": 41.8977,
+      "lng": 12.4675,
+      "category": "bar",
+      "cuisine": "enoteca",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Enoteca histórica de Via dei Banchi Vecchi, con cientos de etiquetas y tabla de quesos y embutidos para acompañar.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8977,12.4675",
+      "distinction": null
+    },
+    {
+      "name": "Cul de Sac",
+      "place_id": null,
+      "lat": 41.8985,
+      "lng": 12.4715,
+      "category": "bar",
+      "cuisine": "enoteca",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las primeras enotecas modernas de Roma, junto a Piazza Navona, con carta de vinos kilométrica desde los años 70.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8985,12.4715",
+      "distinction": null
+    },
+    {
+      "name": "Litro",
+      "place_id": null,
+      "lat": 41.8834,
+      "lng": 12.4649,
+      "category": "bar",
+      "cuisine": "enoteca de autor",
+      "tags": [
+        "critic"
+      ],
+      "description": "Enoteca de vinos naturales en Monteverde, con cocina de mercado y una de las cartas más cuidadas de vino de autor en Roma.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 54,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8834,12.4649",
+      "distinction": null
+    },
+    {
+      "name": "Antica Pesa",
+      "place_id": null,
+      "lat": 41.8875,
+      "lng": 12.4667,
+      "category": "restaurante",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante histórico de Trastevere, abierto desde 1922 en lo que fue una báscula pública, con cocina romana clásica y bodega notable.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8875,12.4667",
+      "distinction": null
+    },
+    {
+      "name": "La Rosetta",
+      "place_id": null,
+      "lat": 41.8988,
+      "lng": 12.4762,
+      "category": "seafood",
+      "cuisine": "marisco",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Referencia histórica de la cocina de pescado en Roma, cerca del Pantheon, en marcha desde los años 60.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 56,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8988,12.4762",
+      "distinction": null
+    },
+    {
+      "name": "Pierluigi",
+      "place_id": null,
+      "lat": 41.8951,
+      "lng": 12.47,
+      "category": "seafood",
+      "cuisine": "marisco",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de pescado con terraza en una plaza escondida entre el Ghetto y Campo de' Fiori, abierto desde 1938.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8951,12.47",
+      "distinction": null
+    },
+    {
+      "name": "Il Sanlorenzo",
+      "place_id": null,
+      "lat": 41.8956,
+      "lng": 12.4728,
+      "category": "seafood",
+      "cuisine": "marisco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Cocina de pescado elegante en un palacio del siglo XV cerca de Campo de' Fiori, con crudos como especialidad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 58,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8956,12.4728",
+      "distinction": null
+    },
+    {
+      "name": "Antico Arco",
+      "place_id": null,
+      "lat": 41.8886,
+      "lng": 12.4632,
+      "category": "restaurante",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "En lo alto del Gianicolo, pionero de la cocina italiana contemporánea en Roma desde finales de los 90.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 59,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8886,12.4632",
+      "distinction": null
+    },
+    {
+      "name": "Roma Sparita",
+      "place_id": null,
+      "lat": 41.8862,
+      "lng": 12.4762,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico",
+        "viral_social"
+      ],
+      "description": "Trattoria de Trastevere famosa por servir la cacio e pepe dentro de un cesto comestible de parmesano, imagen muy compartida en redes.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 60,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8862,12.4762",
+      "distinction": null
+    },
+    {
+      "name": "Spirito DiVino",
+      "place_id": null,
+      "lat": 41.8862,
+      "lng": 12.4753,
+      "category": "restaurante",
+      "cuisine": "romano antiguo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "En una antigua sinagoga de Trastevere, con platos inspirados en recetas de la Roma imperial y republicana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 61,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8862,12.4753",
+      "distinction": null
+    },
+    {
+      "name": "Colline Emiliane",
+      "place_id": null,
+      "lat": 41.9032,
+      "lng": 12.488,
+      "category": "restaurante",
+      "cuisine": "emiliano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante familiar cerca de Piazza Barberini especializado en pasta fresca y cocina de Emilia-Romaña desde 1931.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 62,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9032,12.488",
+      "distinction": null
+    },
+    {
+      "name": "Al Moro",
+      "place_id": null,
+      "lat": 41.9013,
+      "lng": 12.485,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria de la vieja guardia cerca de la Fontana di Trevi, abierta desde 1929, frecuentada por la Roma más clásica.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9013,12.485",
+      "distinction": null
+    },
+    {
+      "name": "Osteria Fernanda",
+      "place_id": null,
+      "lat": 41.8763,
+      "lng": 12.4693,
+      "category": "restaurante",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Osteria de cocina italiana contemporánea en el Trastevere menos turístico, bien valorada por la crítica gastronómica romana.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 64,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8763,12.4693",
+      "distinction": null
+    },
+    {
+      "name": "Casa Coppelle",
+      "place_id": null,
+      "lat": 41.8994,
+      "lng": 12.4761,
+      "category": "restaurante",
+      "cuisine": "italo-francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de ambiente romántico en Piazza delle Coppelle, mezcla de cocina italiana y francesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 65,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8994,12.4761",
+      "distinction": null
+    },
+    {
+      "name": "Ditirambo",
+      "place_id": null,
+      "lat": 41.8963,
+      "lng": 12.4718,
+      "category": "restaurante",
+      "cuisine": "romano de mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cerca de Campo de' Fiori, cocina romana e italiana con ingredientes ecológicos y de mercado desde 1996.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8963,12.4718",
+      "distinction": null
+    },
+    {
+      "name": "Necci dal 1924",
+      "place_id": null,
+      "lat": 41.8909,
+      "lng": 12.5306,
+      "category": "cafeteria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar-trattoria del Pigneto abierto en 1924, frecuentado por Pier Paolo Pasolini, hoy punto de encuentro del barrio.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 67,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8909,12.5306",
+      "distinction": null
+    },
+    {
+      "name": "Seu Pizza Illuminati",
+      "place_id": null,
+      "lat": 41.8791,
+      "lng": 12.4735,
+      "category": "pizzeria",
+      "cuisine": "pizza gourmet",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Pizzería de autor cerca de Trastevere con masas de harinas especiales y coberturas de temporada, referencia de la nueva pizza romana.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 68,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8791,12.4735",
+      "distinction": null
+    },
+    {
+      "name": "La Gatta Mangiona",
+      "place_id": null,
+      "lat": 41.8815,
+      "lng": 12.46,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Pizzería de Monteverde muy valorada por sus masas ligeras y combinaciones creativas de ingredientes.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 69,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8815,12.46",
+      "distinction": null
+    },
+    {
+      "name": "Sforno",
+      "place_id": null,
+      "lat": 41.8688,
+      "lng": 12.5219,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería del barrio de San Giovanni pionera de la masa de larga fermentación en Roma.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 70,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8688,12.5219",
+      "distinction": null
+    },
+    {
+      "name": "180g Pizzeria Romana",
+      "place_id": null,
+      "lat": 41.9107,
+      "lng": 12.455,
+      "category": "pizzeria",
+      "cuisine": "pizza",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pizzería de Prati centrada en la pizza romana tonda, fina y crujiente, con ingredientes de proximidad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9107,12.455",
+      "distinction": null
+    },
+    {
+      "name": "Pinsere",
+      "place_id": null,
+      "lat": 41.9037,
+      "lng": 12.4948,
+      "category": "fast_food",
+      "cuisine": "pinsa romana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Local pequeño cerca de Termini especializado en pinsa romana, la base ovalada y ligera prima de la pizza.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 72,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9037,12.4948",
+      "distinction": null
+    },
+    {
+      "name": "Gelateria Giolitti",
+      "place_id": null,
+      "lat": 41.9002,
+      "lng": 12.4776,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería histórica cerca del Pantheon, abierta desde 1900, una de las más antiguas y visitadas de Roma.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9002,12.4776",
+      "distinction": null
+    },
+    {
+      "name": "Fatamorgana",
+      "place_id": null,
+      "lat": 41.8945,
+      "lng": 12.4926,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Heladería artesanal con varias sedes en Roma (esta en Monti), conocida por sabores originales sin lácteos ni gluten.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 74,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8945,12.4926",
+      "distinction": null
+    },
+    {
+      "name": "Gelateria dei Gracchi",
+      "place_id": null,
+      "lat": 41.9059,
+      "lng": 12.4629,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Heladería de Prati con ingredientes de calidad y sabores de fruta muy intensos, un clásico moderno de la ciudad.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 75,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9059,12.4629",
+      "distinction": null
+    },
+    {
+      "name": "Otaleg",
+      "place_id": null,
+      "lat": 41.8871,
+      "lng": 12.4696,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal",
+      "tags": [
+        "critic"
+      ],
+      "description": "Heladería de Trastevere del maestro heladero Marco Radicioni; su nombre es 'gelato' al revés.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 76,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8871,12.4696",
+      "distinction": null
+    },
+    {
+      "name": "San Crispino",
+      "place_id": null,
+      "lat": 41.9008,
+      "lng": 12.4845,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Heladería histórica cerca de la Fontana di Trevi, pionera del helado artesanal sin conservantes en Roma.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 77,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9008,12.4845",
+      "distinction": null
+    },
+    {
+      "name": "Fassi - Palazzo del Freddo",
+      "place_id": null,
+      "lat": 41.8935,
+      "lng": 12.5064,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "La heladería más antigua de Roma, fundada en 1880 en el barrio del Esquilino, en un salón de aire vintage.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 78,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8935,12.5064",
+      "distinction": null
+    },
+    {
+      "name": "Frigidarium",
+      "place_id": null,
+      "lat": 41.8993,
+      "lng": 12.4695,
+      "category": "heladeria",
+      "cuisine": "heladería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería popular cerca de Piazza Navona, con helados cubiertos de chocolate templado a la vista.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 79,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8993,12.4695",
+      "distinction": null
+    },
+    {
+      "name": "Sant'Eustachio Il Caffè",
+      "place_id": null,
+      "lat": 41.8987,
+      "lng": 12.475,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería histórica cerca del Pantheon, abierta desde 1938, famosa por su espresso espumoso de receta secreta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 80,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8987,12.475",
+      "distinction": null
+    },
+    {
+      "name": "Tazza d'Oro",
+      "place_id": null,
+      "lat": 41.9,
+      "lng": 12.4771,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Torrefacción y cafetería junto al Pantheon desde 1946, célebre por su granita di caffè con nata.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9,12.4771",
+      "distinction": null
+    },
+    {
+      "name": "Antico Caffè Greco",
+      "place_id": null,
+      "lat": 41.9051,
+      "lng": 12.4813,
+      "category": "cafeteria",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El café más antiguo de Roma, abierto en 1760 en Via Condotti, frecuentado históricamente por Goethe, Byron y Casanova.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9051,12.4813",
+      "distinction": null
+    },
+    {
+      "name": "Barnum Cafe",
+      "place_id": null,
+      "lat": 41.8963,
+      "lng": 12.4703,
+      "category": "cafeteria",
+      "cuisine": "café / brunch",
+      "tags": [
+        "critic",
+        "influencer"
+      ],
+      "description": "Cafetería de aire vintage cerca de Campo de' Fiori, popular para desayunos, brunch y trabajar con el portátil.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 83,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8963,12.4703",
+      "distinction": null
+    },
+    {
+      "name": "Mercato di Testaccio",
+      "place_id": null,
+      "lat": 41.8756,
+      "lng": 12.4749,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Mercado cubierto de Testaccio, con puestos de producto fresco y algunos de los mejores bocados callejeros de Roma.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 84,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8756,12.4749",
+      "distinction": null
+    },
+    {
+      "name": "Mercato Trionfale",
+      "place_id": null,
+      "lat": 41.9097,
+      "lng": 12.456,
+      "category": "mercado",
+      "cuisine": "mercado",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El mercado alimentario más grande de Roma, en Prati, con cientos de puestos de fruta, pescado y quesos.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 85,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9097,12.456",
+      "distinction": null
+    },
+    {
+      "name": "Mordi e Vai",
+      "place_id": null,
+      "lat": 41.8756,
+      "lng": 12.4749,
+      "category": "street_food",
+      "cuisine": "street food romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Puesto dentro del Mercato di Testaccio famoso por sus bocadillos de casqueria romana, como la lengua o el garofolato.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 86,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8756,12.4749",
+      "distinction": null
+    },
+    {
+      "name": "Er Buchetto",
+      "place_id": null,
+      "lat": 41.8987,
+      "lng": 12.4964,
+      "category": "street_food",
+      "cuisine": "street food romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Diminuto local cerca de Termini especializado en bocadillos de porchetta, de pie y sin florituras.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 87,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8987,12.4964",
+      "distinction": null
+    },
+    {
+      "name": "Pastificio Guerra",
+      "place_id": null,
+      "lat": 41.9051,
+      "lng": 12.4808,
+      "category": "fast_food",
+      "cuisine": "pasta rápida",
+      "tags": [
+        "viral_social",
+        "timeout"
+      ],
+      "description": "Antigua tienda de pasta cerca de la Plaza de España, hoy famosa por servir un plato de pasta del día a precio mínimo, viral en redes sociales.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 88,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9051,12.4808",
+      "distinction": null
+    },
+    {
+      "name": "Regoli",
+      "place_id": null,
+      "lat": 41.8955,
+      "lng": 12.5011,
+      "category": "panaderia",
+      "cuisine": "repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pastelería histórica del Esquilino desde 1916, célebre por su maritozzo con nata.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 89,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8955,12.5011",
+      "distinction": null
+    },
+    {
+      "name": "Mercato Centrale Roma",
+      "place_id": null,
+      "lat": 41.9007,
+      "lng": 12.5023,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "critic"
+      ],
+      "description": "Mercado gastronómico dentro de la estación Termini, con puestos de artesanos y chefs romanos reconocidos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 90,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9007,12.5023",
+      "distinction": null
+    },
+    {
+      "name": "Eataly Roma Ostiense",
+      "place_id": null,
+      "lat": 41.858,
+      "lng": 12.479,
+      "category": "mercado",
+      "cuisine": "mercado gastronómico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Gran espacio de Eataly en la antigua estación de Ostiense, con tiendas, restaurantes y producto italiano de proximidad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 91,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.858,12.479",
+      "distinction": null
+    },
+    {
+      "name": "Hostaria Da Cesare",
+      "place_id": null,
+      "lat": 41.9034,
+      "lng": 12.4645,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria clásica de Prati con cocina romana de siempre y también platos de pescado, en marcha desde hace décadas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 92,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9034,12.4645",
+      "distinction": null
+    },
+    {
+      "name": "Tonnarello",
+      "place_id": null,
+      "lat": 41.889,
+      "lng": 12.4695,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico",
+        "timeout"
+      ],
+      "description": "Trattoria muy popular de Trastevere, con mesas en la calle y raciones generosas de pasta romana.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.889,12.4695",
+      "distinction": null
+    },
+    {
+      "name": "Le Mani in Pasta",
+      "place_id": null,
+      "lat": 41.8858,
+      "lng": 12.4753,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Trattoria de Trastevere apreciada por su pasta fresca casera y sus platos de pescado del día.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8858,12.4753",
+      "distinction": null
+    },
+    {
+      "name": "Da Teo",
+      "place_id": null,
+      "lat": 41.8869,
+      "lng": 12.4746,
+      "category": "trattoria",
+      "cuisine": "romano",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Trattoria de Trastevere en la Piazza dei Ponziani, con terraza y cocina romana sin sorpresas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8869,12.4746",
+      "distinction": null
+    },
+    {
+      "name": "Osteria dell'Ingegno",
+      "place_id": null,
+      "lat": 41.9002,
+      "lng": 12.4795,
+      "category": "bar",
+      "cuisine": "italiano contemporáneo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Osteria de ambiente informal cerca del Pantheon, con cocina italiana de mercado y buena selección de vinos por copas.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.9002,12.4795",
+      "distinction": null
+    },
+    {
+      "name": "Enoteca Ferrara",
+      "place_id": null,
+      "lat": 41.8896,
+      "lng": 12.4685,
+      "category": "bar",
+      "cuisine": "enoteca",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Enoteca-restaurante de Trastevere con más de treinta años de historia y una carta de vinos italianos muy extensa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8896,12.4685",
+      "distinction": null
+    },
+    {
+      "name": "Bir & Fud",
+      "place_id": null,
+      "lat": 41.8892,
+      "lng": 12.4684,
+      "category": "bar",
+      "cuisine": "cerveza artesanal / pizza",
+      "tags": [
+        "critic"
+      ],
+      "description": "Gastropub de Trastevere pionero en cerveza artesanal italiana, con pizza napolitana y fritti como acompañamiento.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 98,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8892,12.4684",
+      "distinction": null
+    },
+    {
+      "name": "L'Arcangelo",
+      "place_id": null,
+      "lat": 41.908,
+      "lng": 12.4713,
+      "category": "restaurante",
+      "cuisine": "romano contemporáneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de Prati del chef Arcangelo Dandini, que reinterpreta la cocina romana de casquería con toques modernos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 99,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.908,12.4713",
+      "distinction": null
+    },
+    {
+      "name": "Volpetti",
+      "place_id": null,
+      "lat": 41.8768,
+      "lng": 12.4762,
+      "category": "deli",
+      "cuisine": "delicatessen",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Charcutería y quesería de referencia en Testaccio desde 1973, con una selección de embutidos y quesos italianos muy cuidada.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 100,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=41.8768,12.4762",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,
