@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Luca's, en el Hotel La Gemma, logra la primera Estrella Michelin para el chef Paulo Airaudo en Italia",
+    "resumen": "En la ceremonia de la Guía Michelin Italia 2026, celebrada el 19 de noviembre de 2025 en el Teatro Regio de Parma, el restaurante Luca's de Florencia, liderado por el chef Paulo Airaudo junto a Olivia Cappelletti y Tommaso Querini, recibió su primera Estrella Michelin, la primera del chef catalán-argentino en Italia.",
+    "fuente_url": "https://reportergourmet.com/en/news/9466-luca-s-florence-has-a-new-michelin-star-paulo-airaudo-s-first-in-italy-the-team-my-strength",
+    "imagen_url": "https://reportergourmet.com/upload/news/9466/copertina-luca-s.jpg",
+    "fecha": "2025-11-19",
+    "ciudad_slug": "florencia"
+  },
+  {
+    "titulo": "El bar Locale de Florencia escala al puesto 22 en The World's 50 Best Bars 2025",
+    "resumen": "Locale, instalado en el histórico Palazzo Concini de Florencia y dirigido por el bar manager Fabio Fanni, subió 14 posiciones respecto al año anterior hasta situarse en el puesto 22 de la lista The World's 50 Best Bars 2025, anunciada el 8 de octubre de 2025 en Hong Kong.",
+    "fuente_url": "https://www.theworlds50best.com/bars/the-list/locale-firenze.html",
+    "imagen_url": "https://www.theworlds50best.com/bars/best-in-the-world/filestore/jpg/Locale%20Firenze-hero_W50BB25-website-fb.jpg",
+    "fecha": "2025-10-08",
+    "ciudad_slug": "florencia"
+  },
+  {
+    "titulo": "Il Gusto di Xinge, en Florencia, premiado por Gambero Rosso como mejor restaurante étnico de Italia",
+    "resumen": "La guía Ristoranti d'Italia 2026 de Gambero Rosso, presentada el 21 de octubre de 2025, otorgó a Il Gusto di Xinge, restaurante de cocina china de la chef Xin Ge Liu en Florencia, el premio Tre Mappamondi como mejor local étnico del año.",
+    "fuente_url": "https://www.firenzemadeintuscany.com/it/articolo/migliori-ristoranti-in-toscana-secondo-la-guida-gambero-rosso/",
+    "imagen_url": "https://www.firenzemadeintuscany.com/assets/7dc7gq8ix1ml_2pW9D2QBxST4b187wQ4910_c4a7a2cdfd696ef88410f253428e1e23_llll_jpg.jpg",
+    "fecha": "2025-10-21",
+    "ciudad_slug": "florencia"
+  },
+  {
+    "titulo": "Cipriano Pizzeria, en San Frediano, es el nuevo Tre Spicchi de Gambero Rosso en Florencia",
+    "resumen": "El pizzaiolo Mario Cipriano, con su local en el barrio florentino de San Frediano, obtuvo 90/100 puntos y se convirtió en la única nueva incorporación de Florencia con el máximo reconocimiento de Tre Spicchi en la guía Pizzerie d'Italia 2026 de Gambero Rosso.",
+    "fuente_url": "https://www.lanazione.it/firenze/cronaca/firenze-ha-un-nuovo-tre-spicchi-gambero-rosso-il-pizzaiolo-mario-cipriano-5a2340c6",
+    "imagen_url": "https://www.lanazione.it/image-service/view/acePublic/alias/contentid/ZWM2YTdlNzktNTliYS00/0/firenze-ha-un-nuovo-tre-spicchi-gambero-rosso-il-pizzaiolo-mario-cipriano.jpg?f=16:9&w=1200&h=675",
+    "fecha": "2025-09-22",
+    "ciudad_slug": "florencia"
+  },
+  {
+    "titulo": "La pizzería Giotto de Florencia entra en el top 30 de 50 Top Pizza Italia 2026",
+    "resumen": "Giotto, la pizzería de Marco Manzi en Florencia, se posicionó en el puesto 28 de la clasificación 50 Top Pizza Italia 2026, publicada el 22 de julio de 2026, entre las seis pizzerías toscanas incluidas en el ranking nacional.",
+    "fuente_url": "https://www.intoscana.it/it/50-top-pizza-2026/",
+    "imagen_url": "https://www.intoscana.it/wp-content/uploads/La-pizza-Margherita-superiore-di-Apogeo.jpg",
+    "fecha": "2026-07-22",
+    "ciudad_slug": "florencia"
+  }
+]
