@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "El restaurante Itzuli, de Iñigo Lavado, logra su primera estrella Michelin en Donostia",
+    "resumen": "Itzuli, el proyecto familiar que el chef Iñigo Lavado abrió en lo alto del monte Igueldo tras más de 20 años al frente de su restaurante en Irun, se suma al elenco de estrellas Michelin de Gipuzkoa, que alcanza así 19 estrellas repartidas entre 11 restaurantes.",
+    "fuente_url": "https://www.noticiasdegipuzkoa.eus/sociedad/2025/11/25/restaurante-itzuli-inigo-lavado-donostia-10397673.html",
+    "imagen_url": "https://estaticosgn-cdn.deia.eus/clip/d6c44be7-941e-43f9-aff1-167440f333af_16-9-aspect-ratio_default_0.jpg",
+    "fecha": "2025-11-25",
+    "ciudad_slug": "san-sebastian"
+  },
+  {
+    "titulo": "El Hotel María Cristina acogerá en 2026 el restaurante Amelia by Paulo Airaudo",
+    "resumen": "El icónico Hotel María Cristina de San Sebastián refuerza su apuesta gastronómica con la llegada de Amelia by Paulo Airaudo, restaurante con dos estrellas Michelin y dos Soles Repsol, que se traslada desde su ubicación actual en el Hotel Villa Favorita.",
+    "fuente_url": "https://forbes.es/economia/831424/el-hotel-maria-cristina-refuerza-su-apuesta-gastro-con-el-estrella-michelin-amelia-by-paulo-airaudo-en-2026/",
+    "imagen_url": "https://forbes.es/wp-content/uploads/2025/11/fotonoticia_20251120104334_1920-1200x675.jpg",
+    "fecha": "2025-11-20",
+    "ciudad_slug": "san-sebastian"
+  },
+  {
+    "titulo": "La chef Leticia Landa gana el Basque Culinary World Prize 2025 en San Sebastián",
+    "resumen": "El jurado del premio, presidido por Joan Roca y reunido en el GOe (Gastronomy Open Ecosystem) de San Sebastián en el marco del congreso Talaia, reconoció a la chef estadounidense por 'La Cocina', su proyecto de inclusión laboral en el sector de la restauración en San Francisco, dotado con 100.000 euros.",
+    "fuente_url": "https://www.infobae.com/america/agencias/2025/10/22/la-chef-estadounidense-leticia-landa-ganadora-del-basque-culinary-world-prize-2025/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/JOA33BN355CI7DC53AJVFMVERE.jpg?auth=4d53939d8b5082a2c9385171317b29bf585d0b2a325b13272b4935260f17c1fa&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2025-10-22",
+    "ciudad_slug": "san-sebastian"
+  },
+  {
+    "titulo": "San Sebastián Gastronomika 2025 vuelve al Kursaal con Río de Janeiro como ciudad invitada",
+    "resumen": "La XXVII edición del congreso, celebrada del 6 al 8 de octubre en el Palacio Kursaal bajo el lema 'Tradición y regeneración', convirtió a Río de Janeiro en la primera ciudad latinoamericana invitada de honor de su historia, con chefs como Rafa Costa e Silva o Thomas Troisgros.",
+    "fuente_url": "https://www.thegourmetjournal.com/noticias/san-sebastian-gastronomika-2025/",
+    "imagen_url": "https://www.thegourmetjournal.com/wp-content/uploads/2025/09/SSG-2025.jpg",
+    "fecha": "2025-09-12",
+    "ciudad_slug": "san-sebastian"
+  },
+  {
+    "titulo": "Andoni Luis Aduriz estrena nueva temporada en Mugaritz junto a su nuevo libro",
+    "resumen": "El chef donostiarra presentó la temporada 2026 de su restaurante de dos estrellas Michelin, un menú degustación de entre 25 y 30 propuestas por 319 euros que cuestiona los códigos habituales de un restaurante, coincidiendo con el lanzamiento de su ensayo 'No sé y otras certezas'.",
+    "fuente_url": "https://www.infobae.com/espana/2026/05/22/andoni-luis-aduriz-estrena-nueva-temporada-en-mugaritz-nuestra-cocina-no-tiene-que-estar-buena-tiene-que-tener-sentido/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/4FM25DS4YJBXDN7QCKYIF42K44.jpg?auth=0a672494362d8e9758529c4c4424586a8d431f5b63ace222a242da462c7831b3&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2026-05-22",
+    "ciudad_slug": "san-sebastian"
+  }
+]

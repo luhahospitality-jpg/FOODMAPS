@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Tierra del Sol, de la chef Olga Cabrera, es nombrado Restaurante del Año 2026",
+    "resumen": "La Guía México Gastronómico eligió a Tierra del Sol, ubicado en el Centro Histórico de Oaxaca, como Restaurante del Año 2026 por su cocina de identidad mixteca y su compromiso con productores locales y la sostenibilidad. El restaurante ya contaba con el reconocimiento Bib Gourmand de la Guía Michelin desde 2024.",
+    "fuente_url": "https://www.culinariamexicana.com.mx/mejor-restaurante-mexico-2026-tierra-del-sol/",
+    "imagen_url": "https://www.culinariamexicana.com.mx/wp-content/uploads/2026/03/tierra-del-sol3.jpeg",
+    "fecha": "2026-03-09",
+    "ciudad_slug": "oaxaca"
+  },
+  {
+    "titulo": "26 restaurantes de Oaxaca son reconocidos en la Guía Michelin México 2026",
+    "resumen": "En la edición 2026 de la Guía Michelin, 26 establecimientos oaxaqueños fueron galardonados, consolidando al estado como uno de los grandes referentes gastronómicos del país. La Olla, Las Quince Letras, Tierra del Sol, Labo Fermento y Xaok ratificaron la distinción Bib Gourmand, mientras Los Danzantes de Oaxaca y Levadura de Olla mantuvieron su estrella.",
+    "fuente_url": "https://oaxaca.heraldodemexico.com.mx/local/2026/5/21/oaxaca-brilla-en-la-guia-michelin-2026-estos-son-los-restaurantes-galardonados-28165.html",
+    "imagen_url": "https://img-o.heraldodemexico.com.mx/5lJtC0Dd0d_kcvA-TtdLIkzvcd0G4-ibIrSm1Id2UK8/rs:fill:1200:630:0/g:fp:0.5:0.5/f:jpg/aHR0cHM6Ly9hc3NldHMtby5oZXJhbGRvZGVtZXhpY28uY29tLm14L2ZvdG9ncmFmaWFzLzIwMjUvMTIvNC81MTk0MS5qcGc",
+    "fecha": "2026-05-21",
+    "ciudad_slug": "oaxaca"
+  },
+  {
+    "titulo": "La chef oaxaqueña Thalía Barrios García recibe 'Dos Cuchillos' en The Best Chef Awards 2025",
+    "resumen": "En la edición 2025 de The Best Chef Awards, celebrada en Milán, la chef de Levadura de Olla fue distinguida por su aporte a la gastronomía internacional y su compromiso con la cocina tradicional y la herencia cultural de Oaxaca, junto a otros 21 chefs mexicanos reconocidos.",
+    "fuente_url": "https://www.ciudadania-express.com/2025/noticias/la-chef-oaxaquena-thalia-barrios-brilla-en-best-chef-awards-2025",
+    "imagen_url": "https://www.ciudadania-express.com/archivos/articulos/2025/10/10434_20251009175702.png",
+    "fecha": "2025-10-09",
+    "ciudad_slug": "oaxaca"
+  },
+  {
+    "titulo": "Las Quince Letras, de la chef Celia Florián, es perfilado como el restaurante oaxaqueño donde comió Vicente Fox",
+    "resumen": "El Financiero reseñó la historia de Las Quince Letras, con 33 años de trayectoria y reconocimiento Bib Gourmand de la Guía Michelin, fundado por la chef Celia Florián y Fidel Méndez en lo que antes era una vecindad, célebre por su mole negro.",
+    "fuente_url": "https://www.elfinanciero.com.mx/food-and-drink/2025/10/29/asi-es-quince-letras-restaurante-reconocido-por-la-guia-michelin-en-donde-comio-vicente-fox/",
+    "imagen_url": "https://www.elfinanciero.com.mx/resizer/v2/ZEUHXM3SMJAXXB26IG4RLVD7YI.jpg?smart=true&auth=a47630a2b6ef2a95026920eda66ec55fcc98d1032d2983f546b32e146326fc61&width=1200&height=630",
+    "fecha": "2025-10-30",
+    "ciudad_slug": "oaxaca"
+  }
+]
