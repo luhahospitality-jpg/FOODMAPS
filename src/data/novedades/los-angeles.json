@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Kato asciende a dos estrellas Michelin y otros cinco restaurantes de LA logran su primera estrella",
+    "resumen": "En la ceremonia de la Guía Michelin California 2026, celebrada el 24 de junio en San Diego, Kato del chef Jon Yao (Row DTLA) subió de una a dos estrellas. Corridor 109, Kojima, Lielle, Miura y Seline obtuvieron su primera estrella, mientras que 715, Camphor, Gwen, Morihiro y el restaurante Somni (que tenía tres) las perdieron.",
+    "fuente_url": "https://www.timeout.com/los-angeles/restaurants/michelin-star-restaurants-los-angeles",
+    "fecha": "2026-06-24",
+    "ciudad_slug": "los-angeles"
+  },
+  {
+    "titulo": "Tres restaurantes de Los Ángeles triunfan en los James Beard Awards 2026",
+    "resumen": "En la ceremonia del 15 de junio en Chicago, Dave Beran de Seline (Santa Mónica) ganó Mejor Chef de California, Providence (Hollywood) obtuvo el premio a la Hospitalidad Sobresaliente en su 21 aniversario, y Kato repitió como ganador de Programa de Vinos y Bebidas Sobresaliente.",
+    "fuente_url": "https://laist.com/news/food/three-la-restaurants-honored-with-james-beard-awards",
+    "fecha": "2026-06-15",
+    "ciudad_slug": "los-angeles"
+  },
+  {
+    "titulo": "The Serving Spoon de Inglewood recibe el premio America's Classics de James Beard",
+    "resumen": "La fundación James Beard anunció el 25 de febrero de 2026 que The Serving Spoon, restaurante familiar de comida sureña fundado en 1983 y considerado un pilar cultural de la comunidad negra de Los Ángeles, fue distinguido con el America's Classics Award.",
+    "fuente_url": "https://www.cbsnews.com/losangeles/news/inglewood-serving-spoon-2026-james-beard-americas-classics-award/",
+    "fecha": "2026-02-25",
+    "ciudad_slug": "los-angeles"
+  },
+  {
+    "titulo": "Taix, el restaurante francés más antiguo de Los Ángeles, cierra tras 99 años en Echo Park",
+    "resumen": "Taix sirvió sus últimas comidas el 29 de marzo de 2026 antes de ceder su terreno en Sunset Boulevard a un proyecto de reurbanización. La familia Taix espera reabrir en un espacio más pequeño dentro del nuevo complejo alrededor de 2029-2030.",
+    "fuente_url": "https://abc7.com/post/taix-restaurant-echo-park-las-oldest-french-closing-march/18549945/",
+    "fecha": "2026-02-08",
+    "ciudad_slug": "los-angeles"
+  },
+  {
+    "titulo": "Connie & Ted's cierra sus puertas en West Hollywood tras 13 años",
+    "resumen": "El restaurante de mariscos de estilo Rhode Island del chef Michael Cimarusti (Providence) cerró definitivamente el 1 de julio de 2026, tras una cena de despedida el 18 de junio. Sus dueños citaron el alza en el costo de los mariscos, el salario mínimo de West Hollywood y la caída sostenida de ventas tras la pandemia, las huelgas de Hollywood y los incendios de 2025.",
+    "fuente_url": "https://www.timeout.com/los-angeles/news/its-official-connie-and-teds-is-closing-after-13-years-062226",
+    "fecha": "2026-06-22",
+    "ciudad_slug": "los-angeles"
+  }
+]

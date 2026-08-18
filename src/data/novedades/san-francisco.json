@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Californios logra tres estrellas Michelin, primer restaurante mexicano en el mundo con la máxima distinción",
+    "resumen": "El restaurante de alta cocina mexicana del chef Val Cantú, en SoMa, ascendió de dos a tres estrellas en la Guía Michelin California 2026, convirtiéndose en el primer restaurante de cocina mexicana del mundo en alcanzar la máxima calificación. Se suma así a Atelier Crenn, Benu y Quince como los otros tres-estrellas de San Francisco.",
+    "fuente_url": "https://sfstandard.com/2026/06/25/californios-three-star-michelin-restaurant/",
+    "fecha": "2026-06-25",
+    "ciudad_slug": "san-francisco"
+  },
+  {
+    "titulo": "Michael Tusk, de Quince, gana el premio James Beard a Chef Sobresaliente 2026",
+    "resumen": "El chef y copropietario de Quince en San Francisco fue nombrado 'Outstanding Chef' en los James Beard Awards 2026, el máximo honor individual de la ceremonia. Kevin Diedrich, del bar Pacific Cocktail Haven, también fue premiado como Outstanding Professional in Cocktail Service.",
+    "fuente_url": "https://patch.com/california/san-francisco/2-san-francisco-restaurants-chefs-named-2026-james-beard-winner",
+    "fecha": "2026-06-16",
+    "ciudad_slug": "san-francisco"
+  },
+  {
+    "titulo": "Maria Isabel, nuevo restaurante mexicano de los chefs de Dalida, abre en Presidio Heights",
+    "resumen": "Laura y Sayat Ozyilmaz, la pareja de chefs detrás de Dalida, abrieron el 3 de marzo de 2026 su segundo restaurante en el antiguo local de Ella's American Kitchen. Maria Isabel celebra la cocina costera de Guerrero y Sinaloa con platos como ceviche acapulqueño y un menú de degustación de 90 dólares.",
+    "fuente_url": "https://sfist.com/2026/02/26/maria-isabel-the-new-restaurant-from-dalidas/",
+    "fecha": "2026-02-26",
+    "ciudad_slug": "san-francisco"
+  },
+  {
+    "titulo": "One Market Restaurant cierra tras 32 años en el downtown de San Francisco",
+    "resumen": "El emblemático restaurante fundado por el chef Bradley Ogden y el restaurantero Michael Dellar en 1993, y que ostentó una estrella Michelin entre 2008 y 2012, sirvió su última cena el 11 de junio de 2025 tras el retiro de Dellar y el fracaso de un intento de venta del negocio.",
+    "fuente_url": "https://sfist.com/2025/05/19/32-year-old-downtown-restaurant-one-market-calling-it-quits/",
+    "fecha": "2025-05-19",
+    "ciudad_slug": "san-francisco"
+  },
+  {
+    "titulo": "Luce, restaurante con estrella Michelin del hotel InterContinental, cierra tras 17 años",
+    "resumen": "El restaurante de alta cocina abierto en 2008, que obtuvo una estrella Michelin en 2009 bajo la chef Dominique Crenn y que luego pasó por las cocinas de Melissa King y Rogelio García, cerró sus puertas en abril de 2025 sin un comunicado oficial sobre los motivos.",
+    "fuente_url": "https://sfist.com/2025/04/22/luce-closes-after-17-years-at-the-intercontinental/",
+    "fecha": "2025-04-22",
+    "ciudad_slug": "san-francisco"
+  }
+]
