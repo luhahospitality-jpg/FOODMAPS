@@ -17,7 +17,7 @@
     "bilbao": { "actual": 40, "objetivo": 40, "tier": "N" },
     "bogota": { "actual": 40, "objetivo": 40, "tier": "N" },
     "budapest": { "actual": 40, "objetivo": 40, "tier": "N" },
-    "buenos-aires": { "actual": 5, "objetivo": 100, "tier": "S" },
+    "buenos-aires": { "actual": 100, "objetivo": 100, "tier": "S" },
     "chicago": { "actual": 37, "objetivo": 40, "tier": "N" },
     "ciudad-de-mexico": { "actual": 100, "objetivo": 100, "tier": "S" },
     "ciudad-del-cabo": { "actual": 40, "objetivo": 40, "tier": "N" },
