@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Palodú logra la primera estrella Michelin para Málaga en la Gala 2026, celebrada por primera vez en la ciudad",
+    "resumen": "El restaurante Palodú, del equipo formado por Cristina Cánovas y Diego Aguilar, sumó una nueva estrella Michelin durante la gala de la Guía Michelin España 2026, celebrada el 25 de noviembre de 2025 en Málaga capital, sede del evento por primera vez. Con esta incorporación, la provincia de Málaga alcanza 12 estrellas repartidas entre 10 restaurantes de Málaga, Marbella, Fuengirola y Ronda.",
+    "fuente_url": "https://www.infobae.com/espana/2025/11/26/malaga-se-celebra-en-la-gala-michelin-y-suma-una-nueva-estrella-estos-son-los-platos-tradicionales-favoritos-de-sus-chefs/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/PSHCV27QANHSJH672CMAPC5LGM.jpg?auth=9bf9a0b1d9a1531974a391e2658c256e7f3aefc16fbe0b253ffaa41b4af9ae5c&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2025-11-26",
+    "ciudad_slug": "malaga"
+  },
+  {
+    "titulo": "Base 9 y El Chiringuito de Sedella, nuevos Bib Gourmand de la Guía Michelin en Málaga",
+    "resumen": "La Guía Michelin 2026 incorporó a Base 9, en el Perchel Sur malagueño, y a El Chiringuito, en Sedella, como nuevos Bib Gourmand, uniéndose a La Cosmo, La Taberna de Mike Palmer y Platero&Co para sumar cinco distinciones de este tipo en la provincia de Málaga.",
+    "fuente_url": "https://www.elespanol.com/malaga/vivir/gastronomia/20251127/bib-gourmand-malaga-guia-michelin-restaurantes-calidad-precios-razonables/1003744031179_0.html",
+    "imagen_url": "https://s3.elespanol.com/2025/11/26/actualidad/1003744031260_260167281_1706x960.jpg",
+    "fecha": "2025-11-27",
+    "ciudad_slug": "malaga"
+  },
+  {
+    "titulo": "El Puerto de Casabermeja, mejor restaurante de Málaga 2025 según la Academia Gastronómica",
+    "resumen": "La Academia Gastronómica de Málaga, entidad decana fundada en 1977, entregó su Premio José Luis Barrionuevo al Mejor Restaurante 2025 a El Puerto de Casabermeja, dirigido por los hermanos Juan Jesús y José Francisco Fernández, en una gala celebrada en el Gran Hotel Miramar.",
+    "fuente_url": "https://www.elespanol.com/malaga/vivir/gastronomia/20260111/academia-gastronomica-malaga-premia-mejores-restaurantes-chefs-provincia/1003744085287_0.html",
+    "imagen_url": "https://s3.elespanol.com/2026/01/11/actualidad/1003744085289_260860995_1706x960.jpg",
+    "fecha": "2026-01-11",
+    "ciudad_slug": "malaga"
+  },
+  {
+    "titulo": "Málaga estrena cuatro Soles Repsol en 2026 y se consolida como la provincia andaluza con más reconocimientos",
+    "resumen": "Back (Marbella), Promesa, Blossom y Tragatá Málaga lograron su primer Sol de la Guía Repsol en la edición 2026, elevando a 30 el número de Soles en la provincia de Málaga, que sigue siendo la de mayor reconocimiento gastronómico de Andalucía.",
+    "fuente_url": "https://www.elespanol.com/malaga/vivir/gastronomia/20260216/nuevo-brillo-gastronomico-malaga-restaurantes-consiguen-primer-sol-repsol/1003744132124_0.html",
+    "imagen_url": "https://s3.elespanol.com/2026/02/16/actualidad/1003744132255_261453914_1706x960.jpg",
+    "fecha": "2026-02-16",
+    "ciudad_slug": "malaga"
+  }
+]

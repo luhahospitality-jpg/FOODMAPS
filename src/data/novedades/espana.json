@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Vértigo, en Sober (Lugo), logra la primera Estrella Michelin de la provincia en 97 años",
+    "resumen": "El restaurante de Rafa Centeno, ubicado en la bodega Regina Viarum en plena Ribeira Sacra, recibió una Estrella Michelin en la gala de la Guía MICHELIN España 2026, un hito histórico que Lugo no lograba desde la creación de la guía.",
+    "fuente_url": "https://www.elprogreso.es/articulo/gastronomia/vertigo-hace-historia-primera-estrella-michelin-lugo-97-anos/202511252108391926826.html",
+    "imagen_url": "https://www.elprogreso.es/media/elprogreso/images/2025/11/25/2025112521211275327.jpg",
+    "fecha": "2025-11-25",
+    "ciudad_slug": "espana"
+  },
+  {
+    "titulo": "Regueiro, en Tox (Asturias), debuta con Estrella Michelin en la Guía 2026",
+    "resumen": "El restaurante del chef Diego Fernández, en la localidad naviega de Tox, se estrenó con una Estrella Michelin en la gala de la Guía MICHELIN España 2026, elevando a un récord histórico el número de establecimientos premiados en Asturias.",
+    "fuente_url": "https://www.asturiasmundial.com/noticia/142329/asturias-hace-historia-guia-michelin-regueiro-estrena-estrella-principado-alcanza-mayor-firmamento-gastronomico-todos-tiempos",
+    "imagen_url": "http://www.asturiasmundial.com/noticias/fotos/142329_1_thumb.jpg",
+    "fecha": "2025-11-25",
+    "ciudad_slug": "espana"
+  },
+  {
+    "titulo": "A Tafona, de Lucía Freitas en Santiago de Compostela, alcanza los Tres Soles de la Guía Repsol 2026",
+    "resumen": "La Guía Repsol otorgó su máxima distinción, Tres Soles, al restaurante compostelano A Tafona en la gala celebrada en Tarragona, junto a Ramón Freixa Atelier y Voro, reconociendo su cocina de raíz gallega y compromiso con productores locales.",
+    "fuente_url": "https://www.diariodesantiago.es/tendencias/la-guia-repsol-2026-distingue-a-a-tafona-ramon-freixa-atelier-y-voro-con-la-maxima-distincion-de-tres-soles/",
+    "imagen_url": "https://www.diariodesantiago.es/wp-content/uploads/2024/11/captura-de-pantalla-2024-11-26-a-las-11.29.20-2024-11-26-captura-de-pantalla-2024-11-26-a-las-11.29.20.png",
+    "fecha": "2026-02-16",
+    "ciudad_slug": "espana"
+  },
+  {
+    "titulo": "Voro, en Capdepera (Mallorca), debuta directamente con los Tres Soles de la Guía Repsol 2026",
+    "resumen": "El restaurante del chef Álvaro Salazar se convirtió en el segundo de Mallorca, junto al de Maca de Castro, en alcanzar la máxima distinción de la Guía Repsol, otorgada en la gala celebrada en Tarragona el 16 de febrero de 2026.",
+    "fuente_url": "https://www.ultimahora.es/xaloc/gastronomia/2026/02/16/2571459/restaurante-mallorquin-voro-galardonado-soles-guia-repsol.html",
+    "imagen_url": "https://uh.gsstatic.es/sfAttachPlugin/social/3676855.jpg",
+    "fecha": "2026-02-16",
+    "ciudad_slug": "espana"
+  },
+  {
+    "titulo": "Asador Etxebarri, en Atxondo, repite como segundo mejor restaurante del mundo en The World's 50 Best 2025",
+    "resumen": "El asador de Bittor Arguinzoniz, en el valle vizcaíno de Atxondo, fue nombrado además Mejor Restaurante de Europa 2025 en la gala de The World's 50 Best Restaurants, manteniendo por segundo año consecutivo el puesto número dos del mundo.",
+    "fuente_url": "https://www.timeout.com/news/the-spanish-restaurant-named-second-best-in-the-world-in-2025-062325",
+    "imagen_url": "https://media.timeout.com/images/106288416/image.jpg",
+    "fecha": "2025-06-23",
+    "ciudad_slug": "espana"
+  }
+]
