@@ -8,18 +8,18 @@
   "novedades_completadas": [
     "los-angeles", "miami", "san-francisco", "toronto", "buenos-aires",
     "nueva-york", "chicago", "nueva-orleans", "cordoba", "sao-paulo",
-    "rio-de-janeiro", "lima", "bogota"
+    "rio-de-janeiro", "lima", "bogota", "ciudad-de-mexico", "oaxaca",
+    "barcelona", "san-sebastian", "bilbao"
   ],
   "novedades_pendientes": [
-    "ciudad-de-mexico", "oaxaca", "madrid", "barcelona", "san-sebastian",
-    "bilbao", "valencia", "malaga", "espana", "paris", "copenhague",
+    "madrid", "valencia", "malaga", "espana", "paris", "copenhague",
     "roma", "milan", "florencia", "napoles", "estambul", "atenas",
     "budapest", "berlin", "amsterdam", "londres", "lisboa", "viena",
     "praga", "dubai", "ciudad-del-cabo", "marrakech", "tokio", "osaka",
     "kioto", "beijing", "shanghai", "bangkok", "singapur", "seul",
     "hong-kong", "sidney"
   ],
-  "novedades_nota": "Formato v2 APROBADO por el usuario (grid de 2 columnas, imagen de portada grande = og:image real de cada fuente, watermark chico del favicon en la esquina/centro). Cada item tiene 6 campos: titulo, resumen, fuente_url, imagen_url, fecha, ciudad_slug — exactamente 5 por ciudad. Sigue la investigación real para las ~42 ciudades pendientes en tandas de 5.",
+  "novedades_nota": "Formato v2 APROBADO por el usuario (grid de 2 columnas, imagen de portada grande = og:image real de cada fuente, watermark chico del favicon en la esquina/centro). Cada item tiene 6 campos: titulo, resumen, fuente_url, imagen_url, fecha, ciudad_slug. CRITERIO DE CONTENIDO (aclarado por el usuario tras revisar los primeros batches): cada noticia tiene que estar atada a UNA de estas fuentes de prestigio, igual que el criterio de source_type usado para elegir los restaurantes: Michelin (estrella/Bib Gourmand, incluso si la noticia es un cierre PERO el cierre implica perder la estrella), Repsol Soles, James Beard Awards, World's 50 Best / Latin America's 50 Best / Asia's 50 Best u otro ranking global equivalente, Anthony Bourdain, Time Out, un influencer/momento viral real y documentado por prensa, o un premio/crítico de peso (ej. 'Restaurante del Año' de una guía reconocida). NO vale: cierres o aperturas genéricas sin ese tie-in, reaperturas de mercados, anuncios de festivales cívicos/cámaras de comercio, perfiles de restaurante sin premio. Ante la duda, mejor devolver menos de 5 items (hasta 2-3) que incluir algo que no cumpla. Ya se podaron retroactivamente las 13 primeras ciudades — varias quedaron con solo 2-3 items honestos (toronto, buenos-aires, sao-paulo, bogota); se podría intentar un segundo pase de investigación para completarlas a 5 si el usuario lo pide, pero no es prioritario. Sigue la investigación real para las ciudades pendientes en tandas de 5, aplicando este criterio desde el research inicial (no después).",
   "llamadas_api_usadas_este_mes": 0,
   "notas": "Este proyecto NO usa la API paga de Google Places (nunca hubo API key disponible) — el geocoding se hace con OpenStreetMap Nominatim (gratis, sin límite mensual real, solo rate-limit por segundo). Por eso 'llamadas_api_usadas_este_mes' no aplica igual que en el brief original; lo que sí es un límite real es el presupuesto de sesión de Claude Code (búsquedas web + tokens), que se agota y requiere 'retomar' en una sesión nueva. Madrid está congelada a propósito (20 lugares, no tocar contenido) hasta que el usuario mande la lista 'Restaurantes Madrid · Rafael'; sí se migró su schema a v2 mecánicamente. 8 ciudades ya tienen 'cabeza de arranque' de la fase v1 (más lugares que el resto, de una investigación previa, con datos reales completos salvo google_maps_url que ya se generó en la migración): nueva-york (30/100), barcelona (17/100), madrid (20/100, congelada), bilbao (11/40), los-angeles (10/60), san-sebastian (10/40), tokio (6/100), malaga (6/40). Recomendación para la próxima sesión: arrancar por las ciudades N-tier más chicas (objetivo 40) que ya están en 'available: true' para llegar a 'completa' más rápido, en tandas de 3-5, actualizando este archivo después de cada ciudad. Las 50 ciudades nuevas del brief v2 están en cities-index.ts con available:false — no tienen ningún archivo JSON en src/data/cities/ todavía; hay que crearlos desde cero (no son solo top-ups).",
   "progreso_por_ciudad": {
