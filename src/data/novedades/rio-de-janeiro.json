@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Madame Olympe conquista su primera estrella Michelin en menos de un año",
+    "resumen": "El restaurante Madame Olympe, en Leblon, comandado por Claude Troisgros y Jéssica Trindade, recibió su primera estrella Michelin en la ceremonia de la Guía Michelin Río de Janeiro & São Paulo 2026, celebrada el 19 de abril de 2026. La casa combina técnica francesa, ingredientes brasileños e influencias japonesas, apenas doce meses después de su apertura.",
+    "fuente_url": "https://www.barradatijuca.com.br/revista/news/madame-olympe-primeira-estrela-michelin-leblon-2026/",
+    "imagen_url": "https://www.barradatijuca.com.br/img/articles/chef-claude-troisgros.png",
+    "fecha": "2026-04-19",
+    "ciudad_slug": "rio-de-janeiro"
+  },
+  {
+    "titulo": "Hora Extra gana el Comida di Buteco 2026 en la ciudad de Río",
+    "resumen": "El boteco Hora Extra, de Vila Valqueire, fue elegido el mejor de la capital carioca en el Comida di Buteco 2026 con su petisco Discostela, mientras Nosso Canto y Palitus Bar se llevaron los títulos en la Baixada Fluminense y Niterói. Más de 150 bares participaron en la edición fluminense del concurso, realizada entre el 10 de abril y el 10 de mayo.",
+    "fuente_url": "https://diariodorio.com/comida-di-buteco-2026-premia-hora-extra-nosso-canto-e-palitus-bar-no-rj/",
+    "imagen_url": "https://diariodorio.com/wp-content/uploads/2026/05/Hora-Extra-1024x576.webp",
+    "fecha": "2026-05-27",
+    "ciudad_slug": "rio-de-janeiro"
+  },
+  {
+    "titulo": "Lasai y Oteque, los únicos representantes de Río en el top 50 de América Latina",
+    "resumen": "En la lista Latin America's 50 Best Restaurants 2025, el Lasai (chef Rafa Costa e Silva) quedó en el puesto 13 y el Oteque (chef Alberto Landgraf) en el 38, siendo los dos únicos restaurantes cariocas presentes en el ranking. Ambos también ostentan estrellas Michelin: dos el Lasai y una el Oteque.",
+    "fuente_url": "https://diariodorio.com/restaurantes-do-rio-entre-os-50-melhores-da-america-latina-lasai-e-oteque-brilham-na-lista/",
+    "imagen_url": "https://diariodorio.com/wp-content/uploads/2025/06/Lasai.jpg",
+    "fecha": "2025-12-03",
+    "ciudad_slug": "rio-de-janeiro"
+  },
+  {
+    "titulo": "Thomas Troisgros es elegido Mejor Chef en el Premio Rio Show de Gastronomía 2025",
+    "resumen": "El diario O Globo anunció a los ganadores del Premio Rio Show de Gastronomía 2025: Thomas Troisgros (Oseille y ToTo) fue nombrado Mejor Chef del año, mientras que Lasai se llevó la categoría Contemporáneo. La premiación, realizada en el Jockey Club Brasileiro, distinguió a 18 restaurantes y chefs de la escena gastronómica carioca.",
+    "fuente_url": "https://riotur.rio/editorial/premio-rio-show-de-gastronomia-2025/",
+    "imagen_url": "https://riotur.rio/wp-content/uploads/2024/09/rio-gastronomia-250x250.webp",
+    "fecha": "2025-09-09",
+    "ciudad_slug": "rio-de-janeiro"
+  },
+  {
+    "titulo": "El Nuevo Mercado São José reabre en Laranjeiras tras seis años cerrado",
+    "resumen": "Después de una restauración de cerca de dos años y R$ 10 millones de inversión privada, el histórico Mercado São José reabrió el 21 de septiembre de 2025 en Laranjeiras, zona sur de Río, con un anexo de bares y restaurantes al estilo de un mercado gastronómico, entre ellos Tito Orgânicos, Bocas Rotisserie y los bares Cura y Borbulhas.",
+    "fuente_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-09/rio-ganha-mais-opcoes-gastronomicas-com-mercado-sao-jose",
+    "imagen_url": "https://imagens.ebc.com.br/evw3Eb0c1uv2TMR3Bwt81ylMScU=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/09/25/_rbr8960.jpg?itok=ykClDbk4",
+    "fecha": "2025-09-27",
+    "ciudad_slug": "rio-de-janeiro"
+  }
+]
