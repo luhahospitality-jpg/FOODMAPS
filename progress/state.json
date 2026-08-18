@@ -10,14 +10,14 @@
     "nueva-york", "chicago", "nueva-orleans", "cordoba", "sao-paulo",
     "rio-de-janeiro", "lima", "bogota", "ciudad-de-mexico", "oaxaca",
     "barcelona", "san-sebastian", "bilbao", "valencia", "malaga",
-    "espana", "paris", "copenhague"
+    "espana", "paris", "copenhague", "roma", "milan", "florencia",
+    "napoles", "estambul"
   ],
   "novedades_pendientes": [
-    "madrid", "roma", "milan", "florencia", "napoles", "estambul",
-    "atenas", "budapest", "berlin", "amsterdam", "londres", "lisboa",
-    "viena", "praga", "dubai", "ciudad-del-cabo", "marrakech", "tokio",
-    "osaka", "kioto", "beijing", "shanghai", "bangkok", "singapur",
-    "seul", "hong-kong", "sidney"
+    "madrid", "atenas", "budapest", "berlin", "amsterdam", "londres",
+    "lisboa", "viena", "praga", "dubai", "ciudad-del-cabo", "marrakech",
+    "tokio", "osaka", "kioto", "beijing", "shanghai", "bangkok",
+    "singapur", "seul", "hong-kong", "sidney"
   ],
   "novedades_nota": "Formato v2 APROBADO por el usuario (grid de 2 columnas, imagen de portada grande = og:image real de cada fuente, watermark chico del favicon en la esquina/centro). Cada item tiene 6 campos: titulo, resumen, fuente_url, imagen_url, fecha, ciudad_slug. CRITERIO DE CONTENIDO (aclarado por el usuario tras revisar los primeros batches): cada noticia tiene que estar atada a UNA de estas fuentes de prestigio, igual que el criterio de source_type usado para elegir los restaurantes: Michelin (estrella/Bib Gourmand, incluso si la noticia es un cierre PERO el cierre implica perder la estrella), Repsol Soles, James Beard Awards, World's 50 Best / Latin America's 50 Best / Asia's 50 Best u otro ranking global equivalente, Anthony Bourdain, Time Out, un influencer/momento viral real y documentado por prensa, o un premio/crítico de peso (ej. 'Restaurante del Año' de una guía reconocida). NO vale: cierres o aperturas genéricas sin ese tie-in, reaperturas de mercados, anuncios de festivales cívicos/cámaras de comercio, perfiles de restaurante sin premio. Ante la duda, mejor devolver menos de 5 items (hasta 2-3) que incluir algo que no cumpla. Ya se podaron retroactivamente las 13 primeras ciudades — varias quedaron con solo 2-3 items honestos (toronto, buenos-aires, sao-paulo, bogota); se podría intentar un segundo pase de investigación para completarlas a 5 si el usuario lo pide, pero no es prioritario. Sigue la investigación real para las ciudades pendientes en tandas de 5, aplicando este criterio desde el research inicial (no después).",
   "llamadas_api_usadas_este_mes": 0,
