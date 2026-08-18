@@ -22,21 +22,5 @@
     "imagen_url": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/07/10/6a5123738302cead5b012eb4.jpg",
     "fecha": "2026-07-10",
     "ciudad_slug": "lima"
-  },
-  {
-    "titulo": "Rodrigo Fernandini abre su primer restaurante en Lima",
-    "resumen": "El chef abrió 'Fernandini' en una casona de Barranco, con un menú de degustación de diez tiempos que recorre productos de la costa, sierra y selva del Perú, tras tres meses de viajes y seis meses de desarrollo de carta junto a su equipo.",
-    "fuente_url": "https://elcomercio.pe/somos/gastronomia/rodrigo-fernandini-abre-su-primer-restaurante-en-lima-para-esto-he-entrenado-toda-mi-vida-noticia/",
-    "imagen_url": "https://elcomercio.pe/resizer/v2/74VOZ7OX3JF2RGT34VEKCGZJNA.jpg?auth=6cf8c35791d6d74ae8f2adc320520d89cc00a92e7c84772ee2726abd6d758909&width=980&height=528&quality=75&smart=true",
-    "fecha": "2026-04-28",
-    "ciudad_slug": "lima"
-  },
-  {
-    "titulo": "Premios Somos 2026 abre votación con lista completa de nominados",
-    "resumen": "El Comercio abrió la votación de los Premios Somos 2026 el 27 de mayo, con 37 categorías que reconocen a restaurantes, panaderías y creadores de contenido gastronómico de Lima; los ganadores se anunciarán en una ceremonia en el Museo Pedro de Osma, en Barranco.",
-    "fuente_url": "https://elcomercio.pe/somos/gastronomia/premios-somos-2026-lista-completa-de-nominados-como-votar-noticia/",
-    "imagen_url": "https://elcomercio.pe/resizer/v2/QKLBZYEZ3RAYBFBXYGNCEB3X6E.jpg?auth=4201926e9d41616c9672ab8f8643794af9e69722bbdf18be126266e71f3c0082&width=980&height=528&quality=75&smart=true",
-    "fecha": "2026-07-20",
-    "ciudad_slug": "lima"
   }
 ]
