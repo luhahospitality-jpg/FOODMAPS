@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Emeril's se convierte en el primer restaurante de Nueva Orleans en obtener estrellas Michelin",
+    "resumen": "La Guía MICHELIN presentó el 3 de noviembre de 2025 su primera selección para el sur de Estados Unidos y otorgó dos estrellas a Emeril's, el restaurante insignia del chef Emeril Lagasse ahora liderado por su hijo E.J. Lagasse. Es la primera vez que un restaurante de Nueva Orleans recibe el reconocimiento Michelin.",
+    "fuente_url": "https://tulanehullabaloo.com/71805/news/emerils-earns-two-michelin-stars-first-for-new-orleans-dining-scene/",
+    "imagen_url": "https://tulanehullabaloo.com/wp-content/uploads/2025/11/Emerils_New_Orleans_main_entrance_January_2023.jpg",
+    "fecha": "2025-11-03",
+    "ciudad_slug": "nueva-orleans"
+  },
+  {
+    "titulo": "Serigne Mbaye, de Dakar NOLA, gana el premio James Beard a Mejor Chef del Sur 2026",
+    "resumen": "El chef senegalés Serigne Mbaye, de Dakar NOLA, ganó el premio James Beard a Mejor Chef del Sur en la ceremonia celebrada en Chicago el 15 de junio de 2026. Su restaurante combina técnicas culinarias de África Occidental con productos y mariscos del sur de Luisiana.",
+    "fuente_url": "https://countryroadsmagazine.com/cuisine/small-town-chefs/dakar-nola-seringe-mbaye-wins-james-beard-award/",
+    "imagen_url": "https://countryroadsmagazine.com/downloads/16726/download/image_6483441.jpg?cb=831da5cd8318b7c22a5e4eefce0a9d5e&w=1200",
+    "fecha": "2026-06-15",
+    "ciudad_slug": "nueva-orleans"
+  },
+  {
+    "titulo": "El chef Alon Shaya abre Safta's Table, un café mediterráneo casual en Lakeview",
+    "resumen": "El chef Alon Shaya, conocido por Saba y Miss River, abrió junto a su esposa Emily un nuevo café de servicio informal llamado Safta's Table en el barrio de Lakeview de Nueva Orleans. El local ofrece cocina mediterránea de desayuno, brunch, almuerzo y cena.",
+    "fuente_url": "https://countryroadsmagazine.com/cuisine/restaurants/alon-shaya-s-new-spot-safta-s-table/",
+    "imagen_url": "https://countryroadsmagazine.com/downloads/21205/download/Breakfast-Hummus_Credit_-Jess-Kearney.jpg?cb=5ec175c036aa90116437f535fc39c5d2&w=1200",
+    "fecha": "2026-03-26",
+    "ciudad_slug": "nueva-orleans"
+  },
+  {
+    "titulo": "Johnny Sánchez cierra su local del centro de Nueva Orleans tras 12 años",
+    "resumen": "El restaurante de cocina mexicana moderna Johnny Sánchez, ubicado en Poydras Street, sirvió su última cena coincidiendo con el Cinco de Mayo de 2026, tras 12 años de operación. Los dueños citaron pérdidas de negocio vinculadas a cierres viales prolongados por el derrumbe parcial de un edificio cercano en 2024.",
+    "fuente_url": "https://www.fox8live.com/2026/05/06/johnny-sanchez-restaurant-downtown-new-orleans-closes-with-final-cinco-de-mayo-fiesta/",
+    "imagen_url": "https://gray-wvue-prod.gtv-cdn.com/resizer/v2/7UT65YRCKFFILHQ4WZMLJOCO4E.JPG?auth=52784cd2b7a9c2d4093f06e2aa4046cac38463efe19447860f98abca9579ae2a&width=1200&height=600&smart=true",
+    "fecha": "2026-05-05",
+    "ciudad_slug": "nueva-orleans"
+  },
+  {
+    "titulo": "El restaurante Delacroix de Nueva Orleans representa a Estados Unidos en París por el 250 aniversario del país",
+    "resumen": "El restaurante Delacroix fue elegido por la Embajada de Estados Unidos en Francia para representar la cocina estadounidense en una celebración en París por los 250 años de amistad entre Francia y Estados Unidos.",
+    "fuente_url": "https://www.fox8live.com/2026/07/05/new-orleans-restaurant-delacroix-represents-us-paris-americas-250th/",
+    "imagen_url": "https://gray-wvue-prod.gtv-cdn.com/resizer/v2/IBNELGPCXFHKFCDICPDIJNAGVE.jpg?auth=3abb8284f28131061a0f8059e05cacca21d5a147543ac96cb9dcfdba6bc92f1c&width=1200&height=600&smart=true",
+    "fecha": "2026-07-05",
+    "ciudad_slug": "nueva-orleans"
+  }
+]
