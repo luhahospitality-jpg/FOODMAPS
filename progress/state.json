@@ -4,7 +4,18 @@
   "fase_actual": "infraestructura_completa",
   "ciudades_completas": [],
   "ciudad_en_curso": null,
-  "paso_en_curso": "Todas las ciudades tier N (39 ciudades, 40/40), tier M (6 ciudades, 60/60) y tier S salvo Madrid (9 de 10 ciudades: bangkok, barcelona, buenos-aires, ciudad-de-mexico, londres, nueva-york, paris, roma, tokio, todas 100/100) ya están completas. Solo falta madrid (20/100, congelada a propósito hasta que el usuario mande la lista 'Restaurantes Madrid · Rafael'). Sigue: crear desde cero las 50 ciudades nuevas del brief v2 (available:false, sin JSON todavía) y empezar a poblar Novedades con investigación real.",
+  "paso_en_curso": "Todas las ciudades tier N (39 ciudades, 40/40), tier M (6 ciudades, 60/60) y tier S salvo Madrid (9 de 10 ciudades: bangkok, barcelona, buenos-aires, ciudad-de-mexico, londres, nueva-york, paris, roma, tokio, todas 100/100) ya están completas. Solo falta madrid (20/100, congelada a propósito hasta que el usuario mande la lista 'Restaurantes Madrid · Rafael'). Las 50 ciudades nuevas del brief v2 quedaron en standby a pedido del usuario (baja prioridad, no tocar por ahora). Fase actual: poblar Novedades (4-5 noticias reales verificadas por ciudad, en src/data/novedades/<slug>.json, uno por ciudad para permitir investigación en paralelo) para las 50 ciudades disponibles. Madrid incluida está pendiente de decidir si se investiga (el usuario no confirmó si aplica el freeze a novedades también).",
+  "novedades_completadas": ["los-angeles", "miami", "san-francisco", "nueva-york", "chicago"],
+  "novedades_pendientes": [
+    "cordoba", "sao-paulo", "rio-de-janeiro", "lima", "bogota",
+    "ciudad-de-mexico", "oaxaca", "madrid", "barcelona", "san-sebastian",
+    "bilbao", "valencia", "malaga", "espana", "paris", "copenhague",
+    "roma", "milan", "florencia", "napoles", "estambul", "atenas",
+    "budapest", "berlin", "amsterdam", "londres", "lisboa", "viena",
+    "praga", "dubai", "ciudad-del-cabo", "marrakech", "tokio", "osaka",
+    "kioto", "beijing", "shanghai", "bangkok", "singapur", "seul",
+    "hong-kong", "sidney", "buenos-aires", "nueva-orleans", "toronto"
+  ],
   "llamadas_api_usadas_este_mes": 0,
   "notas": "Este proyecto NO usa la API paga de Google Places (nunca hubo API key disponible) — el geocoding se hace con OpenStreetMap Nominatim (gratis, sin límite mensual real, solo rate-limit por segundo). Por eso 'llamadas_api_usadas_este_mes' no aplica igual que en el brief original; lo que sí es un límite real es el presupuesto de sesión de Claude Code (búsquedas web + tokens), que se agota y requiere 'retomar' en una sesión nueva. Madrid está congelada a propósito (20 lugares, no tocar contenido) hasta que el usuario mande la lista 'Restaurantes Madrid · Rafael'; sí se migró su schema a v2 mecánicamente. 8 ciudades ya tienen 'cabeza de arranque' de la fase v1 (más lugares que el resto, de una investigación previa, con datos reales completos salvo google_maps_url que ya se generó en la migración): nueva-york (30/100), barcelona (17/100), madrid (20/100, congelada), bilbao (11/40), los-angeles (10/60), san-sebastian (10/40), tokio (6/100), malaga (6/40). Recomendación para la próxima sesión: arrancar por las ciudades N-tier más chicas (objetivo 40) que ya están en 'available: true' para llegar a 'completa' más rápido, en tandas de 3-5, actualizando este archivo después de cada ciudad. Las 50 ciudades nuevas del brief v2 están en cities-index.ts con available:false — no tienen ningún archivo JSON en src/data/cities/ todavía; hay que crearlos desde cero (no son solo top-ups).",
   "progreso_por_ciudad": {
