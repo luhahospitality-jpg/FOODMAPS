@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Kasama sube a dos estrellas Michelin y Feld debuta con su primera estrella en Chicago",
+    "resumen": "En la ceremonia de la Guía Michelin del 18 de noviembre de 2025, Kasama, de los chefs Genie Kwon y Tim Flores, pasó de una a dos estrellas, mientras que Feld, en Ukrainian Village, obtuvo su primera estrella y también una Estrella Verde por sostenibilidad. Chicago alcanzó así el mayor número de restaurantes con estrella en su historia.",
+    "fuente_url": "https://www.nbcchicago.com/news/local/2-chicago-restaurants-just-got-new-michelin-stars-and-1-is-brand-new-to-the-list/3853349/",
+    "imagen_url": "https://media.nbcchicago.com/2025/11/GettyImages-2221472475.jpg?quality=85&strip=all&resize=1200%2C675",
+    "fecha": "2025-11-19",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Jake Potashnick, de Feld, gana el premio James Beard a Mejor Chef de la región Great Lakes 2026",
+    "resumen": "El chef Jake Potashnick, de Feld, un restaurante de 20 asientos en Ukrainian Village que trabaja con ingredientes de granjas del Medio Oeste, ganó el premio James Beard a Mejor Chef: Great Lakes en la ceremonia realizada el 15 de junio de 2026 en el Lyric Opera House de Chicago. Fue el único chef de la ciudad en ganar en la 36ª edición de los premios.",
+    "fuente_url": "https://www.wbez.org/food-drink/2026/06/15/james-beard-awards-2026-chicago-lyric-opera-chefs-restaurant",
+    "imagen_url": "https://cst.brightspotcdn.com/dims4/default/c2a06dc/2147483647/strip/true/crop/8192x4676+0+0/resize/1461x834!/quality/90/?url=https%3A%2F%2Fchorus-production-cst-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F8b%2F89%2F24b6ce9f47209ef1a64e3dff88fd%2Fbeardawrds-2606150243.jpg",
+    "fecha": "2026-06-15",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Boka Restaurant Group abre Gingie, el primer restaurante propio del chef Brian Lockwood, en River North",
+    "resumen": "Gingie, un restaurante de 152 asientos centrado en cocina a fuego vivo, abrió a fines de marzo de 2026 en River North bajo Boka Restaurant Group. Lo lidera el chef Brian Lockwood, quien pasó casi una década en Eleven Madison Park y se desempeñó como consultor culinario de la serie 'The Bear'.",
+    "fuente_url": "https://www.nrn.com/independent-restaurants/boka-restaurant-group-opens-gingie-in-chicago",
+    "imagen_url": "https://eu-images.contentstack.com/v3/assets/bltea7aee2fca050a19/blt11167c824c324d4f/69ca93ddc0030f5b5c2fa482/gingie-hearth.jpeg?disable=upscale&width=1200&height=630&fit=crop",
+    "fecha": "2026-03-30",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Smoke Daddy BBQ cierra su local original de Wicker Park tras 31 años",
+    "resumen": "El emblemático Smoke Daddy BBQ sirvió su última costilla en su ubicación de Wicker Park el 4 de enero de 2026, después de 31 años de historia, mientras que su sucursal de Wrigleyville permanece abierta. Un nuevo restaurante ocupará el espacio de Division Street durante 2026.",
+    "fuente_url": "https://www.timeout.com/chicago/news/chicagos-beloved-smoke-daddy-bbq-is-officially-closing-111925",
+    "imagen_url": "https://media.timeout.com/images/106344838/image.jpg",
+    "fecha": "2026-01-04",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Mirra, Nadu, Taqueria Chingón y otros restaurantes se suman a la Guía Michelin de Chicago",
+    "resumen": "Cinco restaurantes chicaguenses -Mirra, Tama, Taqueria Chingón, Nadu y Oliver's- fueron incorporados a la categoría 'Recomendados' de la Guía Michelin en julio de 2025, antesala de la ceremonia anual. Nadu, de Lincoln Park, terminó recibiendo el reconocimiento Bib Gourmand en la gala de noviembre de ese año.",
+    "fuente_url": "https://www.timeout.com/chicago/news/five-chicago-restaurants-were-just-added-to-the-michelin-guide-2025-071625",
+    "imagen_url": "https://media.timeout.com/images/106296940/image.jpg",
+    "fecha": "2025-07-16",
+    "ciudad_slug": "chicago"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "La guía MICHELIN confirma la fecha de su ceremonia 2026 en Toronto",
+    "resumen": "La guía MICHELIN anunció que la selección de restaurantes de Toronto y la región para 2026 se revelará la noche del 22 de septiembre en el Liberty Grand Entertainment Complex, donde se anunciarán nuevas estrellas y Bib Gourmand.",
+    "fuente_url": "https://michelinmedia.com/pages/blog/detail/article/c/a1461/",
+    "imagen_url": "https://michelinmedia.com/site/user/images/Credit_Destination_Toronto_Image_2.jpg",
+    "fecha": "2026-05-21",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "Yukashi, reconocido restaurante de sushi de Toronto, cierra sus puertas",
+    "resumen": "Yukashi, uno de los restaurantes de sushi mejor valorados de Toronto, anunció su cierre definitivo, aunque sus propietarios dejaron entrever que un nuevo proyecto podría ocupar el mismo local próximamente.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/04/yukashi-toronto-closing/",
+    "imagen_url": "https://blogto-production2-baselayer-display.blogto.com/articles/20181013-Yukashi6.jpg?w=1200&cmd=resize_then_crop&height=630&format=auto",
+    "fecha": "2026-04-23",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "Famiglia Baldassarre, emblemático restaurante de pasta de Toronto, anuncia su cierre",
+    "resumen": "Famiglia Baldassarre, considerado uno de los mejores restaurantes de pasta de la ciudad, anunció que dejará de operar tras casi una década de actividad, sirviendo su último servicio al público el 14 de agosto de 2026.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/07/famiglia-balsassarre-toronto-closing/",
+    "imagen_url": "https://blogto-production2-baselayer-display.blogto.com/articles/20180727-2048-LaFamiglia17_2.jpg?w=1200&cmd=resize_then_crop&height=630&format=auto",
+    "fecha": "2026-07-15",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "El Sol cierra tras más de 30 años como punto de encuentro familiar en Danforth",
+    "resumen": "El restaurante familiar El Sol, que abrió en 1991 sobre Danforth Avenue, cerró de forma permanente esta semana tras tres décadas funcionando como un clásico del vecindario.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/08/el-sol-restaurant-toronto-closing/",
+    "imagen_url": "https://blogto-production2-baselayer-display.blogto.com/articles/20260814-el-sol-toronto.jpeg?w=1200&cmd=resize_then_crop&height=630&format=auto",
+    "fecha": "2026-08-14",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "General An Potsticker cierra tras volverse viral en redes sociales",
+    "resumen": "El popular restaurante de fideos y potstickers chinos General An sirvió su último plato tras generar gran repercusión en línea durante su breve pero exitosa etapa en Toronto.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/08/general-an-potsticker-toronto-closed/",
+    "imagen_url": "https://blogto-production2-baselayer-display.blogto.com/articles/20260810-general-an-potsticker.jpeg?w=1200&cmd=resize_then_crop&height=630&format=auto",
+    "fecha": "2026-08-10",
+    "ciudad_slug": "toronto"
+  }
+]
