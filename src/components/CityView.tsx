@@ -34,8 +34,11 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
           <div className="mx-auto max-w-6xl">
             <Link
               href={backHref}
-              className="font-label text-xs font-bold tracking-widest text-ink/60 uppercase hover:text-ink"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-ink bg-paper px-5 py-2.5 font-label text-sm font-bold tracking-wide text-ink uppercase shadow-hard-sm transition-transform hover:-translate-y-0.5 hover:bg-mustard"
             >
+              <span aria-hidden="true" className="text-lg leading-none">
+                ←
+              </span>
               {dict.city.backLink}
             </Link>
             <div className="mt-4 flex items-center gap-2">

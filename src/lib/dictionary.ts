@@ -20,6 +20,9 @@ export const dictionary = {
         `${available} / ${total} listas`,
       comingSoon: "Próximamente",
       top5Check: "Ver ✓",
+      searchPlaceholder: "Buscar ciudad o país…",
+      searchNoResults: "Ninguna ciudad coincide con esa búsqueda.",
+      continentCount: (n: number) => `${n} ${n === 1 ? "ciudad" : "ciudades"}`,
       continents: {
         north_america: "Norteamérica",
         latin_america: "Latinoamérica",
@@ -31,7 +34,7 @@ export const dictionary = {
       },
     },
     city: {
-      backLink: "← Todas las ciudades",
+      backLink: "Todas las ciudades",
       placesInvestigated: (n: number) => `${n} lugares investigados`,
       placesProgress: (n: number, target: number) =>
         `${n} de ${target} lugares`,
@@ -89,6 +92,9 @@ export const dictionary = {
         `${available} / ${total} lists`,
       comingSoon: "Coming soon",
       top5Check: "View ✓",
+      searchPlaceholder: "Search city or country…",
+      searchNoResults: "No city matches that search.",
+      continentCount: (n: number) => `${n} ${n === 1 ? "city" : "cities"}`,
       continents: {
         north_america: "North America",
         latin_america: "Latin America",
@@ -100,7 +106,7 @@ export const dictionary = {
       },
     },
     city: {
-      backLink: "← All cities",
+      backLink: "All cities",
       placesInvestigated: (n: number) => `${n} places researched`,
       placesProgress: (n: number, target: number) =>
         `${n} of ${target} places`,
