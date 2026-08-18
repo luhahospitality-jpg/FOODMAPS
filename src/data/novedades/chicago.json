@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Kasama sube a dos estrellas Michelin y Feld debuta con su primera estrella en Chicago",
+    "resumen": "En la ceremonia de la Guía Michelin para ciudades del noreste, celebrada el 18 de noviembre de 2025 en Filadelfia, el restaurante filipino Kasama fue ascendido de una a dos estrellas, uniéndose a Ever y Oriole entre los dos estrellas de Chicago. Feld, en Ukrainian Village, recibió su primera estrella Michelin junto con una Estrella Verde por sostenibilidad.",
+    "fuente_url": "https://www.nbcchicago.com/news/local/2-chicago-restaurants-just-got-new-michelin-stars-and-1-is-brand-new-to-the-list/3853349/",
+    "fecha": "2025-11-19",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Jake Potashnick, chef de Feld, gana el premio James Beard a Mejor Chef de la región Great Lakes",
+    "resumen": "El 15 de junio de 2026, en la ceremonia número 36 de los premios James Beard celebrada en el Lyric Opera House de Chicago, Jacob Potashnick, chef de Feld en Ukrainian Village, ganó el premio a Mejor Chef de la región Great Lakes (Illinois, Indiana, Michigan y Ohio). Fue el único chef de Chicago en obtener un premio ese año.",
+    "fuente_url": "https://www.wbez.org/food-drink/2026/06/15/james-beard-awards-2026-chicago-lyric-opera-chefs-restaurant",
+    "fecha": "2026-06-15",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Jim's Original, la histórica salchichería de Maxwell Street, se traslada a Pilsen por la expansión de UIC",
+    "resumen": "Jim's Original, el puesto de hot dogs y Maxwell Street Polish que opera desde 1939, debió dejar su local de 1250 S. Union Ave. antes del 30 de junio de 2026 debido a planes de reurbanización de la Universidad de Illinois en Chicago (UIC), que es dueña del predio. El negocio anunció su traslado a una nueva dirección en el barrio de Pilsen, con apertura prevista para el otoño de 2026.",
+    "fuente_url": "https://chicago.suntimes.com/restaurants/2026/05/08/jims-original-home-of-maxwell-street-polish-told-to-move-locations-due-to-uic-redevelopment",
+    "fecha": "2026-05-08",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Boka Restaurant Group abre Gingie, el primer restaurante propio del chef Brian Lockwood, en River North",
+    "resumen": "El grupo Boka Restaurant Group, de los restauradores Kevin Boehm y Rob Katz, abrió a fines de marzo de 2026 el restaurante Gingie en 707 N. Wells St., en River North. Es el primer proyecto como chef-socio de Brian Lockwood, conocido por su trabajo como consultor culinario de la serie 'The Bear', y el local de 152 asientos se enfoca en cocina a las brasas.",
+    "fuente_url": "https://www.nrn.com/independent-restaurants/boka-restaurant-group-opens-gingie-in-chicago",
+    "fecha": "2026-03-26",
+    "ciudad_slug": "chicago"
+  },
+  {
+    "titulo": "Chicago Restaurant Week 2026 abre reservas con más de 500 restaurantes, un récord para el evento",
+    "resumen": "Choose Chicago anunció el 10 de diciembre de 2025 la apertura de reservas para la edición número 19 de Chicago Restaurant Week, que se realizará del 23 de enero al 8 de febrero de 2026 con más de 500 restaurantes participantes en 33 barrios y 61 suburbios, la mayor convocatoria en la historia del evento.",
+    "fuente_url": "https://chicago.suntimes.com/food-drink/2025/12/10/chicago-restaurant-week-2026-reservations-discounted-dining-tourism-suburbs-food",
+    "fecha": "2025-12-10",
+    "ciudad_slug": "chicago"
+  }
+]
