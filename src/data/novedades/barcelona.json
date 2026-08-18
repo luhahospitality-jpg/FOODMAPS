@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Lluvia de estrellas Michelin en Barcelona para 2026: Enigma, Aleia y Mont Bar suman su segunda estrella",
+    "resumen": "La Guía Michelin premió a Barcelona con tres nuevos restaurantes biestrellados de golpe (Enigma de Albert Adrià, Aleia y Mont Bar) y dos nuevas estrellas para Kamikaze y Scapar en la gala celebrada el 25 de noviembre de 2025.",
+    "fuente_url": "https://www.timeout.es/barcelona/es/noticias/lluvia-de-estrellas-michelin-en-barcelona-ganamos-tres-restaurantes-biestrellados-de-golpe-y-dos-nuevas-estrellas-112525",
+    "imagen_url": "https://media.timeout.com/images/105234773/image.jpg",
+    "fecha": "2025-11-25",
+    "ciudad_slug": "barcelona"
+  },
+  {
+    "titulo": "Martín Berasategui cierra temporalmente Oria en Barcelona y perderá otra estrella Michelin",
+    "resumen": "El restaurante Oria, del hotel Monument, cerró sus puertas por la reforma integral del hotel con motivo de su décimo aniversario y reabrirá en primavera de 2026 con nuevo nombre y propuesta, lo que le hará perder la estrella Michelin obtenida en 2019.",
+    "fuente_url": "https://www.infobae.com/espana/2025/10/16/martin-berasategui-cierra-temporalmente-su-restaurante-oria-en-barcelona-y-perdera-otra-estrella-michelin/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/FH6IP2WM6VELHP26OPMNSBMWCU.jpg?auth=d59f99e1f7304d5f1af726b9377f376fcc5ba40caadc028c40aa43f1378c9245&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2025-10-16",
+    "ciudad_slug": "barcelona"
+  },
+  {
+    "titulo": "Cierra Teatro Kitchen Bar, otro estrella Michelin de Barcelona, apenas un año después de lograr el galardón",
+    "resumen": "El grupo Orobianco, que compró el negocio del Paral·lel a principios de 2025, cerró Teatro Kitchen Bar el 21 de diciembre y en su lugar abrirá en primavera de 2026 un nuevo restaurante liderado por Paolo Casagrande, chef de Lasarte (tres estrellas Michelin).",
+    "fuente_url": "https://www.infobae.com/espana/2025/11/03/cierra-otro-restaurante-con-estrella-michelin-en-barcelona-apenas-un-ano-despues-de-conseguir-el-galardon-adios-a-teatro-kitchen-bar/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/PIZMR2Y2HBAFNASXVLS6BHF4VE.jpg?auth=66a339f1c953c25ab0d87db18e6e3e8b857bb207e1fce0ab90d026ddd6e1a613&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2025-11-03",
+    "ciudad_slug": "barcelona"
+  },
+  {
+    "titulo": "Cataluña arrasa en la Gala Soles Guía Repsol 2026: Dos Palillos logra su segundo Sol",
+    "resumen": "Cataluña lideró la edición 2026 de los Soles Guía Repsol con 9 restaurantes de Tres Soles, 30 de Dos Soles y 87 de Un Sol. La gran novedad barcelonesa fue el segundo Sol para Dos Palillos, de Albert Raurich, además de nuevos reconocimientos para Amar Barcelona, Besta, Eldelmar y Prodigi.",
+    "fuente_url": "https://www.elnacional.cat/es/gourmeteria/articulos/cataluna-triunfa-gala-soles-guia-repsol-mas-restaurantes-soles-nadie_1552454_102.html",
+    "imagen_url": "https://www.elnacional.cat/uploads/s1/51/67/64/24/fotofamilia3solesveteranos_4_1258x630.jpeg",
+    "fecha": "2026-02-16",
+    "ciudad_slug": "barcelona"
+  },
+  {
+    "titulo": "Barcelona, quinta mejor ciudad del mundo para comer en 2026 según Time Out",
+    "resumen": "Time Out situó a Barcelona en el quinto puesto de su ranking mundial de mejores ciudades gastronómicas de 2026, destacando la combinación de restaurantes de alta cocina con estrella Michelin y la cocina tradicional de mercado que conviven en la ciudad.",
+    "fuente_url": "https://www.timeout.es/barcelona/es/noticias/barcelona-la-quinta-mejor-ciudad-del-mundo-para-comer-este-2026-061926",
+    "imagen_url": "https://media.timeout.com/images/106338820/image.jpg",
+    "fecha": "2026-06-19",
+    "ciudad_slug": "barcelona"
+  }
+]
