@@ -3,7 +3,7 @@
   "name": "Buenos Aires",
   "country": "Argentina",
   "tagline": "Bife de chorizo con estrella Michelin, café con fantasmas de Borges, y el bodegón de La Boca donde Francis Mallmann llevó a comer a Anthony Bourdain.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -43,7 +43,8 @@
       "source_type": "classic",
       "rank": 2,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6086934,-58.3781432"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6086934,-58.3781432",
+      "distinction": null
     },
     {
       "name": "Don Carlos",
@@ -60,7 +61,8 @@
       "source_type": "bourdain",
       "rank": 3,
       "reservable": null,
-      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.636112,-58.363594"
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.636112,-58.363594",
+      "distinction": null
     },
     {
       "name": "Aramburu",
@@ -103,6 +105,1696 @@
         "type": "michelin_star",
         "count": 1
       }
+    },
+    {
+      "name": "Trescha",
+      "place_id": null,
+      "lat": -34.5978,
+      "lng": -58.4384,
+      "category": "fine_dining",
+      "cuisine": "creativa",
+      "tags": [
+        "50best"
+      ],
+      "description": "Menú degustación de 16 pasos para solo 10 comensales en la barra de la cocina, en una casona restaurada de Villa Crespo. Estrella Michelin y puesto 36 en Latin America's 50 Best 2025, a cargo del chef Tomás Treschanski.",
+      "source_url": "https://www.theworlds50best.com/restaurants/best-in-latin-america/the-list/Trescha.html",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5978,-58.4384",
+      "distinction": null
+    },
+    {
+      "name": "Gran Dabbang",
+      "place_id": null,
+      "lat": -34.588,
+      "lng": -58.4295,
+      "category": "restaurante",
+      "cuisine": "asiática / fusión",
+      "tags": [
+        "50best"
+      ],
+      "description": "Fusión atrevida de India y el sudeste asiático con productos argentinos, en un local diminuto de Palermo sin manteles ni reservas. Puesto 18 en Latin America's 50 Best 2024, a cargo del chef Mariano Ramón.",
+      "source_url": "https://www.theworlds50best.com/stories/News/latin-americas-50-best-restaurants-2024-list-revealed.html",
+      "source_type": "critic",
+      "rank": 7,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.588,-58.4295",
+      "distinction": null
+    },
+    {
+      "name": "Mishiguene",
+      "place_id": null,
+      "lat": -34.5822,
+      "lng": -58.413,
+      "category": "restaurante",
+      "cuisine": "judía / medio oriente",
+      "tags": [
+        "50best"
+      ],
+      "description": "Cocina askenazí, sefaradí e israelí reinventada por el chef Tomás Kalika en Palermo; su nombre significa \"loco\" en ídish. Presente en el ranking de Latin America's 50 Best.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Mishiguene.html",
+      "source_type": "critic",
+      "rank": 8,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5822,-58.413",
+      "distinction": null
+    },
+    {
+      "name": "El Preferido de Palermo",
+      "place_id": null,
+      "lat": -34.5885,
+      "lng": -58.427,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "50best",
+        "clasico"
+      ],
+      "description": "Almacén de barrio de 1952 reconvertido en bodegón de autor por el equipo de Don Julio. Estrella Verde Michelin y puesto 22 en Latin America's 50 Best.",
+      "source_url": "https://guide.michelin.com/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/el-preferido-de-palermo",
+      "source_type": "critic",
+      "rank": 9,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5885,-58.427",
+      "distinction": null
+    },
+    {
+      "name": "Niño Gordo",
+      "place_id": null,
+      "lat": -34.5885,
+      "lng": -58.4265,
+      "category": "parrilla",
+      "cuisine": "asiática / parrilla",
+      "tags": [
+        "50best"
+      ],
+      "description": "\"Parrilla asiática\" de los creadores de La Carnicería en Palermo Soho: brasas argentinas con especias y técnicas de Asia. Puesto 34 en Latin America's 50 Best 2024.",
+      "source_url": "https://www.theworlds50best.com/stories/News/latin-americas-50-best-restaurants-2024-list-revealed.html",
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5885,-58.4265",
+      "distinction": null
+    },
+    {
+      "name": "Anchoíta",
+      "place_id": null,
+      "lat": -34.594,
+      "lng": -58.446,
+      "category": "restaurante",
+      "cuisine": "argentina de producto",
+      "tags": [
+        "50best"
+      ],
+      "description": "Restaurante de Enrique Piñeyro en Chacarita: carnes maduradas, pescados de río y verdura de huerta propia a la parrilla. Estrella Michelin y puesto 73 en Latin America's 50 Best 2024.",
+      "source_url": "https://anchoita.com.ar/",
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.594,-58.446",
+      "distinction": null
+    },
+    {
+      "name": "Mengano",
+      "place_id": null,
+      "lat": -34.5885,
+      "lng": -58.4322,
+      "category": "bodegon",
+      "cuisine": "argentina de autor",
+      "tags": [
+        "50best"
+      ],
+      "description": "\"Bodegón de autor\" en Palermo del chef Facundo Kelemen: clásicos porteños como el gramajo o la milanesa revisados con técnica contemporánea. Nueva entrada 2024 en Latin America's 50 Best.",
+      "source_url": "https://www.theworlds50best.com/stories/News/latin-americas-50-best-restaurants-2024-51-100-list-revealed.html",
+      "source_type": "critic",
+      "rank": 12,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5885,-58.4322",
+      "distinction": null
+    },
+    {
+      "name": "Elena",
+      "place_id": null,
+      "lat": -34.5921,
+      "lng": -58.3838,
+      "category": "restaurante",
+      "cuisine": "argentina / brasería",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante insignia del Four Seasons en Recoleta, con cámara de maduración de carnes a la vista. Distinguido por la Guía Michelin Argentina y presente varios años en Latin America's 50 Best.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/elena",
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5921,-58.3838",
+      "distinction": null
+    },
+    {
+      "name": "La Carnicería",
+      "place_id": null,
+      "lat": -34.5887,
+      "lng": -58.428,
+      "category": "parrilla",
+      "cuisine": "argentina / carnes",
+      "tags": [
+        "50best"
+      ],
+      "description": "Parrilla pequeña e informal de los chefs Germán Sitz y Pedro Peña en Palermo Soho, hermana de Niño Gordo, enfocada en cortes de autor. Listada en 50 Best Discovery.",
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/La-Carnicer%C3%ADa.html",
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5887,-58.428",
+      "distinction": null
+    },
+    {
+      "name": "Corte Comedor",
+      "place_id": null,
+      "lat": -34.565,
+      "lng": -58.453,
+      "category": "parrilla",
+      "cuisine": "argentina / carnes",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Parrilla moderna en Belgrano, contigua a su propia carnicería, con foco en trazabilidad y maduración de la carne. Incluida en la Guía Michelin Argentina.",
+      "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/corte-comedor",
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.565,-58.453",
+      "distinction": null
+    },
+    {
+      "name": "Roux",
+      "place_id": null,
+      "lat": -34.5945,
+      "lng": -58.4015,
+      "category": "restaurante",
+      "cuisine": "pescados y mariscos",
+      "tags": [],
+      "description": "Restaurante de alta cocina de Martín Rebaudino especializado en pescados, mariscos y producto de estación, con una extensa carta de vinos.",
+      "source_url": "https://rouxresto.com/",
+      "source_type": null,
+      "rank": 16,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5945,-58.4015",
+      "distinction": null
+    },
+    {
+      "name": "BASA",
+      "place_id": null,
+      "lat": -34.594,
+      "lng": -58.3745,
+      "category": "restaurante",
+      "cuisine": "mediterránea",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante y bar en varios niveles cerca de Plaza San Martín, con cocina de inspiración mediterránea. Incluido en la Guía Michelin 2024.",
+      "source_url": "https://guide.michelin.com/br/pt_BR/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/basa",
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.594,-58.3745",
+      "distinction": null
+    },
+    {
+      "name": "Osaka",
+      "place_id": null,
+      "lat": -34.611,
+      "lng": -58.366,
+      "category": "restaurante",
+      "cuisine": "nikkei",
+      "tags": [],
+      "description": "Cocina nikkei (japonesa-peruana) en Puerto Madero, una de las referencias porteñas del género desde comienzos de los 2000.",
+      "source_url": "https://osakanikkei.com/buenos-aires/",
+      "source_type": null,
+      "rank": 18,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.611,-58.366",
+      "distinction": null
+    },
+    {
+      "name": "Sudestada",
+      "place_id": null,
+      "lat": -34.5808,
+      "lng": -58.4335,
+      "category": "restaurante",
+      "cuisine": "sudeste asiático",
+      "tags": [],
+      "description": "Cocina tailandesa y vietnamita sin concesiones en Palermo Hollywood, con pad thai y curries que la consolidaron como pionera del género en la ciudad.",
+      "source_url": "https://soloporgusto.com/sudestada-sabores-de-asia-en-tu-mesa/",
+      "source_type": null,
+      "rank": 19,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5808,-58.4335",
+      "distinction": null
+    },
+    {
+      "name": "La Mar Cebichería",
+      "place_id": null,
+      "lat": -34.5793,
+      "lng": -58.4308,
+      "category": "restaurante",
+      "cuisine": "peruana",
+      "tags": [],
+      "description": "Cebichería del chef peruano Gastón Acurio en Palermo, con ceviches, tiraditos y cócteles al aire libre.",
+      "source_url": "https://lamarcebicheria.com/buenos-aires/",
+      "source_type": null,
+      "rank": 20,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5793,-58.4308",
+      "distinction": null
+    },
+    {
+      "name": "Todos Contentos",
+      "place_id": null,
+      "lat": -34.5615,
+      "lng": -58.457,
+      "category": "restaurante",
+      "cuisine": "china / dim sum",
+      "tags": [],
+      "description": "Cantina familiar en el Barrio Chino de Belgrano, referencia de dim sum porteño desde hace décadas.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 21,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5615,-58.457",
+      "distinction": null
+    },
+    {
+      "name": "Sarkis",
+      "place_id": null,
+      "lat": -34.5978,
+      "lng": -58.434,
+      "category": "restaurante",
+      "cuisine": "armenia / medio oriente",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Templo de la cocina armenia en Villa Crespo desde 1982, fundado por la familia Katabian: filas de espera todas las noches para el hummus, las berenjenas y los kibbehs.",
+      "source_url": "https://www.lanacion.com.ar/lifestyle/el-exito-armenio-sarkis-restaurante-37-anos-nid2321469/",
+      "source_type": "critic",
+      "rank": 22,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5978,-58.434",
+      "distinction": null
+    },
+    {
+      "name": "Piegari",
+      "place_id": null,
+      "lat": -34.608,
+      "lng": -58.364,
+      "category": "restaurante",
+      "cuisine": "italiana",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Referente porteño de la cocina italiana en Puerto Madero desde los 90, célebre por sus pastas caseras y su ambiente de gala.",
+      "source_url": "https://piegari.com.ar/",
+      "source_type": "classic",
+      "rank": 23,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.608,-58.364",
+      "distinction": null
+    },
+    {
+      "name": "Oviedo",
+      "place_id": null,
+      "lat": -34.591,
+      "lng": -58.405,
+      "category": "restaurante",
+      "cuisine": "pescados y mariscos / española",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Desde 1986, referencia porteña de pescados y mariscos con impronta gallega y una bodega de más de 18.000 botellas, fundada por Emilio Garip.",
+      "source_url": "https://www.oviedoresto.com.ar/",
+      "source_type": "classic",
+      "rank": 24,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.591,-58.405",
+      "distinction": null
+    },
+    {
+      "name": "La Brigada",
+      "place_id": null,
+      "lat": -34.6175,
+      "lng": -58.3735,
+      "category": "parrilla",
+      "cuisine": "argentina / parrilla",
+      "tags": [
+        "bourdain",
+        "clasico"
+      ],
+      "description": "Parrilla de San Telmo desde 1992: el mozo corta el bife de chorizo con una cuchara para mostrar el punto de cocción. Una de las parrillas históricas que forman parte del recorrido porteño de Anthony Bourdain por Argentina.",
+      "source_url": "https://www.continentscondiments.com/anthony-bourdain-buenos-aires-restaurants-parts-unknown/",
+      "source_type": "bourdain",
+      "rank": 25,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6175,-58.3735",
+      "distinction": null,
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Cabaña Las Lilas",
+      "place_id": null,
+      "lat": -34.6085,
+      "lng": -58.3645,
+      "category": "parrilla",
+      "cuisine": "argentina / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Parrilla emblemática de Puerto Madero inaugurada en 1995, nacida de un criadero de ganado propio, con una carta de vinos premiada por Wine Spectator.",
+      "source_url": "https://restaurantlaslilas.com.ar/en/home-en/",
+      "source_type": "classic",
+      "rank": 26,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6085,-58.3645",
+      "distinction": null
+    },
+    {
+      "name": "La Cabrera",
+      "place_id": null,
+      "lat": -34.5885,
+      "lng": -58.434,
+      "category": "parrilla",
+      "cuisine": "argentina / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las parrillas más populares de Palermo Soho, con sus famosas guarniciones gratis y el after-office de \"meat happy hour\" ideado por el chef Gastón Riveira.",
+      "source_url": "https://www.timeout.com/buenos-aires/la-cabrera-best-after-steakhouse-restaurant-gaston-riveira-tato-giovannoni",
+      "source_type": "timeout",
+      "rank": 27,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5885,-58.434",
+      "distinction": null
+    },
+    {
+      "name": "El Pobre Luis",
+      "place_id": null,
+      "lat": -34.5625,
+      "lng": -58.4585,
+      "category": "parrilla",
+      "cuisine": "rioplatense / parrilla",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Parrilla \"rioplatense\" en el Barrio Chino de Belgrano, fundada en 1986 por el uruguayo Luis Acuña; sus paredes están cubiertas de banderines de fútbol.",
+      "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/el-pobre-luis",
+      "source_type": "classic",
+      "rank": 28,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5625,-58.4585",
+      "distinction": null
+    },
+    {
+      "name": "El Obrero",
+      "place_id": null,
+      "lat": -34.6345,
+      "lng": -58.363,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodegón de La Boca fundado en 1954 por Marcelino Castro para los obreros de los frigoríficos y el puerto; declarado Sitio de Interés Cultural en 2018.",
+      "source_url": "https://www.cronista.com/clase/gourmet/el-historico-bodegon-porteno-que-queda-en-la-boca-ofrece-platos-abundantes-y-tenes-que-probar-una-vez-en-la-vida/",
+      "source_type": "classic",
+      "rank": 29,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6345,-58.363",
+      "distinction": null
+    },
+    {
+      "name": "Sabot",
+      "place_id": null,
+      "lat": -34.603,
+      "lng": -58.3735,
+      "category": "restaurante",
+      "cuisine": "argentina / ejecutivo",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Clásico porteño de almuerzo ejecutivo desde 1969 en el microcentro, con carta acotada y servicio de toda la vida.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 30,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.603,-58.3735",
+      "distinction": null
+    },
+    {
+      "name": "Pippo",
+      "place_id": null,
+      "lat": -34.6035,
+      "lng": -58.389,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodegón porteño con casi 90 años de historia: platos abundantes, precios accesibles y el clima de la Buenos Aires de antes.",
+      "source_url": "https://www.bairesgourmet.com/2025/02/19/pippo-el-bodegon-porteno-donde-se-come-abundante-y-barato",
+      "source_type": "classic",
+      "rank": 31,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6035,-58.389",
+      "distinction": null
+    },
+    {
+      "name": "Los Galgos",
+      "place_id": null,
+      "lat": -34.6015,
+      "lng": -58.3925,
+      "category": "bar",
+      "cuisine": "argentina / bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Nicolás reconvertido en bodegón de moda sin perder su barra y su fachada de otra época; famoso por el revuelto gramajo y la milanesa.",
+      "source_url": "https://www.diariodecultura.com.ar/turismo-cultural/el-bar-notable-que-recupera-sabores-clasicos-y-anticipo-la-moda-de-los-bodegones/",
+      "source_type": "classic",
+      "rank": 32,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6015,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Club Eros",
+      "place_id": null,
+      "lat": -34.5895,
+      "lng": -58.431,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodegón que funciona dentro de un club de barrio de Palermo, con ñoquis y bife de chorizo entre socios que juegan al fútbol y al truco.",
+      "source_url": "https://www.cronista.com/clase/gourmet/el-casico-bodegon-de-palermo-que-queda-adentro-de-un-club-y-prepara-los-platos-mas-abundantes-de-caba/",
+      "source_type": "classic",
+      "rank": 33,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5895,-58.431",
+      "distinction": null
+    },
+    {
+      "name": "El Sanjuanino",
+      "place_id": null,
+      "lat": -34.592,
+      "lng": -58.391,
+      "category": "empanadas",
+      "cuisine": "norteña argentina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución de Recoleta con más de medio siglo de historia, célebre por sus empanadas fritas al momento y sus locros.",
+      "source_url": "https://www.tasteatlas.com/elsanjuanino/empanadas",
+      "source_type": "classic",
+      "rank": 34,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.592,-58.391",
+      "distinction": null
+    },
+    {
+      "name": "La Cocina",
+      "place_id": null,
+      "lat": -34.592,
+      "lng": -58.396,
+      "category": "empanadas",
+      "cuisine": "norteña argentina",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pequeño local de Recoleta atendido por una familia catamarqueña desde hace 40 años, especializado en empanadas norteñas al horno.",
+      "source_url": "https://www.afar.com/places/la-cocina-buenos-aires",
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.592,-58.396",
+      "distinction": null
+    },
+    {
+      "name": "Güerrín",
+      "place_id": null,
+      "lat": -34.6035,
+      "lng": -58.3845,
+      "category": "pizzeria",
+      "cuisine": "pizza porteña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Templo de la pizza porteña sobre Av. Corrientes desde 1932: muzzarella abundante comida de parado, en la barra, como manda la tradición.",
+      "source_url": "https://www.canal26.com/turismo/2026/05/28/las-mejores-pizzerias-de-buenos-aires-en-2026-historia-precios-y-que-pedir-en-cada-una/",
+      "source_type": "classic",
+      "rank": 36,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6035,-58.3845",
+      "distinction": null
+    },
+    {
+      "name": "Banchero",
+      "place_id": null,
+      "lat": -34.607,
+      "lng": -58.38,
+      "category": "pizzeria",
+      "cuisine": "pizza porteña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería con más de 90 años de historia sobre Av. Corrientes, cuna de la fugazza con queso.",
+      "source_url": "https://www.iprofesional.com/recreo/446486-guerrin-banchero-las-cuartetas-cuanto-sale-comer-estas-pizzerias-portenas",
+      "source_type": "classic",
+      "rank": 37,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.607,-58.38",
+      "distinction": null
+    },
+    {
+      "name": "El Cuartito",
+      "place_id": null,
+      "lat": -34.5975,
+      "lng": -58.3835,
+      "category": "pizzeria",
+      "cuisine": "pizza porteña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de Retiro desde 1934, con las paredes cubiertas de recortes deportivos y su famosa fugazzeta como estrella.",
+      "source_url": "https://www.timeout.com/buenos-aires/iconic-pizzerias-grab-a-slice-visit-bue-guerrin-banchero-el-imperio",
+      "source_type": "timeout",
+      "rank": 38,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5975,-58.3835",
+      "distinction": null,
+      "source_type_secondary": "classic"
+    },
+    {
+      "name": "Angelín",
+      "place_id": null,
+      "lat": -34.586,
+      "lng": -58.4495,
+      "category": "pizzeria",
+      "cuisine": "pizza porteña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería de Villa Crespo desde 1938, creadora de la \"pizza cancha\" o canchera, sin queso y más grande que la tradicional.",
+      "source_url": "https://www.canal26.com/turismo/2026/05/28/las-mejores-pizzerias-de-buenos-aires-en-2026-historia-precios-y-que-pedir-en-cada-una/",
+      "source_type": "classic",
+      "rank": 39,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.586,-58.4495",
+      "distinction": null
+    },
+    {
+      "name": "Siamo nel Forno",
+      "place_id": null,
+      "lat": -34.58,
+      "lng": -58.436,
+      "category": "pizzeria",
+      "cuisine": "pizza napolitana",
+      "tags": [],
+      "description": "Referencia de la verdadera pizza napolitana en Palermo Hollywood, con horno de barro y masa de larga fermentación.",
+      "source_url": "https://www.pizzanapoletana.org/en/associati/370-siamo_nel_forno",
+      "source_type": null,
+      "rank": 40,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.58,-58.436",
+      "distinction": null
+    },
+    {
+      "name": "Kentucky",
+      "place_id": null,
+      "lat": -34.5865,
+      "lng": -58.4283,
+      "category": "pizzeria",
+      "cuisine": "pizza porteña",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pizzería palermitana desde 1942, célebre por su masa gruesa y sus horarios trasnochados los fines de semana.",
+      "source_url": "https://buenosairesconnect.com/pizzeria-pizza-kentucky/",
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5865,-58.4283",
+      "distinction": null
+    },
+    {
+      "name": "Florería Atlántico",
+      "place_id": null,
+      "lat": -34.5945,
+      "lng": -58.38,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "50best"
+      ],
+      "description": "Bar clandestino de Recoleta detrás de una heladera en una floristería, creado por el bartender Tato Giovannoni. Llegó al puesto 3 del ranking The World's 50 Best Bars en 2019.",
+      "source_url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html",
+      "source_type": "critic",
+      "rank": 42,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5945,-58.38",
+      "distinction": null
+    },
+    {
+      "name": "Presidente Bar",
+      "place_id": null,
+      "lat": -34.5885,
+      "lng": -58.3915,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "50best"
+      ],
+      "description": "Coctelería elegante de Recoleta creada por el bartender Seba García, con jardín de invierno y una carta que combina clásicos y tragos propios. Subió al puesto 33 de The World's 50 Best Bars.",
+      "source_url": "https://www.presidentebar.com.ar/pages/historia-de-cocteles",
+      "source_type": "critic",
+      "rank": 43,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5885,-58.3915",
+      "distinction": null
+    },
+    {
+      "name": "Milión",
+      "place_id": null,
+      "lat": -34.5955,
+      "lng": -58.3925,
+      "category": "bar",
+      "cuisine": "argentina / bar restaurante",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante y bar dentro de una mansión afrancesa de 1913 en Recoleta, con jardín secreto y salones de época; funciona desde 1999.",
+      "source_url": "https://wander-argentina.com/milion-recoletas-enchanting-mansion-bar/",
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5955,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Buller Brewing Company",
+      "place_id": null,
+      "lat": -34.5895,
+      "lng": -58.3925,
+      "category": "bar",
+      "cuisine": "cervecería artesanal",
+      "tags": [],
+      "description": "Pionera de la cerveza artesanal porteña desde 1999, con brewpub y terraza en Recoleta.",
+      "source_url": "https://bullerbrewingco.com/",
+      "source_type": null,
+      "rank": 45,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5895,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Grand Bar Danzón",
+      "place_id": null,
+      "lat": -34.5805,
+      "lng": -58.4245,
+      "category": "bar",
+      "cuisine": "vinoteca",
+      "tags": [],
+      "description": "Wine bar de Palermo con una carta de unas 300 etiquetas argentinas, referencia porteña del vino por copa.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 46,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5805,-58.4245",
+      "distinction": null
+    },
+    {
+      "name": "Cadore",
+      "place_id": null,
+      "lat": -34.6045,
+      "lng": -58.3865,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Heladería italiana fundada en 1957 sobre Av. Corrientes por la familia Olivotti; declarada Sitio de Interés Cultural y elegida entre las mejores del mundo por National Geographic.",
+      "source_url": "https://heladeriacadore.com.ar/",
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6045,-58.3865",
+      "distinction": null
+    },
+    {
+      "name": "Rapa Nui",
+      "place_id": null,
+      "lat": -34.5955,
+      "lng": -58.3765,
+      "category": "heladeria",
+      "cuisine": "heladería artesanal / chocolate",
+      "tags": [],
+      "description": "Cadena de heladería y chocolatería patagónica nacida en Bariloche en 1996, con local emblemático frente a Plaza San Martín.",
+      "source_url": "https://www.rapanui.com.ar/",
+      "source_type": null,
+      "rank": 48,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5955,-58.3765",
+      "distinction": null
+    },
+    {
+      "name": "Café La Biela",
+      "place_id": null,
+      "lat": -34.588,
+      "lng": -58.393,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El bar más antiguo en funcionamiento de Buenos Aires, desde 1850, frente al cementerio de la Recoleta; punto de encuentro histórico de pilotos de Fórmula 1 y automovilismo.",
+      "source_url": "https://www.cronista.com/informacion-gral/ni-tortoni-ni-la-biela-el-cafe-preferido-de-los-portenos-con-140-anos-de-historia-ubicado-en-una-esquina-emblematica-de-la-ciudad-de-buenos-aires/",
+      "source_type": "classic",
+      "rank": 49,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.588,-58.393",
+      "distinction": null
+    },
+    {
+      "name": "Las Violetas",
+      "place_id": null,
+      "lat": -34.6091,
+      "lng": -58.4211,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería de Almagro abierta en 1884, con vitrales originales y una repostería que la consagró \"Mejor Café Notable\" en 2017.",
+      "source_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_Las_Violetas",
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6091,-58.4211",
+      "distinction": null
+    },
+    {
+      "name": "El Gato Negro",
+      "place_id": null,
+      "lat": -34.6042,
+      "lng": -58.3856,
+      "category": "cafeteria",
+      "cuisine": "café notable / especias",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Cafetería, casa de especias y tienda gourmet sobre Av. Corrientes desde 1928, con su clásico té y aroma a canela.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 51,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6042,-58.3856",
+      "distinction": null
+    },
+    {
+      "name": "La Giralda",
+      "place_id": null,
+      "lat": -34.6038,
+      "lng": -58.3833,
+      "category": "cafeteria",
+      "cuisine": "café notable / chocolatería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Templo porteño del chocolate con churros desde 1930, en pleno corazón teatral de la Av. Corrientes.",
+      "source_url": "https://www.infobae.com/sociedad/2021/08/25/reabrio-la-giralda-y-volvio-el-placer-de-saborear-los-churros-con-chocolate-caliente-mas-portenos/",
+      "source_type": "classic",
+      "rank": 52,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6038,-58.3833",
+      "distinction": null
+    },
+    {
+      "name": "Café de los Angelitos",
+      "place_id": null,
+      "lat": -34.6088,
+      "lng": -58.3945,
+      "category": "cafeteria",
+      "cuisine": "café notable / tango",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de 1890 donde Carlos Gardel formó su carrera junto a José Razzano; hoy funciona también como sala de tango.",
+      "source_url": "https://es.wikipedia.org/wiki/Caf%C3%A9_de_los_Angelitos",
+      "source_type": "classic",
+      "rank": 53,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6088,-58.3945",
+      "distinction": null
+    },
+    {
+      "name": "Bar Iberia",
+      "place_id": null,
+      "lat": -34.6088,
+      "lng": -58.3835,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de impronta española en Montserrat, uno de los locales protegidos como patrimonio cultural porteño.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 54,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6088,-58.3835",
+      "distinction": null
+    },
+    {
+      "name": "Bar El Federal",
+      "place_id": null,
+      "lat": -34.6178,
+      "lng": -58.3738,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Antigua pulpería y almacén de ramos generales de San Telmo, hoy Bar Notable con su barra y estanterías originales de madera.",
+      "source_url": "https://www.afar.com/places/bar-el-federal-buenos-aires?p=79",
+      "source_type": "classic",
+      "rank": 55,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6178,-58.3738",
+      "distinction": null
+    },
+    {
+      "name": "El Desnivel",
+      "place_id": null,
+      "lat": -34.6205,
+      "lng": -58.372,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodegón de San Telmo desde 1993, muy popular entre turistas por su parrillada abundante a precio justo.",
+      "source_url": "https://lamejorparrilla.com/parrillas/el-desnivel/",
+      "source_type": "classic",
+      "rank": 56,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6205,-58.372",
+      "distinction": null
+    },
+    {
+      "name": "Café La Poesía",
+      "place_id": null,
+      "lat": -34.6185,
+      "lng": -58.3715,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Telmo que en los años 60 fue punto de encuentro de poetas, fundado por el propio poeta Rubén Derlis.",
+      "source_url": "https://turismo.buenosaires.gob.ar/en/otros-establecimientos/la-poes%C3%ADa",
+      "source_type": "classic",
+      "rank": 57,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6185,-58.3715",
+      "distinction": null
+    },
+    {
+      "name": "Confitería Ideal",
+      "place_id": null,
+      "lat": -34.6015,
+      "lng": -58.3775,
+      "category": "cafeteria",
+      "cuisine": "confitería / milonga",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería porteña de 1912, famosa por su salón de té y su histórica milonga en el primer piso; reabrió en 2022 tras una restauración integral.",
+      "source_url": "https://es.wikipedia.org/wiki/Confiter%C3%ADa_Ideal",
+      "source_type": "classic",
+      "rank": 58,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6015,-58.3775",
+      "distinction": null
+    },
+    {
+      "name": "Chiquilín",
+      "place_id": null,
+      "lat": -34.604,
+      "lng": -58.3925,
+      "category": "restaurante",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante de 1927 en San Nicolás que inspiró el tango \"Chiquilín de Bachín\" de Piazzolla y Ferrer; cocina de bodegón con impronta parrillera.",
+      "source_url": "https://www.baenegocios.com/negocios/Historias-y-secretos-del-restaurante-porteno-Chiquilin--20200916-0056.html",
+      "source_type": "classic",
+      "rank": 59,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.604,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Bar Plaza Dorrego",
+      "place_id": null,
+      "lat": -34.6212,
+      "lng": -58.3722,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable frente a la Plaza Dorrego de San Telmo, epicentro de la feria de antigüedades de los domingos.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 60,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6212,-58.3722",
+      "distinction": null
+    },
+    {
+      "name": "Los 36 Billares",
+      "place_id": null,
+      "lat": -34.6092,
+      "lng": -58.3845,
+      "category": "bar",
+      "cuisine": "bar notable / billares",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Histórico salón de billares y café sobre Av. de Mayo, escenario de tango y bohemia porteña desde comienzos del siglo XX.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 61,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6092,-58.3845",
+      "distinction": null
+    },
+    {
+      "name": "London City",
+      "place_id": null,
+      "lat": -34.6087,
+      "lng": -58.376,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café notable de Av. de Mayo donde Julio Cortázar escribió parte de \"Los premios\", según cuenta la tradición literaria porteña.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 62,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6087,-58.376",
+      "distinction": null
+    },
+    {
+      "name": "Confitería Richmond",
+      "place_id": null,
+      "lat": -34.6013,
+      "lng": -58.3745,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Confitería de la calle Florida, salón clásico de ajedrez y tertulia porteña desde hace décadas.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 63,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6013,-58.3745",
+      "distinction": null
+    },
+    {
+      "name": "El Querandí",
+      "place_id": null,
+      "lat": -34.6115,
+      "lng": -58.3735,
+      "category": "bar",
+      "cuisine": "bar notable / tango",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Montserrat que también funciona como sala de tango, en un edificio de comienzos del siglo XX.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 64,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6115,-58.3735",
+      "distinction": null
+    },
+    {
+      "name": "Esquina Homero Manzi",
+      "place_id": null,
+      "lat": -34.6265,
+      "lng": -58.421,
+      "category": "bar",
+      "cuisine": "bar notable / tango",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Esquina histórica de Boedo bautizada en honor al poeta de tango Homero Manzi, hoy sala de tango y restaurante.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 65,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6265,-58.421",
+      "distinction": null
+    },
+    {
+      "name": "Bar Británico",
+      "place_id": null,
+      "lat": -34.6285,
+      "lng": -58.3695,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Telmo, abierto las 24 horas frente al Parque Lezama; aparece mencionado en la novela \"Sobre héroes y tumbas\" de Ernesto Sabato.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6285,-58.3695",
+      "distinction": null
+    },
+    {
+      "name": "Bar Sur",
+      "place_id": null,
+      "lat": -34.6215,
+      "lng": -58.3695,
+      "category": "bar",
+      "cuisine": "bar notable / tango",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de tango de San Telmo con más de un siglo de historia, célebre entre turistas por sus shows íntimos de tango en vivo.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 67,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6215,-58.3695",
+      "distinction": null
+    },
+    {
+      "name": "Bar Seddon",
+      "place_id": null,
+      "lat": -34.6165,
+      "lng": -58.373,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Montserrat de estilo inglés clásico, con más de un siglo funcionando en la misma esquina.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 68,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6165,-58.373",
+      "distinction": null
+    },
+    {
+      "name": "Plaza Bar",
+      "place_id": null,
+      "lat": -34.5955,
+      "lng": -58.3775,
+      "category": "bar",
+      "cuisine": "bar de hotel / clásico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar clásico dentro del histórico Marriott Plaza Hotel de Retiro, con más de un siglo de tragos y hospitalidad.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5955,-58.3775",
+      "distinction": null
+    },
+    {
+      "name": "Florida Garden",
+      "place_id": null,
+      "lat": -34.596,
+      "lng": -58.3765,
+      "category": "cafeteria",
+      "cuisine": "café literario",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café de Retiro sobre la calle Florida, tradicional punto de encuentro de escritores porteños como Bioy Casares.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 70,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.596,-58.3765",
+      "distinction": null
+    },
+    {
+      "name": "La Academia",
+      "place_id": null,
+      "lat": -34.6055,
+      "lng": -58.3925,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de Balvanera sobre Av. Callao, uno de los locales tradicionales protegidos por el programa de Bares Notables.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 71,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6055,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Café Margot",
+      "place_id": null,
+      "lat": -34.628,
+      "lng": -58.4145,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Boedo desde 1904, famoso por su sándwich de pavita al escabeche y por la leyenda de una visita de Juan Domingo Perón.",
+      "source_url": "https://billiken.lat/interesante/cafe-margot-el-bar-notable-que-fue-visitado-por-juan-domingo-peron-en-los-anos-50/",
+      "source_type": "classic",
+      "rank": 72,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.628,-58.4145",
+      "distinction": null
+    },
+    {
+      "name": "El Progreso",
+      "place_id": null,
+      "lat": -34.6395,
+      "lng": -58.3765,
+      "category": "bar",
+      "cuisine": "bar notable / billares",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar y salón de billares de Barracas, uno de los más antiguos de la ciudad, con historia ligada a la cultura del billar porteño.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 73,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6395,-58.3765",
+      "distinction": null
+    },
+    {
+      "name": "Los Laureles",
+      "place_id": null,
+      "lat": -34.641,
+      "lng": -58.3835,
+      "category": "bodegon",
+      "cuisine": "argentina / bodegón",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bodegón y Bar Notable de Barracas con más de un siglo de historia, clásico de la cocina de barrio porteña.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 74,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.641,-58.3835",
+      "distinction": null
+    },
+    {
+      "name": "La Perla",
+      "place_id": null,
+      "lat": -34.636,
+      "lng": -58.3625,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable sobre la ribera de La Boca, frente al Riachuelo, pintado y fotografiado durante décadas por artistas del barrio.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 75,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.636,-58.3625",
+      "distinction": null
+    },
+    {
+      "name": "Café Tabac",
+      "place_id": null,
+      "lat": -34.5735,
+      "lng": -58.413,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable sobre Av. del Libertador en Palermo, uno de los locales protegidos como patrimonio cultural porteño.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 76,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5735,-58.413",
+      "distinction": null
+    },
+    {
+      "name": "Bar Los Andes",
+      "place_id": null,
+      "lat": -34.5865,
+      "lng": -58.4275,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Palermo sobre la avenida Scalabrini Ortiz, con la fachada y el mostrador de otra época.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5865,-58.4275",
+      "distinction": null
+    },
+    {
+      "name": "Varela Varelita",
+      "place_id": null,
+      "lat": -34.588,
+      "lng": -58.437,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Palermo sobre Scalabrini Ortiz, tradicional esquina de barrio convertida en patrimonio cultural.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 78,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.588,-58.437",
+      "distinction": null
+    },
+    {
+      "name": "Petit Colón",
+      "place_id": null,
+      "lat": -34.6015,
+      "lng": -58.383,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de San Nicolás a pasos del Teatro Colón, frecuentado históricamente por músicos y cantantes líricos.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 79,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6015,-58.383",
+      "distinction": null
+    },
+    {
+      "name": "The Brighton",
+      "place_id": null,
+      "lat": -34.6035,
+      "lng": -58.38,
+      "category": "bar",
+      "cuisine": "bar notable / estilo inglés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Nicolás de estilo inglés, con boiserie de madera y ambiente de club británico.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 80,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6035,-58.38",
+      "distinction": null
+    },
+    {
+      "name": "Bar de Cao",
+      "place_id": null,
+      "lat": -34.625,
+      "lng": -58.404,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Cristóbal sobre la avenida Independencia, uno de los almacenes-bar de barrio reconocidos por la ciudad.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.625,-58.404",
+      "distinction": null
+    },
+    {
+      "name": "Miramar",
+      "place_id": null,
+      "lat": -34.6205,
+      "lng": -58.4025,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Cristóbal, clásico almacén porteño convertido en café y restaurante de barrio.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6205,-58.4025",
+      "distinction": null
+    },
+    {
+      "name": "El Banderín",
+      "place_id": null,
+      "lat": -34.608,
+      "lng": -58.4205,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Almagro decorado con miles de banderines de clubes de fútbol de todo el mundo, coleccionados durante décadas.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 83,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.608,-58.4205",
+      "distinction": null
+    },
+    {
+      "name": "El Símbolo",
+      "place_id": null,
+      "lat": -34.609,
+      "lng": -58.4195,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de Almagro sobre Av. Corrientes, uno de los locales tradicionales del barrio del tango.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 84,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.609,-58.4195",
+      "distinction": null
+    },
+    {
+      "name": "Café Roma",
+      "place_id": null,
+      "lat": -34.635,
+      "lng": -58.3625,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de La Boca, sobre la calle Olavarría, testigo de la vida de barrio junto al Riachuelo.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 85,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.635,-58.3625",
+      "distinction": null
+    },
+    {
+      "name": "Café El Estaño 1880",
+      "place_id": null,
+      "lat": -34.6355,
+      "lng": -58.3615,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de La Boca cerca de Caminito, ambientado como un almacén de fines del siglo XIX.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6355,-58.3615",
+      "distinction": null
+    },
+    {
+      "name": "Chan Chan",
+      "place_id": null,
+      "lat": -34.6095,
+      "lng": -58.3805,
+      "category": "restaurante",
+      "cuisine": "peruana",
+      "tags": [],
+      "description": "Uno de los restaurantes peruanos más antiguos y populares de Buenos Aires, en pleno microcentro, célebre por su lomo saltado y su ají de gallina.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 87,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6095,-58.3805",
+      "distinction": null
+    },
+    {
+      "name": "Isabel",
+      "place_id": null,
+      "lat": -34.589,
+      "lng": -58.43,
+      "category": "bar",
+      "cuisine": "nikkei / coctelería",
+      "tags": [],
+      "description": "Restaurante y bar de Palermo Soho con cocina nikkei y coctelería, un clásico moderno de la noche palermitana.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 88,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.589,-58.43",
+      "distinction": null
+    },
+    {
+      "name": "Duhau Restaurante & Vinoteca",
+      "place_id": null,
+      "lat": -34.5875,
+      "lng": -58.3925,
+      "category": "restaurante",
+      "cuisine": "argentina / vinoteca",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante del Palacio Duhau - Park Hyatt en Recoleta, con carta de autor y una de las bodegas de vinos más completas de la ciudad; recomendado por la Guía Michelin.",
+      "source_url": "https://www.hyatt.com/park-hyatt/en-US/bueph-palacio-duhau-park-hyatt-buenos-aires/dining",
+      "source_type": "critic",
+      "rank": 89,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.5875,-58.3925",
+      "distinction": null
+    },
+    {
+      "name": "Le Grill",
+      "place_id": null,
+      "lat": -34.6095,
+      "lng": -58.3625,
+      "category": "parrilla",
+      "cuisine": "argentina / parrilla",
+      "tags": [],
+      "description": "Parrilla de alta gama dentro del hotel Faena en Puerto Madero, con cortes premium y una puesta en escena de gran producción.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 90,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6095,-58.3625",
+      "distinction": null
+    },
+    {
+      "name": "Mercado de San Telmo",
+      "place_id": null,
+      "lat": -34.6205,
+      "lng": -58.3725,
+      "category": "mercado",
+      "cuisine": "variado / puestos de comida",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Mercado de hierro y vidrio inaugurado en 1897, hoy con puestos de antigüedades y comida que van desde el choripán hasta el dumpling.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 91,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6205,-58.3725",
+      "distinction": null
+    },
+    {
+      "name": "La Puerto Rico",
+      "place_id": null,
+      "lat": -34.611,
+      "lng": -58.3745,
+      "category": "cafeteria",
+      "cuisine": "café notable / tostadero",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café y tostadero de café de Montserrat que funciona desde 1887, uno de los más antiguos de Buenos Aires.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 92,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.611,-58.3745",
+      "distinction": null
+    },
+    {
+      "name": "Bar Bidou",
+      "place_id": null,
+      "lat": -34.6035,
+      "lng": -58.3775,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de San Nicolás sobre Av. Roque Sáenz Peña, uno de los locales tradicionales protegidos por la ciudad.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6035,-58.3775",
+      "distinction": null
+    },
+    {
+      "name": "El Coleccionista",
+      "place_id": null,
+      "lat": -34.6185,
+      "lng": -58.4405,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de Caballito sobre Av. Rivadavia, tradicional punto de encuentro del barrio.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 94,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6185,-58.4405",
+      "distinction": null
+    },
+    {
+      "name": "Victoria",
+      "place_id": null,
+      "lat": -34.6095,
+      "lng": -58.3745,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Montserrat sobre Av. Entre Ríos, uno de los almacenes-bar históricos reconocidos por la ciudad.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 95,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6095,-58.3745",
+      "distinction": null
+    },
+    {
+      "name": "Café Don Juan",
+      "place_id": null,
+      "lat": -34.6155,
+      "lng": -58.4685,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable del barrio de Villa Santa Rita, uno de los locales tradicionales de barrio protegidos como patrimonio cultural porteño.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 96,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6155,-58.4685",
+      "distinction": null
+    },
+    {
+      "name": "El Viejo Buzón",
+      "place_id": null,
+      "lat": -34.6185,
+      "lng": -58.439,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Caballito sobre la calle Neuquén, clásico almacén de barrio reconvertido en bar con historia.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6185,-58.439",
+      "distinction": null
+    },
+    {
+      "name": "Ocho Esquinas",
+      "place_id": null,
+      "lat": -34.587,
+      "lng": -58.4545,
+      "category": "bar",
+      "cuisine": "bar notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar Notable de Chacarita sobre la Av. Forest, tradicional punto de encuentro barrial reconocido por la ciudad.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 98,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.587,-58.4545",
+      "distinction": null
+    },
+    {
+      "name": "Paulín",
+      "place_id": null,
+      "lat": -34.608,
+      "lng": -58.3795,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable de San Nicolás sobre la calle Sarmiento, uno de los locales históricos del microcentro porteño.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 99,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.608,-58.3795",
+      "distinction": null
+    },
+    {
+      "name": "Café Montserrat",
+      "place_id": null,
+      "lat": -34.6105,
+      "lng": -58.3775,
+      "category": "cafeteria",
+      "cuisine": "café notable",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Café Notable del barrio de Montserrat sobre la calle San José, tradicional esquina porteña convertida en patrimonio cultural.",
+      "source_url": "https://es.wikipedia.org/wiki/Anexo:Bares_notables_de_Buenos_Aires",
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=-34.6105,-58.3775",
+      "distinction": null
     }
   ],
   "targetPlaces": 100,

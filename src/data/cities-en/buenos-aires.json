@@ -22,6 +22,386 @@
     "Crizia": {
       "cuisine": "seafood",
       "description": "An oyster and seasonal fish specialist in Palermo. One Michelin star."
+    },
+    "Trescha": {
+      "cuisine": "creative",
+      "description": "A 16-course tasting menu for just 10 diners at the kitchen counter, inside a restored house in Villa Crespo. A Michelin star and No. 36 on Latin America's 50 Best 2025, led by chef Tomás Treschanski."
+    },
+    "Gran Dabbang": {
+      "cuisine": "Asian / fusion",
+      "description": "A bold fusion of India and Southeast Asia made with Argentine products, in a tiny no-reservations Palermo storefront. No. 18 on Latin America's 50 Best 2024, led by chef Mariano Ramón."
+    },
+    "Mishiguene": {
+      "cuisine": "Jewish / Middle Eastern",
+      "description": "Ashkenazi, Sephardic and Israeli cuisine reinvented by chef Tomás Kalika in Palermo; the name means \"crazy\" in Yiddish. Featured on the Latin America's 50 Best list."
+    },
+    "El Preferido de Palermo": {
+      "cuisine": "Argentine / neighborhood joint",
+      "description": "A 1952 corner grocery store turned into an author-driven neighborhood joint by the Don Julio team. A Michelin Green Star and a spot on Latin America's 50 Best."
+    },
+    "Niño Gordo": {
+      "cuisine": "Asian-inflected grill",
+      "description": "An \"Asian grill\" from the creators of La Carnicería in Palermo Soho: Argentine live-fire cooking with Asian spices and techniques. No. 34 on Latin America's 50 Best 2024."
+    },
+    "Anchoíta": {
+      "cuisine": "Argentine, produce-driven",
+      "description": "Enrique Piñeyro's Chacarita restaurant: aged meats, river fish and vegetables from its own garden, cooked over charcoal. A Michelin star and No. 73 on Latin America's 50 Best 2024."
+    },
+    "Mengano": {
+      "cuisine": "author-driven Argentine",
+      "description": "An \"author-driven bodegón\" in Palermo from chef Facundo Kelemen: porteño classics like revuelto gramajo or milanesa reworked with contemporary technique. A 2024 new entry on Latin America's 50 Best."
+    },
+    "Elena": {
+      "cuisine": "Argentine brasserie",
+      "description": "The Four Seasons' flagship restaurant in Recoleta, with an open dry-aging chamber for meats. Recognized by the Michelin Guide Argentina and featured for several years on Latin America's 50 Best."
+    },
+    "La Carnicería": {
+      "cuisine": "Argentine steakhouse",
+      "description": "A small, informal grill from chefs Germán Sitz and Pedro Peña in Palermo Soho, sister restaurant to Niño Gordo, focused on signature cuts. Listed on 50 Best Discovery."
+    },
+    "Corte Comedor": {
+      "cuisine": "Argentine steakhouse",
+      "description": "A modern steakhouse in Belgrano, next to its own butcher shop, with a focus on meat traceability and dry-aging. Included in the Michelin Guide Argentina."
+    },
+    "Roux": {
+      "cuisine": "seafood",
+      "description": "A fine-dining restaurant by Martín Rebaudino specializing in fish, shellfish and seasonal produce, with an extensive wine list."
+    },
+    "BASA": {
+      "cuisine": "Mediterranean",
+      "description": "A multi-level restaurant and bar near Plaza San Martín, serving Mediterranean-inspired cuisine. Included in the 2024 Michelin Guide."
+    },
+    "Osaka": {
+      "cuisine": "Nikkei",
+      "description": "Nikkei (Japanese-Peruvian) cuisine in Puerto Madero, one of the city's reference points for the genre since the early 2000s."
+    },
+    "Sudestada": {
+      "cuisine": "Southeast Asian",
+      "description": "Uncompromising Thai and Vietnamese cooking in Palermo Hollywood, with pad thai and curries that made it a pioneer of the genre in the city."
+    },
+    "La Mar Cebichería": {
+      "cuisine": "Peruvian",
+      "description": "Peruvian chef Gastón Acurio's cebichería in Palermo, serving ceviches, tiraditos and cocktails on an open-air patio."
+    },
+    "Todos Contentos": {
+      "cuisine": "Chinese / dim sum",
+      "description": "A family-run canteen in Belgrano's Chinatown, a decades-long reference point for dim sum in Buenos Aires."
+    },
+    "Sarkis": {
+      "cuisine": "Armenian / Middle Eastern",
+      "description": "A temple of Armenian cooking in Villa Crespo since 1982, founded by the Katabian family: nightly lines for the hummus, eggplant and kibbeh."
+    },
+    "Piegari": {
+      "cuisine": "Italian",
+      "description": "A porteño landmark of Italian cooking in Puerto Madero since the 1990s, known for its house-made pastas and gala-style setting."
+    },
+    "Oviedo": {
+      "cuisine": "seafood / Spanish",
+      "description": "Since 1986, a porteño reference for seafood with Galician roots and a cellar of more than 18,000 bottles, founded by Emilio Garip."
+    },
+    "La Brigada": {
+      "cuisine": "Argentine steakhouse",
+      "description": "A San Telmo steakhouse since 1992, where the waiter cuts the bife de chorizo with a spoon to show how well it's cooked. One of the historic grills tied to Anthony Bourdain's Argentina travels."
+    },
+    "Cabaña Las Lilas": {
+      "cuisine": "Argentine steakhouse",
+      "description": "An emblematic Puerto Madero steakhouse opened in 1995, born from the family's own cattle ranch, with a wine list recognized by Wine Spectator."
+    },
+    "La Cabrera": {
+      "cuisine": "Argentine steakhouse",
+      "description": "One of Palermo Soho's most popular steakhouses, known for its free side dishes and the \"meat happy hour\" after-work ritual devised by chef Gastón Riveira."
+    },
+    "El Pobre Luis": {
+      "cuisine": "River Plate grill",
+      "description": "A \"River Plate\" steakhouse in Belgrano's Chinatown, founded in 1986 by Uruguayan Luis Acuña; its walls are covered in football pennants."
+    },
+    "El Obrero": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A La Boca bodegón founded in 1954 by Marcelino Castro to feed dockworkers and meatpacking-plant employees; declared a Site of Cultural Interest in 2018."
+    },
+    "Sabot": {
+      "cuisine": "Argentine, business lunch",
+      "description": "A classic business-lunch spot in the microcentro since 1969, with a small menu and old-school service."
+    },
+    "Pippo": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A porteño bodegón with nearly 90 years of history: abundant portions, accessible prices, and the atmosphere of old Buenos Aires."
+    },
+    "Los Galgos": {
+      "cuisine": "Argentine bar",
+      "description": "A Notable Bar in San Nicolás turned into a fashionable bodegón without losing its old-world bar and facade; famous for revuelto gramajo and milanesa."
+    },
+    "Club Eros": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A bodegón operating inside a Palermo neighborhood social club, serving gnocchi and bife de chorizo among members who play football and truco."
+    },
+    "El Sanjuanino": {
+      "cuisine": "Argentine Northern regional",
+      "description": "A Recoleta institution with over half a century of history, known for empanadas fried to order and its locro stew."
+    },
+    "La Cocina": {
+      "cuisine": "Argentine Northern regional",
+      "description": "A small Recoleta spot run by a family from Catamarca for 40 years, specializing in oven-baked Northern-style empanadas."
+    },
+    "Güerrín": {
+      "cuisine": "Buenos Aires-style pizza",
+      "description": "A temple of porteño pizza on Av. Corrientes since 1932: generous mozzarella eaten standing at the counter, as tradition dictates."
+    },
+    "Banchero": {
+      "cuisine": "Buenos Aires-style pizza",
+      "description": "A pizzeria with over 90 years of history on Av. Corrientes, birthplace of the fugazza con queso."
+    },
+    "El Cuartito": {
+      "cuisine": "Buenos Aires-style pizza",
+      "description": "A Retiro pizzeria since 1934, its walls covered in sports memorabilia, with its famous fugazzeta as the star."
+    },
+    "Angelín": {
+      "cuisine": "Buenos Aires-style pizza",
+      "description": "A Villa Crespo pizzeria since 1938, creator of the cheeseless, oversized \"pizza cancha.\""
+    },
+    "Siamo nel Forno": {
+      "cuisine": "Neapolitan pizza",
+      "description": "A reference point for true Neapolitan pizza in Palermo Hollywood, with a wood-fired oven and long-fermented dough."
+    },
+    "Kentucky": {
+      "cuisine": "Buenos Aires-style pizza",
+      "description": "A Palermo pizzeria since 1942, known for its thick crust and its round-the-clock weekend hours."
+    },
+    "Florería Atlántico": {
+      "cuisine": "cocktail bar",
+      "description": "A speakeasy hidden behind a fridge door in a Recoleta flower shop, created by bartender Tato Giovannoni. It reached No. 3 on The World's 50 Best Bars in 2019."
+    },
+    "Presidente Bar": {
+      "cuisine": "cocktail bar",
+      "description": "An elegant Recoleta cocktail bar created by bartender Seba García, with a winter garden and a menu mixing classics with house creations. It climbed to No. 33 on The World's 50 Best Bars."
+    },
+    "Milión": {
+      "cuisine": "Argentine bar-restaurant",
+      "description": "A restaurant and bar inside a 1913 French-style mansion in Recoleta, with a secret garden and period salons; open since 1999."
+    },
+    "Buller Brewing Company": {
+      "cuisine": "craft brewery",
+      "description": "A pioneer of craft beer in Buenos Aires since 1999, with a brewpub and rooftop terrace in Recoleta."
+    },
+    "Grand Bar Danzón": {
+      "cuisine": "wine bar",
+      "description": "A Palermo wine bar with roughly 300 Argentine labels, a porteño reference point for wine by the glass."
+    },
+    "Cadore": {
+      "cuisine": "artisanal ice cream",
+      "description": "An Italian ice cream shop founded in 1957 on Av. Corrientes by the Olivotti family; declared a Site of Cultural Interest and named among the world's best by National Geographic."
+    },
+    "Rapa Nui": {
+      "cuisine": "artisanal ice cream / chocolate",
+      "description": "A Patagonian ice cream and chocolate chain born in Bariloche in 1996, with a flagship shop facing Plaza San Martín."
+    },
+    "Café La Biela": {
+      "cuisine": "notable café",
+      "description": "Buenos Aires' oldest still-operating bar, dating to 1850, across from the Recoleta cemetery; a historic meeting point for Formula 1 and motor-racing drivers."
+    },
+    "Las Violetas": {
+      "cuisine": "notable café",
+      "description": "An Almagro confitería opened in 1884, with original stained glass and pastries that earned it the \"Best Notable Café\" title in 2017."
+    },
+    "El Gato Negro": {
+      "cuisine": "notable café / spice shop",
+      "description": "A café, spice shop and gourmet store on Av. Corrientes since 1928, known for its classic tea and cinnamon aroma."
+    },
+    "La Giralda": {
+      "cuisine": "notable café / hot chocolate",
+      "description": "A porteño temple of hot chocolate and churros since 1930, in the heart of the Av. Corrientes theater district."
+    },
+    "Café de los Angelitos": {
+      "cuisine": "notable café / tango",
+      "description": "An 1890 café where Carlos Gardel launched his career alongside José Razzano; today it also operates as a tango venue."
+    },
+    "Bar Iberia": {
+      "cuisine": "notable bar",
+      "description": "A Spanish-flavored Notable Bar in Montserrat, one of the venues protected as porteño cultural heritage."
+    },
+    "Bar El Federal": {
+      "cuisine": "notable bar",
+      "description": "A former pulpería and general store in San Telmo, now a Notable Bar with its original wooden counter and shelving."
+    },
+    "El Desnivel": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A San Telmo bodegón since 1993, popular with tourists for its abundant, fairly priced grilled meats."
+    },
+    "Café La Poesía": {
+      "cuisine": "notable café",
+      "description": "A Notable Bar in San Telmo that in the 1960s was a meeting point for poets, founded by poet Rubén Derlis himself."
+    },
+    "Confitería Ideal": {
+      "cuisine": "confitería / tango milonga",
+      "description": "A porteño confitería from 1912, famous for its tea room and its historic upstairs milonga; it reopened in 2022 after a full restoration."
+    },
+    "Chiquilín": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A restaurant from 1927 in San Nicolás that inspired the Piazzolla-Ferrer tango \"Chiquilín de Bachín\"; bodegón cooking with a grill-house edge."
+    },
+    "Bar Plaza Dorrego": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar facing San Telmo's Plaza Dorrego, at the heart of the Sunday antiques fair."
+    },
+    "Los 36 Billares": {
+      "cuisine": "notable bar / billiards",
+      "description": "A historic billiards hall and café on Av. de Mayo, a stage for tango and porteño bohemia since the early 20th century."
+    },
+    "London City": {
+      "cuisine": "notable café",
+      "description": "A notable café on Av. de Mayo where, according to porteño literary lore, Julio Cortázar wrote part of \"Los premios.\""
+    },
+    "Confitería Richmond": {
+      "cuisine": "notable café",
+      "description": "A confitería on Calle Florida, a classic salon for chess games and porteño conversation for decades."
+    },
+    "El Querandí": {
+      "cuisine": "notable bar / tango",
+      "description": "A Notable Bar in Montserrat that also operates as a tango venue, in an early-20th-century building."
+    },
+    "Esquina Homero Manzi": {
+      "cuisine": "notable bar / tango",
+      "description": "A historic Boedo corner named for tango poet Homero Manzi, today a tango hall and restaurant."
+    },
+    "Bar Británico": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in San Telmo, open 24 hours across from Parque Lezama; it appears in Ernesto Sabato's novel \"On Heroes and Tombs.\""
+    },
+    "Bar Sur": {
+      "cuisine": "notable bar / tango",
+      "description": "A San Telmo tango bar with over a century of history, popular with visitors for its intimate live tango shows."
+    },
+    "Bar Seddon": {
+      "cuisine": "notable bar",
+      "description": "A classic English-style Notable Bar in Montserrat, operating on the same corner for over a century."
+    },
+    "Plaza Bar": {
+      "cuisine": "hotel bar / classic",
+      "description": "A classic bar inside Retiro's historic Marriott Plaza Hotel, serving drinks and hospitality for over a century."
+    },
+    "Florida Garden": {
+      "cuisine": "literary café",
+      "description": "A Retiro café on Calle Florida, a traditional meeting point for porteño writers like Bioy Casares."
+    },
+    "La Academia": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in Balvanera on Av. Callao, one of the traditional venues protected by the city's Notable Bars program."
+    },
+    "Café Margot": {
+      "cuisine": "notable café",
+      "description": "A Notable Bar in Boedo since 1904, famous for its pickled-turkey sandwich and the legend of a visit from Juan Domingo Perón."
+    },
+    "El Progreso": {
+      "cuisine": "notable bar / billiards",
+      "description": "A bar and billiards hall in Barracas, one of the city's oldest, tied to the culture of porteño billiards."
+    },
+    "Los Laureles": {
+      "cuisine": "Argentine neighborhood joint",
+      "description": "A bodegón and Notable Bar in Barracas with over a century of history, a classic of porteño neighborhood cooking."
+    },
+    "La Perla": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar on La Boca's waterfront, facing the Riachuelo, painted and photographed for decades by neighborhood artists."
+    },
+    "Café Tabac": {
+      "cuisine": "notable café",
+      "description": "A Notable Bar on Av. del Libertador in Palermo, one of the venues protected as porteño cultural heritage."
+    },
+    "Bar Los Andes": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Palermo on Avenida Scalabrini Ortiz, with a facade and counter from another era."
+    },
+    "Varela Varelita": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Palermo on Scalabrini Ortiz, a traditional neighborhood corner turned cultural heritage site."
+    },
+    "Petit Colón": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in San Nicolás steps from Teatro Colón, historically frequented by musicians and opera singers."
+    },
+    "The Brighton": {
+      "cuisine": "notable bar / English style",
+      "description": "An English-style Notable Bar in San Nicolás, with wood paneling and the feel of a British club."
+    },
+    "Bar de Cao": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in San Cristóbal on Avenida Independencia, one of the corner-store bars recognized by the city."
+    },
+    "Miramar": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in San Cristóbal, a classic porteño corner store turned neighborhood café and restaurant."
+    },
+    "El Banderín": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Almagro decorated with thousands of football-club pennants collected over the decades."
+    },
+    "El Símbolo": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in Almagro on Av. Corrientes, one of the traditional venues in the neighborhood of tango."
+    },
+    "Café Roma": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in La Boca, on Calle Olavarría, a witness to neighborhood life alongside the Riachuelo."
+    },
+    "Café El Estaño 1880": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in La Boca near Caminito, decorated like a late-19th-century general store."
+    },
+    "Chan Chan": {
+      "cuisine": "Peruvian",
+      "description": "One of Buenos Aires' oldest and most popular Peruvian restaurants, in the heart of downtown, known for its lomo saltado and ají de gallina."
+    },
+    "Isabel": {
+      "cuisine": "Nikkei / cocktail bar",
+      "description": "A Palermo Soho restaurant and bar serving Nikkei food and cocktails, a modern classic of Palermo nightlife."
+    },
+    "Duhau Restaurante & Vinoteca": {
+      "cuisine": "Argentine / wine cellar",
+      "description": "The restaurant of the Palacio Duhau - Park Hyatt in Recoleta, with an author-driven menu and one of the city's most complete wine cellars; recommended by the Michelin Guide."
+    },
+    "Le Grill": {
+      "cuisine": "Argentine steakhouse",
+      "description": "An upscale steakhouse inside the Faena Hotel in Puerto Madero, serving premium cuts in a highly produced setting."
+    },
+    "Mercado de San Telmo": {
+      "cuisine": "market / food stalls",
+      "description": "An iron-and-glass market opened in 1897, today mixing antiques stalls with food ranging from choripán to dumplings."
+    },
+    "La Puerto Rico": {
+      "cuisine": "notable café / coffee roaster",
+      "description": "A Montserrat café and coffee roastery operating since 1887, one of the oldest in Buenos Aires."
+    },
+    "Bar Bidou": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in San Nicolás on Av. Roque Sáenz Peña, one of the traditional venues protected by the city."
+    },
+    "El Coleccionista": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in Caballito on Av. Rivadavia, a traditional neighborhood meeting point."
+    },
+    "Victoria": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Montserrat on Av. Entre Ríos, one of the historic corner-store bars recognized by the city."
+    },
+    "Café Don Juan": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in the Villa Santa Rita neighborhood, one of the traditional local venues protected as porteño cultural heritage."
+    },
+    "El Viejo Buzón": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Caballito on Calle Neuquén, a classic neighborhood corner store turned bar with history."
+    },
+    "Ocho Esquinas": {
+      "cuisine": "notable bar",
+      "description": "A Notable Bar in Chacarita on Av. Forest, a traditional neighborhood meeting point recognized by the city."
+    },
+    "Paulín": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in San Nicolás on Calle Sarmiento, one of the historic venues of the porteño microcentro."
+    },
+    "Café Montserrat": {
+      "cuisine": "notable café",
+      "description": "A Notable Café in the Montserrat neighborhood on Calle San José, a traditional porteño corner turned cultural heritage site."
     }
   }
 }
