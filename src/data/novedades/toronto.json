@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "La Guía Michelin anuncia la fecha de la ceremonia 2026 para Toronto",
+    "resumen": "La Guía Michelin confirmó que la selección de restaurantes de Toronto y la región para 2026 se revelará la noche del 22 de septiembre en el Liberty Grand Entertainment Complex, donde los chefs sabrán si sus restaurantes reciben una estrella u otro reconocimiento de la guía.",
+    "fuente_url": "https://michelinmedia.com/pages/blog/detail/article/c/a1461/",
+    "fecha": "2026-05-21",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "N.L Ginzburg y Sammarco, entre los mejores restaurantes nuevos de Canadá en 2026",
+    "resumen": "La lista Canada's 100 Best de los mejores restaurantes nuevos de 2026 incluyó a dos locales de Toronto: N.L Ginzburg, del dúo detrás de Bernhardt's, en el sexto puesto, y Sammarco, una steakhouse italiana de los chefs Rob Rossi y David Minicucci, en el séptimo.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/05/toronto-canadas-best-new-restaurants/",
+    "fecha": "2026-05-04",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "Yukashi, reconocido restaurante de sushi de Toronto, cierra sus puertas",
+    "resumen": "Yukashi, uno de los restaurantes de sushi mejor valorados de Toronto, ubicado en Mount Pleasant, anunció el cierre definitivo de su local.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/04/yukashi-toronto-closing/",
+    "fecha": "2026-04-23",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "El Sol, pionero de la cocina mexicana en el Danforth, cierra tras 30 años",
+    "resumen": "El restaurante mexicano El Sol, abierto desde 1991 en el barrio del Danforth de Toronto, anunció su cierre definitivo, con último día de servicio el domingo 16 de agosto de 2026.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/08/el-sol-restaurant-toronto-closing/",
+    "fecha": "2026-08-14",
+    "ciudad_slug": "toronto"
+  },
+  {
+    "titulo": "Kiss My Pans y Agak Agak cerrarán en Toronto por el alza de costos",
+    "resumen": "Los dueños de los restaurantes singapurenses Kiss My Pans y Agak Agak anunciaron en Instagram el cierre definitivo de ambos locales en Toronto, citando el fuerte aumento en el costo de los insumos y el alquiler.",
+    "fuente_url": "https://www.blogto.com/eat_drink/2026/07/kiss-my-pans-toronto-closing/",
+    "fecha": "2026-07-27",
+    "ciudad_slug": "toronto"
+  }
+]
