@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Kadeau logra la tercera Estrella Michelin y se convierte en el único triestrellado nuevo de los países nórdicos",
+    "resumen": "En la gala de la Guía Michelin Países Nórdicos 2026, celebrada en Tivoli (Copenhague) el 1 de junio, Kadeau, del chef Nicolai Nørregaard, obtuvo su tercera estrella, uniéndose a Geranium y Jordnær como los tres restaurantes triestrellados de la ciudad. Copenhague sumó en total 31 estrellas repartidas entre 21 restaurantes.",
+    "fuente_url": "https://www.wonderfulcopenhagen.com/wonderful-copenhagen/international-press/michelin-guide-nordic-countries-2026-in-copenhagen-a-rising-star-and-a-new-three-star-restaurant",
+    "imagen_url": "https://www.wonderfulcopenhagen.com/files/wonderfulcopenhagen.com/2026-06/17kadeaukbh_marielouisemunkegaard_0.jpg",
+    "fecha": "2026-06-11",
+    "ciudad_slug": "copenhague"
+  },
+  {
+    "titulo": "Alchemist se sitúa quinto en la lista The World's 50 Best Restaurants 2025",
+    "resumen": "El restaurante de Copenhague Alchemist, liderado por el chef Rasmus Munk, escaló hasta el puesto número 5 en la edición 2025 de The World's 50 Best Restaurants, revelada en Turín, consolidándose como la entrada nórdica mejor situada de la lista.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/the-worlds-50-best-restaurants-2025-1-50-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/W50BR25-LIP-fb.jpg",
+    "fecha": "2025-06-19",
+    "ciudad_slug": "copenhague"
+  },
+  {
+    "titulo": "Rasmus Munk, de Alchemist, repite como Mejor Chef del Mundo en los Best Chef Awards 2025",
+    "resumen": "El chef danés Rasmus Munk, al frente de Alchemist en Copenhague, fue coronado por segundo año consecutivo como el Mejor Chef del Mundo en los Best Chef Awards 2025, celebrados en Milán, convirtiéndose en el primer chef nórdico en lograr el título más de una vez.",
+    "fuente_url": "https://www.wonderfulcopenhagen.com/wonderful-copenhagen/international-press/press-kit-gastronomy/rasmus-munk-crowned-worlds-best-chef-best-chef-awards-2025",
+    "imagen_url": "https://www.wonderfulcopenhagen.com/files/wonderfulcopenhagen.com/2025-10/1D0A8946.jpg",
+    "fecha": "2025-10-02",
+    "ciudad_slug": "copenhague"
+  },
+  {
+    "titulo": "ESSE, el regreso de Matt Orlando a Copenhague, logra su primera Estrella Michelin",
+    "resumen": "El restaurante ESSE, con el que el chef estadounidense Matt Orlando (exjefe de cocina de Noma y fundador de Amass) regresó a Copenhague, recibió su primera Estrella Michelin en la Guía Michelin Países Nórdicos 2026, apenas meses después de su apertura.",
+    "fuente_url": "https://circulargastronomy.se/en/2026/06/07/the-return-of-matt-orlando-and-the-birth-of-restaurant-esse-in-copenhagen/",
+    "imagen_url": "https://circulargastronomy.se/wp-content/uploads/2026/06/ESSE-Behind-the-Scenes-Photo-Credit-Emily-Wilson-Photography-scaled.jpg",
+    "fecha": "2026-06-07",
+    "ciudad_slug": "copenhague"
+  },
+  {
+    "titulo": "Koan, del chef Kristian Baumann, entra por primera vez en la lista ampliada The World's 50 Best Restaurants",
+    "resumen": "El restaurante de Copenhague Koan, dirigido por el chef-propietario Kristian Baumann, debutó en el puesto 91 de la lista extendida (51-100) de The World's 50 Best Restaurants 2025, sumándose a Jordnær (puesto 56, reentrada) como representantes daneses en esta franja del ranking.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/the-worlds-50-best-restaurants-2025-51-100-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/W50BR25%20-%2051-100%20-%20Facebook.jpg",
+    "fecha": "2025-06-05",
+    "ciudad_slug": "copenhague"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Simposio, en el área metropolitana de Valencia, logra su primera estrella Michelin en la Guía 2026",
+    "resumen": "En la gala de la Guía Michelin España 2026, celebrada el 25 de noviembre de 2025 en Málaga, el restaurante Simposio (San Antonio de Benagéber, chef Roger Julián) debutó con su primera estrella, mientras Ricard Camarena y El Poblet revalidaron sus dos estrellas y Arrels, Fierro, Fraula, Kaido Sushi Bar, La Salita, Lienzo, Origen y Riff mantuvieron la suya en el entorno de Valencia.",
+    "fuente_url": "https://gastronomia.visitvalencia.com/es/valencia-suma-una-nueva-estrella-michelin",
+    "imagen_url": "https://gastronomia.visitvalencia.com/hubfs/Gastronom%C3%ADa/GALERIA_1.png",
+    "fecha": "2025-11-26",
+    "ciudad_slug": "valencia"
+  },
+  {
+    "titulo": "Fierro logra su segundo Sol en la Gala Soles Guía Repsol 2026",
+    "resumen": "El restaurante Fierro, de Carito Lourenço y Germán Carrizo en Valencia, ascendió a Dos Soles en la Guía Repsol 2026, presentada el 16 de febrero en Tarragona, gracias a una propuesta que combina producto de proximidad valenciano con raíces argentinas.",
+    "fuente_url": "https://www.valenciaextra.com/es/sociedad/seis-restaurantes-valencianos-entran-en-firmamento-soles-repsol_582728_102.html",
+    "imagen_url": "https://www.valenciaextra.com/uploads/s1/17/12/70/04/begonarodrigo-pepesolla-2_46_1200x675.jpeg",
+    "fecha": "2026-02-17",
+    "ciudad_slug": "valencia"
+  },
+  {
+    "titulo": "Memoria Gustativa, la taberna de Valencia con platos desde 5 euros, entra en la Guía Michelin como nuevo Bib Gourmand",
+    "resumen": "El restaurante Memoria Gustativa, de los cocineros Javier Vega y Blanca Martínez en la calle Conde de Altea, fue distinguido como uno de los nuevos Bib Gourmand de la Guía Michelin España 2026, presentada el 25 de noviembre de 2025.",
+    "fuente_url": "https://www.gastroeconomy.com/2025/11/guia-michelin-2026-lista-de-nuevos-bib-gourmand/",
+    "imagen_url": "https://www.gastroeconomy.com/wp-content/uploads/2018/11/Gastroeconomy_BibGourmand.png",
+    "fecha": "2025-11-26",
+    "ciudad_slug": "valencia"
+  },
+  {
+    "titulo": "Manu Yarza, del restaurante Yarza en Valencia, elegido Chef del Año por la Academia de Gastronomía de la Comunitat Valenciana",
+    "resumen": "En la gala de los Premios de Gastronomía de la Comunitat Valenciana 2026, celebrada en el Gran Casino del Grau de Castellón, Manu Yarza recibió el galardón a Chef del Año por su cocina de producto, arraigada en la tradición valenciana y depurada con sensibilidad contemporánea.",
+    "fuente_url": "https://economia3.com/2026/05/04/751528-manu-yarza-mejor-chef-del-ano-segun-la-academia-de-gastronomia-de-la-comunidad-valenciana/",
+    "imagen_url": "https://economia3.com/wp-content/uploads/2026/05/Academia-Valenciana-de-la-Gastronomia-PREMIOS-CHEF-EL-ANO.jpg",
+    "fecha": "2026-05-04",
+    "ciudad_slug": "valencia"
+  }
+]
