@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Maido es elegido el mejor restaurante del mundo en The World's 50 Best Restaurants 2025",
+    "resumen": "El restaurante nikkei de Mitsuharu 'Micha' Tsumura, en Miraflores, subió del puesto 5 al 1 en la ceremonia realizada en Turín, Italia. Otros tres locales peruanos entraron a la lista: Kjolle (9), Mérito (26) y Mayta (39).",
+    "fuente_url": "https://elcomercio.pe/provecho/restaurantes/maido-es-elegido-el-mejor-restaurante-del-mundo-the-worlds-50-best-2025-lista-y-todos-los-peruanos-noticia/",
+    "imagen_url": "https://elcomercio.pe/resizer/v2/5WWINE3NCBFIZEMY57I7QJP3DQ.jpg?auth=ed1cd666521661e0d5e8880a7a09f734548db6dc076a79262a33c079c32bd657&width=980&height=528&quality=75&smart=true",
+    "fecha": "2025-06-30",
+    "ciudad_slug": "lima"
+  },
+  {
+    "titulo": "Kjolle alcanza el segundo puesto en Latin America's 50 Best Restaurants 2025",
+    "resumen": "El restaurante de la chef Pía León, en Barranco, se ubicó como el mejor de Perú y el segundo de la región en la ceremonia realizada en Antigua, Guatemala, además de recibir el Art of Hospitality Award. Ocho restaurantes peruanos figuraron en la lista completa.",
+    "fuente_url": "https://www.infobae.com/peru/2025/12/03/kjolle-alcanzo-el-segundo-puesto-y-lidera-una-noche-donde-ocho-restaurantes-peruanos-fueron-protagonistas-en-los-latin-americas-50-best-2025/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/FFXDTIGXGRHJVCXTVEM3JEPYR4.png?auth=1854ddf1ec0aaed6b75d0b284cac8e28dc9117114ea4d490a6bf5bfc9594348e&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2025-12-03",
+    "ciudad_slug": "lima"
+  },
+  {
+    "titulo": "Lima será sede de The World's 50 Best Restaurants 2026",
+    "resumen": "La ceremonia se realizará el 4 de noviembre de 2026, marcando la primera vez que este premio de gastronomía mundial se celebra en Sudamérica. La designación llega tras la coronación de Maido como mejor restaurante del mundo en 2025.",
+    "fuente_url": "https://larepublica.pe/economia/2026/07/10/lima-sera-sede-de-the-worlds-50-best-restaurants-2026-hnews-753190",
+    "imagen_url": "https://imgmedia.larepublica.pe/1200x735/larepublica/original/2026/07/10/6a5123738302cead5b012eb4.jpg",
+    "fecha": "2026-07-10",
+    "ciudad_slug": "lima"
+  },
+  {
+    "titulo": "Rodrigo Fernandini abre su primer restaurante en Lima",
+    "resumen": "El chef abrió 'Fernandini' en una casona de Barranco, con un menú de degustación de diez tiempos que recorre productos de la costa, sierra y selva del Perú, tras tres meses de viajes y seis meses de desarrollo de carta junto a su equipo.",
+    "fuente_url": "https://elcomercio.pe/somos/gastronomia/rodrigo-fernandini-abre-su-primer-restaurante-en-lima-para-esto-he-entrenado-toda-mi-vida-noticia/",
+    "imagen_url": "https://elcomercio.pe/resizer/v2/74VOZ7OX3JF2RGT34VEKCGZJNA.jpg?auth=6cf8c35791d6d74ae8f2adc320520d89cc00a92e7c84772ee2726abd6d758909&width=980&height=528&quality=75&smart=true",
+    "fecha": "2026-04-28",
+    "ciudad_slug": "lima"
+  },
+  {
+    "titulo": "Premios Somos 2026 abre votación con lista completa de nominados",
+    "resumen": "El Comercio abrió la votación de los Premios Somos 2026 el 27 de mayo, con 37 categorías que reconocen a restaurantes, panaderías y creadores de contenido gastronómico de Lima; los ganadores se anunciarán en una ceremonia en el Museo Pedro de Osma, en Barranco.",
+    "fuente_url": "https://elcomercio.pe/somos/gastronomia/premios-somos-2026-lista-completa-de-nominados-como-votar-noticia/",
+    "imagen_url": "https://elcomercio.pe/resizer/v2/QKLBZYEZ3RAYBFBXYGNCEB3X6E.jpg?auth=4201926e9d41616c9672ab8f8643794af9e69722bbdf18be126266e71f3c0082&width=980&height=528&quality=75&smart=true",
+    "fecha": "2026-07-20",
+    "ciudad_slug": "lima"
+  }
+]

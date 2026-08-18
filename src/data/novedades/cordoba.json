@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "San Honorato se consagró ganador de los Mejores Restaurantes de Córdoba 2026",
+    "resumen": "Más de 13.000 personas participaron en la votación de Circuito Gastronómico, que reunió 10.726 votos válidos en distintas categorías. San Honorato se impuso en Cocina de Autor, Bodegón del Sur en Cocina Tradicional y Sabores del Perú en Cocina Peruana, en una ceremonia realizada en el Hotel Quinto Centenario.",
+    "fuente_url": "https://hoydia.com.ar/gastronomia/votacion-circuito-gastronomico-restaurantes-cordoba/",
+    "imagen_url": "https://hoydia.com.ar/wp-content/uploads/2026/04/Premios-gastronomicos-en-Cordoba-optimized.png",
+    "fecha": "2026-04-09",
+    "ciudad_slug": "cordoba"
+  },
+  {
+    "titulo": "El Papagayo volvió a meterse entre los 100 mejores restaurantes de Latinoamérica",
+    "resumen": "El restaurante cordobés de Javier Rodríguez reingresó a la lista ampliada de Latin America's 50 Best Restaurants 2025 en el puesto N°78, siendo uno de los seis representantes argentinos entre los puestos 51 y 100 del ranking regional.",
+    "fuente_url": "https://www.rinconbonvivant.com.ar/2025/11/18/seis-argentinos-entre-los-puestos-51-y-100-de-los-latin-americas-50-best-restaurants-2025/",
+    "imagen_url": "https://www.rinconbonvivant.com.ar/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-18-at-19.33.20.jpeg",
+    "fecha": "2025-11-18",
+    "ciudad_slug": "cordoba"
+  },
+  {
+    "titulo": "The Bagel Side llevó los bagels neoyorquinos a Nueva Córdoba y se volvió furor",
+    "resumen": "El primer local especializado en bagels estilo Nueva York de la ciudad abrió a metros del Paseo del Buen Pastor, en San Lorenzo 163. Fundado por tres socios, dos cordobeses y uno radicado en Estados Unidos, sumó un sistema de fidelización inspirado en las tarjetas de subte neoyorquinas y prevé abrir nuevas sucursales en Córdoba.",
+    "fuente_url": "https://www.perfil.com/noticias/cordoba/nueva-york-aterrizo-en-nueva-cordoba-los-bagels-neoyorquinos-que-son-furor-a-metros-del-buen-pastor.phtml",
+    "imagen_url": "https://fotos.perfil.com/2026/01/05/trim/1140/641/the-bagel-side-2164647.jpg",
+    "fecha": "2026-01-05",
+    "ciudad_slug": "cordoba"
+  },
+  {
+    "titulo": "El Festival del Churro volvió a Córdoba capital con porciones gratis y feria gastronómica",
+    "resumen": "La edición 2026 del Festival del Churro se realizó en Córdoba capital con degustaciones, porciones gratuitas y una feria de productos gastronómicos, consolidándose como uno de los eventos de comida en la calle más convocantes del año en la ciudad.",
+    "fuente_url": "https://www.canal26.com/turismo/2026/04/29/festival-del-churro-2026-en-cordoba-feria-gastronomica-porciones-gratis-y-todo-lo-que-hay-que-saber-de-cara-al-fin-de-semana/",
+    "imagen_url": "https://www.canal26.com/resizer/v2/HM42MW4CPRBU5AJNSY7MH5K67M.jpg?auth=b730bdfc85fc527f0f013cd72c00e78d9daa471bea2b6f3d80ac7d5c4f92737f&height=630&width=1200&quality=70&smart=true",
+    "fecha": "2026-04-29",
+    "ciudad_slug": "cordoba"
+  }
+]

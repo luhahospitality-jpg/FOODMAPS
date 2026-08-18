@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "El Chato, de Bogotá, es coronado el mejor restaurante de Latinoamérica en los Latin America's 50 Best 2025",
+    "resumen": "En la ceremonia de Latin America's 50 Best Restaurants celebrada en Antigua, Guatemala, El Chato del chef Álvaro Clavijo superó a Kjolle (Lima) y se convirtió en el primer restaurante colombiano en alcanzar el primer puesto de la lista regional.",
+    "fuente_url": "https://www.forbes.com/sites/carleyrojasavila/2025/12/03/worlds-50-best-names-latin-americas-best-restaurants-with-colombias-el-chato-taking-the-top-spot/",
+    "imagen_url": "https://imageio.forbes.com/specials-images/imageserve/692fcc3996018ee03542974f/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+    "fecha": "2025-12-03",
+    "ciudad_slug": "bogota"
+  },
+  {
+    "titulo": "Leo estrena menú a la carta y deja de operar solo con degustación",
+    "resumen": "El restaurante bogotano de la chef Leonor Espinosa, habitual de la lista The World's 50 Best, sumó una opción a la carta a su célebre menú de degustación, permitiendo a los comensales diseñar su propio recorrido por la biodiversidad colombiana.",
+    "fuente_url": "https://forbes.co/2026/06/06/forbes-life/leo-abre-la-puerta-a-un-nuevo-recorrido/",
+    "imagen_url": "https://cdn.forbes.co/2026/06/Leonor-Espinosa-1280x720-1.jpg",
+    "fecha": "2026-06-06",
+    "ciudad_slug": "bogota"
+  },
+  {
+    "titulo": "Bistró El Bandido cerrará sus puertas en Bogotá tras 15 años",
+    "resumen": "El restaurante de cocina francesa El Bandido, ubicado en la Calle de los Anticuarios, anunció que su último día de servicio será el 6 de junio de 2026, en medio del aumento de costos y la presión sobre los márgenes que enfrenta el sector gastronómico.",
+    "fuente_url": "https://www.pulzo.com/nacion/bogota/restaurante-bistro-el-bandido-15-anos-cierra-bogota-dan-fecha-clausura-PP5103931A",
+    "imagen_url": "https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP5103931A-h-o.jpg",
+    "fecha": "2026-03-19",
+    "ciudad_slug": "bogota"
+  },
+  {
+    "titulo": "Tacaloa: el chef mexicano que ha cocinado para Kanye West abre restaurante en Bogotá",
+    "resumen": "Santiago Moctezuma, fundador de Maizajo en Ciudad de México y ganador del premio Food & Wine Best New Chef 2024, abrió Tacaloa en el barrio Siete de Agosto, una barra de tacos que usa maíz colombiano nixtamalizado como puente cultural entre México y Colombia.",
+    "fuente_url": "https://www.semana.com/nacion/articulo/tacaloa-el-nuevo-restaurante-en-bogota-del-chef-mexicano-que-ha-cocinado-para-kanye-west/202634/",
+    "imagen_url": "https://www.semana.com/resizer/v2/R4HGZ2J2RJARLCVQZN5ZMONXGI.jpg?auth=51c22c78c13bc2d725a452c4f3f87ee12a25f3042f9a7768d1815c982f31c64c&smart=true&quality=75&width=1280&height=720",
+    "fecha": "2026-04-02",
+    "ciudad_slug": "bogota"
+  },
+  {
+    "titulo": "La Cámara de Comercio de Bogotá abre inscripciones para Gastrofest 2026",
+    "resumen": "El programa de la Cámara de Comercio de Bogotá abrió postulaciones hasta el 30 de abril para restaurantes, panaderías, chocolaterías y cervecerías artesanales de Bogotá y Cundinamarca; 220 negocios recibirán mentoría y 81 finalistas participarán en una competencia de cocina y en rutas promocionales 'Territorios Gastrofest'.",
+    "fuente_url": "https://www.infobae.com/colombia/2026/04/13/camara-de-comercio-de-bogota-abrio-inscripciones-para-nuevos-talentos-en-gastrofest-2026-asi-puedes-postular-su-restaurante/",
+    "imagen_url": "https://www.infobae.com/resizer/v2/IR5FDRAOC5EXLLQDKTR3PBA45A.jpg?auth=95701f5605afe5a367717279f52317916c4ef89a8c4fe85fb4a4d7e57d8df835&smart=true&width=1200&height=630&quality=85",
+    "fecha": "2026-04-13",
+    "ciudad_slug": "bogota"
+  }
+]

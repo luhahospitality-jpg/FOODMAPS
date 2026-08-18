@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Tuju y Evvai hacen historia: primeras tres estrellas Michelin de Brasil y Latinoamérica",
+    "resumen": "En la ceremonia de la Guía Michelin Río de Janeiro & São Paulo 2026, celebrada el 13 de abril en el Belmond Copacabana Palace, los restaurantes paulistanos Tuju (chef Ivan Ralston) y Evvai (chef Luiz Filipe Souza) recibieron la tercera estrella Michelin, un hito inédito para Brasil y toda Latinoamérica. D.O.M., de Alex Atala, se mantuvo con dos estrellas.",
+    "fuente_url": "https://www.seudinheiro.com/2026/lifestyle/guia-michelin-2026-veja-os-restaurantes-premiados-em-sao-paulo-e-no-rio-de-janeiro-lefp/",
+    "imagen_url": "https://www.seudinheiro.com/uploads/2026/04/CAPAS-LP.png",
+    "fecha": "2026-04-13",
+    "ciudad_slug": "sao-paulo"
+  },
+  {
+    "titulo": "Restaurante Shakshuka cierra sus puertas en São Paulo tras tres años",
+    "resumen": "El restaurante Shakshuka, especializado en cocina libia de influencia judía a cargo de la chef Erika Kaiser Mori, anunció en redes sociales el cierre de su local en Perdizes (zona oeste de São Paulo) el 19 de enero de 2026, tras tres años de actividad.",
+    "fuente_url": "https://quegostoso.tur.br/2026/02/13/restaurante-shakshuka-fecha-em-sao-paulo/",
+    "imagen_url": "https://quegostoso.tur.br/wp-content/uploads/2026/02/Restaurante-Shakshuka-fecha-em-Sao-Paulo-1-Foto-Claudio-Schapochnik_Que-Gostoso.jpg",
+    "fecha": "2026-02-13",
+    "ciudad_slug": "sao-paulo"
+  },
+  {
+    "titulo": "Tuju, Evvai y A Casa do Porco entre los mejores de Latinoamérica 2025",
+    "resumen": "En la ceremonia de Latin America's 50 Best Restaurants 2025, realizada en Antigua, Guatemala, el 2 de diciembre de 2025, São Paulo ubicó a Tuju en el puesto 8, Evvai en el 20 y A Casa do Porco en el 25. El colombiano El Chato fue nombrado mejor restaurante de la región.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/latin-americas-50-best-restaurants-2025-1-50-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/LATAM50BR25-1-50-FACEBOOK.jpg",
+    "fecha": "2025-12-02",
+    "ciudad_slug": "sao-paulo"
+  },
+  {
+    "titulo": "D.O.M. celebra 25 años con un menú conmemorativo de Alex Atala",
+    "resumen": "El D.O.M., restaurante insignia del chef Alex Atala y poseedor de dos estrellas Michelin, ofreció un menú degustación conmemorativo por sus 25 años de historia, disponible hasta finales de agosto de 2025, en homenaje a su trayectoria de valorización de ingredientes brasileños.",
+    "fuente_url": "https://www.seudinheiro.com/2025/lifestyle/na-mesa-com-alex-atala-menu-comemorativo-do-d-o-m-entra-nas-ultimas-e-melhores-semanas-edvl/",
+    "imagen_url": "https://www.seudinheiro.com/uploads/2025/07/CAPAS-LIFESTYLE-85.png",
+    "fecha": "2025-07-07",
+    "ciudad_slug": "sao-paulo"
+  },
+  {
+    "titulo": "Chef Saulo Jennings reabre Casa do Saulo en un casarón histórico de São Paulo",
+    "resumen": "Tras cerrar su unidad de Vila Olímpia en noviembre de 2025, el chef paraense Saulo Jennings reabrió Casa do Saulo en un casarón histórico protegido por el IPHAN en la Rua Bela Cintra, cerca de la Avenida Paulista, con un menú centrado en pescados amazónicos e ingredientes brasileños asados a la vista del público.",
+    "fuente_url": "https://societyriosp.com.br/noticias/oasis-da-amazonia/",
+    "imagen_url": "https://societyriosp.com.br/wp-content/uploads/2026/07/Saulo-Jennings.jpg",
+    "fecha": "2026-07-26",
+    "ciudad_slug": "sao-paulo"
+  }
+]
