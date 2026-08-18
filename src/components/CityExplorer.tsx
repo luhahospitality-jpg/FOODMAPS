@@ -226,30 +226,47 @@ export function CityExplorer({
 }
 
 function NewsCover({ item }: { item: NewsItem }) {
-  const [broken, setBroken] = useState(false);
-  const { kind, imageUrl: fallbackImage } = getSourceThumbnail(item.fuente_url);
-  const cover = item.imagen_url || null;
-  const src = broken ? null : (cover ?? fallbackImage);
-  const isFallback = !cover;
+  const [coverBroken, setCoverBroken] = useState(false);
+  const [logoBroken, setLogoBroken] = useState(false);
+  const { kind, photoUrl, logoUrl } = getSourceThumbnail(item.fuente_url);
+  const cover = coverBroken ? null : (item.imagen_url ?? photoUrl);
+  const hasCover = !!cover;
 
   return (
     <div className="relative aspect-[16/10] w-full shrink-0 overflow-hidden border-b-2 border-ink bg-cream">
-      {src ? (
+      {hasCover ? (
         <img
-          src={src}
+          src={cover!}
           alt=""
-          onError={() => setBroken(true)}
-          className={
-            isFallback
-              ? "h-full w-full object-contain p-8 opacity-80"
-              : "h-full w-full object-cover"
-          }
+          onError={() => setCoverBroken(true)}
+          className="h-full w-full object-cover"
         />
       ) : (
-        <div className="flex h-full w-full items-center justify-center text-ink/20">
-          <NewsTabIcon size={32} />
+        <div className="flex h-full w-full items-center justify-center">
+          {logoUrl && !logoBroken ? (
+            <img
+              src={logoUrl}
+              alt=""
+              onError={() => setLogoBroken(true)}
+              className="h-8 w-8 object-contain opacity-20"
+            />
+          ) : (
+            <span className="text-ink/15">
+              <NewsTabIcon size={24} />
+            </span>
+          )}
         </div>
       )}
+
+      {hasCover && logoUrl && !logoBroken && (
+        <img
+          src={logoUrl}
+          alt=""
+          onError={() => setLogoBroken(true)}
+          className="absolute right-2 bottom-2 h-6 w-6 object-contain opacity-40"
+        />
+      )}
+
       {kind === "video" && (
         <span
           aria-hidden="true"
