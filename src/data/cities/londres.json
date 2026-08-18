@@ -3,7 +3,7 @@
   "name": "Londres",
   "country": "Reino Unido",
   "tagline": "El restaurante más antiguo de Londres desde 1798, y el fish and chips que no cambió desde 1914.",
-  "totalPlaces": 5,
+  "totalPlaces": 100,
   "mymaps_url": null,
   "places": [
     {
@@ -101,6 +101,1804 @@
         "type": "michelin_star",
         "count": 1
       }
+    },
+    {
+      "name": "Restaurant Gordon Ramsay",
+      "place_id": null,
+      "lat": 51.4875,
+      "lng": -0.1637,
+      "category": "fine_dining",
+      "cuisine": "británico / francés",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "El buque insignia de Gordon Ramsay en Chelsea, con tres estrellas Michelin desde 2001 y cocina francesa contemporánea de altísima precisión.",
+      "source_url": "https://guide.michelin.com/gb/en/london/restaurant-gordon-ramsay",
+      "source_type": "critic",
+      "rank": 6,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4875,-0.1637",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 3
+      }
+    },
+    {
+      "name": "Alain Ducasse at The Dorchester",
+      "place_id": null,
+      "lat": 51.5072,
+      "lng": -0.1521,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Alta cocina francesa del chef Alain Ducasse en el hotel The Dorchester de Mayfair, con dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 7,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5072,-0.1521",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Sketch (Lecture Room & Library)",
+      "place_id": null,
+      "lat": 51.5136,
+      "lng": -0.1425,
+      "category": "fine_dining",
+      "cuisine": "británico / francés moderno",
+      "tags": [
+        "michelin",
+        "viral_social"
+      ],
+      "description": "El icónico Gallery de Sketch, con sus cabinas de baño en forma de huevo y su interior rosa diseñado por India Mahdavi, se hizo viral en redes sociales; la Lecture Room & Library tiene dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "viral_social",
+      "rank": 8,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5136,-0.1425",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Hélène Darroze at The Connaught",
+      "place_id": null,
+      "lat": 51.5099,
+      "lng": -0.1493,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "La chef francesa Hélène Darroze dirige la cocina del hotel The Connaught en Mayfair, con dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 9,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5099,-0.1493",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "The Ledbury",
+      "place_id": null,
+      "lat": 51.5164,
+      "lng": -0.2015,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina moderna británica de altísimo nivel en Notting Hill, con dos estrellas Michelin y considerado uno de los mejores restaurantes de Londres.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 10,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5164,-0.2015",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Ikoyi",
+      "place_id": null,
+      "lat": 51.5083,
+      "lng": -0.1173,
+      "category": "fine_dining",
+      "cuisine": "africana occidental / británico",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina de autor inspirada en África Occidental del chef Jeremy Chan, con dos estrellas Michelin, en St James's.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 11,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5083,-0.1173",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Kitchen Table",
+      "place_id": null,
+      "lat": 51.5199,
+      "lng": -0.1367,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Barra íntima de solo unos pocos asientos junto a la cocina en Fitzrovia, con dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 12,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5199,-0.1367",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "The Clove Club",
+      "place_id": null,
+      "lat": 51.5265,
+      "lng": -0.0808,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Uno de los restaurantes que redefinió la cocina informal de alta gama en Shoreditch, con una estrella Michelin, dentro del histórico ayuntamiento.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 13,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5265,-0.0808",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Brat",
+      "place_id": null,
+      "lat": 51.5245,
+      "lng": -0.0774,
+      "category": "restaurant",
+      "cuisine": "británico moderno / parrilla",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Parrilla de leña con influencia del País Vasco en Shoreditch, famosa por su turbot entero asado; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 14,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5245,-0.0774",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Lyle's",
+      "place_id": null,
+      "lat": 51.524,
+      "lng": -0.0782,
+      "category": "restaurant",
+      "cuisine": "británico",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina británica de temporada con menú fijo diario en Shoreditch, del chef James Lowe; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 15,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.524,-0.0782",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Trinity",
+      "place_id": null,
+      "lat": 51.4625,
+      "lng": -0.1384,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de vecindario en Clapham del chef Adam Byatt, con cocina británica moderna y una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 16,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4625,-0.1384",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Sushi Tetsu",
+      "place_id": null,
+      "lat": 51.5245,
+      "lng": -0.1053,
+      "category": "restaurant",
+      "cuisine": "japonés / sushi",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Barra de sushi diminuta de solo siete asientos en Clerkenwell, una de las reservas más difíciles de conseguir en Londres; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 17,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5245,-0.1053",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Marcus",
+      "place_id": null,
+      "lat": 51.5019,
+      "lng": -0.1595,
+      "category": "fine_dining",
+      "cuisine": "británico",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El restaurante insignia de Marcus Wareing en el hotel The Berkeley, con cocina británica refinada y una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 18,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5019,-0.1595",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Pied à Terre",
+      "place_id": null,
+      "lat": 51.5202,
+      "lng": -0.1352,
+      "category": "fine_dining",
+      "cuisine": "francés moderno",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Uno de los restaurantes de alta cocina más longevos de Londres, abierto en Charlotte Street desde 1991, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 19,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5202,-0.1352",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "A. Wong",
+      "place_id": null,
+      "lat": 51.4923,
+      "lng": -0.1435,
+      "category": "restaurant",
+      "cuisine": "chino",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina china regional moderna en Pimlico del chef Andrew Wong, con dim sum de brunch muy celebrado; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 20,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4923,-0.1435",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Kai Mayfair",
+      "place_id": null,
+      "lat": 51.5099,
+      "lng": -0.1541,
+      "category": "restaurant",
+      "cuisine": "chino",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina china de lujo en Mayfair, con una estrella Michelin desde 2011.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 21,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5099,-0.1541",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Umu",
+      "place_id": null,
+      "lat": 51.5107,
+      "lng": -0.1462,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina kaiseki japonesa de alta gama en Mayfair, con dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 22,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5107,-0.1462",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "City Social",
+      "place_id": null,
+      "lat": 51.5163,
+      "lng": -0.0846,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de Jason Atherton en la planta 24 de Tower 42, con vistas panorámicas de la City y una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 23,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5163,-0.0846",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Galvin La Chapelle",
+      "place_id": null,
+      "lat": 51.5199,
+      "lng": -0.0779,
+      "category": "restaurant",
+      "cuisine": "francés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina francesa clásica de los hermanos Galvin en una antigua capilla victoriana de Spitalfields; una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 24,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5199,-0.0779",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Dinner by Heston Blumenthal",
+      "place_id": null,
+      "lat": 51.5017,
+      "lng": -0.1605,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Heston Blumenthal reinterpreta recetas históricas británicas en el Mandarin Oriental de Knightsbridge; dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 25,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5017,-0.1605",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Portland",
+      "place_id": null,
+      "lat": 51.5188,
+      "lng": -0.1436,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina británica de temporada centrada en el producto en Fitzrovia, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 26,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5188,-0.1436",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Angler",
+      "place_id": null,
+      "lat": 51.5195,
+      "lng": -0.0872,
+      "category": "restaurant",
+      "cuisine": "mariscos / europeo",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de pescados y mariscos en lo alto del South Place Hotel de la City, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 27,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5195,-0.0872",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Trishna",
+      "place_id": null,
+      "lat": 51.5178,
+      "lng": -0.1547,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina india contemporánea centrada en pescado y marisco de la costa oeste, en Marylebone; una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 28,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5178,-0.1547",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Gymkhana",
+      "place_id": null,
+      "lat": 51.5088,
+      "lng": -0.142,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "michelin",
+        "critic"
+      ],
+      "description": "Cocina india inspirada en los clubs de caza coloniales, en Mayfair, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 29,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5088,-0.142",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Jamavar",
+      "place_id": null,
+      "lat": 51.5083,
+      "lng": -0.1495,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina india de las distintas regiones del subcontinente en Mayfair, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 30,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5083,-0.1495",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Benares",
+      "place_id": null,
+      "lat": 51.5093,
+      "lng": -0.147,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Cocina india moderna del chef Atul Kochhar en Berkeley Square, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 31,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5093,-0.147",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Kiln",
+      "place_id": null,
+      "lat": 51.5124,
+      "lng": -0.1364,
+      "category": "restaurant",
+      "cuisine": "tailandés",
+      "tags": [
+        "michelin",
+        "timeout"
+      ],
+      "description": "Cocina tailandesa a la parrilla de carbón en una barra estrecha del Soho, reconocida con un Bib Gourmand Michelin.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 32,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5124,-0.1364",
+      "distinction": {
+        "type": "michelin_bib_gourmand",
+        "count": null
+      }
+    },
+    {
+      "name": "The Five Fields",
+      "place_id": null,
+      "lat": 51.4915,
+      "lng": -0.1626,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante íntimo de Chelsea con menú degustación de temporada; una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 33,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4915,-0.1626",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Endo at The Rotunda",
+      "place_id": null,
+      "lat": 51.509,
+      "lng": -0.2237,
+      "category": "fine_dining",
+      "cuisine": "japonés",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Sushi omakase de alta precisión del chef Endo Kazutoshi en White City, con dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 34,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.509,-0.2237",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      }
+    },
+    {
+      "name": "Le Gavroche",
+      "place_id": null,
+      "lat": 51.5133,
+      "lng": -0.1568,
+      "category": "fine_dining",
+      "cuisine": "francés",
+      "tags": [
+        "michelin",
+        "clasico",
+        "critic"
+      ],
+      "description": "Fundado en 1967 por los hermanos Roux, uno de los restaurantes franceses clásicos más influyentes de Londres; dos estrellas Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 35,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5133,-0.1568",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 2
+      },
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Pollen Street Social",
+      "place_id": null,
+      "lat": 51.514,
+      "lng": -0.1417,
+      "category": "fine_dining",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "El restaurante de Jason Atherton en Mayfair que ayudó a definir la cocina informal de alta gama; una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 36,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.514,-0.1417",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "The River Cafe",
+      "place_id": null,
+      "lat": 51.4881,
+      "lng": -0.2233,
+      "category": "restaurant",
+      "cuisine": "italiano",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Cocina italiana junto al Támesis en Hammersmith, fundada por Ruth Rogers y la fallecida Rose Gray, cuna de numerosos chefs británicos.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 37,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4881,-0.2233"
+    },
+    {
+      "name": "Chez Bruce",
+      "place_id": null,
+      "lat": 51.4523,
+      "lng": -0.1685,
+      "category": "restaurant",
+      "cuisine": "francés / británico moderno",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante de vecindario en Wandsworth votado repetidamente como uno de los favoritos de los londinenses por su cocina franco-británica.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 38,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4523,-0.1685"
+    },
+    {
+      "name": "La Trompette",
+      "place_id": null,
+      "lat": 51.4942,
+      "lng": -0.2571,
+      "category": "restaurant",
+      "cuisine": "francés / europeo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de vecindario en Chiswick con cocina franco-europea muy apreciada por la crítica local.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 39,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4942,-0.2571"
+    },
+    {
+      "name": "The Glasshouse",
+      "place_id": null,
+      "lat": 51.4778,
+      "lng": -0.2857,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante de cocina británica moderna en Kew, con una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 40,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4778,-0.2857",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Scott's",
+      "place_id": null,
+      "lat": 51.5088,
+      "lng": -0.1503,
+      "category": "restaurant",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante de pescado y marisco de lujo en Mayfair, con historia que se remonta a 1851 y clientela habitual desde Ian Fleming.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 41,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5088,-0.1503",
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "J Sheekey",
+      "place_id": null,
+      "lat": 51.5111,
+      "lng": -0.1281,
+      "category": "restaurant",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Marisquería clásica del Theatreland de Covent Garden, abierta desde finales del siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 42,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5111,-0.1281"
+    },
+    {
+      "name": "Bentley's Oyster Bar & Grill",
+      "place_id": null,
+      "lat": 51.5099,
+      "lng": -0.1387,
+      "category": "restaurant",
+      "cuisine": "mariscos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Marisquería y bar de ostras en Mayfair desde 1916, dirigida durante años por el chef Richard Corrigan.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 43,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5099,-0.1387"
+    },
+    {
+      "name": "Wiltons",
+      "place_id": null,
+      "lat": 51.5088,
+      "lng": -0.1387,
+      "category": "restaurant",
+      "cuisine": "mariscos / británico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Una de las marisquerías más antiguas de Londres, con raíces que se remontan a 1742, en St James's.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 44,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5088,-0.1387"
+    },
+    {
+      "name": "Simpson's in the Strand",
+      "place_id": null,
+      "lat": 51.5107,
+      "lng": -0.1211,
+      "category": "restaurant",
+      "cuisine": "británico / roast",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Institución londinense desde 1828, famosa por su carne asada servida en carritos de plata junto a la mesa.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 45,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5107,-0.1211"
+    },
+    {
+      "name": "The Ivy",
+      "place_id": null,
+      "lat": 51.5127,
+      "lng": -0.129,
+      "category": "restaurant",
+      "cuisine": "británico / internacional",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante icónico de Covent Garden frecuentado por el mundo del teatro y el cine desde 1917.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 46,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5127,-0.129"
+    },
+    {
+      "name": "Quo Vadis",
+      "place_id": null,
+      "lat": 51.5138,
+      "lng": -0.1319,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Restaurante histórico del Soho en un edificio donde vivió Karl Marx, con cocina británica moderna.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 47,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5138,-0.1319"
+    },
+    {
+      "name": "Andrew Edmunds",
+      "place_id": null,
+      "lat": 51.5133,
+      "lng": -0.1373,
+      "category": "restaurant",
+      "cuisine": "europeo",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante pequeño y con velas en el Soho, favorito discreto de la crítica gastronómica local desde los años 80.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 48,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5133,-0.1373",
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Bob Bob Ricard",
+      "place_id": null,
+      "lat": 51.513,
+      "lng": -0.1367,
+      "category": "restaurant",
+      "cuisine": "británico / internacional",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante del Soho famoso por el botón de \"Press for Champagne\" en cada mesa y sus interiores de estilo Art Déco.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 49,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.513,-0.1367"
+    },
+    {
+      "name": "The Wolseley",
+      "place_id": null,
+      "lat": 51.5077,
+      "lng": -0.1416,
+      "category": "cafe",
+      "cuisine": "europeo / brasserie",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Gran café-brasserie de estilo europeo en Piccadilly, en un antiguo salón de exposición de coches de los años 20.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 50,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5077,-0.1416",
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Dishoom Covent Garden",
+      "place_id": null,
+      "lat": 51.5122,
+      "lng": -0.1276,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "timeout",
+        "viral_social"
+      ],
+      "description": "Cadena inspirada en las antiguas cafeterías parsi de Bombay, célebre por sus colas y su bacon naan roll.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 51,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5122,-0.1276"
+    },
+    {
+      "name": "Barrafina Soho",
+      "place_id": null,
+      "lat": 51.5137,
+      "lng": -0.1319,
+      "category": "restaurant",
+      "cuisine": "español / tapas",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Barra de tapas españolas de pie sin reservas en Dean Street, uno de los restaurantes españoles más aclamados de Londres.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 52,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5137,-0.1319"
+    },
+    {
+      "name": "Padella",
+      "place_id": null,
+      "lat": 51.5054,
+      "lng": -0.0908,
+      "category": "restaurant",
+      "cuisine": "italiano",
+      "tags": [
+        "timeout",
+        "critic"
+      ],
+      "description": "Pasta fresca artesanal a precios accesibles junto a Borough Market, famosa por sus largas colas.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 53,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5054,-0.0908",
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Flat Iron",
+      "place_id": null,
+      "lat": 51.5131,
+      "lng": -0.1387,
+      "category": "restaurant",
+      "cuisine": "parrilla / steak",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cadena que popularizó el corte de bistec flat iron a precio fijo y asequible en Londres.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 54,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5131,-0.1387"
+    },
+    {
+      "name": "Hawksmoor Seven Dials",
+      "place_id": null,
+      "lat": 51.5137,
+      "lng": -0.1264,
+      "category": "restaurant",
+      "cuisine": "parrilla / steak",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Steakhouse británica de carnes de razas autóctonas maduradas, una de las cadenas de carne más reconocidas de Londres.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 55,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5137,-0.1264"
+    },
+    {
+      "name": "Smokestak",
+      "place_id": null,
+      "lat": 51.5238,
+      "lng": -0.074,
+      "category": "restaurant",
+      "cuisine": "barbacoa",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barbacoa de estilo americano con ahumador de leña en Shoreditch, célebre por sus costillas y su brisket.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 56,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5238,-0.074"
+    },
+    {
+      "name": "Temper Soho",
+      "place_id": null,
+      "lat": 51.5136,
+      "lng": -0.1367,
+      "category": "restaurant",
+      "cuisine": "barbacoa",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante subterráneo de barbacoa de animal entero en el Soho, con carnes a la brasa cocinadas al fuego vivo.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 57,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5136,-0.1367"
+    },
+    {
+      "name": "Bao Soho",
+      "place_id": null,
+      "lat": 51.5136,
+      "lng": -0.1378,
+      "category": "restaurant",
+      "cuisine": "taiwanés",
+      "tags": [
+        "timeout",
+        "viral_social"
+      ],
+      "description": "Restaurante taiwanés que popularizó el bao relleno en Londres, con colas habituales en Lexington Street.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 58,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5136,-0.1378"
+    },
+    {
+      "name": "Kricket Soho",
+      "place_id": null,
+      "lat": 51.5107,
+      "lng": -0.1358,
+      "category": "restaurant",
+      "cuisine": "indio",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cocina india moderna en pequeños platos, nacida como food truck y convertida en uno de los favoritos del Soho.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 59,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5107,-0.1358"
+    },
+    {
+      "name": "Berber & Q",
+      "place_id": null,
+      "lat": 51.5324,
+      "lng": -0.0755,
+      "category": "restaurant",
+      "cuisine": "medio oriente / barbacoa",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Barbacoa de inspiración norteafricana y de Oriente Medio bajo los arcos del ferrocarril en Haggerston.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 60,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5324,-0.0755"
+    },
+    {
+      "name": "Morito",
+      "place_id": null,
+      "lat": 51.5262,
+      "lng": -0.1097,
+      "category": "restaurant",
+      "cuisine": "español / norteafricano",
+      "tags": [
+        "critic"
+      ],
+      "description": "Bar de tapas españolas y del Mediterráneo oriental junto a Exmouth Market, hermano pequeño de Moro.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 61,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5262,-0.1097"
+    },
+    {
+      "name": "Moro",
+      "place_id": null,
+      "lat": 51.5263,
+      "lng": -0.1098,
+      "category": "restaurant",
+      "cuisine": "español / norteafricano",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Cocina que fusiona España y el norte de África en Exmouth Market, un referente de la crítica gastronómica desde 1997.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 62,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5263,-0.1098"
+    },
+    {
+      "name": "Ottolenghi Islington",
+      "place_id": null,
+      "lat": 51.5423,
+      "lng": -0.1027,
+      "category": "cafe",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "El primer local de Yotam Ottolenghi en Islington, con su famosa vitrina de ensaladas y repostería mediterránea.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 63,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5423,-0.1027"
+    },
+    {
+      "name": "Rochelle Canteen",
+      "place_id": null,
+      "lat": 51.5262,
+      "lng": -0.0776,
+      "category": "restaurant",
+      "cuisine": "británico",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante escondido en un antiguo patio de colegio de Shoreditch, con cocina británica de temporada sencilla.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 64,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5262,-0.0776"
+    },
+    {
+      "name": "Towpath Cafe",
+      "place_id": null,
+      "lat": 51.5372,
+      "lng": -0.0801,
+      "category": "cafe",
+      "cuisine": "cafetería / mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Pequeño café junto al Regent's Canal en Hackney, abierto solo en temporada cálida, muy querido por la crítica local.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 65,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5372,-0.0801"
+    },
+    {
+      "name": "Tayyabs",
+      "place_id": null,
+      "lat": 51.5163,
+      "lng": -0.0655,
+      "category": "restaurant",
+      "cuisine": "pakistaní / punjabi",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Institución paquistaní de Whitechapel desde 1972, famosa por sus chops a la parrilla; siempre hay cola.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 66,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5163,-0.0655",
+      "source_type_secondary": "critic"
+    },
+    {
+      "name": "Needoo Grill",
+      "place_id": null,
+      "lat": 51.5171,
+      "lng": -0.0631,
+      "category": "restaurant",
+      "cuisine": "pakistaní",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Grill paquistaní de Whitechapel, a menudo comparado con su vecino Tayyabs por sus brochetas y curries.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 67,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5171,-0.0631"
+    },
+    {
+      "name": "Lahore Kebab House",
+      "place_id": null,
+      "lat": 51.514,
+      "lng": -0.0644,
+      "category": "restaurant",
+      "cuisine": "pakistaní",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los restaurantes paquistaníes más antiguos de Whitechapel, abierto desde 1972.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 68,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.514,-0.0644"
+    },
+    {
+      "name": "Aladin Brick Lane",
+      "place_id": null,
+      "lat": 51.5225,
+      "lng": -0.0719,
+      "category": "restaurant",
+      "cuisine": "indio / bangladesí",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Uno de los curry houses clásicos de Brick Lane, la calle india y bangladesí más famosa de Londres.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 69,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5225,-0.0719"
+    },
+    {
+      "name": "Beigel Bake",
+      "place_id": null,
+      "lat": 51.5245,
+      "lng": -0.0713,
+      "category": "bakery",
+      "cuisine": "judío / bagels",
+      "tags": [
+        "clasico",
+        "bourdain"
+      ],
+      "description": "Panadería judía abierta 24 horas en Brick Lane desde los años 70, famosa por su beigel de salt beef; Anthony Bourdain la visitó en No Reservations.",
+      "source_url": null,
+      "source_type": "bourdain",
+      "rank": 70,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5245,-0.0713"
+    },
+    {
+      "name": "Four Seasons Chinatown",
+      "place_id": null,
+      "lat": 51.5117,
+      "lng": -0.1315,
+      "category": "restaurant",
+      "cuisine": "chino cantonés",
+      "tags": [
+        "critic",
+        "clasico"
+      ],
+      "description": "Restaurante de pato asado cantonés en Gerrard Street, uno de los más celebrados de Chinatown.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 71,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5117,-0.1315"
+    },
+    {
+      "name": "Yauatcha",
+      "place_id": null,
+      "lat": 51.5133,
+      "lng": -0.1362,
+      "category": "restaurant",
+      "cuisine": "chino / dim sum",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Salón de dim sum y té en el Soho, con una estrella Michelin, del grupo Hakkasan.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 72,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5133,-0.1362",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Hakkasan Hanway Place",
+      "place_id": null,
+      "lat": 51.5165,
+      "lng": -0.1319,
+      "category": "fine_dining",
+      "cuisine": "chino",
+      "tags": [
+        "michelin"
+      ],
+      "description": "Restaurante chino de lujo en un sótano de Fitzrovia que ayudó a redefinir la alta cocina china en Londres; una estrella Michelin.",
+      "source_url": null,
+      "source_type": null,
+      "rank": 73,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5165,-0.1319",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Din Tai Fung Covent Garden",
+      "place_id": null,
+      "lat": 51.5117,
+      "lng": -0.1247,
+      "category": "restaurant",
+      "cuisine": "taiwanés",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Cadena taiwanesa de fama mundial por sus xiaolongbao, con su primer local londinense en Covent Garden.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 74,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5117,-0.1247"
+    },
+    {
+      "name": "The Palomar",
+      "place_id": null,
+      "lat": 51.5117,
+      "lng": -0.1338,
+      "category": "restaurant",
+      "cuisine": "israelí",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Cocina israelí moderna en una barra animada del Soho, inspirada en Jerusalén.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 75,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5117,-0.1338"
+    },
+    {
+      "name": "Nopi",
+      "place_id": null,
+      "lat": 51.5117,
+      "lng": -0.1387,
+      "category": "restaurant",
+      "cuisine": "mediterráneo",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de Yotam Ottolenghi en el Soho con cocina mediterránea y de Oriente Medio en platos para compartir.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 76,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5117,-0.1387"
+    },
+    {
+      "name": "Song Que",
+      "place_id": null,
+      "lat": 51.5296,
+      "lng": -0.0782,
+      "category": "restaurant",
+      "cuisine": "vietnamita",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Restaurante vietnamita clásico en Kingsland Road, en el corazón de la \"Pho Mile\" de Shoreditch.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 77,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5296,-0.0782"
+    },
+    {
+      "name": "Mangal Ocakbasi",
+      "place_id": null,
+      "lat": 51.5478,
+      "lng": -0.0755,
+      "category": "restaurant",
+      "cuisine": "turco",
+      "tags": [
+        "critic"
+      ],
+      "description": "Parrilla turca ocakbasi en Dalston, referente de la cocina turca de barrio en Londres desde los años 90.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 78,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5478,-0.0755"
+    },
+    {
+      "name": "Franco Manca Brixton",
+      "place_id": null,
+      "lat": 51.4629,
+      "lng": -0.1147,
+      "category": "restaurant",
+      "cuisine": "pizza napolitana",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "La primera pizzería de la cadena Franco Manca, nacida en el mercado de Brixton con masa de fermentación lenta.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 79,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4629,-0.1147"
+    },
+    {
+      "name": "Pizza Pilgrims Dean Street",
+      "place_id": null,
+      "lat": 51.5135,
+      "lng": -0.1315,
+      "category": "restaurant",
+      "cuisine": "pizza",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Pizzería napolitana nacida de un food truck familiar, con su primer local fijo en el Soho.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 80,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5135,-0.1315"
+    },
+    {
+      "name": "Neal's Yard Dairy",
+      "place_id": null,
+      "lat": 51.5057,
+      "lng": -0.0913,
+      "category": "market",
+      "cuisine": "quesos",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Referencia de quesos artesanales británicos e irlandeses junto a Borough Market desde 1979.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 81,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5057,-0.0913"
+    },
+    {
+      "name": "Monmouth Coffee",
+      "place_id": null,
+      "lat": 51.5056,
+      "lng": -0.0911,
+      "category": "cafe",
+      "cuisine": "café",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Tostador y cafetería pionera del café de especialidad en Borough Market.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 82,
+      "reservable": false,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5056,-0.0911"
+    },
+    {
+      "name": "Wright Brothers Borough Market",
+      "place_id": null,
+      "lat": 51.5058,
+      "lng": -0.0906,
+      "category": "restaurant",
+      "cuisine": "mariscos / ostras",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de ostras y marisco junto a Borough Market, con ostras de sus propios criaderos en Cornualles.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 83,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5058,-0.0906"
+    },
+    {
+      "name": "Roast Borough Market",
+      "place_id": null,
+      "lat": 51.5054,
+      "lng": -0.0908,
+      "category": "restaurant",
+      "cuisine": "británico",
+      "tags": [
+        "critic"
+      ],
+      "description": "Restaurante de cocina británica sobre el mercado de Borough, con carnes y verduras de proveedores del propio mercado.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 84,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5054,-0.0908"
+    },
+    {
+      "name": "Poppies Fish & Chips",
+      "place_id": null,
+      "lat": 51.5199,
+      "lng": -0.0723,
+      "category": "fast_food",
+      "cuisine": "fish and chips",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fish and chips de estilo años 40 en Spitalfields, con decoración vintage y ambiente de chippy tradicional.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 85,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5199,-0.0723"
+    },
+    {
+      "name": "Golden Union Fish Bar",
+      "place_id": null,
+      "lat": 51.5147,
+      "lng": -0.1382,
+      "category": "fast_food",
+      "cuisine": "fish and chips",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Fish and chips clásico en el Soho, votado repetidamente entre los mejores de Londres.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 86,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5147,-0.1382"
+    },
+    {
+      "name": "Masters Super Fish",
+      "place_id": null,
+      "lat": 51.4988,
+      "lng": -0.112,
+      "category": "fast_food",
+      "cuisine": "fish and chips",
+      "tags": [
+        "clasico",
+        "critic"
+      ],
+      "description": "Chippy de barrio cerca de Waterloo, muy querido por la crítica local por sus raciones generosas.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 87,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.4988,-0.112"
+    },
+    {
+      "name": "Duck & Waffle",
+      "place_id": null,
+      "lat": 51.5177,
+      "lng": -0.0813,
+      "category": "restaurant",
+      "cuisine": "británico moderno",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante abierto 24 horas en la planta 40 de Heron Tower, con vistas panorámicas de Londres.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 88,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5177,-0.0813"
+    },
+    {
+      "name": "Aqua Shard",
+      "place_id": null,
+      "lat": 51.5045,
+      "lng": -0.0865,
+      "category": "restaurant",
+      "cuisine": "británico / mariscos",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Restaurante en la planta 31 de The Shard, con cocina británica y vistas sobre el Támesis.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 89,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5045,-0.0865"
+    },
+    {
+      "name": "Fortnum & Mason Diamond Jubilee Tea Salon",
+      "place_id": null,
+      "lat": 51.5089,
+      "lng": -0.1379,
+      "category": "tea_room",
+      "cuisine": "té / repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Salón de té de los grandes almacenes Fortnum & Mason en Piccadilly, institución del afternoon tea londinense desde 1707.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 90,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5089,-0.1379"
+    },
+    {
+      "name": "The Ritz Restaurant",
+      "place_id": null,
+      "lat": 51.5069,
+      "lng": -0.1428,
+      "category": "fine_dining",
+      "cuisine": "francés / británico",
+      "tags": [
+        "michelin",
+        "clasico"
+      ],
+      "description": "Salón de baile dorado del hotel The Ritz en Piccadilly, con cocina francesa clásica y una estrella Michelin.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 91,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5069,-0.1428",
+      "distinction": {
+        "type": "michelin_star",
+        "count": 1
+      }
+    },
+    {
+      "name": "Claridge's Restaurant",
+      "place_id": null,
+      "lat": 51.5127,
+      "lng": -0.1489,
+      "category": "fine_dining",
+      "cuisine": "francés / británico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "El restaurante principal del hotel Claridge's en Mayfair, emblema del lujo hotelero londinense desde el siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 92,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5127,-0.1489"
+    },
+    {
+      "name": "Brown's Hotel English Tea Room",
+      "place_id": null,
+      "lat": 51.5094,
+      "lng": -0.1424,
+      "category": "tea_room",
+      "cuisine": "té / repostería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Salón de té clásico del hotel Brown's en Mayfair, uno de los hoteles más antiguos de Londres.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 93,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5094,-0.1424"
+    },
+    {
+      "name": "The Savoy Grill",
+      "place_id": null,
+      "lat": 51.5101,
+      "lng": -0.1206,
+      "category": "restaurant",
+      "cuisine": "británico / francés",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Comedor histórico del hotel Savoy, dirigido por Gordon Ramsay, con cocina británica y francesa clásica.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 94,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5101,-0.1206"
+    },
+    {
+      "name": "American Bar at The Savoy",
+      "place_id": null,
+      "lat": 51.5102,
+      "lng": -0.1207,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Considerado uno de los bares de cócteles más antiguos y elegantes del mundo, dentro del hotel Savoy desde finales del siglo XIX.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 95,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5102,-0.1207"
+    },
+    {
+      "name": "Connaught Bar",
+      "place_id": null,
+      "lat": 51.5098,
+      "lng": -0.1492,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "critic",
+        "timeout"
+      ],
+      "description": "Bar de cócteles del hotel The Connaught en Mayfair, habitual en los rankings de los mejores bares del mundo.",
+      "source_url": null,
+      "source_type": "critic",
+      "rank": 96,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5098,-0.1492"
+    },
+    {
+      "name": "Dukes Bar",
+      "place_id": null,
+      "lat": 51.5049,
+      "lng": -0.1409,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Bar de martinis del hotel Dukes en St James's, célebre por preparar el cóctel en la propia mesa del cliente.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 97,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5049,-0.1409"
+    },
+    {
+      "name": "Nightjar",
+      "place_id": null,
+      "lat": 51.5279,
+      "lng": -0.0866,
+      "category": "bar",
+      "cuisine": "coctelería",
+      "tags": [
+        "timeout"
+      ],
+      "description": "Bar de cócteles clandestino de estilo speakeasy en Shoreditch, con música en vivo y coctelería de autor.",
+      "source_url": null,
+      "source_type": "timeout",
+      "rank": 98,
+      "reservable": true,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5279,-0.0866"
+    },
+    {
+      "name": "Ye Olde Cheshire Cheese",
+      "place_id": null,
+      "lat": 51.5142,
+      "lng": -0.1084,
+      "category": "pub",
+      "cuisine": "pub / británico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pub histórico de Fleet Street reconstruido en 1667 tras el Gran Incendio de Londres, frecuentado antaño por Samuel Johnson y Charles Dickens.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 99,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5142,-0.1084"
+    },
+    {
+      "name": "The Blackfriar",
+      "place_id": null,
+      "lat": 51.5116,
+      "lng": -0.1037,
+      "category": "pub",
+      "cuisine": "pub / británico",
+      "tags": [
+        "clasico"
+      ],
+      "description": "Pub de estilo Art Nouveau junto a la estación de Blackfriars, con una fachada e interiores esculpidos únicos en Londres.",
+      "source_url": null,
+      "source_type": "classic",
+      "rank": 100,
+      "reservable": null,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=51.5116,-0.1037"
     }
   ],
   "targetPlaces": 100,

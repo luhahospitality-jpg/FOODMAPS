@@ -22,6 +22,386 @@
     "St. John": {
       "cuisine": "British",
       "description": "The restaurant that popularized nose-to-tail cooking, in Smithfield. Anthony Bourdain called it his dream restaurant. One Michelin star."
+    },
+    "Restaurant Gordon Ramsay": {
+      "cuisine": "British / French",
+      "description": "Gordon Ramsay's flagship restaurant in Chelsea, holding three Michelin stars since 2001, serving precise contemporary French cuisine."
+    },
+    "Alain Ducasse at The Dorchester": {
+      "cuisine": "French",
+      "description": "French haute cuisine by chef Alain Ducasse at The Dorchester hotel in Mayfair, holding two Michelin stars."
+    },
+    "Sketch (Lecture Room & Library)": {
+      "cuisine": "Modern British / French",
+      "description": "Sketch's iconic Gallery, with its egg-shaped bathroom pods and India Mahdavi's pink interior, went viral on social media; its Lecture Room & Library holds two Michelin stars."
+    },
+    "Hélène Darroze at The Connaught": {
+      "cuisine": "French",
+      "description": "French chef Hélène Darroze leads the kitchen at The Connaught hotel in Mayfair, holding two Michelin stars."
+    },
+    "The Ledbury": {
+      "cuisine": "Modern British",
+      "description": "Top-tier modern British cooking in Notting Hill, holding two Michelin stars and widely considered one of London's best restaurants."
+    },
+    "Ikoyi": {
+      "cuisine": "West African / British",
+      "description": "West African-inspired tasting menus by chef Jeremy Chan, holding two Michelin stars, in St James's."
+    },
+    "Kitchen Table": {
+      "cuisine": "Modern British",
+      "description": "An intimate counter with just a handful of seats beside the kitchen in Fitzrovia, holding two Michelin stars."
+    },
+    "The Clove Club": {
+      "cuisine": "Modern British",
+      "description": "One of the restaurants that redefined casual fine dining in Shoreditch, holding one Michelin star, inside the historic town hall."
+    },
+    "Brat": {
+      "cuisine": "Modern British / grill",
+      "description": "Basque-influenced wood-fired grill in Shoreditch, famous for its whole roasted turbot; one Michelin star."
+    },
+    "Lyle's": {
+      "cuisine": "British",
+      "description": "Seasonal British cooking on a daily fixed menu in Shoreditch, from chef James Lowe; one Michelin star."
+    },
+    "Trinity": {
+      "cuisine": "Modern British",
+      "description": "Neighbourhood restaurant in Clapham from chef Adam Byatt, serving modern British food with one Michelin star."
+    },
+    "Sushi Tetsu": {
+      "cuisine": "Japanese / sushi",
+      "description": "A tiny seven-seat sushi counter in Clerkenwell, one of the hardest reservations to get in London; one Michelin star."
+    },
+    "Marcus": {
+      "cuisine": "British",
+      "description": "Marcus Wareing's flagship restaurant at The Berkeley hotel, serving refined British food with one Michelin star."
+    },
+    "Pied à Terre": {
+      "cuisine": "Modern French",
+      "description": "One of London's longest-running fine-dining restaurants, open on Charlotte Street since 1991, holding one Michelin star."
+    },
+    "A. Wong": {
+      "cuisine": "Chinese",
+      "description": "Modern regional Chinese cooking in Pimlico from chef Andrew Wong, with a celebrated dim sum brunch; one Michelin star."
+    },
+    "Kai Mayfair": {
+      "cuisine": "Chinese",
+      "description": "Upscale Chinese cuisine in Mayfair, holding one Michelin star since 2011."
+    },
+    "Umu": {
+      "cuisine": "Japanese",
+      "description": "High-end Japanese kaiseki cuisine in Mayfair, holding two Michelin stars."
+    },
+    "City Social": {
+      "cuisine": "Modern British",
+      "description": "Jason Atherton's restaurant on the 24th floor of Tower 42, with panoramic views over the City and one Michelin star."
+    },
+    "Galvin La Chapelle": {
+      "cuisine": "French",
+      "description": "Classic French cooking from the Galvin brothers inside a former Victorian chapel in Spitalfields; one Michelin star."
+    },
+    "Dinner by Heston Blumenthal": {
+      "cuisine": "Modern British",
+      "description": "Heston Blumenthal reinterprets historic British recipes at the Mandarin Oriental in Knightsbridge; two Michelin stars."
+    },
+    "Portland": {
+      "cuisine": "Modern British",
+      "description": "Seasonal, ingredient-led British cooking in Fitzrovia, holding one Michelin star."
+    },
+    "Angler": {
+      "cuisine": "Seafood / European",
+      "description": "Seafood restaurant atop the South Place Hotel in the City, holding one Michelin star."
+    },
+    "Trishna": {
+      "cuisine": "Indian",
+      "description": "Contemporary Indian cooking focused on west-coast seafood, in Marylebone; one Michelin star."
+    },
+    "Gymkhana": {
+      "cuisine": "Indian",
+      "description": "Indian cuisine inspired by colonial-era hunting clubs, in Mayfair, holding one Michelin star."
+    },
+    "Jamavar": {
+      "cuisine": "Indian",
+      "description": "Indian cuisine drawing on regions across the subcontinent, in Mayfair, holding one Michelin star."
+    },
+    "Benares": {
+      "cuisine": "Indian",
+      "description": "Modern Indian cuisine from chef Atul Kochhar on Berkeley Square, holding one Michelin star."
+    },
+    "Kiln": {
+      "cuisine": "Thai",
+      "description": "Charcoal-grilled Thai cooking served along a narrow counter in Soho, recognised with a Michelin Bib Gourmand."
+    },
+    "The Five Fields": {
+      "cuisine": "Modern British",
+      "description": "An intimate Chelsea restaurant with a seasonal tasting menu; one Michelin star."
+    },
+    "Endo at The Rotunda": {
+      "cuisine": "Japanese",
+      "description": "Precision sushi omakase from chef Endo Kazutoshi in White City, holding two Michelin stars."
+    },
+    "Le Gavroche": {
+      "cuisine": "French",
+      "description": "Founded in 1967 by the Roux brothers, one of London's most influential classic French restaurants; two Michelin stars."
+    },
+    "Pollen Street Social": {
+      "cuisine": "Modern British",
+      "description": "Jason Atherton's Mayfair restaurant that helped define upscale casual dining; one Michelin star."
+    },
+    "The River Cafe": {
+      "cuisine": "Italian",
+      "description": "Riverside Italian cooking in Hammersmith, founded by Ruth Rogers and the late Rose Gray, a training ground for many British chefs."
+    },
+    "Chez Bruce": {
+      "cuisine": "Anglo-French",
+      "description": "A Wandsworth neighbourhood restaurant repeatedly voted a Londoner favourite for its Anglo-French cooking."
+    },
+    "La Trompette": {
+      "cuisine": "Franco-European",
+      "description": "A Chiswick neighbourhood restaurant with Franco-European cooking well regarded by local critics."
+    },
+    "The Glasshouse": {
+      "cuisine": "Modern British",
+      "description": "Modern British restaurant in Kew, holding one Michelin star."
+    },
+    "Scott's": {
+      "cuisine": "Seafood",
+      "description": "Upscale seafood restaurant in Mayfair, with history dating back to 1851 and regulars ranging back to Ian Fleming."
+    },
+    "J Sheekey": {
+      "cuisine": "Seafood",
+      "description": "Classic seafood restaurant in Covent Garden's Theatreland, open since the late 19th century."
+    },
+    "Bentley's Oyster Bar & Grill": {
+      "cuisine": "Seafood",
+      "description": "Oyster bar and seafood restaurant in Mayfair since 1916, long helmed by chef Richard Corrigan."
+    },
+    "Wiltons": {
+      "cuisine": "Seafood / British",
+      "description": "One of London's oldest seafood restaurants, with roots dating back to 1742, in St James's."
+    },
+    "Simpson's in the Strand": {
+      "cuisine": "British / roasts",
+      "description": "A London institution since 1828, famous for roast meats carved tableside from silver trolleys."
+    },
+    "The Ivy": {
+      "cuisine": "British / international",
+      "description": "Iconic Covent Garden restaurant frequented by the theatre and film world since 1917."
+    },
+    "Quo Vadis": {
+      "cuisine": "Modern British",
+      "description": "Historic Soho restaurant in a building where Karl Marx once lived, serving modern British food."
+    },
+    "Andrew Edmunds": {
+      "cuisine": "European",
+      "description": "A small, candlelit Soho restaurant, a quiet favourite of local food critics since the 1980s."
+    },
+    "Bob Bob Ricard": {
+      "cuisine": "British / international",
+      "description": "A Soho restaurant famous for the \"Press for Champagne\" button at every table and its Art Deco-style interiors."
+    },
+    "The Wolseley": {
+      "cuisine": "European / brasserie",
+      "description": "A grand European-style café-brasserie on Piccadilly, set inside a 1920s former car showroom."
+    },
+    "Dishoom Covent Garden": {
+      "cuisine": "Indian",
+      "description": "A chain inspired by Bombay's old Irani cafés, famous for its queues and its bacon naan roll."
+    },
+    "Barrafina Soho": {
+      "cuisine": "Spanish / tapas",
+      "description": "A no-reservations Spanish tapas counter on Dean Street, one of London's most acclaimed Spanish restaurants."
+    },
+    "Padella": {
+      "cuisine": "Italian",
+      "description": "Handmade fresh pasta at accessible prices next to Borough Market, famous for its long queues."
+    },
+    "Flat Iron": {
+      "cuisine": "Steak",
+      "description": "A chain that popularised the affordable, fixed-price flat iron steak in London."
+    },
+    "Hawksmoor Seven Dials": {
+      "cuisine": "Steak",
+      "description": "A British steakhouse serving dry-aged native-breed beef, one of London's most celebrated steak chains."
+    },
+    "Smokestak": {
+      "cuisine": "Barbecue",
+      "description": "American-style wood-smoked barbecue in Shoreditch, celebrated for its ribs and brisket."
+    },
+    "Temper Soho": {
+      "cuisine": "Barbecue",
+      "description": "A basement whole-animal barbecue restaurant in Soho, cooking meat over live fire."
+    },
+    "Bao Soho": {
+      "cuisine": "Taiwanese",
+      "description": "The Taiwanese restaurant that popularised the filled bao bun in London, with regular queues on Lexington Street."
+    },
+    "Kricket Soho": {
+      "cuisine": "Indian",
+      "description": "Modern Indian small plates, born as a food truck and now one of Soho's favourites."
+    },
+    "Berber & Q": {
+      "cuisine": "Middle Eastern / barbecue",
+      "description": "North African and Middle Eastern-inspired barbecue under railway arches in Haggerston."
+    },
+    "Morito": {
+      "cuisine": "Spanish / North African",
+      "description": "Spanish and eastern Mediterranean tapas bar on Exmouth Market, the smaller sibling of Moro."
+    },
+    "Moro": {
+      "cuisine": "Spanish / North African",
+      "description": "Cuisine fusing Spain and North Africa on Exmouth Market, a critics' favourite since 1997."
+    },
+    "Ottolenghi Islington": {
+      "cuisine": "Mediterranean",
+      "description": "Yotam Ottolenghi's first shop, in Islington, with its famous salad counter and Mediterranean pastries."
+    },
+    "Rochelle Canteen": {
+      "cuisine": "British",
+      "description": "A restaurant tucked inside a former Shoreditch schoolyard, serving simple seasonal British food."
+    },
+    "Towpath Cafe": {
+      "cuisine": "Cafe / Mediterranean",
+      "description": "A small café beside Regent's Canal in Hackney, open only in the warmer months, much loved by local critics."
+    },
+    "Tayyabs": {
+      "cuisine": "Pakistani / Punjabi",
+      "description": "A Whitechapel Pakistani institution since 1972, famous for its grilled lamb chops; there is always a queue."
+    },
+    "Needoo Grill": {
+      "cuisine": "Pakistani",
+      "description": "A Whitechapel Pakistani grill, often compared to neighbouring Tayyabs for its skewers and curries."
+    },
+    "Lahore Kebab House": {
+      "cuisine": "Pakistani",
+      "description": "One of Whitechapel's oldest Pakistani restaurants, open since 1972."
+    },
+    "Aladin Brick Lane": {
+      "cuisine": "Indian / Bangladeshi",
+      "description": "One of the classic curry houses of Brick Lane, London's most famous Indian and Bangladeshi street."
+    },
+    "Beigel Bake": {
+      "cuisine": "Jewish / bagels",
+      "description": "A 24-hour Jewish bakery on Brick Lane open since the 1970s, famous for its salt beef bagel; Anthony Bourdain visited it on No Reservations."
+    },
+    "Four Seasons Chinatown": {
+      "cuisine": "Cantonese",
+      "description": "Cantonese roast duck restaurant on Gerrard Street, one of Chinatown's most celebrated."
+    },
+    "Yauatcha": {
+      "cuisine": "Chinese / dim sum",
+      "description": "A dim sum and tea house in Soho, holding one Michelin star, from the Hakkasan group."
+    },
+    "Hakkasan Hanway Place": {
+      "cuisine": "Chinese",
+      "description": "An upscale Chinese basement restaurant in Fitzrovia that helped redefine fine Chinese dining in London; one Michelin star."
+    },
+    "Din Tai Fung Covent Garden": {
+      "cuisine": "Taiwanese",
+      "description": "The world-famous Taiwanese chain known for its soup dumplings, with its first London site in Covent Garden."
+    },
+    "The Palomar": {
+      "cuisine": "Israeli",
+      "description": "Modern Israeli cooking at a lively Soho counter, inspired by Jerusalem."
+    },
+    "Nopi": {
+      "cuisine": "Mediterranean",
+      "description": "Yotam Ottolenghi's Soho restaurant serving Mediterranean and Middle Eastern sharing plates."
+    },
+    "Song Que": {
+      "cuisine": "Vietnamese",
+      "description": "A classic Vietnamese restaurant on Kingsland Road, in the heart of Shoreditch's \"Pho Mile\"."
+    },
+    "Mangal Ocakbasi": {
+      "cuisine": "Turkish",
+      "description": "A Turkish ocakbasi grill in Dalston, a benchmark of neighbourhood Turkish cooking in London since the 1990s."
+    },
+    "Franco Manca Brixton": {
+      "cuisine": "Neapolitan pizza",
+      "description": "The original Franco Manca pizzeria, born in Brixton Market with slow-fermented sourdough."
+    },
+    "Pizza Pilgrims Dean Street": {
+      "cuisine": "Pizza",
+      "description": "A Neapolitan pizzeria that began life as a family food truck, with its first permanent site in Soho."
+    },
+    "Neal's Yard Dairy": {
+      "cuisine": "Cheese",
+      "description": "A reference point for artisan British and Irish cheese next to Borough Market, since 1979."
+    },
+    "Monmouth Coffee": {
+      "cuisine": "Coffee",
+      "description": "A pioneering specialty coffee roaster and café at Borough Market."
+    },
+    "Wright Brothers Borough Market": {
+      "cuisine": "Seafood / oysters",
+      "description": "An oyster and seafood bar next to Borough Market, serving oysters from its own Cornwall beds."
+    },
+    "Roast Borough Market": {
+      "cuisine": "British",
+      "description": "A British restaurant overlooking Borough Market, sourcing meat and vegetables from market traders below."
+    },
+    "Poppies Fish & Chips": {
+      "cuisine": "Fish and chips",
+      "description": "1940s-style fish and chips in Spitalfields, with vintage decor and a traditional chippy atmosphere."
+    },
+    "Golden Union Fish Bar": {
+      "cuisine": "Fish and chips",
+      "description": "Classic fish and chips in Soho, repeatedly voted among London's best."
+    },
+    "Masters Super Fish": {
+      "cuisine": "Fish and chips",
+      "description": "A neighbourhood chippy near Waterloo, much loved by local critics for its generous portions."
+    },
+    "Duck & Waffle": {
+      "cuisine": "Modern British",
+      "description": "A restaurant open 24 hours on the 40th floor of Heron Tower, with panoramic views over London."
+    },
+    "Aqua Shard": {
+      "cuisine": "British / seafood",
+      "description": "A restaurant on the 31st floor of The Shard, serving British food with views over the Thames."
+    },
+    "Fortnum & Mason Diamond Jubilee Tea Salon": {
+      "cuisine": "Tea / pastries",
+      "description": "The tea salon of Fortnum & Mason department store on Piccadilly, a London afternoon tea institution since 1707."
+    },
+    "The Ritz Restaurant": {
+      "cuisine": "French / British",
+      "description": "The Ritz hotel's gilded ballroom-like dining room on Piccadilly, serving classic French cuisine with one Michelin star."
+    },
+    "Claridge's Restaurant": {
+      "cuisine": "French / British",
+      "description": "The main restaurant of Claridge's hotel in Mayfair, an emblem of London hotel luxury since the 19th century."
+    },
+    "Brown's Hotel English Tea Room": {
+      "cuisine": "Tea / pastries",
+      "description": "The classic tea room of Brown's Hotel in Mayfair, one of London's oldest hotels."
+    },
+    "The Savoy Grill": {
+      "cuisine": "British / French",
+      "description": "The Savoy hotel's historic dining room, run by Gordon Ramsay, serving classic British and French food."
+    },
+    "American Bar at The Savoy": {
+      "cuisine": "Cocktail bar",
+      "description": "Considered one of the world's oldest and most elegant cocktail bars, inside the Savoy hotel since the late 19th century."
+    },
+    "Connaught Bar": {
+      "cuisine": "Cocktail bar",
+      "description": "The cocktail bar of The Connaught hotel in Mayfair, a regular fixture on lists of the world's best bars."
+    },
+    "Dukes Bar": {
+      "cuisine": "Cocktail bar",
+      "description": "The martini bar of Dukes Hotel in St James's, famous for mixing the cocktail tableside for guests."
+    },
+    "Nightjar": {
+      "cuisine": "Cocktail bar",
+      "description": "A speakeasy-style basement cocktail bar in Shoreditch, with live music and craft cocktails."
+    },
+    "Ye Olde Cheshire Cheese": {
+      "cuisine": "Pub / British",
+      "description": "A historic Fleet Street pub rebuilt in 1667 after the Great Fire of London, once frequented by Samuel Johnson and Charles Dickens."
+    },
+    "The Blackfriar": {
+      "cuisine": "Pub / British",
+      "description": "An Art Nouveau-style pub next to Blackfriars station, with a uniquely sculpted facade and interior in London."
     }
   }
 }
