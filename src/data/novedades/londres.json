@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Bonheur by Matt Abé abre en el antiguo local de Le Gavroche y logra dos estrellas Michelin de golpe",
+    "resumen": "En la Guía Michelin Gran Bretaña e Irlanda 2026, el chef Matt Abé (exjefe de cocina de Restaurant Gordon Ramsay) recibió directamente dos estrellas para su nuevo restaurante Bonheur, en Mayfair, tan solo tres meses después de su apertura en noviembre de 2025. En total, diez restaurantes londinenses lograron su primera estrella Michelin en esta edición.",
+    "fuente_url": "https://www.timeout.com/london/news/10-london-restaurants-have-just-been-awarded-a-new-michelin-star-in-the-2026-awards-021026",
+    "imagen_url": "https://media.timeout.com/images/106321755/image.jpg",
+    "fecha": "2026-02-10",
+    "ciudad_slug": "londres"
+  },
+  {
+    "titulo": "Connaught Bar, elegido Mejor Bar del Reino Unido en los Europe's 50 Best Bars 2026",
+    "resumen": "En el lanzamiento inaugural de la lista Europe's 50 Best Bars, el Connaught Bar de Mayfair, liderado por Agostino Perrone y Giorgio Bargiani, se situó en el puesto 10 y fue nombrado el mejor bar del Reino Unido. Londres fue la ciudad con más locales presentes en el ranking, incluyendo también Tayēr + Elementary y Satan's Whiskers.",
+    "fuente_url": "https://www.timeout.com/news/the-best-bars-in-europe-have-just-been-named-from-basements-in-scotland-to-pharmacies-in-norway-070126",
+    "imagen_url": "https://media.timeout.com/images/106422199/image.jpg",
+    "fecha": "2026-07-01",
+    "ciudad_slug": "londres"
+  },
+  {
+    "titulo": "Camille, en Borough Market, elegido mejor restaurante de Londres 2026 por Time Out",
+    "resumen": "El bistró francés Camille, dirigido por el chef Elliot Hashtroudi, encabezó la lista de los 50 mejores restaurantes de Londres de Time Out en 2026, convirtiéndose en el primer local al sur del Támesis en ganar el título desde Chishuru en 2022. La crítica de Time Out lo calificó como 'un triunfo de imaginación, talento y agallas'.",
+    "fuente_url": "https://www.timeout.com/london/news/its-official-this-is-time-outs-best-london-restaurant-for-2026-060826",
+    "imagen_url": "https://media.timeout.com/images/106242485/image.jpg",
+    "fecha": "2026-06-08",
+    "ciudad_slug": "londres"
+  },
+  {
+    "titulo": "Bouchon Racine, en Clerkenwell, nombrado Mejor Restaurante del Reino Unido en los National Restaurant Awards 2026",
+    "resumen": "El bistró francés Bouchon Racine, del chef Henry Harris y su socio Dave Strauss, ascendió del quinto al primer puesto en los National Restaurant Awards del Reino Unido 2026, superando a The Ritz y al restaurante de Merlin Labron-Johnson, Osip, que empataron en segundo lugar.",
+    "fuente_url": "https://www.restaurantonline.co.uk/Article/2026/06/09/bouchon-racine-named-uks-best-restaurant-at-national-restaurant-awards/",
+    "imagen_url": "https://www.restaurantonline.co.uk/resizer/v2/534DUXC4QJEPDEF6B6ITVBDQAA.jpg?auth=4760713670a78cc7831b2149bcf40b6a09405c7c3fabdabb61dcb2a91a2997c0&width=1200&height=630&smart=true",
+    "fecha": "2026-06-09",
+    "ciudad_slug": "londres"
+  },
+  {
+    "titulo": "La crítica Grace Dent elogia Kinz, restaurante libanés de Notting Hill, en The Guardian",
+    "resumen": "En su columna de crítica gastronómica de The Guardian, Grace Dent reseñó Kinz, un restaurante libanés en Londres W11, describiéndolo como un lugar 'sin adornos ni artificios, solo comida libanesa cocinada con inmenso orgullo', destacando su cocina casera de alta calidad.",
+    "fuente_url": "https://www.theguardian.com/food/2026/aug/16/kinz-london-w11-lebanese-food-grace-dent-restaurant-review",
+    "imagen_url": "https://i.guim.co.uk/img/media/c162a60053577c8b162b091a4f71ba1e2e589d12/934_0_5417_4333/master/5417.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7faf84063fac693c96c63926ec800716",
+    "fecha": "2026-08-16",
+    "ciudad_slug": "londres"
+  }
+]

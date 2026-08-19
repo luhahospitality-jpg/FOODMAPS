@@ -22,5 +22,21 @@
     "imagen_url": "https://www.theworlds50best.com/bars/best-in-the-world/filestore/jpeg/The%20Bar%20in%20Front%20of%20the%20Bar-hero_W50BB25-website-fb.jpeg",
     "fecha": "2025-10-08",
     "ciudad_slug": "atenas"
+  },
+  {
+    "titulo": "La Guía Michelin confirma que Atenas tendrá selección completa en 2026, junto a Santorini y Tesalónica por primera vez",
+    "resumen": "La Guía MICHELIN anunció, en un evento con la Organización Nacional de Turismo de Grecia (GNTO), que Atenas regresará con una selección completa de restaurantes en la edición 2026, mientras Santorini y Tesalónica se incorporan por primera vez a la guía. Los nuevos resultados se revelarán en la segunda mitad de 2026.",
+    "fuente_url": "https://news.gtp.gr/2025/12/18/athens-thessaloniki-and-santorini-to-feature-in-michelin-gastronomy-guide-2026/",
+    "imagen_url": "https://news.gtp.gr/wp-content/uploads/2025/12/GNTO-MICHELIN_logos.jpg",
+    "fecha": "2025-12-18",
+    "ciudad_slug": "atenas"
+  },
+  {
+    "titulo": "Atenas se ubica 9ª entre las mejores ciudades del mundo para comer en 2026, según Time Out",
+    "resumen": "Time Out situó a Atenas en el puesto 9 de su ranking global 'World's Best Cities for Food 2026', encabezado por Lima, Bangkok y Ciudad de México. La lista destaca restaurantes atenienses como Delta, el único con dos estrellas Michelin en Grecia, junto a Kuchisabishii, Thirio y Zigoala.",
+    "fuente_url": "https://www.timeout.com/uk/travel/worlds-best-cities-for-food-2026",
+    "imagen_url": "https://media.timeout.com/images/106413250/image.jpg",
+    "fecha": "2026-06-08",
+    "ciudad_slug": "atenas"
   }
 ]
