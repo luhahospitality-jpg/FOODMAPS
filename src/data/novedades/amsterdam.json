@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "El restaurante Choux de Ámsterdam obtiene su primera estrella Michelin",
+    "resumen": "En la ceremonia de la Guía MICHELIN Países Bajos 2025, celebrada el 6 de octubre de 2025, el restaurante Choux de Ámsterdam, centrado en la verdura de temporada, recibió su primera estrella Michelin.",
+    "fuente_url": "https://guide.michelin.com/nl/nl/article/michelin-guide-ceremony/de-volledige-lijst-van-de-sterren-in-de-michelin-gids-nederland-2025",
+    "imagen_url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2025/10/02/d26a97e691a245eeb7dd6d02cc83ccce_Choux.jpg",
+    "fecha": "2025-10-06",
+    "ciudad_slug": "amsterdam"
+  },
+  {
+    "titulo": "El bar amsterdamés Super Lyan entra en la primera lista de Europe's 50 Best Bars",
+    "resumen": "Ámsterdam acogió la gala inaugural de Europe's 50 Best Bars el 30 de junio de 2026, y el propio bar local Super Lyan se coló en el ranking, en el puesto 42, entre los mejores bares de coctelería del continente.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/europes-50-best-bars-2026-the-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/DSC03042-HDR_E50BB26-No-1-fb.jpg",
+    "fecha": "2026-06-30",
+    "ciudad_slug": "amsterdam"
+  },
+  {
+    "titulo": "Time Out nombra a BAK el mejor restaurante de Ámsterdam",
+    "resumen": "La revista Time Out situó a BAK, instalado en el antiguo almacén Het Veem y nacido como pop-up vegetariano, en el número uno de su ranking de los mejores restaurantes de Ámsterdam, por delante de Daalder y De Kas.",
+    "fuente_url": "https://www.timeout.com/news/this-is-officially-the-best-restaurant-in-amsterdam-for-2025-021325",
+    "imagen_url": "https://media.timeout.com/images/106049235/image.jpg",
+    "fecha": "2025-02-13",
+    "ciudad_slug": "amsterdam"
+  },
+  {
+    "titulo": "El youtuber BeardMeatsFood reta al récord de hamburguesa de Coco's Outback en Ámsterdam",
+    "resumen": "El popular canal de comida y retos alimentarios BeardMeatsFood, con millones de suscriptores, visitó el bar Coco's Outback en Ámsterdam para intentar batir su famoso reto de hamburguesa, que nadie había conseguido superar hasta entonces.",
+    "fuente_url": "https://www.youtube.com/watch?v=zlvoGjRyMc8",
+    "imagen_url": null,
+    "fecha": "2025-10-05",
+    "ciudad_slug": "amsterdam"
+  },
+  {
+    "titulo": "El sumiller de Flore Ámsterdam gana el premio Sommelier del Año en los Gault&Millau 2026",
+    "resumen": "En la gala de los Gault&Millau Países Bajos 2026, celebrada el 9 de febrero de 2026, Antonello Nicastri, sumiller del restaurante Flore de Ámsterdam, fue distinguido como 'Sommelier van het Jaar' (Sumiller del Año).",
+    "fuente_url": "https://www.gault-millau.nl/en/news/gaultmillau-nederland-presenteert-nieuwe-gids-en-eert-de-chef-van-het-jaar-2026-en-andere-winnaars",
+    "imagen_url": "https://cdn.gault-millau.nl/DDnwOaF6cGz8tqUvWtlSFIBOdgqcKv7Nlyr18grT/s_full__c_wide__DDnwOaF6cGz8tqUvWtlSFIBOdgqcKv7Nlyr18grT.jpg?v=1787098117",
+    "fecha": "2026-02-09",
+    "ciudad_slug": "amsterdam"
+  }
+]
