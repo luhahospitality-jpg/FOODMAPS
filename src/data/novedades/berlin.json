@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Berlín pierde dos estrellas Michelin en la Guía Alemania 2026",
+    "resumen": "En la ceremonia de la Guía Michelin Alemania 2026, celebrada el 23 de junio en Fráncfort, los restaurantes berlineses Bieberbau y Skykitchen perdieron su estrella por primera vez en más de una década, mientras que Rutz conservó sus tres estrellas como único triestrellado de la ciudad.",
+    "fuente_url": "https://www.berliner-zeitung.de/article/skykitchen-lichtenberg-verlust-michelin-stern-10130148",
+    "imagen_url": "https://berliner-zeitung-msp-prod.imgix.net/2026/06/23/864828c7-becd-4934-a0dd-223838c4b1f1.jpg?w=1200&h=630&auto=format&auto=compress",
+    "fecha": "2026-06-25",
+    "ciudad_slug": "berlin"
+  },
+  {
+    "titulo": "El bar berlinés Wax On entra en el top 20 de Europe's 50 Best Bars 2026",
+    "resumen": "Wax On, el bar de coctelería de Neukölln conocido por su enfoque de laboratorio con clarificadores y rotavapores, fue nombrado puesto 17 en la lista inaugural de Europe's 50 Best Bars 2026, revelada en Ámsterdam, y recibió además el premio al Mejor Bar de Alemania.",
+    "fuente_url": "https://www.theworlds50best.com/bars/best-in-europe/the-list/wax-on.html",
+    "imagen_url": "https://www.theworlds50best.com/bars/best-in-europe/filestore/jpg/Wax%20On-hero_E50BB26_FB.jpg",
+    "fecha": "2026-06-30",
+    "ciudad_slug": "berlin"
+  },
+  {
+    "titulo": "El canal de YouTube Strictly Dumpling recorre el mayor mercado nocturno de street food de Berlín",
+    "resumen": "El popular canal gastronómico Strictly Dumpling, con millones de suscriptores, publicó un video probando currywurst, döner y otras especialidades en el mercado nocturno de comida callejera más grande de Berlín.",
+    "fuente_url": "https://www.youtube.com/watch?v=uWsbu_X0cnE",
+    "imagen_url": null,
+    "fecha": "2026-02-14",
+    "ciudad_slug": "berlin"
+  },
+  {
+    "titulo": "Tim Raue y Nobelhart & Schmutzig caen fuera del top 50 de The World's 50 Best Restaurants 2025",
+    "resumen": "En la ampliación de la lista The World's 50 Best Restaurants 2025 (puestos 51 a 100), el restaurante berlinés Tim Raue descendió al puesto 58 (desde el 30 del año anterior) y Nobelhart & Schmutzig cayó al 59, dejando a Berlín sin representantes en el top 50 mundial.",
+    "fuente_url": "https://www.hogapage.de/nachrichten/wirtschaft/gastronomie/the-worlds-50-best-restaurants-2025-tim-raue-nicht-mehr-unter-top-50/",
+    "imagen_url": "https://www.hogapage.de/media/thumbs/news/22570/kloa_998x0_1200x630.jpg",
+    "fecha": "2025-06-10",
+    "ciudad_slug": "berlin"
+  },
+  {
+    "titulo": "Time Out nombra a Maybachufer, en Berlín, una de las calles más 'cool' del mundo en 2025",
+    "resumen": "En su lista global 'The 31 Coolest Streets in the World 2025', Time Out incluyó el paseo de Maybachufer, entre Kreuzberg y Neukölln, destacando su mercado turco, sus bares junto al canal y su ambiente gastronómico informal.",
+    "fuente_url": "https://www.timeout.com/travel/coolest-streets-in-the-world-2025",
+    "imagen_url": "https://media.timeout.com/images/106344563/image.jpg",
+    "fecha": "2025-11-19",
+    "ciudad_slug": "berlin"
+  }
+]
