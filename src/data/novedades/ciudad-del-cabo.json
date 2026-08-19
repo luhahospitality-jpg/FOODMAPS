@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "La Colombe de Ciudad del Cabo entra en el puesto 55 de The World's 50 Best Restaurants 2025",
+    "resumen": "El restaurante La Colombe, ubicado en el Silvermist Wine Estate sobre el valle de Constantia, fue incluido en la lista ampliada 51-100 de The World's 50 Best Restaurants 2025, anunciada en junio de 2025. Los jueces destacaron los platos del chef James Gaag, que combinan la técnica francesa con acentos asiáticos.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/the-worlds-50-best-restaurants-2025-51-100-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/W50BR25%20-%2051-100%20-%20Facebook.jpg",
+    "fecha": "2025-06-05",
+    "ciudad_slug": "ciudad-del-cabo"
+  },
+  {
+    "titulo": "Salsify at the Roundhouse gana el Restaurante del Año en los Eat Out Awards 2025",
+    "resumen": "El restaurante de Camps Bay, liderado por el chef Ryan Cole, obtuvo el máximo galardón en los renovados Eat Out Woolworths Restaurant Awards, celebrados el 31 de marzo de 2025 en el Baxter Theatre de Ciudad del Cabo. Salsify también recibió la calificación más alta, Tres Estrellas, la puntuación más alta del país ese año.",
+    "fuente_url": "https://www.timeout.com/cape-town/news/salsify-triumphs-at-eat-out-awards-040125",
+    "imagen_url": "https://media.timeout.com/images/106259122/image.jpg",
+    "fecha": "2025-04-01",
+    "ciudad_slug": "ciudad-del-cabo"
+  },
+  {
+    "titulo": "Amura, del hotel Mount Nelson, entra en la Hot List 2026 de Time Out de los mejores restaurantes nuevos del mundo",
+    "resumen": "Amura, el restaurante liderado por el chef español Ángel León ('El Chef del Mar') que abrió en diciembre de 2025 en el hotel Mount Nelson de Ciudad del Cabo, fue incluido en la Hot List 2026 de Time Out para los mejores restaurantes nuevos del mundo, siendo la única propuesta africana en la lista.",
+    "fuente_url": "https://www.timeout.com/cape-town/news/cape-town-restaurant-lands-on-global-hot-list-for-2026-050226",
+    "imagen_url": "https://media.timeout.com/images/106383662/image.jpg",
+    "fecha": "2026-05-02",
+    "ciudad_slug": "ciudad-del-cabo"
+  },
+  {
+    "titulo": "El youtuber gastronómico Mark Wiens recorre la comida callejera de Ciudad del Cabo",
+    "resumen": "El popular creador de contenido de viajes y comida Mark Wiens, con millones de suscriptores en YouTube, publicó un video explorando durante 24 horas la comida callejera de Ciudad del Cabo, mostrando puestos y platos locales de la ciudad a su audiencia global.",
+    "fuente_url": "https://www.youtube.com/watch?v=jM80u2ZtkI8",
+    "imagen_url": null,
+    "fecha": "2026-01-25",
+    "ciudad_slug": "ciudad-del-cabo"
+  }
+]
