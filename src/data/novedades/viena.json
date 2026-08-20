@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "La Guía Michelin Austria 2026 suma cuatro nuevos restaurantes con estrella en Viena",
+    "resumen": "En la edición 2026 de la Guía Michelin Austria, presentada el 18 de marzo, Viena alcanzó 26 estrellas repartidas en 18 restaurantes tras la incorporación de cuatro nuevos establecimientos con una estrella: el coreano Addiert, el vegano Jola (que también recibió la estrella verde), Glasswing en el hotel The Amauris y Opus en el Hotel Imperial.",
+    "fuente_url": "https://b2b.austria.info/en-us/media/newsroom/michelin-guide-austria-2026/",
+    "imagen_url": "https://fuutazbsb.filerobot.com/1fiLnC22oyudjqL2AAjzbp65r_sZTkzMGZmNDJmMzY1NWJk/Kochin-Lisa-Morent-im-Restaurant-sMorent-74dc6ef7-72f9-4a1a-bf65-f926b5f7ae1a?gravity=auto&w=1200&h=630&dpr=1&func=crop",
+    "fecha": "2026-03-18",
+    "ciudad_slug": "viena"
+  },
+  {
+    "titulo": "Steirereck se mantiene entre los 50 mejores restaurantes del mundo en 2025",
+    "resumen": "El restaurante vienés Steirereck, dirigido por el chef Heinz Reitbauer, fue ubicado en el puesto 33 de The World's 50 Best Restaurants 2025, la lista revelada el 19 de junio en Turín que reconoce su cocina austriaca de investigación con ingredientes locales poco conocidos.",
+    "fuente_url": "https://www.theworlds50best.com/the-list/steirereck.html",
+    "imagen_url": "https://www.theworlds50best.com/restaurants/best-in-the-world/filestore/Steirereck-space%20hero_W50BR25_FB.jpg",
+    "fecha": "2025-06-19",
+    "ciudad_slug": "viena"
+  },
+  {
+    "titulo": "El comedor competitivo Randy Santel completa un desafío de schnitzel gigante en Viena",
+    "resumen": "El youtuber estadounidense Randy Santel, conocido por sus retos de comida extrema, viajó al restaurante XXL Brünner Stadl en Viena para intentar el reto de un schnitzel vienés de 2,5 kg (105 oz), un desafío que, según el propio local, cientos de personas no habían logrado terminar antes.",
+    "fuente_url": "https://www.youtube.com/watch?v=jrW-uJvSo1U",
+    "imagen_url": null,
+    "fecha": "2025-06-22",
+    "ciudad_slug": "viena"
+  },
+  {
+    "titulo": "GOTA Coffee Experts de Viena, segundo mejor coffee shop de Europa en 2026",
+    "resumen": "La cafetería vienesa GOTA Coffee Experts, ubicada en el distrito 15, obtuvo el puesto número 2 en el ranking Europe's 100 Best Coffee Shops 2026, confirmando su lugar entre las mejores del continente tras haber sido tercera a nivel mundial y primera en Europa en la edición de 2025.",
+    "fuente_url": "https://gota.coffee/blogs/news/100-best-coffees-in-europe",
+    "imagen_url": "https://gota.coffee/cdn/shop/articles/Website_6.png?v=1782416800",
+    "fecha": "2026-06-25",
+    "ciudad_slug": "viena"
+  },
+  {
+    "titulo": "Cuatro restaurantes vieneses alcanzan las 5 toques máximas en la Guía Gault&Millau 2026",
+    "resumen": "En la Guía Gault&Millau Austria 2026, presentada el 27 de enero, los restaurantes vieneses Amador, Konstantin Filippou, Silvio Nickol Gourmet Restaurant y Steirereck am Stadtpark obtuvieron la calificación máxima de 5 toques con 19 de 20 puntos, confirmando a Viena como epicentro de la alta cocina austriaca.",
+    "fuente_url": "https://www.gaultmillau.at/news/guide-2026-die-besten-restaurants-in-wien",
+    "imagen_url": "https://www.gaultmillau.at/media/Restaurant%20Guide/8_Spargel_Vogelmiere_Kaffee.jpg",
+    "fecha": "2026-01-27",
+    "ciudad_slug": "viena"
+  }
+]
