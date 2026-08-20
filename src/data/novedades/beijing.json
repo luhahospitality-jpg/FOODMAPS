@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Lamdre y Blackswan ascienden a dos estrellas Michelin en la Guía Beijing 2026",
+    "resumen": "En la ceremonia del 29 de octubre de 2025, la séptima edición de la Guía Michelin Beijing otorgó dos estrellas al restaurante vegetal Lamdre y al francés Blackswan, que las alcanzó apenas un año después de abrir en junio de 2024. La guía 2026 reunió a 32 restaurantes con estrella, con Chao Shang Chao y Xin Rong Ji (Xinyuan South Road) manteniendo las tres estrellas.",
+    "fuente_url": "https://www.thebeijinger.com/blog/2025/10/29/michelin-2026-bj-guide-sees-restaurants-awarded-drop-32",
+    "imagen_url": "https://www.thebeijinger.com/sites/default/files/thebeijinger/blog-images/394868/weixin_image_2025-10-29_110953_779.png",
+    "fecha": "2025-10-29",
+    "ciudad_slug": "beijing"
+  },
+  {
+    "titulo": "Lamdre, único representante de Beijing en Asia's 50 Best Restaurants 2026, escala al puesto 17",
+    "resumen": "En la gala de Asia's 50 Best Restaurants 2026, el restaurante vegetal Lamdre, en Sanlitun y dirigido por el chef Dai Jun, se convirtió en el único de Beijing en entrar al top 50, situándose en el puesto 17 y ganando el premio a la Mayor Escalada tras venir del puesto 50 el año anterior. Es la primera vez que un restaurante de la capital china rompe el top 20 de la lista.",
+    "fuente_url": "https://www.thebeijinger.com/blog/2026/03/26/lamdre-only-beijing-entry-asias-50-best-restaurants-2026",
+    "imagen_url": "https://www.thebeijinger.com/sites/default/files/thebeijinger/blog-images/394868/weixin_image_2026-03-26_120102_845.jpg",
+    "fecha": "2026-03-26",
+    "ciudad_slug": "beijing"
+  },
+  {
+    "titulo": "El bar Tiao, del Mandarin Oriental Qianmen, entra en Asia's 50 Best Bars 2026",
+    "resumen": "Anunciado el 28 de julio de 2026 en Macao, Tiao, el bar de dos plantas del hotel Mandarin Oriental Qianmen en un hutong histórico de Beijing, debutó en el puesto 50 de Asia's 50 Best Bars apenas dos años después de su apertura. Bajo la dirección de la gerente de bebidas Miranda Xu y el jefe de barra Matt Guo, su carta de cócteles se inspira en las tradiciones y la vida residencial de los hutongs de la zona de Caochang.",
+    "fuente_url": "https://www.thehotelconversation.com.au/news/2026/08/03/tiao-mandarin-oriental-qianmen-beijing-named-among-asia%E2%80%99s-50-best-bars-2026",
+    "imagen_url": "https://www.thehotelconversation.com.au/sites/default/files/styles/article-full/public/screenshot_2026-08-03_105410.png",
+    "fecha": "2026-08-03",
+    "ciudad_slug": "beijing"
+  },
+  {
+    "titulo": "Ocho restaurantes de Beijing suman diamantes en la Guía Black Pearl 2026",
+    "resumen": "La Guía Black Pearl 2026, considerada el equivalente chino de la Michelin y elaborada por Meituan-Dianping, incluyó a 35 restaurantes de Beijing, ocho de ellos nuevos en el listado. Jingji Aristocrat Cuisine by Rong subió de dos a tres diamantes, mientras que Gastro Aesthetics DaDong bajó de tres a dos, en una edición que comparada con la Michelin 2026 mostró notables diferencias de criterio entre ambas guías.",
+    "fuente_url": "https://www.thebeijinger.com/blog/2026/02/02/eight-new-bj-restaurants-gain-diamonds-2026-black-pearl-guide",
+    "imagen_url": "https://www.thebeijinger.com/sites/default/files/thebeijinger/blog-images/394868/weixin_image_2026-02-02_152422_603.jpg",
+    "fecha": "2026-02-06",
+    "ciudad_slug": "beijing"
+  },
+  {
+    "titulo": "El canal de viajes Chopstick Travel recorre 24 horas de comida callejera y pato laqueado en Beijing",
+    "resumen": "El popular canal de YouTube de comida y viajes Chopstick Travel, del creador canadiense Luke Martin, publicó el 12 de enero de 2025 un video en el que pasa 24 horas probando lo mejor de la gastronomía de Beijing, desde pato laqueado estilo Pekín hasta puestos callejeros en los hutongs tradicionales de la ciudad.",
+    "fuente_url": "https://www.youtube.com/watch?v=HljiV6gzIVY",
+    "imagen_url": null,
+    "fecha": "2025-01-12",
+    "ciudad_slug": "beijing"
+  }
+]
