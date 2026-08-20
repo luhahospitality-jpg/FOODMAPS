@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Miyamasou logra la tercera estrella Michelin en Kioto tras seis años de espera",
+    "resumen": "En la ceremonia del 22 de abril de 2026, la Guía Michelin Kioto Osaka 2026 concedió su tercera estrella al ryokan Miyamasou, un establecimiento con más de 120 años de historia situado en las montañas de Hanase, en las afueras de Kioto, que había obtenido su primera estrella en 2010 y mantenía dos desde 2011. Es el primer nuevo tres estrellas de la ciudad en seis años y eleva a seis el número de restaurantes con la máxima distinción en Kioto. La edición 2026 sumó además cuatro nuevos dos estrellas y 19 nuevos una estrella en Kioto y Osaka, hasta alcanzar 479 restaurantes seleccionados en total.",
+    "fuente_url": "https://guide.michelin.com/en/article/michelin-guide-ceremony/michelin-guide-kyoto-osaka-2026-stars-reveal",
+    "imagen_url": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2026/04/22/c522c8798cfa42c6a79fa8ca5a3c0aac_KV_MGRCKO26.png",
+    "fecha": "2026-04-23",
+    "ciudad_slug": "kioto"
+  },
+  {
+    "titulo": "Cenci, de Kioto, entra en la lista ampliada de Asia's 50 Best Restaurants 2026",
+    "resumen": "El 12 de marzo de 2026, Asia's 50 Best Restaurants reveló su lista ampliada (puestos 51 al 100) y situó en el puesto 76 al restaurante Cenci, dirigido por el chef-propietario Ken Sakamoto, que combina la precisión japonesa con técnicas y sabores italianos en un menú degustación que cambia constantemente según el producto de temporada. Abierto desde 2014 en una casa centenaria cerca del santuario Heian, a la que se accede a través de un túnel de ladrillo construido por el propio Sakamoto y su equipo, el local mantiene fuertes lazos con el patrimonio de la ciudad.",
+    "fuente_url": "https://www.theworlds50best.com/stories/News/asias-50-best-restaurants-2026-the-51-100-list.html",
+    "imagen_url": "https://www.theworlds50best.com/stories/filestore/jpg/A50BR26-51-100-FACEBOOK.jpg",
+    "fecha": "2026-03-12",
+    "ciudad_slug": "kioto"
+  },
+  {
+    "titulo": "More Best Ever Food Review Show reta a gastar 100 dólares en el mercado Nishiki de Kioto",
+    "resumen": "El 30 de mayo de 2026, More Best Ever Food Review Show, el segundo canal del popular presentador Sonny Side (con casi 3,7 millones de suscriptores) del reconocido Best Ever Food Review Show, publicó el video '$100 Japanese Street Food Challenge in Kyoto!!', un recorrido por el mercado Nishiki, el histórico mercado de alimentos de Kioto, probando desde tempura y cangrejo real hasta gyozas combinadas con salchicha de pollo, en un intento de agotar un presupuesto de 100 dólares entre sus puestos.",
+    "fuente_url": "https://www.youtube.com/watch?v=feuv2_fmRC4",
+    "imagen_url": null,
+    "fecha": "2026-05-30",
+    "ciudad_slug": "kioto"
+  },
+  {
+    "titulo": "Time Out destaca Future Train, el restaurante psicodélico de Kioto instalado en un viaducto ferroviario",
+    "resumen": "Time Out publicó el 29 de septiembre de 2025 un reportaje sobre Future Train Kyoto Diner & Cafe, un local situado a una parada de la estación de Kioto por la línea JR Sagano que se presenta como el primer restaurante de Japón montado sobre un viaducto ferroviario en desuso. El espacio, diseñado con la estética kawaii y psicodélica del artista Sebastian Masuda, ocupa varios vagones de tren reconvertidos, incluido uno del extinto tren Thunderbird, y combina una experiencia gastronómica teatral con arte inmersivo.",
+    "fuente_url": "https://www.timeout.com/osaka/news/this-psychedelic-train-restaurant-in-kyoto-offers-immersive-art-and-kawaii-style-dining-092925",
+    "imagen_url": "https://media.timeout.com/images/106324228/750/422/image.jpg",
+    "fecha": "2025-09-29",
+    "ciudad_slug": "kioto"
+  },
+  {
+    "titulo": "La crítica Kyoko Nakayama reseña SoNoMa, el nuevo restaurante del chef de SingleThread en Kioto",
+    "resumen": "La periodista gastronómica Kyoko Nakayama, colaboradora habitual de The Japan Times, Forbes Japan y Tatler, reseñó el 24 de mayo de 2026 SoNoMa, el restaurante abierto a finales de marzo dentro del nuevo hotel Capella Kyoto por el chef Kyle Connaughton, del tres estrellas Michelin SingleThread en California. El menú filtra el kaiseki japonés a través de una sensibilidad californiana, con platos como shabu-shabu de wagyu Akaushi de Kumamoto, pato Nanatani criado al noreste de Kioto y postres elaborados junto a la pastelera de SingleThread Emma Horowitz.",
+    "fuente_url": "https://www.japantimes.co.jp/life/2026/05/24/food-drink/sonoma-restaurant-kyoto-capella-review/",
+    "imagen_url": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/05/22/541101.jpg?v=3.1",
+    "fecha": "2026-05-24",
+    "ciudad_slug": "kioto"
+  }
+]
