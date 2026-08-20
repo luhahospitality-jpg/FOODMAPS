@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --bda-bg: #f3efe3;
+  --bda-bg-raised: #ffffff;
+  --bda-bg-raised-2: #ece5d3;
+  --bda-ink: #17140f;
+  --bda-muted: rgba(23, 20, 15, 0.58);
+  --bda-line: rgba(23, 20, 15, 0.16);
+  --bda-gold: #96703a;
+  --bda-moda: #a1503a;
+  --bda-servicios: #3f6577;
+  --bda-lifestyle: #5c6a3c;
+}
+
+@theme inline {
+  --color-bda-bg: var(--bda-bg);
+  --color-bda-bg-raised: var(--bda-bg-raised);
+  --color-bda-bg-raised-2: var(--bda-bg-raised-2);
+  --color-bda-ink: var(--bda-ink);
+  --color-bda-muted: var(--bda-muted);
+  --color-bda-line: var(--bda-line);
+  --color-bda-gold: var(--bda-gold);
+  --color-bda-moda: var(--bda-moda);
+  --color-bda-servicios: var(--bda-servicios);
+  --color-bda-lifestyle: var(--bda-lifestyle);
+  --font-bda-serif: var(--font-bda-fraunces);
+  --font-bda-sans: var(--font-bda-inter);
+  --font-bda-mono: var(--font-bda-mono);
+}
+
+html.bda {
+  background: var(--bda-bg);
+}
+
+body.bda {
+  background: var(--bda-bg);
+  color: var(--bda-ink);
+  font-family: var(--font-bda-sans);
+}
+
+.bda-serif {
+  font-family: var(--font-bda-serif);
+}
+
+.bda-mono {
+  font-family: var(--font-bda-mono);
+}
+
+.bda-hairline {
+  border-color: var(--bda-line);
+}
+
+.bda-frame {
+  border: 1px dashed var(--bda-line);
+}
+
+/* Decorative dotted rule — a 1px `border-dashed` reads as solid at this
+   weight/opacity, so the visible dots are drawn with a gradient instead. */
+.bda-dotted-v {
+  width: 1px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--bda-ink) 0,
+    var(--bda-ink) 2px,
+    transparent 2px,
+    transparent 7px
+  );
+  opacity: 0.3;
+}
+
+.bda-dotted-h {
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--bda-ink) 0,
+    var(--bda-ink) 2px,
+    transparent 2px,
+    transparent 7px
+  );
+  opacity: 0.3;
+}
+
+.bda-fade-in {
+  animation: bda-fade-in 0.5s ease both;
+}
+
+@keyframes bda-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bda-fade-in {
+    animation: none;
+  }
+}

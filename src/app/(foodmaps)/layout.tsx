@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Big_Shoulders, Space_Grotesk, Space_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const bigShoulders = Big_Shoulders({
   variable: "--font-big-shoulders",
