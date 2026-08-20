@@ -13,11 +13,11 @@
     "espana", "paris", "copenhague", "roma", "milan", "florencia",
     "napoles", "estambul", "atenas", "londres", "berlin", "amsterdam",
     "budapest", "dubai", "ciudad-del-cabo", "viena", "lisboa", "praga", "tokio",
-    "marrakech", "osaka"
+    "marrakech", "osaka", "kioto"
   ],
   "novedades_pendientes": [
     "madrid",
-    "kioto", "beijing", "shanghai",
+    "beijing", "shanghai",
     "bangkok", "singapur", "seul", "hong-kong", "sidney"
   ],
   "novedades_nota": "Formato v2 APROBADO por el usuario (grid de 2 columnas, imagen de portada grande = og:image real o frame real de YouTube, watermark chico del favicon en la esquina/centro). Cada item tiene 6 campos: titulo, resumen, fuente_url, imagen_url, fecha, ciudad_slug. CRITERIO DE CONTENIDO v3 (ajustado de nuevo tras revisar atenas.json con solo 3 items): SIEMPRE pedir exactamente 5 por ciudad, no conformarse con menos sin agotar bien la búsqueda. Fuentes válidas: Michelin (estrella/Bib Gourmand/Repsol Sol), James Beard Awards, World's 50 Best / equivalentes regionales, Time Out, Anthony Bourdain, un canal de YouTube grande y real (Mark Wiens, Best Ever Food Review Show, Luisito Comunica u otro comparable en tamaño/reconocimiento — nunca TikTok) visitando un lugar puntual de la ciudad, un crítico respetado, o un premio de peso. Pedir variedad — no llenar los 5 con solo Michelin. NO vale: cierres/aperturas genéricas sin tie-in, reaperturas de mercados, anuncios cívicos, perfiles sin premio. 28 ciudades completas con el criterio v2 (antes de este ajuste) — quedaron honestas pero varias con menos de 5 items (toronto, buenos-aires, sao-paulo, bogota, malaga, valencia, milan, estambul, florencia, atenas); pendiente un repaso opcional para completarlas a 5 con las fuentes de YouTube ahora permitidas, si el usuario lo pide. Sigue la investigación real para las ciudades pendientes en tandas de 5.",
