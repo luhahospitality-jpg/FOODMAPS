@@ -12,10 +12,10 @@
     "barcelona", "san-sebastian", "bilbao", "valencia", "malaga",
     "espana", "paris", "copenhague", "roma", "milan", "florencia",
     "napoles", "estambul", "atenas", "londres", "berlin", "amsterdam",
-    "budapest", "dubai", "ciudad-del-cabo", "viena", "lisboa"
+    "budapest", "dubai", "ciudad-del-cabo", "viena", "lisboa", "praga"
   ],
   "novedades_pendientes": [
-    "madrid", "praga",
+    "madrid",
     "marrakech", "tokio", "osaka", "kioto", "beijing", "shanghai",
     "bangkok", "singapur", "seul", "hong-kong", "sidney"
   ],
