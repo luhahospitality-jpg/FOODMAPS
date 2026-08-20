@@ -1,218 +1,234 @@
 import type { Brand } from "@/types/bda";
 
 export const brands: Brand[] = [
-  // — Moda y maisons de lujo —
+  // — Moda —
+  {
+    slug: "armani",
+    name: "Armani",
+    category: "moda",
+    origin: "Italia",
+    description: "El minimalismo Armani, aplicado a la vivienda.",
+  },
   {
     slug: "dolce-gabbana",
     name: "Dolce & Gabbana",
     category: "moda",
     origin: "Italia",
-    description:
-      "Maison de moda milanesa que extiende su lenguaje estético — barroco, mediterráneo, artesanal — al residencial de lujo.",
+    description: "Barroco mediterráneo, hecho residencia.",
   },
   {
     slug: "karl-lagerfeld",
     name: "Karl Lagerfeld",
     category: "moda",
     origin: "Alemania / Francia",
-    description:
-      "La casa fundada por el diseñador licencia villas firmadas con su estética arquitectónica en blanco y negro.",
+    description: "Villas firmadas en blanco y negro.",
   },
   {
     slug: "fendi",
     name: "Fendi",
     category: "moda",
     origin: "Italia",
-    description:
-      "A través de Fendi Casa, la maison romana traslada su artesanía textil y de interiores al desarrollo residencial.",
+    description: "La artesanía romana de Fendi Casa, en interiores.",
   },
   {
     slug: "versace",
     name: "Versace",
     category: "moda",
     origin: "Italia",
-    description:
-      "La casa italiana presta su identidad visual — dorada, escultórica, inconfundible — a residencias de autor.",
+    description: "Dorado, escultórico, inconfundible.",
   },
   {
     slug: "bulgari",
     name: "Bulgari",
     category: "moda",
     origin: "Italia",
-    description:
-      "La maison de joyería romana opera un número reducido de residencias de altísimo standing junto a sus hoteles homónimos.",
+    description: "Joyería romana convertida en dirección.",
   },
   {
     slug: "missoni",
     name: "Missoni",
     category: "moda",
     origin: "Italia",
-    description:
-      "La firma textil conocida por sus tejidos de punto multicolor licencia colecciones residenciales con esa misma identidad.",
+    description: "El punto multicolor, en arquitectura.",
   },
   {
     slug: "baccarat",
     name: "Baccarat",
     category: "moda",
     origin: "Francia",
-    description:
-      "La manufactura de cristal fundada en 1764 presta su nombre a residencias con un lenguaje decorativo propio.",
+    description: "Cristal francés desde 1764.",
   },
 
-  // — Operadores hoteleros y de hospitality —
+  // — Servicios —
   {
-    slug: "sls",
-    name: "SLS",
+    slug: "aman",
+    name: "Aman",
     category: "servicios",
-    origin: "Estados Unidos",
-    description:
-      "Marca hotelera lifestyle nacida en Los Ángeles, referente en residencias urbanas de diseño contemporáneo.",
-  },
-  {
-    slug: "banyan-tree",
-    name: "Banyan Tree",
-    category: "servicios",
-    origin: "Singapur",
-    description:
-      "Grupo hotelero asiático especializado en bienestar y spa, hoy también presente en residencias urbanas europeas.",
+    origin: "Suiza / Indonesia",
+    description: "Discreción y emplazamientos remotos.",
   },
   {
     slug: "four-seasons",
     name: "Four Seasons",
     category: "servicios",
     origin: "Canadá",
-    description:
-      "Uno de los operadores hoteleros de mayor prestigio global, con un porfolio extenso de residencias gestionadas.",
-  },
-  {
-    slug: "st-regis",
-    name: "St. Regis",
-    category: "servicios",
-    origin: "Estados Unidos",
-    description:
-      "Marca insignia de lujo de Marriott, asociada al servicio de mayordomía y a proyectos residenciales de gran escala.",
-  },
-  {
-    slug: "w-hotels",
-    name: "W Hotels",
-    category: "servicios",
-    origin: "Estados Unidos",
-    description:
-      "Marca lifestyle de Marriott orientada a un público urbano y contemporáneo, con residencias de diseño arriesgado.",
+    description: "El estándar del servicio hotelero global.",
   },
   {
     slug: "ritz-carlton",
     name: "Ritz-Carlton",
     category: "servicios",
     origin: "Estados Unidos",
-    description:
-      "Referente histórico del servicio hotelero de lujo, con residencias asociadas a sus enclaves más exclusivos.",
+    description: "Ladies and gentlemen, desde 1983.",
+  },
+  {
+    slug: "st-regis",
+    name: "St. Regis",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "Mayordomía como firma de marca.",
   },
   {
     slug: "waldorf-astoria",
     name: "Waldorf Astoria",
     category: "servicios",
     origin: "Estados Unidos",
-    description:
-      "Marca de lujo histórica de Hilton, sinónimo de servicio hotelero clásico trasladado al residencial.",
+    description: "El lujo hotelero clásico de Hilton.",
   },
   {
     slug: "mandarin-oriental",
     name: "Mandarin Oriental",
     category: "servicios",
     origin: "Hong Kong",
-    description:
-      "Grupo hotelero de origen asiático reconocido por su nivel de servicio, con residencias en capitales internacionales.",
+    description: "Servicio asiático en capitales globales.",
   },
   {
-    slug: "sofitel",
-    name: "Sofitel",
+    slug: "raffles",
+    name: "Raffles",
     category: "servicios",
-    origin: "Francia",
-    description:
-      "Marca francesa de lujo de Accor, con residencias que combinan savoir-faire galo y arquitectura contemporánea.",
+    origin: "Singapur",
+    description: "Hospitalidad colonial reinventada.",
   },
   {
-    slug: "hyatt",
-    name: "Hyatt",
+    slug: "rosewood",
+    name: "Rosewood",
     category: "servicios",
     origin: "Estados Unidos",
-    description:
-      "Grupo hotelero estadounidense con distintas líneas — Park Hyatt, Hyatt Regency — presentes en el residencial de lujo.",
+    description: "'A Sense of Place', en cada ciudad.",
   },
   {
-    slug: "aman",
-    name: "Aman",
+    slug: "banyan-tree",
+    name: "Banyan Tree",
     category: "servicios",
-    origin: "Suiza / Indonesia",
-    description:
-      "Operador de resorts ultra-exclusivos, célebre por su discreción y sus emplazamientos remotos, con demanda residencial creciente.",
+    origin: "Singapur",
+    description: "Bienestar y spa, origen asiático.",
   },
   {
     slug: "six-senses",
     name: "Six Senses",
     category: "servicios",
     origin: "Tailandia",
-    description:
-      "Marca de resorts de bienestar y sostenibilidad, con residencias integradas en entornos naturales protegidos.",
+    description: "Sostenibilidad como estándar de lujo.",
+  },
+  {
+    slug: "sls",
+    name: "SLS",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "Lifestyle urbano nacido en Los Ángeles.",
+  },
+  {
+    slug: "w-hotels",
+    name: "W Hotels",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "Diseño arriesgado, energía urbana.",
+  },
+  {
+    slug: "sofitel",
+    name: "Sofitel",
+    category: "servicios",
+    origin: "Francia",
+    description: "Savoir-faire francés, de Accor.",
+  },
+  {
+    slug: "hyatt",
+    name: "Hyatt",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "Park Hyatt y Hyatt Regency, en residencial.",
   },
   {
     slug: "marriott",
     name: "Marriott / Westin",
     category: "servicios",
     origin: "Estados Unidos",
-    description:
-      "El mayor grupo hotelero del mundo, con líneas como Westin presentes en desarrollos residenciales de resort.",
+    description: "El mayor grupo hotelero del mundo.",
   },
   {
     slug: "cipriani",
     name: "Cipriani",
     category: "servicios",
     origin: "Italia",
-    description:
-      "Grupo de hospitalidad de origen veneciano, con residencias diseñadas por firmas de arquitectura de primer nivel.",
+    description: "Hospitalidad de origen veneciano.",
   },
   {
     slug: "nobu",
     name: "Nobu",
     category: "servicios",
     origin: "Estados Unidos / Japón",
-    description:
-      "La marca de hospitalidad nacida del restaurante homónimo, con residencias asociadas a sus hoteles boutique.",
+    description: "Del restaurante al hotel boutique.",
   },
   {
     slug: "alvear",
     name: "Alvear",
     category: "servicios",
     origin: "Argentina",
-    description:
-      "Grupo hotelero argentino de referencia en el segmento de ultra lujo, con más de un siglo de trayectoria en Buenos Aires.",
+    description: "Ultra lujo porteño desde hace un siglo.",
   },
 
-  // — Automoción y marcas de estilo de vida —
-  {
-    slug: "lamborghini",
-    name: "Automobili Lamborghini",
-    category: "lifestyle",
-    origin: "Italia",
-    description:
-      "El fabricante de automóviles deportivos traslada su lenguaje de diseño y rendimiento a villas de autor.",
-  },
+  // — Lifestyle —
   {
     slug: "bentley",
     name: "Bentley",
     category: "lifestyle",
     origin: "Reino Unido",
-    description:
-      "La marca británica de automóviles de lujo firmó su primer edificio residencial del mundo en Miami.",
+    description: "Su primer edificio residencial, en Miami.",
   },
   {
     slug: "aston-martin",
     name: "Aston Martin",
     category: "lifestyle",
     origin: "Reino Unido",
-    description:
-      "El fabricante británico de deportivos de lujo presta su identidad de diseño a una torre residencial en Miami.",
+    description: "Diseño aerodinámico, vertical.",
+  },
+  {
+    slug: "lamborghini",
+    name: "Automobili Lamborghini",
+    category: "lifestyle",
+    origin: "Italia",
+    description: "Rendimiento traducido a villas.",
+  },
+  {
+    slug: "porsche-design",
+    name: "Porsche Design",
+    category: "lifestyle",
+    origin: "Alemania",
+    description: "Precisión alemana, en torre.",
+  },
+  {
+    slug: "bugatti",
+    name: "Bugatti",
+    category: "lifestyle",
+    origin: "Francia",
+    description: "Sky mansions con ascensor para el coche.",
+  },
+  {
+    slug: "mercedes-benz",
+    name: "Mercedes-Benz",
+    category: "lifestyle",
+    origin: "Alemania",
+    description: "Un distrito entero bajo la estrella.",
   },
 ];
 
@@ -227,9 +243,7 @@ export const categoryLabel: Record<Brand["category"], string> = {
 };
 
 export const categoryDescription: Record<Brand["category"], string> = {
-  moda: "Maisons de moda y casas de lujo que extienden su identidad al residencial.",
-  servicios:
-    "Operadores hoteleros que aportan el estándar de servicio que define a la categoría.",
-  lifestyle:
-    "Marcas de automoción y estilo de vida que trasladan su diseño a la vivienda.",
+  moda: "Maisons que extienden su identidad a la vivienda.",
+  servicios: "Operadores hoteleros que definen el estándar.",
+  lifestyle: "Automoción y diseño, en formato residencial.",
 };

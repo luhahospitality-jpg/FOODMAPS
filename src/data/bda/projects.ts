@@ -1,7 +1,7 @@
 import type { Project } from "@/types/bda";
 
 export const projects: Project[] = [
-  // — España · Costa del Sol / Marbella —
+  // — España —
   {
     slug: "design-hills-dolce-gabbana",
     name: "Design Hills by Dolce & Gabbana",
@@ -11,10 +11,8 @@ export const projects: Project[] = [
     lat: 36.5079,
     lng: -4.9357,
     developer: "Sierra Blanca Estates",
-    status: "En desarrollo",
     units: "92 residencias",
-    description:
-      "En la Milla de Oro, Sierra Blanca Estates construye la primera colección residencial firmada por Dolce & Gabbana en España: interiorismo, texturas y una paleta cromática que replican el universo de la maison en cada estancia común.",
+    description: "El primer D&G residencial de España.",
   },
   {
     slug: "karl-lagerfeld-villas",
@@ -25,10 +23,8 @@ export const projects: Project[] = [
     lat: 36.5122,
     lng: -4.9271,
     developer: "Sierra Blanca Estates",
-    status: "En desarrollo",
     units: "5 villas",
-    description:
-      "Cinco villas exclusivas diseñadas bajo la estética monocroma y arquitectónica que definió al diseñador alemán, en un enclave reducido y de muy baja densidad sobre la Milla de Oro marbellí.",
+    description: "Cinco villas, una sola estética.",
   },
   {
     slug: "epic-marbella-fendi-casa",
@@ -41,8 +37,7 @@ export const projects: Project[] = [
     developer: "Sierra Blanca Estates",
     status: "Entregado",
     units: "56 residencias",
-    description:
-      "Ya entregado y hoy en mercado de reventa, EPIC fue de los primeros desarrollos en Europa en incorporar el interiorismo de Fendi Casa a cada unidad, marcando el ritmo de la ola de branded residences de moda en Marbella.",
+    description: "Pionero de la ola Fendi en Europa.",
   },
   {
     slug: "tierra-viva-lamborghini",
@@ -53,10 +48,8 @@ export const projects: Project[] = [
     lat: 36.5347,
     lng: -5.0483,
     developer: "DarGlobal",
-    status: "En desarrollo",
     units: "53 villas",
-    description:
-      "Sobre las colinas de Benahavís, DarGlobal desarrolla 53 villas cuyo lenguaje arquitectónico — líneas tensas, aristas marcadas — traduce directamente el diseño automotriz de Lamborghini al residencial.",
+    description: "Líneas de Lamborghini, sobre las colinas.",
   },
   {
     slug: "four-seasons-marbella-rio-real",
@@ -66,10 +59,9 @@ export const projects: Project[] = [
     region: "España",
     lat: 36.5081,
     lng: -4.8548,
-    status: "En aprobación municipal (2026)",
-    units: "260 residencias + 40 villas + hotel",
-    description:
-      "Con una inversión anunciada de 700 millones de euros, el proyecto combina un hotel Four Seasons con 260 residencias y 40 villas junto al campo de golf de Río Real, en uno de los desarrollos de mayor escala anunciados en la Costa del Sol.",
+    status: "En aprobación (2026)",
+    units: "260 residencias + 40 villas",
+    description: "700M€ junto al golf de Río Real.",
   },
   {
     slug: "st-regis-casares",
@@ -79,10 +71,8 @@ export const projects: Project[] = [
     region: "España",
     lat: 36.4283,
     lng: -5.2444,
-    status: "En desarrollo",
     units: "46 residencias",
-    description:
-      "Integrado en el entorno de Finca Cortesín, el proyecto suma 46 residencias al estándar St. Regis, con acceso al campo de golf y al servicio de mayordomía característico de la marca.",
+    description: "Mayordomía St. Regis, junto al golf.",
   },
   {
     slug: "w-marbella",
@@ -92,10 +82,8 @@ export const projects: Project[] = [
     region: "España",
     lat: 36.5192,
     lng: -4.7801,
-    status: "Licencia de urbanización otorgada (mayo 2026)",
     units: "≈166 residencias",
-    description:
-      "Con la licencia de urbanización ya concedida, W Marbella llevará su estética lifestyle — contemporánea, orientada a un comprador más joven — a la zona de Las Chapas, en la costa este de Marbella.",
+    description: "Lifestyle W, costa este marbellí.",
   },
   {
     slug: "ocho-de-oro-versace",
@@ -106,12 +94,8 @@ export const projects: Project[] = [
     lat: 36.5104,
     lng: -4.9180,
     developer: "RGZ Developers",
-    status: "En desarrollo",
-    description:
-      "RGZ Developers suma la identidad decorativa de Versace a este proyecto sobre la Milla de Oro, dentro de una cartera propia que incluye varias colecciones firmadas en la misma zona.",
+    description: "El barroco Versace, en la Milla de Oro.",
   },
-
-  // — España · Madrid / Barcelona —
   {
     slug: "sls-madrid-infantas",
     name: "SLS Madrid Infantas Residences",
@@ -120,10 +104,7 @@ export const projects: Project[] = [
     region: "España",
     lat: 40.4225,
     lng: -3.6952,
-    status: "En comercialización",
-    bdaRole: "Dirección Comercial — BDA",
-    description:
-      "Las primeras Branded Residences de SLS en Europa ocupan un edificio histórico rehabilitado en el barrio de Justicia, donde el diseño contemporáneo y la energía cosmopolita de la marca redefinen el lujo residencial lifestyle en el centro de Madrid.",
+    description: "Las primeras branded SLS de Europa.",
   },
   {
     slug: "banyan-tree-madrid",
@@ -133,10 +114,7 @@ export const projects: Project[] = [
     region: "España",
     lat: 40.4285,
     lng: -3.6822,
-    status: "En comercialización",
-    bdaRole: "Dirección Comercial — BDA",
-    description:
-      "Las primeras Branded Residences urbanas de Banyan Tree en Europa combinan el legado arquitectónico del Barrio de Salamanca con la filosofía de bienestar y spa que caracteriza al grupo hotelero asiático.",
+    description: "Banyan Tree llega a Europa, en Salamanca.",
   },
   {
     slug: "mandarin-oriental-barcelona",
@@ -146,9 +124,7 @@ export const projects: Project[] = [
     region: "España",
     lat: 41.3888,
     lng: 2.1590,
-    status: "En comercialización",
-    description:
-      "Mandarin Oriental extiende a Barcelona su estándar de servicio asiático, con un número reducido de residencias vinculadas a su propiedad hotelera en la ciudad.",
+    description: "Servicio asiático, junto al Passeig de Gràcia.",
   },
 
   // — Portugal —
@@ -161,9 +137,7 @@ export const projects: Project[] = [
     lat: 37.0894,
     lng: -8.2620,
     developer: "Kronos Homes",
-    status: "En desarrollo",
-    description:
-      "Kronos Homes, el desarrollador más activo del Algarve en branded residences, incorpora el sello Marriott a este desarrollo junto al litoral de Salgados.",
+    description: "Marriott sobre el litoral de Salgados.",
   },
   {
     slug: "westin-salgados",
@@ -174,9 +148,7 @@ export const projects: Project[] = [
     lat: 37.0917,
     lng: -8.2559,
     developer: "Kronos Homes",
-    status: "En desarrollo",
-    description:
-      "Junto a su desarrollo con Marriott, Kronos Homes suma una segunda colección residencial en Salgados bajo la marca Westin, orientada al golf y al descanso.",
+    description: "Westin, golf y descanso en el Algarve.",
   },
   {
     slug: "four-seasons-comporta",
@@ -186,9 +158,7 @@ export const projects: Project[] = [
     region: "Portugal",
     lat: 38.3800,
     lng: -8.7830,
-    status: "En desarrollo",
-    description:
-      "En Comporta, la reserva natural más cotizada del litoral portugués, Four Seasons desarrolla un enclave residencial de baja densidad integrado en el paisaje de dunas y pinares.",
+    description: "Baja densidad, entre dunas y pinares.",
   },
   {
     slug: "aman-costa-vicentina",
@@ -198,9 +168,7 @@ export const projects: Project[] = [
     region: "Portugal",
     lat: 37.6167,
     lng: -8.8000,
-    status: "En desarrollo",
-    description:
-      "Fiel a su filosofía de emplazamientos remotos, Aman elige el litoral protegido de la Costa Vicentina para una de sus primeras residencias en territorio europeo continental.",
+    description: "Aman, en el litoral protegido.",
   },
   {
     slug: "six-senses-douro",
@@ -210,9 +178,7 @@ export const projects: Project[] = [
     region: "Portugal",
     lat: 41.1600,
     lng: -7.7833,
-    status: "En desarrollo",
-    description:
-      "Entre viñedos en terrazas sobre el río Duero, Six Senses traslada su lenguaje de bienestar y sostenibilidad a un enclave residencial de baja huella.",
+    description: "Viñedos en terraza, sobre el Duero.",
   },
   {
     slug: "hyatt-regency-lisboa",
@@ -222,9 +188,7 @@ export const projects: Project[] = [
     region: "Portugal",
     lat: 38.7223,
     lng: -9.1393,
-    status: "En desarrollo",
-    description:
-      "Hyatt suma a su presencia hotelera en Lisboa una colección residencial urbana, con acceso a los servicios del hotel homónimo.",
+    description: "Hyatt, en clave urbana lisboeta.",
   },
   {
     slug: "aroeira-missoni",
@@ -234,9 +198,7 @@ export const projects: Project[] = [
     region: "Portugal",
     lat: 38.5980,
     lng: -9.1590,
-    status: "En desarrollo",
-    description:
-      "A pocos minutos de Lisboa, Aroeira incorpora la identidad textil de Missoni — patrones, color, artesanía italiana — a un desarrollo residencial junto al pinar y el campo de golf.",
+    description: "El punto Missoni, junto al pinar.",
   },
   {
     slug: "bvlgari-lisboa",
@@ -247,10 +209,339 @@ export const projects: Project[] = [
     lat: 38.7107,
     lng: -9.1425,
     developer: "AXA Investment Managers",
-    status: "En desarrollo",
     units: "60 residencias",
-    description:
-      "En el corazón histórico del Chiado, AXA Investment Managers desarrolla las primeras residencias Bvlgari de Portugal: 60 unidades que combinan patrimonio arquitectónico lisboeta y joyería como referencia decorativa.",
+    description: "Bulgari, en el Chiado histórico.",
+  },
+
+  // — Reino Unido —
+  {
+    slug: "owo-raffles-london",
+    name: "The OWO Residences by Raffles",
+    brandSlug: "raffles",
+    city: "Whitehall, Londres",
+    region: "Reino Unido",
+    lat: 51.5041,
+    lng: -0.1259,
+    units: "85 residencias",
+    description: "El histórico War Office, reconvertido por Raffles.",
+  },
+  {
+    slug: "mandarin-oriental-mayfair",
+    name: "The Residences at Mandarin Oriental Mayfair",
+    brandSlug: "mandarin-oriental",
+    city: "Mayfair, Londres",
+    region: "Reino Unido",
+    lat: 51.5090,
+    lng: -0.1490,
+    description: "Mandarin Oriental, en el corazón de Mayfair.",
+  },
+  {
+    slug: "six-senses-whiteley",
+    name: "Six Senses Residences London",
+    brandSlug: "six-senses",
+    city: "The Whiteley, Bayswater",
+    region: "Reino Unido",
+    lat: 51.5130,
+    lng: -0.1880,
+    description: "Six Senses, en los antiguos grandes almacenes de 1911.",
+  },
+
+  // — Emiratos Árabes Unidos —
+  {
+    slug: "armani-beach-residences",
+    name: "Armani Beach Residences",
+    brandSlug: "armani",
+    city: "Palm Jumeirah, Dubái",
+    region: "Emiratos Árabes Unidos",
+    lat: 25.1124,
+    lng: 55.1390,
+    description: "Minimalismo Armani, frente al mar.",
+  },
+  {
+    slug: "bugatti-residences-dubai",
+    name: "Bugatti Residences by Binghatti",
+    brandSlug: "bugatti",
+    city: "Business Bay, Dubái",
+    region: "Emiratos Árabes Unidos",
+    lat: 25.1857,
+    lng: 55.2632,
+    developer: "Binghatti",
+    units: "182 residencias",
+    description: "Sky mansions con ascensor privado para el coche.",
+  },
+  {
+    slug: "porsche-design-tower-dubai",
+    name: "Porsche Design Tower",
+    brandSlug: "porsche-design",
+    city: "Dubai Creek Harbour",
+    region: "Emiratos Árabes Unidos",
+    lat: 25.1959,
+    lng: 55.3486,
+    description: "Precisión Porsche, sobre el creek.",
+  },
+  {
+    slug: "bvlgari-residences-dubai",
+    name: "Bvlgari Residences Dubai",
+    brandSlug: "bulgari",
+    city: "Jumeirah Bay Island",
+    region: "Emiratos Árabes Unidos",
+    lat: 25.2141,
+    lng: 55.2414,
+    description: "Bulgari, en una isla privada.",
+  },
+  {
+    slug: "mercedes-benz-places",
+    name: "Mercedes-Benz Places",
+    brandSlug: "mercedes-benz",
+    city: "Meydan, Dubái",
+    region: "Emiratos Árabes Unidos",
+    lat: 25.1614,
+    lng: 55.3126,
+    description: "Un distrito entero bajo la estrella.",
+  },
+
+  // — Catar —
+  {
+    slug: "st-regis-marsa-arabia",
+    name: "The Residences at St. Regis Marsa Arabia Island",
+    brandSlug: "st-regis",
+    city: "The Pearl, Doha",
+    region: "Catar",
+    lat: 25.3710,
+    lng: 51.5520,
+    developer: "Alfardan Group",
+    units: "245 residencias",
+    description: "St. Regis, en una isla privada de The Pearl.",
+  },
+
+  // — Arabia Saudita —
+  {
+    slug: "aman-amansamar",
+    name: "Amansamar",
+    brandSlug: "aman",
+    city: "Diriyah, Riad",
+    region: "Arabia Saudita",
+    lat: 24.7340,
+    lng: 46.5730,
+    description: "Villas Aman junto a un hotel de 80 llaves.",
+  },
+
+  // — Tailandia —
+  {
+    slug: "ritz-carlton-mahanakhon",
+    name: "The Ritz-Carlton Residences Bangkok",
+    brandSlug: "ritz-carlton",
+    city: "MahaNakhon, Bangkok",
+    region: "Tailandia",
+    lat: 13.7244,
+    lng: 100.5288,
+    units: "209 residencias",
+    description: "314 metros sobre Bangkok.",
+  },
+  {
+    slug: "rosewood-na-vara",
+    name: "Rosewood Residences",
+    brandSlug: "rosewood",
+    city: "Na Vara, Bangkok",
+    region: "Tailandia",
+    lat: 13.7440,
+    lng: 100.5250,
+    description: "'A Sense of Place', en clave tailandesa.",
+  },
+
+  // — Singapur —
+  {
+    slug: "ritz-carlton-cairnhill",
+    name: "The Ritz-Carlton Residences Singapore",
+    brandSlug: "ritz-carlton",
+    city: "Cairnhill",
+    region: "Singapur",
+    lat: 1.3080,
+    lng: 103.8354,
+    description: "Ritz-Carlton, en el enclave de Cairnhill.",
+  },
+
+  // — Estados Unidos —
+  {
+    slug: "waldorf-astoria-miami",
+    name: "Waldorf Astoria Residences Miami",
+    brandSlug: "waldorf-astoria",
+    city: "Downtown, Miami",
+    region: "Estados Unidos",
+    lat: 25.7743,
+    lng: -80.1937,
+    description: "La torre residencial más alta de Occidente.",
+  },
+  {
+    slug: "bentley-residences-miami",
+    name: "Bentley Residences",
+    brandSlug: "bentley",
+    city: "Sunny Isles Beach, Miami",
+    region: "Estados Unidos",
+    lat: 25.9418,
+    lng: -80.1225,
+    description: "Ascensor privado para el coche, hasta cada unidad.",
+  },
+  {
+    slug: "baccarat-residences-miami",
+    name: "Baccarat Residences Miami",
+    brandSlug: "baccarat",
+    city: "Brickell, Miami",
+    region: "Estados Unidos",
+    lat: 25.7625,
+    lng: -80.1935,
+    description: "Cristal francés, torre en Brickell.",
+  },
+  {
+    slug: "mandarin-oriental-miami",
+    name: "The Residences at Mandarin Oriental, Miami",
+    brandSlug: "mandarin-oriental",
+    city: "Brickell Key, Miami",
+    region: "Estados Unidos",
+    lat: 25.7657,
+    lng: -80.1865,
+    developer: "Swire Properties",
+    description: "Mandarin Oriental reconstruye su propiedad insignia.",
+  },
+  {
+    slug: "aston-martin-residences",
+    name: "Aston Martin Residences",
+    brandSlug: "aston-martin",
+    city: "Downtown, Miami",
+    region: "Estados Unidos",
+    lat: 25.7708,
+    lng: -80.1867,
+    status: "Entregado",
+    description: "El primer proyecto residencial de Aston Martin.",
+  },
+  {
+    slug: "aman-new-york",
+    name: "Aman New York Residences",
+    brandSlug: "aman",
+    city: "Manhattan, Nueva York",
+    region: "Estados Unidos",
+    lat: 40.7616,
+    lng: -73.9776,
+    description: "Aman, sobre la Quinta Avenida.",
+  },
+  {
+    slug: "four-seasons-30-park-place",
+    name: "Four Seasons Private Residences 30 Park Place",
+    brandSlug: "four-seasons",
+    city: "Tribeca, Nueva York",
+    region: "Estados Unidos",
+    lat: 40.7143,
+    lng: -74.0090,
+    description: "Four Seasons, sobre el Downtown de Manhattan.",
+  },
+  {
+    slug: "ritz-carlton-nomad",
+    name: "The Ritz-Carlton Residences, NoMad",
+    brandSlug: "ritz-carlton",
+    city: "NoMad, Nueva York",
+    region: "Estados Unidos",
+    lat: 40.7440,
+    lng: -73.9910,
+    description: "Ritz-Carlton, en el corredor de NoMad.",
+  },
+  {
+    slug: "aman-beverly-hills",
+    name: "Aman Residences at One Beverly Hills",
+    brandSlug: "aman",
+    city: "Beverly Hills, Los Ángeles",
+    region: "Estados Unidos",
+    lat: 34.0736,
+    lng: -118.4130,
+    developer: "Foster + Partners",
+    units: "≈200 residencias",
+    description: "Aman, sobre diez acres de jardines.",
+  },
+  {
+    slug: "four-seasons-los-angeles",
+    name: "Four Seasons Private Residences Los Angeles",
+    brandSlug: "four-seasons",
+    city: "Beverly Grove, Los Ángeles",
+    region: "Estados Unidos",
+    lat: 34.0759,
+    lng: -118.3730,
+    status: "Entregado",
+    description: "Sin hotel, sin huéspedes: solo residencias.",
+  },
+  {
+    slug: "mandarin-oriental-beverly-hills",
+    name: "Mandarin Oriental Residences Beverly Hills",
+    brandSlug: "mandarin-oriental",
+    city: "Beverly Hills, Los Ángeles",
+    region: "Estados Unidos",
+    lat: 34.0669,
+    lng: -118.4000,
+    units: "54 residencias",
+    description: "Servicio asiático, en Wilshire Boulevard.",
+  },
+  {
+    slug: "rosewood-beverly-hills",
+    name: "Rosewood Residences Beverly Hills",
+    brandSlug: "rosewood",
+    city: "Beverly Hills, Los Ángeles",
+    region: "Estados Unidos",
+    lat: 34.0700,
+    lng: -118.4010,
+    units: "17 estates",
+    description: "Diecisiete estates, un solo código postal.",
+  },
+
+  // — México —
+  {
+    slug: "amanvari",
+    name: "Amanvari",
+    brandSlug: "aman",
+    city: "East Cape, Los Cabos",
+    region: "México",
+    lat: 23.3167,
+    lng: -109.4167,
+    description: "El primer Aman de México, en un tramo remoto.",
+  },
+  {
+    slug: "st-regis-los-cabos",
+    name: "St. Regis Los Cabos Residences",
+    brandSlug: "st-regis",
+    city: "Quivira, Los Cabos",
+    region: "México",
+    lat: 22.8905,
+    lng: -109.9700,
+    description: "St. Regis, dentro del masterplan de Quivira.",
+  },
+  {
+    slug: "ritz-carlton-reserve-zadun",
+    name: "Ritz-Carlton Reserve at Zadún",
+    brandSlug: "ritz-carlton",
+    city: "Puerto Los Cabos",
+    region: "México",
+    lat: 23.0500,
+    lng: -109.6833,
+    status: "Entregado",
+    description: "La colección más exclusiva de Ritz-Carlton.",
+  },
+  {
+    slug: "park-hyatt-mexico-city",
+    name: "Park Hyatt Mexico City Residences",
+    brandSlug: "hyatt",
+    city: "Polanco, Ciudad de México",
+    region: "México",
+    lat: 19.4326,
+    lng: -99.1959,
+    units: "23 residencias",
+    description: "Park Hyatt, en el barrio de mayor densidad de lujo.",
+  },
+  {
+    slug: "nobu-los-cabos",
+    name: "Nobu Los Cabos Residences",
+    brandSlug: "nobu",
+    city: "Diamante, Los Cabos",
+    region: "México",
+    lat: 22.9556,
+    lng: -110.0294,
+    description: "Nobu, frente al Pacífico.",
   },
 
   // — Argentina —
@@ -264,9 +555,7 @@ export const projects: Project[] = [
     lng: -58.3630,
     developer: "Grupo Alvear",
     status: "Entregado",
-    bdaRole: "Master Broker — BDA",
-    description:
-      "La torre residencial más alta de Argentina, con 235 metros de altura, corona Puerto Madero con residencias de ultra lujo, spa, piscinas y un roof club pensado como extensión del propio edificio.",
+    description: "La torre residencial más alta de Argentina.",
   },
   {
     slug: "alvear-icon-hotel-residences",
@@ -278,9 +567,7 @@ export const projects: Project[] = [
     lng: -58.3610,
     developer: "Grupo Alvear",
     status: "Entregado",
-    bdaRole: "Master Broker — BDA",
-    description:
-      "Un desarrollo de uso mixto que integra residencias privadas con un hotel cinco estrellas de la marca Alvear, con vistas al Río de la Plata y servicios hoteleros de primer nivel.",
+    description: "Uso mixto, frente al Río de la Plata.",
   },
   {
     slug: "sls-lux-puerto-madero",
@@ -291,10 +578,8 @@ export const projects: Project[] = [
     lat: -34.6175,
     lng: -58.3650,
     status: "Entregado",
-    bdaRole: "Master Broker — BDA",
-    credits: "Arquitectura: BMA · Interiorismo: Piero Lissoni · Paisajismo: Enzo Enea",
-    description:
-      "Inspirado en el estilo de vida de SLS Miami, el edificio reúne arquitectura de BMA, interiorismo de Piero Lissoni y paisajismo de Enzo Enea en el barrio más prestigioso de Buenos Aires.",
+    credits: "Arquitectura: BMA · Interiorismo: Piero Lissoni",
+    description: "El estilo SLS Miami, en Puerto Madero.",
   },
   {
     slug: "sofitel-buenos-aires-madero",
@@ -305,11 +590,8 @@ export const projects: Project[] = [
     lat: -34.6090,
     lng: -58.3690,
     developer: "Northbaires",
-    status: "En desarrollo",
-    units: "188 residencias · US$100M+",
-    credits: "Diseño: BMA",
-    description:
-      "Con diseño del mismo estudio BMA detrás de SLS Lux, Northbaires desarrolla 188 residencias bajo el sello francés de Sofitel en el corredor más cotizado de Puerto Madero.",
+    units: "188 residencias",
+    description: "Savoir-faire francés, en Puerto Madero.",
   },
   {
     slug: "plaza-hotel-residences",
@@ -319,11 +601,8 @@ export const projects: Project[] = [
     region: "Argentina",
     lat: -34.5940,
     lng: -58.3775,
-    status: "En desarrollo",
-    bdaRole: "Master Broker — BDA",
-    units: "55 residencias + 180 habitaciones",
-    description:
-      "La reconversión del icónico Hotel Plaza Buenos Aires funde patrimonio histórico y hospitalidad de cinco estrellas: 55 residencias privadas junto a un hotel de 180 habitaciones frente a Plaza San Martín.",
+    units: "55 residencias",
+    description: "El icónico Plaza, reconvertido.",
   },
   {
     slug: "sls-pilar",
@@ -333,9 +612,7 @@ export const projects: Project[] = [
     region: "Argentina",
     lat: -34.4587,
     lng: -58.9142,
-    status: "En desarrollo",
-    description:
-      "En el corredor norte del Gran Buenos Aires, SLS lleva su propuesta lifestyle a un formato residencial suburbano, fuera del eje porteño de Puerto Madero.",
+    description: "SLS, en formato suburbano.",
   },
   {
     slug: "reserva-alto-agrelo",
@@ -345,11 +622,8 @@ export const projects: Project[] = [
     region: "Argentina",
     lat: -33.0472,
     lng: -68.8773,
-    status: "En desarrollo",
-    bdaRole: "Master Broker — BDA",
     units: "116 lotes",
-    description:
-      "Un masterplan de 116 lotes entre viñedos y montaña, con acceso a bodega propia, club ecuestre y el futuro hotel Casa Duhau, que operará el grupo Hyatt.",
+    description: "Viñedos, montaña y un futuro Casa Duhau by Hyatt.",
   },
 
   // — Uruguay —
@@ -362,10 +636,8 @@ export const projects: Project[] = [
     lat: -34.9530,
     lng: -54.9280,
     developer: "GNV Group",
-    status: "En desarrollo",
-    units: "314 unidades · US$160M",
-    description:
-      "Sobre Playa Brava, GNV Group desarrolla 314 unidades bajo la marca SLS, uno de los proyectos de mayor volumen anunciados en Punta del Este en los últimos años.",
+    units: "314 unidades",
+    description: "SLS, sobre Playa Brava.",
   },
   {
     slug: "cipriani-punta-del-este",
@@ -375,136 +647,9 @@ export const projects: Project[] = [
     region: "Uruguay",
     lat: -34.9670,
     lng: -54.9430,
-    status: "Fase 1 completa (2026)",
+    status: "Fase 1 completa",
     credits: "Arquitectura: Rafael Viñoly",
-    description:
-      "Con arquitectura del estudio de Rafael Viñoly, el proyecto lleva la hospitalidad veneciana de Cipriani a Punta del Este, con su primera fase ya finalizada.",
-  },
-
-  // — Estados Unidos · Miami —
-  {
-    slug: "waldorf-astoria-miami",
-    name: "Waldorf Astoria Residences Miami",
-    brandSlug: "waldorf-astoria",
-    city: "Downtown, Miami",
-    region: "Estados Unidos",
-    lat: 25.7743,
-    lng: -80.1937,
-    status: "En desarrollo",
-    description:
-      "La torre residencial más alta del hemisferio occidental lleva el nombre y el servicio histórico de Waldorf Astoria al skyline de Miami.",
-  },
-  {
-    slug: "bentley-residences-miami",
-    name: "Bentley Residences",
-    brandSlug: "bentley",
-    city: "Sunny Isles Beach, Miami",
-    region: "Estados Unidos",
-    lat: 25.9418,
-    lng: -80.1225,
-    status: "En desarrollo",
-    description:
-      "El primer edificio residencial del mundo con la firma Bentley incorpora ascensores privados para automóviles hasta cada unidad, llevando el diseño de la marca británica más allá del interiorismo.",
-  },
-  {
-    slug: "baccarat-residences-miami",
-    name: "Baccarat Residences Miami",
-    brandSlug: "baccarat",
-    city: "Brickell, Miami",
-    region: "Estados Unidos",
-    lat: 25.7625,
-    lng: -80.1935,
-    status: "En desarrollo",
-    description:
-      "La manufactura francesa de cristal desde 1764 firma su primera torre residencial en Miami, con lámparas y detalles decorativos propios de la maison en cada espacio común.",
-  },
-  {
-    slug: "mandarin-oriental-miami",
-    name: "The Residences at Mandarin Oriental, Miami",
-    brandSlug: "mandarin-oriental",
-    city: "Brickell Key, Miami",
-    region: "Estados Unidos",
-    lat: 25.7657,
-    lng: -80.1865,
-    developer: "Swire Properties",
-    status: "En desarrollo",
-    description:
-      "Swire Properties reconstruye su propiedad insignia en Brickell Key con una nueva torre Mandarin Oriental, referencia histórica del servicio hotelero asiático en Miami.",
-  },
-  {
-    slug: "aston-martin-residences",
-    name: "Aston Martin Residences",
-    brandSlug: "aston-martin",
-    city: "Downtown, Miami",
-    region: "Estados Unidos",
-    lat: 25.7708,
-    lng: -80.1867,
-    status: "Entregado",
-    description:
-      "El primer proyecto residencial diseñado por Aston Martin en el mundo ocupa una de las parcelas más codiciadas junto a la bahía de Miami, con formas aerodinámicas heredadas del automovilismo.",
-  },
-
-  // — México —
-  {
-    slug: "amanvari",
-    name: "Amanvari",
-    brandSlug: "aman",
-    city: "East Cape, Los Cabos",
-    region: "México",
-    lat: 23.3167,
-    lng: -109.4167,
-    status: "En desarrollo",
-    description:
-      "El primer proyecto de Aman en México ocupa un tramo remoto del East Cape, en la línea de emplazamientos aislados que caracteriza a la marca a nivel global.",
-  },
-  {
-    slug: "st-regis-los-cabos",
-    name: "St. Regis Los Cabos Residences",
-    brandSlug: "st-regis",
-    city: "Quivira, Los Cabos",
-    region: "México",
-    lat: 22.8905,
-    lng: -109.9700,
-    status: "En desarrollo",
-    description:
-      "Dentro del masterplan de Quivira, St. Regis suma residencias con el ritual de mayordomía y el nivel de servicio propios de la marca.",
-  },
-  {
-    slug: "ritz-carlton-reserve-zadun",
-    name: "Ritz-Carlton Reserve at Zadún",
-    brandSlug: "ritz-carlton",
-    city: "Puerto Los Cabos",
-    region: "México",
-    lat: 23.0500,
-    lng: -109.6833,
-    status: "Entregado",
-    description:
-      "Zadún forma parte de la colección más exclusiva de Ritz-Carlton — Reserve —, reservada a un número muy limitado de propiedades en el mundo.",
-  },
-  {
-    slug: "park-hyatt-mexico-city",
-    name: "Park Hyatt Mexico City Residences",
-    brandSlug: "hyatt",
-    city: "Polanco, Ciudad de México",
-    region: "México",
-    lat: 19.4326,
-    lng: -99.1959,
-    status: "En desarrollo",
-    units: "23 residencias",
-    description:
-      "En Polanco, el barrio de mayor densidad de lujo de la capital mexicana, Park Hyatt suma 23 residencias urbanas a su propiedad hotelera.",
-  },
-  {
-    slug: "nobu-los-cabos",
-    name: "Nobu Los Cabos Residences",
-    brandSlug: "nobu",
-    city: "Diamante, Los Cabos",
-    region: "México",
-    lat: 22.9556,
-    lng: -110.0294,
-    status: "En desarrollo",
-    description:
-      "Dentro del masterplan de Diamante, Nobu extiende su identidad de hospitalidad — nacida del restaurante homónimo — a un conjunto residencial frente al Pacífico.",
+    description: "Venecia, en la costa uruguaya.",
   },
 ];
 
@@ -515,8 +660,14 @@ export function getProject(slug: string): Project | undefined {
 export const regions = [
   "España",
   "Portugal",
-  "Argentina",
-  "Uruguay",
+  "Reino Unido",
+  "Emiratos Árabes Unidos",
+  "Catar",
+  "Arabia Saudita",
+  "Tailandia",
+  "Singapur",
   "Estados Unidos",
   "México",
+  "Argentina",
+  "Uruguay",
 ] as const;

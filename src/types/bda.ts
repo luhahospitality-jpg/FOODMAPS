@@ -11,10 +11,16 @@ export type Brand = {
 export type ProjectRegion =
   | "España"
   | "Portugal"
-  | "Argentina"
-  | "Uruguay"
+  | "Reino Unido"
+  | "Emiratos Árabes Unidos"
+  | "Catar"
+  | "Arabia Saudita"
+  | "Tailandia"
+  | "Singapur"
   | "Estados Unidos"
-  | "México";
+  | "México"
+  | "Argentina"
+  | "Uruguay";
 
 export type Project = {
   slug: string;
@@ -25,9 +31,8 @@ export type Project = {
   lat: number;
   lng: number;
   developer?: string;
-  status: string;
+  status?: string;
   units?: string;
   credits?: string;
   description: string;
-  bdaRole?: string;
 };

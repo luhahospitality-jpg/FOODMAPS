@@ -42,10 +42,6 @@ export default async function MapaPage({
         <h1 className="bda-serif mt-5 max-w-2xl text-4xl leading-[1.1] text-bda-ink sm:text-5xl">
           Cada proyecto, en su lugar.
         </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-bda-muted">
-          Un registro documental, no una vitrina comercial. Filtra por marca,
-          categoría o país y recorre el mapa.
-        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pb-24 sm:px-8">

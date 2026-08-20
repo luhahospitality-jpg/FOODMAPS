@@ -56,27 +56,26 @@ export default function ProjectExplorer({
             </FilterChip>
           ))}
         </div>
-        <div className="flex flex-wrap gap-2">
-          <FilterChip active={region === "todas"} onClick={() => setRegion("todas")}>
-            Todos los países
-          </FilterChip>
+        <select
+          value={region}
+          onChange={(e) => setRegion(e.target.value as RegionFilter)}
+          className="bda-mono rounded-full border border-bda-line bg-bda-bg px-3.5 py-1.5 text-[10px] uppercase tracking-[0.14em] text-bda-muted outline-none transition-colors hover:border-bda-ink hover:text-bda-ink"
+        >
+          <option value="todas">Todos los países</option>
           {regions.map((r) => (
-            <FilterChip key={r} active={region === r} onClick={() => setRegion(r)}>
+            <option key={r} value={r}>
               {r}
-            </FilterChip>
+            </option>
           ))}
-        </div>
+        </select>
         {activeBrand && (
           <button
             onClick={() => setBrandFilter(undefined)}
             className="bda-mono text-[10px] uppercase tracking-[0.14em] text-bda-gold underline underline-offset-4"
           >
-            Marca: {activeBrand.name} · quitar ×
+            {activeBrand.name} · quitar ×
           </button>
         )}
-        <span className="bda-mono ml-auto text-[10px] uppercase tracking-[0.14em] text-bda-muted">
-          {filtered.length} {filtered.length === 1 ? "proyecto" : "proyectos"}
-        </span>
       </div>
 
       <div className="mt-8">
@@ -100,7 +99,7 @@ export default function ProjectExplorer({
         ))}
         {filtered.length === 0 && (
           <p className="col-span-full p-14 text-center text-sm text-bda-muted">
-            Todavía no hay proyectos documentados con estos filtros.
+            Nada por aquí, todavía.
           </p>
         )}
       </div>

@@ -36,12 +36,9 @@ export default function ProjectCard({
         <p className="mt-1 text-xs text-bda-muted">
           {brand?.name} · {project.city}
         </p>
-        <p className="mt-4 line-clamp-3 text-sm leading-relaxed text-bda-ink/70">
+        <p className="mt-4 text-sm italic leading-relaxed text-bda-ink/60">
           {project.description}
         </p>
-        <span className="bda-mono mt-5 text-[10px] uppercase tracking-[0.14em] text-bda-muted transition-transform group-hover:translate-x-1">
-          Ver ficha →
-        </span>
       </div>
     </Link>
   );

@@ -49,12 +49,11 @@ export default async function ProjectPage({
     ["Ciudad", project.city],
     ["País", project.region],
     ["Marca", brand?.name ?? "—"],
-    ["Estado", project.status],
   ];
+  if (project.status) facts.push(["Estado", project.status]);
   if (project.developer) facts.push(["Desarrollador", project.developer]);
   if (project.units) facts.push(["Unidades", project.units]);
   if (project.credits) facts.push(["Créditos", project.credits]);
-  if (project.bdaRole) facts.push(["Rol de BDA", project.bdaRole]);
 
   return (
     <div>
@@ -63,7 +62,7 @@ export default async function ProjectPage({
           href="/bda/mapa"
           className="bda-mono text-[10px] uppercase tracking-[0.14em] text-bda-muted hover:text-bda-ink"
         >
-          ← Mapa Global
+          ← Mapa
         </Link>
       </section>
 
@@ -88,14 +87,9 @@ export default async function ProjectPage({
             <p className="mt-2 text-sm text-bda-muted">
               {brand?.name} · {project.city}
             </p>
-            <p className="mt-8 max-w-2xl text-[15px] leading-relaxed text-bda-ink/85 sm:text-base">
+            <p className="bda-serif mt-8 max-w-lg text-xl italic leading-snug text-bda-ink/80">
               {project.description}
             </p>
-            {brand && (
-              <p className="mt-6 max-w-2xl text-sm leading-relaxed text-bda-muted">
-                {brand.description}
-              </p>
-            )}
           </div>
 
           <dl className="h-fit space-y-4 border-t bda-hairline pt-6 sm:border-t-0 sm:border-l sm:pl-8 sm:pt-0">
