@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Fifty Seconds conquista la segunda Estrella Michelin en la Guía Michelin Portugal 2026",
+    "resumen": "El restaurante Fifty Seconds, del chef Rui Silvestre en lo alto de la Torre Vasco da Gama, fue el único nuevo dos-estrellas del país en la Guía Michelin Portugal 2026, presentada el 11 de marzo. Lisboa se mantiene como la ciudad con más restaurantes estrellados de Portugal.",
+    "fuente_url": "https://www.michelin.com/en/publications/products-and-services/one-new-two-star-restaurant-shines-in-the-michelin-guide-portugal-2026",
+    "imagen_url": "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/cllngd0on4c280thpbrji9wtm-cp-gm-2019-1600x790.full.jpg",
+    "fecha": "2026-03-11",
+    "ciudad_slug": "lisboa"
+  },
+  {
+    "titulo": "Belcanto, de José Avillez, repite en The World's 50 Best Restaurants 2025 en el puesto 42",
+    "resumen": "En la ceremonia de The World's 50 Best Restaurants celebrada en Turín el 19 de junio de 2025, Belcanto, el restaurante con dos estrellas Michelin del chef José Avillez en el Chiado, ocupó el puesto número 42, siendo la única representación de Lisboa en la lista principal.",
+    "fuente_url": "https://www.theworlds50best.com/the-list/belcanto.html",
+    "imagen_url": "https://www.theworlds50best.com/restaurants/best-in-the-world/filestore/Belcanto-dish-2-Credito-GrupoJoseAvillez%20hero_W50BR25_FB.jpg",
+    "fecha": "2025-06-19",
+    "ciudad_slug": "lisboa"
+  },
+  {
+    "titulo": "Lisboa entra en el top 10 de las mejores ciudades del mundo para comer según Time Out en 2026",
+    "resumen": "Time Out situó a Lisboa en el décimo puesto de su ranking global 'World's Best Cities for Food 2026', publicado el 8 de junio, destacando el auge de las tostas de autor y las neo-tascas y señalando que el 86% de los lisboetas valora muy positivamente la oferta gastronómica de la ciudad.",
+    "fuente_url": "https://www.timeout.com/uk/travel/worlds-best-cities-for-food-2026",
+    "imagen_url": "https://media.timeout.com/images/106371248/1920/1080/image.jpg",
+    "fecha": "2026-06-08",
+    "ciudad_slug": "lisboa"
+  },
+  {
+    "titulo": "Gancho, en Alfama, elegido mejor restaurante nuevo de Lisboa en 2025 por Time Out",
+    "resumen": "En su balance anual 'O melhor de Lisboa em 2025', publicado el 18 de diciembre, Time Out Lisboa nombró a Gancho, la neo-tasca abierta por la chef Louise Bourrat y el mixólogo Marco Cossu en el antiguo local de Boi-Cavalo, como el mejor restaurante nuevo del año en la ciudad.",
+    "fuente_url": "https://www.timeout.pt/lisboa/pt/coisas-para-fazer/o-melhor-de-lisboa-em-2025",
+    "imagen_url": "https://media.timeout.com/images/106330861/image.jpg",
+    "fecha": "2025-12-18",
+    "ciudad_slug": "lisboa"
+  },
+  {
+    "titulo": "El youtuber BeardMeatsFood supera el mayor reto de hamburguesas de Portugal en el área de Lisboa",
+    "resumen": "El popular canal de comida británico BeardMeatsFood (Adam Moran), con millones de suscriptores, visitó el restaurante Ribs & Company en Odivelas, en el área metropolitana de Lisboa, para intentar su 'OMG Burger Challenge', un reto que más de 600 personas habían fallado en una década, y logró completarlo.",
+    "fuente_url": "https://www.youtube.com/watch?v=TbhMjH6ZjXo",
+    "imagen_url": null,
+    "fecha": "2026-03-15",
+    "ciudad_slug": "lisboa"
+  }
+]
