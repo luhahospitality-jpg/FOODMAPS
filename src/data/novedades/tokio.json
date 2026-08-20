@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Myojaku asciende a tres estrellas Michelin en la Guía Tokio 2026",
+    "resumen": "En la ceremonia del 25 de septiembre de 2025, la Guía Michelin Tokio 2026 promovió a Myojaku, en Nishi-Azabu, de dos a tres estrellas, además de sumar 18 restaurantes con nueva estrella (14 de ellos con su primera estrella) y ascender a Nishiazabu Sushi Shin, Hakuun y Ensui a dos estrellas. La selección total quedó en 526 restaurantes, incluidos 12 con tres estrellas.",
+    "fuente_url": "https://www.tokyoweekender.com/food-and-drink/restaurants-and-bars/the-michelin-guide-tokyo-2026/",
+    "imagen_url": "https://www.tokyoweekender.com/wp-content/uploads/2025/09/la-gloire.jpg",
+    "fecha": "2025-09-30",
+    "ciudad_slug": "tokio"
+  },
+  {
+    "titulo": "Tokio coloca siete restaurantes en Asia's 50 Best Restaurants 2026, con Sézanne en el puesto 16",
+    "resumen": "En la ceremonia de Asia's 50 Best Restaurants 2026, Tokio ubicó siete restaurantes entre los 50 mejores de Asia, liderados por Sézanne en el puesto 16, seguido de Sazenka (21), Maz (28), Florilège (31), Myoujyaku (33), Crony (34) y Narisawa (37), convirtiendo a la capital japonesa en la segunda ciudad con más entradas del ranking.",
+    "fuente_url": "https://www.japantimes.co.jp/life/2026/03/26/food-drink/asia-50-best-restaurants-2026/",
+    "imagen_url": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/03/26/531588.jpg?v=3.1",
+    "fecha": "2026-03-26",
+    "ciudad_slug": "tokio"
+  },
+  {
+    "titulo": "Tres bares de Tokio entran en la lista Asia's 50 Best Bars 2026",
+    "resumen": "Time Out Tokyo informó que tres bares de la ciudad fueron incluidos en Asia's 50 Best Bars 2026, revelada el 28 de julio en Macao: Punch Room Tokyo (The Tokyo Edition Ginza), especializado en cócteles servidos en ponchera, en el puesto 23; Virtù (Four Seasons Hotel Tokyo Otemachi) en el 26; y Bar Libre, en Ikebukuro, en el 39.",
+    "fuente_url": "https://www.timeout.com/tokyo/news/3-tokyo-bars-named-in-asias-50-best-bars-2026-list-072926",
+    "imagen_url": "https://media.timeout.com/images/106232887/image.jpg",
+    "fecha": "2026-07-29",
+    "ciudad_slug": "tokio"
+  },
+  {
+    "titulo": "Strictly Dumpling documenta un omakase de 50 tiempos en Sushisho Masa, Tokio",
+    "resumen": "El reconocido canal de comida y viajes de YouTube Strictly Dumpling, conducido por Mikey Chen, publicó el 5 de agosto de 2026 un video en el que vive un omakase de 50 tiempos por unos 300 dólares en Sushisho Masa, un pequeño local de sushi en el barrio de Nakano, Tokio, degustando algunos de los mariscos más frescos y raros de Japón.",
+    "fuente_url": "https://www.youtube.com/watch?v=8_T5m47IcU0",
+    "imagen_url": null,
+    "fecha": "2026-08-05",
+    "ciudad_slug": "tokio"
+  },
+  {
+    "titulo": "El crítico Robbie Swinnerton repasa un 2025 marcado por el sushi y la alta cocina en Tokio",
+    "resumen": "En su balance anual para The Japan Times, el crítico gastronómico Robbie Swinnerton -autor de la columna Tokyo Food File desde 1998- destacó que 2025 estuvo definido por el sushi y propuestas de vanguardia, citando el saba bōzushi de estilo Kioto (sushi enrollado de caballa en vinagre) de Kibun como uno de los platos del año, en medio de aperturas de estrellas culinarias y el regreso de locales históricos tras reformas.",
+    "fuente_url": "https://www.japantimes.co.jp/life/2025/12/26/food-drink/2025-review-tokyo-dining/",
+    "imagen_url": "https://www.japantimes.co.jp/japantimes/uploads/images/2025/12/26/513274.jpeg?v=3.1",
+    "fecha": "2025-12-26",
+    "ciudad_slug": "tokio"
+  }
+]
