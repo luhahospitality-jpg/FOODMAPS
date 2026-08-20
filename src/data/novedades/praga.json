@@ -1,0 +1,42 @@
+[
+  {
+    "titulo": "Levitate se estrena con una estrella Michelin en la Guía Checa 2026",
+    "resumen": "En la primera Guía Michelin dedicada a toda la República Checa, presentada en diciembre de 2025, el restaurante Levitate de Praga, cerca de Riegrovy Sady, obtuvo su primera estrella Michelin gracias a su cocina que combina técnicas nórdicas con especias asiáticas. Junto a Levitate, Casa De Carli, Štangl, La Degustation Bohême Bourgeoise y Field también lucen una estrella en la capital checa.",
+    "fuente_url": "https://www.praguedaily.news/2026/01/16/michelin-stars-conquer-prague-top-dining-in-the-czech-capital/",
+    "imagen_url": "https://pub-94d1cc15a07543a1a84d2eef096b8d24.r2.dev/posts/field-1768544794909-kmdjlj-lg.webp",
+    "fecha": "2026-01-16",
+    "ciudad_slug": "praga"
+  },
+  {
+    "titulo": "Forbína, el bar praguense inspirado en el teatro, entra en la lista Europe's 50 Best Bars 2026",
+    "resumen": "El bar de cócteles Forbína, situado frente al Teatro Nacional de Praga, debutó en el puesto 38 de la primera edición de Europe's 50 Best Bars, la rama europea de la organización World's 50 Best. Su carta, inspirada en obras de teatro y compositores checos como Smetana, lo convierte en uno de los dos únicos locales checos en la lista.",
+    "fuente_url": "https://www.theworlds50best.com/bars/best-in-europe/the-list/forbina-bar.html",
+    "imagen_url": "https://www.theworlds50best.com/bars/best-in-europe/filestore/jpg/Forbina-hero_E50BB26_FB.jpg",
+    "fecha": "2026-07-01",
+    "ciudad_slug": "praga"
+  },
+  {
+    "titulo": "Gault&Millau nombra a Oldřich Sahajdák, de La Degustation, Chef del Año 2026",
+    "resumen": "En la gala celebrada el 26 de enero de 2026 en la Casa Nacional de Vinohrady, la guía Gault&Millau presentó su segunda edición checa: La Degustation Bohême Bourgeoise y Levitate, ambos en Praga, alcanzaron por primera vez los cuatro toques, mientras que Oldřich Sahajdák, chef de La Degustation, fue distinguido como Chef del Año.",
+    "fuente_url": "https://www.praguedaily.news/2026/01/28/gaultandmillau-2026-czech-republic-s-top-restaurants-and-a-new-hotel-guide/",
+    "imagen_url": "https://pub-94d1cc15a07543a1a84d2eef096b8d24.r2.dev/posts/restaurant-papilio-cover-1769578443679-ot139i-lg.webp",
+    "fecha": "2026-01-28",
+    "ciudad_slug": "praga"
+  },
+  {
+    "titulo": "La Degustation Bohême Bourgeoise, entre los 1000 mejores restaurantes del mundo según La Liste",
+    "resumen": "El ranking global La Liste 2026, una clasificación comparable a los 50 Best que agrupa a los mil mejores restaurantes del mundo, incluyó a La Degustation Bohême Bourgeoise de Praga junto a otras dos mesas checas, justo antes de la publicación de la primera Guía Michelin para todo el país.",
+    "fuente_url": "https://www.expats.cz/czech-news/article/czech-restaurants-rank-among-world-s-best",
+    "imagen_url": "https://www.expats.cz/images/publishing/articles/2025/11/1280_650/restaurant-essens-pahuw.webp",
+    "fecha": "2025-11-26",
+    "ciudad_slug": "praga"
+  },
+  {
+    "titulo": "Výčep se une a los Bib Gourmand de Praga en la nueva Guía Michelin",
+    "resumen": "Entre los 18 restaurantes checos distinguidos con el Bib Gourmand en la edición 2026 de la Guía Michelin figura Výčep, en Praga, reconocido por su cocina checa contemporánea servida en un ambiente informal de cervecería.",
+    "fuente_url": "https://www.czechbites.com/articles/great-food-at-a-reasonable-price-these-czech-establishments-have-been-awarded-a-michelin-bib-gourmand",
+    "imagen_url": "https://data.eu.cntmbr.com/jidlo-a-radost/jidlo-a-radost/bf3570a2-42d8-430a-91fc-2b755df3d3ed.png",
+    "fecha": "2026-01-07",
+    "ciudad_slug": "praga"
+  }
+]
