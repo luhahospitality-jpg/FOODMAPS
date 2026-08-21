@@ -43,3 +43,23 @@ export type Project = {
   credits?: string;
   description: string;
 };
+
+export type NewsRegion =
+  | "España"
+  | "Portugal"
+  | "Italia"
+  | "Francia"
+  | "Reino Unido"
+  | "Estados Unidos"
+  | "Sudamérica"
+  | "Global";
+
+export type NewsItem = {
+  id: string;
+  headline: string;
+  region: NewsRegion;
+  date: string;
+  summary: string;
+  source: string;
+  url: string;
+};

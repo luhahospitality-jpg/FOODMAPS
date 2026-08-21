@@ -3,6 +3,7 @@ import Link from "next/link";
 const links = [
   { href: "/bda/mapa", label: "Mapa" },
   { href: "/bda/marcas", label: "Marcas" },
+  { href: "/bda/noticias", label: "Noticias" },
   { href: "/bda/sobre", label: "Nosotros" },
 ];
 

@@ -35,6 +35,11 @@ export default function BdaFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/bda/noticias" className="text-bda-ink/80 hover:text-bda-ink">
+                    Noticias
+                  </Link>
+                </li>
+                <li>
                   <Link href="/bda/sobre" className="text-bda-ink/80 hover:text-bda-ink">
                     Sobre BDA
                   </Link>
