@@ -10,17 +10,28 @@ export default function BdaHomePage() {
       {/* Hero */}
       <section className="border-b bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1px_1fr] lg:gap-0">
+          <div className="grid gap-14 lg:grid-cols-[1fr_1px_1fr] lg:gap-0">
             {/* left column */}
             <div className="lg:pr-14">
-              <p className="bda-mono text-[11px] uppercase tracking-[0.2em] text-bda-gold">
-                BDA · Un archivo documental
+              <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-bda-gold">
+                Branded Development Associates.
               </p>
-              <h1 className="bda-serif mt-5 max-w-lg text-4xl leading-[1.1] text-bda-ink sm:text-5xl lg:text-6xl">
-                Las branded residences del mundo, en un solo lugar.
+              <div className="mt-4 flex items-center gap-3">
+                <span className="h-px w-16 bg-bda-ink/40" aria-hidden />
+                <span className="bda-mono text-xs text-bda-ink/40" aria-hidden>
+                  →
+                </span>
+              </div>
+
+              <h1 className="bda-serif mt-8 max-w-md text-5xl font-semibold uppercase leading-[0.96] tracking-tight text-bda-ink sm:text-6xl lg:text-7xl">
+                Branded
+                <br />
+                Residences.
               </h1>
-              <p className="mt-6 max-w-md text-base leading-relaxed text-bda-muted sm:text-lg">
-                Un archivo documental. Sin inquiries, sin ventas.
+
+              <p className="mt-8 max-w-md text-base leading-relaxed text-bda-muted sm:text-lg">
+                Un archivo documental de las branded residences del mundo.
+                Sin inquiries, sin ventas.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-5">
                 <Link
@@ -56,12 +67,19 @@ export default function BdaHomePage() {
             <div className="bda-dotted-v hidden lg:block" aria-hidden />
 
             {/* right column */}
-            <div className="lg:pl-14">
-              <div className="relative overflow-hidden rounded-3xl">
+            <div className="relative lg:pl-14">
+              <span
+                aria-hidden
+                className="bda-serif pointer-events-none absolute right-1 top-0 select-none text-[110px] font-semibold leading-none text-bda-ink/[0.09] sm:text-[170px] lg:right-3"
+              >
+                BDA
+              </span>
+
+              <div className="relative z-10 mt-14 overflow-hidden rounded-3xl lg:mt-[84px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/bda/hero/hero-main.jpg"
-                  alt="Four Seasons Residences Río Real, Marbella"
+                  alt="Mandarin Oriental Residences Barcelona"
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <span className="bda-mono absolute left-5 top-5 rounded-full border border-white/40 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur">
@@ -73,7 +91,7 @@ export default function BdaHomePage() {
                   {[
                     { src: "/bda/hero/hero-1.jpg", alt: "Alvear Tower, Buenos Aires" },
                     { src: "/bda/hero/hero-2.jpg", alt: "SLS Lux Puerto Madero, Buenos Aires" },
-                    { src: "/bda/hero/hero-3.jpg", alt: "Armani Residences Marbella" },
+                    { src: "/bda/hero/hero-3.jpg", alt: "Four Seasons Madrid Residences" },
                   ].map((img) => (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
@@ -87,7 +105,7 @@ export default function BdaHomePage() {
                 <p className="bda-mono text-[10px] uppercase leading-snug tracking-[0.1em] text-bda-muted">
                   Alvear Tower · SLS Puerto Madero
                   <br />
-                  Armani Marbella
+                  Four Seasons Madrid
                 </p>
               </div>
             </div>
