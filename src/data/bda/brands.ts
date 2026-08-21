@@ -201,6 +201,27 @@ export const brands: Brand[] = [
     description: "El grupo detrás del propio Dorchester de Park Lane.",
   },
   {
+    slug: "maybourne",
+    name: "Maybourne",
+    category: "servicios",
+    origin: "Reino Unido",
+    description: "Claridge's, The Connaught y The Berkeley, bajo un mismo grupo.",
+  },
+  {
+    slug: "kempinski",
+    name: "Kempinski",
+    category: "servicios",
+    origin: "Alemania / Suiza",
+    description: "La cadena de hoteles de lujo más antigua de Europa.",
+  },
+  {
+    slug: "cheval-collection",
+    name: "Cheval Collection",
+    category: "servicios",
+    origin: "Reino Unido",
+    description: "Apartamentos de servicio de ultra lujo, desde Londres.",
+  },
+  {
     slug: "rosewood",
     name: "Rosewood",
     category: "servicios",
@@ -341,6 +362,13 @@ export const brands: Brand[] = [
     category: "lifestyle",
     origin: "Reino Unido",
     description: "El interiorismo de Philippe Starck, en serie.",
+  },
+  {
+    slug: "siro",
+    name: "SIRO",
+    category: "lifestyle",
+    origin: "Emiratos Árabes Unidos",
+    description: "Kerzner International, con foco en rendimiento y bienestar.",
   },
 ];
 
