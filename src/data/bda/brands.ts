@@ -187,6 +187,13 @@ export const brands: Brand[] = [
     description: "La línea más exclusiva del grupo español.",
   },
   {
+    slug: "fairmont",
+    name: "Fairmont",
+    category: "servicios",
+    origin: "Canadá",
+    description: "Grandes hoteles históricos, de Accor.",
+  },
+  {
     slug: "rosewood",
     name: "Rosewood",
     category: "servicios",
@@ -327,6 +334,13 @@ export const brands: Brand[] = [
     category: "lifestyle",
     origin: "Reino Unido",
     description: "El interiorismo de Philippe Starck, en serie.",
+  },
+  {
+    slug: "rafael-nadal",
+    name: "Rafael Nadal",
+    category: "lifestyle",
+    origin: "España",
+    description: "El tenista, socio de Palladium en la Costa del Sol.",
   },
 ];
 
