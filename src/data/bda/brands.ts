@@ -180,6 +180,13 @@ export const brands: Brand[] = [
     description: "Hospitalidad asiática desde 1928.",
   },
   {
+    slug: "melia",
+    name: "Meliá Collection",
+    category: "servicios",
+    origin: "España",
+    description: "La línea más exclusiva del grupo español.",
+  },
+  {
     slug: "rosewood",
     name: "Rosewood",
     category: "servicios",
@@ -313,6 +320,13 @@ export const brands: Brand[] = [
     category: "lifestyle",
     origin: "Italia / Argentina",
     description: "Hypercars artesanales, en formato residencial.",
+  },
+  {
+    slug: "yoo",
+    name: "YOO",
+    category: "lifestyle",
+    origin: "Reino Unido",
+    description: "El interiorismo de Philippe Starck, en serie.",
   },
 ];
 

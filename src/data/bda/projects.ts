@@ -959,6 +959,17 @@ export const projects: Project[] = [
 
   // — Argentina —
   {
+    slug: "yoo-nordelta",
+    name: "YOO Nordelta",
+    brandSlug: "yoo",
+    city: "Nordelta, Tigre",
+    region: "Argentina",
+    lat: -34.4000,
+    lng: -58.6600,
+    units: "99 unidades",
+    description: "Philippe Starck, en el country más grande del país.",
+  },
+  {
     slug: "alvear-tower",
     name: "Alvear Tower",
     brandSlug: "alvear",
@@ -1037,6 +1048,19 @@ export const projects: Project[] = [
     lng: -68.8773,
     units: "116 lotes",
     description: "Viñedos, montaña y un futuro Casa Duhau by Hyatt.",
+  },
+  {
+    slug: "melia-valle-de-uco",
+    name: "Meliá Collection Valle de Uco",
+    brandSlug: "melia",
+    city: "Valle de Uco, Mendoza",
+    region: "Argentina",
+    developer: "Grupo Almarena",
+    lat: -33.6500,
+    lng: -69.1500,
+    status: "En desarrollo (2028)",
+    units: "10 residencias",
+    description: "Meliá, entre viñedos del Valle de Uco.",
   },
 
   // — Uruguay —
