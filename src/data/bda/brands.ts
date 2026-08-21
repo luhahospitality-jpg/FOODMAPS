@@ -10,6 +10,13 @@ export const brands: Brand[] = [
     description: "El minimalismo Armani, aplicado a la vivienda.",
   },
   {
+    slug: "jacob-co",
+    name: "Jacob & Co.",
+    category: "moda",
+    origin: "Suiza / Estados Unidos",
+    description: "Alta relojería, en su primer beach club propio.",
+  },
+  {
     slug: "dolce-gabbana",
     name: "Dolce & Gabbana",
     category: "moda",
@@ -108,6 +115,20 @@ export const brands: Brand[] = [
     category: "servicios",
     origin: "Singapur",
     description: "Hospitalidad colonial reinventada.",
+  },
+  {
+    slug: "conrad",
+    name: "Conrad",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "El lado boutique de Hilton.",
+  },
+  {
+    slug: "jk-place",
+    name: "JK Place",
+    category: "servicios",
+    origin: "Italia",
+    description: "Hospitalidad boutique, a la italiana.",
   },
   {
     slug: "rosewood",
