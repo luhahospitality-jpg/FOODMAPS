@@ -194,6 +194,13 @@ export const brands: Brand[] = [
     description: "Grandes hoteles históricos, de Accor.",
   },
   {
+    slug: "dorchester-collection",
+    name: "Dorchester Collection",
+    category: "servicios",
+    origin: "Reino Unido",
+    description: "El grupo detrás del propio Dorchester de Park Lane.",
+  },
+  {
     slug: "rosewood",
     name: "Rosewood",
     category: "servicios",
@@ -334,13 +341,6 @@ export const brands: Brand[] = [
     category: "lifestyle",
     origin: "Reino Unido",
     description: "El interiorismo de Philippe Starck, en serie.",
-  },
-  {
-    slug: "rafael-nadal",
-    name: "Rafael Nadal",
-    category: "lifestyle",
-    origin: "España",
-    description: "El tenista, socio de Palladium en la Costa del Sol.",
   },
 ];
 
