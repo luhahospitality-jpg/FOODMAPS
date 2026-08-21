@@ -25,7 +25,9 @@ export type ProjectRegion =
   | "Estados Unidos"
   | "México"
   | "Argentina"
-  | "Uruguay";
+  | "Uruguay"
+  | "Brasil"
+  | "Colombia";
 
 export type Project = {
   slug: string;

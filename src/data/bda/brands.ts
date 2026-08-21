@@ -17,6 +17,13 @@ export const brands: Brand[] = [
     description: "Alta relojería, en su primer beach club propio.",
   },
   {
+    slug: "elie-saab",
+    name: "Elie Saab",
+    category: "moda",
+    origin: "Líbano",
+    description: "Alta costura libanesa, frente a Hyde Park.",
+  },
+  {
     slug: "dolce-gabbana",
     name: "Dolce & Gabbana",
     category: "moda",
@@ -129,6 +136,48 @@ export const brands: Brand[] = [
     category: "servicios",
     origin: "Italia",
     description: "Hospitalidad boutique, a la italiana.",
+  },
+  {
+    slug: "fasano",
+    name: "Fasano",
+    category: "servicios",
+    origin: "Brasil",
+    description: "La hospitalidad brasileña de referencia.",
+  },
+  {
+    slug: "faena",
+    name: "Faena",
+    category: "servicios",
+    origin: "Argentina / Estados Unidos",
+    description: "Arte y espectáculo, como forma de hospitalidad.",
+  },
+  {
+    slug: "hilton",
+    name: "Hilton",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "La cadena hotelera que le da nombre al grupo.",
+  },
+  {
+    slug: "edition",
+    name: "EDITION",
+    category: "servicios",
+    origin: "Estados Unidos",
+    description: "Marriott, en clave boutique e independiente.",
+  },
+  {
+    slug: "cheval-blanc",
+    name: "Cheval Blanc",
+    category: "servicios",
+    origin: "Francia",
+    description: "La maison hotelera de LVMH.",
+  },
+  {
+    slug: "peninsula",
+    name: "The Peninsula",
+    category: "servicios",
+    origin: "Hong Kong",
+    description: "Hospitalidad asiática desde 1928.",
   },
   {
     slug: "rosewood",
@@ -250,6 +299,20 @@ export const brands: Brand[] = [
     category: "lifestyle",
     origin: "Alemania",
     description: "Un distrito entero bajo la estrella.",
+  },
+  {
+    slug: "tonino-lamborghini",
+    name: "Tonino Lamborghini",
+    category: "lifestyle",
+    origin: "Italia",
+    description: "La otra rama de la familia Lamborghini.",
+  },
+  {
+    slug: "pagani",
+    name: "Pagani",
+    category: "lifestyle",
+    origin: "Italia / Argentina",
+    description: "Hypercars artesanales, en formato residencial.",
   },
 ];
 
