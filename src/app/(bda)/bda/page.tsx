@@ -8,36 +8,89 @@ export default function BdaHomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <span
-          aria-hidden
-          className="bda-serif pointer-events-none absolute -right-4 -top-10 select-none text-[220px] leading-none text-bda-ink/[0.05] sm:text-[320px]"
-        >
-          1991
-        </span>
-        <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:px-8 sm:pb-28 sm:pt-24">
-          <p className="bda-mono text-[11px] uppercase tracking-[0.2em] text-bda-gold">
-            BDA · Commercial Leadership desde 1991
-          </p>
-          <h1 className="bda-serif mt-5 max-w-3xl text-4xl leading-[1.1] text-bda-ink sm:text-6xl">
-            Las branded residences del mundo, en un solo lugar.
-          </h1>
-          <p className="mt-6 max-w-md text-base leading-relaxed text-bda-muted sm:text-lg">
-            Un archivo documental. Sin inquiries, sin ventas.
-          </p>
-          <div className="mt-9 flex flex-wrap items-center gap-5">
-            <Link
-              href="/bda/mapa"
-              className="rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-opacity hover:opacity-85"
-            >
-              Explorar el mapa
-            </Link>
-            <Link
-              href="/bda/marcas"
-              className="bda-mono text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:text-bda-ink"
-            >
-              Las marcas →
-            </Link>
+      <section className="border-b bda-hairline">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1px_1fr] lg:gap-0">
+            {/* left column */}
+            <div className="lg:pr-14">
+              <p className="bda-mono text-[11px] uppercase tracking-[0.2em] text-bda-gold">
+                BDA · Un archivo documental
+              </p>
+              <h1 className="bda-serif mt-5 max-w-lg text-4xl leading-[1.1] text-bda-ink sm:text-5xl lg:text-6xl">
+                Las branded residences del mundo, en un solo lugar.
+              </h1>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-bda-muted sm:text-lg">
+                Un archivo documental. Sin inquiries, sin ventas.
+              </p>
+              <div className="mt-9 flex flex-wrap items-center gap-5">
+                <Link
+                  href="/bda/mapa"
+                  className="rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-opacity hover:opacity-85"
+                >
+                  Explorar el mapa
+                </Link>
+                <Link
+                  href="/bda/marcas"
+                  className="bda-mono text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:text-bda-ink"
+                >
+                  Las marcas →
+                </Link>
+              </div>
+
+              <div className="mt-12 max-w-[280px]">
+                <div className="overflow-hidden rounded-2xl">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/bda/hero/hero-side.jpg"
+                    alt="Plaza Hotel & Residences, Buenos Aires"
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                </div>
+                <p className="mt-3 text-xs leading-snug text-bda-muted">
+                  Plaza Hotel &amp; Residences — Buenos Aires, Argentina
+                </p>
+              </div>
+            </div>
+
+            {/* dotted divider */}
+            <div className="bda-dotted-v hidden lg:block" aria-hidden />
+
+            {/* right column */}
+            <div className="lg:pl-14">
+              <div className="relative overflow-hidden rounded-3xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/bda/hero/hero-main.jpg"
+                  alt="Four Seasons Residences Río Real, Marbella"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <span className="bda-mono absolute left-5 top-5 rounded-full border border-white/40 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur">
+                  Desde 1991
+                </span>
+              </div>
+              <div className="mt-5 flex items-center gap-4">
+                <div className="flex -space-x-3">
+                  {[
+                    { src: "/bda/hero/hero-1.jpg", alt: "Alvear Tower, Buenos Aires" },
+                    { src: "/bda/hero/hero-2.jpg", alt: "SLS Lux Puerto Madero, Buenos Aires" },
+                    { src: "/bda/hero/hero-3.jpg", alt: "Armani Residences Marbella" },
+                  ].map((img) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      key={img.src}
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-12 w-12 rounded-full border-2 border-bda-bg object-cover sm:h-14 sm:w-14"
+                    />
+                  ))}
+                </div>
+                <p className="bda-mono text-[10px] uppercase leading-snug tracking-[0.1em] text-bda-muted">
+                  Alvear Tower · SLS Puerto Madero
+                  <br />
+                  Armani Marbella
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
