@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ProjectExplorer from "@/components/bda/ProjectExplorer";
+import MapaPageClient from "./MapaPageClient";
 import { regions } from "@/data/bda/projects";
 import { getBrand } from "@/data/bda/brands";
 import type { BrandCategory, ProjectRegion } from "@/types/bda";
@@ -34,23 +34,10 @@ export default async function MapaPage({
       : "todas";
 
   return (
-    <div>
-      <section className="mx-auto max-w-6xl px-5 pb-10 pt-16 sm:px-8 sm:pt-24">
-        <p className="bda-mono text-[11px] uppercase tracking-[0.2em] text-bda-gold">
-          Mapa Global
-        </p>
-        <h1 className="bda-serif mt-5 max-w-2xl text-4xl leading-[1.1] text-bda-ink sm:text-5xl">
-          Cada proyecto, en su lugar.
-        </h1>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 pb-24 sm:px-8">
-        <ProjectExplorer
-          initialCategory={initialCategory}
-          initialRegion={initialRegion}
-          initialBrand={initialBrand}
-        />
-      </section>
-    </div>
+    <MapaPageClient
+      initialCategory={initialCategory}
+      initialRegion={initialRegion}
+      initialBrand={initialBrand}
+    />
   );
 }

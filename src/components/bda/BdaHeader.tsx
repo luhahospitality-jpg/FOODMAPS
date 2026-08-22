@@ -3,21 +3,26 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-
-const links = [
-  { href: "/bda/mapa", label: "Mapa" },
-  { href: "/bda/marcas", label: "Marcas" },
-  { href: "/bda/noticias", label: "Noticias" },
-  { href: "/bda/sobre", label: "Nosotros" },
-];
+import { useLocale } from "@/components/bda/LocaleContext";
+import { locales, localeLabel, localeName, type Locale } from "@/data/bda/i18n";
 
 export default function BdaHeader() {
   const pathname = usePathname();
   const isHome = pathname === "/bda";
   const [open, setOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const { locale, setLocale, t } = useLocale();
+
+  const links = [
+    { href: "/bda/mapa", label: t("nav_mapa") },
+    { href: "/bda/marcas", label: t("nav_marcas") },
+    { href: "/bda/noticias", label: t("nav_noticias") },
+    { href: "/bda/sobre", label: t("nav_nosotros") },
+  ];
 
   useEffect(() => {
     setOpen(false);
+    setLangOpen(false);
   }, [pathname]);
 
   return (
@@ -32,7 +37,7 @@ export default function BdaHeader() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => setOpen((v) => !v)}
-            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-label={open ? t("cerrar_menu") : t("abrir_menu")}
             aria-expanded={open}
             className={`flex flex-col items-start justify-center gap-[5px] rounded-full p-1 ${
               isHome ? "text-white" : "text-bda-ink"
@@ -64,16 +69,57 @@ export default function BdaHeader() {
           </Link>
         </div>
 
-        <Link
-          href="/bda/mapa"
-          className={`bda-mono rounded-full px-5 py-2.5 text-[10px] uppercase tracking-[0.14em] transition-opacity hover:opacity-85 ${
-            isHome
-              ? "border border-white/70 text-white"
-              : "bg-bda-ink text-bda-bg"
-          }`}
-        >
-          Ver el mapa
-        </Link>
+        <div className="flex items-center gap-3">
+          <div className="relative">
+            <button
+              onClick={() => setLangOpen((v) => !v)}
+              aria-label={t("abrir_idioma")}
+              aria-expanded={langOpen}
+              className={`bda-mono rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.14em] transition-opacity hover:opacity-85 ${
+                isHome
+                  ? "border-white/70 text-white"
+                  : "border-bda-line text-bda-ink"
+              }`}
+            >
+              {localeLabel[locale]}
+            </button>
+            <div
+              className={`absolute right-0 top-full z-50 mt-2 origin-top-right overflow-hidden rounded-2xl border bda-hairline bg-bda-bg shadow-lg transition-all duration-200 ${
+                langOpen
+                  ? "pointer-events-auto scale-100 opacity-100"
+                  : "pointer-events-none scale-95 opacity-0"
+              }`}
+            >
+              <div className="flex flex-col py-2">
+                {locales.map((l: Locale) => (
+                  <button
+                    key={l}
+                    onClick={() => {
+                      setLocale(l);
+                      setLangOpen(false);
+                    }}
+                    aria-current={l === locale}
+                    className="bda-mono flex items-center gap-2 whitespace-nowrap px-5 py-2.5 text-left text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:bg-bda-bg-raised-2 hover:text-bda-ink aria-[current=true]:text-bda-ink"
+                  >
+                    <span className="w-6 text-bda-gold">{localeLabel[l]}</span>
+                    {localeName[l]}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <Link
+            href="/bda/mapa"
+            className={`bda-mono rounded-full px-5 py-2.5 text-[10px] uppercase tracking-[0.14em] transition-opacity hover:opacity-85 ${
+              isHome
+                ? "border border-white/70 text-white"
+                : "bg-bda-ink text-bda-bg"
+            }`}
+          >
+            {t("ver_el_mapa")}
+          </Link>
+        </div>
       </div>
 
       {/* Dropdown menu — unfolds from the top-left corner */}

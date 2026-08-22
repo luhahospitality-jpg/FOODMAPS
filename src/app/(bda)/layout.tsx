@@ -3,6 +3,7 @@ import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
 import BdaHeader from "@/components/bda/BdaHeader";
 import BdaFooter from "@/components/bda/BdaFooter";
 import ScrollReveal from "@/components/bda/ScrollReveal";
+import { LocaleProvider } from "@/components/bda/LocaleContext";
 import "../bda-globals.css";
 
 const fraunces = Fraunces({
@@ -41,10 +42,12 @@ export default function BdaRootLayout({
       className={`bda ${fraunces.variable} ${inter.variable} ${plexMono.variable} h-full`}
     >
       <body className="bda min-h-full antialiased flex flex-col">
-        <BdaHeader />
-        <main className="flex-1">{children}</main>
-        <BdaFooter />
-        <ScrollReveal />
+        <LocaleProvider>
+          <BdaHeader />
+          <main className="flex-1">{children}</main>
+          <BdaFooter />
+          <ScrollReveal />
+        </LocaleProvider>
       </body>
     </html>
   );

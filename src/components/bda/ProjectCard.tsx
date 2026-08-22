@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import type { Project } from "@/types/bda";
 import { getBrand } from "@/data/bda/brands";
+import { useLocale } from "@/components/bda/LocaleContext";
+import { projectDescI18n } from "@/data/bda/i18n";
 import CategoryBadge from "./CategoryBadge";
 import ProjectPlate from "./ProjectPlate";
 
@@ -16,6 +20,9 @@ export default function ProjectCard({
   onMouseLeave?: () => void;
 }) {
   const brand = getBrand(project.brandSlug);
+  const { locale } = useLocale();
+  const description =
+    locale === "es" ? project.description : projectDescI18n[project.slug]?.[locale] ?? project.description;
 
   return (
     <Link
@@ -37,7 +44,7 @@ export default function ProjectCard({
           {brand?.name} · {project.city}
         </p>
         <p className="mt-4 text-sm italic leading-relaxed text-bda-ink/60">
-          {project.description}
+          {description}
         </p>
       </div>
     </Link>

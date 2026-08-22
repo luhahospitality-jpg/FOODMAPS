@@ -5,7 +5,9 @@ import type { ReactNode } from "react";
 import WorldMap from "./WorldMap";
 import ProjectCard from "./ProjectCard";
 import { projects as allProjects, regions } from "@/data/bda/projects";
-import { getBrand, categoryLabel } from "@/data/bda/brands";
+import { getBrand } from "@/data/bda/brands";
+import { useLocale } from "@/components/bda/LocaleContext";
+import { categoryLabelI18n, regionLabelI18n } from "@/data/bda/i18n";
 import type { BrandCategory, ProjectRegion } from "@/types/bda";
 
 type CategoryFilter = BrandCategory | "todas";
@@ -24,6 +26,9 @@ export default function ProjectExplorer({
   const [region, setRegion] = useState<RegionFilter>(initialRegion);
   const [brandFilter, setBrandFilter] = useState<string | undefined>(initialBrand);
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
+  const { locale, t } = useLocale();
+  const categoryLabel = categoryLabelI18n[locale];
+  const regionLabel = regionLabelI18n[locale];
 
   const filtered = useMemo(() => {
     return allProjects.filter((p) => {
@@ -48,7 +53,7 @@ export default function ProjectExplorer({
       <div className="flex flex-wrap items-center gap-x-6 gap-y-4 border-b bda-hairline pb-6">
         <div className="flex flex-wrap gap-2">
           <FilterChip active={category === "todas"} onClick={() => setCategory("todas")}>
-            Todas
+            {t("todas")}
           </FilterChip>
           {(["moda", "servicios", "lifestyle"] as BrandCategory[]).map((c) => (
             <FilterChip key={c} active={category === c} onClick={() => setCategory(c)}>
@@ -61,10 +66,10 @@ export default function ProjectExplorer({
           onChange={(e) => setRegion(e.target.value as RegionFilter)}
           className="bda-mono rounded-full border border-bda-line bg-bda-bg px-3.5 py-1.5 text-[10px] uppercase tracking-[0.14em] text-bda-muted outline-none transition-colors hover:border-bda-ink hover:text-bda-ink"
         >
-          <option value="todas">Todos los países</option>
+          <option value="todas">{t("todos_los_paises")}</option>
           {regions.map((r) => (
             <option key={r} value={r}>
-              {r}
+              {regionLabel[r] ?? r}
             </option>
           ))}
         </select>
@@ -73,7 +78,7 @@ export default function ProjectExplorer({
             onClick={() => setBrandFilter(undefined)}
             className="bda-mono text-[10px] uppercase tracking-[0.14em] text-bda-gold underline underline-offset-4"
           >
-            {activeBrand.name} · quitar ×
+            {activeBrand.name} · {t("quitar")}
           </button>
         )}
       </div>
@@ -99,7 +104,7 @@ export default function ProjectExplorer({
         ))}
         {filtered.length === 0 && (
           <p className="col-span-full p-14 text-center text-sm text-bda-muted">
-            Nada por aquí, todavía.
+            {t("nada_por_aqui")}
           </p>
         )}
       </div>

@@ -1,12 +1,21 @@
+"use client";
+
 import Link from "next/link";
-import { brands, categoryLabel, categoryDescription } from "@/data/bda/brands";
+import { brands } from "@/data/bda/brands";
 import { news } from "@/data/bda/news";
 import HeroParallax from "@/components/bda/HeroParallax";
+import { useLocale } from "@/components/bda/LocaleContext";
+import { categoryLabelI18n, categoryDescriptionI18n, newsI18n, regionLabelI18n } from "@/data/bda/i18n";
 import type { BrandCategory } from "@/types/bda";
 
 const categories: BrandCategory[] = ["moda", "servicios", "lifestyle"];
 
 export default function BdaHomePage() {
+  const { locale, t } = useLocale();
+  const categoryLabel = categoryLabelI18n[locale];
+  const categoryDescription = categoryDescriptionI18n[locale];
+  const regionLabel = regionLabelI18n[locale];
+
   return (
     <div>
       {/* Hero */}
@@ -29,27 +38,26 @@ export default function BdaHomePage() {
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-40 sm:px-8 sm:pb-24 sm:pt-48">
           <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-white/80">
-            Branded Development Associates.
+            {t("hero_eyebrow")}
           </p>
           <h1 className="bda-serif mt-6 max-w-xl text-balance text-[34px] font-semibold uppercase leading-[1.05] tracking-tight text-white sm:max-w-3xl sm:text-5xl lg:max-w-4xl lg:text-6xl">
-            Vivir dentro de las marcas que amás.
+            {t("hero_claim")}
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
-            El diseño, el servicio y el estilo de vida de las grandes marcas
-            — llevados a tu propia casa.
+            {t("hero_sub")}
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <Link
               href="/bda/mapa"
               className="rounded-full bg-white px-7 py-3.5 text-sm tracking-wide text-bda-ink transition-opacity hover:opacity-85"
             >
-              Explorar el mapa
+              {t("explorar_el_mapa")}
             </Link>
             <Link
               href="/bda/marcas"
               className="bda-mono text-[11px] uppercase tracking-[0.14em] text-white/80 transition-colors hover:text-white"
             >
-              Las marcas →
+              {t("las_marcas")}
             </Link>
           </div>
         </div>
@@ -59,17 +67,13 @@ export default function BdaHomePage() {
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <div className="grid gap-10 sm:grid-cols-[minmax(0,220px)_1fr] sm:gap-16">
-            <h2 className="bda-reveal bda-serif text-2xl text-bda-ink">
-              ¿Qué es una
-              <br />
-              Branded Residence?
+            <h2 className="bda-reveal bda-serif whitespace-pre-line text-2xl text-bda-ink">
+              {t("quees_titulo")}
             </h2>
             <div className="bda-reveal flex gap-8">
               <div className="bda-dotted-v hidden shrink-0 sm:block" aria-hidden />
               <p className="max-w-lg text-lg leading-relaxed text-bda-ink/85">
-                Una casa que lleva el nombre de una marca que amás — su
-                diseño, su servicio, su forma de recibirte. No es solo un
-                sello: es despertar todos los días dentro de esa experiencia.
+                {t("quees_texto")}
               </p>
             </div>
           </div>
@@ -129,7 +133,7 @@ export default function BdaHomePage() {
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <h2 className="bda-reveal bda-serif text-2xl text-bda-ink">
-            Tres formas de vivir una casa.
+            {t("categorias_titulo")}
           </h2>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
             {categories.map((cat) => {
@@ -170,31 +174,35 @@ export default function BdaHomePage() {
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <div className="bda-reveal flex items-end justify-between gap-4">
-            <h2 className="bda-serif text-2xl text-bda-ink">Noticias</h2>
+            <h2 className="bda-serif text-2xl text-bda-ink">{t("noticias_titulo")}</h2>
             <Link
               href="/bda/noticias"
               className="bda-mono shrink-0 text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:text-bda-ink"
             >
-              Ver todas →
+              {t("ver_todas")}
             </Link>
           </div>
           <div className="bda-scroll-x mt-8 flex gap-4 overflow-x-auto pb-1">
-            {news.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-[210px] shrink-0 rounded-2xl border bda-hairline bg-bda-bg-raised p-5 transition-colors hover:border-bda-gold/50"
-              >
-                <p className="bda-mono text-[9px] uppercase tracking-[0.12em] text-bda-gold">
-                  {item.region} · {item.date}
-                </p>
-                <p className="bda-serif mt-2 text-sm leading-snug text-bda-ink">
-                  {item.headline}
-                </p>
-              </a>
-            ))}
+            {news.map((item) => {
+              const headline =
+                locale === "es" ? item.headline : newsI18n[item.id]?.headline[locale] ?? item.headline;
+              return (
+                <a
+                  key={item.id}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[210px] shrink-0 rounded-2xl border bda-hairline bg-bda-bg-raised p-5 transition-colors hover:border-bda-gold/50"
+                >
+                  <p className="bda-mono text-[9px] uppercase tracking-[0.12em] text-bda-gold">
+                    {regionLabel[item.region] ?? item.region} · {item.date}
+                  </p>
+                  <p className="bda-serif mt-2 text-sm leading-snug text-bda-ink">
+                    {headline}
+                  </p>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -203,13 +211,13 @@ export default function BdaHomePage() {
       <section className="border-t bda-hairline">
         <div className="bda-reveal mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <h2 className="bda-serif max-w-lg text-2xl leading-snug text-bda-ink sm:text-3xl">
-            Descubrí cada dirección, ciudad por ciudad.
+            {t("cta_final_titulo")}
           </h2>
           <Link
             href="/bda/mapa"
             className="mt-8 inline-block rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-opacity hover:opacity-85"
           >
-            Ir al mapa
+            {t("ir_al_mapa")}
           </Link>
         </div>
       </section>
