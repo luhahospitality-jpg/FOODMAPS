@@ -90,16 +90,13 @@ export default function BdaHomePage() {
               </p>
             </div>
             <div className="bda-reveal">
-              <div className="relative overflow-hidden rounded-3xl">
+              <div className="overflow-hidden rounded-3xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/bda/hero/hero-main.jpg"
                   alt="Mandarin Oriental Residences Barcelona"
                   className="aspect-[16/10] w-full object-cover"
                 />
-                <span className="bda-mono absolute left-5 top-5 rounded-full border border-white/40 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur">
-                  Desde 1991
-                </span>
               </div>
               <div className="mt-5 flex items-center gap-4">
                 <div className="flex -space-x-3">
