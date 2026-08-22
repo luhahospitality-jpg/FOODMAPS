@@ -9,107 +9,47 @@ export default function BdaHomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="border-b bda-hairline">
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="grid gap-14 lg:grid-cols-[1fr_1px_1fr] lg:gap-0">
-            {/* left column */}
-            <div className="lg:pr-14">
-              <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-bda-gold">
-                Branded Development Associates.
-              </p>
-              <div className="mt-4 flex items-center gap-3">
-                <span className="h-px w-16 bg-bda-ink/40" aria-hidden />
-                <span className="bda-mono text-xs text-bda-ink/40" aria-hidden>
-                  →
-                </span>
-              </div>
-
-              <h1 className="bda-serif mt-8 max-w-md text-5xl font-semibold uppercase leading-[0.96] tracking-tight text-bda-ink sm:text-6xl lg:text-7xl">
-                Branded
-                <br />
-                Residences.
-              </h1>
-
-              <p className="mt-8 max-w-md text-base leading-relaxed text-bda-muted sm:text-lg">
-                Un archivo documental de las branded residences del mundo.
-                Sin inquiries, sin ventas.
-              </p>
-              <div className="mt-9 flex flex-wrap items-center gap-5">
-                <Link
-                  href="/bda/mapa"
-                  className="rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-opacity hover:opacity-85"
-                >
-                  Explorar el mapa
-                </Link>
-                <Link
-                  href="/bda/marcas"
-                  className="bda-mono text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:text-bda-ink"
-                >
-                  Las marcas →
-                </Link>
-              </div>
-
-              <div className="mt-12 max-w-[280px]">
-                <div className="overflow-hidden rounded-2xl">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/bda/hero/hero-side.jpg"
-                    alt="Plaza Hotel & Residences, Buenos Aires"
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                </div>
-                <p className="mt-3 text-xs leading-snug text-bda-muted">
-                  Plaza Hotel &amp; Residences — Buenos Aires, Argentina
-                </p>
-              </div>
-            </div>
-
-            {/* dotted divider */}
-            <div className="bda-dotted-v hidden lg:block" aria-hidden />
-
-            {/* right column */}
-            <div className="relative lg:pl-14">
-              <span
-                aria-hidden
-                className="bda-serif pointer-events-none absolute right-1 top-0 select-none text-[110px] font-semibold leading-none text-bda-ink/[0.09] sm:text-[170px] lg:right-3"
-              >
-                BDA
-              </span>
-
-              <div className="relative z-10 mt-14 overflow-hidden rounded-3xl lg:mt-[84px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/bda/hero/hero-main.jpg"
-                  alt="Mandarin Oriental Residences Barcelona"
-                  className="aspect-[4/3] w-full object-cover"
-                />
-                <span className="bda-mono absolute left-5 top-5 rounded-full border border-white/40 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur">
-                  Desde 1991
-                </span>
-              </div>
-              <div className="mt-5 flex items-center gap-4">
-                <div className="flex -space-x-3">
-                  {[
-                    { src: "/bda/hero/hero-1.jpg", alt: "Alvear Tower, Buenos Aires" },
-                    { src: "/bda/hero/hero-2.jpg", alt: "SLS Lux Puerto Madero, Buenos Aires" },
-                    { src: "/bda/hero/hero-3.jpg", alt: "Four Seasons Madrid Residences" },
-                  ].map((img) => (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      key={img.src}
-                      src={img.src}
-                      alt={img.alt}
-                      className="h-12 w-12 rounded-full border-2 border-bda-bg object-cover sm:h-14 sm:w-14"
-                    />
-                  ))}
-                </div>
-                <p className="bda-mono text-[10px] uppercase leading-snug tracking-[0.1em] text-bda-muted">
-                  Alvear Tower · SLS Puerto Madero
-                  <br />
-                  Four Seasons Madrid
-                </p>
-              </div>
-            </div>
+      <section className="relative flex min-h-screen items-end overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/bda/hero/hero-2.jpg"
+          alt="SLS Lux Puerto Madero, Buenos Aires"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(10,8,5,0.2) 0%, rgba(10,8,5,0.12) 38%, rgba(10,8,5,0.72) 100%)",
+          }}
+          aria-hidden
+        />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-40 sm:px-8 sm:pb-24 sm:pt-48">
+          <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-white/80">
+            Branded Development Associates.
+          </p>
+          <h1 className="bda-serif mt-6 max-w-2xl text-4xl font-semibold uppercase leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Cada marca,
+            <br />
+            una dirección.
+          </h1>
+          <p className="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
+            Un archivo documental de las branded residences del mundo. Sin
+            inquiries, sin ventas.
+          </p>
+          <div className="mt-9 flex flex-wrap items-center gap-5">
+            <Link
+              href="/bda/mapa"
+              className="rounded-full bg-white px-7 py-3.5 text-sm tracking-wide text-bda-ink transition-opacity hover:opacity-85"
+            >
+              Explorar el mapa
+            </Link>
+            <Link
+              href="/bda/marcas"
+              className="bda-mono text-[11px] uppercase tracking-[0.14em] text-white/80 transition-colors hover:text-white"
+            >
+              Las marcas →
+            </Link>
           </div>
         </div>
       </section>
