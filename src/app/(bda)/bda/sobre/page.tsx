@@ -105,7 +105,7 @@ export default function SobrePage() {
             {milestones.map((m, i) => (
               <div
                 key={m.year}
-                className={`grid gap-2 py-7 sm:grid-cols-[140px_1fr] sm:gap-8 ${
+                className={`bda-reveal grid gap-2 py-7 sm:grid-cols-[140px_1fr] sm:gap-8 ${
                   i > 0 ? "border-t bda-hairline" : ""
                 }`}
               >
@@ -135,7 +135,7 @@ export default function SobrePage() {
             {serviceGroups.map((group) => (
               <div
                 key={group.title}
-                className="rounded-2xl border bda-hairline bg-bda-bg-raised p-6"
+                className="bda-reveal rounded-2xl border bda-hairline bg-bda-bg-raised p-6"
               >
                 <p className="bda-mono text-[10px] uppercase tracking-[0.14em] text-bda-gold">
                   {group.title}

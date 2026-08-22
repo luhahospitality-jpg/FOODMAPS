@@ -383,7 +383,7 @@ export const categoryLabel: Record<Brand["category"], string> = {
 };
 
 export const categoryDescription: Record<Brand["category"], string> = {
-  moda: "Maisons que extienden su identidad a la vivienda.",
-  servicios: "Operadores hoteleros que definen el estándar.",
-  lifestyle: "Automoción y diseño, en formato residencial.",
+  moda: "Maisons que visten cada rincón de tu casa.",
+  servicios: "La hospitalidad de los grandes hoteles, sin salir de casa.",
+  lifestyle: "Diseño y potencia, convertidos en hogar.",
 };

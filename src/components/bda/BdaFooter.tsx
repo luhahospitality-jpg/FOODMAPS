@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function BdaFooter() {
   return (
-    <footer className="border-t bda-hairline">
+    <footer className="border-t bda-hairline bg-bda-bg">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="max-w-md">

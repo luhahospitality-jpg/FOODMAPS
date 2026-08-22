@@ -5,7 +5,7 @@ import type { BrandCategory } from "@/types/bda";
 
 export const metadata: Metadata = {
   title: "Marcas — BDA",
-  description: "Las marcas que firman branded residences en el mundo.",
+  description: "Las marcas que definen cómo se vive el lujo, en el mundo.",
 };
 
 const categories: BrandCategory[] = ["moda", "servicios", "lifestyle"];
@@ -18,7 +18,7 @@ export default function MarcasPage() {
           Índice de marcas
         </p>
         <h1 className="bda-serif mt-5 max-w-2xl text-4xl leading-[1.1] text-bda-ink sm:text-5xl">
-          Quién firma una branded residence.
+          Las marcas detrás de cada estilo de vida.
         </h1>
       </section>
 
@@ -27,7 +27,7 @@ export default function MarcasPage() {
         return (
           <section key={cat} id={cat} className="scroll-mt-24 border-t bda-hairline">
             <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
-              <div className="flex items-baseline justify-between">
+              <div className="bda-reveal flex items-baseline justify-between">
                 <h2 className="bda-serif text-2xl text-bda-ink sm:text-3xl">
                   {categoryLabel[cat]}
                 </h2>
@@ -40,7 +40,7 @@ export default function MarcasPage() {
                   <Link
                     key={brand.slug}
                     href={`/bda/mapa?marca=${brand.slug}`}
-                    className="group flex items-center justify-between rounded-2xl border bda-hairline bg-bda-bg-raised p-6 transition-colors hover:border-bda-gold/50"
+                    className="bda-reveal group flex items-center justify-between rounded-2xl border bda-hairline bg-bda-bg-raised p-6 transition-colors hover:border-bda-gold/50"
                   >
                     <div>
                       <p className="bda-serif text-lg text-bda-ink">

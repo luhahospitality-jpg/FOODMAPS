@@ -78,7 +78,7 @@ export default function BdaHeader() {
 
       {/* Dropdown menu — unfolds from the top-left corner */}
       <div
-        className={`absolute left-5 top-full z-50 mt-2 origin-top-left overflow-hidden rounded-2xl border bda-hairline bg-bda-bg-raised shadow-lg transition-all duration-200 sm:left-8 ${
+        className={`absolute left-5 top-full z-50 mt-2 origin-top-left overflow-hidden rounded-2xl border bda-hairline bg-bda-bg shadow-lg transition-all duration-200 sm:left-8 ${
           open
             ? "pointer-events-auto scale-100 opacity-100"
             : "pointer-events-none scale-95 opacity-0"

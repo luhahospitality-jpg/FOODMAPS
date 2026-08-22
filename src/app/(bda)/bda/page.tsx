@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { brands, categoryLabel, categoryDescription } from "@/data/bda/brands";
 import { news } from "@/data/bda/news";
+import HeroParallax from "@/components/bda/HeroParallax";
 import type { BrandCategory } from "@/types/bda";
 
 const categories: BrandCategory[] = ["moda", "servicios", "lifestyle"];
@@ -10,11 +11,13 @@ export default function BdaHomePage() {
     <div>
       {/* Hero */}
       <section className="relative flex min-h-screen items-end overflow-hidden">
+        <HeroParallax />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
+          id="bda-hero-bg"
           src="/bda/hero/hero-2.jpg"
           alt="SLS Lux Puerto Madero, Buenos Aires"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="bda-hero-bg-img absolute inset-0 h-full w-full object-cover"
         />
         <div
           className="absolute inset-0"
@@ -28,14 +31,12 @@ export default function BdaHomePage() {
           <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-white/80">
             Branded Development Associates.
           </p>
-          <h1 className="bda-serif mt-6 max-w-2xl text-4xl font-semibold uppercase leading-[1.02] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Cada marca,
-            <br />
-            una dirección.
+          <h1 className="bda-serif mt-6 max-w-xl text-balance text-[34px] font-semibold uppercase leading-[1.05] tracking-tight text-white sm:max-w-3xl sm:text-5xl lg:max-w-4xl lg:text-6xl">
+            Vivir dentro de las marcas que amás.
           </h1>
           <p className="mt-6 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
-            Un archivo documental de las branded residences del mundo. Sin
-            inquiries, sin ventas.
+            El diseño, el servicio y el estilo de vida de las grandes marcas
+            — llevados a tu propia casa.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <Link
@@ -58,19 +59,70 @@ export default function BdaHomePage() {
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <div className="grid gap-10 sm:grid-cols-[minmax(0,220px)_1fr] sm:gap-16">
-            <h2 className="bda-serif text-2xl text-bda-ink">
+            <h2 className="bda-reveal bda-serif text-2xl text-bda-ink">
               ¿Qué es una
               <br />
               Branded Residence?
             </h2>
-            <div className="flex gap-8">
+            <div className="bda-reveal flex gap-8">
               <div className="bda-dotted-v hidden shrink-0 sm:block" aria-hidden />
               <p className="max-w-lg text-lg leading-relaxed text-bda-ink/85">
-                Una vivienda que lleva el nombre y el estándar de una marca —
-                una maison, un hotel, un fabricante de coches — bajo un
-                acuerdo de gestión con el promotor. La marca diseña, opera y
-                firma; el residente vive dentro de esa identidad.
+                Una casa que lleva el nombre de una marca que amás — su
+                diseño, su servicio, su forma de recibirte. No es solo un
+                sello: es despertar todos los días dentro de esa experiencia.
               </p>
+            </div>
+          </div>
+
+          {/* Fotos */}
+          <div className="mt-16 grid gap-8 sm:grid-cols-[280px_1fr] sm:items-end">
+            <div className="bda-reveal">
+              <div className="overflow-hidden rounded-2xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/bda/hero/hero-side.jpg"
+                  alt="Plaza Hotel & Residences, Buenos Aires"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+              <p className="mt-3 text-xs leading-snug text-bda-muted">
+                Plaza Hotel &amp; Residences — Buenos Aires, Argentina
+              </p>
+            </div>
+            <div className="bda-reveal">
+              <div className="relative overflow-hidden rounded-3xl">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/bda/hero/hero-main.jpg"
+                  alt="Mandarin Oriental Residences Barcelona"
+                  className="aspect-[16/10] w-full object-cover"
+                />
+                <span className="bda-mono absolute left-5 top-5 rounded-full border border-white/40 bg-black/35 px-3 py-1.5 text-[10px] uppercase tracking-[0.14em] text-white backdrop-blur">
+                  Desde 1991
+                </span>
+              </div>
+              <div className="mt-5 flex items-center gap-4">
+                <div className="flex -space-x-3">
+                  {[
+                    { src: "/bda/hero/hero-1.jpg", alt: "Alvear Tower, Buenos Aires" },
+                    { src: "/bda/hero/hero-2.jpg", alt: "SLS Lux Puerto Madero, Buenos Aires" },
+                    { src: "/bda/hero/hero-3.jpg", alt: "Four Seasons Madrid Residences" },
+                  ].map((img) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      key={img.src}
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-12 w-12 rounded-full border-2 border-white object-cover sm:h-14 sm:w-14"
+                    />
+                  ))}
+                </div>
+                <p className="bda-mono text-[10px] uppercase leading-snug tracking-[0.1em] text-bda-muted">
+                  Alvear Tower · SLS Puerto Madero
+                  <br />
+                  Four Seasons Madrid
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -79,8 +131,8 @@ export default function BdaHomePage() {
       {/* Categorías de marcas */}
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <h2 className="bda-serif text-2xl text-bda-ink">
-            Tres formas de firmar una casa.
+          <h2 className="bda-reveal bda-serif text-2xl text-bda-ink">
+            Tres formas de vivir una casa.
           </h2>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
             {categories.map((cat) => {
@@ -89,7 +141,7 @@ export default function BdaHomePage() {
                 <Link
                   key={cat}
                   href={`/bda/marcas#${cat}`}
-                  className="group flex flex-col justify-between rounded-2xl border bda-hairline bg-bda-bg-raised p-6 transition-colors hover:border-bda-gold/50"
+                  className="bda-reveal group flex flex-col justify-between rounded-2xl border bda-hairline bg-bda-bg-raised p-6 transition-colors hover:border-bda-gold/50"
                 >
                   <div>
                     <p className="bda-mono text-[10px] uppercase tracking-[0.18em] text-bda-gold">
@@ -120,7 +172,7 @@ export default function BdaHomePage() {
       {/* Noticias — preview */}
       <section className="border-t bda-hairline">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="flex items-end justify-between gap-4">
+          <div className="bda-reveal flex items-end justify-between gap-4">
             <h2 className="bda-serif text-2xl text-bda-ink">Noticias</h2>
             <Link
               href="/bda/noticias"
@@ -152,9 +204,9 @@ export default function BdaHomePage() {
 
       {/* CTA final */}
       <section className="border-t bda-hairline">
-        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+        <div className="bda-reveal mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <h2 className="bda-serif max-w-lg text-2xl leading-snug text-bda-ink sm:text-3xl">
-            Recorre el mapa, ciudad por ciudad.
+            Descubrí cada dirección, ciudad por ciudad.
           </h2>
           <Link
             href="/bda/mapa"

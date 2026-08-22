@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
 import BdaHeader from "@/components/bda/BdaHeader";
 import BdaFooter from "@/components/bda/BdaFooter";
+import ScrollReveal from "@/components/bda/ScrollReveal";
 import "../bda-globals.css";
 
 const fraunces = Fraunces({
@@ -43,6 +44,7 @@ export default function BdaRootLayout({
         <BdaHeader />
         <main className="flex-1">{children}</main>
         <BdaFooter />
+        <ScrollReveal />
       </body>
     </html>
   );
