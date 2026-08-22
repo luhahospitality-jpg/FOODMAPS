@@ -69,6 +69,15 @@ body.bda {
   opacity: 0.3;
 }
 
+.bda-scroll-x {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.bda-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
 .bda-dotted-h {
   height: 1px;
   background-image: repeating-linear-gradient(

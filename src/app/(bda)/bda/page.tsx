@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { brands, categoryLabel, categoryDescription } from "@/data/bda/brands";
+import { news } from "@/data/bda/news";
 import type { BrandCategory } from "@/types/bda";
 
 const categories: BrandCategory[] = ["moda", "servicios", "lifestyle"];
@@ -172,6 +173,39 @@ export default function BdaHomePage() {
                 </Link>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Noticias — preview */}
+      <section className="border-t bda-hairline">
+        <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="flex items-end justify-between gap-4">
+            <h2 className="bda-serif text-2xl text-bda-ink">Noticias</h2>
+            <Link
+              href="/bda/noticias"
+              className="bda-mono shrink-0 text-[11px] uppercase tracking-[0.14em] text-bda-muted transition-colors hover:text-bda-ink"
+            >
+              Ver todas →
+            </Link>
+          </div>
+          <div className="bda-scroll-x mt-8 flex gap-4 overflow-x-auto pb-1">
+            {news.map((item) => (
+              <a
+                key={item.id}
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-[210px] shrink-0 rounded-2xl border bda-hairline bg-bda-bg-raised p-5 transition-colors hover:border-bda-gold/50"
+              >
+                <p className="bda-mono text-[9px] uppercase tracking-[0.12em] text-bda-gold">
+                  {item.region} · {item.date}
+                </p>
+                <p className="bda-serif mt-2 text-sm leading-snug text-bda-ink">
+                  {item.headline}
+                </p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
