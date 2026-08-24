@@ -75,7 +75,7 @@ export default function BdaHeader() {
               onClick={() => setLangOpen((v) => !v)}
               aria-label={t("abrir_idioma")}
               aria-expanded={langOpen}
-              className={`bda-mono rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.14em] transition-opacity hover:opacity-85 ${
+              className={`bda-mono rounded-full border px-3.5 py-2 text-[10px] uppercase tracking-[0.14em] transition-colors duration-300 hover:border-bda-gold hover:text-bda-gold ${
                 isHome
                   ? "border-white/70 text-white"
                   : "border-bda-line text-bda-ink"
@@ -111,7 +111,7 @@ export default function BdaHeader() {
 
           <Link
             href="/bda/mapa"
-            className={`bda-mono rounded-full px-5 py-2.5 text-[10px] uppercase tracking-[0.14em] transition-opacity hover:opacity-85 ${
+            className={`bda-mono rounded-full px-5 py-2.5 text-[10px] uppercase tracking-[0.14em] transition-colors duration-300 hover:bg-bda-gold hover:text-white ${
               isHome
                 ? "border border-white/70 text-white"
                 : "bg-bda-ink text-bda-bg"

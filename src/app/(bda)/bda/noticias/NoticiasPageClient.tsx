@@ -1,6 +1,7 @@
 "use client";
 
 import { news, newsRegions } from "@/data/bda/news";
+import Eyebrow from "@/components/bda/Eyebrow";
 import { useLocale } from "@/components/bda/LocaleContext";
 import { newsI18n, regionLabelI18n } from "@/data/bda/i18n";
 
@@ -11,9 +12,9 @@ export default function NoticiasPageClient() {
   return (
     <div>
       <section className="mx-auto max-w-6xl px-5 pb-10 pt-16 sm:px-8 sm:pt-24">
-        <p className="bda-mono text-[11px] uppercase tracking-[0.2em] text-bda-gold">
+        <Eyebrow className="text-[11px] tracking-[0.2em] text-bda-gold">
           {t("noticias_eyebrow")}
-        </p>
+        </Eyebrow>
         <h1 className="bda-serif mt-5 max-w-2xl text-4xl leading-[1.1] text-bda-ink sm:text-5xl">
           {t("noticias_titulo_full")}
         </h1>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { brands } from "@/data/bda/brands";
 import { news } from "@/data/bda/news";
 import HeroParallax from "@/components/bda/HeroParallax";
+import Eyebrow from "@/components/bda/Eyebrow";
 import { useLocale } from "@/components/bda/LocaleContext";
 import { categoryLabelI18n, categoryDescriptionI18n, newsI18n, regionLabelI18n } from "@/data/bda/i18n";
 import type { BrandCategory } from "@/types/bda";
@@ -37,9 +38,9 @@ export default function BdaHomePage() {
           aria-hidden
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pb-16 pt-40 sm:px-8 sm:pb-24 sm:pt-48">
-          <p className="bda-mono text-[11px] uppercase tracking-[0.3em] text-white/80">
+          <Eyebrow className="text-[11px] tracking-[0.3em] text-white/80">
             {t("hero_eyebrow")}
-          </p>
+          </Eyebrow>
           <h1 className="bda-serif mt-6 max-w-xl text-balance text-[34px] font-semibold uppercase leading-[1.05] tracking-tight text-white sm:max-w-3xl sm:text-5xl lg:max-w-4xl lg:text-6xl">
             {t("hero_claim")}
           </h1>
@@ -49,7 +50,7 @@ export default function BdaHomePage() {
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <Link
               href="/bda/mapa"
-              className="rounded-full bg-white px-7 py-3.5 text-sm tracking-wide text-bda-ink transition-opacity hover:opacity-85"
+              className="rounded-full bg-white px-7 py-3.5 text-sm tracking-wide text-bda-ink transition-colors duration-300 hover:bg-bda-gold hover:text-white"
             >
               {t("explorar_el_mapa")}
             </Link>
@@ -215,7 +216,7 @@ export default function BdaHomePage() {
           </h2>
           <Link
             href="/bda/mapa"
-            className="mt-8 inline-block rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-opacity hover:opacity-85"
+            className="mt-8 inline-block rounded-full bg-bda-ink px-7 py-3.5 text-sm tracking-wide text-bda-bg transition-colors duration-300 hover:bg-bda-gold"
           >
             {t("ir_al_mapa")}
           </Link>

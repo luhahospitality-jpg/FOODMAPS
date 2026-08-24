@@ -23,7 +23,7 @@ export default function CategoryBadge({
     <span
       className={`bda-mono inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.14em] text-bda-muted ${className}`}
     >
-      <span className={`h-1.5 w-1.5 rounded-full ${dot[category]}`} />
+      <span className={`h-1.5 w-1.5 ${dot[category]}`} />
       {categoryLabelI18n[locale][category]}
     </span>
   );
