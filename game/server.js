@@ -27,6 +27,8 @@ const TRACK_POINTS = [
   { x: 220, y: 400 },
 ];
 const N_SEG = TRACK_POINTS.length;
+// tramos con baranda (rebote + chispas); el resto son precipicio (te caes)
+const GUARDRAIL_SEGMENTS = new Set([0, 1, 2, 3, 8, 9]);
 
 app.use(express.static(__dirname + '/public'));
 
@@ -47,7 +49,7 @@ function closestPointOnSegment(px, py, ax, ay, bx, by) {
   t = Math.max(0, Math.min(1, t));
   const cx = ax + abx * t, cy = ay + aby * t;
   const dx = px - cx, dy = py - cy;
-  return { dist: Math.sqrt(dx * dx + dy * dy) };
+  return { dist: Math.sqrt(dx * dx + dy * dy), x: cx, y: cy };
 }
 
 function nearestTrackInfo(px, py) {
@@ -57,7 +59,16 @@ function nearestTrackInfo(px, py) {
     const r = closestPointOnSegment(px, py, a.x, a.y, b.x, b.y);
     if (!best || r.dist < best.dist) { best = r; bestIdx = i; }
   }
-  return { dist: best.dist, idx: bestIdx };
+  return { dist: best.dist, idx: bestIdx, x: best.x, y: best.y, guardrail: GUARDRAIL_SEGMENTS.has(bestIdx) };
+}
+
+function registerLapProgress(p, idx) {
+  if (idx <= 1 && p.lapIndex >= N_SEG - 2) {
+    p.lap += 1;
+    p.lapIndex = idx;
+  } else {
+    p.lapIndex = Math.max(p.lapIndex, idx);
+  }
 }
 
 function spawnFor(slot) {
@@ -105,6 +116,7 @@ function resetForRace() {
     p.slowUntil = 0;
     p.powerCooldownUntil = 0;
     p.fallUntil = 0;
+    p.sparkUntil = 0;
     p.lastOnTrack = { x: s.x, y: s.y, angle: s.angle };
   });
   peels = [];
@@ -130,7 +142,7 @@ io.on('connection', (socket) => {
       x: s.x, y: s.y, angle: s.angle, speed: 0,
       lives: 3, lap: 0, lapIndex: 0,
       hasBoost: false, boostUntil: 0, slowUntil: 0,
-      powerCooldownUntil: 0, fallUntil: 0,
+      powerCooldownUntil: 0, fallUntil: 0, sparkUntil: 0,
       lastOnTrack: { x: s.x, y: s.y, angle: s.angle },
       input: { steer: 0, accel: false, brake: false },
       prevAccel: false,
@@ -241,14 +253,14 @@ function usePower(slot) {
   }
 }
 
-// --- Fisica arcade ---
-const ACCEL = 480;
-const BRAKE = 700;
-const FRICTION = 260;
-const MAX_SPEED = 480;
-const BOOST_SPEED = 780;
-const MAX_REVERSE = -180;
-const TURN_RATE = 2.1;
+// --- Fisica arcade (velocidades bajas, arcade suave) ---
+const ACCEL = 190;
+const BRAKE = 320;
+const FRICTION = 150;
+const MAX_SPEED = 200;
+const BOOST_SPEED = 340;
+const MAX_REVERSE = -80;
+const TURN_RATE = 2.4;
 const TICK_MS = 50;
 
 setInterval(() => {
@@ -313,9 +325,46 @@ setInterval(() => {
 
       p.x += Math.cos(p.angle) * p.speed * dt;
       p.y += Math.sin(p.angle) * p.speed * dt;
+    });
+
+    // choques entre autos: se empujan y pueden mandarse al vacio entre si
+    for (let i = 0; i < players.length; i++) {
+      const a = players[i];
+      if (!a || now < a.fallUntil) continue;
+      for (let j = i + 1; j < players.length; j++) {
+        const b = players[j];
+        if (!b || now < b.fallUntil) continue;
+        const dx = b.x - a.x, dy = b.y - a.y;
+        let dist = Math.sqrt(dx * dx + dy * dy);
+        const minDist = 32;
+        if (dist >= minDist) continue;
+        if (dist < 0.001) dist = 0.001;
+        const nx = dx / dist, ny = dy / dist;
+        const overlap = minDist - dist;
+        a.x -= (nx * overlap) / 2; a.y -= (ny * overlap) / 2;
+        b.x += (nx * overlap) / 2; b.y += (ny * overlap) / 2;
+
+        if (Math.abs(a.speed) >= Math.abs(b.speed)) {
+          const knock = Math.min(Math.abs(a.speed), 260) * 0.6 * dt;
+          b.x += nx * knock; b.y += ny * knock;
+          b.speed *= 0.5;
+          a.speed *= 0.8;
+        } else {
+          const knock = Math.min(Math.abs(b.speed), 260) * 0.6 * dt;
+          a.x -= nx * knock; a.y -= ny * knock;
+          a.speed *= 0.5;
+          b.speed *= 0.8;
+        }
+      }
+    }
+
+    // items y limites de pista (guardarail = rebote con chispas, precipicio = caida)
+    players.forEach((p) => {
+      if (!p) return;
+      if (now < p.fallUntil) return;
 
       for (const peel of peels) {
-        if (peel.ownerSlot === slotIdx || peel.expiresAt === 0) continue;
+        if (peel.ownerSlot === players.indexOf(p) || peel.expiresAt === 0) continue;
         const dx = p.x - peel.x, dy = p.y - peel.y;
         if (Math.sqrt(dx * dx + dy * dy) < 24) {
           p.slowUntil = now + 1000;
@@ -324,7 +373,7 @@ setInterval(() => {
       }
 
       for (const fl of flowers) {
-        if (fl.ownerSlot === slotIdx || fl.expiresAt === 0) continue;
+        if (fl.ownerSlot === players.indexOf(p) || fl.expiresAt === 0) continue;
         const dx = p.x - fl.x, dy = p.y - fl.y;
         if (Math.sqrt(dx * dx + dy * dy) < 26) {
           p.slowUntil = now + 1500;
@@ -345,13 +394,20 @@ setInterval(() => {
       const info = nearestTrackInfo(p.x, p.y);
       if (info.dist <= TRACK_WIDTH / 2) {
         p.lastOnTrack = { x: p.x, y: p.y, angle: p.angle };
-        if (info.idx <= 1 && p.lapIndex >= N_SEG - 2) {
-          p.lap += 1;
-          p.lapIndex = info.idx;
-        } else {
-          p.lapIndex = Math.max(p.lapIndex, info.idx);
-        }
+        registerLapProgress(p, info.idx);
+      } else if (info.guardrail) {
+        // baranda: rebota contra el borde y pierde velocidad, no cae
+        const dx = p.x - info.x, dy = p.y - info.y;
+        const len = Math.sqrt(dx * dx + dy * dy) || 1;
+        const nx = dx / len, ny = dy / len;
+        p.x = info.x + nx * (TRACK_WIDTH / 2 - 2);
+        p.y = info.y + ny * (TRACK_WIDTH / 2 - 2);
+        p.speed *= 0.4;
+        p.sparkUntil = now + 300;
+        p.lastOnTrack = { x: p.x, y: p.y, angle: p.angle };
+        registerLapProgress(p, info.idx);
       } else {
+        // precipicio: cae y respawnea
         p.lives = Math.max(0, p.lives - 1);
         p.x = p.lastOnTrack.x;
         p.y = p.lastOnTrack.y;
@@ -386,6 +442,7 @@ function broadcast(now) {
       hasBoost: p.hasBoost,
       boosting: now < p.boostUntil,
       slowed: now < p.slowUntil,
+      sparked: now < p.sparkUntil,
       powerReady: now >= p.powerCooldownUntil,
     };
   });
@@ -395,6 +452,7 @@ function broadcast(now) {
     countdown,
     track: TRACK_POINTS,
     trackWidth: TRACK_WIDTH,
+    guardrailSegments: Array.from(GUARDRAIL_SEGMENTS),
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),
     peels: peels.map((pe) => ({ x: pe.x, y: pe.y })),
