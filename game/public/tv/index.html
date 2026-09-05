@@ -31,7 +31,7 @@
   let players = [null, null, null, null];
 
   document.getElementById('url').textContent =
-    'Abre en tu iPhone: http://' + location.hostname + ':' + location.port + '/controller';
+    'Abre en tu iPhone: ' + location.origin + '/controller';
 
   socket.on('players_update', (list) => {
     const legend = document.getElementById('legend');
