@@ -9,11 +9,12 @@ const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
 const COLORS = ['#ff4d4d', '#4da6ff', '#4dff88', '#ffd24d'];
+const CHARACTERS = ['rabbit', 'gorilla', 'princess', 'ice'];
 const WORLD = { w: 1600, h: 900 };
 
 app.use(express.static(__dirname + '/public'));
 
-// slot -> { id, socketId, color, x, y, angle, speed, input }
+// slot -> { id, socketId, color, character, x, y, angle, speed, input }
 const players = new Array(4).fill(null);
 
 function freeSlot() {
@@ -40,13 +41,21 @@ io.on('connection', (socket) => {
       id: 'P' + (slot + 1),
       socketId: socket.id,
       color: COLORS[slot],
+      character: CHARACTERS[slot],
       x: pos.x,
       y: pos.y,
       angle: pos.angle,
       speed: 0,
       input: { steer: 0, accel: false, brake: false },
     };
-    socket.emit('joined', { id: players[slot].id, color: players[slot].color });
+    socket.emit('joined', { id: players[slot].id, color: players[slot].color, character: players[slot].character });
+    io.emit('players_update', publicPlayers());
+  });
+
+  socket.on('character', (data) => {
+    if (slot === -1 || !players[slot]) return;
+    if (!CHARACTERS.includes(data)) return;
+    players[slot].character = data;
     io.emit('players_update', publicPlayers());
   });
 
@@ -66,7 +75,9 @@ io.on('connection', (socket) => {
 });
 
 function publicPlayers() {
-  return players.map((p) => (p ? { id: p.id, color: p.color, connected: true } : null));
+  return players.map((p) =>
+    p ? { id: p.id, color: p.color, character: p.character, connected: true } : null
+  );
 }
 
 // --- Física arcade sencilla ---
@@ -109,7 +120,9 @@ setInterval(() => {
   io.emit(
     'state',
     players.map((p) =>
-      p ? { id: p.id, color: p.color, x: p.x, y: p.y, angle: p.angle, speed: p.speed } : null
+      p
+        ? { id: p.id, color: p.color, character: p.character, x: p.x, y: p.y, angle: p.angle, speed: p.speed }
+        : null
     )
   );
 }, TICK_MS);

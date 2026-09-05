@@ -7,19 +7,18 @@
   html, body { margin:0; padding:0; background:#111; overflow:hidden; cursor:none; height:100%; }
   #wrap { position:relative; width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; }
   canvas { background:#1a1a2e; max-width:100%; max-height:100%; }
-  #info { position:fixed; top:10px; left:10px; color:#fff; font-family:sans-serif; font-size:22px; }
-  #url { position:fixed; bottom:10px; left:10px; color:#0f0; font-family:monospace; font-size:20px; }
-  .legend { display:flex; gap:16px; margin-top:8px; }
-  .dot { display:inline-block; width:16px; height:16px; border-radius:3px; margin-right:6px; vertical-align:middle; }
+  #title { position:fixed; top:14px; left:0; right:0; text-align:center; font-family:'Arial Black', sans-serif; font-size:34px; font-weight:900; letter-spacing:6px; color:#fff; text-shadow:3px 3px 0 #000, -2px -2px 0 #ff5fa2; }
+  #legend { position:fixed; top:64px; left:0; right:0; display:flex; justify-content:center; gap:18px; font-family:sans-serif; }
+  .tag { display:flex; align-items:center; gap:6px; background:rgba(0,0,0,0.5); padding:4px 10px; border-radius:8px; color:#fff; font-size:16px; }
+  .tag .dot { width:14px; height:14px; border-radius:3px; }
+  #url { position:fixed; bottom:10px; left:10px; color:#0f0; font-family:monospace; font-size:18px; }
 </style>
 </head>
 <body>
+<div id="title">BLOCK RACERS</div>
+<div id="legend"></div>
 <div id="wrap">
   <canvas id="c" width="1600" height="900"></canvas>
-</div>
-<div id="info">
-  <div>BLOCK RACERS (MVP)</div>
-  <div id="legend" class="legend"></div>
 </div>
 <div id="url"></div>
 
@@ -28,6 +27,8 @@
   const socket = io();
   const canvas = document.getElementById('c');
   const ctx = canvas.getContext('2d');
+  const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
+  const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
   let players = [null, null, null, null];
 
   document.getElementById('url').textContent =
@@ -37,45 +38,143 @@
     const legend = document.getElementById('legend');
     legend.innerHTML = '';
     list.forEach((p) => {
-      const span = document.createElement('span');
+      const tag = document.createElement('div');
+      tag.className = 'tag';
       if (p) {
-        span.innerHTML = '<span class="dot" style="background:' + p.color + '"></span>' + p.id;
+        tag.innerHTML =
+          '<span class="dot" style="background:' + p.color + '"></span>' +
+          (EMOJI[p.character] || '') + ' ' + p.id;
       } else {
-        span.style.opacity = 0.4;
-        span.textContent = '-- vacío --';
+        tag.style.opacity = 0.35;
+        tag.textContent = '-- esperando jugador --';
       }
-      legend.appendChild(span);
+      legend.appendChild(tag);
     });
   });
 
   socket.on('state', (list) => { players = list; });
 
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  function roundRectPath(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
 
-    // "pista" de referencia (no colisiona, solo visual)
-    ctx.strokeStyle = '#444';
-    ctx.setLineDash([10, 10]);
-    ctx.lineWidth = 3;
-    ctx.strokeRect(40, 40, canvas.width - 80, canvas.height - 80);
+  function drawTree(x, y) {
+    ctx.fillStyle = '#7a4a2b';
+    ctx.fillRect(x - 4, y, 8, 16);
+    ctx.fillStyle = '#2e8b3d';
+    ctx.beginPath();
+    ctx.arc(x, y - 6, 16, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#3fae52';
+    ctx.beginPath();
+    ctx.arc(x - 5, y - 10, 9, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function drawBackground() {
+    // pasto con textura de cuadros
+    const tile = 100;
+    for (let y = 0; y < canvas.height; y += tile) {
+      for (let x = 0; x < canvas.width; x += tile) {
+        const even = ((x / tile) + (y / tile)) % 2 === 0;
+        ctx.fillStyle = even ? '#4CAF50' : '#43a047';
+        ctx.fillRect(x, y, tile, tile);
+      }
+    }
+
+    // arboles en los margenes
+    for (let x = 60; x < canvas.width; x += 130) {
+      drawTree(x, 40);
+      drawTree(x, canvas.height - 30);
+    }
+    for (let y = 160; y < canvas.height - 100; y += 130) {
+      drawTree(40, y);
+      drawTree(canvas.width - 40, y);
+    }
+
+    // pista tipo anillo (asfalto)
+    roundRectPath(100, 100, canvas.width - 200, canvas.height - 200, 90);
+    ctx.fillStyle = '#4a4a52';
+    ctx.fill();
+    roundRectPath(300, 260, canvas.width - 600, canvas.height - 520, 60);
+    ctx.save();
+    ctx.clip();
+    ctx.fillStyle = '#3fae52';
+    ctx.fillRect(300, 260, canvas.width - 600, canvas.height - 520);
+    ctx.restore();
+
+    // linea central discontinua
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 5;
+    ctx.setLineDash([22, 18]);
+    roundRectPath(200, 180, canvas.width - 400, canvas.height - 360, 75);
+    ctx.stroke();
     ctx.setLineDash([]);
 
-    players.forEach((p) => {
-      if (!p) return;
-      ctx.save();
-      ctx.translate(p.x, p.y);
-      ctx.rotate(p.angle);
-      ctx.fillStyle = p.color;
-      ctx.fillRect(-18, -12, 36, 24);
-      ctx.fillStyle = '#fff';
-      ctx.fillRect(10, -10, 8, 20);
-      ctx.restore();
+    // banner START (decorativo) en la zona interior
+    ctx.save();
+    ctx.translate(canvas.width / 2, 300);
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(-90, -22, 180, 44);
+    ctx.fillStyle = '#111';
+    ctx.font = 'bold 26px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText('START', 0, 9);
+    ctx.restore();
+    ctx.textAlign = 'left';
+  }
 
-      ctx.fillStyle = '#fff';
-      ctx.font = '16px sans-serif';
-      ctx.fillText(p.id, p.x - 10, p.y - 22);
-    });
+  function drawCar(p) {
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.angle);
 
+    // sombra
+    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.fillRect(-19, -13, 38, 28);
+
+    // ruedas
+    ctx.fillStyle = '#1a1a1a';
+    ctx.fillRect(-14, -15, 8, 6);
+    ctx.fillRect(-14, 9, 8, 6);
+    ctx.fillRect(6, -15, 8, 6);
+    ctx.fillRect(6, 9, 8, 6);
+
+    // carroceria
+    ctx.fillStyle = p.color;
+    ctx.fillRect(-18, -11, 36, 22);
+
+    // cabina
+    ctx.fillStyle = 'rgba(255,255,255,0.85)';
+    ctx.fillRect(2, -8, 12, 16);
+
+    // faro
+    ctx.fillStyle = '#fff59d';
+    ctx.fillRect(16, -4, 4, 8);
+
+    ctx.restore();
+
+    // icono de personaje (no rota con el auto)
+    ctx.font = '26px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(EMOJI[p.character] || '', p.x, p.y - 26);
+
+    // etiqueta
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 14px sans-serif';
+    ctx.fillText(p.id, p.x, p.y + 38);
+    ctx.textAlign = 'left';
+  }
+
+  function draw() {
+    drawBackground();
+    players.forEach((p) => { if (p) drawCar(p); });
     requestAnimationFrame(draw);
   }
   draw();

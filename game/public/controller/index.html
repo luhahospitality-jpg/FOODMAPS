@@ -5,11 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
 <title>BLOCK RACERS - Controller</title>
 <style>
-  * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; }
+  * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; box-sizing:border-box; }
   html, body { margin:0; height:100%; background:#0a0a0a; overflow:hidden; font-family:sans-serif; color:#fff; }
   #status { position:fixed; top:8px; left:0; right:0; text-align:center; font-size:18px; z-index:5; }
   #rotateMsg { position:fixed; inset:0; background:#000; color:#fff; display:none; align-items:center; justify-content:center; font-size:28px; text-align:center; z-index:10; }
-  #pad { position:fixed; inset:0; display:flex; }
+
+  #charSelect { position:fixed; inset:0; background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:8; }
+  #charSelect h1 { font-size:22px; margin:0 0 4px; letter-spacing:2px; }
+  #charSelect p { margin:0 0 16px; opacity:0.7; font-size:13px; }
+  #charGrid { display:grid; grid-template-columns:1fr 1fr; gap:12px; width:90%; max-width:420px; }
+  .charBtn { border:3px solid #444; border-radius:14px; padding:12px 6px; display:flex; flex-direction:column; align-items:center; gap:4px; background:#1c1c1c; }
+  .charBtn .emoji { font-size:36px; }
+  .charBtn .name { font-size:14px; font-weight:bold; }
+  .charBtn.rabbit { border-color:#ff8c42; }
+  .charBtn.gorilla { border-color:#8d6e4a; }
+  .charBtn.princess { border-color:#ff5fa2; }
+  .charBtn.ice { border-color:#7fd8ff; }
+  .charBtn.selected { background:#2ecc71; color:#111; }
+
+  #pad { position:fixed; inset:0; display:none; }
   #stickArea { position:relative; width:45%; height:100%; }
   #stickBase { position:absolute; width:150px; height:150px; border-radius:50%; background:#222; border:3px solid #555; top:50%; left:50%; transform:translate(-50%,-50%); }
   #stickKnob { position:absolute; width:70px; height:70px; border-radius:50%; background:#888; top:50%; left:50%; transform:translate(-50%,-50%); }
@@ -17,11 +31,24 @@
   .btn { position:absolute; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:20px; color:#fff; }
   #accel { width:140px; height:140px; background:#2ecc71; bottom:20px; right:20px; }
   #brake { width:110px; height:110px; background:#e74c3c; bottom:40px; right:180px; }
+  #myChar { position:fixed; top:34px; left:0; right:0; text-align:center; font-size:32px; z-index:5; }
 </style>
 </head>
 <body>
 <div id="status">Conectando...</div>
+<div id="myChar"></div>
 <div id="rotateMsg">ROTATE YOUR PHONE</div>
+
+<div id="charSelect">
+  <h1>BLOCK RACERS</h1>
+  <p>ELIGE TU CORREDOR</p>
+  <div id="charGrid">
+    <div class="charBtn rabbit" data-char="rabbit"><span class="emoji">🐰</span><span class="name">CONEJO</span></div>
+    <div class="charBtn gorilla" data-char="gorilla"><span class="emoji">🦍</span><span class="name">GORILA</span></div>
+    <div class="charBtn princess" data-char="princess"><span class="emoji">👸</span><span class="name">PRINCESA</span></div>
+    <div class="charBtn ice" data-char="ice"><span class="emoji">🧊</span><span class="name">HIELO</span></div>
+  </div>
+</div>
 
 <div id="pad">
   <div id="stickArea">
@@ -35,8 +62,10 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
+  const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
   const socket = io();
   const statusEl = document.getElementById('status');
+  const myCharEl = document.getElementById('myChar');
   let mySteer = 0, myAccel = false, myBrake = false;
 
   socket.on('connect', () => socket.emit('join'));
@@ -44,8 +73,22 @@
     statusEl.textContent = 'Sos ' + data.id;
     statusEl.style.color = data.color;
     document.body.style.background = '#000';
+    if (data.character) myCharEl.textContent = EMOJI[data.character] || '';
   });
   socket.on('full', () => { statusEl.textContent = 'Sala llena (máx 4)'; });
+
+  document.querySelectorAll('.charBtn').forEach((btn) => {
+    btn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      document.querySelectorAll('.charBtn').forEach((b) => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      const char = btn.dataset.char;
+      socket.emit('character', char);
+      myCharEl.textContent = EMOJI[char] || '';
+      document.getElementById('charSelect').style.display = 'none';
+      document.getElementById('pad').style.display = 'flex';
+    });
+  });
 
   function sendInput() {
     socket.emit('input', { steer: mySteer, accel: myAccel, brake: myBrake });
