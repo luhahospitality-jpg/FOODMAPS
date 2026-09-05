@@ -7,47 +7,35 @@
 <style>
   * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; box-sizing:border-box; }
   html, body { margin:0; height:100%; background:#0a0a0a; overflow:hidden; font-family:sans-serif; color:#fff; }
-  #status { position:fixed; top:8px; left:0; right:0; text-align:center; font-size:18px; z-index:5; }
+  #status { position:fixed; top:8px; left:0; right:0; text-align:center; font-size:16px; z-index:5; }
   #rotateMsg { position:fixed; inset:0; background:#000; color:#fff; display:none; align-items:center; justify-content:center; font-size:28px; text-align:center; z-index:10; }
 
-  #charSelect { position:fixed; inset:0; background:#111; display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:8; }
-  #charSelect h1 { font-size:22px; margin:0 0 4px; letter-spacing:2px; }
-  #charSelect p { margin:0 0 16px; opacity:0.7; font-size:13px; }
-  #charGrid { display:grid; grid-template-columns:1fr 1fr; gap:12px; width:90%; max-width:420px; }
-  .charBtn { border:3px solid #444; border-radius:14px; padding:12px 6px; display:flex; flex-direction:column; align-items:center; gap:4px; background:#1c1c1c; }
-  .charBtn .emoji { font-size:36px; }
-  .charBtn .name { font-size:14px; font-weight:bold; }
-  .charBtn.rabbit { border-color:#ff8c42; }
-  .charBtn.gorilla { border-color:#8d6e4a; }
-  .charBtn.princess { border-color:#ff5fa2; }
-  .charBtn.ice { border-color:#7fd8ff; }
-  .charBtn.selected { background:#2ecc71; color:#111; }
+  #selectInfo { position:fixed; top:34px; left:0; right:0; text-align:center; z-index:6; }
+  #selectInfo .emoji { font-size:54px; display:block; }
+  #selectInfo .name { font-size:16px; letter-spacing:2px; font-weight:bold; }
+  #selectInfo .hint { font-size:12px; opacity:0.7; margin-top:4px; }
 
-  #pad { position:fixed; inset:0; display:none; }
+  #pad { position:fixed; inset:0; display:flex; }
   #stickArea { position:relative; width:45%; height:100%; }
   #stickBase { position:absolute; width:150px; height:150px; border-radius:50%; background:#222; border:3px solid #555; top:50%; left:50%; transform:translate(-50%,-50%); }
   #stickKnob { position:absolute; width:70px; height:70px; border-radius:50%; background:#888; top:50%; left:50%; transform:translate(-50%,-50%); }
   #buttons { position:relative; width:55%; height:100%; }
-  .btn { position:absolute; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:20px; color:#fff; }
-  #accel { width:140px; height:140px; background:#2ecc71; bottom:20px; right:20px; }
-  #brake { width:110px; height:110px; background:#e74c3c; bottom:40px; right:180px; }
-  #myChar { position:fixed; top:34px; left:0; right:0; text-align:center; font-size:32px; z-index:5; }
+  .btn { position:absolute; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:16px; color:#fff; text-align:center; line-height:1.1; opacity:1; transition:opacity 0.15s; }
+  .btn.disabled { opacity:0.35; }
+  #accel { width:130px; height:130px; background:#2ecc71; bottom:20px; right:20px; font-size:20px; }
+  #brake { width:100px; height:100px; background:#e74c3c; bottom:30px; right:165px; }
+  #boost { width:95px; height:95px; background:#ffb703; bottom:150px; right:20px; color:#111; }
+  #power { width:95px; height:95px; background:#8e44ad; bottom:150px; right:165px; }
 </style>
 </head>
 <body>
 <div id="status">Conectando...</div>
-<div id="myChar"></div>
 <div id="rotateMsg">ROTATE YOUR PHONE</div>
 
-<div id="charSelect">
-  <h1>BLOCK RACERS</h1>
-  <p>ELIGE TU CORREDOR</p>
-  <div id="charGrid">
-    <div class="charBtn rabbit" data-char="rabbit"><span class="emoji">🐰</span><span class="name">CONEJO</span></div>
-    <div class="charBtn gorilla" data-char="gorilla"><span class="emoji">🦍</span><span class="name">GORILA</span></div>
-    <div class="charBtn princess" data-char="princess"><span class="emoji">👸</span><span class="name">PRINCESA</span></div>
-    <div class="charBtn ice" data-char="ice"><span class="emoji">🧊</span><span class="name">HIELO</span></div>
-  </div>
+<div id="selectInfo" style="display:none;">
+  <span class="emoji" id="selEmoji">🐰</span>
+  <span class="name" id="selName">CONEJO</span>
+  <div class="hint" id="selHint">Mové el joystick para cambiar - tocá ELEGIR para confirmar</div>
 </div>
 
 <div id="pad">
@@ -55,6 +43,8 @@
     <div id="stickBase"><div id="stickKnob"></div></div>
   </div>
   <div id="buttons">
+    <div class="btn" id="power">POWER</div>
+    <div class="btn" id="boost">BOOST</div>
     <div class="btn" id="brake">BRAKE</div>
     <div class="btn" id="accel">GO</div>
   </div>
@@ -63,31 +53,59 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
   const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
+  const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
+
   const socket = io();
   const statusEl = document.getElementById('status');
-  const myCharEl = document.getElementById('myChar');
+  const accelBtn = document.getElementById('accel');
+  const brakeBtn = document.getElementById('brake');
+  const boostBtn = document.getElementById('boost');
+  const powerBtn = document.getElementById('power');
+  const selectInfo = document.getElementById('selectInfo');
+  const selEmoji = document.getElementById('selEmoji');
+  const selName = document.getElementById('selName');
+  const selHint = document.getElementById('selHint');
+
   let mySteer = 0, myAccel = false, myBrake = false;
+  let currentPhase = 'select';
+  let hasBoost = false, powerReady = true;
 
   socket.on('connect', () => socket.emit('join'));
   socket.on('joined', (data) => {
     statusEl.textContent = 'Sos ' + data.id;
     statusEl.style.color = data.color;
     document.body.style.background = '#000';
-    if (data.character) myCharEl.textContent = EMOJI[data.character] || '';
   });
-  socket.on('full', () => { statusEl.textContent = 'Sala llena (máx 4)'; });
+  socket.on('full', () => { statusEl.textContent = 'Sala llena (max 4)'; });
 
-  document.querySelectorAll('.charBtn').forEach((btn) => {
-    btn.addEventListener('touchstart', (e) => {
-      e.preventDefault();
-      document.querySelectorAll('.charBtn').forEach((b) => b.classList.remove('selected'));
-      btn.classList.add('selected');
-      const char = btn.dataset.char;
-      socket.emit('character', char);
-      myCharEl.textContent = EMOJI[char] || '';
-      document.getElementById('charSelect').style.display = 'none';
-      document.getElementById('pad').style.display = 'flex';
-    });
+  socket.on('status', (s) => {
+    currentPhase = s.phase;
+    hasBoost = s.hasBoost;
+    powerReady = s.powerReady;
+
+    if (s.phase === 'select' && !s.confirmed) {
+      selectInfo.style.display = 'block';
+      selEmoji.textContent = EMOJI[s.character] || '';
+      selName.textContent = NAMES[s.character] || '';
+      selHint.textContent = 'Move el joystick para cambiar - toca ELEGIR para confirmar';
+      accelBtn.textContent = 'ELEGIR';
+      brakeBtn.classList.add('disabled');
+      boostBtn.classList.add('disabled');
+      powerBtn.classList.add('disabled');
+    } else if (s.phase === 'select' && s.confirmed) {
+      selectInfo.style.display = 'block';
+      selEmoji.textContent = EMOJI[s.character] || '';
+      selName.textContent = NAMES[s.character] || '';
+      selHint.textContent = 'LISTO - esperando a los demas jugadores...';
+      accelBtn.textContent = 'GO';
+    } else {
+      selectInfo.style.display = 'none';
+      accelBtn.textContent = 'GO';
+      brakeBtn.classList.remove('disabled');
+      boostBtn.classList.toggle('disabled', !hasBoost);
+      powerBtn.classList.toggle('disabled', !powerReady);
+      powerBtn.textContent = powerReady ? 'POWER' : s.cooldownSec;
+    }
   });
 
   function sendInput() {
@@ -95,7 +113,7 @@
   }
   setInterval(sendInput, 50);
 
-  // Joystick táctil (solo eje horizontal: izquierda/derecha)
+  // Joystick tactil (eje horizontal)
   const stickArea = document.getElementById('stickArea');
   const stickKnob = document.getElementById('stickKnob');
   let activeTouchId = null;
@@ -137,8 +155,17 @@
     el.addEventListener('touchend', (e) => { e.preventDefault(); onEnd(); });
     el.addEventListener('touchcancel', (e) => { e.preventDefault(); onEnd(); });
   }
-  bindHold(document.getElementById('accel'), () => myAccel = true, () => myAccel = false);
-  bindHold(document.getElementById('brake'), () => myBrake = true, () => myBrake = false);
+  bindHold(accelBtn, () => myAccel = true, () => myAccel = false);
+  bindHold(brakeBtn, () => { if (currentPhase === 'racing') myBrake = true; }, () => myBrake = false);
+
+  boostBtn.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (currentPhase === 'racing' && hasBoost) socket.emit('boost');
+  });
+  powerBtn.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (currentPhase === 'racing' && powerReady) socket.emit('power');
+  });
 
   document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   document.addEventListener('contextmenu', (e) => e.preventDefault());
