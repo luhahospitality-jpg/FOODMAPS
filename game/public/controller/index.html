@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>BLOCK RACERS - Controller</title>
+<style>
+  * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; }
+  html, body { margin:0; height:100%; background:#0a0a0a; overflow:hidden; font-family:sans-serif; color:#fff; }
+  #status { position:fixed; top:8px; left:0; right:0; text-align:center; font-size:18px; z-index:5; }
+  #rotateMsg { position:fixed; inset:0; background:#000; color:#fff; display:none; align-items:center; justify-content:center; font-size:28px; text-align:center; z-index:10; }
+  #pad { position:fixed; inset:0; display:flex; }
+  #stickArea { position:relative; width:45%; height:100%; }
+  #stickBase { position:absolute; width:150px; height:150px; border-radius:50%; background:#222; border:3px solid #555; top:50%; left:50%; transform:translate(-50%,-50%); }
+  #stickKnob { position:absolute; width:70px; height:70px; border-radius:50%; background:#888; top:50%; left:50%; transform:translate(-50%,-50%); }
+  #buttons { position:relative; width:55%; height:100%; }
+  .btn { position:absolute; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:20px; color:#fff; }
+  #accel { width:140px; height:140px; background:#2ecc71; bottom:20px; right:20px; }
+  #brake { width:110px; height:110px; background:#e74c3c; bottom:40px; right:180px; }
+</style>
+</head>
+<body>
+<div id="status">Conectando...</div>
+<div id="rotateMsg">ROTATE YOUR PHONE</div>
+
+<div id="pad">
+  <div id="stickArea">
+    <div id="stickBase"><div id="stickKnob"></div></div>
+  </div>
+  <div id="buttons">
+    <div class="btn" id="brake">BRAKE</div>
+    <div class="btn" id="accel">GO</div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+  const statusEl = document.getElementById('status');
+  let mySteer = 0, myAccel = false, myBrake = false;
+
+  socket.on('connect', () => socket.emit('join'));
+  socket.on('joined', (data) => {
+    statusEl.textContent = 'Sos ' + data.id;
+    statusEl.style.color = data.color;
+    document.body.style.background = '#000';
+  });
+  socket.on('full', () => { statusEl.textContent = 'Sala llena (máx 4)'; });
+
+  function sendInput() {
+    socket.emit('input', { steer: mySteer, accel: myAccel, brake: myBrake });
+  }
+  setInterval(sendInput, 50);
+
+  // Joystick táctil (solo eje horizontal: izquierda/derecha)
+  const stickArea = document.getElementById('stickArea');
+  const stickKnob = document.getElementById('stickKnob');
+  let activeTouchId = null;
+
+  function setKnob(dx) {
+    const max = 55;
+    dx = Math.max(-max, Math.min(max, dx));
+    stickKnob.style.transform = 'translate(calc(-50% + ' + dx + 'px), -50%)';
+    mySteer = dx / max;
+  }
+  function resetKnob() {
+    stickKnob.style.transform = 'translate(-50%, -50%)';
+    mySteer = 0;
+  }
+
+  stickArea.addEventListener('touchstart', (e) => {
+    const t = e.changedTouches[0];
+    activeTouchId = t.identifier;
+    handleStickMove(t);
+  });
+  stickArea.addEventListener('touchmove', (e) => {
+    for (const t of e.changedTouches) {
+      if (t.identifier === activeTouchId) handleStickMove(t);
+    }
+  });
+  stickArea.addEventListener('touchend', (e) => {
+    for (const t of e.changedTouches) {
+      if (t.identifier === activeTouchId) { activeTouchId = null; resetKnob(); }
+    }
+  });
+  function handleStickMove(t) {
+    const rect = stickArea.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    setKnob(t.clientX - cx);
+  }
+
+  function bindHold(el, onStart, onEnd) {
+    el.addEventListener('touchstart', (e) => { e.preventDefault(); onStart(); });
+    el.addEventListener('touchend', (e) => { e.preventDefault(); onEnd(); });
+    el.addEventListener('touchcancel', (e) => { e.preventDefault(); onEnd(); });
+  }
+  bindHold(document.getElementById('accel'), () => myAccel = true, () => myAccel = false);
+  bindHold(document.getElementById('brake'), () => myBrake = true, () => myBrake = false);
+
+  document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  function checkOrientation() {
+    const isPortrait = window.innerHeight > window.innerWidth;
+    document.getElementById('rotateMsg').style.display = isPortrait ? 'flex' : 'none';
+  }
+  window.addEventListener('resize', checkOrientation);
+  checkOrientation();
+</script>
+</body>
+</html>

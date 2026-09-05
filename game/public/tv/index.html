@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>BLOCK RACERS - TV</title>
+<style>
+  html, body { margin:0; padding:0; background:#111; overflow:hidden; cursor:none; height:100%; }
+  #wrap { position:relative; width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; }
+  canvas { background:#1a1a2e; max-width:100%; max-height:100%; }
+  #info { position:fixed; top:10px; left:10px; color:#fff; font-family:sans-serif; font-size:22px; }
+  #url { position:fixed; bottom:10px; left:10px; color:#0f0; font-family:monospace; font-size:20px; }
+  .legend { display:flex; gap:16px; margin-top:8px; }
+  .dot { display:inline-block; width:16px; height:16px; border-radius:3px; margin-right:6px; vertical-align:middle; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" width="1600" height="900"></canvas>
+</div>
+<div id="info">
+  <div>BLOCK RACERS (MVP)</div>
+  <div id="legend" class="legend"></div>
+</div>
+<div id="url"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+  const canvas = document.getElementById('c');
+  const ctx = canvas.getContext('2d');
+  let players = [null, null, null, null];
+
+  document.getElementById('url').textContent =
+    'Abre en tu iPhone: http://' + location.hostname + ':' + location.port + '/controller';
+
+  socket.on('players_update', (list) => {
+    const legend = document.getElementById('legend');
+    legend.innerHTML = '';
+    list.forEach((p) => {
+      const span = document.createElement('span');
+      if (p) {
+        span.innerHTML = '<span class="dot" style="background:' + p.color + '"></span>' + p.id;
+      } else {
+        span.style.opacity = 0.4;
+        span.textContent = '-- vacío --';
+      }
+      legend.appendChild(span);
+    });
+  });
+
+  socket.on('state', (list) => { players = list; });
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // "pista" de referencia (no colisiona, solo visual)
+    ctx.strokeStyle = '#444';
+    ctx.setLineDash([10, 10]);
+    ctx.lineWidth = 3;
+    ctx.strokeRect(40, 40, canvas.width - 80, canvas.height - 80);
+    ctx.setLineDash([]);
+
+    players.forEach((p) => {
+      if (!p) return;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.angle);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-18, -12, 36, 24);
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(10, -10, 8, 20);
+      ctx.restore();
+
+      ctx.fillStyle = '#fff';
+      ctx.font = '16px sans-serif';
+      ctx.fillText(p.id, p.x - 10, p.y - 22);
+    });
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+</script>
+</body>
+</html>
