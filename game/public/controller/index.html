@@ -26,11 +26,15 @@
   #brake { width:100px; height:100px; background:#e74c3c; bottom:30px; right:165px; }
   #boost { width:95px; height:95px; background:#ffb703; bottom:150px; right:20px; color:#111; }
   #power { width:95px; height:95px; background:#8e44ad; bottom:150px; right:165px; }
+  #resetBtn { position:fixed; top:6px; right:6px; width:46px; height:26px; border-radius:6px;
+    background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.5); font-size:9px; font-weight:bold;
+    display:flex; align-items:center; justify-content:center; z-index:7; letter-spacing:1px; }
 </style>
 </head>
 <body>
 <div id="status">Conectando...</div>
 <div id="rotateMsg">ROTATE YOUR PHONE</div>
+<div id="resetBtn">START</div>
 
 <div id="selectInfo" style="display:none;">
   <span class="emoji" id="selEmoji">🐰</span>
@@ -165,6 +169,11 @@
   powerBtn.addEventListener('touchstart', (e) => {
     e.preventDefault();
     if (currentPhase === 'racing' && powerReady) socket.emit('power');
+  });
+
+  document.getElementById('resetBtn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    socket.emit('reset_to_menu');
   });
 
   document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });

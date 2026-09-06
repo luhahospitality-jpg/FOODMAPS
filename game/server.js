@@ -200,6 +200,19 @@ io.on('connection', (socket) => {
     usePower(slot);
   });
 
+  socket.on('reset_to_menu', () => {
+    if (slot === -1 || !players[slot]) return;
+    phase = 'select';
+    countdown = 0;
+    countdownAcc = 0;
+    firstConfirmAt = 0;
+    players.forEach((p) => { if (p) p.confirmed = false; });
+    peels = [];
+    flowers = [];
+    iceUntil = 0;
+    iceOwnerSlot = -1;
+  });
+
   socket.on('disconnect', () => {
     if (slot !== -1 && players[slot]) players[slot] = null;
   });
@@ -439,6 +452,7 @@ function broadcast(now) {
       character: p.character,
       confirmed: p.confirmed,
       x: p.x, y: p.y, angle: p.angle,
+      steer: p.input.steer,
       lives: p.lives,
       lap: p.lap,
       hasBoost: p.hasBoost,

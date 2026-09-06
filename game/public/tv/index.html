@@ -99,7 +99,7 @@ function buildKartFromArt(character) {
   shadow.position.y = 2;
   g.add(shadow);
 
-  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true, alphaTest: 0.3 });
+  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true, alphaTest: 0.3, side: THREE.DoubleSide });
   const cardH = 300;
   const cardW = cardH * (CHAR_ASPECT[character] || 0.48);
   const card = mesh(new THREE.PlaneGeometry(cardW, cardH), cardMat);
@@ -163,6 +163,38 @@ const decorGroup = new THREE.Group();
 scene.add(decorGroup);
 const confettiGroup = new THREE.Group();
 scene.add(confettiGroup);
+let roadColorAttr = null, stripeColorAttr = null, roadSegCount = 0;
+const tmpColor = new THREE.Color();
+
+function updateRainbowRoad(t) {
+  if (!roadColorAttr) return;
+  const n = roadSegCount;
+  const ra = roadColorAttr.array, sa = stripeColorAttr.array;
+  for (let i = 0; i < n; i++) {
+    const hueA = ((i / n) + t * 0.05) % 1;
+    const hueB = (((i + 1) / n) + t * 0.05) % 1;
+    tmpColor.setHSL(hueA < 0 ? hueA + 1 : hueA, 0.75, 0.5);
+    const arA = tmpColor.r, agA = tmpColor.g, abA = tmpColor.b;
+    tmpColor.setHSL(hueB < 0 ? hueB + 1 : hueB, 0.75, 0.5);
+    const arB = tmpColor.r, agB = tmpColor.g, abB = tmpColor.b;
+    const base = i * 12;
+    ra[base] = arA; ra[base + 1] = agA; ra[base + 2] = abA;
+    ra[base + 3] = arA; ra[base + 4] = agA; ra[base + 5] = abA;
+    ra[base + 6] = arB; ra[base + 7] = agB; ra[base + 8] = abB;
+    ra[base + 9] = arB; ra[base + 10] = agB; ra[base + 11] = abB;
+
+    tmpColor.setHSL(hueA < 0 ? hueA + 1 : hueA, 1, 0.65);
+    const srA = tmpColor.r, sgA = tmpColor.g, sbA = tmpColor.b;
+    tmpColor.setHSL(hueB < 0 ? hueB + 1 : hueB, 1, 0.65);
+    const srB = tmpColor.r, sgB = tmpColor.g, sbB = tmpColor.b;
+    sa[base] = srA; sa[base + 1] = sgA; sa[base + 2] = sbA;
+    sa[base + 3] = srA; sa[base + 4] = sgA; sa[base + 5] = sbA;
+    sa[base + 6] = srB; sa[base + 7] = sgB; sa[base + 8] = sbB;
+    sa[base + 9] = srB; sa[base + 10] = sgB; sa[base + 11] = sbB;
+  }
+  roadColorAttr.needsUpdate = true;
+  stripeColorAttr.needsUpdate = true;
+}
 
 function buildTrackAndDecor() {
   const track = state.track;
@@ -174,8 +206,8 @@ function buildTrackAndDecor() {
 
   const half = state.trackWidth / 2;
   const guarded = new Set(state.guardrailSegments || []);
-  const asphaltMat = mat('#7a2a5c');
-  const stripeMat = mat('#ffe6f5');
+  const asphaltMat = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 0.55, metalness: 0.15 });
+  const stripeMat = new THREE.MeshBasicMaterial({ vertexColors: true });
   const tireMat = mat('#161616');
   const cliffMat = emissiveMat('#ff5a1e');
 
@@ -255,14 +287,19 @@ function buildTrackAndDecor() {
   }
 
   roadGeo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  roadGeo.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(positions.length), 3));
   roadGeo.setIndex(idx);
   roadGeo.computeVertexNormals();
   scene.add(mesh(roadGeo, asphaltMat));
+  roadColorAttr = roadGeo.attributes.color;
+  roadSegCount = n;
 
   stripeGeo.setAttribute('position', new THREE.Float32BufferAttribute(stripePositions, 3));
+  stripeGeo.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(stripePositions.length), 3));
   stripeGeo.setIndex(stripeIdx);
   stripeGeo.computeVertexNormals();
   scene.add(mesh(stripeGeo, stripeMat));
+  stripeColorAttr = stripeGeo.attributes.color;
 
   // linea de meta a cuadros
   const ccanvas = document.createElement('canvas');
@@ -295,10 +332,11 @@ function buildTrackAndDecor() {
     decorGroup.add(arc);
   });
 
-  // decoracion (arboles, antorchas, publico) a lo largo del recorrido
-  const spacing = state.trackWidth * 0.9;
+  // decoracion (arboles, antorchas, publico, cristales, banderas) - bien tupida para que no se vea vacio
+  const spacing = state.trackWidth * 0.45;
   let carry = 0, decorIdx = 0;
   const crowdColors = ['#ff6b6b', '#4da6ff', '#ffd24d', '#4dff88'];
+  const crystalColors = ['#c04dff', '#4da6ff', '#ff6bd6'];
   for (let i = 0; i < track.length; i++) {
     const a = toWorld(track[i].x, track[i].y);
     const b = toWorld(track[(i + 1) % track.length].x, track[(i + 1) % track.length].y);
@@ -310,8 +348,8 @@ function buildTrackAndDecor() {
     while (d < segLen) {
       const px = a.x + dirX * d, pz = a.z + dirZ * d;
       const side = decorIdx % 2 === 0 ? 1 : -1;
-      const offset = half + state.trackWidth * 0.4;
-      const kind = decorIdx % 6 === 0 ? 'torch' : decorIdx % 3 === 0 ? 'crowd' : 'tree';
+      const offset = half + state.trackWidth * 0.35 + (decorIdx % 4) * 60;
+      const kind = ['tree', 'crowd', 'tree', 'torch', 'tree', 'crystal', 'crowd', 'flag'][decorIdx % 8];
       const x = px + nx * offset * side, z = pz + nz * offset * side;
 
       if (kind === 'tree') {
@@ -328,6 +366,26 @@ function buildTrackAndDecor() {
         const flame = mesh(new THREE.IcosahedronGeometry(26, 0), emissiveMat('#ff9f1c'));
         flame.position.set(x, 125, z);
         decorGroup.add(flame);
+      } else if (kind === 'crystal') {
+        const cCol = crystalColors[decorIdx % crystalColors.length];
+        const crystal = mesh(new THREE.ConeGeometry(30, 110, 5), emissiveMat(cCol));
+        crystal.position.set(x, 55, z);
+        crystal.rotation.y = decorIdx * 0.7;
+        decorGroup.add(crystal);
+        const crystal2 = mesh(new THREE.ConeGeometry(16, 60, 5), emissiveMat(cCol));
+        crystal2.position.set(x + 25, 30, z + 10);
+        crystal2.rotation.y = decorIdx * 1.3;
+        decorGroup.add(crystal2);
+      } else if (kind === 'flag') {
+        const pole = mesh(new THREE.CylinderGeometry(6, 6, 140, 6), mat('#8a8a95'));
+        pole.position.set(x, 70, z);
+        decorGroup.add(pole);
+        const flagColor = crowdColors[decorIdx % crowdColors.length];
+        const flag = mesh(new THREE.ConeGeometry(28, 50, 3), mat(flagColor));
+        flag.rotation.z = Math.PI / 2;
+        flag.position.set(x + 20, 125, z);
+        flag.userData.bouncePhase = Math.random() * Math.PI * 2;
+        decorGroup.add(flag);
       } else {
         const color = crowdColors[decorIdx % crowdColors.length];
         const person = new THREE.Group();
@@ -477,9 +535,31 @@ function updateSelectHolders() {
   });
 }
 
-// ---------- camara de persecucion ----------
-const cameraState = { x: 0, z: 0, heading: 0, init: false };
-function updateCamera() {
+// ---------- camara de persecucion (con pantalla dividida por jugador) ----------
+const mainCameraState = { x: 0, z: 0, heading: 0, init: false };
+const slotCameraStates = [0, 1, 2, 3].map(() => ({ x: 0, z: 0, heading: 0, init: false }));
+
+function moveCameraState(cs, tx, tz, theading) {
+  if (!cs.init) {
+    cs.x = tx; cs.z = tz; cs.heading = theading; cs.init = true;
+  } else {
+    cs.x += (tx - cs.x) * 0.08;
+    cs.z += (tz - cs.z) * 0.08;
+    let dh = theading - cs.heading;
+    while (dh > Math.PI) dh -= Math.PI * 2;
+    while (dh < -Math.PI) dh += Math.PI * 2;
+    cs.heading += dh * 0.06;
+  }
+}
+
+function aimCameraAt(cs) {
+  const dist = 950, height = 620, lookAhead = 700;
+  camera.position.set(cs.x - Math.cos(cs.heading) * dist, height, cs.z - Math.sin(cs.heading) * dist);
+  camera.lookAt(cs.x + Math.cos(cs.heading) * lookAhead, 120, cs.z + Math.sin(cs.heading) * lookAhead);
+}
+
+// vista cinematica promediada: select / countdown / cuando solo hay 0-1 corredor
+function updateCameraAveraged() {
   const active = state.players.filter(Boolean);
   if (!active.length) return;
   let sx = 0, sz = 0, hsin = 0, hcos = 0;
@@ -488,31 +568,68 @@ function updateCamera() {
     sx += w.x; sz += w.z;
     hsin += Math.sin(p.angle); hcos += Math.cos(p.angle);
   });
-  const tx = sx / active.length, tz = sz / active.length;
-  const theading = Math.atan2(hsin, hcos);
+  moveCameraState(mainCameraState, sx / active.length, sz / active.length, Math.atan2(hsin, hcos));
+  aimCameraAt(mainCameraState);
+}
 
-  if (!cameraState.init) {
-    cameraState.x = tx; cameraState.z = tz; cameraState.heading = theading; cameraState.init = true;
+// camara propia de un jugador (para su cuadrante en pantalla dividida)
+function updateCameraForSlot(slot, p) {
+  const w = toWorld(p.x, p.y);
+  moveCameraState(slotCameraStates[slot], w.x, w.z, p.angle);
+  aimCameraAt(slotCameraStates[slot]);
+}
+
+// el cartel del kart siempre mira a la camara ACTIVA (distinta en cada cuadrante dividido)
+// y se espeja segun hacia que lado esta girando
+function updateKartBillboards() {
+  state.players.forEach((p, i) => {
+    if (!p) return;
+    const slotData = kartSlots[i];
+    if (!slotData) return;
+    const w = toWorld(p.x, p.y);
+    const card = slotData.group.children.find((c) => c.userData.billboard);
+    if (!card) return;
+    card.rotation.y = Math.atan2(camera.position.x - w.x, camera.position.z - w.z);
+    if (p.steer > 0.15) card.scale.x = -1;
+    else if (p.steer < -0.15) card.scale.x = 1;
+  });
+}
+
+const SPLIT_LAYOUTS = {
+  2: [[0, 0.5, 1, 0.5], [0, 0, 1, 0.5]],
+  3: [[0, 0.5, 1, 0.5], [0, 0, 0.5, 0.5], [0.5, 0, 0.5, 0.5]],
+  4: [[0, 0.5, 0.5, 0.5], [0.5, 0.5, 0.5, 0.5], [0, 0, 0.5, 0.5], [0.5, 0, 0.5, 0.5]],
+};
+
+function renderScene() {
+  const w = window.innerWidth, h = window.innerHeight;
+  const racers = state.phase === 'racing' ? state.players.filter(Boolean) : [];
+
+  if (racers.length <= 1) {
+    renderer.setScissorTest(false);
+    renderer.setViewport(0, 0, w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    if (racers.length === 1) updateCameraForSlot(state.players.indexOf(racers[0]), racers[0]);
+    else updateCameraAveraged();
+    updateKartBillboards();
+    renderer.render(scene, camera);
   } else {
-    cameraState.x += (tx - cameraState.x) * 0.08;
-    cameraState.z += (tz - cameraState.z) * 0.08;
-    let dh = theading - cameraState.heading;
-    while (dh > Math.PI) dh -= Math.PI * 2;
-    while (dh < -Math.PI) dh += Math.PI * 2;
-    cameraState.heading += dh * 0.06;
+    renderer.setScissorTest(true);
+    const layout = SPLIT_LAYOUTS[racers.length];
+    racers.forEach((p, idx) => {
+      const slot = state.players.indexOf(p);
+      const [fx, fy, fw, fh] = layout[idx];
+      const vx = Math.round(fx * w), vy = Math.round(fy * h), vw = Math.round(fw * w), vh = Math.round(fh * h);
+      renderer.setViewport(vx, vy, vw, vh);
+      renderer.setScissor(vx, vy, vw, vh);
+      camera.aspect = vw / vh;
+      camera.updateProjectionMatrix();
+      updateCameraForSlot(slot, p);
+      updateKartBillboards();
+      renderer.render(scene, camera);
+    });
   }
-
-  const dist = 950, height = 620, lookAhead = 700;
-  camera.position.set(
-    cameraState.x - Math.cos(cameraState.heading) * dist,
-    height,
-    cameraState.z - Math.sin(cameraState.heading) * dist
-  );
-  camera.lookAt(
-    cameraState.x + Math.cos(cameraState.heading) * lookAhead,
-    120,
-    cameraState.z + Math.sin(cameraState.heading) * lookAhead
-  );
 }
 
 // ---------- loop ----------
@@ -541,16 +658,13 @@ function animate() {
 
   if (state.phase === 'racing') updateHud();
 
-  if (!isSelect) updateCamera();
-
-  // posicionar / crear-destruir karts en la escena principal (cartel que siempre mira a camara)
+  // posicionar / crear-destruir karts en la escena principal (la orientacion del cartel
+  // se resuelve en renderScene, distinta por cuadrante si hay pantalla dividida)
   state.players.forEach((p, i) => {
     if (!p) { removeKart(i); return; }
     const group = ensureKart(i, p.character);
     const w = toWorld(p.x, p.y);
     group.position.set(w.x, 0, w.z);
-    const card = group.children.find((c) => c.userData.billboard);
-    if (card) card.rotation.y = Math.atan2(camera.position.x - w.x, camera.position.z - w.z);
     const targetScale = state.phase === 'select' ? 0 : 1;
     group.scale.setScalar(targetScale);
   });
@@ -570,8 +684,9 @@ function animate() {
     c.rotation.x += c.userData.spinSpeed * 0.6 * dt;
     if (c.position.y < 0) c.position.y = 2000 + Math.random() * 400;
   });
+  updateRainbowRoad(t);
 
-  if (!isSelect) renderer.render(scene, camera);
+  if (!isSelect) renderScene();
 }
 
 let itemsHash = '';
