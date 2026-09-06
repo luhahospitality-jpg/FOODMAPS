@@ -4,504 +4,673 @@
 <meta charset="UTF-8" />
 <title>BLOCK RACERS - TV</title>
 <style>
-  html, body { margin:0; padding:0; background:#111; overflow:hidden; cursor:none; height:100%; }
-  #wrap { position:relative; width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; }
-  canvas { background:#1a1a2e; max-width:100%; max-height:100%; }
-  #url { position:fixed; bottom:10px; left:10px; color:#0f0; font-family:monospace; font-size:16px; }
+  html, body { margin:0; padding:0; background:#0a0a14; overflow:hidden; cursor:none; height:100%; }
+  #gl { position:fixed; inset:0; width:100%; height:100%; display:block; }
+
+  #ui { position:fixed; inset:0; pointer-events:none; font-family:'Segoe UI', Arial, sans-serif; }
+  #title { position:absolute; top:16px; left:0; right:0; text-align:center; }
+  #title .name { font-size:34px; font-weight:900; letter-spacing:4px; color:#fff;
+    text-shadow:0 4px 0 #202030, -2px 0 0 #202030, 2px 0 0 #202030, 0 -2px 0 #202030; }
+
+  #hud { position:absolute; top:16px; right:16px; display:flex; flex-direction:column; gap:10px; }
+  .hcard { display:flex; align-items:center; gap:10px; background:rgba(10,10,25,0.72); border-radius:12px;
+    padding:8px 14px; border-left:8px solid #888; min-width:190px; backdrop-filter:blur(2px); }
+  .hcard .id { color:#fff; font-weight:800; font-size:16px; }
+  .hcard .lap { color:#cfd6ff; font-size:12px; }
+  .hcard .lives { color:#ff5f6d; font-size:14px; letter-spacing:1px; }
+  .hcard .tag { font-size:10px; font-weight:700; padding:2px 6px; border-radius:5px; }
+  .hcard .tag.on { background:#2ecc71; color:#06280f; }
+  .hcard .tag.off { background:#3a3a4a; color:#8a8a99; }
+
+  #countdown { position:absolute; inset:0; display:none; align-items:center; justify-content:center; }
+  #countdown span { font-size:220px; font-weight:900; color:#fff;
+    text-shadow:0 8px 0 #202030, -3px 0 0 #202030, 3px 0 0 #202030, 0 -3px 0 #202030; }
+
+  #select { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; background:#0c0c1c; pointer-events:auto; }
+  #select h1 { font-size:44px; font-weight:900; color:#fff; letter-spacing:4px; margin:0;
+    text-shadow:0 4px 0 #202030, -2px 0 0 #202030, 2px 0 0 #202030, 0 -2px 0 #202030; }
+  #select h2 { font-size:20px; color:#ffd24d; font-weight:800; letter-spacing:2px; margin:6px 0 26px; }
+  #cards { display:flex; gap:22px; }
+  .card { width:250px; background:rgba(20,20,40,0.9); border:3px solid #33334d; border-radius:18px;
+    padding:12px; display:flex; flex-direction:column; align-items:center; transition:border-color .15s; }
+  .card canvas { width:210px; height:190px; }
+  .card .cname { color:#fff; font-weight:800; font-size:18px; letter-spacing:1px; margin-top:4px; }
+  .card .holders { min-height:24px; font-size:14px; font-weight:700; margin-top:4px; }
+  .hint { margin-top:24px; color:#ccc; font-size:15px; }
+  #url { position:absolute; bottom:10px; left:10px; color:#5eff8f; font-family:monospace; font-size:16px; }
 </style>
 </head>
 <body>
-<div id="wrap">
-  <canvas id="c" width="1600" height="900"></canvas>
+<canvas id="gl"></canvas>
+
+<div id="ui">
+  <div id="title"><span class="name">BLOCK RACERS</span></div>
+  <div id="hud"></div>
+  <div id="countdown"><span id="countdownNum">3</span></div>
+  <div id="select">
+    <h1>BLOCK RACERS</h1>
+    <h2>ELIGE TU CORREDOR</h2>
+    <div id="cards"></div>
+    <div class="hint">Muevan el joystick del celular para elegir - toquen ELEGIR para confirmar</div>
+  </div>
+  <div id="url"></div>
 </div>
-<div id="url"></div>
 
 <script src="/socket.io/socket.io.js"></script>
-<script>
-  const socket = io();
-  const canvas = document.getElementById('c');
-  const ctx = canvas.getContext('2d');
-  const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
-  const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
-  const CHAR_ORDER = ['rabbit', 'gorilla', 'princess', 'ice'];
-  const CROWD_COLORS = ['#ff6b6b', '#4da6ff', '#ffd24d', '#4dff88'];
+<script type="module">
+import * as THREE from '/vendor/three.module.min.js';
 
-  const CHAR_IMAGES = {};
-  CHAR_ORDER.forEach((name) => {
-    const img = new Image();
-    img.src = '/assets/characters/' + name + '.png';
-    CHAR_IMAGES[name] = img;
+const socket = io();
+const CHAR_ORDER = ['rabbit', 'gorilla', 'princess', 'ice'];
+const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
+
+document.getElementById('url').textContent =
+  'Abre en tu iPhone: ' + location.origin + '/controller';
+
+let state = { phase: 'select', countdown: 0, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
+socket.on('state', (s) => { state = s; });
+
+// ---------- helpers de materiales/geometria low-poly ----------
+function mat(color, extra) {
+  return new THREE.MeshStandardMaterial(Object.assign({ color, flatShading: true, roughness: 0.85, metalness: 0.05 }, extra || {}));
+}
+function emissiveMat(color) {
+  return new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 1.1, flatShading: true, roughness: 0.6 });
+}
+function mesh(geo, material) { return new THREE.Mesh(geo, material); }
+
+// ---------- fabricas de personajes/karts (solo primitivas, sin assets externos) ----------
+const WHEEL_R = 55, WHEEL_T = 42;
+
+function addWheels(group, len, wid) {
+  const wMat = mat('#1a1a1a', { roughness: 0.9 });
+  const geo = new THREE.CylinderGeometry(WHEEL_R, WHEEL_R, WHEEL_T, 8);
+  [[-1, -1], [-1, 1], [1, -1], [1, 1]].forEach(([lx, lz]) => {
+    const w = mesh(geo, wMat);
+    w.rotation.x = Math.PI / 2;
+    w.position.set(lx * len * 0.28, WHEEL_R, lz * (wid / 2));
+    group.add(w);
   });
-  function drawCharSprite(character, size) {
-    const img = CHAR_IMAGES[character];
-    if (!img || !img.complete || !img.naturalWidth) return;
-    ctx.drawImage(img, -size / 2, -size / 2, size, size);
-  }
+}
 
-  // convierte las unidades "locales" de cada figura (autos, arboles, items) a
-  // unidades de mundo: la pista ahora es 10x mas grande que cuando se disenaron esas figuras
-  const CLIENT_WORLD_SCALE = 10;
-  const HORIZON_Y = 0; // se recalcula segun canvas.height en resize()
+function buildRabbitKart() {
+  const g = new THREE.Group();
+  addWheels(g, 460, 250);
 
-  document.getElementById('url').textContent =
-    'Abre en tu iPhone: ' + location.origin + '/controller';
+  const body = mesh(new THREE.CylinderGeometry(45, 140, 460, 6), mat('#ff8c3c'));
+  body.rotation.z = Math.PI / 2;
+  body.position.y = 120;
+  g.add(body);
 
-  let state = { phase: 'select', countdown: 0, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
-  socket.on('state', (s) => { state = s; });
+  [-1, 1].forEach((s) => {
+    const leaf = mesh(new THREE.ConeGeometry(45, 130, 5), mat('#3fae52'));
+    leaf.position.set(-220, 170, s * 40);
+    leaf.rotation.z = s * 0.35;
+    g.add(leaf);
+  });
 
-  // ---------- camara con perspectiva (pseudo-3D, sin motor 3D real) ----------
-  const camera = { x: 0, y: 0, heading: 0, height: 1200, distanceBack: 3600, focal: 1050, near: 80 };
-  let cameraInit = false;
-  let horizonY = 380;
+  const head = mesh(new THREE.IcosahedronGeometry(95, 0), mat('#ffffff'));
+  head.position.set(30, 260, 0);
+  g.add(head);
 
-  function updateCamera() {
-    const active = state.players.filter(Boolean);
-    if (!active.length) return;
-    let sx = 0, sy = 0, hsin = 0, hcos = 0;
-    active.forEach((p) => { sx += p.x; sy += p.y; hsin += Math.sin(p.angle); hcos += Math.cos(p.angle); });
-    const targetX = sx / active.length, targetY = sy / active.length;
-    const targetHeading = Math.atan2(hsin, hcos);
+  [-1, 1].forEach((s) => {
+    const ear = mesh(new THREE.CapsuleGeometry(14, 80, 2, 5), mat('#ffffff'));
+    ear.position.set(15, 375, s * 30);
+    ear.rotation.z = s * 0.25;
+    g.add(ear);
+  });
 
-    if (!cameraInit) {
-      camera.x = targetX; camera.y = targetY; camera.heading = targetHeading;
-      cameraInit = true;
-    } else {
-      camera.x += (targetX - camera.x) * 0.08;
-      camera.y += (targetY - camera.y) * 0.08;
-      let dh = targetHeading - camera.heading;
-      while (dh > Math.PI) dh -= Math.PI * 2;
-      while (dh < -Math.PI) dh += Math.PI * 2;
-      camera.heading += dh * 0.06;
+  const eyeMat = mat('#222222');
+  [-1, 1].forEach((s) => {
+    const eye = mesh(new THREE.SphereGeometry(10, 6, 6), eyeMat);
+    eye.position.set(105, 270, s * 35);
+    g.add(eye);
+  });
+
+  const nose = mesh(new THREE.SphereGeometry(10, 6, 6), mat('#ff8fa3'));
+  nose.position.set(118, 250, 0);
+  g.add(nose);
+
+  return g;
+}
+
+function buildGorillaKart() {
+  const g = new THREE.Group();
+  addWheels(g, 460, 250);
+
+  const banana = mesh(new THREE.TorusGeometry(300, 90, 6, 8, Math.PI * 0.75), mat('#f2c94c'));
+  banana.rotation.y = Math.PI / 2;
+  banana.rotation.z = -0.35;
+  banana.position.set(0, 120, 0);
+  g.add(banana);
+
+  const tip = mesh(new THREE.ConeGeometry(30, 60, 5), mat('#7a5230'));
+  tip.position.set(-230, 90, 40);
+  tip.rotation.z = 1.2;
+  g.add(tip);
+
+  const head = mesh(new THREE.IcosahedronGeometry(105, 0), mat('#5b3a29'));
+  head.position.set(20, 270, 0);
+  g.add(head);
+
+  const glasses = mesh(new THREE.BoxGeometry(140, 30, 10), mat('#1b2a6b', { roughness: 0.3, metalness: 0.4 }));
+  glasses.position.set(105, 275, 0);
+  g.add(glasses);
+
+  const mouth = mesh(new THREE.TorusGeometry(30, 8, 5, 8, Math.PI), mat('#c9a27a'));
+  mouth.position.set(105, 225, 0);
+  mouth.rotation.y = Math.PI / 2;
+  mouth.rotation.z = Math.PI;
+  g.add(mouth);
+
+  return g;
+}
+
+function buildPrincessKart() {
+  const g = new THREE.Group();
+  addWheels(g, 460, 250);
+
+  const carriage = mesh(new THREE.BoxGeometry(400, 170, 260), mat('#ff5fa2'));
+  carriage.position.set(0, 150, 0);
+  g.add(carriage);
+
+  const roof = mesh(new THREE.ConeGeometry(180, 90, 4), mat('#ff8fc7'));
+  roof.position.set(0, 280, 0);
+  roof.rotation.y = Math.PI / 4;
+  g.add(roof);
+
+  const heart = mesh(new THREE.SphereGeometry(28, 6, 6), mat('#fff0f6'));
+  heart.position.set(205, 150, 0);
+  g.add(heart);
+
+  const hair = mesh(new THREE.IcosahedronGeometry(105, 0), mat('#7a4a2b'));
+  hair.position.set(15, 300, 0);
+  g.add(hair);
+
+  const head = mesh(new THREE.IcosahedronGeometry(90, 0), mat('#ffe6cf'));
+  head.position.set(35, 285, 0);
+  g.add(head);
+
+  [0, 1, -1].forEach((k) => {
+    const spike = mesh(new THREE.ConeGeometry(20, 55, 4), mat('#ffd23f'));
+    spike.position.set(20 + k * 8, 390, k * 30);
+    g.add(spike);
+  });
+
+  const beard = mesh(new THREE.ConeGeometry(55, 90, 6), mat('#9a6b3c'));
+  beard.position.set(85, 225, 0);
+  beard.rotation.x = Math.PI;
+  beard.rotation.z = 0.25;
+  g.add(beard);
+
+  return g;
+}
+
+function buildIceKart() {
+  const g = new THREE.Group();
+  addWheels(g, 460, 250);
+
+  const wedge = mesh(new THREE.ConeGeometry(230, 460, 4), mat('#9fe0f5', { roughness: 0.25, metalness: 0.2 }));
+  wedge.rotation.z = -Math.PI / 2;
+  wedge.rotation.y = Math.PI / 4;
+  wedge.position.set(0, 130, 0);
+  wedge.scale.set(1, 1, 0.55);
+  g.add(wedge);
+
+  const torso = mesh(new THREE.CylinderGeometry(85, 95, 190, 6), mat('#bfeeff', { roughness: 0.2, metalness: 0.15 }));
+  torso.position.set(10, 250, 0);
+  g.add(torso);
+
+  const head = mesh(new THREE.IcosahedronGeometry(80, 0), mat('#eafcff', { roughness: 0.15, metalness: 0.2 }));
+  head.position.set(20, 390, 0);
+  g.add(head);
+
+  const visor = mesh(new THREE.BoxGeometry(110, 35, 75), emissiveMat('#123a5a'));
+  visor.position.set(70, 395, 0);
+  g.add(visor);
+
+  [-1, 0, 1].forEach((k) => {
+    const spike = mesh(new THREE.ConeGeometry(16, 60, 4), mat('#ffffff', { roughness: 0.2 }));
+    spike.position.set(10 + k * 30, 445, k * 5);
+    g.add(spike);
+  });
+
+  return g;
+}
+
+const KART_BUILDERS = { rabbit: buildRabbitKart, gorilla: buildGorillaKart, princess: buildPrincessKart, ice: buildIceKart };
+
+// ---------- escena principal ----------
+const canvas = document.getElementById('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#3a2b57');
+scene.fog = new THREE.Fog('#3a2b57', 2600, 9000);
+
+const camera = new THREE.PerspectiveCamera(58, window.innerWidth / window.innerHeight, 10, 20000);
+
+scene.add(new THREE.AmbientLight('#8fa0ff', 0.55));
+const sun = new THREE.DirectionalLight('#fff3d6', 1.05);
+sun.position.set(1500, 2200, 800);
+scene.add(sun);
+
+function resize() {
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize);
+resize();
+
+// suelo (pasto) enorme, cheap
+const ground = mesh(new THREE.CircleGeometry(9000, 24), mat('#4CAF50'));
+ground.rotation.x = -Math.PI / 2;
+scene.add(ground);
+
+let WORLD_OFFSET = { x: 0, z: 0 };
+function toWorld(sx, sy) { return { x: sx - WORLD_OFFSET.x, z: sy - WORLD_OFFSET.z }; }
+
+// ---------- construccion de pista + decoracion (una sola vez) ----------
+let trackBuilt = false;
+const decorGroup = new THREE.Group();
+scene.add(decorGroup);
+
+function buildTrackAndDecor() {
+  const track = state.track;
+  if (!track || !track.length) return;
+
+  let cx = 0, cz = 0;
+  track.forEach((p) => { cx += p.x; cz += p.y; });
+  WORLD_OFFSET = { x: cx / track.length, z: cz / track.length };
+
+  const half = state.trackWidth / 2;
+  const guarded = new Set(state.guardrailSegments || []);
+  const asphaltMat = mat('#46464e');
+  const stripeMat = mat('#f0f0f0');
+  const tireMat = mat('#161616');
+  const cliffMat = emissiveMat('#ff5a1e');
+
+  const positions = [];
+  const roadGeo = new THREE.BufferGeometry();
+  const stripeGeo = new THREE.BufferGeometry();
+  const stripePositions = [];
+  const idx = [];
+  const stripeIdx = [];
+
+  for (let i = 0; i < track.length; i++) {
+    const a = toWorld(track[i].x, track[i].y);
+    const b = toWorld(track[(i + 1) % track.length].x, track[(i + 1) % track.length].y);
+    const dx = b.x - a.x, dz = b.z - a.z;
+    const len = Math.sqrt(dx * dx + dz * dz) || 1;
+    const nx = -dz / len, nz = dx / len;
+
+    const base = positions.length / 3;
+    positions.push(
+      a.x + nx * half, 0, a.z + nz * half,
+      a.x - nx * half, 0, a.z - nz * half,
+      b.x + nx * half, 0, b.z + nz * half,
+      b.x - nx * half, 0, b.z - nz * half,
+    );
+    idx.push(base, base + 2, base + 1, base + 1, base + 2, base + 3);
+
+    const sh = state.trackWidth * 0.025;
+    const sbase = stripePositions.length / 3;
+    stripePositions.push(
+      a.x + nx * sh, 1, a.z + nz * sh,
+      a.x - nx * sh, 1, a.z - nz * sh,
+      b.x + nx * sh, 1, b.z + nz * sh,
+      b.x - nx * sh, 1, b.z - nz * sh,
+    );
+    stripeIdx.push(sbase, sbase + 2, sbase + 1, sbase + 1, sbase + 2, sbase + 3);
+
+    // guardarail (llantas apiladas) o borde de precipicio
+    const isGuarded = guarded.has(i);
+    const barrierEvery = 170;
+    for (let d = 0; d < len; d += barrierEvery) {
+      const t = d / len;
+      const px = a.x + dx * t, pz = a.z + dz * t;
+      [1, -1].forEach((side) => {
+        const bx = px + nx * (half + 60) * side, bz = pz + nz * (half + 60) * side;
+        if (isGuarded) {
+          for (let s = 0; s < 2; s++) {
+            const tire = mesh(new THREE.TorusGeometry(55, 24, 6, 8), tireMat);
+            tire.position.set(bx, 55 + s * 90, bz);
+            decorGroup.add(tire);
+          }
+        } else if (d % (barrierEvery * 2) < 1) {
+          const warn = mesh(new THREE.BoxGeometry(120, 14, 20), cliffMat);
+          warn.position.set(bx, 10, bz);
+          warn.rotation.y = Math.atan2(dz, dx);
+          decorGroup.add(warn);
+        }
+      });
     }
   }
 
-  function worldToScreen(wx, wy) {
-    const dx = wx - camera.x, dy = wy - camera.y;
-    const cosA = Math.cos(camera.heading), sinA = Math.sin(camera.heading);
-    const along = dx * cosA + dy * sinA;
-    const across = -dx * sinA + dy * cosA;
-    const depth = along + camera.distanceBack;
-    if (depth < camera.near) return null;
-    const scale = camera.focal / depth;
-    return {
-      x: canvas.width / 2 + across * scale,
-      y: horizonY + camera.height * scale,
-      scale,
-      depth,
-    };
+  roadGeo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  roadGeo.setIndex(idx);
+  roadGeo.computeVertexNormals();
+  scene.add(mesh(roadGeo, asphaltMat));
+
+  stripeGeo.setAttribute('position', new THREE.Float32BufferAttribute(stripePositions, 3));
+  stripeGeo.setIndex(stripeIdx);
+  stripeGeo.computeVertexNormals();
+  scene.add(mesh(stripeGeo, stripeMat));
+
+  // linea de meta a cuadros
+  const ccanvas = document.createElement('canvas');
+  ccanvas.width = 64; ccanvas.height = 64;
+  const cctx = ccanvas.getContext('2d');
+  for (let yy = 0; yy < 2; yy++) for (let xx = 0; xx < 2; xx++) {
+    cctx.fillStyle = (xx + yy) % 2 === 0 ? '#fff' : '#111';
+    cctx.fillRect(xx * 32, yy * 32, 32, 32);
+  }
+  const checkTex = new THREE.CanvasTexture(ccanvas);
+  checkTex.wrapS = checkTex.wrapT = THREE.RepeatWrapping;
+  checkTex.repeat.set(1, 6);
+  const startA = toWorld(track[0].x, track[0].y), startB = toWorld(track[1].x, track[1].y);
+  const sang = Math.atan2(startB.z - startA.z, startB.x - startA.x);
+  const startLine = mesh(new THREE.PlaneGeometry(140, state.trackWidth), new THREE.MeshStandardMaterial({ map: checkTex, flatShading: true }));
+  startLine.rotation.x = -Math.PI / 2;
+  startLine.rotation.z = -sang;
+  startLine.position.set(
+    startA.x + (startB.x - startA.x) * 0.1,
+    2,
+    startA.z + (startB.z - startA.z) * 0.1
+  );
+  scene.add(startLine);
+
+  // arco arcoiris decorativo (Rainbow Dungeon)
+  const rainbowColors = ['#ff4d4d', '#ff9f1c', '#ffd24d', '#4dff88', '#4da6ff', '#9b5de5'];
+  rainbowColors.forEach((c, i) => {
+    const arc = mesh(new THREE.TorusGeometry(1500 + i * 45, 22, 6, 24, Math.PI), mat(c, { roughness: 0.5 }));
+    arc.position.set(0, 0, 400);
+    decorGroup.add(arc);
+  });
+
+  // decoracion (arboles, antorchas, publico) a lo largo del recorrido
+  const spacing = state.trackWidth * 0.9;
+  let carry = 0, n = 0;
+  const crowdColors = ['#ff6b6b', '#4da6ff', '#ffd24d', '#4dff88'];
+  for (let i = 0; i < track.length; i++) {
+    const a = toWorld(track[i].x, track[i].y);
+    const b = toWorld(track[(i + 1) % track.length].x, track[(i + 1) % track.length].y);
+    const dx = b.x - a.x, dz = b.z - a.z;
+    const segLen = Math.sqrt(dx * dx + dz * dz) || 1;
+    const dirX = dx / segLen, dirZ = dz / segLen;
+    const nx = -dirZ, nz = dirX;
+    let d = carry;
+    while (d < segLen) {
+      const px = a.x + dirX * d, pz = a.z + dirZ * d;
+      const side = n % 2 === 0 ? 1 : -1;
+      const offset = half + state.trackWidth * 0.4;
+      const kind = n % 6 === 0 ? 'torch' : n % 3 === 0 ? 'crowd' : 'tree';
+      const x = px + nx * offset * side, z = pz + nz * offset * side;
+
+      if (kind === 'tree') {
+        const trunk = mesh(new THREE.CylinderGeometry(14, 16, 60, 6), mat('#7a4a2b'));
+        trunk.position.set(x, 30, z);
+        decorGroup.add(trunk);
+        const foliage = mesh(new THREE.ConeGeometry(70, 150, 6), mat('#3fae52'));
+        foliage.position.set(x, 130, z);
+        decorGroup.add(foliage);
+      } else if (kind === 'torch') {
+        const pole = mesh(new THREE.CylinderGeometry(10, 12, 110, 6), mat('#5a4632'));
+        pole.position.set(x, 55, z);
+        decorGroup.add(pole);
+        const flame = mesh(new THREE.IcosahedronGeometry(26, 0), emissiveMat('#ff9f1c'));
+        flame.position.set(x, 125, z);
+        decorGroup.add(flame);
+      } else {
+        const color = crowdColors[n % crowdColors.length];
+        const person = new THREE.Group();
+        const torso = mesh(new THREE.BoxGeometry(40, 60, 26), mat(color));
+        torso.position.y = 40;
+        person.add(torso);
+        const head = mesh(new THREE.IcosahedronGeometry(24, 0), mat('#ffd9b3'));
+        head.position.y = 85;
+        person.add(head);
+        [-1, 1].forEach((s) => {
+          const arm = mesh(new THREE.BoxGeometry(10, 45, 10), mat(color));
+          arm.position.set(s * 28, 65, 0);
+          arm.rotation.z = s * 0.6;
+          person.add(arm);
+        });
+        person.position.set(x, 0, z);
+        person.userData.bouncePhase = Math.random() * Math.PI * 2;
+        decorGroup.add(person);
+      }
+      n++;
+      d += spacing;
+    }
+    carry = d - segLen;
   }
 
-  function computeDepth(wx, wy) {
-    const dx = wx - camera.x, dy = wy - camera.y;
-    const along = dx * Math.cos(camera.heading) + dy * Math.sin(camera.heading);
-    return along + camera.distanceBack;
-  }
+  trackBuilt = true;
+}
 
-  // dibuja una figura definida en unidades locales (centrada en 0,0) proyectada
-  // en el mundo; rotationWorld=null => siempre de pie mirando a camara (arboles, items)
-  function drawProjected(wx, wy, rotationWorld, drawLocalFn) {
-    const proj = worldToScreen(wx, wy);
-    if (!proj) return null;
-    ctx.save();
-    ctx.translate(proj.x, proj.y);
-    if (rotationWorld !== null) ctx.rotate(rotationWorld - camera.heading);
-    const s = proj.scale * CLIENT_WORLD_SCALE;
-    ctx.scale(s, s);
-    drawLocalFn();
-    ctx.restore();
-    return proj;
-  }
+// ---------- items dinamicos (cajas / cascaras / flores) ----------
+const itemGroup = new THREE.Group();
+scene.add(itemGroup);
 
-  // ---------- utilidades ----------
-  function roundRectAt(x, y, w, h, r) {
-    ctx.beginPath();
-    ctx.moveTo(x + r, y);
-    ctx.arcTo(x + w, y, x + w, y + h, r);
-    ctx.arcTo(x + w, y + h, x, y + h, r);
-    ctx.arcTo(x, y + h, x, y, r);
-    ctx.arcTo(x, y, x + w, y, r);
-    ctx.closePath();
-  }
-
-  function drawTree(x, y) {
-    ctx.fillStyle = '#7a4a2b';
-    ctx.fillRect(x - 4, y, 8, 16);
-    ctx.fillStyle = '#2e8b3d';
-    ctx.beginPath(); ctx.arc(x, y - 6, 16, 0, Math.PI * 2); ctx.fill();
-    ctx.fillStyle = '#3fae52';
-    ctx.beginPath(); ctx.arc(x - 5, y - 10, 9, 0, Math.PI * 2); ctx.fill();
-  }
-
-  function drawTorch(x, y, t) {
-    ctx.fillStyle = '#5a4632';
-    ctx.fillRect(x - 4, y - 20, 8, 30);
-    const flick = 6 + Math.sin(t * 8 + x) * 2;
-    ctx.fillStyle = '#ff9f1c';
-    ctx.beginPath(); ctx.arc(x, y - 26, flick, 0, Math.PI * 2); ctx.fill();
-    ctx.fillStyle = '#ffe066';
-    ctx.beginPath(); ctx.arc(x, y - 28, flick * 0.5, 0, Math.PI * 2); ctx.fill();
-  }
-
-  function drawCrowd(x, y, color, t) {
-    const bounce = Math.abs(Math.sin(t * 3 + x * 0.05)) * 5;
-    ctx.fillStyle = color;
-    ctx.fillRect(x - 6, y - 14 - bounce, 12, 16);
-    ctx.fillStyle = '#ffd9b3';
-    ctx.beginPath(); ctx.arc(x, y - 20 - bounce, 6, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = color; ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x - 6, y - 10 - bounce); ctx.lineTo(x - 12, y - 20 - bounce * 1.5);
-    ctx.moveTo(x + 6, y - 10 - bounce); ctx.lineTo(x + 12, y - 20 - bounce * 1.5);
-    ctx.stroke();
-  }
-
-  function drawBoxLocal() {
-    ctx.fillStyle = '#ffd24d';
-    roundRectAt(-14, -14, 28, 28, 5);
-    ctx.fill();
-    ctx.fillStyle = '#a5730a';
-    ctx.font = 'bold 16px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('?', 0, 6);
-    ctx.textAlign = 'left';
-  }
-
-  function drawPeelLocal() {
-    ctx.fillStyle = '#e8d100';
-    ctx.beginPath(); ctx.ellipse(0, 0, 14, 8, 0.3, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = '#7a5230'; ctx.lineWidth = 2; ctx.stroke();
-  }
-
-  function drawFlowerLocal() {
-    ctx.fillStyle = '#c04dff';
+function rebuildItems() {
+  while (itemGroup.children.length) itemGroup.remove(itemGroup.children[0]);
+  (state.boxes || []).forEach((b) => {
+    const w = toWorld(b.x, b.y);
+    const box = mesh(new THREE.BoxGeometry(55, 55, 55), emissiveMat('#ffd24d'));
+    box.position.set(w.x, 60, w.z);
+    box.userData.spin = true;
+    itemGroup.add(box);
+  });
+  (state.peels || []).forEach((pe) => {
+    const w = toWorld(pe.x, pe.y);
+    const peel = mesh(new THREE.CylinderGeometry(38, 38, 12, 10), mat('#e8d100'));
+    peel.position.set(w.x, 8, w.z);
+    itemGroup.add(peel);
+  });
+  (state.flowers || []).forEach((fl) => {
+    const w = toWorld(fl.x, fl.y);
+    const group = new THREE.Group();
     for (let i = 0; i < 5; i++) {
       const a = (i / 5) * Math.PI * 2;
-      ctx.beginPath();
-      ctx.arc(Math.cos(a) * 6, Math.sin(a) * 6, 5, 0, Math.PI * 2);
-      ctx.fill();
+      const petal = mesh(new THREE.IcosahedronGeometry(16, 0), mat('#c04dff'));
+      petal.position.set(Math.cos(a) * 20, 20, Math.sin(a) * 20);
+      group.add(petal);
     }
-    ctx.fillStyle = '#3fae52';
-    ctx.beginPath(); ctx.arc(0, 0, 4, 0, Math.PI * 2); ctx.fill();
+    const center = mesh(new THREE.IcosahedronGeometry(12, 0), mat('#3fae52'));
+    center.position.y = 20;
+    group.add(center);
+    group.position.set(w.x, 0, w.z);
+    itemGroup.add(group);
+  });
+}
+
+// ---------- karts de los jugadores ----------
+const kartSlots = [null, null, null, null];
+
+function ensureKart(i, character) {
+  const slot = kartSlots[i];
+  if (slot && slot.character === character) return slot.group;
+  if (slot) scene.remove(slot.group);
+  const group = KART_BUILDERS[character] ? KART_BUILDERS[character]() : new THREE.Group();
+  scene.add(group);
+  kartSlots[i] = { character, group };
+  return group;
+}
+function removeKart(i) {
+  if (kartSlots[i]) { scene.remove(kartSlots[i].group); kartSlots[i] = null; }
+}
+
+// ---------- HUD (HTML) ----------
+const hudEl = document.getElementById('hud');
+function updateHud() {
+  hudEl.innerHTML = '';
+  state.players.forEach((p) => {
+    if (!p) return;
+    const card = document.createElement('div');
+    card.className = 'hcard';
+    card.style.borderColor = p.color;
+    card.innerHTML =
+      '<div>' +
+      '<div class="id">' + p.id + '</div>' +
+      '<div class="lap">VUELTA ' + p.lap + '</div>' +
+      '<div class="lives">' + '❤'.repeat(p.lives) + '♡'.repeat(Math.max(0, 3 - p.lives)) + '</div>' +
+      '</div>' +
+      '<div style="display:flex;flex-direction:column;gap:4px;">' +
+      '<span class="tag ' + (p.hasBoost ? 'on' : 'off') + '">BOOST</span>' +
+      '<span class="tag ' + (p.powerReady ? 'on' : 'off') + '">PODER</span>' +
+      '</div>';
+    hudEl.appendChild(card);
+  });
+}
+
+// ---------- pantalla de seleccion con mini-previews 3D ----------
+const cardsEl = document.getElementById('cards');
+const previewRenderers = {};
+CHAR_ORDER.forEach((char) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const c = document.createElement('canvas');
+  c.width = 420; c.height = 380;
+  const cname = document.createElement('div');
+  cname.className = 'cname'; cname.textContent = NAMES[char];
+  const holders = document.createElement('div');
+  holders.className = 'holders'; holders.id = 'holders-' + char;
+  card.appendChild(c); card.appendChild(cname); card.appendChild(holders);
+  cardsEl.appendChild(card);
+
+  const pr = new THREE.WebGLRenderer({ canvas: c, antialias: true, alpha: true });
+  pr.setPixelRatio(1);
+  pr.setSize(420, 380, false);
+  const pscene = new THREE.Scene();
+  pscene.add(new THREE.AmbientLight('#ffffff', 0.7));
+  const plight = new THREE.DirectionalLight('#fff3d6', 1);
+  plight.position.set(400, 600, 500);
+  pscene.add(plight);
+  const pcam = new THREE.PerspectiveCamera(40, 420 / 380, 10, 4000);
+  pcam.position.set(520, 340, 520);
+  pcam.lookAt(0, 120, 0);
+  const kart = KART_BUILDERS[char]();
+  pscene.add(kart);
+  previewRenderers[char] = { renderer: pr, scene: pscene, camera: pcam, kart };
+});
+
+function updateSelectHolders() {
+  CHAR_ORDER.forEach((char) => {
+    const el = document.getElementById('holders-' + char);
+    if (!el) return;
+    const holders = state.players.filter((p) => p && p.character === char);
+    el.innerHTML = holders.map((p) => '<span style="color:' + p.color + '">' + (p.confirmed ? '✔ ' : '') + p.id + '</span>').join(' ');
+  });
+}
+
+// ---------- camara de persecucion ----------
+const cameraState = { x: 0, z: 0, heading: 0, init: false };
+function updateCamera() {
+  const active = state.players.filter(Boolean);
+  if (!active.length) return;
+  let sx = 0, sz = 0, hsin = 0, hcos = 0;
+  active.forEach((p) => {
+    const w = toWorld(p.x, p.y);
+    sx += w.x; sz += w.z;
+    hsin += Math.sin(p.angle); hcos += Math.cos(p.angle);
+  });
+  const tx = sx / active.length, tz = sz / active.length;
+  const theading = Math.atan2(hsin, hcos);
+
+  if (!cameraState.init) {
+    cameraState.x = tx; cameraState.z = tz; cameraState.heading = theading; cameraState.init = true;
+  } else {
+    cameraState.x += (tx - cameraState.x) * 0.08;
+    cameraState.z += (tz - cameraState.z) * 0.08;
+    let dh = theading - cameraState.heading;
+    while (dh > Math.PI) dh -= Math.PI * 2;
+    while (dh < -Math.PI) dh += Math.PI * 2;
+    cameraState.heading += dh * 0.06;
   }
 
-  // ---------- decoracion procedural a lo largo de la pista ----------
-  let decorItems = [];
-  let decorReady = false;
+  const dist = 950, height = 620, lookAhead = 700;
+  camera.position.set(
+    cameraState.x - Math.cos(cameraState.heading) * dist,
+    height,
+    cameraState.z - Math.sin(cameraState.heading) * dist
+  );
+  camera.lookAt(
+    cameraState.x + Math.cos(cameraState.heading) * lookAhead,
+    120,
+    cameraState.z + Math.sin(cameraState.heading) * lookAhead
+  );
+}
 
-  function buildDecor(track, trackWidth) {
-    const items = [];
-    const half = trackWidth / 2;
-    const spacing = trackWidth * 0.9;
-    let carry = 0;
-    let n = 0;
-    for (let i = 0; i < track.length; i++) {
-      const a = track[i], b = track[(i + 1) % track.length];
-      const dx = b.x - a.x, dy = b.y - a.y;
-      const segLen = Math.sqrt(dx * dx + dy * dy) || 1;
-      const dirX = dx / segLen, dirY = dy / segLen;
-      const nx = -dirY, ny = dirX;
-      let d = carry;
-      while (d < segLen) {
-        const px = a.x + dirX * d, py = a.y + dirY * d;
-        const offset = half + trackWidth * 0.3;
-        const side = n % 2 === 0 ? 1 : -1;
-        const kind = n % 6 === 0 ? 'torch' : n % 3 === 0 ? 'crowd' : 'tree';
-        items.push({
-          x: px + nx * offset * side,
-          y: py + ny * offset * side,
-          kind,
-          color: CROWD_COLORS[n % CROWD_COLORS.length],
-        });
-        n++;
-        d += spacing;
-      }
-      carry = d - segLen;
+// ---------- loop ----------
+const selectEl = document.getElementById('select');
+const countdownEl = document.getElementById('countdown');
+const countdownNumEl = document.getElementById('countdownNum');
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.1);
+  const t = clock.elapsedTime;
+
+  if (!trackBuilt) buildTrackAndDecor();
+
+  const isSelect = state.phase === 'select';
+  selectEl.style.display = isSelect ? 'flex' : 'none';
+  countdownEl.style.display = state.phase === 'countdown' ? 'flex' : 'none';
+  hudEl.style.display = state.phase === 'racing' ? 'flex' : 'none';
+
+  if (isSelect) {
+    updateSelectHolders();
+    CHAR_ORDER.forEach((char) => {
+      const pr = previewRenderers[char];
+      pr.kart.rotation.y += dt * 0.6;
+      pr.renderer.render(pr.scene, pr.camera);
+    });
+  }
+
+  if (state.phase === 'countdown') {
+    countdownNumEl.textContent = state.countdown > 0 ? String(state.countdown) : 'GO!';
+  }
+
+  if (state.phase === 'racing') updateHud();
+
+  // posicionar / crear-destruir karts en la escena principal
+  state.players.forEach((p, i) => {
+    if (!p) { removeKart(i); return; }
+    const group = ensureKart(i, p.character);
+    const w = toWorld(p.x, p.y);
+    group.position.set(w.x, 0, w.z);
+    group.rotation.y = -p.angle;
+    const targetScale = state.phase === 'select' ? 0 : 1;
+    group.scale.setScalar(targetScale);
+  });
+
+  itemGroup.children.forEach((child) => {
+    if (child.userData.spin) child.rotation.y += dt * 2;
+  });
+  decorGroup.children.forEach((child) => {
+    if (child.userData.bouncePhase !== undefined) {
+      child.position.y = Math.abs(Math.sin(t * 3 + child.userData.bouncePhase)) * 10;
     }
-    return items;
-  }
+  });
 
-  function ensureDecor() {
-    if (decorReady || !state.track || !state.track.length) return;
-    decorItems = buildDecor(state.track, state.trackWidth);
-    decorReady = true;
-  }
-
-  // ---------- suelo y cielo ----------
-  function drawGroundAndSky() {
-    const sky = ctx.createLinearGradient(0, 0, 0, horizonY);
-    sky.addColorStop(0, '#150c26');
-    sky.addColorStop(1, '#3a2450');
-    ctx.fillStyle = sky;
-    ctx.fillRect(0, 0, canvas.width, horizonY);
-
-    const ground = ctx.createLinearGradient(0, horizonY, 0, canvas.height);
-    ground.addColorStop(0, '#2f7a3d');
-    ground.addColorStop(1, '#4CAF50');
-    ctx.fillStyle = ground;
-    ctx.fillRect(0, horizonY, canvas.width, canvas.height - horizonY);
-  }
-
-  // ---------- pista con perspectiva (quads proyectados) ----------
-  function drawRoad() {
-    const track = state.track;
-    if (!track || !track.length) return;
-    const half = state.trackWidth / 2;
-    const guarded = state.guardrailSegments || [];
-
-    for (let i = 0; i < track.length; i++) {
-      const a = track[i], b = track[(i + 1) % track.length];
-      const dx = b.x - a.x, dy = b.y - a.y;
-      const len = Math.sqrt(dx * dx + dy * dy) || 1;
-      const nx = -dy / len, ny = dx / len;
-
-      const aL = { x: a.x + nx * half, y: a.y + ny * half };
-      const aR = { x: a.x - nx * half, y: a.y - ny * half };
-      const bL = { x: b.x + nx * half, y: b.y + ny * half };
-      const bR = { x: b.x - nx * half, y: b.y - ny * half };
-
-      const pAL = worldToScreen(aL.x, aL.y), pAR = worldToScreen(aR.x, aR.y);
-      const pBL = worldToScreen(bL.x, bL.y), pBR = worldToScreen(bR.x, bR.y);
-      if (!pAL || !pAR || !pBL || !pBR) continue;
-
-      const avgScale = (pAL.scale + pAR.scale + pBL.scale + pBR.scale) / 4;
-      // niebla de profundidad: mas cerca = mas claro, mas lejos = mas oscuro (color solido, no transparencia)
-      const light = Math.max(0, Math.min(1, avgScale * 2.4));
-      const asphaltC = Math.round(46 + light * 40);
-      const stripeC = Math.round(150 + light * 105);
-
-      ctx.beginPath();
-      ctx.moveTo(pAL.x, pAL.y); ctx.lineTo(pBL.x, pBL.y);
-      ctx.lineTo(pBR.x, pBR.y); ctx.lineTo(pAR.x, pAR.y);
-      ctx.closePath();
-      ctx.fillStyle = `rgb(${asphaltC},${asphaltC},${asphaltC + 6})`;
-      ctx.fill();
-
-      // franja central
-      const stripeHalf = state.trackWidth * 0.025;
-      const cA1 = worldToScreen(a.x + nx * stripeHalf, a.y + ny * stripeHalf);
-      const cA2 = worldToScreen(a.x - nx * stripeHalf, a.y - ny * stripeHalf);
-      const cB1 = worldToScreen(b.x + nx * stripeHalf, b.y + ny * stripeHalf);
-      const cB2 = worldToScreen(b.x - nx * stripeHalf, b.y - ny * stripeHalf);
-      if (cA1 && cA2 && cB1 && cB2) {
-        ctx.beginPath();
-        ctx.moveTo(cA1.x, cA1.y); ctx.lineTo(cB1.x, cB1.y);
-        ctx.lineTo(cB2.x, cB2.y); ctx.lineTo(cA2.x, cA2.y);
-        ctx.closePath();
-        ctx.fillStyle = `rgb(${stripeC},${stripeC},${stripeC})`;
-        ctx.fill();
-      }
-
-      const edgeWidth = Math.max(2, 10 * avgScale);
-      const isGuarded = guarded.includes(i);
-      ctx.lineWidth = edgeWidth;
-      ctx.strokeStyle = isGuarded ? '#e8b800' : 'rgba(255,110,30,0.7)';
-      ctx.beginPath(); ctx.moveTo(pAL.x, pAL.y); ctx.lineTo(pBL.x, pBL.y); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(pAR.x, pAR.y); ctx.lineTo(pBR.x, pBR.y); ctx.stroke();
-    }
-  }
-
-  const KART_SPRITE_SIZE = 68;
-
-  function drawKartLocal(p) {
-    drawCharSprite(p.character, KART_SPRITE_SIZE);
-
-    if (p.boosting) {
-      ctx.fillStyle = 'rgba(255,200,0,0.7)';
-      ctx.beginPath(); ctx.moveTo(-20, -6); ctx.lineTo(-40, 0); ctx.lineTo(-20, 6); ctx.closePath(); ctx.fill();
-    }
-    if (p.slowed) {
-      ctx.strokeStyle = 'rgba(150,80,255,0.85)';
-      ctx.lineWidth = 3;
-      ctx.beginPath(); ctx.arc(0, 0, 26, 0, Math.PI * 2); ctx.stroke();
-    }
-    if (p.sparked) {
-      ctx.strokeStyle = '#fff59d';
-      ctx.lineWidth = 2;
-      for (let k = 0; k < 6; k++) {
-        const a = (k / 6) * Math.PI * 2;
-        ctx.beginPath();
-        ctx.moveTo(Math.cos(a) * 16, Math.sin(a) * 16);
-        ctx.lineTo(Math.cos(a) * 28, Math.sin(a) * 28);
-        ctx.stroke();
-      }
-    }
-  }
-
-  function drawKart(p) {
-    // sprite fijo (billboard): siempre de frente a camara, no rota con el auto
-    const proj = drawProjected(p.x, p.y, null, () => drawKartLocal(p));
-    if (!proj) return;
-    ctx.fillStyle = '#fff';
-    ctx.font = 'bold 13px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText(p.id, proj.x, proj.y - 18);
-    ctx.textAlign = 'left';
-  }
-
-  // ---------- escena con orden de profundidad (lejos primero) ----------
-  function drawSceneObjects(t) {
-    const entries = [];
-    decorItems.forEach((d) => {
-      entries.push({
-        depth: computeDepth(d.x, d.y),
-        draw: () => {
-          if (d.kind === 'tree') drawProjected(d.x, d.y, null, () => drawTree(0, 0));
-          else if (d.kind === 'torch') drawProjected(d.x, d.y, null, () => drawTorch(0, 0, t));
-          else drawProjected(d.x, d.y, null, () => drawCrowd(0, 0, d.color, t));
-        },
-      });
-    });
-    (state.boxes || []).forEach((b) => {
-      entries.push({ depth: computeDepth(b.x, b.y), draw: () => drawProjected(b.x, b.y, null, drawBoxLocal) });
-    });
-    (state.peels || []).forEach((pe) => {
-      entries.push({ depth: computeDepth(pe.x, pe.y), draw: () => drawProjected(pe.x, pe.y, null, drawPeelLocal) });
-    });
-    (state.flowers || []).forEach((fl) => {
-      entries.push({ depth: computeDepth(fl.x, fl.y), draw: () => drawProjected(fl.x, fl.y, null, drawFlowerLocal) });
-    });
-    state.players.forEach((p) => {
-      if (!p) return;
-      entries.push({ depth: computeDepth(p.x, p.y), draw: () => drawKart(p) });
-    });
-
-    entries.sort((a, b) => b.depth - a.depth);
-    entries.forEach((e) => e.draw());
-  }
-
-  function drawStartBanner() {
-    ctx.save();
-    ctx.translate(canvas.width / 2, 60);
-    ctx.fillStyle = '#fff';
-    roundRectAt(-140, -26, 280, 52, 12);
-    ctx.fill();
-    ctx.fillStyle = '#111';
-    ctx.font = 'bold 26px Arial';
-    ctx.textAlign = 'center';
-    ctx.fillText('BLOCK RACERS', 0, 9);
-    ctx.restore();
-    ctx.textAlign = 'left';
-  }
-
-  function drawHud() {
-    let y = 20;
-    const x = canvas.width - 220;
-    state.players.forEach((p) => {
-      if (!p) return;
-      ctx.fillStyle = 'rgba(0,0,0,0.55)';
-      roundRectAt(x, y, 205, 72, 8);
-      ctx.fill();
-      ctx.fillStyle = p.color;
-      ctx.fillRect(x, y, 8, 72);
-
-      ctx.fillStyle = '#fff';
-      ctx.font = 'bold 15px sans-serif';
-      ctx.fillText(p.id + ' ' + (EMOJI[p.character] || ''), x + 16, y + 20);
-
-      ctx.font = '13px sans-serif';
-      ctx.fillText('VUELTA ' + p.lap, x + 16, y + 38);
-
-      ctx.fillStyle = '#ff5f6d';
-      ctx.font = '15px sans-serif';
-      ctx.fillText('❤'.repeat(p.lives) + '♡'.repeat(Math.max(0, 3 - p.lives)), x + 16, y + 58);
-
-      ctx.font = 'bold 11px sans-serif';
-      ctx.fillStyle = p.hasBoost ? '#ffd24d' : '#555';
-      ctx.fillText('BOOST', x + 120, y + 38);
-      ctx.fillStyle = p.powerReady ? '#8effa0' : '#555';
-      ctx.fillText('PODER', x + 120, y + 58);
-
-      y += 82;
-    });
-  }
-
-  // ---------- pantalla de seleccion (sin camara, plana) ----------
-  function drawSelectScreen() {
-    ctx.fillStyle = '#141426';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    ctx.textAlign = 'center';
-    ctx.fillStyle = '#fff';
-    ctx.font = 'bold 46px Arial';
-    ctx.fillText('BLOCK RACERS', canvas.width / 2, 110);
-    ctx.font = 'bold 22px Arial';
-    ctx.fillStyle = '#ffd24d';
-    ctx.fillText('ELIGE TU CORREDOR', canvas.width / 2, 150);
-
-    const cardW = 260, cardH = 300, gap = 30;
-    const totalW = cardW * 4 + gap * 3;
-    const startX = (canvas.width - totalW) / 2;
-    const cardY = 220;
-
-    CHAR_ORDER.forEach((char, i) => {
-      const cx = startX + i * (cardW + gap);
-      ctx.fillStyle = '#1f1f38';
-      roundRectAt(cx, cardY, cardW, cardH, 16);
-      ctx.fill();
-
-      ctx.save();
-      ctx.translate(cx + cardW / 2, cardY + 110);
-      drawCharSprite(char, 190);
-      ctx.restore();
-
-      ctx.fillStyle = '#fff';
-      ctx.font = 'bold 20px Arial';
-      ctx.fillText(NAMES[char], cx + cardW / 2, cardY + 210);
-
-      const holders = state.players.filter((p) => p && p.character === char);
-      holders.forEach((p, hi) => {
-        ctx.strokeStyle = p.color;
-        ctx.lineWidth = 5;
-        roundRectAt(cx + 4, cardY + 4, cardW - 8, cardH - 8, 14);
-        ctx.stroke();
-        ctx.fillStyle = p.color;
-        ctx.font = 'bold 16px Arial';
-        ctx.fillText((p.confirmed ? '✔ ' : '') + p.id, cx + cardW / 2, cardY + cardH - 20 - hi * 20);
-      });
-    });
-
-    ctx.font = '16px Arial';
-    ctx.fillStyle = '#ccc';
-    ctx.fillText('Movan el joystick para elegir y toquen ELEGIR para confirmar', canvas.width / 2, cardY + cardH + 50);
-    ctx.textAlign = 'left';
-  }
-
-  function drawWorld(t) {
+  if (!isSelect) {
     updateCamera();
-    ensureDecor();
-    drawGroundAndSky();
-    drawRoad();
-    drawSceneObjects(t);
+    renderer.render(scene, camera);
   }
+}
 
-  function drawCountdown(t) {
-    drawWorld(t);
-    ctx.fillStyle = 'rgba(0,0,0,0.35)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#fff';
-    ctx.font = 'bold 160px Arial';
-    ctx.textAlign = 'center';
-    ctx.fillText(state.countdown > 0 ? String(state.countdown) : 'GO!', canvas.width / 2, canvas.height / 2 + 50);
-    ctx.textAlign = 'left';
-    drawStartBanner();
-  }
+let itemsHash = '';
+setInterval(() => {
+  const h = (state.boxes || []).length + ',' + (state.peels || []).length + ',' + (state.flowers || []).length;
+  if (h !== itemsHash) { itemsHash = h; rebuildItems(); }
+}, 300);
 
-  function draw() {
-    const t = performance.now() / 1000;
-    if (state.phase === 'select') {
-      drawSelectScreen();
-    } else if (state.phase === 'countdown') {
-      drawCountdown(t);
-    } else {
-      drawWorld(t);
-      drawStartBanner();
-      drawHud();
-    }
-    requestAnimationFrame(draw);
-  }
-
-  horizonY = canvas.height * 0.42;
-  draw();
+animate();
 </script>
 </body>
 </html>
