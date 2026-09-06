@@ -224,7 +224,7 @@ function usePower(slot) {
   const p = players[slot];
   const now = Date.now();
   if (p.character === 'rabbit') {
-    p.speed = Math.min(p.speed + 8, 32);
+    p.speed = Math.min(p.speed + 400, 3000);
     players.forEach((o, i) => {
       if (!o || i === slot) return;
       const dx = o.x - p.x, dy = o.y - p.y;
@@ -255,13 +255,13 @@ function usePower(slot) {
   }
 }
 
-// --- Fisica arcade (10x mas lenta todavia, pista mucho mas grande) ---
-const ACCEL = 19;
-const BRAKE = 32;
-const FRICTION = 15;
-const MAX_SPEED = 20;
-const BOOST_SPEED = 34;
-const MAX_REVERSE = -8;
+// --- Fisica arcade (escalada a la pista 10x mas grande: el auto casi no se movia) ---
+const ACCEL = 1900;
+const BRAKE = 3200;
+const FRICTION = 1500;
+const MAX_SPEED = 2000;
+const BOOST_SPEED = 3400;
+const MAX_REVERSE = -800;
 const TURN_RATE = 2.4;
 const TICK_MS = 50;
 
@@ -302,13 +302,13 @@ setInterval(() => {
       const slowed = now < p.slowUntil;
       const boosting = now < p.boostUntil;
 
-      const friction = onIce ? 4 : FRICTION;
+      const friction = onIce ? 400 : FRICTION;
       const turnRate = onIce ? TURN_RATE * 0.4 : TURN_RATE;
-      const maxSpeed = slowed ? 9 : boosting ? BOOST_SPEED : MAX_SPEED;
+      const maxSpeed = slowed ? 900 : boosting ? BOOST_SPEED : MAX_SPEED;
 
       const { input } = p;
       if (slowed) {
-        p.speed = Math.max(0, p.speed - 40 * dt);
+        p.speed = Math.max(0, p.speed - 4000 * dt);
       } else if (input.accel) {
         p.speed += ACCEL * dt;
       } else if (input.brake) {
@@ -347,12 +347,12 @@ setInterval(() => {
         b.x += (nx * overlap) / 2; b.y += (ny * overlap) / 2;
 
         if (Math.abs(a.speed) >= Math.abs(b.speed)) {
-          const knock = Math.min(Math.abs(a.speed), 260) * 0.6 * dt;
+          const knock = Math.min(Math.abs(a.speed), 2600) * 0.6 * dt;
           b.x += nx * knock; b.y += ny * knock;
           b.speed *= 0.5;
           a.speed *= 0.8;
         } else {
-          const knock = Math.min(Math.abs(b.speed), 260) * 0.6 * dt;
+          const knock = Math.min(Math.abs(b.speed), 2600) * 0.6 * dt;
           a.x -= nx * knock; a.y -= ny * knock;
           a.speed *= 0.5;
           b.speed *= 0.8;

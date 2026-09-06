@@ -79,8 +79,10 @@ function emissiveMat(color) {
 }
 function mesh(geo, material) { return new THREE.Mesh(geo, material); }
 
-// ---------- arte real del moodboard (recortado de la imagen que paso el usuario) ----------
+// ---------- arte real del moodboard, recortado (fondo removido) ----------
 const MOODBOARD_URL = { rabbit: '/assets/moodboard/rabbit.png', gorilla: '/assets/moodboard/gorilla.png', princess: '/assets/moodboard/princess.png', ice: '/assets/moodboard/ice.png' };
+// alto/ancho reales de cada recorte (sin fondo) para no deformar la figura
+const CHAR_ASPECT = { rabbit: 108 / 218, gorilla: 107 / 225, princess: 107 / 226, ice: 106 / 217 };
 const texLoader = new THREE.TextureLoader();
 const CHAR_TEXTURES = {};
 CHAR_ORDER.forEach((name) => {
@@ -89,18 +91,20 @@ CHAR_ORDER.forEach((name) => {
   CHAR_TEXTURES[name] = tex;
 });
 
-// cada "kart" es la tarjeta real del moodboard como cartel/estandarte 3D + sombra en el piso
+// cada "kart" es el recorte real del personaje+auto (sin fondo) como cartel que mira a camara + sombra
 function buildKartFromArt(character) {
   const g = new THREE.Group();
 
-  const shadow = mesh(new THREE.CircleGeometry(130, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.35 }));
+  const shadow = mesh(new THREE.CircleGeometry(120, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.35 }));
   shadow.rotation.x = -Math.PI / 2;
-  shadow.position.y = 1;
+  shadow.position.y = 2;
   g.add(shadow);
 
-  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true });
-  const card = mesh(new THREE.PlaneGeometry(300, 300 * 225 / 106), cardMat);
-  card.position.y = 210;
+  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true, alphaTest: 0.3 });
+  const cardH = 300;
+  const cardW = cardH * (CHAR_ASPECT[character] || 0.48);
+  const card = mesh(new THREE.PlaneGeometry(cardW, cardH), cardMat);
+  card.position.y = cardH / 2 + 5;
   card.userData.billboard = true;
   g.add(card);
 
@@ -137,8 +141,8 @@ function resize() {
 window.addEventListener('resize', resize);
 resize();
 
-// suelo (pasto) enorme, cheap
-const ground = mesh(new THREE.CircleGeometry(9000, 24), mat('#4CAF50'));
+// suelo enorme (rosa, tema Rainbow Dungeon), cheap
+const ground = mesh(new THREE.CircleGeometry(9000, 24), mat('#ff9ecb'));
 ground.rotation.x = -Math.PI / 2;
 scene.add(ground);
 
@@ -160,8 +164,8 @@ function buildTrackAndDecor() {
 
   const half = state.trackWidth / 2;
   const guarded = new Set(state.guardrailSegments || []);
-  const asphaltMat = mat('#46464e');
-  const stripeMat = mat('#f0f0f0');
+  const asphaltMat = mat('#7a2a5c');
+  const stripeMat = mat('#ffe6f5');
   const tireMat = mat('#161616');
   const cliffMat = emissiveMat('#ff5a1e');
 
@@ -181,20 +185,20 @@ function buildTrackAndDecor() {
 
     const base = positions.length / 3;
     positions.push(
-      a.x + nx * half, 0, a.z + nz * half,
-      a.x - nx * half, 0, a.z - nz * half,
-      b.x + nx * half, 0, b.z + nz * half,
-      b.x - nx * half, 0, b.z - nz * half,
+      a.x + nx * half, 3, a.z + nz * half,
+      a.x - nx * half, 3, a.z - nz * half,
+      b.x + nx * half, 3, b.z + nz * half,
+      b.x - nx * half, 3, b.z - nz * half,
     );
     idx.push(base, base + 2, base + 1, base + 1, base + 2, base + 3);
 
     const sh = state.trackWidth * 0.025;
     const sbase = stripePositions.length / 3;
     stripePositions.push(
-      a.x + nx * sh, 1, a.z + nz * sh,
-      a.x - nx * sh, 1, a.z - nz * sh,
-      b.x + nx * sh, 1, b.z + nz * sh,
-      b.x - nx * sh, 1, b.z - nz * sh,
+      a.x + nx * sh, 6, a.z + nz * sh,
+      a.x - nx * sh, 6, a.z - nz * sh,
+      b.x + nx * sh, 6, b.z + nz * sh,
+      b.x - nx * sh, 6, b.z - nz * sh,
     );
     stripeIdx.push(sbase, sbase + 2, sbase + 1, sbase + 1, sbase + 2, sbase + 3);
 
@@ -250,7 +254,7 @@ function buildTrackAndDecor() {
   startLine.rotation.z = -sang;
   startLine.position.set(
     startA.x + (startB.x - startA.x) * 0.1,
-    2,
+    9,
     startA.z + (startB.z - startA.z) * 0.1
   );
   scene.add(startLine);
