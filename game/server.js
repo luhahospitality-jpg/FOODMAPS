@@ -11,7 +11,9 @@ const PORT = process.env.PORT || 3000;
 const COLORS = ['#ff4d4d', '#4da6ff', '#4dff88', '#ffd24d'];
 const CHARACTERS = ['rabbit', 'gorilla', 'princess', 'ice'];
 
-const TRACK_WIDTH = 170;
+// pista 10x mas grande (todas las coordenadas base se escalan por esto)
+const WORLD_SCALE = 10;
+const TRACK_WIDTH = 170 * WORLD_SCALE;
 const TRACK_POINTS = [
   { x: 260, y: 300 },
   { x: 520, y: 230 },
@@ -25,7 +27,7 @@ const TRACK_POINTS = [
   { x: 420, y: 600 },
   { x: 230, y: 520 },
   { x: 220, y: 400 },
-];
+].map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE }));
 const N_SEG = TRACK_POINTS.length;
 // tramos con baranda (rebote + chispas); el resto son precipicio (te caes)
 const GUARDRAIL_SEGMENTS = new Set([0, 1, 2, 3, 8, 9]);
@@ -77,11 +79,11 @@ function spawnFor(slot) {
   const len = Math.sqrt(dx * dx + dy * dy);
   const dirX = dx / len, dirY = dy / len;
   const perpX = -dirY, perpY = dirX;
-  const lane = (slot - 1.5) * 45;
-  const along = slot * 15;
+  const lane = (slot - 1.5) * 45 * WORLD_SCALE;
+  const along = slot * 15 * WORLD_SCALE;
   return {
-    x: a.x + dirX * (40 + along) + perpX * lane,
-    y: a.y + dirY * (40 + along) + perpY * lane,
+    x: a.x + dirX * (40 * WORLD_SCALE + along) + perpX * lane,
+    y: a.y + dirY * (40 * WORLD_SCALE + along) + perpY * lane,
     angle: Math.atan2(dirY, dirX),
   };
 }
@@ -93,11 +95,11 @@ let countdownAcc = 0;
 let firstConfirmAt = 0;
 
 const boostBoxes = [
-  { x: 900, y: 260, active: true, respawnAt: 0 },
-  { x: 1360, y: 520, active: true, respawnAt: 0 },
-  { x: 700, y: 560, active: true, respawnAt: 0 },
-  { x: 230, y: 520, active: true, respawnAt: 0 },
-];
+  { x: 900, y: 260 },
+  { x: 1360, y: 520 },
+  { x: 700, y: 560 },
+  { x: 230, y: 520 },
+].map((b) => ({ x: b.x * WORLD_SCALE, y: b.y * WORLD_SCALE, active: true, respawnAt: 0 }));
 let peels = [];
 let flowers = [];
 let iceUntil = 0;
@@ -222,28 +224,28 @@ function usePower(slot) {
   const p = players[slot];
   const now = Date.now();
   if (p.character === 'rabbit') {
-    p.speed = Math.min(p.speed + 160, 650);
+    p.speed = Math.min(p.speed + 8, 32);
     players.forEach((o, i) => {
       if (!o || i === slot) return;
       const dx = o.x - p.x, dy = o.y - p.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist > 95) return;
+      if (dist > 95 * WORLD_SCALE) return;
       const facing = Math.cos(p.angle) * dx + Math.sin(p.angle) * dy;
       if (facing > 0) o.slowUntil = now + 1200;
     });
   } else if (p.character === 'gorilla') {
     peels.push({
-      x: p.x - Math.cos(p.angle) * 32,
-      y: p.y - Math.sin(p.angle) * 32,
+      x: p.x - Math.cos(p.angle) * 32 * WORLD_SCALE,
+      y: p.y - Math.sin(p.angle) * 32 * WORLD_SCALE,
       ownerSlot: slot,
       expiresAt: now + 10000,
     });
   } else if (p.character === 'princess') {
     flowers.push({
-      x: p.x + Math.cos(p.angle) * 26,
-      y: p.y + Math.sin(p.angle) * 26,
-      vx: Math.cos(p.angle) * 340,
-      vy: Math.sin(p.angle) * 340,
+      x: p.x + Math.cos(p.angle) * 26 * WORLD_SCALE,
+      y: p.y + Math.sin(p.angle) * 26 * WORLD_SCALE,
+      vx: Math.cos(p.angle) * 340 * WORLD_SCALE,
+      vy: Math.sin(p.angle) * 340 * WORLD_SCALE,
       ownerSlot: slot,
       expiresAt: now + 1200,
     });
@@ -253,13 +255,13 @@ function usePower(slot) {
   }
 }
 
-// --- Fisica arcade (velocidades bajas, arcade suave) ---
-const ACCEL = 190;
-const BRAKE = 320;
-const FRICTION = 150;
-const MAX_SPEED = 200;
-const BOOST_SPEED = 340;
-const MAX_REVERSE = -80;
+// --- Fisica arcade (10x mas lenta todavia, pista mucho mas grande) ---
+const ACCEL = 19;
+const BRAKE = 32;
+const FRICTION = 15;
+const MAX_SPEED = 20;
+const BOOST_SPEED = 34;
+const MAX_REVERSE = -8;
 const TURN_RATE = 2.4;
 const TICK_MS = 50;
 
@@ -300,13 +302,13 @@ setInterval(() => {
       const slowed = now < p.slowUntil;
       const boosting = now < p.boostUntil;
 
-      const friction = onIce ? 40 : FRICTION;
+      const friction = onIce ? 4 : FRICTION;
       const turnRate = onIce ? TURN_RATE * 0.4 : TURN_RATE;
-      const maxSpeed = slowed ? 90 : boosting ? BOOST_SPEED : MAX_SPEED;
+      const maxSpeed = slowed ? 9 : boosting ? BOOST_SPEED : MAX_SPEED;
 
       const { input } = p;
       if (slowed) {
-        p.speed = Math.max(0, p.speed - 400 * dt);
+        p.speed = Math.max(0, p.speed - 40 * dt);
       } else if (input.accel) {
         p.speed += ACCEL * dt;
       } else if (input.brake) {
@@ -336,7 +338,7 @@ setInterval(() => {
         if (!b || now < b.fallUntil) continue;
         const dx = b.x - a.x, dy = b.y - a.y;
         let dist = Math.sqrt(dx * dx + dy * dy);
-        const minDist = 32;
+        const minDist = 32 * WORLD_SCALE;
         if (dist >= minDist) continue;
         if (dist < 0.001) dist = 0.001;
         const nx = dx / dist, ny = dy / dist;
@@ -366,7 +368,7 @@ setInterval(() => {
       for (const peel of peels) {
         if (peel.ownerSlot === players.indexOf(p) || peel.expiresAt === 0) continue;
         const dx = p.x - peel.x, dy = p.y - peel.y;
-        if (Math.sqrt(dx * dx + dy * dy) < 24) {
+        if (Math.sqrt(dx * dx + dy * dy) < 24 * WORLD_SCALE) {
           p.slowUntil = now + 1000;
           peel.expiresAt = 0;
         }
@@ -375,7 +377,7 @@ setInterval(() => {
       for (const fl of flowers) {
         if (fl.ownerSlot === players.indexOf(p) || fl.expiresAt === 0) continue;
         const dx = p.x - fl.x, dy = p.y - fl.y;
-        if (Math.sqrt(dx * dx + dy * dy) < 26) {
+        if (Math.sqrt(dx * dx + dy * dy) < 26 * WORLD_SCALE) {
           p.slowUntil = now + 1500;
           fl.expiresAt = 0;
         }
@@ -384,7 +386,7 @@ setInterval(() => {
       boostBoxes.forEach((b) => {
         if (!b.active || p.hasBoost) return;
         const dx = p.x - b.x, dy = p.y - b.y;
-        if (Math.sqrt(dx * dx + dy * dy) < 34) {
+        if (Math.sqrt(dx * dx + dy * dy) < 34 * WORLD_SCALE) {
           p.hasBoost = true;
           b.active = false;
           b.respawnAt = now + 8000;
@@ -400,8 +402,8 @@ setInterval(() => {
         const dx = p.x - info.x, dy = p.y - info.y;
         const len = Math.sqrt(dx * dx + dy * dy) || 1;
         const nx = dx / len, ny = dy / len;
-        p.x = info.x + nx * (TRACK_WIDTH / 2 - 2);
-        p.y = info.y + ny * (TRACK_WIDTH / 2 - 2);
+        p.x = info.x + nx * (TRACK_WIDTH / 2 - 2 * WORLD_SCALE);
+        p.y = info.y + ny * (TRACK_WIDTH / 2 - 2 * WORLD_SCALE);
         p.speed *= 0.4;
         p.sparkUntil = now + 300;
         p.lastOnTrack = { x: p.x, y: p.y, angle: p.angle };
