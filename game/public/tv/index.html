@@ -32,11 +32,10 @@
     text-shadow:0 4px 0 #202030, -2px 0 0 #202030, 2px 0 0 #202030, 0 -2px 0 #202030; }
   #select h2 { font-size:20px; color:#ffd24d; font-weight:800; letter-spacing:2px; margin:6px 0 26px; }
   #cards { display:flex; gap:22px; }
-  .card { width:250px; background:rgba(20,20,40,0.9); border:3px solid #33334d; border-radius:18px;
+  .card { width:190px; background:rgba(20,20,40,0.9); border:3px solid #33334d; border-radius:18px;
     padding:10px; display:flex; flex-direction:column; align-items:center; transition:border-color .15s; overflow:hidden; }
-  .card canvas { width:210px; height:198px; }
-  .card .cname { color:#fff; font-weight:800; font-size:17px; letter-spacing:1px; margin-top:2px; }
-  .card .holders { min-height:24px; font-size:14px; font-weight:700; margin-top:6px; }
+  .card img { width:170px; height:auto; border-radius:10px; }
+  .card .holders { min-height:24px; font-size:14px; font-weight:700; margin-top:8px; }
   .hint { margin-top:24px; color:#ccc; font-size:15px; }
   #url { position:absolute; bottom:10px; left:10px; color:#5eff8f; font-family:monospace; font-size:16px; }
 </style>
@@ -80,189 +79,38 @@ function emissiveMat(color) {
 }
 function mesh(geo, material) { return new THREE.Mesh(geo, material); }
 
-// ---------- karts low-poly de verdad: piezas que se superponen a proposito, sin huecos ----------
-// (los recortes de imagen se veian baratos y no se podian rotar; esto es geometria real,
-// asi que el auto muestra el frente al venir hacia camara y la espalda al alejarse)
+// ---------- arte real del moodboard (recorte limpio, sin geometria armada) ----------
+const MOODBOARD_URL = { rabbit: '/assets/moodboard/rabbit.png', gorilla: '/assets/moodboard/gorilla.png', princess: '/assets/moodboard/princess.png', ice: '/assets/moodboard/ice.png' };
+const CHAR_ASPECT = { rabbit: 102 / 211, gorilla: 100 / 207, princess: 107 / 226, ice: 97 / 192 };
 const texLoader = new THREE.TextureLoader();
+const CHAR_TEXTURES = {};
+CHAR_ORDER.forEach((name) => {
+  const tex = texLoader.load(MOODBOARD_URL[name]);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  CHAR_TEXTURES[name] = tex;
+});
 
-function addShadow(g, r) {
-  const shadow = mesh(new THREE.CircleGeometry(r, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.32 }));
+// el kart es la imagen real (recortada bien esta vez) como cartel que siempre mira a camara
+function buildKartFromArt(character) {
+  const g = new THREE.Group();
+
+  const shadow = mesh(new THREE.CircleGeometry(120, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.35 }));
   shadow.rotation.x = -Math.PI / 2;
   shadow.position.y = 2;
   g.add(shadow);
-}
 
-function addWheels(g, alongOffset, sideOffset, radius) {
-  const wMat = mat('#181818', { roughness: 0.9 });
-  const geo = new THREE.CylinderGeometry(radius, radius, radius * 0.7, 8);
-  [[-1, -1], [-1, 1], [1, -1], [1, 1]].forEach(([lx, lz]) => {
-    const w = mesh(geo, wMat);
-    w.rotation.z = Math.PI / 2;
-    // hundidas en el cuerpo para que no floten separadas
-    w.position.set(lx * alongOffset, radius * 0.85, lz * sideOffset);
-    g.add(w);
-  });
-}
-
-function buildRabbitKart() {
-  const g = new THREE.Group();
-  addShadow(g, 190);
-  addWheels(g, 150, 115, 58);
-
-  const body = mesh(new THREE.CylinderGeometry(55, 150, 380, 8), mat('#ff8c3c'));
-  body.rotation.z = Math.PI / 2;
-  body.position.set(10, 95, 0);
-  g.add(body);
-
-  // hojas hundidas en la punta ancha de la zanahoria (sin espacio de por medio)
-  [-0.5, 0, 0.5].forEach((s) => {
-    const leaf = mesh(new THREE.ConeGeometry(48, 140, 5), mat('#3fae52'));
-    leaf.position.set(-165, 150, s * 55);
-    leaf.rotation.set(0.3, 0, s * 0.5);
-    g.add(leaf);
-  });
-
-  const head = mesh(new THREE.IcosahedronGeometry(105, 1), mat('#fbfbf8'));
-  head.position.set(60, 235, 0);
-  g.add(head);
-
-  // orejas insertadas dentro de la cabeza, no apoyadas encima
-  [-1, 1].forEach((s) => {
-    const ear = mesh(new THREE.CapsuleGeometry(20, 130, 3, 6), mat('#fbfbf8'));
-    ear.position.set(30, 335, s * 34);
-    ear.rotation.z = s * 0.22;
-    g.add(ear);
-    const inner = mesh(new THREE.CapsuleGeometry(10, 95, 3, 6), mat('#ffc2d1'));
-    inner.position.set(31, 335, s * 34);
-    inner.rotation.z = s * 0.22;
-    g.add(inner);
-  });
-
-  const eyeMat = mat('#1c1c1c');
-  [-1, 1].forEach((s) => {
-    const eye = mesh(new THREE.SphereGeometry(11, 8, 8), eyeMat);
-    eye.position.set(150, 245, s * 38);
-    g.add(eye);
-  });
-  const nose = mesh(new THREE.SphereGeometry(11, 8, 8), mat('#ff8fa3'));
-  nose.position.set(163, 222, 0);
-  g.add(nose);
-  [-1, 1].forEach((s) => {
-    const cheek = mesh(new THREE.SphereGeometry(16, 8, 8), mat('#ffc2d1'));
-    cheek.position.set(140, 205, s * 55);
-    g.add(cheek);
-  });
+  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true, alphaTest: 0.3 });
+  const cardH = 300;
+  const cardW = cardH * (CHAR_ASPECT[character] || 0.48);
+  const card = mesh(new THREE.PlaneGeometry(cardW, cardH), cardMat);
+  card.position.y = cardH / 2 + 5;
+  card.userData.billboard = true;
+  g.add(card);
 
   return g;
 }
 
-function buildGorillaKart() {
-  const g = new THREE.Group();
-  addShadow(g, 190);
-  addWheels(g, 150, 115, 58);
-
-  const banana = mesh(new THREE.TorusGeometry(280, 100, 8, 10, Math.PI * 0.85), mat('#f2c94c'));
-  banana.rotation.y = Math.PI / 2;
-  banana.rotation.z = -0.42;
-  banana.position.set(0, 95, 0);
-  g.add(banana);
-  // punta hundida en el extremo del torus (superpuesta, sin hueco)
-  const tip = mesh(new THREE.ConeGeometry(35, 70, 6), mat('#7a5230'));
-  tip.position.set(-205, 60, 55);
-  tip.rotation.z = 1.15;
-  g.add(tip);
-
-  const head = mesh(new THREE.IcosahedronGeometry(118, 1), mat('#6a4530'));
-  head.position.set(50, 250, 0);
-  g.add(head);
-  const muzzle = mesh(new THREE.SphereGeometry(70, 10, 8), mat('#c9a27a'));
-  muzzle.position.set(140, 220, 0);
-  g.add(muzzle);
-
-  const glasses = mesh(new THREE.BoxGeometry(150, 34, 95), mat('#1b2a6b', { roughness: 0.3, metalness: 0.4 }));
-  glasses.position.set(148, 262, 0);
-  g.add(glasses);
-  const mouth = mesh(new THREE.TorusGeometry(32, 9, 6, 10, Math.PI), mat('#5b3a29'));
-  mouth.position.set(158, 195, 0);
-  mouth.rotation.y = Math.PI / 2;
-  mouth.rotation.z = Math.PI;
-  g.add(mouth);
-
-  return g;
-}
-
-function buildPrincessKart() {
-  const g = new THREE.Group();
-  addShadow(g, 190);
-  addWheels(g, 150, 120, 55);
-
-  const carriage = mesh(new THREE.BoxGeometry(370, 175, 260), mat('#ff5fa2'));
-  carriage.position.set(10, 130, 0);
-  g.add(carriage);
-  // el techo se hunde en la caja (superposicion real, no apenas tocando)
-  const roof = mesh(new THREE.ConeGeometry(175, 110, 4), mat('#ff8fc7'));
-  roof.position.set(10, 255, 0);
-  roof.rotation.y = Math.PI / 4;
-  g.add(roof);
-  const heart = mesh(new THREE.SphereGeometry(32, 8, 8), mat('#fff0f6'));
-  heart.position.set(195, 130, 0);
-  g.add(heart);
-
-  const hair = mesh(new THREE.IcosahedronGeometry(112, 1), mat('#8a5a34'));
-  hair.position.set(45, 295, 0);
-  g.add(hair);
-  const head = mesh(new THREE.IcosahedronGeometry(95, 1), mat('#ffe6cf'));
-  head.position.set(65, 280, 0);
-  g.add(head);
-
-  [-0.6, 0, 0.6].forEach((k) => {
-    const spike = mesh(new THREE.ConeGeometry(24, 60, 4), mat('#ffd23f'));
-    spike.position.set(55 + k * 15, 375, k * 40);
-    g.add(spike);
-  });
-
-  const beard = mesh(new THREE.ConeGeometry(60, 100, 8), mat('#a9773f'));
-  beard.position.set(120, 215, 0);
-  beard.rotation.x = Math.PI;
-  beard.rotation.z = 0.3;
-  g.add(beard);
-
-  return g;
-}
-
-function buildIceKart() {
-  const g = new THREE.Group();
-  addShadow(g, 190);
-  addWheels(g, 150, 115, 58);
-
-  const torso = mesh(new THREE.CylinderGeometry(95, 105, 210, 7), mat('#bfeeff', { roughness: 0.2, metalness: 0.15 }));
-  torso.position.set(10, 145, 0);
-  g.add(torso);
-  // cuna/plow que se funde con la base del torso (bien superpuesta)
-  const plow = mesh(new THREE.ConeGeometry(160, 260, 4), mat('#9fe0f5', { roughness: 0.25, metalness: 0.2 }));
-  plow.rotation.z = -Math.PI / 2;
-  plow.rotation.y = Math.PI / 4;
-  plow.position.set(140, 90, 0);
-  plow.scale.set(1, 1, 0.6);
-  g.add(plow);
-
-  const head = mesh(new THREE.IcosahedronGeometry(90, 1), mat('#eafcff', { roughness: 0.15, metalness: 0.2 }));
-  head.position.set(30, 320, 0);
-  g.add(head);
-  const visor = mesh(new THREE.BoxGeometry(120, 40, 82), emissiveMat('#123a5a'));
-  visor.position.set(85, 322, 0);
-  g.add(visor);
-
-  [-1, 0, 1].forEach((k) => {
-    const spike = mesh(new THREE.ConeGeometry(18, 65, 4), mat('#ffffff', { roughness: 0.2 }));
-    spike.position.set(15 + k * 30, 380, k * 8);
-    g.add(spike);
-  });
-
-  return g;
-}
-
-const KART_BUILDERS = { rabbit: buildRabbitKart, gorilla: buildGorillaKart, princess: buildPrincessKart, ice: buildIceKart };
+const KART_BUILDERS = { rabbit: () => buildKartFromArt('rabbit'), gorilla: () => buildKartFromArt('gorilla'), princess: () => buildKartFromArt('princess'), ice: () => buildKartFromArt('ice') };
 
 // ---------- escena principal ----------
 const canvas = document.getElementById('gl');
@@ -606,35 +454,18 @@ function updateHud() {
   });
 }
 
-// ---------- pantalla de seleccion: mini-preview 3D del kart real, girando ----------
+// ---------- pantalla de seleccion: arte real del moodboard ----------
 const cardsEl = document.getElementById('cards');
-const previewRenderers = {};
 CHAR_ORDER.forEach((char) => {
   const card = document.createElement('div');
   card.className = 'card';
-  const c = document.createElement('canvas');
-  c.width = 340; c.height = 320;
-  const cname = document.createElement('div');
-  cname.className = 'cname'; cname.textContent = NAMES[char];
+  const img = document.createElement('img');
+  img.src = MOODBOARD_URL[char];
+  img.alt = NAMES[char];
   const holders = document.createElement('div');
   holders.className = 'holders'; holders.id = 'holders-' + char;
-  card.appendChild(c); card.appendChild(cname); card.appendChild(holders);
+  card.appendChild(img); card.appendChild(holders);
   cardsEl.appendChild(card);
-
-  const pr = new THREE.WebGLRenderer({ canvas: c, antialias: true, alpha: true });
-  pr.setPixelRatio(1);
-  pr.setSize(340, 320, false);
-  const pscene = new THREE.Scene();
-  pscene.add(new THREE.AmbientLight('#ffffff', 0.75));
-  const plight = new THREE.DirectionalLight('#fff3d6', 1);
-  plight.position.set(400, 600, 500);
-  pscene.add(plight);
-  const pcam = new THREE.PerspectiveCamera(38, 340 / 320, 10, 4000);
-  pcam.position.set(560, 360, 560);
-  pcam.lookAt(0, 140, 0);
-  const kart = KART_BUILDERS[char]();
-  pscene.add(kart);
-  previewRenderers[char] = { renderer: pr, scene: pscene, camera: pcam, kart };
 });
 
 function updateSelectHolders() {
@@ -702,14 +533,7 @@ function animate() {
   countdownEl.style.display = state.phase === 'countdown' ? 'flex' : 'none';
   hudEl.style.display = state.phase === 'racing' ? 'flex' : 'none';
 
-  if (isSelect) {
-    updateSelectHolders();
-    CHAR_ORDER.forEach((char) => {
-      const pr = previewRenderers[char];
-      pr.kart.rotation.y += dt * 0.7;
-      pr.renderer.render(pr.scene, pr.camera);
-    });
-  }
+  if (isSelect) updateSelectHolders();
 
   if (state.phase === 'countdown') {
     countdownNumEl.textContent = state.countdown > 0 ? String(state.countdown) : 'GO!';
@@ -719,13 +543,14 @@ function animate() {
 
   if (!isSelect) updateCamera();
 
-  // posicionar / crear-destruir karts en la escena principal (giran de verdad: frente/espalda reales)
+  // posicionar / crear-destruir karts en la escena principal (cartel que siempre mira a camara)
   state.players.forEach((p, i) => {
     if (!p) { removeKart(i); return; }
     const group = ensureKart(i, p.character);
     const w = toWorld(p.x, p.y);
     group.position.set(w.x, 0, w.z);
-    group.rotation.y = -p.angle;
+    const card = group.children.find((c) => c.userData.billboard);
+    if (card) card.rotation.y = Math.atan2(camera.position.x - w.x, camera.position.z - w.z);
     const targetScale = state.phase === 'select' ? 0 : 1;
     group.scale.setScalar(targetScale);
   });
