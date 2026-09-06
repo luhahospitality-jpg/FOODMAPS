@@ -32,10 +32,11 @@
     text-shadow:0 4px 0 #202030, -2px 0 0 #202030, 2px 0 0 #202030, 0 -2px 0 #202030; }
   #select h2 { font-size:20px; color:#ffd24d; font-weight:800; letter-spacing:2px; margin:6px 0 26px; }
   #cards { display:flex; gap:22px; }
-  .card { width:190px; background:rgba(20,20,40,0.9); border:3px solid #33334d; border-radius:18px;
+  .card { width:250px; background:rgba(20,20,40,0.9); border:3px solid #33334d; border-radius:18px;
     padding:10px; display:flex; flex-direction:column; align-items:center; transition:border-color .15s; overflow:hidden; }
-  .card img { width:170px; height:auto; border-radius:10px; image-rendering:auto; }
-  .card .holders { min-height:24px; font-size:14px; font-weight:700; margin-top:8px; }
+  .card canvas { width:210px; height:198px; }
+  .card .cname { color:#fff; font-weight:800; font-size:17px; letter-spacing:1px; margin-top:2px; }
+  .card .holders { min-height:24px; font-size:14px; font-weight:700; margin-top:6px; }
   .hint { margin-top:24px; color:#ccc; font-size:15px; }
   #url { position:absolute; bottom:10px; left:10px; color:#5eff8f; font-family:monospace; font-size:16px; }
 </style>
@@ -79,39 +80,189 @@ function emissiveMat(color) {
 }
 function mesh(geo, material) { return new THREE.Mesh(geo, material); }
 
-// ---------- arte real del moodboard, recortado (fondo removido) ----------
-const MOODBOARD_URL = { rabbit: '/assets/moodboard/rabbit.png', gorilla: '/assets/moodboard/gorilla.png', princess: '/assets/moodboard/princess.png', ice: '/assets/moodboard/ice.png' };
-// alto/ancho reales de cada recorte (sin fondo) para no deformar la figura
-const CHAR_ASPECT = { rabbit: 108 / 218, gorilla: 107 / 225, princess: 107 / 226, ice: 106 / 217 };
+// ---------- karts low-poly de verdad: piezas que se superponen a proposito, sin huecos ----------
+// (los recortes de imagen se veian baratos y no se podian rotar; esto es geometria real,
+// asi que el auto muestra el frente al venir hacia camara y la espalda al alejarse)
 const texLoader = new THREE.TextureLoader();
-const CHAR_TEXTURES = {};
-CHAR_ORDER.forEach((name) => {
-  const tex = texLoader.load(MOODBOARD_URL[name]);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  CHAR_TEXTURES[name] = tex;
-});
 
-// cada "kart" es el recorte real del personaje+auto (sin fondo) como cartel que mira a camara + sombra
-function buildKartFromArt(character) {
-  const g = new THREE.Group();
-
-  const shadow = mesh(new THREE.CircleGeometry(120, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.35 }));
+function addShadow(g, r) {
+  const shadow = mesh(new THREE.CircleGeometry(r, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.32 }));
   shadow.rotation.x = -Math.PI / 2;
   shadow.position.y = 2;
   g.add(shadow);
+}
 
-  const cardMat = new THREE.MeshBasicMaterial({ map: CHAR_TEXTURES[character], transparent: true, alphaTest: 0.3 });
-  const cardH = 300;
-  const cardW = cardH * (CHAR_ASPECT[character] || 0.48);
-  const card = mesh(new THREE.PlaneGeometry(cardW, cardH), cardMat);
-  card.position.y = cardH / 2 + 5;
-  card.userData.billboard = true;
-  g.add(card);
+function addWheels(g, alongOffset, sideOffset, radius) {
+  const wMat = mat('#181818', { roughness: 0.9 });
+  const geo = new THREE.CylinderGeometry(radius, radius, radius * 0.7, 8);
+  [[-1, -1], [-1, 1], [1, -1], [1, 1]].forEach(([lx, lz]) => {
+    const w = mesh(geo, wMat);
+    w.rotation.z = Math.PI / 2;
+    // hundidas en el cuerpo para que no floten separadas
+    w.position.set(lx * alongOffset, radius * 0.85, lz * sideOffset);
+    g.add(w);
+  });
+}
+
+function buildRabbitKart() {
+  const g = new THREE.Group();
+  addShadow(g, 190);
+  addWheels(g, 150, 115, 58);
+
+  const body = mesh(new THREE.CylinderGeometry(55, 150, 380, 8), mat('#ff8c3c'));
+  body.rotation.z = Math.PI / 2;
+  body.position.set(10, 95, 0);
+  g.add(body);
+
+  // hojas hundidas en la punta ancha de la zanahoria (sin espacio de por medio)
+  [-0.5, 0, 0.5].forEach((s) => {
+    const leaf = mesh(new THREE.ConeGeometry(48, 140, 5), mat('#3fae52'));
+    leaf.position.set(-165, 150, s * 55);
+    leaf.rotation.set(0.3, 0, s * 0.5);
+    g.add(leaf);
+  });
+
+  const head = mesh(new THREE.IcosahedronGeometry(105, 1), mat('#fbfbf8'));
+  head.position.set(60, 235, 0);
+  g.add(head);
+
+  // orejas insertadas dentro de la cabeza, no apoyadas encima
+  [-1, 1].forEach((s) => {
+    const ear = mesh(new THREE.CapsuleGeometry(20, 130, 3, 6), mat('#fbfbf8'));
+    ear.position.set(30, 335, s * 34);
+    ear.rotation.z = s * 0.22;
+    g.add(ear);
+    const inner = mesh(new THREE.CapsuleGeometry(10, 95, 3, 6), mat('#ffc2d1'));
+    inner.position.set(31, 335, s * 34);
+    inner.rotation.z = s * 0.22;
+    g.add(inner);
+  });
+
+  const eyeMat = mat('#1c1c1c');
+  [-1, 1].forEach((s) => {
+    const eye = mesh(new THREE.SphereGeometry(11, 8, 8), eyeMat);
+    eye.position.set(150, 245, s * 38);
+    g.add(eye);
+  });
+  const nose = mesh(new THREE.SphereGeometry(11, 8, 8), mat('#ff8fa3'));
+  nose.position.set(163, 222, 0);
+  g.add(nose);
+  [-1, 1].forEach((s) => {
+    const cheek = mesh(new THREE.SphereGeometry(16, 8, 8), mat('#ffc2d1'));
+    cheek.position.set(140, 205, s * 55);
+    g.add(cheek);
+  });
 
   return g;
 }
 
-const KART_BUILDERS = { rabbit: () => buildKartFromArt('rabbit'), gorilla: () => buildKartFromArt('gorilla'), princess: () => buildKartFromArt('princess'), ice: () => buildKartFromArt('ice') };
+function buildGorillaKart() {
+  const g = new THREE.Group();
+  addShadow(g, 190);
+  addWheels(g, 150, 115, 58);
+
+  const banana = mesh(new THREE.TorusGeometry(280, 100, 8, 10, Math.PI * 0.85), mat('#f2c94c'));
+  banana.rotation.y = Math.PI / 2;
+  banana.rotation.z = -0.42;
+  banana.position.set(0, 95, 0);
+  g.add(banana);
+  // punta hundida en el extremo del torus (superpuesta, sin hueco)
+  const tip = mesh(new THREE.ConeGeometry(35, 70, 6), mat('#7a5230'));
+  tip.position.set(-205, 60, 55);
+  tip.rotation.z = 1.15;
+  g.add(tip);
+
+  const head = mesh(new THREE.IcosahedronGeometry(118, 1), mat('#6a4530'));
+  head.position.set(50, 250, 0);
+  g.add(head);
+  const muzzle = mesh(new THREE.SphereGeometry(70, 10, 8), mat('#c9a27a'));
+  muzzle.position.set(140, 220, 0);
+  g.add(muzzle);
+
+  const glasses = mesh(new THREE.BoxGeometry(150, 34, 95), mat('#1b2a6b', { roughness: 0.3, metalness: 0.4 }));
+  glasses.position.set(148, 262, 0);
+  g.add(glasses);
+  const mouth = mesh(new THREE.TorusGeometry(32, 9, 6, 10, Math.PI), mat('#5b3a29'));
+  mouth.position.set(158, 195, 0);
+  mouth.rotation.y = Math.PI / 2;
+  mouth.rotation.z = Math.PI;
+  g.add(mouth);
+
+  return g;
+}
+
+function buildPrincessKart() {
+  const g = new THREE.Group();
+  addShadow(g, 190);
+  addWheels(g, 150, 120, 55);
+
+  const carriage = mesh(new THREE.BoxGeometry(370, 175, 260), mat('#ff5fa2'));
+  carriage.position.set(10, 130, 0);
+  g.add(carriage);
+  // el techo se hunde en la caja (superposicion real, no apenas tocando)
+  const roof = mesh(new THREE.ConeGeometry(175, 110, 4), mat('#ff8fc7'));
+  roof.position.set(10, 255, 0);
+  roof.rotation.y = Math.PI / 4;
+  g.add(roof);
+  const heart = mesh(new THREE.SphereGeometry(32, 8, 8), mat('#fff0f6'));
+  heart.position.set(195, 130, 0);
+  g.add(heart);
+
+  const hair = mesh(new THREE.IcosahedronGeometry(112, 1), mat('#8a5a34'));
+  hair.position.set(45, 295, 0);
+  g.add(hair);
+  const head = mesh(new THREE.IcosahedronGeometry(95, 1), mat('#ffe6cf'));
+  head.position.set(65, 280, 0);
+  g.add(head);
+
+  [-0.6, 0, 0.6].forEach((k) => {
+    const spike = mesh(new THREE.ConeGeometry(24, 60, 4), mat('#ffd23f'));
+    spike.position.set(55 + k * 15, 375, k * 40);
+    g.add(spike);
+  });
+
+  const beard = mesh(new THREE.ConeGeometry(60, 100, 8), mat('#a9773f'));
+  beard.position.set(120, 215, 0);
+  beard.rotation.x = Math.PI;
+  beard.rotation.z = 0.3;
+  g.add(beard);
+
+  return g;
+}
+
+function buildIceKart() {
+  const g = new THREE.Group();
+  addShadow(g, 190);
+  addWheels(g, 150, 115, 58);
+
+  const torso = mesh(new THREE.CylinderGeometry(95, 105, 210, 7), mat('#bfeeff', { roughness: 0.2, metalness: 0.15 }));
+  torso.position.set(10, 145, 0);
+  g.add(torso);
+  // cuna/plow que se funde con la base del torso (bien superpuesta)
+  const plow = mesh(new THREE.ConeGeometry(160, 260, 4), mat('#9fe0f5', { roughness: 0.25, metalness: 0.2 }));
+  plow.rotation.z = -Math.PI / 2;
+  plow.rotation.y = Math.PI / 4;
+  plow.position.set(140, 90, 0);
+  plow.scale.set(1, 1, 0.6);
+  g.add(plow);
+
+  const head = mesh(new THREE.IcosahedronGeometry(90, 1), mat('#eafcff', { roughness: 0.15, metalness: 0.2 }));
+  head.position.set(30, 320, 0);
+  g.add(head);
+  const visor = mesh(new THREE.BoxGeometry(120, 40, 82), emissiveMat('#123a5a'));
+  visor.position.set(85, 322, 0);
+  g.add(visor);
+
+  [-1, 0, 1].forEach((k) => {
+    const spike = mesh(new THREE.ConeGeometry(18, 65, 4), mat('#ffffff', { roughness: 0.2 }));
+    spike.position.set(15 + k * 30, 380, k * 8);
+    g.add(spike);
+  });
+
+  return g;
+}
+
+const KART_BUILDERS = { rabbit: buildRabbitKart, gorilla: buildGorillaKart, princess: buildPrincessKart, ice: buildIceKart };
 
 // ---------- escena principal ----------
 const canvas = document.getElementById('gl');
@@ -120,10 +271,19 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color('#3a2b57');
-scene.fog = new THREE.Fog('#3a2b57', 2600, 9000);
+scene.fog = new THREE.Fog('#3a2b57', 3200, 9500);
+
+// telon de fondo real en 3D (cilindro que rodea la pista): al estar en el mundo, se
+// proyecta con la camara como todo lo demas y no "flota" independiente al mirar arriba/abajo
 texLoader.load('/assets/moodboard/sky_rainbow.jpg', (tex) => {
   tex.colorSpace = THREE.SRGBColorSpace;
-  scene.background = tex;
+  tex.wrapS = THREE.RepeatWrapping;
+  tex.repeat.set(-4, 1);
+  const skyGeo = new THREE.CylinderGeometry(8200, 8200, 3200, 48, 1, true);
+  const skyMat = new THREE.MeshBasicMaterial({ map: tex, side: THREE.BackSide, fog: false });
+  const sky = mesh(skyGeo, skyMat);
+  sky.position.y = 1200;
+  scene.add(sky);
 });
 
 const camera = new THREE.PerspectiveCamera(58, window.innerWidth / window.innerHeight, 10, 20000);
@@ -153,6 +313,8 @@ function toWorld(sx, sy) { return { x: sx - WORLD_OFFSET.x, z: sy - WORLD_OFFSET
 let trackBuilt = false;
 const decorGroup = new THREE.Group();
 scene.add(decorGroup);
+const confettiGroup = new THREE.Group();
+scene.add(confettiGroup);
 
 function buildTrackAndDecor() {
   const track = state.track;
@@ -176,47 +338,65 @@ function buildTrackAndDecor() {
   const idx = [];
   const stripeIdx = [];
 
-  for (let i = 0; i < track.length; i++) {
-    const a = toWorld(track[i].x, track[i].y);
-    const b = toWorld(track[(i + 1) % track.length].x, track[(i + 1) % track.length].y);
+  const pts = track.map((p) => toWorld(p.x, p.y));
+  const n = pts.length;
+
+  // normal por segmento, despues promediada por vertice: asi dos segmentos que se
+  // tocan en un mismo punto de la pista usan el MISMO offset y no queda hueco/superposicion
+  const segNormal = pts.map((p, i) => {
+    const a = p, b = pts[(i + 1) % n];
     const dx = b.x - a.x, dz = b.z - a.z;
     const len = Math.sqrt(dx * dx + dz * dz) || 1;
-    const nx = -dz / len, nz = dx / len;
+    return { x: -dz / len, z: dx / len };
+  });
+  const vertNormal = pts.map((_, i) => {
+    const prev = segNormal[(i - 1 + n) % n], cur = segNormal[i];
+    const sx = prev.x + cur.x, sz = prev.z + cur.z;
+    const len = Math.sqrt(sx * sx + sz * sz) || 1;
+    return { x: sx / len, z: sz / len };
+  });
+
+  for (let i = 0; i < n; i++) {
+    const a = pts[i], b = pts[(i + 1) % n];
+    const na = vertNormal[i], nb = vertNormal[(i + 1) % n];
+    const dx = b.x - a.x, dz = b.z - a.z;
 
     const base = positions.length / 3;
     positions.push(
-      a.x + nx * half, 3, a.z + nz * half,
-      a.x - nx * half, 3, a.z - nz * half,
-      b.x + nx * half, 3, b.z + nz * half,
-      b.x - nx * half, 3, b.z - nz * half,
+      a.x + na.x * half, 3, a.z + na.z * half,
+      a.x - na.x * half, 3, a.z - na.z * half,
+      b.x + nb.x * half, 3, b.z + nb.z * half,
+      b.x - nb.x * half, 3, b.z - nb.z * half,
     );
     idx.push(base, base + 2, base + 1, base + 1, base + 2, base + 3);
 
     const sh = state.trackWidth * 0.025;
     const sbase = stripePositions.length / 3;
     stripePositions.push(
-      a.x + nx * sh, 6, a.z + nz * sh,
-      a.x - nx * sh, 6, a.z - nz * sh,
-      b.x + nx * sh, 6, b.z + nz * sh,
-      b.x - nx * sh, 6, b.z - nz * sh,
+      a.x + na.x * sh, 6, a.z + na.z * sh,
+      a.x - na.x * sh, 6, a.z - na.z * sh,
+      b.x + nb.x * sh, 6, b.z + nb.z * sh,
+      b.x - nb.x * sh, 6, b.z - nb.z * sh,
     );
     stripeIdx.push(sbase, sbase + 2, sbase + 1, sbase + 1, sbase + 2, sbase + 3);
 
-    // guardarail (llantas apiladas) o borde de precipicio
+    // guardarail (llantas apiladas, encimadas para que se vean como muro continuo) o borde de precipicio
     const isGuarded = guarded.has(i);
-    const barrierEvery = 170;
+    const len = Math.sqrt(dx * dx + dz * dz) || 1;
+    const barrierEvery = 95;
     for (let d = 0; d < len; d += barrierEvery) {
       const t = d / len;
       const px = a.x + dx * t, pz = a.z + dz * t;
+      const nx = na.x + (nb.x - na.x) * t, nz = na.z + (nb.z - na.z) * t;
       [1, -1].forEach((side) => {
-        const bx = px + nx * (half + 60) * side, bz = pz + nz * (half + 60) * side;
+        const bx = px + nx * (half + 55) * side, bz = pz + nz * (half + 55) * side;
         if (isGuarded) {
           for (let s = 0; s < 2; s++) {
-            const tire = mesh(new THREE.TorusGeometry(55, 24, 6, 8), tireMat);
-            tire.position.set(bx, 55 + s * 90, bz);
+            const tire = mesh(new THREE.TorusGeometry(58, 30, 8, 10), tireMat);
+            tire.position.set(bx, 58 + s * 85, bz);
             decorGroup.add(tire);
           }
-        } else if (d % (barrierEvery * 2) < 1) {
+        } else if (d % (barrierEvery * 3) < 1) {
           const warn = mesh(new THREE.BoxGeometry(120, 14, 20), cliffMat);
           warn.position.set(bx, 10, bz);
           warn.rotation.y = Math.atan2(dz, dx);
@@ -269,7 +449,7 @@ function buildTrackAndDecor() {
 
   // decoracion (arboles, antorchas, publico) a lo largo del recorrido
   const spacing = state.trackWidth * 0.9;
-  let carry = 0, n = 0;
+  let carry = 0, decorIdx = 0;
   const crowdColors = ['#ff6b6b', '#4da6ff', '#ffd24d', '#4dff88'];
   for (let i = 0; i < track.length; i++) {
     const a = toWorld(track[i].x, track[i].y);
@@ -281,9 +461,9 @@ function buildTrackAndDecor() {
     let d = carry;
     while (d < segLen) {
       const px = a.x + dirX * d, pz = a.z + dirZ * d;
-      const side = n % 2 === 0 ? 1 : -1;
+      const side = decorIdx % 2 === 0 ? 1 : -1;
       const offset = half + state.trackWidth * 0.4;
-      const kind = n % 6 === 0 ? 'torch' : n % 3 === 0 ? 'crowd' : 'tree';
+      const kind = decorIdx % 6 === 0 ? 'torch' : decorIdx % 3 === 0 ? 'crowd' : 'tree';
       const x = px + nx * offset * side, z = pz + nz * offset * side;
 
       if (kind === 'tree') {
@@ -301,7 +481,7 @@ function buildTrackAndDecor() {
         flame.position.set(x, 125, z);
         decorGroup.add(flame);
       } else {
-        const color = crowdColors[n % crowdColors.length];
+        const color = crowdColors[decorIdx % crowdColors.length];
         const person = new THREE.Group();
         const torso = mesh(new THREE.BoxGeometry(40, 60, 26), mat(color));
         torso.position.y = 40;
@@ -319,10 +499,33 @@ function buildTrackAndDecor() {
         person.userData.bouncePhase = Math.random() * Math.PI * 2;
         decorGroup.add(person);
       }
-      n++;
+      decorIdx++;
       d += spacing;
     }
     carry = d - segLen;
+  }
+
+  // confeti cayendo sobre la pista, capa intermedia de profundidad antes del fondo
+  const confettiColors = [0xff4d4d, 0xffd24d, 0x4da6ff, 0x4dff88, 0x9b5de5, 0xffffff];
+  let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+  pts.forEach((p) => {
+    minX = Math.min(minX, p.x); maxX = Math.max(maxX, p.x);
+    minZ = Math.min(minZ, p.z); maxZ = Math.max(maxZ, p.z);
+  });
+  for (let k = 0; k < 140; k++) {
+    const c = mesh(
+      new THREE.PlaneGeometry(22, 34),
+      new THREE.MeshBasicMaterial({ color: confettiColors[k % confettiColors.length], side: THREE.DoubleSide })
+    );
+    c.position.set(
+      minX + Math.random() * (maxX - minX),
+      Math.random() * 2200,
+      minZ + Math.random() * (maxZ - minZ)
+    );
+    c.userData.fallSpeed = 60 + Math.random() * 90;
+    c.userData.spinSpeed = (Math.random() - 0.5) * 3;
+    c.userData.sway = Math.random() * Math.PI * 2;
+    confettiGroup.add(c);
   }
 
   trackBuilt = true;
@@ -403,18 +606,35 @@ function updateHud() {
   });
 }
 
-// ---------- pantalla de seleccion: arte real del moodboard ----------
+// ---------- pantalla de seleccion: mini-preview 3D del kart real, girando ----------
 const cardsEl = document.getElementById('cards');
+const previewRenderers = {};
 CHAR_ORDER.forEach((char) => {
   const card = document.createElement('div');
   card.className = 'card';
-  const img = document.createElement('img');
-  img.src = MOODBOARD_URL[char];
-  img.alt = NAMES[char];
+  const c = document.createElement('canvas');
+  c.width = 340; c.height = 320;
+  const cname = document.createElement('div');
+  cname.className = 'cname'; cname.textContent = NAMES[char];
   const holders = document.createElement('div');
   holders.className = 'holders'; holders.id = 'holders-' + char;
-  card.appendChild(img); card.appendChild(holders);
+  card.appendChild(c); card.appendChild(cname); card.appendChild(holders);
   cardsEl.appendChild(card);
+
+  const pr = new THREE.WebGLRenderer({ canvas: c, antialias: true, alpha: true });
+  pr.setPixelRatio(1);
+  pr.setSize(340, 320, false);
+  const pscene = new THREE.Scene();
+  pscene.add(new THREE.AmbientLight('#ffffff', 0.75));
+  const plight = new THREE.DirectionalLight('#fff3d6', 1);
+  plight.position.set(400, 600, 500);
+  pscene.add(plight);
+  const pcam = new THREE.PerspectiveCamera(38, 340 / 320, 10, 4000);
+  pcam.position.set(560, 360, 560);
+  pcam.lookAt(0, 140, 0);
+  const kart = KART_BUILDERS[char]();
+  pscene.add(kart);
+  previewRenderers[char] = { renderer: pr, scene: pscene, camera: pcam, kart };
 });
 
 function updateSelectHolders() {
@@ -482,7 +702,14 @@ function animate() {
   countdownEl.style.display = state.phase === 'countdown' ? 'flex' : 'none';
   hudEl.style.display = state.phase === 'racing' ? 'flex' : 'none';
 
-  if (isSelect) updateSelectHolders();
+  if (isSelect) {
+    updateSelectHolders();
+    CHAR_ORDER.forEach((char) => {
+      const pr = previewRenderers[char];
+      pr.kart.rotation.y += dt * 0.7;
+      pr.renderer.render(pr.scene, pr.camera);
+    });
+  }
 
   if (state.phase === 'countdown') {
     countdownNumEl.textContent = state.countdown > 0 ? String(state.countdown) : 'GO!';
@@ -492,14 +719,13 @@ function animate() {
 
   if (!isSelect) updateCamera();
 
-  // posicionar / crear-destruir karts en la escena principal (carteles que siempre miran a camara)
+  // posicionar / crear-destruir karts en la escena principal (giran de verdad: frente/espalda reales)
   state.players.forEach((p, i) => {
     if (!p) { removeKart(i); return; }
     const group = ensureKart(i, p.character);
     const w = toWorld(p.x, p.y);
     group.position.set(w.x, 0, w.z);
-    const card = group.children.find((c) => c.userData.billboard);
-    if (card) card.rotation.y = Math.atan2(camera.position.x - w.x, camera.position.z - w.z);
+    group.rotation.y = -p.angle;
     const targetScale = state.phase === 'select' ? 0 : 1;
     group.scale.setScalar(targetScale);
   });
@@ -511,6 +737,13 @@ function animate() {
     if (child.userData.bouncePhase !== undefined) {
       child.position.y = Math.abs(Math.sin(t * 3 + child.userData.bouncePhase)) * 10;
     }
+  });
+  confettiGroup.children.forEach((c) => {
+    c.position.y -= c.userData.fallSpeed * dt;
+    c.position.x += Math.sin(t * 1.5 + c.userData.sway) * 12 * dt;
+    c.rotation.z += c.userData.spinSpeed * dt;
+    c.rotation.x += c.userData.spinSpeed * 0.6 * dt;
+    if (c.position.y < 0) c.position.y = 2000 + Math.random() * 400;
   });
 
   if (!isSelect) renderer.render(scene, camera);
