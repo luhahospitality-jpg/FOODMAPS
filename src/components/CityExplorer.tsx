@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Place, NewsItem, Lang, Tier } from "@/types/city";
+import type { Place, NewsItem, FeaturedVideo, Lang, Tier } from "@/types/city";
 import { PlaceCard } from "./PlaceCard";
 import { categoryText, tagLabel } from "@/lib/labels";
-import { getSourceThumbnail } from "@/lib/sourceThumbnail";
+import { getSourceThumbnail, getYoutubeId } from "@/lib/sourceThumbnail";
 import { t } from "@/lib/dictionary";
 
 type Section = "novedades" | "top" | "categorias" | "cocinas" | "especiales";
@@ -76,11 +76,13 @@ function Chip({
 export function CityExplorer({
   places,
   news,
+  video,
   tier,
   lang,
 }: {
   places: Place[];
   news: NewsItem[];
+  video: FeaturedVideo | null;
   tier: Tier;
   lang: Lang;
 }) {
@@ -208,7 +210,7 @@ export function CityExplorer({
 
       <div className="mt-8">
         {section === "novedades" ? (
-          <NewsList news={news} lang={lang} />
+          <NewsList news={news} video={video} lang={lang} />
         ) : results.length === 0 ? (
           <p className="font-body text-sm text-ink/60">
             {dict.city.noResultsForFilter}
@@ -283,10 +285,101 @@ function NewsCover({ item }: { item: NewsItem }) {
   );
 }
 
-function NewsList({ news, lang }: { news: NewsItem[]; lang: Lang }) {
+function FeaturedVideoCard({
+  video,
+  lang,
+}: {
+  video: FeaturedVideo;
+  lang: Lang;
+}) {
+  const dict = t(lang);
+  const [playing, setPlaying] = useState(false);
+  const [coverBroken, setCoverBroken] = useState(false);
+  const videoId = getYoutubeId(video.youtube_url);
+  const cover = videoId
+    ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+    : null;
+
+  return (
+    <article className="mb-6 flex flex-col overflow-hidden rounded-2xl border-4 border-red bg-paper shadow-hard sm:flex-row">
+      <div className="relative aspect-[16/10] w-full shrink-0 overflow-hidden border-b-4 border-red bg-ink sm:aspect-auto sm:w-80 sm:border-r-4 sm:border-b-0">
+        {playing && videoId ? (
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+            title={video.titulo}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="h-full w-full"
+          />
+        ) : (
+          <button
+            type="button"
+            onClick={() => setPlaying(true)}
+            disabled={!videoId}
+            aria-label={dict.city.playVideo}
+            className="group relative block h-full w-full"
+          >
+            {cover && !coverBroken ? (
+              <img
+                src={cover}
+                alt=""
+                onError={() => setCoverBroken(true)}
+                className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-ink">
+                <NewsTabIcon size={24} />
+              </div>
+            )}
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 flex items-center justify-center"
+            >
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-ink bg-red shadow-hard-sm transition-transform group-hover:scale-110">
+                <svg width="18" height="18" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 0.5v9l8-4.5-8-4.5z" fill="var(--color-paper)" />
+                </svg>
+              </span>
+            </span>
+          </button>
+        )}
+      </div>
+      <div className="flex flex-1 flex-col justify-center p-5">
+        <span className="inline-flex w-fit items-center gap-1.5 rounded-full border-2 border-red bg-red/10 px-3 py-1 font-label text-[11px] font-bold tracking-widest text-red uppercase">
+          {dict.city.videoDestacado}
+        </span>
+        <h3 className="mt-2 font-display text-xl font-black uppercase">
+          {video.titulo}
+        </h3>
+        <p className="mt-1 font-body text-sm text-ink/70">
+          {dict.city.videoBy} <span className="font-bold">{video.canal}</span>
+        </p>
+        <a
+          href={video.youtube_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-flex w-fit items-center gap-1.5 font-label text-xs font-bold text-ink/70 uppercase underline decoration-2 underline-offset-4 hover:text-red"
+        >
+          {dict.city.watchOnYoutube}
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  );
+}
+
+function NewsList({
+  news,
+  video,
+  lang,
+}: {
+  news: NewsItem[];
+  video: FeaturedVideo | null;
+  lang: Lang;
+}) {
   const dict = t(lang);
 
-  if (news.length === 0) {
+  if (news.length === 0 && !video) {
     return <p className="font-body text-sm text-ink/60">{dict.city.noNews}</p>;
   }
 
@@ -294,6 +387,7 @@ function NewsList({ news, lang }: { news: NewsItem[]; lang: Lang }) {
 
   return (
     <div>
+      {video && <FeaturedVideoCard video={video} lang={lang} />}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         {sorted.map((item, i) => (
           <article

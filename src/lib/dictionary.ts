@@ -58,6 +58,10 @@ export const dictionary = {
       noResultsForFilter: "Todavía no hay lugares en este filtro.",
       noNews: "Todavía no hay novedades para esta ciudad.",
       newsFooterNote: "Se actualiza periódicamente con lo último de cada ciudad.",
+      videoDestacado: "Video destacado",
+      videoBy: "Por",
+      watchOnYoutube: "Ver en YouTube",
+      playVideo: "Reproducir",
     },
     place: {
       viewOnMaps: "Ver en Google Maps",
@@ -130,6 +134,10 @@ export const dictionary = {
       noResultsForFilter: "No places in this filter yet.",
       noNews: "No news for this city yet.",
       newsFooterNote: "Updated periodically with what's new in each city.",
+      videoDestacado: "Featured video",
+      videoBy: "By",
+      watchOnYoutube: "Watch on YouTube",
+      playVideo: "Play",
     },
     place: {
       viewOnMaps: "View on Google Maps",

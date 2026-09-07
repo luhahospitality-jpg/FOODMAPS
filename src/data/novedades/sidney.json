@@ -70,13 +70,5 @@
     "imagen_url": null,
     "fecha": "2025-10-31",
     "ciudad_slug": "sidney"
-  },
-  {
-    "titulo": "Mark Wiens recorre las mejores comidas baratas de Sydney",
-    "resumen": "El creador de comida y viajes Mark Wiens publicó el 10 de junio de 2023 un recorrido por las mejores opciones económicas de comida rápida australiana en Sydney, destacando cinco lugares imprescindibles de la ciudad para comer bien sin gastar mucho, con su estilo característico de entusiasmo por la comida callejera y local.",
-    "fuente_url": "https://www.youtube.com/watch?v=JCfI9Xlj7Io",
-    "imagen_url": null,
-    "fecha": "2023-06-10",
-    "ciudad_slug": "sidney"
   }
 ]

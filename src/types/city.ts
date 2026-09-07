@@ -93,3 +93,11 @@ export interface NewsItem {
   fecha: string;
   ciudad_slug: string;
 }
+
+export interface FeaturedVideo {
+  titulo: string;
+  canal: string;
+  youtube_url: string;
+  fecha: string;
+  ciudad_slug: string;
+}

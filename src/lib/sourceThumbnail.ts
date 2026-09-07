@@ -46,6 +46,16 @@ export function getSourceThumbnail(url: string | null): SourceThumbnail {
   return { kind: "web", photoUrl: null, logoUrl: favicon };
 }
 
+export function getYoutubeId(rawUrl: string): string | null {
+  try {
+    const url = new URL(rawUrl);
+    const hostname = url.hostname.replace(/^www\./, "");
+    return extractYouTubeId(url, hostname);
+  } catch {
+    return null;
+  }
+}
+
 function extractYouTubeId(url: URL, hostname: string): string | null {
   if (hostname === "youtu.be") {
     return url.pathname.slice(1) || null;

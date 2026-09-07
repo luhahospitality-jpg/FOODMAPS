@@ -8,6 +8,7 @@ import { HtmlLangSync } from "@/components/HtmlLangSync";
 import { CityExplorer } from "@/components/CityExplorer";
 import { getLocalizedCityData } from "@/lib/cities";
 import { getNews } from "@/lib/novedades";
+import { getFeaturedVideo } from "@/lib/videos";
 import type { Lang } from "@/types/city";
 import { t } from "@/lib/dictionary";
 
@@ -23,6 +24,7 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
   const otherLangHref =
     lang === "es" ? `/en/city/${slug}` : `/ciudad/${slug}`;
   const news = getNews(slug);
+  const video = getFeaturedVideo(slug);
 
   return (
     <div className="flex min-h-screen flex-col bg-cream">
@@ -71,6 +73,7 @@ export function CityView({ slug, lang }: { slug: string; lang: Lang }) {
             <CityExplorer
               places={city.places}
               news={news}
+              video={video}
               tier={city.tier}
               lang={lang}
             />
