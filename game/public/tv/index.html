@@ -26,6 +26,13 @@
   #countdown span { font-size:220px; font-weight:900; color:#fff;
     text-shadow:0 8px 0 #202030, -3px 0 0 #202030, 3px 0 0 #202030, 0 -3px 0 #202030; }
 
+  #finish { position:absolute; inset:0; display:none; align-items:center; justify-content:center;
+    flex-direction:column; background:rgba(10,8,20,0.55); }
+  #finish .trophy { font-size:110px; }
+  #finish .winner { font-size:80px; font-weight:900; letter-spacing:3px; margin-top:6px;
+    text-shadow:0 6px 0 #202030, -3px 0 0 #202030, 3px 0 0 #202030, 0 -3px 0 #202030; }
+  #finish .sub { font-size:20px; color:#ffe9a8; margin-top:14px; letter-spacing:1px; }
+
   #select { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center;
     justify-content:center; background:#0c0c1c; pointer-events:auto; }
   #select h1 { font-size:44px; font-weight:900; color:#fff; letter-spacing:4px; margin:0;
@@ -47,6 +54,11 @@
   <div id="title"><span class="name">BLOCK RACERS</span></div>
   <div id="hud"></div>
   <div id="countdown"><span id="countdownNum">3</span></div>
+  <div id="finish">
+    <div class="trophy">🏆</div>
+    <div class="winner" id="finishWinner">P1 GANA</div>
+    <div class="sub">Volviendo al menu...</div>
+  </div>
   <div id="select">
     <h1>BLOCK RACERS</h1>
     <h2>ELIGE TU CORREDOR</h2>
@@ -67,7 +79,7 @@ const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 
 document.getElementById('url').textContent =
   'Abre en tu iPhone: ' + location.origin + '/controller';
 
-let state = { phase: 'select', countdown: 0, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
+let state = { phase: 'select', countdown: 0, winnerId: null, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
 socket.on('state', (s) => { state = s; });
 
 // ---------- helpers de materiales/geometria low-poly ----------
@@ -81,7 +93,7 @@ function mesh(geo, material) { return new THREE.Mesh(geo, material); }
 
 // ---------- arte real del moodboard (recorte limpio, sin geometria armada) ----------
 const MOODBOARD_URL = { rabbit: '/assets/moodboard/rabbit.png', gorilla: '/assets/moodboard/gorilla.png', princess: '/assets/moodboard/princess.png', ice: '/assets/moodboard/ice.png' };
-const CHAR_ASPECT = { rabbit: 411 / 700, gorilla: 100 / 207, princess: 432 / 700, ice: 97 / 192 };
+const CHAR_ASPECT = { rabbit: 411 / 700, gorilla: 213 / 420, princess: 432 / 700, ice: 97 / 192 };
 const texLoader = new THREE.TextureLoader();
 const CHAR_TEXTURES = {};
 CHAR_ORDER.forEach((name) => {
@@ -475,6 +487,15 @@ function rebuildItems() {
 
 // ---------- karts de los jugadores ----------
 const kartSlots = [null, null, null, null];
+// animacion de caida al vacio: cuando el server marca "falling" el kart se hunde y gira
+// en su ultima posicion conocida; cuando termina, reaparece con un pequeno rebote
+const fallAnims = [null, null, null, null];
+const FALL_DURATION = 0.7;
+const POP_DURATION = 0.25;
+// posicion "visual" de cada kart (donde se ve realmente en pantalla ahora mismo);
+// coincide con la posicion del servidor salvo mientras esta cayendo al vacio, momento
+// en que se congela en el punto de la caida para que la camara no salte al respawn
+const visualPos = [null, null, null, null];
 
 function ensureKart(i, character) {
   const slot = kartSlots[i];
@@ -559,14 +580,15 @@ function aimCameraAt(cs) {
 }
 
 // vista cinematica promediada: select / countdown / cuando solo hay 0-1 corredor
+// (usa la posicion VISUAL, no la del servidor: si un kart esta cayendo al vacio,
+// la camara se queda mirando donde cayo en vez de saltar de golpe al respawn)
 function updateCameraAveraged() {
-  const active = state.players.filter(Boolean);
+  const active = state.players.map((p, i) => (p ? visualPos[i] : null)).filter(Boolean);
   if (!active.length) return;
   let sx = 0, sz = 0, hsin = 0, hcos = 0;
-  active.forEach((p) => {
-    const w = toWorld(p.x, p.y);
-    sx += w.x; sz += w.z;
-    hsin += Math.sin(p.angle); hcos += Math.cos(p.angle);
+  active.forEach((v) => {
+    sx += v.x; sz += v.z;
+    hsin += Math.sin(v.angle); hcos += Math.cos(v.angle);
   });
   moveCameraState(mainCameraState, sx / active.length, sz / active.length, Math.atan2(hsin, hcos));
   aimCameraAt(mainCameraState);
@@ -574,8 +596,8 @@ function updateCameraAveraged() {
 
 // camara propia de un jugador (para su cuadrante en pantalla dividida)
 function updateCameraForSlot(slot, p) {
-  const w = toWorld(p.x, p.y);
-  moveCameraState(slotCameraStates[slot], w.x, w.z, p.angle);
+  const v = visualPos[slot] || toWorld(p.x, p.y);
+  moveCameraState(slotCameraStates[slot], v.x, v.z, v.angle !== undefined ? v.angle : p.angle);
   aimCameraAt(slotCameraStates[slot]);
 }
 
@@ -586,7 +608,7 @@ function updateKartBillboards() {
     if (!p) return;
     const slotData = kartSlots[i];
     if (!slotData) return;
-    const w = toWorld(p.x, p.y);
+    const w = visualPos[i] || toWorld(p.x, p.y);
     const card = slotData.group.children.find((c) => c.userData.billboard);
     if (!card) return;
     card.rotation.y = Math.atan2(camera.position.x - w.x, camera.position.z - w.z);
@@ -632,10 +654,89 @@ function renderScene() {
   }
 }
 
+// ---------- musica: tema tetrico y gracioso tipo carnaval embrujado (sintetizado, sin archivos) ----------
+const NOTE_FREQ = {
+  D3: 146.83, Ab3: 207.65, A3: 220.00,
+  A4: 440.00, C4: 261.63,
+  'C#5': 554.37, D5: 587.33, E5: 659.25, F5: 698.46,
+};
+const TEMPO = 138;
+const STEP_SEC = 60 / TEMPO / 2;
+const BASS_PATTERN = ['D3', null, 'A3', null, 'D3', null, 'A3', null, 'D3', null, 'Ab3', null, 'D3', null, 'A3', null];
+const MELODY_PATTERN = ['D5', null, 'F5', null, 'E5', null, 'D5', null, 'C#5', null, 'D5', null, 'A4', null, null, null];
+
+let audioCtx = null, masterGain = null, musicStarted = false, musicTimer = null, stepIndex = 0;
+
+function ensureAudio() {
+  if (audioCtx) return;
+  const Ctx = window.AudioContext || window.webkitAudioContext;
+  if (!Ctx) return;
+  audioCtx = new Ctx();
+  masterGain = audioCtx.createGain();
+  masterGain.gain.value = 0.22;
+  masterGain.connect(audioCtx.destination);
+}
+
+function playTone(freq, time, dur, type, peak) {
+  const osc = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  osc.type = type;
+  osc.frequency.setValueAtTime(freq, time);
+  osc.detune.setValueAtTime((Math.random() - 0.5) * 14, time); // toque "desafinado" comico
+  g.gain.setValueAtTime(0.0001, time);
+  g.gain.exponentialRampToValueAtTime(peak, time + 0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001, time + dur);
+  osc.connect(g); g.connect(masterGain);
+  osc.start(time); osc.stop(time + dur + 0.05);
+}
+
+function playHat(time, dur, peak) {
+  const bufferSize = Math.max(1, Math.floor(audioCtx.sampleRate * dur));
+  const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
+  const src = audioCtx.createBufferSource();
+  src.buffer = buffer;
+  const filt = audioCtx.createBiquadFilter();
+  filt.type = 'highpass'; filt.frequency.value = 4500;
+  const g = audioCtx.createGain();
+  g.gain.setValueAtTime(peak, time);
+  g.gain.exponentialRampToValueAtTime(0.0001, time + dur);
+  src.connect(filt); filt.connect(g); g.connect(masterGain);
+  src.start(time);
+}
+
+function scheduleMusicStep() {
+  const time = audioCtx.currentTime + 0.05;
+  const bassNote = BASS_PATTERN[stepIndex % BASS_PATTERN.length];
+  if (bassNote) playTone(NOTE_FREQ[bassNote], time, STEP_SEC * 1.8, 'sawtooth', 0.5);
+  const melNote = MELODY_PATTERN[stepIndex % MELODY_PATTERN.length];
+  if (melNote) playTone(NOTE_FREQ[melNote], time, STEP_SEC * 0.9, 'square', 0.16);
+  if (stepIndex % 4 === 2) playHat(time, 0.05, 0.12);
+  stepIndex++;
+}
+
+function unlockAudio() {
+  ensureAudio();
+  if (!audioCtx) return;
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  if (!musicStarted) {
+    musicStarted = true;
+    scheduleMusicStep();
+    musicTimer = setInterval(scheduleMusicStep, STEP_SEC * 1000);
+  }
+}
+// el TV no recibe touches directos: intentamos arrancar de una, y si el navegador
+// bloquea el audio sin gesto, cualquier tecla/click/touch del control remoto lo desbloquea
+unlockAudio();
+['pointerdown', 'touchstart', 'keydown', 'click'].forEach((ev) => window.addEventListener(ev, unlockAudio));
+
 // ---------- loop ----------
 const selectEl = document.getElementById('select');
 const countdownEl = document.getElementById('countdown');
 const countdownNumEl = document.getElementById('countdownNum');
+const finishEl = document.getElementById('finish');
+const finishWinnerEl = document.getElementById('finishWinner');
 const clock = new THREE.Clock();
 
 function animate() {
@@ -649,6 +750,7 @@ function animate() {
   selectEl.style.display = isSelect ? 'flex' : 'none';
   countdownEl.style.display = state.phase === 'countdown' ? 'flex' : 'none';
   hudEl.style.display = state.phase === 'racing' ? 'flex' : 'none';
+  finishEl.style.display = state.phase === 'finished' ? 'flex' : 'none';
 
   if (isSelect) updateSelectHolders();
 
@@ -656,17 +758,50 @@ function animate() {
     countdownNumEl.textContent = state.countdown > 0 ? String(state.countdown) : 'GO!';
   }
 
+  if (state.phase === 'finished') {
+    const winner = state.players.find((p) => p && p.id === state.winnerId);
+    finishWinnerEl.textContent = winner ? winner.id + ' GANA!' : 'CARRERA TERMINADA';
+    finishWinnerEl.style.color = winner ? winner.color : '#fff';
+  }
+
   if (state.phase === 'racing') updateHud();
 
   // posicionar / crear-destruir karts en la escena principal (la orientacion del cartel
   // se resuelve en renderScene, distinta por cuadrante si hay pantalla dividida)
   state.players.forEach((p, i) => {
-    if (!p) { removeKart(i); return; }
+    if (!p) { removeKart(i); fallAnims[i] = null; return; }
     const group = ensureKart(i, p.character);
     const w = toWorld(p.x, p.y);
-    group.position.set(w.x, 0, w.z);
-    const targetScale = state.phase === 'select' ? 0 : 1;
-    group.scale.setScalar(targetScale);
+    const baseScale = state.phase === 'select' ? 0 : 1;
+    let anim = fallAnims[i];
+
+    if (p.falling) {
+      if (!anim || anim.state !== 'falling') {
+        anim = fallAnims[i] = { state: 'falling', t0: t, x: group.position.x, z: group.position.z };
+      }
+      const prog = Math.min(1, (t - anim.t0) / FALL_DURATION);
+      // primero un pequeno salto hacia arriba (se ve claramente que sale disparado
+      // por el borde) y despues cae en picada hasta perderse de vista
+      const hop = 130 * Math.sin(Math.min(prog * 1.8, 1) * Math.PI);
+      const drop = 900 * Math.pow(prog, 2.2);
+      group.position.set(anim.x, hop - drop, anim.z);
+      group.rotation.x = prog * Math.PI * 0.7;
+      group.rotation.z = prog * Math.PI * 1.6;
+      group.scale.setScalar(baseScale * (1 - 0.75 * prog));
+    } else if (anim && anim.state === 'falling') {
+      fallAnims[i] = { state: 'popping', t0: t };
+    } else if (anim && anim.state === 'popping') {
+      const prog = Math.min(1, (t - anim.t0) / POP_DURATION);
+      group.position.set(w.x, 0, w.z);
+      group.rotation.set(0, 0, 0);
+      group.scale.setScalar(baseScale * (0.25 + 0.75 * prog));
+      if (prog >= 1) fallAnims[i] = null;
+    } else {
+      group.position.set(w.x, 0, w.z);
+      group.rotation.set(0, 0, 0);
+      group.scale.setScalar(baseScale);
+    }
+    visualPos[i] = { x: group.position.x, z: group.position.z, angle: p.angle };
   });
 
   itemGroup.children.forEach((child) => {

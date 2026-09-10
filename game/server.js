@@ -29,7 +29,8 @@ const TRACK_POINTS = [
   { x: 220, y: 400 },
 ].map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE }));
 const N_SEG = TRACK_POINTS.length;
-// tramos con baranda (rebote + chispas); el resto son precipicio (te caes)
+// tramos con decoracion de baranda (solo visual en el TV); salirse de la pista en
+// cualquier tramo te tira al vacio igual
 const GUARDRAIL_SEGMENTS = new Set([0, 1, 2, 3, 8, 9]);
 
 app.use(express.static(__dirname + '/public'));
@@ -61,13 +62,20 @@ function nearestTrackInfo(px, py) {
     const r = closestPointOnSegment(px, py, a.x, a.y, b.x, b.y);
     if (!best || r.dist < best.dist) { best = r; bestIdx = i; }
   }
-  return { dist: best.dist, idx: bestIdx, x: best.x, y: best.y, guardrail: GUARDRAIL_SEGMENTS.has(bestIdx) };
+  return { dist: best.dist, idx: bestIdx, x: best.x, y: best.y };
 }
+
+const RACE_LAPS = 3;
 
 function registerLapProgress(p, idx) {
   if (idx <= 1 && p.lapIndex >= N_SEG - 2) {
     p.lap += 1;
     p.lapIndex = idx;
+    if (p.lap >= RACE_LAPS && phase === 'racing') {
+      phase = 'finished';
+      raceWinnerId = p.id;
+      finishedAt = Date.now();
+    }
   } else {
     p.lapIndex = Math.max(p.lapIndex, idx);
   }
@@ -89,10 +97,12 @@ function spawnFor(slot) {
 }
 
 // --- estado global de la partida ---
-let phase = 'select'; // 'select' | 'countdown' | 'racing'
+let phase = 'select'; // 'select' | 'countdown' | 'racing' | 'finished'
 let countdown = 0;
 let countdownAcc = 0;
 let firstConfirmAt = 0;
+let raceWinnerId = null;
+let finishedAt = 0;
 
 const boostBoxes = [
   { x: 900, y: 260 },
@@ -118,13 +128,12 @@ function resetForRace() {
     p.slowUntil = 0;
     p.powerCooldownUntil = 0;
     p.fallUntil = 0;
-    p.sparkUntil = 0;
-    p.lastOnTrack = { x: s.x, y: s.y, angle: s.angle };
   });
   peels = [];
   flowers = [];
   iceUntil = 0;
   iceOwnerSlot = -1;
+  raceWinnerId = null;
   boostBoxes.forEach((b) => { b.active = true; b.respawnAt = 0; });
 }
 
@@ -144,8 +153,7 @@ io.on('connection', (socket) => {
       x: s.x, y: s.y, angle: s.angle, speed: 0,
       lives: 3, lap: 0, lapIndex: 0,
       hasBoost: false, boostUntil: 0, slowUntil: 0,
-      powerCooldownUntil: 0, fallUntil: 0, sparkUntil: 0,
-      lastOnTrack: { x: s.x, y: s.y, angle: s.angle },
+      powerCooldownUntil: 0, fallUntil: 0,
       input: { steer: 0, accel: false, brake: false },
       prevAccel: false,
       selectZone: 'neutral',
@@ -206,6 +214,8 @@ io.on('connection', (socket) => {
     countdown = 0;
     countdownAcc = 0;
     firstConfirmAt = 0;
+    raceWinnerId = null;
+    finishedAt = 0;
     players.forEach((p) => { if (p) p.confirmed = false; });
     peels = [];
     flowers = [];
@@ -275,7 +285,8 @@ const FRICTION = 1500;
 const MAX_SPEED = 2000;
 const BOOST_SPEED = 3400;
 const MAX_REVERSE = -800;
-const TURN_RATE = 2.4;
+const TURN_RATE = 1.6;
+const STEER_CURVE = 1.4; // >1 suaviza el giro cerca del centro del analogico (menos sensible)
 const TICK_MS = 50;
 
 setInterval(() => {
@@ -301,6 +312,15 @@ setInterval(() => {
         phase = 'racing';
         resetForRace();
       }
+    }
+  } else if (phase === 'finished') {
+    if (now - finishedAt > 12000) {
+      phase = 'select';
+      countdown = 0;
+      countdownAcc = 0;
+      firstConfirmAt = 0;
+      raceWinnerId = null;
+      players.forEach((p) => { if (p) p.confirmed = false; });
     }
   } else if (phase === 'racing') {
     boostBoxes.forEach((b) => {
@@ -335,7 +355,8 @@ setInterval(() => {
 
       if (Math.abs(p.speed) > 5) {
         const dir = p.speed >= 0 ? 1 : -1;
-        p.angle += input.steer * turnRate * dt * dir;
+        const steerEased = Math.sign(input.steer) * Math.pow(Math.abs(input.steer), STEER_CURVE);
+        p.angle += steerEased * turnRate * dt * dir;
       }
 
       p.x += Math.cos(p.angle) * p.speed * dt;
@@ -373,7 +394,7 @@ setInterval(() => {
       }
     }
 
-    // items y limites de pista (guardarail = rebote con chispas, precipicio = caida)
+    // items y limites de pista (fuera de la pista = te caes al vacio y respawneas)
     players.forEach((p) => {
       if (!p) return;
       if (now < p.fallUntil) return;
@@ -408,25 +429,16 @@ setInterval(() => {
 
       const info = nearestTrackInfo(p.x, p.y);
       if (info.dist <= TRACK_WIDTH / 2) {
-        p.lastOnTrack = { x: p.x, y: p.y, angle: p.angle };
-        registerLapProgress(p, info.idx);
-      } else if (info.guardrail) {
-        // baranda: rebota contra el borde y pierde velocidad, no cae
-        const dx = p.x - info.x, dy = p.y - info.y;
-        const len = Math.sqrt(dx * dx + dy * dy) || 1;
-        const nx = dx / len, ny = dy / len;
-        p.x = info.x + nx * (TRACK_WIDTH / 2 - 2 * WORLD_SCALE);
-        p.y = info.y + ny * (TRACK_WIDTH / 2 - 2 * WORLD_SCALE);
-        p.speed *= 0.4;
-        p.sparkUntil = now + 300;
-        p.lastOnTrack = { x: p.x, y: p.y, angle: p.angle };
         registerLapProgress(p, info.idx);
       } else {
-        // precipicio: cae y respawnea
+        // te saliste de la pista: caes al vacio, pierdes una vida y respawneas
+        // siempre en el CENTRO de la pista (no en el borde) para que no se pueda
+        // quedar re-cayendo en bucle si el borde estaba justo ahi
         p.lives = Math.max(0, p.lives - 1);
-        p.x = p.lastOnTrack.x;
-        p.y = p.lastOnTrack.y;
-        p.angle = p.lastOnTrack.angle;
+        const segA = segPoint(info.idx), segB = segPoint(info.idx + 1);
+        p.x = info.x;
+        p.y = info.y;
+        p.angle = Math.atan2(segB.y - segA.y, segB.x - segA.x);
         p.speed = 0;
         p.fallUntil = now + 700;
       }
@@ -458,7 +470,7 @@ function broadcast(now) {
       hasBoost: p.hasBoost,
       boosting: now < p.boostUntil,
       slowed: now < p.slowUntil,
-      sparked: now < p.sparkUntil,
+      falling: now < p.fallUntil,
       powerReady: now >= p.powerCooldownUntil,
     };
   });
@@ -466,6 +478,7 @@ function broadcast(now) {
   io.emit('state', {
     phase,
     countdown,
+    winnerId: raceWinnerId,
     track: TRACK_POINTS,
     trackWidth: TRACK_WIDTH,
     guardrailSegments: Array.from(GUARDRAIL_SEGMENTS),
@@ -491,6 +504,8 @@ function broadcast(now) {
       hasBoost: p.hasBoost,
       powerReady: cooldownMs <= 0,
       cooldownSec: Math.ceil(cooldownMs / 1000),
+      winnerId: raceWinnerId,
+      won: phase === 'finished' && raceWinnerId === p.id,
     });
   });
 }

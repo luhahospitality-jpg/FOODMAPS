@@ -102,6 +102,11 @@
       selName.textContent = NAMES[s.character] || '';
       selHint.textContent = 'LISTO - esperando a los demas jugadores...';
       accelBtn.textContent = 'GO';
+    } else if (s.phase === 'finished') {
+      selectInfo.style.display = 'block';
+      selEmoji.textContent = s.won ? '🏆' : '🏁';
+      selName.textContent = s.won ? 'GANASTE!' : (s.winnerId + ' GANA');
+      selHint.textContent = 'Volviendo al menu... (o toca START)';
     } else {
       selectInfo.style.display = 'none';
       accelBtn.textContent = 'GO';
