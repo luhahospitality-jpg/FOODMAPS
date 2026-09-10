@@ -80,7 +80,7 @@ document.getElementById('url').textContent =
   'Abre en tu iPhone: ' + location.origin + '/controller';
 
 let state = { phase: 'select', countdown: 0, winnerId: null, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
-socket.on('state', (s) => { state = s; });
+socket.on('state', (s) => { handleStateAudioEvents(state, s); state = s; });
 
 // ---------- helpers de materiales/geometria low-poly ----------
 function mat(color, extra) {
@@ -654,16 +654,18 @@ function renderScene() {
   }
 }
 
-// ---------- musica: tema tetrico y gracioso tipo carnaval embrujado (sintetizado, sin archivos) ----------
+// ---------- musica: tema alegre tipo carrera arcade (sintetizado, sin archivos) ----------
 const NOTE_FREQ = {
-  D3: 146.83, Ab3: 207.65, A3: 220.00,
-  A4: 440.00, C4: 261.63,
-  'C#5': 554.37, D5: 587.33, E5: 659.25, F5: 698.46,
+  C3: 130.81, F3: 174.61, G3: 196.00,
+  C4: 261.63, D4: 293.66, E4: 329.63,
+  C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99, A5: 880.00,
+  C6: 1046.50, E6: 1318.51, G6: 1567.98,
 };
-const TEMPO = 138;
+const TEMPO = 152;
 const STEP_SEC = 60 / TEMPO / 2;
-const BASS_PATTERN = ['D3', null, 'A3', null, 'D3', null, 'A3', null, 'D3', null, 'Ab3', null, 'D3', null, 'A3', null];
-const MELODY_PATTERN = ['D5', null, 'F5', null, 'E5', null, 'D5', null, 'C#5', null, 'D5', null, 'A4', null, null, null];
+// bajo tipo "oom-pah" saltarin (I - I - IV - V) y melodia en arpegio ascendente/descendente: alegre y energico
+const BASS_PATTERN = ['C3', null, 'G3', null, 'C3', null, 'G3', null, 'F3', null, 'C3', null, 'G3', null, 'G3', null];
+const MELODY_PATTERN = ['C5', 'E5', 'G5', 'E5', 'F5', 'A5', 'G5', 'E5', 'D5', 'F5', 'A5', 'F5', 'G5', 'E5', 'C5', null];
 
 let audioCtx = null, masterGain = null, musicStarted = false, musicTimer = null, stepIndex = 0;
 
@@ -682,7 +684,6 @@ function playTone(freq, time, dur, type, peak) {
   const g = audioCtx.createGain();
   osc.type = type;
   osc.frequency.setValueAtTime(freq, time);
-  osc.detune.setValueAtTime((Math.random() - 0.5) * 14, time); // toque "desafinado" comico
   g.gain.setValueAtTime(0.0001, time);
   g.gain.exponentialRampToValueAtTime(peak, time + 0.02);
   g.gain.exponentialRampToValueAtTime(0.0001, time + dur);
@@ -690,7 +691,20 @@ function playTone(freq, time, dur, type, peak) {
   osc.start(time); osc.stop(time + dur + 0.05);
 }
 
-function playHat(time, dur, peak) {
+function playSweep(fromFreq, toFreq, time, dur, type, peak) {
+  const osc = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  osc.type = type;
+  osc.frequency.setValueAtTime(fromFreq, time);
+  osc.frequency.exponentialRampToValueAtTime(Math.max(20, toFreq), time + dur);
+  g.gain.setValueAtTime(0.0001, time);
+  g.gain.exponentialRampToValueAtTime(peak, time + Math.min(0.02, dur * 0.25));
+  g.gain.exponentialRampToValueAtTime(0.0001, time + dur);
+  osc.connect(g); g.connect(masterGain);
+  osc.start(time); osc.stop(time + dur + 0.05);
+}
+
+function playNoise(time, dur, peak, highpass) {
   const bufferSize = Math.max(1, Math.floor(audioCtx.sampleRate * dur));
   const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
   const data = buffer.getChannelData(0);
@@ -698,21 +712,36 @@ function playHat(time, dur, peak) {
   const src = audioCtx.createBufferSource();
   src.buffer = buffer;
   const filt = audioCtx.createBiquadFilter();
-  filt.type = 'highpass'; filt.frequency.value = 4500;
+  filt.type = highpass ? 'highpass' : 'lowpass';
+  filt.frequency.value = highpass ? 4500 : 900;
   const g = audioCtx.createGain();
   g.gain.setValueAtTime(peak, time);
   g.gain.exponentialRampToValueAtTime(0.0001, time + dur);
   src.connect(filt); filt.connect(g); g.connect(masterGain);
   src.start(time);
 }
+function playHat(time, dur, peak) { playNoise(time, dur, peak, true); }
+
+function playKick(time) {
+  const osc = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(150, time);
+  osc.frequency.exponentialRampToValueAtTime(45, time + 0.12);
+  g.gain.setValueAtTime(0.5, time);
+  g.gain.exponentialRampToValueAtTime(0.0001, time + 0.14);
+  osc.connect(g); g.connect(masterGain);
+  osc.start(time); osc.stop(time + 0.16);
+}
 
 function scheduleMusicStep() {
   const time = audioCtx.currentTime + 0.05;
   const bassNote = BASS_PATTERN[stepIndex % BASS_PATTERN.length];
-  if (bassNote) playTone(NOTE_FREQ[bassNote], time, STEP_SEC * 1.8, 'sawtooth', 0.5);
+  if (bassNote) playTone(NOTE_FREQ[bassNote], time, STEP_SEC * 1.8, 'triangle', 0.55);
   const melNote = MELODY_PATTERN[stepIndex % MELODY_PATTERN.length];
-  if (melNote) playTone(NOTE_FREQ[melNote], time, STEP_SEC * 0.9, 'square', 0.16);
-  if (stepIndex % 4 === 2) playHat(time, 0.05, 0.12);
+  if (melNote) playTone(NOTE_FREQ[melNote], time, STEP_SEC * 0.95, 'square', 0.17);
+  if (stepIndex % 8 === 0) playKick(time);
+  if (stepIndex % 2 === 1) playHat(time, 0.04, 0.07);
   stepIndex++;
 }
 
@@ -730,6 +759,68 @@ function unlockAudio() {
 // bloquea el audio sin gesto, cualquier tecla/click/touch del control remoto lo desbloquea
 unlockAudio();
 ['pointerdown', 'touchstart', 'keydown', 'click'].forEach((ev) => window.addEventListener(ev, unlockAudio));
+
+// ---------- efectos de sonido de juego (cuenta regresiva, items, boost, caidas, vueltas, victoria) ----------
+function sfxCountdownBeep(n) {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.02;
+  if (n > 0) playTone(523.25, t, 0.12, 'square', 0.3);
+  else playTone(783.99, t, 0.35, 'square', 0.35);
+}
+function sfxItemPickup() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.02;
+  ['C6', 'E6', 'G6'].forEach((n, i) => playTone(NOTE_FREQ[n], t + i * 0.06, 0.14, 'triangle', 0.22));
+}
+function sfxBoost() {
+  if (!audioCtx) return;
+  playSweep(280, 1300, audioCtx.currentTime + 0.01, 0.4, 'sawtooth', 0.28);
+}
+function sfxPower() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playSweep(600, 1400, t, 0.22, 'square', 0.24);
+  playNoise(t, 0.2, 0.15, true);
+}
+function sfxFall() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playSweep(700, 90, t, 0.5, 'sawtooth', 0.26);
+}
+function sfxRespawnPop() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playSweep(220, 520, t, 0.15, 'triangle', 0.22);
+  playNoise(t, 0.05, 0.12, true);
+}
+function sfxLap() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playTone(NOTE_FREQ.E5, t, 0.1, 'square', 0.2);
+  playTone(NOTE_FREQ.G5, t + 0.08, 0.16, 'square', 0.22);
+}
+function sfxWin() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.02;
+  ['C5', 'E5', 'G5', 'C6'].forEach((n, i) => playTone(NOTE_FREQ[n], t + i * 0.13, i === 3 ? 0.5 : 0.15, 'square', 0.3));
+}
+
+let prevAudioState = null;
+function handleStateAudioEvents(prev, next) {
+  if (!audioCtx || !prev) return;
+  if (next.phase === 'countdown' && next.countdown !== prev.countdown) sfxCountdownBeep(next.countdown);
+  if (next.phase === 'finished' && prev.phase !== 'finished') sfxWin();
+  (next.players || []).forEach((p, i) => {
+    const op = (prev.players || [])[i];
+    if (!p || !op) return;
+    if (p.hasBoost && !op.hasBoost) sfxItemPickup();
+    if (p.boosting && !op.boosting) sfxBoost();
+    if (p.falling && !op.falling) sfxFall();
+    if (!p.falling && op.falling) sfxRespawnPop();
+    if (p.lap > op.lap) sfxLap();
+    if (!p.powerReady && op.powerReady) sfxPower();
+  });
+}
 
 // ---------- loop ----------
 const selectEl = document.getElementById('select');
