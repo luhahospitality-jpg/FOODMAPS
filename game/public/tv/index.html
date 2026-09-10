@@ -22,6 +22,8 @@
   .hcard .tag.on { background:#2ecc71; color:#06280f; }
   .hcard .tag.off { background:#3a3a4a; color:#8a8a99; }
 
+  #lightningFlash { position:absolute; inset:0; background:#fffbe0; opacity:0; mix-blend-mode:screen; }
+
   #countdown { position:absolute; inset:0; display:none; align-items:center; justify-content:center; }
   #countdown span { font-size:220px; font-weight:900; color:#fff;
     text-shadow:0 8px 0 #202030, -3px 0 0 #202030, 3px 0 0 #202030, 0 -3px 0 #202030; }
@@ -53,6 +55,7 @@
 <div id="ui">
   <div id="title"><span class="name">BLOCK RACERS</span></div>
   <div id="hud"></div>
+  <div id="lightningFlash"></div>
   <div id="countdown"><span id="countdownNum">3</span></div>
   <div id="finish">
     <div class="trophy">🏆</div>
@@ -79,7 +82,7 @@ const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 
 document.getElementById('url').textContent =
   'Abre en tu iPhone: ' + location.origin + '/controller';
 
-let state = { phase: 'select', countdown: 0, winnerId: null, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], peels: [], flowers: [], ice: { active: false } };
+let state = { phase: 'select', countdown: 0, winnerId: null, lightningFlashAt: 0, track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], coins: [], peels: [], flowers: [], ice: { active: false } };
 socket.on('state', (s) => { handleStateAudioEvents(state, s); state = s; });
 
 // ---------- helpers de materiales/geometria low-poly ----------
@@ -118,6 +121,15 @@ function buildKartFromArt(character) {
   card.position.y = cardH / 2 + 5;
   card.userData.billboard = true;
   g.add(card);
+
+  // aura de estrella (invencibilidad): anillo arcoiris que solo se muestra activo
+  const auraMat = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.65, side: THREE.DoubleSide });
+  const aura = mesh(new THREE.TorusGeometry(100, 14, 8, 20), auraMat);
+  aura.rotation.x = Math.PI / 2;
+  aura.position.y = 20;
+  aura.visible = false;
+  aura.userData.aura = true;
+  g.add(aura);
 
   return g;
 }
@@ -455,12 +467,27 @@ scene.add(itemGroup);
 
 function rebuildItems() {
   while (itemGroup.children.length) itemGroup.remove(itemGroup.children[0]);
+  // caja de item = "caja misteriosa" que cambia de color como ruleta (boost / estrella / rayo)
   (state.boxes || []).forEach((b) => {
     const w = toWorld(b.x, b.y);
     const box = mesh(new THREE.BoxGeometry(55, 55, 55), emissiveMat('#ffd24d'));
     box.position.set(w.x, 60, w.z);
     box.userData.spin = true;
+    box.userData.rainbow = true;
     itemGroup.add(box);
+  });
+  // monedas: doradas, chatas, giran rapido
+  (state.coins || []).forEach((c) => {
+    const w = toWorld(c.x, c.y);
+    const coin = mesh(
+      new THREE.CylinderGeometry(24, 24, 6, 16),
+      new THREE.MeshStandardMaterial({ color: '#ffd700', emissive: '#a67c00', emissiveIntensity: 0.5, metalness: 0.7, roughness: 0.3, flatShading: true })
+    );
+    coin.position.set(w.x, 45, w.z);
+    coin.rotation.x = Math.PI / 2;
+    coin.userData.coinSpin = true;
+    coin.userData.bouncePhase = Math.random() * Math.PI * 2;
+    itemGroup.add(coin);
   });
   (state.peels || []).forEach((pe) => {
     const w = toWorld(pe.x, pe.y);
@@ -511,6 +538,7 @@ function removeKart(i) {
 }
 
 // ---------- HUD (HTML) ----------
+const ITEM_ICON = { boost: '🍄', star: '⭐', lightning: '⚡' };
 const hudEl = document.getElementById('hud');
 function updateHud() {
   hudEl.innerHTML = '';
@@ -522,11 +550,11 @@ function updateHud() {
     card.innerHTML =
       '<div>' +
       '<div class="id">' + p.id + '</div>' +
-      '<div class="lap">VUELTA ' + p.lap + '</div>' +
+      '<div class="lap">VUELTA ' + p.lap + ' &nbsp; 🪙' + (p.coins || 0) + '</div>' +
       '<div class="lives">' + '❤'.repeat(p.lives) + '♡'.repeat(Math.max(0, 3 - p.lives)) + '</div>' +
       '</div>' +
       '<div style="display:flex;flex-direction:column;gap:4px;">' +
-      '<span class="tag ' + (p.hasBoost ? 'on' : 'off') + '">BOOST</span>' +
+      '<span class="tag ' + (p.item ? 'on' : 'off') + '">' + (p.item ? ITEM_ICON[p.item] + ' ' + p.item.toUpperCase() : 'ITEM') + '</span>' +
       '<span class="tag ' + (p.powerReady ? 'on' : 'off') + '">PODER</span>' +
       '</div>';
     hudEl.appendChild(card);
@@ -804,17 +832,54 @@ function sfxWin() {
   const t = audioCtx.currentTime + 0.02;
   ['C5', 'E5', 'G5', 'C6'].forEach((n, i) => playTone(NOTE_FREQ[n], t + i * 0.13, i === 3 ? 0.5 : 0.15, 'square', 0.3));
 }
+function sfxCoin() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playTone(NOTE_FREQ.G6 || 1567.98, t, 0.08, 'square', 0.16);
+  playTone(NOTE_FREQ.C6, t + 0.05, 0.1, 'square', 0.18);
+}
+function sfxStar() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  ['C5', 'D5', 'E5', 'F5', 'G5', 'A5', 'C6'].forEach((n, i) => playTone(NOTE_FREQ[n] || 1046.5, t + i * 0.045, 0.12, 'triangle', 0.2));
+}
+function sfxShrink() {
+  if (!audioCtx) return;
+  playSweep(700, 150, audioCtx.currentTime + 0.01, 0.4, 'square', 0.22);
+}
+function sfxLightning() {
+  if (!audioCtx) return;
+  const t = audioCtx.currentTime + 0.01;
+  playNoise(t, 0.35, 0.35, false);
+  playSweep(90, 40, t, 0.35, 'sawtooth', 0.3);
+}
 
-let prevAudioState = null;
+const lightningFlashEl = document.getElementById('lightningFlash');
+function triggerLightningFlash() {
+  lightningFlashEl.style.transition = 'none';
+  lightningFlashEl.style.opacity = '0.85';
+  requestAnimationFrame(() => {
+    lightningFlashEl.style.transition = 'opacity 0.5s ease-out';
+    lightningFlashEl.style.opacity = '0';
+  });
+}
+
 function handleStateAudioEvents(prev, next) {
   if (!audioCtx || !prev) return;
   if (next.phase === 'countdown' && next.countdown !== prev.countdown) sfxCountdownBeep(next.countdown);
   if (next.phase === 'finished' && prev.phase !== 'finished') sfxWin();
+  if (next.lightningFlashAt && next.lightningFlashAt !== prev.lightningFlashAt) {
+    sfxLightning();
+    triggerLightningFlash();
+  }
   (next.players || []).forEach((p, i) => {
     const op = (prev.players || [])[i];
     if (!p || !op) return;
-    if (p.hasBoost && !op.hasBoost) sfxItemPickup();
+    if (p.item && !op.item) sfxItemPickup();
     if (p.boosting && !op.boosting) sfxBoost();
+    if (p.starActive && !op.starActive) sfxStar();
+    if (p.shrunk && !op.shrunk) sfxShrink();
+    if ((p.coins || 0) > (op.coins || 0)) sfxCoin();
     if (p.falling && !op.falling) sfxFall();
     if (!p.falling && op.falling) sfxRespawnPop();
     if (p.lap > op.lap) sfxLap();
@@ -863,8 +928,17 @@ function animate() {
     if (!p) { removeKart(i); fallAnims[i] = null; return; }
     const group = ensureKart(i, p.character);
     const w = toWorld(p.x, p.y);
-    const baseScale = state.phase === 'select' ? 0 : 1;
+    const baseScale = (state.phase === 'select' ? 0 : 1) * (p.shrunk ? 0.55 : 1);
     let anim = fallAnims[i];
+
+    const aura = group.children.find((c) => c.userData.aura);
+    if (aura) {
+      aura.visible = !!p.starActive && state.phase !== 'select';
+      if (aura.visible) {
+        aura.material.color.setHSL((t * 1.2) % 1, 1, 0.6);
+        aura.rotation.z = t * 4;
+      }
+    }
 
     if (p.falling) {
       if (!anim || anim.state !== 'falling') {
@@ -897,6 +971,14 @@ function animate() {
 
   itemGroup.children.forEach((child) => {
     if (child.userData.spin) child.rotation.y += dt * 2;
+    if (child.userData.rainbow) {
+      child.material.color.setHSL((t * 0.6) % 1, 0.85, 0.55);
+      child.material.emissive.setHSL((t * 0.6) % 1, 0.85, 0.4);
+    }
+    if (child.userData.coinSpin) {
+      child.rotation.z += dt * 6;
+      child.position.y = 45 + Math.sin(t * 3 + child.userData.bouncePhase) * 8;
+    }
   });
   decorGroup.children.forEach((child) => {
     if (child.userData.bouncePhase !== undefined) {
@@ -917,7 +999,7 @@ function animate() {
 
 let itemsHash = '';
 setInterval(() => {
-  const h = (state.boxes || []).length + ',' + (state.peels || []).length + ',' + (state.flowers || []).length;
+  const h = (state.boxes || []).length + ',' + (state.peels || []).length + ',' + (state.flowers || []).length + ',' + (state.coins || []).length;
   if (h !== itemsHash) { itemsHash = h; rebuildItems(); }
 }, 300);
 

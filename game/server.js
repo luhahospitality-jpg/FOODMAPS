@@ -110,10 +110,37 @@ const boostBoxes = [
   { x: 700, y: 560 },
   { x: 230, y: 520 },
 ].map((b) => ({ x: b.x * WORLD_SCALE, y: b.y * WORLD_SCALE, active: true, respawnAt: 0 }));
+
+// monedas repartidas por toda la pista (una por tramo, alternando de lado) que dan
+// un empujoncito de velocidad maxima permanente por el resto de la carrera
+const coins = TRACK_POINTS.map((a, i) => {
+  const b = TRACK_POINTS[(i + 1) % N_SEG];
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1;
+  const nx = -dy / len, ny = dx / len;
+  const side = i % 2 === 0 ? 1 : -1;
+  const offset = (TRACK_WIDTH / 2) * 0.4 * side;
+  return {
+    x: (a.x + b.x) / 2 + nx * offset,
+    y: (a.y + b.y) / 2 + ny * offset,
+    active: true, respawnAt: 0,
+  };
+});
+const COIN_MAX = 10; // cada moneda suma +3% de velocidad maxima (hasta +30% con las 10)
+
+// caja de item = ruleta al estilo Mario Kart en vez de siempre el mismo boost
+function rollItem() {
+  const r = Math.random() * 100;
+  if (r < 55) return 'boost';
+  if (r < 80) return 'star';
+  return 'lightning';
+}
+
 let peels = [];
 let flowers = [];
 let iceUntil = 0;
 let iceOwnerSlot = -1;
+let lightningFlashAt = 0;
 
 function resetForRace() {
   players.forEach((p, i) => {
@@ -123,9 +150,12 @@ function resetForRace() {
     p.lives = 3;
     p.lap = 0;
     p.lapIndex = 0;
-    p.hasBoost = false;
+    p.item = null;
     p.boostUntil = 0;
+    p.starUntil = 0;
+    p.shrunkUntil = 0;
     p.slowUntil = 0;
+    p.coins = 0;
     p.powerCooldownUntil = 0;
     p.fallUntil = 0;
   });
@@ -134,7 +164,9 @@ function resetForRace() {
   iceUntil = 0;
   iceOwnerSlot = -1;
   raceWinnerId = null;
+  lightningFlashAt = 0;
   boostBoxes.forEach((b) => { b.active = true; b.respawnAt = 0; });
+  coins.forEach((c) => { c.active = true; c.respawnAt = 0; });
 }
 
 io.on('connection', (socket) => {
@@ -152,7 +184,7 @@ io.on('connection', (socket) => {
       confirmed: false,
       x: s.x, y: s.y, angle: s.angle, speed: 0,
       lives: 3, lap: 0, lapIndex: 0,
-      hasBoost: false, boostUntil: 0, slowUntil: 0,
+      item: null, boostUntil: 0, starUntil: 0, shrunkUntil: 0, slowUntil: 0, coins: 0,
       powerCooldownUntil: 0, fallUntil: 0,
       input: { steer: 0, accel: false, brake: false },
       prevAccel: false,
@@ -194,9 +226,22 @@ io.on('connection', (socket) => {
 
   socket.on('boost', () => {
     const p = players[slot];
-    if (!p || phase !== 'racing' || !p.hasBoost) return;
-    p.hasBoost = false;
-    p.boostUntil = Date.now() + 900;
+    if (!p || phase !== 'racing' || !p.item) return;
+    const now = Date.now();
+    const item = p.item;
+    p.item = null;
+    if (item === 'boost') {
+      p.boostUntil = now + 900;
+    } else if (item === 'star') {
+      p.starUntil = now + 5000;
+    } else if (item === 'lightning') {
+      lightningFlashAt = now;
+      players.forEach((o, i) => {
+        if (!o || i === slot) return;
+        o.shrunkUntil = now + 5000;
+        o.slowUntil = Math.max(o.slowUntil, now + 1200);
+      });
+    }
   });
 
   socket.on('power', () => {
@@ -326,18 +371,26 @@ setInterval(() => {
     boostBoxes.forEach((b) => {
       if (!b.active && now >= b.respawnAt) b.active = true;
     });
+    coins.forEach((c) => {
+      if (!c.active && now >= c.respawnAt) c.active = true;
+    });
 
     players.forEach((p, slotIdx) => {
       if (!p) return;
       if (now < p.fallUntil) return;
 
-      const onIce = iceOwnerSlot !== -1 && now < iceUntil && slotIdx !== iceOwnerSlot;
-      const slowed = now < p.slowUntil;
+      const starActive = now < p.starUntil;
+      const onIce = iceOwnerSlot !== -1 && now < iceUntil && slotIdx !== iceOwnerSlot && !starActive;
+      const slowed = now < p.slowUntil && !starActive;
+      const shrunk = now < p.shrunkUntil && !starActive;
       const boosting = now < p.boostUntil;
 
       const friction = onIce ? 400 : FRICTION;
       const turnRate = onIce ? TURN_RATE * 0.4 : TURN_RATE;
-      const maxSpeed = slowed ? 900 : boosting ? BOOST_SPEED : MAX_SPEED;
+      const coinBonus = (p.coins || 0) * (MAX_SPEED * 0.03);
+      let maxSpeed = slowed ? 900 : (starActive || boosting) ? BOOST_SPEED : MAX_SPEED;
+      if (shrunk) maxSpeed = Math.min(maxSpeed, 750);
+      maxSpeed += coinBonus;
 
       const { input } = p;
       if (slowed) {
@@ -380,7 +433,17 @@ setInterval(() => {
         a.x -= (nx * overlap) / 2; a.y -= (ny * overlap) / 2;
         b.x += (nx * overlap) / 2; b.y += (ny * overlap) / 2;
 
-        if (Math.abs(a.speed) >= Math.abs(b.speed)) {
+        const aStar = now < a.starUntil, bStar = now < b.starUntil;
+        if (aStar && !bStar) {
+          // a tiene estrella: arrolla a b sin frenar
+          const knock = 1500 * dt;
+          b.x += nx * knock; b.y += ny * knock;
+          b.speed *= 0.3;
+        } else if (bStar && !aStar) {
+          const knock = 1500 * dt;
+          a.x -= nx * knock; a.y -= ny * knock;
+          a.speed *= 0.3;
+        } else if (Math.abs(a.speed) >= Math.abs(b.speed)) {
           const knock = Math.min(Math.abs(a.speed), 2600) * 0.6 * dt;
           b.x += nx * knock; b.y += ny * knock;
           b.speed *= 0.5;
@@ -399,8 +462,9 @@ setInterval(() => {
       if (!p) return;
       if (now < p.fallUntil) return;
 
+      const starActive = now < p.starUntil;
       for (const peel of peels) {
-        if (peel.ownerSlot === players.indexOf(p) || peel.expiresAt === 0) continue;
+        if (peel.ownerSlot === players.indexOf(p) || peel.expiresAt === 0 || starActive) continue;
         const dx = p.x - peel.x, dy = p.y - peel.y;
         if (Math.sqrt(dx * dx + dy * dy) < 24 * WORLD_SCALE) {
           p.slowUntil = now + 1000;
@@ -409,7 +473,7 @@ setInterval(() => {
       }
 
       for (const fl of flowers) {
-        if (fl.ownerSlot === players.indexOf(p) || fl.expiresAt === 0) continue;
+        if (fl.ownerSlot === players.indexOf(p) || fl.expiresAt === 0 || starActive) continue;
         const dx = p.x - fl.x, dy = p.y - fl.y;
         if (Math.sqrt(dx * dx + dy * dy) < 26 * WORLD_SCALE) {
           p.slowUntil = now + 1500;
@@ -418,12 +482,22 @@ setInterval(() => {
       }
 
       boostBoxes.forEach((b) => {
-        if (!b.active || p.hasBoost) return;
+        if (!b.active || p.item) return;
         const dx = p.x - b.x, dy = p.y - b.y;
         if (Math.sqrt(dx * dx + dy * dy) < 34 * WORLD_SCALE) {
-          p.hasBoost = true;
+          p.item = rollItem();
           b.active = false;
           b.respawnAt = now + 8000;
+        }
+      });
+
+      coins.forEach((c) => {
+        if (!c.active) return;
+        const dx = p.x - c.x, dy = p.y - c.y;
+        if (Math.sqrt(dx * dx + dy * dy) < 30 * WORLD_SCALE) {
+          c.active = false;
+          c.respawnAt = now + 6000;
+          p.coins = Math.min(COIN_MAX, (p.coins || 0) + 1);
         }
       });
 
@@ -467,8 +541,11 @@ function broadcast(now) {
       steer: p.input.steer,
       lives: p.lives,
       lap: p.lap,
-      hasBoost: p.hasBoost,
+      item: p.item,
+      coins: p.coins || 0,
       boosting: now < p.boostUntil,
+      starActive: now < p.starUntil,
+      shrunk: now < p.shrunkUntil,
       slowed: now < p.slowUntil,
       falling: now < p.fallUntil,
       powerReady: now >= p.powerCooldownUntil,
@@ -479,11 +556,13 @@ function broadcast(now) {
     phase,
     countdown,
     winnerId: raceWinnerId,
+    lightningFlashAt,
     track: TRACK_POINTS,
     trackWidth: TRACK_WIDTH,
     guardrailSegments: Array.from(GUARDRAIL_SEGMENTS),
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),
+    coins: coins.filter((c) => c.active).map((c) => ({ x: c.x, y: c.y })),
     peels: peels.map((pe) => ({ x: pe.x, y: pe.y })),
     flowers: flowers.map((fl) => ({ x: fl.x, y: fl.y })),
     ice: {
@@ -501,7 +580,8 @@ function broadcast(now) {
       confirmed: p.confirmed,
       lives: p.lives,
       lap: p.lap,
-      hasBoost: p.hasBoost,
+      item: p.item,
+      coins: p.coins || 0,
       powerReady: cooldownMs <= 0,
       cooldownSec: Math.ceil(cooldownMs / 1000),
       winnerId: raceWinnerId,
