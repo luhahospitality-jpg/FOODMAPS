@@ -162,8 +162,12 @@ function loadGltfTemplate(url, desiredHeight) {
       obj.traverse((c) => { if (c.isMesh) { c.castShadow = false; c.receiveShadow = false; } });
       const box = new THREE.Box3().setFromObject(obj);
       const size = box.getSize(new THREE.Vector3());
-      const scale = desiredHeight / (size.y || 1);
-      const entry = { object: obj, scale };
+      // escalar por la dimension MAS GRANDE (no solo la altura): un modelo mas
+      // ancho que alto (hangar, crater...) escalado solo por altura terminaba con
+      // un ancho descomunal y tapaba la camara entera
+      const maxDim = Math.max(size.x, size.y, size.z) || 1;
+      const scale = desiredHeight / maxDim;
+      const entry = { object: obj, scale, footprint: Math.max(size.x, size.z) * scale };
       GLTF_CACHE[url] = entry;
       resolve(entry);
     }, undefined, () => {
@@ -178,41 +182,41 @@ const THEME_ASSETS = {
     ground: '#3f7a3a', fog: '#345c3e', bg: '#8fc7e8',
     barrierColor: '#6b4a2f',
     decorPool: [
-      { url: '/assets/models/nature/tree_oak.glb', h: 230 },
-      { url: '/assets/models/nature/tree_pineTallA_detailed.glb', h: 260 },
-      { url: '/assets/models/nature/tree_fat.glb', h: 200 },
-      { url: '/assets/models/nature/tree_default.glb', h: 210 },
-      { url: '/assets/models/nature/tree_palmTall.glb', h: 250 },
-      { url: '/assets/models/nature/mushroom_redGroup.glb', h: 70 },
-      { url: '/assets/models/nature/mushroom_tanTall.glb', h: 90 },
-      { url: '/assets/models/nature/rock_largeA.glb', h: 110 },
-      { url: '/assets/models/nature/rock_largeD.glb', h: 120 },
-      { url: '/assets/models/nature/stone_tallC.glb', h: 130 },
-      { url: '/assets/models/nature/flower_purpleA.glb', h: 50 },
-      { url: '/assets/models/nature/flower_redB.glb', h: 50 },
-      { url: '/assets/models/nature/flower_yellowC.glb', h: 50 },
-      { url: '/assets/models/nature/statue_obelisk.glb', h: 220 },
-      { url: '/assets/models/nature/log_stack.glb', h: 70 },
-      { url: '/assets/models/nature/plant_bushLarge.glb', h: 90 },
+      { url: '/assets/models/nature/tree_oak.glb', h: 520 },
+      { url: '/assets/models/nature/tree_pineTallA_detailed.glb', h: 580 },
+      { url: '/assets/models/nature/tree_fat.glb', h: 460 },
+      { url: '/assets/models/nature/tree_default.glb', h: 480 },
+      { url: '/assets/models/nature/tree_palmTall.glb', h: 560 },
+      { url: '/assets/models/nature/mushroom_redGroup.glb', h: 160 },
+      { url: '/assets/models/nature/mushroom_tanTall.glb', h: 200 },
+      { url: '/assets/models/nature/rock_largeA.glb', h: 240 },
+      { url: '/assets/models/nature/rock_largeD.glb', h: 260 },
+      { url: '/assets/models/nature/stone_tallC.glb', h: 280 },
+      { url: '/assets/models/nature/flower_purpleA.glb', h: 110 },
+      { url: '/assets/models/nature/flower_redB.glb', h: 110 },
+      { url: '/assets/models/nature/flower_yellowC.glb', h: 110 },
+      { url: '/assets/models/nature/statue_obelisk.glb', h: 480 },
+      { url: '/assets/models/nature/log_stack.glb', h: 150 },
+      { url: '/assets/models/nature/plant_bushLarge.glb', h: 200 },
     ],
   },
   space: {
     ground: '#2b2b38', fog: '#0a0a16', bg: '#05050d',
     barrierColor: '#8a8f9a',
     decorPool: [
-      { url: '/assets/models/space/meteor.glb', h: 130 },
-      { url: '/assets/models/space/meteor_detailed.glb', h: 160 },
-      { url: '/assets/models/space/crater.glb', h: 40 },
-      { url: '/assets/models/space/hangar_smallA.glb', h: 320 },
-      { url: '/assets/models/space/hangar_roundA.glb', h: 300 },
-      { url: '/assets/models/space/astronautA.glb', h: 190 },
-      { url: '/assets/models/space/astronautB.glb', h: 190 },
-      { url: '/assets/models/space/alien.glb', h: 180 },
-      { url: '/assets/models/space/barrels.glb', h: 110 },
-      { url: '/assets/models/space/machine_generator.glb', h: 180 },
-      { url: '/assets/models/space/satelliteDish.glb', h: 220 },
-      { url: '/assets/models/space/rocks_smallA.glb', h: 90 },
-      { url: '/assets/models/space/craft_racer.glb', h: 170 },
+      { url: '/assets/models/space/meteor.glb', h: 280 },
+      { url: '/assets/models/space/meteor_detailed.glb', h: 340 },
+      { url: '/assets/models/space/crater.glb', h: 90 },
+      { url: '/assets/models/space/hangar_smallA.glb', h: 650 },
+      { url: '/assets/models/space/hangar_roundA.glb', h: 620 },
+      { url: '/assets/models/space/astronautA.glb', h: 380 },
+      { url: '/assets/models/space/astronautB.glb', h: 380 },
+      { url: '/assets/models/space/alien.glb', h: 360 },
+      { url: '/assets/models/space/barrels.glb', h: 220 },
+      { url: '/assets/models/space/machine_generator.glb', h: 360 },
+      { url: '/assets/models/space/satelliteDish.glb', h: 460 },
+      { url: '/assets/models/space/rocks_smallA.glb', h: 190 },
+      { url: '/assets/models/space/craft_racer.glb', h: 340 },
     ],
   },
 };
@@ -221,6 +225,13 @@ async function preloadThemeAssets(theme) {
   const cfg = THEME_ASSETS[theme];
   if (!cfg) return;
   await Promise.all(cfg.decorPool.map((d) => loadGltfTemplate(d.url, d.h)));
+}
+
+function themePropFootprint(theme, poolIdx) {
+  const cfg = THEME_ASSETS[theme];
+  const def = cfg.decorPool[poolIdx % cfg.decorPool.length];
+  const entry = GLTF_CACHE[def.url];
+  return entry ? entry.footprint : 150;
 }
 
 function spawnThemeProp(theme, poolIdx, x, z, rotY) {
@@ -631,7 +642,14 @@ function buildRainbowDecor(track, pts, half) {
 // decoracion con modelos 3D reales (CC0, Kenney.nl) repartidos alrededor de la pista,
 // para los temas "bosque" y "espacio" (los assets ya estan precargados en GLTF_CACHE)
 function buildThemeDecor(theme, track, half) {
-  const spacing = state.trackWidth * 0.5;
+  // muy tupido a proposito: varias "filas" de props a los costados, bien seguidas
+  // a lo largo de toda la pista. Cada fila se ubica segun el TAMAÑO REAL del prop
+  // anterior (footprint), para que un modelo grande (hangar, cristal gigante...)
+  // no termine invadiendo la pista o pisando la fila de al lado
+  const spacing = state.trackWidth * 0.22;
+  const baseGap = 140;
+  const bandGap = 200;
+  const bandsPerSide = 4;
   let carry = 0, decorIdx = 0;
   for (let i = 0; i < track.length; i++) {
     const a = toWorld(track[i].x, track[i].y);
@@ -643,11 +661,18 @@ function buildThemeDecor(theme, track, half) {
     let d = carry;
     while (d < segLen) {
       const px = a.x + dirX * d, pz = a.z + dirZ * d;
-      const side = decorIdx % 2 === 0 ? 1 : -1;
-      const offset = half + state.trackWidth * 0.3 + (decorIdx % 4) * 90;
-      const x = px + nx * offset * side, z = pz + nz * offset * side;
-      spawnThemeProp(theme, decorIdx, x, z);
-      decorIdx++;
+      [1, -1].forEach((side) => {
+        let cumulative = half + baseGap;
+        for (let band = 0; band < bandsPerSide; band++) {
+          const fp = Math.min(themePropFootprint(theme, decorIdx), 500);
+          const offset = cumulative + fp / 2;
+          const jitter = (Math.random() - 0.5) * spacing * 0.6;
+          const x = px + nx * offset * side + dirX * jitter, z = pz + nz * offset * side + dirZ * jitter;
+          spawnThemeProp(theme, decorIdx, x, z);
+          cumulative += fp + bandGap;
+          decorIdx++;
+        }
+      });
       d += spacing;
     }
     carry = d - segLen;
