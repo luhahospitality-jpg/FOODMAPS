@@ -22,8 +22,6 @@
   .hcard .tag.on { background:#2ecc71; color:#06280f; }
   .hcard .tag.off { background:#3a3a4a; color:#8a8a99; }
 
-  #lightningFlash { position:absolute; inset:0; background:#fffbe0; opacity:0; mix-blend-mode:screen; }
-
   #countdown { position:absolute; inset:0; display:none; align-items:center; justify-content:center; }
   #countdown span { font-size:220px; font-weight:900; color:#fff;
     text-shadow:0 8px 0 #202030, -3px 0 0 #202030, 3px 0 0 #202030, 0 -3px 0 #202030; }
@@ -60,7 +58,6 @@
 <div id="ui">
   <div id="title"><span class="name">BLOCK RACERS</span></div>
   <div id="hud"></div>
-  <div id="lightningFlash"></div>
   <div id="countdown"><span id="countdownNum">3</span></div>
   <div id="finish">
     <div class="trophy">🏆</div>
@@ -96,7 +93,7 @@ const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 
 document.getElementById('url').textContent =
   'Abre en tu iPhone: ' + location.origin + '/controller';
 
-let state = { phase: 'select', countdown: 0, winnerId: null, lightningFlashAt: 0, trackId: null, trackName: '', trackTheme: 'rainbow', track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], coins: [], peels: [], flowers: [], ice: { active: false } };
+let state = { phase: 'select', countdown: 0, winnerId: null, trackId: null, trackName: '', trackTheme: 'rainbow', track: [], trackWidth: 1700, guardrailSegments: [], players: [], boxes: [], coins: [], peels: [], flowers: [], missiles: [], ice: { active: false } };
 socket.on('state', (s) => { handleStateAudioEvents(state, s); state = s; });
 
 // ---------- helpers de materiales/geometria low-poly ----------
@@ -240,7 +237,15 @@ function spawnThemeProp(theme, poolIdx, x, z, rotY) {
   const entry = GLTF_CACHE[def.url];
   if (!entry || !entry.object) return null;
   const inst = entry.object.clone(true);
-  inst.traverse((o) => { o.userData.sharedGeometry = true; });
+  inst.traverse((o) => {
+    o.userData.sharedGeometry = true;
+    // el material SI hay que clonarlo por instancia (la geometria no): el fade de
+    // proximidad a camara cambia la opacidad, y un material compartido haria que
+    // se desvanecieran todos los arboles del mismo tipo a la vez
+    if (o.isMesh && o.material) {
+      o.material = Array.isArray(o.material) ? o.material.map((m) => m.clone()) : o.material.clone();
+    }
+  });
   inst.scale.setScalar(entry.scale);
   inst.position.set(x, 0, z);
   inst.rotation.y = rotY || Math.random() * Math.PI * 2;
@@ -683,25 +688,69 @@ function buildThemeDecor(theme, track, half) {
 const itemGroup = new THREE.Group();
 scene.add(itemGroup);
 
+// ---------- misiles: se actualizan cada frame (no cada 300ms como el resto de items)
+// porque persiguen a su objetivo y necesitan verse moviendose fluido ----------
+const missileGroup = new THREE.Group();
+scene.add(missileGroup);
+const missilePool = [];
+function buildMissileMesh() {
+  const group = new THREE.Group();
+  const body = mesh(new THREE.CylinderGeometry(14, 14, 60, 8), mat('#cfd2d8'));
+  body.rotation.z = Math.PI / 2;
+  group.add(body);
+  const nose = mesh(new THREE.ConeGeometry(14, 26, 8), mat('#ff4d4d'));
+  nose.position.x = 43;
+  nose.rotation.z = -Math.PI / 2;
+  group.add(nose);
+  const flame = mesh(new THREE.ConeGeometry(10, 30, 6), emissiveMat('#ff9f1c'));
+  flame.position.x = -40;
+  flame.rotation.z = Math.PI / 2;
+  flame.userData.flame = true;
+  group.add(flame);
+  return group;
+}
+function updateMissiles(t) {
+  const list = state.missiles || [];
+  while (missilePool.length < list.length) {
+    const g = buildMissileMesh();
+    missileGroup.add(g);
+    missilePool.push(g);
+  }
+  missilePool.forEach((g, i) => {
+    if (i >= list.length) { g.visible = false; return; }
+    g.visible = true;
+    const w = toWorld(list[i].x, list[i].y);
+    if (g.userData.prevX !== undefined) {
+      const dx = w.x - g.userData.prevX, dz = w.z - g.userData.prevZ;
+      if (Math.abs(dx) > 0.01 || Math.abs(dz) > 0.01) g.rotation.y = Math.atan2(-dz, dx);
+    }
+    g.userData.prevX = w.x; g.userData.prevZ = w.z;
+    g.position.set(w.x, 55, w.z);
+    const flameMesh = g.children.find((c) => c.userData.flame);
+    if (flameMesh) flameMesh.scale.setScalar(0.8 + Math.sin(t * 30 + i) * 0.2);
+  });
+}
+
 function rebuildItems() {
   while (itemGroup.children.length) itemGroup.remove(itemGroup.children[0]);
-  // caja de item = "caja misteriosa" que cambia de color como ruleta (boost / estrella / rayo)
+  // caja de item = "caja misteriosa" que cambia de color como ruleta (estrella / hongo / misil).
+  // bien grande para que sea facil de agarrar y se note desde lejos
   (state.boxes || []).forEach((b) => {
     const w = toWorld(b.x, b.y);
-    const box = mesh(new THREE.BoxGeometry(55, 55, 55), emissiveMat('#ffd24d'));
-    box.position.set(w.x, 60, w.z);
+    const box = mesh(new THREE.BoxGeometry(100, 100, 100), emissiveMat('#ffd24d'));
+    box.position.set(w.x, 90, w.z);
     box.userData.spin = true;
     box.userData.rainbow = true;
     itemGroup.add(box);
   });
-  // monedas: doradas, chatas, giran rapido
+  // monedas: doradas, chatas, giran rapido, tambien mas grandes que antes
   (state.coins || []).forEach((c) => {
     const w = toWorld(c.x, c.y);
     const coin = mesh(
-      new THREE.CylinderGeometry(24, 24, 6, 16),
+      new THREE.CylinderGeometry(42, 42, 10, 18),
       new THREE.MeshStandardMaterial({ color: '#ffd700', emissive: '#a67c00', emissiveIntensity: 0.5, metalness: 0.7, roughness: 0.3, flatShading: true })
     );
-    coin.position.set(w.x, 45, w.z);
+    coin.position.set(w.x, 60, w.z);
     coin.rotation.x = Math.PI / 2;
     coin.userData.coinSpin = true;
     coin.userData.bouncePhase = Math.random() * Math.PI * 2;
@@ -756,7 +805,7 @@ function removeKart(i) {
 }
 
 // ---------- HUD (HTML) ----------
-const ITEM_ICON = { boost: '🍄', star: '⭐', lightning: '⚡' };
+const ITEM_ICON = { star: '⭐', mushroom: '🍄', missile: '🚀' };
 const hudEl = document.getElementById('hud');
 function updateHud() {
   hudEl.innerHTML = '';
@@ -871,6 +920,35 @@ const SPLIT_LAYOUTS = {
   4: [[0, 0.5, 0.5, 0.5], [0.5, 0.5, 0.5, 0.5], [0, 0, 0.5, 0.5], [0.5, 0, 0.5, 0.5]],
 };
 
+// props (arboles, rocas, hangares...) que quedan muy cerca de la camara de
+// conduccion se vuelven transparentes para que nunca tapen la vista de la pista
+const DECOR_FADE_NEAR = 260, DECOR_FADE_FAR = 550;
+function updateDecorFade(camPos) {
+  const nearSq = DECOR_FADE_NEAR * DECOR_FADE_NEAR, farSq = DECOR_FADE_FAR * DECOR_FADE_FAR;
+  decorGroup.children.forEach((inst) => {
+    const dx = inst.position.x - camPos.x, dz = inst.position.z - camPos.z;
+    const distSq = dx * dx + dz * dz;
+    let target = 1;
+    if (distSq < farSq) {
+      target = distSq < nearSq ? 0.1 : 0.1 + (Math.sqrt(distSq) - DECOR_FADE_NEAR) / (DECOR_FADE_FAR - DECOR_FADE_NEAR) * 0.9;
+    }
+    const cur = inst.userData.curOpacity === undefined ? 1 : inst.userData.curOpacity;
+    if (target > 0.98 && cur > 0.98) return; // ya opaco y lejos: no tocar, barato
+    const next = cur + (target - cur) * 0.35;
+    inst.userData.curOpacity = next;
+    if (!inst.userData.fadeMats) {
+      const mats = [];
+      inst.traverse((o) => {
+        if (o.isMesh && o.material) {
+          (Array.isArray(o.material) ? o.material : [o.material]).forEach((m) => { m.transparent = true; mats.push(m); });
+        }
+      });
+      inst.userData.fadeMats = mats;
+    }
+    inst.userData.fadeMats.forEach((m) => { m.opacity = next; });
+  });
+}
+
 function renderScene() {
   const w = window.innerWidth, h = window.innerHeight;
   const racers = state.phase === 'racing' ? state.players.filter(Boolean) : [];
@@ -883,6 +961,7 @@ function renderScene() {
     if (racers.length === 1) updateCameraForSlot(state.players.indexOf(racers[0]), racers[0]);
     else updateCameraAveraged();
     updateKartBillboards();
+    updateDecorFade(camera.position);
     renderer.render(scene, camera);
   } else {
     renderer.setScissorTest(true);
@@ -897,6 +976,7 @@ function renderScene() {
       camera.updateProjectionMatrix();
       updateCameraForSlot(slot, p);
       updateKartBillboards();
+      updateDecorFade(camera.position);
       renderer.render(scene, camera);
     });
   }
@@ -1020,10 +1100,6 @@ function sfxItemPickup() {
   const t = audioCtx.currentTime + 0.02;
   ['C6', 'E6', 'G6'].forEach((n, i) => playTone(NOTE_FREQ[n], t + i * 0.06, 0.14, 'triangle', 0.22));
 }
-function sfxBoost() {
-  if (!audioCtx) return;
-  playSweep(280, 1300, audioCtx.currentTime + 0.01, 0.4, 'sawtooth', 0.28);
-}
 function sfxPower() {
   if (!audioCtx) return;
   const t = audioCtx.currentTime + 0.01;
@@ -1061,44 +1137,68 @@ function sfxCoin() {
 function sfxStar() {
   if (!audioCtx) return;
   const t = audioCtx.currentTime + 0.01;
-  ['C5', 'D5', 'E5', 'F5', 'G5', 'A5', 'C6'].forEach((n, i) => playTone(NOTE_FREQ[n] || 1046.5, t + i * 0.045, 0.12, 'triangle', 0.2));
+  playSweep(280, 1300, t, 0.35, 'sawtooth', 0.26);
+  ['C5', 'D5', 'E5', 'F5', 'G5', 'A5', 'C6'].forEach((n, i) => playTone(NOTE_FREQ[n] || 1046.5, t + 0.05 + i * 0.045, 0.12, 'triangle', 0.2));
 }
 function sfxShrink() {
   if (!audioCtx) return;
   playSweep(700, 150, audioCtx.currentTime + 0.01, 0.4, 'square', 0.22);
 }
-function sfxLightning() {
+function sfxMissileLaunch() {
+  if (!audioCtx) return;
+  playSweep(200, 950, audioCtx.currentTime + 0.01, 0.3, 'sawtooth', 0.22);
+}
+function sfxCrash() {
   if (!audioCtx) return;
   const t = audioCtx.currentTime + 0.01;
-  playNoise(t, 0.35, 0.35, false);
-  playSweep(90, 40, t, 0.35, 'sawtooth', 0.3);
+  playNoise(t, 0.3, 0.35, false);
+  playSweep(120, 40, t, 0.3, 'sawtooth', 0.28);
 }
 
-const lightningFlashEl = document.getElementById('lightningFlash');
-function triggerLightningFlash() {
-  lightningFlashEl.style.transition = 'none';
-  lightningFlashEl.style.opacity = '0.85';
-  requestAnimationFrame(() => {
-    lightningFlashEl.style.transition = 'opacity 0.5s ease-out';
-    lightningFlashEl.style.opacity = '0';
-  });
+const explosions = [];
+function spawnExplosion(sx, sy) {
+  const w = toWorld(sx, sy);
+  const group = new THREE.Group();
+  const colors = ['#ff5a1e', '#ffd24d', '#ff9f1c'];
+  for (let i = 0; i < 10; i++) {
+    const chunk = mesh(new THREE.BoxGeometry(24, 24, 24), new THREE.MeshBasicMaterial({ color: colors[i % colors.length] }));
+    const a = (i / 10) * Math.PI * 2;
+    chunk.userData.dir = { x: Math.cos(a), z: Math.sin(a) };
+    chunk.position.set(w.x, 60, w.z);
+    group.add(chunk);
+  }
+  group.position.set(0, 0, 0);
+  group.userData.origin = { x: w.x, z: w.z };
+  scene.add(group);
+  explosions.push({ group, t0: clock.elapsedTime });
+}
+function updateExplosions(t) {
+  for (let i = explosions.length - 1; i >= 0; i--) {
+    const ex = explosions[i];
+    const age = t - ex.t0;
+    if (age > 0.6) { scene.remove(ex.group); explosions.splice(i, 1); continue; }
+    const prog = age / 0.6;
+    ex.group.children.forEach((chunk) => {
+      const dist = prog * 260;
+      chunk.position.set(ex.group.userData.origin.x + chunk.userData.dir.x * dist, 60 + prog * 120, ex.group.userData.origin.z + chunk.userData.dir.z * dist);
+      chunk.scale.setScalar(1 - prog);
+      chunk.rotation.y = prog * 8;
+    });
+  }
 }
 
 function handleStateAudioEvents(prev, next) {
   if (!audioCtx || !prev) return;
   if (next.phase === 'countdown' && next.countdown !== prev.countdown) sfxCountdownBeep(next.countdown);
   if (next.phase === 'finished' && prev.phase !== 'finished') sfxWin();
-  if (next.lightningFlashAt && next.lightningFlashAt !== prev.lightningFlashAt) {
-    sfxLightning();
-    triggerLightningFlash();
-  }
   (next.players || []).forEach((p, i) => {
     const op = (prev.players || [])[i];
     if (!p || !op) return;
     if (p.item && !op.item) sfxItemPickup();
-    if (p.boosting && !op.boosting) sfxBoost();
+    if (!p.item && op.item === 'missile') sfxMissileLaunch();
     if (p.starActive && !op.starActive) sfxStar();
     if (p.shrunk && !op.shrunk) sfxShrink();
+    if (p.crashed && !op.crashed) { sfxCrash(); spawnExplosion(p.x, p.y); }
     if ((p.coins || 0) > (op.coins || 0)) sfxCoin();
     if (p.falling && !op.falling) sfxFall();
     if (!p.falling && op.falling) sfxRespawnPop();
@@ -1191,6 +1291,12 @@ function animate() {
       group.rotation.set(0, 0, 0);
       group.scale.setScalar(baseScale * (0.25 + 0.75 * prog));
       if (prog >= 1) fallAnims[i] = null;
+    } else if (p.crashed) {
+      // golpeado por un misil: gira descontrolado un instante en el lugar
+      group.position.set(w.x, 0, w.z);
+      group.rotation.y = t * 22;
+      group.rotation.z = Math.sin(t * 26) * 0.3;
+      group.scale.setScalar(baseScale);
     } else {
       group.position.set(w.x, 0, w.z);
       group.rotation.set(0, 0, 0);
@@ -1223,6 +1329,8 @@ function animate() {
     if (c.position.y < 0) c.position.y = 2000 + Math.random() * 400;
   });
   updateRainbowRoad(t);
+  updateExplosions(t);
+  updateMissiles(t);
 
   if (!isSelect) renderScene();
 }

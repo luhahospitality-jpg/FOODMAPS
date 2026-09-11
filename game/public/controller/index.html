@@ -34,8 +34,8 @@
   #coinCount { position:fixed; top:8px; left:8px; font-size:14px; font-weight:bold; color:#ffd24d;
     z-index:6; display:none; }
   #boost.item-star { background:#ffe066; box-shadow:0 0 18px 4px rgba(255,224,102,0.9); }
-  #boost.item-lightning { background:#7ad8ff; box-shadow:0 0 18px 4px rgba(122,216,255,0.9); }
-  #boost.item-boost { background:#ffb703; }
+  #boost.item-mushroom { background:#ffb703; }
+  #boost.item-missile { background:#8a8f9a; box-shadow:0 0 18px 4px rgba(138,143,154,0.9); }
 </style>
 </head>
 <body>
@@ -67,9 +67,9 @@
   const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
   const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
   const ITEM_LABEL = {
-    boost: { icon: '🍄', label: 'BOOST' },
     star: { icon: '⭐', label: 'ESTRELLA' },
-    lightning: { icon: '⚡', label: 'RAYO' },
+    mushroom: { icon: '🍄', label: 'HONGO' },
+    missile: { icon: '🚀', label: 'MISIL' },
   };
 
   const socket = io();
@@ -133,8 +133,8 @@
       brakeBtn.classList.remove('disabled');
       boostBtn.classList.toggle('disabled', !currentItem);
       boostBtn.classList.toggle('item-star', currentItem === 'star');
-      boostBtn.classList.toggle('item-lightning', currentItem === 'lightning');
-      boostBtn.classList.toggle('item-boost', currentItem === 'boost');
+      boostBtn.classList.toggle('item-mushroom', currentItem === 'mushroom');
+      boostBtn.classList.toggle('item-missile', currentItem === 'missile');
       if (currentItem) {
         const it = ITEM_LABEL[currentItem];
         boostBtn.innerHTML = '<span class="icon">' + it.icon + '</span><span class="label">' + it.label + '</span>';
