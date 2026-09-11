@@ -174,6 +174,118 @@ function loadGltfTemplate(url, desiredHeight) {
   });
 }
 
+// ---------- gorila y hielo: personajes 3D reales (Kenney) sentados en un karting armado a mano ----------
+// (guardamos una copia propia del .glb en /characters porque el cache de arriba
+// indexa por URL y ya se usan estos mismos modelos como decoracion en la pista
+// espacial con OTRA escala; con una copia en otra ruta cada uso tiene su propio
+// tamano calculado sin pisarse)
+const CHAR_MODEL_URL = { gorilla: '/assets/models/characters/alien.glb', ice: '/assets/models/characters/astronaut.glb' };
+const CHAR_MODEL_HEIGHT = { gorilla: 150, ice: 155 }; // altura ya "sentado": las piernas quedan escondidas dentro del chasis
+const CHAR_MODEL_YAW_OFFSET = { gorilla: 0, ice: 0 }; // ajuste si el modelo no mira hacia +X de fabrica
+const KART_BASE_COLOR = { gorilla: '#3fae4f', ice: '#c7ccd6' };
+Object.values(CHAR_MODEL_URL).forEach((url, i) => loadGltfTemplate(url, Object.values(CHAR_MODEL_HEIGHT)[i]));
+
+// chasis de karting de juguete, bajo poligonaje, armado con las mismas primitivas
+// que el resto del arte del juego (mirando hacia +X local)
+function buildKartBase(color) {
+  const g = new THREE.Group();
+  const bodyMat = mat(color);
+  const darkMat = mat('#22242b');
+
+  const body = mesh(new THREE.BoxGeometry(190, 46, 110), bodyMat);
+  body.position.set(0, 40, 0);
+  g.add(body);
+
+  const nose = mesh(new THREE.BoxGeometry(60, 30, 80), bodyMat);
+  nose.position.set(115, 34, 0);
+  g.add(nose);
+
+  const seatBack = mesh(new THREE.BoxGeometry(24, 60, 90), darkMat);
+  seatBack.position.set(-70, 62, 0);
+  g.add(seatBack);
+
+  const spoiler = mesh(new THREE.BoxGeometry(16, 40, 120), darkMat);
+  spoiler.position.set(-100, 78, 0);
+  g.add(spoiler);
+
+  const wheelGeo = new THREE.CylinderGeometry(30, 30, 26, 12);
+  [[95, 62], [95, -62], [-85, 62], [-85, -62]].forEach(([x, z]) => {
+    const wheel = mesh(wheelGeo, darkMat);
+    wheel.rotation.x = Math.PI / 2;
+    wheel.position.set(x, 30, z);
+    g.add(wheel);
+  });
+
+  return g;
+}
+
+// clona el modelo del piloto con material propio por instancia (igual que los
+// props de pista) y lo sienta arriba del karting
+function attachRider(group, character) {
+  const url = CHAR_MODEL_URL[character];
+  const entry = GLTF_CACHE[url];
+  if (!entry || !entry.object) return false;
+  const inst = entry.object.clone(true);
+  inst.traverse((o) => {
+    if (o.isMesh && o.material) {
+      const mats = (Array.isArray(o.material) ? o.material : [o.material]).map((m) => m.clone());
+      // el material que trae el glb de Kenney se ve casi negro con la luz de la
+      // pista (metalness/roughness pensados para otro entorno, sin mapa de
+      // reflejos): forzamos los mismos valores "low-poly" que usa el resto del
+      // arte del juego para que se vea con los colores reales del personaje
+      mats.forEach((m) => { m.metalness = 0.05; m.roughness = 0.85; m.needsUpdate = true; });
+      o.material = mats.length > 1 ? mats : mats[0];
+    }
+  });
+  // este glb en particular arrastra un offset de posicion heredado del archivo
+  // maestro de Kenney (varios personajes en una sola escena de origen): antes de
+  // escalarlo y sentarlo lo recentramos en X/Z y apoyamos su base en Y=0
+  const box0 = new THREE.Box3().setFromObject(inst);
+  const center0 = box0.getCenter(new THREE.Vector3());
+  inst.position.set(-center0.x, -box0.min.y, -center0.z);
+
+  const wrapper = new THREE.Group();
+  wrapper.add(inst);
+  wrapper.scale.setScalar(entry.scale);
+  wrapper.position.set(-15, 38, 0);
+  wrapper.rotation.y = Math.PI / 2 + (CHAR_MODEL_YAW_OFFSET[character] || 0);
+  group.add(wrapper);
+  group.userData.riderAttached = true;
+  return true;
+}
+
+// kart "real" en 3D: chasis armado + piloto Kenney clavado encima (en vez del
+// cartel plano que usan conejo/princesa). Si el modelo del piloto todavia no
+// termino de cargar se ve solo el karting vacio un instante y despues aparece.
+function buildKart3D(character) {
+  const g = new THREE.Group();
+
+  const shadow = mesh(new THREE.CircleGeometry(140, 16), new THREE.MeshBasicMaterial({ color: '#000', transparent: true, opacity: 0.35 }));
+  shadow.rotation.x = -Math.PI / 2;
+  shadow.position.y = 2;
+  g.add(shadow);
+
+  g.add(buildKartBase(KART_BASE_COLOR[character] || '#dddddd'));
+
+  const auraMat = new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.65, side: THREE.DoubleSide });
+  const aura = mesh(new THREE.TorusGeometry(120, 16, 8, 20), auraMat);
+  aura.rotation.x = Math.PI / 2;
+  aura.position.y = 20;
+  aura.visible = false;
+  aura.userData.aura = true;
+  g.add(aura);
+
+  g.userData.riderChar = character;
+  g.userData.riderAttached = false;
+  attachRider(g, character);
+
+  return g;
+}
+
+KART_BUILDERS.gorilla = () => buildKart3D('gorilla');
+KART_BUILDERS.ice = () => buildKart3D('ice');
+const CHAR_IS_3D = { gorilla: true, ice: true };
+
 const THEME_ASSETS = {
   forest: {
     ground: '#3f7a3a', fog: '#345c3e', bg: '#8fc7e8',
@@ -1257,6 +1369,7 @@ function animate() {
   state.players.forEach((p, i) => {
     if (!p) { removeKart(i); fallAnims[i] = null; return; }
     const group = ensureKart(i, p.character);
+    if (group.userData.riderChar && !group.userData.riderAttached) attachRider(group, group.userData.riderChar);
     const w = toWorld(p.x, p.y);
     const baseScale = (state.phase === 'select' ? 0 : 1) * (p.shrunk ? 0.55 : 1);
     let anim = fallAnims[i];
@@ -1288,7 +1401,7 @@ function animate() {
     } else if (anim && anim.state === 'popping') {
       const prog = Math.min(1, (t - anim.t0) / POP_DURATION);
       group.position.set(w.x, 0, w.z);
-      group.rotation.set(0, 0, 0);
+      group.rotation.set(0, CHAR_IS_3D[p.character] ? -p.angle : 0, 0);
       group.scale.setScalar(baseScale * (0.25 + 0.75 * prog));
       if (prog >= 1) fallAnims[i] = null;
     } else if (p.crashed) {
@@ -1299,7 +1412,10 @@ function animate() {
       group.scale.setScalar(baseScale);
     } else {
       group.position.set(w.x, 0, w.z);
-      group.rotation.set(0, 0, 0);
+      // los karts 3D (gorila/hielo) tienen chasis real: giran para mirar hacia
+      // donde van. Los de cartel (conejo/princesa) siguen en 0,0,0 porque el
+      // cartel se orienta solo hacia la camara en updateKartBillboards
+      group.rotation.set(0, CHAR_IS_3D[p.character] ? -p.angle : 0, 0);
       group.scale.setScalar(baseScale);
     }
     visualPos[i] = { x: group.position.x, z: group.position.z, angle: p.angle };
