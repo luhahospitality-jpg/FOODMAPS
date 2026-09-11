@@ -109,7 +109,8 @@
       selName.textContent = NAMES[s.character] || '';
       selHint.textContent = 'Move el joystick para cambiar - toca ELEGIR para confirmar';
       accelBtn.textContent = 'ELEGIR';
-      brakeBtn.classList.add('disabled');
+      brakeBtn.textContent = 'PISTA';
+      brakeBtn.classList.remove('disabled');
       boostBtn.classList.add('disabled');
       powerBtn.classList.add('disabled');
     } else if (s.phase === 'select' && s.confirmed) {
@@ -118,6 +119,8 @@
       selName.textContent = NAMES[s.character] || '';
       selHint.textContent = 'LISTO - esperando a los demas jugadores...';
       accelBtn.textContent = 'GO';
+      brakeBtn.textContent = 'PISTA';
+      brakeBtn.classList.remove('disabled');
     } else if (s.phase === 'finished') {
       selectInfo.style.display = 'block';
       selEmoji.textContent = s.won ? '🏆' : '🏁';
@@ -126,6 +129,7 @@
     } else {
       selectInfo.style.display = 'none';
       accelBtn.textContent = 'GO';
+      brakeBtn.textContent = 'BRAKE';
       brakeBtn.classList.remove('disabled');
       boostBtn.classList.toggle('disabled', !currentItem);
       boostBtn.classList.toggle('item-star', currentItem === 'star');
@@ -190,7 +194,10 @@
     el.addEventListener('touchcancel', (e) => { e.preventDefault(); onEnd(); });
   }
   bindHold(accelBtn, () => myAccel = true, () => myAccel = false);
-  bindHold(brakeBtn, () => { if (currentPhase === 'racing') myBrake = true; }, () => myBrake = false);
+  bindHold(brakeBtn, () => {
+    if (currentPhase === 'racing') { myBrake = true; return; }
+    if (currentPhase === 'select') socket.emit('cycle_track');
+  }, () => myBrake = false);
 
   boostBtn.addEventListener('touchstart', (e) => {
     e.preventDefault();

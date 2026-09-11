@@ -13,25 +13,49 @@ const CHARACTERS = ['rabbit', 'gorilla', 'princess', 'ice'];
 
 // pista 10x mas grande (todas las coordenadas base se escalan por esto)
 const WORLD_SCALE = 10;
-const TRACK_WIDTH = 170 * WORLD_SCALE;
-const TRACK_POINTS = [
-  { x: 260, y: 300 },
-  { x: 520, y: 230 },
-  { x: 900, y: 260 },
-  { x: 1180, y: 230 },
-  { x: 1400, y: 340 },
-  { x: 1360, y: 520 },
-  { x: 1080, y: 560 },
-  { x: 900, y: 480 },
-  { x: 700, y: 560 },
-  { x: 420, y: 600 },
-  { x: 230, y: 520 },
-  { x: 220, y: 400 },
-].map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE }));
-const N_SEG = TRACK_POINTS.length;
-// tramos con decoracion de baranda (solo visual en el TV); salirse de la pista en
-// cualquier tramo te tira al vacio igual
-const GUARDRAIL_SEGMENTS = new Set([0, 1, 2, 3, 8, 9]);
+const TRACK_WIDTH = 170 * WORLD_SCALE; // igual en las 3 pistas para no re-tunear la fisica
+
+// 3 pistas seleccionables desde el menu: la original (geometria propia) y dos
+// ambientadas con modelos 3D reales descargados (bosque / base espacial)
+const TRACKS_RAW = [
+  {
+    id: 'rainbow', name: 'RAINBOW DUNGEON', theme: 'rainbow',
+    guardrailSegments: [0, 1, 2, 3, 8, 9],
+    points: [
+      { x: 260, y: 300 }, { x: 520, y: 230 }, { x: 900, y: 260 }, { x: 1180, y: 230 },
+      { x: 1400, y: 340 }, { x: 1360, y: 520 }, { x: 1080, y: 560 }, { x: 900, y: 480 },
+      { x: 700, y: 560 }, { x: 420, y: 600 }, { x: 230, y: 520 }, { x: 220, y: 400 },
+    ],
+  },
+  {
+    // ovalo suave (superelipse) en vez de un poligono a mano: garantiza que ningun
+    // giro sea mas cerrado que en la pista original (probado con un script aparte)
+    id: 'forest', name: 'BOSQUE ENCANTADO', theme: 'forest',
+    guardrailSegments: [0, 1, 9, 10],
+    points: [
+      { x: 1360, y: 420 }, { x: 1251, y: 550 }, { x: 987, y: 669 }, { x: 751, y: 696 },
+      { x: 470, y: 617 }, { x: 268, y: 477 }, { x: 268, y: 363 }, { x: 470, y: 223 },
+      { x: 751, y: 144 }, { x: 987, y: 171 }, { x: 1251, y: 290 },
+    ],
+  },
+  {
+    id: 'space', name: 'BASE ESPACIAL', theme: 'space',
+    guardrailSegments: [0, 1, 8, 9],
+    points: [
+      { x: 1420, y: 420 }, { x: 1296, y: 580 }, { x: 980, y: 686 }, { x: 620, y: 686 },
+      { x: 304, y: 580 }, { x: 180, y: 420 }, { x: 304, y: 260 }, { x: 620, y: 154 },
+      { x: 980, y: 154 }, { x: 1296, y: 260 },
+    ],
+  },
+];
+const TRACKS = TRACKS_RAW.map((t) => ({
+  ...t,
+  points: t.points.map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE })),
+  guardrailSegments: new Set(t.guardrailSegments),
+}));
+
+let trackIndex = 0;
+function activeTrack() { return TRACKS[trackIndex]; }
 
 app.use(express.static(__dirname + '/public'));
 
@@ -42,7 +66,8 @@ function freeSlot() {
 }
 
 function segPoint(i) {
-  return TRACK_POINTS[i % N_SEG];
+  const pts = activeTrack().points;
+  return pts[i % pts.length];
 }
 
 function closestPointOnSegment(px, py, ax, ay, bx, by) {
@@ -56,8 +81,9 @@ function closestPointOnSegment(px, py, ax, ay, bx, by) {
 }
 
 function nearestTrackInfo(px, py) {
+  const n = activeTrack().points.length;
   let best = null, bestIdx = -1;
-  for (let i = 0; i < N_SEG; i++) {
+  for (let i = 0; i < n; i++) {
     const a = segPoint(i), b = segPoint(i + 1);
     const r = closestPointOnSegment(px, py, a.x, a.y, b.x, b.y);
     if (!best || r.dist < best.dist) { best = r; bestIdx = i; }
@@ -68,7 +94,8 @@ function nearestTrackInfo(px, py) {
 const RACE_LAPS = 3;
 
 function registerLapProgress(p, idx) {
-  if (idx <= 1 && p.lapIndex >= N_SEG - 2) {
+  const n = activeTrack().points.length;
+  if (idx <= 1 && p.lapIndex >= n - 2) {
     p.lap += 1;
     p.lapIndex = idx;
     if (p.lap >= RACE_LAPS && phase === 'racing') {
@@ -82,7 +109,8 @@ function registerLapProgress(p, idx) {
 }
 
 function spawnFor(slot) {
-  const a = TRACK_POINTS[0], b = TRACK_POINTS[1];
+  const pts = activeTrack().points;
+  const a = pts[0], b = pts[1];
   const dx = b.x - a.x, dy = b.y - a.y;
   const len = Math.sqrt(dx * dx + dy * dy);
   const dirX = dx / len, dirY = dy / len;
@@ -104,29 +132,44 @@ let firstConfirmAt = 0;
 let raceWinnerId = null;
 let finishedAt = 0;
 
-const boostBoxes = [
-  { x: 900, y: 260 },
-  { x: 1360, y: 520 },
-  { x: 700, y: 560 },
-  { x: 230, y: 520 },
-].map((b) => ({ x: b.x * WORLD_SCALE, y: b.y * WORLD_SCALE, active: true, respawnAt: 0 }));
+// las cajas de item y las monedas se recalculan cada vez que cambia la pista activa
+// (sus posiciones se derivan geometricamente de los puntos de esa pista)
+let boostBoxes = [];
+let coins = [];
+const COIN_MAX = 10; // cada moneda suma +3% de velocidad maxima (hasta +30% con las 10)
+
+function computeBoostBoxes(track) {
+  const n = track.points.length;
+  const idxs = [0, 1, 2, 3].map((i) => Math.floor((i * n) / 4));
+  return idxs.map((i) => ({ x: track.points[i].x, y: track.points[i].y, active: true, respawnAt: 0 }));
+}
 
 // monedas repartidas por toda la pista (una por tramo, alternando de lado) que dan
 // un empujoncito de velocidad maxima permanente por el resto de la carrera
-const coins = TRACK_POINTS.map((a, i) => {
-  const b = TRACK_POINTS[(i + 1) % N_SEG];
-  const dx = b.x - a.x, dy = b.y - a.y;
-  const len = Math.sqrt(dx * dx + dy * dy) || 1;
-  const nx = -dy / len, ny = dx / len;
-  const side = i % 2 === 0 ? 1 : -1;
-  const offset = (TRACK_WIDTH / 2) * 0.4 * side;
-  return {
-    x: (a.x + b.x) / 2 + nx * offset,
-    y: (a.y + b.y) / 2 + ny * offset,
-    active: true, respawnAt: 0,
-  };
-});
-const COIN_MAX = 10; // cada moneda suma +3% de velocidad maxima (hasta +30% con las 10)
+function computeCoins(track) {
+  const pts = track.points;
+  const n = pts.length;
+  return pts.map((a, i) => {
+    const b = pts[(i + 1) % n];
+    const dx = b.x - a.x, dy = b.y - a.y;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const nx = -dy / len, ny = dx / len;
+    const side = i % 2 === 0 ? 1 : -1;
+    const offset = (TRACK_WIDTH / 2) * 0.4 * side;
+    return {
+      x: (a.x + b.x) / 2 + nx * offset,
+      y: (a.y + b.y) / 2 + ny * offset,
+      active: true, respawnAt: 0,
+    };
+  });
+}
+
+function regenerateTrackObjects() {
+  const track = activeTrack();
+  boostBoxes = computeBoostBoxes(track);
+  coins = computeCoins(track);
+}
+regenerateTrackObjects();
 
 // caja de item = ruleta al estilo Mario Kart en vez de siempre el mismo boost
 function rollItem() {
@@ -143,6 +186,7 @@ let iceOwnerSlot = -1;
 let lightningFlashAt = 0;
 
 function resetForRace() {
+  regenerateTrackObjects();
   players.forEach((p, i) => {
     if (!p) return;
     const s = spawnFor(i);
@@ -165,8 +209,6 @@ function resetForRace() {
   iceOwnerSlot = -1;
   raceWinnerId = null;
   lightningFlashAt = 0;
-  boostBoxes.forEach((b) => { b.active = true; b.respawnAt = 0; });
-  coins.forEach((c) => { c.active = true; c.respawnAt = 0; });
 }
 
 io.on('connection', (socket) => {
@@ -251,6 +293,12 @@ io.on('connection', (socket) => {
     if (now < p.powerCooldownUntil) return;
     p.powerCooldownUntil = now + 10000;
     usePower(slot);
+  });
+
+  socket.on('cycle_track', () => {
+    if (slot === -1 || !players[slot] || phase !== 'select') return;
+    trackIndex = (trackIndex + 1) % TRACKS.length;
+    regenerateTrackObjects();
   });
 
   socket.on('reset_to_menu', () => {
@@ -557,9 +605,12 @@ function broadcast(now) {
     countdown,
     winnerId: raceWinnerId,
     lightningFlashAt,
-    track: TRACK_POINTS,
+    trackId: activeTrack().id,
+    trackName: activeTrack().name,
+    trackTheme: activeTrack().theme,
+    track: activeTrack().points,
     trackWidth: TRACK_WIDTH,
-    guardrailSegments: Array.from(GUARDRAIL_SEGMENTS),
+    guardrailSegments: Array.from(activeTrack().guardrailSegments),
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),
     coins: coins.filter((c) => c.active).map((c) => ({ x: c.x, y: c.y })),
