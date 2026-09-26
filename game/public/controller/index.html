@@ -70,6 +70,7 @@
   #power { width:100px; height:100px; bottom:174px; right:152px; background:linear-gradient(180deg,#ffc36a,#FF9F1C 50%,#e27a00); }
   #power.ready { box-shadow:0 0 0 4px var(--green), 0 0 22px 6px rgba(85,214,106,.9), 0 7px 0 rgba(0,0,0,.45); }
   #power .cd { font-size:34px; }
+  #power .uses { position:absolute; top:-8px; right:-8px; background:var(--black); color:var(--white); border-radius:14px; padding:2px 8px; font-size:18px; }
   #flash { position:fixed; top:0; right:0; bottom:0; left:0; pointer-events:none; z-index:30; opacity:0; transition:opacity .35s; background:rgba(255,75,92,.45); }
   #flash.on { opacity:1; transition:none; }
 </style>
@@ -152,8 +153,17 @@
     const sel = phase === 'select';
     $('selectInfo').style.display = sel ? 'flex' : 'none';
     const watching = !!s.spectating && !sel;
-    $('endInfo').style.display = phase === 'finished' || watching ? 'flex' : 'none';
-    if (watching) {
+    const arrived = phase === 'racing' && !!s.finished;
+    $('endInfo').style.display = phase === 'finished' || watching || arrived ? 'flex' : 'none';
+    if (arrived) {
+      // ya llego: la carrera sigue hasta que terminen todos
+      $('endImg').src = s.finishPlace === 1 ? '/assets/ui/fx_crown.png' : '/assets/ui/fx_finish.png';
+      $('endT').textContent = '¡LLEGASTE ' + s.finishPlace + 'º!';
+      $('endT').style.color = s.finishPlace === 1 ? 'var(--yellow)' : 'var(--white)';
+      $('endS').textContent = 'Esperando a los demás · faltan ' + (s.racersLeft || 0);
+      if (last.arrived !== s.finishPlace) { buzz([80, 60, 200]); last.arrived = s.finishPlace; }
+      boostBtn.classList.add('disabled'); powerBtn.classList.add('disabled');
+    } else if (watching) {
       // entro con la carrera en curso: mira en la TV y arranca en la proxima (todos juntos)
       $('endImg').src = '/assets/ui/fx_finish.png';
       $('endT').textContent = 'CARRERA EN CURSO';
@@ -177,7 +187,7 @@
       boostBtn.classList.add('disabled'); powerBtn.classList.add('disabled'); powerBtn.classList.remove('ready');
       boostBtn.innerHTML = '<span class="lbl outline">ITEM</span>';
       powerBtn.innerHTML = '<span class="lbl outline">POWER</span>';
-      last.power = null; last.item = null;
+      last.power = null; last.item = null; last.arrived = null;
     } else if (phase === 'finished') {
       $('endImg').src = s.won ? '/assets/ui/fx_crown.png' : '/assets/ui/fx_finish.png';
       $('endT').textContent = s.won ? '¡GANASTE!' : (s.winnerId || '') + ' GANA';
@@ -191,11 +201,15 @@
       boostBtn.classList.toggle('has', !!item);
       const ik = item || '';
       if (last.item !== ik) { boostBtn.innerHTML = item ? ITEM_HTML[item] : '<span class="lbl outline">ITEM</span>'; last.item = ik; }
-      const pk = s.character + (powerReady ? 'R' : s.cooldownSec);
+      const uses = s.powerUses === undefined ? 2 : s.powerUses;
+      const pk = s.character + (powerReady ? 'R' : s.cooldownSec) + uses;
       if (last.power !== pk) {
         powerBtn.classList.toggle('disabled', !powerReady);
         powerBtn.classList.toggle('ready', !!powerReady);
-        powerBtn.innerHTML = powerReady ? '<img src="/assets/ui/' + info.icon + '.png" alt="">' : '<span class="cd outline">' + s.cooldownSec + '</span>';
+        // 2 usos por carrera: el numerito dice cuantos quedan
+        powerBtn.innerHTML = uses <= 0 ? '<span class="lbl outline">SIN<br>POWER</span>'
+          : (powerReady ? '<img src="/assets/ui/' + info.icon + '.png" alt="">' : '<span class="cd outline">' + s.cooldownSec + '</span>')
+            + '<span class="uses outline">×' + uses + '</span>';
         last.power = pk;
       }
     }

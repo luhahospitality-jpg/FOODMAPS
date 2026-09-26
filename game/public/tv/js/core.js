@@ -71,7 +71,7 @@ export function canvasTexture(w, h, draw, opts = {}) {
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = opts.linear ? THREE.NoColorSpace : THREE.SRGBColorSpace;
   if (opts.repeat) { tex.wrapS = tex.wrapT = THREE.RepeatWrapping; }
-  tex.anisotropy = opts.anisotropy || 8;
+  tex.anisotropy = opts.anisotropy || window.__aniso || 8;
   return tex;
 }
 

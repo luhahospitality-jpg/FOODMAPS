@@ -15,7 +15,6 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 // las sombras son de props estaticos: se calculan una sola vez por pista
 renderer.shadowMap.autoUpdate = false;
-setMaxAnisotropy(Math.min(8, renderer.capabilities.getMaxAnisotropy()));
 
 export const scene = new THREE.Scene();
 export const camera = new THREE.PerspectiveCamera(60, 16 / 9, 20, 40000);
@@ -100,7 +99,7 @@ class MultiViewPass extends Pass {
 // resolucion interna dinamica. Es el perfil por defecto en TVs / Android.
 const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
 const LEVELS = [
-  { name: 'tv', prMin: 0.42, prMax: 1.0, prStart: 0.7, bloom: false, shadows: false, samples: 0, lite: true },
+  { name: 'tv', prMin: 0.4, prMax: 0.85, prStart: 0.6, bloom: false, shadows: false, samples: 0, lite: true },
   { name: 'med', prMin: 0.7, prMax: 1.0, prStart: 1.0, bloom: true, shadows: true, samples: 0, lite: false },
   { name: 'high', prMin: 0.8, prMax: DPR, prStart: DPR, bloom: true, shadows: true, samples: 4, lite: false },
 ];
@@ -109,7 +108,10 @@ const forced = { low: 0, tv: 0, med: 1, high: 2 }[params.get('q')];
 const isTvLike = /Android|SmartTV|Smart-TV|MiTV|Mi TV|AFT|BRAVIA|Tizen|WebOS|HbbTV|CrKey|TV/i.test(navigator.userAgent);
 const webgl2 = renderer.capabilities.isWebGL2;
 const startLevel = !webgl2 ? 0 : forced !== undefined ? forced : (isTvLike ? 0 : 2);
-export const quality = { level: startLevel, forced: forced !== undefined || !webgl2, pr: LEVELS[startLevel].prStart, lite: LEVELS[startLevel].lite };
+export const quality = { level: startLevel, forced: forced !== undefined || !webgl2, pr: LEVELS[startLevel].prStart, lite: LEVELS[startLevel].lite, half: params.get('fps') === '30' };
+// el filtrado anisotropico es caro en GPUs de TV: en modo liviano casi no se usa
+window.__aniso = LEVELS[startLevel].lite ? 1 : Math.min(8, renderer.capabilities.getMaxAnisotropy());
+setMaxAnisotropy(window.__aniso);
 // ?pr=0.6 fija la resolucion interna (desactiva la resolucion dinamica); ?lite=0 fuerza materiales PBR
 const forcedPr = parseFloat(params.get('pr'));
 if (forcedPr > 0) quality.pr = forcedPr;
@@ -170,7 +172,7 @@ export function liteify(root) {
 
 function capPr(pr) {
   // nunca mas de ~1920 px de ancho de render (en TVs 4K el navegador puede reportar mas)
-  const maxW = quality.lite ? 1600 : 2560;
+  const maxW = quality.lite ? 1280 : 2560;
   return Math.min(pr, maxW / Math.max(1, window.innerWidth));
 }
 
@@ -230,16 +232,23 @@ export function trackFps(dt, active) {
   fpsAcc = 0; fpsFrames = 0;
   if (warm > 0) { warm--; return; }
   const L = LEVELS[quality.level];
-  if (fps < 48) {
+  // a medio frame-rate (30) el objetivo es otro
+  const low = quality.half ? 27 : 48, high = quality.half ? 29.5 : 57;
+  if (fps < low) {
     good = 0;
     if (quality.pr > L.prMin + 0.01) {
-      quality.pr = Math.max(L.prMin, quality.pr * (fps < 30 ? 0.8 : 0.9));
+      quality.pr = Math.max(L.prMin, quality.pr * (fps < low * 0.65 ? 0.8 : 0.9));
       applyQuality();
     } else if (quality.level > 0 && !quality.forced) {
       setQuality(quality.level - 1);
+    } else if (!quality.half) {
+      // ya esta todo al minimo y sigue sin llegar: 30 cuadros parejos se ven mejor que 40 a los saltos
+      quality.half = true;
+      quality.pr = LEVELS[quality.level].prStart;
+      applyQuality();
     }
     warm = 1;
-  } else if (fps > 57) {
+  } else if (fps > high) {
     if (++good >= 3 && quality.pr < L.prMax - 0.01) {
       quality.pr = Math.min(L.prMax, quality.pr + 0.05);
       applyQuality();

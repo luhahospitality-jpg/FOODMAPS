@@ -1,5 +1,5 @@
 import { THREE, PAL, RAINBOW, canvasTexture, shade } from './core.js';
-import { scene, camera, envTex } from './render.js';
+import { scene, camera, envTex, quality } from './render.js';
 import { tex, loadGltf, cloneGltf } from './assets.js';
 import { fx } from './fx.js';
 import { TRACK, trackGroup, Instancer, unitRoundedBox, unitBox, blockMaterial, groundTop, distPts, pointOnCenter } from './track.js';
@@ -60,12 +60,14 @@ function buildSky(ctx) {
     const t = bd.clone();
     t.needsUpdate = true;
     t.wrapS = THREE.MirroredRepeatWrapping;
-    t.repeat.set(8, 1);
+    // el telon rodea toda la pista (las pistas nuevas son mucho mas grandes)
+    const R = Math.max(8700, ctx.span + 4200), hk = R / 8700;
+    t.repeat.set(Math.max(8, Math.round(8 * hk)), 1);
     const cyl = new THREE.Mesh(
-      new THREE.CylinderGeometry(8700, 8700, 3700, 96, 1, true),
+      new THREE.CylinderGeometry(R, R, 3700 * hk, 64, 1, true),
       new THREE.MeshBasicMaterial({ map: t, side: THREE.BackSide, fog: false })
     );
-    cyl.position.y = 1450;
+    cyl.position.y = 1450 * hk;
     trackGroup.add(cyl);
   }
 
@@ -85,7 +87,7 @@ function buildSky(ctx) {
       for (let i = 0; i < 12; i++) { c.fillStyle = `rgba(255,255,255,${0.05 + (i % 3) * 0.04})`; c.fillRect(0, i * 22 + 4, w, 9); }
     });
     const planet = new THREE.Mesh(new THREE.SphereGeometry(2600, 48, 24), new THREE.MeshBasicMaterial({ map: planetTex, fog: false }));
-    planet.position.set(-9000, 6500, -14000);
+    planet.position.set(-9000 * ctx.k, 6500 * ctx.k, -14000 * ctx.k);
     trackGroup.add(planet);
     const ring = new THREE.Mesh(new THREE.RingGeometry(3400, 5200, 96), new THREE.MeshBasicMaterial({ color: '#ffd6f0', transparent: true, opacity: 0.55, side: THREE.DoubleSide, fog: false }));
     ring.position.copy(planet.position); ring.rotation.set(1.2, 0.3, 0.2);
@@ -95,7 +97,7 @@ function buildSky(ctx) {
 
 function buildClouds(ctx, count, color) {
   for (let i = 0; i < count; i++) {
-    const a = ctx.rand() * Math.PI * 2, r = 3000 + ctx.rand() * 4800;
+    const a = ctx.rand() * Math.PI * 2, r = (3000 + ctx.rand() * 4800) * ctx.k;
     const sz = 900 + ctx.rand() * 1300;
     fx.addStatic('dust', Math.cos(a) * r, 2300 + ctx.rand() * 1600, Math.sin(a) * r, sz, color, 1, false, 1.1);
   }
@@ -189,11 +191,10 @@ function buildCrystals(list) {
   const byColor = {};
   list.forEach((c) => { (byColor[c.color] = byColor[c.color] || []).push(c); });
   Object.entries(byColor).forEach(([color, items]) => {
-    const mat = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.9, roughness: 0.12, metalness: 0.2, flatShading: true, transparent: true, opacity: 0.92, envMap: envTex, envMapIntensity: 0.8 });
+    const mat = new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.9, roughness: 0.12, metalness: 0.2, flatShading: true, transparent: !quality.lite, opacity: quality.lite ? 1 : 0.92, envMap: envTex, envMapIntensity: 0.8 });
     const inst = new Instancer(geo, mat, items.length);
     items.forEach((c) => inst.add(c.x, c.y, c.z, c.s * 0.8, c.s * 2.2, c.s * 0.8, c.rot, '#ffffff'));
-    const m = inst.build(trackGroup, true);
-    if (m) m.castShadow = false;
+    inst.build(trackGroup, false);
   });
 }
 
@@ -262,7 +263,7 @@ function buildRainbowArch(ctx, s, radius) {
   const g = new THREE.Group();
   RAINBOW.forEach((col, i) => {
     const m = new THREE.Mesh(
-      new THREE.TorusGeometry(radius + i * 80, 40, 10, 64, Math.PI),
+      new THREE.TorusGeometry(radius + i * 80, 40, quality.lite ? 6 : 10, quality.lite ? 32 : 64, Math.PI),
       new THREE.MeshStandardMaterial({ color: col, emissive: col, emissiveIntensity: 0.55, roughness: 0.35 })
     );
     g.add(m);
@@ -279,7 +280,7 @@ function buildFloatingBlocks(ctx, n) {
   const data = [];
   const color = new THREE.Color();
   for (let i = 0; i < n; i++) {
-    const a = ctx.rand() * Math.PI * 2, r = 1500 + ctx.rand() * 6000;
+    const a = ctx.rand() * Math.PI * 2, r = (1500 + ctx.rand() * 6000) * ctx.k;
     data.push({ x: Math.cos(a) * r, z: Math.sin(a) * r, y: 900 + ctx.rand() * 1900, s: 120 + ctx.rand() * 200, ph: ctx.rand() * 6.28, sp: 0.3 + ctx.rand() * 0.6 });
     im.setColorAt(i, color.set(cols[i % cols.length]));
   }
@@ -299,7 +300,7 @@ function buildFloatingBlocks(ctx, n) {
 // estrellas del moodboard titilando en el cielo / sobre pedestales
 function buildStarSprites(ctx, n, minY, maxY) {
   for (let i = 0; i < n; i++) {
-    const a = ctx.rand() * Math.PI * 2, r = 2500 + ctx.rand() * 5500;
+    const a = ctx.rand() * Math.PI * 2, r = (2500 + ctx.rand() * 5500) * ctx.k;
     fx.addStatic('star', Math.cos(a) * r, minY + ctx.rand() * (maxY - minY), Math.sin(a) * r, 120 + ctx.rand() * 160, '#ffffff', 1.5);
   }
 }
@@ -394,6 +395,9 @@ function fence(inst, s, len) {
 
 // ---------- armado por tema ----------
 export async function buildDecor(ctx) {
+  const b = TRACK.bounds;
+  ctx.span = Math.max(Math.abs(b.minX), Math.abs(b.maxX), Math.abs(b.minZ), Math.abs(b.maxZ));
+  ctx.k = Math.max(1, ctx.span / 6000);
   crowdBoards.length = 0;
   fadeProps.length = 0;
   gltfSets.length = 0;

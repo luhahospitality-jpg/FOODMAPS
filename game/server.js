@@ -16,43 +16,13 @@ const CHARACTERS = ['rabbit', 'gorilla', 'princess', 'ice'];
 const WORLD_SCALE = 10;
 const TRACK_WIDTH = 170 * WORLD_SCALE; // igual en las 3 pistas para no re-tunear la fisica
 
-// 3 pistas seleccionables desde el menu (las dos primeras son las del moodboard)
-const TRACKS_RAW = [
-  {
-    id: 'rainbow', name: 'RAINBOW DUNGEON', theme: 'rainbow',
-    guardrailSegments: [0, 1, 2, 3, 8, 9],
-    points: [
-      { x: 260, y: 300 }, { x: 520, y: 230 }, { x: 900, y: 260 }, { x: 1180, y: 230 },
-      { x: 1400, y: 340 }, { x: 1360, y: 520 }, { x: 1080, y: 560 }, { x: 900, y: 480 },
-      { x: 700, y: 560 }, { x: 420, y: 600 }, { x: 230, y: 520 }, { x: 220, y: 400 },
-    ],
-  },
-  {
-    // ovalo suave (superelipse) en vez de un poligono a mano: garantiza que ningun
-    // giro sea mas cerrado que en la pista original (probado con un script aparte)
-    id: 'banana', name: 'BANANA CASTLE', theme: 'banana',
-    guardrailSegments: [0, 1, 9, 10],
-    points: [
-      { x: 1360, y: 420 }, { x: 1251, y: 550 }, { x: 987, y: 669 }, { x: 751, y: 696 },
-      { x: 470, y: 617 }, { x: 268, y: 477 }, { x: 268, y: 363 }, { x: 470, y: 223 },
-      { x: 751, y: 144 }, { x: 987, y: 171 }, { x: 1251, y: 290 },
-    ],
-  },
-  {
-    id: 'space', name: 'BASE ESPACIAL', theme: 'space',
-    guardrailSegments: [0, 1, 8, 9],
-    points: [
-      { x: 1420, y: 420 }, { x: 1296, y: 580 }, { x: 980, y: 686 }, { x: 620, y: 686 },
-      { x: 304, y: 580 }, { x: 180, y: 420 }, { x: 304, y: 260 }, { x: 620, y: 154 },
-      { x: 980, y: 154 }, { x: 1296, y: 260 },
-    ],
-  },
-];
+// 3 pistas largas y con curvas cerradas (se generan suavizadas en tracks.js)
+const { TRACK_DEFS } = require('./tracks');
 // la linea de largada/meta esta a START_DIST del primer punto, sobre el primer tramo;
 // la grilla arranca detras de la linea y la vuelta se cuenta al cruzarla
 const START_DIST = 1000;
-const TRACKS = TRACKS_RAW.map((t) => {
-  const points = t.points.map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE }));
+const TRACKS = TRACK_DEFS.map((t) => {
+  const points = t.points;
   const seg0 = Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y);
   return { ...t, points, guardrailSegments: new Set(t.guardrailSegments), startT: START_DIST / seg0 };
 });
@@ -115,15 +85,7 @@ function registerLapProgress(p, e) {
   if (idx <= 1 && p.lapIndex >= n - 2) {
     p.lap += 1;
     p.lapIndex = idx;
-    if (p.lap >= RACE_LAPS && phase === 'racing') {
-      phase = 'finished';
-      raceWinnerId = p.id;
-      finishedAt = Date.now();
-      p.progress = p.lap * n + e;
-      finalRanking = players.filter(racer)
-        .sort((a, b) => (b === p ? 1 : 0) - (a === p ? 1 : 0) || (b.progress || 0) - (a.progress || 0))
-        .map((o) => o.id);
-    }
+    if (p.lap >= RACE_LAPS && !p.finished && phase === 'racing') finishRacer(p);
   } else if (idx > p.lapIndex && idx <= p.lapIndex + 2) {
     // solo se avanza tramo a tramo: ir marcha atras cruzando la meta ya no suma una vuelta
     p.lapIndex = idx;
@@ -140,8 +102,35 @@ function updateProgress(p, e) {
   p.progress = p.lap * n + raw;
 }
 
+// la carrera sigue hasta que llegan TODOS; el que llega sigue en piloto automatico
+let finishOrder = [];
+let firstFinishAt = 0;
+let raceStartAt = 0;
+const FINISH_GRACE_MS = 150000; // por si alguien deja el celular: tope despues del ganador
+
+function finishRacer(p) {
+  const now = Date.now();
+  p.finished = true;
+  finishOrder.push(p.id);
+  p.finishPlace = finishOrder.length;
+  p.finishTime = now - raceStartAt;
+  if (p.finishPlace === 1) { raceWinnerId = p.id; firstFinishAt = now; }
+  if (!p.ai) p.ai = newAi();
+  p.input.accel = false; p.input.brake = false;
+  if (players.every((q) => !racer(q) || q.finished)) endRace(now);
+}
+
+function endRace(now) {
+  phase = 'finished';
+  finishedAt = now;
+  const rest = players.filter((q) => racer(q) && !q.finished)
+    .sort((a, b) => (b.progress || 0) - (a.progress || 0)).map((q) => q.id);
+  finalRanking = finishOrder.concat(rest);
+}
+
 function computePlaces() {
-  const racing = players.filter(racer).sort((a, b) => (b.progress || 0) - (a.progress || 0));
+  const racing = players.filter(racer).sort((a, b) =>
+    (a.finished ? a.finishPlace : 99) - (b.finished ? b.finishPlace : 99) || (b.progress || 0) - (a.progress || 0));
   const places = {};
   racing.forEach((p, i) => { places[p.id] = i + 1; });
   return places;
@@ -180,30 +169,36 @@ let boostBoxes = [];
 let coins = [];
 const COIN_MAX = 10; // cada moneda suma +3% de velocidad maxima (hasta +30% con las 10)
 
-function computeBoostBoxes(track) {
-  const n = track.points.length;
-  const idxs = [0, 1, 2, 3].map((i) => Math.floor((i * n) / 4));
-  return idxs.map((i) => ({ x: track.points[i].x, y: track.points[i].y, active: true, respawnAt: 0 }));
+function lateral(track, i, frac, off) {
+  const pts = track.points, n = pts.length;
+  const a = pts[i % n], b = pts[(i + 1) % n];
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const len = Math.sqrt(dx * dx + dy * dy) || 1;
+  return { x: Math.round(a.x + dx * frac - (dy / len) * off), y: Math.round(a.y + dy * frac + (dx / len) * off) };
 }
 
-// monedas repartidas por toda la pista (una por tramo, alternando de lado) que dan
-// un empujoncito de velocidad maxima permanente por el resto de la carrera
-function computeCoins(track) {
-  const pts = track.points;
-  const n = pts.length;
-  return pts.map((a, i) => {
-    const b = pts[(i + 1) % n];
-    const dx = b.x - a.x, dy = b.y - a.y;
-    const len = Math.sqrt(dx * dx + dy * dy) || 1;
-    const nx = -dy / len, ny = dx / len;
-    const side = i % 2 === 0 ? 1 : -1;
-    const offset = (TRACK_WIDTH / 2) * 0.4 * side;
-    return {
-      x: (a.x + b.x) / 2 + nx * offset,
-      y: (a.y + b.y) / 2 + ny * offset,
-      active: true, respawnAt: 0,
-    };
+// filas de 3 cajas cruzando la pista, repartidas por la vuelta (lejos de la largada)
+function computeBoostBoxes(track) {
+  const n = track.points.length;
+  const out = [];
+  [0.14, 0.33, 0.52, 0.7, 0.88].forEach((f) => {
+    const i = Math.floor(f * n);
+    [-520, 0, 520].forEach((off) => out.push({ ...lateral(track, i, 0.5, off), active: true, respawnAt: 0 }));
   });
+  return out;
+}
+
+// monedas en tiras de 3 (cada 3 tramos, alternando de lado) que dan un empujoncito
+// de velocidad maxima permanente por el resto de la carrera
+function computeCoins(track) {
+  const n = track.points.length;
+  const out = [];
+  for (let i = 4; i < n - 1; i += 3) {
+    const side = (i / 3) % 2 < 1 ? 1 : -1;
+    const off = (TRACK_WIDTH / 2) * 0.45 * side;
+    [0.2, 0.5, 0.8].forEach((f) => out.push({ ...lateral(track, i, f, off), active: true, respawnAt: 0 }));
+  }
+  return out;
 }
 
 function regenerateTrackObjects() {
@@ -247,10 +242,18 @@ function resetForRace() {
     p.slowUntil = 0;
     p.coins = 0;
     p.powerCooldownUntil = 0;
+    p.powerUses = POWER_USES;
+    p.boostUntil = 0;
     p.fallUntil = 0;
     p.progress = 0;
+    p.finished = false;
+    p.finishPlace = 0;
+    p.finishTime = 0;
+    if (!p.bot) p.ai = null;
   });
   finalRanking = [];
+  finishOrder = [];
+  firstFinishAt = 0;
   peels = [];
   flowers = [];
   missiles = [];
@@ -291,7 +294,7 @@ io.on('connection', (socket) => {
         p.selectZone = 'neutral';
       }
       if (accel && !p.prevAccel) confirmSelection(slot);
-    } else {
+    } else if (!p.finished) {
       p.input.steer = steer;
       p.input.accel = accel;
       p.input.brake = brake;
@@ -334,7 +337,8 @@ function makePlayer(slot, socketId, character) {
     x: s.x, y: s.y, angle: s.angle, speed: 0,
     lives: 3, lap: 0, lapIndex: 0, progress: 0,
     item: null, starUntil: 0, shrunkUntil: 0, crashUntil: 0, slowUntil: 0, coins: 0,
-    powerCooldownUntil: 0, fallUntil: 0,
+    powerCooldownUntil: 0, powerUses: POWER_USES, boostUntil: 0, fallUntil: 0,
+    finished: false, finishPlace: 0, finishTime: 0,
     input: { steer: 0, accel: false, brake: false },
     prevAccel: false,
     selectZone: 'neutral',
@@ -381,10 +385,15 @@ function addBots() {
     b.bot = true;
     b.id = 'CPU' + (k + 1);
     b.confirmed = true;
-    b.ai = { pace: 0.93, basePace: 0.92 + Math.random() * 0.05, lane: (Math.random() - 0.5) * 700, itemAt: 0, stuckSince: 0, reverseUntil: 0, powerAt: 0 };
+    b.ai = newAi();
     players[slot] = b;
     k++;
   }
+}
+
+// CPU de nivel bajo: mas lentos que el tope y usan items/poderes sin apuro
+function newAi() {
+  return { pace: 0.86, basePace: 0.84 + Math.random() * 0.06, lane: (Math.random() - 0.5) * 700, itemAt: 0, stuckSince: 0, reverseUntil: 0, powerAt: 0 };
 }
 
 // punto de la linea central a `dist` unidades por delante de `info` (sobre la pista)
@@ -412,21 +421,25 @@ function wrapAngle(a) {
 }
 
 function botsThink(now) {
-  const humans = players.filter((p) => racer(p) && !p.bot);
+  const humans = players.filter((p) => racer(p) && !p.bot && !p.finished);
   const bestHuman = humans.reduce((m, p) => Math.max(m, p.progress || 0), -Infinity);
   players.forEach((p, slot) => {
-    if (!racer(p) || !p.bot) return;
+    // los CPU y los que ya llegaron (piloto automatico) manejan solos
+    if (!racer(p) || (!p.bot && !p.finished)) return;
     const ai = p.ai;
     const inp = p.input;
     if (now < p.fallUntil || now < p.crashUntil) { inp.accel = false; inp.brake = false; inp.steer = 0; return; }
 
-    // ritmo con "goma": ni se escapan ni quedan tirados lejos de los humanos
+    // ritmo con "goma" (en tramos de 700): ni se escapan ni quedan tirados lejos de los humanos
     let pace = ai.basePace;
-    if (humans.length) {
+    if (p.finished) pace = 0.7;
+    else if (humans.length) {
       const gap = (p.progress || 0) - bestHuman;
-      if (gap > 1.2) pace *= 0.86;
-      else if (gap > 0.4) pace *= 0.95;
-      else if (gap < -2) pace *= 1.07;
+      if (gap > 6) pace *= 0.85;
+      else if (gap > 2) pace *= 0.93;
+      else if (gap < -14) pace *= 1.08;
+    } else {
+      pace = 0.95; // ya llegaron todos los humanos: que terminen rapido
     }
     ai.pace = pace;
 
@@ -457,16 +470,17 @@ function botsThink(now) {
     inp.brake = sharp > 1.3 && p.speed > 1200;
     inp.accel = !inp.brake && !(sharp > 0.8 && p.speed > 1500);
 
+    if (p.finished) return;
     // items: los usa un rato despues de agarrarlos
     if (p.item) {
-      if (!ai.itemAt) ai.itemAt = now + 800 + Math.random() * 2700;
+      if (!ai.itemAt) ai.itemAt = now + 1500 + Math.random() * 4000;
       else if (now >= ai.itemAt) { ai.itemAt = 0; useItem(slot); }
     } else {
       ai.itemAt = 0;
     }
     // poder especial: de vez en cuando, cuando esta listo
     if (now >= p.powerCooldownUntil) {
-      if (!ai.powerAt) ai.powerAt = now + 2000 + Math.random() * 6000;
+      if (!ai.powerAt) ai.powerAt = now + 6000 + Math.random() * 12000;
       else if (now >= ai.powerAt) { ai.powerAt = 0; tryPower(slot); }
     }
   });
@@ -474,7 +488,7 @@ function botsThink(now) {
 
 function useItem(slot) {
   const p = players[slot];
-  if (!racer(p) || phase !== 'racing' || !p.item) return;
+  if (!racer(p) || p.finished || phase !== 'racing' || !p.item) return;
   {
     const now = Date.now();
     const item = p.item;
@@ -484,13 +498,13 @@ function useItem(slot) {
       p.speed = Math.max(p.speed, STAR_SPEED * 0.85); // empujon instantaneo, no solo el tope
     } else if (item === 'mushroom') {
       players.forEach((o, i) => {
-        if (!racer(o) || i === slot) return;
+        if (!racer(o) || o.finished || i === slot) return;
         o.shrunkUntil = now + 5000;
       });
     } else if (item === 'missile') {
       let targetSlot = -1, bestDist = Infinity;
       players.forEach((o, i) => {
-        if (!racer(o) || i === slot) return;
+        if (!racer(o) || o.finished || i === slot) return;
         const dx = o.x - p.x, dy = o.y - p.y;
         const d = dx * dx + dy * dy;
         if (d < bestDist) { bestDist = d; targetSlot = i; }
@@ -508,12 +522,16 @@ function useItem(slot) {
   }
 }
 
+// cada poder se puede usar 2 veces por carrera (con un respiro entre uso y uso)
+const POWER_USES = 2;
+const POWER_COOLDOWN = 6000;
 function tryPower(slot) {
   const p = players[slot];
-  if (!racer(p) || phase !== 'racing') return;
+  if (!racer(p) || p.finished || phase !== 'racing') return;
   const now = Date.now();
-  if (now < p.powerCooldownUntil) return;
-  p.powerCooldownUntil = now + 10000;
+  if (now < p.powerCooldownUntil || p.powerUses <= 0) return;
+  p.powerUses -= 1;
+  p.powerCooldownUntil = now + POWER_COOLDOWN;
   usePower(slot);
 }
 
@@ -532,38 +550,50 @@ function confirmSelection(slot) {
   if (!firstConfirmAt) firstConfirmAt = Date.now();
 }
 
+function hittable(o, i, slot, now) {
+  return racer(o) && i !== slot && !o.finished && now >= o.starUntil && now >= o.fallUntil;
+}
+
 function usePower(slot) {
   const p = players[slot];
   const now = Date.now();
+  const fx = Math.cos(p.angle), fy = Math.sin(p.angle);
   if (p.character === 'rabbit') {
-    p.speed = Math.min(p.speed + 400, 3000);
+    // zanahoria gigante: turbo propio y golpe a los que tiene cerca por delante
+    p.boostUntil = now + 2200;
+    p.speed = Math.max(p.speed, MAX_SPEED * 1.2);
     players.forEach((o, i) => {
-      if (!racer(o) || i === slot) return;
+      if (!hittable(o, i, slot, now)) return;
       const dx = o.x - p.x, dy = o.y - p.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist > 95 * WORLD_SCALE) return;
-      const facing = Math.cos(p.angle) * dx + Math.sin(p.angle) * dy;
-      if (facing > 0) o.slowUntil = now + 1200;
+      if (Math.hypot(dx, dy) > 1800 || fx * dx + fy * dy < -200) return;
+      o.crashUntil = now + 1000;
+      o.speed = 0;
     });
   } else if (p.character === 'gorilla') {
-    peels.push({
-      x: p.x - Math.cos(p.angle) * 32 * WORLD_SCALE,
-      y: p.y - Math.sin(p.angle) * 32 * WORLD_SCALE,
+    // 3 cascaras en abanico detras
+    [-1, 0, 1].forEach((k) => peels.push({
+      x: p.x - fx * 380 - fy * k * 430,
+      y: p.y - fy * 380 + fx * k * 430,
       ownerSlot: slot,
-      expiresAt: now + 10000,
-    });
+      expiresAt: now + 20000,
+    }));
   } else if (p.character === 'princess') {
-    flowers.push({
-      x: p.x + Math.cos(p.angle) * 26 * WORLD_SCALE,
-      y: p.y + Math.sin(p.angle) * 26 * WORLD_SCALE,
-      vx: Math.cos(p.angle) * 340 * WORLD_SCALE,
-      vy: Math.sin(p.angle) * 340 * WORLD_SCALE,
-      ownerSlot: slot,
-      expiresAt: now + 1200,
+    // 3 flores venenosas en abanico hacia adelante
+    [-0.22, 0, 0.22].forEach((da) => {
+      const a = p.angle + da, v = 4200 + Math.max(0, p.speed);
+      flowers.push({
+        x: p.x + Math.cos(a) * 300, y: p.y + Math.sin(a) * 300,
+        vx: Math.cos(a) * v, vy: Math.sin(a) * v,
+        ownerSlot: slot,
+        expiresAt: now + 1600,
+      });
     });
   } else if (p.character === 'ice') {
-    iceUntil = now + 4000;
+    // congela a TODOS los demas (van lentos y resbalan) y el que lo usa va con turbo
+    iceUntil = now + 5000;
     iceOwnerSlot = slot;
+    p.speed = Math.max(p.speed, MAX_SPEED);
+    players.forEach((o, i) => { if (hittable(o, i, slot, now)) o.speed *= 0.4; });
   }
 }
 
@@ -598,11 +628,12 @@ setInterval(() => {
     if (countdownAcc >= 1000) {
       countdownAcc = 0;
       countdown -= 1;
-      if (countdown <= 0) phase = 'racing';
+      if (countdown <= 0) { phase = 'racing'; raceStartAt = now; }
     }
   } else if (phase === 'finished') {
     if (now - finishedAt > 12000) backToMenu();
   } else if (phase === 'racing') {
+    if (firstFinishAt && now - firstFinishAt > FINISH_GRACE_MS) endRace(now);
     boostBoxes.forEach((b) => {
       if (!b.active && now >= b.respawnAt) b.active = true;
     });
@@ -618,23 +649,27 @@ setInterval(() => {
       if (now < p.crashUntil) { p.speed = 0; return; }
 
       const starActive = now < p.starUntil;
-      const onIce = iceOwnerSlot !== -1 && now < iceUntil && slotIdx !== iceOwnerSlot && !starActive;
+      const iceOn = iceOwnerSlot !== -1 && now < iceUntil;
+      const onIce = iceOn && slotIdx !== iceOwnerSlot && !starActive && !p.finished;
+      const turbo = (iceOn && slotIdx === iceOwnerSlot) || now < p.boostUntil;
       const slowed = now < p.slowUntil && !starActive;
       const shrunk = now < p.shrunkUntil && !starActive;
 
       const friction = onIce ? 400 : FRICTION;
-      const turnRate = onIce ? TURN_RATE * 0.4 : TURN_RATE;
+      const turnRate = onIce ? TURN_RATE * 0.6 : TURN_RATE;
       const coinBonus = (p.coins || 0) * (MAX_SPEED * 0.03);
       let maxSpeed = slowed ? 900 : starActive ? STAR_SPEED : MAX_SPEED;
       if (shrunk) maxSpeed = Math.min(maxSpeed, 750);
       maxSpeed += coinBonus;
-      if (p.bot) maxSpeed *= p.ai.pace;
+      if (onIce) maxSpeed *= 0.55; // congelado: va lento
+      if (turbo && !slowed) maxSpeed *= 1.3; // turbo del hielo / zanahoria
+      if (p.ai && (p.bot || p.finished)) maxSpeed *= p.ai.pace;
 
       const { input } = p;
       if (slowed) {
         p.speed = Math.max(0, p.speed - 4000 * dt);
       } else if (input.accel) {
-        p.speed += ACCEL * dt;
+        p.speed += ACCEL * (turbo ? 1.6 : 1) * dt;
       } else if (input.brake) {
         p.speed -= BRAKE * dt;
       } else if (p.speed > 0) {
@@ -657,10 +692,10 @@ setInterval(() => {
     // choques entre autos: se empujan y pueden mandarse al vacio entre si
     for (let i = 0; i < players.length; i++) {
       const a = players[i];
-      if (!racer(a) || now < a.fallUntil || now < a.crashUntil) continue;
+      if (!racer(a) || a.finished || now < a.fallUntil || now < a.crashUntil) continue;
       for (let j = i + 1; j < players.length; j++) {
         const b = players[j];
-        if (!racer(b) || now < b.fallUntil || now < b.crashUntil) continue;
+        if (!racer(b) || b.finished || now < b.fallUntil || now < b.crashUntil) continue;
         const dx = b.x - a.x, dy = b.y - a.y;
         let dist = Math.sqrt(dx * dx + dy * dy);
         const minDist = 32 * WORLD_SCALE;
@@ -700,12 +735,12 @@ setInterval(() => {
       if (!racer(p)) return;
       if (now < p.fallUntil || now < p.crashUntil) return;
 
-      const starActive = now < p.starUntil;
+      const starActive = now < p.starUntil || p.finished;
       for (const peel of peels) {
         if (peel.ownerSlot === players.indexOf(p) || peel.expiresAt === 0 || starActive) continue;
         const dx = p.x - peel.x, dy = p.y - peel.y;
-        if (Math.sqrt(dx * dx + dy * dy) < 24 * WORLD_SCALE) {
-          p.slowUntil = now + 1000;
+        if (Math.sqrt(dx * dx + dy * dy) < 30 * WORLD_SCALE) {
+          p.slowUntil = now + 1200;
           peel.expiresAt = 0;
         }
       }
@@ -713,14 +748,14 @@ setInterval(() => {
       for (const fl of flowers) {
         if (fl.ownerSlot === players.indexOf(p) || fl.expiresAt === 0 || starActive) continue;
         const dx = p.x - fl.x, dy = p.y - fl.y;
-        if (Math.sqrt(dx * dx + dy * dy) < 26 * WORLD_SCALE) {
-          p.slowUntil = now + 1500;
+        if (Math.sqrt(dx * dx + dy * dy) < 38 * WORLD_SCALE) {
+          p.slowUntil = now + 1800;
           fl.expiresAt = 0;
         }
       }
 
       boostBoxes.forEach((b) => {
-        if (!b.active || p.item) return;
+        if (!b.active || p.item || p.finished) return;
         const dx = p.x - b.x, dy = p.y - b.y;
         if (Math.sqrt(dx * dx + dy * dy) < 60 * WORLD_SCALE) {
           p.item = rollItem();
@@ -730,7 +765,7 @@ setInterval(() => {
       });
 
       coins.forEach((c) => {
-        if (!c.active) return;
+        if (!c.active || p.finished) return;
         const dx = p.x - c.x, dy = p.y - c.y;
         if (Math.sqrt(dx * dx + dy * dy) < 46 * WORLD_SCALE) {
           c.active = false;
@@ -777,7 +812,7 @@ setInterval(() => {
     // misiles: persiguen al objetivo (re-apuntan cada tick) hasta chocarlo o vencer
     missiles.forEach((m) => {
       const target = players[m.targetSlot];
-      if (!target || now >= m.expiresAt) return;
+      if (!target || target.finished || now >= m.expiresAt) { m.expiresAt = 0; return; }
       const dx = target.x - m.x, dy = target.y - m.y;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
       if (dist < 45 * WORLD_SCALE) {
@@ -795,8 +830,12 @@ setInterval(() => {
   broadcast(now);
 }, TICK_MS);
 
+// la forma de la pista (100 puntos) solo viaja 1 vez por segundo o cuando cambia
+let broadcastTick = 0, lastTrackSent = -1;
 function broadcast(now) {
   const places = computePlaces();
+  const sendTrack = trackIndex !== lastTrackSent || broadcastTick++ % 20 === 0;
+  lastTrackSent = trackIndex;
   const statePlayers = players.map((p) => {
     if (!p) return null;
     return {
@@ -806,7 +845,7 @@ function broadcast(now) {
       confirmed: p.confirmed,
       bot: !!p.bot,
       spectating: !!p.spectating,
-      x: p.x, y: p.y, angle: p.angle,
+      x: Math.round(p.x), y: Math.round(p.y), angle: Math.round(p.angle * 1000) / 1000,
       steer: p.input.steer,
       lives: p.lives,
       lap: p.lap,
@@ -814,16 +853,21 @@ function broadcast(now) {
       item: p.item,
       coins: p.coins || 0,
       powerCooldown: Math.max(0, Math.ceil((p.powerCooldownUntil - now) / 1000)),
+      powerUses: p.powerUses,
+      finished: !!p.finished,
+      finishPlace: p.finishPlace || 0,
+      finishTime: p.finishTime || 0,
+      turbo: now < p.boostUntil || (iceOwnerSlot === players.indexOf(p) && now < iceUntil),
       starActive: now < p.starUntil,
       shrunk: now < p.shrunkUntil,
       crashed: now < p.crashUntil,
       slowed: now < p.slowUntil,
       falling: now < p.fallUntil,
-      powerReady: now >= p.powerCooldownUntil,
+      powerReady: now >= p.powerCooldownUntil && p.powerUses > 0,
     };
   });
 
-  io.emit('state', {
+  const state = {
     phase,
     countdown,
     winnerId: raceWinnerId,
@@ -831,25 +875,28 @@ function broadcast(now) {
     laps: RACE_LAPS,
     trackIndex,
     trackCount: TRACKS.length,
-    trackList: TRACKS.map((t) => ({ id: t.id, name: t.name, theme: t.theme })),
     trackId: activeTrack().id,
     trackName: activeTrack().name,
     trackTheme: activeTrack().theme,
-    track: activeTrack().points,
     trackWidth: TRACK_WIDTH,
     startDist: START_DIST,
-    guardrailSegments: Array.from(activeTrack().guardrailSegments),
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),
     coins: coins.filter((c) => c.active).map((c) => ({ x: c.x, y: c.y })),
-    peels: peels.map((pe) => ({ x: pe.x, y: pe.y })),
-    flowers: flowers.map((fl) => ({ x: fl.x, y: fl.y })),
-    missiles: missiles.map((m) => ({ x: m.x, y: m.y })),
+    peels: peels.map((pe) => ({ x: Math.round(pe.x), y: Math.round(pe.y) })),
+    flowers: flowers.map((fl) => ({ x: Math.round(fl.x), y: Math.round(fl.y) })),
+    missiles: missiles.map((m) => ({ x: Math.round(m.x), y: Math.round(m.y) })),
     ice: {
       active: iceOwnerSlot !== -1 && now < iceUntil,
       ownerId: iceOwnerSlot >= 0 && players[iceOwnerSlot] ? players[iceOwnerSlot].id : null,
     },
-  });
+  };
+  if (sendTrack) {
+    state.track = activeTrack().points;
+    state.guardrailSegments = Array.from(activeTrack().guardrailSegments);
+    state.trackList = TRACKS.map((t) => ({ id: t.id, name: t.name, theme: t.theme }));
+  }
+  io.emit('state', state);
 
   players.forEach((p) => {
     if (!p || p.bot) return;
@@ -864,7 +911,11 @@ function broadcast(now) {
       place: places[p.id] || 1,
       item: p.item,
       coins: p.coins || 0,
-      powerReady: cooldownMs <= 0,
+      powerReady: cooldownMs <= 0 && p.powerUses > 0,
+      powerUses: p.powerUses,
+      finished: !!p.finished,
+      finishPlace: p.finishPlace || 0,
+      racersLeft: players.filter((q) => racer(q) && !q.finished).length,
       cooldownSec: Math.ceil(cooldownMs / 1000),
       winnerId: raceWinnerId,
       won: phase === 'finished' && raceWinnerId === p.id,

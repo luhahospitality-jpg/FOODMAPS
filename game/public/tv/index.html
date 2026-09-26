@@ -93,6 +93,16 @@
   @keyframes rb { 0% { background-position:0 0; } 100% { background-position:300% 0; } }
   .v-banner { position:absolute; left:0; right:0; top:32%; text-align:center; font-size:4.2em; opacity:0; transform:scale(.6); transition:all .25s; }
   .v-banner.show { opacity:1; transform:scale(1); }
+  /* modo TV: sin sombras difusas, filtros ni animaciones CSS sobre el juego (el navegador de la
+     TV los recompone en cada cuadro y le roba tiempo al 3D) */
+  body[data-quality="tv"] .vhud *, body[data-quality="tv"] #countdown *, body[data-quality="tv"] #finishFlash * {
+    box-shadow:none !important; filter:none !important; animation:none !important; transition:none !important; text-shadow:none !important; }
+  body[data-quality="tv"] .p-boost.active { background:#ff9f1c; }
+  .v-done { position:absolute; left:0; right:0; top:12%; text-align:center; display:none; color:var(--yellow); }
+  .v-done.on { display:block; }
+  .v-done .tt { font-size:3.2em; line-height:1; }
+  .v-done .pl { font-size:6em; line-height:1; }
+  .v-done .sub { font-size:1.8em; color:var(--white); margin-top:.2em; }
   .frost { position:absolute; top:0; right:0; bottom:0; left:0; opacity:0; transition:opacity .4s; background:radial-gradient(ellipse at center, rgba(169,243,255,0) 62%, rgba(169,243,255,.38) 100%);
     box-shadow:inset 0 0 3em rgba(255,255,255,.35); }
   .frost.on { opacity:1; }
@@ -156,7 +166,7 @@
   <div id="url"></div>
   <div id="qbadge"></div>
   <div id="loading"><img src="/assets/ui/logo.png" alt="" /><div class="bar"><div class="fill" id="loadFill"></div></div><div id="bootErr"></div></div>
-  <div id="ver">v3</div>
+  <div id="ver">v4</div>
 </div>
 
 <script>

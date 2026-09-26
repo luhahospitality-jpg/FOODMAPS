@@ -8,7 +8,7 @@ const params = new URLSearchParams(location.search);
 // ---------- carga: fuentes primero (los carteles se pintan en canvas con la fuente del logo) ----------
 // (sin "await" suelto en el modulo: los navegadores de TV mas viejos no lo soportan)
 let buildTrack, teardownTrack, updateTrack, themeCfg, TRACK, buildDecor, updateDecorFade, faceCrowds;
-let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx;
+let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx, music;
 async function boot() {
   hud.setLoading(0.1, false);
   if (document.fonts && document.fonts.load) {
@@ -29,7 +29,7 @@ async function boot() {
   ({ updateItems, resetItems } = mods[3]);
   ({ fx } = mods[4]);
   ({ podiumScene, podiumCam, setupPodium, updatePodium } = mods[5]);
-  ({ sfx } = mods[6]);
+  ({ sfx, music } = mods[6]);
   fx.init();
   hud.initSelect();
   hud.setLoading(1, true);
@@ -44,6 +44,9 @@ function connect() {
   const socket = io();
   socket.on('state', (s) => {
     const prev = game.state;
+    // la forma de la pista llega 1 vez por segundo: mientras tanto se usa la ultima
+    if (!s.track && prev && prev.trackId === s.trackId) { s.track = prev.track; s.guardrailSegments = prev.guardrailSegments; }
+    if (!s.trackList && prev) s.trackList = prev.trackList;
     game.prev = prev;
     game.state = s;
     snaps.push({ t: performance.now(), s });
@@ -150,10 +153,17 @@ function kartPos(slot) {
 }
 function handleEvents(prev, next) {
   if (!prev) return;
-  if (next.phase === 'countdown' && prev.phase !== 'countdown') countdownAt = performance.now();
+  if (next.phase === 'countdown' && prev.phase !== 'countdown') { countdownAt = performance.now(); sfx.ready(); }
   if (next.phase === 'countdown' && next.countdown !== prev.countdown) sfx.countdown(next.countdown);
   if (next.phase === 'racing' && prev.phase === 'countdown') { goUntil = performance.now() + 900; sfx.countdown(0); }
-  if (next.phase === 'finished' && prev.phase !== 'finished') { sfx.win(); finishedAt = performance.now(); }
+  if (next.phase === 'finished' && prev.phase !== 'finished') finishedAt = performance.now();
+  // ultima vuelta del que va adelante: aviso y la musica acelera
+  if (next.phase === 'racing') {
+    const L = next.laps || 3;
+    const lead = (next.players || []).some((p, i) => p && !p.finished && p.lap === L - 1 && (!prev.players[i] || prev.players[i].lap < L - 1));
+    const first = !(prev.players || []).some((p) => p && p.lap >= L - 1);
+    if (lead && first && L > 1) { sfx.finalLap(); music.faster(); }
+  }
   (next.players || []).forEach((p, i) => {
     const op = (prev.players || [])[i];
     if (!p || !op || p.spectating || next.phase !== 'racing') return;
@@ -164,13 +174,18 @@ function handleEvents(prev, next) {
       sfx.shrink();
       next.players.forEach((o, j) => { if (o && !o.spectating && j !== i) { const q = kartPos(j) || toWorld(o.x, o.y); fx.poof(q.x, 150, q.z, PAL.pink); fx.text('MINI!', q.x, q.z, PAL.pink, 420); } });
     }
+    if (p.finished && !op.finished) {
+      sfx.finish(p.finishPlace === 1);
+      fx.confetti(pos.x, 300, pos.z, 60, 700);
+    }
+    if (p.turbo && !op.turbo && p.character === 'ice') hud.banner(i, 'TURBO HIELO!', 1400, 'var(--turq)');
     if (p.starActive && !op.starActive) { sfx.star(); hud.banner(i, 'BOOST!', 1200, 'var(--turq)'); fx.ring(pos.x, pos.z, PAL.turquoise, 900); }
     if (p.crashed && !op.crashed) {
       sfx.crash(); fx.explosion(pos.x, pos.z); fx.text('HIT!', pos.x, pos.z, PAL.red);
       hud.hitFlash(i); camStates[i].shake = 1.4;
       if (karts[i]) karts[i].squash = 1;
     }
-    if (p.slowed && !op.slowed && !p.crashed) { fx.text('OOPS!', pos.x, pos.z, PAL.violet, 460); fx.sparkles(pos.x, 160, pos.z, 10, [PAL.violet, PAL.yellow], 260); camStates[i].shake = 0.6; }
+    if (p.slowed && !op.slowed && !p.crashed) { sfx.slip(); fx.text('OOPS!', pos.x, pos.z, PAL.violet, 460); fx.sparkles(pos.x, 160, pos.z, 10, [PAL.violet, PAL.yellow], 260); camStates[i].shake = 0.6; }
     if ((p.coins || 0) > (op.coins || 0) && !p.bot) sfx.coin();
     if (p.falling && !op.falling) {
       sfx.fall();
@@ -189,8 +204,8 @@ function handleEvents(prev, next) {
       hud.banner(i, final ? 'FINAL LAP!' : 'LAP ' + (p.lap + 1) + '/' + (next.laps || 3), 1700, final ? 'var(--red)' : 'var(--yellow)');
       fx.confetti(pos.x, 300, pos.z, 30, 500);
     }
-    if (!p.powerReady && op.powerReady) {
-      sfx.power();
+    if ((p.powerUses || 0) < (op.powerUses || 0)) {
+      sfx.power(p.character);
       const c = p.character;
       if (c === 'rabbit') { fx.text('WHACK!', pos.x, pos.z, PAL.orange); fx.ring(pos.x, pos.z, PAL.orange, 1100); fx.sparkles(pos.x, 200, pos.z, 14, [PAL.orange, PAL.green, PAL.yellow], 420); camStates[i].shake = 0.5; }
       if (c === 'gorilla') { fx.text('BANANA!', pos.x, pos.z, PAL.yellow); fx.poof(pos.x, 100, pos.z, PAL.yellow); }
@@ -207,8 +222,12 @@ let podiumReady = false;
 let liteTick = 0;
 
 const stats = { js: 0, frames: 0 };
+let skipFrame = false;
 function animate() {
   requestAnimationFrame(animate);
+  // TV lenta: se dibuja 1 de cada 2 cuadros (30 fps parejos)
+  if (quality.half) { skipFrame = !skipFrame; if (skipFrame) return; }
+  fx.rate = quality.lite ? 0.5 : 1;
   const tStart = performance.now();
   const rawDt = clock.getDelta();
   const dt = Math.min(rawDt, 0.1);
@@ -226,6 +245,7 @@ function animate() {
   const showPodium = phase === 'finished' && !showFinishFlash;
 
   hud.setSelectVisible(phase === 'select');
+  music.want(phase === 'select' ? 'menu' : phase === 'racing' ? 'race_' + TRACK.theme : phase === 'finished' ? 'victory' : null);
   document.getElementById('url').style.display = phase === 'select' ? 'block' : 'none';
   hud.updateCountdown(phase === 'countdown' || now < goUntil);
   hud.setFinishFlash(showFinishFlash);
@@ -244,11 +264,12 @@ function animate() {
         const rx = w.x - Math.cos(q.angle) * 90, rz = w.z - Math.sin(q.angle) * 90;
         fx.dust(rx, rz, DUST[TRACK.theme] || '#fff', 1, 0.8 + Math.min(k.speed / 3000, 0.6));
       }
+      if (q.p.turbo && !q.p.starActive) fx.trail(w.x, w.z, q.angle, q.p.character === 'ice' ? [PAL.ice, PAL.white, PAL.turquoise][Math.floor(t * 20) % 3] : [PAL.orange, PAL.yellow, PAL.green][Math.floor(t * 20) % 3]);
       if (q.p.starActive) {
         fx.trail(w.x, w.z, q.angle, [PAL.turquoise, PAL.pink, PAL.yellow][Math.floor(t * 20) % 3]);
         if (Math.random() < 0.5) fx.sparkles(w.x, 180, w.z, 1, [PAL.yellow, PAL.white, PAL.pink], 200, 0.7);
       }
-      if (s.ice && s.ice.active && s.ice.ownerId !== q.p.id && !q.p.starActive) fx.snow(w.x, w.z, 1400, 22, dt);
+      if (s.ice && s.ice.active && s.ice.ownerId !== q.p.id && !q.p.starActive && !q.p.finished) fx.snow(w.x, w.z, 1400, 22, dt);
     }
   });
 
@@ -288,6 +309,8 @@ function animate() {
           const q = ip.players[slot];
           if (k && q) chaseCam(cam, camStates[slot], { x: k.group.position.x, z: k.group.position.z, angle: q.angle }, camDt, q.p.starActive,
             phase === 'countdown' ? clamp((now - countdownAt) / 2700, 0, 1) : undefined);
+          // la ruta congelada la ven los demas; el que tiro el hielo la ve normal
+          TRACK.roadUniforms.uFreeze.value = s.ice && s.ice.active && q && s.ice.ownerId === q.p.id ? 0 : (TRACK.freezeLevel || 0);
           faceAllKarts(cam, 'v' + slot, slot);
           faceCrowds(cam);
           updateDecorFade(cam.position);
@@ -310,7 +333,7 @@ function animate() {
   trackFps(rawDt, phase === 'racing' || phase === 'countdown' || phase === 'select');
   // karts/items nuevos tambien pasan a materiales livianos en modo TV
   if (quality.lite && (++liteTick % 45) === 0) { liteify(scene); liteify(podiumScene); }
-  if (params.get('debug')) hud.setQualityBadge(['tv', 'med', 'high'][quality.level] + ' · x' + quality.pr.toFixed(2) + ' · ' + Math.round(1 / Math.max(rawDt, 0.001)) + 'fps');
+  if (params.get('debug')) hud.setQualityBadge(['tv', 'med', 'high'][quality.level] + ' · x' + quality.pr.toFixed(2) + ' · ' + Math.round(1 / Math.max(rawDt, 0.001)) + 'fps' + (quality.half ? ' · 30' : ''));
 }
-window.__br = { game, quality, fx, renderer, stats };
+window.__br = { game, quality, fx, renderer, stats, sceneRef: scene };
 boot().catch((e) => { if (window.__showBootError) window.__showBootError(e); else throw e; });

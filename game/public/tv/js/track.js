@@ -1,5 +1,5 @@
 import { THREE, PAL, RAINBOW, game, toWorld, canvasTexture, mulberry32, roundRect, shade } from './core.js';
-import { scene, fitSunShadow, renderer } from './render.js';
+import { scene, fitSunShadow, renderer, quality } from './render.js';
 import { RoundedBoxGeometry } from '/vendor/addons/geometries/RoundedBoxGeometry.js';
 
 export const trackGroup = new THREE.Group();
@@ -340,31 +340,45 @@ export class Instancer {
   add(x, y, z, sx, sy, sz, rotY, color) {
     this.items.push({ x, y, z, sx, sy, sz, rotY: rotY || 0, color });
   }
+  // se parte en bloques por zona (CHUNK x CHUNK): cada bloque tiene su propia esfera
+  // envolvente y la camara descarta los que no ve (las pistas largas tienen miles de cubos)
   build(parent, shadows = true) {
     if (!this.items.length) return null;
-    const im = new THREE.InstancedMesh(this.geo, this.mat, this.items.length);
+    const CHUNK = 12000;
+    const buckets = new Map();
+    this.items.forEach((it) => {
+      const k = Math.floor(it.x / CHUNK) + ',' + Math.floor(it.z / CHUNK);
+      if (!buckets.has(k)) buckets.set(k, []);
+      buckets.get(k).push(it);
+    });
     const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), s = new THREE.Vector3(), p = new THREE.Vector3();
     const c = new THREE.Color();
-    this.items.forEach((it, i) => {
-      e.set(0, it.rotY, 0); q.setFromEuler(e);
-      p.set(it.x, it.y, it.z); s.set(it.sx, it.sy, it.sz);
-      m4.compose(p, q, s);
-      im.setMatrixAt(i, m4);
-      im.setColorAt(i, c.set(it.color || '#ffffff'));
+    let first = null;
+    buckets.forEach((items) => {
+      const im = new THREE.InstancedMesh(this.geo, this.mat, items.length);
+      items.forEach((it, i) => {
+        e.set(0, it.rotY, 0); q.setFromEuler(e);
+        p.set(it.x, it.y, it.z); s.set(it.sx, it.sy, it.sz);
+        m4.compose(p, q, s);
+        im.setMatrixAt(i, m4);
+        im.setColorAt(i, c.set(it.color || '#ffffff'));
+      });
+      im.instanceMatrix.needsUpdate = true;
+      if (im.instanceColor) im.instanceColor.needsUpdate = true;
+      im.castShadow = shadows; im.receiveShadow = true;
+      im.computeBoundingSphere();
+      parent.add(im);
+      if (!first) first = im;
     });
-    im.instanceMatrix.needsUpdate = true;
-    if (im.instanceColor) im.instanceColor.needsUpdate = true;
-    im.castShadow = shadows; im.receiveShadow = true;
-    im.computeBoundingSphere();
-    parent.add(im);
-    return im;
+    return first;
   }
 }
 
 let _unitRounded = null;
 export function unitRoundedBox() {
   // 1 segmento de redondeo (108 triangulos): con 3 eran ~590 por bloque y la TV no daba abasto
-  if (!_unitRounded) _unitRounded = new RoundedBoxGeometry(1, 1, 1, 1, 0.1);
+  // modo TV: cubo comun (12 triangulos en vez de 108); el bisel ya lo dibuja la textura
+  if (!_unitRounded) _unitRounded = quality.lite ? new THREE.BoxGeometry(1, 1, 1) : new RoundedBoxGeometry(1, 1, 1, 1, 0.1);
   return _unitRounded;
 }
 let _unitBox = null;
@@ -389,17 +403,18 @@ export function groundTop(x, z) {
 
 function buildTerrain(theme, cfg, pts, half, rand) {
   const T = TRACK.tile;
-  const R = 8100;
+  const BAND = 3400; // ancho del terreno a cada lado de la pista
   const edgeD = half + TRACK.gap;
   TRACK.tiles = new Map();
   const inst = new Instancer(new THREE.BoxGeometry(1, 1, 1), blockMaterial({ roughness: theme === 'space' ? 0.85 : 0.75 }), 4000);
-  const n = Math.ceil(R / T);
-  for (let ix = -n; ix <= n; ix++) {
-    for (let iz = -n; iz <= n; iz++) {
+  let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+  pts.forEach((p) => { minX = Math.min(minX, p.x); maxX = Math.max(maxX, p.x); minZ = Math.min(minZ, p.z); maxZ = Math.max(maxZ, p.z); });
+  const pad = edgeD + BAND;
+  for (let ix = Math.floor((minX - pad) / T); ix <= Math.ceil((maxX + pad) / T); ix++) {
+    for (let iz = Math.floor((minZ - pad) / T); iz <= Math.ceil((maxZ + pad) / T); iz++) {
       const x = ix * T, z = iz * T;
-      if (x * x + z * z > R * R) continue;
       const d = distPts(x, z, pts);
-      if (d < edgeD + T * 0.35) continue;
+      if (d < edgeD + T * 0.35 || d > edgeD + BAND) continue;
       const far = d - edgeD;
       let top = 0;
       if (far > 900) {
@@ -414,8 +429,7 @@ function buildTerrain(theme, cfg, pts, half, rand) {
       inst.add(x, top - h / 2, z, T, h, T, 0, col);
     }
   }
-  const mesh = inst.build(trackGroup, false);
-  if (mesh) mesh.receiveShadow = true;
+  inst.build(trackGroup, false);
 }
 
 function distPts(x, z, pts) {
@@ -504,7 +518,7 @@ export function buildTrack(state) {
 
   // paredes de bloques en tramos con baranda + luces de peligro donde hay precipicio
   const wallInst = new Instancer(unitRoundedBox(), blockMaterial({ roughness: 0.55 }), 3000);
-  const lightGeo = new THREE.SphereGeometry(1, 10, 8);
+  const lightGeo = quality.lite ? new THREE.OctahedronGeometry(1, 0) : new THREE.SphereGeometry(1, 10, 8);
   const lightMat = new THREE.MeshStandardMaterial({ color: '#000', emissive: cfg.edgeLight, emissiveIntensity: 3.2 });
   const lightInst = new Instancer(lightGeo, lightMat, 2000);
   const postInst = new Instancer(unitRoundedBox(), blockMaterial({ roughness: 0.6 }), 800);
@@ -671,6 +685,7 @@ export function teardownTrack() {
 export function updateTrack(t, freeze) {
   TRACK.roadUniforms.uTime.value = t;
   const f = TRACK.roadUniforms.uFreeze;
-  f.value += ((freeze ? 1 : 0) - f.value) * 0.08;
+  TRACK.freezeLevel = (TRACK.freezeLevel || 0) + ((freeze ? 1 : 0) - (TRACK.freezeLevel || 0)) * 0.08;
+  f.value = TRACK.freezeLevel;
   TRACK.animated.forEach((fn) => fn(t));
 }

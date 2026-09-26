@@ -118,7 +118,10 @@ class ParticleSystem {
     scene.add(this.mesh);
   }
   emit(o) {
-    if (this.p.length >= this.max) this.p.shift();
+    // lleno: se descarta la nueva (antes se borraba la mas vieja, que eran las nubes fijas)
+    if (this.p.length >= this.max) return;
+    // en modo TV se emite solo una parte de las particulas efimeras
+    if (o.life < 1e8 && fx.rate < 1 && Math.random() > fx.rate) return;
     this.p.push(Object.assign({ vx: 0, vy: 0, vz: 0, g: 0, drag: 0, life: 1, age: 0, s0: 100, s1: 100, rot: 0, vr: 0, a0: 1, a1: 0, r: 1, gc: 1, b: 1, stretch: 1, cell: 0 }, o));
   }
   update(dt) {
@@ -178,6 +181,7 @@ function textTex(word, color) {
 }
 
 export const fx = {
+  rate: 1,
   init() {
     atlas = buildAtlas();
     normal = new ParticleSystem(1600, false);

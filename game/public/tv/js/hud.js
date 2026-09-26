@@ -98,11 +98,12 @@ export function layoutHud(views) {
       <div class="panel p-coins"><img src="/assets/ui/coin.png" alt=""><span class="n outline">0</span><span class="hearts outline"></span></div>
       <div class="panel p-boost outline"><span class="chev">»»</span><span class="bt">BOOST READY</span><span class="chev">»»</span></div>
       <div class="v-banner outline"></div>
+      <div class="v-done outline"></div>
       ${views.length > 1 ? '<div class="frame"></div>' : ''}`;
     root.appendChild(d);
     hudEls[v.slot] = {
       root: d, pos: d.querySelector('.p-pos .big'), of: d.querySelector('.p-pos .of'), lap: d.querySelector('.p-lap .val'),
-      item: d.querySelector('.p-item'), power: d.querySelector('.p-power'), powerImg: d.querySelector('.p-power img'), powerT: d.querySelector('.p-power .t'),
+      done: d.querySelector('.v-done'), item: d.querySelector('.p-item'), power: d.querySelector('.p-power'), powerImg: d.querySelector('.p-power img'), powerT: d.querySelector('.p-power .t'),
       coins: d.querySelector('.p-coins .n'), hearts: d.querySelector('.p-coins .hearts'), boost: d.querySelector('.p-boost'), boostT: d.querySelector('.p-boost .bt'),
       banner: d.querySelector('.v-banner'), frost: d.querySelector('.frost'), hit: d.querySelector('.hitflash'),
       last: {}, rollUntil: 0, bannerUntil: 0,
@@ -153,10 +154,12 @@ export function updateHud() {
       h.item.classList.toggle('has', !!p.item && !rolling);
       L.item = ik;
     }
-    const pk = p.character + (p.powerReady ? 'R' : p.powerCooldown);
+    const uses = p.powerUses === undefined ? 2 : p.powerUses;
+    const pk = p.character + (p.powerReady ? 'R' : p.powerCooldown) + uses;
     if (L.power !== pk) {
       h.powerImg.src = '/assets/ui/' + POWER_ICON[p.character] + '.png';
-      h.powerT.innerHTML = p.powerReady ? 'POWER<br>READY' : 'POWER<br>' + (p.powerCooldown || 0);
+      // 2 usos por carrera: se muestra cuantos quedan
+      h.powerT.innerHTML = uses <= 0 ? 'SIN<br>POWER' : p.powerReady ? 'POWER<br>×' + uses : 'POWER<br>' + (p.powerCooldown || 0) + 's';
       h.power.classList.toggle('ready', !!p.powerReady);
       h.power.classList.toggle('cool', !p.powerReady);
       L.power = pk;
@@ -167,15 +170,27 @@ export function updateHud() {
       h.hearts.innerHTML = '♥'.repeat(p.lives) + '<span class="off">' + '♥'.repeat(Math.max(0, 3 - p.lives)) + '</span>';
       L.coins = ck;
     }
-    const bk = p.starActive ? 'A' : p.item === 'star' && !rolling ? 'R' : '';
+    const bk = p.starActive ? 'A' : p.turbo ? 'T' : p.item === 'star' && !rolling ? 'R' : '';
     if (L.boost !== bk) {
       h.boost.style.display = bk ? 'flex' : 'none';
-      h.boost.classList.toggle('active', bk === 'A');
-      h.boostT.textContent = bk === 'A' ? 'BOOST!' : 'BOOST READY';
+      h.boost.classList.toggle('active', bk === 'A' || bk === 'T');
+      h.boostT.textContent = bk === 'A' ? 'BOOST!' : bk === 'T' ? 'TURBO!' : 'BOOST READY';
       L.boost = bk;
     }
-    const frozen = s.ice && s.ice.active && s.ice.ownerId !== p.id && !p.starActive;
+    const frozen = s.ice && s.ice.active && s.ice.ownerId !== p.id && !p.starActive && !p.finished;
     h.frost.classList.toggle('on', !!frozen);
+    // ya llego: queda su puesto en grande mientras terminan los demas
+    const left = s.players.filter((q) => q && !q.spectating && !q.finished).length;
+    const dk = p.finished ? p.finishPlace + ':' + left : '';
+    if (L.done !== dk) {
+      h.done.classList.toggle('on', !!p.finished);
+      if (p.finished) {
+        h.done.innerHTML = '<div class="tt">' + (p.finishPlace === 1 ? '¡GANASTE!' : 'FINISH!') + '</div><div class="pl">' + p.finishPlace + 'º</div>'
+          + '<div class="sub">' + (left ? 'esperando a los demás · faltan ' + left : '¡llegaron todos!') + '</div>';
+        h.banner.classList.remove('show'); h.bannerUntil = 0;
+      }
+      L.done = dk;
+    }
     if (h.bannerUntil && now > h.bannerUntil) { h.banner.classList.remove('show'); h.bannerUntil = 0; }
   });
 }

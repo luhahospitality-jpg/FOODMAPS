@@ -27,11 +27,11 @@ const boxEmit = canvasTexture(256, 256, (c, w, h) => {
   c.textAlign = 'center'; c.textBaseline = 'middle';
   c.fillStyle = '#ffffff'; c.fillText('?', w / 2, h / 2 + 10);
 });
-const boxGeo = new RoundedBoxGeometry(130, 130, 130, 4, 20);
+const boxGeo = new RoundedBoxGeometry(130, 130, 130, 2, 20);
 const boxMat = new THREE.MeshStandardMaterial({ map: boxTex, roughness: 0.22, metalness: 0.08, emissive: '#ffffff', emissiveMap: boxEmit, emissiveIntensity: 1.2, envMap: envTex, envMapIntensity: 0.9 });
 
 // ---------- MONEDA ----------
-const coinGeo = new THREE.CylinderGeometry(64, 64, 16, 32);
+const coinGeo = new THREE.CylinderGeometry(64, 64, 16, 18);
 coinGeo.rotateZ(Math.PI / 2);
 const coinSide = new THREE.MeshStandardMaterial({ color: '#f5b400', metalness: 0.75, roughness: 0.28, emissive: '#7a4a00', emissiveIntensity: 0.15, envMap: envTex, envMapIntensity: 0.55 });
 let coinCap = null;
@@ -51,7 +51,7 @@ class Pool {
 }
 
 // cajas y monedas instanciadas: todas las monedas se dibujan en 3 llamadas (canto + 2 caras)
-const MAX_BOXES = 16, MAX_COINS = 48;
+const MAX_BOXES = 16, MAX_COINS = 120;
 let boxInst = null, coinInst = null;
 function ensureInst() {
   if (boxInst) return;
