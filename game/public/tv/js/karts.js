@@ -198,7 +198,7 @@ export const karts = [null, null, null, null];
 
 export function ensureKart(i, p) {
   const k = karts[i];
-  if (k && k.character === p.character) return k;
+  if (k && k.character === p.character && k.id === p.id) return k;
   if (k) k.dispose();
   karts[i] = new Kart(i, p.character, p.id, p.color);
   return karts[i];

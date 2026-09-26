@@ -134,7 +134,7 @@ export function startItemRoll(slot) {
 export function updateHud() {
   const s = game.state;
   const now = performance.now();
-  const total = s.players.filter(Boolean).length;
+  const total = s.players.filter((p) => p && !p.spectating).length;
   s.players.forEach((p, slot) => {
     const h = hudEls[slot];
     if (!p || !h) return;

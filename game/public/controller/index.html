@@ -151,8 +151,16 @@
 
     const sel = phase === 'select';
     $('selectInfo').style.display = sel ? 'flex' : 'none';
-    $('endInfo').style.display = phase === 'finished' ? 'flex' : 'none';
-    if (sel) {
+    const watching = !!s.spectating && !sel;
+    $('endInfo').style.display = phase === 'finished' || watching ? 'flex' : 'none';
+    if (watching) {
+      // entro con la carrera en curso: mira en la TV y arranca en la proxima (todos juntos)
+      $('endImg').src = '/assets/ui/fx_finish.png';
+      $('endT').textContent = 'CARRERA EN CURSO';
+      $('endT').style.color = 'var(--white)';
+      $('endS').textContent = 'Entrás en la próxima largada · mirá la TV';
+      boostBtn.classList.add('disabled'); powerBtn.classList.add('disabled');
+    } else if (sel) {
       if (last.char !== s.character) {
         $('selImg').src = '/assets/chars/' + info.sprite + '_right.png';
         $('selCard').style.background = 'linear-gradient(180deg,' + info.card[0] + ',' + info.card[1] + ')';

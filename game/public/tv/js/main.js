@@ -67,7 +67,7 @@ function interpolate() {
   }
   const k = clamp((rt - a.t) / ((b.t - a.t) || 1), 0, 1);
   const players = b.s.players.map((pb, i) => {
-    if (!pb) return null;
+    if (!pb || pb.spectating) return null;
     const pa = a.s.players[i];
     if (!pa || Math.hypot(pb.x - pa.x, pb.y - pa.y) > 2500) return { p: pb, x: pb.x, y: pb.y, angle: pb.angle };
     return { p: pb, x: pa.x + (pb.x - pa.x) * k, y: pa.y + (pb.y - pa.y) * k, angle: lerpAngle(pa.angle, pb.angle, k) };
@@ -156,13 +156,13 @@ function handleEvents(prev, next) {
   if (next.phase === 'finished' && prev.phase !== 'finished') { sfx.win(); finishedAt = performance.now(); }
   (next.players || []).forEach((p, i) => {
     const op = (prev.players || [])[i];
-    if (!p || !op || next.phase !== 'racing') return;
+    if (!p || !op || p.spectating || next.phase !== 'racing') return;
     const pos = kartPos(i) || toWorld(p.x, p.y);
     if (p.item && !op.item) { sfx.item(); hud.startItemRoll(i); }
     if (!p.item && op.item === 'missile') { sfx.missile(); fx.text('MISSILE!', pos.x, pos.z, PAL.red); }
     if (!p.item && op.item === 'mushroom') {
       sfx.shrink();
-      next.players.forEach((o, j) => { if (o && j !== i) { const q = kartPos(j) || toWorld(o.x, o.y); fx.poof(q.x, 150, q.z, PAL.pink); fx.text('MINI!', q.x, q.z, PAL.pink, 420); } });
+      next.players.forEach((o, j) => { if (o && !o.spectating && j !== i) { const q = kartPos(j) || toWorld(o.x, o.y); fx.poof(q.x, 150, q.z, PAL.pink); fx.text('MINI!', q.x, q.z, PAL.pink, 420); } });
     }
     if (p.starActive && !op.starActive) { sfx.star(); hud.banner(i, 'BOOST!', 1200, 'var(--turq)'); fx.ring(pos.x, pos.z, PAL.turquoise, 900); }
     if (p.crashed && !op.crashed) {
@@ -171,7 +171,7 @@ function handleEvents(prev, next) {
       if (karts[i]) karts[i].squash = 1;
     }
     if (p.slowed && !op.slowed && !p.crashed) { fx.text('OOPS!', pos.x, pos.z, PAL.violet, 460); fx.sparkles(pos.x, 160, pos.z, 10, [PAL.violet, PAL.yellow], 260); camStates[i].shake = 0.6; }
-    if ((p.coins || 0) > (op.coins || 0)) sfx.coin();
+    if ((p.coins || 0) > (op.coins || 0) && !p.bot) sfx.coin();
     if (p.falling && !op.falling) {
       sfx.fall();
       if (TRACK.theme === 'banana') setTimeout(() => fx.splash(pos.x, pos.z), 350);
@@ -232,7 +232,7 @@ function animate() {
 
   const ip = interpolate();
   // karts
-  s.players.forEach((p, i) => { if (!p) removeKart(i); });
+  s.players.forEach((p, i) => { if (!p || p.spectating) removeKart(i); });
   ip.players.forEach((q, i) => {
     if (!q) return;
     const k = ensureKart(i, q.p);
@@ -276,8 +276,9 @@ function animate() {
   } else {
     podiumReady = phase === 'finished' ? podiumReady : false;
     hud.setPodium(false);
+    // una vista por humano; los CPU corren pero no tienen pantalla propia
     const racers = (phase === 'racing' || phase === 'countdown' || phase === 'finished')
-      ? s.players.map((p, i) => (p ? i : -1)).filter((i) => i >= 0) : [];
+      ? s.players.map((p, i) => (p && !p.bot && !p.spectating ? i : -1)).filter((i) => i >= 0) : [];
     if (racers.length) {
       const layout = SPLIT[racers.length];
       views = racers.map((slot, idx) => ({

@@ -120,7 +120,7 @@ function registerLapProgress(p, e) {
       raceWinnerId = p.id;
       finishedAt = Date.now();
       p.progress = p.lap * n + e;
-      finalRanking = players.filter(Boolean)
+      finalRanking = players.filter(racer)
         .sort((a, b) => (b === p ? 1 : 0) - (a === p ? 1 : 0) || (b.progress || 0) - (a.progress || 0))
         .map((o) => o.id);
     }
@@ -141,7 +141,7 @@ function updateProgress(p, e) {
 }
 
 function computePlaces() {
-  const racing = players.filter(Boolean).sort((a, b) => (b.progress || 0) - (a.progress || 0));
+  const racing = players.filter(racer).sort((a, b) => (b.progress || 0) - (a.progress || 0));
   const places = {};
   racing.forEach((p, i) => { places[p.id] = i + 1; });
   return places;
@@ -264,28 +264,13 @@ io.on('connection', (socket) => {
 
   socket.on('join', () => {
     slot = freeSlot();
+    // lleno por la maquina: el humano ocupa el lugar de un CPU
+    if (slot === -1) slot = players.findIndex((p) => p && p.bot);
     if (slot === -1) { socket.emit('full'); return; }
-    const s = spawnFor(slot);
-    players[slot] = {
-      id: 'P' + (slot + 1),
-      socketId: socket.id,
-      color: COLORS[slot],
-      character: CHARACTERS[slot],
-      confirmed: false,
-      x: s.x, y: s.y, angle: s.angle, speed: 0,
-      lives: 3, lap: 0, lapIndex: 0,
-      item: null, starUntil: 0, shrunkUntil: 0, crashUntil: 0, slowUntil: 0, coins: 0,
-      powerCooldownUntil: 0, fallUntil: 0,
-      input: { steer: 0, accel: false, brake: false },
-      prevAccel: false,
-      selectZone: 'neutral',
-    };
+    players[slot] = makePlayer(slot, socket.id, CHARACTERS[slot]);
     socket.emit('joined', { id: players[slot].id, color: players[slot].color });
-
-    // si la carrera ya arranco, este jugador se suma directo corriendo
-    if (phase === 'racing' || phase === 'countdown') {
-      players[slot].confirmed = true;
-    }
+    // si la carrera ya arranco, espera a la proxima: asi todos arrancan juntos de la grilla
+    if (phase !== 'select') players[slot].spectating = true;
   });
 
   socket.on('input', (data) => {
@@ -314,9 +299,183 @@ io.on('connection', (socket) => {
     p.prevAccel = accel;
   });
 
-  socket.on('boost', () => {
-    const p = players[slot];
-    if (!p || phase !== 'racing' || !p.item) return;
+  socket.on('boost', () => useItem(slot));
+
+  socket.on('power', () => tryPower(slot));
+
+  socket.on('cycle_track', () => {
+    if (slot === -1 || !players[slot] || phase !== 'select') return;
+    trackIndex = (trackIndex + 1) % TRACKS.length;
+    regenerateTrackObjects();
+  });
+
+  socket.on('reset_to_menu', () => {
+    if (slot === -1 || !players[slot]) return;
+    // el que esta mirando no puede cortar la carrera de los demas
+    if (players[slot].spectating && phase !== 'finished') return;
+    backToMenu();
+  });
+
+  socket.on('disconnect', () => {
+    if (slot !== -1 && players[slot] && players[slot].socketId === socket.id) players[slot] = null;
+    // sin humanos no tiene sentido que la maquina siga corriendo sola
+    if (phase !== 'select' && !players.some((p) => p && !p.bot)) backToMenu();
+  });
+});
+
+function makePlayer(slot, socketId, character) {
+  const s = spawnFor(slot);
+  return {
+    id: 'P' + (slot + 1),
+    socketId,
+    color: COLORS[slot],
+    character,
+    confirmed: false,
+    x: s.x, y: s.y, angle: s.angle, speed: 0,
+    lives: 3, lap: 0, lapIndex: 0, progress: 0,
+    item: null, starUntil: 0, shrunkUntil: 0, crashUntil: 0, slowUntil: 0, coins: 0,
+    powerCooldownUntil: 0, fallUntil: 0,
+    input: { steer: 0, accel: false, brake: false },
+    prevAccel: false,
+    selectZone: 'neutral',
+    spectating: false,
+  };
+}
+
+// corredores de verdad en esta carrera (los que llegaron tarde miran hasta la proxima)
+function racer(p) { return p && !p.spectating; }
+
+function backToMenu() {
+  phase = 'select';
+  countdown = 0;
+  countdownAcc = 0;
+  firstConfirmAt = 0;
+  raceWinnerId = null;
+  finishedAt = 0;
+  removeBots();
+  players.forEach((p) => { if (p) { p.confirmed = false; p.spectating = false; } });
+  peels = [];
+  flowers = [];
+  missiles = [];
+  iceUntil = 0;
+  iceOwnerSlot = -1;
+}
+
+// --- CPU: siempre compiten al menos 3; si no hay suficientes humanos, completa la maquina ---
+const MIN_RACERS = 3;
+
+function removeBots() {
+  players.forEach((p, i) => { if (p && p.bot) players[i] = null; });
+}
+
+function addBots() {
+  removeBots();
+  const humans = players.filter((p) => racer(p) && !p.bot).length;
+  const need = Math.max(0, MIN_RACERS - humans);
+  let k = 0;
+  for (let slot = 0; slot < players.length && k < need; slot++) {
+    if (players[slot]) continue;
+    const used = new Set(players.filter(Boolean).map((p) => p.character));
+    const character = CHARACTERS.find((c) => !used.has(c)) || CHARACTERS[slot];
+    const b = makePlayer(slot, null, character);
+    b.bot = true;
+    b.id = 'CPU' + (k + 1);
+    b.confirmed = true;
+    b.ai = { pace: 0.93, basePace: 0.92 + Math.random() * 0.05, lane: (Math.random() - 0.5) * 700, itemAt: 0, stuckSince: 0, reverseUntil: 0, powerAt: 0 };
+    players[slot] = b;
+    k++;
+  }
+}
+
+// punto de la linea central a `dist` unidades por delante de `info` (sobre la pista)
+function pointAhead(info, dist) {
+  const n = activeTrack().points.length;
+  let idx = info.idx;
+  let a = segPoint(idx), b = segPoint(idx + 1);
+  let segLen = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+  let left = dist + info.t * segLen;
+  for (let guard = 0; guard < n * 2 && left > segLen; guard++) {
+    left -= segLen;
+    idx = (idx + 1) % n;
+    a = segPoint(idx); b = segPoint(idx + 1);
+    segLen = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+  }
+  const t = left / segLen;
+  const dx = (b.x - a.x) / segLen, dy = (b.y - a.y) / segLen;
+  return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, nx: -dy, ny: dx };
+}
+
+function wrapAngle(a) {
+  while (a > Math.PI) a -= Math.PI * 2;
+  while (a < -Math.PI) a += Math.PI * 2;
+  return a;
+}
+
+function botsThink(now) {
+  const humans = players.filter((p) => racer(p) && !p.bot);
+  const bestHuman = humans.reduce((m, p) => Math.max(m, p.progress || 0), -Infinity);
+  players.forEach((p, slot) => {
+    if (!racer(p) || !p.bot) return;
+    const ai = p.ai;
+    const inp = p.input;
+    if (now < p.fallUntil || now < p.crashUntil) { inp.accel = false; inp.brake = false; inp.steer = 0; return; }
+
+    // ritmo con "goma": ni se escapan ni quedan tirados lejos de los humanos
+    let pace = ai.basePace;
+    if (humans.length) {
+      const gap = (p.progress || 0) - bestHuman;
+      if (gap > 1.2) pace *= 0.86;
+      else if (gap > 0.4) pace *= 0.95;
+      else if (gap < -2) pace *= 1.07;
+    }
+    ai.pace = pace;
+
+    const info = nearestTrackInfo(p.x, p.y);
+    const look = 1400 + Math.max(0, p.speed) * 0.35;
+    const tgt = pointAhead(info, look);
+    const maxLane = TRACK_WIDTH / 2 - 320;
+    // cambia de carril de a poco para que no vayan todos en fila
+    if (Math.random() < 0.004) ai.lane = (Math.random() - 0.5) * 2 * maxLane;
+    const lane = Math.max(-maxLane, Math.min(maxLane, ai.lane));
+    const tx = tgt.x + tgt.nx * lane, ty = tgt.y + tgt.ny * lane;
+    const diff = wrapAngle(Math.atan2(ty - p.y, tx - p.x) - p.angle);
+
+    // atascado contra una baranda u otro auto: marcha atras un momento
+    if (now < ai.reverseUntil) {
+      inp.accel = false; inp.brake = true; inp.steer = -Math.sign(diff) || 1;
+      return;
+    }
+    if (p.speed < 150 && phase === 'racing') {
+      if (!ai.stuckSince) ai.stuckSince = now;
+      else if (now - ai.stuckSince > 1500) { ai.reverseUntil = now + 700; ai.stuckSince = 0; }
+    } else {
+      ai.stuckSince = 0;
+    }
+
+    inp.steer = Math.max(-1, Math.min(1, diff * 2.4));
+    const sharp = Math.abs(diff);
+    inp.brake = sharp > 1.3 && p.speed > 1200;
+    inp.accel = !inp.brake && !(sharp > 0.8 && p.speed > 1500);
+
+    // items: los usa un rato despues de agarrarlos
+    if (p.item) {
+      if (!ai.itemAt) ai.itemAt = now + 800 + Math.random() * 2700;
+      else if (now >= ai.itemAt) { ai.itemAt = 0; useItem(slot); }
+    } else {
+      ai.itemAt = 0;
+    }
+    // poder especial: de vez en cuando, cuando esta listo
+    if (now >= p.powerCooldownUntil) {
+      if (!ai.powerAt) ai.powerAt = now + 2000 + Math.random() * 6000;
+      else if (now >= ai.powerAt) { ai.powerAt = 0; tryPower(slot); }
+    }
+  });
+}
+
+function useItem(slot) {
+  const p = players[slot];
+  if (!racer(p) || phase !== 'racing' || !p.item) return;
+  {
     const now = Date.now();
     const item = p.item;
     p.item = null;
@@ -325,13 +484,13 @@ io.on('connection', (socket) => {
       p.speed = Math.max(p.speed, STAR_SPEED * 0.85); // empujon instantaneo, no solo el tope
     } else if (item === 'mushroom') {
       players.forEach((o, i) => {
-        if (!o || i === slot) return;
+        if (!racer(o) || i === slot) return;
         o.shrunkUntil = now + 5000;
       });
     } else if (item === 'missile') {
       let targetSlot = -1, bestDist = Infinity;
       players.forEach((o, i) => {
-        if (!o || i === slot) return;
+        if (!racer(o) || i === slot) return;
         const dx = o.x - p.x, dy = o.y - p.y;
         const d = dx * dx + dy * dy;
         if (d < bestDist) { bestDist = d; targetSlot = i; }
@@ -346,42 +505,17 @@ io.on('connection', (socket) => {
         });
       }
     }
-  });
+  }
+}
 
-  socket.on('power', () => {
-    const p = players[slot];
-    if (!p || phase !== 'racing') return;
-    const now = Date.now();
-    if (now < p.powerCooldownUntil) return;
-    p.powerCooldownUntil = now + 10000;
-    usePower(slot);
-  });
-
-  socket.on('cycle_track', () => {
-    if (slot === -1 || !players[slot] || phase !== 'select') return;
-    trackIndex = (trackIndex + 1) % TRACKS.length;
-    regenerateTrackObjects();
-  });
-
-  socket.on('reset_to_menu', () => {
-    if (slot === -1 || !players[slot]) return;
-    phase = 'select';
-    countdown = 0;
-    countdownAcc = 0;
-    firstConfirmAt = 0;
-    raceWinnerId = null;
-    finishedAt = 0;
-    players.forEach((p) => { if (p) p.confirmed = false; });
-    peels = [];
-    flowers = [];
-    iceUntil = 0;
-    iceOwnerSlot = -1;
-  });
-
-  socket.on('disconnect', () => {
-    if (slot !== -1 && players[slot]) players[slot] = null;
-  });
-});
+function tryPower(slot) {
+  const p = players[slot];
+  if (!racer(p) || phase !== 'racing') return;
+  const now = Date.now();
+  if (now < p.powerCooldownUntil) return;
+  p.powerCooldownUntil = now + 10000;
+  usePower(slot);
+}
 
 function moveSelection(slot, dir) {
   const p = players[slot];
@@ -404,7 +538,7 @@ function usePower(slot) {
   if (p.character === 'rabbit') {
     p.speed = Math.min(p.speed + 400, 3000);
     players.forEach((o, i) => {
-      if (!o || i === slot) return;
+      if (!racer(o) || i === slot) return;
       const dx = o.x - p.x, dy = o.y - p.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist > 95 * WORLD_SCALE) return;
@@ -448,7 +582,7 @@ setInterval(() => {
   const dt = TICK_MS / 1000;
 
   if (phase === 'select') {
-    const connected = players.filter(Boolean);
+    const connected = players.filter((p) => p && !p.bot);
     const confirmedCount = connected.filter((p) => p.confirmed).length;
     if (connected.length > 0 && confirmedCount > 0 &&
         (confirmedCount === connected.length || now - firstConfirmAt > 8000)) {
@@ -456,6 +590,7 @@ setInterval(() => {
       phase = 'countdown';
       countdown = 3;
       countdownAcc = 0;
+      addBots();
       resetForRace();
     }
   } else if (phase === 'countdown') {
@@ -466,14 +601,7 @@ setInterval(() => {
       if (countdown <= 0) phase = 'racing';
     }
   } else if (phase === 'finished') {
-    if (now - finishedAt > 12000) {
-      phase = 'select';
-      countdown = 0;
-      countdownAcc = 0;
-      firstConfirmAt = 0;
-      raceWinnerId = null;
-      players.forEach((p) => { if (p) p.confirmed = false; });
-    }
+    if (now - finishedAt > 12000) backToMenu();
   } else if (phase === 'racing') {
     boostBoxes.forEach((b) => {
       if (!b.active && now >= b.respawnAt) b.active = true;
@@ -482,8 +610,10 @@ setInterval(() => {
       if (!c.active && now >= c.respawnAt) c.active = true;
     });
 
+    botsThink(now);
+
     players.forEach((p, slotIdx) => {
-      if (!p) return;
+      if (!racer(p)) return;
       if (now < p.fallUntil) return;
       if (now < p.crashUntil) { p.speed = 0; return; }
 
@@ -498,6 +628,7 @@ setInterval(() => {
       let maxSpeed = slowed ? 900 : starActive ? STAR_SPEED : MAX_SPEED;
       if (shrunk) maxSpeed = Math.min(maxSpeed, 750);
       maxSpeed += coinBonus;
+      if (p.bot) maxSpeed *= p.ai.pace;
 
       const { input } = p;
       if (slowed) {
@@ -526,10 +657,10 @@ setInterval(() => {
     // choques entre autos: se empujan y pueden mandarse al vacio entre si
     for (let i = 0; i < players.length; i++) {
       const a = players[i];
-      if (!a || now < a.fallUntil || now < a.crashUntil) continue;
+      if (!racer(a) || now < a.fallUntil || now < a.crashUntil) continue;
       for (let j = i + 1; j < players.length; j++) {
         const b = players[j];
-        if (!b || now < b.fallUntil || now < b.crashUntil) continue;
+        if (!racer(b) || now < b.fallUntil || now < b.crashUntil) continue;
         const dx = b.x - a.x, dy = b.y - a.y;
         let dist = Math.sqrt(dx * dx + dy * dy);
         const minDist = 32 * WORLD_SCALE;
@@ -566,7 +697,7 @@ setInterval(() => {
 
     // items y limites de pista (fuera de la pista = te caes al vacio y respawneas)
     players.forEach((p) => {
-      if (!p) return;
+      if (!racer(p)) return;
       if (now < p.fallUntil || now < p.crashUntil) return;
 
       const starActive = now < p.starUntil;
@@ -673,6 +804,8 @@ function broadcast(now) {
       color: p.color,
       character: p.character,
       confirmed: p.confirmed,
+      bot: !!p.bot,
+      spectating: !!p.spectating,
       x: p.x, y: p.y, angle: p.angle,
       steer: p.input.steer,
       lives: p.lives,
@@ -719,7 +852,7 @@ function broadcast(now) {
   });
 
   players.forEach((p) => {
-    if (!p) return;
+    if (!p || p.bot) return;
     const cooldownMs = Math.max(0, p.powerCooldownUntil - now);
     io.to(p.socketId).emit('status', {
       phase,
@@ -735,6 +868,7 @@ function broadcast(now) {
       cooldownSec: Math.ceil(cooldownMs / 1000),
       winnerId: raceWinnerId,
       won: phase === 'finished' && raceWinnerId === p.id,
+      spectating: !!p.spectating,
       trackName: activeTrack().name,
       starActive: now < p.starUntil,
       crashed: now < p.crashUntil,
