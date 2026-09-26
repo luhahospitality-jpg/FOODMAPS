@@ -57,7 +57,12 @@ const TRACKS = TRACKS_RAW.map((t) => ({
 let trackIndex = 0;
 function activeTrack() { return TRACKS[trackIndex]; }
 
-app.use(express.static(__dirname + '/public'));
+// html/js/css siempre se revalidan: si no, la TV se quedaba mostrando la version vieja
+app.use(express.static(__dirname + '/public', {
+  setHeaders(res, filePath) {
+    if (/\.(html|js|css)$/.test(filePath)) res.setHeader('Cache-Control', 'no-cache');
+  },
+}));
 
 const players = new Array(4).fill(null);
 

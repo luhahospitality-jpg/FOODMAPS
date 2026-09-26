@@ -6,38 +6,51 @@ import * as hud from './hud.js';
 const params = new URLSearchParams(location.search);
 
 // ---------- carga: fuentes primero (los carteles se pintan en canvas con la fuente del logo) ----------
-hud.setLoading(0.1, false);
-await Promise.race([
-  Promise.all([document.fonts.load('100px "Lilita One"'), document.fonts.load('600 40px "Fredoka"')]),
-  new Promise((r) => setTimeout(r, 4000)),
-]);
-hud.setLoading(0.3, false);
-await loadCoreAssets();
-hud.setLoading(0.7, false);
-
-const [{ buildTrack, teardownTrack, updateTrack, themeCfg, TRACK }, { buildDecor, updateDecorFade, faceCrowds }, K, { updateItems, resetItems }, { fx }, P, A] = await Promise.all([
-  import('./track.js'), import('./decor.js'), import('./karts.js'), import('./items.js'), import('./fx.js'), import('./podium.js'), import('./audio.js'),
-]);
-const { karts, ensureKart, removeKart, faceAllKarts } = K;
-const { podiumScene, podiumCam, setupPodium, updatePodium } = P;
-const { sfx } = A;
-fx.init();
-hud.initSelect();
-hud.setLoading(1, true);
-if (params.get('debug')) hud.setQualityBadge('');
+// (sin "await" suelto en el modulo: los navegadores de TV mas viejos no lo soportan)
+let buildTrack, teardownTrack, updateTrack, themeCfg, TRACK, buildDecor, updateDecorFade, faceCrowds;
+let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx;
+async function boot() {
+  hud.setLoading(0.1, false);
+  if (document.fonts && document.fonts.load) {
+    await Promise.race([
+      Promise.all([document.fonts.load('100px "Lilita One"'), document.fonts.load('600 40px "Fredoka"')]).catch(() => null),
+      new Promise((r) => setTimeout(r, 4000)),
+    ]);
+  }
+  hud.setLoading(0.3, false);
+  await loadCoreAssets();
+  hud.setLoading(0.7, false);
+  const mods = await Promise.all([
+    import('./track.js'), import('./decor.js'), import('./karts.js'), import('./items.js'), import('./fx.js'), import('./podium.js'), import('./audio.js'),
+  ]);
+  ({ buildTrack, teardownTrack, updateTrack, themeCfg, TRACK } = mods[0]);
+  ({ buildDecor, updateDecorFade, faceCrowds } = mods[1]);
+  ({ karts, ensureKart, removeKart, faceAllKarts } = mods[2]);
+  ({ updateItems, resetItems } = mods[3]);
+  ({ fx } = mods[4]);
+  ({ podiumScene, podiumCam, setupPodium, updatePodium } = mods[5]);
+  ({ sfx } = mods[6]);
+  fx.init();
+  hud.initSelect();
+  hud.setLoading(1, true);
+  connect();
+  animate();
+}
 
 // ---------- red + interpolacion (el server manda 20 estados/seg; se dibuja a 60fps) ----------
-const socket = io();
 const snaps = [];
 const INTERP_DELAY = 110;
-socket.on('state', (s) => {
-  const prev = game.state;
-  game.prev = prev;
-  game.state = s;
-  snaps.push({ t: performance.now(), s });
-  while (snaps.length > 14) snaps.shift();
-  handleEvents(prev, s);
-});
+function connect() {
+  const socket = io();
+  socket.on('state', (s) => {
+    const prev = game.state;
+    game.prev = prev;
+    game.state = s;
+    snaps.push({ t: performance.now(), s });
+    while (snaps.length > 14) snaps.shift();
+    handleEvents(prev, s);
+  });
+}
 
 function lerpAngle(a, b, k) {
   let d = b - a;
@@ -276,5 +289,5 @@ function animate() {
   trackFps(dt, phase === 'racing');
   if (params.get('debug')) hud.setQualityBadge(['low', 'med', 'high'][quality.level] + ' · ' + Math.round(1 / Math.max(dt, 0.001)) + 'fps');
 }
-animate();
 window.__br = { game, quality, fx, renderer };
+boot().catch((e) => { if (window.__showBootError) window.__showBootError(e); else throw e; });

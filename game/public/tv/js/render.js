@@ -104,7 +104,9 @@ const LEVELS = [
 const params = new URLSearchParams(location.search);
 const forced = { low: 0, med: 1, high: 2 }[params.get('q')];
 const isTvLike = /Android|SmartTV|Smart-TV|MiTV|AFT|BRAVIA|Tizen|WebOS|HbbTV|CrKey/i.test(navigator.userAgent);
-export const quality = { level: forced !== undefined ? forced : (isTvLike ? 1 : 2), forced: forced !== undefined };
+const webgl2 = renderer.capabilities.isWebGL2;
+// sin WebGL2 (TVs viejas) el post-proceso con render targets HDR no funciona: calidad baja directa
+export const quality = { level: !webgl2 ? 0 : forced !== undefined ? forced : (isTvLike ? 1 : 2), forced: forced !== undefined || !webgl2 };
 
 let composer = null, mvPass = null, bloomPass = null, composerSamples = -1;
 
@@ -142,7 +144,9 @@ function applyQuality() {
     });
   }
   if (L.bloom) {
-    if (!composer || composerSamples !== L.samples) buildComposer(L.samples);
+    if (!composer || composerSamples !== L.samples) {
+      try { buildComposer(L.samples); } catch (e) { console.warn('sin post-proceso', e); quality.level = 0; composer = null; return applyQuality(); }
+    }
     composer.setPixelRatio(L.pr);
     composer.setSize(window.innerWidth, window.innerHeight);
   } else if (composer) {

@@ -73,7 +73,7 @@ export function loadGltf(url) {
           o.castShadow = true;
           o.receiveShadow = true;
           const mats = Array.isArray(o.material) ? o.material : [o.material];
-          mats.forEach((m) => { m.metalness = Math.min(m.metalness ?? 0, 0.1); m.roughness = Math.max(m.roughness ?? 1, 0.55); });
+          mats.forEach((m) => { m.metalness = Math.min(m.metalness || 0, 0.1); m.roughness = Math.max(m.roughness === undefined ? 1 : m.roughness, 0.55); });
         }
       });
       resolve({ object: wrap, size });
