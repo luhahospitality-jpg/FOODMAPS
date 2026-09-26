@@ -1,6 +1,7 @@
 import { THREE, PAL, RAINBOW, canvasTexture, shade } from './core.js';
 import { scene, camera, envTex } from './render.js';
 import { tex, loadGltf, cloneGltf } from './assets.js';
+import { fx } from './fx.js';
 import { TRACK, trackGroup, Instancer, unitRoundedBox, unitBox, blockMaterial, groundTop, distPts, pointOnCenter } from './track.js';
 
 // ---------- ubicador sin superposiciones ----------
@@ -93,22 +94,10 @@ function buildSky(ctx) {
 }
 
 function buildClouds(ctx, count, color) {
-  const t = tex('icon_dust');
-  if (!t) return;
   for (let i = 0; i < count; i++) {
-    const m = new THREE.SpriteMaterial({ map: t, color, transparent: true, opacity: 0.95, depthWrite: false, fog: false });
-    const sp = new THREE.Sprite(m);
     const a = ctx.rand() * Math.PI * 2, r = 3000 + ctx.rand() * 4800;
-    const s = 900 + ctx.rand() * 1300;
-    sp.scale.set(s * 1.1, s, 1);
-    sp.position.set(Math.cos(a) * r, 2300 + ctx.rand() * 1600, Math.sin(a) * r);
-    sp.userData.drift = { a, r, speed: 0.004 + ctx.rand() * 0.006, y: sp.position.y };
-    trackGroup.add(sp);
-    TRACK.animated.push((time) => {
-      const d = sp.userData.drift;
-      const aa = d.a + time * d.speed;
-      sp.position.set(Math.cos(aa) * d.r, d.y, Math.sin(aa) * d.r);
-    });
+    const sz = 900 + ctx.rand() * 1300;
+    fx.addStatic('dust', Math.cos(a) * r, 2300 + ctx.rand() * 1600, Math.sin(a) * r, sz, color, 1, false, 1.1);
   }
 }
 
@@ -231,7 +220,7 @@ function buildFlags(list) {
   list.forEach((f) => {
     const h = f.h || 420;
     poleInst.add(f.x, (f.y || 0) + h / 2, f.z, 12, h, 12, 0, '#ffffff');
-    flagInst.add(f.x, (f.y || 0) + h - 60, f.z, 220, 220, 220, f.rot || 0, f.color);
+    flagInst.add(f.x, (f.y || 0) + h - 50, f.z, 150, 150, 150, f.rot || 0, f.color);
   });
   poleInst.build(trackGroup, true);
   flagInst.build(trackGroup, false);
@@ -309,17 +298,9 @@ function buildFloatingBlocks(ctx, n) {
 
 // estrellas del moodboard titilando en el cielo / sobre pedestales
 function buildStarSprites(ctx, n, minY, maxY) {
-  const t = tex('icon_star');
-  if (!t) return;
   for (let i = 0; i < n; i++) {
-    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, transparent: true, depthWrite: false, fog: false, color: new THREE.Color(1.6, 1.6, 1.6) }));
     const a = ctx.rand() * Math.PI * 2, r = 2500 + ctx.rand() * 5500;
-    sp.position.set(Math.cos(a) * r, minY + ctx.rand() * (maxY - minY), Math.sin(a) * r);
-    const s = 120 + ctx.rand() * 160;
-    sp.scale.set(s, s, 1);
-    const ph = ctx.rand() * 6.28;
-    trackGroup.add(sp);
-    TRACK.animated.push((time) => { const k = 0.75 + 0.25 * Math.sin(time * 3 + ph); sp.scale.set(s * k, s * k, 1); sp.material.rotation = Math.sin(time + ph) * 0.3; });
+    fx.addStatic('star', Math.cos(a) * r, minY + ctx.rand() * (maxY - minY), Math.sin(a) * r, 120 + ctx.rand() * 160, '#ffffff', 1.5);
   }
 }
 
@@ -337,30 +318,19 @@ function buildWaterfall(x, y, z, rot, w, h) {
 
 // banana del moodboard sobre un bloque de pasto (billboard)
 function buildBananaBoards(spots) {
-  const t = tex('icon_peel');
   const pedestal = new Instancer(unitRoundedBox(), blockMaterial({ roughness: 0.7 }), spots.length);
   spots.forEach((s) => {
     pedestal.add(s.x, s.y + 110, s.z, 300, 220, 300, s.face, PAL.green);
-    if (!t) return;
-    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex('icon_peel'), transparent: true }));
-    sp.position.set(s.x, s.y + 420, s.z);
-    sp.scale.set(360, 390, 1);
-    trackGroup.add(sp);
+    fx.addStatic('peel', s.x, s.y + 420, s.z, 390, '#ffffff', 1, false, 0.92);
   });
   pedestal.build(trackGroup, true);
 }
 
 function buildStarPosts(spots) {
-  const t = tex('icon_star');
   const post = new Instancer(unitRoundedBox(), blockMaterial({ roughness: 0.7 }), spots.length);
-  spots.forEach((s, i) => {
+  spots.forEach((s) => {
     post.add(s.x, s.y + 170, s.z, 60, 340, 60, 0, '#8a5a33');
-    if (!t) return;
-    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, transparent: true, color: new THREE.Color(1.4, 1.4, 1.4) }));
-    sp.position.set(s.x, s.y + 440, s.z);
-    sp.scale.set(260, 260, 1);
-    trackGroup.add(sp);
-    TRACK.animated.push((time) => { sp.material.rotation = Math.sin(time * 2 + i) * 0.25; });
+    fx.addStatic('star', s.x, s.y + 440, s.z, 260, '#ffffff', 1.3);
   });
   post.build(trackGroup, true);
 }
@@ -432,7 +402,7 @@ export async function buildDecor(ctx) {
   const total = ctx.E.total;
   const rand = ctx.rand;
   // reservar la zona de largada
-  const s0 = pointOnCenter(ctx.pts, ctx.E, 280);
+  const s0 = pointOnCenter(ctx.pts, ctx.E, 700);
   P.add(s0.x, s0.z, ctx.half + 500);
 
   const theme = ctx.theme;

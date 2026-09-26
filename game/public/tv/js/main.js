@@ -1,6 +1,6 @@
 import { THREE, game, toWorld, CHAR_INFO, PAL, clamp } from './core.js';
 import { loadCoreAssets } from './assets.js';
-import { scene, camera, renderFrame, trackFps, quality, hemi, sun, setBloom, renderer } from './render.js';
+import { scene, camera, renderFrame, trackFps, quality, hemi, sun, setBloom, renderer, liteify } from './render.js';
 import * as hud from './hud.js';
 
 const params = new URLSearchParams(location.search);
@@ -92,13 +92,16 @@ async function rebuildTrack() {
   sun.color.set(cfg.sun); sun.intensity = cfg.sunI;
   setBloom(ctx.theme === 'banana' ? 0.45 : ctx.theme === 'space' ? 0.95 : 0.8, 0.5, 1.0);
   await buildDecor(ctx);
+  liteify(scene);
+  // compilar los shaders ahora (en la carga) y no a mitad de carrera: evita tirones
+  try { renderer.compile(scene, camera); } catch (e) { /* no critico */ }
   builtTrackId = id;
   building = false;
 }
 
 // ---------- camaras ----------
 const camStates = [0, 1, 2, 3].map(() => ({ init: false, x: 0, z: 0, h: 0, shake: 0, fov: 60 }));
-function chaseCam(cam, cs, target, dt, boost) {
+function chaseCam(cam, cs, target, dt, boost, intro) {
   if (!cs.init) { cs.x = target.x; cs.z = target.z; cs.h = target.angle; cs.init = true; }
   const kp = 1 - Math.exp(-dt * 16), kh = 1 - Math.exp(-dt * 4.2);
   cs.x += (target.x - cs.x) * kp;
@@ -109,7 +112,17 @@ function chaseCam(cam, cs, target, dt, boost) {
   const dist = 780, height = 400, ahead = 700;
   const sx = (Math.random() - 0.5) * 60 * cs.shake, sy = (Math.random() - 0.5) * 50 * cs.shake;
   cam.position.set(cs.x - Math.cos(cs.h) * dist + sx, height + sy, cs.z - Math.sin(cs.h) * dist);
-  cam.lookAt(cs.x + Math.cos(cs.h) * ahead, 170, cs.z + Math.sin(cs.h) * ahead);
+  let lx = cs.x + Math.cos(cs.h) * ahead, ly = 170, lz = cs.z + Math.sin(cs.h) * ahead;
+  // 3-2-1: la camara arranca adelante y arriba mirando al kart en la grilla, y baja hasta
+  // quedar detras justo en el GO
+  if (intro !== undefined && intro < 1) {
+    const e = intro * intro * (3 - 2 * intro);
+    const side = Math.sin(cs.h), cside = -Math.cos(cs.h);
+    const ix = cs.x + Math.cos(cs.h) * 1500 + side * 700, iy = 1100, iz = cs.z + Math.sin(cs.h) * 1500 + cside * 700;
+    cam.position.set(ix + (cam.position.x - ix) * e, iy + (cam.position.y - iy) * e, iz + (cam.position.z - iz) * e);
+    lx = cs.x + (lx - cs.x) * e; ly = 150 + (ly - 150) * e; lz = cs.z + (lz - cs.z) * e;
+  }
+  cam.lookAt(lx, ly, lz);
   if (Math.abs(cam.fov - cs.fov) > 0.05) { cam.fov = cs.fov; cam.updateProjectionMatrix(); }
 }
 function orbitCam(cam, t) {
@@ -130,13 +143,14 @@ const SPLIT = {
 };
 
 // ---------- eventos -> sonido / efectos / banners ----------
-let finishedAt = 0, goUntil = 0;
+let finishedAt = 0, goUntil = 0, countdownAt = 0;
 function kartPos(slot) {
   const k = karts[slot];
   return k ? { x: k.group.position.x, z: k.group.position.z } : null;
 }
 function handleEvents(prev, next) {
   if (!prev) return;
+  if (next.phase === 'countdown' && prev.phase !== 'countdown') countdownAt = performance.now();
   if (next.phase === 'countdown' && next.countdown !== prev.countdown) sfx.countdown(next.countdown);
   if (next.phase === 'racing' && prev.phase === 'countdown') { goUntil = performance.now() + 900; sfx.countdown(0); }
   if (next.phase === 'finished' && prev.phase !== 'finished') { sfx.win(); finishedAt = performance.now(); }
@@ -190,9 +204,12 @@ function handleEvents(prev, next) {
 const clock = new THREE.Clock();
 const DUST = { rainbow: '#fff4fc', banana: '#fff6e2', space: '#dfe6ff' };
 let podiumReady = false;
+let liteTick = 0;
 
+const stats = { js: 0, frames: 0 };
 function animate() {
   requestAnimationFrame(animate);
+  const tStart = performance.now();
   const rawDt = clock.getDelta();
   const dt = Math.min(rawDt, 0.1);
   // la camara usa el tiempo real (hasta 0.4s): en una TV lenta, con dt recortado se quedaba atras del kart
@@ -239,7 +256,7 @@ function animate() {
   updateTrack(t, s.ice && s.ice.active);
   if (TRACK.theme === 'rainbow') {
     const racers = ip.players.filter(Boolean);
-    if (phase === 'racing' || phase === 'countdown') racers.forEach((q) => { const w = toWorld(q.x, q.y); fx.ambientConfetti(w.x, w.z, 2600, 14, dt); });
+    if (phase === 'racing' || phase === 'countdown') racers.forEach((q) => { const w = toWorld(q.x, q.y); fx.ambientConfetti(w.x, w.z, 2600, quality.lite ? 6 : 14, dt); });
   }
   fx.update(dt);
 
@@ -268,7 +285,8 @@ function animate() {
         before: (cam) => {
           const k = karts[slot];
           const q = ip.players[slot];
-          if (k && q) chaseCam(cam, camStates[slot], { x: k.group.position.x, z: k.group.position.z, angle: q.angle }, camDt, q.p.starActive);
+          if (k && q) chaseCam(cam, camStates[slot], { x: k.group.position.x, z: k.group.position.z, angle: q.angle }, camDt, q.p.starActive,
+            phase === 'countdown' ? clamp((now - countdownAt) / 2700, 0, 1) : undefined);
           faceAllKarts(cam, 'v' + slot, slot);
           faceCrowds(cam);
           updateDecorFade(cam.position);
@@ -285,9 +303,13 @@ function animate() {
   }
   if (phase === 'select') hud.updateSelect();
 
+  const tJs = performance.now();
   if (builtTrackId || showPodium) renderFrame(views);
-  trackFps(dt, phase === 'racing');
-  if (params.get('debug')) hud.setQualityBadge(['low', 'med', 'high'][quality.level] + ' · ' + Math.round(1 / Math.max(dt, 0.001)) + 'fps');
+  stats.js += (tJs - tStart); stats.render = (stats.render || 0) + (performance.now() - tJs); stats.frames++;
+  trackFps(rawDt, phase === 'racing' || phase === 'countdown' || phase === 'select');
+  // karts/items nuevos tambien pasan a materiales livianos en modo TV
+  if (quality.lite && (++liteTick % 45) === 0) { liteify(scene); liteify(podiumScene); }
+  if (params.get('debug')) hud.setQualityBadge(['tv', 'med', 'high'][quality.level] + ' · x' + quality.pr.toFixed(2) + ' · ' + Math.round(1 / Math.max(rawDt, 0.001)) + 'fps');
 }
-window.__br = { game, quality, fx, renderer };
+window.__br = { game, quality, fx, renderer, stats };
 boot().catch((e) => { if (window.__showBootError) window.__showBootError(e); else throw e; });

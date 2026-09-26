@@ -599,7 +599,8 @@ function buildStartLine(state, pts, half) {
   const a = pts[0], b = pts[1];
   const dx = b.x - a.x, dz = b.z - a.z, l = Math.hypot(dx, dz);
   const ux = dx / l, uz = dz / l;
-  const px = a.x + ux * 280, pz = a.z + uz * 280;
+  const sd = state.startDist || 1000;
+  const px = a.x + ux * sd, pz = a.z + uz * sd;
   const ang = Math.atan2(dz, dx);
   const check = canvasTexture(256, 64, (ctx, w, h) => {
     const s = 32;

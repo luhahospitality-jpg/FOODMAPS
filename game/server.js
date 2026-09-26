@@ -48,11 +48,14 @@ const TRACKS_RAW = [
     ],
   },
 ];
-const TRACKS = TRACKS_RAW.map((t) => ({
-  ...t,
-  points: t.points.map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE })),
-  guardrailSegments: new Set(t.guardrailSegments),
-}));
+// la linea de largada/meta esta a START_DIST del primer punto, sobre el primer tramo;
+// la grilla arranca detras de la linea y la vuelta se cuenta al cruzarla
+const START_DIST = 1000;
+const TRACKS = TRACKS_RAW.map((t) => {
+  const points = t.points.map((p) => ({ x: p.x * WORLD_SCALE, y: p.y * WORLD_SCALE }));
+  const seg0 = Math.hypot(points[1].x - points[0].x, points[1].y - points[0].y);
+  return { ...t, points, guardrailSegments: new Set(t.guardrailSegments), startT: START_DIST / seg0 };
+});
 
 let trackIndex = 0;
 function activeTrack() { return TRACKS[trackIndex]; }
@@ -98,8 +101,17 @@ function nearestTrackInfo(px, py) {
 
 const RACE_LAPS = Number(process.env.RACE_LAPS) || 3;
 
-function registerLapProgress(p, idx) {
+// posicion medida desde la linea de largada, en tramos (0 = justo en la linea)
+function relPos(info) {
+  const tr = activeTrack();
+  let e = info.idx + info.t - tr.startT;
+  if (e < 0) e += tr.points.length;
+  return e;
+}
+
+function registerLapProgress(p, e) {
   const n = activeTrack().points.length;
+  const idx = Math.floor(e);
   if (idx <= 1 && p.lapIndex >= n - 2) {
     p.lap += 1;
     p.lapIndex = idx;
@@ -107,7 +119,7 @@ function registerLapProgress(p, idx) {
       phase = 'finished';
       raceWinnerId = p.id;
       finishedAt = Date.now();
-      p.progress = p.lap * n + idx;
+      p.progress = p.lap * n + e;
       finalRanking = players.filter(Boolean)
         .sort((a, b) => (b === p ? 1 : 0) - (a === p ? 1 : 0) || (b.progress || 0) - (a.progress || 0))
         .map((o) => o.id);
@@ -121,10 +133,10 @@ function registerLapProgress(p, idx) {
 // progreso continuo = vueltas completas * tramos + tramo actual + fraccion del tramo.
 // Si todavia no paso la mitad de la vuelta pero esta en los ultimos tramos, es que
 // esta detras de la linea de largada (no adelante)
-function updateProgress(p, info) {
+function updateProgress(p, e) {
   const n = activeTrack().points.length;
-  let raw = info.idx + info.t;
-  if (p.lapIndex < n / 2 && info.idx > n / 2) raw -= n;
+  let raw = e;
+  if (p.lapIndex < n / 2 && e > n / 2) raw -= n;
   p.progress = p.lap * n + raw;
 }
 
@@ -135,6 +147,7 @@ function computePlaces() {
   return places;
 }
 
+// grilla de largada 2x2 detras de la linea (fila de adelante: P1 y P2)
 function spawnFor(slot) {
   const pts = activeTrack().points;
   const a = pts[0], b = pts[1];
@@ -142,11 +155,12 @@ function spawnFor(slot) {
   const len = Math.sqrt(dx * dx + dy * dy);
   const dirX = dx / len, dirY = dy / len;
   const perpX = -dirY, perpY = dirX;
-  const lane = (slot - 1.5) * 45 * WORLD_SCALE;
-  const along = slot * 15 * WORLD_SCALE;
+  const row = slot < 2 ? 0 : 1;
+  const along = START_DIST - (row === 0 ? 300 : 650);
+  const lane = (slot % 2 === 0 ? -1 : 1) * 420;
   return {
-    x: a.x + dirX * (40 * WORLD_SCALE + along) + perpX * lane,
-    y: a.y + dirY * (40 * WORLD_SCALE + along) + perpY * lane,
+    x: a.x + dirX * along + perpX * lane,
+    y: a.y + dirY * along + perpY * lane,
     angle: Math.atan2(dirY, dirX),
   };
 }
@@ -442,16 +456,14 @@ setInterval(() => {
       phase = 'countdown';
       countdown = 3;
       countdownAcc = 0;
+      resetForRace();
     }
   } else if (phase === 'countdown') {
     countdownAcc += TICK_MS;
     if (countdownAcc >= 1000) {
       countdownAcc = 0;
       countdown -= 1;
-      if (countdown <= 0) {
-        phase = 'racing';
-        resetForRace();
-      }
+      if (countdown <= 0) phase = 'racing';
     }
   } else if (phase === 'finished') {
     if (now - finishedAt > 12000) {
@@ -597,9 +609,10 @@ setInterval(() => {
       });
 
       const info = nearestTrackInfo(p.x, p.y);
-      updateProgress(p, info);
+      const e = relPos(info);
+      updateProgress(p, e);
       if (info.dist <= TRACK_WIDTH / 2) {
-        registerLapProgress(p, info.idx);
+        registerLapProgress(p, e);
       } else if (activeTrack().guardrailSegments.has(info.idx)) {
         // baranda de ruedas: pared solida que protege el vacio. No te caes ni
         // frenas aca, simplemente no podes pasar del borde (te desliza por la pared)
@@ -608,7 +621,7 @@ setInterval(() => {
         const nx = dx / len, ny = dy / len;
         p.x = info.x + nx * (TRACK_WIDTH / 2);
         p.y = info.y + ny * (TRACK_WIDTH / 2);
-        registerLapProgress(p, info.idx);
+        registerLapProgress(p, e);
       } else {
         // aca no hay baranda: es precipicio de verdad. Te caes al vacio, pierdes
         // una vida y respawneas siempre en el CENTRO de la pista (no en el borde)
@@ -691,6 +704,7 @@ function broadcast(now) {
     trackTheme: activeTrack().theme,
     track: activeTrack().points,
     trackWidth: TRACK_WIDTH,
+    startDist: START_DIST,
     guardrailSegments: Array.from(activeTrack().guardrailSegments),
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),

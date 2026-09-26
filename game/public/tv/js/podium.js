@@ -2,7 +2,8 @@ import { THREE, PAL, RAINBOW, CHAR_INFO, canvasTexture } from './core.js';
 import { envTex } from './render.js';
 import { tex } from './assets.js';
 import { RoundedBoxGeometry } from '/vendor/addons/geometries/RoundedBoxGeometry.js';
-import { glowTex, KART_H } from './karts.js';
+import { glowTex } from './karts.js';
+import { buildCharacterModel } from './models.js';
 
 export const podiumScene = new THREE.Scene();
 export const podiumCam = new THREE.PerspectiveCamera(42, 16 / 9, 10, 20000);
@@ -113,7 +114,7 @@ podiumScene.add(confMesh);
 // personajes arriba del podio
 const racers = [];
 function clearRacers() {
-  racers.forEach((r) => { podiumScene.remove(r.m); r.m.geometry.dispose(); r.m.material.dispose(); });
+  racers.forEach((r) => { podiumScene.remove(r.m); });
   racers.length = 0;
 }
 
@@ -124,24 +125,23 @@ export function setupPodium(ranking, players) {
   ranking.forEach((id, i) => {
     const p = byId[id];
     if (!p) return;
-    const info = CHAR_INFO[p.character];
     const spot = i < 3 ? blocks.find((b) => b.place === i + 1) : { x: 1150, top: 0 };
-    const dir = spot.x < 0 ? 'right' : spot.x > 0 ? 'left' : 'right';
-    const t = tex(info.sprite + '_' + dir);
-    const aspect = t && t.image ? t.image.width / t.image.height : 0.6;
-    const h = i === 0 ? KART_H * 1.35 : i < 3 ? KART_H * 1.1 : KART_H * 0.95;
-    const geo = new THREE.PlaneGeometry(h * aspect, h);
-    geo.translate(0, h / 2, 0);
-    const m = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ map: t, transparent: true, alphaTest: 0.08 }));
-    m.position.set(spot.x, spot.top, i < 3 ? 40 : 260);
+    const model = buildCharacterModel(p.character);
+    const m = new THREE.Group();
+    m.add(model.root);
+    // de frente a la camara, un poco en diagonal hacia el centro
+    model.root.rotation.y = -Math.PI / 2 + (spot.x < 0 ? 0.55 : spot.x > 0 ? -0.55 : 0);
+    const sc = i === 0 ? 1.2 : i < 3 ? 1.0 : 0.85;
+    m.scale.setScalar(sc);
+    m.position.set(spot.x, spot.top, i < 3 ? 20 : 260);
     podiumScene.add(m);
-    racers.push({ m, i, base: spot.top });
+    racers.push({ m, i, base: spot.top, model });
   });
 }
 
 export function updatePodium(t) {
-  podiumCam.position.set(Math.sin(t * 0.25) * 240, 760 + Math.sin(t * 0.4) * 30, 2250);
-  podiumCam.lookAt(0, 760, 0);
+  podiumCam.position.set(Math.sin(t * 0.25) * 240, 700 + Math.sin(t * 0.4) * 30, 2250);
+  podiumCam.lookAt(0, 690, 0);
   flames.forEach((fl, i) => {
     const s = 420 * (1 + Math.sin(t * 14 + i) * 0.1);
     fl.f.scale.set(s, s, 1);
@@ -151,6 +151,7 @@ export function updatePodium(t) {
     // el ganador salta de alegria
     const hop = r.i === 0 ? Math.abs(Math.sin(t * 4.5)) * 60 : Math.abs(Math.sin(t * 3 + r.i)) * 14;
     r.m.position.y = r.base + hop;
+    if (r.i === 0) r.model.riderGroup.rotation.z = Math.sin(t * 4.5) * 0.08;
   });
   const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), p = new THREE.Vector3(), s = new THREE.Vector3(1, 1, 1);
   confData.forEach((d, i) => {

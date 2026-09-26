@@ -277,6 +277,10 @@ export const fx = {
   poison(x, z) {
     add.emit(Object.assign({ x: x + R(-60, 60), y: R(40, 160), z: z + R(-60, 60), vy: R(60, 160), life: 0.9, s0: 70, s1: 20, a0: 0.9, a1: 0, rot: R(0, 6), cell: CELLS.sparkle }, rgb(PAL.violet, 1.6)));
   },
+  // billboard permanente dentro del sistema de particulas (0 draw calls extra)
+  addStatic(cellName, x, y, z, size, color = '#ffffff', mul = 1, additive = false, aspect = 1) {
+    (additive ? add : normal).emit(Object.assign({ x, y, z, life: 1e9, s0: size, s1: size, a0: 1, a1: 1, stretch: aspect, cell: CELLS[cellName] }, rgb(color, mul)));
+  },
   text(word, x, z, color = PAL.yellow, y = 520) {
     const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: textTex(word, color), transparent: true, depthWrite: false, depthTest: false }));
     s.position.set(x, y, z);

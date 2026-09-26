@@ -34,16 +34,11 @@ export function loadImg(key, url) {
 }
 export function img(key) { return IMG[key] || null; }
 
-const SPRITES = ['bunny', 'gorilla', 'princess', 'ice'];
 const ICONS = ['coin', 'star', 'crystal', 'torch', 'dust', 'trail', 'sparkle', 'peel', 'pw_gorilla_banana',
   'pw_carrot', 'pw_flower', 'pw_freeze'];
 
 export async function loadCoreAssets() {
   const jobs = [];
-  SPRITES.forEach((s) => {
-    jobs.push(loadTex(s + '_left', '/assets/chars/' + s + '_left.png'));
-    jobs.push(loadTex(s + '_right', '/assets/chars/' + s + '_right.png'));
-  });
   ICONS.forEach((i) => {
     jobs.push(loadTex('icon_' + i, '/assets/ui/' + i + '.png'));
     jobs.push(loadImg(i, '/assets/ui/' + i + '.png'));

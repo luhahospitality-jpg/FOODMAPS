@@ -31,7 +31,8 @@ const boxGeo = new RoundedBoxGeometry(130, 130, 130, 4, 20);
 const boxMat = new THREE.MeshStandardMaterial({ map: boxTex, roughness: 0.22, metalness: 0.08, emissive: '#ffffff', emissiveMap: boxEmit, emissiveIntensity: 1.2, envMap: envTex, envMapIntensity: 0.9 });
 
 // ---------- MONEDA ----------
-const coinGeo = new THREE.CylinderGeometry(64, 64, 16, 40);
+const coinGeo = new THREE.CylinderGeometry(64, 64, 16, 32);
+coinGeo.rotateZ(Math.PI / 2);
 const coinSide = new THREE.MeshStandardMaterial({ color: '#f5b400', metalness: 0.75, roughness: 0.28, emissive: '#7a4a00', emissiveIntensity: 0.15, envMap: envTex, envMapIntensity: 0.55 });
 let coinCap = null;
 function coinMats() {
@@ -49,25 +50,25 @@ class Pool {
   }
 }
 
-const boxPool = new Pool(() => {
-  const g = new THREE.Group();
-  const m = new THREE.Mesh(boxGeo, boxMat);
-  m.castShadow = true;
-  g.add(m);
+// cajas y monedas instanciadas: todas las monedas se dibujan en 3 llamadas (canto + 2 caras)
+const MAX_BOXES = 16, MAX_COINS = 48;
+let boxInst = null, coinInst = null;
+function ensureInst() {
+  if (boxInst) return;
+  boxInst = new THREE.InstancedMesh(boxGeo, boxMat, MAX_BOXES);
+  boxInst.frustumCulled = false;
+  boxInst.count = 0;
+  coinInst = new THREE.InstancedMesh(coinGeo, coinMats(), MAX_COINS);
+  coinInst.frustumCulled = false;
+  coinInst.count = 0;
+  group.add(boxInst, coinInst);
+}
+const haloPool = new Pool(() => {
   const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex(), color: new THREE.Color(PAL.violet).multiplyScalar(1.4), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
   halo.scale.set(420, 420, 1);
-  g.add(halo);
-  g.userData.box = m;
-  return g;
+  return halo;
 });
-const coinPool = new Pool(() => {
-  const m = new THREE.Mesh(coinGeo, coinMats());
-  m.rotation.z = Math.PI / 2;
-  const g = new THREE.Group();
-  g.add(m);
-  g.userData.coin = m;
-  return g;
-});
+const _m4 = new THREE.Matrix4(), _q = new THREE.Quaternion(), _e = new THREE.Euler(), _p = new THREE.Vector3(), _one = new THREE.Vector3(1, 1, 1);
 const peelPool = new Pool(() => {
   const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex('icon_peel'), transparent: true }));
   s.scale.set(190, 250, 1);
@@ -116,13 +117,18 @@ const missileVis = [];
 export function updateItems(t, dt, interp) {
   const s = game.state;
   const boxes = s.boxes || [];
-  boxPool.sync(boxes.length);
+  ensureInst();
+  haloPool.sync(Math.min(boxes.length, MAX_BOXES));
+  boxInst.count = Math.min(boxes.length, MAX_BOXES);
   boxes.forEach((b, i) => {
+    if (i >= MAX_BOXES) return;
     const w = toWorld(b.x, b.y);
-    const o = boxPool.items[i];
-    o.position.set(w.x, 150 + Math.sin(t * 2.2 + i) * 22, w.z);
-    o.userData.box.rotation.set(t * 0.7 + i, t * 1.1 + i, 0);
+    const y = 150 + Math.sin(t * 2.2 + i) * 22;
+    _e.set(t * 0.7 + i, t * 1.1 + i, 0); _q.setFromEuler(_e); _p.set(w.x, y, w.z);
+    boxInst.setMatrixAt(i, _m4.compose(_p, _q, _one));
+    haloPool.items[i].position.set(w.x, y, w.z);
   });
+  boxInst.instanceMatrix.needsUpdate = true;
   // caja agarrada -> chispas moradas
   if (s.phase === 'racing') prevBoxes.forEach((pb) => {
     if (!boxes.some((b) => b.x === pb.x && b.y === pb.y)) {
@@ -134,13 +140,14 @@ export function updateItems(t, dt, interp) {
   prevBoxes = boxes.slice();
 
   const coins = s.coins || [];
-  coinPool.sync(coins.length);
+  coinInst.count = Math.min(coins.length, MAX_COINS);
   coins.forEach((c, i) => {
+    if (i >= MAX_COINS) return;
     const w = toWorld(c.x, c.y);
-    const o = coinPool.items[i];
-    o.position.set(w.x, 110 + Math.sin(t * 3 + i * 1.3) * 16, w.z);
-    o.rotation.y = t * 3 + i;
+    _e.set(0, t * 3 + i, 0); _q.setFromEuler(_e); _p.set(w.x, 110 + Math.sin(t * 3 + i * 1.3) * 16, w.z);
+    coinInst.setMatrixAt(i, _m4.compose(_p, _q, _one));
   });
+  coinInst.instanceMatrix.needsUpdate = true;
   if (s.phase === 'racing') prevCoins.forEach((pc) => {
     if (!coins.some((c) => c.x === pc.x && c.y === pc.y)) { const w = toWorld(pc.x, pc.y); fx.coinPop(w.x, w.z); }
   });

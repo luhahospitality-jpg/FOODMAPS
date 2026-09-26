@@ -95,18 +95,25 @@ class MultiViewPass extends Pass {
   }
 }
 
-// ---------- calidad adaptativa (la TV Xiaomi no es una PC gamer) ----------
+// ---------- calidad adaptativa ----------
+// "tv": sin bloom ni sombras, materiales Lambert (mucho mas baratos que los PBR) y
+// resolucion interna dinamica. Es el perfil por defecto en TVs / Android.
+const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
 const LEVELS = [
-  { name: 'low', pr: 0.7, bloom: false, shadows: false, samples: 0 },
-  { name: 'med', pr: 1.0, bloom: true, shadows: true, samples: 0 },
-  { name: 'high', pr: Math.min(window.devicePixelRatio || 1, 1.5), bloom: true, shadows: true, samples: 4 },
+  { name: 'tv', prMin: 0.42, prMax: 1.0, prStart: 0.7, bloom: false, shadows: false, samples: 0, lite: true },
+  { name: 'med', prMin: 0.7, prMax: 1.0, prStart: 1.0, bloom: true, shadows: true, samples: 0, lite: false },
+  { name: 'high', prMin: 0.8, prMax: DPR, prStart: DPR, bloom: true, shadows: true, samples: 4, lite: false },
 ];
 const params = new URLSearchParams(location.search);
-const forced = { low: 0, med: 1, high: 2 }[params.get('q')];
-const isTvLike = /Android|SmartTV|Smart-TV|MiTV|AFT|BRAVIA|Tizen|WebOS|HbbTV|CrKey/i.test(navigator.userAgent);
+const forced = { low: 0, tv: 0, med: 1, high: 2 }[params.get('q')];
+const isTvLike = /Android|SmartTV|Smart-TV|MiTV|Mi TV|AFT|BRAVIA|Tizen|WebOS|HbbTV|CrKey|TV/i.test(navigator.userAgent);
 const webgl2 = renderer.capabilities.isWebGL2;
-// sin WebGL2 (TVs viejas) el post-proceso con render targets HDR no funciona: calidad baja directa
-export const quality = { level: !webgl2 ? 0 : forced !== undefined ? forced : (isTvLike ? 1 : 2), forced: forced !== undefined || !webgl2 };
+const startLevel = !webgl2 ? 0 : forced !== undefined ? forced : (isTvLike ? 0 : 2);
+export const quality = { level: startLevel, forced: forced !== undefined || !webgl2, pr: LEVELS[startLevel].prStart, lite: LEVELS[startLevel].lite };
+// ?pr=0.6 fija la resolucion interna (desactiva la resolucion dinamica); ?lite=0 fuerza materiales PBR
+const forcedPr = parseFloat(params.get('pr'));
+if (forcedPr > 0) quality.pr = forcedPr;
+const forcedLite = params.get('lite');
 
 let composer = null, mvPass = null, bloomPass = null, composerSamples = -1;
 
@@ -132,9 +139,46 @@ export function setBloom(strength, radius, threshold) {
   if (threshold !== undefined) bloomPass.threshold = threshold;
 }
 
+// materiales PBR -> Lambert (misma textura/color/emisivo, mucho menos trabajo por pixel)
+const LITE = new WeakMap();
+function toLambert(m) {
+  if (!m || !m.isMeshStandardMaterial) return m;
+  let l = LITE.get(m);
+  if (l) return l;
+  l = new THREE.MeshLambertMaterial({
+    color: m.color, map: m.map, emissive: m.emissive, emissiveMap: m.emissiveMap, emissiveIntensity: m.emissiveIntensity,
+    transparent: m.transparent, opacity: m.opacity, alphaTest: m.alphaTest, side: m.side, vertexColors: m.vertexColors,
+    flatShading: m.flatShading, depthWrite: m.depthWrite, fog: m.fog,
+    polygonOffset: m.polygonOffset, polygonOffsetFactor: m.polygonOffsetFactor, polygonOffsetUnits: m.polygonOffsetUnits,
+  });
+  if (m.onBeforeCompile && m.onBeforeCompile !== THREE.Material.prototype.onBeforeCompile) {
+    l.onBeforeCompile = m.onBeforeCompile;
+    const key = m.customProgramCacheKey.bind(m);
+    l.customProgramCacheKey = () => 'lite-' + key();
+  }
+  l.userData = m.userData;
+  LITE.set(m, l);
+  return l;
+}
+export function liteify(root) {
+  if (!quality.lite) return;
+  root.traverse((o) => {
+    if (!o.material) return;
+    o.material = Array.isArray(o.material) ? o.material.map(toLambert) : toLambert(o.material);
+  });
+}
+
+function capPr(pr) {
+  // nunca mas de ~1920 px de ancho de render (en TVs 4K el navegador puede reportar mas)
+  const maxW = quality.lite ? 1600 : 2560;
+  return Math.min(pr, maxW / Math.max(1, window.innerWidth));
+}
+
 function applyQuality() {
   const L = LEVELS[quality.level];
-  renderer.setPixelRatio(L.pr);
+  quality.lite = forcedLite === '0' ? false : forcedLite === '1' ? true : L.lite;
+  quality.pr = forcedPr > 0 ? forcedPr : Math.max(L.prMin, Math.min(L.prMax, quality.pr));
+  renderer.setPixelRatio(capPr(quality.pr));
   renderer.setSize(window.innerWidth, window.innerHeight, false);
   if (renderer.shadowMap.enabled !== L.shadows) {
     renderer.shadowMap.enabled = L.shadows;
@@ -147,17 +191,19 @@ function applyQuality() {
     if (!composer || composerSamples !== L.samples) {
       try { buildComposer(L.samples); } catch (e) { console.warn('sin post-proceso', e); quality.level = 0; composer = null; return applyQuality(); }
     }
-    composer.setPixelRatio(L.pr);
+    composer.setPixelRatio(renderer.getPixelRatio());
     composer.setSize(window.innerWidth, window.innerHeight);
   } else if (composer) {
     composer.renderTarget1.dispose(); composer.renderTarget2.dispose();
     composer = null; mvPass = null; bloomPass = null; composerSamples = -1;
   }
+  liteify(scene);
   document.body.dataset.quality = L.name;
 }
 
 export function setQuality(level) {
   quality.level = Math.max(0, Math.min(LEVELS.length - 1, level));
+  quality.pr = LEVELS[quality.level].prStart;
   applyQuality();
 }
 
@@ -173,20 +219,34 @@ export function renderFrame(views) {
   }
 }
 
-// si la TV no llega a ~40 fps, baja la calidad sola (sin volver a subir para no oscilar)
-let fpsAcc = 0, fpsFrames = 0, fpsWarmup = 5;
+// resolucion dinamica: cada segundo mira los fps; si no llega, baja la resolucion interna
+// (y si ya esta al minimo, baja de nivel). Si sobra, la vuelve a subir de a poco.
+let fpsAcc = 0, fpsFrames = 0, good = 0, warm = 2;
 export function trackFps(dt, active) {
-  if (!active || quality.forced) { fpsAcc = 0; fpsFrames = 0; return; }
+  if (!active || forcedPr > 0) { fpsAcc = 0; fpsFrames = 0; return; }
   fpsAcc += dt; fpsFrames++;
-  if (fpsAcc < 3) return;
+  if (fpsAcc < 1) return;
   const fps = fpsFrames / fpsAcc;
   fpsAcc = 0; fpsFrames = 0;
-  if (fpsWarmup > 0) { fpsWarmup -= 3; return; }
-  if (fps < 40 && quality.level > 0) {
-    setQuality(quality.level - 1);
-    fpsWarmup = 3;
-  } else if (fps < 26 && quality.level === 0 && renderer.getPixelRatio() > 0.55) {
-    renderer.setPixelRatio(0.55);
-    renderer.setSize(window.innerWidth, window.innerHeight, false);
+  if (warm > 0) { warm--; return; }
+  const L = LEVELS[quality.level];
+  if (fps < 48) {
+    good = 0;
+    if (quality.pr > L.prMin + 0.01) {
+      quality.pr = Math.max(L.prMin, quality.pr * (fps < 30 ? 0.8 : 0.9));
+      applyQuality();
+    } else if (quality.level > 0 && !quality.forced) {
+      setQuality(quality.level - 1);
+    }
+    warm = 1;
+  } else if (fps > 57) {
+    if (++good >= 3 && quality.pr < L.prMax - 0.01) {
+      quality.pr = Math.min(L.prMax, quality.pr + 0.05);
+      applyQuality();
+      good = 0;
+      warm = 1;
+    }
+  } else {
+    good = 0;
   }
 }

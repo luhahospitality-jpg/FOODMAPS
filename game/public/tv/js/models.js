@@ -1,0 +1,414 @@
+import { THREE, canvasTexture, roundRect } from './core.js';
+import { RoundedBoxGeometry } from '/vendor/addons/geometries/RoundedBoxGeometry.js';
+import { mergeGeometries } from '/vendor/BufferGeometryUtils.js';
+
+// Personajes 3D del moodboard armados pieza por pieza. Todas las piezas de un mismo
+// "material" se fusionan en UNA malla con colores por vertice: cada kart son ~4 draw
+// calls (auto, piloto, cara, ruedas), clave para que la TV no sufra.
+// Ejes del modelo: +X = hacia adelante, +Y = arriba, Z = costados.
+
+export const MODEL_H = 370;
+
+const _c = new THREE.Color();
+const _m = new THREE.Matrix4();
+const _q = new THREE.Quaternion();
+const _e = new THREE.Euler();
+
+class Parts {
+  constructor() { this.list = []; }
+  add(geo, color, x = 0, y = 0, z = 0, rx = 0, ry = 0, rz = 0, sx = 1, sy = 1, sz = 1) {
+    const g = geo.index ? geo.toNonIndexed() : geo.clone();
+    g.deleteAttribute('uv');
+    if (g.getAttribute('uv1')) g.deleteAttribute('uv1');
+    _e.set(rx, ry, rz); _q.setFromEuler(_e);
+    _m.compose(new THREE.Vector3(x, y, z), _q, new THREE.Vector3(sx, sy, sz));
+    g.applyMatrix4(_m);
+    _c.set(color);
+    const n = g.getAttribute('position').count;
+    const col = new Float32Array(n * 3);
+    for (let i = 0; i < n; i++) { col[i * 3] = _c.r; col[i * 3 + 1] = _c.g; col[i * 3 + 2] = _c.b; }
+    g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+    this.list.push(g);
+    return this;
+  }
+  box(w, h, d, color, x, y, z, rx, ry, rz, round = 0.18) {
+    const r = Math.min(w, h, d) * round;
+    return this.add(new RoundedBoxGeometry(d, h, w, 2, r), color, x, y, z, rx, ry, rz);
+  }
+  sharpBox(w, h, d, color, x, y, z, rx, ry, rz) {
+    return this.add(new THREE.BoxGeometry(d, h, w), color, x, y, z, rx, ry, rz);
+  }
+  ball(rx, ry, rz, color, x, y, z, ax = 0, ay = 0, az = 0, seg = 16) {
+    return this.add(new THREE.SphereGeometry(1, seg, Math.max(8, seg * 0.7 | 0)), color, x, y, z, ax, ay, az, rx, ry, rz);
+  }
+  cyl(rt, rb, h, color, x, y, z, rx = 0, ry = 0, rz = 0, seg = 16) {
+    return this.add(new THREE.CylinderGeometry(rt, rb, h, seg), color, x, y, z, rx, ry, rz);
+  }
+  cone(r, h, color, x, y, z, rx = 0, ry = 0, rz = 0, seg = 8) {
+    return this.add(new THREE.ConeGeometry(r, h, seg), color, x, y, z, rx, ry, rz);
+  }
+  merged() { return this.list.length ? mergeGeometries(this.list) : null; }
+}
+
+// ---------- caras pintadas (como en el arte) ----------
+function faceTexture(draw) {
+  const t = canvasTexture(256, 256, (c, w, h) => { c.clearRect(0, 0, w, h); draw(c, w, h); });
+  t.anisotropy = 4;
+  return t;
+}
+function eye(c, x, y, rx, ry) {
+  c.fillStyle = '#16121f';
+  c.beginPath(); c.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); c.fill();
+  c.fillStyle = '#ffffff';
+  c.beginPath(); c.ellipse(x - rx * 0.32, y - ry * 0.38, rx * 0.36, ry * 0.3, 0, 0, Math.PI * 2); c.fill();
+  c.beginPath(); c.arc(x + rx * 0.3, y + ry * 0.35, rx * 0.14, 0, Math.PI * 2); c.fill();
+}
+function blush(c, x, y, r) {
+  const g = c.createRadialGradient(x, y, 0, x, y, r);
+  g.addColorStop(0, 'rgba(255,120,150,0.75)'); g.addColorStop(1, 'rgba(255,120,150,0)');
+  c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, Math.PI * 2); c.fill();
+}
+
+const FACES = {
+  rabbit: () => faceTexture((c) => {
+    eye(c, 76, 134, 36, 44);
+    eye(c, 180, 134, 36, 44);
+    blush(c, 44, 190, 30); blush(c, 212, 190, 30);
+    c.fillStyle = '#ff7fa0';
+    c.beginPath(); c.ellipse(128, 176, 14, 10, 0, 0, Math.PI * 2); c.fill();
+    // boca abierta sonriente con lengua
+    c.fillStyle = '#5a1b2a';
+    c.beginPath(); c.moveTo(102, 194); c.quadraticCurveTo(128, 244, 154, 194); c.closePath(); c.fill();
+    c.fillStyle = '#ff6f8c';
+    c.beginPath(); c.ellipse(128, 222, 13, 9, 0, 0, Math.PI * 2); c.fill();
+  }),
+  gorilla: () => faceTexture((c) => {
+    // hocico: fosas nasales + sonrisa canchera
+    c.fillStyle = '#3a2216';
+    c.beginPath(); c.ellipse(104, 92, 12, 9, -0.3, 0, Math.PI * 2); c.fill();
+    c.beginPath(); c.ellipse(152, 92, 12, 9, 0.3, 0, Math.PI * 2); c.fill();
+    c.strokeStyle = '#3a2216'; c.lineWidth = 9; c.lineCap = 'round';
+    c.beginPath(); c.moveTo(70, 150); c.quadraticCurveTo(140, 196, 196, 140); c.stroke();
+  }),
+  gorillaGlasses: () => faceTexture((c) => {
+    // brillo de los anteojos
+    c.fillStyle = 'rgba(255,255,255,0.85)';
+    [[70, 110], [186, 110]].forEach(([x, y]) => {
+      c.beginPath(); c.moveTo(x - 30, y - 10); c.lineTo(x - 8, y - 30); c.lineTo(x + 2, y - 22); c.lineTo(x - 20, y - 2); c.closePath(); c.fill();
+    });
+  }),
+  princess: () => faceTexture((c) => {
+    eye(c, 84, 122, 21, 27);
+    eye(c, 172, 122, 21, 27);
+    c.strokeStyle = '#8a3a1a'; c.lineWidth = 9; c.lineCap = 'round';
+    c.beginPath(); c.moveTo(62, 84); c.lineTo(104, 80); c.stroke();
+    c.beginPath(); c.moveTo(152, 80); c.lineTo(194, 84); c.stroke();
+    blush(c, 58, 160, 22); blush(c, 198, 160, 22);
+    c.fillStyle = 'rgba(200,120,90,0.55)';
+    c.beginPath(); c.ellipse(128, 150, 14, 10, 0, 0, Math.PI * 2); c.fill();
+  }),
+  ice: () => faceTexture((c) => {
+    // visor oscuro con dos ojos grandes tipo gafas
+    [[78, 128], [178, 128]].forEach(([x, y]) => {
+      c.fillStyle = '#0b1640';
+      c.beginPath(); c.arc(x, y, 40, 0, Math.PI * 2); c.fill();
+      c.strokeStyle = '#4D7CFE'; c.lineWidth = 8;
+      c.beginPath(); c.arc(x, y, 40, 0, Math.PI * 2); c.stroke();
+      c.fillStyle = '#ffffff';
+      c.beginPath(); c.ellipse(x - 12, y - 14, 12, 10, 0, 0, Math.PI * 2); c.fill();
+      c.beginPath(); c.arc(x + 14, y + 14, 5, 0, Math.PI * 2); c.fill();
+    });
+    c.fillStyle = '#6fb6ff';
+    roundRect(c, 104, 190, 48, 12, 6); c.fill();
+  }),
+};
+
+// ---------- ruedas: 4 cilindros en UNA malla; el giro es la textura de la llanta rotando ----------
+function wheelTexture(tire, hub, rim) {
+  return canvasTexture(128, 128, (c, w, h) => {
+    c.fillStyle = tire; c.fillRect(0, 0, w, h);
+    c.fillStyle = shadeHex(tire, 18);
+    c.beginPath(); c.arc(w / 2, h / 2, w * 0.47, 0, Math.PI * 2); c.fill();
+    c.fillStyle = rim;
+    c.beginPath(); c.arc(w / 2, h / 2, w * 0.3, 0, Math.PI * 2); c.fill();
+    c.fillStyle = hub;
+    c.beginPath(); c.arc(w / 2, h / 2, w * 0.24, 0, Math.PI * 2); c.fill();
+    c.fillStyle = tire;
+    for (let i = 0; i < 4; i++) {
+      const a = i * Math.PI / 2;
+      c.beginPath(); c.arc(w / 2 + Math.cos(a) * w * 0.14, h / 2 + Math.sin(a) * h * 0.14, w * 0.035, 0, Math.PI * 2); c.fill();
+    }
+    c.fillStyle = shadeHex(hub, -30);
+    c.beginPath(); c.arc(w / 2, h / 2, w * 0.07, 0, Math.PI * 2); c.fill();
+  });
+}
+function shadeHex(hex, amt) {
+  const c = new THREE.Color(hex);
+  const hsl = {}; c.getHSL(hsl);
+  c.setHSL(hsl.h, hsl.s, Math.min(1, Math.max(0, hsl.l + amt / 255)));
+  return '#' + c.getHexString();
+}
+function buildWheels(spots, r, wdt, tire, hub, rim) {
+  const geos = spots.map(([x, z]) => {
+    const g = new THREE.CylinderGeometry(r, r, wdt, 20, 1, false).toNonIndexed();
+    // el costado (banda de rodamiento) toma el color liso de la esquina de la textura
+    const uv = g.getAttribute('uv');
+    const pos = g.getAttribute('position');
+    for (let i = 0; i < uv.count; i++) {
+      if (Math.abs(Math.abs(pos.getY(i)) - wdt / 2) > 0.01 || isSide(g, i, wdt)) uv.setXY(i, 0.01, 0.01);
+    }
+    g.rotateX(Math.PI / 2);
+    g.translate(x, r, z);
+    return g;
+  });
+  const tex = wheelTexture(tire, hub, rim);
+  tex.center.set(0.5, 0.5);
+  const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.6 });
+  const mesh = new THREE.Mesh(mergeGeometries(geos), mat);
+  mesh.userData.wheelTex = tex;
+  mesh.castShadow = true;
+  return mesh;
+}
+// en el cilindro no indexado, los triangulos de las tapas tienen los 3 vertices a la misma altura
+function isSide(g, i, wdt) {
+  const pos = g.getAttribute('position');
+  const t = Math.floor(i / 3) * 3;
+  const y0 = pos.getY(t), y1 = pos.getY(t + 1), y2 = pos.getY(t + 2);
+  return !(Math.abs(y0 - y1) < 0.01 && Math.abs(y1 - y2) < 0.01);
+}
+
+function lathe(profile, seg = 20) {
+  return new THREE.LatheGeometry(profile.map(([r, y]) => new THREE.Vector2(r, y)), seg);
+}
+
+// banana: tubo curvo con los extremos afinados
+function bananaGeometry() {
+  const curve = new THREE.CatmullRomCurve3([
+    new THREE.Vector3(-180, 176, 0), new THREE.Vector3(-134, 98, 0), new THREE.Vector3(-36, 66, 0),
+    new THREE.Vector3(64, 74, 0), new THREE.Vector3(146, 120, 0), new THREE.Vector3(182, 190, 0),
+  ]);
+  const TS = 48, RS = 14;
+  const g = new THREE.TubeGeometry(curve, TS, 1, RS, false);
+  const pos = g.getAttribute('position');
+  const v = new THREE.Vector3(), c = new THREE.Vector3();
+  for (let i = 0; i <= TS; i++) {
+    const u = i / TS;
+    curve.getPointAt(u, c);
+    const r = 9 + 56 * Math.pow(Math.sin(Math.PI * u), 0.65);
+    for (let j = 0; j <= RS; j++) {
+      const k = i * (RS + 1) + j;
+      v.fromBufferAttribute(pos, k).sub(c);
+      // un poco mas ancho que alto: parece mas "casco" de kart
+      v.multiplyScalar(r);
+      v.z *= 1.18;
+      pos.setXYZ(k, c.x + v.x, c.y + v.y, c.z + v.z);
+    }
+  }
+  g.computeVertexNormals();
+  return g;
+}
+
+function heartGeometry(s) {
+  const sh = new THREE.Shape();
+  sh.moveTo(0, -0.9 * s);
+  sh.bezierCurveTo(-0.2 * s, -0.7 * s, -1.0 * s, -0.25 * s, -1.0 * s, 0.25 * s);
+  sh.bezierCurveTo(-1.0 * s, 0.75 * s, -0.35 * s, 0.95 * s, 0, 0.45 * s);
+  sh.bezierCurveTo(0.35 * s, 0.95 * s, 1.0 * s, 0.75 * s, 1.0 * s, 0.25 * s);
+  sh.bezierCurveTo(1.0 * s, -0.25 * s, 0.2 * s, -0.7 * s, 0, -0.9 * s);
+  const g = new THREE.ExtrudeGeometry(sh, { depth: 12, bevelEnabled: true, bevelThickness: 6, bevelSize: 5, bevelSegments: 3, curveSegments: 12 });
+  g.center();
+  return g;
+}
+
+// ---------- los 4 personajes ----------
+const BUILDERS = {
+  rabbit() {
+    const car = new Parts(), rider = new Parts();
+    const OR = '#FF8A1C', ORD = '#E86E12', CREAM = '#FFE3B5', GR = '#55D66A', GRD = '#36B24E';
+    // zanahoria gorda acostada (eje hacia adelante), con anillos y punta clarita
+    const prof = [[0, 0], [52, 5], [76, 20], [89, 44], [93, 78], [90, 112], [91, 128], [84, 160], [73, 192], [62, 218], [51, 240], [42, 256]];
+    car.add(lathe(prof, 24), OR, -150, 104, 0, 0, 0, -Math.PI / 2);
+    car.add(lathe([[42, 256], [34, 272], [22, 286], [0, 296]], 24), CREAM, -150, 104, 0, 0, 0, -Math.PI / 2);
+    [[-104, 90], [-36, 91], [34, 80], [90, 62]].forEach(([x, r]) => car.add(new THREE.TorusGeometry(r, 4, 6, 32), ORD, x, 104, 0, 0, Math.PI / 2, 0));
+    [[-60, 0.55], [18, 0.5]].forEach(([x, k]) => [1, -1].forEach((s) => car.ball(6, 10, 6, '#b65a10', x, 104 + 20, s * 86 * k + s * 40)));
+    // hojas grandes atras, en abanico
+    [[-0.95, 0.35], [-0.6, 0.12], [-0.35, -0.12], [-0.7, -0.38], [-1.15, -0.1]].forEach(([a, tilt], i) => {
+      car.ball(22, 88, 44, i % 2 ? GR : GRD, -178 + Math.sin(a) * 40, 196 + Math.cos(a) * 30, tilt * 58, tilt, 0, a);
+    });
+    // conejo: cabeza cubica grande apoyada sobre la zanahoria, patitas adelante
+    const W = '#FFF8F2', PK = '#FF9EC0';
+    rider.box(110, 70, 90, W, -20, 196, 0);
+    rider.ball(24, 18, 24, W, 44, 196, 44);
+    rider.ball(24, 18, 24, W, 44, 196, -44);
+    rider.box(176, 156, 152, W, -14, 288, 0, 0, 0, 0, 0.3);
+    rider.ball(26, 26, 26, W, -104, 236, 0);
+    [1, -1].forEach((s) => {
+      rider.box(50, 150, 32, W, -26, 420, s * 46, s * 0.24, 0, -0.1, 0.5);
+      rider.box(28, 104, 6, PK, -9, 414, s * 46, s * 0.24, 0, -0.1, 0.5);
+    });
+    return {
+      car, rider, face: { tex: FACES.rabbit(), w: 150, h: 140, x: 62, y: 282, z: 0 },
+      wheels: { spots: [[104, 90], [104, -90], [-104, 90], [-104, -90]], r: 44, w: 32, tire: '#24222c', hub: '#F4E3C8', rim: '#3a3642' },
+    };
+  },
+
+  gorilla() {
+    const car = new Parts(), rider = new Parts();
+    const Y = '#FFD93D';
+    car.add(bananaGeometry(), Y);
+    car.cyl(11, 15, 40, '#7a4a22', 186, 196, 0, 0, 0, -0.5);
+    car.ball(14, 14, 14, '#5a3a1a', -182, 176, 0);
+    const BR = '#5C3A26', BR2 = '#6E4630', TAN = '#C9976B', TAN2 = '#E0AE80', DK = '#3E2618';
+    // cuerpo robusto sentado detras de la curva de la banana
+    rider.box(170, 136, 110, BR, -40, 186, 0, 0, 0, 0, 0.35);
+    rider.ball(46, 34, 10, '#7a5238', 16, 196, 0);
+    // brazos enormes apoyados sobre la banana, una mano en el tallo
+    [1, -1].forEach((s) => {
+      rider.box(56, 56, 128, BR2, 26, 178, s * 84, 0, s * 0.2, -0.45, 0.45);
+      rider.box(54, 40, 54, TAN, 86, 142, s * 78, 0, 0, 0, 0.45);
+    });
+    // cabeza grande
+    rider.box(156, 136, 124, BR2, -24, 296, 0, 0, 0, 0, 0.36);
+    rider.box(128, 88, 22, TAN, 36, 284, 0, 0, 0, 0, 0.45);
+    rider.box(110, 60, 50, TAN2, 52, 258, 0, 0, 0, 0, 0.5);
+    [1, -1].forEach((s) => rider.ball(20, 26, 14, '#B07B55', -28, 292, s * 80));
+    [-0.45, 0, 0.45].forEach((a, i) => rider.cone(15, 34, DK, -44 + i * 8, 372, a * 56, a, 0, 0.35));
+    // anteojos azules grandes
+    [1, -1].forEach((s) => {
+      rider.box(64, 44, 14, '#2F6BFF', 52, 308, s * 34, 0, 0, 0, 0.3);
+      rider.box(54, 34, 8, '#10131c', 59, 308, s * 34, 0, 0, 0, 0.3);
+      rider.box(12, 10, 52, '#2F6BFF', 18, 312, s * 74);
+    });
+    rider.box(18, 10, 10, '#2F6BFF', 54, 312, 0);
+    return {
+      car, rider,
+      face: { tex: FACES.gorilla(), w: 108, h: 58, x: 77, y: 256, z: 0 },
+      face2: { tex: FACES.gorillaGlasses(), w: 128, h: 50, x: 63, y: 308, z: 0 },
+      wheels: { spots: [[100, 72], [100, -72], [-104, 72], [-104, -72]], r: 38, w: 30, tire: '#2a2a35', hub: '#8a5a33', rim: '#3b3b48' },
+    };
+  },
+
+  princess() {
+    const car = new Parts(), rider = new Parts();
+    const PK = '#FF6FB5', PK2 = '#FF94CC', PK3 = '#FF4FA3', LIGHT = '#FFC4E1', PURP = '#9B5DE5';
+    car.box(184, 88, 252, PK, 0, 84, 0, 0, 0, 0, 0.35);
+    car.box(190, 20, 256, PK2, 0, 132, 0, 0, 0, 0, 0.5);
+    // medallon redondo con corazon adelante
+    car.cyl(84, 84, 30, PK3, 130, 138, 0, 0, 0, Math.PI / 2, 10);
+    car.cyl(68, 68, 12, PK2, 146, 138, 0, 0, 0, Math.PI / 2, 10);
+    car.add(heartGeometry(40), LIGHT, 156, 140, 0, 0, Math.PI / 2, 0);
+    car.box(140, 112, 30, PURP, -118, 156, 0, 0, 0, 0, 0.35);
+    // princesa (con barba, como en el moodboard)
+    const SKIN = '#F6C7A2', HAIR = '#D2582E', BEARD = '#B84E26', GOLD = '#FFD93D';
+    rider.box(112, 96, 92, PK, -34, 188, 0, 0, 0, 0, 0.35);
+    [1, -1].forEach((s) => {
+      rider.ball(40, 34, 40, PK2, -30, 222, s * 64);
+      rider.box(28, 70, 28, SKIN, 6, 176, s * 70, 0, 0, -0.6, 0.45);
+      rider.ball(16, 14, 16, SKIN, 34, 150, s * 70);
+    });
+    rider.box(132, 132, 122, SKIN, -22, 300, 0, 0, 0, 0, 0.3);
+    rider.box(148, 48, 132, HAIR, -28, 370, 0, 0, 0, 0, 0.42);
+    rider.box(122, 28, 22, HAIR, 34, 352, 0, 0, 0, 0, 0.5);
+    rider.box(148, 176, 58, HAIR, -86, 292, 0, 0, 0, 0, 0.35);
+    [1, -1].forEach((s) => rider.box(22, 132, 70, HAIR, -40, 292, s * 72, 0, 0, 0, 0.45));
+    rider.box(112, 72, 32, BEARD, 44, 258, 0, 0, 0, 0, 0.45);
+    rider.box(76, 46, 30, BEARD, 44, 222, 0, 0, 0, 0, 0.5);
+    rider.box(80, 20, 18, '#A8441F', 58, 278, 0, 0, 0, 0, 0.5);
+    rider.ball(10, 8, 8, '#E0A080', 60, 290, 0);
+    // corona dorada con gema rosa
+    rider.box(104, 26, 104, GOLD, -26, 400, 0, 0, 0, 0, 0.25);
+    [[0, 48], [48, 0], [0, -48], [-48, 0], [34, 34], [34, -34]].forEach(([dx, dz]) => rider.cone(13, 28, GOLD, -26 + dx, 424, dz));
+    rider.ball(11, 11, 7, PK3, 28, 400, 0);
+    return {
+      car, rider, face: { tex: FACES.princess(), w: 118, h: 104, x: 40, y: 316, z: 0 },
+      wheels: { spots: [[90, 96], [90, -96], [-90, 96], [-90, -96]], r: 40, w: 30, tire: '#3a3140', hub: '#FF9F1C', rim: '#4a4052' },
+    };
+  },
+
+  ice() {
+    const rider = new Parts(), ice = new Parts();
+    const I1 = '#8FE3FF', I2 = '#6FC7FF', I3 = '#B8F4FF', I4 = '#4FA8F0';
+    // kart de cristal: bloques facetados + una gema gigante adelante
+    ice.sharpBox(176, 58, 250, I2, 0, 74, 0);
+    ice.sharpBox(156, 26, 226, I3, 0, 114, 0);
+    ice.add(new THREE.IcosahedronGeometry(96, 0), I1, 96, 158, 0, 0.3, 0.2, 0, 1.0, 0.95, 1.0);
+    ice.add(new THREE.OctahedronGeometry(34, 0), I3, -30, 146, 82, 0, 0.5, 0.3, 0.8, 1.4, 0.8);
+    ice.add(new THREE.OctahedronGeometry(34, 0), I3, -30, 146, -82, 0, -0.5, -0.3, 0.8, 1.4, 0.8);
+    ice.sharpBox(126, 92, 30, I4, -118, 150, 0);
+    // robot de cristal
+    ice.sharpBox(120, 92, 92, I1, -40, 196, 0);
+    [1, -1].forEach((s) => {
+      ice.sharpBox(40, 40, 96, I2, 6, 186, s * 72, 0, 0, -0.4);
+      ice.sharpBox(42, 38, 42, I3, 50, 162, s * 68);
+    });
+    ice.add(new RoundedBoxGeometry(134, 124, 140, 2, 22), I3, -24, 300, 0);
+    [1, -1].forEach((s) => ice.cyl(16, 16, 16, I4, -24, 302, s * 74, Math.PI / 2, 0, 0, 10));
+    // visor oscuro ancho
+    rider.box(132, 70, 20, '#1F3FB0', 38, 304, 0, 0, 0, 0, 0.45);
+    return {
+      car: null, rider, ice, face: { tex: FACES.ice(), w: 128, h: 72, x: 48, y: 304, z: 0 },
+      wheels: { spots: [[92, 90], [92, -90], [-92, 90], [-92, -90]], r: 42, w: 30, tire: '#2F5FE0', hub: '#CFF4FF', rim: '#3a6ff0' },
+    };
+  },
+};
+
+const CACHE = {};
+function buildTemplate(character) {
+  const def = BUILDERS[character]();
+  const out = { car: def.car ? def.car.merged() : null, rider: def.rider.merged(), ice: def.ice ? def.ice.merged() : null, def };
+  return out;
+}
+
+const bodyMat = () => new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.48, metalness: 0.02 });
+
+// devuelve { root, roll, riderGroup, wheels, mats } listo para animar
+export function buildCharacterModel(character) {
+  if (!CACHE[character]) CACHE[character] = buildTemplate(character);
+  const T = CACHE[character];
+  const d = T.def;
+  const root = new THREE.Group();
+  const roll = new THREE.Group();
+  root.add(roll);
+  const mats = [];
+  if (T.car) {
+    const carMat = bodyMat(); mats.push(carMat);
+    const car = new THREE.Mesh(T.car, carMat);
+    car.castShadow = true;
+    roll.add(car);
+  }
+  const riderGroup = new THREE.Group();
+  roll.add(riderGroup);
+  if (T.rider) {
+    const riderMat = bodyMat(); mats.push(riderMat);
+    const rider = new THREE.Mesh(T.rider, riderMat);
+    rider.castShadow = true;
+    riderGroup.add(rider);
+  }
+  if (T.ice) {
+    const iceMat = new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 0.12, metalness: 0.1, emissive: '#2aa8ff', emissiveIntensity: 0.32 });
+    mats.push(iceMat);
+    const im = new THREE.Mesh(T.ice, iceMat);
+    im.castShadow = true;
+    // el robot (parte alta) se mueve con el piloto; es una sola malla asi que va en el grupo del piloto
+    riderGroup.add(im);
+  }
+  [d.face, d.face2].forEach((f) => {
+    if (!f) return;
+    const fm = new THREE.MeshStandardMaterial({ map: f.tex, transparent: true, alphaTest: 0.3, roughness: 0.5, polygonOffset: true, polygonOffsetFactor: -4 });
+    const plane = new THREE.Mesh(new THREE.PlaneGeometry(f.w, f.h), fm);
+    plane.position.set(f.x + 1.5, f.y, f.z);
+    plane.rotation.y = Math.PI / 2;
+    riderGroup.add(plane);
+  });
+  const wd = d.wheels;
+  const wheels = buildWheels(wd.spots, wd.r, wd.w, wd.tire, wd.hub, wd.rim);
+  roll.add(wheels);
+  mats.push(wheels.material);
+  // normalizar altura
+  const box = new THREE.Box3().setFromObject(roll);
+  const k = MODEL_H / (box.max.y - box.min.y);
+  roll.scale.setScalar(k);
+  roll.position.y = -box.min.y * k;
+  roll.userData.baseY = roll.position.y;
+  return { root, roll, riderGroup, wheels, mats, scale: k };
+}
