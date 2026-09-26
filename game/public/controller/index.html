@@ -3,223 +3,232 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-<title>BLOCK RACERS - Controller</title>
+<meta name="theme-color" content="#1b1250" />
+<title>BLOCK RACERS - Control</title>
 <style>
-  * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; box-sizing:border-box; }
-  html, body { margin:0; height:100%; background:#0a0a0a; overflow:hidden; font-family:sans-serif; color:#fff; }
-  #status { position:fixed; top:8px; left:0; right:0; text-align:center; font-size:16px; z-index:5; }
-  #rotateMsg { position:fixed; inset:0; background:#000; color:#fff; display:none; align-items:center; justify-content:center; font-size:28px; text-align:center; z-index:10; }
+  @font-face { font-family: 'Lilita One'; src: url('/assets/fonts/LilitaOne.woff2') format('woff2'); font-display: block; }
+  @font-face { font-family: 'Fredoka'; src: url('/assets/fonts/Fredoka-600.woff2') format('woff2'); font-weight: 300 700; }
+  :root { --red:#FF4B5C; --orange:#FF9F1C; --yellow:#FFD93D; --green:#55D66A; --turq:#3BD9D0; --blue:#4D7CFE; --violet:#9B5DE5; --pink:#FF6FB5; --white:#FFF8E7; --black:#202030; }
+  * { -webkit-touch-callout:none; -webkit-user-select:none; user-select:none; touch-action:none; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html, body { margin:0; height:100%; overflow:hidden; font-family:'Lilita One', 'Fredoka', sans-serif; color:var(--white);
+    background:radial-gradient(circle at 50% 0%, #3b2a8a, #1b1250 55%, #0e0a2c); }
+  body::before { content:''; position:fixed; inset:0; opacity:.14; pointer-events:none;
+    background-image:linear-gradient(45deg, rgba(255,255,255,.35) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.35) 75%),
+      linear-gradient(45deg, rgba(255,255,255,.35) 25%, transparent 25%, transparent 75%, rgba(255,255,255,.35) 75%);
+    background-size:44px 44px; background-position:0 0, 22px 22px; }
+  .outline { -webkit-text-stroke:.09em var(--black); paint-order:stroke fill; text-shadow:0 .08em 0 var(--black); }
 
-  #selectInfo { position:fixed; top:34px; left:0; right:0; text-align:center; z-index:6; }
-  #selectInfo .emoji { font-size:54px; display:block; }
-  #selectInfo .name { font-size:16px; letter-spacing:2px; font-weight:bold; }
-  #selectInfo .hint { font-size:12px; opacity:0.7; margin-top:4px; }
+  #rotateMsg { position:fixed; inset:0; background:#1b1250; display:none; flex-direction:column; align-items:center; justify-content:center; font-size:26px; text-align:center; z-index:20; gap:14px; }
+  #rotateMsg img { width:70vw; max-width:360px; }
 
+  #top { position:fixed; top:max(6px, env(safe-area-inset-top)); left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:0 12px; z-index:6; }
+  #me { font-size:18px; padding:3px 14px; border-radius:99px; border:3px solid var(--black); background:#555; }
+  #stats { display:flex; gap:8px; align-items:center; font-size:16px; }
+  .pill { display:flex; align-items:center; gap:5px; padding:3px 10px; border-radius:99px; background:rgba(20,26,69,.9); border:3px solid var(--black); }
+  .pill img { height:18px; }
+  #resetBtn { font-size:13px; padding:5px 12px; border-radius:10px; background:linear-gradient(180deg,#fff08a,#FFD93D); color:var(--black); border:3px solid var(--black); box-shadow:0 3px 0 rgba(0,0,0,.35); }
+
+  /* seleccion */
+  #selectInfo { position:fixed; top:46px; left:50%; transform:translateX(-50%); width:27vw; max-width:300px; z-index:5; display:none; flex-direction:column; align-items:center; }
+  #selCard { position:relative; width:100%; height:calc(100vh - 110px); max-height:300px; border-radius:18px; border:4px solid var(--black); overflow:hidden;
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-end; box-shadow:0 6px 0 rgba(0,0,0,.35), inset 0 4px 0 rgba(255,255,255,.35); }
+  #selCard::before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 50% 30%, rgba(255,255,255,.45), rgba(255,255,255,0) 60%); }
+  #selImg { position:absolute; bottom:58px; height:calc(100% - 80px); max-width:92%; object-fit:contain; left:50%; transform:translateX(-50%); filter:drop-shadow(0 6px 4px rgba(0,0,0,.35)); }
+  #selName { position:relative; font-size:20px; line-height:1; margin-bottom:4px; }
+  #selPower { position:relative; width:100%; text-align:center; font-size:13px; padding:5px 0 7px; background:rgba(32,32,48,.55); }
+  .selArrow { position:absolute; top:40%; font-size:26px; color:var(--yellow); z-index:2; }
+  #selHint { margin-top:8px; font-family:'Fredoka', sans-serif; font-weight:600; font-size:13px; text-align:center; opacity:.9; }
+  #selCard.ok { box-shadow:0 0 0 4px var(--white), 0 0 26px 6px rgba(255,217,61,.8); }
+
+  #endInfo { position:fixed; inset:0; display:none; flex-direction:column; align-items:center; justify-content:center; z-index:8; background:rgba(14,10,44,.8); gap:8px; }
+  #endInfo img { height:28vh; }
+  #endInfo .t { font-size:9vh; }
+  #endInfo .s { font-family:'Fredoka', sans-serif; font-weight:600; font-size:15px; }
+
+  /* mandos */
   #pad { position:fixed; inset:0; display:flex; }
   #stickArea { position:relative; width:45%; height:100%; }
-  #stickBase { position:absolute; width:150px; height:150px; border-radius:50%; background:#222; border:3px solid #555; top:50%; left:50%; transform:translate(-50%,-50%); }
-  #stickKnob { position:absolute; width:70px; height:70px; border-radius:50%; background:#888; top:50%; left:50%; transform:translate(-50%,-50%); }
+  #stickBase { position:absolute; width:170px; height:170px; border-radius:50%; top:56%; left:50%; transform:translate(-50%,-50%);
+    background:radial-gradient(circle, #1d2766 55%, #141a45 100%); border:5px solid var(--black);
+    box-shadow:0 0 0 5px rgba(77,124,254,.8), 0 0 26px rgba(77,124,254,.6), inset 0 6px 0 rgba(255,255,255,.12); }
+  #stickBase::before, #stickBase::after { content:'◀'; position:absolute; top:50%; left:12px; transform:translateY(-50%); color:rgba(255,255,255,.35); font-size:22px; }
+  #stickBase::after { content:'▶'; left:auto; right:12px; }
+  #stickKnob { position:absolute; width:84px; height:84px; border-radius:50%; top:50%; left:50%; transform:translate(-50%,-50%);
+    background:radial-gradient(circle at 35% 30%, #fff6b0, #FFD93D 45%, #f5a800); border:5px solid var(--black); box-shadow:0 5px 0 rgba(0,0,0,.4); }
   #buttons { position:relative; width:55%; height:100%; }
-  .btn { position:absolute; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:16px; color:#fff; text-align:center; line-height:1.1; opacity:1; transition:opacity 0.15s; }
-  .btn.disabled { opacity:0.35; }
-  #accel { width:130px; height:130px; background:#2ecc71; bottom:20px; right:20px; font-size:20px; }
-  #brake { width:100px; height:100px; background:#e74c3c; bottom:30px; right:165px; }
-  #boost { width:95px; height:95px; background:#ffb703; bottom:150px; right:20px; color:#111; flex-direction:column; }
-  #boost .icon { font-size:30px; line-height:1; }
-  #boost .label { font-size:10px; line-height:1; margin-top:2px; }
-  #power { width:95px; height:95px; background:#8e44ad; bottom:150px; right:165px; }
-  #resetBtn { position:fixed; top:6px; right:6px; width:46px; height:26px; border-radius:6px;
-    background:rgba(255,255,255,0.12); color:rgba(255,255,255,0.5); font-size:9px; font-weight:bold;
-    display:flex; align-items:center; justify-content:center; z-index:7; letter-spacing:1px; }
-  #coinCount { position:fixed; top:8px; left:8px; font-size:14px; font-weight:bold; color:#ffd24d;
-    z-index:6; display:none; }
-  #boost.item-star { background:#ffe066; box-shadow:0 0 18px 4px rgba(255,224,102,0.9); }
-  #boost.item-mushroom { background:#ffb703; }
-  #boost.item-missile { background:#8a8f9a; box-shadow:0 0 18px 4px rgba(138,143,154,0.9); }
+  .btn { position:absolute; border-radius:28%; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; line-height:1;
+    border:5px solid var(--black); box-shadow:0 7px 0 rgba(0,0,0,.45), inset 0 5px 0 rgba(255,255,255,.4); transition:transform .06s, opacity .15s, filter .15s; }
+  .btn.down { transform:translateY(5px); box-shadow:0 2px 0 rgba(0,0,0,.45), inset 0 5px 0 rgba(255,255,255,.4); }
+  .btn.disabled { filter:saturate(.25) brightness(.7); }
+  .btn .lbl { font-size:17px; }
+  .btn img, .btn svg { width:62%; height:62%; object-fit:contain; }
+  #accel { width:136px; height:136px; bottom:22px; right:22px; background:linear-gradient(180deg,#8af09a,#55D66A 50%,#2aa84a); }
+  #accel .lbl { font-size:28px; }
+  #brake { width:100px; height:100px; bottom:34px; right:174px; background:linear-gradient(180deg,#ff8a95,#FF4B5C 50%,#d92d40); }
+  #boost { width:100px; height:100px; bottom:174px; right:22px; background:linear-gradient(180deg,#c49af5,#9B5DE5 50%,#6f35c4); }
+  #boost.has { box-shadow:0 0 0 4px var(--yellow), 0 0 22px 6px rgba(255,217,61,.9), 0 7px 0 rgba(0,0,0,.45); }
+  #power { width:100px; height:100px; bottom:174px; right:152px; background:linear-gradient(180deg,#ffc36a,#FF9F1C 50%,#e27a00); }
+  #power.ready { box-shadow:0 0 0 4px var(--green), 0 0 22px 6px rgba(85,214,106,.9), 0 7px 0 rgba(0,0,0,.45); }
+  #power .cd { font-size:34px; }
+  #flash { position:fixed; inset:0; pointer-events:none; z-index:30; opacity:0; transition:opacity .35s; background:rgba(255,75,92,.45); }
+  #flash.on { opacity:1; transition:none; }
 </style>
 </head>
 <body>
-<div id="status">Conectando...</div>
-<div id="rotateMsg">ROTATE YOUR PHONE</div>
-<div id="resetBtn">START</div>
-<div id="coinCount">🪙 0</div>
-
-<div id="selectInfo" style="display:none;">
-  <span class="emoji" id="selEmoji">🐰</span>
-  <span class="name" id="selName">CONEJO</span>
-  <div class="hint" id="selHint">Mové el joystick para cambiar - tocá ELEGIR para confirmar</div>
+<div id="rotateMsg"><img src="/assets/ui/logo.png" alt=""><div class="outline">GIRÁ EL CELULAR</div></div>
+<div id="top">
+  <div id="me" class="outline">...</div>
+  <div id="stats">
+    <div class="pill outline" id="posPill">1º</div>
+    <div class="pill outline"><img src="/assets/ui/coin.png" alt=""><span id="coinCount">0</span></div>
+  </div>
+  <div id="resetBtn">START</div>
 </div>
 
-<div id="pad">
-  <div id="stickArea">
-    <div id="stickBase"><div id="stickKnob"></div></div>
+<div id="selectInfo">
+  <div id="selCard">
+    <span class="selArrow outline" style="left:6px">◀</span><span class="selArrow outline" style="right:6px">▶</span>
+    <img id="selImg" alt="">
+    <div id="selName" class="outline"></div>
+    <div id="selPower" class="outline"></div>
   </div>
+  <div id="selHint"></div>
+</div>
+<div id="endInfo"><img id="endImg" src="/assets/ui/fx_crown.png" alt=""><div class="t outline" id="endT"></div><div class="s" id="endS"></div></div>
+<div id="flash"></div>
+
+<div id="pad">
+  <div id="stickArea"><div id="stickBase"><div id="stickKnob"></div></div></div>
   <div id="buttons">
-    <div class="btn" id="power">POWER</div>
-    <div class="btn" id="boost">BOOST</div>
-    <div class="btn" id="brake">BRAKE</div>
-    <div class="btn" id="accel">GO</div>
+    <div class="btn" id="power"><span class="lbl outline">POWER</span></div>
+    <div class="btn" id="boost"><span class="lbl outline">ITEM</span></div>
+    <div class="btn" id="brake"><span class="lbl outline">FRENO</span></div>
+    <div class="btn" id="accel"><span class="lbl outline">GO</span></div>
   </div>
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  const EMOJI = { rabbit: '🐰', gorilla: '🦍', princess: '👸', ice: '🧊' };
-  const NAMES = { rabbit: 'CONEJO', gorilla: 'GORILA', princess: 'PRINCESA', ice: 'HIELO' };
-  const ITEM_LABEL = {
-    star: { icon: '⭐', label: 'ESTRELLA' },
-    mushroom: { icon: '🍄', label: 'HONGO' },
-    missile: { icon: '🚀', label: 'MISIL' },
+  const INFO = {
+    rabbit: { name: 'BUNNY', power: 'GIANT CARROT', sprite: 'bunny', icon: 'pw_carrot', card: ['#FFB23E', '#FF7A1A'] },
+    gorilla: { name: 'BANANA GORILLA', power: 'BANANA PEEL', sprite: 'gorilla', icon: 'pw_gorilla_banana', card: ['#FFE45C', '#FFC21A'] },
+    princess: { name: 'PRINCESS ROSE', power: 'POISON FLOWERS', sprite: 'princess', icon: 'pw_flower', card: ['#FF8FD0', '#F04FA8'] },
+    ice: { name: 'ICE RACER', power: 'FREEZE TRACK', sprite: 'ice', icon: 'pw_freeze', card: ['#6FC2FF', '#2F7BFF'] },
   };
-
+  const ITEM_HTML = {
+    star: '<img src="/assets/ui/star.png" alt="">',
+    mushroom: '<svg viewBox="0 0 100 100"><path d="M12 52 C12 22 88 22 88 52 C88 60 12 60 12 52Z" fill="#FF4B5C" stroke="#202030" stroke-width="6"/><circle cx="34" cy="38" r="8" fill="#FFF8E7"/><circle cx="62" cy="34" r="10" fill="#FFF8E7"/><path d="M34 56 L32 84 C32 90 68 90 68 84 L66 56Z" fill="#FFF8E7" stroke="#202030" stroke-width="6"/></svg>',
+    missile: '<svg viewBox="0 0 100 100"><g transform="rotate(-35 50 50)"><path d="M50 6 C62 18 64 30 64 44 L64 70 L36 70 L36 44 C36 30 38 18 50 6Z" fill="#FFF8E7" stroke="#202030" stroke-width="6"/><path d="M36 56 L22 74 L36 70Z M64 56 L78 74 L64 70Z" fill="#FF4B5C" stroke="#202030" stroke-width="5"/><path d="M40 72 L50 94 L60 72Z" fill="#FFD93D" stroke="#202030" stroke-width="5"/></g></svg>',
+  };
+  const $ = (id) => document.getElementById(id);
   const socket = io();
-  const statusEl = document.getElementById('status');
-  const accelBtn = document.getElementById('accel');
-  const brakeBtn = document.getElementById('brake');
-  const boostBtn = document.getElementById('boost');
-  const powerBtn = document.getElementById('power');
-  const selectInfo = document.getElementById('selectInfo');
-  const selEmoji = document.getElementById('selEmoji');
-  const selName = document.getElementById('selName');
-  const selHint = document.getElementById('selHint');
-  const coinCountEl = document.getElementById('coinCount');
+  const accelBtn = $('accel'), brakeBtn = $('brake'), boostBtn = $('boost'), powerBtn = $('power');
 
   let mySteer = 0, myAccel = false, myBrake = false;
-  let currentPhase = 'select';
-  let currentItem = null, powerReady = true;
+  let phase = 'select', item = null, powerReady = true, last = {};
+  let prevLives = null, prevCrashed = false;
 
   socket.on('connect', () => socket.emit('join'));
-  socket.on('joined', (data) => {
-    statusEl.textContent = 'Sos ' + data.id;
-    statusEl.style.color = data.color;
-    document.body.style.background = '#000';
-  });
-  socket.on('full', () => { statusEl.textContent = 'Sala llena (max 4)'; });
+  socket.on('joined', (d) => { $('me').textContent = d.id; $('me').style.background = d.color; });
+  socket.on('full', () => { $('me').textContent = 'SALA LLENA'; });
+
+  function buzz(ms) { if (navigator.vibrate) navigator.vibrate(ms); }
+  function flash() { const f = $('flash'); f.classList.add('on'); setTimeout(() => f.classList.remove('on'), 60); }
 
   socket.on('status', (s) => {
-    currentPhase = s.phase;
-    currentItem = s.item;
-    powerReady = s.powerReady;
-    coinCountEl.style.display = s.phase === 'racing' ? 'block' : 'none';
-    coinCountEl.textContent = '🪙 ' + (s.coins || 0);
+    phase = s.phase; item = s.item; powerReady = s.powerReady;
+    const info = INFO[s.character] || INFO.rabbit;
+    $('coinCount').textContent = s.coins || 0;
+    $('posPill').textContent = (s.place || 1) + 'º';
+    $('posPill').style.display = phase === 'racing' ? 'flex' : 'none';
 
-    if (s.phase === 'select' && !s.confirmed) {
-      selectInfo.style.display = 'block';
-      selEmoji.textContent = EMOJI[s.character] || '';
-      selName.textContent = NAMES[s.character] || '';
-      selHint.textContent = 'Move el joystick para cambiar - toca ELEGIR para confirmar';
-      accelBtn.textContent = 'ELEGIR';
-      brakeBtn.textContent = 'PISTA';
-      brakeBtn.classList.remove('disabled');
-      boostBtn.classList.add('disabled');
-      powerBtn.classList.add('disabled');
-    } else if (s.phase === 'select' && s.confirmed) {
-      selectInfo.style.display = 'block';
-      selEmoji.textContent = EMOJI[s.character] || '';
-      selName.textContent = NAMES[s.character] || '';
-      selHint.textContent = 'LISTO - esperando a los demas jugadores...';
-      accelBtn.textContent = 'GO';
-      brakeBtn.textContent = 'PISTA';
-      brakeBtn.classList.remove('disabled');
-    } else if (s.phase === 'finished') {
-      selectInfo.style.display = 'block';
-      selEmoji.textContent = s.won ? '🏆' : '🏁';
-      selName.textContent = s.won ? 'GANASTE!' : (s.winnerId + ' GANA');
-      selHint.textContent = 'Volviendo al menu... (o toca START)';
-    } else {
-      selectInfo.style.display = 'none';
-      accelBtn.textContent = 'GO';
-      brakeBtn.textContent = 'BRAKE';
-      brakeBtn.classList.remove('disabled');
-      boostBtn.classList.toggle('disabled', !currentItem);
-      boostBtn.classList.toggle('item-star', currentItem === 'star');
-      boostBtn.classList.toggle('item-mushroom', currentItem === 'mushroom');
-      boostBtn.classList.toggle('item-missile', currentItem === 'missile');
-      if (currentItem) {
-        const it = ITEM_LABEL[currentItem];
-        boostBtn.innerHTML = '<span class="icon">' + it.icon + '</span><span class="label">' + it.label + '</span>';
-      } else {
-        boostBtn.innerHTML = '<span class="label">ITEM</span>';
+    // VIBRACION al chocar / caer
+    if (phase === 'racing') {
+      if (s.crashed && !prevCrashed) { buzz([120, 40, 120]); flash(); }
+      if (prevLives !== null && s.lives < prevLives) { buzz(250); flash(); }
+    }
+    prevCrashed = !!s.crashed; prevLives = s.lives;
+
+    const sel = phase === 'select';
+    $('selectInfo').style.display = sel ? 'flex' : 'none';
+    $('endInfo').style.display = phase === 'finished' ? 'flex' : 'none';
+    if (sel) {
+      if (last.char !== s.character) {
+        $('selImg').src = '/assets/chars/' + info.sprite + '_right.png';
+        $('selCard').style.background = 'linear-gradient(180deg,' + info.card[0] + ',' + info.card[1] + ')';
+        $('selName').textContent = info.name;
+        $('selPower').textContent = info.power;
+        last.char = s.character;
       }
-      powerBtn.classList.toggle('disabled', !powerReady);
-      powerBtn.textContent = powerReady ? 'POWER' : s.cooldownSec;
+      $('selCard').classList.toggle('ok', !!s.confirmed);
+      $('selHint').textContent = s.confirmed ? '¡LISTO! Esperando a los demás...' : 'Mové el joystick · ELEGIR para confirmar';
+      accelBtn.querySelector('.lbl').textContent = s.confirmed ? 'OK' : 'ELEGIR';
+      accelBtn.querySelector('.lbl').style.fontSize = '22px';
+      brakeBtn.querySelector('.lbl').innerHTML = 'PISTA';
+      brakeBtn.classList.remove('disabled');
+      boostBtn.classList.add('disabled'); powerBtn.classList.add('disabled'); powerBtn.classList.remove('ready');
+      boostBtn.innerHTML = '<span class="lbl outline">ITEM</span>';
+      powerBtn.innerHTML = '<span class="lbl outline">POWER</span>';
+      last.power = null; last.item = null;
+    } else if (phase === 'finished') {
+      $('endImg').src = s.won ? '/assets/ui/fx_crown.png' : '/assets/ui/fx_finish.png';
+      $('endT').textContent = s.won ? '¡GANASTE!' : (s.winnerId || '') + ' GANA';
+      $('endT').style.color = s.won ? 'var(--yellow)' : 'var(--white)';
+      $('endS').textContent = 'Llegaste ' + (s.place || 1) + 'º · toca START para jugar otra vez';
+    } else {
+      accelBtn.querySelector('.lbl').textContent = 'GO';
+      accelBtn.querySelector('.lbl').style.fontSize = '28px';
+      brakeBtn.querySelector('.lbl').textContent = 'FRENO';
+      boostBtn.classList.toggle('disabled', !item);
+      boostBtn.classList.toggle('has', !!item);
+      const ik = item || '';
+      if (last.item !== ik) { boostBtn.innerHTML = item ? ITEM_HTML[item] : '<span class="lbl outline">ITEM</span>'; last.item = ik; }
+      const pk = s.character + (powerReady ? 'R' : s.cooldownSec);
+      if (last.power !== pk) {
+        powerBtn.classList.toggle('disabled', !powerReady);
+        powerBtn.classList.toggle('ready', !!powerReady);
+        powerBtn.innerHTML = powerReady ? '<img src="/assets/ui/' + info.icon + '.png" alt="">' : '<span class="cd outline">' + s.cooldownSec + '</span>';
+        last.power = pk;
+      }
     }
   });
 
-  function sendInput() {
-    socket.emit('input', { steer: mySteer, accel: myAccel, brake: myBrake });
-  }
+  function sendInput() { socket.emit('input', { steer: mySteer, accel: myAccel, brake: myBrake }); }
   setInterval(sendInput, 50);
 
-  // Joystick tactil (eje horizontal)
-  const stickArea = document.getElementById('stickArea');
-  const stickKnob = document.getElementById('stickKnob');
+  // joystick horizontal
+  const stickArea = $('stickArea'), stickKnob = $('stickKnob');
   let activeTouchId = null;
-
   function setKnob(dx) {
-    const max = 55;
+    const max = 62;
     dx = Math.max(-max, Math.min(max, dx));
     stickKnob.style.transform = 'translate(calc(-50% + ' + dx + 'px), -50%)';
     mySteer = dx / max;
   }
-  function resetKnob() {
-    stickKnob.style.transform = 'translate(-50%, -50%)';
-    mySteer = 0;
-  }
-
-  stickArea.addEventListener('touchstart', (e) => {
-    const t = e.changedTouches[0];
-    activeTouchId = t.identifier;
-    handleStickMove(t);
-  });
-  stickArea.addEventListener('touchmove', (e) => {
-    for (const t of e.changedTouches) {
-      if (t.identifier === activeTouchId) handleStickMove(t);
-    }
-  });
-  stickArea.addEventListener('touchend', (e) => {
-    for (const t of e.changedTouches) {
-      if (t.identifier === activeTouchId) { activeTouchId = null; resetKnob(); }
-    }
-  });
-  function handleStickMove(t) {
-    const rect = stickArea.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    setKnob(t.clientX - cx);
-  }
+  function resetKnob() { stickKnob.style.transform = 'translate(-50%, -50%)'; mySteer = 0; }
+  function handleStickMove(t) { const r = stickArea.getBoundingClientRect(); setKnob(t.clientX - (r.left + r.width / 2)); }
+  stickArea.addEventListener('touchstart', (e) => { const t = e.changedTouches[0]; activeTouchId = t.identifier; handleStickMove(t); });
+  stickArea.addEventListener('touchmove', (e) => { for (const t of e.changedTouches) if (t.identifier === activeTouchId) handleStickMove(t); });
+  stickArea.addEventListener('touchend', (e) => { for (const t of e.changedTouches) if (t.identifier === activeTouchId) { activeTouchId = null; resetKnob(); } });
 
   function bindHold(el, onStart, onEnd) {
-    el.addEventListener('touchstart', (e) => { e.preventDefault(); onStart(); });
-    el.addEventListener('touchend', (e) => { e.preventDefault(); onEnd(); });
-    el.addEventListener('touchcancel', (e) => { e.preventDefault(); onEnd(); });
+    el.addEventListener('touchstart', (e) => { e.preventDefault(); el.classList.add('down'); onStart(); });
+    const end = (e) => { e.preventDefault(); el.classList.remove('down'); onEnd(); };
+    el.addEventListener('touchend', end);
+    el.addEventListener('touchcancel', end);
   }
-  bindHold(accelBtn, () => myAccel = true, () => myAccel = false);
+  bindHold(accelBtn, () => { myAccel = true; }, () => { myAccel = false; });
   bindHold(brakeBtn, () => {
-    if (currentPhase === 'racing') { myBrake = true; return; }
-    if (currentPhase === 'select') socket.emit('cycle_track');
-  }, () => myBrake = false);
-
-  boostBtn.addEventListener('touchstart', (e) => {
-    e.preventDefault();
-    if (currentPhase === 'racing' && currentItem) socket.emit('boost');
-  });
-  powerBtn.addEventListener('touchstart', (e) => {
-    e.preventDefault();
-    if (currentPhase === 'racing' && powerReady) socket.emit('power');
-  });
-
-  document.getElementById('resetBtn').addEventListener('touchstart', (e) => {
-    e.preventDefault();
-    socket.emit('reset_to_menu');
-  });
+    if (phase === 'racing') { myBrake = true; return; }
+    if (phase === 'select') { socket.emit('cycle_track'); buzz(20); }
+  }, () => { myBrake = false; });
+  bindHold(boostBtn, () => { if (phase === 'racing' && item) { socket.emit('boost'); buzz(40); } }, () => {});
+  bindHold(powerBtn, () => { if (phase === 'racing' && powerReady) { socket.emit('power'); buzz(60); } }, () => {});
+  $('resetBtn').addEventListener('touchstart', (e) => { e.preventDefault(); socket.emit('reset_to_menu'); buzz(30); });
 
   document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
   document.addEventListener('contextmenu', (e) => e.preventDefault());
-
-  function checkOrientation() {
-    const isPortrait = window.innerHeight > window.innerWidth;
-    document.getElementById('rotateMsg').style.display = isPortrait ? 'flex' : 'none';
-  }
+  function checkOrientation() { $('rotateMsg').style.display = window.innerHeight > window.innerWidth ? 'flex' : 'none'; }
   window.addEventListener('resize', checkOrientation);
   checkOrientation();
 </script>

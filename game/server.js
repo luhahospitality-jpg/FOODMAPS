@@ -8,15 +8,15 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
-const COLORS = ['#ff4d4d', '#4da6ff', '#4dff88', '#ffd24d'];
+// colores de jugador tomados de la paleta del moodboard (rojo, azul, verde, amarillo)
+const COLORS = ['#FF4B5C', '#4D7CFE', '#55D66A', '#FFD93D'];
 const CHARACTERS = ['rabbit', 'gorilla', 'princess', 'ice'];
 
 // pista 10x mas grande (todas las coordenadas base se escalan por esto)
 const WORLD_SCALE = 10;
 const TRACK_WIDTH = 170 * WORLD_SCALE; // igual en las 3 pistas para no re-tunear la fisica
 
-// 3 pistas seleccionables desde el menu: la original (geometria propia) y dos
-// ambientadas con modelos 3D reales descargados (bosque / base espacial)
+// 3 pistas seleccionables desde el menu (las dos primeras son las del moodboard)
 const TRACKS_RAW = [
   {
     id: 'rainbow', name: 'RAINBOW DUNGEON', theme: 'rainbow',
@@ -30,7 +30,7 @@ const TRACKS_RAW = [
   {
     // ovalo suave (superelipse) en vez de un poligono a mano: garantiza que ningun
     // giro sea mas cerrado que en la pista original (probado con un script aparte)
-    id: 'forest', name: 'BOSQUE ENCANTADO', theme: 'forest',
+    id: 'banana', name: 'BANANA CASTLE', theme: 'banana',
     guardrailSegments: [0, 1, 9, 10],
     points: [
       { x: 1360, y: 420 }, { x: 1251, y: 550 }, { x: 987, y: 669 }, { x: 751, y: 696 },
@@ -77,7 +77,7 @@ function closestPointOnSegment(px, py, ax, ay, bx, by) {
   t = Math.max(0, Math.min(1, t));
   const cx = ax + abx * t, cy = ay + aby * t;
   const dx = px - cx, dy = py - cy;
-  return { dist: Math.sqrt(dx * dx + dy * dy), x: cx, y: cy };
+  return { dist: Math.sqrt(dx * dx + dy * dy), x: cx, y: cy, t };
 }
 
 function nearestTrackInfo(px, py) {
@@ -88,10 +88,10 @@ function nearestTrackInfo(px, py) {
     const r = closestPointOnSegment(px, py, a.x, a.y, b.x, b.y);
     if (!best || r.dist < best.dist) { best = r; bestIdx = i; }
   }
-  return { dist: best.dist, idx: bestIdx, x: best.x, y: best.y };
+  return { dist: best.dist, idx: bestIdx, x: best.x, y: best.y, t: best.t };
 }
 
-const RACE_LAPS = 3;
+const RACE_LAPS = Number(process.env.RACE_LAPS) || 3;
 
 function registerLapProgress(p, idx) {
   const n = activeTrack().points.length;
@@ -102,10 +102,32 @@ function registerLapProgress(p, idx) {
       phase = 'finished';
       raceWinnerId = p.id;
       finishedAt = Date.now();
+      p.progress = p.lap * n + idx;
+      finalRanking = players.filter(Boolean)
+        .sort((a, b) => (b === p ? 1 : 0) - (a === p ? 1 : 0) || (b.progress || 0) - (a.progress || 0))
+        .map((o) => o.id);
     }
-  } else {
-    p.lapIndex = Math.max(p.lapIndex, idx);
+  } else if (idx > p.lapIndex && idx <= p.lapIndex + 2) {
+    // solo se avanza tramo a tramo: ir marcha atras cruzando la meta ya no suma una vuelta
+    p.lapIndex = idx;
   }
+}
+
+// progreso continuo = vueltas completas * tramos + tramo actual + fraccion del tramo.
+// Si todavia no paso la mitad de la vuelta pero esta en los ultimos tramos, es que
+// esta detras de la linea de largada (no adelante)
+function updateProgress(p, info) {
+  const n = activeTrack().points.length;
+  let raw = info.idx + info.t;
+  if (p.lapIndex < n / 2 && info.idx > n / 2) raw -= n;
+  p.progress = p.lap * n + raw;
+}
+
+function computePlaces() {
+  const racing = players.filter(Boolean).sort((a, b) => (b.progress || 0) - (a.progress || 0));
+  const places = {};
+  racing.forEach((p, i) => { places[p.id] = i + 1; });
+  return places;
 }
 
 function spawnFor(slot) {
@@ -131,6 +153,7 @@ let countdownAcc = 0;
 let firstConfirmAt = 0;
 let raceWinnerId = null;
 let finishedAt = 0;
+let finalRanking = [];
 
 // las cajas de item y las monedas se recalculan cada vez que cambia la pista activa
 // (sus posiciones se derivan geometricamente de los puntos de esa pista)
@@ -206,7 +229,9 @@ function resetForRace() {
     p.coins = 0;
     p.powerCooldownUntil = 0;
     p.fallUntil = 0;
+    p.progress = 0;
   });
+  finalRanking = [];
   peels = [];
   flowers = [];
   missiles = [];
@@ -567,6 +592,7 @@ setInterval(() => {
       });
 
       const info = nearestTrackInfo(p.x, p.y);
+      updateProgress(p, info);
       if (info.dist <= TRACK_WIDTH / 2) {
         registerLapProgress(p, info.idx);
       } else if (activeTrack().guardrailSegments.has(info.idx)) {
@@ -621,6 +647,7 @@ setInterval(() => {
 }, TICK_MS);
 
 function broadcast(now) {
+  const places = computePlaces();
   const statePlayers = players.map((p) => {
     if (!p) return null;
     return {
@@ -632,8 +659,10 @@ function broadcast(now) {
       steer: p.input.steer,
       lives: p.lives,
       lap: p.lap,
+      place: places[p.id] || 1,
       item: p.item,
       coins: p.coins || 0,
+      powerCooldown: Math.max(0, Math.ceil((p.powerCooldownUntil - now) / 1000)),
       starActive: now < p.starUntil,
       shrunk: now < p.shrunkUntil,
       crashed: now < p.crashUntil,
@@ -647,6 +676,11 @@ function broadcast(now) {
     phase,
     countdown,
     winnerId: raceWinnerId,
+    ranking: finalRanking,
+    laps: RACE_LAPS,
+    trackIndex,
+    trackCount: TRACKS.length,
+    trackList: TRACKS.map((t) => ({ id: t.id, name: t.name, theme: t.theme })),
     trackId: activeTrack().id,
     trackName: activeTrack().name,
     trackTheme: activeTrack().theme,
@@ -674,12 +708,19 @@ function broadcast(now) {
       confirmed: p.confirmed,
       lives: p.lives,
       lap: p.lap,
+      laps: RACE_LAPS,
+      place: places[p.id] || 1,
       item: p.item,
       coins: p.coins || 0,
       powerReady: cooldownMs <= 0,
       cooldownSec: Math.ceil(cooldownMs / 1000),
       winnerId: raceWinnerId,
       won: phase === 'finished' && raceWinnerId === p.id,
+      trackName: activeTrack().name,
+      starActive: now < p.starUntil,
+      crashed: now < p.crashUntil,
+      falling: now < p.fallUntil,
+      slowed: now < p.slowUntil,
     });
   });
 }
