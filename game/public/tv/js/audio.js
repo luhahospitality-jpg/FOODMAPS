@@ -304,6 +304,10 @@ export const sfx = {
   ko: () => { if (!ctx) return; const t = sfxT(); crashLike(t); chordArp([67, 63, 60, 55], t + 0.2, 0.14, 0.3, 'square', 0.14); },
   heart: () => { if (!ctx) return; const t = sfxT(); chordArp([76, 81, 84, 88], t, 0.06, 0.18, 'triangle', 0.2); },
   door: () => { if (!ctx) return; const t = sfxT(); noise(t, 0.08, 0.3, 'bandpass', 2400, sfxBus, 2); tone(mtof(64), t + 0.05, 0.08, 'square', 0.1); },
+  swing: () => { if (!ctx) return; const t = sfxT(); whoosh(t, 0.22, 0.35, 500, 3000); },
+  bonk: () => { if (!ctx) return; const t = sfxT(); osc('sine', 180, t, 0.18, 0.8, sfxBus, 0.002); sweep(700, 220, t, 0.16, 'square', 0.16); noise(t, 0.1, 0.35, 'bandpass', 1500, sfxBus, 1.2); },
+  slam: () => { if (!ctx) return; const t = sfxT(); osc('sine', 50, t, 0.6, 0.9, sfxBus, 0.002); noise(t, 0.7, 0.45, 'lowpass', 900, sfxBus); for (let i = 0; i < 8; i++) tone(mtof(90 + ((i * 7) % 12)), t + 0.1 + i * 0.03, 0.3, 'sine', 0.08); },
+  trap: () => { if (!ctx) return; const t = sfxT(); sweep(300, 900, t, 0.12, 'square', 0.14); sweep(900, 200, t + 0.12, 0.3, 'triangle', 0.18); chordArp([60, 63, 66], t + 0.35, 0.08, 0.15, 'square', 0.1); },
   slip: () => { if (!ctx) return; const t = sfxT(); sweep(700, 250, t, 0.18, 'sine', 0.22); sweep(250, 600, t + 0.18, 0.2, 'sine', 0.18); },
 };
 

@@ -272,12 +272,12 @@ function isSide(g, i, wdt) {
   return !(Math.abs(y0 - y1) < 0.01 && Math.abs(y1 - y2) < 0.01);
 }
 
-function lathe(profile, seg = 20) {
+export function lathe(profile, seg = 20) {
   return new THREE.LatheGeometry(profile.map(([r, y]) => new THREE.Vector2(r, y)), seg);
 }
 
 // banana: tubo curvo con los extremos afinados
-function bananaGeometry() {
+export function bananaGeometry() {
   const curve = new THREE.CatmullRomCurve3([
     new THREE.Vector3(-180, 176, 0), new THREE.Vector3(-134, 98, 0), new THREE.Vector3(-36, 66, 0),
     new THREE.Vector3(64, 74, 0), new THREE.Vector3(146, 120, 0), new THREE.Vector3(182, 190, 0),

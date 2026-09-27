@@ -181,7 +181,9 @@ function handleEvents(prev, next) {
       next.players.forEach((o, j) => { if (o && !o.spectating && j !== i) { const q = kartPos(j) || toWorld(o.x, o.y); fx.poof(q.x, 150, q.z, PAL.pink); fx.text('MINI!', q.x, q.z, PAL.pink, 420); } });
     }
     if ((p.hitSeq || 0) > (op.hitSeq || 0)) {
-      const HIT_TXT = { runover: '¡PISADO!', side: '¡PUM!', punch: '¡PIÑA!', missile: '¡BOOM!', carrot: '¡ZANAHORIAZO!' };
+      const HIT_TXT = { runover: '¡PISADO!', side: '¡PUM!', punch: '¡PIÑA!', missile: '¡BOOM!', carrot: '¡ZANAHORIAZO!', bat: '¡BATAZO!', slam: '¡CONGELADO!', bomb: '¡BOOM FLOR!', dash: '¡EMBESTIDA!' };
+      if (p.hitCause === 'bomb') fx.explosion(pos.x, pos.z);
+      if (p.hitCause === 'bat' || p.hitCause === 'dash') sfx.bonk();
       fx.text(HIT_TXT[p.hitCause] || '¡AY!', pos.x, pos.z, PAL.orange, 760);
       if (p.hitCause === 'runover') { sfx.squish(); fx.poof(pos.x, 80, pos.z, PAL.white); }
       if (p.hitCause === 'punch') sfx.punch();
@@ -191,6 +193,12 @@ function handleEvents(prev, next) {
       sfx.ko(); fx.explosion(pos.x, pos.z); fx.text('K.O.!', pos.x, pos.z, PAL.red, 900);
     }
     if ((p.heartSeq || 0) > (op.heartSeq || 0)) { sfx.heart(); fx.sparkles(pos.x, 220, pos.z, 16, [PAL.pink, PAL.red, PAL.white], 360); fx.text('+1 ♥', pos.x, pos.z, PAL.pink, 600); }
+    if ((p.swingSeq || 0) > (op.swingSeq || 0)) {
+      // GOLPE: el kart/personaje hace la animacion; a pie suena el golpe, en el auto la embestida
+      if (karts[i]) karts[i].swingAt = performance.now() / 1000;
+      if (p.onFoot || p.character === 'rabbit') sfx.swing(); else { sfx.star(); fx.ring(pos.x, pos.z, PAL.white, 700, 0.5, 0.4); }
+    }
+    if ((p.trapSeq || 0) > (op.trapSeq || 0)) { sfx.trap(); fx.text('¡ATRAPADO!', pos.x, pos.z, PAL.yellow, 700); fx.poof(pos.x, 120, pos.z, PAL.yellow); }
     if (!!p.onFoot !== !!op.onFoot) { sfx.door(); if (karts[i]) karts[i].squash = 1; }
     if (p.finished && !op.finished) {
       sfx.finish(p.finishPlace === 1);
@@ -222,7 +230,15 @@ function handleEvents(prev, next) {
       hud.banner(i, final ? 'FINAL LAP!' : 'LAP ' + (p.lap + 1) + '/' + (next.laps || 3), 1700, final ? 'var(--red)' : 'var(--yellow)');
       fx.confetti(pos.x, 300, pos.z, 30, 500);
     }
-    if ((p.powerUses || 0) < (op.powerUses || 0)) {
+    if ((p.powerSeq || 0) > (op.powerSeq || 0) && next.mode === 'battle') {
+      // poderes de batalla
+      const c = p.character;
+      sfx.power(c);
+      if (c === 'rabbit') { sfx.bonk(); fx.text('¡BATAZO!', pos.x, pos.z, PAL.orange, 700); fx.ring(pos.x, pos.z, PAL.orange, 1300, 0.7, 0.45); fx.sparkles(pos.x, 200, pos.z, 12, [PAL.orange, PAL.green, PAL.yellow], 520); camStates[i].shake = 0.8; }
+      if (c === 'gorilla') { fx.text('¡BANANAS TRAMPA!', pos.x, pos.z, PAL.yellow, 700); fx.poof(pos.x, 100, pos.z, PAL.yellow); }
+      if (c === 'princess') { fx.text('¡FLORES BOMBA!', pos.x, pos.z, PAL.pink, 700); fx.sparkles(pos.x, 200, pos.z, 18, [PAL.violet, PAL.pink], 420); }
+      if (c === 'ice') { sfx.slam(); fx.text('¡ESTALLIDO!', pos.x, pos.z, PAL.ice, 700); fx.ring(pos.x, pos.z, PAL.ice, 2300, 1.0, 0.8); fx.ring(pos.x, pos.z, PAL.white, 1500, 0.7, 0.6); fx.sparkles(pos.x, 220, pos.z, 30, [PAL.ice, PAL.white, PAL.blue], 900); fx.explosion(pos.x, pos.z); camStates[i].shake = 1.4; }
+    } else if ((p.powerSeq || 0) > (op.powerSeq || 0)) {
       sfx.power(p.character);
       const c = p.character;
       if (c === 'rabbit') { fx.text('WHACK!', pos.x, pos.z, PAL.orange); fx.ring(pos.x, pos.z, PAL.orange, 1100); fx.sparkles(pos.x, 200, pos.z, 14, [PAL.orange, PAL.green, PAL.yellow], 420); camStates[i].shake = 0.5; }
@@ -282,6 +298,7 @@ function animate() {
         const rx = w.x - Math.cos(q.angle) * 90, rz = w.z - Math.sin(q.angle) * 90;
         fx.dust(rx, rz, DUST[TRACK.theme] || '#fff', 1, 0.8 + Math.min(k.speed / 3000, 0.6));
       }
+      if (q.p.dashing) fx.trail(w.x, w.z, q.angle, [PAL.white, PAL.yellow, PAL.orange][Math.floor(t * 20) % 3]);
       if (q.p.turbo && !q.p.starActive) fx.trail(w.x, w.z, q.angle, q.p.character === 'ice' ? [PAL.ice, PAL.white, PAL.turquoise][Math.floor(t * 20) % 3] : [PAL.orange, PAL.yellow, PAL.green][Math.floor(t * 20) % 3]);
       if (q.p.starActive) {
         fx.trail(w.x, w.z, q.angle, [PAL.turquoise, PAL.pink, PAL.yellow][Math.floor(t * 20) % 3]);

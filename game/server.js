@@ -275,6 +275,8 @@ function resetForRace() {
     p.eliminated = false;
     p.invulnUntil = 0;
     p.punchAt = 0;
+    p.kvx = 0; p.kvy = 0;
+    p.trappedUntil = 0; p.frozenUntil = 0; p.dashUntil = 0; p.hitCdUntil = 0;
     p.hitSeq = 0;
     p.hitCause = '';
     p.carX = p.x; p.carY = p.y; p.carAngle = p.angle;
@@ -355,6 +357,8 @@ io.on('connection', (socket) => {
   socket.on('power', () => tryPower(slot));
 
   socket.on('exit', () => toggleFoot(slot));
+
+  socket.on('hit', () => doHit(slot));
 
   socket.on('cycle_track', () => {
     if (slot === -1 || !players[slot] || phase !== 'select') return;
@@ -583,7 +587,8 @@ function tryPower(slot) {
   if (now < p.powerCooldownUntil || p.powerUses <= 0) return;
   if (!isBattle()) p.powerUses -= 1;
   p.powerCooldownUntil = now + (isBattle() ? 8000 : POWER_COOLDOWN);
-  usePower(slot);
+  p.powerSeq = (p.powerSeq || 0) + 1;
+  if (isBattle()) usePowerBattle(slot); else usePower(slot);
 }
 
 function moveSelection(slot, dir) {
@@ -603,6 +608,77 @@ function confirmSelection(slot) {
 
 function hittable(o, i, slot, now) {
   return racer(o) && i !== slot && !o.finished && !o.eliminated && now >= o.starUntil && now >= o.fallUntil;
+}
+
+// ---------- poderes de BATALLA: todos pegan ----------
+// conejo: batazo con la zanahoria (360°) · chadrilla: bananas trampa que atrapan
+// princesa: flores bomba · hielo: estallido de hielo que golpea y congela
+function knock(o, nx, ny, power) {
+  o.kvx = (o.kvx || 0) + nx * power;
+  o.kvy = (o.kvy || 0) + ny * power;
+}
+
+function usePowerBattle(slot) {
+  const p = players[slot];
+  const now = Date.now();
+  const fx = Math.cos(p.angle), fy = Math.sin(p.angle);
+  const around = (r, fn) => players.forEach((o, i) => {
+    if (!hittable(o, i, slot, now)) return;
+    const dx = o.x - p.x, dy = o.y - p.y, d = Math.hypot(dx, dy) || 1;
+    if (d <= r) fn(o, dx / d, dy / d);
+  });
+  if (p.character === 'rabbit') {
+    p.swingSeq = (p.swingSeq || 0) + 1;
+    around(1100, (o, nx, ny) => { damage(o, now, 'bat'); knock(o, nx, ny, 2600); });
+  } else if (p.character === 'gorilla') {
+    [-0.3, 0, 0.3].forEach((da) => {
+      const a = p.angle + da;
+      peels.push({
+        x: p.x + Math.cos(a) * 300, y: p.y + Math.sin(a) * 300,
+        vx: Math.cos(a) * 3000, vy: Math.sin(a) * 3000, flyUntil: now + 650,
+        ownerSlot: slot, expiresAt: now + 20000, trap: true,
+      });
+    });
+  } else if (p.character === 'princess') {
+    [-0.22, 0, 0.22].forEach((da) => {
+      const a = p.angle + da, v = 4200 + Math.max(0, p.speed);
+      flowers.push({ x: p.x + Math.cos(a) * 300, y: p.y + Math.sin(a) * 300, vx: Math.cos(a) * v, vy: Math.sin(a) * v, ownerSlot: slot, expiresAt: now + 1600, bomb: true });
+    });
+  } else if (p.character === 'ice') {
+    around(1900, (o, nx, ny) => { damage(o, now, 'slam'); knock(o, nx, ny, 2200); o.frozenUntil = now + 1400; });
+  }
+  void fx; void fy;
+}
+
+// boton GOLPE (solo batalla): a pie pega adelante (el conejo con el bate llega mas lejos);
+// en el auto es una embestida corta
+function doHit(slot) {
+  const p = players[slot];
+  const now = Date.now();
+  if (!alive(p) || !isBattle() || phase !== 'racing') return;
+  if (now < (p.hitCdUntil || 0) || now < p.crashUntil || now < (p.trappedUntil || 0) || now < (p.frozenUntil || 0)) return;
+  p.hitCdUntil = now + (p.onFoot ? 650 : 2000);
+  p.swingSeq = (p.swingSeq || 0) + 1;
+  if (!p.onFoot) {
+    p.dashUntil = now + 550;
+    p.speed = Math.max(p.speed, MAX_SPEED * 1.4);
+    return;
+  }
+  const bat = p.character === 'rabbit';
+  const hx = Math.cos(p.angle), hy = Math.sin(p.angle);
+  players.forEach((o, i) => {
+    if (i === slot || !alive(o)) return;
+    const dx = o.x - p.x, dy = o.y - p.y, d = Math.hypot(dx, dy);
+    const range = (bat ? 720 : 500) + (o.onFoot ? 0 : 200);
+    if (d > range || d < 1) return;
+    const nx = dx / d, ny = dy / d;
+    if (hx * nx + hy * ny < 0.4) return;
+    if (o.onFoot) { damage(o, now, bat ? 'bat' : 'punch'); knock(o, nx, ny, bat ? 2200 : 1600); return; }
+    // a un auto solo se le saca vida pegandole de costado (el bate pega de cualquier lado)
+    const side = Math.abs(Math.cos(o.angle) * nx + Math.sin(o.angle) * ny) < 0.75;
+    if (side || bat) damage(o, now, bat ? 'bat' : 'punch');
+    knock(o, nx, ny, 900);
+  });
 }
 
 function usePower(slot) {
@@ -776,15 +852,19 @@ function collidePair(a, b, now, dt) {
     const closing = (ha.x * a.speed - hb.x * b.speed) * n.nx + (ha.y * a.speed - hb.y * b.speed) * n.ny;
     const aFront = ha.x * n.nx + ha.y * n.ny, bFront = -(hb.x * n.nx + hb.y * n.ny);
     const bSide = Math.abs(hb.x * n.nx + hb.y * n.ny) < 0.72, aSide = Math.abs(ha.x * n.nx + ha.y * n.ny) < 0.72;
+    // embestida (GOLPE en el auto): saca vida salvo que sea de frente contra frente
+    const aDash = now < (a.dashUntil || 0), bDash = now < (b.dashUntil || 0);
+    if (aDash && aFront > 0.5 && bFront < 0.6) { damage(b, now, 'dash'); knock(b, n.nx, n.ny, 1500); }
+    else if (bDash && bFront > 0.5 && aFront < 0.6) { damage(a, now, 'dash'); knock(a, -n.nx, -n.ny, 1500); }
     // choque de costado ("T"): pierde una vida el que recibe el golpe
-    if (closing > 700) {
+    else if (closing > 700) {
       if (a.speed > 600 && aFront > 0.6 && bSide) damage(b, now, 'side');
       else if (b.speed > 600 && bFront > 0.6 && aSide) damage(a, now, 'side');
     }
     // rebote de autitos chocadores
-    const knock = Math.min(Math.abs(closing), 2600) * 0.5 * dt;
-    a.x -= n.nx * knock; a.y -= n.ny * knock;
-    b.x += n.nx * knock; b.y += n.ny * knock;
+    const bump = Math.min(Math.abs(closing), 2600) * 0.5 * dt;
+    a.x -= n.nx * bump; a.y -= n.ny * bump;
+    b.x += n.nx * bump; b.y += n.ny * bump;
     a.speed *= 0.6; b.speed *= 0.6;
     return;
   }
@@ -799,13 +879,7 @@ function collidePair(a, b, now, dt) {
     if (damage(ped, now, 'runover')) car.speed *= 0.7;
     return;
   }
-  // el peaton le pega al auto en el costado
-  const toward = -(hp.x * n.nx + hp.y * n.ny);
-  const side = Math.abs(front) < 0.75;
-  if (ped.speed > 250 && toward > 0.6 && side && now >= ped.punchAt) {
-    ped.punchAt = now + 900;
-    if (damage(car, now, 'punch')) ped.speed = -400;
-  }
+  void hp;
 }
 
 function battleTick(now, dt) {
@@ -827,7 +901,14 @@ function battleTick(now, dt) {
 
   players.forEach((p, i) => {
     if (!alive(p)) return;
-    if (now < p.crashUntil) { p.speed = 0; return; }
+    // empujon de golpes/batazos/estallidos (se va frenando)
+    if (p.kvx || p.kvy) {
+      p.x += p.kvx * dt; p.y += p.kvy * dt;
+      const k = Math.exp(-5 * dt);
+      p.kvx *= k; p.kvy *= k;
+      if (Math.abs(p.kvx) + Math.abs(p.kvy) < 30) { p.kvx = 0; p.kvy = 0; }
+    }
+    if (now < p.crashUntil || now < (p.trappedUntil || 0) || now < (p.frozenUntil || 0)) { p.speed = 0; return; }
     if (p.onFoot) stepFoot(p, i, now, dt); else stepCar(p, i, now, dt);
   });
 
@@ -849,11 +930,18 @@ function battleTick(now, dt) {
     const star = now < p.starUntil;
     for (const peel of peels) {
       if (peel.ownerSlot === idx || peel.expiresAt === 0 || star) continue;
-      if (Math.hypot(p.x - peel.x, p.y - peel.y) < 30 * WORLD_SCALE) { p.slowUntil = now + 1200; peel.expiresAt = 0; }
+      if (Math.hypot(p.x - peel.x, p.y - peel.y) < 34 * WORLD_SCALE) {
+        peel.expiresAt = 0;
+        // banana trampa: te deja atrapado (quieto) un rato, a merced de los demas
+        if (peel.trap) { p.trappedUntil = now + 2800; p.speed = 0; p.trapSeq = (p.trapSeq || 0) + 1; } else p.slowUntil = now + 1200;
+      }
     }
     for (const fl of flowers) {
       if (fl.ownerSlot === idx || fl.expiresAt === 0 || star) continue;
-      if (Math.hypot(p.x - fl.x, p.y - fl.y) < 38 * WORLD_SCALE) { p.slowUntil = now + 1800; fl.expiresAt = 0; }
+      if (Math.hypot(p.x - fl.x, p.y - fl.y) < 38 * WORLD_SCALE) {
+        fl.expiresAt = 0;
+        if (fl.bomb) { damage(p, now, 'bomb'); const d = Math.hypot(fl.vx, fl.vy) || 1; knock(p, fl.vx / d, fl.vy / d, 1400); } else p.slowUntil = now + 1800;
+      }
     }
     boostBoxes.forEach((b) => {
       if (!b.active || p.item) return;
@@ -870,7 +958,14 @@ function battleTick(now, dt) {
     void k;
   });
 
-  peels = peels.filter((pe) => pe.expiresAt > now);
+  peels = peels.filter((pe) => {
+    // las bananas trampa vuelan un poco y quedan en el piso
+    if (pe.vx !== undefined && now < pe.flyUntil) {
+      pe.x = Math.max(200, Math.min(A.w - 200, pe.x + pe.vx * dt));
+      pe.y = Math.max(200, Math.min(A.h - 200, pe.y + pe.vy * dt));
+    }
+    return pe.expiresAt > now;
+  });
   flowers = flowers.filter((fl) => {
     fl.x += fl.vx * dt; fl.y += fl.vy * dt;
     return fl.expiresAt > now && fl.x > 0 && fl.x < A.w && fl.y > 0 && fl.y < A.h;
@@ -925,8 +1020,12 @@ function botsThinkBattle(now) {
       if (!ai.itemAt) ai.itemAt = now + 1500 + Math.random() * 3500;
       else if (now >= ai.itemAt) { ai.itemAt = 0; useItem(slot); }
     } else ai.itemAt = 0;
+    if (best && bd < 1700 && Math.abs(diff) < 0.3 && now >= (p.hitCdUntil || 0) && Math.random() < 0.05) doHit(slot);
     if (now >= p.powerCooldownUntil) {
-      if (!ai.powerAt) ai.powerAt = now + 5000 + Math.random() * 10000;
+      // el batazo y el estallido solo sirven de cerca; los demas cuando sea
+      const melee = p.character === 'rabbit' ? 1000 : p.character === 'ice' ? 1700 : 0;
+      if (melee) { if (best && bd < melee && Math.random() < 0.08) tryPower(slot); }
+      else if (!ai.powerAt) ai.powerAt = now + 5000 + Math.random() * 10000;
       else if (now >= ai.powerAt) { ai.powerAt = 0; tryPower(slot); }
     }
   });
@@ -1200,6 +1299,12 @@ function broadcast(now) {
       hitSeq: p.hitSeq || 0,
       hitCause: p.hitCause || '',
       heartSeq: p.heartSeq || 0,
+      powerSeq: p.powerSeq || 0,
+      swingSeq: p.swingSeq || 0,
+      trapSeq: p.trapSeq || 0,
+      trapped: now < (p.trappedUntil || 0),
+      frozen: now < (p.frozenUntil || 0),
+      dashing: now < (p.dashUntil || 0),
       starActive: now < p.starUntil,
       shrunk: now < p.shrunkUntil,
       crashed: now < p.crashUntil,
@@ -1228,7 +1333,7 @@ function broadcast(now) {
     players: statePlayers,
     boxes: boostBoxes.filter((b) => b.active).map((b) => ({ x: b.x, y: b.y })),
     coins: coins.filter((c) => c.active).map((c) => ({ x: c.x, y: c.y })),
-    peels: peels.map((pe) => ({ x: Math.round(pe.x), y: Math.round(pe.y) })),
+    peels: peels.map((pe) => ({ x: Math.round(pe.x), y: Math.round(pe.y), trap: pe.trap ? 1 : 0 })),
     flowers: flowers.map((fl) => ({ x: Math.round(fl.x), y: Math.round(fl.y) })),
     missiles: missiles.map((m) => ({ x: Math.round(m.x), y: Math.round(m.y) })),
     ice: {
@@ -1265,6 +1370,7 @@ function broadcast(now) {
       mode: activeTrack().mode || 'race',
       onFoot: !!p.onFoot,
       canEnter: !!p.onFoot && Math.hypot(p.x - p.carX, p.y - p.carY) < 700,
+      hitReady: now >= (p.hitCdUntil || 0),
       eliminated: !!p.eliminated,
       alive: players.filter(alive).length,
       cooldownSec: Math.ceil(cooldownMs / 1000),

@@ -4,7 +4,7 @@ import { tex } from './assets.js';
 import { RoundedBoxGeometry } from '/vendor/addons/geometries/RoundedBoxGeometry.js';
 import { glowTex } from './karts.js';
 import { fx } from './fx.js';
-import { heartGeometry } from './models.js';
+import { heartGeometry, bananaGeometry } from './models.js';
 
 const group = new THREE.Group();
 scene.add(group);
@@ -75,6 +75,18 @@ const peelPool = new Pool(() => {
   s.scale.set(190, 250, 1);
   return s;
 });
+// bananas trampa (batalla): banana 3D con brillo amarillo
+let _trapGeo = null;
+const trapPool = new Pool(() => {
+  if (!_trapGeo) { _trapGeo = bananaGeometry(); _trapGeo.center(); }
+  const m = new THREE.Mesh(_trapGeo, new THREE.MeshStandardMaterial({ color: '#FFD93D', roughness: 0.4, emissive: '#7a5a00', emissiveIntensity: 0.35 }));
+  m.scale.setScalar(0.55);
+  const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex(), color: new THREE.Color(PAL.yellow).multiplyScalar(1.2), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+  halo.scale.set(420, 420, 1);
+  const g = new THREE.Group(); g.add(m, halo); g.userData.m = m;
+  return g;
+});
+
 // corazones del modo batalla (solo se agarran a pie): +1 vida
 let _heartGeo = null;
 const heartPool = new Pool(() => {
@@ -166,9 +178,16 @@ export function updateItems(t, dt, interp) {
   });
   prevCoins = coins.slice();
 
-  const peels = s.peels || [];
+  const all = s.peels || [];
+  const peels = all.filter((p) => !p.trap), traps = all.filter((p) => p.trap);
   peelPool.sync(peels.length);
   peels.forEach((p, i) => { const w = toWorld(p.x, p.y); peelPool.items[i].position.set(w.x, 115, w.z); });
+  trapPool.sync(traps.length);
+  traps.forEach((p, i) => {
+    const w = toWorld(p.x, p.y), g = trapPool.items[i];
+    g.position.set(w.x, 90 + Math.abs(Math.sin(t * 4 + i)) * 30, w.z);
+    g.userData.m.rotation.set(0, t * 2 + i, 0.3);
+  });
 
   const hearts = s.hearts || [];
   heartPool.sync(hearts.length);

@@ -34,7 +34,7 @@ export function initSelect() {
     card.innerHTML = `<div class="holders" id="holders-${ch}"></div>
       <img src="/assets/chars/${info.sprite}_right.png" alt="">
       <div class="cname outline${info.name.length > 12 ? ' long' : ''}">${info.name}</div>
-      <div class="cpower outline">${info.power}</div>`;
+      <div class="cpower outline" id="cpower-${ch}">${info.power}</div>`;
     cc.appendChild(card);
   });
   $('url').textContent = 'Abre en tu celular: ' + location.origin + '/controller';
@@ -49,8 +49,14 @@ const TRACK_THUMB = {
 const TRACK_PILL = { rainbow: 'var(--violet)', banana: 'var(--green)', space: 'var(--blue)', battle: 'var(--red)' };
 let trackListKey = '';
 
+let selMode = '';
 export function updateSelect() {
   const s = game.state;
+  // en la arena de batalla los poderes son otros
+  if (selMode !== s.mode) {
+    selMode = s.mode;
+    CHAR_ORDER.forEach((ch) => { const el = $('cpower-' + ch); if (el) el.textContent = s.mode === 'battle' ? CHAR_INFO[ch].bpower : CHAR_INFO[ch].power; });
+  }
   CHAR_ORDER.forEach((ch) => {
     const el = $('holders-' + ch);
     const card = $('card-' + ch);

@@ -1,7 +1,7 @@
-import { THREE, CHAR_INFO, canvasTexture, roundRect, toWorld } from './core.js';
+import { THREE, CHAR_INFO, canvasTexture, roundRect, toWorld, game } from './core.js';
 import { scene } from './render.js';
 import { tex } from './assets.js';
-import { buildCharacterModel, MODEL_H } from './models.js';
+import { buildCharacterModel, MODEL_H, bananaGeometry, lathe } from './models.js';
 
 export const KART_H = 370;
 const _sipQ = new THREE.Quaternion(), _sipAxis = new THREE.Vector3(0, 0, 1);
@@ -46,6 +46,56 @@ function tagTexture(id, color) {
   });
 }
 
+// bate zanahoria del CONEJO MALO (solo en batalla)
+function buildCarrotBat() {
+  const pivot = new THREE.Group();
+  const bat = new THREE.Group();
+  const body = new THREE.Mesh(lathe([[0, 0], [9, 2], [10, 40], [14, 80], [22, 130], [30, 180], [33, 210], [28, 226], [0, 232]], 12),
+    new THREE.MeshStandardMaterial({ color: '#FF8A1C', roughness: 0.55 }));
+  const grip = new THREE.Mesh(new THREE.CylinderGeometry(12, 12, 50, 10), new THREE.MeshStandardMaterial({ color: '#3a2a33', roughness: 0.8 }));
+  grip.position.y = 28;
+  const leafMat = new THREE.MeshStandardMaterial({ color: '#36B24E', roughness: 0.6 });
+  [-0.5, 0, 0.5].forEach((a) => {
+    const leaf = new THREE.Mesh(new THREE.ConeGeometry(12, 80, 6), leafMat);
+    leaf.position.set(Math.sin(a) * 18, 262, Math.cos(a) * 4); leaf.rotation.z = -a;
+    bat.add(leaf);
+  });
+  [70, 120, 170].forEach((y) => {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(13 + y * 0.1, 2.2, 5, 16), new THREE.MeshStandardMaterial({ color: '#E86E12', roughness: 0.6 }));
+    ring.rotation.x = Math.PI / 2; ring.position.y = y; bat.add(ring);
+  });
+  bat.add(body, grip);
+  bat.position.y = -20;
+  pivot.add(bat);
+  pivot.position.set(40, 200, -52);
+  pivot.scale.setScalar(1.6);
+  return pivot;
+}
+
+// jaula de bananas (atrapado) y bloque de hielo (congelado)
+let _banGeo = null;
+function buildCage() {
+  if (!_banGeo) { _banGeo = bananaGeometry(); _banGeo.center(); }
+  const g = new THREE.Group();
+  const mat = new THREE.MeshStandardMaterial({ color: '#FFD93D', roughness: 0.45, emissive: '#6b5200', emissiveIntensity: 0.3 });
+  for (let i = 0; i < 6; i++) {
+    const a = (i / 6) * Math.PI * 2;
+    const b = new THREE.Mesh(_banGeo, mat);
+    b.scale.setScalar(0.62);
+    b.position.set(Math.cos(a) * 230, 190, Math.sin(a) * 230);
+    b.rotation.set(0, -a, Math.PI / 2);
+    g.add(b);
+  }
+  return g;
+}
+function buildIceBlock() {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(460, 440, 460),
+    new THREE.MeshStandardMaterial({ color: '#A9F3FF', transparent: true, opacity: 0.5, roughness: 0.1, emissive: '#3aa8ff', emissiveIntensity: 0.35, depthWrite: false }));
+  m.position.y = 210;
+  const g = new THREE.Group(); g.add(m);
+  return g;
+}
+
 class Kart {
   constructor(slot, character, id, color) {
     this.slot = slot; this.character = character; this.id = id;
@@ -87,6 +137,14 @@ class Kart {
       this.group.add(s);
       this.dizzy.push(s);
     }
+
+    // bate zanahoria del conejo (se muestra solo en la arena de batalla)
+    if (character === 'rabbit') {
+      this.bat = buildCarrotBat();
+      this.model.riderGroup.add(this.bat);
+      this.bat.visible = false;
+    }
+    this.swingAt = -10;
 
     this.fall = null;
     this.speed = 0;
@@ -140,7 +198,40 @@ class Kart {
     this.onFoot = on;
   }
 
+  // animacion de GOLPE: batazo con la zanahoria o trompada/estocada hacia adelante
+  animateSwing(t) {
+    const k = (t - this.swingAt) / 0.38;
+    const on = k >= 0 && k <= 1;
+    const e = on ? Math.sin(k * Math.PI) : 0;
+    if (this.bat) {
+      this.bat.visible = game.state.mode === 'battle';
+      this.bat.rotation.set(-0.35 + e * 0.35, 0, 0.85 - e * 2.7);
+    }
+    const rg = this.model.riderGroup;
+    rg.position.x = e * 40;
+    return e;
+  }
+
+  // jaula de bananas / bloque de hielo alrededor de quien este atrapado o congelado
+  updateHolds(p, x, z, t, scale) {
+    if (p.trapped && !this.cage) { this.cage = buildCage(); scene.add(this.cage); }
+    if (this.cage) {
+      this.cage.visible = !!p.trapped;
+      this.cage.position.set(x, 0, z);
+      this.cage.rotation.y = t * 1.6;
+      this.cage.scale.setScalar(scale);
+    }
+    if (p.frozen && !this.iceBlock) { this.iceBlock = buildIceBlock(); scene.add(this.iceBlock); }
+    if (this.iceBlock) {
+      this.iceBlock.visible = !!p.frozen;
+      this.iceBlock.position.set(x, 0, z);
+      this.iceBlock.scale.setScalar(scale);
+    }
+  }
+
   dispose() {
+    if (this.cage) scene.remove(this.cage);
+    if (this.iceBlock) scene.remove(this.iceBlock);
     if (this.walker) scene.remove(this.walker.g);
     scene.remove(this.group);
     this.shadow.geometry.dispose();
@@ -202,6 +293,8 @@ class Kart {
       W.legs[1].rotation.z = -Math.sin(ph) * 0.7 * sp;
       riderGroup.position.y = Math.abs(Math.sin(ph)) * 14 * sp;
       riderGroup.rotation.x = Math.sin(ph) * 0.06 * sp;
+      this.animateSwing(t);
+      this.updateHolds(p, w.x, w.z, t, 0.62);
       this.setGlow(p.starActive ? 'star' : p.slowed ? 'slow' : 'none', t);
       this.aura.visible = false;
       return;
@@ -244,6 +337,8 @@ class Kart {
       const sq = this.squash;
       this.group.scale.set(baseScale * (1 + sq * 0.18), baseScale * (1 - sq * 0.22), baseScale * (1 + sq * 0.18));
     }
+    this.animateSwing(t);
+    this.updateHolds(p, this.group.position.x, this.group.position.z, t, 1);
     // ruedas girando (se rota la textura de la llanta)
     const wt = wheels.material.map;
     if (wt) wt.rotation -= (this.speed * dt) / 34;

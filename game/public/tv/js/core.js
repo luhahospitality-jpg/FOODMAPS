@@ -11,10 +11,10 @@ export const RAINBOW = [PAL.red, PAL.orange, PAL.yellow, PAL.green, PAL.blue, PA
 
 export const CHAR_ORDER = ['rabbit', 'gorilla', 'princess', 'ice'];
 export const CHAR_INFO = {
-  rabbit: { name: 'CONEJO MALO', full: 'CONEJO MALO', power: 'GIANT CARROT', powerIcon: 'pw_carrot', card: ['#FFB23E', '#FF7A1A'], sprite: 'bunny' },
-  gorilla: { name: 'CHADRILLA', full: 'CHADRILLA', power: 'BANANA PEEL', powerIcon: 'pw_gorilla_banana', card: ['#FFE45C', '#FFC21A'], sprite: 'gorilla' },
-  princess: { name: 'PRINCESS TAGLIANI', full: 'PRINCESS TAGLIANI', power: 'POISON FLOWERS', powerIcon: 'pw_flower', card: ['#FF8FD0', '#F04FA8'], sprite: 'princess' },
-  ice: { name: 'ICE RACER', full: 'ICE RACER', power: 'FREEZE TRACK', powerIcon: 'pw_freeze', card: ['#6FC2FF', '#2F7BFF'], sprite: 'ice' },
+  rabbit: { name: 'CONEJO MALO', full: 'CONEJO MALO', power: 'GIANT CARROT', bpower: 'BATE ZANAHORIA', powerIcon: 'pw_carrot', card: ['#FFB23E', '#FF7A1A'], sprite: 'bunny' },
+  gorilla: { name: 'CHADRILLA', full: 'CHADRILLA', power: 'BANANA PEEL', bpower: 'BANANAS TRAMPA', powerIcon: 'pw_gorilla_banana', card: ['#FFE45C', '#FFC21A'], sprite: 'gorilla' },
+  princess: { name: 'PRINCESS TAGLIANI', full: 'PRINCESS TAGLIANI', power: 'POISON FLOWERS', bpower: 'FLORES BOMBA', powerIcon: 'pw_flower', card: ['#FF8FD0', '#F04FA8'], sprite: 'princess' },
+  ice: { name: 'ICE RACER', full: 'ICE RACER', power: 'FREEZE TRACK', bpower: 'ESTALLIDO DE HIELO', powerIcon: 'pw_freeze', card: ['#6FC2FF', '#2F7BFF'], sprite: 'ice' },
 };
 
 export const game = {
