@@ -33,7 +33,7 @@ export function initSelect() {
     card.style.background = `linear-gradient(180deg, ${info.card[0]}, ${info.card[1]})`;
     card.innerHTML = `<div class="holders" id="holders-${ch}"></div>
       <img src="/assets/chars/${info.sprite}_right.png" alt="">
-      <div class="cname outline">${info.name}</div>
+      <div class="cname outline${info.name.length > 12 ? ' long' : ''}">${info.name}</div>
       <div class="cpower outline">${info.power}</div>`;
     cc.appendChild(card);
   });

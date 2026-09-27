@@ -13,7 +13,7 @@ async function boot() {
   hud.setLoading(0.1, false);
   if (document.fonts && document.fonts.load) {
     await Promise.race([
-      Promise.all([document.fonts.load('100px "Lilita One"'), document.fonts.load('600 40px "Fredoka"')]).catch(() => null),
+      Promise.all([document.fonts.load('100px "Lilita One"'), document.fonts.load('600 40px "Fredoka"'), document.fonts.load('60px "Lobster"')]).catch(() => null),
       new Promise((r) => setTimeout(r, 4000)),
     ]);
   }

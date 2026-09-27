@@ -70,17 +70,64 @@ function blush(c, x, y, r) {
 }
 
 const FACES = {
+  // CONEJO MALO: ojos de loco (uno mas grande), venitas rojas, ojeras, parpados caidos
+  // en V, cejas de enojado, sonrisa torcida con dientes filosos y una cicatriz
   rabbit: () => faceTexture((c) => {
-    eye(c, 76, 134, 36, 44);
-    eye(c, 180, 134, 36, 44);
-    blush(c, 44, 190, 30); blush(c, 212, 190, 30);
-    c.fillStyle = '#ff7fa0';
-    c.beginPath(); c.ellipse(128, 176, 14, 10, 0, 0, Math.PI * 2); c.fill();
-    // boca abierta sonriente con lengua
-    c.fillStyle = '#5a1b2a';
-    c.beginPath(); c.moveTo(102, 194); c.quadraticCurveTo(128, 244, 154, 194); c.closePath(); c.fill();
-    c.fillStyle = '#ff6f8c';
-    c.beginPath(); c.ellipse(128, 222, 13, 9, 0, 0, Math.PI * 2); c.fill();
+    const FUR = '#EAE4DF';
+    [[76, 136, 1], [180, 134, -1]].forEach(([x, y]) => {
+      const g = c.createRadialGradient(x, y + 16, 8, x, y + 16, 58);
+      g.addColorStop(0, 'rgba(90,40,110,0.75)'); g.addColorStop(1, 'rgba(90,40,110,0)');
+      c.fillStyle = g; c.beginPath(); c.ellipse(x, y + 16, 58, 54, 0, 0, Math.PI * 2); c.fill();
+    });
+    const badEye = (x, y, rx, ry, iris, side) => {
+      c.save();
+      c.beginPath(); c.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); c.clip();
+      c.fillStyle = '#FFF4CF'; c.fillRect(x - rx, y - ry, rx * 2, ry * 2);
+      c.strokeStyle = '#D8323C'; c.lineWidth = 2.4;
+      for (let i = 0; i < 9; i++) {
+        const a = (i / 9) * Math.PI * 2 + 0.3, r0 = rx * 1.05, r1 = rx * (0.45 + (i % 3) * 0.1);
+        c.beginPath(); c.moveTo(x + Math.cos(a) * r0, y + Math.sin(a) * r0 * (ry / rx));
+        c.quadraticCurveTo(x + Math.cos(a + 0.2) * (r0 + r1) / 2, y + Math.sin(a + 0.25) * (r0 + r1) / 2 * (ry / rx), x + Math.cos(a) * r1, y + Math.sin(a) * r1 * (ry / rx));
+        c.stroke();
+      }
+      c.fillStyle = '#C8102E'; c.beginPath(); c.arc(x + side * rx * 0.12, y + ry * 0.1, rx * iris, 0, Math.PI * 2); c.fill();
+      c.fillStyle = '#10080c'; c.beginPath(); c.arc(x + side * rx * 0.12, y + ry * 0.1, rx * iris * 0.28, 0, Math.PI * 2); c.fill();
+      c.fillStyle = '#ffffff'; c.beginPath(); c.arc(x + side * rx * 0.12 - rx * 0.12, y - ry * 0.05, rx * 0.07, 0, Math.PI * 2); c.fill();
+      // parpado de arriba caido, mas bajo del lado de adentro (mirada de malo)
+      c.fillStyle = FUR;
+      c.beginPath();
+      const inner = side > 0 ? x + rx : x - rx, outer = side > 0 ? x - rx : x + rx;
+      c.moveTo(outer, y - ry * 0.3); c.lineTo(inner, y + ry * 0.12); c.lineTo(inner, y - ry - 2); c.lineTo(outer, y - ry - 2); c.closePath(); c.fill();
+      c.restore();
+      c.strokeStyle = '#2a1a22'; c.lineWidth = 5; c.lineCap = 'round';
+      c.beginPath(); c.moveTo(outer, y - ry * 0.3); c.lineTo(inner, y + ry * 0.12); c.stroke();
+      c.lineWidth = 4; c.beginPath(); c.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); c.stroke();
+    };
+    badEye(76, 132, 40, 42, 0.36, 1);
+    badEye(182, 130, 30, 33, 0.3, -1);
+    // cejas gruesas en V
+    c.strokeStyle = '#2a1a22'; c.lineWidth = 13; c.lineCap = 'round';
+    c.beginPath(); c.moveTo(34, 74); c.lineTo(112, 100); c.stroke();
+    c.beginPath(); c.moveTo(222, 78); c.lineTo(150, 98); c.stroke();
+    // nariz
+    c.fillStyle = '#E86A8E';
+    c.beginPath(); c.moveTo(116, 170); c.lineTo(140, 170); c.lineTo(128, 184); c.closePath(); c.fill();
+    // sonrisa torcida con dientes filosos
+    c.fillStyle = '#2B0F18';
+    c.beginPath(); c.moveTo(70, 196); c.quadraticCurveTo(120, 214, 194, 188); c.quadraticCurveTo(150, 246, 96, 226); c.closePath(); c.fill();
+    c.fillStyle = '#FFFBEA';
+    for (let i = 0; i < 7; i++) {
+      const t0 = i / 7, t1 = (i + 1) / 7;
+      const px = (t) => 70 + (194 - 70) * t, py = (t) => 196 + (188 - 196) * t + Math.sin(t * Math.PI) * 10;
+      c.beginPath(); c.moveTo(px(t0), py(t0)); c.lineTo(px(t1), py(t1)); c.lineTo((px(t0) + px(t1)) / 2, py(t0) + 16); c.closePath(); c.fill();
+    }
+    c.fillStyle = '#FFD93D'; // diente de oro
+    c.beginPath(); c.moveTo(141, 202); c.lineTo(158, 199); c.lineTo(150, 215); c.closePath(); c.fill();
+    // cicatriz con puntos
+    c.strokeStyle = '#C0506A'; c.lineWidth = 5;
+    c.beginPath(); c.moveTo(200, 164); c.lineTo(240, 212); c.stroke();
+    c.lineWidth = 3;
+    for (let i = 0; i < 4; i++) { const t = 0.15 + i * 0.23, x = 200 + 40 * t, y = 164 + 48 * t; c.beginPath(); c.moveTo(x - 9, y + 7); c.lineTo(x + 9, y - 7); c.stroke(); }
   }),
   gorilla: () => faceTexture((c) => {
     // hocico: fosas nasales + sonrisa canchera
@@ -122,6 +169,54 @@ const FACES = {
     roundRect(c, 104, 190, 48, 12, 6); c.fill();
   }),
 };
+
+// ---------- Coca-Cola: logo pintado (letra cursiva + cinta) y botella de vidrio ----------
+function cokeLogo() {
+  return canvasTexture(512, 144, (c, w, h) => {
+    c.fillStyle = '#E4002B'; roundRect(c, 0, 0, w, h, 26); c.fill();
+    c.strokeStyle = '#ffffff'; c.lineWidth = 6; roundRect(c, 8, 8, w - 16, h - 16, 20); c.stroke();
+    c.fillStyle = '#ffffff';
+    c.font = '92px "Lobster", "Brush Script MT", cursive';
+    c.textAlign = 'center'; c.textBaseline = 'middle';
+    c.fillText('Coca-Cola', w / 2, h / 2 - 8);
+    // cinta blanca ondulada abajo
+    c.beginPath(); c.moveTo(60, h - 30);
+    c.bezierCurveTo(180, h - 60, 300, h - 4, 452, h - 36);
+    c.lineTo(452, h - 26); c.bezierCurveTo(300, h + 6, 180, h - 48, 60, h - 22); c.closePath(); c.fill();
+  });
+}
+function cokeLabel() {
+  const t = canvasTexture(512, 96, (c, w, h) => {
+    c.fillStyle = '#E4002B'; c.fillRect(0, 0, w, h);
+    c.fillStyle = '#ffffff';
+    c.font = '60px "Lobster", "Brush Script MT", cursive';
+    c.textAlign = 'center'; c.textBaseline = 'middle';
+    c.fillText('Coca-Cola', w * 0.25, h / 2);
+    c.fillText('Coca-Cola', w * 0.75, h / 2);
+  });
+  return t;
+}
+function cokeBottle(riderGroup) {
+  // botella contorneada: el pico en la boca del robot y el fondo levantado hacia
+  // adelante y al costado (se la esta tomando). El grupo gira sobre la boca para los tragos.
+  const mouth = new THREE.Vector3(54, 286, 4), base = new THREE.Vector3(114, 390, 30);
+  const g = new THREE.Group();
+  const glass = new THREE.Mesh(lathe([[0, 0], [23, 0], [26, 6], [26, 24], [21, 38], [25, 54], [26, 66], [19, 84], [11, 100], [9, 116], [11, 120], [0, 121]], 14),
+    new THREE.MeshStandardMaterial({ color: '#4a1410', roughness: 0.12, metalness: 0.15, emissive: '#200404' }));
+  glass.castShadow = true;
+  const label = new THREE.Mesh(new THREE.CylinderGeometry(27.5, 27.5, 24, 14, 1, true), new THREE.MeshStandardMaterial({ map: cokeLabel(), roughness: 0.4 }));
+  label.position.y = 58;
+  const inner = new THREE.Group();
+  inner.add(glass, label);
+  inner.position.y = -121;
+  g.add(inner);
+  g.position.copy(mouth);
+  g.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), mouth.clone().sub(base).normalize());
+  g.scale.setScalar(1.3);
+  g.userData.baseQ = g.quaternion.clone();
+  riderGroup.add(g);
+  return { bottle: g };
+}
 
 // ---------- ruedas: 4 cilindros en UNA malla; el giro es la textura de la llanta rotando ----------
 function wheelTexture(tire, hub, rim) {
@@ -236,16 +331,19 @@ const BUILDERS = {
       car.ball(22, 88, 44, i % 2 ? GR : GRD, -178 + Math.sin(a) * 40, 196 + Math.cos(a) * 30, tilt * 58, tilt, 0, a);
     });
     // conejo: cabeza cubica grande apoyada sobre la zanahoria, patitas adelante
-    const W = '#FFF8F2', PK = '#FF9EC0';
+    const W = '#EAE4DF', PK = '#E77FA0';
     rider.box(110, 70, 90, W, -20, 196, 0);
     rider.ball(24, 18, 24, W, 44, 196, 44);
     rider.ball(24, 18, 24, W, 44, 196, -44);
     rider.box(176, 156, 152, W, -14, 288, 0, 0, 0, 0, 0.3);
     rider.ball(26, 26, 26, W, -104, 236, 0);
-    [1, -1].forEach((s) => {
-      rider.box(50, 150, 32, W, -26, 420, s * 46, s * 0.24, 0, -0.1, 0.5);
-      rider.box(28, 104, 6, PK, -9, 414, s * 46, s * 0.24, 0, -0.1, 0.5);
-    });
+    // una oreja parada y la otra doblada para adelante (mordida en la punta)
+    rider.box(50, 150, 32, W, -26, 420, 46, 0.24, 0, -0.1, 0.5);
+    rider.box(28, 104, 6, PK, -9, 414, 46, 0.24, 0, -0.1, 0.5);
+    rider.box(50, 84, 32, W, -26, 392, -46, -0.24, 0, -0.1, 0.5);
+    rider.box(28, 60, 6, PK, -9, 390, -46, -0.24, 0, -0.1, 0.5);
+    rider.box(44, 76, 30, W, 4, 424, -56, -0.24, 0, -1.9, 0.5);
+    rider.box(26, 52, 6, PK, 6, 414, -56, -0.24, 0, -1.9, 0.5);
     return {
       car, rider, face: { tex: FACES.rabbit(), w: 150, h: 140, x: 62, y: 282, z: 0 },
       wheels: { spots: [[104, 90], [104, -90], [-104, 90], [-104, -90]], r: 44, w: 32, tire: '#24222c', hub: '#F4E3C8', rim: '#3a3642' },
@@ -272,7 +370,16 @@ const BUILDERS = {
     rider.box(128, 88, 22, TAN, 36, 284, 0, 0, 0, 0, 0.45);
     rider.box(110, 60, 50, TAN2, 52, 258, 0, 0, 0, 0, 0.5);
     [1, -1].forEach((s) => rider.ball(20, 26, 14, '#B07B55', -28, 292, s * 80));
-    [-0.45, 0, 0.45].forEach((a, i) => rider.cone(15, 34, DK, -44 + i * 8, 372, a * 56, a, 0, 0.35));
+    // CHADRILLA: pelo verde parado y desordenado
+    const HG = '#3BE36B', HG2 = '#1FB04A';
+    rider.box(150, 34, 116, HG2, -26, 372, 0, 0, 0, 0, 0.4);
+    let hk = 0;
+    [-66, -36, -6, 24].forEach((hx, ix) => [-54, -18, 18, 54].forEach((hz) => {
+      const tiltX = hz / 54 * 0.45, tiltZ = 0.25 + ix * 0.12;
+      rider.cone(20 + (hk % 3) * 3, 62 + ((hk * 7) % 5) * 9, hk % 2 ? HG : HG2, hx, 404, hz, tiltX, 0, tiltZ);
+      hk++;
+    }));
+    void DK;
     // anteojos azules grandes
     [1, -1].forEach((s) => {
       rider.box(64, 44, 14, '#2F6BFF', 52, 308, s * 34, 0, 0, 0, 0.3);
@@ -337,16 +444,23 @@ const BUILDERS = {
     ice.sharpBox(126, 92, 30, I4, -118, 150, 0);
     // robot de cristal
     ice.sharpBox(120, 92, 92, I1, -40, 196, 0);
-    [1, -1].forEach((s) => {
-      ice.sharpBox(40, 40, 96, I2, 6, 186, s * 72, 0, 0, -0.4);
-      ice.sharpBox(42, 38, 42, I3, 50, 162, s * 68);
-    });
+    ice.sharpBox(40, 40, 96, I2, 6, 186, -72, 0, 0, -0.4);
+    ice.sharpBox(42, 38, 42, I3, 50, 162, -68);
+    // el otro brazo levantado: siempre con la botella de Coca-Cola en la boca
+    ice.sharpBox(40, 40, 164, I2, 45, 298, 67, 0, 0.34, 0.81);
+    ice.sharpBox(44, 44, 44, I3, 100, 356, 48);
     ice.add(new RoundedBoxGeometry(134, 124, 140, 2, 22), I3, -24, 300, 0);
     [1, -1].forEach((s) => ice.cyl(16, 16, 16, I4, -24, 302, s * 74, Math.PI / 2, 0, 0, 10));
     // visor oscuro ancho
     rider.box(132, 70, 20, '#1F3FB0', 38, 304, 0, 0, 0, 0, 0.45);
     return {
       car: null, rider, ice, face: { tex: FACES.ice(), w: 128, h: 72, x: 48, y: 304, z: 0 },
+      decals: [
+        { tex: cokeLogo(), w: 200, h: 54, x: 0, y: 74, z: 89.5, ry: 0 },
+        { tex: cokeLogo(), w: 200, h: 54, x: 0, y: 74, z: -89.5, ry: Math.PI },
+        { tex: cokeLogo(), w: 150, h: 42, x: 126, y: 70, z: 0, ry: Math.PI / 2 },
+      ],
+      extra: cokeBottle,
       wheels: { spots: [[92, 90], [92, -90], [-92, 90], [-92, -90]], r: 42, w: 30, tire: '#2F5FE0', hub: '#CFF4FF', rim: '#3a6ff0' },
     };
   },
@@ -400,6 +514,13 @@ export function buildCharacterModel(character) {
     plane.rotation.y = Math.PI / 2;
     riderGroup.add(plane);
   });
+  (d.decals || []).forEach((f) => {
+    const dm = new THREE.MeshStandardMaterial({ map: f.tex, roughness: 0.4, polygonOffset: true, polygonOffsetFactor: -4 });
+    const plane = new THREE.Mesh(new THREE.PlaneGeometry(f.w, f.h), dm);
+    plane.position.set(f.x, f.y, f.z);
+    plane.rotation.y = f.ry || 0;
+    roll.add(plane);
+  });
   const wd = d.wheels;
   const wheels = buildWheels(wd.spots, wd.r, wd.w, wd.tire, wd.hub, wd.rim);
   roll.add(wheels);
@@ -410,5 +531,7 @@ export function buildCharacterModel(character) {
   roll.scale.setScalar(k);
   roll.position.y = -box.min.y * k;
   roll.userData.baseY = roll.position.y;
-  return { root, roll, riderGroup, wheels, mats, scale: k };
+  // extras (la botella) despues de normalizar: no cambian el tamaño del kart
+  const extra = d.extra ? d.extra(riderGroup) : {};
+  return { root, roll, riderGroup, wheels, mats, scale: k, bottle: extra.bottle || null };
 }

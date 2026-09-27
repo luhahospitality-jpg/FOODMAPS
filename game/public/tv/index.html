@@ -7,6 +7,7 @@
 <link rel="preload" href="/assets/fonts/LilitaOne.woff2" as="font" type="font/woff2" crossorigin />
 <style>
   @font-face { font-family: 'Lilita One'; src: url('/assets/fonts/LilitaOne.woff2') format('woff2'); font-display: block; }
+  @font-face { font-family: 'Lobster'; src: url('/assets/fonts/Lobster.woff2') format('woff2'); font-display: swap; }
   @font-face { font-family: 'Fredoka'; src: url('/assets/fonts/Fredoka-600.woff2') format('woff2'); font-weight: 300 700; font-display: swap; }
   :root {
     --red:#FF4B5C; --orange:#FF9F1C; --yellow:#FFD93D; --green:#55D66A; --turq:#3BD9D0;
@@ -38,7 +39,8 @@
     display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
   .ccard::before { content:''; position:absolute; top:0; right:0; bottom:0; left:0; background:radial-gradient(circle at 50% 30%, rgba(255,255,255,.45), rgba(255,255,255,0) 60%); }
   .ccard img { position:absolute; bottom:9.3vh; left:50%; transform:translateX(-50%); height:23vh; filter:drop-shadow(0 .8vh .6vh rgba(0,0,0,.35)); }
-  .ccard .cname { position:relative; font-size:3.1vh; line-height:1; margin-bottom:.4vh; }
+  .ccard .cname { position:relative; font-size:3.1vh; line-height:1; margin-bottom:.4vh; text-align:center; padding:0 .6vh; }
+  .ccard .cname.long { font-size:2.3vh; }
   .ccard .cpower { position:relative; width:100%; text-align:center; font-size:1.7vh; padding:.7vh 0 .9vh; background:rgba(32,32,48,.55); letter-spacing:.05em; }
   .ccard .holders { position:absolute; top:1vh; left:0; right:0; display:flex; justify-content:center; gap:.5vw; }
   .chip { font-size:2vh; padding:.25vh 1vh; border-radius:99px; border:.35vh solid var(--black); color:var(--white); }
@@ -167,7 +169,7 @@
   <div id="url"></div>
   <div id="qbadge"></div>
   <div id="loading"><img src="/assets/ui/logo.png" alt="" /><div class="bar"><div class="fill" id="loadFill"></div></div><div id="bootErr"></div></div>
-  <div id="ver">v5</div>
+  <div id="ver">v6</div>
 </div>
 
 <script>

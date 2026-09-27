@@ -34,7 +34,8 @@
     display:flex; flex-direction:column; align-items:center; justify-content:flex-end; box-shadow:0 6px 0 rgba(0,0,0,.35), inset 0 4px 0 rgba(255,255,255,.35); }
   #selCard::before { content:''; position:absolute; top:0; right:0; bottom:0; left:0; background:radial-gradient(circle at 50% 30%, rgba(255,255,255,.45), rgba(255,255,255,0) 60%); }
   #selImg { position:absolute; bottom:58px; height:calc(100% - 80px); max-width:92%; object-fit:contain; left:50%; transform:translateX(-50%); filter:drop-shadow(0 6px 4px rgba(0,0,0,.35)); }
-  #selName { position:relative; font-size:20px; line-height:1; margin-bottom:4px; }
+  #selName { position:relative; font-size:20px; line-height:1; margin-bottom:4px; text-align:center; padding:0 6px; }
+  #selName.long { font-size:16px; }
   #selPower { position:relative; width:100%; text-align:center; font-size:13px; padding:5px 0 7px; background:rgba(32,32,48,.55); }
   .selArrow { position:absolute; top:40%; font-size:26px; color:var(--yellow); z-index:2; }
   #selHint { margin-top:8px; font-family:'Fredoka', sans-serif; font-weight:600; font-size:13px; text-align:center; opacity:.9; }
@@ -117,9 +118,9 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
   const INFO = {
-    rabbit: { name: 'BUNNY', power: 'GIANT CARROT', sprite: 'bunny', icon: 'pw_carrot', card: ['#FFB23E', '#FF7A1A'] },
-    gorilla: { name: 'BANANA GORILLA', power: 'BANANA PEEL', sprite: 'gorilla', icon: 'pw_gorilla_banana', card: ['#FFE45C', '#FFC21A'] },
-    princess: { name: 'PRINCESS ROSE', power: 'POISON FLOWERS', sprite: 'princess', icon: 'pw_flower', card: ['#FF8FD0', '#F04FA8'] },
+    rabbit: { name: 'CONEJO MALO', power: 'GIANT CARROT', sprite: 'bunny', icon: 'pw_carrot', card: ['#FFB23E', '#FF7A1A'] },
+    gorilla: { name: 'CHADRILLA', power: 'BANANA PEEL', sprite: 'gorilla', icon: 'pw_gorilla_banana', card: ['#FFE45C', '#FFC21A'] },
+    princess: { name: 'PRINCESS TAGLIANI', power: 'POISON FLOWERS', sprite: 'princess', icon: 'pw_flower', card: ['#FF8FD0', '#F04FA8'] },
     ice: { name: 'ICE RACER', power: 'FREEZE TRACK', sprite: 'ice', icon: 'pw_freeze', card: ['#6FC2FF', '#2F7BFF'] },
   };
   const ITEM_HTML = {
@@ -202,6 +203,7 @@
         $('selImg').src = '/assets/chars/' + info.sprite + '_right.png';
         $('selCard').style.background = 'linear-gradient(180deg,' + info.card[0] + ',' + info.card[1] + ')';
         $('selName').textContent = info.name;
+        $('selName').classList.toggle('long', info.name.length > 12);
         $('selPower').textContent = info.power;
         last.char = s.character;
       }

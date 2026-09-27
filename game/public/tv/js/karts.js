@@ -4,6 +4,7 @@ import { tex } from './assets.js';
 import { buildCharacterModel, MODEL_H } from './models.js';
 
 export const KART_H = 370;
+const _sipQ = new THREE.Quaternion(), _sipAxis = new THREE.Vector3(0, 0, 1);
 // color de las piernas cuando el personaje se baja del auto (modo batalla)
 const LEG_COLOR = { rabbit: '#f4f1ea', gorilla: '#5a3a26', princess: '#f06fb5', ice: '#8fd6ff' };
 const FALL_DURATION = 0.75;
@@ -171,6 +172,11 @@ class Kart {
     this.steer = p.steer || 0;
     this.angle = w.angle;
     const { root, roll, riderGroup, wheels } = this.model;
+    // el de hielo siempre esta tomando: la botella sube y baja (tragos)
+    if (this.model.bottle) {
+      const b = this.model.bottle;
+      b.quaternion.copy(b.userData.baseQ).multiply(_sipQ.setFromAxisAngle(_sipAxis, Math.max(0, Math.sin(t * 2.6 + this.slot)) * 0.22));
+    }
     // parpadeo mientras es invulnerable (recien golpeado en batalla)
     const blink = p.invuln && Math.floor(t * 12) % 2 === 0;
     this.group.visible = !blink;
