@@ -85,7 +85,7 @@
   <div id="me" class="outline">...</div>
   <div id="stats">
     <div class="pill outline" id="posPill">1º</div>
-    <div class="pill outline"><img src="/assets/ui/coin.png" alt=""><span id="coinCount">0</span></div>
+    <div class="pill outline" id="coinPill"><img src="/assets/ui/coin.png" alt=""><span id="coinCount">0</span></div>
   </div>
   <!-- START en el medio: a la derecha quedaba pegado al boton de poder y se tocaba sin querer -->
   <div id="resetBtn">START</div>
@@ -147,6 +147,7 @@
     const info = INFO[s.character] || INFO.rabbit;
     $('coinCount').textContent = s.coins || 0;
     const battle = s.mode === 'battle';
+    $('coinPill').style.display = battle ? 'none' : 'flex';
     $('posPill').textContent = battle ? '♥ ' + (s.lives || 0) : (s.place || 1) + 'º';
     // BAJAR / SUBIR solo en la arena de batalla
     const showExit = battle && phase === 'racing' && !s.eliminated;
@@ -235,7 +236,7 @@
         // 2 usos por carrera: el numerito dice cuantos quedan
         powerBtn.innerHTML = uses <= 0 ? '<span class="lbl outline">SIN<br>POWER</span>'
           : (powerReady ? '<img src="/assets/ui/' + info.icon + '.png" alt="">' : '<span class="cd outline">' + s.cooldownSec + '</span>')
-            + '<span class="uses outline">×' + uses + '</span>';
+            + '<span class="uses outline">' + (uses >= 99 ? '∞' : '×' + uses) + '</span>';
         last.power = pk;
       }
     }
