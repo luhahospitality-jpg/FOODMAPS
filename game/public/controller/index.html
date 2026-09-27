@@ -23,10 +23,10 @@
 
   #top { position:fixed; top:max(6px, env(safe-area-inset-top)); left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:0 12px; z-index:6; }
   #me { font-size:18px; padding:3px 14px; border-radius:99px; border:3px solid var(--black); background:#555; }
-  #stats { display:flex; gap:8px; align-items:center; font-size:16px; }
+  #stats { display:flex; gap:8px; align-items:center; font-size:16px; margin-left:auto; }
   .pill { display:flex; align-items:center; gap:5px; padding:3px 10px; border-radius:99px; background:rgba(20,26,69,.9); border:3px solid var(--black); }
   .pill img { height:18px; }
-  #resetBtn { font-size:13px; padding:5px 12px; border-radius:10px; background:linear-gradient(180deg,#fff08a,#FFD93D); color:var(--black); border:3px solid var(--black); box-shadow:0 3px 0 rgba(0,0,0,.35); }
+  #resetBtn { position:absolute; left:50%; top:0; transform:translateX(-50%); font-size:13px; padding:5px 12px; border-radius:10px; background:linear-gradient(180deg,#fff08a,#FFD93D); color:var(--black); border:3px solid var(--black); box-shadow:0 3px 0 rgba(0,0,0,.35); }
 
   /* seleccion */
   #selectInfo { position:fixed; top:46px; left:50%; transform:translateX(-50%); width:27vw; max-width:300px; z-index:5; display:none; flex-direction:column; align-items:center; }
@@ -70,6 +70,10 @@
   #power { width:100px; height:100px; bottom:174px; right:152px; background:linear-gradient(180deg,#ffc36a,#FF9F1C 50%,#e27a00); }
   #power.ready { box-shadow:0 0 0 4px var(--green), 0 0 22px 6px rgba(85,214,106,.9), 0 7px 0 rgba(0,0,0,.45); }
   #power .cd { font-size:34px; }
+  /* modo batalla: bajarse / subirse al auto (lejos de GO y de POWER) */
+  #exitBtn { display:none; width:100px; height:100px; bottom:34px; right:296px; background:linear-gradient(180deg,#8ff2ea,#3BD9D0 50%,#1fa89f); }
+  #exitBtn .lbl { font-size:20px; }
+  #exitBtn.near { box-shadow:0 0 0 4px var(--yellow), 0 0 22px 6px rgba(255,217,61,.9), 0 7px 0 rgba(0,0,0,.45); }
   #power .uses { position:absolute; top:-8px; right:-8px; background:var(--black); color:var(--white); border-radius:14px; padding:2px 8px; font-size:18px; }
   #flash { position:fixed; top:0; right:0; bottom:0; left:0; pointer-events:none; z-index:30; opacity:0; transition:opacity .35s; background:rgba(255,75,92,.45); }
   #flash.on { opacity:1; transition:none; }
@@ -83,6 +87,7 @@
     <div class="pill outline" id="posPill">1º</div>
     <div class="pill outline"><img src="/assets/ui/coin.png" alt=""><span id="coinCount">0</span></div>
   </div>
+  <!-- START en el medio: a la derecha quedaba pegado al boton de poder y se tocaba sin querer -->
   <div id="resetBtn">START</div>
 </div>
 
@@ -105,6 +110,7 @@
     <div class="btn" id="boost"><span class="lbl outline">ITEM</span></div>
     <div class="btn" id="brake"><span class="lbl outline">FRENO</span></div>
     <div class="btn" id="accel"><span class="lbl outline">GO</span></div>
+    <div class="btn" id="exitBtn"><span class="lbl outline">BAJAR</span></div>
   </div>
 </div>
 
@@ -123,7 +129,7 @@
   };
   const $ = (id) => document.getElementById(id);
   const socket = io();
-  const accelBtn = $('accel'), brakeBtn = $('brake'), boostBtn = $('boost'), powerBtn = $('power');
+  const accelBtn = $('accel'), brakeBtn = $('brake'), boostBtn = $('boost'), powerBtn = $('power'), exitBtn = $('exitBtn');
 
   let mySteer = 0, myAccel = false, myBrake = false;
   let phase = 'select', item = null, powerReady = true, last = {};
@@ -140,7 +146,20 @@
     phase = s.phase; item = s.item; powerReady = s.powerReady;
     const info = INFO[s.character] || INFO.rabbit;
     $('coinCount').textContent = s.coins || 0;
-    $('posPill').textContent = (s.place || 1) + 'º';
+    const battle = s.mode === 'battle';
+    $('posPill').textContent = battle ? '♥ ' + (s.lives || 0) : (s.place || 1) + 'º';
+    // BAJAR / SUBIR solo en la arena de batalla
+    const showExit = battle && phase === 'racing' && !s.eliminated;
+    exitBtn.style.display = showExit ? 'flex' : 'none';
+    if (showExit) {
+      const lbl = s.onFoot ? 'SUBIR' : 'BAJAR';
+      if (last.exit !== lbl + s.canEnter) {
+        exitBtn.querySelector('.lbl').textContent = lbl;
+        exitBtn.classList.toggle('near', !!s.onFoot && !!s.canEnter);
+        exitBtn.classList.toggle('disabled', !!s.onFoot && !s.canEnter);
+        last.exit = lbl + s.canEnter;
+      }
+    }
     $('posPill').style.display = phase === 'racing' ? 'flex' : 'none';
 
     // VIBRACION al chocar / caer
@@ -154,8 +173,15 @@
     $('selectInfo').style.display = sel ? 'flex' : 'none';
     const watching = !!s.spectating && !sel;
     const arrived = phase === 'racing' && !!s.finished;
-    $('endInfo').style.display = phase === 'finished' || watching || arrived ? 'flex' : 'none';
-    if (arrived) {
+    const out = phase === 'racing' && !!s.eliminated;
+    $('endInfo').style.display = phase === 'finished' || watching || arrived || out ? 'flex' : 'none';
+    if (out) {
+      $('endImg').src = '/assets/ui/fx_finish.png';
+      $('endT').textContent = '¡ELIMINADO!';
+      $('endT').style.color = 'var(--red)';
+      $('endS').textContent = 'Te quedaste sin vidas · quedan ' + (s.alive || 0) + ' en la arena';
+      if (!last.out) { buzz([300, 80, 300]); last.out = true; }
+    } else if (arrived) {
       // ya llego: la carrera sigue hasta que terminen todos
       $('endImg').src = s.finishPlace === 1 ? '/assets/ui/fx_crown.png' : '/assets/ui/fx_finish.png';
       $('endT').textContent = '¡LLEGASTE ' + s.finishPlace + 'º!';
@@ -187,7 +213,7 @@
       boostBtn.classList.add('disabled'); powerBtn.classList.add('disabled'); powerBtn.classList.remove('ready');
       boostBtn.innerHTML = '<span class="lbl outline">ITEM</span>';
       powerBtn.innerHTML = '<span class="lbl outline">POWER</span>';
-      last.power = null; last.item = null; last.arrived = null;
+      last.power = null; last.item = null; last.arrived = null; last.out = false; last.exit = null;
     } else if (phase === 'finished') {
       $('endImg').src = s.won ? '/assets/ui/fx_crown.png' : '/assets/ui/fx_finish.png';
       $('endT').textContent = s.won ? '¡GANASTE!' : (s.winnerId || '') + ' GANA';
@@ -246,6 +272,7 @@
   }, () => { myBrake = false; });
   bindHold(boostBtn, () => { if (phase === 'racing' && item) { socket.emit('boost'); buzz(40); } }, () => {});
   bindHold(powerBtn, () => { if (phase === 'racing' && powerReady) { socket.emit('power'); buzz(60); } }, () => {});
+  bindHold(exitBtn, () => { if (phase === 'racing') { socket.emit('exit'); buzz(35); } }, () => {});
   $('resetBtn').addEventListener('touchstart', (e) => { e.preventDefault(); socket.emit('reset_to_menu'); buzz(30); });
 
   document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });

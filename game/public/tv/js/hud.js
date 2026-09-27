@@ -44,8 +44,9 @@ const TRACK_THUMB = {
   rainbow: "url('/assets/scenery/backdrop_rainbow.jpg')",
   banana: "url('/assets/scenery/backdrop_banana.jpg')",
   space: "url('/assets/scenery/thumb_space.jpg')",
+  battle: "url('/assets/scenery/thumb_battle.jpg')",
 };
-const TRACK_PILL = { rainbow: 'var(--violet)', banana: 'var(--green)', space: 'var(--blue)' };
+const TRACK_PILL = { rainbow: 'var(--violet)', banana: 'var(--green)', space: 'var(--blue)', battle: 'var(--red)' };
 let trackListKey = '';
 
 export function updateSelect() {
@@ -103,7 +104,7 @@ export function layoutHud(views) {
     root.appendChild(d);
     hudEls[v.slot] = {
       root: d, pos: d.querySelector('.p-pos .big'), of: d.querySelector('.p-pos .of'), lap: d.querySelector('.p-lap .val'),
-      done: d.querySelector('.v-done'), item: d.querySelector('.p-item'), power: d.querySelector('.p-power'), powerImg: d.querySelector('.p-power img'), powerT: d.querySelector('.p-power .t'),
+      done: d.querySelector('.v-done'), posLbl: d.querySelector('.p-pos .lbl'), lapLbl: d.querySelector('.p-lap .lbl'), item: d.querySelector('.p-item'), power: d.querySelector('.p-power'), powerImg: d.querySelector('.p-power img'), powerT: d.querySelector('.p-power .t'),
       coins: d.querySelector('.p-coins .n'), hearts: d.querySelector('.p-coins .hearts'), boost: d.querySelector('.p-boost'), boostT: d.querySelector('.p-boost .bt'),
       banner: d.querySelector('.v-banner'), frost: d.querySelector('.frost'), hit: d.querySelector('.hitflash'),
       last: {}, rollUntil: 0, bannerUntil: 0,
@@ -140,9 +141,26 @@ export function updateHud() {
     const h = hudEls[slot];
     if (!p || !h) return;
     const L = h.last;
-    if (L.place !== p.place || L.total !== total) { h.pos.textContent = p.place || 1; h.of.textContent = '/' + total; L.place = p.place; L.total = total; }
-    const lapNow = Math.min((p.lap || 0) + 1, s.laps || 3);
-    if (L.lap !== lapNow) { h.lap.textContent = lapNow + '/' + (s.laps || 3); L.lap = lapNow; }
+    const battle = s.mode === 'battle';
+    if (L.battle !== battle) {
+      h.posLbl.textContent = battle ? 'VIDAS' : 'POSITION';
+      L.battle = battle; L.place = null; L.lap = null; L.lbl = null;
+    }
+    if (battle) {
+      // batalla: vidas grandes, cuantos quedan vivos y el tiempo que falta
+      const alive = s.players.filter((q) => q && !q.spectating && !q.eliminated).length;
+      if (L.place !== p.lives || L.total !== alive) { h.pos.textContent = p.lives; h.of.textContent = '♥'; L.place = p.lives; L.total = alive; }
+      const lk = alive + '/' + total;
+      if (L.lap !== lk) { h.lap.textContent = lk; L.lap = lk; }
+      const sec = s.battleLeft || 0;
+      const lbl = 'VIVOS · ' + Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0');
+      if (L.lbl !== lbl) { h.lapLbl.textContent = lbl; L.lbl = lbl; }
+    } else {
+      if (L.lbl !== 'LAP') { h.lapLbl.textContent = 'LAP'; L.lbl = 'LAP'; }
+      if (L.place !== p.place || L.total !== total) { h.pos.textContent = p.place || 1; h.of.textContent = '/' + total; L.place = p.place; L.total = total; }
+      const lapNow = Math.min((p.lap || 0) + 1, s.laps || 3);
+      if (L.lap !== lapNow) { h.lap.textContent = lapNow + '/' + (s.laps || 3); L.lap = lapNow; }
+    }
     // ruleta del item (como Mario Kart) antes de mostrar el que te toco
     let itemView = p.item;
     const rolling = now < h.rollUntil && p.item;
@@ -159,15 +177,17 @@ export function updateHud() {
     if (L.power !== pk) {
       h.powerImg.src = '/assets/ui/' + POWER_ICON[p.character] + '.png';
       // 2 usos por carrera: se muestra cuantos quedan
-      h.powerT.innerHTML = uses <= 0 ? 'SIN<br>POWER' : p.powerReady ? 'POWER<br>×' + uses : 'POWER<br>' + (p.powerCooldown || 0) + 's';
+      h.powerT.innerHTML = uses <= 0 ? 'SIN<br>POWER' : p.powerReady ? 'POWER<br>' + (uses >= 99 ? 'READY' : '×' + uses) : 'POWER<br>' + (p.powerCooldown || 0) + 's';
       h.power.classList.toggle('ready', !!p.powerReady);
       h.power.classList.toggle('cool', !p.powerReady);
       L.power = pk;
     }
-    const ck = (p.coins || 0) + ':' + p.lives;
+    const ck = (p.coins || 0) + ':' + p.lives + ':' + !!p.onFoot + s.mode;
     if (L.coins !== ck) {
-      h.coins.textContent = '×' + (p.coins || 0);
-      h.hearts.innerHTML = '♥'.repeat(p.lives) + '<span class="off">' + '♥'.repeat(Math.max(0, 3 - p.lives)) + '</span>';
+      h.coins.textContent = s.mode === 'battle' ? '' : '×' + (p.coins || 0);
+      h.coins.parentNode.classList.toggle('battle', s.mode === 'battle');
+      h.coins.parentNode.style.display = s.mode === 'battle' && !p.onFoot ? 'none' : '';
+      h.hearts.innerHTML = s.mode === 'battle' ? (p.onFoot ? 'A PIE' : '') : '♥'.repeat(p.lives) + '<span class="off">' + '♥'.repeat(Math.max(0, 3 - p.lives)) + '</span>';
       L.coins = ck;
     }
     const bk = p.starActive ? 'A' : p.turbo ? 'T' : p.item === 'star' && !rolling ? 'R' : '';
@@ -181,10 +201,12 @@ export function updateHud() {
     h.frost.classList.toggle('on', !!frozen);
     // ya llego: queda su puesto en grande mientras terminan los demas
     const left = s.players.filter((q) => q && !q.spectating && !q.finished).length;
-    const dk = p.finished ? p.finishPlace + ':' + left : '';
+    const dk = p.eliminated ? 'x' + p.place : p.finished ? p.finishPlace + ':' + left : '';
     if (L.done !== dk) {
-      h.done.classList.toggle('on', !!p.finished);
-      if (p.finished) {
+      h.done.classList.toggle('on', !!p.finished || !!p.eliminated);
+      if (p.eliminated) {
+        h.done.innerHTML = '<div class="tt">ELIMINADO</div><div class="pl">' + p.place + 'º</div><div class="sub">mirá cómo sigue la batalla</div>';
+      } else if (p.finished) {
         h.done.innerHTML = '<div class="tt">' + (p.finishPlace === 1 ? '¡GANASTE!' : 'FINISH!') + '</div><div class="pl">' + p.finishPlace + 'º</div>'
           + '<div class="sub">' + (left ? 'esperando a los demás · faltan ' + left : '¡llegaron todos!') + '</div>';
         h.banner.classList.remove('show'); h.bannerUntil = 0;

@@ -4,6 +4,7 @@ import { tex } from './assets.js';
 import { RoundedBoxGeometry } from '/vendor/addons/geometries/RoundedBoxGeometry.js';
 import { glowTex } from './karts.js';
 import { fx } from './fx.js';
+import { heartGeometry } from './models.js';
 
 const group = new THREE.Group();
 scene.add(group);
@@ -73,6 +74,18 @@ const peelPool = new Pool(() => {
   const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex('icon_peel'), transparent: true }));
   s.scale.set(190, 250, 1);
   return s;
+});
+// corazones del modo batalla (solo se agarran a pie): +1 vida
+let _heartGeo = null;
+const heartPool = new Pool(() => {
+  if (!_heartGeo) _heartGeo = heartGeometry(120);
+  const m = new THREE.Mesh(_heartGeo, new THREE.MeshStandardMaterial({ color: PAL.red, emissive: PAL.pink, emissiveIntensity: 0.45, roughness: 0.3 }));
+  const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex(), color: new THREE.Color(PAL.pink).multiplyScalar(1.3), transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+  halo.scale.set(520, 520, 1);
+  const g = new THREE.Group();
+  g.add(m, halo);
+  g.userData.heart = m;
+  return g;
 });
 const flowerPool = new Pool(() => {
   const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex('icon_pw_flower'), transparent: true, color: new THREE.Color(1.15, 1.15, 1.15) }));
@@ -156,6 +169,14 @@ export function updateItems(t, dt, interp) {
   const peels = s.peels || [];
   peelPool.sync(peels.length);
   peels.forEach((p, i) => { const w = toWorld(p.x, p.y); peelPool.items[i].position.set(w.x, 115, w.z); });
+
+  const hearts = s.hearts || [];
+  heartPool.sync(hearts.length);
+  hearts.forEach((h, i) => {
+    const w = toWorld(h.x, h.y), g = heartPool.items[i];
+    g.position.set(w.x, 170 + Math.sin(t * 3 + i) * 30, w.z);
+    g.userData.heart.rotation.y = t * 2.4 + i;
+  });
 
   const flowers = s.flowers || [];
   flowerPool.sync(flowers.length);

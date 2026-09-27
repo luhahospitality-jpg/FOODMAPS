@@ -1,9 +1,11 @@
-import { THREE, CHAR_INFO, canvasTexture, roundRect } from './core.js';
+import { THREE, CHAR_INFO, canvasTexture, roundRect, toWorld } from './core.js';
 import { scene } from './render.js';
 import { tex } from './assets.js';
 import { buildCharacterModel, MODEL_H } from './models.js';
 
 export const KART_H = 370;
+// color de las piernas cuando el personaje se baja del auto (modo batalla)
+const LEG_COLOR = { rabbit: '#f4f1ea', gorilla: '#5a3a26', princess: '#f06fb5', ice: '#8fd6ff' };
 const FALL_DURATION = 0.75;
 const POP_DURATION = 0.3;
 
@@ -94,7 +96,51 @@ class Kart {
     scene.add(this.group);
   }
 
+  // personaje a pie: se saca el piloto del auto y se le ponen piernas
+  ensureWalker() {
+    if (this.walker) return this.walker;
+    const g = new THREE.Group(), yaw = new THREE.Group(), inner = new THREE.Group();
+    g.add(yaw); yaw.add(inner);
+    inner.scale.setScalar(this.model.scale);
+    const legMat = new THREE.MeshStandardMaterial({ color: LEG_COLOR[this.character] || '#303048', roughness: 0.6 });
+    const shoeMat = new THREE.MeshStandardMaterial({ color: '#202030', roughness: 0.6 });
+    const legGeo = new THREE.BoxGeometry(48, 150, 48); legGeo.translate(0, -75, 0);
+    const shoeGeo = new THREE.BoxGeometry(84, 34, 58);
+    const legs = [1, -1].map((sd) => {
+      const leg = new THREE.Mesh(legGeo, legMat);
+      leg.position.set(-18, 160, sd * 44);
+      leg.castShadow = true;
+      const shoe = new THREE.Mesh(shoeGeo, shoeMat);
+      shoe.position.set(16, -150, 0);
+      leg.add(shoe);
+      inner.add(leg);
+      return leg;
+    });
+    const shadow = new THREE.Mesh(this.shadow.geometry, this.shadow.material);
+    shadow.rotation.x = -Math.PI / 2; shadow.position.y = 3; shadow.scale.set(240, 240, 1); shadow.renderOrder = 1;
+    const tag = new THREE.Sprite(this.tag.material);
+    tag.scale.copy(this.tag.scale); tag.position.y = KART_H + 60;
+    g.add(shadow, tag);
+    this.walker = { g, yaw, inner, legs, tag };
+    return this.walker;
+  }
+
+  setOnFoot(on) {
+    const rg = this.model.riderGroup;
+    if (on) {
+      const W = this.ensureWalker();
+      if (rg.parent !== W.inner) W.inner.add(rg);
+      if (!W.g.parent) scene.add(W.g);
+    } else if (this.walker && this.walker.g.parent) {
+      this.model.roll.add(rg);
+      rg.rotation.set(0, 0, 0);
+      scene.remove(this.walker.g);
+    }
+    this.onFoot = on;
+  }
+
   dispose() {
+    if (this.walker) scene.remove(this.walker.g);
     scene.remove(this.group);
     this.shadow.geometry.dispose();
     this.meshes.forEach((m) => { if (m.material && m.material.map && m.material.map.isCanvasTexture && m.userData.ownTex) m.material.map.dispose(); });
@@ -125,6 +171,35 @@ class Kart {
     this.steer = p.steer || 0;
     this.angle = w.angle;
     const { root, roll, riderGroup, wheels } = this.model;
+    // parpadeo mientras es invulnerable (recien golpeado en batalla)
+    const blink = p.invuln && Math.floor(t * 12) % 2 === 0;
+    this.group.visible = !blink;
+    if (p.onFoot !== !!this.onFoot) this.setOnFoot(!!p.onFoot);
+    if (p.onFoot) {
+      // auto estacionado donde lo dejo, personaje caminando
+      const cw = toWorld(p.carX, p.carY);
+      this.group.position.set(cw.x, 0, cw.z);
+      this.group.scale.setScalar(baseScale);
+      this.yaw.rotation.y = -p.carAngle;
+      root.rotation.set(0, 0, 0);
+      roll.rotation.x = 0;
+      this.shadow.visible = true;
+      this.dizzy.forEach((s) => { s.visible = false; });
+      const W = this.walker;
+      W.g.visible = !blink;
+      W.g.position.set(w.x, 0, w.z);
+      W.g.scale.setScalar(baseScale);
+      W.yaw.rotation.y = -w.angle;
+      const sp = Math.min(this.speed / 900, 1.3);
+      const ph = t * 15 + this.slot;
+      W.legs[0].rotation.z = Math.sin(ph) * 0.7 * sp;
+      W.legs[1].rotation.z = -Math.sin(ph) * 0.7 * sp;
+      riderGroup.position.y = Math.abs(Math.sin(ph)) * 14 * sp;
+      riderGroup.rotation.x = Math.sin(ph) * 0.06 * sp;
+      this.setGlow(p.starActive ? 'star' : p.slowed ? 'slow' : 'none', t);
+      this.aura.visible = false;
+      return;
+    }
 
     // rumbo real: el modelo mira hacia +X
     this.yaw.rotation.y = -w.angle;
@@ -190,7 +265,8 @@ class Kart {
   }
 
   faceCamera(cam, viewKey, ownSlot) {
-    this.tag.visible = this.slot !== ownSlot;
+    this.tag.visible = this.slot !== ownSlot && !this.onFoot;
+    if (this.walker) this.walker.tag.visible = this.slot !== ownSlot;
   }
 }
 

@@ -7,7 +7,7 @@ const params = new URLSearchParams(location.search);
 
 // ---------- carga: fuentes primero (los carteles se pintan en canvas con la fuente del logo) ----------
 // (sin "await" suelto en el modulo: los navegadores de TV mas viejos no lo soportan)
-let buildTrack, teardownTrack, updateTrack, themeCfg, TRACK, buildDecor, updateDecorFade, faceCrowds;
+let buildTrack, teardownTrack, updateTrack, themeCfg, TRACK, buildDecor, updateDecorFade, faceCrowds, buildArena, buildArenaDecor;
 let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx, music;
 async function boot() {
   hud.setLoading(0.1, false);
@@ -21,10 +21,11 @@ async function boot() {
   await loadCoreAssets();
   hud.setLoading(0.7, false);
   const mods = await Promise.all([
-    import('./track.js'), import('./decor.js'), import('./karts.js'), import('./items.js'), import('./fx.js'), import('./podium.js'), import('./audio.js'),
+    import('./track.js'), import('./decor.js'), import('./karts.js'), import('./items.js'), import('./fx.js'), import('./podium.js'), import('./audio.js'), import('./arena.js'),
   ]);
   ({ buildTrack, teardownTrack, updateTrack, themeCfg, TRACK } = mods[0]);
-  ({ buildDecor, updateDecorFade, faceCrowds } = mods[1]);
+  ({ buildDecor, updateDecorFade, faceCrowds, buildArenaDecor } = mods[1]);
+  ({ buildArena } = mods[7]);
   ({ karts, ensureKart, removeKart, faceAllKarts } = mods[2]);
   ({ updateItems, resetItems } = mods[3]);
   ({ fx } = mods[4]);
@@ -45,7 +46,7 @@ function connect() {
   socket.on('state', (s) => {
     const prev = game.state;
     // la forma de la pista llega 1 vez por segundo: mientras tanto se usa la ultima
-    if (!s.track && prev && prev.trackId === s.trackId) { s.track = prev.track; s.guardrailSegments = prev.guardrailSegments; }
+    if (!s.track && prev && prev.trackId === s.trackId) { s.track = prev.track; s.guardrailSegments = prev.guardrailSegments; s.arena = prev.arena; }
     if (!s.trackList && prev) s.trackList = prev.trackList;
     game.prev = prev;
     game.state = s;
@@ -70,7 +71,7 @@ function interpolate() {
   }
   const k = clamp((rt - a.t) / ((b.t - a.t) || 1), 0, 1);
   const players = b.s.players.map((pb, i) => {
-    if (!pb || pb.spectating) return null;
+    if (!pb || pb.spectating || pb.eliminated) return null;
     const pa = a.s.players[i];
     if (!pa || Math.hypot(pb.x - pa.x, pb.y - pa.y) > 2500) return { p: pb, x: pb.x, y: pb.y, angle: pb.angle };
     return { p: pb, x: pa.x + (pb.x - pa.x) * k, y: pa.y + (pb.y - pa.y) * k, angle: lerpAngle(pa.angle, pb.angle, k) };
@@ -89,12 +90,13 @@ async function rebuildTrack() {
   teardownTrack();
   fx.clear();
   resetItems();
-  const ctx = buildTrack(s);
+  const battle = s.mode === 'battle' && s.arena;
+  const ctx = battle ? buildArena(s) : buildTrack(s);
   const cfg = themeCfg(ctx.theme);
   hemi.color.set(cfg.hemiSky); hemi.groundColor.set(cfg.hemiGround); hemi.intensity = cfg.hemiI;
   sun.color.set(cfg.sun); sun.intensity = cfg.sunI;
   setBloom(ctx.theme === 'banana' ? 0.45 : ctx.theme === 'space' ? 0.95 : 0.8, 0.5, 1.0);
-  await buildDecor(ctx);
+  await (battle ? buildArenaDecor(ctx) : buildDecor(ctx));
   liteify(scene);
   // compilar los shaders ahora (en la carga) y no a mitad de carrera: evita tirones
   try { renderer.compile(scene, camera); } catch (e) { /* no critico */ }
@@ -104,7 +106,7 @@ async function rebuildTrack() {
 
 // ---------- camaras ----------
 const camStates = [0, 1, 2, 3].map(() => ({ init: false, x: 0, z: 0, h: 0, shake: 0, fov: 60 }));
-function chaseCam(cam, cs, target, dt, boost, intro) {
+function chaseCam(cam, cs, target, dt, boost, intro, foot) {
   if (!cs.init) { cs.x = target.x; cs.z = target.z; cs.h = target.angle; cs.init = true; }
   const kp = 1 - Math.exp(-dt * 16), kh = 1 - Math.exp(-dt * 4.2);
   cs.x += (target.x - cs.x) * kp;
@@ -112,7 +114,9 @@ function chaseCam(cam, cs, target, dt, boost, intro) {
   cs.h = lerpAngle(cs.h, target.angle, kh);
   cs.fov += ((boost ? 72 : 60) - cs.fov) * (1 - Math.exp(-dt * 5));
   cs.shake *= Math.exp(-dt * 6);
-  const dist = 780, height = 400, ahead = 700;
+  // a pie la camara se acerca y baja
+  cs.near = (cs.near || 0) + ((foot ? 1 : 0) - (cs.near || 0)) * (1 - Math.exp(-dt * 4));
+  const dist = 780 - 260 * cs.near, height = 400 - 110 * cs.near, ahead = 700 - 300 * cs.near;
   const sx = (Math.random() - 0.5) * 60 * cs.shake, sy = (Math.random() - 0.5) * 50 * cs.shake;
   cam.position.set(cs.x - Math.cos(cs.h) * dist + sx, height + sy, cs.z - Math.sin(cs.h) * dist);
   let lx = cs.x + Math.cos(cs.h) * ahead, ly = 170, lz = cs.z + Math.sin(cs.h) * ahead;
@@ -149,7 +153,9 @@ const SPLIT = {
 let finishedAt = 0, goUntil = 0, countdownAt = 0;
 function kartPos(slot) {
   const k = karts[slot];
-  return k ? { x: k.group.position.x, z: k.group.position.z } : null;
+  if (!k) return null;
+  const g = k.onFoot && k.walker ? k.walker.g : k.group;
+  return { x: g.position.x, z: g.position.z };
 }
 function handleEvents(prev, next) {
   if (!prev) return;
@@ -174,6 +180,18 @@ function handleEvents(prev, next) {
       sfx.shrink();
       next.players.forEach((o, j) => { if (o && !o.spectating && j !== i) { const q = kartPos(j) || toWorld(o.x, o.y); fx.poof(q.x, 150, q.z, PAL.pink); fx.text('MINI!', q.x, q.z, PAL.pink, 420); } });
     }
+    if ((p.hitSeq || 0) > (op.hitSeq || 0)) {
+      const HIT_TXT = { runover: '¡PISADO!', side: '¡PUM!', punch: '¡PIÑA!', missile: '¡BOOM!', carrot: '¡ZANAHORIAZO!' };
+      fx.text(HIT_TXT[p.hitCause] || '¡AY!', pos.x, pos.z, PAL.orange, 760);
+      if (p.hitCause === 'runover') { sfx.squish(); fx.poof(pos.x, 80, pos.z, PAL.white); }
+      if (p.hitCause === 'punch') sfx.punch();
+      hud.hitFlash(i); camStates[i].shake = 1.2;
+    }
+    if (p.eliminated && !op.eliminated) {
+      sfx.ko(); fx.explosion(pos.x, pos.z); fx.text('K.O.!', pos.x, pos.z, PAL.red, 900);
+    }
+    if ((p.heartSeq || 0) > (op.heartSeq || 0)) { sfx.heart(); fx.sparkles(pos.x, 220, pos.z, 16, [PAL.pink, PAL.red, PAL.white], 360); fx.text('+1 ♥', pos.x, pos.z, PAL.pink, 600); }
+    if (!!p.onFoot !== !!op.onFoot) { sfx.door(); if (karts[i]) karts[i].squash = 1; }
     if (p.finished && !op.finished) {
       sfx.finish(p.finishPlace === 1);
       fx.confetti(pos.x, 300, pos.z, 60, 700);
@@ -245,14 +263,14 @@ function animate() {
   const showPodium = phase === 'finished' && !showFinishFlash;
 
   hud.setSelectVisible(phase === 'select');
-  music.want(phase === 'select' ? 'menu' : phase === 'racing' ? 'race_' + TRACK.theme : phase === 'finished' ? 'victory' : null);
+  music.want(phase === 'select' ? 'menu' : phase === 'racing' ? (TRACK.theme === 'battle' ? 'battle' : 'race_' + TRACK.theme) : phase === 'finished' ? 'victory' : null);
   document.getElementById('url').style.display = phase === 'select' ? 'block' : 'none';
   hud.updateCountdown(phase === 'countdown' || now < goUntil);
   hud.setFinishFlash(showFinishFlash);
 
   const ip = interpolate();
   // karts
-  s.players.forEach((p, i) => { if (!p || p.spectating) removeKart(i); });
+  s.players.forEach((p, i) => { if (!p || p.spectating || p.eliminated) removeKart(i); });
   ip.players.forEach((q, i) => {
     if (!q) return;
     const k = ensureKart(i, q.p);
@@ -305,10 +323,14 @@ function animate() {
       views = racers.map((slot, idx) => ({
         slot, rect: layout[idx], scene, camera,
         before: (cam) => {
-          const k = karts[slot];
-          const q = ip.players[slot];
-          if (k && q) chaseCam(cam, camStates[slot], { x: k.group.position.x, z: k.group.position.z, angle: q.angle }, camDt, q.p.starActive,
-            phase === 'countdown' ? clamp((now - countdownAt) / 2700, 0, 1) : undefined);
+          let k = karts[slot];
+          let q = ip.players[slot];
+          // eliminado en batalla: la camara sigue a alguien que siga en juego
+          if (!k || !q) { const j = karts.findIndex((kk, jj) => kk && ip.players[jj]); if (j >= 0) { k = karts[j]; q = ip.players[j]; } }
+          const foot = !!(q && q.p.onFoot && k && k.walker);
+          const tp = foot ? k.walker.g.position : k && k.group.position;
+          if (k && q) chaseCam(cam, camStates[slot], { x: tp.x, z: tp.z, angle: q.angle }, camDt, q.p.starActive,
+            phase === 'countdown' ? clamp((now - countdownAt) / 2700, 0, 1) : undefined, foot);
           // la ruta congelada la ven los demas; el que tiro el hielo la ve normal
           TRACK.roadUniforms.uFreeze.value = s.ice && s.ice.active && q && s.ice.ownerId === q.p.id ? 0 : (TRACK.freezeLevel || 0);
           faceAllKarts(cam, 'v' + slot, slot);

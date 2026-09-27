@@ -563,6 +563,46 @@ export async function buildDecor(ctx) {
   buildFlags(flags);
 }
 
+// ---------- decorado de la arena de batalla ----------
+export async function buildArenaDecor(ctx) {
+  const b = TRACK.bounds;
+  ctx.span = Math.max(Math.abs(b.minX), Math.abs(b.maxX), Math.abs(b.minZ), Math.abs(b.maxZ));
+  ctx.k = Math.max(1, ctx.span / 6000);
+  crowdBoards.length = 0;
+  fadeProps.length = 0;
+  gltfSets.length = 0;
+  buildSky(ctx);
+  const hw = ctx.W / 2, hh = ctx.H / 2, rand = ctx.rand;
+  // tribunas con publico mirando hacia la arena
+  const spots = [];
+  [-0.62, 0, 0.62].forEach((f) => { spots.push({ x: f * hw, z: -hh - 900 }); spots.push({ x: f * hw, z: hh + 900 }); });
+  [-0.5, 0.5].forEach((f) => { spots.push({ x: -hw - 900, z: f * hh }); spots.push({ x: hw + 900, z: f * hh }); });
+  spots.forEach((sp) => { sp.y = 0; sp.face = Math.atan2(-sp.x, -sp.z); });
+  buildCrowds(ctx, spots);
+  // castillos mas atras
+  const blocks = new Instancer(unitBox(), blockMaterial({ roughness: 0.62 }), 4000);
+  const roofs = [];
+  const cols = [['#8b63d6', '#1b1230', '#b18cf0'], ['#a46be0', '#22143b', '#d08bf0'], ['#6f59c9', '#1b1230', '#9a86f2']];
+  const castles = [[-1, -1], [1, -1], [1, 1], [-1, 1], [0, -1.25], [0, 1.25]];
+  castles.forEach(([sx, sz], i) => {
+    const x = sx * (hw + 3000), z = sz * (hh + 3000);
+    castle(blocks, roofs, x, 0, z, Math.atan2(-x, -z), 1.3 + rand() * 0.4, cols[i % cols.length], i % 3 === 0 ? PAL.pink : null, rand);
+  });
+  blocks.build(trackGroup, true);
+  buildRoofs(roofs);
+  // antorchas sobre las torres de las esquinas y banderas en las paredes
+  buildTorches([[-1, -1], [1, -1], [1, 1], [-1, 1]].map(([sx, sz]) => ({ x: sx * (hw + 180), y: 1050, z: sz * (hh + 180) })));
+  const flags = [];
+  for (let i = 0; i < 6; i++) {
+    const f = -0.75 + i * 0.3;
+    flags.push({ x: f * hw, y: 340, z: -hh - 200, color: RAINBOW[i % RAINBOW.length], h: 420, rot: 0 });
+    flags.push({ x: f * hw, y: 340, z: hh + 200, color: RAINBOW[(i + 3) % RAINBOW.length], h: 420, rot: Math.PI });
+  }
+  buildFlags(flags);
+  buildFloatingBlocks(ctx, quality.lite ? 14 : 26);
+  buildStarSprites(ctx, quality.lite ? 12 : 22, 2200, 3600);
+}
+
 // el publico gira (solo en horizontal) hacia cada camara: los carteles GO!/WOW! siempre se leen al derecho
 export function faceCrowds(cam) {
   for (const m of crowdBoards) m.rotation.y = Math.atan2(cam.position.x - m.position.x, cam.position.z - m.position.z);

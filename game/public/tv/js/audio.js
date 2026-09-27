@@ -136,6 +136,11 @@ const SONGS = {
     chords: ['Am', 'F', 'C', 'G', 'Am', 'F', 'C', 'G'],
     mel: 'A4 . E5 A5 . G5 E5 . | F5 . C5 F5 . E5 C5 . | E5 . G5 C6 . B5 G5 . | D5 . G5 B5 . A5 G5 D5 | A5 - C6 - E6 - D6 C6 | C6 - A5 - F5 - A5 C6 | G5 - C6 - E6 - D6 C6 | B5 - G5 - D6 - . .',
   },
+  battle: {
+    bpm: 164, drums: 'four', bassKind: 'saw', leadKind: 'saw', arp: true,
+    chords: ['Am', 'Am', 'F', 'G', 'Am', 'Am', 'F', 'Em'],
+    mel: 'A5 . A5 C6 . A5 E6 . | D6 C6 A5 . G5 . A5 . | F5 . A5 C6 . F6 . E6 | D6 . B5 . G5 . D6 . | A5 . A5 C6 . A5 E6 . | G6 E6 D6 . C6 . A5 . | F5 A5 C6 F6 . E6 C6 A5 | B5 - - . G5 . E5 .',
+  },
   victory: {
     bpm: 120, drums: 'pop', bassKind: 'tri', leadKind: 'square', arp: true,
     chords: ['C', 'F', 'G', 'C', 'Am', 'F', 'G', 'C'],
@@ -242,6 +247,8 @@ function whoosh(t, dur, vol, f0, f1) {
 }
 const chordArp = (ms, t, gap, dur, type, vol) => ms.forEach((m, i) => tone(mtof(m), t + i * gap, dur, type, vol));
 
+function crashLike(t) { noise(t, 0.45, 0.5, 'lowpass', 1400, sfxBus); osc('sine', 80, t, 0.3, 0.8, sfxBus, 0.002); sweep(400, 60, t, 0.35, 'square', 0.12); }
+
 let introPlayed = false;
 function playIntro() {
   // jingle de arranque: redoble, arpegio que sube y acorde final brillante
@@ -292,6 +299,11 @@ export const sfx = {
   shrink: () => { if (!ctx) return; const t = sfxT(); [0, 0.12, 0.24].forEach((d, i) => sweep(900 - i * 200, 500 - i * 150, t + d, 0.12, 'square', 0.14)); },
   missile: () => { if (!ctx) return; const t = sfxT(); whoosh(t, 0.5, 0.35, 300, 2500); sweep(180, 700, t, 0.4, 'sawtooth', 0.1); },
   crash: () => { if (!ctx) return; const t = sfxT(); noise(t, 0.45, 0.5, 'lowpass', 1400, sfxBus); osc('sine', 80, t, 0.3, 0.8, sfxBus, 0.002); sweep(400, 60, t, 0.35, 'square', 0.12); },
+  squish: () => { if (!ctx) return; const t = sfxT(); sweep(900, 80, t, 0.35, 'square', 0.18); noise(t, 0.3, 0.4, 'lowpass', 600, sfxBus); osc('sine', 60, t, 0.25, 0.7, sfxBus, 0.002); },
+  punch: () => { if (!ctx) return; const t = sfxT(); noise(t, 0.12, 0.5, 'bandpass', 900, sfxBus, 1.5); osc('sine', 120, t, 0.15, 0.7, sfxBus, 0.002); },
+  ko: () => { if (!ctx) return; const t = sfxT(); crashLike(t); chordArp([67, 63, 60, 55], t + 0.2, 0.14, 0.3, 'square', 0.14); },
+  heart: () => { if (!ctx) return; const t = sfxT(); chordArp([76, 81, 84, 88], t, 0.06, 0.18, 'triangle', 0.2); },
+  door: () => { if (!ctx) return; const t = sfxT(); noise(t, 0.08, 0.3, 'bandpass', 2400, sfxBus, 2); tone(mtof(64), t + 0.05, 0.08, 'square', 0.1); },
   slip: () => { if (!ctx) return; const t = sfxT(); sweep(700, 250, t, 0.18, 'sine', 0.22); sweep(250, 600, t + 0.18, 0.2, 'sine', 0.18); },
 };
 

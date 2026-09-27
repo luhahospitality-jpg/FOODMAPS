@@ -208,7 +208,7 @@ function bananaGeometry() {
   return g;
 }
 
-function heartGeometry(s) {
+export function heartGeometry(s) {
   const sh = new THREE.Shape();
   sh.moveTo(0, -0.9 * s);
   sh.bezierCurveTo(-0.2 * s, -0.7 * s, -1.0 * s, -0.25 * s, -1.0 * s, 0.25 * s);
