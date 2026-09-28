@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b0a0d">
+<title>FABELA FOOTBALL — Control</title>
+<style>
+@font-face { font-family: 'Bangers'; src: url('/assets/fonts/bangers.woff2') format('woff2'); }
+@font-face { font-family: 'Marker'; src: url('/assets/fonts/marker.woff2') format('woff2'); }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0a0d; color: #fff; font-family: 'Bangers', Impact, sans-serif; letter-spacing: 0.04em; touch-action: none; overscroll-behavior: none; }
+.oculto { display: none !important; }
+.pantalla { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
+button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; cursor: pointer; touch-action: none; }
+.m { font-family: 'Marker', sans-serif; letter-spacing: 0; }
+
+/* barra superior (sistema, lejos de la acción) */
+#barra { position: fixed; top: 0; left: 0; right: 0; height: 13vh; display: flex; align-items: center; justify-content: center; z-index: 5; pointer-events: none; }
+#barra > * { pointer-events: auto; }
+#yo { font-size: 5vh; padding: 0.6vh 1.6vh; border-radius: 1vh; background: #f5c518; color: #111; margin-right: 1.5vh; }
+#yo.t1 { background: #2563eb; color: #fff; }
+#btnMenu { font-size: 3.4vh; padding: 1.2vh 2.4vh; border-radius: 3vh; background: #2b2930; }
+#mini { font-size: 4.2vh; margin-left: 1.5vh; min-width: 14vh; text-align: center; }
+#version { position: fixed; right: 1vh; top: 0.6vh; font: 1.8vh Arial, sans-serif; color: #666; }
+
+/* ---- selección ---- */
+#sel { background: #0b0a0d; }
+#selCarta { position: absolute; left: 3vw; top: 14vh; bottom: 3vh; width: 44vw; background: #151317; border-radius: 2vh; overflow: hidden; display: flex; }
+#selImg { height: 100%; width: 40%; object-fit: cover; object-position: top; }
+#selInfo { flex: 1; padding: 2vh 2.4vh; display: flex; flex-direction: column; }
+#selNom { font-size: 7.5vh; line-height: 1; }
+#selDesc { font-size: 3vh; color: #bbb; margin: 1vh 0 1.4vh; }
+.stat { display: flex; align-items: center; font-size: 3vh; margin: 0.6vh 0; }
+.stat span { width: 17vh; }
+.stat i { flex: 1; height: 1.8vh; background: #2b2930; border-radius: 1vh; position: relative; overflow: hidden; }
+.stat i b { position: absolute; left: 0; top: 0; bottom: 0; background: #f5c518; }
+#flechas { display: flex; margin-top: auto; }
+#flechas button { flex: 1; font-size: 7vh; background: #2b2930; border-radius: 1.6vh; margin-right: 1vh; height: 13vh; }
+#flechas button:last-child { margin-right: 0; }
+#selDer { position: absolute; left: 50vw; right: 3vw; top: 14vh; bottom: 3vh; display: flex; flex-direction: column; }
+#fila { display: flex; margin-bottom: 1.6vh; }
+#btnEquipo { flex: 1; font-size: 4vh; background: #f5c518; color: #111; border-radius: 1.6vh; height: 13vh; }
+#btnEquipo.t1 { background: #2563eb; color: #fff; }
+#cancha { display: flex; align-items: center; background: #151317; border-radius: 1.6vh; padding: 1vh; margin-bottom: 1.6vh; }
+#cancha img { height: 17vh; width: 28vh; object-fit: cover; border-radius: 1vh; margin: 0 1vh; }
+#cancha button { font-size: 5vh; background: #2b2930; border-radius: 1.2vh; width: 9vh; height: 13vh; }
+#canchaNom { flex: 1; font-size: 4.2vh; text-align: center; }
+#canchaNom small { display: block; font-size: 2.2vh; color: #999; }
+#btnListo { flex: 1; font-size: 9vh; background: #16a34a; border-radius: 2vh; }
+#btnListo.si { background: #3f3d45; font-size: 5vh; }
+
+/* ---- juego ---- */
+#juego { background: radial-gradient(ellipse at center, #1b1920 0%, #0b0a0d 70%); }
+#zonaJoy { position: absolute; left: 0; top: 13vh; bottom: 0; width: 40vw; }
+#joyBase { position: absolute; width: 36vh; height: 36vh; margin: -18vh 0 0 -18vh; border-radius: 50%; background: rgba(255,255,255,0.06); border: 0.5vh solid rgba(255,255,255,0.18); left: 20vw; top: 50vh; pointer-events: none; }
+#joyPomo { position: absolute; width: 15vh; height: 15vh; margin: -7.5vh 0 0 -7.5vh; border-radius: 50%; background: #f5c518; left: 50%; top: 50%; pointer-events: none; }
+#joyPomo.t1 { background: #2563eb; }
+#acciones { position: absolute; left: 41vw; width: 15vw; bottom: 4vh; top: 15vh; display: flex; flex-direction: column; justify-content: flex-end; }
+#acciones button { height: 18vh; border-radius: 2vh; font-size: 4.2vh; margin-top: 1.6vh; background: #2b2930; line-height: 1; }
+#btnTruco { background: #15803d !important; }
+#btnPase { background: #1d4ed8 !important; }
+#btnPistola { background: #e11d48 !important; height: 24vh !important; font-size: 4.6vh !important; }
+#acciones button.cd { opacity: 0.45; }
+#pad { position: absolute; right: 2vw; top: 15vh; bottom: 4vh; left: 58vw; border-radius: 3vh; background: #1f1d24; border: 0.5vh solid #3a3740; overflow: hidden; }
+#pad.activo { border-color: #f5c518; }
+#padCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#padAyuda { position: absolute; left: 0; right: 0; bottom: 2vh; text-align: center; font-size: 2.5vh; color: #8a8792; line-height: 1.35; pointer-events: none; }
+#padTit { position: absolute; left: 0; right: 0; top: 36%; text-align: center; font-size: 7vh; color: #5b5864; pointer-events: none; }
+#padTit.con { color: #f5c518; }
+#carga { position: absolute; left: 10%; right: 10%; top: 3vh; height: 3vh; background: #2b2930; border-radius: 2vh; overflow: hidden; }
+#carga b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: #f5c518; }
+#toques { position: absolute; left: 0; right: 0; top: 55%; text-align: center; font-size: 5vh; color: #fff; pointer-events: none; }
+
+/* ---- capas de estado ---- */
+.capa { position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 8; }
+.capa .t { font-size: 13vh; line-height: 1; }
+.capa .s { font-size: 4vh; margin-top: 2vh; }
+#capaKo { background: rgba(120,10,30,0.88); }
+#capaMira, #capaEspera, #capaCon { background: #0b0a0d; }
+#capaFin { background: rgba(11,10,13,0.92); }
+#capaCuenta { background: rgba(11,10,13,0.55); pointer-events: none; }
+#banner { position: fixed; top: 14vh; left: 0; right: 0; text-align: center; font-size: 7vh; color: #a855f7; z-index: 7; pointer-events: none; }
+#girar { background: #0b0a0d; z-index: 20; }
+#logoMini { width: 50vw; max-width: 60vh; border-radius: 2vh; margin-bottom: 3vh; }
+@media (orientation: portrait) { #girar { display: flex !important; } }
+</style>
+</head>
+<body>
+
+<div id="barra">
+  <div id="yo">J?</div>
+  <button id="btnMenu">START</button>
+  <div id="mini"></div>
+</div>
+<div id="version">v1</div>
+
+<!-- Selección -->
+<div id="sel" class="pantalla oculto">
+  <div id="selCarta">
+    <img id="selImg" src="/assets/img/craque.jpg" alt="">
+    <div id="selInfo">
+      <div id="selNom">O CRAQUE</div>
+      <div id="selDesc" class="m">Técnica, finta, creatividad</div>
+      <div id="stats"></div>
+      <div id="flechas"><button id="chAnt">◀</button><button id="chSig">▶</button></div>
+    </div>
+  </div>
+  <div id="selDer">
+    <div id="fila"><button id="btnEquipo">EQUIPO AMARELO ⇄</button></div>
+    <div id="cancha">
+      <button id="nvAnt">◀</button>
+      <img id="canchaImg" src="/assets/img/laje.jpg" alt="">
+      <div id="canchaNom">LAJE<small class="m">elige el J1</small></div>
+      <button id="nvSig">▶</button>
+    </div>
+    <button id="btnListo">¡LISTO!</button>
+  </div>
+</div>
+
+<!-- Juego -->
+<div id="juego" class="pantalla oculto">
+  <div id="zonaJoy"></div>
+  <div id="joyBase"><div id="joyPomo"></div></div>
+  <div id="acciones">
+    <button id="btnPistola" class="oculto">PISTOLA<br><span id="balas">x2</span></button>
+    <button id="btnTruco">FIRULETE</button>
+    <button id="btnPase">PASE</button>
+  </div>
+  <div id="pad">
+    <canvas id="padCanvas"></canvas>
+    <div id="carga" class="oculto"><b></b></div>
+    <div id="padTit">PAD</div>
+    <div id="toques"></div>
+    <div id="padAyuda" class="m">toque: chute · mantené: superchute<br>deslizá curvo: chute con efecto<br>sin pelota: 2 toques barrida · 3 voadora</div>
+  </div>
+</div>
+
+<!-- Capas -->
+<div id="capaCon" class="capa"><img id="logoMini" src="/assets/img/logo.jpg" alt=""><div class="s m">Conectando…</div></div>
+<div id="capaMira" class="capa oculto"><img src="/assets/img/logo.jpg" alt="" style="width:36vw;border-radius:2vh;margin-bottom:3vh"><div class="t">ESTÁS MIRANDO</div><div class="s m">La partida ya empezó. Jugás la próxima.</div></div>
+<div id="capaKo" class="capa oculto"><div class="t">¡TE DESMAYARON!</div><div class="s">Volvés en <span id="koN">15</span> s</div></div>
+<div id="capaCuenta" class="capa oculto"><div class="t" id="cuentaN">3</div></div>
+<div id="capaFin" class="capa oculto"><div class="t" id="finT">¡GANASTE!</div><div class="s m" id="finS"></div></div>
+<div id="banner"></div>
+<div id="girar" class="capa oculto"><div class="t" style="font-size:9vw">GIRÁ EL CELULAR</div><div class="s m" style="font-size:5vw">El control se usa en horizontal</div></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var PJ = [
+    { id: 'craque', nombre: 'O CRAQUE', desc: 'Técnica, finta, creatividad', st: [5, 4, 5, 4] },
+    { id: 'rapido', nombre: 'O RÁPIDO', desc: 'Velocidad, agilidad, explosión', st: [4, 5, 4, 3] },
+    { id: 'forte', nombre: 'O FORTE', desc: 'Físico, presencia, definición', st: [2, 3, 3, 5] },
+    { id: 'malandro', nombre: 'O MALANDRO', desc: 'Estilo, trucos, personalidad', st: [4, 4, 5, 3] }
+  ];
+  var ST_NOM = ['HABILIDAD', 'VELOCIDAD', 'GAMBETA', 'DEFINICIÓN'];
+  var NIVELES = [{ id: 'laje', nombre: 'LAJE' }, { id: 'praca', nombre: 'PRAÇA' }, { id: 'praia', nombre: 'PRAIA' }, { id: 'noturno', nombre: 'NOTURNO' }];
+  var EQ = ['AMARELO', 'AZUL'];
+
+  // identificador persistente para volver a mi lugar si se corta
+  var pid = null;
+  try { pid = localStorage.getItem('fabela_pid'); } catch (e) {}
+  if (!pid) { pid = 'p' + Math.random().toString(36).slice(2, 10); try { localStorage.setItem('fabela_pid', pid); } catch (e) {} }
+
+  var socket = io({ transports: ['websocket', 'polling'] });
+  var st = {}, prev = {};
+  socket.on('connect', function () { socket.emit('hola', { pid: pid }); });
+  socket.on('disconnect', function () { mostrar('capaCon', true); });
+  socket.on('status', function (s) { prev = st; st = s; render(); });
+
+  function mostrar(id, v) { var e = $(id); if (v) e.classList.remove('oculto'); else e.classList.add('oculto'); }
+  function vibrar(p) { try { if (navigator.vibrate) navigator.vibrate(p); } catch (e) {} }
+
+  // pantalla completa + horizontal al primer toque
+  var pedido = false;
+  document.addEventListener('pointerdown', function () {
+    if (pedido) return; pedido = true;
+    var d = document.documentElement;
+    try {
+      var p = d.requestFullscreen ? d.requestFullscreen() : d.webkitRequestFullscreen ? d.webkitRequestFullscreen() : null;
+      if (p && p.then) p.then(function () { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(function () {}); }).catch(function () {});
+    } catch (e) {}
+  }, true);
+
+  // ---------------- selección ----------------
+  var statsHtml = '';
+  for (var i = 0; i < 4; i++) statsHtml += '<div class="stat"><span>' + ST_NOM[i] + '</span><i><b id="stb' + i + '"></b></i></div>';
+  $('stats').innerHTML = statsHtml;
+  function tocar(id, fn) {
+    $(id).addEventListener('pointerdown', function (e) { e.preventDefault(); fn(e); });
+  }
+  tocar('chAnt', function () { socket.emit('sel', { a: 'ch', d: -1 }); vibrar(10); });
+  tocar('chSig', function () { socket.emit('sel', { a: 'ch', d: 1 }); vibrar(10); });
+  tocar('nvAnt', function () { socket.emit('sel', { a: 'nivel', d: -1 }); vibrar(10); });
+  tocar('nvSig', function () { socket.emit('sel', { a: 'nivel', d: 1 }); vibrar(10); });
+  tocar('btnEquipo', function () { socket.emit('sel', { a: 'equipo' }); vibrar(10); });
+  tocar('btnListo', function () { socket.emit('sel', { a: 'listo' }); vibrar(30); });
+  tocar('btnMenu', function () {
+    if (st.f === 'select') { if (st.host) socket.emit('sel', { a: 'start' }); }
+    else if (st.host && confirm('¿Volver al menú? Se corta la partida para todos.')) socket.emit('btn', { b: 'menu' });
+  });
+
+  // ---------------- joystick ----------------
+  var joy = { id: null, cx: 0, cy: 0, x: 0, y: 0, enviado: 0, ultimoX: 9, ultimoY: 9 };
+  var zona = $('zonaJoy'), base = $('joyBase'), pomo = $('joyPomo');
+  function radioJoy() { return base.offsetWidth * 0.42; }
+  function moverPomo() {
+    var r = radioJoy();
+    pomo.style.left = (50 + (joy.x * r) / base.offsetWidth * 100) + '%';
+    pomo.style.top = (50 + (joy.y * r) / base.offsetWidth * 100) + '%';
+  }
+  function enviarJoy(forzar) {
+    var ahora = Date.now();
+    if (!forzar && ahora - joy.enviado < 50) return;
+    if (Math.abs(joy.x - joy.ultimoX) < 0.02 && Math.abs(joy.y - joy.ultimoY) < 0.02 && !forzar) return;
+    joy.enviado = ahora; joy.ultimoX = joy.x; joy.ultimoY = joy.y;
+    socket.emit('input', { x: Math.round(joy.x * 100) / 100, y: Math.round(joy.y * 100) / 100 });
+  }
+  zona.addEventListener('pointerdown', function (e) {
+    if (joy.id !== null) return;
+    e.preventDefault();
+    joy.id = e.pointerId;
+    try { zona.setPointerCapture(e.pointerId); } catch (x) {}
+    joy.cx = e.clientX; joy.cy = e.clientY;
+    base.style.left = e.clientX + 'px'; base.style.top = e.clientY + 'px';
+    joy.x = joy.y = 0; moverPomo();
+  });
+  zona.addEventListener('pointermove', function (e) {
+    if (e.pointerId !== joy.id) return;
+    var r = radioJoy();
+    var dx = (e.clientX - joy.cx) / r, dy = (e.clientY - joy.cy) / r;
+    var m = Math.sqrt(dx * dx + dy * dy);
+    if (m > 1) { dx /= m; dy /= m; }
+    if (m < 0.12) { dx = 0; dy = 0; }
+    joy.x = dx; joy.y = dy; moverPomo(); enviarJoy(false);
+  });
+  function soltarJoy(e) {
+    if (e.pointerId !== joy.id) return;
+    joy.id = null; joy.x = joy.y = 0; moverPomo(); enviarJoy(true);
+  }
+  zona.addEventListener('pointerup', soltarJoy);
+  zona.addEventListener('pointercancel', soltarJoy);
+  setInterval(function () { if (joy.id !== null) enviarJoy(true); }, 200);   // por si se pierde un paquete
+
+  // ---------------- botones de acción ----------------
+  tocar('btnPase', function () { socket.emit('btn', { b: 'pase' }); vibrar(15); });
+  tocar('btnTruco', function () { socket.emit('btn', { b: 'truco' }); vibrar(15); });
+  tocar('btnPistola', function () { socket.emit('btn', { b: 'pistola' }); vibrar([40, 30, 80]); });
+
+  // ---------------- pad sensible ----------------
+  var pad = $('pad'), cv = $('padCanvas'), g = cv.getContext('2d');
+  var toque = null, toquesSeguidos = [], cargaEl = $('carga'), cargaB = cargaEl.querySelector('b');
+  function ajustarCanvas() { cv.width = pad.clientWidth; cv.height = pad.clientHeight; }
+  window.addEventListener('resize', ajustarCanvas);
+  function dibujarRastro(color) {
+    g.clearRect(0, 0, cv.width, cv.height);
+    if (!toque || toque.pts.length < 2) return;
+    g.strokeStyle = color || '#f5c518'; g.lineWidth = 10; g.lineCap = 'round'; g.lineJoin = 'round';
+    g.beginPath();
+    var r = pad.getBoundingClientRect();
+    for (var i = 0; i < toque.pts.length; i++) {
+      var p = toque.pts[i];
+      if (i === 0) g.moveTo(p.x - r.left, p.y - r.top); else g.lineTo(p.x - r.left, p.y - r.top);
+    }
+    g.stroke();
+  }
+  var borrarRastro = null;
+  pad.addEventListener('pointerdown', function (e) {
+    if (toque) return;
+    e.preventDefault();
+    if (!cv.width) ajustarCanvas();
+    try { pad.setPointerCapture(e.pointerId); } catch (x) {}
+    toque = { id: e.pointerId, t0: performance.now(), pts: [{ x: e.clientX, y: e.clientY }], largo: 0, swipe: false };
+    pad.classList.add('activo');
+    socket.emit('pad', { t: 'down' });
+    if (borrarRastro) { clearTimeout(borrarRastro); borrarRastro = null; }
+    g.clearRect(0, 0, cv.width, cv.height);
+  });
+  pad.addEventListener('pointermove', function (e) {
+    if (!toque || e.pointerId !== toque.id) return;
+    var u = toque.pts[toque.pts.length - 1];
+    var dx = e.clientX - u.x, dy = e.clientY - u.y;
+    var d = Math.sqrt(dx * dx + dy * dy);
+    if (d < 3) return;
+    toque.largo += d;
+    toque.pts.push({ x: e.clientX, y: e.clientY });
+    if (toque.largo > pad.clientWidth * 0.12) toque.swipe = true;
+    if (toque.swipe) dibujarRastro();
+  });
+  function finToque(e) {
+    if (!toque || e.pointerId !== toque.id) return;
+    var dur = (performance.now() - toque.t0) / 1000;
+    pad.classList.remove('activo');
+    mostrar('carga', false);
+    var msg;
+    if (toque.swipe && toque.pts.length > 2) {
+      var a = toque.pts[0], b = toque.pts[toque.pts.length - 1];
+      var cx = b.x - a.x, cy = b.y - a.y;
+      var cuerda = Math.sqrt(cx * cx + cy * cy) || 1;
+      // desvío máximo (con signo) respecto de la cuerda: forma de la curva
+      var maxDev = 0;
+      for (var i = 1; i < toque.pts.length - 1; i++) {
+        var p = toque.pts[i];
+        var dev = ((p.x - a.x) * cy - (p.y - a.y) * cx) / cuerda;
+        if (Math.abs(dev) > Math.abs(maxDev)) maxDev = dev;
+      }
+      // dev > 0 = el trazo gira en sentido horario en la pantalla; la pelota gira igual en la TV
+      var curva = Math.max(-1, Math.min(1, (maxDev / cuerda) * 3));
+      var vel = toque.largo / Math.max(0.05, dur);
+      var power = Math.max(0.4, Math.min(1, 0.35 + vel / 2600 + cuerda / pad.clientWidth * 0.3));
+      var lift = Math.max(0, Math.min(1, (a.y - b.y) / pad.clientHeight * 1.3));
+      msg = { t: 'up', kind: 'swipe', curve: Math.round(curva * 100) / 100, power: Math.round(power * 100) / 100, lift: Math.round(lift * 100) / 100, dur: dur };
+      dibujarRastro(st.bal ? '#22c55e' : '#6b6875');
+      borrarRastro = setTimeout(function () { g.clearRect(0, 0, cv.width, cv.height); }, 500);
+      if (st.bal) vibrar(35);
+    } else if (dur >= 0.25) {
+      msg = { t: 'up', kind: 'hold', dur: dur };
+      if (st.bal) vibrar(dur > 1.1 ? [30, 20, 60] : 35);
+    } else {
+      msg = { t: 'up', kind: 'tap', dur: dur };
+      if (!st.bal) {
+        var ahora = performance.now();
+        toquesSeguidos = toquesSeguidos.filter(function (t) { return ahora - t < 500; });
+        toquesSeguidos.push(ahora);
+        var n = toquesSeguidos.length;
+        $('toques').textContent = n === 2 ? '¡BARRIDA!' : n >= 3 ? '¡VOADORA!' : '';
+        if (n >= 3) toquesSeguidos = [];
+        setTimeout(function () { $('toques').textContent = ''; }, 600);
+      }
+      vibrar(12);
+    }
+    socket.emit('pad', msg);
+    toque = null;
+  }
+  pad.addEventListener('pointerup', finToque);
+  pad.addEventListener('pointercancel', finToque);
+  // barra de carga del superchute
+  setInterval(function () {
+    if (toque && !toque.swipe && st.bal) {
+      var d = (performance.now() - toque.t0) / 1000;
+      if (d > 0.25) {
+        mostrar('carga', true);
+        var k = Math.min(1, (d - 0.25) / 1.0);
+        cargaB.style.width = (k * 100) + '%';
+        cargaB.style.background = k > 0.8 ? '#ff5a1f' : '#f5c518';
+      }
+    }
+  }, 50);
+
+  // ---------------- dibujar según el estado ----------------
+  var ultimaCuenta = -1;
+  function render() {
+    mostrar('capaCon', false);
+    $('version').textContent = 'v' + (st.v || 1);
+    if (st.mirando) {
+      mostrar('capaMira', true); mostrar('sel', false); mostrar('juego', false); mostrar('capaKo', false); mostrar('capaFin', false);
+      $('yo').textContent = '👀'; $('mini').textContent = st.sc ? st.sc[0] + ' - ' + st.sc[1] : '';
+      return;
+    }
+    mostrar('capaMira', false);
+    var yo = $('yo');
+    yo.textContent = 'J' + (st.slot + 1);
+    yo.className = st.team ? 't1' : '';
+    $('joyPomo').className = st.team ? 't1' : '';
+
+    if (st.f === 'select') {
+      mostrar('sel', true); mostrar('juego', false); mostrar('capaKo', false); mostrar('capaFin', false); mostrar('capaCuenta', false);
+      $('banner').textContent = '';
+      var pj = PJ[st.ch];
+      if ($('selImg').getAttribute('src') !== '/assets/img/' + pj.id + '.jpg') $('selImg').setAttribute('src', '/assets/img/' + pj.id + '.jpg');
+      $('selNom').textContent = pj.nombre;
+      $('selDesc').textContent = pj.desc;
+      for (var i = 0; i < 4; i++) $('stb' + i).style.width = (pj.st[i] * 20) + '%';
+      var eq = $('btnEquipo');
+      eq.textContent = 'EQUIPO ' + EQ[st.team] + ' ⇄';
+      eq.className = st.team ? 't1' : '';
+      var nv = NIVELES[st.n];
+      if ($('canchaImg').getAttribute('src') !== '/assets/img/' + nv.id + '.jpg') $('canchaImg').setAttribute('src', '/assets/img/' + nv.id + '.jpg');
+      $('canchaNom').innerHTML = nv.nombre + '<small class="m">' + (st.host ? 'vos elegís la cancha' : 'la elige el J1') + '</small>';
+      $('nvAnt').style.visibility = st.host ? 'visible' : 'hidden';
+      $('nvSig').style.visibility = st.host ? 'visible' : 'hidden';
+      var listo = $('btnListo');
+      listo.textContent = st.listo ? 'ESPERANDO A LOS DEMÁS…' : '¡LISTO!';
+      listo.className = st.listo ? 'si' : '';
+      $('chAnt').style.opacity = st.listo ? 0.3 : 1; $('chSig').style.opacity = st.listo ? 0.3 : 1;
+      $('btnMenu').textContent = st.host ? 'START' : 'MENÚ';
+      $('btnMenu').style.visibility = st.host ? 'visible' : 'hidden';
+      var humanos = 0; for (var k = 0; k < st.sl.length; k++) humanos += st.sl[k][0];
+      $('mini').textContent = humanos + ' / 4';
+      if (prev.ch !== st.ch && prev.f === 'select') vibrar(10);
+      return;
+    }
+
+    // en juego / cuenta / podio
+    mostrar('sel', false);
+    mostrar('juego', true);
+    $('btnMenu').textContent = 'MENÚ';
+    $('btnMenu').style.visibility = st.host ? 'visible' : 'hidden';
+    $('mini').textContent = st.sc ? st.sc[0] + ' - ' + st.sc[1] : '';
+
+    // cuenta regresiva
+    if (st.f === 'countdown') {
+      mostrar('capaCuenta', true);
+      $('cuentaN').textContent = st.cd === 4 ? '¡PREPARADOS!' : String(st.cd);
+      if (st.cd !== ultimaCuenta) { vibrar(st.cd === 4 ? 20 : 40); ultimaCuenta = st.cd; }
+    } else {
+      if (ultimaCuenta !== -1 && st.f === 'playing') vibrar(120);
+      ultimaCuenta = -1;
+      mostrar('capaCuenta', false);
+    }
+
+    // pad: con / sin pelota
+    var tit = $('padTit');
+    tit.textContent = st.bal ? '¡CHUTÁ!' : 'PAD';
+    tit.className = st.bal ? 'con' : '';
+    $('btnPase').innerHTML = st.bal ? 'PASE' : 'PEDIR';
+    $('btnTruco').innerHTML = st.bal ? 'FIRULETE' : 'SAMBA';
+    $('btnTruco').className = st.cdT ? 'cd' : '';
+    // pistola
+    var pist = $('btnPistola');
+    if (st.balas > 0) { mostrar('btnPistola', true); $('balas').textContent = 'x' + st.balas; pist.className = st.cdP ? 'cd' : ''; }
+    else mostrar('btnPistola', false);
+
+    // KO
+    if (st.est === 'ko') { mostrar('capaKo', true); $('koN').textContent = st.ko; }
+    else mostrar('capaKo', false);
+    // banner de estado
+    var ban = '';
+    if (st.est === 'stun') ban = '¡TE TUNEARON!';
+    else if (st.est === 'fall') ban = '¡AL PISO!';
+    else if (st.sub === 'goal') ban = '¡GOOOL!';
+    $('banner').textContent = ban;
+    $('banner').style.color = st.sub === 'goal' ? '#f5c518' : '#a855f7';
+
+    // vibraciones por eventos
+    if (prev.est !== st.est) {
+      if (st.est === 'ko') vibrar([200, 80, 300]);
+      else if (st.est === 'stun') vibrar([100, 50, 100]);
+      else if (st.est === 'fall') vibrar(120);
+    }
+    if (!prev.bal && st.bal) vibrar(20);
+    if ((prev.balas || 0) === 0 && st.balas > 0) vibrar([80, 40, 80, 40, 200]);
+    if (prev.sc && st.sc && (prev.sc[0] !== st.sc[0] || prev.sc[1] !== st.sc[1])) {
+      var mio = st.sc[st.team] !== prev.sc[st.team];
+      vibrar(mio ? [80, 40, 80, 40, 80] : 150);
+    }
+
+    // final
+    if (st.f === 'finished') {
+      mostrar('capaFin', true);
+      var gane = st.g === st.team;
+      $('finT').textContent = gane ? '¡GANASTE!' : 'PERDISTE';
+      $('finT').style.color = gane ? '#f5c518' : '#aaa';
+      $('finS').textContent = 'Puesto ' + st.pos + ' · ' + (st.goles || 0) + ' goles · ' + st.sc[0] + ' - ' + st.sc[1] + ' · volvemos al menú…';
+      if (prev.f !== 'finished') vibrar(gane ? [100, 50, 100, 50, 300] : 300);
+    } else mostrar('capaFin', false);
+  }
+})();
+</script>
+</body>
+</html>

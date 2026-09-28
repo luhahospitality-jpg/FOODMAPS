@@ -1,0 +1,78 @@
+/* FABELA FOOTBALL — TV. Sin box-shadow difuso, filter, backdrop-filter ni animaciones CSS: la TV es lenta. */
+@font-face { font-family: 'Bangers'; src: url('/assets/fonts/bangers.woff2') format('woff2'); font-display: block; }
+@font-face { font-family: 'Marker'; src: url('/assets/fonts/marker.woff2') format('woff2'); font-display: block; }
+
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0a0d; color: #fff; }
+body { font-family: 'Bangers', Impact, 'Arial Black', sans-serif; letter-spacing: 0.04em; }
+#lienzo { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: block; }
+.oculto { display: none !important; }
+.rotulo { font-size: 1.6vh; color: #f5c518; letter-spacing: 0.12em; }
+
+/* ---- HUD ---- */
+#hud { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
+#marcador { position: absolute; top: 1.6vh; left: 50%; width: 60vh; margin-left: -30vh; height: 7.2vh; display: flex; align-items: stretch; }
+#marcador .eq { flex: 1; display: flex; align-items: center; justify-content: space-between; padding: 0 1.4vh; font-size: 3.4vh; }
+#marcador .eq0 { background: #f5c518; color: #111; border-radius: 1vh 0 0 1vh; }
+#marcador .eq1 { background: #2563eb; color: #fff; border-radius: 0 1vh 1vh 0; }
+#marcador .gol { font-size: 6vh; line-height: 1; }
+#reloj { width: 13vh; background: #111; color: #fff; font-size: 4vh; display: flex; align-items: center; justify-content: center; border-top: 0.4vh solid #111; }
+#reloj.oro { color: #f5c518; font-size: 2.6vh; }
+#aviso { position: absolute; top: 10vh; left: 0; right: 0; text-align: center; font-size: 3vh; color: #f5c518; }
+#chips { position: absolute; bottom: 1.6vh; left: 1.6vh; right: 1.6vh; display: flex; justify-content: space-between; }
+.chip { width: 22%; background: rgba(10,10,12,0.78); border-left: 0.8vh solid #f5c518; border-radius: 0.8vh; padding: 0.8vh 1.2vh; font-size: 2.4vh; line-height: 1.15; }
+.chip.t1 { border-left-color: #2563eb; }
+.chip .pj { font-family: 'Marker', sans-serif; font-size: 1.7vh; color: #bbb; letter-spacing: 0; }
+.chip .poder { color: #f5c518; }
+.chip .ko { color: #e11d48; }
+
+/* ---- Texto grande ---- */
+#grande { position: fixed; top: 30%; left: 0; right: 0; text-align: center; pointer-events: none; display: none; }
+#grandeTxt { font-size: 16vh; line-height: 1; color: #f5c518; -webkit-text-stroke: 0.5vh #111; }
+#grandeSub { font-family: 'Marker', sans-serif; font-size: 3.6vh; color: #fff; -webkit-text-stroke: 0.15vh #111; margin-top: 1vh; letter-spacing: 0; }
+
+#flotantes { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
+.flot { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 5vh; color: #fff; -webkit-text-stroke: 0.25vh #111; will-change: transform; }
+
+/* ---- Menú / selección ---- */
+#menu { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(8,7,10,0.55); }
+#menuLogo { position: absolute; top: 3vh; left: 50%; height: 24vh; margin-left: -17vh; border-radius: 1vh; }
+#menuTarjetas { position: absolute; top: 30vh; left: 5vw; right: 30vw; height: 52vh; display: flex; justify-content: space-between; }
+.tarjeta { width: 23%; background: #151317; border-radius: 1.2vh; overflow: hidden; border-top: 1vh solid #f5c518; position: relative; }
+.tarjeta.t1 { border-top-color: #2563eb; }
+.tarjeta img { width: 100%; height: 34vh; object-fit: cover; object-position: top; display: block; }
+.tarjeta .jn { position: absolute; top: 1vh; left: 1vh; font-size: 3vh; color: #fff; -webkit-text-stroke: 0.12vh #000; }
+.tarjeta .eqn { position: absolute; top: 1.2vh; right: 1vh; font-size: 1.8vh; padding: 0.2vh 0.8vh; background: #f5c518; color: #111; border-radius: 0.5vh; }
+.tarjeta.t1 .eqn { background: #2563eb; color: #fff; }
+.tarjeta .pn { font-size: 3vh; padding: 1vh 1.2vh 0; }
+.tarjeta .st { font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 1.9vh; padding: 0.4vh 1.2vh; color: #aaa; }
+.tarjeta .st.listo { color: #22c55e; }
+.tarjeta.cpu img { opacity: 0.55; }
+#menuCancha { position: absolute; top: 30vh; right: 4vw; width: 23vw; }
+#menuCancha img { width: 100%; border-radius: 1vh; display: block; margin-top: 0.8vh; }
+#menuCanchaNom { font-size: 4vh; margin-top: 0.6vh; }
+#menuAyuda { position: absolute; bottom: 4vh; left: 5vw; right: 32vw; font-family: 'Marker', sans-serif; font-size: 2.3vh; letter-spacing: 0; color: #ddd; }
+#menuAyuda b { color: #f5c518; }
+
+/* ---- Unirse ---- */
+#unirse { position: fixed; right: 2vh; bottom: 2vh; display: flex; align-items: center; background: rgba(10,10,12,0.85); border-radius: 1vh; padding: 1vh; }
+#unirse img { width: 16vh; height: 16vh; background: #fff; border-radius: 0.6vh; margin-right: 1.4vh; }
+#unirse #url { font-family: 'Marker', sans-serif; font-size: 2.6vh; letter-spacing: 0; color: #fff; max-width: 32vw; word-break: break-all; }
+#unirse.chico { top: 1.6vh; bottom: auto; right: 1.6vh; padding: 0.6vh; }
+#unirse.chico img { width: 8vh; height: 8vh; margin-right: 0.8vh; }
+#unirse.chico #url { font-size: 1.6vh; }
+#unirse.chico .rotulo { font-size: 1.2vh; }
+
+/* ---- Podio ---- */
+#podio { position: fixed; top: 4vh; left: 0; right: 0; text-align: center; pointer-events: none; }
+#podioTit { font-size: 11vh; color: #f5c518; -webkit-text-stroke: 0.4vh #111; }
+#podioSub { font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 3vh; -webkit-text-stroke: 0.1vh #111; }
+
+/* ---- Intro ---- */
+#intro { position: fixed; left: 0; right: 0; bottom: 12vh; text-align: center; pointer-events: none; }
+#introTxt { display: inline-block; font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 5vh; color: #fff; background: rgba(0,0,0,0.55); padding: 1vh 3vh; border-radius: 1vh; }
+
+#version { position: fixed; left: 1vh; bottom: 0.6vh; font-size: 1.8vh; color: rgba(255,255,255,0.6); font-family: Arial, sans-serif; }
+#debug { position: fixed; left: 1vh; top: 1vh; font: 1.8vh monospace; color: #0f0; background: rgba(0,0,0,0.6); padding: 0.4vh 0.8vh; white-space: pre; }
+#audioAviso { position: fixed; left: 50%; bottom: 22vh; width: 60vh; margin-left: -30vh; text-align: center; font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 2.2vh; background: rgba(0,0,0,0.7); padding: 1vh; border-radius: 1vh; }
+#error { position: fixed; top: 2vh; left: 2vh; right: 2vh; background: #b00020; color: #fff; font: 2.2vh monospace; padding: 1.5vh; white-space: pre-wrap; z-index: 99; }
+#cargando { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #0b0a0d; color: #f5c518; font-size: 6vh; display: flex; align-items: center; justify-content: center; }

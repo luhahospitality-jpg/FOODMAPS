@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FABELA FOOTBALL — TV</title>
+<link rel="stylesheet" href="/tv/tv.css">
+</head>
+<body>
+<canvas id="lienzo"></canvas>
+
+<!-- HUD del partido -->
+<div id="hud" class="oculto">
+  <div id="marcador">
+    <div class="eq eq0"><span class="nom">AMARELO</span><span class="gol" id="gol0">0</span></div>
+    <div id="reloj">4:00</div>
+    <div class="eq eq1"><span class="gol" id="gol1">0</span><span class="nom">AZUL</span></div>
+  </div>
+  <div id="aviso"></div>
+  <div id="chips"></div>
+</div>
+
+<!-- Texto grande central (¡GOL!, ¡PUM!, 3-2-1) -->
+<div id="grande"><div id="grandeTxt"></div><div id="grandeSub"></div></div>
+
+<!-- Etiquetas flotantes pegadas al mundo 3D -->
+<div id="flotantes"></div>
+
+<!-- Pantalla de selección -->
+<div id="menu" class="oculto">
+  <img id="menuLogo" src="/assets/img/logo.jpg" alt="FABELA FOOTBALL">
+  <div id="menuTarjetas"></div>
+  <div id="menuCancha">
+    <div class="rotulo">CANCHA</div>
+    <img id="menuCanchaImg" src="/assets/img/laje.jpg" alt="">
+    <div id="menuCanchaNom">LAJE</div>
+  </div>
+  <div id="menuAyuda">Elegí tu jugador en el celular y tocá <b>LISTO</b>. Faltan jugadores: completa la máquina.</div>
+</div>
+
+<!-- Panel para unirse (URL + QR) -->
+<div id="unirse">
+  <img id="qr" src="/qr.svg" alt="QR">
+  <div>
+    <div class="rotulo">ENTRÁ CON TU CELULAR</div>
+    <div id="url">...</div>
+  </div>
+</div>
+
+<!-- Podio -->
+<div id="podio" class="oculto">
+  <div id="podioTit"></div>
+  <div id="podioSub"></div>
+</div>
+
+<!-- Intro -->
+<div id="intro" class="oculto"><div id="introTxt"></div></div>
+
+<div id="version">v1</div>
+<div id="debug" class="oculto"></div>
+<div id="audioAviso" class="oculto">Tocá cualquier tecla del control para activar el sonido</div>
+<div id="error" class="oculto"></div>
+<div id="cargando">CARGANDO…</div>
+
+<script>
+  // Overlay de error: para ver en la TV qué falló
+  (function () {
+    function mostrar(msg) {
+      var e = document.getElementById('error');
+      e.className = '';
+      e.textContent = 'ERROR: ' + msg;
+    }
+    window.addEventListener('error', function (ev) { mostrar((ev.message || ev) + ' @ ' + (ev.filename || '') + ':' + (ev.lineno || '')); });
+    window.addEventListener('unhandledrejection', function (ev) { mostrar(ev.reason && (ev.reason.stack || ev.reason.message) || String(ev.reason)); });
+    window.__mostrarError = mostrar;
+  })();
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="/tv/js/main.js"></script>
+</body>
+</html>

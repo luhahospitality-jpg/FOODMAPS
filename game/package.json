@@ -1,0 +1,21 @@
+{
+  "name": "fabela-football",
+  "version": "1.0.0",
+  "description": "FABELA FOOTBALL: fútbol callejero 2 vs 2. La TV muestra el juego y los celulares son los controles.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "check": "node scripts/check.js",
+    "sim": "node scripts/sim.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}

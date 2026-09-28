@@ -1,0 +1,14 @@
+Voces grabadas de los personajes (opcionales).
+
+1. Poné los MP3 acá (mono, 128k).
+2. Listalos en voices.json con la clave → archivo, por ejemplo:
+   {
+     "craque_elige": "craque_elige.mp3",
+     "craque_gol": "craque_gol.mp3",
+     "craque_poder": "craque_poder.mp3",
+     "rapido_elige": "rapido_elige.mp3"
+   }
+
+Claves que usa el juego: <personaje>_elige, <personaje>_gol, <personaje>_poder
+Personajes: craque, rapido, forte, malandro.
+Si falta un clip, no pasa nada: el juego sigue sin esa voz.
