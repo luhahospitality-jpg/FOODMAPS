@@ -8,7 +8,7 @@ const params = new URLSearchParams(location.search);
 // ---------- carga: fuentes primero (los carteles se pintan en canvas con la fuente del logo) ----------
 // (sin "await" suelto en el modulo: los navegadores de TV mas viejos no lo soportan)
 let buildTrack, teardownTrack, updateTrack, themeCfg, TRACK, buildDecor, updateDecorFade, faceCrowds, buildArena, buildArenaDecor;
-let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx, music;
+let karts, ensureKart, removeKart, faceAllKarts, updateItems, resetItems, fx, podiumScene, podiumCam, setupPodium, updatePodium, sfx, music, voice;
 async function boot() {
   hud.setLoading(0.1, false);
   if (document.fonts && document.fonts.load) {
@@ -30,7 +30,9 @@ async function boot() {
   ({ updateItems, resetItems } = mods[3]);
   ({ fx } = mods[4]);
   ({ podiumScene, podiumCam, setupPodium, updatePodium } = mods[5]);
-  ({ sfx, music } = mods[6]);
+  ({ sfx, music, voice } = mods[6]);
+  mods[6].loadVoices();
+  window.__br.voice = voice;
   fx.init();
   hud.initSelect();
   hud.setLoading(1, true);
@@ -170,6 +172,12 @@ function handleEvents(prev, next) {
     const first = !(prev.players || []).some((p) => p && p.lap >= L - 1);
     if (lead && first && L > 1) { sfx.finalLap(); music.faster(); }
   }
+  // voz del personaje cuando alguien lo elige (confirma en la seleccion)
+  // (si todos confirmaron, el server pasa a la cuenta en el mismo instante: se mira desde la fase anterior)
+  if (prev.phase === 'select') (next.players || []).forEach((p, i) => {
+    const op = (prev.players || [])[i];
+    if (p && !p.bot && p.confirmed && op && !op.confirmed) voice.play(p.character + '_name', true);
+  });
   (next.players || []).forEach((p, i) => {
     const op = (prev.players || [])[i];
     if (!p || !op || p.spectating || next.phase !== 'racing') return;
@@ -229,6 +237,11 @@ function handleEvents(prev, next) {
       const final = p.lap === (next.laps || 3) - 1;
       hud.banner(i, final ? 'FINAL LAP!' : 'LAP ' + (p.lap + 1) + '/' + (next.laps || 3), 1700, final ? 'var(--red)' : 'var(--yellow)');
       fx.confetti(pos.x, 300, pos.z, 30, 500);
+    }
+    // voz del personaje al tirar el poder
+    if ((p.powerSeq || 0) > (op.powerSeq || 0)) {
+      const bk = p.character + '_power_battle';
+      voice.play(next.mode === 'battle' && voice.has(bk) ? bk : p.character + '_power');
     }
     if ((p.powerSeq || 0) > (op.powerSeq || 0) && next.mode === 'battle') {
       // poderes de batalla

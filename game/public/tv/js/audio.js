@@ -330,3 +330,60 @@ unlockAudio();
 ['pointerdown', 'touchstart', 'keydown', 'click'].forEach((ev) => window.addEventListener(ev, unlockAudio));
 if (ctx) ctx.onstatechange = () => { if (ctx.state === 'running') unlockAudio(); };
 export function audioReady() { return !!ctx; }
+
+// ---------- voces grabadas de los personajes ----------
+// /assets/voices/voices.json lista los clips que existen, p.ej.
+// { "princess_name": "princess_name.mp3", "princess_power": "princess_power.mp3" }
+// claves: <personaje>_name (al elegirlo), <personaje>_power (al tirar el poder) y,
+// opcional, <personaje>_power_battle (poder en la arena; si no esta usa _power)
+const voiceBufs = {};
+let voiceBusyUntil = 0;
+const voiceLast = {};
+function decode(buf) {
+  // los navegadores de TV viejos solo aceptan la version con callbacks
+  return new Promise((res, rej) => {
+    const p = ctx.decodeAudioData(buf, res, rej);
+    if (p && p.then) p.then(res, rej);
+  });
+}
+export async function loadVoices() {
+  ensureAudio();
+  if (!ctx) return;
+  let list = null;
+  try { const r = await fetch('/assets/voices/voices.json', { cache: 'no-cache' }); if (r.ok) list = await r.json(); } catch (e) { list = null; }
+  if (!list) return;
+  await Promise.all(Object.keys(list).map(async (key) => {
+    try {
+      const r = await fetch('/assets/voices/' + list[key]);
+      if (r.ok) voiceBufs[key] = await decode(await r.arrayBuffer());
+    } catch (e) { /* sin esa voz */ }
+  }));
+}
+export const voice = {
+  has(key) { return !!voiceBufs[key]; },
+  // queue=true: se pone en fila (nombres al elegir); si no, suena ya (poderes)
+  play(key, queue) {
+    const b = voiceBufs[key];
+    if (!ctx || !b || ctx.state !== 'running') return;
+    const now = ctx.currentTime;
+    if (voiceLast[key] && now - voiceLast[key] < 0.4) return; // no repetir el mismo clip encimado
+    voiceLast[key] = now;
+    const t = queue ? Math.max(now + 0.02, voiceBusyUntil) : now + 0.02;
+    const src = ctx.createBufferSource();
+    src.buffer = b;
+    const g = ctx.createGain(); g.gain.value = 1.0;
+    src.connect(g); g.connect(master);
+    src.start(t);
+    const end = t + b.duration;
+    voiceBusyUntil = Math.max(voiceBusyUntil, end + 0.1);
+    // la musica baja mientras habla el personaje
+    if (song) {
+      const mg = musicBus.gain;
+      mg.cancelScheduledValues(t);
+      mg.setValueAtTime(mg.value, now);
+      mg.linearRampToValueAtTime(0.1, t + 0.08);
+      mg.setValueAtTime(0.1, end);
+      mg.linearRampToValueAtTime(0.34, end + 0.4);
+    }
+  },
+};
