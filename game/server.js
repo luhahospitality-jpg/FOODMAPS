@@ -11,7 +11,7 @@ const express = require('express');
 const { Server } = require('socket.io');
 const QRCode = require('qrcode');
 
-const VERSION = 3;
+const VERSION = 4;
 const PORT = process.env.PORT || 3000;
 const TICK = 20;
 const DT = 1 / TICK;

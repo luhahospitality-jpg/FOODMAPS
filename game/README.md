@@ -46,7 +46,7 @@ node scripts/capturas.js capturas   # Chromium sin ventana: capturas de TV y cel
 
 ## Música, efectos y voces
 
-Durante el partido suena entera la canción **"Favela Futebol"** (`public/assets/music/favela_futebol.mp3`, en loop si el partido es más largo). Menú y podio: funk sintetizado con Web Audio, igual que los efectos.
+Desde que se abre la TV suena **"Favela Futebol"** (`public/assets/music/favela_futebol.mp3`) en loop, sin parar nunca (menú, partido y podio). Si el navegador de la TV bloquea el sonido, arranca con cualquier tecla del control remoto. Los efectos son sintetizados con Web Audio.
 
 Voces: desactivadas por ahora (`voices.json` vacío). Los MP3 siguen en `public/assets/voices/`; para reactivarlas, volver a listarlos en `voices.json` (ver `LEEME.txt`).
 

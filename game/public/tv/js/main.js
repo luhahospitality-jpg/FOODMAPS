@@ -9,7 +9,7 @@ import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 3;
+const VERSION = 4;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -80,6 +80,8 @@ async function arrancar() {
   const activarAudio = () => { audio.desbloquear(); };
   window.addEventListener('keydown', (e) => { activarAudio(); saltarIntro(); if (e.key === 'd') debugOn = !debugOn; });
   window.addEventListener('pointerdown', () => { activarAudio(); saltarIntro(); });
+  window.addEventListener('touchstart', activarAudio);
+  window.addEventListener('click', activarAudio);
   setInterval(() => { avisoAudio.className = audio.audioActivo() ? 'oculto' : ''; }, 1000);
 
   // ---------------- jugadores ----------------
@@ -403,11 +405,6 @@ async function arrancar() {
         fase = st.f; faseDesde = tiempo;
         hud.fase(fase);
         podio.visible = fase === 'finished';
-        audio.partidoActivo(fase === 'playing');
-        if (fase === 'playing') {
-          // la canción "Favela Futebol" entera en cada partido (si no carga, la música sintetizada)
-          if (!audio.cancion()) audio.tema(nivelId);
-        }
         if (fase === 'select') { audio.tema('menu'); audio.acelerar(false); }
         if (fase === 'finished') {
           audio.tema('podio');
