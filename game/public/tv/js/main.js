@@ -9,7 +9,7 @@ import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 5;
+const VERSION = 6;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -29,6 +29,7 @@ function liberar(obj) {
 }
 
 async function arrancar() {
+  audio.iniciarAudio();          // lo primero: que la música empiece a bajar y sonar cuanto antes
   await cargarFuentes();
   const canvas = document.getElementById('lienzo');
   const R = crearRender(canvas);
@@ -75,14 +76,15 @@ async function arrancar() {
   const red = crearRed((n) => cargarNivel(n));
 
   // ---------------- audio ----------------
-  audio.iniciarAudio();
   const avisoAudio = document.getElementById('audioAviso');
   const activarAudio = () => { audio.desbloquear(); };
   window.addEventListener('keydown', (e) => { activarAudio(); saltarIntro(); if (e.key === 'd') debugOn = !debugOn; });
   window.addEventListener('pointerdown', () => { activarAudio(); saltarIntro(); });
   window.addEventListener('touchstart', activarAudio);
   window.addEventListener('click', activarAudio);
-  setInterval(() => { avisoAudio.className = audio.audioActivo() ? 'oculto' : ''; }, 1000);
+  // el cartel solo aparece si el navegador bloqueó el sonido de verdad (no mientras carga la canción)
+  let bloqueado = 0;
+  setInterval(() => { bloqueado = audio.contextoBloqueado() ? bloqueado + 1 : 0; avisoAudio.className = bloqueado >= 4 ? '' : 'oculto'; }, 1000);
 
   // ---------------- jugadores ----------------
   const modelos = [];      // por slot
@@ -404,6 +406,7 @@ async function arrancar() {
       if (st.f !== fase) {
         fase = st.f; faseDesde = tiempo;
         hud.fase(fase);
+        audio.musica(fase === 'countdown' || fase === 'playing' ? 'partido' : 'intro');
         podio.visible = fase === 'finished';
         if (fase === 'select') { audio.tema('menu'); audio.acelerar(false); }
         if (fase === 'finished') {

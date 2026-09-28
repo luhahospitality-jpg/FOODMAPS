@@ -5,9 +5,6 @@ let ctx = null, master, comp, busMusica, busSfx, busVoz, ruido, reverb, envioRev
 let temaActual = null, pasoActual = 0, proximo = 0, velMul = 1, compas = 0;
 const voces = {};
 let hablando = 0, analizador = null;
-let cancionEl = null;
-const URL_CANCION = '/assets/music/favela_futebol_mono.mp3';
-const URL_CANCION_EL = '/assets/music/favela_futebol.mp3';
 const VOL_MUSICA = 0.55;
 
 const mtof = (m) => 440 * Math.pow(2, (m - 69) / 12);
@@ -46,7 +43,8 @@ export function iniciarAudio() {
   const gs = ctx.createGain(); gs.gain.value = 0.55; saturador.connect(gs); gs.connect(busMusica);
   saturadorSfx = ctx.createWaveShaper(); saturadorSfx.curve = curvaDist(14);
   const gs2 = ctx.createGain(); gs2.gain.value = 0.5; saturadorSfx.connect(gs2); gs2.connect(busSfx);
-  prepararCancion();
+  prepararCanciones();
+  pedida = 'intro';
   setInterval(programar, 25);
   cargarVoces();
   return true;
@@ -57,11 +55,12 @@ export function medir() {
   if (!analizador) return null;
   const d = new Float32Array(analizador.fftSize); analizador.getFloatTimeDomainData(d);
   let s = 0, p = 0; for (const x of d) { s += x * x; p = Math.max(p, Math.abs(x)); }
-  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: { sonando: cancionSonando(), estado: estadoCancion, dur: bufCancion ? Math.round(bufCancion.duration) : 0, elemento: !!cancionEl } };
+  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: { sonando: cancionSonando(), estado: estadoCancion, cual: actual ? actual.nombre : null, inicio: actual ? actual.usandoIni : null } };
 }
 
+export function contextoBloqueado() { return !!ctx && ctx.state !== 'running'; }
 export function audioActivo() { return ctx && ctx.state === 'running' && cancionSonando(); }
-export function desbloquear() { if (ctx && ctx.state !== 'running') ctx.resume(); arrancarCancion(); intentarElemento(); }
+export function desbloquear() { if (ctx && ctx.state !== 'running') ctx.resume(); revisar(); }
 
 // ---------------------------------------------------------------------
 //  Bloques de síntesis
@@ -213,54 +212,104 @@ function tocarPaso(tema, i, t, paso) {
 }
 
 // ---------------------------------------------------------------------
-//  Canción "Favela Futebol": suena desde que abre la TV y nunca para.
-//  Va por Web Audio (buffer en loop), que es lo que los navegadores de TV
-//  dejan sonar sin tocar nada (el elemento <audio> suele estar bloqueado).
-//  Se usa la versión mono para gastar la mitad de memoria al decodificar.
+//  Canciones (por Web Audio: es lo que la TV deja sonar sin tocar nada)
+//   - "Favela Futebol": intro y menú. Arranca con un pedazo corto (12 s) que
+//     carga al instante, y cuando está la canción entera la continúa sin corte.
+//   - "Rundo de Capoeira": durante el partido, en loop.
 // ---------------------------------------------------------------------
-let bufCancion = null, fuenteCancion = null, gainCancion = null, estadoCancion = 'cargando';
-function prepararCancion() {
-  gainCancion = ctx.createGain(); gainCancion.gain.value = 0.85; gainCancion.connect(master);
-  fetch(URL_CANCION).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); }).then((ab) => {
-    estadoCancion = 'decodificando';
-    // forma con callbacks: funciona también en navegadores viejos
-    ctx.decodeAudioData(ab, (buf) => { bufCancion = buf; estadoCancion = 'lista'; arrancarCancion(); }, () => { estadoCancion = 'error al decodificar'; usarElemento(); });
-  }).catch((e) => { estadoCancion = 'error al bajar: ' + e.message; usarElemento(); });
-  // si el contexto arrancó suspendido, se insiste
-  setInterval(() => { if (ctx.state !== 'running') ctx.resume(); arrancarCancion(); if (cancionEl && cancionEl.paused) intentarElemento(); }, 1500);
+const CANCIONES = {
+  intro: { ini: '/assets/music/favela_futebol_ini.mp3', full: '/assets/music/favela_futebol_mono.mp3' },
+  partido: { full: '/assets/music/capoeira_mono.mp3' },
+};
+const can = {};              // nombre → { ini, full, loopA, loopB }
+let actual = null;           // { nombre, fuente, gain, inicio, usandoIni }
+let pedida = null;           // canción que se quiere escuchar ahora
+let estadoCancion = 'cargando';
+
+function bajar(url, listo) {
+  fetch(url).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); })
+    .then((ab) => ctx.decodeAudioData(ab, listo, () => { estadoCancion = 'error decodificando ' + url; }))
+    .catch((e) => { estadoCancion = 'error bajando ' + url + ' ' + e.message; });
+}
+// busca dónde empieza y termina el sonido de verdad (el MP3 trae relleno): loop sin clic
+function bordes(buf) {
+  const d = buf.getChannelData(0), u = 0.0008;
+  let a = 0, b = d.length - 1;
+  while (a < b && Math.abs(d[a]) < u) a++;
+  while (b > a && Math.abs(d[b]) < u) b--;
+  return [a / buf.sampleRate, (b + 1) / buf.sampleRate];
 }
 
-function arrancarCancion() {
-  if (!bufCancion || fuenteCancion) return;
-  if (ctx.state !== 'running') ctx.resume();
+function prepararCanciones() {
+  for (const n in CANCIONES) can[n] = { ini: null, full: null };
+  // primero el pedacito de la intro (suena enseguida), después las enteras
+  if (CANCIONES.intro.ini) bajar(CANCIONES.intro.ini, (b) => { can.intro.ini = b; revisar(); });
+  bajar(CANCIONES.intro.full, (b) => {
+    can.intro.full = b; [can.intro.a, can.intro.b] = bordes(b); revisar();
+    bajar(CANCIONES.partido.full, (b2) => { can.partido.full = b2; [can.partido.a, can.partido.b] = bordes(b2); revisar(); });
+  });
+  setInterval(() => { if (ctx.state !== 'running') ctx.resume(); revisar(); }, 500);
+}
+
+function fuente(buf, loop, a, b, offset, gain) {
   const s = ctx.createBufferSource();
-  s.buffer = bufCancion;
-  s.loop = true;                           // al terminar vuelve a empezar, sin cortes
-  s.connect(gainCancion);
-  s.start();
-  fuenteCancion = s;
-  estadoCancion = 'sonando';
+  s.buffer = buf;
+  if (loop) { s.loop = true; s.loopStart = a || 0; s.loopEnd = b || buf.duration; }
+  s.connect(gain);
+  s.start(ctx.currentTime + 0.02, offset || 0);
+  return s;
 }
 
-// Plan B: si Web Audio no pudo con el MP3, el elemento <audio> de siempre
-function usarElemento() {
-  if (cancionEl) return;
-  cancionEl = new Audio();
-  cancionEl.loop = true; cancionEl.volume = 0.85; cancionEl.preload = 'auto';
-  cancionEl.src = URL_CANCION_EL;
-  intentarElemento();
-}
-function intentarElemento() {
-  if (!cancionEl || !cancionEl.paused) return;
-  try { const p = cancionEl.play(); if (p && p.catch) p.catch(() => {}); } catch (e) { /* bloqueado */ }
+function apagar(x, seg) {
+  if (!x) return;
+  const t = ctx.currentTime;
+  x.gain.gain.cancelScheduledValues(t);
+  x.gain.gain.setValueAtTime(x.gain.gain.value, t);
+  x.gain.gain.linearRampToValueAtTime(0, t + seg);
+  try { x.fuente.stop(t + seg + 0.05); } catch (e) { /* ya parada */ }
 }
 
-export function cancion() { arrancarCancion(); intentarElemento(); return true; }
-export function cancionSonando() {
-  if (fuenteCancion) return ctx.state === 'running';
-  return !!cancionEl && !cancionEl.paused;
+// Arranca/cambia lo que tiene que sonar según 'pedida'
+function revisar() {
+  if (!ctx || !pedida) return;
+  if (ctx.state !== 'running') ctx.resume();
+  const c = can[pedida];
+  if (!c) return;
+  // ¿el pedacito inicial terminó o ya está la entera? pasar a la entera sin corte
+  if (actual && actual.nombre === pedida && actual.usandoIni && c.full) {
+    const pos = ctx.currentTime - actual.inicio;
+    const g = ctx.createGain(); g.gain.value = 0; g.connect(master);
+    const f = fuente(c.full, true, c.a, c.b, Math.min(pos, c.full.duration - 1), g);
+    g.gain.setValueAtTime(0, ctx.currentTime + 0.02);
+    g.gain.linearRampToValueAtTime(0.85, ctx.currentTime + 0.12);
+    apagar(actual, 0.1);
+    actual = { nombre: pedida, fuente: f, gain: g, inicio: actual.inicio, usandoIni: false };
+    estadoCancion = pedida + ' sonando';
+    return;
+  }
+  if (actual && actual.nombre === pedida) return;
+  const buf = c.full || c.ini;
+  if (!buf) { estadoCancion = pedida + ' cargando'; return; }
+  const viejo = actual;
+  const g = ctx.createGain(); g.gain.value = 0; g.connect(master);
+  const f = fuente(buf, !!c.full, c.a, c.b, 0, g);
+  g.gain.setValueAtTime(0, ctx.currentTime + 0.02);
+  g.gain.linearRampToValueAtTime(0.85, ctx.currentTime + (viejo ? 0.8 : 0.05));
+  actual = { nombre: pedida, fuente: f, gain: g, inicio: ctx.currentTime + 0.02, usandoIni: !c.full };
+  if (actual.usandoIni) f.onended = () => { if (actual && actual.fuente === f) { actual = null; revisar(); } };
+  apagar(viejo, 0.8);
+  estadoCancion = pedida + (actual.usandoIni ? ' sonando (inicio)' : ' sonando');
 }
-export function estadoAudio() { return 'ctx ' + (ctx ? ctx.state : 'no') + ' · canción ' + estadoCancion + (cancionEl ? ' (elemento ' + (cancionEl.paused ? 'pausado' : 'sonando') + ')' : ''); }
+
+// 'intro' fuera del partido, 'partido' durante el partido (siempre desde el principio)
+export function musica(nombre) {
+  if (pedida === nombre) return;
+  pedida = nombre;
+  revisar();
+}
+export function cancion() { revisar(); return true; }
+export function cancionSonando() { return !!actual && ctx.state === 'running'; }
+export function estadoAudio() { return 'ctx ' + (ctx ? ctx.state : 'no') + ' · ' + estadoCancion; }
 
 export function tema(nombre) {
   nombre = null;                           // solo suena "Favela Futebol"
