@@ -9,7 +9,7 @@ import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 4;
+const VERSION = 5;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -437,7 +437,7 @@ async function arrancar() {
     if (debugOn && ahora - ultimoDebug > 500) {
       ultimoDebug = ahora;
       const i = R.info();
-      hud.debug('v' + VERSION + ' ' + i.calidad + ' ' + i.fps + 'fps esc ' + i.escala + (i.mitad ? ' 30fps' : '') + '\ncalls ' + i.calls + ' tris ' + i.tris);
+      hud.debug('v' + VERSION + ' ' + i.calidad + ' ' + i.fps + 'fps esc ' + i.escala + (i.mitad ? ' 30fps' : '') + '\ncalls ' + i.calls + ' tris ' + i.tris + '\n' + audio.estadoAudio());
     }
   }
   hud.enIntro(intro.activa || !!vista);

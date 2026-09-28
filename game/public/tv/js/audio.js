@@ -6,7 +6,8 @@ let temaActual = null, pasoActual = 0, proximo = 0, velMul = 1, compas = 0;
 const voces = {};
 let hablando = 0, analizador = null;
 let cancionEl = null;
-const URL_CANCION = '/assets/music/favela_futebol.mp3';
+const URL_CANCION = '/assets/music/favela_futebol_mono.mp3';
+const URL_CANCION_EL = '/assets/music/favela_futebol.mp3';
 const VOL_MUSICA = 0.55;
 
 const mtof = (m) => 440 * Math.pow(2, (m - 69) / 12);
@@ -56,11 +57,11 @@ export function medir() {
   if (!analizador) return null;
   const d = new Float32Array(analizador.fftSize); analizador.getFloatTimeDomainData(d);
   let s = 0, p = 0; for (const x of d) { s += x * x; p = Math.max(p, Math.abs(x)); }
-  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: cancionEl ? { sonando: !cancionEl.paused, t: Math.round(cancionEl.currentTime), dur: Math.round(cancionEl.duration || 0) } : null };
+  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: { sonando: cancionSonando(), estado: estadoCancion, dur: bufCancion ? Math.round(bufCancion.duration) : 0, elemento: !!cancionEl } };
 }
 
 export function audioActivo() { return ctx && ctx.state === 'running' && cancionSonando(); }
-export function desbloquear() { if (ctx && ctx.state !== 'running') ctx.resume(); intentarCancion(); }
+export function desbloquear() { if (ctx && ctx.state !== 'running') ctx.resume(); arrancarCancion(); intentarElemento(); }
 
 // ---------------------------------------------------------------------
 //  Bloques de síntesis
@@ -212,34 +213,54 @@ function tocarPaso(tema, i, t, paso) {
 }
 
 // ---------------------------------------------------------------------
-//  Canción del partido ("Favela Futebol"): un <audio> que se reproduce
-//  en streaming (no se decodifica entera en memoria: la TV lo agradece)
+//  Canción "Favela Futebol": suena desde que abre la TV y nunca para.
+//  Va por Web Audio (buffer en loop), que es lo que los navegadores de TV
+//  dejan sonar sin tocar nada (el elemento <audio> suele estar bloqueado).
+//  Se usa la versión mono para gastar la mitad de memoria al decodificar.
 // ---------------------------------------------------------------------
+let bufCancion = null, fuenteCancion = null, gainCancion = null, estadoCancion = 'cargando';
 function prepararCancion() {
-  // Elemento <audio> directo (no pasa por Web Audio): así suena aunque el
-  // AudioContext esté suspendido, y los navegadores de TV lo manejan mejor.
+  gainCancion = ctx.createGain(); gainCancion.gain.value = 0.85; gainCancion.connect(master);
+  fetch(URL_CANCION).then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.arrayBuffer(); }).then((ab) => {
+    estadoCancion = 'decodificando';
+    // forma con callbacks: funciona también en navegadores viejos
+    ctx.decodeAudioData(ab, (buf) => { bufCancion = buf; estadoCancion = 'lista'; arrancarCancion(); }, () => { estadoCancion = 'error al decodificar'; usarElemento(); });
+  }).catch((e) => { estadoCancion = 'error al bajar: ' + e.message; usarElemento(); });
+  // si el contexto arrancó suspendido, se insiste
+  setInterval(() => { if (ctx.state !== 'running') ctx.resume(); arrancarCancion(); if (cancionEl && cancionEl.paused) intentarElemento(); }, 1500);
+}
+
+function arrancarCancion() {
+  if (!bufCancion || fuenteCancion) return;
+  if (ctx.state !== 'running') ctx.resume();
+  const s = ctx.createBufferSource();
+  s.buffer = bufCancion;
+  s.loop = true;                           // al terminar vuelve a empezar, sin cortes
+  s.connect(gainCancion);
+  s.start();
+  fuenteCancion = s;
+  estadoCancion = 'sonando';
+}
+
+// Plan B: si Web Audio no pudo con el MP3, el elemento <audio> de siempre
+function usarElemento() {
+  if (cancionEl) return;
   cancionEl = new Audio();
-  cancionEl.preload = 'auto';
-  cancionEl.loop = true;                   // nunca para: al terminar vuelve a empezar
-  cancionEl.volume = 0.85;
-  cancionEl.src = URL_CANCION;
-  cancionEl.addEventListener('ended', () => { cancionEl.currentTime = 0; intentarCancion(); });
-  cancionEl.addEventListener('pause', () => setTimeout(intentarCancion, 300));
-  intentarCancion();
-  // si el navegador la bloqueó hasta que alguien toque algo, se reintenta sola
-  setInterval(intentarCancion, 2000);
+  cancionEl.loop = true; cancionEl.volume = 0.85; cancionEl.preload = 'auto';
+  cancionEl.src = URL_CANCION_EL;
+  intentarElemento();
 }
-
-function intentarCancion() {
+function intentarElemento() {
   if (!cancionEl || !cancionEl.paused) return;
-  try {
-    const p = cancionEl.play();
-    if (p && p.catch) p.catch(() => { /* bloqueado: se reintenta con la próxima tecla */ });
-  } catch (e) { /* idem */ }
+  try { const p = cancionEl.play(); if (p && p.catch) p.catch(() => {}); } catch (e) { /* bloqueado */ }
 }
 
-export function cancion() { intentarCancion(); return true; }
-export function cancionSonando() { return !!cancionEl && !cancionEl.paused; }
+export function cancion() { arrancarCancion(); intentarElemento(); return true; }
+export function cancionSonando() {
+  if (fuenteCancion) return ctx.state === 'running';
+  return !!cancionEl && !cancionEl.paused;
+}
+export function estadoAudio() { return 'ctx ' + (ctx ? ctx.state : 'no') + ' · canción ' + estadoCancion + (cancionEl ? ' (elemento ' + (cancionEl.paused ? 'pausado' : 'sonando') + ')' : ''); }
 
 export function tema(nombre) {
   nombre = null;                           // solo suena "Favela Futebol"
