@@ -1,5 +1,8 @@
 {
   "princess_name": "princess_name.mp3",
   "princess_power": "princess_power.mp3",
-  "princess_power_battle": "princess_power_battle.mp3"
+  "princess_power_battle": "princess_power_battle.mp3",
+  "ice_name": "ice_name.mp3",
+  "ice_power": "ice_power.mp3",
+  "ice_power_battle": "ice_power_battle.mp3"
 }
