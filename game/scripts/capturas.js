@@ -67,6 +67,8 @@ server.listen(process.env.PORT, async () => {
       b.owner = -1; b.x = 17.6; b.z = 0.5; b.y = 0.6; b.vx = 12; b.vz = 0; b.vy = 1; b.ultimo = 0; b.fx = 2; b.spinT = 0;
       await espera(700);
       await tv.screenshot({ path: path.join(OUT, '08-gol.png') });
+      await espera(1600);
+      await tv.screenshot({ path: path.join(OUT, '08b-baile.png') });
       // segundo gol del mismo → pistola
       while (juego.sub !== '') await espera(50);
       b = juego.pelota;

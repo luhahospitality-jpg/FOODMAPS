@@ -58,13 +58,6 @@ const cil = (rt, rb, h, s) => new THREE.CylinderGeometry(rt, rb, h, s || (esTV ?
 
 function oscurecer(hex, k) { const c = new THREE.Color(hex); c.multiplyScalar(k); return '#' + c.getHexString(); }
 
-// Material compartido por todos los personajes (colores por vértice)
-let matPersonaje = null;
-function matPJ() {
-  if (!matPersonaje) matPersonaje = material({ vertexColors: true, rough: 0.65 });
-  return matPersonaje;
-}
-
 // ---------------------------------------------------------------------
 //  Texturas de canvas
 // ---------------------------------------------------------------------
@@ -83,7 +76,7 @@ export function canvasTex(w, h, dibujar, opts) {
 
 // Sombra circular + aro del equipo en una sola textura
 const texPiso = [];
-function texturaPiso(team) {
+export function texturaPiso(team) {
   if (texPiso[team]) return texPiso[team];
   texPiso[team] = canvasTex(128, 128, (g) => {
     const gr = g.createRadialGradient(64, 64, 4, 64, 64, 60);
@@ -100,70 +93,7 @@ function texturaPiso(team) {
   return texPiso[team];
 }
 
-// ---------------------------------------------------------------------
-//  Personaje
-// ---------------------------------------------------------------------
-function geoTronco(cfg) {
-  const piel = cfg.piel, pielO = oscurecer(cfg.piel, 0.72);
-  const L = [];
-  L.push(pieza(caja(0.3, 0.2, 0.5), cfg.short, [0, 0.98, 0]));
-  L.push(pieza(caja(0.31, 0.06, 0.51, 0.02), cfg.short2, [0, 1.09, 0]));
-  L.push(pieza(caja(0.28, 0.48, 0.48, 0.1), piel, [0, 1.34, 0]));
-  L.push(pieza(caja(0.05, 0.12, 0.16, 0.02), pielO, [0.13, 1.4, 0.1]));      // tatuaje en el pecho
-  L.push(pieza(caja(0.04, 0.1, 0.1, 0.02), oscurecer(cfg.piel, 0.85), [0.14, 1.2, 0]));
-  L.push(pieza(cil(0.075, 0.08, 0.14), piel, [0, 1.6, 0]));
-  L.push(pieza(esfera(0.15), piel, [0.01, 1.76, 0], null, [1, 1.1, 0.95]));
-  L.push(pieza(esfera(0.035, 6, 5), piel, [0.0, 1.76, 0.145]));                // orejas
-  L.push(pieza(esfera(0.035, 6, 5), piel, [0.0, 1.76, -0.145]));
-  L.push(pieza(new THREE.BoxGeometry(0.03, 0.035, 0.035), '#140c08', [0.15, 1.79, 0.055]));
-  L.push(pieza(new THREE.BoxGeometry(0.03, 0.035, 0.035), '#140c08', [0.15, 1.79, -0.055]));
-  L.push(pieza(new THREE.BoxGeometry(0.03, 0.015, 0.06), '#4a2618', [0.15, 1.69, 0]));
-  L.push(pieza(new THREE.BoxGeometry(0.035, 0.012, 0.05), cfg.pelo, [0.155, 1.835, 0.055]));   // cejas
-  L.push(pieza(new THREE.BoxGeometry(0.035, 0.012, 0.05), cfg.pelo, [0.155, 1.835, -0.055]));
-  const pelo = cfg.pelo;
-  const casco = (r, color, y) => pieza(new THREE.SphereGeometry(r, SPH[0], SPH[1] >> 1, 0, Math.PI * 2, 0, Math.PI / 2), color, [-0.01, y, 0], null, [1, 0.95, 1]);
-  if (cfg.peinado === 'rodete') {
-    L.push(casco(0.158, pelo, 1.8));
-    L.push(pieza(esfera(0.075), pelo, [-0.13, 1.9, 0]));
-    L.push(pieza(caja(0.08, 0.2, 0.08), pelo, [-0.17, 1.72, 0], [0, 0, -0.3]));
-  } else if (cfg.peinado === 'platinado') {
-    L.push(casco(0.158, pelo, 1.8));
-    L.push(pieza(caja(0.2, 0.08, 0.12, 0.03), pelo, [0.02, 1.93, 0]));
-  } else if (cfg.peinado === 'rapado') {
-    L.push(casco(0.152, pelo, 1.79));
-    L.push(pieza(new THREE.BoxGeometry(0.02, 0.05, 0.12), pelo, [0.155, 1.72, 0]));      // barba
-  } else if (cfg.peinado === 'piluso') {
-    L.push(pieza(cil(0.15, 0.165, 0.13), cfg.short, [0, 1.9, 0]));
-    L.push(pieza(cil(0.25, 0.25, 0.025, esTV ? 10 : 16), oscurecer(cfg.short, 0.8), [0, 1.84, 0]));
-    L.push(pieza(new THREE.TorusGeometry(0.08, 0.012, 4, 10), '#e8b923', [0.03, 1.56, 0], [Math.PI / 2, 0, 0], [1, 1.4, 1]));  // cadena
-  }
-  return fusionar(L);
-}
-
-function geoBrazo(cfg, derecho) {
-  const piel = cfg.piel;
-  const L = [];
-  L.push(pieza(caja(0.12, 0.34, 0.12), piel, [0, -0.17, 0]));
-  L.push(pieza(caja(0.105, 0.3, 0.105), piel, [0, -0.46, 0]));
-  L.push(pieza(caja(0.11, 0.18, 0.11, 0.03), oscurecer(piel, 0.7), [0.003, derecho ? -0.44 : -0.2, 0]));   // tatuajes
-  L.push(pieza(esfera(0.065, 8, 6), piel, [0, -0.66, 0]));
-  return fusionar(L);
-}
-
-function geoPierna(cfg, derecha) {
-  const lado = derecha ? -1 : 1;
-  const L = [];
-  L.push(pieza(caja(0.25, 0.44, 0.23), cfg.short, [0, -0.2, 0]));
-  L.push(pieza(new THREE.BoxGeometry(0.2, 0.44, 0.02), cfg.short2, [0, -0.2, lado * 0.118]));
-  L.push(pieza(caja(0.13, 0.34, 0.13), cfg.piel, [0, -0.58, 0]));
-  L.push(pieza(caja(0.145, 0.14, 0.145, 0.03), '#f4f4f4', [0, -0.77, 0]));
-  L.push(pieza(caja(0.32, 0.12, 0.16, 0.05), cfg.zap, [0.06, -0.885, 0]));
-  L.push(pieza(new THREE.BoxGeometry(0.2, 0.04, 0.165), cfg.zap2, [0.05, -0.87, 0]));
-  L.push(pieza(new THREE.BoxGeometry(0.33, 0.03, 0.165), '#ffffff', [0.06, -0.935, 0]));
-  return fusionar(L);
-}
-
-function geoPistola() {
+export function geoPistola() {
   const L = [];
   L.push(pieza(new THREE.BoxGeometry(0.26, 0.08, 0.05), '#222222', [0.1, 0, 0]));
   L.push(pieza(new THREE.BoxGeometry(0.07, 0.13, 0.05), '#e8b923', [0.0, -0.08, 0], [0, 0, -0.25]));
@@ -171,7 +101,7 @@ function geoPistola() {
   return fusionar(L);
 }
 
-function geoEstrellas() {
+export function geoEstrellas() {
   const forma = new THREE.Shape();
   for (let i = 0; i < 10; i++) {
     const r = i % 2 ? 0.045 : 0.1, a = (i / 10) * Math.PI * 2;
@@ -185,21 +115,8 @@ function geoEstrellas() {
   return fusionar(L);
 }
 
-// Cache de geometrías por personaje (se comparten entre jugadores)
-const cacheGeo = {};
-function geosDe(ch) {
-  if (cacheGeo[ch]) return cacheGeo[ch];
-  const cfg = PERSONAJES[ch];
-  cacheGeo[ch] = {
-    tronco: geoTronco(cfg), brazoI: geoBrazo(cfg, false), brazoD: geoBrazo(cfg, true),
-    piernaI: geoPierna(cfg, false), piernaD: geoPierna(cfg, true),
-  };
-  return cacheGeo[ch];
-}
-let geoPist = null, geoEst = null, matEst = null;
-
 // Etiqueta (J1 / CPU + pistola + barra de carga) como sprite
-function crearEtiqueta() {
+export function crearEtiqueta() {
   const c = document.createElement('canvas');
   c.width = 256; c.height = 96;
   const tex = new THREE.CanvasTexture(c);
@@ -246,150 +163,6 @@ function crearEtiqueta() {
     tex.needsUpdate = true;
   }
   return { spr, actualizar };
-}
-
-export function crearJugador(ch, team) {
-  const g = geosDe(ch);
-  const mat = matPJ();
-  const raiz = new THREE.Group();
-  const giro = new THREE.Group();     // rotación por dirección
-  const pose = new THREE.Group();     // inclinaciones (barrida, KO...)
-  raiz.add(giro); giro.add(pose);
-  const tronco = new THREE.Mesh(g.tronco, mat);
-  pose.add(tronco);
-  const mk = (geo, x, y, z) => {
-    const piv = new THREE.Group(); piv.position.set(x, y, z);
-    const m = new THREE.Mesh(geo, mat); piv.add(m); pose.add(piv);
-    m.castShadow = !esTV;
-    return piv;
-  };
-  const brazoI = mk(g.brazoI, 0, 1.5, 0.3);
-  const brazoD = mk(g.brazoD, 0, 1.5, -0.3);
-  const piernaI = mk(g.piernaI, 0, 0.95, 0.13);
-  const piernaD = mk(g.piernaD, 0, 0.95, -0.13);
-  tronco.castShadow = !esTV;
-  if (!geoPist) geoPist = geoPistola();
-  const pistola = new THREE.Mesh(geoPist, mat);
-  pistola.position.set(0.02, -0.68, 0);
-  pistola.rotation.z = Math.PI / 2;
-  pistola.visible = false;
-  brazoD.add(pistola);
-
-  const piso = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1.5), new THREE.MeshBasicMaterial({ map: texturaPiso(team), transparent: true, depthWrite: false }));
-  piso.rotation.x = -Math.PI / 2;
-  piso.position.y = 0.03;
-  piso.renderOrder = 1;
-  giro.add(piso);
-
-  if (!geoEst) { geoEst = geoEstrellas(); matEst = new THREE.MeshBasicMaterial({ vertexColors: true, side: THREE.DoubleSide }); }
-  const estrellas = new THREE.Mesh(geoEst, matEst);
-  estrellas.position.y = 2.05;
-  estrellas.visible = false;
-  raiz.add(estrellas);
-
-  const etiqueta = crearEtiqueta();
-  etiqueta.spr.position.y = 2.55;
-  raiz.add(etiqueta.spr);
-
-  return { raiz, giro, pose, tronco, brazoI, brazoD, piernaI, piernaD, pistola, piso, estrellas, etiqueta, fase: 0, ch, team };
-}
-
-// Animación procedimental. a = código de anim, t = tiempo en esa anim, vel = velocidad
-export function animar(p, a, t, vel, dt, extra) {
-  const { pose, brazoI, brazoD, piernaI, piernaD, estrellas } = p;
-  let py = 0, pz = 0, px = 0, pyR = 0;
-  let bI = 0.12, bD = 0.12, pI = 0, pD = 0, bIx = 0.12, bDx = -0.12, pIx = 0, pDx = 0;
-  estrellas.visible = false;
-  const corre = Math.min(1, vel / 7);
-  p.fase += dt * (4 + vel * 1.5);
-  const s = Math.sin(p.fase);
-  switch (a) {
-    case 1: { // patada
-      const k = Math.min(1, t / 0.28);
-      pD = k < 0.35 ? -0.9 * (k / 0.35) : -0.9 + 2.3 * ((k - 0.35) / 0.65);
-      pI = -0.15; bI = 0.6; bD = -0.5; px = -0.05;
-      pz = -0.12 * Math.sin(k * Math.PI);
-      break;
-    }
-    case 2: { // barrida
-      pz = 1.2; py = 0.28; pD = 1.3; pI = 0.5; bI = -1.2; bD = 1.5; bIx = 0.5; bDx = -0.5;
-      break;
-    }
-    case 3: { // voadora (patada voladora)
-      const k = Math.min(1, t / 0.65);
-      pz = 0.35 + 0.5 * Math.sin(k * Math.PI);
-      pD = 1.9 * Math.sin(Math.min(1, k * 1.6) * Math.PI * 0.5);
-      pI = -0.9; bI = 1.6; bD = 2.2; bIx = 0.6; bDx = -0.6;
-      break;
-    }
-    case 4: { // mareado ("tuneado")
-      pz = Math.sin(t * 7) * 0.18; px = Math.cos(t * 5) * 0.15;
-      bI = 0.4 + Math.sin(t * 9) * 0.4; bD = 0.4 - Math.sin(t * 9) * 0.4; bIx = 0.5; bDx = -0.5;
-      estrellas.visible = true; estrellas.rotation.y = t * 6;
-      break;
-    }
-    case 5: { // KO (desmayado)
-      const k = Math.min(1, t / 0.35);
-      pz = 1.5 * k; py = 0.22 * k;
-      bI = 2.6; bD = 2.4; pI = 0.25; pD = -0.1; bIx = 0.3; bDx = -0.3;
-      estrellas.visible = true; estrellas.rotation.y = t * 4;
-      break;
-    }
-    case 6: { // caída
-      const k = Math.min(1, t / 0.2);
-      const sube = t > 0.6 ? Math.min(1, (t - 0.6) / 0.3) : 0;
-      pz = -1.35 * k * (1 - sube); py = 0.2 * k * (1 - sube);
-      bI = 2.2 * (1 - sube); bD = 2.2 * (1 - sube); pI = 0.3; pD = -0.3;
-      break;
-    }
-    case 7: { // firuletes
-      const tipo = extra || 1;
-      if (tipo === 1) { // elástico
-        const k = Math.min(1, t / 0.5);
-        pDx = Math.sin(k * Math.PI * 2) * 0.7; pD = 0.4; px = Math.sin(k * Math.PI * 2) * 0.2; bI = 0.9; bD = 0.6; bIx = 0.8; bDx = -0.8;
-      } else if (tipo === 2) { // pisada
-        const k = Math.min(1, t / 0.5);
-        pD = k < 0.4 ? 0.9 : 0.9 - (k - 0.4) * 2; py = 0.05; bI = 0.5; bD = 0.3;
-      } else if (tipo === 3) { // roleta
-        const k = Math.min(1, t / 0.7);
-        pyR = k * Math.PI * 2; pD = 0.5 * Math.sin(k * Math.PI * 2); pI = -0.3; bI = 0.9; bD = 0.9; bIx = 0.9; bDx = -0.9;
-      } else { // lambreta: taco hacia arriba
-        const k = Math.min(1, t / 0.4);
-        pD = -2.2 * Math.sin(Math.min(1, k) * Math.PI); pI = 0.1; pz = -0.15; bI = 0.8; bD = 0.8; bIx = 0.6; bDx = -0.6;
-      }
-      break;
-    }
-    case 8: { // baile / provocación
-      px = Math.sin(t * 12) * 0.2; pyR = Math.sin(t * 6) * 0.5;
-      bI = 2.6 + Math.sin(t * 14) * 0.4; bD = 2.6 - Math.sin(t * 14) * 0.4; bIx = 0.3; bDx = -0.3;
-      pI = Math.sin(t * 12) * 0.4; pD = -pI;
-      break;
-    }
-    case 9: { // festejo de gol
-      py = Math.abs(Math.sin(t * 7)) * 0.4;
-      bI = 2.9; bD = 2.9; bIx = 0.4 + Math.sin(t * 14) * 0.3; bDx = -0.4 - Math.sin(t * 14) * 0.3;
-      pI = Math.sin(t * 14) * 0.3; pD = -pI; pyR = t * 3;
-      break;
-    }
-    case 10: { // disparo
-      bD = 1.55; bDx = 0; bI = 0.3; px = -0.03;
-      pI = s * 0.6 * corre; pD = -pI;
-      break;
-    }
-    default: { // correr / quieto
-      pI = s * 0.85 * corre; pD = -pI;
-      bI = -s * 0.7 * corre + 0.1; bD = s * 0.7 * corre + 0.1;
-      py = Math.abs(Math.cos(p.fase)) * 0.06 * corre + Math.sin(performance.now() * 0.003) * 0.01;
-      pz = -0.12 * corre;
-    }
-  }
-  pose.position.set(0, py, 0);
-  pose.rotation.set(px, pyR, pz);
-  brazoI.rotation.set(-bIx, 0, bI);
-  brazoD.rotation.set(-bDx, 0, bD);
-  piernaI.rotation.set(pIx, 0, pI);
-  piernaD.rotation.set(pDx, 0, pD);
-  if (a === 10 || p.pistola.visible) brazoD.rotation.z = Math.max(bD, a === 10 ? 1.55 : bD);
 }
 
 // ---------------------------------------------------------------------

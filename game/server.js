@@ -11,7 +11,7 @@ const express = require('express');
 const { Server } = require('socket.io');
 const QRCode = require('qrcode');
 
-const VERSION = 1;
+const VERSION = 2;
 const PORT = process.env.PORT || 3000;
 const TICK = 20;
 const DT = 1 / TICK;
@@ -171,7 +171,7 @@ function crearJugador(i) {
     inp: { mx: 0, mz: 0, hold: false, holdT: 0 },
     taps: [], tapResolver: 0,
     golpeados: null,
-    trucoN: 0, humillado: 0, inv: 0, koT: 0,
+    trucoN: 0, humillado: 0, inv: 0, koT: 0, estirado: 0,
     balas: 0, racha: 0, goles: 0, trucos: 0, knocks: 0,
     ia: { t: rnd() * 0.3, mx: 0, mz: 0, pide: 0 },
   };
@@ -289,7 +289,8 @@ function patear(j, power, curve, lift, esVolea) {
   const lado = j.team === 0 ? 1 : -1;
   const gx = lado * (HX + 0.6);
   let aim = j.inp.mz * 1.7;
-  const error = (1.3 - pj.fin) * (0.6 + power) * 1.9;
+  let error = (1.3 - pj.fin) * (0.6 + power) * 1.9;
+  if (j.bot) error *= 1.5;           // la máquina define peor
   aim += (rnd() - 0.5) * 2 * error;
   aim = clamp(aim, -GOAL_HW - 1.2, GOAL_HW + 1.2);
   const dx = gx - b.x, dz = aim - b.z;
@@ -468,7 +469,7 @@ function accionPistola(j) {
 // ---------------------------------------------------------------------
 function factorBot(j) {
   const dif = juego.marcador[j.team] - juego.marcador[1 - j.team];
-  return clamp(0.87 - dif * 0.035, 0.78, 0.97);   // un poco de "goma"
+  return clamp(0.8 - dif * 0.05, 0.68, 0.9);   // más lentos que un humano, con "goma"
 }
 
 function pensarBot(j) {
@@ -476,7 +477,7 @@ function pensarBot(j) {
   ia.t -= DT;
   if (ia.pide > 0) ia.pide -= DT;
   if (ia.t > 0) { j.inp.mx = ia.mx; j.inp.mz = ia.mz; return; }
-  ia.t = 0.16 + rnd() * 0.14;
+  ia.t = 0.26 + rnd() * 0.2;       // reaccionan más lento que antes
   if (!activo(j) || juego.sub !== '') { ia.mx = ia.mz = 0; j.inp.mx = j.inp.mz = 0; return; }
 
   const b = juego.pelota;
@@ -540,8 +541,8 @@ function pensarBot(j) {
     if (voy) {
       tx = px - (b.owner >= 0 ? lado * 0.5 : 0); tz = pz;
       if (b.owner >= 0) {
-        if (miD < 2.6 && rnd() < 0.22) accionBarrida(j);
-        else if (miD < 1.8 && rnd() < 0.08) accionVoadora(j);
+        if (miD < 2.4 && rnd() < 0.09) accionBarrida(j);
+        else if (miD < 1.6 && rnd() < 0.03) accionVoadora(j);
       }
     } else if (b.owner >= 0 || lado * b.x < 4) {
       // el que no presiona cuida el arco (de arquero)
@@ -566,6 +567,8 @@ function actualizarJugador(j) {
   if (j.humillado > 0) j.humillado -= DT;
   if (j.inv > 0) j.inv -= DT;
   if (j.inp.hold) j.inp.holdT += DT;
+  // analógico estirado al máximo y sostenido = corre más rápido
+  if (!j.bot && hypot(j.inp.mx, j.inp.mz) > 0.9) j.estirado += DT; else j.estirado = 0;
   const nivel = NIVELES[juego.nivel];
 
   // resolver el doble toque (barrida) si no llegó el tercero
@@ -631,6 +634,7 @@ function actualizarJugador(j) {
       const conPelota = tienePelota(j);
       if (conPelota) vmax *= j.inp.hold ? 0.7 : 0.9;
       else if (j.inp.hold) vmax *= 1.18;            // sin pelota, mantener el pad = sprint
+      if (j.estirado > 0.35) vmax *= conPelota ? 1.12 : 1.25;
       if (j.humillado > 0) vmax *= 0.55;
       if (j.estado === 'baile') vmax *= 0.3;
       if (j.bot) vmax *= factorBot(j);
@@ -842,7 +846,7 @@ function robos(o) {
     if (r.estado !== 'normal' || r.cd.robo > 0 || r.humillado > 0) continue;
     if (hypot(r.x - b.x, r.z - b.z) < 1.0) {
       let chance = 0.09 * (1.35 - o.pj.drible * 0.5);
-      if (r.bot) chance *= 0.7;
+      if (r.bot) chance *= 0.4;
       if (rnd() < chance) {
         b.owner = r.slot; b.ultimo = r.slot;
         o.cd.grab = 0.7; r.cd.robo = 0.5;
@@ -889,7 +893,7 @@ function gol(team) {
   const b = juego.pelota;
   juego.marcador[team]++;
   juego.sub = 'goal';
-  juego.subT = 3.4;
+  juego.subT = 4.6;
   const autor = b.ultimo >= 0 ? juego.jug[b.ultimo] : null;
   let enContra = false, poder = false;
   if (autor && autor.team === team) {
@@ -902,7 +906,9 @@ function gol(team) {
       autor.balas = BALAS_PISTOLA;
       poder = true;
     }
-    setEstado(autor, 'gol', 3.0);
+    setEstado(autor, 'gol', 4.4);
+    autor.vx = autor.vz = 0;
+    autor.face = Math.PI / 2;          // mira a la cámara para el baile
   } else {
     enContra = true;
     for (const j of juego.jug) j.racha = 0;
@@ -1008,7 +1014,7 @@ function estadoPublico() {
     st.p = juego.jug.map((j) => [
       j.slot, r100(j.x), r100(j.z), r100(j.y), Math.round(j.face * 100),
       j.anim, j.animSeq, j.ch, j.team,
-      (j.inv > 0 ? 1 : 0) | (j.inp.hold && tienePelota(j) ? 2 : 0) | (j.humillado > 0 ? 4 : 0) | (j.bot ? 8 : 0),
+      (j.inv > 0 ? 1 : 0) | (j.inp.hold && tienePelota(j) ? 2 : 0) | (j.humillado > 0 ? 4 : 0) | (j.bot ? 8 : 0) | (j.estirado > 0.35 ? 16 : 0),
       j.trucoN, Math.ceil(j.koT), j.balas, j.goles,
       j.inp.hold && tienePelota(j) ? Math.round(clamp((j.inp.holdT - 0.25) / 1.0, 0, 1) * 100) : 0,
       r100(j.vx), r100(j.vz),
@@ -1034,7 +1040,7 @@ function estadoPersonal(i) {
   if (j && juego.fase !== 'select') {
     o.bal = tienePelota(j) ? 1 : 0;
     o.balas = j.balas; o.cdP = j.cd.pistola > 0 ? 1 : 0;
-    o.est = j.estado; o.ko = Math.ceil(j.koT); o.estT = Math.ceil(j.estT);
+    o.est = j.estado; o.ko = Math.ceil(j.koT); o.estT = Math.ceil(j.estT); o.corre = j.estirado > 0.35 ? 1 : 0;
     o.goles = j.goles; o.racha = j.racha;
     o.cdT = j.cd.truco > 0 ? 1 : 0; o.cdB = j.cd.barrida > 0 ? 1 : 0; o.cdV = j.cd.voadora > 0 ? 1 : 0;
   }
@@ -1069,12 +1075,18 @@ function ocuparSlot(s, sock) {
   s.pid = sock.data.pid || sock.id;
   s.nombre = 'J' + (s.i + 1);
   s.listo = false;
-  // si el personaje lo tiene otro humano, busco uno libre
-  const usados = new Set(juego.slots.filter((x) => x !== s && x.humano).map((x) => x.ch));
-  if (usados.has(s.ch)) { const libre = PERSONAJES.findIndex((p, k) => !usados.has(k)); if (libre >= 0) s.ch = libre; }
-  if (juego.jug[s.i]) juego.jug[s.i].bot = false;
+  const j = juego.jug[s.i];
+  if (j && juego.fase !== 'select') {
+    // entra a mitad de partido: se queda con el jugador que manejaba la máquina
+    j.bot = false; j.inp.mx = j.inp.mz = 0; j.inp.hold = false;
+    s.ch = j.ch;
+  } else {
+    // si el personaje lo tiene otro humano, busco uno libre
+    const usados = new Set(juego.slots.filter((x) => x !== s && x.humano).map((x) => x.ch));
+    if (usados.has(s.ch)) { const libre = PERSONAJES.findIndex((p, k) => !usados.has(k)); if (libre >= 0) s.ch = libre; }
+  }
   sock.emit('bienvenida', { slot: s.i, v: VERSION, personajes: PERSONAJES.map((p) => ({ id: p.id, nombre: p.nombre })), niveles: NIVELES.map((n) => ({ id: n.id, nombre: n.nombre })) });
-  repartirPersonajesBots();
+  if (juego.fase === 'select') repartirPersonajesBots();
 }
 
 function hola(sock, datos) {
@@ -1083,10 +1095,9 @@ function hola(sock, datos) {
   // ¿vuelve alguien que se había desconectado?
   const previo = juego.slots.find((s) => !s.humano && s.pid === sock.data.pid);
   if (previo) { ocuparSlot(previo, sock); juego.mirando.delete(sock.id); evento('entra', { s: previo.i }); return; }
-  if (juego.fase === 'select') {
-    const libre = juego.slots.find((s) => !s.humano && !s.pid);
-    if (libre) { ocuparSlot(libre, sock); evento('entra', { s: libre.i }); return; }
-  }
+  // entra en cualquier momento: si la partida está en juego, reemplaza a un bot
+  const libre = juego.slots.find((s) => !s.humano && !s.pid) || juego.slots.find((s) => !s.humano);
+  if (libre) { ocuparSlot(libre, sock); juego.mirando.delete(sock.id); evento('entra', { s: libre.i }); return; }
   juego.mirando.add(sock.id);
   sock.emit('bienvenida', { slot: -1, v: VERSION, personajes: PERSONAJES.map((p) => ({ id: p.id, nombre: p.nombre })), niveles: NIVELES.map((n) => ({ id: n.id, nombre: n.nombre })) });
 }

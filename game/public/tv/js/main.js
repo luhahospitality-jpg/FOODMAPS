@@ -1,14 +1,15 @@
 // FABELA FOOTBALL — TV. Dibuja lo que manda el server; no tiene lógica de juego.
 import * as THREE from '../../vendor/three.module.min.js';
 import { crearRender, esTV, debug } from './render.js';
-import { crearJugador, animar, crearPelota, crearBala, crearPodio, PERSONAJES, COLOR_EQUIPO, NOMBRE_EQUIPO } from './modelos.js';
+import { crearPelota, crearBala, crearPodio, PERSONAJES, COLOR_EQUIPO, NOMBRE_EQUIPO } from './modelos.js';
+import { crearJugador, animar } from './personaje.js';
 import { crearEscenario } from './escenario.js';
 import { crearEfectos } from './efectos.js';
 import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 1;
+const VERSION = 2;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -31,6 +32,7 @@ async function arrancar() {
   await cargarFuentes();
   const canvas = document.getElementById('lienzo');
   const R = crearRender(canvas);
+  if (!esTV) document.getElementById('vineta').className = '';   // viñeta solo en PC (en TV nada encima del canvas)
   const cam = R.camara;
   const escena = new THREE.Scene();
   const hud = crearHud();
@@ -45,6 +47,7 @@ async function arrancar() {
   escena.add(podio);
 
   // ---------------- nivel ----------------
+  let pmrem = null;
   let escenario = null, nivelId = null, nivelNombre = '', dims = { L: 36, W: 20, gw: 2.4, gh: 2, gd: 1.4 };
   function cargarNivel(n) {
     nivelNombre = n.nombre;
@@ -55,6 +58,15 @@ async function arrancar() {
     escena.add(escenario.grupo);
     escena.fog = escenario.niebla;
     escena.background = escenario.fondo;
+    if (!esTV) {
+      // mapa de entorno a partir del cielo: reflejos y luz ambiente realistas (solo PC)
+      if (!pmrem) pmrem = new THREE.PMREMGenerator(R.renderer);
+      const escCielo = new THREE.Scene();
+      escCielo.add(escenario.cielo.clone());
+      if (escena.environment) escena.environment.dispose();
+      escena.environment = pmrem.fromScene(escCielo, 0.02).texture;
+      escena.environmentIntensity = 0.55;
+    }
     R.renderer.compile(escena, cam);       // compilar shaders ya, para evitar tirones
   }
   cargarNivel({ id: 'laje', nombre: 'LAJE', L: 36, W: 20, gw: 2.4, gh: 2, gd: 1.4 });
@@ -86,16 +98,17 @@ async function arrancar() {
 
   // ---------------- estado de la TV ----------------
   let fase = '', faseDesde = 0, tiempo = 0, debugOn = debug;
-  let ultimoCd = -1, golAutor = -1;
-  let ultimaOle = 0;
+  let ultimoCd = -1, golAutor = -1, golDesde = 0;
+  let ultimaOle = 0, ultimaSamba = -9;
   const pelotaPrev = new THREE.Vector3();
   const camPos = new THREE.Vector3(0, 30, 40), camMira = new THREE.Vector3();
   const camPosObj = new THREE.Vector3(), camMiraObj = new THREE.Vector3();
-  let intro = { activa: true, t: 0 };
+  const vista = new URLSearchParams(location.search).get('vista');
+  let intro = { activa: !vista, t: 0 };
   let ultimoEstado = null, ultimaMuestra = null;
   const quat = new THREE.Quaternion(), eje = new THREE.Vector3();
 
-  function saltarIntro() { if (intro.activa) { intro.activa = false; hud.intro(null); hud.enIntro(false); } }
+  function saltarIntro() { if (intro.activa) { intro.activa = false; hud.intro(null); hud.enIntro(!!vista); } }
 
   const INTRO = [
     '1. RUA. A PELOTA ROLA.',
@@ -137,8 +150,8 @@ async function arrancar() {
         for (let k = 0; k < 4; k++) fx.chispas.emitir(gx, 1.2, (k - 1.5) * 1.2, k % 2 ? color : '#ffffff', esTV ? 18 : 40, 9, { vida: 1.2, grav: 6 });
         fx.polvo.emitir(gx * 0.9, 4, 0, '#ffffff', esTV ? 40 : 100, 6, { vida: 2.5, grav: 2, fr: 1.5, disp: 6, colores: ['#f5c518', '#16a34a', '#2563eb', '#e11d48', '#9333ea', '#ffffff'] });
         if (escenario) escenario.festejar();
-        golAutor = e.s;
-        if (e.s >= 0) audio.voz(PERSONAJES[pos(e.s).ch].id + '_gol');
+        golAutor = e.s; golDesde = tiempo;
+        audio.voz([e.s >= 0 ? PERSONAJES[pos(e.s).ch].id + '_gol' : 'x', Math.random() < 0.3 ? 'gol2' : 'gol', 'gol'], 0.25);
         break;
       }
       case 'poder':
@@ -147,11 +160,12 @@ async function arrancar() {
           audio.sfx.poder();
           const p = pos(e.s);
           fx.chispas.emitir(p.x, 1.5, p.z, '#f5c518', esTV ? 30 : 60, 6, { vida: 1 });
-          if (!audio.voz(PERSONAJES[p.ch].id + '_poder')) { /* sin voz, no pasa nada */ }
+          audio.voz([PERSONAJES[p.ch].id + '_poder']);
         }, 1300);
         break;
       case 'disparo': {
         audio.sfx.pistola();
+        audio.voz('shot', 0.05);
         const a = e.a / 100;
         fx.chispas.emitir(ex + Math.cos(a) * 0.8, 1.3, ez + Math.sin(a) * 0.8, '#ffd23a', esTV ? 14 : 28, 5, { vida: 0.3, grav: 0 });
         fx.texto('¡PUM!', ex, 2.8, ez, '#ff5a1f', 1.3);
@@ -160,6 +174,7 @@ async function arrancar() {
       }
       case 'ko':
         audio.sfx.ko();
+        audio.voz('ko', 0.6);
         fx.texto('¡KO!', ex, 2.4, ez, '#e11d48', 1.4);
         fx.chispas.emitir(ex, 1.2, ez, '#ffe14a', esTV ? 20 : 40, 5, { vida: 0.8 });
         fx.sacudir(0.4);
@@ -181,26 +196,27 @@ async function arrancar() {
         break;
       case 'truco':
         audio.sfx.truco();
+        if (tiempo - ultimaSamba > 2) { ultimaSamba = tiempo; audio.voz('samba'); }
         if (P) { fx.texto(NOMBRE_TRUCO[e.t] || '¡FIRULETE!', P.x, 2.6, P.z, '#22c55e', 1); fx.chispas.emitir(P.x, 0.4, P.z, '#b9f99d', esTV ? 8 : 16, 3, { vida: 0.5 }); }
         break;
       case 'ole':
-        if (tiempo - ultimaOle > 0.4) { audio.sfx.ole(); ultimaOle = tiempo; }
+        if (tiempo - ultimaOle > 1.5) { audio.sfx.ole(); ultimaOle = tiempo; if (tiempo - ultimaSamba > 1) audio.voz('ole'); }
         if (P) fx.texto('¡OLÉ!', P.x, 2.3, P.z, '#f5c518', 0.9);
         break;
-      case 'baile': if (P) fx.texto('¡SAMBA!', P.x, 2.5, P.z, '#f472b6', 0.8); audio.sfx.truco(); break;
+      case 'baile': if (P) fx.texto('¡SAMBA!', P.x, 2.5, P.z, '#f472b6', 0.8); audio.sfx.truco(); if (tiempo - ultimaSamba > 2) { ultimaSamba = tiempo; audio.voz('samba'); } break;
       case 'robo': audio.sfx.robo(); if (P) fx.texto('¡ROBO!', P.x, 2.2, P.z, '#ffffff', 0.7); break;
       case 'pique': audio.sfx.pique(e.f); if (e.f > 8) fx.polvo.emitir(ex, 0.1, ez, '#a09584', 5, 2, { vida: 0.5, grav: 1 }); break;
       case 'pared': case 'rebote': audio.sfx.pared(); break;
       case 'atajada': audio.sfx.entrada(); fx.texto('¡ATAJADA!', ex, 2.4, ez, '#7dd3fc', 1.1); fx.sacudir(0.15); break;
       case 'poste': audio.sfx.poste(); fx.texto('¡PALO!', ex, 2.4, ez, '#ffffff'); fx.sacudir(0.25); break;
-      case 'preparados': hud.grande('¡PREPARADOS!', nivelNombre, 1400); audio.tema(null); audio.sfx.preparados(); break;
-      case 'go': hud.grande('¡VAMOS!', '', 900, '#22c55e'); audio.sfx.beep(true); audio.sfx.silbato(); audio.tema(nivelId); audio.acelerar(false); break;
+      case 'preparados': hud.grande('¡PREPARADOS!', nivelNombre, 1400); audio.tema(null); audio.sfx.preparados(); audio.voz('preparados', 0.2); break;
+      case 'go': hud.grande('¡VAMOS!', '', 900, '#22c55e'); audio.sfx.beep(true); audio.voz(['fight', 'vamos']); audio.tema(nivelId); audio.acelerar(false); break;
       case 'silbato': audio.sfx.silbato(); break;
       case 'matchpoint': hud.aviso('¡ÚLTIMA BOLA! ' + NOMBRE_EQUIPO[e.t] + ' está a un gol', 4000); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'ultimos': hud.aviso('¡ÚLTIMOS 30 SEGUNDOS!', 3000); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'oro': hud.grande('GOL DE OURO', 'el próximo gol gana', 2500); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'fin': audio.sfx.silbato(true); setTimeout(() => audio.sfx.victoria(), 700); break;
-      case 'elige': audio.sfx.click(); audio.voz(PERSONAJES[e.ch].id + '_elige'); break;
+      case 'elige': audio.sfx.click(); audio.voz([PERSONAJES[e.ch].id + '_elige']); break;
       case 'listo': audio.sfx.listo(); break;
       case 'cancha': audio.sfx.click(); break;
       case 'entra': audio.sfx.listo(); saltarIntro(); break;
@@ -221,10 +237,10 @@ async function arrancar() {
         md.raiz.position.set(-3.3 + i * 2.2, 0, 2);
         md.giro.rotation.y = -Math.PI / 2;
         md.pistola.visible = false;
-        const a = sl[i][2] ? 8 : 0;
+        const a = vista && vista.indexOf('baile') === 0 ? 9 : sl[i][2] ? 8 : 0;
         if (a !== md.anim) { md.anim = a; md.animT = 0; }
         md.animT += dt;
-        animar(md, a, md.animT, 0, dt, 0);
+        animar(md, a, md.animT, 0, dt, a === 9 ? sl[i][1] : 0);
         md.etiqueta.actualizar(sl[i][0] ? 'J' + (i + 1) : 'CPU', i % 2, 0, 0, 0);
       }
     } else if (m.p) {
@@ -241,7 +257,7 @@ async function arrancar() {
           md.raiz.position.set(lug.x, lug.y, lug.z);
           md.giro.rotation.y = -Math.PI / 2;
           const gana = p.team === ultimoEstado.g;
-          animar(md, gana ? 9 : 0, md.animT + p.slot * 0.3, 0, dt, 0);
+          animar(md, gana ? 9 : 0, md.animT + p.slot * 0.3, 0, dt, p.ch);
           md.etiqueta.actualizar((p.flags & 8) ? 'CPU' : 'J' + (p.slot + 1), p.team, 0, 0, 0);
           md.piso.visible = false;
           continue;
@@ -249,7 +265,8 @@ async function arrancar() {
         md.piso.visible = true;
         md.raiz.position.set(p.x, p.y, p.z);
         md.giro.rotation.y = -p.face;
-        animar(md, p.anim, md.animT, p.vel, dt, p.truco);
+        animar(md, p.anim, md.animT, p.vel, dt, p.anim === 9 ? p.ch : p.truco);
+        if ((p.flags & 16) && p.vel > 5 && Math.random() < (esTV ? 0.25 : 0.6)) fx.polvo.emitir(p.x, 0.1, p.z, '#9d9282', 1, 1.2, { vida: 0.5, grav: 0.3, variar: 0.1 });
         md.etiqueta.actualizar((p.flags & 8) ? 'CPU' : 'J' + (p.slot + 1), p.team, p.balas, p.carga, p.anim === 5 ? p.ko : 0);
         // polvo en la barrida
         if (p.anim === 2 && md.animT < 0.5 && Math.random() < (esTV ? 0.3 : 0.7)) fx.polvo.emitir(p.x, 0.15, p.z, '#8f8575', 1, 1.5, { vida: 0.6, grav: 0.5, variar: 0.15 });
@@ -315,8 +332,14 @@ async function arrancar() {
       else if (toma === 2) { camPosObj.set(0, 8 + k * 3, 14); camMiraObj.set(-30 + k * 30, 12, -70); }
       else if (toma === 3) { const a = k * 1.2 - 0.6; camPosObj.set(Math.sin(a) * 42, 26, Math.cos(a) * 34); camMiraObj.set(0, 0, 0); }
       else { camPosObj.set(0, 5, 16); camMiraObj.set(0, 1.5, 0); }
-      if (toma !== intro.toma) { intro.toma = toma; camPos.copy(camPosObj); camMira.copy(camMiraObj); if (toma < 5) hud.intro(INTRO[toma]); if (toma === 4) hud.grande('FABELA FOOTBALL', 'street · skills · people · football · always', 2300); }
+      if (toma !== intro.toma) { intro.toma = toma; camPos.copy(camPosObj); camMira.copy(camMiraObj); if (toma < 5) hud.intro(INTRO[toma]); if (toma === 4) { hud.grande('FABELA FOOTBALL', 'street · skills · people · football · always', 2300); audio.voz('fabela'); } }
       if (toma >= 5) saltarIntro();
+    } else if (fase === 'select' && vista) {
+      // ?vista=pj : los 4 personajes de cerca (para revisar modelos); ?vista=baile: bailando
+      const k = parseInt(vista.slice(-1), 10);
+      if (k >= 0 && k < 4) { const x = -3.3 + k * 2.2; camPosObj.set(x + 0.3, 1.5, 4.6); camMiraObj.set(x, 1.1, 2); }
+      else { camPosObj.set(0, 1.7, 9.5); camMiraObj.set(0, 1.0, 2); }
+      suave = 20;
     } else if (fase === 'select') {
       const a = tiempo * 0.06;
       camPosObj.set(Math.sin(a) * 30, 14, Math.cos(a) * 26 + 4);
@@ -337,9 +360,16 @@ async function arrancar() {
       const b = m.b || { x: 0, z: 0 };
       if (ultimoEstado && ultimoEstado.sub === 'goal' && golAutor >= 0) {
         const p = pos(golAutor);
-        camPosObj.set(p.x * 0.9, 4.5, p.z + 9);
-        camMiraObj.set(p.x, 1.2, p.z);
-        suave = 2;
+        if (tiempo - golDesde < 0.8) {
+          // primero la pelota en la red…
+          const gx = (p.team === 0 ? 1 : -1) * dims.L / 2;
+          camPosObj.set(gx * 0.7, 6, 10); camMiraObj.set(gx, 1, 0); suave = 3;
+        } else {
+          // …y después zoom al baile del goleador
+          camPosObj.set(p.x + 0.5, 1.55, p.z + 5.4);
+          camMiraObj.set(p.x, 1.4, p.z);
+          suave = 5;
+        }
       } else {
         const tx = Math.max(-L / 2 + 8.5, Math.min(L / 2 - 8.5, b.x * 0.8));
         const tz = Math.max(-3, Math.min(3, b.z * 0.3));
@@ -408,13 +438,14 @@ async function arrancar() {
       hud.debug('v' + VERSION + ' ' + i.calidad + ' ' + i.fps + 'fps esc ' + i.escala + (i.mitad ? ' 30fps' : '') + '\ncalls ' + i.calls + ' tris ' + i.tris);
     }
   }
-  hud.enIntro(intro.activa);
+  hud.enIntro(intro.activa || !!vista);
   document.getElementById('cargando').style.display = 'none';
   audio.sfx.jingle();
+  audio.voz('fabela', 1.3);
   requestAnimationFrame(frame);
 
   // para las pruebas automáticas
-  window.__fabela = { info: () => R.info(), fase: () => fase, saltarIntro };
+  window.__fabela = { info: () => R.info(), fase: () => fase, saltarIntro, audio: () => audio.medir() };
 }
 
 function boot() {

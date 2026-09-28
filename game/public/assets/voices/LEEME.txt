@@ -1,14 +1,13 @@
-Voces grabadas de los personajes (opcionales).
+Voces del juego (MP3 mono 128k, listados en voices.json: clave → archivo).
 
-1. Poné los MP3 acá (mono, 128k).
-2. Listalos en voices.json con la clave → archivo, por ejemplo:
-   {
-     "craque_elige": "craque_elige.mp3",
-     "craque_gol": "craque_gol.mp3",
-     "craque_poder": "craque_poder.mp3",
-     "rapido_elige": "rapido_elige.mp3"
-   }
+Claves que usa el juego:
+  gol, gol2      al hacer un gol (GOOOOL)
+  shot, ko       cuando te disparan con la pistola / quedás desmayado
+  samba, ole     firuletes y olé
+  fabela         intro
+  preparados, vamos, fight   antes del 3-2-1 y al arrancar
+Personalizadas por personaje (opcionales): <personaje>_elige, <personaje>_gol, <personaje>_poder
+(craque, rapido, forte, malandro). Si una clave falta, se usa la general o no suena nada.
 
-Claves que usa el juego: <personaje>_elige, <personaje>_gol, <personaje>_poder
-Personajes: craque, rapido, forte, malandro.
-Si falta un clip, no pasa nada: el juego sigue sin esa voz.
+Proceso usado: recorte de silencios, reducción de ruido (afftdn), eco, loudnorm y MP3 mono 128k;
+verificado con faster-whisper.

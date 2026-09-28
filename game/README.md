@@ -6,12 +6,13 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 - **TV**: abrí la URL del juego en el navegador de la TV (Android TV / Xiaomi, Chromecast o una compu).
 - **Celulares**: entran a `<url>/c` (o escanean el QR de la TV). No se instala nada.
 - De 1 a 4 jugadores: los lugares que faltan los completa la máquina.
+- Se puede entrar en cualquier momento: si el partido ya empezó, entrás en el lugar de un jugador de la máquina.
 
 ## Controles del celular (horizontal)
 
 | Control | Acción |
 |---|---|
-| Joystick (izquierda) | Moverse |
+| Joystick (izquierda) | Moverse. **Estirado a fondo y sostenido: correr más rápido** |
 | Pad: **tocar** con la pelota | Patear al arco |
 | Pad: **mantener** con la pelota | Superchute (se carga; más de ~1 s = ¡fuego!) |
 | Pad: **deslizar curvo** con la pelota | Chute con efecto: la pelota dobla con la forma del trazo |
@@ -21,6 +22,8 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 | FIRULETE | Elástico, pisada, roleta y lambreta (van rotando). Los rivales cerca quedan "humillados" (¡OLÉ!) |
 | PASE / PEDIR | Pasarla al compañero / pedírsela |
 | PISTOLA | Aparece después de **2 goles seguidos del mismo jugador**. 1 tiro: el rival se desmaya 15 s y reaparece en su arco |
+
+Al hacer un gol, el goleador festeja con su baile (samba, passinho, Paquetá o sarrada) y la cámara hace zoom.
 | START (arriba) | El J1 arranca la partida / vuelve al menú |
 
 ## Correr local
@@ -41,10 +44,11 @@ npm run sim                         # partidas completas con celulares falsos (s
 node scripts/capturas.js capturas   # Chromium sin ventana: capturas de TV y celular + renderer.info
 ```
 
-## Voces
+## Música, efectos y voces
 
-Poné MP3 en `public/assets/voices/` y listalos en `voices.json` (ver `LEEME.txt`).
-Claves: `<personaje>_elige`, `<personaje>_gol`, `<personaje>_poder`.
+Música de funk brasilero y efectos 100% sintetizados (Web Audio). Voces en `public/assets/voices/` (GOOOL, SHOT!, K.O., SAMBA, OLÉ, FIGHT…), listadas en `voices.json` (ver `LEEME.txt`).
+
+Vista para revisar personajes: `/?vista=pj`, `/?vista=pj0`…`pj3` (de cerca) y `/?vista=baile`.
 
 ## Deploy (Render)
 

@@ -242,32 +242,52 @@ export function crearEscenario(id, dims) {
     grupo.add(edificio);
   }
 
-  // ---------------- favela (casas instanciadas por zona) ----------------
-  const texCasa = canvasTex(64, 64, (g) => {
-    g.fillStyle = '#e8e2d8'; g.fillRect(0, 0, 64, 64);
-    for (let i = 0; i < 60; i++) { g.fillStyle = 'rgba(0,0,0,' + rnd() * 0.12 + ')'; g.fillRect(rnd() * 64, rnd() * 64, 3, 3); }
-    g.fillStyle = tema.noche ? '#1b1b22' : '#2c3440';
-    g.fillRect(10, 14, 16, 14); g.fillRect(38, 14, 16, 14); g.fillRect(10, 40, 16, 14); g.fillRect(38, 40, 16, 14);
-    g.fillStyle = 'rgba(0,0,0,0.25)'; g.fillRect(0, 0, 64, 4);
+  // ---------------- favela (casas por pisos, instanciadas por zona) ----------------
+  // Cada casa se arma con "pisos" de 2.8 m: así las ventanas no se estiran.
+  // Dos tipos: ladrillo a la vista (el clásico de la favela) y revocadas pintadas.
+  const PISO_H = 2.8;
+  const fachada = (ladrillo, luz) => canvasTex(128, 128, (g) => {
+    if (luz) { g.fillStyle = '#000'; g.fillRect(0, 0, 128, 128); }
+    else if (ladrillo) {
+      g.fillStyle = '#b9b2a8'; g.fillRect(0, 0, 128, 128);                 // mezcla
+      for (let y = 0; y < 116; y += 8) for (let x = -((y / 8) % 2) * 8; x < 128; x += 16) {
+        const v = 200 + rnd() * 55;
+        g.fillStyle = 'rgb(' + (v | 0) + ',' + (v * 0.78 | 0) + ',' + (v * 0.62 | 0) + ')';
+        g.fillRect(x + 1, y + 1, 14, 6);
+      }
+    } else {
+      g.fillStyle = '#ece6dc'; g.fillRect(0, 0, 128, 128);
+      for (let k = 0; k < 90; k++) { g.fillStyle = 'rgba(80,60,40,' + rnd() * 0.12 + ')'; g.fillRect(rnd() * 128, rnd() * 128, 2 + rnd() * 10, 2 + rnd() * 10); }
+      for (let k = 0; k < 6; k++) { g.fillStyle = 'rgba(70,55,40,0.12)'; g.fillRect(rnd() * 128, 0, 3 + rnd() * 4, 60 + rnd() * 60); }   // chorreado
+    }
+    // losa de hormigón (la "laje") abajo
+    if (!luz) { g.fillStyle = '#8f8a84'; g.fillRect(0, 116, 128, 12); g.fillStyle = 'rgba(0,0,0,0.25)'; g.fillRect(0, 116, 128, 2); }
+    // ventanas
+    const ventanas = [[18, 30, 34, 44], [76, 30, 34, 44]];
+    for (const [x, y, w, h] of ventanas) {
+      if (luz) { g.fillStyle = rnd() < 0.7 ? ['#ffb347', '#ffd27a', '#ffe9b0'][(rnd() * 3) | 0] : '#000'; g.fillRect(x + 3, y + 3, w - 6, h - 6); continue; }
+      g.fillStyle = '#e9e4da'; g.fillRect(x - 3, y - 3, w + 6, h + 6);          // marco
+      g.fillStyle = tema.noche ? '#14141c' : '#27313d'; g.fillRect(x, y, w, h);
+      g.fillStyle = 'rgba(160,190,220,0.25)'; g.fillRect(x + 2, y + 2, w * 0.4, h - 4);
+      g.strokeStyle = '#555'; g.lineWidth = 2;                                  // reja
+      for (let k = 1; k < 4; k++) { g.beginPath(); g.moveTo(x + (w * k) / 4, y); g.lineTo(x + (w * k) / 4, y + h); g.stroke(); }
+      g.fillStyle = 'rgba(0,0,0,0.3)'; g.fillRect(x - 4, y + h + 3, w + 8, 4);   // sombra del alféizar
+    }
   });
-  let texLuz = null;
-  if (tema.noche) {
-    texLuz = canvasTex(64, 64, (g) => {
-      g.fillStyle = '#000'; g.fillRect(0, 0, 64, 64);
-      const on = ['#ffb347', '#ffd27a', '#ffe9b0'];
-      const v = [[10, 14], [38, 14], [10, 40], [38, 40]];
-      v.forEach((p, i) => { if (i !== 2) { g.fillStyle = on[i % 3]; g.fillRect(p[0], p[1], 16, 14); } });
-    });
-  }
+  const texLadrillo = fachada(true, false), texRevoque = fachada(false, false);
+  const texLuz = tema.noche ? fachada(false, true) : null;
   const coloresCasa = tema.noche
-    ? ['#5a4a7a', '#4a5a8a', '#7a4a5a', '#4a6a6a', '#6a6a4a', '#5a3a3a']
-    : ['#e85d75', '#f2c14e', '#4ea8de', '#7bc96f', '#f08a4b', '#b07cc6', '#d9d2c5', '#c96f4a', '#58c4b0', '#e8e2d8'];
+    ? ['#6a5a8a', '#5a6a9a', '#8a5a6a', '#5a7a7a', '#7a7a5a', '#6a4a4a']
+    : ['#e85d75', '#f2c14e', '#4ea8de', '#7bc96f', '#f08a4b', '#b07cc6', '#e9e2d4', '#58c4b0', '#f4a3b5', '#9ad0f5'];
+  const coloresLadrillo = tema.noche ? ['#8a6a5a', '#7a5a4a'] : ['#ffffff', '#f3e0d0', '#ffe8d6'];
   const casas = [];
   // cada casa llega hasta el piso (así no flotan): favela apilada
   const pisoFavela = tema.favela === 'elevada' ? -14 : -0.1;
   const agregarCasa = (x, y, z, w, h, d) => {
     const techo = y + h;
-    casas.push({ x, y: pisoFavela, z, w, h: techo - pisoFavela, d, c: coloresCasa[(rnd() * coloresCasa.length) | 0] });
+    const ladrillo = rnd() < 0.45;
+    casas.push({ x, y: pisoFavela, z, w, h: techo - pisoFavela, d, ladrillo, rot: (rnd() - 0.5) * 0.3,
+      c: ladrillo ? coloresLadrillo[(rnd() * coloresLadrillo.length) | 0] : coloresCasa[(rnd() * coloresCasa.length) | 0] });
   };
   if (tema.favela === 'elevada') {
     // la cancha está en una terraza: casas abajo y el morro atrás
@@ -293,12 +313,56 @@ export function crearEscenario(id, dims) {
       agregarCasa(x, cerro, z, 3 + rnd() * 3, 3 + rnd() * 4, 3 + rnd() * 3);
     }
   }
-  const matCasa = material({ map: texCasa, rough: 0.95, emissiveMap: texLuz || null, emissive: texLuz ? 0xffffff : 0x000000, emissiveIntensity: texLuz ? 1.4 : 0 });
-  instanciarPorZona(grupo, casas, new THREE.BoxGeometry(1, 1, 1), matCasa, (c, m) => {
-    m.compose(new THREE.Vector3(c.x, c.y + c.h / 2, c.z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), (rnd() - 0.5) * 0.3), new THREE.Vector3(c.w, c.h, c.d));
+  // un "piso" por instancia
+  const pisosL = [], pisosR = [], losas = [];
+  for (const c of casas) {
+    const n = Math.max(1, Math.round(c.h / PISO_H));
+    const alto = c.h / n;
+    for (let k = 0; k < n; k++) (c.ladrillo ? pisosL : pisosR).push({ x: c.x, y: c.y + k * alto, z: c.z, w: c.w, h: alto, d: c.d, rot: c.rot, c: c.c });
+    losas.push({ x: c.x, y: c.y + c.h, z: c.z, w: c.w + 0.3, d: c.d + 0.3, rot: c.rot, c: tema.noche ? '#3a3a44' : '#9a948c' });
+  }
+  const componerPiso = (c, m) => m.compose(new THREE.Vector3(c.x, c.y + c.h / 2, c.z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), c.rot), new THREE.Vector3(c.w, c.h, c.d));
+  const opLuz = texLuz ? { emissiveMap: texLuz, emissive: 0xffffff, emissiveIntensity: 1.5 } : {};
+  const geoPiso = new THREE.BoxGeometry(1, 1, 1);
+  // sin tapas arriba/abajo (se ven las losas): saco las caras ±y del índice
+  geoPiso.clearGroups();
+  const idx = Array.from(geoPiso.index.array);
+  geoPiso.setIndex(idx.slice(0, 12).concat(idx.slice(24)));
+  instanciarPorZona(grupo, pisosL, geoPiso, material(Object.assign({ map: texLadrillo, rough: 0.95 }, opLuz)), componerPiso);
+  instanciarPorZona(grupo, pisosR, geoPiso, material(Object.assign({ map: texRevoque, rough: 0.9 }, opLuz)), componerPiso);
+  instanciarPorZona(grupo, losas, new THREE.BoxGeometry(1, 0.25, 1), material({ color: 0xffffff, rough: 1 }), (c, m) => {
+    m.compose(new THREE.Vector3(c.x, c.y + 0.12, c.z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), c.rot), new THREE.Vector3(c.w, 1, c.d));
   });
+
+  // cables de luz colgando (el enredo típico) y ropa tendida
+  {
+    const pts = [];
+    const cerca = casas.filter((c) => Math.abs(c.x) < 60 && c.z < -12 && c.z > -60);
+    for (let k = 0; k < (esTV ? 30 : 60) && cerca.length > 1; k++) {
+      const a = cerca[(rnd() * cerca.length) | 0], b = cerca[(rnd() * cerca.length) | 0];
+      if (a === b || Math.abs(a.x - b.x) > 25) continue;
+      const ya = a.y + a.h - 0.4, yb = b.y + b.h - 0.4;
+      const tramos = 8, caida = 0.8 + rnd() * 1.5;
+      for (let i = 0; i < tramos; i++) {
+        const t0 = i / tramos, t1 = (i + 1) / tramos;
+        const p = (t) => [a.x + (b.x - a.x) * t, ya + (yb - ya) * t - Math.sin(t * Math.PI) * caida, a.z + (b.z - a.z) * t];
+        pts.push(...p(t0), ...p(t1));
+      }
+    }
+    const gc = new THREE.BufferGeometry(); gc.setAttribute('position', new THREE.BufferAttribute(new Float32Array(pts), 3));
+    grupo.add(new THREE.LineSegments(gc, new THREE.LineBasicMaterial({ color: 0x111111 })));
+    if (!tema.noche) {
+      const ropa = [];
+      const cols = ['#e11d48', '#f5c518', '#2563eb', '#ffffff', '#16a34a', '#f97316', '#9333ea'];
+      for (let k = 0; k < (esTV ? 30 : 70); k++) {
+        const c = cerca[(rnd() * cerca.length) | 0]; if (!c) break;
+        ropa.push(pieza(new THREE.PlaneGeometry(0.6 + rnd() * 0.4, 0.7 + rnd() * 0.5), cols[(rnd() * cols.length) | 0], [c.x + (rnd() - 0.5) * c.w, c.y + c.h - 1.2 - rnd() * 3, c.z + c.d / 2 + 0.15], [0, 0, (rnd() - 0.5) * 0.2]));
+      }
+      if (ropa.length) grupo.add(new THREE.Mesh(fusionar(ropa), material({ vertexColors: true, side: THREE.DoubleSide, rough: 1 })));
+    }
+  }
   // cajas de agua azules en los techos
-  const tanques = casas.filter(() => rnd() < 0.12).map((c) => ({ x: c.x + (rnd() - 0.5) * c.w * 0.5, y: c.y + c.h, z: c.z, c: '#2f6fd6' }));
+  const tanques = casas.filter(() => rnd() < 0.18).map((c) => ({ x: c.x + (rnd() - 0.5) * c.w * 0.5, y: c.y + c.h + 0.25, z: c.z, c: '#2f6fd6' }));
   instanciarPorZona(grupo, tanques, new THREE.CylinderGeometry(0.7, 0.6, 1, 8), material({ color: 0xffffff, rough: 0.6 }), (c, m) => {
     m.compose(new THREE.Vector3(c.x, c.y + 0.5, c.z), new THREE.Quaternion(), new THREE.Vector3(1, 1, 1));
   });
@@ -462,7 +526,7 @@ export function crearEscenario(id, dims) {
   grupo.traverse((o) => { if (o.isMesh && o !== cielo) o.matrixAutoUpdate = true; });
 
   return {
-    grupo, tema,
+    grupo, tema, cielo,
     niebla: new THREE.Fog(tema.niebla, tema.nieblaCerca, tema.nieblaLejos),
     fondo: new THREE.Color(tema.cielo[2]),
     actualizar(t, dt) { for (const f of animables) f(t, dt); },

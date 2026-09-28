@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0b0a0d">
@@ -10,7 +10,8 @@
 <style>
 @font-face { font-family: 'Bangers'; src: url('/assets/fonts/bangers.woff2') format('woff2'); }
 @font-face { font-family: 'Marker'; src: url('/assets/fonts/marker.woff2') format('woff2'); }
-* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+* { box-sizing: border-box; touch-action: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; --vh: 1vh; }
 html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #0b0a0d; color: #fff; font-family: 'Bangers', Impact, sans-serif; letter-spacing: 0.04em; touch-action: none; overscroll-behavior: none; }
 .oculto { display: none !important; }
 .pantalla { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
@@ -18,73 +19,75 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 .m { font-family: 'Marker', sans-serif; letter-spacing: 0; }
 
 /* barra superior (sistema, lejos de la acción) */
-#barra { position: fixed; top: 0; left: 0; right: 0; height: 13vh; display: flex; align-items: center; justify-content: center; z-index: 5; pointer-events: none; }
+#barra { position: fixed; top: 0; left: 0; right: 0; height: calc(var(--vh) * 13); display: flex; align-items: center; justify-content: center; z-index: 5; pointer-events: none; }
 #barra > * { pointer-events: auto; }
-#yo { font-size: 5vh; padding: 0.6vh 1.6vh; border-radius: 1vh; background: #f5c518; color: #111; margin-right: 1.5vh; }
+#yo { font-size: calc(var(--vh) * 5); padding: calc(var(--vh) * 0.6) calc(var(--vh) * 1.6); border-radius: calc(var(--vh) * 1); background: #f5c518; color: #111; margin-right: calc(var(--vh) * 1.5); }
 #yo.t1 { background: #2563eb; color: #fff; }
-#btnMenu { font-size: 3.4vh; padding: 1.2vh 2.4vh; border-radius: 3vh; background: #2b2930; }
-#mini { font-size: 4.2vh; margin-left: 1.5vh; min-width: 14vh; text-align: center; }
-#version { position: fixed; right: 1vh; top: 0.6vh; font: 1.8vh Arial, sans-serif; color: #666; }
+#btnMenu { font-size: calc(var(--vh) * 3.4); padding: calc(var(--vh) * 1.2) calc(var(--vh) * 2.4); border-radius: calc(var(--vh) * 3); background: #2b2930; }
+#mini { font-size: calc(var(--vh) * 4.2); margin-left: calc(var(--vh) * 1.5); min-width: calc(var(--vh) * 14); text-align: center; }
+#version { position: fixed; right: calc(var(--vh) * 1); top: calc(var(--vh) * 0.6); font: calc(var(--vh) * 1.8) Arial, sans-serif; color: #666; }
 
 /* ---- selección ---- */
 #sel { background: #0b0a0d; }
-#selCarta { position: absolute; left: 3vw; top: 14vh; bottom: 3vh; width: 44vw; background: #151317; border-radius: 2vh; overflow: hidden; display: flex; }
+#selCarta { position: absolute; left: 3vw; top: calc(var(--vh) * 14); bottom: calc(var(--vh) * 3); width: 44vw; background: #151317; border-radius: calc(var(--vh) * 2); overflow: hidden; display: flex; }
 #selImg { height: 100%; width: 40%; object-fit: cover; object-position: top; }
-#selInfo { flex: 1; padding: 2vh 2.4vh; display: flex; flex-direction: column; }
-#selNom { font-size: 7.5vh; line-height: 1; }
-#selDesc { font-size: 3vh; color: #bbb; margin: 1vh 0 1.4vh; }
-.stat { display: flex; align-items: center; font-size: 3vh; margin: 0.6vh 0; }
-.stat span { width: 17vh; }
-.stat i { flex: 1; height: 1.8vh; background: #2b2930; border-radius: 1vh; position: relative; overflow: hidden; }
+#selInfo { flex: 1; padding: calc(var(--vh) * 2) calc(var(--vh) * 2.4); display: flex; flex-direction: column; }
+#selNom { font-size: calc(var(--vh) * 7.5); line-height: 1; }
+#selDesc { font-size: calc(var(--vh) * 3); color: #bbb; margin: calc(var(--vh) * 1) 0 calc(var(--vh) * 1.4); }
+.stat { display: flex; align-items: center; font-size: calc(var(--vh) * 3); margin: calc(var(--vh) * 0.6) 0; }
+.stat span { width: calc(var(--vh) * 17); }
+.stat i { flex: 1; height: calc(var(--vh) * 1.8); background: #2b2930; border-radius: calc(var(--vh) * 1); position: relative; overflow: hidden; }
 .stat i b { position: absolute; left: 0; top: 0; bottom: 0; background: #f5c518; }
 #flechas { display: flex; margin-top: auto; }
-#flechas button { flex: 1; font-size: 7vh; background: #2b2930; border-radius: 1.6vh; margin-right: 1vh; height: 13vh; }
+#flechas button { flex: 1; font-size: calc(var(--vh) * 7); background: #2b2930; border-radius: calc(var(--vh) * 1.6); margin-right: calc(var(--vh) * 1); height: calc(var(--vh) * 13); }
 #flechas button:last-child { margin-right: 0; }
-#selDer { position: absolute; left: 50vw; right: 3vw; top: 14vh; bottom: 3vh; display: flex; flex-direction: column; }
-#fila { display: flex; margin-bottom: 1.6vh; }
-#btnEquipo { flex: 1; font-size: 4vh; background: #f5c518; color: #111; border-radius: 1.6vh; height: 13vh; }
+#selDer { position: absolute; left: 50vw; right: 3vw; top: calc(var(--vh) * 14); bottom: calc(var(--vh) * 3); display: flex; flex-direction: column; }
+#fila { display: flex; margin-bottom: calc(var(--vh) * 1.6); }
+#btnEquipo { flex: 1; font-size: calc(var(--vh) * 4); background: #f5c518; color: #111; border-radius: calc(var(--vh) * 1.6); height: calc(var(--vh) * 13); }
 #btnEquipo.t1 { background: #2563eb; color: #fff; }
-#cancha { display: flex; align-items: center; background: #151317; border-radius: 1.6vh; padding: 1vh; margin-bottom: 1.6vh; }
-#cancha img { height: 17vh; width: 28vh; object-fit: cover; border-radius: 1vh; margin: 0 1vh; }
-#cancha button { font-size: 5vh; background: #2b2930; border-radius: 1.2vh; width: 9vh; height: 13vh; }
-#canchaNom { flex: 1; font-size: 4.2vh; text-align: center; }
-#canchaNom small { display: block; font-size: 2.2vh; color: #999; }
-#btnListo { flex: 1; font-size: 9vh; background: #16a34a; border-radius: 2vh; }
-#btnListo.si { background: #3f3d45; font-size: 5vh; }
+#cancha { display: flex; align-items: center; background: #151317; border-radius: calc(var(--vh) * 1.6); padding: calc(var(--vh) * 1); margin-bottom: calc(var(--vh) * 1.6); }
+#cancha img { height: calc(var(--vh) * 17); width: calc(var(--vh) * 28); object-fit: cover; border-radius: calc(var(--vh) * 1); margin: 0 calc(var(--vh) * 1); }
+#cancha button { font-size: calc(var(--vh) * 5); background: #2b2930; border-radius: calc(var(--vh) * 1.2); width: calc(var(--vh) * 9); height: calc(var(--vh) * 13); }
+#canchaNom { flex: 1; font-size: calc(var(--vh) * 4.2); text-align: center; }
+#canchaNom small { display: block; font-size: calc(var(--vh) * 2.2); color: #999; }
+#btnListo { flex: 1; font-size: calc(var(--vh) * 9); background: #16a34a; border-radius: calc(var(--vh) * 2); }
+#btnListo.si { background: #3f3d45; font-size: calc(var(--vh) * 5); }
 
 /* ---- juego ---- */
 #juego { background: radial-gradient(ellipse at center, #1b1920 0%, #0b0a0d 70%); }
-#zonaJoy { position: absolute; left: 0; top: 13vh; bottom: 0; width: 40vw; }
-#joyBase { position: absolute; width: 36vh; height: 36vh; margin: -18vh 0 0 -18vh; border-radius: 50%; background: rgba(255,255,255,0.06); border: 0.5vh solid rgba(255,255,255,0.18); left: 20vw; top: 50vh; pointer-events: none; }
-#joyPomo { position: absolute; width: 15vh; height: 15vh; margin: -7.5vh 0 0 -7.5vh; border-radius: 50%; background: #f5c518; left: 50%; top: 50%; pointer-events: none; }
+#zonaJoy { position: absolute; left: 0; top: calc(var(--vh) * 13); bottom: 0; width: 40vw; }
+#joyBase { position: absolute; width: calc(var(--vh) * 36); height: calc(var(--vh) * 36); margin: calc(var(--vh) * -18) 0 0 calc(var(--vh) * -18); border-radius: 50%; background: rgba(255,255,255,0.06); border: calc(var(--vh) * 0.5) solid rgba(255,255,255,0.18); left: 20vw; top: calc(var(--vh) * 50); pointer-events: none; }
+#joyPomo { position: absolute; width: calc(var(--vh) * 15); height: calc(var(--vh) * 15); margin: calc(var(--vh) * -7.5) 0 0 calc(var(--vh) * -7.5); border-radius: 50%; background: #f5c518; left: 50%; top: 50%; pointer-events: none; }
 #joyPomo.t1 { background: #2563eb; }
-#acciones { position: absolute; left: 41vw; width: 15vw; bottom: 4vh; top: 15vh; display: flex; flex-direction: column; justify-content: flex-end; }
-#acciones button { height: 18vh; border-radius: 2vh; font-size: 4.2vh; margin-top: 1.6vh; background: #2b2930; line-height: 1; }
+#joyPomo.corre { background: #ff5a1f !important; }
+#corre { position: absolute; left: 0; width: 40vw; top: calc(var(--vh) * 15); text-align: center; font-size: calc(var(--vh) * 4.5); color: #ff5a1f; pointer-events: none; }
+#acciones { position: absolute; left: 41vw; width: 15vw; bottom: calc(var(--vh) * 4); top: calc(var(--vh) * 15); display: flex; flex-direction: column; justify-content: flex-end; }
+#acciones button { height: calc(var(--vh) * 18); border-radius: calc(var(--vh) * 2); font-size: calc(var(--vh) * 4.2); margin-top: calc(var(--vh) * 1.6); background: #2b2930; line-height: 1; }
 #btnTruco { background: #15803d !important; }
 #btnPase { background: #1d4ed8 !important; }
-#btnPistola { background: #e11d48 !important; height: 24vh !important; font-size: 4.6vh !important; }
+#btnPistola { background: #e11d48 !important; height: calc(var(--vh) * 24) !important; font-size: calc(var(--vh) * 4.6) !important; }
 #acciones button.cd { opacity: 0.45; }
-#pad { position: absolute; right: 2vw; top: 15vh; bottom: 4vh; left: 58vw; border-radius: 3vh; background: #1f1d24; border: 0.5vh solid #3a3740; overflow: hidden; }
+#pad { position: absolute; right: 2vw; top: calc(var(--vh) * 15); bottom: calc(var(--vh) * 4); left: 58vw; border-radius: calc(var(--vh) * 3); background: #1f1d24; border: calc(var(--vh) * 0.5) solid #3a3740; overflow: hidden; }
 #pad.activo { border-color: #f5c518; }
 #padCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-#padAyuda { position: absolute; left: 0; right: 0; bottom: 2vh; text-align: center; font-size: 2.5vh; color: #8a8792; line-height: 1.35; pointer-events: none; }
-#padTit { position: absolute; left: 0; right: 0; top: 36%; text-align: center; font-size: 7vh; color: #5b5864; pointer-events: none; }
+#padAyuda { position: absolute; left: 0; right: 0; bottom: calc(var(--vh) * 2); text-align: center; font-size: calc(var(--vh) * 2.5); color: #8a8792; line-height: 1.35; pointer-events: none; }
+#padTit { position: absolute; left: 0; right: 0; top: 36%; text-align: center; font-size: calc(var(--vh) * 7); color: #5b5864; pointer-events: none; }
 #padTit.con { color: #f5c518; }
-#carga { position: absolute; left: 10%; right: 10%; top: 3vh; height: 3vh; background: #2b2930; border-radius: 2vh; overflow: hidden; }
+#carga { position: absolute; left: 10%; right: 10%; top: calc(var(--vh) * 3); height: calc(var(--vh) * 3); background: #2b2930; border-radius: calc(var(--vh) * 2); overflow: hidden; }
 #carga b { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: #f5c518; }
-#toques { position: absolute; left: 0; right: 0; top: 55%; text-align: center; font-size: 5vh; color: #fff; pointer-events: none; }
+#toques { position: absolute; left: 0; right: 0; top: 55%; text-align: center; font-size: calc(var(--vh) * 5); color: #fff; pointer-events: none; }
 
 /* ---- capas de estado ---- */
 .capa { position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; z-index: 8; }
-.capa .t { font-size: 13vh; line-height: 1; }
-.capa .s { font-size: 4vh; margin-top: 2vh; }
+.capa .t { font-size: calc(var(--vh) * 13); line-height: 1; }
+.capa .s { font-size: calc(var(--vh) * 4); margin-top: calc(var(--vh) * 2); }
 #capaKo { background: rgba(120,10,30,0.88); }
 #capaMira, #capaEspera, #capaCon { background: #0b0a0d; }
 #capaFin { background: rgba(11,10,13,0.92); }
 #capaCuenta { background: rgba(11,10,13,0.55); pointer-events: none; }
-#banner { position: fixed; top: 14vh; left: 0; right: 0; text-align: center; font-size: 7vh; color: #a855f7; z-index: 7; pointer-events: none; }
+#banner { position: fixed; top: calc(var(--vh) * 14); left: 0; right: 0; text-align: center; font-size: calc(var(--vh) * 7); color: #a855f7; z-index: 7; pointer-events: none; }
 #girar { background: #0b0a0d; z-index: 20; }
-#logoMini { width: 50vw; max-width: 60vh; border-radius: 2vh; margin-bottom: 3vh; }
+#logoMini { width: 50vw; max-width: calc(var(--vh) * 60); border-radius: calc(var(--vh) * 2); margin-bottom: calc(var(--vh) * 3); }
 @media (orientation: portrait) { #girar { display: flex !important; } }
 </style>
 </head>
@@ -124,6 +127,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 <div id="juego" class="pantalla oculto">
   <div id="zonaJoy"></div>
   <div id="joyBase"><div id="joyPomo"></div></div>
+  <div id="corre"></div>
   <div id="acciones">
     <button id="btnPistola" class="oculto">PISTOLA<br><span id="balas">x2</span></button>
     <button id="btnTruco">FIRULETE</button>
@@ -134,7 +138,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
     <div id="carga" class="oculto"><b></b></div>
     <div id="padTit">PAD</div>
     <div id="toques"></div>
-    <div id="padAyuda" class="m">toque: chute · mantené: superchute<br>deslizá curvo: chute con efecto<br>sin pelota: 2 toques barrida · 3 voadora</div>
+    <div id="padAyuda" class="m">toque: chute · mantené: superchute<br>deslizá curvo: chute con efecto<br>sin pelota: 2 toques barrida · 3 voadora<br>analógico estirado a fondo: ¡correr!</div>
   </div>
 </div>
 
@@ -152,6 +156,19 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
+
+  // ---- sin zoom: ni pellizco, ni doble toque, ni texto agrandado ----
+  function altoReal() { document.documentElement.style.setProperty('--vh', (window.innerHeight / 100) + 'px'); }
+  altoReal();
+  window.addEventListener('resize', altoReal);
+  window.addEventListener('orientationchange', function () { setTimeout(altoReal, 300); });
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', altoReal);
+  var noZoom = function (e) { e.preventDefault(); };
+  ['gesturestart', 'gesturechange', 'gestureend', 'dblclick'].forEach(function (ev) { document.addEventListener(ev, noZoom, { passive: false }); });
+  document.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('touchend', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('wheel', function (e) { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
   var PJ = [
     { id: 'craque', nombre: 'O CRAQUE', desc: 'Técnica, finta, creatividad', st: [5, 4, 5, 4] },
     { id: 'rapido', nombre: 'O RÁPIDO', desc: 'Velocidad, agilidad, explosión', st: [4, 5, 4, 3] },
@@ -178,7 +195,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 
   // pantalla completa + horizontal al primer toque
   var pedido = false;
-  document.addEventListener('pointerdown', function () {
+  document.addEventListener('pointerup', function () {
     if (pedido) return; pedido = true;
     var d = document.documentElement;
     try {
@@ -200,9 +217,14 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   tocar('nvSig', function () { socket.emit('sel', { a: 'nivel', d: 1 }); vibrar(10); });
   tocar('btnEquipo', function () { socket.emit('sel', { a: 'equipo' }); vibrar(10); });
   tocar('btnListo', function () { socket.emit('sel', { a: 'listo' }); vibrar(30); });
+  var menuArmado = false;
   tocar('btnMenu', function () {
     if (st.f === 'select') { if (st.host) socket.emit('sel', { a: 'start' }); }
-    else if (st.host && confirm('¿Volver al menú? Se corta la partida para todos.')) socket.emit('btn', { b: 'menu' });
+    else if (st.host) {
+      // dos toques para confirmar (sin confirm(): saca de pantalla completa)
+      if (menuArmado) { socket.emit('btn', { b: 'menu' }); menuArmado = false; $('btnMenu').textContent = 'MENÚ'; }
+      else { menuArmado = true; $('btnMenu').textContent = '¿SALIR? TOCÁ OTRA VEZ'; setTimeout(function () { menuArmado = false; }, 2500); }
+    }
   });
 
   // ---------------- joystick ----------------
@@ -399,7 +421,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
     // en juego / cuenta / podio
     mostrar('sel', false);
     mostrar('juego', true);
-    $('btnMenu').textContent = 'MENÚ';
+    if (!menuArmado) $('btnMenu').textContent = 'MENÚ';
     $('btnMenu').style.visibility = st.host ? 'visible' : 'hidden';
     $('mini').textContent = st.sc ? st.sc[0] + ' - ' + st.sc[1] : '';
 
@@ -421,6 +443,10 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
     $('btnPase').innerHTML = st.bal ? 'PASE' : 'PEDIR';
     $('btnTruco').innerHTML = st.bal ? 'FIRULETE' : 'SAMBA';
     $('btnTruco').className = st.cdT ? 'cd' : '';
+    // corriendo (analógico estirado)
+    $('joyPomo').className = (st.team ? 't1' : '') + (st.corre ? ' corre' : '');
+    $('corre').textContent = st.corre ? '¡CORRIENDO!' : '';
+    if (st.corre && !prev.corre) vibrar(15);
     // pistola
     var pist = $('btnPistola');
     if (st.balas > 0) { mostrar('btnPistola', true); $('balas').textContent = 'x' + st.balas; pist.className = st.cdP ? 'cd' : ''; }

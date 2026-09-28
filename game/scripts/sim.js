@@ -43,7 +43,15 @@ server.listen(process.env.PORT, async () => {
     if (p === 0) {
       mirador = io(URL); mirador.on('connect', () => mirador.emit('hola', { pid: 'mirador' }));
       await new Promise((r) => setTimeout(r, 300));
-      ok(juego.mirando.size === 1, 'el que entra con la partida empezada queda mirando');
+      const iM = juego.slots.findIndex((x) => x.pid === 'mirador');
+      ok(iM >= 0 && juego.mirando.size === 0 && juego.jug[iM].bot === false, 'el que entra con la partida empezada juega enseguida (reemplaza a un bot)');
+      const cuarto = io(URL); cuarto.on('connect', () => cuarto.emit('hola', { pid: 'cuarto' }));
+      const quinto = io(URL); quinto.on('connect', () => quinto.emit('hola', { pid: 'quinto' }));
+      await new Promise((r) => setTimeout(r, 300));
+      ok(juego.slots.filter((x) => x.humano).length === 4, 'entran 4 jugadores humanos');
+      ok(juego.mirando.size === 1, 'el quinto queda mirando');
+      cuarto.close(); quinto.close();
+      await new Promise((r) => setTimeout(r, 200));
     }
     // los celulares juegan al azar: mueven, tocan, barren, trucos
     const juegan = setInterval(() => {
@@ -82,7 +90,7 @@ server.listen(process.env.PORT, async () => {
     ok(true, 'vuelve a la selección');
     if (mirador) {
       await new Promise((r) => setTimeout(r, 200));
-      ok(juego.slots.filter((s) => s.humano).length === 3 && juego.mirando.size === 0, 'el que miraba entra en la siguiente');
+      ok(juego.slots.filter((s) => s.humano).length === 3 && juego.mirando.size === 0, 'sigue en la partida siguiente');
       mirador.close();
       await new Promise((r) => setTimeout(r, 300));
     }
