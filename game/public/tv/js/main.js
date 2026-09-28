@@ -9,7 +9,7 @@ import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 2;
+const VERSION = 3;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -210,7 +210,7 @@ async function arrancar() {
       case 'atajada': audio.sfx.entrada(); fx.texto('¡ATAJADA!', ex, 2.4, ez, '#7dd3fc', 1.1); fx.sacudir(0.15); break;
       case 'poste': audio.sfx.poste(); fx.texto('¡PALO!', ex, 2.4, ez, '#ffffff'); fx.sacudir(0.25); break;
       case 'preparados': hud.grande('¡PREPARADOS!', nivelNombre, 1400); audio.tema(null); audio.sfx.preparados(); audio.voz('preparados', 0.2); break;
-      case 'go': hud.grande('¡VAMOS!', '', 900, '#22c55e'); audio.sfx.beep(true); audio.voz(['fight', 'vamos']); audio.tema(nivelId); audio.acelerar(false); break;
+      case 'go': hud.grande('¡VAMOS!', '', 900, '#22c55e'); audio.sfx.beep(true); audio.acelerar(false); break;
       case 'silbato': audio.sfx.silbato(); break;
       case 'matchpoint': hud.aviso('¡ÚLTIMA BOLA! ' + NOMBRE_EQUIPO[e.t] + ' está a un gol', 4000); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'ultimos': hud.aviso('¡ÚLTIMOS 30 SEGUNDOS!', 3000); audio.sfx.alarma(); audio.acelerar(true); break;
@@ -403,6 +403,11 @@ async function arrancar() {
         fase = st.f; faseDesde = tiempo;
         hud.fase(fase);
         podio.visible = fase === 'finished';
+        audio.partidoActivo(fase === 'playing');
+        if (fase === 'playing') {
+          // la canción "Favela Futebol" entera en cada partido (si no carga, la música sintetizada)
+          if (!audio.cancion()) audio.tema(nivelId);
+        }
         if (fase === 'select') { audio.tema('menu'); audio.acelerar(false); }
         if (fase === 'finished') {
           audio.tema('podio');

@@ -46,7 +46,9 @@ node scripts/capturas.js capturas   # Chromium sin ventana: capturas de TV y cel
 
 ## Música, efectos y voces
 
-Música de funk brasilero y efectos 100% sintetizados (Web Audio). Voces en `public/assets/voices/` (GOOOL, SHOT!, K.O., SAMBA, OLÉ, FIGHT…), listadas en `voices.json` (ver `LEEME.txt`).
+Durante el partido suena entera la canción **"Favela Futebol"** (`public/assets/music/favela_futebol.mp3`, en loop si el partido es más largo). Menú y podio: funk sintetizado con Web Audio, igual que los efectos.
+
+Voces: desactivadas por ahora (`voices.json` vacío). Los MP3 siguen en `public/assets/voices/`; para reactivarlas, volver a listarlos en `voices.json` (ver `LEEME.txt`).
 
 Vista para revisar personajes: `/?vista=pj`, `/?vista=pj0`…`pj3` (de cerca) y `/?vista=baile`.
 
