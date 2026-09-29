@@ -13,17 +13,18 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 | Control | Acción |
 |---|---|
 | Joystick (izquierda) | Moverse. **Estirado a fondo y sostenido: correr más rápido** |
-| Pad: **tocar** con la pelota | Patear al arco |
-| Pad: **mantener** con la pelota | Superchute (se carga; más de ~1 s = ¡fuego!) |
+| Pad: **tocar** con la pelota | Patear al arco (suave, casi como un pase) |
+| Pad: **mantener** con la pelota | Cargar el tiro. Para hacer gol desde atrás de mitad de cancha hay que cargarlo a fondo (~1.5 s = superchute) |
 | Pad: **deslizar curvo** con la pelota | Chute con efecto: la pelota dobla con la forma del trazo |
 | Pad: **2 toques** sin la pelota | Barrida |
 | Pad: **3 toques** sin la pelota | Voadora (patada voladora): deja "tuneado" al rival |
 | Pad: mantener sin la pelota | Pique (sprint) |
 | FIRULETE | Elástico, pisada, roleta y lambreta (van rotando). Los rivales cerca quedan "humillados" (¡OLÉ!) |
 | PASE / PEDIR | Pasarla al compañero / pedírsela |
-| PISTOLA | Aparece después de **2 goles seguidos del mismo jugador**. 1 tiro: el rival se desmaya 15 s y reaparece en su arco |
+| PISTOLA | Aparece después de **2 goles seguidos del mismo jugador**. 1 disparo: al rival "le dispararon", queda afuera 10 s y reaparece en su arco. Si te disparan con la pistola sin usar, la perdés |
 
 Al hacer un gol, el goleador festeja con su baile (samba, passinho, Paquetá o sarrada) y la cámara hace zoom.
+Después del gol saca del medio el equipo que lo recibió.
 | START (arriba) | El J1 arranca la partida / vuelve al menú |
 
 ## Personajes 3D
@@ -32,8 +33,13 @@ Los cuatro jugadores se reconstruyeron en 3D a partir de sus fotos (vistas de fr
 recorte con IA, super-resolución x4 (Real-ESRGAN), silueta + profundidad → volumen → malla por piezas
 (cuerpo, brazos y piernas separados para que se muevan sin estirarse), textura proyectada desde las fotos
 (la cara sale de la foto grande) y esqueleto a partir de las articulaciones detectadas.
-Archivos: `public/assets/pj/<jugador>.bin/.json/.jpg` (`_tv.jpg` en la TV).
-Vistas de control: `/?vista=pjq0`…`pjq3` (quietos), `/?vista=baile`.
+La textura se des-ilumina (sin las sombras de la foto) y lleva un normal map con los pliegues de la ropa,
+así la luz del juego le da volumen. Las fotos se funden en los bordes para que no se noten las costuras.
+Archivos: `public/assets/pj/<jugador>.bin/.json/.jpg` + `_n.jpg` (normal map); `_tv.jpg` / `_n_tv.jpg` en la TV.
+Vistas de control: `/?vista=pjq0`…`pjq3` (quietos), `/?vista=baile`, `/?vista=props` (`props1` escenario, `props2` barraca).
+
+Alrededor de la cancha: passistas bailando samba en un escenario con paredão de som, barraca de pastel y
+espetinho con humo, banderas de Brasil flameando, banderines, sillas de plástico y dos vira-latas caramelo.
 
 ## Correr local
 

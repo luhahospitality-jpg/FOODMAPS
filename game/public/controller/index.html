@@ -54,6 +54,19 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 #canchaNom { flex: 1; font-size: calc(var(--vh) * 3.4); text-align: center; }
 #canchaNom small { display: block; font-size: calc(var(--vh) * 1.9); color: #999; }
 #btnListo { flex: 1; font-size: calc(var(--vh) * 8); background: #16a34a; border-radius: calc(var(--vh) * 2); }
+/* reacción al elegir bando: rebote, sacudida, destello, fotos que saltan */
+@keyframes golpe { 0% { transform: scale(1) rotate(0); } 15% { transform: scale(1.13) rotate(-4deg); } 35% { transform: scale(0.92) rotate(3deg); } 55% { transform: scale(1.06) rotate(-2deg); } 75% { transform: scale(0.98) rotate(1deg); } 100% { transform: scale(1) rotate(0); } }
+@keyframes salto { 0% { transform: translateY(0) rotate(0); } 25% { transform: translateY(-16%) rotate(-6deg); } 50% { transform: translateY(0) rotate(4deg); } 70% { transform: translateY(-6%) rotate(-2deg); } 100% { transform: none; } }
+@keyframes flash { 0% { opacity: 0.95; } 100% { opacity: 0; } }
+@keyframes sello { 0% { transform: translate(-50%, -50%) scale(3.2) rotate(-18deg); opacity: 0; } 20% { transform: translate(-50%, -50%) scale(0.9) rotate(-8deg); opacity: 1; } 32% { transform: translate(-50%, -50%) scale(1.08) rotate(-8deg); } 80% { transform: translate(-50%, -50%) scale(1) rotate(-8deg); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(1.3) rotate(-8deg); opacity: 0; } }
+.bando.golpe { animation: golpe 0.6s cubic-bezier(.3,1.6,.5,1); }
+.bando.golpe .fotos img { animation: salto 0.7s ease-out; }
+.bando.golpe .fotos div:nth-child(2) img { animation-delay: 0.08s; }
+.bando .destello { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #fff; opacity: 0; pointer-events: none; z-index: 3; }
+.bando.golpe .destello { animation: flash 0.45s ease-out; }
+#sello { position: fixed; left: 50%; top: 50%; z-index: 30; pointer-events: none; font-size: calc(var(--vh) * 15); line-height: 0.95; text-align: center; white-space: nowrap; -webkit-text-stroke: calc(var(--vh) * 0.6) #111; opacity: 0; }
+#sello.ya { animation: sello 1.1s ease-out forwards; }
+.papel { position: fixed; z-index: 29; pointer-events: none; width: calc(var(--vh) * 2.2); height: calc(var(--vh) * 1.2); border-radius: 2px; }
 #btnListo.si { background: #3f3d45; font-size: calc(var(--vh) * 4.2); }
 
 /* ---- juego ---- */
@@ -107,8 +120,8 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 <div id="sel" class="pantalla oculto">
   <div id="selTit">ELEGÍ TU BANDO</div>
   <div id="bandos">
-    <div class="bando b0" id="bando0"><div class="bnom">AMARELO</div><div class="fotos"><div id="f0"><img src="/assets/img/foto_ronaldinho.webp" alt=""><span>RONALDINHO</span></div><div id="f2"><img src="/assets/img/foto_ronaldo.webp" alt=""><span>RONALDO</span></div></div></div>
-    <div class="bando b1" id="bando1"><div class="bnom">AZUL</div><div class="fotos"><div id="f1"><img src="/assets/img/foto_maradona.webp" alt=""><span>MARADONA</span></div><div id="f3"><img src="/assets/img/foto_neymar.webp" alt=""><span>NEYMAR</span></div></div></div>
+    <div class="bando b0" id="bando0"><div class="destello"></div><div class="bnom">AMARELO</div><div class="fotos"><div id="f0"><img src="/assets/img/foto_ronaldinho.webp" alt=""><span>RONALDINHO</span></div><div id="f2"><img src="/assets/img/foto_ronaldo.webp" alt=""><span>RONALDO</span></div></div></div>
+    <div class="bando b1" id="bando1"><div class="destello"></div><div class="bnom">AZUL</div><div class="fotos"><div id="f1"><img src="/assets/img/foto_maradona.webp" alt=""><span>MARADONA</span></div><div id="f3"><img src="/assets/img/foto_neymar.webp" alt=""><span>NEYMAR</span></div></div></div>
   </div>
   <div id="selDer">
     <div id="soy">sos</div>
@@ -146,10 +159,11 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 <!-- Capas -->
 <div id="capaCon" class="capa"><img id="logoMini" src="/assets/img/logo_fabela.webp" alt=""><div class="s m">Conectando…</div></div>
 <div id="capaMira" class="capa oculto"><img src="/assets/img/logo_fabela.webp" alt="" style="width:30vw;margin-bottom:3vh"><div class="t">ESTÁS MIRANDO</div><div class="s m">La partida ya empezó. Jugás la próxima.</div></div>
-<div id="capaKo" class="capa oculto"><div class="t">¡TE DESMAYARON!</div><div class="s">Volvés en <span id="koN">15</span> s</div></div>
+<div id="capaKo" class="capa oculto"><div class="t">¡TE DISPARARON!</div><div class="s">Volvés en <span id="koN">10</span> s</div></div>
 <div id="capaCuenta" class="capa oculto"><div class="t" id="cuentaN">3</div></div>
 <div id="capaFin" class="capa oculto"><div class="t" id="finT">¡GANASTE!</div><div class="s m" id="finS"></div></div>
 <div id="banner"></div>
+<div id="sello"></div>
 <div id="girar" class="capa oculto"><div class="t" style="font-size:9vw">GIRÁ EL CELULAR</div><div class="s m" style="font-size:5vw">El control se usa en horizontal</div></div>
 
 <script src="/socket.io/socket.io.js"></script>
@@ -208,8 +222,41 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   function tocar(id, fn) {
     $(id).addEventListener('pointerdown', function (e) { e.preventDefault(); fn(e); });
   }
-  tocar('bando0', function () { socket.emit('sel', { a: 'equipo', t: 0 }); vibrar(15); });
-  tocar('bando1', function () { socket.emit('sel', { a: 'equipo', t: 1 }); vibrar(15); });
+  // ¡elegir bando es una fiesta!: rebote, destello, papelitos, sello gigante y vibración
+  var COLORES = [['#f5c518', '#16a34a', '#ffffff', '#0b7a3a'], ['#2563eb', '#ffffff', '#60a5fa', '#f5c518']];
+  function fiesta(t, e) {
+    var b = $('bando' + t);
+    b.classList.remove('golpe'); void b.offsetWidth; b.classList.add('golpe');
+    setTimeout(function () { b.classList.remove('golpe'); }, 800);
+    var sello = $('sello');
+    sello.textContent = t === 0 ? '¡VAMOS AMARELO!' : '¡VAMOS AZUL!';
+    sello.style.color = t === 0 ? '#f5c518' : '#3b82f6';
+    sello.classList.remove('ya'); void sello.offsetWidth; sello.classList.add('ya');
+    vibrar([30, 40, 30, 40, 120]);
+    // papelitos que explotan desde el dedo
+    var x0 = e && e.clientX ? e.clientX : innerWidth / 2, y0 = e && e.clientY ? e.clientY : innerHeight / 2;
+    var ps = [];
+    for (var i = 0; i < 36; i++) {
+      var d = document.createElement('div'); d.className = 'papel';
+      d.style.background = COLORES[t][i % 4];
+      document.body.appendChild(d);
+      var a = Math.random() * Math.PI * 2, v = 250 + Math.random() * 550;
+      ps.push({ d: d, x: x0, y: y0, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 350, r: Math.random() * 360, vr: (Math.random() - 0.5) * 900 });
+    }
+    var t0 = performance.now(), prev = t0;
+    (function paso(ahora) {
+      var dt = Math.min(0.05, (ahora - prev) / 1000); prev = ahora;
+      var k = (ahora - t0) / 1100;
+      for (var q = 0; q < ps.length; q++) {
+        var p = ps[q]; p.vy += 1400 * dt; p.vx *= 0.985; p.x += p.vx * dt; p.y += p.vy * dt; p.r += p.vr * dt;
+        p.d.style.transform = 'translate(' + p.x + 'px,' + p.y + 'px) rotate(' + p.r + 'deg)';
+        p.d.style.opacity = String(Math.max(0, 1 - k * k));
+      }
+      if (k < 1) requestAnimationFrame(paso); else ps.forEach(function (p) { p.d.remove(); });
+    })(t0);
+  }
+  tocar('bando0', function (e) { if (st.listo) return; socket.emit('sel', { a: 'equipo', t: 0 }); fiesta(0, e); });
+  tocar('bando1', function (e) { if (st.listo) return; socket.emit('sel', { a: 'equipo', t: 1 }); fiesta(1, e); });
   tocar('nvAnt', function () { socket.emit('sel', { a: 'nivel', d: -1 }); vibrar(10); });
   tocar('nvSig', function () { socket.emit('sel', { a: 'nivel', d: 1 }); vibrar(10); });
   tocar('btnListo', function () { socket.emit('sel', { a: 'listo' }); vibrar(30); });
@@ -363,9 +410,9 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       var d = (performance.now() - toque.t0) / 1000;
       if (d > 0.25) {
         mostrar('carga', true);
-        var k = Math.min(1, (d - 0.25) / 1.0);
+        var k = Math.min(1, (d - 0.2) / 1.3);
         cargaB.style.width = (k * 100) + '%';
-        cargaB.style.background = k > 0.8 ? '#ff5a1f' : '#f5c518';
+        cargaB.style.background = k > 0.95 ? '#ff5a1f' : '#f5c518';
       }
     }
   }, 50);

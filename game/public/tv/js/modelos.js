@@ -137,7 +137,7 @@ export function crearEtiqueta() {
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     let txt = nombre;
-    if (ko > 0) txt = 'KO ' + ko;
+    if (ko > 0) txt = '¡PUM! ' + ko;
     const w = Math.max(70, g.measureText(txt).width + 26 + (balas > 0 ? 44 : 0));
     g.fillStyle = ko > 0 ? '#e11d48' : COLOR_EQUIPO[team];
     g.beginPath();

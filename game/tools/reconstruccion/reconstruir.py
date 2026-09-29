@@ -56,7 +56,7 @@ def smooth1d(a, s):
     return ndimage.gaussian_filter1d(a, s, mode='nearest')
 
 
-def reconstruir(nombre, vox=0.0065, caras=14000, atlas=1024, salida='out'):
+def reconstruir(nombre, vox=0.0065, caras=14000, atlas=2048, salida='out'):
     H = ALTURAS[nombre]
     F = Vista(f'{nombre}_frente', H)
     B = Vista(f'{nombre}_espalda', H)
@@ -300,11 +300,12 @@ def reconstruir(nombre, vox=0.0065, caras=14000, atlas=1024, salida='out'):
         (R, np.array([0, 0, 1.]), lambda P: (uR + P[:, 0] / R.s, R.fila(P[:, 1])), lambda P: P[:, 2], zR_),
         (L, np.array([0, 0, -1.]), lambda P: (uL - P[:, 0] / L.s, L.fila(P[:, 1])), lambda P: -P[:, 2], zL_),
     ], cuello_y=y_hombro + 0.06 * H / 1.8, pieza=pieza_uv)
+    tex, nrm = detalle(tex, cubierto)
 
     # ---- esqueleto y pesos ----
     huesos, pesos_i, pesos_w = esqueleto(V, F, zF, xmin, xmax, ys, y_cadera, y_hombro, y_entre, pieza_uv, zs, H)
     os.makedirs(salida, exist_ok=True)
-    guardar(salida, nombre, V, N, uv, Fc, pesos_i, pesos_w, huesos, tex, H)
+    guardar(salida, nombre, V, N, uv, Fc, pesos_i, pesos_w, huesos, tex, H, nrm)
     return V, Fc, uv, tex
 
 
@@ -376,9 +377,13 @@ def hornear(V, N, Fc, uv, S, vistas, cuello_y=9.9, pieza=None):
         # máscara achicada: los bordes del recorte traen fondo oscuro
         mer = cv2.erode(Vw.m.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
         en_mascara = mer[iv, iu]
+        # cerca del borde del recorte la foto pesa menos (se funde con la otra vista, sin costura ni fleco oscuro)
+        dist = cv2.distanceTransform(Vw.m.astype(np.uint8), cv2.DIST_L2, 5)
+        fx = 0.03 / Vw.s
+        borde = np.clip((dist[iv, iu] - 0.2 * fx) / fx, 0.02, 1)
         cosang = np.clip(Nn @ d, 0, 1)
         pref = 1.3 if idx_v < 2 else 0.75            # frente/espalda mandan; los costados completan
-        w = cosang ** 6 * pref * visible * en_mascara
+        w = cosang ** 4 * pref * visible * en_mascara * borde
         # lo que no es brazo no toma color de donde, en la foto, hay un brazo
         w = np.where(~es_brazo & zona[iv, iu], 0, w)
         if idx_v >= 2:
@@ -407,6 +412,37 @@ def hornear(V, N, Fc, uv, S, vistas, cuello_y=9.9, pieza=None):
         t8[hueco > 0] = dil[hueco > 0]
         hueco = cv2.erode(hueco, np.ones((3, 3), np.uint8))
     return t8, ok
+
+
+def detalle(tex, ok):
+    """Saca la luz "horneada" de las fotos (sombras grandes que se veían pegadas) y
+    arma un normal map con los pliegues de la ropa/pelo para que la luz del juego los marque."""
+    t = tex.astype(np.float32) / 255
+    m = cv2.erode(ok.astype(np.uint8), np.ones((3, 3), np.uint8)).astype(np.float32)
+    lum = t @ np.array([0.3, 0.55, 0.15], np.float32)
+    def borrosa(x, s):
+        a = cv2.GaussianBlur(x * m, (0, 0), s); b = cv2.GaussianBlur(m, (0, 0), s)
+        return a / np.maximum(b, 1e-4)
+    S = tex.shape[0]
+    # 1) des-iluminado suave: la luminancia de gran escala se acerca a su promedio local
+    lg = borrosa(lum, S / 40)
+    lm = borrosa(lum, S / 10)
+    g = np.clip(((lm + 0.03) / (lg + 0.03)) ** 0.45, 0.7, 1.5)
+    t2 = np.clip(t * g[..., None], 0, 1)
+    # 2) altura = detalle de luminancia (oscuro = hundido) → normal map en espacio tangente
+    alt = borrosa(lum, 1.2) - borrosa(lum, S / 64)
+    m2 = cv2.erode(m, np.ones((7, 7), np.uint8))      # sin relieve falso en el borde de cada isla
+    alt = np.clip(alt, -0.25, 0.25) * m2
+    gx = cv2.Sobel(alt, cv2.CV_32F, 1, 0, ksize=3)
+    gy = cv2.Sobel(alt, cv2.CV_32F, 0, 1, ksize=3)
+    k = 2.2 * S / 1024
+    n = np.dstack([-gx * k, gy * k, np.ones_like(gx)])
+    n /= np.linalg.norm(n, axis=2, keepdims=True)
+    n = np.where(m[..., None] > 0, n, np.array([0, 0, 1], np.float32))
+    nrm = ((n * 0.5 + 0.5) * 255).astype(np.uint8)
+    t8 = (t2 * 255).astype(np.uint8)
+    t8[~ok] = tex[~ok]
+    return t8, nrm
 
 
 def esqueleto(V, F, zF, xmin, xmax, ys, y_cad, y_hom, y_ent, parte, zs, H):
@@ -467,7 +503,7 @@ def esqueleto(V, F, zF, xmin, xmax, ys, y_cad, y_hom, y_ent, parte, zs, H):
     return huesos, wi, ww
 
 
-def guardar(salida, nombre, V, N, uv, Fc, wi, ww, huesos, tex, H):
+def guardar(salida, nombre, V, N, uv, Fc, wi, ww, huesos, tex, H, nrm=None):
     n = len(V)
     Nq = np.clip(np.round(N / (np.linalg.norm(N, axis=1, keepdims=True) + 1e-9) * 127), -127, 127).astype(np.int8)
     UVq = np.clip(np.round(uv * 65535), 0, 65535).astype(np.uint16)
@@ -485,7 +521,11 @@ def guardar(salida, nombre, V, N, uv, Fc, wi, ww, huesos, tex, H):
     meta = {'v': n, 'i': int(Fc.size), 'i32': n >= 65535, 'ofs': ofs, 'huesos': huesos, 'altura': H}
     json.dump(meta, open(f'{salida}/{nombre}.json', 'w'))
     Image.fromarray(tex).save(f'{salida}/{nombre}.jpg', quality=88)
-    Image.fromarray(tex).resize((tex.shape[1] // 2, tex.shape[0] // 2), Image.LANCZOS).save(f'{salida}/{nombre}_tv.jpg', quality=85)
+    # la TV usa 1024 (antes 512: se veía borroso de cerca)
+    Image.fromarray(tex).resize((1024, 1024), Image.LANCZOS).save(f'{salida}/{nombre}_tv.jpg', quality=85)
+    if nrm is not None:
+        Image.fromarray(nrm).save(f'{salida}/{nombre}_n.jpg', quality=90)
+        Image.fromarray(nrm).resize((1024, 1024), Image.LANCZOS).save(f'{salida}/{nombre}_n_tv.jpg', quality=88)
     print('  guardado', nombre, n, 'vértices', Fc.shape[0], 'triángulos', len(buf) // 1024, 'KB')
 
 

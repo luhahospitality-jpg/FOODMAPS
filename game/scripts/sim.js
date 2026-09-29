@@ -126,7 +126,22 @@ server.listen(process.env.PORT, async () => {
   celus[0].emit('btn', { b: 'pistola' });
   await new Promise((r) => setTimeout(r, 200));
   ok(juego.jug.some((o) => o.team !== j0.team && o.estado === 'ko'), 'el disparo desmaya a un rival');
-  ok(juego.jug.find((o) => o.estado === 'ko').koT > 13, 'queda desmayado ~15 s');
+  ok(juego.jug.find((o) => o.estado === 'ko').koT > 8 && juego.jug.find((o) => o.estado === 'ko').koT <= 10, 'queda fuera ~10 s por el disparo');
+  // si tenés pistola y te disparan, la perdés
+  const conPistola = juego.jug.find((o) => o.team !== j0.team && o.estado !== 'ko');
+  if (conPistola) {
+    conPistola.balas = 1; j0.balas = 1; j0.cd.pistola = 0; j0.estado = 'normal';
+    conPistola.x = j0.x + lado * 4; conPistola.z = j0.z; conPistola.inv = 0;
+    celus[0].emit('btn', { b: 'pistola' });
+    await new Promise((r) => setTimeout(r, 200));
+    ok(conPistola.estado === 'ko' && conPistola.balas === 0, 'al que tenía pistola y le disparan, la pierde');
+  }
+  // saque: lo hace el que recibió el gol
+  while (juego.sub !== '') await new Promise((r) => setTimeout(r, 20));
+  for (const o of juego.jug) { if (o.estado === 'ko') { o.estado = 'normal'; o.koT = 0; } }
+  const bg = juego.pelota; bg.owner = -1; bg.x = lado * 17.6; bg.z = 0; bg.y = 0.5; bg.vx = lado * 12; bg.vz = 0; bg.vy = 0; bg.ultimo = j0.slot; bg.spinT = 0;
+  while (juego.sub !== 'kickoff') await new Promise((r) => setTimeout(r, 20));
+  ok(juego.pelota.owner >= 0 && juego.jug[juego.pelota.owner].team !== j0.team, 'saca del medio el equipo que recibió el gol');
   // desconexión de todos → vuelve al menú
   for (const c of celus) c.close();
   await new Promise((r) => setTimeout(r, 400));

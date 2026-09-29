@@ -3,6 +3,7 @@
 import * as THREE from '../../vendor/three.module.min.js';
 import { material, esTV } from './render.js';
 import { pieza, fusionar, canvasTex } from './modelos.js';
+import { crearProps } from './props.js';
 
 // Números pseudoaleatorios con semilla (el fondo sale igual siempre)
 function semilla(s) { return function () { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; }
@@ -459,6 +460,7 @@ export function crearEscenario(id, dims) {
     const x = -HX - 2 + rnd() * (L + 4);
     const z = lado * (HZ + 1.2 + rnd() * 2.5);
     if (lado > 0 && Math.abs(x) < 12) continue;      // no tapar la cámara
+    if (lado < 0 && ((x > -12 && x < -1.5) || (x > 5 && x < 12.5))) continue;   // ahí están el escenario y la barraca
     gente.push({ x, z, s: 0.85 + rnd() * 0.3, c: ['#e11d48', '#f5c518', '#16a34a', '#2563eb', '#f4f4f4', '#9333ea', '#111'][(rnd() * 7) | 0], f: rnd() * 6 });
   }
   for (const sx of [-1, 1]) for (let i = 0; i < 5; i++) gente.push({ x: sx * (HX + 1.5 + rnd() * 2.5), z: -HZ + rnd() * W, s: 0.9, c: ['#e11d48', '#f5c518', '#16a34a', '#2563eb'][(rnd() * 4) | 0], f: rnd() * 6 });
@@ -522,6 +524,11 @@ export function crearEscenario(id, dims) {
       s.scale.setScalar(2.5); grupo.add(s);
     }
   }
+
+  // ---------------- props brasileños (bailarinas, perros, barraca, banderas) ----------------
+  const props = crearProps(tema, dims);
+  grupo.add(props.grupo);
+  animables.push((t, dt) => props.actualizar(t, dt));
 
   grupo.traverse((o) => { if (o.isMesh && o !== cielo) o.matrixAutoUpdate = true; });
 

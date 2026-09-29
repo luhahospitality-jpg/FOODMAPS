@@ -9,7 +9,7 @@ import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 7;
+const VERSION = 8;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -181,11 +181,12 @@ async function arrancar() {
       case 'ko':
         audio.sfx.ko();
         audio.voz('ko', 0.6);
-        fx.texto('¡KO!', ex, 2.4, ez, '#e11d48', 1.4);
+        fx.texto('¡DISPARO!', ex, 2.4, ez, '#e11d48', 1.4);
         fx.chispas.emitir(ex, 1.2, ez, '#ffe14a', esTV ? 20 : 40, 5, { vida: 0.8 });
         fx.sacudir(0.4);
-        hud.aviso(nombreSlot(e.s) + ' DESMAYADO · vuelve en 15 s', 2500);
+        hud.aviso('¡LE DISPARARON A ' + nombreSlot(e.s) + '! · vuelve en 10 s', 2800);
         break;
+      case 'pierdePistola': { const P2 = pos(e.s); fx.texto('¡PERDIÓ LA PISTOLA!', P2.x, 2.8, P2.z, '#f5c518', 1); break; }
       case 'tuneado':
         audio.sfx.tuneado();
         fx.texto('¡TUNEADO!', ex, 2.5, ez, '#a855f7', 1.2);
@@ -222,7 +223,8 @@ async function arrancar() {
       case 'ultimos': hud.aviso('¡ÚLTIMOS 30 SEGUNDOS!', 3000); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'oro': hud.grande('GOL DE OURO', 'el próximo gol gana', 2500); audio.sfx.alarma(); audio.acelerar(true); break;
       case 'fin': audio.sfx.silbato(true); setTimeout(() => audio.sfx.victoria(), 700); break;
-      case 'elige': audio.sfx.click(); audio.voz([PERSONAJES[e.ch].id + '_elige']); break;
+      case 'elige': audio.voz([PERSONAJES[e.ch].id + '_elige']); break;
+      case 'bando': hud.saltar(e.s); audio.sfx.listo(); audio.sfx.ole(); break;
       case 'listo': audio.sfx.listo(); break;
       case 'cancha': audio.sfx.click(); break;
       case 'entra': audio.sfx.listo(); saltarIntro(); break;
@@ -343,7 +345,11 @@ async function arrancar() {
     } else if (fase === 'select' && vista) {
       // ?vista=pj : los 4 personajes de cerca (para revisar modelos); ?vista=baile: bailando
       const k = parseInt(vista.replace(/\D/g, '').slice(-1), 10);
-      if (k >= 0 && k < 4) { const x = -3.3 + k * 2.2; camPosObj.set(x + 0.3, 1.5, 4.6); camMiraObj.set(x, 1.1, 2); }
+      if (vista.indexOf('props') === 0) {
+        // ?vista=props / props1 / props2: escenario de fondo (bailarinas, barraca)
+        const zf = -dims.W / 2 - 2.1, x = [0, -7.5, 8.5][k || 0];
+        camPosObj.set(x, k ? 2.4 : 5, k ? zf + 7 : 6); camMiraObj.set(x, 1.3, zf);
+      } else if (k >= 0 && k < 4) { const x = -3.3 + k * 2.2; camPosObj.set(x + 0.3, 1.5, 4.6); camMiraObj.set(x, 1.1, 2); }
       else { camPosObj.set(0, 1.7, 9.5); camMiraObj.set(0, 1.0, 2); }
       suave = 20;
     } else if (fase === 'select') {

@@ -227,7 +227,9 @@ function cargarUno(id) {
     fetch(base + '.json').then((r) => { if (!r.ok) throw new Error(id + ' json ' + r.status); return r.json(); }),
     fetch(base + '.bin').then((r) => { if (!r.ok) throw new Error(id + ' bin ' + r.status); return r.arrayBuffer(); }),
     new Promise((ok, mal) => new THREE.TextureLoader().load(base + (esTV ? '_tv.jpg' : '.jpg'), ok, undefined, mal)),
-  ]).then(([meta, buf, tex]) => {
+    // normal map con los pliegues de ropa y pelo (si falta, se juega sin él)
+    new Promise((ok) => new THREE.TextureLoader().load(base + (esTV ? '_n_tv.jpg' : '_n.jpg'), ok, undefined, () => ok(null))),
+  ]).then(([meta, buf, tex, nrm]) => {
     const v = meta.v, o = meta.ofs;
     const g = new THREE.BufferGeometry();
     g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(buf, o[0], v * 3), 3));
@@ -239,8 +241,11 @@ function cargarUno(id) {
     g.computeBoundingSphere();
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.anisotropy = esTV ? 1 : 4;
-    // la foto ya trae su iluminación: un poco de "luz propia" para que no quede oscura
-    const mat = material({ map: tex, rough: 0.82, emissiveMap: tex, emissive: new THREE.Color(esTV ? 0.42 : 0.3, esTV ? 0.42 : 0.3, esTV ? 0.42 : 0.3) });
+    // la textura viene des-iluminada: poca "luz propia" y que la luz de la escena + el normal map den el volumen
+    const e = esTV ? 0.24 : 0.14;
+    const op = { map: tex, rough: 0.78, emissiveMap: tex, emissive: new THREE.Color(e, e, e) };
+    if (nrm) { nrm.anisotropy = tex.anisotropy; op.normalMap = nrm; op.normalScale = new THREE.Vector2(0.9, 0.9); }
+    const mat = material(op);
     MODELOS[id] = { geo: g, mat, huesos: meta.huesos, altura: meta.altura };
   });
 }

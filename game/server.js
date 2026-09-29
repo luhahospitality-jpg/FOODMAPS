@@ -11,7 +11,7 @@ const express = require('express');
 const { Server } = require('socket.io');
 const QRCode = require('qrcode');
 
-const VERSION = 7;
+const VERSION = 8;
 const PORT = process.env.PORT || 3000;
 const TICK = 20;
 const DT = 1 / TICK;
@@ -28,7 +28,7 @@ const BALL_R = 0.22;
 const GRAV = 20;
 const GOLES_PARA_GANAR = 5;
 const TIEMPO_PARTIDO = 240;       // tope de tiempo (segundos)
-const TIEMPO_KO = 15;             // desmayado por la pistola
+const TIEMPO_KO = 10;             // fuera de juego tras recibir un disparo
 const TIEMPO_PODIO = 12;
 const BALAS_PISTOLA = 1;
 
@@ -188,7 +188,6 @@ function posicionesSaque(equipoConPelota) {
     const adelante = j.slot < 2;                   // el primero de cada equipo va adelante
     let x = lado * (adelante ? 4 : 10);
     let z = adelante ? 0 : (j.team === 0 ? -3 : 3);
-    if (j.team === equipoConPelota && adelante) x = lado * 1.2;
     j.x = x; j.z = z; j.vx = j.vz = 0; j.y = 0;
     j.face = j.team === 0 ? 0 : Math.PI;
     setEstado(j, 'normal', 0);
@@ -196,6 +195,14 @@ function posicionesSaque(equipoConPelota) {
   }
   juego.pelota = nuevaPelota();
   juego.balas = [];
+  // saca del medio el equipo que RECIBIÓ el gol: arranca con la pelota en los pies
+  const sacan = juego.jug.filter((j) => j.team === equipoConPelota && j.estado !== 'ko').sort((a, b) => a.slot - b.slot);
+  if (sacan.length) {
+    const j = sacan[0], lado = j.team === 0 ? -1 : 1;
+    j.x = lado * 0.7; j.z = 0;
+    juego.pelota.owner = j.slot; juego.pelota.ultimo = j.slot;
+    for (const o of rivales(j)) o.cd.robo = 2.0;          // nadie se la saca apenas arranca
+  }
 }
 
 function iniciarCuenta() {
@@ -295,15 +302,16 @@ function patear(j, power, curve, lift, esVolea) {
   aim = clamp(aim, -GOAL_HW - 1.2, GOAL_HW + 1.2);
   const dx = gx - b.x, dz = aim - b.z;
   const d = Math.max(2, hypot(dx, dz));
-  const superChute = power >= 0.85;
-  let speed = (15 + 21 * power) * pj.tiro * (superChute ? 1.12 : 1);
+  // toque suave ~ un pase; hay que cargar a fondo para llegar al arco desde lejos
+  const superChute = power >= 0.9;
+  let speed = (8 + 26 * power) * pj.tiro * (superChute ? 1.1 : 1);
   const T = d / speed;
   const theta = clamp(curve, -1, 1) * 0.55;
   const ang = Math.atan2(dz, dx) - theta;
   let targetH = 0.35 + lift * 1.2 + rnd() * (1.15 - pj.fin) * power * 1.8;
   targetH = clamp(targetH, 0.25, 3.2);
   let vy = (targetH - BALL_R + 0.5 * GRAV * T * T) / T;
-  vy = clamp(vy, 1, 11);
+  vy = clamp(vy, 0.5, 2.5 + 8 * power);     // un tiro flojo no vuela: va por el piso y se frena
   b.owner = -1;
   if (esVolea) { b.y = Math.max(b.y, 0.6); }
   else { b.x = j.x + Math.cos(j.face) * 0.5; b.z = j.z + Math.sin(j.face) * 0.5; b.y = BALL_R; }
@@ -320,7 +328,7 @@ function patear(j, power, curve, lift, esVolea) {
 
 function accionTap(j) {
   if (!libreParaActuar(j)) return;
-  if (tienePelota(j)) { j.taps = []; j.tapResolver = 0; patear(j, 0.38, 0, 0.1); return; }
+  if (tienePelota(j)) { j.taps = []; j.tapResolver = 0; patear(j, 0.14, 0, 0.05); return; }   // un toque: casi un pase
   const now = juego.reloj;
   j.taps = j.taps.filter((t) => now - t < 0.5);
   j.taps.push(now);
@@ -335,10 +343,10 @@ function accionSoltar(j, d) {
   if (!libreParaActuar(j) || !tienePelota(j)) return;
   if (d.kind === 'hold') {
     const dur = clamp(Number(d.dur) || 0, 0, 3);
-    const power = clamp(0.45 + ((dur - 0.25) / 1.0) * 0.55, 0.45, 1);
+    const power = clamp(0.15 + ((dur - 0.2) / 1.3) * 0.85, 0.15, 1);   // a fondo recién a ~1,5 s
     patear(j, power, 0, 0.15);
   } else if (d.kind === 'swipe') {
-    const power = clamp(Number(d.power) || 0.5, 0.35, 1);
+    const power = clamp(Number(d.power) || 0.5, 0.3, 1) * 0.7;          // con efecto: nunca es supercarga
     const curve = clamp(Number(d.curve) || 0, -1, 1);
     const lift = clamp(Number(d.lift) || 0, 0, 1);
     patear(j, power, curve, lift);
@@ -511,20 +519,27 @@ function pensarBot(j) {
       const t = ((o.x - j.x) * ux + (o.z - j.z) * uz) / lu;
       if (t > 0 && t < lu && Math.abs(((o.x - j.x) * uz - (o.z - j.z) * ux) / lu) < 1.1) tapado = true;
     }
-    const ganas = (dGoal < 7 ? 0.6 : 0.2) * (tapado ? 0.35 : 1);
-    if (dGoal < 13 && rnd() < ganas) {
+    const ganas = (dGoal < 6 ? 0.55 : dGoal < 9 ? 0.2 : 0.04) * (tapado ? 0.35 : 1);
+    if (dGoal < 15 && rnd() < ganas) {
       j.inp.mz = (rnd() - 0.5) * 2;
+      // la fuerza depende de la distancia: de lejos hay que cargar a fondo (igual que un humano)
+      const base = clamp((dGoal - 3) / 11, 0.2, 1);
       const r = rnd() + (tapado ? 0.3 : 0);
-      if (r < 0.55) patear(j, 0.35 + rnd() * 0.3, 0, 0.1);
-      else if (r < 0.82) patear(j, 0.5 + rnd() * 0.3, (rnd() < 0.5 ? -1 : 1) * (0.3 + rnd() * 0.5), 0.2);
-      else patear(j, 0.8 + rnd() * 0.2, 0, 0.2);
+      if (r < 0.7 || dGoal > 10) patear(j, clamp(base + (rnd() - 0.4) * 0.2, 0.15, 1), 0, 0.1);
+      else patear(j, clamp(base * 0.9, 0.2, 0.7), (rnd() < 0.5 ? -1 : 1) * (0.3 + rnd() * 0.5), 0.2);
       ia.mx = ia.mz = 0; return;
     }
-    if (rc.d < 2.2 && j.cd.truco <= 0 && rnd() < 0.3) { accionTruco(j); }
-    else if (tmOk && (ia.pide > 0 || (rc.d < 2.4 && rnd() < 0.3))) {
+    // pases: si el compañero está más libre o más cerca del arco, se la toca
+    if (tmOk && j.cd.pase <= 0) {
       const rct = rivalCerca(tm.x, tm.z);
-      if (ia.pide > 0 || rct.d > rc.d + 1) { accionPase(j); ia.pide = 0; ia.mx = ia.mz = 0; return; }
+      const tmGoal = hypot(gx - tm.x, tm.z);
+      const mejorUbicado = tmGoal < dGoal - 2 && rct.d > 2;
+      const presionado = rc.d < 2.6 && rct.d > rc.d;
+      if (ia.pide > 0 || (presionado && rnd() < 0.4) || (mejorUbicado && rnd() < 0.2) || rnd() < 0.012) {
+        accionPase(j); j.cd.pase = 1.6; ia.pide = 0; ia.mx = ia.mz = 0; return;
+      }
     }
+    if (rc.d < 2.2 && j.cd.truco <= 0 && rnd() < 0.25) { accionTruco(j); }
     tx = gx - lado * 3;
     tz = j.z * 0.6;
     if (rc.o && rc.d < 4) tz += (j.z >= rc.o.z ? 1 : -1) * 3;
@@ -700,7 +715,7 @@ function golpesVoadora(j) {
   // volea: si la pelota está en el aire cerca, ¡al arco!
   if (b.owner < 0 && !j.golpeados.has('pelota') && b.y > 0.45 && b.y < 2.6 && hypot(b.x - j.x, b.z - j.z) < 1.4) {
     j.golpeados.add('pelota');
-    patear(j, 0.85, 0, 0.25, true);
+    patear(j, 0.35, 0, 0.2, true);            // volea: misma lógica de fuerza (no es un misil)
   }
 }
 
@@ -872,7 +887,10 @@ function actualizarBalas() {
           if (tienePelota(o)) soltarPelota(o, bl.vx * 0.15, 3, bl.vz * 0.15);
           o.koT = TIEMPO_KO;
           o.y = 0;
+          const perdio = o.balas > 0;
+          o.balas = 0;                                  // si tenías pistola y te disparan, la perdés
           setEstado(o, 'ko', TIEMPO_KO);
+          if (perdio) evento('pierdePistola', { s: o.slot });
           o.vx = bl.vx * 0.12; o.vz = bl.vz * 0.12;
           tirador.knocks++;
           evento('ko', { s: o.slot, by: bl.owner, x: r100(o.x), z: r100(o.z) });
@@ -892,6 +910,7 @@ function actualizarBalas() {
 function gol(team) {
   const b = juego.pelota;
   juego.marcador[team]++;
+  juego.ultimoGolEquipo = team;
   juego.sub = 'goal';
   juego.subT = 4.6;
   const autor = b.ultimo >= 0 ? juego.jug[b.ultimo] : null;
@@ -956,8 +975,8 @@ function actualizarPartido() {
     if (juego.subT <= 0) {
       const m = juego.marcador;
       if (m[0] >= GOLES_PARA_GANAR || m[1] >= GOLES_PARA_GANAR || juego.oro) { terminar(); return; }
-      const ultimo = juego.ev.slice().reverse().find((e) => e.k === 'gol');
-      posicionesSaque(ultimo ? 1 - ultimo.t : 0);
+      // saca el equipo que recibió el último gol (no se busca en los eventos: esos se borran a los 2 s)
+      posicionesSaque(juego.ultimoGolEquipo >= 0 ? 1 - juego.ultimoGolEquipo : 0);
       juego.sub = 'kickoff';
       juego.subT = 1.4;
     }
@@ -1016,7 +1035,7 @@ function estadoPublico() {
       j.anim, j.animSeq, j.ch, j.team,
       (j.inv > 0 ? 1 : 0) | (j.inp.hold && tienePelota(j) ? 2 : 0) | (j.humillado > 0 ? 4 : 0) | (j.bot ? 8 : 0) | (j.estirado > 0.35 ? 16 : 0),
       j.trucoN, Math.ceil(j.koT), j.balas, j.goles,
-      j.inp.hold && tienePelota(j) ? Math.round(clamp((j.inp.holdT - 0.25) / 1.0, 0, 1) * 100) : 0,
+      j.inp.hold && tienePelota(j) ? Math.round(clamp((j.inp.holdT - 0.2) / 1.3, 0, 1) * 100) : 0,
       r100(j.vx), r100(j.vz),
     ]);
   }
@@ -1109,7 +1128,7 @@ function seleccion(i, d) {
   } else if (d.a === 'equipo' && !s.listo) {
     // elegir bando: 0 AMARELO, 1 AZUL (sin número = cambiar al otro)
     const t = d.t === 0 || d.t === 1 ? d.t : 1 - (i % 2);
-    if (i % 2 === t) return;
+    if (i % 2 === t) { evento('bando', { s: i, t }); return; }   // tocar tu propio bando también festeja en la TV
     const destino = juego.slots.find((x) => x.i % 2 === t && !x.humano && !x.pid);
     if (!destino) { evento('equipoLleno', { s: i, t }); return; }
     const sock = io.sockets.sockets.get(s.humano);
@@ -1117,6 +1136,7 @@ function seleccion(i, d) {
     if (sock) ocuparSlot(destino, sock);
     repartirPersonajesBots();
     evento('elige', { s: destino.i, ch: destino.ch });
+    evento('bando', { s: destino.i, t });
   } else if (d.a === 'listo') {
     s.listo = !s.listo;
     evento('listo', { s: i, l: s.listo ? 1 : 0 });

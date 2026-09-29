@@ -86,7 +86,7 @@ export function crearHud() {
         const bot = p.flags & 8;
         const nombre = (bot ? 'CPU' : 'J' + (p.slot + 1));
         let extra = '';
-        if (p.anim === 5) extra = '<span class="ko">KO · vuelve en ' + p.ko + 's</span>';
+        if (p.anim === 5) extra = '<span class="ko">¡LE DISPARARON! · vuelve en ' + p.ko + 's</span>';
         else if (p.balas > 0) extra = '<span class="poder">PISTOLA x' + p.balas + '</span>';
         else extra = 'GOLES ' + p.goles;
         const clave = nombre + p.ch + extra;
@@ -110,6 +110,12 @@ export function crearHud() {
     },
     intro(txt) {
       if (txt) { mostrar(el.intro, true); el.introTxt.textContent = txt; } else mostrar(el.intro, false);
+    },
+    // la tarjeta del que eligió bando salta (movido por JS, sin animaciones CSS en la TV)
+    saltar(slot) {
+      const t = tarjetas[slot]; if (!t) return;
+      const pasos = [['scale(1.12) rotate(-3deg)', 0], ['scale(0.95) rotate(2deg)', 110], ['scale(1.05) rotate(-1deg)', 220], ['', 340]];
+      for (const [tr, ms] of pasos) setTimeout(() => { t.d.style.transform = tr; }, ms);
     },
     debug(txt) { mostrar(el.debug, true); el.debug.textContent = txt; },
     actualizar(ahora) {

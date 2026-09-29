@@ -55,7 +55,7 @@ export function medir() {
   if (!analizador) return null;
   const d = new Float32Array(analizador.fftSize); analizador.getFloatTimeDomainData(d);
   let s = 0, p = 0; for (const x of d) { s += x * x; p = Math.max(p, Math.abs(x)); }
-  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: { sonando: cancionSonando(), estado: estadoCancion, cual: actual ? actual.nombre : null, inicio: actual ? actual.usandoIni : null } };
+  return { estado: ctx.state, rms: Math.sqrt(s / d.length), pico: p, tema: temaActual, voces: Object.keys(voces).length, cancion: { sonando: cancionSonando(), fuentes: vivas.size, estado: estadoCancion, cual: actual ? actual.nombre : null, inicio: actual ? actual.usandoIni : null } };
 }
 
 export function contextoBloqueado() { return !!ctx && ctx.state !== 'running'; }
@@ -243,16 +243,23 @@ function bordes(buf) {
 function prepararCanciones() {
   for (const n in CANCIONES) can[n] = { ini: null, full: null };
   // primero el pedacito de la intro (suena enseguida), después las enteras
-  if (CANCIONES.intro.ini) bajar(CANCIONES.intro.ini, (b) => { can.intro.ini = b; revisar(); });
-  bajar(CANCIONES.intro.full, (b) => {
-    can.intro.full = b; [can.intro.a, can.intro.b] = bordes(b); revisar();
-    bajar(CANCIONES.partido.full, (b2) => { can.partido.full = b2; [can.partido.a, can.partido.b] = bordes(b2); revisar(); });
+  // orden: pedacito de la intro (suena ya) -> canción del partido (es chica) -> intro entera
+  bajar(CANCIONES.intro.ini, (b) => {
+    can.intro.ini = b; revisar();
+    bajar(CANCIONES.partido.full, (b2) => {
+      can.partido.full = b2; [can.partido.a, can.partido.b] = bordes(b2); revisar();
+      bajar(CANCIONES.intro.full, (b3) => { can.intro.full = b3; [can.intro.a, can.intro.b] = bordes(b3); revisar(); });
+    });
   });
   setInterval(() => { if (ctx.state !== 'running') ctx.resume(); revisar(); }, 500);
 }
 
+const vivas = new Set();          // todas las fuentes de canciones que están sonando
 function fuente(buf, loop, a, b, offset, gain) {
   const s = ctx.createBufferSource();
+  vivas.add(s);
+  s.addEventListener('ended', () => vivas.delete(s));
+  s.gainNode = gain;
   s.buffer = buf;
   if (loop) { s.loop = true; s.loopStart = a || 0; s.loopEnd = b || buf.duration; }
   s.connect(gain);
@@ -284,12 +291,18 @@ function revisar() {
     g.gain.linearRampToValueAtTime(0.85, ctx.currentTime + 0.12);
     apagar(actual, 0.1);
     actual = { nombre: pedida, fuente: f, gain: g, inicio: actual.inicio, usandoIni: false };
+    callarOtras(f);
     estadoCancion = pedida + ' sonando';
     return;
   }
   if (actual && actual.nombre === pedida) return;
   const buf = c.full || c.ini;
-  if (!buf) { estadoCancion = pedida + ' cargando'; return; }
+  if (!buf) {
+    // la canción pedida todavía no está: la otra NO sigue sonando
+    if (actual) { apagar(actual, 0.6); actual = null; }
+    estadoCancion = pedida + ' cargando';
+    return;
+  }
   const viejo = actual;
   const g = ctx.createGain(); g.gain.value = 0; g.connect(master);
   const f = fuente(buf, !!c.full, c.a, c.b, 0, g);
@@ -298,7 +311,22 @@ function revisar() {
   actual = { nombre: pedida, fuente: f, gain: g, inicio: ctx.currentTime + 0.02, usandoIni: !c.full };
   if (actual.usandoIni) f.onended = () => { if (actual && actual.fuente === f) { actual = null; revisar(); } };
   apagar(viejo, 0.8);
+  callarOtras(f);
   estadoCancion = pedida + (actual.usandoIni ? ' sonando (inicio)' : ' sonando');
+}
+
+// seguridad: nunca suenan dos canciones a la vez (se apaga cualquier otra que haya quedado)
+function callarOtras(buena) {
+  const t = ctx.currentTime;
+  for (const s of vivas) {
+    if (s === buena) continue;
+    try {
+      s.gainNode.gain.cancelScheduledValues(t);
+      s.gainNode.gain.setValueAtTime(s.gainNode.gain.value, t);
+      s.gainNode.gain.linearRampToValueAtTime(0, t + 0.6);
+      s.stop(t + 0.65);
+    } catch (e) { /* ya parada */ }
+  }
 }
 
 // 'intro' fuera del partido, 'partido' durante el partido (siempre desde el principio)
