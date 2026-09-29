@@ -11,7 +11,7 @@ const express = require('express');
 const { Server } = require('socket.io');
 const QRCode = require('qrcode');
 
-const VERSION = 6;
+const VERSION = 7;
 const PORT = process.env.PORT || 3000;
 const TICK = 20;
 const DT = 1 / TICK;
@@ -33,11 +33,14 @@ const TIEMPO_PODIO = 12;
 const BALAS_PISTOLA = 1;
 
 const PERSONAJES = [
-  { id: 'craque',   nombre: 'O CRAQUE',   vel: 7.3, tiro: 1.0,  drible: 1.0,  fin: 0.9,  trucoCd: 1.0 },
-  { id: 'rapido',   nombre: 'O RÁPIDO',   vel: 8.4, tiro: 0.92, drible: 0.8,  fin: 0.8,  trucoCd: 1.1 },
-  { id: 'forte',    nombre: 'O FORTE',    vel: 6.7, tiro: 1.22, drible: 0.65, fin: 1.0,  trucoCd: 1.3 },
-  { id: 'malandro', nombre: 'O MALANDRO', vel: 7.5, tiro: 0.9,  drible: 1.0,  fin: 0.65, trucoCd: 0.7 },
+  { id: 'ronaldinho', nombre: 'RONALDINHO', apodo: 'EL MAGO',     vel: 7.6, tiro: 1.0,  drible: 1.0,  fin: 0.85, trucoCd: 0.7 },
+  { id: 'ronaldo',    nombre: 'RONALDO',    apodo: 'EL FENÓMENO', vel: 7.4, tiro: 1.2,  drible: 0.8,  fin: 1.0,  trucoCd: 1.2 },
+  { id: 'maradona',   nombre: 'MARADONA',   apodo: 'EL DIEZ',     vel: 7.1, tiro: 1.05, drible: 1.0,  fin: 0.9,  trucoCd: 0.9 },
+  { id: 'neymar',     nombre: 'NEYMAR',     apodo: 'EL CRACK',    vel: 8.2, tiro: 0.92, drible: 0.95, fin: 0.8,  trucoCd: 0.8 },
 ];
+// Solo se elige el bando: cada lugar tiene su jugador fijo.
+// AMARELO (lugares 0 y 2): Ronaldinho y Ronaldo · AZUL (lugares 1 y 3): Maradona y Neymar
+const PJ_DEL_LUGAR = [0, 2, 1, 3];
 
 const NIVELES = [
   { id: 'laje',    nombre: 'LAJE',    vel: 1.0,  fric: 1.1, rebote: 0.55 },
@@ -107,7 +110,7 @@ function normAng(a) { while (a > Math.PI) a -= Math.PI * 2; while (a < -Math.PI)
 //  Estado global
 // ---------------------------------------------------------------------
 function slotVacio(i) {
-  return { i, humano: null, pid: null, nombre: 'CPU', ch: i % PERSONAJES.length, listo: false };
+  return { i, humano: null, pid: null, nombre: 'CPU', ch: PJ_DEL_LUGAR[i], listo: false };
 }
 
 const juego = {
@@ -146,12 +149,9 @@ function slotDeSocket(id) { return juego.slots.findIndex((s) => s.humano === id)
 
 // Los bots eligen personajes que no use nadie (si se puede)
 function repartirPersonajesBots() {
-  const usados = new Set(juego.slots.filter((s) => s.humano || s.pid).map((s) => s.ch));
   for (const s of juego.slots) {
+    s.ch = PJ_DEL_LUGAR[s.i];
     if (s.humano || s.pid) continue;
-    let ch = PERSONAJES.findIndex((p, k) => !usados.has(k));
-    if (ch < 0) ch = (s.i * 3 + 1) % PERSONAJES.length;
-    s.ch = ch; usados.add(ch);
     s.nombre = 'CPU'; s.listo = true;
   }
 }
@@ -384,7 +384,7 @@ function accionTruco(j) {
   if (j.cd.truco > 0) return;
   j.trucoN = (j.trucoN % 4) + 1;
   const t = TRUCOS[j.trucoN];
-  setEstado(j, 'trick', t.dur + (j.pj.id === 'malandro' ? 0.1 : 0));
+  setEstado(j, 'trick', t.dur + (j.pj.id === 'ronaldinho' ? 0.1 : 0));
   j.cd.truco = j.pj.trucoCd + t.dur;
   j.trucos++;
   const f = dirFace(j);
@@ -407,7 +407,7 @@ function accionTruco(j) {
     j.vx = d.x * 7; j.vz = d.z * 7;
   }
   // los rivales cerca quedan "humillados": ¡OLÉ!
-  const radio = j.pj.id === 'malandro' ? 3.0 : 2.4;
+  const radio = j.pj.id === 'ronaldinho' ? 3.0 : 2.4;
   for (const o of rivales(j)) {
     if (activo(o) && hypot(o.x - j.x, o.z - j.z) < radio) {
       o.humillado = 1.0;
@@ -1076,14 +1076,10 @@ function ocuparSlot(s, sock) {
   s.nombre = 'J' + (s.i + 1);
   s.listo = false;
   const j = juego.jug[s.i];
+  s.ch = PJ_DEL_LUGAR[s.i];
   if (j && juego.fase !== 'select') {
     // entra a mitad de partido: se queda con el jugador que manejaba la máquina
     j.bot = false; j.inp.mx = j.inp.mz = 0; j.inp.hold = false;
-    s.ch = j.ch;
-  } else {
-    // si el personaje lo tiene otro humano, busco uno libre
-    const usados = new Set(juego.slots.filter((x) => x !== s && x.humano).map((x) => x.ch));
-    if (usados.has(s.ch)) { const libre = PERSONAJES.findIndex((p, k) => !usados.has(k)); if (libre >= 0) s.ch = libre; }
   }
   sock.emit('bienvenida', { slot: s.i, v: VERSION, personajes: PERSONAJES.map((p) => ({ id: p.id, nombre: p.nombre })), niveles: NIVELES.map((n) => ({ id: n.id, nombre: n.nombre })) });
   if (juego.fase === 'select') repartirPersonajesBots();
@@ -1105,26 +1101,22 @@ function hola(sock, datos) {
 function seleccion(i, d) {
   if (juego.fase !== 'select' || !d) return;
   const s = juego.slots[i];
-  if (d.a === 'ch' && !s.listo) {
-    const paso = d.d > 0 ? 1 : -1;
-    s.ch = (s.ch + paso + PERSONAJES.length) % PERSONAJES.length;
-    repartirPersonajesBots();
-    evento('elige', { s: i, ch: s.ch });
-  } else if (d.a === 'nivel' && slotHost() === i) {
+  if (d.a === 'nivel' && slotHost() === i) {
     const paso = d.d > 0 ? 1 : -1;
     juego.nivel = (juego.nivel + paso + NIVELES.length) % NIVELES.length;
     evento('cancha', { n: juego.nivel });
     emitirNivel();
   } else if (d.a === 'equipo' && !s.listo) {
-    // me paso a un lugar libre del otro equipo
-    const destino = juego.slots.find((x) => x.i % 2 !== i % 2 && !x.humano && !x.pid);
-    if (destino) {
-      const ch = s.ch;
-      const sock = io.sockets.sockets.get(s.humano);
-      s.humano = null; s.pid = null; s.listo = false; s.nombre = 'CPU';
-      if (sock) { destino.ch = ch; ocuparSlot(destino, sock); }
-      evento('equipo', { s: destino.i });
-    }
+    // elegir bando: 0 AMARELO, 1 AZUL (sin número = cambiar al otro)
+    const t = d.t === 0 || d.t === 1 ? d.t : 1 - (i % 2);
+    if (i % 2 === t) return;
+    const destino = juego.slots.find((x) => x.i % 2 === t && !x.humano && !x.pid);
+    if (!destino) { evento('equipoLleno', { s: i, t }); return; }
+    const sock = io.sockets.sockets.get(s.humano);
+    s.humano = null; s.pid = null; s.listo = false; s.nombre = 'CPU';
+    if (sock) ocuparSlot(destino, sock);
+    repartirPersonajesBots();
+    evento('elige', { s: destino.i, ch: destino.ch });
   } else if (d.a === 'listo') {
     s.listo = !s.listo;
     evento('listo', { s: i, l: s.listo ? 1 : 0 });

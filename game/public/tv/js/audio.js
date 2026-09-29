@@ -256,7 +256,7 @@ function fuente(buf, loop, a, b, offset, gain) {
   s.buffer = buf;
   if (loop) { s.loop = true; s.loopStart = a || 0; s.loopEnd = b || buf.duration; }
   s.connect(gain);
-  s.start(ctx.currentTime + 0.02, offset || 0);
+  s.start(ctx.currentTime + 0.02, Math.max(0, offset || 0));
   return s;
 }
 
@@ -279,7 +279,7 @@ function revisar() {
   if (actual && actual.nombre === pedida && actual.usandoIni && c.full) {
     const pos = ctx.currentTime - actual.inicio;
     const g = ctx.createGain(); g.gain.value = 0; g.connect(master);
-    const f = fuente(c.full, true, c.a, c.b, Math.min(pos, c.full.duration - 1), g);
+    const f = fuente(c.full, true, c.a, c.b, Math.max(0, Math.min(pos, c.full.duration - 1)), g);
     g.gain.setValueAtTime(0, ctx.currentTime + 0.02);
     g.gain.linearRampToValueAtTime(0.85, ctx.currentTime + 0.12);
     apagar(actual, 0.1);

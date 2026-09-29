@@ -27,16 +27,19 @@
 <!-- Etiquetas flotantes pegadas al mundo 3D -->
 <div id="flotantes"></div>
 
-<!-- Pantalla de selección -->
+<!-- Pantalla de selección: se elige el bando -->
 <div id="menu" class="oculto">
-  <img id="menuLogo" src="/assets/img/logo.jpg" alt="FABELA FOOTBALL">
-  <div id="menuTarjetas"></div>
-  <div id="menuCancha">
-    <div class="rotulo">CANCHA</div>
-    <img id="menuCanchaImg" src="/assets/img/laje.jpg" alt="">
-    <div id="menuCanchaNom">LAJE</div>
+  <img id="menuLogo" src="/assets/img/logo_fabela.webp" alt="FABELA FOOTBALL">
+  <div id="menuTit">ELEGÍ TU BANDO</div>
+  <div id="bandos">
+    <div class="bando b0"><div class="bnom">AMARELO</div><div class="bjug"></div></div>
+    <div class="vs">VS</div>
+    <div class="bando b1"><div class="bnom">AZUL</div><div class="bjug"></div></div>
   </div>
-  <div id="menuAyuda">Elegí tu jugador en el celular y tocá <b>LISTO</b>. Faltan jugadores: completa la máquina.</div>
+  <div id="menuPie">
+    <div id="menuCancha"><img id="menuCanchaImg" src="/assets/img/laje.jpg" alt=""><div><div class="rotulo">CANCHA</div><div id="menuCanchaNom">LAJE</div></div></div>
+    <div id="menuAyuda">Entrá desde el celular, elegí <b>AMARELO</b> o <b>AZUL</b> y tocá <b>LISTO</b>.<br>Los lugares libres los juega la máquina.</div>
+  </div>
 </div>
 
 <!-- Panel para unirse (URL + QR) -->
@@ -57,7 +60,7 @@
 <!-- Intro -->
 <div id="intro" class="oculto"><div id="introTxt"></div></div>
 
-<div id="version">v6</div>
+<div id="version">v7</div>
 <div id="debug" class="oculto"></div>
 <div id="audioAviso" class="oculto">Tocá cualquier tecla del control para activar el sonido</div>
 <div id="error" class="oculto"></div>

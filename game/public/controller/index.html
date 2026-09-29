@@ -27,31 +27,34 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 #mini { font-size: calc(var(--vh) * 4.2); margin-left: calc(var(--vh) * 1.5); min-width: calc(var(--vh) * 14); text-align: center; }
 #version { position: fixed; right: calc(var(--vh) * 1); top: calc(var(--vh) * 0.6); font: calc(var(--vh) * 1.8) Arial, sans-serif; color: #666; }
 
-/* ---- selección ---- */
+/* ---- selección: se elige el bando ---- */
 #sel { background: #0b0a0d; }
-#selCarta { position: absolute; left: 3vw; top: calc(var(--vh) * 14); bottom: calc(var(--vh) * 3); width: 44vw; background: #151317; border-radius: calc(var(--vh) * 2); overflow: hidden; display: flex; }
-#selImg { height: 100%; width: 40%; object-fit: cover; object-position: top; }
-#selInfo { flex: 1; padding: calc(var(--vh) * 2) calc(var(--vh) * 2.4); display: flex; flex-direction: column; }
-#selNom { font-size: calc(var(--vh) * 7.5); line-height: 1; }
-#selDesc { font-size: calc(var(--vh) * 3); color: #bbb; margin: calc(var(--vh) * 1) 0 calc(var(--vh) * 1.4); }
-.stat { display: flex; align-items: center; font-size: calc(var(--vh) * 3); margin: calc(var(--vh) * 0.6) 0; }
-.stat span { width: calc(var(--vh) * 17); }
-.stat i { flex: 1; height: calc(var(--vh) * 1.8); background: #2b2930; border-radius: calc(var(--vh) * 1); position: relative; overflow: hidden; }
-.stat i b { position: absolute; left: 0; top: 0; bottom: 0; background: #f5c518; }
-#flechas { display: flex; margin-top: auto; }
-#flechas button { flex: 1; font-size: calc(var(--vh) * 7); background: #2b2930; border-radius: calc(var(--vh) * 1.6); margin-right: calc(var(--vh) * 1); height: calc(var(--vh) * 13); }
-#flechas button:last-child { margin-right: 0; }
-#selDer { position: absolute; left: 50vw; right: 3vw; top: calc(var(--vh) * 14); bottom: calc(var(--vh) * 3); display: flex; flex-direction: column; }
-#fila { display: flex; margin-bottom: calc(var(--vh) * 1.6); }
-#btnEquipo { flex: 1; font-size: calc(var(--vh) * 4); background: #f5c518; color: #111; border-radius: calc(var(--vh) * 1.6); height: calc(var(--vh) * 13); }
-#btnEquipo.t1 { background: #2563eb; color: #fff; }
+#selTit { position: absolute; top: calc(var(--vh) * 13); left: 3vw; font-size: calc(var(--vh) * 4.2); letter-spacing: 0.2em; color: #bbb; }
+#bandos { position: absolute; left: 3vw; width: 60vw; top: calc(var(--vh) * 20); bottom: calc(var(--vh) * 3); display: flex; }
+.bando { flex: 1; position: relative; border-radius: calc(var(--vh) * 2.4); overflow: hidden; margin-right: 1.6vw; border: calc(var(--vh) * 0.8) solid transparent; }
+.bando:last-child { margin-right: 0; }
+.bando.b0 { background: linear-gradient(160deg, #f7d23a 0%, #d9a404 50%, #1f7a3a 100%); }
+.bando.b1 { background: linear-gradient(160deg, #3b82f6 0%, #1d4ed8 50%, #0b1d5c 100%); }
+.bando.mio { border-color: #fff; }
+.bando.lleno { opacity: 0.45; }
+.bando .bnom { position: absolute; top: calc(var(--vh) * 1.4); left: 0; right: 0; text-align: center; font-size: calc(var(--vh) * 6); color: #fff; -webkit-text-stroke: calc(var(--vh) * 0.25) #111; z-index: 2; pointer-events: none; }
+.bando .fotos { position: absolute; left: 0; right: 0; bottom: 0; top: calc(var(--vh) * 9); display: flex; justify-content: space-around; align-items: flex-end; pointer-events: none; }
+.bando .fotos div { position: relative; width: 50%; height: 100%; display: flex; align-items: flex-end; justify-content: center; }
+.bando .fotos img { max-height: 100%; max-width: 100%; display: block; }
+.bando .fotos span { position: absolute; bottom: calc(var(--vh) * 1); left: 0; right: 0; text-align: center; font-size: calc(var(--vh) * 3.4); color: #fff; -webkit-text-stroke: calc(var(--vh) * 0.15) #000; }
+.bando .fotos .vos::after { content: 'VOS'; position: absolute; top: calc(var(--vh) * 3); right: 8%; font-size: calc(var(--vh) * 3.2); background: #fff; color: #111; padding: 0 calc(var(--vh) * 1); border-radius: calc(var(--vh) * 0.8); }
+.bando .fotos .otro img { opacity: 0.55; }
+#selDer { position: absolute; left: 66vw; right: 3vw; top: calc(var(--vh) * 13); bottom: calc(var(--vh) * 3); display: flex; flex-direction: column; }
+#soy { font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: calc(var(--vh) * 3.2); color: #aaa; }
+#soyNom { font-size: calc(var(--vh) * 8); line-height: 1; }
+#soyApodo { font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: calc(var(--vh) * 3.4); color: #f5c518; margin-bottom: calc(var(--vh) * 1.6); }
 #cancha { display: flex; align-items: center; background: #151317; border-radius: calc(var(--vh) * 1.6); padding: calc(var(--vh) * 1); margin-bottom: calc(var(--vh) * 1.6); }
-#cancha img { height: calc(var(--vh) * 17); width: calc(var(--vh) * 28); object-fit: cover; border-radius: calc(var(--vh) * 1); margin: 0 calc(var(--vh) * 1); }
-#cancha button { font-size: calc(var(--vh) * 5); background: #2b2930; border-radius: calc(var(--vh) * 1.2); width: calc(var(--vh) * 9); height: calc(var(--vh) * 13); }
-#canchaNom { flex: 1; font-size: calc(var(--vh) * 4.2); text-align: center; }
-#canchaNom small { display: block; font-size: calc(var(--vh) * 2.2); color: #999; }
-#btnListo { flex: 1; font-size: calc(var(--vh) * 9); background: #16a34a; border-radius: calc(var(--vh) * 2); }
-#btnListo.si { background: #3f3d45; font-size: calc(var(--vh) * 5); }
+#cancha img { height: calc(var(--vh) * 11); width: calc(var(--vh) * 18); object-fit: cover; border-radius: calc(var(--vh) * 1); margin: 0 calc(var(--vh) * 0.8); }
+#cancha button { font-size: calc(var(--vh) * 4.4); background: #2b2930; border-radius: calc(var(--vh) * 1.2); width: calc(var(--vh) * 8); height: calc(var(--vh) * 11); }
+#canchaNom { flex: 1; font-size: calc(var(--vh) * 3.4); text-align: center; }
+#canchaNom small { display: block; font-size: calc(var(--vh) * 1.9); color: #999; }
+#btnListo { flex: 1; font-size: calc(var(--vh) * 8); background: #16a34a; border-radius: calc(var(--vh) * 2); }
+#btnListo.si { background: #3f3d45; font-size: calc(var(--vh) * 4.2); }
 
 /* ---- juego ---- */
 #juego { background: radial-gradient(ellipse at center, #1b1920 0%, #0b0a0d 70%); }
@@ -100,19 +103,17 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 </div>
 <div id="version">v1</div>
 
-<!-- Selección -->
+<!-- Selección: se elige el bando -->
 <div id="sel" class="pantalla oculto">
-  <div id="selCarta">
-    <img id="selImg" src="/assets/img/craque.jpg" alt="">
-    <div id="selInfo">
-      <div id="selNom">O CRAQUE</div>
-      <div id="selDesc" class="m">Técnica, finta, creatividad</div>
-      <div id="stats"></div>
-      <div id="flechas"><button id="chAnt">◀</button><button id="chSig">▶</button></div>
-    </div>
+  <div id="selTit">ELEGÍ TU BANDO</div>
+  <div id="bandos">
+    <div class="bando b0" id="bando0"><div class="bnom">AMARELO</div><div class="fotos"><div id="f0"><img src="/assets/img/foto_ronaldinho.webp" alt=""><span>RONALDINHO</span></div><div id="f2"><img src="/assets/img/foto_ronaldo.webp" alt=""><span>RONALDO</span></div></div></div>
+    <div class="bando b1" id="bando1"><div class="bnom">AZUL</div><div class="fotos"><div id="f1"><img src="/assets/img/foto_maradona.webp" alt=""><span>MARADONA</span></div><div id="f3"><img src="/assets/img/foto_neymar.webp" alt=""><span>NEYMAR</span></div></div></div>
   </div>
   <div id="selDer">
-    <div id="fila"><button id="btnEquipo">EQUIPO AMARELO ⇄</button></div>
+    <div id="soy">sos</div>
+    <div id="soyNom">RONALDINHO</div>
+    <div id="soyApodo">El Mago</div>
     <div id="cancha">
       <button id="nvAnt">◀</button>
       <img id="canchaImg" src="/assets/img/laje.jpg" alt="">
@@ -143,8 +144,8 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 </div>
 
 <!-- Capas -->
-<div id="capaCon" class="capa"><img id="logoMini" src="/assets/img/logo.jpg" alt=""><div class="s m">Conectando…</div></div>
-<div id="capaMira" class="capa oculto"><img src="/assets/img/logo.jpg" alt="" style="width:36vw;border-radius:2vh;margin-bottom:3vh"><div class="t">ESTÁS MIRANDO</div><div class="s m">La partida ya empezó. Jugás la próxima.</div></div>
+<div id="capaCon" class="capa"><img id="logoMini" src="/assets/img/logo_fabela.webp" alt=""><div class="s m">Conectando…</div></div>
+<div id="capaMira" class="capa oculto"><img src="/assets/img/logo_fabela.webp" alt="" style="width:30vw;margin-bottom:3vh"><div class="t">ESTÁS MIRANDO</div><div class="s m">La partida ya empezó. Jugás la próxima.</div></div>
 <div id="capaKo" class="capa oculto"><div class="t">¡TE DESMAYARON!</div><div class="s">Volvés en <span id="koN">15</span> s</div></div>
 <div id="capaCuenta" class="capa oculto"><div class="t" id="cuentaN">3</div></div>
 <div id="capaFin" class="capa oculto"><div class="t" id="finT">¡GANASTE!</div><div class="s m" id="finS"></div></div>
@@ -170,12 +171,11 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   document.addEventListener('touchend', function (e) { e.preventDefault(); }, { passive: false });
   document.addEventListener('wheel', function (e) { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
   var PJ = [
-    { id: 'craque', nombre: 'O CRAQUE', desc: 'Técnica, finta, creatividad', st: [5, 4, 5, 4] },
-    { id: 'rapido', nombre: 'O RÁPIDO', desc: 'Velocidad, agilidad, explosión', st: [4, 5, 4, 3] },
-    { id: 'forte', nombre: 'O FORTE', desc: 'Físico, presencia, definición', st: [2, 3, 3, 5] },
-    { id: 'malandro', nombre: 'O MALANDRO', desc: 'Estilo, trucos, personalidad', st: [4, 4, 5, 3] }
+    { id: 'ronaldinho', nombre: 'RONALDINHO', apodo: 'El Mago' },
+    { id: 'ronaldo', nombre: 'RONALDO', apodo: 'El Fenómeno' },
+    { id: 'maradona', nombre: 'MARADONA', apodo: 'El Diez' },
+    { id: 'neymar', nombre: 'NEYMAR', apodo: 'El Crack' }
   ];
-  var ST_NOM = ['HABILIDAD', 'VELOCIDAD', 'GAMBETA', 'DEFINICIÓN'];
   var NIVELES = [{ id: 'laje', nombre: 'LAJE' }, { id: 'praca', nombre: 'PRAÇA' }, { id: 'praia', nombre: 'PRAIA' }, { id: 'noturno', nombre: 'NOTURNO' }];
   var EQ = ['AMARELO', 'AZUL'];
 
@@ -205,17 +205,13 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   }, true);
 
   // ---------------- selección ----------------
-  var statsHtml = '';
-  for (var i = 0; i < 4; i++) statsHtml += '<div class="stat"><span>' + ST_NOM[i] + '</span><i><b id="stb' + i + '"></b></i></div>';
-  $('stats').innerHTML = statsHtml;
   function tocar(id, fn) {
     $(id).addEventListener('pointerdown', function (e) { e.preventDefault(); fn(e); });
   }
-  tocar('chAnt', function () { socket.emit('sel', { a: 'ch', d: -1 }); vibrar(10); });
-  tocar('chSig', function () { socket.emit('sel', { a: 'ch', d: 1 }); vibrar(10); });
+  tocar('bando0', function () { socket.emit('sel', { a: 'equipo', t: 0 }); vibrar(15); });
+  tocar('bando1', function () { socket.emit('sel', { a: 'equipo', t: 1 }); vibrar(15); });
   tocar('nvAnt', function () { socket.emit('sel', { a: 'nivel', d: -1 }); vibrar(10); });
   tocar('nvSig', function () { socket.emit('sel', { a: 'nivel', d: 1 }); vibrar(10); });
-  tocar('btnEquipo', function () { socket.emit('sel', { a: 'equipo' }); vibrar(10); });
   tocar('btnListo', function () { socket.emit('sel', { a: 'listo' }); vibrar(30); });
   var menuArmado = false;
   tocar('btnMenu', function () {
@@ -394,13 +390,15 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       mostrar('sel', true); mostrar('juego', false); mostrar('capaKo', false); mostrar('capaFin', false); mostrar('capaCuenta', false);
       $('banner').textContent = '';
       var pj = PJ[st.ch];
-      if ($('selImg').getAttribute('src') !== '/assets/img/' + pj.id + '.jpg') $('selImg').setAttribute('src', '/assets/img/' + pj.id + '.jpg');
-      $('selNom').textContent = pj.nombre;
-      $('selDesc').textContent = pj.desc;
-      for (var i = 0; i < 4; i++) $('stb' + i).style.width = (pj.st[i] * 20) + '%';
-      var eq = $('btnEquipo');
-      eq.textContent = 'EQUIPO ' + EQ[st.team] + ' ⇄';
-      eq.className = st.team ? 't1' : '';
+      $('soyNom').textContent = pj.nombre;
+      $('soyApodo').textContent = pj.apodo;
+      // bandos: el mío resaltado; lleno si los dos lugares del otro son humanos
+      for (var t = 0; t < 2; t++) {
+        var libres = 0;
+        for (var q = t; q < 4; q += 2) if (!st.sl[q][0]) libres++;
+        $('bando' + t).className = 'bando b' + t + (st.team === t ? ' mio' : '') + (st.team !== t && libres === 0 ? ' lleno' : '');
+      }
+      for (var q2 = 0; q2 < 4; q2++) $('f' + q2).className = q2 === st.slot ? 'vos' : (st.sl[q2][0] ? 'otro' : '');
       var nv = NIVELES[st.n];
       if ($('canchaImg').getAttribute('src') !== '/assets/img/' + nv.id + '.jpg') $('canchaImg').setAttribute('src', '/assets/img/' + nv.id + '.jpg');
       $('canchaNom').innerHTML = nv.nombre + '<small class="m">' + (st.host ? 'vos elegís la cancha' : 'la elige el J1') + '</small>';
@@ -409,7 +407,6 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       var listo = $('btnListo');
       listo.textContent = st.listo ? 'ESPERANDO A LOS DEMÁS…' : '¡LISTO!';
       listo.className = st.listo ? 'si' : '';
-      $('chAnt').style.opacity = st.listo ? 0.3 : 1; $('chSig').style.opacity = st.listo ? 0.3 : 1;
       $('btnMenu').textContent = st.host ? 'START' : 'MENÚ';
       $('btnMenu').style.visibility = st.host ? 'visible' : 'hidden';
       var humanos = 0; for (var k = 0; k < st.sl.length; k++) humanos += st.sl[k][0];

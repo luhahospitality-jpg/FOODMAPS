@@ -39,7 +39,7 @@ server.listen(process.env.PORT, async () => {
     celus.push(p);
   }
   await espera(1500);
-  await celus[1].tap('#chSig');
+  await celus[1].tap('#bando0');
   await espera(1500);
   await tv.screenshot({ path: path.join(OUT, '02-menu.png') });
   await celus[0].screenshot({ path: path.join(OUT, '03-celu-seleccion.png') });

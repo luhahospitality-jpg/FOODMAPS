@@ -20,7 +20,8 @@ body { font-family: 'Bangers', Impact, 'Arial Black', sans-serif; letter-spacing
 #reloj.oro { color: #f5c518; font-size: 2.6vh; }
 #aviso { position: absolute; top: 10vh; left: 0; right: 0; text-align: center; font-size: 3vh; color: #f5c518; }
 #chips { position: absolute; bottom: 1.6vh; left: 1.6vh; right: 1.6vh; display: flex; justify-content: space-between; }
-.chip { width: 22%; background: rgba(10,10,12,0.78); border-left: 0.8vh solid #f5c518; border-radius: 0.8vh; padding: 0.8vh 1.2vh; font-size: 2.4vh; line-height: 1.15; }
+.chip { width: 22%; background: rgba(10,10,12,0.78); border-left: 0.8vh solid #f5c518; border-radius: 0.8vh; padding: 0.6vh 1vh; font-size: 2.3vh; line-height: 1.15; display: flex; align-items: center; }
+.chip img { width: 5.4vh; height: 5.4vh; border-radius: 50%; background: #2b2930; margin-right: 1vh; object-fit: cover; }
 .chip.t1 { border-left-color: #2563eb; }
 .chip .pj { font-family: 'Marker', sans-serif; font-size: 1.7vh; color: #bbb; letter-spacing: 0; }
 .chip .poder { color: #f5c518; }
@@ -35,32 +36,39 @@ body { font-family: 'Bangers', Impact, 'Arial Black', sans-serif; letter-spacing
 .flot { position: absolute; left: 0; top: 0; white-space: nowrap; font-size: 5vh; color: #fff; -webkit-text-stroke: 0.25vh #111; will-change: transform; }
 
 /* ---- Menú / selección ---- */
-#menu { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(8,7,10,0.55); }
-#menuLogo { position: absolute; top: 3vh; left: 50%; height: 24vh; margin-left: -17vh; border-radius: 1vh; }
-#menuTarjetas { position: absolute; top: 30vh; left: 5vw; right: 30vw; height: 52vh; display: flex; justify-content: space-between; }
-.tarjeta { width: 23%; background: #151317; border-radius: 1.2vh; overflow: hidden; border-top: 1vh solid #f5c518; position: relative; }
-.tarjeta.t1 { border-top-color: #2563eb; }
-.tarjeta img { width: 100%; height: 34vh; object-fit: cover; object-position: top; display: block; }
-.tarjeta .jn { position: absolute; top: 1vh; left: 1vh; font-size: 3vh; color: #fff; -webkit-text-stroke: 0.12vh #000; }
-.tarjeta .eqn { position: absolute; top: 1.2vh; right: 1vh; font-size: 1.8vh; padding: 0.2vh 0.8vh; background: #f5c518; color: #111; border-radius: 0.5vh; }
-.tarjeta.t1 .eqn { background: #2563eb; color: #fff; }
-.tarjeta .pn { font-size: 3vh; padding: 1vh 1.2vh 0; }
-.tarjeta .st { font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 1.9vh; padding: 0.4vh 1.2vh; color: #aaa; }
-.tarjeta .st.listo { color: #22c55e; }
-.tarjeta.cpu img { opacity: 0.55; }
-#menuCancha { position: absolute; top: 30vh; right: 4vw; width: 23vw; }
-#menuCancha img { width: 100%; border-radius: 1vh; display: block; margin-top: 0.8vh; }
-#menuCanchaNom { font-size: 4vh; margin-top: 0.6vh; }
-#menuAyuda { position: absolute; bottom: 4vh; left: 5vw; right: 32vw; font-family: 'Marker', sans-serif; font-size: 2.3vh; letter-spacing: 0; color: #ddd; }
+#menu { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(8,7,10,0.62); }
+#menuLogo { position: absolute; top: 1.5vh; left: 50%; height: 19vh; margin-left: -10.7vh; }
+#menuTit { position: absolute; top: 21vh; left: 0; right: 0; text-align: center; font-size: 3.4vh; letter-spacing: 0.3em; color: #fff; }
+#bandos { position: absolute; top: 26vh; left: 3vw; right: 3vw; height: 57vh; display: flex; align-items: stretch; }
+.bando { flex: 1; position: relative; border-radius: 1.6vh; overflow: hidden; }
+.bando.b0 { background: linear-gradient(160deg, #f7d23a 0%, #d9a404 45%, #1f7a3a 100%); }
+.bando.b1 { background: linear-gradient(160deg, #3b82f6 0%, #1d4ed8 45%, #0b1d5c 100%); }
+.bando .bnom { position: absolute; top: 1.2vh; left: 2vh; font-size: 5.2vh; color: #fff; -webkit-text-stroke: 0.2vh #111; z-index: 2; }
+.bando .bjug { position: absolute; left: 0; right: 0; bottom: 0; top: 0; display: flex; justify-content: space-around; align-items: flex-end; }
+.vs { width: 6vw; display: flex; align-items: center; justify-content: center; font-size: 6vh; color: #f5c518; -webkit-text-stroke: 0.2vh #111; }
+.pjc { position: relative; width: 48%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+.pjc img { height: 44vh; max-width: 100%; object-fit: contain; display: block; }
+.pjc.cpu img { opacity: 0.7; }
+.pjc .pnom { position: absolute; bottom: 4.2vh; left: 0; right: 0; text-align: center; font-size: 3.6vh; color: #fff; -webkit-text-stroke: 0.15vh #000; }
+.pjc .papo { position: absolute; bottom: 2.4vh; left: 0; right: 0; text-align: center; font-family: 'Marker', sans-serif; letter-spacing: 0; font-size: 1.9vh; color: #f5c518; -webkit-text-stroke: 0.06vh #000; }
+.pjc .quien { position: absolute; top: 8vh; right: 6%; font-size: 2.6vh; padding: 0.3vh 1vh; border-radius: 0.6vh; background: #111; color: #fff; }
+.pjc .quien.hum { background: #fff; color: #111; }
+.pjc .quien.listo { background: #16a34a; color: #fff; }
+.pjc .base { position: absolute; bottom: 0; left: 0; right: 0; height: 7.5vh; background: rgba(0,0,0,0.55); }
+#menuPie { position: absolute; bottom: 2vh; left: 3vw; right: 28vh; height: 11vh; display: flex; align-items: center; }
+#menuCancha { display: flex; align-items: center; background: rgba(10,10,12,0.8); border-radius: 1vh; padding: 0.8vh; margin-right: 2vw; }
+#menuCancha img { height: 9vh; width: 16vh; object-fit: cover; border-radius: 0.6vh; margin-right: 1.2vh; display: block; }
+#menuCanchaNom { font-size: 3.6vh; }
+#menuAyuda { flex: 1; font-family: 'Marker', sans-serif; font-size: 2.1vh; letter-spacing: 0; color: #ddd; }
 #menuAyuda b { color: #f5c518; }
 
 /* ---- Unirse ---- */
 #unirse { position: fixed; right: 2vh; bottom: 2vh; display: flex; align-items: center; background: rgba(10,10,12,0.85); border-radius: 1vh; padding: 1vh; }
-#unirse img { width: 16vh; height: 16vh; background: #fff; border-radius: 0.6vh; margin-right: 1.4vh; }
-#unirse #url { font-family: 'Marker', sans-serif; font-size: 2.6vh; letter-spacing: 0; color: #fff; max-width: 32vw; word-break: break-all; }
+#unirse img { width: 10vh; height: 10vh; background: #fff; border-radius: 0.5vh; margin-right: 1vh; }
+#unirse #url { font-family: 'Marker', sans-serif; font-size: 1.8vh; letter-spacing: 0; color: #fff; max-width: 14vw; word-break: break-all; }
 #unirse.chico { top: 1.6vh; bottom: auto; right: 1.6vh; padding: 0.6vh; }
-#unirse.chico img { width: 8vh; height: 8vh; margin-right: 0.8vh; }
-#unirse.chico #url { font-size: 1.6vh; }
+#unirse.chico img { width: 6.5vh; height: 6.5vh; margin-right: 0.6vh; }
+#unirse.chico #url { font-size: 1.4vh; }
 #unirse.chico .rotulo { font-size: 1.2vh; }
 
 /* ---- Podio ---- */

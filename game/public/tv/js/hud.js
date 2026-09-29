@@ -8,21 +8,22 @@ export function crearHud() {
   const el = {
     hud: $('hud'), gol0: $('gol0'), gol1: $('gol1'), reloj: $('reloj'), aviso: $('aviso'), chips: $('chips'),
     grande: $('grande'), grandeTxt: $('grandeTxt'), grandeSub: $('grandeSub'),
-    menu: $('menu'), tarjetas: $('menuTarjetas'), canchaImg: $('menuCanchaImg'), canchaNom: $('menuCanchaNom'),
+    menu: $('menu'), canchaImg: $('menuCanchaImg'), canchaNom: $('menuCanchaNom'),
     unirse: $('unirse'), url: $('url'), podio: $('podio'), podioTit: $('podioTit'), podioSub: $('podioSub'),
     intro: $('intro'), introTxt: $('introTxt'), debug: $('debug'), version: $('version'),
   };
   const host = location.host;
   el.url.textContent = host + '/c';
 
-  // tarjetas de selección
+  // selección por bandos: cada lugar tiene su jugador fijo (lugares 0 y 2 AMARELO, 1 y 3 AZUL)
   const tarjetas = [];
-  for (let i = 0; i < 4; i++) {
+  const cont = document.querySelectorAll('#bandos .bjug');
+  for (const i of [0, 2, 1, 3]) {
     const d = document.createElement('div');
-    d.className = 'tarjeta t' + (i % 2);
-    d.innerHTML = '<img alt=""><div class="jn"></div><div class="eqn"></div><div class="pn"></div><div class="st"></div>';
-    el.tarjetas.appendChild(d);
-    tarjetas.push({ d, img: d.querySelector('img'), jn: d.querySelector('.jn'), eqn: d.querySelector('.eqn'), pn: d.querySelector('.pn'), st: d.querySelector('.st'), clave: '' });
+    d.className = 'pjc';
+    d.innerHTML = '<div class="base"></div><img alt=""><div class="pnom"></div><div class="papo"></div><div class="quien"></div>';
+    cont[i % 2].appendChild(d);
+    tarjetas[i] = { d, img: d.querySelector('img'), pnom: d.querySelector('.pnom'), papo: d.querySelector('.papo'), quien: d.querySelector('.quien'), clave: '' };
   }
   // chips del partido
   const chips = [];
@@ -59,13 +60,14 @@ export function crearHud() {
         if (clave === t.clave) continue;
         t.clave = clave;
         const pj = PERSONAJES[s[1]];
-        t.img.src = '/assets/img/' + pj.id + '.jpg';
-        t.jn.textContent = s[0] ? 'J' + (i + 1) : 'CPU';
-        t.eqn.textContent = NOMBRE_EQUIPO[i % 2];
-        t.pn.textContent = pj.nombre;
-        t.st.textContent = s[0] === 1 ? (s[2] ? '¡LISTO!' : 'eligiendo…') : s[0] === 2 ? 'reconectando…' : 'la máquina';
-        t.st.className = 'st' + (s[2] && s[0] ? ' listo' : '');
-        t.d.className = 'tarjeta t' + (i % 2) + (s[0] ? '' : ' cpu');
+        const foto = '/assets/img/foto_' + pj.id + '.webp';
+        if (t.img.getAttribute('src') !== foto) t.img.setAttribute('src', foto);
+        t.pnom.textContent = pj.nombre;
+        t.papo.textContent = pj.apodo;
+        if (s[0] === 1) { t.quien.textContent = 'J' + (i + 1) + (s[2] ? ' · ¡LISTO!' : ''); t.quien.className = 'quien ' + (s[2] ? 'listo' : 'hum'); }
+        else if (s[0] === 2) { t.quien.textContent = 'J' + (i + 1) + ' · volviendo…'; t.quien.className = 'quien hum'; }
+        else { t.quien.textContent = 'CPU'; t.quien.className = 'quien'; }
+        t.d.className = 'pjc' + (s[0] ? '' : ' cpu');
       }
       const img = '/assets/img/' + NIVEL_IMG[nivel] + '.jpg';
       if (el.canchaImg.getAttribute('src') !== img) el.canchaImg.setAttribute('src', img);
@@ -90,7 +92,7 @@ export function crearHud() {
         const clave = nombre + p.ch + extra;
         if (clave === c.clave) continue;
         c.clave = clave;
-        c.d.innerHTML = nombre + ' <span class="pj">' + PERSONAJES[p.ch].nombre + '</span><br>' + extra;
+        c.d.innerHTML = '<img src="/assets/img/cara_' + PERSONAJES[p.ch].id + '.webp" alt=""><div>' + nombre + ' <span class="pj">' + PERSONAJES[p.ch].nombre + '</span><br>' + extra + '</div>';
       }
     },
     grande(txt, sub, dur, color) {

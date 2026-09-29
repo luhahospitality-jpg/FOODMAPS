@@ -208,12 +208,46 @@ function texturaPiel(cfg, semilla) {
 }
 
 // Datos visuales extra por personaje
-const EXTRA = {
-  craque: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: false, tatuajes: 'craque' },
-  rapido: { elastico: '#f5c518', media: '#f4f4f4', cadena: true, tatuajes: 'rapido' },
-  forte: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: false, tatuajes: 'forte' },
-  malandro: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: true, tatuajes: 'malandro', gorro: '#5b2a9e' },
+const EXTRA = {   // solo para el muñeco de respaldo (si no cargan los modelos fotográficos)
+  ronaldinho: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: true, tatuajes: 'craque' },
+  ronaldo: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: false, tatuajes: 'forte' },
+  maradona: { elastico: '#f4f4f4', media: '#f4f4f4', cadena: false, tatuajes: 'malandro' },
+  neymar: { elastico: '#f5c518', media: '#f4f4f4', cadena: true, tatuajes: 'rapido' },
 };
+
+// ---------------------------------------------------------------------
+//  Modelos fotográficos: reconstruidos en 3D a partir de las fotos de cada
+//  jugador (frente, lado, espalda) con su textura real y pesos de esqueleto.
+//  Formato propio: .json (meta + huesos) + .bin (atributos) + .jpg (textura).
+// ---------------------------------------------------------------------
+const MODELOS = {};
+function cargarUno(id) {
+  const base = '/assets/pj/' + id;
+  return Promise.all([
+    fetch(base + '.json').then((r) => { if (!r.ok) throw new Error(id + ' json ' + r.status); return r.json(); }),
+    fetch(base + '.bin').then((r) => { if (!r.ok) throw new Error(id + ' bin ' + r.status); return r.arrayBuffer(); }),
+    new Promise((ok, mal) => new THREE.TextureLoader().load(base + (esTV ? '_tv.jpg' : '.jpg'), ok, undefined, mal)),
+  ]).then(([meta, buf, tex]) => {
+    const v = meta.v, o = meta.ofs;
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(buf, o[0], v * 3), 3));
+    g.setAttribute('normal', new THREE.BufferAttribute(new Int8Array(buf, o[1], v * 3), 3, true));
+    g.setAttribute('uv', new THREE.BufferAttribute(new Uint16Array(buf, o[2], v * 2), 2, true));
+    g.setAttribute('skinIndex', new THREE.BufferAttribute(new Uint8Array(buf, o[3], v * 4), 4));
+    g.setAttribute('skinWeight', new THREE.BufferAttribute(new Uint8Array(buf, o[4], v * 4), 4, true));
+    g.setIndex(new THREE.BufferAttribute(meta.i32 ? new Uint32Array(buf, o[5], meta.i) : new Uint16Array(buf, o[5], meta.i), 1));
+    g.computeBoundingSphere();
+    tex.colorSpace = THREE.SRGBColorSpace;
+    tex.anisotropy = esTV ? 1 : 4;
+    // la foto ya trae su iluminación: un poco de "luz propia" para que no quede oscura
+    const mat = material({ map: tex, rough: 0.82, emissiveMap: tex, emissive: new THREE.Color(esTV ? 0.42 : 0.3, esTV ? 0.42 : 0.3, esTV ? 0.42 : 0.3) });
+    MODELOS[id] = { geo: g, mat, huesos: meta.huesos, altura: meta.altura };
+  });
+}
+// Carga los 4 jugadores. Si algo falla, se usan los muñecos armados con primitivas.
+export function cargarModelos() {
+  return Promise.all(PERSONAJES.map((p) => cargarUno(p.id).catch((e) => { console.warn('modelo', p.id, e.message); })));
+}
 
 const cache = {};
 function recursos(ch) {
@@ -228,12 +262,20 @@ function recursos(ch) {
 let geoPist = null, geoEst = null, matEst = null, matPist = null;
 
 export function crearJugador(ch, team) {
-  const r = recursos(ch);
+  const foto = MODELOS[PERSONAJES[ch].id];
+  const r = foto || recursos(ch);
   const raiz = new THREE.Group();
   const giro = new THREE.Group();
   raiz.add(giro);
-  // esqueleto
-  const huesos = HUESOS.map((h) => { const b = new THREE.Bone(); b.name = h[0]; b.position.set(h[2][0], h[2][1], h[2][2]); return b; });
+  // esqueleto (en los modelos fotográficos, las posiciones vienen de las articulaciones detectadas en las fotos)
+  const huesos = HUESOS.map((h) => {
+    const b = new THREE.Bone(); b.name = h[0];
+    if (foto) {
+      const a = foto.huesos[h[0]], pa = h[1] >= 0 ? foto.huesos[HUESOS[h[1]][0]] : [0, 0, 0];
+      b.position.set(a[0] - pa[0], a[1] - pa[1], a[2] - pa[2]);
+    } else b.position.set(h[2][0], h[2][1], h[2][2]);
+    return b;
+  });
   HUESOS.forEach((h, i) => { if (h[1] >= 0) huesos[h[1]].add(huesos[i]); });
   const malla = new THREE.SkinnedMesh(r.geo, r.mat);
   malla.add(huesos[0]);
@@ -268,7 +310,7 @@ export function crearJugador(ch, team) {
   etiqueta.spr.position.y = 2.5;
   raiz.add(etiqueta.spr);
 
-  return { raiz, giro, malla, h: hb, reposo, huesos, pistola, piso, estrellas, etiqueta, fase: 0, ch, team };
+  return { raiz, giro, malla, h: hb, reposo, huesos, pistola, piso, estrellas, etiqueta, fase: 0, ch, team, foto: !!foto };
 }
 
 // ---------------------------------------------------------------------
@@ -284,9 +326,10 @@ export function animar(p, a, t, vel, dt, extra) {
   p.fase += dt * (4 + vel * 1.45);
   const s = Math.sin(p.fase), c = Math.cos(p.fase);
   // atajos
+  const kb = p.foto ? 0.75 : 1;
   const brazo = (lado, adelante, abre, codo) => {
     const hb = lado > 0 ? h.hombroI : h.hombroD, cb = lado > 0 ? h.codoI : h.codoD;
-    hb.rotation.z = adelante; hb.rotation.x = -lado * abre; cb.rotation.z = codo;
+    hb.rotation.z = Math.min(adelante * kb, 2.3); hb.rotation.x = -lado * abre * kb; cb.rotation.z = codo;
   };
   const pierna = (lado, adelante, rodilla, abre) => {
     const pb = lado > 0 ? h.piernaI : h.piernaD, rb = lado > 0 ? h.rodillaI : h.rodillaD;
@@ -357,7 +400,7 @@ export function animar(p, a, t, vel, dt, extra) {
       break;
     }
     case 9: { // festejo de gol: cada personaje su baile
-      bailar(p, extra || 0, t);
+      bailar(p, BAILE_DE[extra] !== undefined ? BAILE_DE[extra] : 0, t);
       break;
     }
     case 10: { // disparo
@@ -386,10 +429,13 @@ export function animar(p, a, t, vel, dt, extra) {
   if (p.pistola.visible && a !== 10) { h.hombroD.rotation.z = Math.max(h.hombroD.rotation.z, 0.5); h.codoD.rotation.z = Math.max(h.codoD.rotation.z, 0.9); }
 }
 
+// Ronaldinho: samba · Ronaldo: sarrada · Maradona: shimmy tipo Paquetá · Neymar: passinho
+const BAILE_DE = [0, 3, 2, 1];
 // Bailes de festejo: 0 samba (craque), 1 passinho de funk (rápido), 2 baile de Paquetá (forte), 3 sarrada / rebolado (malandro)
 function bailar(p, estilo, t) {
   const h = p.h, base = h.base, cad = h.cadera, tor = h.torso, cab = h.cabeza;
-  const brazo = (lado, adelante, abre, codo) => { const hb = lado > 0 ? h.hombroI : h.hombroD, cb = lado > 0 ? h.codoI : h.codoD; hb.rotation.z = adelante; hb.rotation.x = -lado * abre; cb.rotation.z = codo; };
+  const kb = p.foto ? 0.75 : 1;
+  const brazo = (lado, adelante, abre, codo) => { const hb = lado > 0 ? h.hombroI : h.hombroD, cb = lado > 0 ? h.codoI : h.codoD; hb.rotation.z = Math.min(adelante * kb, 2.3); hb.rotation.x = -lado * abre * kb; cb.rotation.z = codo; };
   const pierna = (lado, adelante, rodilla, abre) => { const pb = lado > 0 ? h.piernaI : h.piernaD, rb = lado > 0 ? h.rodillaI : h.rodillaD; pb.rotation.z = adelante; pb.rotation.x = -lado * (abre || 0); rb.rotation.z = -rodilla; };
   if (estilo === 0) {
     // SAMBA NO PÉ: pies rápidos, cadera que va y viene, brazos sueltos

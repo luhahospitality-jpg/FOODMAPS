@@ -10,10 +10,10 @@ const SPH = esTV ? [10, 7] : [16, 12];
 export const COLOR_EQUIPO = ['#f5c518', '#2563eb'];
 export const NOMBRE_EQUIPO = ['AMARELO', 'AZUL'];
 export const PERSONAJES = [
-  { id: 'craque', nombre: 'O CRAQUE', piel: '#b07445', short: '#161616', short2: '#e6e6e6', pelo: '#1b120b', zap: '#f2f2f2', zap2: '#1d1d1d', peinado: 'rodete' },
-  { id: 'rapido', nombre: 'O RÁPIDO', piel: '#d9a57b', short: '#1f8b3b', short2: '#f5c518', pelo: '#f1ecdc', zap: '#f2f2f2', zap2: '#111111', peinado: 'platinado' },
-  { id: 'forte', nombre: 'O FORTE', piel: '#6e432a', short: '#7c1622', short2: '#141414', pelo: '#120c08', zap: '#d32626', zap2: '#ffffff', peinado: 'rapado' },
-  { id: 'malandro', nombre: 'O MALANDRO', piel: '#a56c43', short: '#6b2fb8', short2: '#e9d5ff', pelo: '#150f0a', zap: '#f2f2f2', zap2: '#6b2fb8', peinado: 'piluso' },
+  { id: 'ronaldinho', nombre: 'RONALDINHO', apodo: 'EL MAGO', piel: '#7a4a2e', short: '#161616', short2: '#e6e6e6', pelo: '#15100c', zap: '#f2f2f2', zap2: '#1d1d1d', peinado: 'rodete' },
+  { id: 'ronaldo', nombre: 'RONALDO', apodo: 'EL FENÓMENO', piel: '#b98663', short: '#1f3fa8', short2: '#ffffff', pelo: '#1b120b', zap: '#f2f2f2', zap2: '#1f3fa8', peinado: 'rapado' },
+  { id: 'maradona', nombre: 'MARADONA', apodo: 'EL DIEZ', piel: '#c08a64', short: '#161616', short2: '#ffffff', pelo: '#15100c', zap: '#f2f2f2', zap2: '#111111', peinado: 'rodete' },
+  { id: 'neymar', nombre: 'NEYMAR', apodo: 'EL CRACK', piel: '#b07445', short: '#1a1a1a', short2: '#3a3a3a', pelo: '#f1ecdc', zap: '#f2f2f2', zap2: '#111111', peinado: 'platinado' },
 ];
 
 // ---------------------------------------------------------------------

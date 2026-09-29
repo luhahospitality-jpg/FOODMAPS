@@ -31,9 +31,20 @@ server.listen(process.env.PORT, async () => {
   // un espectador con la partida en marcha
   for (let p = 0; p < PARTIDAS; p++) {
     console.log('Partida ' + (p + 1));
-    celus[0].emit('sel', { a: 'ch', d: 1 });
+    if (p === 0) {
+      ok(juego.slots[0].ch === 0 && juego.slots[1].ch === 2 && juego.slots[2].ch === 1 && juego.slots[3].ch === 3, 'jugadores fijos por lugar: AMARELO Ronaldinho+Ronaldo, AZUL Maradona+Neymar');
+    }
     if (p === 0) celus[0].emit('sel', { a: 'nivel', d: 1 });
-    if (p === 1) celus[1].emit('sel', { a: 'equipo' });
+    if (p === 1) {
+      const antes = juego.slots.findIndex((x) => x.pid === 'prueba1');
+      celus[1].emit('sel', { a: 'equipo', t: 0 });
+      await new Promise((r) => setTimeout(r, 200));
+      const ahora = juego.slots.findIndex((x) => x.pid === 'prueba1');
+      ok(antes % 2 === 1 && ahora % 2 === 0 && juego.slots[ahora].ch === 1, 'elegir bando AMARELO: pasa a ser Ronaldo');
+      celus[1].emit('sel', { a: 'equipo', t: 0 });
+      await new Promise((r) => setTimeout(r, 200));
+      ok(juego.slots.findIndex((x) => x.pid === 'prueba1') === ahora, 'con el bando lleno de humanos no se mueve');
+    }
     await new Promise((r) => setTimeout(r, 200));
     for (const c of celus) c.emit('sel', { a: 'listo' });
     await new Promise((r) => setTimeout(r, 200));

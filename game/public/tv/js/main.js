@@ -2,14 +2,14 @@
 import * as THREE from '../../vendor/three.module.min.js';
 import { crearRender, esTV, debug } from './render.js';
 import { crearPelota, crearBala, crearPodio, PERSONAJES, COLOR_EQUIPO, NOMBRE_EQUIPO } from './modelos.js';
-import { crearJugador, animar } from './personaje.js';
+import { crearJugador, animar, cargarModelos } from './personaje.js';
 import { crearEscenario } from './escenario.js';
 import { crearEfectos } from './efectos.js';
 import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
 
-const VERSION = 6;
+const VERSION = 7;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -72,6 +72,8 @@ async function arrancar() {
   }
   cargarNivel({ id: 'laje', nombre: 'LAJE', L: 36, W: 20, gw: 2.4, gh: 2, gd: 1.4 });
   await R.prepararPost(escena);
+  // los jugadores reconstruidos desde las fotos (con tope de espera por si la red de la TV es lenta)
+  await Promise.race([cargarModelos(), new Promise((r) => setTimeout(r, 15000))]);
 
   const red = crearRed((n) => cargarNivel(n));
 
@@ -147,7 +149,7 @@ async function arrancar() {
       case 'pide': if (P) fx.texto('¡TOCA!', P.x, 2.6, P.z, '#ffffff', 0.7); break;
       case 'gol': {
         const color = COLOR_EQUIPO[e.t];
-        hud.grande('¡GOOOL!', e.own ? 'GOL EN CONTRA' : (e.s >= 0 ? nombreSlot(e.s) : ''), 3000, color);
+        hud.grande('¡GOOOL!', e.own ? 'GOL EN CONTRA' : (e.s >= 0 ? nombreSlot(e.s) : ''), 1500, color);   // corto: después se ve la cara del que baila
         audio.sfx.gol();
         fx.sacudir(0.6);
         const gx = (e.t === 0 ? 1 : -1) * dims.L / 2;
@@ -241,7 +243,7 @@ async function arrancar() {
         md.raiz.position.set(-3.3 + i * 2.2, 0, 2);
         md.giro.rotation.y = -Math.PI / 2;
         md.pistola.visible = false;
-        const a = vista && vista.indexOf('baile') === 0 ? 9 : sl[i][2] ? 8 : 0;
+        const a = vista && vista.indexOf('baile') === 0 ? 9 : vista && vista.indexOf('pjq') === 0 ? 0 : sl[i][2] ? 8 : 0;
         if (a !== md.anim) { md.anim = a; md.animT = 0; }
         md.animT += dt;
         animar(md, a, md.animT, 0, dt, a === 9 ? sl[i][1] : 0);
@@ -340,7 +342,7 @@ async function arrancar() {
       if (toma >= 5) saltarIntro();
     } else if (fase === 'select' && vista) {
       // ?vista=pj : los 4 personajes de cerca (para revisar modelos); ?vista=baile: bailando
-      const k = parseInt(vista.slice(-1), 10);
+      const k = parseInt(vista.replace(/\D/g, '').slice(-1), 10);
       if (k >= 0 && k < 4) { const x = -3.3 + k * 2.2; camPosObj.set(x + 0.3, 1.5, 4.6); camMiraObj.set(x, 1.1, 2); }
       else { camPosObj.set(0, 1.7, 9.5); camMiraObj.set(0, 1.0, 2); }
       suave = 20;

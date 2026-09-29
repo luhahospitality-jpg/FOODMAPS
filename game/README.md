@@ -5,7 +5,7 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 
 - **TV**: abrí la URL del juego en el navegador de la TV (Android TV / Xiaomi, Chromecast o una compu).
 - **Celulares**: entran a `<url>/c` (o escanean el QR de la TV). No se instala nada.
-- De 1 a 4 jugadores: los lugares que faltan los completa la máquina.
+- De 1 a 4 jugadores: se elige el **bando** (AMARELO: Ronaldinho y Ronaldo · AZUL: Maradona y Neymar). Los lugares que faltan los completa la máquina.
 - Se puede entrar en cualquier momento: si el partido ya empezó, entrás en el lugar de un jugador de la máquina.
 
 ## Controles del celular (horizontal)
@@ -25,6 +25,15 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 
 Al hacer un gol, el goleador festeja con su baile (samba, passinho, Paquetá o sarrada) y la cámara hace zoom.
 | START (arriba) | El J1 arranca la partida / vuelve al menú |
+
+## Personajes 3D
+
+Los cuatro jugadores se reconstruyeron en 3D a partir de sus fotos (vistas de frente, lado y espalda):
+recorte con IA, super-resolución x4 (Real-ESRGAN), silueta + profundidad → volumen → malla por piezas
+(cuerpo, brazos y piernas separados para que se muevan sin estirarse), textura proyectada desde las fotos
+(la cara sale de la foto grande) y esqueleto a partir de las articulaciones detectadas.
+Archivos: `public/assets/pj/<jugador>.bin/.json/.jpg` (`_tv.jpg` en la TV).
+Vistas de control: `/?vista=pjq0`…`pjq3` (quietos), `/?vista=baile`.
 
 ## Correr local
 
