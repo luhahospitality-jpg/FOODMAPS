@@ -31,7 +31,8 @@ const KEYMAP: Record<string, Button> = {
   Backspace: "menu",
 };
 
-const PLAYER_COLORS = ["bg-mustard", "bg-pink-dark"];
+const PLAYER_COLORS = ["#ff7a1a", "#26e6c4"];
+const MENU_COLS = 4;
 
 export function ArcadeTV() {
   const [code, setCode] = useState("");
@@ -53,6 +54,7 @@ export function ArcadeTV() {
 
   const input = useRef<Input>({
     held: (p, b) => heldRef.current[p]?.has(b) ?? false,
+    anyHeld: (b) => heldRef.current.some((set) => set.has(b)),
     connected: (p) => connsRef.current[p] !== null,
   }).current;
 
@@ -73,10 +75,9 @@ export function ArcadeTV() {
 
       const { mode, selected, paused } = stateRef.current;
       if (mode === "menu") {
-        if (button === "left" || button === "up") {
-          setSelected((selected - 1 + GAMES.length) % GAMES.length);
-        } else if (button === "right" || button === "down") {
-          setSelected((selected + 1) % GAMES.length);
+        const step = { left: -1, right: 1, up: -MENU_COLS, down: MENU_COLS }[button as string];
+        if (step) {
+          setSelected((selected + step + GAMES.length) % GAMES.length);
         } else if (button === "a" || button === "start") {
           setPaused(false);
           setMode("play");
@@ -225,9 +226,10 @@ export function ArcadeTV() {
   }, [mode, selected, input, send]);
 
   const connectedCount = players.filter(Boolean).length;
+  const current = GAMES[selected];
 
   return (
-    <div className="fixed inset-0 overflow-hidden bg-ink text-cream select-none">
+    <div className="crt fixed inset-0 overflow-hidden select-none" style={{ background: "var(--retro-bg)" }}>
       {mode === "play" && (
         <div className="absolute inset-0 flex items-center justify-center bg-black">
           <canvas
@@ -238,78 +240,82 @@ export function ArcadeTV() {
             style={{ aspectRatio: `${W} / ${H}`, width: "min(100vw, calc(100vh * 16 / 9))" }}
           />
           {paused && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 bg-ink/80">
-              <p className="font-display text-[10vh] font-black uppercase leading-none text-mustard">
-                Pausa
-              </p>
-              <p className="font-label text-[3vh]">A · seguir &nbsp;&nbsp; B · salir al menú</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-[3vh] bg-black/80">
+              <p className="font-retro glow text-[12vh] leading-none">PAUSA</p>
+              <p className="font-term text-[4.5vh]">A · seguir &nbsp;&nbsp; B · salir al menú</p>
+              <PlayerDots players={players} />
             </div>
           )}
-          <PlayerDots players={players} className="absolute right-[2vh] top-[2vh]" />
         </div>
       )}
 
       {mode === "menu" && (
-        <div className="flex h-full flex-col px-[5vw] py-[5vh]">
-          <header className="flex items-end justify-between">
-            <h1 className="font-display text-[11vh] font-black uppercase leading-none tracking-tight">
-              FoodMaps <span className="text-mustard">Arcade</span>
-            </h1>
+        <div className="flex h-full flex-col px-[4vw] py-[4vh]">
+          <header className="flex items-center justify-between">
+            <Logo />
             <PlayerDots players={players} />
           </header>
 
-          <div className="mt-[5vh] grid flex-1 grid-cols-[1fr_auto] gap-[4vw]">
-            <div className="flex flex-col gap-[2.5vh]">
-              {GAMES.map((g, i) => (
-                <div
-                  key={g.id}
-                  className={`flex items-center gap-[2vw] rounded-[1.5vh] border-[0.5vh] px-[2vw] py-[2.2vh] transition-transform ${
-                    i === selected
-                      ? "scale-[1.03] border-cream bg-cream/10"
-                      : "border-transparent bg-cream/[0.04] opacity-70"
-                  }`}
-                >
-                  <span
-                    className="h-[7vh] w-[7vh] shrink-0 rounded-[1vh]"
-                    style={{ background: g.color }}
-                  />
-                  <div className="flex-1">
-                    <p className="font-display text-[6vh] font-extrabold uppercase leading-none">
+          <div className="mt-[3.5vh] grid min-h-0 flex-1 grid-cols-[1fr_auto] gap-[3vw]">
+            <div className="flex min-h-0 flex-col">
+              <div className="grid flex-1 grid-cols-4 grid-rows-3 gap-[1.6vh]">
+                {GAMES.map((g, i) => (
+                  <div
+                    key={g.id}
+                    className={`flex flex-col justify-between rounded-[1vh] border-[0.35vh] px-[1.4vw] py-[1.4vh] ${
+                      i === selected ? "card-on" : "border-[#ff7a1a26] opacity-60"
+                    }`}
+                  >
+                    <span
+                      className="block h-[0.8vh] w-[40%] rounded-full"
+                      style={{ background: g.color, boxShadow: `0 0 1vh ${g.color}` }}
+                    />
+                    <p
+                      className="font-retro text-[3.3vh] uppercase leading-tight"
+                      style={{ color: i === selected ? "var(--retro-yellow)" : "var(--retro-ink)" }}
+                    >
                       {g.name}
                     </p>
-                    <p className="mt-[0.8vh] text-[2.6vh] opacity-80">{g.blurb}</p>
+                    <p className="font-term text-[2.6vh] uppercase leading-none text-[var(--retro-amber)]">
+                      {g.players}
+                    </p>
                   </div>
-                  <span className="font-label text-[2.2vh] uppercase opacity-70">{g.players}</span>
-                </div>
-              ))}
-              <p className="mt-auto font-label text-[2.2vh] opacity-60">
-                ◀ ▶ elegir · A jugar · START pausa · MENÚ volver aquí
+                ))}
+              </div>
+              <p className="mt-[2vh] min-h-[3.4vh] font-term text-[3.4vh] leading-none text-[var(--retro-ink)]">
+                <span className="text-[var(--retro-orange)]">▶ </span>
+                {current.blurb}
+              </p>
+              <p className="mt-[1vh] font-term text-[2.8vh] text-[#ffe9cf80]">
+                ◀ ▲ ▼ ▶ elegir · A jugar · START pausa · MENÚ volver aquí
               </p>
             </div>
 
-            <aside className="flex w-[34vh] flex-col items-center gap-[2vh] text-center">
+            <aside className="flex w-[34vh] flex-col items-center gap-[1.4vh] text-center">
               {status === "ready" && qr ? (
                 <>
+                  <p className="font-retro glow-soft text-[2.6vh] text-[var(--retro-amber)]">CONECTA TU MANDO</p>
                   {/* eslint-disable-next-line @next/next/no-img-element -- data: URL */}
-                  <img src={qr} alt="Código QR del mando" className="w-full rounded-[1.5vh] bg-white p-[1vh]" />
-                  <p className="text-[2.4vh]">Escanéalo con el móvil</p>
-                  <p className="font-label text-[2vh] opacity-70">o entra en</p>
-                  <p className="font-label text-[2vh] break-all text-mustard">
+                  <img
+                    src={qr}
+                    alt="Código QR del mando"
+                    className="w-full rounded-[1vh] bg-[#ffe9cf] p-[1vh] shadow-[0_0_3vh_#ff7a1a66]"
+                  />
+                  <p className="font-term text-[2.8vh]">Escanéalo con el móvil o entra en</p>
+                  <p className="font-term break-all text-[2.6vh] leading-none text-[var(--retro-orange)]">
                     {padUrl.replace(/\?.*/, "").replace(/^https?:\/\//, "")}
                   </p>
-                  <p className="font-label text-[2vh] opacity-70">con el código</p>
-                  <p className="font-display text-[9vh] font-black leading-none tracking-[0.15em]">
-                    {code}
-                  </p>
+                  <p className="font-term text-[2.8vh] opacity-70">con el código</p>
+                  <p className="font-retro glow text-[8vh] leading-none tracking-[0.12em]">{code}</p>
                 </>
               ) : status === "error" ? (
-                <p className="text-[2.6vh] text-red">{error}</p>
+                <p className="font-term text-[3.2vh] text-[var(--retro-red)]">{error}</p>
               ) : (
-                <p className="font-label text-[2.4vh] opacity-70">Preparando sala…</p>
+                <p className="blink font-term text-[3.4vh] text-[var(--retro-amber)]">CARGANDO…</p>
               )}
               {status === "ready" && connectedCount === 0 && (
-                <p className="mt-auto text-[2.2vh] opacity-60">
-                  También puedes usar las flechas y OK del mando de la tele.
+                <p className="mt-auto font-term text-[2.6vh] opacity-60">
+                  También vale el mando de la tele: flechas y OK.
                 </p>
               )}
             </aside>
@@ -320,15 +326,47 @@ export function ArcadeTV() {
   );
 }
 
+function Logo() {
+  return (
+    <div className="flex items-center gap-[2vw]">
+      <svg viewBox="0 0 100 100" className="h-[11vh] w-[11vh]" aria-hidden>
+        <defs>
+          <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#ffe45c" />
+            <stop offset="0.5" stopColor="#ff7a1a" />
+            <stop offset="1" stopColor="#ff3d2e" />
+          </linearGradient>
+          <clipPath id="bands">
+            <rect x="0" y="0" width="100" height="44" />
+            <rect x="0" y="48" width="100" height="9" />
+            <rect x="0" y="61" width="100" height="7" />
+            <rect x="0" y="72" width="100" height="5" />
+            <rect x="0" y="81" width="100" height="3" />
+          </clipPath>
+        </defs>
+        <circle cx="50" cy="56" r="44" fill="url(#sun)" clipPath="url(#bands)" />
+      </svg>
+      <h1 className="font-retro sunset-text text-[10vh] uppercase leading-[0.95]">
+        Arcade
+        <br />
+        Retro
+      </h1>
+    </div>
+  );
+}
+
 function PlayerDots({ players, className = "" }: { players: boolean[]; className?: string }) {
   return (
-    <div className={`flex gap-[1vh] ${className}`}>
+    <div className={`flex gap-[1.2vh] ${className}`}>
       {players.map((on, i) => (
         <span
           key={i}
-          className={`rounded-full px-[1.6vh] py-[0.6vh] font-label text-[2vh] font-bold ${
-            on ? `${PLAYER_COLORS[i]} text-ink` : "border-[0.3vh] border-cream/30 text-cream/40"
-          }`}
+          className="font-retro rounded-[0.6vh] border-[0.3vh] px-[1.4vh] py-[0.5vh] text-[2.4vh]"
+          style={
+            on
+              ? { background: PLAYER_COLORS[i], borderColor: PLAYER_COLORS[i], color: "#0b0603", boxShadow: `0 0 1.5vh ${PLAYER_COLORS[i]}` }
+              : { borderColor: "#ffe9cf33", color: "#ffe9cf55" }
+          }
         >
           J{i + 1}
         </span>

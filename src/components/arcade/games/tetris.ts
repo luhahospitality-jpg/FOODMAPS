@@ -1,8 +1,8 @@
 import type { Button } from "../protocol";
 import {
-  centerText,
   font,
   H,
+  overlay,
   PALETTE,
   W,
   type Game,
@@ -17,7 +17,7 @@ const CELL = 33;
 const BOARD_X = (W - COLS * CELL) / 2;
 const BOARD_Y = (H - ROWS * CELL) / 2;
 
-const COLORS = ["#f0b60d", "#ec5fa0", "#2c46e8", "#e2381f", "#3fb68b", "#9b6cf0", "#f2ecdc"];
+const COLORS = ["#26e6c4", "#ffe45c", "#ff7a1a", "#39ff6a", "#ff3d2e", "#ffb81c", "#ff5ad1"];
 
 // Each piece is a list of rotations; each rotation lists filled [x, y] cells in a 4x4 box.
 const SHAPES: number[][][] = [
@@ -182,7 +182,7 @@ class Tetris implements Game {
 
     if (this.repeat) {
       const name = this.repeat.dir < 0 ? "left" : "right";
-      if (!input.held(0, name)) {
+      if (!input.anyHeld(name)) {
         this.repeat = null;
       } else {
         this.repeat.t += dt;
@@ -197,7 +197,7 @@ class Tetris implements Game {
       }
     }
 
-    const softDrop = input.held(0, "down");
+    const softDrop = input.anyHeld("down");
     const fallMs = softDrop ? 40 : Math.max(80, 800 - (this.level - 1) * 70);
     this.fallAcc += dt;
     while (this.fallAcc >= fallMs && !this.dead) {
@@ -221,9 +221,9 @@ class Tetris implements Game {
     ctx.fillStyle = PALETTE.bg;
     ctx.fillRect(0, 0, W, H);
 
-    ctx.fillStyle = "#0d0a08";
+    ctx.fillStyle = PALETTE.dimmer;
     ctx.fillRect(BOARD_X, BOARD_Y, COLS * CELL, ROWS * CELL);
-    ctx.strokeStyle = PALETTE.mustard;
+    ctx.strokeStyle = PALETTE.orange;
     ctx.lineWidth = 4;
     ctx.strokeRect(BOARD_X - 4, BOARD_Y - 4, COLS * CELL + 8, ROWS * CELL + 8);
 
@@ -247,7 +247,8 @@ class Tetris implements Game {
     ctx.fillStyle = PALETTE.ink;
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.font = font(700, 26, "mono");
+    ctx.font = font(34, "mono");
+    ctx.fillStyle = PALETTE.amber;
     ctx.fillText("SIGUIENTE", sideX, BOARD_Y);
     const nc = SHAPES[this.nextKind][0];
     for (let i = 0; i < nc.length; i += 2) {
@@ -261,28 +262,23 @@ class Tetris implements Game {
     ];
     stats.forEach(([label, value], i) => {
       const y = BOARD_Y + 220 + i * 95;
-      ctx.font = font(700, 24, "mono");
-      ctx.fillStyle = PALETTE.mustard;
+      ctx.font = font(30, "mono");
+      ctx.fillStyle = PALETTE.amber;
       ctx.fillText(label, sideX, y);
-      ctx.font = font(800, 48);
+      ctx.font = font(56, "mono");
       ctx.fillStyle = PALETTE.ink;
       ctx.fillText(String(value), sideX, y + 28);
     });
 
     const helpX = BOARD_X - 50;
     ctx.textAlign = "right";
-    ctx.font = font(400, 22, "mono");
-    ctx.fillStyle = "#a89f90";
+    ctx.font = font(30, "mono");
+    ctx.fillStyle = "#b08a6a";
     ["◀ ▶  mover", "▲ / A  girar", "▼  bajar", "B  soltar"].forEach((t, i) =>
       ctx.fillText(t, helpX, BOARD_Y + i * 36),
     );
 
-    if (this.dead) {
-      ctx.fillStyle = "rgba(23,19,15,0.8)";
-      ctx.fillRect(0, 0, W, H);
-      centerText(ctx, "GAME OVER", H / 2 - 40, 120, PALETTE.mustard);
-      centerText(ctx, "Pulsa A para jugar otra vez", H / 2 + 60, 44);
-    }
+    if (this.dead) overlay(ctx, "GAME OVER");
   }
 }
 
@@ -291,6 +287,6 @@ export const tetris: GameDef = {
   name: "Bloques",
   players: "1 jugador",
   blurb: "Encaja las piezas y limpia líneas.",
-  color: PALETTE.pink,
+  color: PALETTE.teal,
   create: (host) => new Tetris(host),
 };

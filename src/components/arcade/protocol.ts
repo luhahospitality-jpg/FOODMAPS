@@ -14,7 +14,7 @@ export type TvMessage =
   | { t: "full" }
   | { t: "rumble"; ms: number };
 
-const PEER_PREFIX = "foodmaps-arcade-";
+const PEER_PREFIX = "arcade-retro-";
 // No 0/O/1/I so the code is easy to read off a TV and type on a phone.
 const CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 

@@ -1,5 +1,5 @@
 import type { Button } from "../protocol";
-import { centerText, font, H, PALETTE, W, type Game, type GameDef, type GameHost } from "./types";
+import { H, hud, overlay, PALETTE, W, type Game, type GameDef, type GameHost } from "./types";
 
 const CELL = 40;
 const COLS = W / CELL;
@@ -103,7 +103,7 @@ class Snake implements Game {
     ctx.fillStyle = PALETTE.bg;
     ctx.fillRect(0, 0, W, H);
 
-    ctx.fillStyle = PALETTE.dim;
+    ctx.fillStyle = PALETTE.dimmer;
     for (let x = 0; x < COLS; x++) {
       for (let y = 0; y < ROWS; y++) {
         if ((x + y) % 2 === 0) ctx.fillRect(x * CELL, TOP + y * CELL, CELL, CELL);
@@ -122,24 +122,13 @@ class Snake implements Game {
     ctx.fill();
 
     this.body.forEach((p, i) => {
-      ctx.fillStyle = i === 0 ? PALETTE.mustard : PALETTE.ink;
+      ctx.fillStyle = i === 0 ? PALETTE.yellow : i % 2 ? PALETTE.orange : "#ff8f3a";
       ctx.fillRect(p.x * CELL + 3, TOP + p.y * CELL + 3, CELL - 6, CELL - 6);
     });
 
-    ctx.fillStyle = PALETTE.ink;
-    ctx.font = font(700, 32, "mono");
-    ctx.textBaseline = "middle";
-    ctx.textAlign = "left";
-    ctx.fillText(`PUNTOS ${this.score}`, 30, TOP / 2);
-    ctx.textAlign = "right";
-    ctx.fillText(`RÉCORD ${this.best}`, W - 30, TOP / 2);
+    hud(ctx, `PUNTOS ${this.score}`, `RÉCORD ${this.best}`);
 
-    if (this.dead) {
-      ctx.fillStyle = "rgba(23,19,15,0.75)";
-      ctx.fillRect(0, 0, W, H);
-      centerText(ctx, "GAME OVER", H / 2 - 40, 120, PALETTE.mustard);
-      centerText(ctx, "Pulsa A para jugar otra vez", H / 2 + 60, 44);
-    }
+    if (this.dead) overlay(ctx, "GAME OVER");
   }
 }
 
@@ -148,6 +137,6 @@ export const snake: GameDef = {
   name: "Snake",
   players: "1 jugador",
   blurb: "Come, crece y no te muerdas.",
-  color: PALETTE.mustard,
+  color: PALETTE.orange,
   create: (host) => new Snake(host),
 };

@@ -3,6 +3,7 @@ import {
   centerText,
   font,
   H,
+  overlay,
   PALETTE,
   W,
   type Game,
@@ -140,16 +141,16 @@ class Pong implements Game {
     ctx.fillStyle = PALETTE.dim;
     for (let y = 10; y < H; y += 40) ctx.fillRect(W / 2 - 4, y, 8, 22);
 
-    ctx.font = font(800, 140);
+    ctx.font = font(170, "mono");
     ctx.textBaseline = "top";
     ctx.textAlign = "center";
     ctx.fillStyle = PALETTE.dim;
     ctx.fillText(String(this.score[0]), W / 2 - 160, 30);
     ctx.fillText(String(this.score[1]), W / 2 + 160, 30);
 
-    ctx.fillStyle = PALETTE.mustard;
+    ctx.fillStyle = PALETTE.orange;
     ctx.fillRect(MARGIN, this.paddles[0] - PADDLE_H / 2, PADDLE_W, PADDLE_H);
-    ctx.fillStyle = PALETTE.pink;
+    ctx.fillStyle = PALETTE.teal;
     ctx.fillRect(W - MARGIN - PADDLE_W, this.paddles[1] - PADDLE_H / 2, PADDLE_W, PADDLE_H);
 
     if (this.winner === null) {
@@ -158,18 +159,14 @@ class Pong implements Game {
     }
 
     if (this.winner !== null) {
-      ctx.fillStyle = "rgba(23,19,15,0.75)";
-      ctx.fillRect(0, 0, W, H);
-      centerText(
+      overlay(
         ctx,
         `¡GANA J${this.winner + 1}!`,
-        H / 2 - 40,
-        120,
-        this.winner === 0 ? PALETTE.mustard : PALETTE.pink,
+        "Pulsa A para la revancha",
+        this.winner === 0 ? PALETTE.orange : PALETTE.teal,
       );
-      centerText(ctx, "Pulsa A para la revancha", H / 2 + 60, 44);
     } else if (this.waiting) {
-      centerText(ctx, `J${this.serving + 1}: pulsa A para sacar`, H - 70, 40);
+      centerText(ctx, `J${this.serving + 1}: pulsa A para sacar`, H - 70, 36, PALETTE.amber);
     }
   }
 }
@@ -179,6 +176,6 @@ export const pong: GameDef = {
   name: "Pong",
   players: "1–2 jugadores",
   blurb: "Contra la máquina o contra otro móvil.",
-  color: PALETTE.blue,
+  color: PALETTE.yellow,
   create: (host) => new Pong(host),
 };

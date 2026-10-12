@@ -3,7 +3,7 @@ import { ArcadePad } from "@/components/arcade/ArcadePad";
 import { normalizeRoomCode } from "@/components/arcade/protocol";
 
 export const metadata: Metadata = {
-  title: "Mando · FoodMaps Arcade",
+  title: "Mando · Arcade Retro",
   robots: { index: false },
 };
 
@@ -13,7 +13,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#17130f",
+  themeColor: "#0b0603",
 };
 
 export default async function PadPage({

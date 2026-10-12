@@ -1,0 +1,81 @@
+/* Arcade Retro: 80s CRT look in orange. Scoped under .arcade so the rest of the site is untouched. */
+.arcade {
+  --retro-bg: #0b0603;
+  --retro-ink: #ffe9cf;
+  --retro-orange: #ff7a1a;
+  --retro-amber: #ffb81c;
+  --retro-yellow: #ffe45c;
+  --retro-red: #ff3d2e;
+  --retro-teal: #26e6c4;
+  --retro-dim: #2a160a;
+  font-family: var(--font-retro-mono), monospace;
+  color: var(--retro-ink);
+  background: var(--retro-bg);
+}
+
+.arcade .font-retro {
+  font-family: var(--font-retro-display), system-ui, sans-serif;
+}
+
+.arcade .font-term {
+  font-family: var(--font-retro-mono), monospace;
+}
+
+/* Neon glow for headings, like a phosphor sign. */
+.arcade .glow {
+  color: var(--retro-orange);
+  text-shadow:
+    0 0 0.04em #fff3,
+    0 0 0.12em var(--retro-orange),
+    0 0 0.35em #ff7a1a99,
+    0 0 0.8em #ff3d2e66;
+}
+
+.arcade .glow-soft {
+  text-shadow: 0 0 0.25em #ff7a1a88;
+}
+
+/* Horizontal bands that fade from yellow to red, like an 80s station ident. */
+.arcade .sunset-text {
+  background: repeating-linear-gradient(
+      to bottom,
+      transparent 0 0.09em,
+      #0b0603 0.09em 0.11em
+    ),
+    linear-gradient(to bottom, var(--retro-yellow), var(--retro-amber) 45%, var(--retro-orange) 70%, var(--retro-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 0.12em #ff7a1aaa);
+}
+
+/* CRT overlay: scanlines + aperture-grille stripes + vignette. Pointer-transparent. */
+.arcade .crt::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  background:
+    repeating-linear-gradient(to bottom, #0000 0 2px, #00000059 2px 4px),
+    repeating-linear-gradient(to right, #ff000008 0 1px, #00ff0006 1px 2px, #0000ff08 2px 3px),
+    radial-gradient(ellipse at center, #0000 60%, #000000b3 100%);
+}
+
+.arcade .card-on {
+  border-color: var(--retro-orange);
+  box-shadow:
+    0 0 0.6vh var(--retro-orange),
+    inset 0 0 1.6vh #ff7a1a55;
+  background: #ff7a1a1f;
+}
+
+@keyframes arcade-blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.arcade .blink {
+  animation: arcade-blink 1.2s steps(1) infinite;
+}
