@@ -105,6 +105,20 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 #girar { background: #0b0a0d; z-index: 20; }
 #logoMini { width: 50vw; max-width: calc(var(--vh) * 60); border-radius: calc(var(--vh) * 2); margin-bottom: calc(var(--vh) * 3); }
 @media (orientation: portrait) { #girar { display: flex !important; } }
+
+/* ---- sala (código de la tele) y Arcade ---- */
+#capaSala { background: #0b0a0d; z-index: 25; padding: 0 4vw; }
+#capaSala img { height: calc(var(--vh) * 16); margin-bottom: calc(var(--vh) * 2); }
+#capaSala .t { font-size: calc(var(--vh) * 8); }
+#salaForm { display: flex; align-items: center; justify-content: center; margin-top: calc(var(--vh) * 3); max-width: 96vw; }
+#salaInput { font-family: 'Bangers', Impact, sans-serif; letter-spacing: 0.3em; text-transform: uppercase; text-align: center; width: min(60vw, calc(var(--vh) * 50)); font-size: calc(var(--vh) * 11); padding: calc(var(--vh) * 1) calc(var(--vh) * 2); border-radius: calc(var(--vh) * 2); border: calc(var(--vh) * 0.6) solid #f5c518; background: #151317; color: #fff; outline: none; -webkit-user-select: text; user-select: text; touch-action: manipulation; }
+#salaOk { font-size: calc(var(--vh) * 7); background: #16a34a; border-radius: calc(var(--vh) * 2); padding: calc(var(--vh) * 1.5) calc(var(--vh) * 3.5); margin-left: calc(var(--vh) * 2); }
+#salaMsg { min-height: calc(var(--vh) * 5); color: #f87171; }
+body.pideSala #girar { display: none !important; }
+#btnArcade { position: fixed; left: calc(var(--vh) * 1.5); top: calc(var(--vh) * 2.2); font-size: calc(var(--vh) * 3.4); padding: calc(var(--vh) * 1.2) calc(var(--vh) * 2.2); border-radius: calc(var(--vh) * 3); background: #ff7a1a; color: #1a0d03; z-index: 12; }
+#salaTag { position: fixed; right: calc(var(--vh) * 1.2); top: calc(var(--vh) * 3.2); font-size: calc(var(--vh) * 2.8); color: #8a8792; z-index: 5; pointer-events: none; }
+#sinTele { position: fixed; left: 0; right: 0; bottom: 0; background: #7c2d12; color: #fff; display: flex; align-items: center; justify-content: center; padding: calc(var(--vh) * 1.2); font-size: calc(var(--vh) * 3.4); z-index: 12; }
+#sinTele button { margin-left: calc(var(--vh) * 2); font-size: calc(var(--vh) * 3.2); background: #fff; color: #111; border-radius: calc(var(--vh) * 2); padding: calc(var(--vh) * 0.8) calc(var(--vh) * 2); }
 </style>
 </head>
 <body>
@@ -115,6 +129,9 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   <div id="mini"></div>
 </div>
 <div id="version">v1</div>
+<button id="btnArcade" class="oculto">◀ ARCADE</button>
+<div id="salaTag"></div>
+<div id="sinTele" class="oculto"><span id="sinTeleTxt" class="m">No hay ninguna tele en esta sala</span><button id="btnCambiar">CAMBIAR CÓDIGO</button></div>
 
 <!-- Selección: se elige el bando -->
 <div id="sel" class="pantalla oculto">
@@ -164,6 +181,13 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
 <div id="capaFin" class="capa oculto"><div class="t" id="finT">¡GANASTE!</div><div class="s m" id="finS"></div></div>
 <div id="banner"></div>
 <div id="sello"></div>
+<div id="capaSala" class="capa oculto">
+  <img src="/assets/img/logo_fabela.webp" alt="">
+  <div class="t">CÓDIGO DE LA SALA</div>
+  <div class="s m">Está en la tele, al lado del QR</div>
+  <form id="salaForm" autocomplete="off"><input id="salaInput" maxlength="8" autocapitalize="characters" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-label="Código de la sala"><button id="salaOk" type="submit">ENTRAR</button></form>
+  <div id="salaMsg" class="s m"></div>
+</div>
 <div id="girar" class="capa oculto"><div class="t" style="font-size:9vw">GIRÁ EL CELULAR</div><div class="s m" style="font-size:5vw">El control se usa en horizontal</div></div>
 
 <script src="/socket.io/socket.io.js"></script>
@@ -180,9 +204,10 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   if (window.visualViewport) window.visualViewport.addEventListener('resize', altoReal);
   var noZoom = function (e) { e.preventDefault(); };
   ['gesturestart', 'gesturechange', 'gestureend', 'dblclick'].forEach(function (ev) { document.addEventListener(ev, noZoom, { passive: false }); });
-  document.addEventListener('touchstart', function (e) { e.preventDefault(); }, { passive: false });
-  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: false });
-  document.addEventListener('touchend', function (e) { e.preventDefault(); }, { passive: false });
+  var esCampo = function (e) { return e.target && e.target.tagName === 'INPUT'; };
+  document.addEventListener('touchstart', function (e) { if (!esCampo(e)) e.preventDefault(); }, { passive: false });
+  document.addEventListener('touchmove', function (e) { if (!esCampo(e)) e.preventDefault(); }, { passive: false });
+  document.addEventListener('touchend', function (e) { if (!esCampo(e)) e.preventDefault(); }, { passive: false });
   document.addEventListener('wheel', function (e) { if (e.ctrlKey) e.preventDefault(); }, { passive: false });
   var PJ = [
     { id: 'ronaldinho', nombre: 'RONALDINHO', apodo: 'El Mago' },
@@ -198,11 +223,57 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   try { pid = localStorage.getItem('fabela_pid'); } catch (e) {}
   if (!pid) { pid = 'p' + Math.random().toString(36).slice(2, 10); try { localStorage.setItem('fabela_pid', pid); } catch (e) {} }
 
-  var socket = io({ transports: ['websocket', 'polling'] });
+  // ---- sala: el código viene en el link (/c/ABCD); si no, se pide ----
+  function limpiarCodigo(c) { return String(c || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 8); }
+  function linkSeguro(u) { try { var x = new URL(u); return x.protocol === 'https:' || x.protocol === 'http:' ? x.href : ''; } catch (e) { return ''; } }
+  var qs = new URLSearchParams(location.search);
+  var SALA = limpiarCodigo(location.pathname.split('/')[2] || qs.get('sala'));
+  var volverA = linkSeguro(qs.get('arcade') || '');      // si vino del Arcade: a dónde vuelve al salir
+
+  var socket = null, pidiendoSala = false;
   var st = {}, prev = {};
-  socket.on('connect', function () { socket.emit('hola', { pid: pid }); });
-  socket.on('disconnect', function () { mostrar('capaCon', true); });
-  socket.on('status', function (s) { prev = st; st = s; render(); });
+  function enviar(ev, d) { if (socket) socket.emit(ev, d); }
+  function conectar() {
+    var q = { sala: SALA };
+    if (volverA) q.arcade = volverA;
+    socket = io({ query: q, transports: ['websocket', 'polling'] });
+    socket.on('connect', function () { socket.emit('hola', { pid: pid }); });
+    socket.on('disconnect', function () { if (!pidiendoSala) mostrar('capaCon', true); });
+    socket.on('status', function (s) { prev = st; st = s; render(); });
+    socket.on('sinSala', function () { pedirSala(''); });
+    socket.on('salasLlenas', function () { pedirSala('Hay muchas salas abiertas. Probá de nuevo en un rato.'); });
+    socket.on('salirArcade', irAlArcade);
+  }
+  function pedirSala(msg) {
+    pidiendoSala = true;
+    if (socket) { socket.close(); socket = null; }
+    document.body.classList.add('pideSala');
+    mostrar('capaCon', false); mostrar('sinTele', false); mostrar('btnArcade', false);
+    mostrar('capaSala', true);
+    $('salaMsg').textContent = msg || '';
+    $('salaInput').value = SALA || '';
+  }
+  function entrarSala() {
+    var c = limpiarCodigo($('salaInput').value);
+    if (c.length < 3) { $('salaMsg').textContent = 'El código son 4 letras o números'; vibrar(60); return; }
+    SALA = c;
+    try { history.replaceState(null, '', '/c/' + SALA + location.search); } catch (e) {}
+    pidiendoSala = false;
+    document.body.classList.remove('pideSala');
+    try { $('salaInput').blur(); } catch (e) {}
+    mostrar('capaSala', false); mostrar('capaCon', true);
+    sinTeleDesde = 0;
+    conectar();
+  }
+  // volver al Arcade: todos los de la sala (lo avisa el server) o este celular solo si el server no contesta
+  var yendo = false;
+  function irAlArcade() {
+    if (!volverA || yendo) return;
+    yendo = true;
+    $('capaCon').querySelector('.s').textContent = 'Volviendo al Arcade…';
+    mostrar('capaCon', true);
+    location.href = volverA;
+  }
 
   function mostrar(id, v) { var e = $(id); if (v) e.classList.remove('oculto'); else e.classList.add('oculto'); }
   function vibrar(p) { try { if (navigator.vibrate) navigator.vibrate(p); } catch (e) {} }
@@ -210,7 +281,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   // pantalla completa + horizontal al primer toque
   var pedido = false;
   document.addEventListener('pointerup', function () {
-    if (pedido) return; pedido = true;
+    if (pedido || pidiendoSala) return; pedido = true;
     var d = document.documentElement;
     try {
       var p = d.requestFullscreen ? d.requestFullscreen() : d.webkitRequestFullscreen ? d.webkitRequestFullscreen() : null;
@@ -255,19 +326,37 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       if (k < 1) requestAnimationFrame(paso); else ps.forEach(function (p) { p.d.remove(); });
     })(t0);
   }
-  tocar('bando0', function (e) { if (st.listo) return; socket.emit('sel', { a: 'equipo', t: 0 }); fiesta(0, e); });
-  tocar('bando1', function (e) { if (st.listo) return; socket.emit('sel', { a: 'equipo', t: 1 }); fiesta(1, e); });
-  tocar('nvAnt', function () { socket.emit('sel', { a: 'nivel', d: -1 }); vibrar(10); });
-  tocar('nvSig', function () { socket.emit('sel', { a: 'nivel', d: 1 }); vibrar(10); });
-  tocar('btnListo', function () { socket.emit('sel', { a: 'listo' }); vibrar(30); });
+  tocar('bando0', function (e) { if (st.listo) return; enviar('sel', { a: 'equipo', t: 0 }); fiesta(0, e); });
+  tocar('bando1', function (e) { if (st.listo) return; enviar('sel', { a: 'equipo', t: 1 }); fiesta(1, e); });
+  tocar('nvAnt', function () { enviar('sel', { a: 'nivel', d: -1 }); vibrar(10); });
+  tocar('nvSig', function () { enviar('sel', { a: 'nivel', d: 1 }); vibrar(10); });
+  tocar('btnListo', function () { enviar('sel', { a: 'listo' }); vibrar(30); });
   var menuArmado = false;
   tocar('btnMenu', function () {
-    if (st.f === 'select') { if (st.host) socket.emit('sel', { a: 'start' }); }
+    if (st.f === 'select') { if (st.host) enviar('sel', { a: 'start' }); }
     else if (st.host) {
       // dos toques para confirmar (sin confirm(): saca de pantalla completa)
-      if (menuArmado) { socket.emit('btn', { b: 'menu' }); menuArmado = false; $('btnMenu').textContent = 'MENÚ'; }
+      if (menuArmado) { enviar('btn', { b: 'menu' }); menuArmado = false; $('btnMenu').textContent = 'MENÚ'; }
       else { menuArmado = true; $('btnMenu').textContent = '¿SALIR? TOCÁ OTRA VEZ'; setTimeout(function () { menuArmado = false; }, 2500); }
     }
+  });
+
+  // ---------------- sala y Arcade ----------------
+  $('salaForm').addEventListener('submit', function (e) { e.preventDefault(); entrarSala(); });
+  tocar('salaOk', function () { entrarSala(); });
+  tocar('btnCambiar', function () { pedirSala(''); });
+  var arcadeArmado = false;
+  tocar('btnArcade', function () {
+    // dos toques para confirmar: vuelven todos los de la sala
+    if (!arcadeArmado) {
+      arcadeArmado = true; $('btnArcade').textContent = '¿VOLVER AL ARCADE? TOCÁ OTRA VEZ'; vibrar(20);
+      setTimeout(function () { arcadeArmado = false; $('btnArcade').textContent = '◀ ARCADE'; }, 3000);
+      return;
+    }
+    arcadeArmado = false;
+    enviar('btn', { b: 'arcade' });
+    vibrar(40);
+    setTimeout(irAlArcade, 1500);
   });
 
   // ---------------- joystick ----------------
@@ -284,7 +373,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
     if (!forzar && ahora - joy.enviado < 50) return;
     if (Math.abs(joy.x - joy.ultimoX) < 0.02 && Math.abs(joy.y - joy.ultimoY) < 0.02 && !forzar) return;
     joy.enviado = ahora; joy.ultimoX = joy.x; joy.ultimoY = joy.y;
-    socket.emit('input', { x: Math.round(joy.x * 100) / 100, y: Math.round(joy.y * 100) / 100 });
+    enviar('input', { x: Math.round(joy.x * 100) / 100, y: Math.round(joy.y * 100) / 100 });
   }
   zona.addEventListener('pointerdown', function (e) {
     if (joy.id !== null) return;
@@ -313,9 +402,9 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   setInterval(function () { if (joy.id !== null) enviarJoy(true); }, 200);   // por si se pierde un paquete
 
   // ---------------- botones de acción ----------------
-  tocar('btnPase', function () { socket.emit('btn', { b: 'pase' }); vibrar(15); });
-  tocar('btnTruco', function () { socket.emit('btn', { b: 'truco' }); vibrar(15); });
-  tocar('btnPistola', function () { socket.emit('btn', { b: 'pistola' }); vibrar([40, 30, 80]); });
+  tocar('btnPase', function () { enviar('btn', { b: 'pase' }); vibrar(15); });
+  tocar('btnTruco', function () { enviar('btn', { b: 'truco' }); vibrar(15); });
+  tocar('btnPistola', function () { enviar('btn', { b: 'pistola' }); vibrar([40, 30, 80]); });
 
   // ---------------- pad sensible ----------------
   var pad = $('pad'), cv = $('padCanvas'), g = cv.getContext('2d');
@@ -342,7 +431,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
     try { pad.setPointerCapture(e.pointerId); } catch (x) {}
     toque = { id: e.pointerId, t0: performance.now(), pts: [{ x: e.clientX, y: e.clientY }], largo: 0, swipe: false };
     pad.classList.add('activo');
-    socket.emit('pad', { t: 'down' });
+    enviar('pad', { t: 'down' });
     if (borrarRastro) { clearTimeout(borrarRastro); borrarRastro = null; }
     g.clearRect(0, 0, cv.width, cv.height);
   });
@@ -399,7 +488,7 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       }
       vibrar(12);
     }
-    socket.emit('pad', msg);
+    enviar('pad', msg);
     toque = null;
   }
   pad.addEventListener('pointerup', finToque);
@@ -418,10 +507,19 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
   }, 50);
 
   // ---------------- dibujar según el estado ----------------
-  var ultimaCuenta = -1;
+  var ultimaCuenta = -1, sinTeleDesde = 0;
   function render() {
+    if (pidiendoSala || yendo) return;
     mostrar('capaCon', false);
     $('version').textContent = 'v' + (st.v || 1);
+    if (!volverA && st.arcade) volverA = linkSeguro(st.arcade);
+    $('salaTag').textContent = st.sala ? 'SALA ' + st.sala : '';
+    mostrar('btnArcade', !!volverA && (st.mirando || st.f === 'select' || st.f === 'finished'));
+    // ¿hay una tele en esta sala? si no aparece, puede ser un código mal escrito
+    if (st.tv === 0) { if (!sinTeleDesde) sinTeleDesde = Date.now(); } else sinTeleDesde = 0;
+    var sinTele = sinTeleDesde && Date.now() - sinTeleDesde > (volverA ? 30000 : 6000);
+    if (sinTele) $('sinTeleTxt').textContent = 'No hay ninguna tele en la sala ' + st.sala + '. ¿Está bien el código?';
+    mostrar('sinTele', !!sinTele);
     if (st.mirando) {
       mostrar('capaMira', true); mostrar('sel', false); mostrar('juego', false); mostrar('capaKo', false); mostrar('capaFin', false);
       $('yo').textContent = '👀'; $('mini').textContent = st.sc ? st.sc[0] + ' - ' + st.sc[1] : '';
@@ -530,6 +628,9 @@ button { font-family: inherit; letter-spacing: inherit; border: 0; color: #fff; 
       if (prev.f !== 'finished') vibrar(gane ? [100, 50, 100, 50, 300] : 300);
     } else mostrar('capaFin', false);
   }
+
+  // arranque: con código se conecta directo; sin código, se lo pide
+  if (SALA) conectar(); else pedirSala('');
 })();
 </script>
 </body>

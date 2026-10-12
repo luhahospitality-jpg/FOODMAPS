@@ -1,10 +1,14 @@
 // Red: recibe snapshots del server (20/s) e interpola con ~110 ms de retraso
 // para que se vea fluido a 60 fps. Los eventos se disparan sincronizados con lo que se ve.
+import { SALA, ARCADE } from './sala.js';
+
 const RETRASO = 110;
 
 export function crearRed(alNivel) {
   /* global io */
-  const socket = io({ query: { rol: 'tv' }, transports: ['websocket', 'polling'] });
+  const query = { rol: 'tv', sala: SALA };
+  if (ARCADE) query.arcade = ARCADE;
+  const socket = io({ query, transports: ['websocket', 'polling'] });
   const snaps = [];
   const pendientes = [];
   let ultimoEv = 0;

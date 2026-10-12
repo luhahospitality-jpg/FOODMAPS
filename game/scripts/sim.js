@@ -2,16 +2,22 @@
 // Uso: node scripts/sim.js   (usa SIM_RAPIDO para acelerar el reloj del server)
 process.env.SIM_RAPIDO = process.env.SIM_RAPIDO || '8';
 process.env.PORT = process.env.PORT || '3999';
-const { server, juego, GOLES_PARA_GANAR } = require('../server.js');
+const { server, sala, salas, GOLES_PARA_GANAR } = require('../server.js');
 const { io } = require('socket.io-client');
 
 const URL = 'http://localhost:' + process.env.PORT;
+// todo pasa en la sala PRUE (cada tele tiene la suya)
+const SALA = 'PRUE';
+const ARCADE = 'https://arcade.ejemplo/arcade/pad?room=PRUE';
+const juego = sala(SALA);
+const conectar = (extra) => io(URL, { query: Object.assign({ sala: SALA }, extra || {}) });
+const espera = (ms) => new Promise((r) => setTimeout(r, ms));
 const PARTIDAS = Number(process.env.PARTIDAS || 2);
 let fallas = 0;
 const ok = (c, m) => { if (!c) { fallas++; console.log('  ✗ ' + m); } else console.log('  ✓ ' + m); };
 
 server.listen(process.env.PORT, async () => {
-  const tv = io(URL, { query: { rol: 'tv' } });
+  const tv = conectar({ rol: 'tv', arcade: ARCADE });
   const eventos = {};
   let visto = 0, ultimoEstado = null;
   tv.on('state', (st) => {
@@ -20,11 +26,13 @@ server.listen(process.env.PORT, async () => {
   });
   const celus = [];
   for (let k = 0; k < 2; k++) {
-    const c = io(URL);
+    const c = conectar();
     c.st = null;
     c.on('status', (s) => { c.st = s; });
     c.on('connect', () => c.emit('hola', { pid: 'prueba' + k }));
     celus.push(c);
+    // de a uno: así el primero queda en el lugar 0 (AMARELO) y el segundo en el 1 (AZUL)
+    await new Promise((r) => { c.once('bienvenida', r); setTimeout(r, 3000); });
   }
   await new Promise((r) => setTimeout(r, 500));
   ok(juego.slots.filter((s) => s.humano).length === 2, 'dos celulares ocupan dos lugares');
@@ -40,7 +48,8 @@ server.listen(process.env.PORT, async () => {
       celus[1].emit('sel', { a: 'equipo', t: 0 });
       await new Promise((r) => setTimeout(r, 200));
       const ahora = juego.slots.findIndex((x) => x.pid === 'prueba1');
-      ok(antes % 2 === 1 && ahora % 2 === 0 && juego.slots[ahora].ch === 1, 'elegir bando AMARELO: pasa a ser Ronaldo');
+      ok(antes % 2 === 1 && ahora % 2 === 0 && juego.slots[ahora].ch === 1, 'elegir bando AMARELO: pasa a ser Ronaldo'
+        + (antes % 2 === 1 && ahora % 2 === 0 ? '' : ' [antes ' + antes + ', ahora ' + ahora + ', lugares ' + JSON.stringify(juego.slots.map((x) => [x.pid, !!x.humano])) + ']'));
       celus[1].emit('sel', { a: 'equipo', t: 0 });
       await new Promise((r) => setTimeout(r, 200));
       ok(juego.slots.findIndex((x) => x.pid === 'prueba1') === ahora, 'con el bando lleno de humanos no se mueve');
@@ -52,12 +61,12 @@ server.listen(process.env.PORT, async () => {
     ok(juego.jug.length === 4, 'hay 4 jugadores (2 humanos + 2 bots)');
     let mirador = null;
     if (p === 0) {
-      mirador = io(URL); mirador.on('connect', () => mirador.emit('hola', { pid: 'mirador' }));
+      mirador = conectar(); mirador.on('connect', () => mirador.emit('hola', { pid: 'mirador' }));
       await new Promise((r) => setTimeout(r, 300));
       const iM = juego.slots.findIndex((x) => x.pid === 'mirador');
       ok(iM >= 0 && juego.mirando.size === 0 && juego.jug[iM].bot === false, 'el que entra con la partida empezada juega enseguida (reemplaza a un bot)');
-      const cuarto = io(URL); cuarto.on('connect', () => cuarto.emit('hola', { pid: 'cuarto' }));
-      const quinto = io(URL); quinto.on('connect', () => quinto.emit('hola', { pid: 'quinto' }));
+      const cuarto = conectar(); cuarto.on('connect', () => cuarto.emit('hola', { pid: 'cuarto' }));
+      const quinto = conectar(); quinto.on('connect', () => quinto.emit('hola', { pid: 'quinto' }));
       await new Promise((r) => setTimeout(r, 300));
       ok(juego.slots.filter((x) => x.humano).length === 4, 'entran 4 jugadores humanos');
       ok(juego.mirando.size === 1, 'el quinto queda mirando');
@@ -146,6 +155,60 @@ server.listen(process.env.PORT, async () => {
   for (const c of celus) c.close();
   await new Promise((r) => setTimeout(r, 400));
   ok(juego.fase === 'select', 'si se van todos los humanos vuelve al menú');
+
+  // ---------------- salas ----------------
+  console.log('Salas y Arcade');
+  const nuevo = (q, pid) => {
+    const c = io(URL, { query: q, reconnection: false });
+    c.st = null; c.on('status', (st) => { c.st = st; });
+    if (pid) c.on('connect', () => c.emit('hola', { pid }));
+    return c;
+  };
+  const a1 = nuevo({ sala: SALA }, 'a1'), a2 = nuevo({ sala: SALA }, 'a2');
+  const otra = nuevo({ sala: 'OTRA' }, 'otra');
+  await espera(500);
+  const g2 = salas.get('OTRA');
+  ok(g2 && g2 !== juego && g2.slots.filter((x) => x.humano).length === 1, 'otra sala tiene su propio partido');
+  ok(!juego.slots.some((x) => x.pid === 'otra') && juego.slots.filter((x) => x.humano).length === 2, 'el celular de otra sala no aparece en esta');
+  ok(otra.st && otra.st.sala === 'OTRA' && otra.st.tv === 0, 'el celular sabe su sala y que ahí no hay tele');
+  ok(a1.st && a1.st.sala === SALA && a1.st.tv === 1, 'en esta sala hay una tele');
+  ok(juego.arcade === ARCADE && a1.st.arcade === ARCADE, 'la sala guarda el link de vuelta al Arcade y se lo pasa al celular');
+  ok(!otra.st.arcade, 'la otra sala no tiene Arcade');
+  const tvNueva = nuevo({ rol: 'tv' });
+  const cod = await new Promise((r) => { tvNueva.on('sala', (d) => r(d.codigo)); setTimeout(() => r(''), 2000); });
+  ok(/^[A-HJ-NP-Z2-9]{4}$/.test(cod) && salas.has(cod), 'una tele sin código abre una sala nueva (' + cod + ')');
+  const sinCod = nuevo({});
+  const rechazado = await new Promise((r) => { sinCod.on('sinSala', () => r(true)); setTimeout(() => r(false), 2000); });
+  ok(rechazado, 'un celular sin código no entra a ninguna sala');
+  const mala = nuevo({ sala: 'MALA', arcade: 'javascript:alert(1)' }, 'mala');
+  await espera(300);
+  ok(salas.has('MALA') && salas.get('MALA').arcade === '', 'un link de vuelta raro (javascript:) se ignora');
+  // empieza un partido y alguien elige VOLVER AL ARCADE
+  a1.emit('sel', { a: 'listo' }); a2.emit('sel', { a: 'listo' });
+  await espera(300);
+  ok(juego.fase === 'countdown' || juego.fase === 'playing', 'la sala del Arcade juega');
+  const salen = [];
+  for (const [n, c] of [['tv', tv], ['a1', a1], ['a2', a2], ['otra', otra]]) c.on('salirArcade', () => salen.push(n));
+  a2.emit('btn', { b: 'arcade' });
+  await espera(300);
+  ok(['tv', 'a1', 'a2'].every((n) => salen.includes(n)) && !salen.includes('otra'), 'VOLVER AL ARCADE avisa a la tele y a los celulares de esa sala (y a nadie más)');
+  ok(juego.fase === 'select', 'y la sala vuelve a la selección');
+  // en una sala que no viene del Arcade, el botón no hace nada
+  otra.emit('btn', { b: 'arcade' });
+  await espera(300);
+  ok(!salen.includes('otra'), 'en una sala sin Arcade, VOLVER AL ARCADE no hace nada');
+  salen.length = 0;
+  tv.emit('salir');
+  await espera(300);
+  ok(salen.includes('tv') && salen.includes('a1'), 'el "volver" del control remoto de la tele también saca a todos');
+  // las salas vacías se borran solas (a los 60 s; acá el reloj va x' + process.env.SIM_RAPIDO + ')
+  otra.close(); mala.close(); tvNueva.close(); sinCod.close();
+  await espera(200);
+  ok(g2.conectados === 0, 'al irse todos, la sala queda sin conexiones');
+  await espera((60 / Number(process.env.SIM_RAPIDO)) * 1000 + 800);
+  ok(!salas.has('OTRA') && !salas.has('MALA') && !salas.has(cod), 'las salas vacías se borran solas');
+  ok(salas.has(SALA), 'la sala con gente sigue');
+  a1.close(); a2.close();
   tv.close();
   console.log(fallas ? 'FALLAS: ' + fallas : 'TODO OK');
   process.exit(fallas ? 1 : 0);

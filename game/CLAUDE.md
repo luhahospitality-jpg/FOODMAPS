@@ -33,6 +33,11 @@ Para jugar y para ver los controles y las reglas, leer `README.md` (en esta carp
   - Los huecos los juega la CPU.
   - Los **eventos** viajan en el estado y se podan a los 2 s. Lo que haga falta después va en `juego`
     (por ejemplo `juego.ultimoGolEquipo` para el saque del medio).
+  - **Salas**: `salas` (código → partido). Toda la lógica usa la variable `juego`, que apunta a la sala que se
+    procesa: el tick y cada mensaje de un socket entran con `enSala(g, fn)`. Cualquier dato nuevo de la
+    partida va dentro de `crearJuego()`, nunca como variable suelta del módulo.
+  - La tele trae su código en `?sala=` (si no hay, lo inventa `public/tv/js/sala.js`); el celular, en `/c/CODIGO`.
+    Las salas sin nadie se borran a los 60 s.
 - **TV**, en `public/tv/js/`:
 
   | Archivo | Qué hace |
@@ -48,6 +53,8 @@ Para jugar y para ver los controles y las reglas, leer `README.md` (en esta carp
   | `efectos.js` | partículas |
 
 - **Celular**: todo en `public/controller/index.html`.
+- **Arcade Retro**: FABELA se abre como "cartucho" desde la web del Arcade (otra rama del repo). El contrato
+  (links, `postMessage` y `/arcade.json`) está en `ARCADE.md`: si se cambia algo de eso, hay que avisarle al Arcade.
 - **Three.js** está vendorizado en `public/vendor/three.module.min.js`: bundle con esbuild que incluye
   `mergeGeometries`, `RoundedBoxGeometry`, `EffectComposer` y `UnrealBloomPass`. Sin CDN.
 - **Vistas de debug de la TV**:
@@ -74,7 +81,16 @@ Para jugar y para ver los controles y las reglas, leer `README.md` (en esta carp
   - Basta con `cd tools/reconstruccion && python3 reconstruir.py <jugador>` y copiar `out/*` a `public/assets/pj/`.
   - El resultado es determinista.
 
-## Estado actual (v8)
+## Estado actual (v9)
+
+Hecho en v9:
+- Salas: cada tele con su código y su propio partido.
+- Modo Arcade (cartucho):
+  - entra directo a la sala;
+  - "◀ ARCADE" en el celular y "volver" del control remoto;
+  - avisos `fabela:lista` / `fabela:salir`;
+  - ficha `/arcade.json` y portada.
+- Prueba: `node scripts/arcade.js`.
 
 Hecho en v8:
 - Props brasileños en el fondo.

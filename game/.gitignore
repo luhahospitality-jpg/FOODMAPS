@@ -5,3 +5,4 @@ tools/reconstruccion/out/
 tools/reconstruccion/sr/
 tools/reconstruccion/*.task
 tools/reconstruccion/__pycache__/
+capturas/

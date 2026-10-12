@@ -4,7 +4,8 @@ Fútbol callejero **2 vs 2** para jugar en la TV con los celulares como control.
 Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de oro).
 
 - **TV**: abrí la URL del juego en el navegador de la TV (Android TV / Xiaomi, Chromecast o una compu).
-- **Celulares**: entran a `<url>/c` (o escanean el QR de la TV). No se instala nada.
+- **Celulares**: escanean el QR de la TV o entran a `<url>/c/CODIGO`. No se instala nada.
+- **Salas**: cada TV tiene su código de 4 letras (en la URL: `?sala=ABCD`) y su propio partido, así varias casas juegan a la vez sin mezclarse. Si el celular entra a `<url>/c` sin código, se lo pide.
 - De 1 a 4 jugadores: se elige el **bando** (AMARELO: Ronaldinho y Ronaldo · AZUL: Maradona y Neymar). Los lugares que faltan los completa la máquina.
 - Se puede entrar en cualquier momento: si el partido ya empezó, entrás en el lugar de un jugador de la máquina.
 
@@ -26,6 +27,13 @@ Primero en llegar a **5 goles** gana (tope de 4 minutos; si hay empate, gol de o
 Al hacer un gol, el goleador festeja con su baile (samba, passinho, Paquetá o sarrada) y la cámara hace zoom.
 Después del gol saca del medio el equipo que lo recibió.
 | START (arriba) | El J1 arranca la partida / vuelve al menú |
+
+## Dentro del Arcade Retro (cartucho)
+
+FABELA se puede abrir desde la web del **Arcade Retro** como un "cartucho": la tele lo muestra en un iframe,
+los celulares pasan al control de FABELA y con **◀ ARCADE** (o "volver" en el control remoto) vuelven todos al
+menú del Arcade. Todo lo que tiene que hacer el Arcade está en [`ARCADE.md`](ARCADE.md). Ficha del juego para su
+menú: `<url>/arcade.json`.
 
 ## Personajes 3D
 
@@ -57,6 +65,7 @@ Parámetros de la TV: `?q=tv|med|high` (calidad), `?pr=0.6` (resolución interna
 npm run check                       # node --check en todos los .js
 npm run sim                         # partidas completas con celulares falsos (socket.io-client)
 node scripts/capturas.js capturas   # Chromium sin ventana: capturas de TV y celular + renderer.info
+node scripts/arcade.js capturas     # el cartucho: un Arcade de prueba con FABELA en un iframe + celulares
 ```
 
 ## Música, efectos y voces

@@ -8,7 +8,9 @@ let chromium;
 try { ({ chromium } = require('playwright')); } catch (e) { ({ chromium } = require(path.join(process.env.NODE_PATH || '/opt/node22/lib/node_modules', 'playwright'))); }
 
 process.env.PORT = process.env.PORT || '3998';
-const { server, juego } = require('../server.js');
+const { server, sala } = require('../server.js');
+const SALA = 'FOTO';
+const juego = sala(SALA);
 const URL = 'http://localhost:' + process.env.PORT;
 const OUT = path.resolve(process.argv[2] || 'capturas');
 const Q = process.argv[3] || 'tv';
@@ -25,7 +27,7 @@ server.listen(process.env.PORT, async () => {
   const tv = await (await nav.newContext({ viewport: { width: 1280, height: 720 } })).newPage();
   tv.on('console', (m) => { if (m.type() === 'error') errores.push('TV: ' + m.text()); });
   tv.on('pageerror', (e) => errores.push('TV: ' + e.message));
-  await tv.goto(URL + '/?q=' + Q + '&debug=1');
+  await tv.goto(URL + '/?q=' + Q + '&debug=1&sala=' + SALA);
   await espera(4500);
   await tv.screenshot({ path: path.join(OUT, '01-intro.png') });
 
@@ -35,7 +37,7 @@ server.listen(process.env.PORT, async () => {
     const p = await ctx.newPage();
     p.on('console', (m) => { if (m.type() === 'error') errores.push('CEL' + k + ': ' + m.text()); });
     p.on('pageerror', (e) => errores.push('CEL' + k + ': ' + e.message));
-    await p.goto(URL + '/c');
+    await p.goto(URL + '/c/' + SALA);
     celus.push(p);
   }
   await espera(1500);

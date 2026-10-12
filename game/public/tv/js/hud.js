@@ -1,5 +1,6 @@
 // HUD en DOM (barato: sin sombras difusas ni animaciones CSS).
 import { PERSONAJES, NOMBRE_EQUIPO, COLOR_EQUIPO } from './modelos.js';
+import { SALA } from './sala.js';
 
 const $ = (id) => document.getElementById(id);
 const NIVEL_IMG = ['laje', 'praca', 'praia', 'noturno'];
@@ -12,8 +13,10 @@ export function crearHud() {
     unirse: $('unirse'), url: $('url'), podio: $('podio'), podioTit: $('podioTit'), podioSub: $('podioSub'),
     intro: $('intro'), introTxt: $('introTxt'), debug: $('debug'), version: $('version'),
   };
-  const host = location.host;
-  el.url.textContent = host + '/c';
+  // cada tele tiene su sala: el QR y el link llevan el código
+  el.url.textContent = location.host + '/c/' + SALA;
+  $('qr').src = '/qr.svg?sala=' + SALA;
+  $('unirseRot').textContent = 'ENTRÁ CON TU CELULAR · SALA ' + SALA;
 
   // selección por bandos: cada lugar tiene su jugador fijo (lugares 0 y 2 AMARELO, 1 y 3 AZUL)
   const tarjetas = [];

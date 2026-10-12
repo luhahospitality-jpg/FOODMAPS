@@ -8,8 +8,9 @@ import { crearEfectos } from './efectos.js';
 import { crearHud } from './hud.js';
 import { crearRed } from './core.js';
 import * as audio from './audio.js';
+import { EN_ARCADE, EN_IFRAME, avisarArcade } from './sala.js';
 
-const VERSION = 8;
+const VERSION = 9;
 const NOMBRE_TRUCO = ['', '¡ELÁSTICO!', '¡PISADA!', '¡ROLETA!', '¡LAMBRETA!'];
 
 function cargarFuentes() {
@@ -77,10 +78,32 @@ async function arrancar() {
 
   const red = crearRed((n) => cargarNivel(n));
 
+  // ---------------- Arcade ----------------
+  // FABELA dentro del Arcade (iframe): al salir se avisa a la página del Arcade;
+  // si la abrieron como página entera, se vuelve atrás
+  let yaSalio = false;
+  function volverAlArcade() {
+    if (yaSalio) return;
+    yaSalio = true;
+    setTimeout(() => { yaSalio = false; }, 3000);
+    if (!avisarArcade('fabela:salir') && EN_ARCADE && history.length > 1) history.back();
+  }
+  red.socket.on('salirArcade', volverAlArcade);
+  // si el Arcade cierra FABELA por su cuenta, avisa con {tipo: 'arcade:salir'}: los celulares vuelven al Arcade
+  window.addEventListener('message', (e) => {
+    if (e.source === window.parent && e.data && e.data.tipo === 'arcade:salir') red.socket.emit('salir');
+  });
+
   // ---------------- audio ----------------
   const avisoAudio = document.getElementById('audioAviso');
   const activarAudio = () => { audio.desbloquear(); };
-  window.addEventListener('keydown', (e) => { activarAudio(); saltarIntro(); if (e.key === 'd') debugOn = !debugOn; });
+  window.addEventListener('keydown', (e) => {
+    // en el Arcade, "volver" del control remoto de la tele: vuelven todos al menú del Arcade
+    if (EN_ARCADE && (e.key === 'Escape' || e.key === 'Backspace' || e.key === 'GoBack' || e.key === 'BrowserBack')) {
+      e.preventDefault(); red.socket.emit('salir'); volverAlArcade(); return;
+    }
+    activarAudio(); saltarIntro(); if (e.key === 'd') debugOn = !debugOn;
+  });
   window.addEventListener('pointerdown', () => { activarAudio(); saltarIntro(); });
   window.addEventListener('touchstart', activarAudio);
   window.addEventListener('click', activarAudio);
@@ -110,7 +133,7 @@ async function arrancar() {
   const camPos = new THREE.Vector3(0, 30, 40), camMira = new THREE.Vector3();
   const camPosObj = new THREE.Vector3(), camMiraObj = new THREE.Vector3();
   const vista = new URLSearchParams(location.search).get('vista');
-  let intro = { activa: !vista, t: 0 };
+  let intro = { activa: !vista && !EN_ARCADE, t: 0 };   // desde el Arcade se entra directo a elegir bando
   let ultimoEstado = null, ultimaMuestra = null;
   const quat = new THREE.Quaternion(), eje = new THREE.Vector3();
 
@@ -453,6 +476,7 @@ async function arrancar() {
   }
   hud.enIntro(intro.activa || !!vista);
   document.getElementById('cargando').style.display = 'none';
+  if (EN_IFRAME) avisarArcade('fabela:lista', { version: VERSION });
   audio.sfx.jingle();
   audio.voz('fabela', 1.3);
   requestAnimationFrame(frame);

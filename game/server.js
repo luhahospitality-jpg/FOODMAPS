@@ -11,7 +11,7 @@ const express = require('express');
 const { Server } = require('socket.io');
 const QRCode = require('qrcode');
 
-const VERSION = 8;
+const VERSION = 9;
 const PORT = process.env.PORT || 3000;
 const TICK = 20;
 const DT = 1 / TICK;
@@ -74,24 +74,49 @@ app.use((req, res, next) => {
   next();
 });
 
-function urlControl(req) {
+function origen(req) {
   const proto = (req.headers['x-forwarded-proto'] || req.protocol || 'http').split(',')[0];
-  return proto + '://' + req.headers.host + '/c';
+  return proto + '://' + req.headers.host;
 }
+function urlControl(req, sala) { return origen(req) + '/c' + (sala ? '/' + sala : ''); }
+// el Arcade (otra web) puede leer la ficha y "despertar" al server
+function cors(res) { res.set('Access-Control-Allow-Origin', '*'); }
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public/tv/index.html')));
 app.get('/tv', (req, res) => res.sendFile(path.join(__dirname, 'public/tv/index.html')));
 app.get('/c', (req, res) => res.sendFile(path.join(__dirname, 'public/controller/index.html')));
+app.get('/c/:sala', (req, res) => res.sendFile(path.join(__dirname, 'public/controller/index.html')));
 app.get('/control', (req, res) => res.redirect('/c'));
 app.get('/qr.svg', async (req, res) => {
   try {
-    const svg = await QRCode.toString(urlControl(req), { type: 'svg', margin: 1, color: { dark: '#000000', light: '#ffffff' } });
+    const svg = await QRCode.toString(urlControl(req, normalizarSala(req.query.sala)), { type: 'svg', margin: 1, color: { dark: '#000000', light: '#ffffff' } });
     res.set('Content-Type', 'image/svg+xml');
     res.set('Cache-Control', 'no-cache');
     res.send(svg);
   } catch (e) { res.status(500).send(String(e)); }
 });
-app.get('/info', (req, res) => res.json({ version: VERSION, url: urlControl(req) }));
+app.get('/info', (req, res) => { cors(res); res.json({ version: VERSION, url: urlControl(req), salas: salas.size }); });
+// Ficha para el menú del Arcade: {SALA} es el código de la sala y {VOLVER} el link
+// (codificado) al mando del Arcade, a donde vuelven los celulares al salir.
+app.get('/arcade.json', (req, res) => {
+  cors(res);
+  const o = origen(req);
+  res.json({
+    id: 'fabela',
+    nombre: 'FABELA FOOTBALL',
+    jugadores: '1–4 jugadores',
+    descripcion: 'Fútbol callejero 2 vs 2 en la favela.',
+    color: '#f5c518',
+    version: VERSION,
+    portada: o + '/assets/img/portada.jpg',
+    logo: o + '/assets/img/logo_fabela.webp',
+    tv: o + '/?sala={SALA}&arcade={VOLVER}',
+    control: o + '/c/{SALA}?arcade={VOLVER}',
+    despertar: o + '/info',
+    // FABELA → Arcade (postMessage al padre del iframe): lista, salir · Arcade → FABELA: cerrar
+    mensajes: { lista: 'fabela:lista', salir: 'fabela:salir', cerrar: 'arcade:salir' },
+  });
+});
 app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: '1h',
   setHeaders(res, p) { if (/\.(html|js|css|json)$/.test(p)) res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate'); },
@@ -107,34 +132,77 @@ const hypot = Math.hypot;
 function normAng(a) { while (a > Math.PI) a -= Math.PI * 2; while (a < -Math.PI) a += Math.PI * 2; return a; }
 
 // ---------------------------------------------------------------------
-//  Estado global
+//  Estado de cada sala
 // ---------------------------------------------------------------------
 function slotVacio(i) {
   return { i, humano: null, pid: null, nombre: 'CPU', ch: PJ_DEL_LUGAR[i], listo: false };
 }
 
-const juego = {
-  fase: 'select',        // select → countdown → playing → finished → select
-  faseT: 0,
-  sub: '',               // dentro de 'playing': '', 'goal', 'kickoff'
-  subT: 0,
-  nivel: 0,
-  slots: [0, 1, 2, 3].map(slotVacio),
-  mirando: new Set(),    // sockets que miran (entraron con la partida empezada o sin lugar)
-  jug: [],               // jugadores del partido (uno por slot)
-  pelota: null,
-  balas: [],
-  marcador: [0, 0],
-  tiempo: TIEMPO_PARTIDO,
-  oro: false,            // gol de oro
-  matchPoint: false,
-  ev: [],
-  evId: 0,
-  reloj: 0,
-  ultimoGoleador: -1,
-  podio: null,
-  ganador: -1,
-};
+// ---------------------------------------------------------------------
+//  Salas: cada tele tiene su código y su propio partido.
+//  Toda la lógica usa `juego`, que apunta a la sala que se está procesando:
+//  el tick y cada mensaje primero eligen su sala con enSala().
+// ---------------------------------------------------------------------
+const salas = new Map();                                 // código → juego
+const MAX_SALAS = 300;
+const SALA_VACIA_SEG = 60;                               // sin nadie conectado: se borra
+const ALFABETO = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';     // sin 0/O/1/I (como el Arcade)
+function normalizarSala(raw) { return String(raw || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 8); }
+function codigoNuevo() {
+  let c;
+  do { c = ''; for (let i = 0; i < 4; i++) c += ALFABETO[(Math.random() * ALFABETO.length) | 0]; } while (salas.has(c));
+  return c;
+}
+// Link de vuelta al Arcade: solo http(s), para no abrir cualquier cosa
+function urlArcade(raw) {
+  if (typeof raw !== 'string' || !raw || raw.length > 400) return '';
+  try { const u = new URL(raw); return u.protocol === 'https:' || u.protocol === 'http:' ? u.href : ''; } catch (e) { return ''; }
+}
+
+function crearJuego(codigo) {
+  return {
+    sala: codigo,
+    conectados: 0,         // sockets en la sala (tele y celulares)
+    vaciaT: 0,             // segundos sin nadie conectado
+    arcade: '',            // a dónde vuelven los celulares si la sala se abrió desde el Arcade
+    fase: 'select',        // select → countdown → playing → finished → select
+    faseT: 0,
+    sub: '',               // dentro de 'playing': '', 'goal', 'kickoff'
+    subT: 0,
+    nivel: 0,
+    slots: [0, 1, 2, 3].map(slotVacio),
+    mirando: new Set(),    // sockets que miran (entraron con la partida empezada o sin lugar)
+    jug: [],               // jugadores del partido (uno por slot)
+    pelota: null,
+    balas: [],
+    marcador: [0, 0],
+    tiempo: TIEMPO_PARTIDO,
+    oro: false,            // gol de oro
+    matchPoint: false,
+    ev: [],
+    evId: 0,
+    reloj: 0,
+    ultimoGoleador: -1,
+    podio: null,
+    ganador: -1,
+    ultimoParedEv: 0,
+    ultimoNivelEmit: 0,
+  };
+}
+
+let juego = null;          // la sala que se está procesando
+
+function enSala(g, fn) { const antes = juego; juego = g; try { return fn(); } finally { juego = antes; } }
+function salaDe(codigo) {
+  let g = salas.get(codigo);
+  if (!g) {
+    g = crearJuego(codigo);
+    salas.set(codigo, g);
+    enSala(g, repartirPersonajesBots);
+  }
+  return g;
+}
+function telesEn(codigo) { const r = io.sockets.adapter.rooms.get('tv:' + codigo); return r ? r.size : 0; }
 
 function evento(k, datos) {
   const e = Object.assign({ i: ++juego.evId, k, ts: juego.reloj }, datos || {});
@@ -845,11 +913,10 @@ function enArea(j) {
   return Math.abs(j.x - propio) < 4.5 && Math.abs(j.z) < GOAL_HW + 2.5;
 }
 
-let ultimoParedEv = 0;
 function paredEv(b) {
   const v = hypot(b.vx, b.vz);
-  if (v > 7 && juego.reloj - ultimoParedEv > 0.2) {
-    ultimoParedEv = juego.reloj;
+  if (v > 7 && juego.reloj - juego.ultimoParedEv > 0.2) {
+    juego.ultimoParedEv = juego.reloj;
     evento('pared', { x: r100(b.x), z: r100(b.z), f: Math.round(v) });
   }
 }
@@ -1054,7 +1121,7 @@ function estadoPersonal(i) {
     host: slotHost() === i ? 1 : 0, n: juego.nivel, sc: juego.marcador, t: Math.ceil(juego.tiempo),
     cd: numeroCuenta(), oro: juego.oro ? 1 : 0, mp: juego.matchPoint ? 1 : 0,
     sl: juego.slots.map((x) => [x.humano ? 1 : 0, x.ch, x.listo ? 1 : 0]),
-    v: VERSION,
+    v: VERSION, sala: juego.sala, tv: telesEn(juego.sala), arcade: juego.arcade,
   };
   if (j && juego.fase !== 'select') {
     o.bal = tienePelota(j) ? 1 : 0;
@@ -1067,24 +1134,23 @@ function estadoPersonal(i) {
   return o;
 }
 
-let ultimoNivelEmit = 0;
 function emitir() {
-  io.to('tv').emit('state', estadoPublico());
+  io.to('tv:' + juego.sala).emit('state', estadoPublico());
   for (const s of juego.slots) {
     const sock = s.humano ? io.sockets.sockets.get(s.humano) : null;
     if (sock) sock.emit('status', estadoPersonal(s.i));
   }
   for (const id of juego.mirando) {
     const sock = io.sockets.sockets.get(id);
-    if (sock) sock.emit('status', { f: juego.fase, mirando: 1, sc: juego.marcador, t: Math.ceil(juego.tiempo), v: VERSION });
+    if (sock) sock.emit('status', { f: juego.fase, mirando: 1, sc: juego.marcador, t: Math.ceil(juego.tiempo), v: VERSION, sala: juego.sala, tv: telesEn(juego.sala), arcade: juego.arcade });
   }
-  if (juego.reloj - ultimoNivelEmit >= 1) { ultimoNivelEmit = juego.reloj; emitirNivel(); }
+  if (juego.reloj - juego.ultimoNivelEmit >= 1) { juego.ultimoNivelEmit = juego.reloj; emitirNivel(); }
 }
 
 function datosNivel() {
   return { n: juego.nivel, id: NIVELES[juego.nivel].id, nombre: NIVELES[juego.nivel].nombre, L, W, gw: GOAL_HW, gh: GOAL_H, gd: GOAL_D, meta: GOLES_PARA_GANAR, v: VERSION };
 }
-function emitirNivel() { io.to('tv').emit('nivel', datosNivel()); }
+function emitirNivel() { io.to('tv:' + juego.sala).emit('nivel', datosNivel()); }
 
 // ---------------------------------------------------------------------
 //  Conexiones
@@ -1146,48 +1212,41 @@ function seleccion(i, d) {
     revisarInicio();
   }
 }
+// Vuelven todos al Arcade: la tele avisa a la página que la contiene y los celulares vuelven a su mando
+function salirArcade() {
+  if (juego.fase !== 'select') volverAlMenu();
+  evento('arcade');
+  io.to('sala:' + juego.sala).emit('salirArcade');
+}
+
 function revisarInicio() {
   const humanos = juego.slots.filter((s) => s.humano);
   if (humanos.length && humanos.every((s) => s.listo) && juego.fase === 'select') iniciarCuenta();
 }
 
 io.on('connection', (sock) => {
-  const rol = sock.handshake.query && sock.handshake.query.rol;
-  if (rol === 'tv') {
-    sock.join('tv');
-    sock.emit('nivel', datosNivel());
-    return;
+  const q = sock.handshake.query || {};
+  const esTele = q.rol === 'tv';
+  let codigo = normalizarSala(q.sala);
+  if (!codigo) {
+    // la tele sin código abre una sala nueva; el celular tiene que traer el código
+    if (!esTele) { sock.emit('sinSala'); sock.disconnect(true); return; }
+    codigo = codigoNuevo();
   }
-  sock.on('hola', (d) => hola(sock, d));
-  sock.on('input', (d) => {
-    const i = slotDeSocket(sock.id); if (i < 0 || !d) return;
-    const j = juego.jug[i]; if (!j) return;
-    j.inp.mx = clamp(Number(d.x) || 0, -1, 1);
-    j.inp.mz = clamp(Number(d.y) || 0, -1, 1);
-  });
-  sock.on('pad', (d) => {
-    const i = slotDeSocket(sock.id); if (i < 0 || !d) return;
-    const j = juego.jug[i]; if (!j) return;
-    if (d.t === 'down') { j.inp.hold = true; j.inp.holdT = 0; }
-    else if (d.t === 'up') accionSoltar(j, d);
-  });
-  sock.on('btn', (d) => {
-    const i = slotDeSocket(sock.id); if (i < 0 || !d) return;
-    const j = juego.jug[i];
-    if (d.b === 'menu') {
-      if (slotHost() === i && juego.fase !== 'select') volverAlMenu();
-      return;
-    }
-    if (!j) return;
-    if (d.b === 'pase') accionPase(j);
-    else if (d.b === 'truco') accionTruco(j);
-    else if (d.b === 'pistola') accionPistola(j);
-  });
-  sock.on('sel', (d) => {
-    const i = slotDeSocket(sock.id); if (i < 0) return;
-    seleccion(i, d);
-  });
-  sock.on('disconnect', () => {
+  if (!salas.has(codigo) && salas.size >= MAX_SALAS) { sock.emit('salasLlenas'); sock.disconnect(true); return; }
+  const g = salaDe(codigo);
+  g.conectados++;
+  g.vaciaT = 0;
+  sock.data.sala = codigo;
+  sock.join('sala:' + codigo);
+  // la tele manda el link de vuelta al Arcade; un celular solo lo pone si todavía no hay
+  const arc = urlArcade(q.arcade);
+  if (arc && (esTele || !g.arcade)) g.arcade = arc;
+  // cada mensaje se procesa dentro de su sala
+  const en = (fn) => (d) => enSala(salaDe(codigo), () => fn(d));
+
+  sock.on('disconnect', en(() => {
+    juego.conectados = Math.max(0, juego.conectados - 1);
     juego.mirando.delete(sock.id);
     const i = slotDeSocket(sock.id);
     if (i < 0) return;
@@ -1200,16 +1259,72 @@ io.on('connection', (sock) => {
     evento('sale', { s: i });
     if (!hayHumanos()) { if (juego.fase !== 'select') volverAlMenu(); }
     else if (juego.fase === 'select') { repartirPersonajesBots(); revisarInicio(); }
-  });
+  }));
+
+  if (esTele) {
+    sock.join('tv:' + codigo);
+    sock.emit('sala', { codigo });
+    sock.emit('nivel', enSala(g, datosNivel));
+    sock.on('salir', en(() => { if (juego.arcade) salirArcade(); }));   // "volver" del control remoto de la tele
+    return;
+  }
+  sock.on('hola', en((d) => hola(sock, d)));
+  sock.on('input', en((d) => {
+    const i = slotDeSocket(sock.id); if (i < 0 || !d) return;
+    const j = juego.jug[i]; if (!j) return;
+    j.inp.mx = clamp(Number(d.x) || 0, -1, 1);
+    j.inp.mz = clamp(Number(d.y) || 0, -1, 1);
+  }));
+  sock.on('pad', en((d) => {
+    const i = slotDeSocket(sock.id); if (i < 0 || !d) return;
+    const j = juego.jug[i]; if (!j) return;
+    if (d.t === 'down') { j.inp.hold = true; j.inp.holdT = 0; }
+    else if (d.t === 'up') accionSoltar(j, d);
+  }));
+  sock.on('btn', en((d) => {
+    if (!d) return;
+    if (d.b === 'arcade') { if (juego.arcade) salirArcade(); return; }   // solo en salas abiertas desde el Arcade
+    const i = slotDeSocket(sock.id); if (i < 0) return;
+    const j = juego.jug[i];
+    if (d.b === 'menu') {
+      if (slotHost() === i && juego.fase !== 'select') volverAlMenu();
+      return;
+    }
+    if (!j) return;
+    if (d.b === 'pase') accionPase(j);
+    else if (d.b === 'truco') accionTruco(j);
+    else if (d.b === 'pistola') accionPistola(j);
+  }));
+  sock.on('sel', en((d) => {
+    const i = slotDeSocket(sock.id); if (i < 0) return;
+    seleccion(i, d);
+  }));
 });
+
+// Salas sin nadie conectado durante un rato: se borran
+function limpiarSalas(dt) {
+  for (const [c, g] of salas) {
+    if (g.conectados > 0) { g.vaciaT = 0; continue; }
+    g.vaciaT += dt;
+    if (g.vaciaT > SALA_VACIA_SEG) salas.delete(c);
+  }
+}
 
 // SIM_RAPIDO=N acelera el tiempo N veces (solo para las pruebas automáticas)
 const RAPIDO = Math.max(1, Number(process.env.SIM_RAPIDO) || 1);
-setInterval(() => { for (let k = 0; k < RAPIDO; k++) tick(); }, 1000 / TICK);
-repartirPersonajesBots();
+setInterval(() => {
+  for (let k = 0; k < RAPIDO; k++) {
+    for (const g of salas.values()) {
+      // si una sala falla, que no se caigan las demás
+      try { enSala(g, tick); } catch (e) { if (!g.fallo) console.error('sala ' + g.sala + ':', e); g.fallo = true; }
+    }
+  }
+  limpiarSalas(DT * RAPIDO);
+}, 1000 / TICK);
 
 if (require.main === module) {
   server.listen(PORT, () => console.log('FABELA FOOTBALL v' + VERSION + ' escuchando en el puerto ' + PORT));
 }
 
-module.exports = { server, juego, PERSONAJES, NIVELES, GOLES_PARA_GANAR };
+// sala(código) devuelve (o crea) el partido de esa sala: lo usan las pruebas
+module.exports = { server, salas, sala: salaDe, PERSONAJES, NIVELES, GOLES_PARA_GANAR, VERSION };
