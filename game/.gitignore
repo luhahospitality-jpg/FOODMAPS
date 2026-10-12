@@ -1,1 +1,7 @@
 node_modules/
+
+# reconstrucción 3D: salidas e insumos pesados que se regeneran
+tools/reconstruccion/out/
+tools/reconstruccion/sr/
+tools/reconstruccion/*.task
+tools/reconstruccion/__pycache__/
