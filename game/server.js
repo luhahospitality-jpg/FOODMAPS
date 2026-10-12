@@ -52,6 +52,12 @@ function activeTrack() { return TRACKS[trackIndex]; }
 function isBattle() { return activeTrack().mode === 'battle'; }
 
 // html/js/css siempre se revalidan: si no, la TV se quedaba mostrando la version vieja
+// la raiz del sitio lleva a donde corresponde: un celular al control, la TV (o una compu) a la pantalla
+app.get('/', (req, res) => {
+  const ua = req.get('user-agent') || '';
+  res.redirect(/iPhone|iPod|Mobile/i.test(ua) ? '/controller/' : '/tv/');
+});
+
 app.use(express.static(__dirname + '/public', {
   setHeaders(res, filePath) {
     if (/\.(html|js|css)$/.test(filePath)) res.setHeader('Cache-Control', 'no-cache');
