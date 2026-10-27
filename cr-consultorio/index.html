@@ -120,8 +120,8 @@
   .team{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:stretch}
   .team-photo{min-height:560px}
   .team-side{display:grid;gap:20px}
-  .doc{display:grid;grid-template-columns:160px minmax(0,1fr);gap:20px;align-items:end;background:var(--mist);border-radius:var(--r);padding:14px}
-  .doc .ph{aspect-ratio:3/4;border-radius:18px}
+  .doc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:end;background:var(--mist);border-radius:var(--r);padding:14px}
+  .doc .ph{height:100%;min-height:240px;border-radius:18px}
   .doc .info{padding:6px 8px 8px 0}
   .doc .role{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--moss);margin-bottom:8px}
   .doc h3{font-size:32px;line-height:1.05;margin-bottom:8px}
@@ -180,7 +180,7 @@
   }
   @media (max-width:560px){
     .values,.cinfo{grid-template-columns:minmax(0,1fr)}
-    .doc{grid-template-columns:110px minmax(0,1fr)}
+    .doc{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
     .doc h3{font-size:26px}
     .svc-img{min-height:340px}
   }
@@ -204,7 +204,6 @@
   <text x="59" y="192" font-family="Questrial, 'Century Gothic', 'Avenir', sans-serif" font-size="25" fill="#2f2d2d" textLength="324" lengthAdjust="spacingAndGlyphs">consultorio odontológico</text>
 </svg></a>
     <nav>
-      <a class="link" href="#nosotros">Nosotros</a>
       <a class="link" href="#tratamientos">Tratamientos</a>
       <a class="link" href="#equipo">Equipo</a>
       <a class="link" href="#consultorio">El consultorio</a>
@@ -218,9 +217,8 @@
     <div class="hero-left">
       <svg class="enso" viewBox="0 0 400 400" aria-hidden="true"><path d="M318 118 C 270 52 160 40 98 102 C 34 166 46 282 128 330 C 210 378 318 344 346 252 C 362 200 350 160 326 132" fill="none" stroke-width="14" stroke-linecap="round"/></svg>
       <div>
-        <p class="eyebrow">Odontología integral</p>
-        <h1 class="reveal">Cuidamos tu <em>sonrisa</em>, con calma.</h1>
-        <p class="lead">Un consultorio luminoso, rodeado de verde, donde cada tratamiento se explica, se planifica y se hace sin apuro. Atención personalizada de la Dra. Paula Rannazzo y el Dr. José Carlos Cortés.</p>
+        <h1 class="reveal">Odontología <em>integral</em>.</h1>
+        <p class="lead">Implantes, rehabilitación oral y odontología general.<br>Dra. Paula Rannazzo · Dr. José Carlos Cortés.</p>
         <div class="actions">
           <a class="btn" href="#contacto">Pedir turno ↗</a>
           <a class="btn ghost" href="#tratamientos">Ver tratamientos</a>
@@ -235,43 +233,21 @@
     </div>
     <div class="hero-photo">
       <div class="ph tint"><img src="fotos/consultorio.jpg" alt="Sillón odontológico frente a un ventanal con árboles"></div>
-      <div class="float">
-        <strong>Luz natural y silencio</strong>
-        Un espacio pensado para que te sientas tranquilo desde que llegás.
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="nosotros">
-    <div class="sec-head"><span class="pill">Nosotros</span><span class="note">CR · Cortés &amp; Rannazzo</span></div>
-    <div class="about">
-      <div class="ph small tint"><img src="fotos/flores.jpg" alt="Flores verdes en un florero de vidrio"></div>
-      <div>
-        <h2 class="statement reveal">Creemos en una odontología <em>sin apuro</em>: escuchar, explicar cada paso y cuidar la salud de tu boca como un todo, en un lugar donde <em>da gusto estar</em>.</h2>
-        <div class="about-bottom">
-          <div class="values">
-            <div><h3>Tiempo</h3><p>Turnos amplios, sin salas llenas ni esperas largas.</p></div>
-            <div><h3>Precisión</h3><p>Escáner intraoral y tomografía 3D para planificar.</p></div>
-            <div><h3>Calma</h3><p>Luz natural, plantas y un ambiente silencioso.</p></div>
-          </div>
-          <div class="ph wide"><img src="fotos/sala-espera.jpg" alt="Sala de espera con sillones de madera y techo de vigas"></div>
-        </div>
-      </div>
     </div>
   </section>
 
   <section class="sec" id="tratamientos">
-    <div class="sec-head"><span class="pill">Tratamientos</span><span class="note">Tocá cada uno para ver más</span></div>
+    <div class="sec-head"><span class="pill">Tratamientos</span></div>
     <div class="services">
       <div class="svc" id="svc">
-        <button class="on" data-img="implantes" data-alt="Muestras de implantes cerámicos" data-txt="Recuperá las piezas que faltan con <em>implantes</em> de primera línea, planificados con tomografía para un resultado <em>firme y natural</em>."><div class="t">Implantes</div><div class="sub">Implantes de titanio y cerámicos, planificación 3D</div></button>
-        <button data-img="protesis" data-alt="Modelo de prótesis dental sobre hojas verdes" data-txt="Devolvemos <em>función y estética</em> con coronas, puentes y prótesis hechas a medida de tu boca."><div class="t">Prótesis y rehabilitación</div><div class="sub">Coronas, puentes, prótesis fijas y removibles</div></button>
-        <button data-img="escaner" data-alt="Monitor con escaneo intraoral junto al sillón" data-txt="Con el <em>escáner intraoral</em> vemos tu boca en pantalla, sin moldes incómodos, y te mostramos cada detalle del plan."><div class="t">Diagnóstico digital</div><div class="sub">Escáner intraoral, radiografías y tomografía</div></button>
-        <button data-img="atencion" data-alt="La Dra. Rannazzo atendiendo a una paciente" data-txt="Controles, limpiezas y tratamientos para cuidar tu sonrisa <em>todos los días</em>, a cualquier edad."><div class="t">Odontología general</div><div class="sub">Limpiezas, caries, controles y prevención</div></button>
+        <button class="on" data-img="implantes" data-alt="Muestras de implantes cerámicos" data-txt="Implantes de titanio y cerámicos, planificados con <em>tomografía 3D</em>."><div class="t">Implantes</div></button>
+        <button data-img="protesis" data-alt="Modelo de prótesis dental sobre hojas verdes" data-txt="Coronas, puentes y prótesis <em>fijas o removibles</em>."><div class="t">Prótesis y rehabilitación</div></button>
+        <button data-img="escaner" data-alt="Monitor con escaneo intraoral junto al sillón" data-txt="Escáner intraoral, radiografías y tomografía para un <em>diagnóstico preciso</em>."><div class="t">Diagnóstico digital</div></button>
+        <button data-img="atencion" data-alt="La Dra. Rannazzo atendiendo a una paciente" data-txt="Controles, limpiezas, caries y <em>prevención</em>."><div class="t">Odontología general</div></button>
       </div>
       <div class="ph svc-img tint"><img id="svcImg" src="fotos/implantes.jpg" alt="Muestras de implantes cerámicos"></div>
       <div class="svc-card">
-        <p id="svcTxt">Recuperá las piezas que faltan con <em>implantes</em> de primera línea, planificados con tomografía para un resultado <em>firme y natural</em>.</p>
+        <p id="svcTxt">Implantes de titanio y cerámicos, planificados con <em>tomografía 3D</em>.</p>
         <div>
           <div class="avatars">
             <div class="ph"><img src="fotos/paula-negatoscopio.jpg" alt="" style="object-position:62% 28%"></div>
@@ -285,7 +261,7 @@
   </section>
 
   <section class="sec" id="equipo">
-    <div class="sec-head"><span class="pill">Equipo</span><span class="note">Dos profesionales, un mismo criterio</span></div>
+    <div class="sec-head"><span class="pill">Equipo</span></div>
     <div class="team">
       <div class="ph team-photo"><img src="fotos/equipo.jpg" alt="La Dra. Paula Rannazzo y el Dr. José Carlos Cortés en el consultorio" style="object-position:center 70%"></div>
       <div class="team-side">
@@ -294,7 +270,6 @@
           <div class="info">
             <div class="role">Odontóloga</div>
             <h3>Dra. Paula <em>Rannazzo</em></h3>
-            <p>Atención cercana y detallista. Le gusta que cada paciente entienda su diagnóstico y se vaya tranquilo.</p>
           </div>
         </article>
         <article class="doc">
@@ -302,27 +277,14 @@
           <div class="info">
             <div class="role">Odontólogo</div>
             <h3>Dr. José Carlos <em>Cortés</em></h3>
-            <p>Implantes y rehabilitación oral, con planificación digital para devolverle función y estética a tu sonrisa.</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="sec">
-    <div class="pause">
-      <div class="ph tint"><img src="fotos/sala-lectura.jpg" alt="Paciente leyendo en la sala de espera junto a una planta"></div>
-      <blockquote>
-        <div class="breath" aria-hidden="true"></div>
-        <p>Respirá. Acá el tiempo va <em>más lento</em>.</p>
-        <span>Sala de espera · CR Consultorio</span>
-      </blockquote>
-    </div>
-  </section>
-
   <section class="sec" id="consultorio">
-    <div class="sec-head"><span class="pill">El consultorio</span><span class="note">Tocá una foto para verla grande</span></div>
-    <h2 class="statement reveal" style="margin-bottom:48px;max-width:760px">Madera, luz y <em>mucho verde</em>. Un lugar pensado para sentirte bien.</h2>
+    <div class="sec-head"><span class="pill">El consultorio</span></div>
     <div class="gallery" id="gallery">
       <figure><div class="ph tint"><img src="fotos/consultorio.jpg" alt="Box de atención con techo de madera"></div><figcaption>Box de atención</figcaption></figure>
       <figure><div class="ph"><img src="fotos/lavado-manos.jpg" alt="Lavado de manos junto a un bambú"></div><figcaption>Higiene y bioseguridad</figcaption></figure>
@@ -341,7 +303,7 @@
     <div class="contact">
       <div class="ph tint"><img src="fotos/lavado-manos.jpg" alt="Lavabo con planta de bambú" style="object-position:center 60%"></div>
       <div>
-        <h2>Tu sonrisa, <em>en buenas manos</em>.</h2>
+        <h2>Pedí tu <em>turno</em>.</h2>
         <div class="cinfo">
           <div><small>Ubicación</small>Av. Dardo Rocha<br>San Isidro, Buenos Aires</div>
           <div><small>Turnos</small>Por Instagram o WhatsApp</div>
@@ -349,7 +311,7 @@
           <div><small>Atención</small>Lunes a viernes, con turno previo</div>
         </div>
         <div class="actions">
-          <a class="btn" href="https://ig.me/m/cr.consultorio" target="_blank" rel="noopener">Escribinos para pedir turno ↗</a>
+          <a class="btn" href="https://ig.me/m/cr.consultorio" target="_blank" rel="noopener">Escribir por Instagram ↗</a>
           <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Av.+Dardo+Rocha,+San+Isidro,+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar ↗</a>
         </div>
       </div>
@@ -367,8 +329,8 @@
   <use href="#cr-arc-f" fill="#6fb56c" stroke="#6fb56c" opacity=".92"/>
   <text x="54" y="145" font-family="Montserrat, 'Gotham', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="110" fill="#4f4b4b" textLength="138" lengthAdjust="spacingAndGlyphs">CR</text>
   <text x="59" y="192" font-family="Questrial, 'Century Gothic', 'Avenir', sans-serif" font-size="25" fill="#2f2d2d" textLength="324" lengthAdjust="spacingAndGlyphs">consultorio odontológico</text>
-</svg><p>Odontología integral, <em>sin apuro</em>.</p></div>
-      <div><small>Consultorio</small><a href="#nosotros">Nosotros</a><a href="#equipo">Equipo</a><a href="#consultorio">El consultorio</a></div>
+</svg></div>
+      <div><small>Consultorio</small><a href="#equipo">Equipo</a><a href="#consultorio">El consultorio</a></div>
       <div><small>Tratamientos</small><a href="#tratamientos">Implantes</a><a href="#tratamientos">Prótesis</a><a href="#tratamientos">Diagnóstico digital</a><a href="#tratamientos">Odontología general</a></div>
       <div><small>Seguinos</small><a href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener">Instagram</a><a href="#contacto">Contacto</a></div>
     </footer>
