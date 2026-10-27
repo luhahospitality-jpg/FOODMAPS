@@ -124,6 +124,19 @@
   .avatars .ph{width:44px;height:44px;border-radius:50%;border:2px solid var(--mist);margin-right:-10px}
   .svc-card small{display:block;font-size:12px;margin-top:8px;color:var(--muted)}
 
+  /* tecnología 3D */
+  .tech{--ember:#e08a4c;--ember-hi:#f6c79a;--ember-deep:#3a1508;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px;padding:14px;border-radius:36px;background:radial-gradient(120% 90% at 30% 35%,#c9692f 0%,#8a3a14 45%,var(--ember-deep) 100%);color:#fbe9d8}
+  .tech-main{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1fr auto;gap:12px;padding:clamp(18px,3vw,36px);min-height:440px}
+  .tech-tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ember-hi)}
+  .tech h2{color:#fff4ea;font-size:clamp(40px,5vw,68px);line-height:1;margin:12px 0 14px}
+  .tech h2 em{color:var(--ember-hi)}
+  .tech-lead{font-size:15px;max-width:300px;color:#f3d6bd}
+  .tech-3d{grid-row:1 / span 2;grid-column:2;min-height:340px;position:relative}
+  .tech-3d canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+  .tech-3d::after{content:"";position:absolute;left:28%;right:28%;bottom:15%;height:16px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.35),transparent);pointer-events:none}
+  .tech-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;align-self:end}
+  .tech-list li{font-size:13px;padding:8px 14px;border:1px solid rgba(251,233,216,.35);border-radius:999px}
+  .tech-photo{border-radius:26px;min-height:440px}
   /* equipo */
   .team{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:stretch}
   .team-photo{min-height:560px}
@@ -188,6 +201,8 @@
     .about{grid-template-columns:minmax(0,1fr)}
     .about .small{width:150px}
     .team-photo{min-height:480px}
+    .tech{grid-template-columns:minmax(0,1fr)}
+    .tech-photo{min-height:360px}
     footer{grid-template-columns:1fr 1fr}
   }
   @media (max-width:560px){
@@ -195,6 +210,8 @@
     .doc{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
     .doc h3{font-size:26px}
     .svc-img{min-height:340px}
+    .tech-main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}
+    .tech-3d{grid-row:auto;grid-column:auto;min-height:300px}
   }
 </style>
 </head>
@@ -217,6 +234,7 @@
 </svg></a>
     <nav>
       <a class="link" href="#tratamientos">Tratamientos</a>
+      <a class="link" href="#tecnologia">Tecnología</a>
       <a class="link" href="#equipo">Equipo</a>
       <a class="link" href="#consultorio">El consultorio</a>
       <a class="icon-btn" href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener" aria-label="Instagram de CR Consultorio">
@@ -278,6 +296,23 @@
           <div style="text-align:right;margin-top:18px"><a class="btn" href="#contacto" style="padding:11px 18px;font-size:13px">Consultar ↗</a></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="sec" id="tecnologia">
+    <div class="tech">
+      <div class="tech-main">
+        <div>
+          <p class="tech-tag">Tecnología</p>
+          <h2>Odontología <em>3D</em>.</h2>
+          <p class="tech-lead">Planificación digital con tomografía y escáner intraoral. Impresión 3D en el consultorio.</p>
+        </div>
+        <div class="tech-3d" id="tech3d" aria-label="Modelo 3D de un implante dental girando" role="img"></div>
+        <ul class="tech-list">
+          <li>Tomografía 3D</li><li>Escáner intraoral</li><li>Impresión 3D</li>
+        </ul>
+      </div>
+      <div class="ph tech-photo"><img src="fotos/impresion-3d.jpg" alt="Impresora 3D de resina y equipo de curado en el consultorio"></div>
     </div>
   </section>
 
@@ -388,6 +423,81 @@
   // Entrada suave
   const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.2});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+  // Implante 3D: corona + pilar + tornillo, girando sobre su eje
+  (function(){
+    const box = document.getElementById('tech3d');
+    if (!box || !window.THREE) return;
+    let renderer;
+    try { renderer = new THREE.WebGLRenderer({antialias:true, alpha:true}); } catch(e) { return; }
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    box.appendChild(renderer.domElement);
+    const scene = new THREE.Scene();
+    const cam = new THREE.PerspectiveCamera(32, 1, .1, 100);
+    cam.position.set(0, .3, 11.5); cam.lookAt(0, -.15, 0);
+
+    scene.add(new THREE.HemisphereLight(0xffe2c4, 0x3a1508, .55));
+    const key = new THREE.DirectionalLight(0xfff1e2, .95); key.position.set(3, 4, 5); scene.add(key);
+    const rim = new THREE.DirectionalLight(0xff8a3d, 2.2); rim.position.set(-4, 1, -3); scene.add(rim);
+    const under = new THREE.PointLight(0xffa25a, .7, 8); under.position.set(0, -.2, 1.6); scene.add(under);
+
+    const implant = new THREE.Group();
+
+    // corona (molar): esfera deformada con cuatro cúspides
+    const cg = new THREE.SphereGeometry(1, 96, 64), pos = cg.attributes.position, v = new THREE.Vector3();
+    for (let i = 0; i < pos.count; i++) {
+      v.fromBufferAttribute(pos, i);
+      const r = Math.hypot(v.x, v.z), th = Math.atan2(v.z, v.x);
+      if (v.y > 0) {
+        v.y = v.y * .62 + .1 * Math.cos(4 * th + .6) * Math.sin(Math.PI * Math.min(r, 1)) - .08 * Math.exp(-r * r * 9);
+      } else {
+        const k = 1 - .38 * Math.min(-v.y, 1); v.x *= k; v.z *= k; v.y *= .8;
+      }
+      v.x *= 1.08; pos.setXYZ(i, v.x, v.y, v.z);
+    }
+    cg.computeVertexNormals();
+    const crown = new THREE.Mesh(cg, new THREE.MeshPhysicalMaterial({color:0xeee3d4, roughness:.42, clearcoat:.6, clearcoatRoughness:.3}));
+    crown.position.y = 1.15; implant.add(crown);
+
+    // pilar
+    const metal = new THREE.MeshStandardMaterial({color:0xd9864a, metalness:.95, roughness:.28});
+    const abut = new THREE.Mesh(new THREE.CylinderGeometry(.34, .42, .5, 48), metal);
+    abut.position.y = .2; implant.add(abut);
+
+    // tornillo con roscas (perfil en zigzag torneado)
+    const pts = [], turns = 9, top = 0, len = 2.3;
+    for (let i = 0; i <= turns * 12; i++) {
+      const t = i / (turns * 12), y = top - t * len;
+      const taper = .46 - t * .16, tooth = (i % 12) / 12;
+      const rr = taper + .11 * (tooth < .5 ? tooth * 2 : (1 - tooth) * 2);
+      pts.push(new THREE.Vector2(Math.max(rr, .05), y));
+    }
+    pts.push(new THREE.Vector2(.04, top - len - .12));
+    pts.unshift(new THREE.Vector2(.001, top));
+    const screw = new THREE.Mesh(new THREE.LatheGeometry(pts, 72), metal);
+    screw.position.y = -.05; implant.add(screw);
+
+    implant.scale.setScalar(.82);
+    scene.add(implant);
+
+    function size(){
+      const w = box.clientWidth, h = box.clientHeight;
+      renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix();
+    }
+    size(); addEventListener('resize', size);
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    implant.rotation.set(.12, .6, 0);
+    let t0 = performance.now();
+    (function loop(t){
+      const s = (t - t0) / 1000;
+      if (!still) { implant.rotation.y = .6 + s * .6; implant.position.y = Math.sin(s * 1.2) * .06; }
+      renderer.render(scene, cam);
+      if (!still) requestAnimationFrame(loop);
+    })(t0);
+  })();
 </script>
 </body>
 </html>
