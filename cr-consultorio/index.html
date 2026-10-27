@@ -107,6 +107,14 @@
   .svc button.on .t{color:var(--ink)}
   .svc button.on .sub{display:block}
   .svc button.on::after{content:"–"}
+  .ortho{padding:20px 0;border-bottom:1px solid var(--line)}
+  .ortho .t{color:var(--ink)}
+  .ortho .age{font-size:13px;color:var(--moss);margin-top:2px}
+  .opts{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .opts li{height:44px;display:flex;align-items:center;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--sheet);font-size:14px;color:var(--ink)}
+  .opts img{width:auto;max-width:none;flex-shrink:0;display:block}
+  .opts .lg-inv{height:24px}
+  .opts .lg-ks{height:22px}
   .svc-img{min-height:420px}
   .svc-img img{transition:opacity .4s}
   .svc-card{background:var(--mist);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
@@ -244,6 +252,15 @@
     <div class="sec-head"><span class="pill">Tratamientos</span></div>
     <div class="services">
       <div class="svc" id="svc">
+        <div class="ortho">
+          <div class="t">Ortodoncia</div>
+          <div class="age">A partir de 14 años</div>
+          <ul class="opts">
+            <li>Convencional</li>
+            <li><img class="lg-inv" src="fotos/invisalign.svg" alt="Invisalign"></li>
+            <li><img class="lg-ks" src="fotos/keepsmiling.svg" alt="KeepSmiling"></li>
+          </ul>
+        </div>
         <button class="on" data-img="implantes" data-alt="Muestras de implantes cerámicos" data-txt="Implantes de titanio y cerámicos, planificados con <em>tomografía 3D</em>."><div class="t">Implantes</div></button>
         <button data-img="protesis" data-alt="Modelo de prótesis dental sobre hojas verdes" data-txt="Coronas, puentes y prótesis <em>fijas o removibles</em>."><div class="t">Prótesis y rehabilitación</div></button>
         <button data-img="escaner" data-alt="Monitor con escaneo intraoral junto al sillón" data-txt="Escáner intraoral, radiografías y tomografía para un <em>diagnóstico preciso</em>."><div class="t">Diagnóstico digital</div></button>
