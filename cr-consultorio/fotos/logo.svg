@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 58 342 142" role="img" aria-label="CR consultorio odontológico">
+  <defs>
+    <g id="cr-arc">
+      <rect x="206" y="75" width="26" height="15"/>
+      <rect x="322" y="75" width="28" height="15"/>
+      <path d="M225 89 A52 46 0 0 0 329 89" fill="none" stroke-width="14"/>
+    </g>
+  </defs>
+  <use href="#cr-arc" transform="translate(38 4)" fill="#6fb56c" stroke="#6fb56c" opacity=".38"/>
+  <use href="#cr-arc" fill="#6fb56c" stroke="#6fb56c" opacity=".92"/>
+  <text x="54" y="145" font-family="Montserrat, 'Gotham', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="110" fill="#4f4b4b" textLength="138" lengthAdjust="spacingAndGlyphs">CR</text>
+  <text x="59" y="192" font-family="Questrial, 'Century Gothic', 'Avenir', sans-serif" font-size="25" fill="#2f2d2d" textLength="324" lengthAdjust="spacingAndGlyphs">consultorio odontológico</text>
+</svg>

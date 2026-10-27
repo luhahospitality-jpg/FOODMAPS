@@ -8,7 +8,7 @@
 <meta name="description" content="CR Consultorio — Odontología integral. Dra. Paula Rannazzo y Dr. José Carlos Cortés.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Questrial&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   /* Layout: hoja de papel de arroz sobre fondo verde niebla; mucho aire, fotos con esquinas suaves, un ensō como firma. */
   :root{
@@ -19,6 +19,7 @@
     --ink:#1e2a22;        /* texto fuerte / botones */
     --moss:#3d5743;       /* verde principal */
     --sage:#8ea58f;       /* verde suave */
+    --leaf:#6fb56c;       /* verde del logo */
     --wood:#a9805a;       /* madera, acento mínimo */
     --text:#4a5449;
     --muted:#8b9488;
@@ -47,14 +48,9 @@
 
   /* nav */
   header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .logo{display:flex;align-items:center;gap:12px;color:var(--ink)}
-  .mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--moss);color:var(--sheet);font-family:var(--serif);font-style:italic;font-size:22px;overflow:hidden}
-  .mark img{object-fit:contain}
-  .mark.missing img{display:none}
-  .mark:not(.missing){background:transparent}
-  .mark:not(.missing) span{display:none}
-  .logo b{font-weight:400;font-size:15px;letter-spacing:.22em;text-transform:uppercase}
-  .logo small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .logo{display:block;line-height:0}
+  .logo-svg{height:clamp(46px,5vw,58px);width:auto}
+  .logo-foot{height:64px;width:auto;margin-bottom:18px}
   nav{display:flex;gap:4px;align-items:center}
   nav a.link{padding:10px 14px;border-radius:999px;font-size:14px}
   nav a.link:hover{background:var(--mist)}
@@ -67,8 +63,8 @@
   /* hero */
   .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);margin-top:12px}
   .hero-left{min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:40px;position:relative}
-  .enso{position:absolute;top:30px;left:-30px;width:clamp(240px,30vw,380px);opacity:.5;pointer-events:none}
-  .enso path{stroke:var(--sage);stroke-dasharray:1100;stroke-dashoffset:1100;animation:draw 3.2s .3s cubic-bezier(.6,.1,.2,1) forwards}
+  .enso{position:absolute;top:30px;left:-30px;width:clamp(240px,30vw,380px);opacity:.28;pointer-events:none}
+  .enso path{stroke:var(--leaf);stroke-dasharray:1100;stroke-dashoffset:1100;animation:draw 3.2s .3s cubic-bezier(.6,.1,.2,1) forwards}
   @keyframes draw{to{stroke-dashoffset:90}}
   .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--moss)}
   h1{font-size:clamp(48px,6.6vw,96px);line-height:.98;margin:clamp(36px,7vw,96px) 0 24px;position:relative}
@@ -139,7 +135,7 @@
   .pause blockquote{position:relative;z-index:1;padding:clamp(24px,4vw,56px);color:var(--sheet);max-width:640px}
   .pause blockquote p{font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.6vw,60px);line-height:1.05}
   .pause blockquote span{display:block;margin-top:14px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
-  .breath{width:12px;height:12px;border-radius:50%;background:var(--sheet);margin-bottom:22px;animation:breath 8s ease-in-out infinite;opacity:.9}
+  .breath{width:12px;height:12px;border-radius:50%;background:var(--leaf);margin-bottom:22px;animation:breath 8s ease-in-out infinite;opacity:.9}
   @keyframes breath{0%,100%{transform:scale(1)}50%{transform:scale(2.4);opacity:.5}}
 
   /* galería */
@@ -195,10 +191,18 @@
 <div class="sheet">
 
   <header>
-    <a href="#" class="logo" aria-label="CR Consultorio, inicio">
-      <span class="mark"><img src="fotos/logo.png" alt="" onerror="this.parentElement.classList.add('missing')"><span>CR</span></span>
-      <span><b>CR</b><small>Consultorio odontológico</small></span>
-    </a>
+    <a href="#" class="logo" aria-label="CR Consultorio, inicio"><svg class="logo-svg" viewBox="50 58 342 142" role="img" aria-label="CR consultorio odontológico">  <defs>
+    <g id="cr-arc-h">
+      <rect x="206" y="75" width="26" height="15"/>
+      <rect x="322" y="75" width="28" height="15"/>
+      <path d="M225 89 A52 46 0 0 0 329 89" fill="none" stroke-width="14"/>
+    </g>
+  </defs>
+  <use href="#cr-arc-h" transform="translate(38 4)" fill="#6fb56c" stroke="#6fb56c" opacity=".38"/>
+  <use href="#cr-arc-h" fill="#6fb56c" stroke="#6fb56c" opacity=".92"/>
+  <text x="54" y="145" font-family="Montserrat, 'Gotham', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="110" fill="#4f4b4b" textLength="138" lengthAdjust="spacingAndGlyphs">CR</text>
+  <text x="59" y="192" font-family="Questrial, 'Century Gothic', 'Avenir', sans-serif" font-size="25" fill="#2f2d2d" textLength="324" lengthAdjust="spacingAndGlyphs">consultorio odontológico</text>
+</svg></a>
     <nav>
       <a class="link" href="#nosotros">Nosotros</a>
       <a class="link" href="#tratamientos">Tratamientos</a>
@@ -352,7 +356,18 @@
     </div>
 
     <footer>
-      <div><p>Odontología integral, <em>sin apuro</em>.</p></div>
+      <div><svg class="logo-foot" viewBox="50 58 342 142" role="img" aria-label="CR consultorio odontológico">  <defs>
+    <g id="cr-arc-f">
+      <rect x="206" y="75" width="26" height="15"/>
+      <rect x="322" y="75" width="28" height="15"/>
+      <path d="M225 89 A52 46 0 0 0 329 89" fill="none" stroke-width="14"/>
+    </g>
+  </defs>
+  <use href="#cr-arc-f" transform="translate(38 4)" fill="#6fb56c" stroke="#6fb56c" opacity=".38"/>
+  <use href="#cr-arc-f" fill="#6fb56c" stroke="#6fb56c" opacity=".92"/>
+  <text x="54" y="145" font-family="Montserrat, 'Gotham', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="110" fill="#4f4b4b" textLength="138" lengthAdjust="spacingAndGlyphs">CR</text>
+  <text x="59" y="192" font-family="Questrial, 'Century Gothic', 'Avenir', sans-serif" font-size="25" fill="#2f2d2d" textLength="324" lengthAdjust="spacingAndGlyphs">consultorio odontológico</text>
+</svg><p>Odontología integral, <em>sin apuro</em>.</p></div>
       <div><small>Consultorio</small><a href="#nosotros">Nosotros</a><a href="#equipo">Equipo</a><a href="#consultorio">El consultorio</a></div>
       <div><small>Tratamientos</small><a href="#tratamientos">Implantes</a><a href="#tratamientos">Prótesis</a><a href="#tratamientos">Diagnóstico digital</a><a href="#tratamientos">Odontología general</a></div>
       <div><small>Seguinos</small><a href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener">Instagram</a><a href="#contacto">Contacto</a></div>
