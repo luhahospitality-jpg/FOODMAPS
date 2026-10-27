@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CR Consultorio Odontológico</title>
+<meta name="description" content="CR Consultorio — Odontología integral. Dra. Paula Rannazzo y Dr. José Carlos Cortés.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* ===== Colores de marca: reemplazar por los del Instagram ===== */
+  :root{
+    --brand:#1f3a68;        /* color principal (títulos) */
+    --brand-soft:#8fa3c4;   /* color secundario */
+    --accent:#4a7bd0;       /* acento */
+    --ink:#0f1a2e;          /* botones oscuros */
+    --text:#3d4757;
+    --muted:#8a93a3;
+    --line:#e3e7ee;
+    --bg:#eef1f5;
+    --card:#ffffff;
+    --tint:#f4f6fa;
+    --radius:28px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter Tight",system-ui,sans-serif;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.5}
+  img{display:block;width:100%;height:100%;object-fit:cover}
+  a{color:inherit;text-decoration:none}
+  em,.serif{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;letter-spacing:-.01em}
+  .wrap{max-width:1280px;margin:0 auto;padding:16px}
+  .sheet{background:var(--card);border-radius:36px;padding:clamp(20px,3vw,40px);box-shadow:0 30px 80px -40px rgba(31,58,104,.25)}
+
+  /* foto con fallback */
+  .ph{position:relative;overflow:hidden;border-radius:var(--radius);background:linear-gradient(135deg,var(--tint),#dde4ef)}
+  .ph.missing img{display:none}
+  .ph.missing::after{content:attr(data-name);position:absolute;inset:0;display:grid;place-items:center;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-soft)}
+
+  /* nav */
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;font-size:22px;color:var(--brand);font-weight:500;letter-spacing:-.02em}
+  .logo .mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:#fff;font-family:"Instrument Serif",serif;font-style:italic;font-size:22px;overflow:hidden}
+  .logo .mark img{display:block}
+  .logo .mark.missing img{display:none}
+  .logo .mark:not(.missing) span{display:none}
+  nav{display:flex;gap:6px;align-items:center}
+  nav a.link{padding:10px 14px;border-radius:999px;font-size:14px;color:var(--text)}
+  nav a.link:hover{background:var(--tint)}
+  .icon-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:#fff;cursor:pointer}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:999px;background:var(--ink);color:#fff;font-size:15px;font-weight:500;transition:transform .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  .arrow{font-size:1.05em}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;margin-top:8px}
+  .hero-left{min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding-top:12px}
+  h1{font-size:clamp(46px,6.4vw,92px);line-height:.98;letter-spacing:-.045em;color:var(--brand);font-weight:400;margin:clamp(40px,8vw,110px) 0 28px}
+  h1 em{font-size:1.08em}
+  .lead{max-width:420px;font-size:15px;margin-bottom:32px}
+  .hero-photo{position:relative;min-height:640px}
+  .hero-photo .ph{position:absolute;inset:0}
+  .hero-photo .tag{position:absolute;top:18px;right:18px;z-index:2}
+  .floating{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-radius:20px;padding:16px 18px;width:240px;font-size:13px}
+  .floating .dots{display:flex;gap:5px;margin-bottom:10px}
+  .floating .dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+  .floating .dots i:first-child{background:var(--accent)}
+  .floating strong{display:block;color:var(--brand);font-family:"Instrument Serif",serif;font-style:italic;font-size:24px;font-weight:400;line-height:1.1;margin-bottom:6px}
+
+  .marquee{overflow:hidden;margin-top:40px;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee .track{display:flex;gap:40px;width:max-content;animation:scroll 30s linear infinite}
+  .marquee span{font-size:22px;color:var(--brand-soft);white-space:nowrap;font-weight:500;letter-spacing:-.02em}
+  .marquee span em{color:var(--brand)}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  /* section heads */
+  .sec{margin-top:clamp(70px,9vw,120px)}
+  .sec-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:48px}
+  .pill{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--ink)}
+  .num{font-size:14px;color:var(--ink)}
+
+  /* about */
+  .about{position:relative;padding:20px 0 0}
+  .statement{font-size:clamp(30px,4.4vw,60px);line-height:1.08;letter-spacing:-.035em;color:var(--brand);font-weight:400;max-width:900px;margin-left:auto;position:relative;z-index:2}
+  .statement em{font-size:1.06em}
+  .about .a1{position:absolute;left:clamp(0px,14vw,200px);top:70px;width:180px;height:190px;z-index:1}
+  .about-bottom{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-top:60px}
+  .stats{display:flex;gap:clamp(20px,4vw,48px);flex-wrap:wrap;margin-top:24px}
+  .stat b{display:block;font-size:clamp(40px,4.5vw,56px);font-weight:400;color:var(--brand);letter-spacing:-.04em;line-height:1}
+  .stat b sup{font-size:.4em;vertical-align:baseline}
+  .stat span{font-size:14px}
+  .about .a2{height:260px;position:relative;overflow:visible}
+  .about .a2 .ph{height:100%}
+  .badge{position:absolute;left:-46px;top:30px;width:96px;height:96px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.2);z-index:3}
+  .badge svg{animation:spin 18s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .badge b{position:absolute;font-family:"Instrument Serif",serif;font-style:italic;font-size:26px;color:var(--brand);font-weight:400}
+
+  /* services */
+  .services{display:grid;grid-template-columns:1.05fr 1fr .9fr;gap:20px;align-items:stretch}
+  .svc-list button{all:unset;cursor:pointer;display:block;width:100%;padding:18px 0;border-bottom:1px solid var(--line);position:relative}
+  .svc-list .t{font-size:clamp(22px,2.2vw,30px);letter-spacing:-.03em;color:var(--brand-soft);transition:color .2s}
+  .svc-list .t sup{font-size:11px;margin-left:6px;color:var(--muted)}
+  .svc-list .sub{display:none;font-size:12px;color:var(--muted);margin-top:4px}
+  .svc-list button::after{content:"+";position:absolute;right:4px;top:22px;color:var(--muted)}
+  .svc-list button.on .t{color:var(--brand)}
+  .svc-list button.on .sub{display:block}
+  .svc-list button.on::after{content:"–"}
+  .svc-img{min-height:380px}
+  .svc-img img{transition:opacity .35s}
+  .svc-card{background:var(--tint);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+  .svc-card p{font-size:19px;line-height:1.35;color:var(--brand);letter-spacing:-.02em}
+  .avatars{display:flex}
+  .avatars .ph{width:40px;height:40px;border-radius:50%;border:2px solid #fff;margin-right:-8px}
+  .avatars .ph.missing::after{content:"";}
+  .svc-card small{display:block;font-size:12px;margin-top:8px;color:var(--muted)}
+
+  /* team */
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .doc{display:grid;grid-template-columns:1fr 1fr;gap:20px;background:var(--tint);border-radius:var(--radius);padding:14px}
+  .doc .ph{aspect-ratio:3/4;border-radius:20px}
+  .doc div.info{display:flex;flex-direction:column;justify-content:flex-end;padding:10px 6px}
+  .doc h3{font-size:28px;font-weight:400;color:var(--brand);letter-spacing:-.03em;line-height:1.05;margin-bottom:8px}
+  .doc p{font-size:14px}
+  .doc .role{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
+
+  /* gallery */
+  .gallery{columns:4 220px;column-gap:14px}
+  .gallery .ph{break-inside:avoid;margin-bottom:14px;border-radius:20px;cursor:zoom-in}
+  .gallery .ph img{height:auto;transition:transform .5s}
+  .gallery .ph:hover img{transform:scale(1.04)}
+  .gallery .ph.missing{aspect-ratio:4/5}
+  .gallery .ph.missing:nth-child(3n){aspect-ratio:1}
+  .gallery .ph.missing:nth-child(4n){aspect-ratio:3/4}
+  .ig-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(10,18,34,.88);display:none;place-items:center;z-index:50;padding:24px}
+  .lb.on{display:grid}
+  .lb img{max-width:min(1000px,100%);max-height:88vh;width:auto;height:auto;border-radius:20px}
+
+  /* cta / contact */
+  .contact{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;background:var(--tint);border-radius:36px;padding:clamp(24px,4vw,48px)}
+  .contact h2{font-size:clamp(32px,3.8vw,48px);font-weight:400;color:var(--brand);letter-spacing:-.035em;line-height:1.05;margin-bottom:28px}
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}
+  .info-grid small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+  .info-grid div{font-size:15px;color:var(--ink)}
+  .map{margin-top:28px;border-radius:24px;overflow:hidden;height:260px;border:0}
+  .map iframe{width:100%;height:100%;border:0}
+  .cta-photo{min-height:340px;margin-bottom:24px}
+
+  footer{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:48px 8px 24px;border-top:1px solid var(--line);margin-top:48px;font-size:14px}
+  footer small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+  footer a{display:block;margin-bottom:6px}
+  .legal{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);padding:8px}
+
+  .wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.35);z-index:40}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    nav a.link{display:none}
+    .hero,.about-bottom,.services,.team,.contact{grid-template-columns:1fr}
+    .hero-photo{min-height:520px}
+    .about .a1{position:relative;left:0;top:0;width:140px;height:150px;margin-bottom:20px}
+    .badge{left:12px;top:-40px}
+    .doc{grid-template-columns:1fr 1.1fr}
+    footer{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:520px){
+    .info-grid{grid-template-columns:1fr}
+    .doc{grid-template-columns:1fr}
+    .floating{width:200px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sheet">
+
+  <!-- NAV -->
+  <header>
+    <a href="#" class="logo">
+      <span class="mark" id="logoMark"><img src="fotos/logo.png" alt="CR"><span>CR</span></span>
+      CR <em>Consultorio</em>
+    </a>
+    <nav>
+      <a class="link" href="#nosotros">Nosotros</a>
+      <a class="link" href="#servicios">Servicios</a>
+      <a class="link" href="#equipo">Equipo</a>
+      <a class="link" href="#galeria">Galería</a>
+      <a class="icon-btn" href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div>
+        <h1 class="reveal">Cuidamos tu <em>sonrisa</em>, una consulta a la vez.</h1>
+        <p class="lead reveal">Tu sonrisa es mucho más que un gesto: es reflejo de tu salud, tu confianza y tu bienestar. En CR te acompañamos con odontología integral, atención personalizada y un trato cercano.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap" class="reveal">
+          <a class="btn" href="#contacto">Pedir turno <span class="arrow">↗</span></a>
+          <a class="btn light" href="#servicios">Ver tratamientos</a>
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="track">
+          <span>Ortodoncia</span><span><em>Implantes</em></span><span>Estética dental</span><span><em>Blanqueamiento</em></span><span>Rehabilitación oral</span><span><em>Prevención</em></span>
+          <span>Ortodoncia</span><span><em>Implantes</em></span><span>Estética dental</span><span><em>Blanqueamiento</em></span><span>Rehabilitación oral</span><span><em>Prevención</em></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <a class="btn light tag" href="#contacto" style="padding:10px 16px;font-size:14px">Contacto ↗</a>
+      <div class="ph" data-name="hero.jpg"><img src="fotos/hero.jpg" alt="Paciente sonriendo en CR Consultorio"></div>
+      <div class="floating">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <strong>Odontología integral</strong>
+        Dra. Paula Rannazzo · Dr. José Carlos Cortés
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="sec" id="nosotros">
+    <div class="sec-head"><span class="pill">Nosotros</span><span class="num">(01)</span></div>
+    <div class="about">
+      <div class="ph a1" data-name="about-1.jpg"><img src="fotos/about-1.jpg" alt=""></div>
+      <h2 class="statement reveal">Construimos relaciones duraderas, basadas en la <em>confianza y el cuidado</em>. Nuestro equipo se compromete a que <em>cada visita</em> sea cómoda y pensada para vos.</h2>
+      <div class="about-bottom">
+        <div>
+          <p style="font-size:14px">Un consultorio, dos profesionales y una misma forma de trabajar.</p>
+          <div class="stats">
+            <div class="stat"><b>2</b><span>Especialistas</span></div>
+            <div class="stat"><b>1<sup>a1</sup></b><span>Atención personalizada</span></div>
+            <div class="stat"><b>100<sup>%</sup></b><span>Compromiso</span></div>
+          </div>
+        </div>
+        <div class="a2">
+          <div class="badge">
+            <svg width="96" height="96" viewBox="0 0 100 100"><defs><path id="c" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text font-size="9.5" letter-spacing="2.2" fill="#1f3a68"><textPath href="#c">· CR CONSULTORIO · ODONTOLOGÍA ·</textPath></text></svg>
+            <b>CR</b>
+          </div>
+          <div class="ph" data-name="about-2.jpg"><img src="fotos/about-2.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="sec" id="servicios">
+    <div class="sec-head"><span class="pill">Nuestros servicios</span><span class="num">(02)</span></div>
+    <div class="services">
+      <div class="svc-list" id="svcList">
+        <button class="on" data-i="1" data-txt="Una sonrisa alineada cambia todo. Con la <em>ortodoncia</em> corregimos la posición de tus dientes cuidando su <em>función y salud</em>."><div class="t">Ortodoncia<sup>01</sup></div><div class="sub">Brackets, alineadores, ortopedia</div></button>
+        <button data-i="2" data-txt="Una sonrisa segura lo cambia todo. Con <em>estética dental</em> realzamos la belleza de tus dientes preservando su <em>naturalidad</em>."><div class="t">Estética dental<sup>02</sup></div><div class="sub">Blanqueamiento, carillas, diseño de sonrisa</div></button>
+        <button data-i="3" data-txt="Recuperá piezas perdidas con <em>implantes</em> y prótesis que devuelven firmeza, <em>comodidad</em> y confianza al sonreír."><div class="t">Implantes y rehabilitación<sup>03</sup></div><div class="sub">Implantes, prótesis, coronas</div></button>
+        <button data-i="4" data-txt="La mejor sonrisa es la que se cuida. Controles, limpiezas y tratamientos para <em>toda la familia</em>."><div class="t">Odontología general<sup>04</sup></div><div class="sub">Limpiezas, caries, controles, urgencias</div></button>
+      </div>
+      <div class="ph svc-img" data-name="servicio-1.jpg" id="svcImg"><img src="fotos/servicio-1.jpg" alt=""></div>
+      <div class="svc-card">
+        <p id="svcTxt">Una sonrisa alineada cambia todo. Con la <em>ortodoncia</em> corregimos la posición de tus dientes cuidando su <em>función y salud</em>.</p>
+        <div>
+          <div class="avatars">
+            <div class="ph" data-name=""><img src="fotos/paula.jpg" alt=""></div>
+            <div class="ph" data-name=""><img src="fotos/jose.jpg" alt=""></div>
+          </div>
+          <small>Nuestros especialistas</small>
+          <div style="text-align:right;margin-top:16px"><a class="btn" href="#contacto" style="padding:11px 18px;font-size:13px">Consultar ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="sec" id="equipo">
+    <div class="sec-head"><span class="pill">Equipo</span><span class="num">(03)</span></div>
+    <div class="team">
+      <article class="doc reveal">
+        <div class="ph" data-name="paula.jpg"><img src="fotos/paula.jpg" alt="Dra. Paula Rannazzo"></div>
+        <div class="info">
+          <div class="role">Odontóloga</div>
+          <h3>Dra. Paula <em>Rannazzo</em></h3>
+          <p>Atención cálida y detallista, con foco en que cada paciente entienda su tratamiento y se sienta cómodo en cada etapa.</p>
+        </div>
+      </article>
+      <article class="doc reveal">
+        <div class="ph" data-name="jose.jpg"><img src="fotos/jose.jpg" alt="Dr. José Carlos Cortés"></div>
+        <div class="info">
+          <div class="role">Odontólogo</div>
+          <h3>Dr. José Carlos <em>Cortés</em></h3>
+          <p>Experiencia en implantes y rehabilitación oral, para devolverle función y estética a tu sonrisa.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="sec" id="galeria">
+    <div class="sec-head"><span class="pill">Galería</span><span class="num">(04)</span></div>
+    <h2 class="statement reveal" style="margin:0 0 40px;max-width:760px">Sonrisas, casos y <em>nuestro día a día</em> en el consultorio.</h2>
+    <div class="gallery" id="gallery"></div>
+    <div class="ig-row">
+      <p>Seguinos para ver más casos y novedades.</p>
+      <a class="btn" href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener">@cr.consultorio ↗</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="sec" id="contacto">
+    <div class="contact">
+      <div>
+        <h2>Iluminá tu <em>sonrisa</em> con <em>confianza y cuidado</em>.</h2>
+        <div class="ph cta-photo" data-name="cta.jpg"><img src="fotos/cta.jpg" alt=""></div>
+        <a class="btn" href="https://wa.me/5491100000000?text=Hola!%20Quisiera%20pedir%20un%20turno" target="_blank" rel="noopener">Pedir turno por WhatsApp ↗</a>
+      </div>
+      <div>
+        <div class="info-grid">
+          <div><small>Ubicación</small>Av. Dardo Rocha<br>San Isidro, Buenos Aires</div>
+          <div><small>WhatsApp</small>+54 9 11 0000-0000</div>
+          <div><small>Instagram</small><a href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener">@cr.consultorio</a></div>
+          <div><small>Horarios</small>Lunes a viernes<br>Con turno previo</div>
+        </div>
+        <div class="map"><iframe loading="lazy" title="Mapa" src="https://www.google.com/maps?q=Av.+Dardo+Rocha,+San+Isidro,+Buenos+Aires&output=embed"></iframe></div>
+      </div>
+    </div>
+
+    <footer>
+      <div><small>Consultorio</small><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#equipo">Equipo</a><a href="#galeria">Galería</a></div>
+      <div><small>Tratamientos</small><a href="#servicios">Ortodoncia</a><a href="#servicios">Estética dental</a><a href="#servicios">Implantes</a><a href="#servicios">Odontología general</a></div>
+      <div><small>Profesionales</small><a href="#equipo">Dra. Paula Rannazzo</a><a href="#equipo">Dr. José Carlos Cortés</a></div>
+      <div><small>Redes</small><a href="https://www.instagram.com/cr.consultorio/" target="_blank" rel="noopener">Instagram</a><a href="#contacto">WhatsApp</a></div>
+    </footer>
+    <div class="legal"><span>© 2026, CR Consultorio</span><span>Odontología integral</span></div>
+  </section>
+
+</div>
+</div>
+
+<a class="wa" href="#contacto" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+  // Galería: galeria-01.jpg ... galeria-18.jpg
+  const g = document.getElementById('gallery');
+  for (let i = 1; i <= 18; i++) {
+    const n = String(i).padStart(2, '0');
+    g.insertAdjacentHTML('beforeend',
+      `<div class="ph" data-name="galeria-${n}.jpg"><img loading="lazy" src="fotos/galeria-${n}.jpg" alt="CR Consultorio ${n}"></div>`);
+  }
+
+  // Fallback cuando falta una foto
+  function markMissing(img){ img.closest('.ph, .mark')?.classList.add('missing'); }
+  document.querySelectorAll('img').forEach(img => {
+    if (img.complete && img.naturalWidth === 0) markMissing(img);
+    img.addEventListener('error', () => markMissing(img));
+  });
+
+  // Servicios
+  const svcImg = document.querySelector('#svcImg img'), svcTxt = document.getElementById('svcTxt');
+  document.querySelectorAll('#svcList button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('#svcList button').forEach(x => x.classList.remove('on'));
+    b.classList.add('on');
+    const box = svcImg.parentElement;
+    box.classList.remove('missing');
+    box.dataset.name = `servicio-${b.dataset.i}.jpg`;
+    svcImg.src = `fotos/servicio-${b.dataset.i}.jpg`;
+    svcTxt.innerHTML = b.dataset.txt;
+  }));
+
+  // Lightbox
+  const lb = document.getElementById('lb');
+  g.addEventListener('click', e => {
+    const box = e.target.closest('.ph');
+    if (!box || box.classList.contains('missing')) return;
+    lb.querySelector('img').src = box.querySelector('img').src;
+    lb.classList.add('on');
+  });
+  lb.addEventListener('click', () => lb.classList.remove('on'));
+
+  // Animaciones al hacer scroll
+  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
